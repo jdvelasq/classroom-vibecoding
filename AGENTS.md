@@ -38,3 +38,14 @@ not introduce independent dependency manifests or environment definitions.
 Before adding a dependency, verify that it is compatible with the repository's
 supported Python version. Reproduce the environment from the root
 `requirements.txt`.
+
+## Presential workshops (`PRE_*`)
+
+Within each course implementation folder, `PRE_*` directories represent
+enumerated presential workshops led by the instructor. They are guided
+learning experiences: the instructor presents and discusses the problem,
+develops the solution progressively in code, and explains the analytical
+decisions, alternatives, and practices to avoid.
+
+`PRE_*` directories do not contain a `README.md`. This convention will be
+refined as the implementation materials are organized and audited.
