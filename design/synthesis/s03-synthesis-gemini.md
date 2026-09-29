@@ -318,7 +318,7 @@ The benchmark corpus demonstrates four distinct structural mechanisms for sequen
 ### 6.2 The structural tension: Syntax-First vs. Decision-First
 
 Curriculum designers face a fundamental tension between two viable sequencing philosophies:
-- **Syntax-First (Bottom-Up):** Argues that learners cannot perform meaningful analytics without mastering data manipulation tools (SQL, pandas) first. 
+- **Syntax-First (Bottom-Up):** Argues that learners cannot perform meaningful analytics without mastering data manipulation tools (SQL, pandas) first.
   *Pedagogical challenge:* Learners spend weeks wrangling syntax and data cleaning without understanding the strategic context or the "so what?" of the analysis.
 - **Decision-First (Top-Down):** Argues that learners must first understand how decisions are made, what questions need answering, and how value is captured before writing code.
   *Pedagogical challenge:* Non-programmers may understand strategic concepts but struggle to execute hands-on data extraction and analysis independently.
