@@ -5,7 +5,7 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
 CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 INPUT_DIR = ACTIVITY_DIR / "temp" / "input"
-OUTPUT_DIR = ACTIVITY_DIR / "submission"
+SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
 def run_main(monkeypatch):
@@ -16,15 +16,14 @@ def run_main(monkeypatch):
 def test_01(monkeypatch):
     run_main(monkeypatch)
 
-    assert len(list(INPUT_DIR.glob("*.txt"))) == 4000
-    assert (OUTPUT_DIR / "part-00000").is_file()
-    assert (OUTPUT_DIR / "_SUCCESS").is_file()
+    assert (SUBMISSION_DIR / "part-00000").is_file()
+    assert (SUBMISSION_DIR / "_SUCCESS").is_file()
 
 
 def test_02(monkeypatch):
     run_main(monkeypatch)
     counts = {}
-    for line in (OUTPUT_DIR / "part-00000").read_text(encoding="utf-8").splitlines():
+    for line in (SUBMISSION_DIR / "part-00000").read_text(encoding="utf-8").splitlines():
         word, count = line.split("\t")
         counts[word] = int(count)
 

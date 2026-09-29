@@ -1,12 +1,14 @@
 import glob
 import os.path
+import shutil
 import string
 import time
 
 ACTIVITY_FOLDER = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FOLDER = os.path.join(ACTIVITY_FOLDER, "data")
 INPUT_FOLDER = os.path.join(ACTIVITY_FOLDER, "temp", "input")
-OUTPUT_FOLDER = os.path.join(ACTIVITY_FOLDER, "submission")
+OUTPUT_FOLDER = os.path.join(ACTIVITY_FOLDER, "temp", "output")
+SUBMISSION_FOLDER = os.path.join(ACTIVITY_FOLDER, "submission")
 
 # La carpeta input/ debe existir y estar vacia.
 # -----------------------------------------------------------------------------
@@ -107,6 +109,19 @@ with open(f"{OUTPUT_FOLDER}/part-00000", "w", encoding="utf-8") as f:
 
 with open(f"{OUTPUT_FOLDER}/_SUCCESS", "w", encoding="utf-8") as f:
     f.write("")
+
+
+# Copia el resultado desde HDFS simulado al disco local
+# -----------------------------------------------------------------------------
+
+if os.path.exists(SUBMISSION_FOLDER):
+    for file in glob.glob(f"{SUBMISSION_FOLDER}/*"):
+        os.remove(file)
+else:
+    os.makedirs(SUBMISSION_FOLDER)
+
+for file in glob.glob(f"{OUTPUT_FOLDER}/*"):
+    shutil.copy2(file, SUBMISSION_FOLDER)
 
 
 # Reporte de tiempo de ejecución
