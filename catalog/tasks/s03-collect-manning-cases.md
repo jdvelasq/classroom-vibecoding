@@ -1,18 +1,18 @@
-# S03 — Collect Cases from Manning
+# S03 — Collect Selectable Datasets from Manning
 
 ## Objective
 
 Inspect Manning books and their documented companion repositories to identify,
-verify, and record cases that may later be selected from the catalog for
-Analytics-course design.
+verify, and record datasets together with their associated analytical cases,
+so a later course designer can select a suitable dataset-case combination.
 
 This task is catalog construction. It is not curriculum design, activity
 construction, assessment design, or audit.
 
-The catalog unit is a case. A newly found Manning book is not itself an output:
-continue into its documented companion material until a named project with
-concrete data either passes the verification gate and yields a case YAML, or is
-reported as excluded with the unmet condition.
+The catalog unit for this publisher is a dataset. A newly found Manning book
+is not itself a dataset output: continue into its documented companion material
+until every accessible dataset either passes the verification gate and yields
+one dataset YAML, or is reported as excluded with the unmet condition.
 
 ---
 
@@ -90,35 +90,41 @@ choose a scope as a substitute for this work.
 ## Periodic collection behavior
 
 This task is intended to be run repeatedly. The existing book directories in
-`catalog/manning/` are the only persistent local signal that a Manning book has
-already contributed one or more qualifying cases. A book directory contains
-case YAML files only: do not add `book.yaml`, a publisher inventory, a review
-ledger, or an empty directory.
+`catalog/manning/` are the persistent local record of reviewed Manning books.
 
-The absence of a book directory means only that no qualifying case from that
-book is currently cataloged. It is not evidence that the book is irrelevant or
-that it was never examined. Reassessing such a book on a later run is expected
-and requires no persistent exclusion record.
+- A reviewed book with one or more usable datasets contains one YAML per
+  dataset.
+- A reviewed book with no usable dataset contains only `.gitkeep`.
+- Do not add `book.yaml`, a publisher inventory, a review ledger, a case-only
+  YAML, or any other placeholder.
+
+The absence of a book directory means the book has not yet been reviewed and
+must be reviewed when it is discovered in the automatic publisher search.
+
+At the start of a run, audit existing YAMLs. A record counts toward this
+contract only when `type: book_dataset` and the required `dataset` and
+`associated_cases` fields are present. Treat older case-oriented YAMLs as
+legacy inputs: migrate them only when their recorded evidence supports the
+dataset contract; otherwise re-review the book. Do not let a legacy YAML cause
+a book to be skipped as already reviewed.
 
 The directory and prior records are optional. If `catalog/manning/` does not
-exist or contains no case records, this is the first collection: establish the
-baseline from current Manning sources and create the directory only when a case
-passes the verification gate.
+exist or contains no dataset records, this is the first collection: establish
+the baseline from current Manning sources and create a book directory after its
+review, using `.gitkeep` when no dataset passes the verification gate.
 
 At the start of every execution:
 
-1. Inspect the existing Manning book directories and case records, including
+1. Inspect the existing Manning book directories and dataset records, including
    their editions and access dates.
 2. Build the automatic review scope from the first-party Data Analysis subtree
    and all of its applicable pages, as specified above.
-3. Compare every eligible lead in that scope with local book directories and
-   case records, identifying books not yet represented, new editions, and
-   materially revised companions.
-4. For every eligible book, locate its specific companion sources and enumerate
-   its named projects or cases with concrete data. A pre-existing book directory
-   does not permit stopping after its first existing case: use duplicate checks
-   to preserve cases already cataloged and record any additional qualifying
-   cases separately.
+3. Compare every eligible lead in that scope with local book directories,
+   identifying books not yet reviewed, new editions, and materially revised
+   companions.
+4. For every new or revised book, locate its companion sources and enumerate
+   every distinct accessible dataset. Record each passing dataset; create
+   `.gitkeep` when no dataset passes.
 
 A newer book, edition, dataset revision, or better-documented case may be a
 potential successor to an existing case, but it must be added as a separate
@@ -133,7 +139,7 @@ unchanged and report the sources searched and the date of the review.
 
 ## Exhaustive-completion rule
 
-Do not stop after finding the first qualifying case. A run may report the
+Do not stop after finding the first qualifying dataset. A run may report the
 Manning review as **complete** only after it has exhausted the documented search
 scope available on the access date:
 
@@ -146,8 +152,9 @@ scope available on the access date:
 3. For every eligible book, including one already represented by a directory,
    inspect the documented companion material far enough to enumerate its named
    projects or cases with concrete data.
-4. Classify every candidate as a created case record, an existing cross-source
-   duplicate, or an excluded lead with the exact unmet verification condition.
+4. Classify every candidate as a created dataset record, an existing
+   cross-source dataset, or an excluded lead with the exact unmet verification
+   condition.
 
 Completion is a bounded claim about the automatically established Manning
 listing(s) at the review date; it is not a claim that every Manning book ever
@@ -156,8 +163,9 @@ If a catalog page, companion source, or candidate cannot be inspected, report
 the run as **partial**, name the unreviewed scope, and do not say Manning has
 been exhausted.
 
-The final response must list reviewed books and editions, all created case
-files, duplicates, exclusions, and any unreviewed or inaccessible material. No
+The final response must list reviewed books and editions, all created dataset
+files and `.gitkeep` directories, duplicates, exclusions, and any unreviewed
+or inaccessible material. No
 book-level YAML, publisher inventory, or placeholder file may be created to
 record that coverage.
 
@@ -165,41 +173,40 @@ record that coverage.
 
 ## Output structure
 
-For a verified new case discovered through a Manning book, create one YAML
+For a verified dataset discovered through a Manning book, create one YAML
 record under:
 
-`catalog/manning/<book-slug>/<case-slug>.yaml`
+`catalog/manning/<book-slug>/<dataset-slug>.yaml`
 
-The publisher and book path records **where the case was discovered**. It does
-not imply that Manning owns the case, dataset, or historical event.
+The publisher and book path record **where the dataset was discovered**. It
+does not imply that Manning owns the dataset or its associated real-world case.
 
 Each record must identify:
 
 - the Manning book, edition when available, official page, and access date;
 - every book-specific repository or companion source used;
-- the named case, data source, access route, and license or terms;
-- the relationship between the data and the case;
-- a concise analytical problem, limitations, and possible analytical questions;
+- the dataset name, data source, access route, contents, and license or terms;
+- every named case or analytical setting associated with that dataset;
+- concise analytical problems, limitations, and possible analytical questions;
 - any substantive connection to `design/benchmarks/`.
 
-Use one YAML per case, never separate `datasets/` and `problems/` records.
+Use one YAML per dataset, never separate dataset and problem records.
 
 ---
 
 ## Duplicate rule
 
-Before creating a case, search all of `catalog/` by canonical name, aliases,
-dataset name, and meaningful source identifiers.
+Before creating a dataset record, search all of `catalog/` by dataset name,
+aliases, and meaningful source identifiers.
 
-- If no equivalent case exists, create the Manning-path YAML record.
-- If the same case already exists, do not create a duplicate merely because it
-  appears in a Manning book. Report the possible cross-source link, including
-  the existing path and Manning-book evidence, for a later canonical-linking
-  decision.
-- Do not move, rename, or overwrite existing case records during this task.
+- If no equivalent dataset exists, create the Manning-path YAML record.
+- If the same underlying dataset already exists, create a Manning-path record
+  only when the book-specific association adds selection-relevant information;
+  cross-link the existing record in `sources`.
+- Do not move, rename, or overwrite existing dataset records during this task.
 
-This rule preserves the case as the catalog unit while the source path records
-the discovery route.
+This rule preserves the dataset as the catalog unit while retaining its
+book-specific discovery route and associated cases.
 
 ---
 
@@ -207,24 +214,48 @@ the discovery route.
 
 Create a record only when all of the following are verified:
 
-- a named, bounded case or real-world analytical episode is identifiable;
-- a concrete dataset or documented reconstruction is materially related to it;
+- a concrete web-accessible dataset or documented reconstruction is identifiable;
+- one or more associated cases, decisions, or analytical questions are materially
+  related to it;
 - dataset provider, access route, and contents are concrete;
 - data terms are explicit enough for a later educational-use decision;
 - the book or documented companion source establishes the Manning connection;
 - provenance, reproducibility, and material limitations can be described.
 
-Exclude generic code examples, toy datasets, anonymous exercises, marketing
-anecdotes, and cases whose dataset, terms, or book connection cannot be
-verified.
+Exclude generic code examples, tool-library samples, anonymous exercises,
+marketing anecdotes, and datasets whose access, terms, or book connection
+cannot be verified.
 
 ---
 
 ## Required record contents
 
-Use the case-record structure defined in
-`catalog/tasks/s01-collect-historical-cases.md`, adapted to include a source
-entry that records the Manning book and any documented companion repository.
+Use a dataset-record structure with `book_source`, one `dataset` block, and an
+`associated_cases` list. The record must include the following fields:
+
+```yaml
+id: manning/<book-slug>/<dataset-slug>
+name: <dataset name>
+aliases: []
+type: book_dataset
+book_source: {}
+dataset:
+  source_url: <direct data, API, archive, or companion-data URL>
+  provider: <provider or steward>
+  access_method: <how to obtain it>
+  availability: <public, registration required, etc.>
+  license_or_terms: <identified terms>
+  contents: <variables, period, and grain>
+  status: real_world | book_curated | simulated | documented_reconstruction
+associated_cases: []
+possible_analytical_questions: []
+limitations: []
+curricular_signal: {}
+benchmark_connections: []
+benchmark_connection_notes: <result of local lookup>
+sources: []
+verification: {}
+```
 
 Include a `book_source` block:
 
@@ -241,7 +272,7 @@ book_source:
   access_date: YYYY-MM-DD
 ```
 
-Record original dataset provenance separately in `datasets` and `sources`.
+Record original dataset provenance in `dataset` and `sources`.
 An author repository is not sufficient evidence of data provenance unless it
 identifies and supports that provenance.
 
@@ -254,14 +285,14 @@ identifies and supports that provenance.
    `catalog/manning/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
 3. Locate documented book-specific companion materials and repositories.
-4. Inspect those materials to identify a named project, its analytical problem,
-   and its concrete associated data; do not stop at the book or repository
-   landing page.
-5. Identify named candidate cases, then apply the duplicate search.
-6. Verify case identity, dataset provenance, access, terms, contents, and
+4. Inspect those materials to identify every distinct concrete dataset and its
+   associated analytical case or setting; do not stop at the repository landing
+   page.
+5. Apply the duplicate search to each candidate dataset.
+6. Verify dataset provenance, access, terms, contents, associated cases, and
    limitations from the strongest available sources.
-7. Create only qualifying YAML records in the book-specific Manning path.
-8. Search `design/benchmarks/` for substantive case connections without
+7. Create one YAML for every qualifying dataset, or `.gitkeep` if none qualify.
+8. Search `design/benchmarks/` for substantive dataset-case connections without
    editing benchmark files.
 9. Validate all YAML files created or updated.
 
@@ -269,10 +300,10 @@ identifies and supports that provenance.
 
 ## Completion condition
 
-The task is complete when each newly created record is a verified, nonduplicate
-case associated with a specific Manning book and documented companion source;
-its data and terms are traceable; its limitations are visible; and its local
-benchmark lookup is recorded.
+The task is complete when every newly discovered book has a directory, every
+usable dataset has its own verified YAML, every non-usable reviewed book has
+only `.gitkeep`, and each dataset record has a traceable associated case,
+access route, terms, limitations, and local benchmark lookup.
 
 ## Final response
 
@@ -280,7 +311,7 @@ Report:
 
 - Manning books and companion sources inspected;
 - new or revised books and editions found since the prior local collection;
-- YAML records created or updated;
+- dataset YAML records and `.gitkeep` directories created or updated;
 - duplicates intentionally not created, with their existing catalog paths;
-- excluded leads and the verification condition each failed;
+- excluded books or datasets and the verification condition each failed;
 - local benchmark connections found or not found.
