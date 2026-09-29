@@ -1,5 +1,7 @@
 # S01 — Discover and Verify Historical Analytics Cases
 
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
+
 ## Objective
 
 Build `catalog/s01-historical/` by discovering historically established cases from

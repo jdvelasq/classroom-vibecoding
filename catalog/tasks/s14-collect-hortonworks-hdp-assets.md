@@ -1,6 +1,6 @@
 # S14 — Collect datasets from Hortonworks HDP assets
 
-Read and comply with the repository-level `AGENTS.md` before execution.
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
 
 ## Purpose
 
@@ -23,8 +23,10 @@ contributing context only.
 ## Recurring execution
 
 1. Inspect `catalog/s14-hortonworks-hdp/` to find reviewed units.
-2. Enumerate source units and inspect every unreviewed unit; re-evaluate one
-   only when its source revision, assets, or terms materially change.
+2. Enumerate source units and inspect one or more unreviewed units per run,
+   prioritizing units with an explicit analytical case and documented data
+   assets. Re-evaluate a reviewed unit only when its source revision, assets,
+   or terms materially change. Continue later runs until the source is covered.
 3. For each candidate, verify a bounded Analytics case, concrete contents and
    access route, original provider, reproducible tutorial relation, and terms
    sufficient for a later educational-use decision.
@@ -39,6 +41,11 @@ contributing context only.
    `verification`.
 6. Where a reviewed unit has no passing dataset, create only
    `catalog/s14-hortonworks-hdp/<unit-slug>/.gitkeep`.
+7. A bounded tutorial asset whose terms are conditional or ambiguous may be
+   recorded only for the course owner's **private classroom use** when its
+   contents, access route, and case are documented. Set
+   `dataset.status: private_class_candidate`, state the condition explicitly,
+   and never treat the record as permission to redistribute raw data.
 
 ## Verification rules
 
@@ -48,7 +55,8 @@ contributing context only.
 - For external data, document its original provider and terms, not merely the
   repository license.
 - If notices require a separate agreement, conflict, or do not clearly cover
-  data, the terms gate fails. Do not create a YAML record.
+  data, the normal terms gate fails. Retain it only under the documented
+  private-class exception above; otherwise do not create a YAML record.
 - Exclude generic platform demonstrations, code-only examples, toy data, and
   unverified claims.
 

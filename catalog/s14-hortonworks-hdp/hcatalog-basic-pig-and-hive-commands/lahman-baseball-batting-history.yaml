@@ -1,0 +1,52 @@
+id: s14-hortonworks-hdp/hcatalog-basic-pig-and-hive-commands/lahman-baseball-batting-history
+name: Lahman baseball batting history
+aliases: [Lahman baseball database, Batting.csv, Master.csv]
+type: tutorial_dataset
+book_source:
+  publisher: Hortonworks
+  title: HCatalog Basic Pig and Hive Commands
+  edition: HDP tutorial
+  official_url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/hcatalog-basic-pig-and-hive-commands
+  companion_sources:
+    - title: Hortonworks HDP tutorial repository
+      url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/hcatalog-basic-pig-and-hive-commands
+      relationship: Documents the tables, period, and tutorial analysis.
+  access_date: 2026-09-29
+dataset:
+  source_url: http://seanlahman.com/files/database/lahman591-csv.zip
+  provider: Sean Lahman
+  access_method: Tutorial identifies the Lahman CSV archive and uses Master.csv and Batting.csv.
+  availability: documented_external_archive
+  license_or_terms: CC BY-SA 3.0, as documented by the Hortonworks tutorial; preserve attribution and share-alike obligations. The catalog does not redistribute the data.
+  contents: Player master records and batting statistics for American professional baseball, covering 1871 through 2011 in the tutorial version.
+  status: private_class_candidate
+associated_cases:
+  - name: Baseball batting history analysis
+    decision_or_problem: Compare player and season batting records after integrating player identity and performance tables.
+    relationship_to_dataset: The tutorial loads Master.csv and Batting.csv to demonstrate HCatalog, Pig, and Hive analysis.
+sources:
+  - role: tutorial_identity_and_terms
+    title: HCatalog Basic Pig and Hive Commands
+    url: https://github.com/jdvelasq/hortonworks-hdp/blob/master/tutorials/hortonworks/hcatalog-basic-pig-and-hive-commands/tutorial.md
+    access_date: 2026-09-29
+    notes: Identifies the Lahman files, historical period, source archive, and CC BY-SA 3.0 notice.
+possible_analytical_questions:
+  - How do batting outcomes differ across players, seasons, or eras after resolving player identity?
+  - Which aggregations and joins are needed to produce defensible player-level summaries?
+limitations:
+  - The cited archive and data period are tutorial-version specific and may not match current Lahman releases.
+  - Private classroom use does not remove the attribution and share-alike obligations of the stated license.
+curricular_signal:
+  analytics_capabilities: [Construct and interpret historical performance summaries from related tables.]
+  contributing_disciplines: [Databases contributes relational joins and query implementation.]
+  cautions: [Separate descriptive historical comparisons from causal claims about player performance.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: documented
+  data_terms: source_documented_cc_by_sa_3_0
+  original_external_data_provenance: verified
+  real_world_status: historical_real_world_records
+  benchmark_connection: not_found

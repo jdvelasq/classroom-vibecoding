@@ -1,5 +1,7 @@
 # S03 — Collect Selectable Datasets from Manning
 
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
+
 ## Objective
 
 Inspect Manning books and their documented companion repositories to identify,

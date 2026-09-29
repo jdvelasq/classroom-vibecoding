@@ -1,5 +1,7 @@
 # S02 — Collect Historical Cases from HistData
 
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
+
 ## Objective
 
 Use the **HistData** project as a defined discovery source to identify and

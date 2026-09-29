@@ -1,6 +1,6 @@
 # S13 — Collect datasets from Cloudera tutorial assets
 
-Read and comply with the repository-level `AGENTS.md` before execution.
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
 
 ## Purpose
 

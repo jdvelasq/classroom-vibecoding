@@ -1,0 +1,52 @@
+id: s14-hortonworks-hdp/how-to-analyze-machine-and-sensor-data/hvac-building-sensor-operations
+name: HVAC building sensor operations
+aliases: [Hortonworks SensorFiles, HVAC.csv, building.csv]
+type: tutorial_dataset
+book_source:
+  publisher: Hortonworks
+  title: How to Analyze Machine and Sensor Data
+  edition: HDP 2.4 tutorial
+  official_url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/how-to-analyze-machine-and-sensor-data
+  companion_sources:
+    - title: Hortonworks HDP tutorial repository
+      url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/how-to-analyze-machine-and-sensor-data
+      relationship: Documents the analysis workflow and archive access route.
+  access_date: 2026-09-29
+dataset:
+  source_url: http://s3.amazonaws.com/hw-sandbox/tutorial14/SensorFiles.zip
+  provider: Hortonworks tutorial assets; original sensor-data provider is not identified.
+  access_method: Tutorial documents an S3 ZIP archive containing HVAC.csv and building.csv.
+  availability: documented_external_archive
+  license_or_terms: No dataset-specific license or original-provider terms were found in the reviewed tutorial. Private classroom use only; do not redistribute raw data.
+  contents: HVAC temperature observations for twenty large buildings, plus a building table used to join contextual attributes.
+  status: private_class_candidate
+associated_cases:
+  - name: HVAC temperature operations
+    decision_or_problem: Identify and analyze building-temperature deviations to support maintaining suitable operating temperatures.
+    relationship_to_dataset: The tutorial explicitly frames the data as machine and sensor readings from HVAC systems in twenty buildings.
+sources:
+  - role: tutorial_identity
+    title: How to Analyze Machine and Sensor Data, tutorial 0
+    url: https://github.com/jdvelasq/hortonworks-hdp/blob/master/tutorials/hortonworks/how-to-analyze-machine-and-sensor-data/tutorial-0.md
+    access_date: 2026-09-29
+    notes: Documents the building context, archive, file names, and ingestion workflow.
+possible_analytical_questions:
+  - Which buildings and time periods exhibit the largest gap between target and observed temperature?
+  - How can sensor readings and building attributes be joined to prioritize operational investigation?
+limitations:
+  - The original data provider and dataset-specific rights were not established.
+  - The catalog does not host the archive; raw data must not be redistributed in course materials.
+curricular_signal:
+  analytics_capabilities: [Diagnose a measurable operational deviation using joined observational data.]
+  contributing_disciplines: [Data Engineering contributes ingestion and integration context.]
+  cautions: [Do not infer a real building-management policy from tutorial data without provenance validation.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: documented
+  data_terms: conditional_private_class_use
+  original_external_data_provenance: not_established
+  real_world_status: not_established
+  benchmark_connection: not_found

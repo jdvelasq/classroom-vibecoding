@@ -1,5 +1,7 @@
 # S04 — Collect Cases from Wiley
 
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
+
 ## Objective
 
 Inspect Wiley books and their documented book-specific companion materials to

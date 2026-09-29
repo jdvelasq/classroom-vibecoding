@@ -1,6 +1,6 @@
 # S06 — Collect Cases from Packt
 
-Read and comply with the repository-level `AGENTS.md` before execution.
+Read and comply with the repository-level `AGENTS.md` and `catalog/README.md` before execution.
 
 The catalog unit is the **case**. Do not create book-level inventory YAML files,
 publisher inventories, or placeholder records in `catalog/`; a book discovered

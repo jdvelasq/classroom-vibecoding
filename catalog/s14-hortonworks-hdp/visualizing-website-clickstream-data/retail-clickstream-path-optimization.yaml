@@ -1,0 +1,52 @@
+id: s14-hortonworks-hdp/visualizing-website-clickstream-data/retail-clickstream-path-optimization
+name: Retail clickstream path optimization
+aliases: [RefineDemoData, Hortonworks web clickstream tutorial]
+type: tutorial_dataset
+book_source:
+  publisher: Hortonworks
+  title: Visualizing Website Clickstream Data
+  edition: HDP tutorial
+  official_url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/visualizing-website-clickstream-data
+  companion_sources:
+    - title: Hortonworks HDP tutorial repository
+      url: https://github.com/jdvelasq/hortonworks-hdp/tree/master/tutorials/hortonworks/visualizing-website-clickstream-data
+      relationship: Documents the fictitious retail case and the data archive.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://s3.amazonaws.com/hw-sandbox/tutorial8/RefineDemoData.zip
+  provider: Hortonworks tutorial assets
+  access_method: Tutorial documents an S3 ZIP archive with web logs and customer and product data.
+  availability: documented_external_archive
+  license_or_terms: No dataset-specific license was identified in the reviewed tutorial. Private classroom use only; do not redistribute raw data.
+  contents: Clickstream logs with customer and product information for a fictitious online retail store.
+  status: private_class_candidate
+associated_cases:
+  - name: Online retail path optimization
+    decision_or_problem: Locate buying-path friction and high-bounce journeys to improve conversion in an online store.
+    relationship_to_dataset: The tutorial defines this as the analytical goal for its fictitious retailer.
+sources:
+  - role: tutorial_identity
+    title: Visualizing Website Clickstream Data, tutorial 0
+    url: https://github.com/jdvelasq/hortonworks-hdp/blob/master/tutorials/hortonworks/visualizing-website-clickstream-data/tutorial-0.md
+    access_date: 2026-09-29
+    notes: Defines the retail case, archive, and claimed data components.
+possible_analytical_questions:
+  - Which navigation paths are most associated with a session ending before purchase?
+  - Which product or customer segments warrant investigation for conversion improvement?
+limitations:
+  - The tutorial calls the retailer fictitious but does not provide a standalone data license.
+  - The catalog is metadata only and cannot distribute the raw archive.
+curricular_signal:
+  analytics_capabilities: [Translate event-level behavior into a conversion-improvement question.]
+  contributing_disciplines: [Business Intelligence contributes path visualization context.]
+  cautions: [Treat the setting as a tutorial scenario rather than evidence about an actual retailer.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: documented
+  data_terms: conditional_private_class_use
+  original_external_data_provenance: tutorial_asset
+  real_world_status: fictional_or_synthetic_context
+  benchmark_connection: not_found
