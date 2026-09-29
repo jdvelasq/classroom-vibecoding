@@ -2,7 +2,7 @@ black[jupyter]==25.9.0
 dbt-core==1.9.6
 dbt-duckdb==1.9.6
 duckdb==1.4.4
-fastapi<0.117
+fastapi>=0.111.0,<1.0.0
 flask<3.2
 folium<0.19
 highspy==1.15.1
@@ -12,7 +12,7 @@ matplotlib<3.8
 nbformat<5.11
 nbimporter<0.4
 networkx<3.3
-nicegui<2
+nicegui==2.24.2
 nltk<4
 numpy<2
 pandas<2.3
