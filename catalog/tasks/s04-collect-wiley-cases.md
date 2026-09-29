@@ -9,6 +9,12 @@ for Analytics-course design.
 This task is catalog construction. It is not curriculum design, activity
 construction, assessment design, or audit.
 
+The catalog unit is a case. A newly found Wiley book is not itself an output:
+continue into its documented companion material until a named project with
+concrete data either passes the verification gate and yields a case YAML, or is
+reported as excluded with the unmet condition. Do not create book-level
+inventory YAML files.
+
 ---
 
 ## Governing instructions
@@ -176,16 +182,19 @@ Record original dataset provenance separately in `datasets` and `sources`.
 3. Locate documented book-specific companion materials and repositories.
 4. Determine whether each dataset comes from the book-specific companion or
    merely from a general library or tool.
-5. Identify named candidate cases, then apply the duplicate search.
-6. Verify case identity, original dataset provenance, access, terms, contents,
+5. Inspect the companion materials to identify a named project, its analytical
+   problem, and its concrete associated data; do not stop at the book or
+   repository landing page.
+6. Identify named candidate cases, then apply the duplicate search.
+7. Verify case identity, original dataset provenance, access, terms, contents,
    and limitations from the strongest available sources.
-7. Create only qualifying YAML records in the book-specific Wiley path.
-8. Remove each migrated legacy entry from `catalog/case-inventory.yaml`; if one
+8. Create only qualifying YAML records in the book-specific Wiley path.
+9. Remove each migrated legacy entry from `catalog/case-inventory.yaml`; if one
    canonical record consolidates multiple legacy entries, remove every covered
    entry and retain their names as aliases.
-9. Search `design/benchmarks/` for substantive case connections without
+10. Search `design/benchmarks/` for substantive case connections without
    editing benchmark files.
-10. Validate all YAML files created or updated.
+11. Validate all YAML files created or updated.
 
 ---
 
