@@ -52,21 +52,28 @@ same local input and determine why a capability was assigned to a course.
 
 ## Required output
 
-Create exactly one file: `design/curriculum/s05-course-capability-map.md`.
+Create exactly these six files in `design/synthesis/`:
 
-It must include:
+- `s05-diseno-fundamentos.md`
+- `s05-diseno-data.md`
+- `s05-diseno-descriptiva.md`
+- `s05-diseno-predictiva.md`
+- `s05-diseno-prescriptiva.md`
+- `s05-diseno-productos.md`
+
+Each file must include:
 
 1. purpose and scope boundaries;
 2. a canonical set of map-ready Analytics capabilities derived from the
    synthesis, with contributing disciplines described only functionally;
-3. a course-responsibility matrix using explicit labels for principal,
-   recurring, contextual, and out-of-scope treatment;
-4. a short profile for every course, including its distinctive content
-   responsibility and what it deliberately does not own;
+3. the course's responsibility for each applicable capability, using explicit
+   labels for principal, recurring, contextual, and out-of-scope treatment;
+4. a profile of that course, including its distinctive content responsibility
+   and what it deliberately does not own;
 5. explicit content boundaries and unresolved scope decisions; and
 6. an audit-readiness boundary identifying what the map can support and what
    remains pending until later design stages; and
-7. a construction record containing: task identifier and execution date;
+7. a construction record containing: task identifier, course identifier, and execution date;
    exact local input path; source revision or content fingerprint when
    available; capability-allocation rules; section-level traceability to the
    synthesis; unresolved decisions; and the result of the quality checks.
@@ -75,14 +82,15 @@ It must include:
 
 Before completion, verify that:
 
-- every capability from the consolidated synthesis has a visible home;
+- the six files collectively give every capability from the consolidated
+  synthesis a visible home;
 - no course is made a prerequisite by implication;
 - no contributing discipline becomes a course-organizing identity;
 - optional undergraduate courses are not assumed by postgraduate courses;
 - the map does not claim that any course already earns a 10/10 audit score;
 - pedagogical format, assessment, and delivery design are not inferred or
   designed.
-- all non-trivial course allocations have a recorded rationale traceable to
+- every non-trivial course allocation has a recorded rationale traceable to
   `design/synthesis/s04-synthesis.md`;
-- the construction record is sufficient for a later independent audit or
+- each construction record is sufficient for a later independent audit or
   regeneration without relying on conversational memory.
