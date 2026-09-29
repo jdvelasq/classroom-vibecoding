@@ -1,0 +1,64 @@
+id: manning/time-series-forecasting-in-python/household-electric-power-consumption
+name: Household electric power consumption
+aliases: [ch18_train, ch18_val, ch18_test]
+type: book_dataset
+book_source:
+  publisher: Manning
+  title: Time Series Forecasting in Python
+  edition: null
+  official_url: https://www.manning.com/books/time-series-forecasting-in-python-book
+  companion_sources:
+    - title: Official author companion repository
+      url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+      relationship: Linked source code and data for the book.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/marcopeix/TimeSeriesForecastingInPython/tree/master/data
+  provider: Marco Peixeiro's public companion repository
+  access_method: Public train, validation, and test CSVs in the documented companion repository
+  availability: public
+  license_or_terms: Apache-2.0 license in the companion repository; original external provenance is not asserted.
+  contents: Train, validation, and test partitions for household electric-power consumption.
+  status: book_curated
+associated_cases:
+  - name: Household electricity-demand forecasting
+    decision_or_problem: Forecast household power consumption using deep-learning time-series models.
+    relationship_to_dataset: The README identifies chapter 18 as the household electric-power-consumption capstone.
+sources:
+  - role: book_identity
+    title: Manning — Time Series Forecasting in Python
+    url: https://www.manning.com/books/time-series-forecasting-in-python-book
+    access_date: 2026-09-29
+    notes: Official page links source code on GitHub.
+  - role: dataset_and_case
+    title: Companion repository README and chapter 18 data files
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+    access_date: 2026-09-29
+    notes: Names the capstone and supplies its split files.
+  - role: repository_terms
+    title: Apache-2.0 license
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython/blob/master/LICENSE.txt
+    access_date: 2026-09-29
+    notes: Governs companion-repository distribution.
+possible_analytical_questions:
+  - How do validation choices affect forecast quality?
+  - Which demand changes are not predictable from the observed history?
+limitations:
+  - The companion does not document original collection context or household privacy treatment.
+curricular_signal:
+  analytics_capabilities: [Build and critique a forecast evaluation protocol.]
+  contributing_disciplines:
+    - Statistics: contributes time-series validation.
+    - AI: contributes neural forecasting.
+  cautions:
+    - Treat as consumption data with potentially sensitive household context.
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_companion_distribution
+  original_external_data_provenance: not_asserted
+  real_world_status: not_established
+  benchmark_connection: not_found

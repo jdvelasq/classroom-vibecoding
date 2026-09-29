@@ -49,30 +49,35 @@ in this repository. Record provenance, access, and terms only.
 
 Establish the review scope yourself on every run; do not ask the user to supply
 a category, URL, or cutoff date. The stable publisher boundary for this task is
-the current first-party **Data Analysis** subject subtree, beginning at
-`https://www.manning.com/catalog/data-science/data-analysis/data-analysis`.
-Enumerate every page of that listing and every child category it links as a
-Data Analysis category (for example, Data Analytics, Data Analysis and
-Business Intelligence, Data Manipulation and Analysis, Data Presentations and
-Visualizations, Feature Engineering, Optimization and Experimentation, or
-Time Series Analysis when present). Follow cross-listings only once per
-book/edition.
+Manning's current first-party **Data Analysis** subtree, beginning at
+`https://www.manning.com/catalog/data-science/data-analysis/data-analysis`,
+and the current first-party **Data Science** catalog. Enumerate their
+pagination and, for the Data Analysis subtree, every child category it links
+(for example, Data Analytics, Data Analysis and Business Intelligence, Data
+Manipulation and Analysis, Data Presentations and Visualizations, Feature
+Engineering, Optimization and Experimentation, or Time Series Analysis when
+present). Follow cross-listings only once per book/edition.
 
-Do **not** expand the scope to the parent Data Science catalog, to AI, ML,
-Databases, or Statistics catalogs merely because they overlap with Analytics.
-Those catalogs are too broad to be an exhaustible publisher-collection run.
-Their material can enter the catalog only through its own future source task or
-when a qualifying Data Analysis book explicitly links it as companion data.
+The Data Science catalog is a discovery surface, not a reason to catalog every
+AI, ML, database, statistics, language, or library title. The relevance filter
+below must retain only books with a bounded Analytics-relevant case or
+book-specific data lead. Those disciplines remain contributors; they do not
+redefine the curriculum.
 
 For each enumerated book page, apply this two-stage filter automatically:
 
-1. Treat it as an *eligible lead* only when the official description identifies
-   a named analytical problem, case study, project, or book-specific companion
-   data that could meet this task's verification gate.
+1. Treat it as an *eligible lead* only when the official description or its
+   official book-specific resources identify a named analytical problem, case
+   study, project, or concrete companion-data lead that could meet this task's
+   verification gate. Inspect linked official resources far enough to make this
+   decision; do not infer a dataset merely from a generic "source code" link.
 2. Exclude at discovery stage a title whose official description supports only
    generic API, language, framework, library, or technique instruction and no
    bounded analytical case. Record its title and that exact exclusion reason in
    the final response; do not create a YAML merely to log it.
+3. Exclude a MEAP, preorder, or title whose official page gives only a future
+   estimated publication date. It is not yet a newly published book; reconsider
+   it automatically after publication.
 
 Do not reject an eligible lead merely because it also uses AI, ML, programming,
 or another contributing discipline; those labels do not redefine the
@@ -87,23 +92,31 @@ choose a scope as a substitute for this work.
 
 ---
 
-## Autonomous execution loop
+## Autonomous one-book execution loop
 
-Execute the full collection loop in one run. Do not ask the user to choose a
-book, approve a candidate, provide the next URL, or tell you to continue.
+Each execution processes exactly **one** newly discovered eligible book. Do not
+ask the user to choose it, approve it, provide a URL, or tell you to continue.
 
-For every newly discovered book, in the same execution:
+After enumerating the publisher scope and applying the relevance filter, sort
+eligible books not yet represented by a `catalog/manning/<book-slug>/`
+directory by the publication date shown on Manning's official page, newest
+first; use normalized title as a deterministic tie-breaker. Select the first
+book only.
+
+For that selected book, in the same execution:
 
 1. inspect the official book page and every documented companion source;
-2. enumerate its accessible datasets and associated analytical cases;
-3. create one dataset YAML for each dataset that passes the verification gate;
-4. create `.gitkeep` when no dataset passes; and
-5. audit the new files before moving to the next book.
+2. enumerate all of its accessible datasets and their associated analytical
+   cases;
+3. create one dataset YAML for every dataset that passes the verification gate,
+   or create `.gitkeep` if none passes; and
+4. audit every file created before returning the final report.
 
-Continue until every book newly discovered in the automatic publisher search is
-represented by either at least one dataset YAML or `.gitkeep`. Only then return
-the final report. A source that cannot be reached is an explicit partial result,
-not a reason to delegate the next step to the user.
+The run is complete when that one selected book is represented by a directory
+containing its dataset YAMLs or only `.gitkeep`. A source that cannot be reached
+is an explicit partial result for that selected book, not a reason to delegate
+the next step to the user. On the next execution, repeat discovery and select
+the next unrepresented eligible book.
 
 ---
 
@@ -121,12 +134,13 @@ This task is intended to be run repeatedly. The existing book directories in
 The absence of a book directory means the book has not yet been reviewed and
 must be reviewed when it is discovered in the automatic publisher search.
 
-At the start of a run, audit existing YAMLs. A record counts toward this
-contract only when `type: book_dataset` and the required `dataset` and
+At the start of a run, audit existing YAMLs. A directory is the persistent
+marker that its book has been reviewed and therefore prevents that exact book
+edition from being selected again. A record follows the current dataset
+contract when `type: book_dataset` and the required `dataset` and
 `associated_cases` fields are present. Treat older case-oriented YAMLs as
-legacy inputs: migrate them only when their recorded evidence supports the
-dataset contract; otherwise re-review the book. Do not let a legacy YAML cause
-a book to be skipped as already reviewed.
+legacy inputs to be migrated in a separate, evidence-based maintenance pass;
+do not overwrite or reinterpret them during this collection run.
 
 The directory and prior records are optional. If `catalog/manning/` does not
 exist or contains no dataset records, this is the first collection: establish
@@ -137,14 +151,16 @@ At the start of every execution:
 
 1. Inspect the existing Manning book directories and dataset records, including
    their editions and access dates.
-2. Build the automatic review scope from the first-party Data Analysis subtree
-   and all of its applicable pages, as specified above.
+2. Build the automatic review scope from the first-party Data Analysis subtree,
+   the first-party Data Science catalog, and all of their applicable pages, as
+   specified above.
 3. Compare every eligible lead in that scope with local book directories,
    identifying books not yet reviewed, new editions, and materially revised
    companions.
-4. For every new or revised book, locate its companion sources and enumerate
-   every distinct accessible dataset. Record each passing dataset; create
-   `.gitkeep` when no dataset passes.
+4. Select exactly one unrepresented eligible book using the autonomous
+   one-book execution loop, then locate its companion sources and enumerate
+   every distinct accessible dataset. Record each passing dataset or create
+   `.gitkeep` when none passes.
 
 A newer book, edition, dataset revision, or better-documented case may be a
 potential successor to an existing case, but it must be added as a separate
@@ -159,9 +175,9 @@ unchanged and report the sources searched and the date of the review.
 
 ## Exhaustive-completion rule
 
-Do not stop after finding the first qualifying dataset. A run may report the
-Manning review as **complete** only after it has exhausted the documented search
-scope available on the access date:
+Do not stop after finding the first qualifying dataset in the selected book. A
+run may report the **selected book** as complete only after it has exhausted
+that book's documented companion material available on the access date:
 
 1. Enumerate the books and editions in the automatically established
    first-party review scope, including every applicable category and pagination
@@ -169,23 +185,21 @@ scope available on the access date:
 2. Compare that set with the book directories already represented under
    `catalog/manning/` and identify books not yet represented, newer editions,
    and revised companions.
-3. For every eligible book, including one already represented by a directory,
-   inspect the documented companion material far enough to enumerate its named
-   projects or cases with concrete data.
+3. For the selected book, inspect the documented companion material far enough
+   to enumerate its datasets and their associated cases with concrete data.
 4. Classify every candidate as a created dataset record, an existing
    cross-source dataset, or an excluded lead with the exact unmet verification
    condition.
 
-Completion is a bounded claim about the automatically established Manning
-listing(s) at the review date; it is not a claim that every Manning book ever
-published has been found.
+Completion is a bounded claim about the selected book at the review date; it is
+not a claim that every Manning book has been found or reviewed.
 If a catalog page, companion source, or candidate cannot be inspected, report
 the run as **partial**, name the unreviewed scope, and do not say Manning has
 been exhausted.
 
-The final response must list reviewed books and editions, all created dataset
-files and `.gitkeep` directories, duplicates, exclusions, and any unreviewed
-or inaccessible material. No
+The final response must list the selected book and edition, created dataset
+files or its `.gitkeep` directory, duplicates, exclusions, and any inaccessible
+material. No
 book-level YAML, publisher inventory, or placeholder file may be created to
 record that coverage.
 
@@ -320,8 +334,8 @@ identifies and supports that provenance.
 
 ## Completion condition
 
-The task is complete when every newly discovered book has a directory, every
-usable dataset has its own verified YAML, every non-usable reviewed book has
+The task is complete when the selected book has a directory, every usable
+dataset in that book has its own verified YAML, a non-usable reviewed book has
 only `.gitkeep`, and each dataset record has a traceable associated case,
 access route, terms, limitations, and local benchmark lookup.
 
@@ -329,8 +343,8 @@ access route, terms, limitations, and local benchmark lookup.
 
 Report:
 
-- Manning books and companion sources inspected;
-- new or revised books and editions found since the prior local collection;
+- selected Manning book and companion sources inspected;
+- other new or revised books discovered but left for later executions;
 - dataset YAML records and `.gitkeep` directories created or updated;
 - duplicates intentionally not created, with their existing catalog paths;
 - excluded books or datasets and the verification condition each failed;

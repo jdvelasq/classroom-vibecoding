@@ -1,0 +1,63 @@
+id: manning/time-series-forecasting-in-python/google-stock-price
+name: Google stock price series
+aliases: [GOOGL]
+type: book_dataset
+book_source:
+  publisher: Manning
+  title: Time Series Forecasting in Python
+  edition: null
+  official_url: https://www.manning.com/books/time-series-forecasting-in-python-book
+  companion_sources:
+    - title: Official author companion repository
+      url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+      relationship: Linked source code and data for the book.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/marcopeix/TimeSeriesForecastingInPython/blob/master/data/GOOGL.csv
+  provider: Marco Peixeiro's public companion repository
+  access_method: Public CSV in the documented companion repository
+  availability: public
+  license_or_terms: Apache-2.0 license in the companion repository; market-data origin and redistribution rights are not asserted.
+  contents: Historical Google/Alphabet equity-price observations.
+  status: book_curated
+associated_cases:
+  - name: Google stock-price forecasting
+    decision_or_problem: Compare time-series forecasts for an observed market-price series.
+    relationship_to_dataset: The README names Google daily stock price as a real-life project dataset.
+sources:
+  - role: book_identity
+    title: Manning — Time Series Forecasting in Python
+    url: https://www.manning.com/books/time-series-forecasting-in-python-book
+    access_date: 2026-09-29
+    notes: Official page links source code on GitHub.
+  - role: dataset_and_case
+    title: Companion repository README and GOOGL.csv
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+    access_date: 2026-09-29
+    notes: Identifies the stock-price example and provides the file.
+  - role: repository_terms
+    title: Apache-2.0 license
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython/blob/master/LICENSE.txt
+    access_date: 2026-09-29
+    notes: Governs the companion-repository distribution only.
+possible_analytical_questions:
+  - How stable are forecasts across volatile periods?
+  - What claims are inappropriate from a single security series?
+limitations:
+  - The original market-data provider is not stated, and forecasting is not investment advice.
+curricular_signal:
+  analytics_capabilities: [Evaluate a forecast under a changing business series.]
+  contributing_disciplines:
+    - Statistics: contributes time-series models.
+  cautions:
+    - Avoid presenting the exercise as trading guidance.
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_companion_distribution
+  original_external_data_provenance: not_asserted
+  real_world_status: not_established
+  benchmark_connection: not_found

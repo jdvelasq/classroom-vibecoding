@@ -1,0 +1,61 @@
+id: manning/time-series-forecasting-in-python/australian-antidiabetic-drug-sales
+name: Australian antidiabetic drug sales
+aliases: [AusAntidiabeticDrug]
+type: book_dataset
+book_source:
+  publisher: Manning
+  title: Time Series Forecasting in Python
+  edition: null
+  official_url: https://www.manning.com/books/time-series-forecasting-in-python-book
+  companion_sources:
+    - title: Official author companion repository
+      url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+      relationship: Linked as source code by Manning; identifies the book's forecasting projects.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/marcopeix/TimeSeriesForecastingInPython/blob/master/data/AusAntidiabeticDrug.csv
+  provider: Marco Peixeiro's public companion repository
+  access_method: Public CSV in the documented companion repository
+  availability: public
+  license_or_terms: Apache-2.0 license in the companion repository; original external provenance is not asserted.
+  contents: Monthly Australian antidiabetic-drug prescription volume time series.
+  status: book_curated
+associated_cases:
+  - name: Forecasting antidiabetic drug prescriptions in Australia
+    decision_or_problem: Forecast future prescription volume while accounting for trend and seasonality.
+    relationship_to_dataset: The repository README identifies this as the chapter 11 capstone project.
+sources:
+  - role: book_identity
+    title: Manning — Time Series Forecasting in Python
+    url: https://www.manning.com/books/time-series-forecasting-in-python-book
+    access_date: 2026-09-29
+    notes: Official page links the companion repository.
+  - role: dataset_and_case
+    title: Companion repository README and CSV
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython
+    access_date: 2026-09-29
+    notes: Names the Australian antidiabetic-drug capstone and provides the CSV.
+  - role: repository_terms
+    title: Apache-2.0 license
+    url: https://github.com/marcopeix/TimeSeriesForecastingInPython/blob/master/LICENSE.txt
+    access_date: 2026-09-29
+    notes: Governs the companion-repository distribution.
+possible_analytical_questions:
+  - What seasonal pattern is present in prescription volume?
+  - Which forecast horizon remains decision-useful?
+limitations:
+  - Original external provider and collection methodology are not documented by the companion repository.
+curricular_signal:
+  analytics_capabilities: [Frame and validate a seasonal demand forecast.] 
+  contributing_disciplines: [Statistics: contributes time-series models.]
+  cautions: [Do not infer clinical outcomes from prescription volume.]
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_companion_distribution
+  original_external_data_provenance: not_asserted
+  real_world_status: not_established
+  benchmark_connection: not_found
