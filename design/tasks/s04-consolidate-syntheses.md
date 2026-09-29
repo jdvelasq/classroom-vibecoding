@@ -193,6 +193,13 @@ Provide a compact mapping from major consolidated findings to the relevant
 S01--S03 synthesis files and, where available in those files, their underlying
 benchmark or provider evidence.
 
+Assign every consolidated finding a stable identifier formatted `S04.FNN`.
+Use the identifier in the traceability map and in the finding's statement or
+table row. These identifiers are the required upstream references for later
+course-design and audit tasks; preserve them across regenerations whenever the
+finding's meaning remains materially unchanged. When a finding is added,
+retired, split, or merged, record that change in the scope-and-method section.
+
 ---
 
 ## Quality checks
@@ -212,6 +219,8 @@ Before completing the task, verify that:
 - no final curriculum, course structure, technology stack, or assessment was
   designed;
 - the output remains traceable to all required S01--S03 syntheses;
+- every major consolidated finding has a stable `S04.FNN` identifier suitable
+  for downstream bidirectional audit traceability;
 - exactly one consolidated output file was created.
 
 ---
