@@ -119,3 +119,33 @@ separate `book_source.imprint` field when applicable.
 Report books and editions inspected; new or revised publications found;
 companion-package decisions; records created; legacy entries removed; duplicates
 not created; excluded leads and failed gates; and benchmark connections.
+
+---
+
+## Authoritative dataset-collection contract
+
+This section supersedes every earlier case-oriented, multi-book, inventory, or
+legacy-migration instruction. The catalog unit is a **dataset**, not a case.
+Automatically enumerate current first-party CRC Press listings and documented
+book pages; retain published Analytics-relevant books with a bounded analytical
+case or book-specific data lead, excluding prepublication and generic tool-only
+titles. Do not ask the user to choose scope, URL, or book.
+
+Sort eligible books without `catalog/crc-press/<book-slug>/` by official
+publication date descending, then title, and process **exactly one**. Its
+directory marks that book reviewed, including when legacy YAMLs are present.
+Inspect all documented companion material. Create one `type: book_dataset` YAML
+per passing dataset at `catalog/crc-press/<book-slug>/<dataset-slug>.yaml`, or
+create only `.gitkeep` in that directory when none passes. Never create
+`book.yaml`, a review ledger, publisher inventory, case-only YAML, or placeholder.
+
+Each record requires `book_source`, `dataset`, `associated_cases`, `sources`,
+`possible_analytical_questions`, `limitations`, `curricular_signal`,
+`benchmark_connections`, and `verification`; data provider, access route,
+contents, and terms must be concrete. A code license is not evidence of
+third-party data rights. Search all `catalog/` for duplicates; cross-link only
+when the CRC Press association adds selection value. Do not modify legacy records.
+
+Complete only after auditing created YAMLs and exhausting the selected book's
+documented companions. Report its files or `.gitkeep`, exclusions, duplicates,
+inaccessible sources, scope URLs, and access date.

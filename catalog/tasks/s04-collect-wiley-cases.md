@@ -217,3 +217,39 @@ Report:
 - duplicates intentionally not created, with their existing catalog paths;
 - excluded leads and the verification condition each failed;
 - local benchmark connections found or not found.
+
+---
+
+## Authoritative dataset-collection contract
+
+This section supersedes any earlier case-oriented, multi-book, inventory, or
+legacy-migration instruction in this task.
+
+The catalog unit is a **dataset**, not a case. On each execution, automatically
+enumerate current first-party Wiley listings and documented Wiley book pages;
+filter to published Analytics-relevant books with a bounded analytical case or
+book-specific data lead; exclude MEAP/prepublication and generic tool-only
+titles. Do not ask the user for a category, URL, or book choice.
+
+Sort eligible Wiley books without `catalog/wiley/<book-slug>/` by official
+publication date descending, title as tie-breaker, and process **exactly one**.
+Its directory is the persistent marker that the book has been reviewed, even
+when it contains legacy records. Inspect all documented companion materials.
+Create one `type: book_dataset` YAML for each dataset that meets the verification
+gate at `catalog/wiley/<book-slug>/<dataset-slug>.yaml`; otherwise create only
+`catalog/wiley/<book-slug>/.gitkeep`. Do not create `book.yaml`, a review
+ledger, a publisher inventory, a case-only YAML, or a placeholder.
+
+Every dataset YAML must contain `book_source`, `dataset`, `associated_cases`,
+`sources`, `possible_analytical_questions`, `limitations`,
+`curricular_signal`, `benchmark_connections`, and `verification`. Dataset
+provider, access route, contents, and terms must be concrete. A code license
+does not establish third-party data rights. Search all of `catalog/` first;
+cross-link an equivalent dataset only when the Wiley association adds useful
+selection information. Do not modify legacy entries during collection.
+
+Finish only after auditing every created YAML and exhausting the selected
+book's documented companion material. The next execution selects the next
+unreviewed eligible Wiley book. Report the selected book, created files or
+`.gitkeep`, exclusions, duplicates, inaccessible sources, scope URLs, and
+access date.
