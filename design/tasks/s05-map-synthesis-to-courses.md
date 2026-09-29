@@ -12,11 +12,11 @@ courses:
 - Posgrado: Analítica descriptiva y visualización de datos; Analítica
   predictiva; Analítica prescriptiva; Productos de datos.
 
-This is a curriculum-architecture task. It determines each course's principal
-and recurring responsibility for Analytics capabilities; it is not yet a
-weekly plan, a theory redesign, a workshop design, a lab design, or a final
-international audit. Its construction must itself be auditable and
-reproducible from the declared local inputs.
+This is a content-allocation task. It determines each course's principal and
+recurring responsibility for Analytics capabilities; it is not a weekly plan,
+theory redesign, workshop design, lab design, assessment design, or final
+international audit. Its construction must itself be auditable and reproducible
+from the declared local inputs.
 
 ## Governing constraints
 
@@ -35,9 +35,9 @@ reproducible from the declared local inputs.
 - Big Data Analytics is an external course outside this design authority. It
   may be named only as an interface or scale boundary, never designed as a
   hidden component of these six courses.
-- The current design scope is the future layer of guided in-person workshops.
-  Theory, flipped-class materials, and evaluative labs are incomplete and
-  must be marked pending rather than inferred.
+- Do not infer pedagogical format, contact hours, sequencing, activities,
+  assessments, portfolios, tools, or delivery modality from a content
+  allocation. Those are separate design stages.
 
 ## Source policy
 
@@ -61,12 +61,11 @@ It must include:
    synthesis, with contributing disciplines described only functionally;
 3. a course-responsibility matrix using explicit labels for principal,
    recurring, contextual, and out-of-scope treatment;
-4. a short profile for every course, including its distinctive responsibility,
-   what it deliberately does not own, and its relationship to portfolio-ready
-   guided workshops;
-5. shared progression and learner-access rules; and
+4. a short profile for every course, including its distinctive content
+   responsibility and what it deliberately does not own;
+5. explicit content boundaries and unresolved scope decisions; and
 6. an audit-readiness boundary identifying what the map can support and what
-   remains pending until theory and evaluative labs are designed; and
+   remains pending until later design stages; and
 7. a construction record containing: task identifier and execution date;
    exact local input path; source revision or content fingerprint when
    available; capability-allocation rules; section-level traceability to the
@@ -81,7 +80,8 @@ Before completion, verify that:
 - no contributing discipline becomes a course-organizing identity;
 - optional undergraduate courses are not assumed by postgraduate courses;
 - the map does not claim that any course already earns a 10/10 audit score;
-- workshop scope is not confused with evaluative labs or theory.
+- pedagogical format, assessment, and delivery design are not inferred or
+  designed.
 - all non-trivial course allocations have a recorded rationale traceable to
   `design/synthesis/s04-synthesis.md`;
 - the construction record is sufficient for a later independent audit or
