@@ -87,6 +87,26 @@ choose a scope as a substitute for this work.
 
 ---
 
+## Autonomous execution loop
+
+Execute the full collection loop in one run. Do not ask the user to choose a
+book, approve a candidate, provide the next URL, or tell you to continue.
+
+For every newly discovered book, in the same execution:
+
+1. inspect the official book page and every documented companion source;
+2. enumerate its accessible datasets and associated analytical cases;
+3. create one dataset YAML for each dataset that passes the verification gate;
+4. create `.gitkeep` when no dataset passes; and
+5. audit the new files before moving to the next book.
+
+Continue until every book newly discovered in the automatic publisher search is
+represented by either at least one dataset YAML or `.gitkeep`. Only then return
+the final report. A source that cannot be reached is an explicit partial result,
+not a reason to delegate the next step to the user.
+
+---
+
 ## Periodic collection behavior
 
 This task is intended to be run repeatedly. The existing book directories in
