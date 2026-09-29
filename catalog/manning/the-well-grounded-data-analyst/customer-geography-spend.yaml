@@ -1,0 +1,85 @@
+id: manning/the-well-grounded-data-analyst/customer-geography-spend
+name: Customer geography and spending comparison
+aliases:
+  - Where are your customers based?
+  - The Well-Grounded Data Analyst Project 1
+type: book_curated_case
+
+book_source:
+  publisher: Manning
+  title: The Well-Grounded Data Analyst
+  edition: null
+  official_url: https://www.manning.com/books/the-well-grounded-data-analyst
+  companion_sources:
+    - title: Chapter 2 example-solution notebook
+      url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/chapter-2/Chapter%202%20example%20solution.ipynb
+      relationship: Names the project and its research question.
+  access_date: 2026-09-29
+
+case:
+  decision_or_problem: >
+    How should customer-address data be cleaned and interpreted to compare
+    customer spending in London with spending in the rest of the United Kingdom?
+  analytical_relevance: >
+    The case connects unstructured address cleaning, geographic encoding,
+    aggregation, and cautious interpretation of a location-based comparison.
+  scope: Book-curated customer-address reconstruction; not evidence about a named real company.
+
+datasets:
+  - name: Chapter 2 addresses and customer-spend data
+    relationship_to_case: >
+      The notebook reads addresses.csv, containing customer address text and
+      spend, then constructs city-level total customer spend.
+    source_url: https://github.com/davidasboth/the-well-grounded-data-analyst/tree/main/chapter-2/data
+    provider: David Asboth's documented companion repository for the Manning book
+    access_method: Public companion-repository files
+    availability: public
+    license_or_terms: >
+      The companion repository is MIT licensed. It does not establish an
+      external provider for the records, so the data are book-curated.
+    access_date: 2026-09-29
+    contents: Customer identifiers, multiline UK addresses, and customer spend.
+
+sources:
+  - role: book_identity
+    title: Manning — The Well-Grounded Data Analyst
+    url: https://www.manning.com/books/the-well-grounded-data-analyst
+    access_date: 2026-09-29
+    notes: Official book page.
+  - role: case_definition
+    title: Chapter 2 example-solution notebook
+    url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/chapter-2/Chapter%202%20example%20solution.ipynb
+    access_date: 2026-09-29
+    notes: Defines the London-versus-rest-of-UK spending question and city-level output.
+  - role: repository_terms
+    title: Companion repository MIT License
+    url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/LICENSE
+    access_date: 2026-09-29
+    notes: Governs repository distribution, not external real-world data provenance.
+
+possible_analytical_questions:
+  - Which address patterns prevent reliable city extraction?
+  - How does total customer spend differ between London and other UK cities?
+  - Which geographic assumptions materially change the comparison?
+
+curricular_signal:
+  analytics_capabilities:
+    - Convert unstructured address data into a defensible geographic analysis variable.
+    - Aggregate customer value while stating geographic-classification limits.
+  contributing_disciplines:
+    - Data Engineering: contributes text cleaning and reproducible transformation.
+  cautions:
+    - Records are book-curated and customer-like fields may be sensitive.
+    - Address text alone can create ambiguous or false city classifications.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_book_curated_distribution
+  original_external_data_provenance: not_asserted
+  real_world_status: not_established
+  benchmark_connection: not_found
