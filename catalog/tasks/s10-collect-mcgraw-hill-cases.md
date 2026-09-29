@@ -101,6 +101,36 @@ distinct subsource. Inspect `catalog/mcgraw-hill/` first, then use first-party
 book pages and documented book-specific repositories or author materials to
 find absent books and recent editions.
 
+## Exhaustive-completion rule
+
+Do not stop after finding the first qualifying case. A run may report this
+publisher review as **complete** only after it has exhausted the documented
+search scope available on the access date:
+
+1. Enumerate the relevant books and editions in the publisher's current
+   first-party catalog, including pagination or category listings where used.
+2. Compare that set with the book paths already represented under the
+   publisher's `catalog/` directory and identify absent books and newer
+   editions.
+3. For every relevant absent or revised book, inspect the documented companion
+   material far enough to enumerate its named projects or cases with concrete
+   data.
+4. Classify every candidate as a created case record, an existing cross-source
+   duplicate, or an excluded lead with the exact unmet verification condition.
+
+Completion is a bounded claim about that documented publisher catalog at the
+review date; it is not a claim that every book ever published by the source has
+been found. If a catalog page, companion source, or candidate cannot be
+inspected, report the run as **partial**, name the unreviewed scope, and do not
+say the publisher has been exhausted.
+
+The final response must list the reviewed books and editions, all created case
+files, duplicates, exclusions, and any unreviewed or inaccessible material. No
+book-level YAML, publisher inventory, or placeholder file may be created to
+record that coverage.
+
+---
+
 ## Output
 
 Create only verified, nonduplicate records at:
