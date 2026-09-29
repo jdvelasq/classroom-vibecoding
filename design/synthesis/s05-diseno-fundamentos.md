@@ -1,53 +1,47 @@
 # Diseño de contenido: Fundamentos de analítica
 
-## Propósito y límites
+## Propósito y alcance
 
-Curso optativo de pregrado que presenta Analytics como práctica de conectar problema, evidencia, interpretación y acción. No es prerrequisito de ningún curso ni una introducción abreviada a Estadística, Machine Learning, BI u Operations Research.
+Curso optativo de pregrado que introduce Analytics como práctica integrada de problema, evidencia, interpretación y acción. No es prerrequisito de ningún curso.
 
-## Trazabilidad directa: asignación de contenido
+## Al finalizar el curso, el estudiante es capaz de…
 
-| Identificador | Rol | Hallazgo S04 | Razón |
+1. **formular una pregunta analítica a partir de una situación, sus actores, decisiones, supuestos y criterios de éxito** — `fundamentos.C01`; S04.F01, S04.F02.
+2. **examinar datos y evidencia descriptiva para reconocer patrones, calidad, límites e incertidumbre** — `fundamentos.C02`; S04.F04, S04.F05.
+3. **interpretar y comunicar hallazgos con gráficos, argumentos y recomendaciones proporcionales a la evidencia** — `fundamentos.C03`; S04.F07.
+4. **reconocer implicaciones de integridad, privacidad, sesgo y reproducibilidad en el uso de datos** — `fundamentos.C04`; S04.F08.
+5. **distinguir el papel funcional de Estadística, programación, BI, ML y optimización dentro de Analytics** — `fundamentos.C05`; S04.F03, S04.F10.
+
+Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
+
+## Fronteras de contenido
+
+No desarrolla ingeniería de datos, inferencia formal, modelado predictivo, optimización ni productos de datos; esas son extensiones o responsabilidades de otros cursos.
+
+## Trazabilidad directa
+
+| Identificador | Rol | S04 | Razón de asignación |
 |---|---|---|---|
-| fundamentos.C01 | Principal | S04.F01 | Establece la identidad integrada de Analytics. |
-| fundamentos.C02 | Principal | S04.F02 | Desarrolla el paso de problema y contexto a pregunta analítica. |
-| fundamentos.C03 | Recurrente | S04.F04 | Usa aptitud y calidad de datos como condición del análisis. |
-| fundamentos.C04 | Principal | S04.F05 | Sitúa exploración, descripción y evidencia como base del juicio analítico. |
-| fundamentos.C05 | Contextual | S04.F06 | Reconoce selección de métodos sin asumir profundidad predictiva o prescriptiva. |
-| fundamentos.C06 | Principal | S04.F07 | Conecta interpretación, comunicación y decisión. |
-| fundamentos.C07 | Recurrente | S04.F08 | Hace visible responsabilidad, límites y reproducibilidad. |
-| fundamentos.C08 | Contextual | S04.F09 | Reconoce integración auténtica sin diseñar actividades. |
-| fundamentos.C09 | Contextual | S04.F10 | Distingue capacidades de herramientas. |
-| fundamentos.C10 | Contextual | S04.F11 | Declara su aporte trazable al mapa institucional. |
-| fundamentos.C11 | Contextual | S04.F03 | Mantiene Estadística, ML, BI y otras disciplinas como contribuciones funcionales. |
-
-## Perfil distintivo y fronteras
-
-Su responsabilidad distintiva es dar lenguaje común para juzgar si una situación admite Analytics y cómo la evidencia puede informar acción. No posee ingeniería de datos, modelado predictivo avanzado, optimización, desarrollo de productos ni Big Data Analytics.
+| `fundamentos.C01` | Principal | S04.F01, S04.F02 | Identidad y formulación inicial. |
+| `fundamentos.C02` | Principal | S04.F04, S04.F05 | Evidencia descriptiva inicial. |
+| `fundamentos.C03` | Principal | S04.F07 | Interpretación y comunicación. |
+| `fundamentos.C04` | Recurrente | S04.F08 | Uso responsable. |
+| `fundamentos.C05` | Contextual | S04.F03, S04.F10 | Límites disciplinarios y tecnológicos. |
 
 ## Trazabilidad inversa
 
-| Hallazgo S04 aplicable | Identificadores de contenido |
+| Hallazgo S04 | Capacidades del curso |
 |---|---|
-| F01–F03 | fundamentos.C01–C02, fundamentos.C11 |
-| F04–F05 | fundamentos.C03–C04 |
-| F06–F11 | fundamentos.C05–C10 |
 
 
 ## Registro de construcción
 
-- Tarea: `S05`; fecha: 2026-09-29.
-- Insumo único: `design/synthesis/s04-synthesis.md`.
-- Huella SHA-256: `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`.
-- Secciones S04 consultadas: §§1–10; en particular, los hallazgos `S04.F01`–`S04.F11`.
-- Regla: asignar una responsabilidad principal por capacidad cuando sea posible; usar tratamiento recurrente o contextual sin convertir ningún curso en prerrequisito; mantener las disciplinas contribuyentes subordinadas a Analytics.
-- Hallazgos S04 considerados: `S04.F01`–`S04.F11`.
-- Cambio: regeneración completa desde la huella actual; reemplaza identificadores no estables de la versión anterior.
-
-- Asignados: `S04.F01`–`S04.F11`.
-- Ningún hallazgo queda excluido: los tratamientos contextuales delimitan, pero no sustituyen, responsabilidades principales de otros cursos.
-- Control: conserva opcionalidad de pregrado; no presupone formato pedagógico ni evaluación.
-
+- Tarea: `S05`; curso: `fundamentos`; fecha: 2026-09-29.
+- Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`).
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
+- Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 
 ## Preparación para auditoría
 
-Este documento soporta una auditoría de asignación de contenido y su retorno a S04. No demuestra aún resultados de aprendizaje, programa-calendario, talleres, LAB, evaluación, entrega, herramientas o modalidad. Esos artefactos deberán materializar la cadena institucional de `S04.F11` en la siguiente etapa.
+El documento permite trazar cada capacidad final a S04 y, en posgrado, al perfil vigente de la maestría. No afirma que el curso ya cumpla una auditoría completa ni materializa todavía la evidencia requerida por `S04.F11`.

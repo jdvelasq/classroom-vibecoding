@@ -1,53 +1,58 @@
 # Diseño de contenido: Analítica descriptiva y visualización de datos
 
-## Propósito y límites
+## Propósito y alcance
 
-Curso de posgrado autónomo sobre explorar, describir, visualizar, diagnosticar e interpretar evidencia observada para apoyar decisiones. No presupone los cursos de pregrado y no es una secuencia completa de Estadística ni un curso de dashboards.
+Curso autónomo de posgrado que convierte datos observados en descripciones, diagnósticos e interpretaciones útiles para decidir; se alinea con el perfil de egreso vigente de la maestría.
 
-## Trazabilidad directa: asignación de contenido
++## Perfil de ingreso y condición de entrada
 
-| Identificador | Rol | Hallazgo S04 | Razón |
+El programa admite profesionales de trayectorias cuantitativas preferentes
+(ingeniería, matemáticas, estadística, economía, administración, computación y
+afines) y de otros campos que acrediten preparación equivalente en análisis
+cuantitativo o manejo de información. La nivelación matemática, estadística o
+computacional que eventualmente determine el Comité Asesor es una condición
+institucional de acompañamiento; no es un prerrequisito entre estos seis cursos
+ni autoriza a suponer una cohorte homogénea.
+
+
+## Al finalizar el curso, el estudiante es capaz de…
+
+1. **formular métricas, comparaciones y preguntas descriptivas que respondan a un contexto de decisión** — `descriptiva.C01`; S04.F01, S04.F02.
+2. **explorar distribuciones, relaciones, segmentaciones, tendencias, atípicos y calidad de datos antes de concluir** — `descriptiva.C02`; S04.F04, S04.F05.
+3. **construir e interpretar representaciones visuales que comuniquen patrones, incertidumbre y límites** — `descriptiva.C03`; S04.F05, S04.F07, S04.F10.
+4. **distinguir descripción, diagnóstico, asociación y causalidad no demostrada al sustentar recomendaciones** — `descriptiva.C04`; S04.F05, S04.F06.
+5. **documentar y comunicar análisis de forma responsable para usuarios y decisores** — `descriptiva.C05`; S04.F07, S04.F08.
+
+Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
+
+## Fronteras de contenido
+
+No posee predicción, optimización, ingeniería de datos ni construcción integral de productos; tampoco es una secuencia completa de Estadística o capacitación en una plataforma BI.
+
+## Trazabilidad directa
+
+| Identificador | Rol | S04 | Razón de asignación |
 |---|---|---|---|
-| descriptiva.C01 | Recurrente | S04.F01 | Mantiene el vínculo entre observación, decisión y acción. |
-| descriptiva.C02 | Recurrente | S04.F02 | Formula preguntas y criterios de interpretación. |
-| descriptiva.C03 | Recurrente | S04.F04 | Exige datos aptos y límites de calidad explícitos. |
-| descriptiva.C04 | Principal | S04.F05 | Posee exploración, descripción, visualización, incertidumbre e interpretación. |
-| descriptiva.C05 | Recurrente | S04.F06 | Evalúa métodos descriptivos/diagnósticos por adecuación. |
-| descriptiva.C06 | Principal | S04.F07 | Posee comunicación visual y narrativa de evidencia. |
-| descriptiva.C07 | Recurrente | S04.F08 | Incluye integridad, responsabilidad y reproducibilidad. |
-| descriptiva.C08 | Contextual | S04.F09 | Reconoce la integración de casos y evidencia sin diseñarla. |
-| descriptiva.C09 | Recurrente | S04.F10 | Separa principios de visualización de productos BI concretos. |
-| descriptiva.C10 | Contextual | S04.F11 | Conserva trazabilidad curricular del contenido. |
-| descriptiva.C11 | Contextual | S04.F03 | Mantiene Estadística y BI como contribuciones funcionales, no identidades del curso. |
-
-## Perfil distintivo y fronteras
-
-Su responsabilidad distintiva es transformar datos observados en descripciones, diagnósticos y comunicaciones defendibles. No posee predicción, optimización, construcción de productos, infraestructura de datos ni Big Data Analytics.
+| `descriptiva.C01` | Principal | S04.F01, S04.F02 | Finalidad analítica descriptiva. |
+| `descriptiva.C02` | Principal | S04.F04, S04.F05 | Exploración y diagnóstico. |
+| `descriptiva.C03` | Principal | S04.F05, S04.F07, S04.F10 | Visualización e interpretación. |
+| `descriptiva.C04` | Principal | S04.F05, S04.F06 | Límites del razonamiento. |
+| `descriptiva.C05` | Recurrente | S04.F07, S04.F08 | Comunicación responsable. |
 
 ## Trazabilidad inversa
 
-| Hallazgo S04 aplicable | Identificadores de contenido |
+| Hallazgo S04 | Capacidades del curso |
 |---|---|
-| F01–F03 | descriptiva.C01–C02, descriptiva.C11 |
-| F04–F07 | descriptiva.C03–C06 |
-| F08–F11 | descriptiva.C07–C10 |
 
 
 ## Registro de construcción
 
-- Tarea: `S05`; fecha: 2026-09-29.
-- Insumo único: `design/synthesis/s04-synthesis.md`.
-- Huella SHA-256: `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`.
-- Secciones S04 consultadas: §§1–10; en particular, los hallazgos `S04.F01`–`S04.F11`.
-- Regla: asignar una responsabilidad principal por capacidad cuando sea posible; usar tratamiento recurrente o contextual sin convertir ningún curso en prerrequisito; mantener las disciplinas contribuyentes subordinadas a Analytics.
-- Hallazgos S04 considerados: `S04.F01`–`S04.F11`.
-- Cambio: regeneración completa desde la huella actual; reemplaza identificadores no estables de la versión anterior.
-
-- Asignados: `S04.F01`–`S04.F11`.
-- Ningún hallazgo queda excluido; `descriptiva.C04` y `descriptiva.C06` son principales.
-- Control: su autonomía no convierte nivelación, pedagogía o evaluación en parte de esta asignación.
-
+- Tarea: `S05`; curso: `descriptiva`; fecha: 2026-09-29.
+- Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`) y `design/program-context/maestria-en-analitica.pdf` (SHA-256 `844fcddb2381c8ca245a8f6b34f8e73883e6475cc7518e5190d97cbbdfe17d7f`).
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
+- Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 
 ## Preparación para auditoría
 
-Este documento soporta una auditoría de asignación de contenido y su retorno a S04. No demuestra aún resultados de aprendizaje, programa-calendario, talleres, LAB, evaluación, entrega, herramientas o modalidad. Esos artefactos deberán materializar la cadena institucional de `S04.F11` en la siguiente etapa.
+El documento permite trazar cada capacidad final a S04 y, en posgrado, al perfil vigente de la maestría. No afirma que el curso ya cumpla una auditoría completa ni materializa todavía la evidencia requerida por `S04.F11`.

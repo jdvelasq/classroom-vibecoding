@@ -14,8 +14,12 @@ courses:
   predictiva; Analítica prescriptiva; Productos de datos.
 
 This is a course-content design task. It determines each course's principal and
-recurring responsibility for Analytics capabilities; it is not a weekly plan,
-theory redesign, workshop design, lab design, assessment design, or final
+recurring responsibility for Analytics capabilities **and translates that
+responsibility into a macro-level course promise** stated as “Al finalizar el
+curso, el estudiante es capaz de…”. These statements identify integrated
+capabilities and their broad content objects, not a detailed inventory of
+techniques, algorithms, tools, units, or weeks. It is not a weekly plan, theory
+redesign, workshop design, lab design, assessment design, or final
 international audit. Its construction must itself be auditable and reproducible
 from the declared local inputs.
 
@@ -42,8 +46,24 @@ from the declared local inputs.
 
 ## Source policy
 
-Use only `design/synthesis/s04-synthesis.md` as the evidence base. Do not conduct
-external research and do not modify the benchmark corpus or S01--S04 outputs.
+Use these local inputs only:
+
+- `design/synthesis/s04-synthesis.md`, the evidence-backed Analytics
+  synthesis; and
+- `design/program-context/maestria-en-analitica.pdf`, the current
+  institutional programme document.
+
+For the four postgraduate courses, treat the programme document as the primary
+internal reference for programme purpose, graduate profile, depth,
+research/deepening modalities, and RAP/RAA alignment. Treat S04 as the
+disciplinary boundary and cross-course evidence base. For the two optional
+undergraduate courses, use S04; do not infer that the master’s programme
+document creates a prerequisite. If the sources appear to conflict, preserve
+Analytics as the curricular identity and record the tension rather than
+silently resolving it.
+
+Do not conduct external research and do not modify the benchmark corpus or
+S01--S04 outputs.
 
 Every allocation in the map must be traceable to a finding or constraint in
 the synthesis. Preserve a decision log inside the output: state the source
@@ -66,16 +86,25 @@ Each file is a **course-content design document** and must include:
 
 1. `# Diseño de contenido: <nombre del curso>`;
 2. purpose and scope boundaries;
-3. the applicable map-ready Analytics capabilities derived from the
+3. for postgraduate courses, an explicit **entry-profile boundary** grounded in
+   the programme document: what heterogeneous professional trajectories are
+   admitted, what equivalent preparation may be expected, and how institutional
+   leveling differs from a prerequisite among these six courses;
+4. the applicable map-ready Analytics capabilities derived from the
    synthesis, with contributing disciplines described only functionally;
-4. the course's responsibility for each applicable capability, using explicit
+5. a section headed **“Al finalizar el curso, el estudiante es capaz de…”**
+   containing a concise set of macro-level, integrated capability statements.
+   Each statement must identify its broad content object and cite the relevant
+   S04 finding identifiers. Do not decompose these statements into detailed
+   algorithm, software, activity, unit, or week inventories;
+6. the course's responsibility for each applicable capability, using explicit
    labels for principal, recurring, contextual, and out-of-scope treatment;
-5. a profile of that course, including its distinctive content responsibility
+7. a profile of that course, including its distinctive content responsibility
    and what it deliberately does not own;
-6. explicit content boundaries and unresolved scope decisions; and
-7. an audit-readiness boundary identifying what the document can support and what
+8. explicit content boundaries and unresolved scope decisions; and
+9. an audit-readiness boundary identifying what the document can support and what
    remains pending until later design stages; and
-8. a construction record containing: task identifier, course identifier, and execution date;
+10. a construction record containing: task identifier, course identifier, and execution date;
    exact local input path; source revision or content fingerprint when
    available; capability-allocation rules; section-level traceability to the
    synthesis; unresolved decisions; and the result of the quality checks.
@@ -112,6 +141,9 @@ Before completion, verify that:
   synthesis a visible home;
 - no course is made a prerequisite by implication;
 - no contributing discipline becomes a course-organizing identity;
+- each course names a clear macro-level final capability rather than only
+  generic labels or roles;
+- detailed techniques, tools, activities, units, and weeks remain deferred;
 - optional undergraduate courses are not assumed by postgraduate courses;
 - the map does not claim that any course already earns a 10/10 audit score;
 - pedagogical format, assessment, and delivery design are not inferred or
