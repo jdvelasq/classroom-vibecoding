@@ -1,0 +1,93 @@
+id: manning/practical-data-science-with-r-second-edition/us-census-pums-income-modeling
+name: U.S. Census PUMS income modeling
+aliases:
+  - Census Income Modeling
+  - PUMS Income Regression
+type: real_world_case
+
+book_source:
+  publisher: Manning
+  title: Practical Data Science with R, Second Edition
+  edition: Second Edition
+  official_url: https://www.manning.com/books/practical-data-science-with-r-second-edition
+  companion_sources:
+    - title: WinVector PDSwR2 companion repository
+      url: https://github.com/WinVector/PDSwR2
+      relationship: Repository identifies itself as code, data, and examples for the second edition.
+    - title: PUMS income-regression example
+      url: https://github.com/WinVector/PDSwR2/blob/main/CodeExamples/c07_Linear_and_logistic_regression/00188_example_7.1_of_section_7.1.1.R
+      relationship: Book companion implementation of the income-modeling example.
+  access_date: 2026-09-29
+
+historical_context: >
+  This is a contemporary public-data case, not a historical case. The record uses
+  the shared case schema so that its Census PUMS provenance and limitations remain
+  comparable with other catalog cases.
+
+case:
+  decision_or_problem: >
+    How can a defined public-use population be used to estimate and communicate
+    variation in personal income from recorded demographic, education, and
+    employment characteristics, without turning estimates into individual judgments?
+  analytical_relevance: >
+    The case connects population sampling, data preparation, modelling, evaluation,
+    interpretation, and responsible communication for a consequential socioeconomic outcome.
+
+datasets:
+  - name: American Community Survey Public Use Microdata Sample (PUMS)
+    relationship_to_case: The book companion derives a working-age, full-time employee sample from Census PUMS data for income modelling.
+    source_url: https://www.census.gov/programs-surveys/acs/microdata.html
+    provider: U.S. Census Bureau
+    access_method: Public files through data.census.gov or the Census FTP site
+    availability: public
+    license_or_terms: >
+      Census identifies these as public-use microdata files, available free of charge,
+      with disclosure protection; use and any redistribution decision must retain the
+      applicable Census documentation and confidentiality context.
+    access_date: 2026-09-29
+    contents: >
+      Individual and housing-unit sample records with disclosure protection. The book
+      example uses a prepared subset with income, age, sex, education, and class of
+      worker. It is a sample rather than a complete population and its geography is
+      intentionally limited by public-use disclosure protection.
+
+sources:
+  - role: dataset_provenance
+    title: U.S. Census Bureau — Public Use Microdata Sample (PUMS)
+    url: https://www.census.gov/programs-surveys/acs/microdata.html
+    access_date: 2026-09-29
+    notes: Documents public access, disclosure protection, and available access routes.
+  - role: data_terms
+    title: PUMS data access and documentation
+    url: https://www.census.gov/programs-surveys/acs/microdata.html
+    access_date: 2026-09-29
+    notes: Identifies PUMS as free public-use microdata and points to its documentation.
+  - role: dataset_provenance
+    title: WinVector PDSwR2 companion repository
+    url: https://github.com/WinVector/PDSwR2
+    access_date: 2026-09-29
+    notes: Documents the book companion and its PUMS example directory.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - Which sample-definition and transformation choices materially affect an income model?
+  - How should predicted income and error be communicated without inferring individual worth or causation?
+
+curricular_signal:
+  analytics_capabilities:
+    - Define a population and assess the fitness and limits of a public-use sample.
+    - Evaluate and communicate model outputs for a socioeconomic outcome responsibly.
+  contributing_disciplines:
+    - Statistics: supports sampling and uncertainty reasoning in service of the Analytics problem.
+  cautions:
+    - Income is sensitive; predictions should not be framed as individual valuation or causal explanation.
+    - Public-use disclosure protection, sampling, and restricted geography limit interpretation.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

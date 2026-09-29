@@ -1,0 +1,94 @@
+id: manning/practical-data-science-with-r-second-edition/us-natality-birth-outcomes
+name: U.S. natality birth-outcomes modeling
+aliases:
+  - Neonatal Risk Prediction
+  - Birth Weight Gradient Boosting
+  - CDC natality modelling
+type: real_world_case
+
+book_source:
+  publisher: Manning
+  title: Practical Data Science with R, Second Edition
+  edition: Second Edition
+  official_url: https://www.manning.com/books/practical-data-science-with-r-second-edition
+  companion_sources:
+    - title: WinVector PDSwR2 companion repository
+      url: https://github.com/WinVector/PDSwR2
+      relationship: Repository identifies itself as code, data, and examples for the second edition.
+    - title: CDC natality preparation and modelling materials
+      url: https://github.com/WinVector/PDSwR2/tree/main/CDC
+      relationship: Book companion materials for natality risk and birth-weight examples.
+  access_date: 2026-09-29
+
+historical_context: >
+  This is a contemporary public-data case, not a historical case. The record uses
+  the shared case schema so that its NCHS/CDC provenance and use restrictions remain
+  comparable with other catalog cases.
+
+case:
+  decision_or_problem: >
+    How can public natality records be prepared and analyzed to describe or estimate
+    birth outcomes while respecting data-use restrictions, sensitive health context,
+    and the difference between prediction and clinical decision-making?
+  analytical_relevance: >
+    The case links source documentation, missing and sentinel values, outcome
+    definition, model evaluation, and ethical limits on using predictive health data.
+
+datasets:
+  - name: National Vital Statistics System public-use birth data files
+    relationship_to_case: The book companion uses a prepared sample of CDC/NCHS natality records for neonatal-risk and birth-weight modelling.
+    source_url: https://www.cdc.gov/nchs/data_access/VitalStatsOnline.htm
+    provider: National Center for Health Statistics, Centers for Disease Control and Prevention
+    access_method: Downloadable public-use birth data files and accompanying user guides
+    availability: public with use restrictions
+    license_or_terms: >
+      NCHS public-use data may be used only for statistical analysis or reporting,
+      subject to the NCHS Data User Agreement and confidentiality restrictions; do not
+      attempt to identify individuals or use restricted versions without approval.
+    access_date: 2026-09-29
+    contents: >
+      Public-use birth records and documentation. The book companion's prepared sample
+      includes maternal, prenatal, gestational, obstetric, birth-weight, and Apgar
+      variables. Public files suppress or limit identifying geographic and date detail;
+      variables and coding vary by year.
+
+sources:
+  - role: dataset_provenance
+    title: CDC/NCHS Vital Statistics Online Data Portal
+    url: https://www.cdc.gov/nchs/data_access/VitalStatsOnline.htm
+    access_date: 2026-09-29
+    notes: Documents downloadable public-use birth files and user guides.
+  - role: data_terms
+    title: NCHS Data User Agreement
+    url: https://www.cdc.gov/nchs/policy/data-user-agreement.html
+    access_date: 2026-09-29
+    notes: Specifies statistical-analysis and reporting use, confidentiality, and restrictions.
+  - role: dataset_provenance
+    title: WinVector PDSwR2 companion repository
+    url: https://github.com/WinVector/PDSwR2
+    access_date: 2026-09-29
+    notes: Documents the book companion and its CDC natality example materials.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - Which data-quality and coding decisions materially affect a defined birth-outcome analysis?
+  - What evidence and safeguards are needed before interpreting a risk or birth-weight prediction?
+
+curricular_signal:
+  analytics_capabilities:
+    - Prepare sensitive public-use data reproducibly while retaining source and use constraints.
+    - Evaluate predictive outputs within their intended scope and communicate their limits.
+  contributing_disciplines:
+    - Machine Learning: supplies bounded predictive methods in service of the health-data Analytics question.
+  cautions:
+    - This is not a clinical decision-support system or a basis for individual treatment decisions.
+    - NCHS terms, confidentiality limits, missingness, coding changes, and outcome inequities require explicit treatment.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found
