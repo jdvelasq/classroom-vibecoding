@@ -9,6 +9,11 @@ Analytics-course design.
 This task is catalog construction. It is not curriculum design, activity
 construction, assessment design, or audit.
 
+The catalog unit is a case. A newly found Manning book is not itself an output:
+continue into its documented companion material until a named project with
+concrete data either passes the verification gate and yields a case YAML, or is
+reported as excluded with the unmet condition.
+
 ---
 
 ## Governing instructions
@@ -165,13 +170,16 @@ identifies and supports that provenance.
    `catalog/manning/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
 3. Locate documented book-specific companion materials and repositories.
-4. Identify named candidate cases, then apply the duplicate search.
-5. Verify case identity, dataset provenance, access, terms, contents, and
+4. Inspect those materials to identify a named project, its analytical problem,
+   and its concrete associated data; do not stop at the book or repository
+   landing page.
+5. Identify named candidate cases, then apply the duplicate search.
+6. Verify case identity, dataset provenance, access, terms, contents, and
    limitations from the strongest available sources.
-6. Create only qualifying YAML records in the book-specific Manning path.
-7. Search `design/benchmarks/` for substantive case connections without
+7. Create only qualifying YAML records in the book-specific Manning path.
+8. Search `design/benchmarks/` for substantive case connections without
    editing benchmark files.
-8. Validate all YAML files created or updated.
+9. Validate all YAML files created or updated.
 
 ---
 

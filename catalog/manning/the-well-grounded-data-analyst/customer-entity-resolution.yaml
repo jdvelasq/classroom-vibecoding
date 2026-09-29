@@ -1,0 +1,121 @@
+id: manning/the-well-grounded-data-analyst/customer-entity-resolution
+name: Customer entity resolution across purchases, CRM, and customer records
+aliases:
+  - Who are your customers?
+  - The Well-Grounded Data Analyst Project 2
+  - Customer record linkage across business systems
+type: book_curated_case
+
+book_source:
+  publisher: Manning
+  title: The Well-Grounded Data Analyst
+  edition: null
+  official_url: https://www.manning.com/books/the-well-grounded-data-analyst
+  companion_sources:
+    - title: David Asboth's book companion repository
+      url: https://github.com/davidasboth/the-well-grounded-data-analyst
+      relationship: >
+        The repository identifies itself as accompanying data and example
+        solution code for The Well-Grounded Data Analyst (Manning, 2025).
+    - title: Chapter 3 Project 2 notebook
+      url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/chapter-3/Chapter%203%20example%20solution.ipynb
+      relationship: >
+        The rendered notebook names the project "Who are your customers?" and
+        specifies its integration, deduplication, and one-row-per-customer goal.
+  access_date: 2026-09-29
+
+case:
+  decision_or_problem: >
+    How can an organization construct a defensible customer-level analytical
+    table when purchases, CRM exports, and customer-database records overlap,
+    omit identifiers, and contain duplicate or inconsistent identities?
+  analytical_relevance: >
+    The case makes data integration, entity resolution, source lineage,
+    duplicate handling, and uncertainty visible before downstream customer
+    analysis or decision-making.
+  scope: >
+    A book-curated business-data reconstruction. It must not be represented as
+    evidence about a named real organization or its customers.
+
+datasets:
+  - name: Chapter 3 customer-integration dataset bundle
+    relationship_to_case: >
+      The project combines purchases.csv, crm_export.csv, and
+      customer_database.csv to infer one customer entity per row and identify
+      duplicate records.
+    source_url: https://github.com/davidasboth/the-well-grounded-data-analyst/tree/main/chapter-3/data
+    provider: David Asboth's documented companion repository for the Manning book
+    access_method: Public repository files accompanying the project notebook
+    availability: public
+    license_or_terms: >
+      The companion repository is distributed under an MIT License. The
+      repository does not establish an external origin for each record, so this
+      bundle is recorded as a book-curated reconstruction rather than as a
+      verified real-world customer dataset.
+    access_date: 2026-09-29
+    contents: >
+      Purchase transactions with product, session, customer, and guest-checkout
+      fields; CRM records; and customer-database records. The notebook shows
+      names, postcodes, ages, customer identifiers, incomplete records, and
+      duplicate identity patterns.
+
+sources:
+  - role: book_identity
+    title: Manning — The Well-Grounded Data Analyst
+    url: https://www.manning.com/books/the-well-grounded-data-analyst
+    access_date: 2026-09-29
+    notes: >
+      Manning describes the book as eight data-science projects for practical
+      data-analysis work.
+  - role: companion_material
+    title: The Well-Grounded Data Analyst companion repository
+    url: https://github.com/davidasboth/the-well-grounded-data-analyst
+    access_date: 2026-09-29
+    notes: >
+      Repository states that chapter folders contain project data and example
+      solution notebooks.
+  - role: case_definition
+    title: Chapter 3 Project 2 notebook
+    url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/chapter-3/Chapter%203%20example%20solution.ipynb
+    access_date: 2026-09-29
+    notes: >
+      Defines the goal to explore the three data sources, establish a common
+      customer schema, retain source information, and deduplicate records.
+  - role: repository_terms
+    title: Companion repository MIT License
+    url: https://github.com/davidasboth/the-well-grounded-data-analyst/blob/main/LICENSE
+    access_date: 2026-09-29
+    notes: >
+      Governs the repository distribution; it does not prove the origin or
+      real-world status of the customer-like records.
+
+possible_analytical_questions:
+  - Which identifiers and attributes can link records across purchases, CRM, and customer databases?
+  - How do missing identifiers, guest checkouts, typos, and repeated attributes affect entity resolution?
+  - Which matching rules require review rather than automatic merging?
+  - How should source lineage and unresolved ambiguity be retained in a customer-level table?
+
+curricular_signal:
+  analytics_capabilities:
+    - Build an analysis-ready entity table from inconsistent operational sources.
+    - Evaluate deterministic and similarity-based matching assumptions.
+    - Preserve source lineage and communicate matching uncertainty before use.
+  contributing_disciplines:
+    - Databases: contributes entity and schema integration techniques.
+    - Statistics: contributes uncertainty-aware assessment of linkage rules.
+  cautions:
+    - The record bundle is book-curated; do not claim that it describes a real organization.
+    - Treat customer-like fields as potentially sensitive in any classroom adaptation.
+    - A repository license is not evidence of an external data provider or a real-data use right.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_book_curated_distribution
+  original_external_data_provenance: not_asserted
+  real_world_status: not_established
+  benchmark_connection: not_found

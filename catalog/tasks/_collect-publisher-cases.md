@@ -3,6 +3,10 @@
 This protocol is used by the publisher-specific `s0?-collect-*-cases.md`
 tasks. Read the named task first, then apply this protocol.
 
+The catalog unit is the **case**. Do not create book-level inventory YAML files,
+publisher inventories, or placeholder records in `catalog/`; a book discovered
+during a run is evidence to investigate, not a catalog record.
+
 ## Purpose
 
 Periodically extend a publisher's portion of the case catalog. Existing records
@@ -30,9 +34,11 @@ case.
    editions that are newer than the represented material, and for eligible older
    books not yet represented.
 3. Locate each book's documented companion materials.
-4. Identify candidate cases and apply the source-specific task's verification
-   gate.
-5. Add only qualifying, nonduplicate case records.
+4. Inspect the companion materials far enough to identify a named project,
+   analytical problem, and concrete associated data; book marketing copy alone
+   is not a candidate case.
+5. Apply the source-specific verification gate to each such candidate.
+6. Add only qualifying, nonduplicate case records.
 
 If a later book, edition, dataset revision, or better-documented case might
 supersede an existing case, add it separately and report the relationship.
@@ -41,6 +47,10 @@ will later decide which case to select.
 
 If a run finds no qualifying material, leave the catalog unchanged and report
 the sources searched and review date.
+
+Do not report a discovered book as a catalog addition. A successful collection
+adds one or more case YAML records; a run that produces none must plainly report
+that no verified case was found and why each leading candidate failed.
 
 ## Source and data boundary
 
@@ -62,6 +72,9 @@ limitations only.
 
 Create one YAML file per verified case at
 `catalog/<publisher>/<book-slug>/<case-slug>.yaml`.
+
+There is no `book.yaml`: the book path is only a provenance container for its
+case files.
 
 Before creating it, search all of `catalog/` by canonical name, aliases,
 dataset name, and meaningful source identifiers. Do not duplicate a case merely
