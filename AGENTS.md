@@ -28,3 +28,13 @@ a broader Analytics curriculum.
 
 When making major curriculum design decisions, explicitly verify that this
 identity has been preserved.
+
+## Python environment
+
+The root-level `requirements.txt` is the single canonical definition of the
+Python environment for this repository. Course folders and task folders must
+not introduce independent dependency manifests or environment definitions.
+
+Before adding a dependency, verify that it is compatible with the repository's
+supported Python version. Reproduce the environment from the root
+`requirements.txt`.
