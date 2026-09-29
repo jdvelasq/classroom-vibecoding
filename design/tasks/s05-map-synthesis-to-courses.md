@@ -80,6 +80,30 @@ Each file is a **course-content design document** and must include:
    available; capability-allocation rules; section-level traceability to the
    synthesis; unresolved decisions; and the result of the quality checks.
 
+## Bidirectional audit traceability
+
+Assign every content allocation a stable course identifier, formatted
+`<course-id>.CNN` (for example, `predictiva.C04`). For every allocation,
+record its role, the exact stable finding identifier from S04, and the
+rationale for the allocation. Do not use section-level citations alone when a
+stable S04 finding identifier is available.
+
+Each course document must contain both:
+
+1. a **forward traceability table**: course-content identifier → role → S04
+   finding identifier → allocation rationale; and
+2. a **reverse traceability table**: applicable S04 finding identifier → one
+   or more course-content identifiers in that course.
+
+The execution must also produce, within each construction record, the complete
+set of S04 finding identifiers considered, the subset allocated to that course,
+and the reason any remaining finding is not applicable to that course.
+
+On a later execution against a different S04 fingerprint, record an explicit
+change log of added, removed, or reassigned course-content identifiers. The
+documents are derived outputs: regenerate them from S04 rather than manually
+merging historical allocations.
+
 ## Quality checks
 
 Before completion, verify that:
@@ -96,3 +120,9 @@ Before completion, verify that:
   `design/synthesis/s04-synthesis.md`;
 - each construction record is sufficient for a later independent audit or
   regeneration without relying on conversational memory.
+- every course-content identifier has an exact S04 finding reference and a
+  recorded allocation rationale;
+- every applicable S04 finding is represented in at least one S05 document or
+  has an explicit out-of-scope rationale;
+- forward and reverse traceability agree within each document and across all
+  six documents.
