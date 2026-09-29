@@ -2,11 +2,13 @@ import glob
 import os.path
 import string
 import time
+from pathlib import Path
 
-DATA_FOLDER = "data"
-INPUT_FOLDER = "temp/input"
-OUTPUT_FOLDER = "temp/output"
-SUBMISSION_FOLDER = "submission"
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+DATA_FOLDER = ACTIVITY_DIR / "data"
+INPUT_FOLDER = ACTIVITY_DIR / "temp" / "input"
+OUTPUT_FOLDER = ACTIVITY_DIR / "temp" / "output"
+SUBMISSION_FOLDER = ACTIVITY_DIR / "submission"
 
 # La carpeta input/ debe existir y estar vacia.
 # -----------------------------------------------------------------------------
