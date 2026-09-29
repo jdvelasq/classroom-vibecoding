@@ -1,0 +1,106 @@
+---
+id: oreilly/text-mining-with-r/social-language-evolution
+name: Social Language Evolution
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Text Mining with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Comparing Twitter Archives
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/07-tweet-archives.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/juliasilge/tidy-text-mining
+    relationship: Repository recorded in the legacy case inventory.
+    path: 07-tweet-archives.Rmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 101
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Text Mining with R
+    title: Comparing Twitter Archives
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/07-tweet-archives.Rmd
+    repository:
+      url: https://github.com/juliasilge/tidy-text-mining
+      path: 07-tweet-archives.Rmd
+    description: 'The book compares complete Twitter archives using word frequencies,
+      log-odds, sentiment, and time-varying word-use models to characterize how language
+      differs between users and changes over time.
+
+'
+  data:
+    description: 'Archived tweets from two authors, including timestamps and tweet
+      text.
+
+'
+    source_url: https://github.com/juliasilge/tidy-text-mining/tree/main/data
+    availability: repository
+    files:
+    - data/tweets_julia.csv
+    - data/tweets_dave.csv
+  original_implementation:
+    technologies:
+    - tidytext
+    - log odds
+    - sentiment analysis
+    - binomial regression
+    - temporal text analysis
+    language: R
+    code_available: true
+    code_url: https://github.com/juliasilge/tidy-text-mining/blob/main/07-tweet-archives.Rmd
+  problem:
+    context: 'Longitudinal social-media archives can reveal differences in vocabulary,
+      sentiment, and changing interests that raw tweet counts cannot capture.
+
+'
+    objective: 'Compare language use across authors and identify terms whose usage
+      changes systematically through time.
+
+'
+    analytical_questions:
+    - Which terms distinguish the authors?
+    - How do sentiment patterns compare?
+    - Which words become more or less common over time?
+    - How can temporal word-use trends be quantified?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - nltk
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and normalize archived posts.
+    - Remove retweets, links, and platform artifacts.
+    - Tokenize text and calculate author-specific frequencies.
+    - Estimate distinctive-word log odds.
+    - Calculate sentiment summaries.
+    - Aggregate word counts over time.
+    - Fit trend models for changing word usage.
+    expected_outputs:
+    - author word-frequency comparison
+    - distinctive-term table
+    - sentiment comparison
+    - temporal trend models
+    - language-evolution charts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 101
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,102 @@
+---
+id: oreilly/machine-learning-design-patterns/flight-model-versioning
+name: Flight Model Versioning
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Machine Learning Design Patterns
+  edition:
+  official_url:
+  companion_sources:
+  - title: Model Versioning
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/model_versioning.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+    relationship: Repository recorded in the legacy case inventory.
+    path: 06_reproducibility/model_versioning.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 257
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Machine Learning Design Patterns
+    title: Model Versioning
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/model_versioning.ipynb
+    repository:
+      url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+      path: 06_reproducibility/model_versioning.ipynb
+    description: 'Deploy multiple compatible versions of a flight-delay model and
+      manage a later reframing from classification to regression.
+
+'
+  data:
+    description: 'Flight records with schedule and operational variables plus arrival-delay
+      outcomes.
+
+'
+    source_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/model_versioning.ipynb
+    availability: repository_or_generated
+    files: []
+  original_implementation:
+    technologies:
+    - model versioning
+    - XGBoost
+    - TensorFlow
+    - REST endpoints
+    - backward compatibility
+    - deployment
+    language: Python
+    code_available: true
+    code_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/model_versioning.ipynb
+  problem:
+    context: 'Production models evolve in algorithm and even task definition, but
+      consumers need stable interfaces and controlled migration.
+
+'
+    objective: 'Deploy multiple compatible versions of a flight-delay model and manage
+      a later reframing from classification to regression.
+
+'
+    analytical_questions:
+    - When should a model change become a new version versus a new resource?
+    - How can two implementations coexist behind versioned endpoints?
+    - What breaks when the prediction contract changes?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - xgboost
+    - tensorflow
+    - google-cloud-aiplatform
+    - pandas
+    logical_steps:
+    - Prepare flight-delay data.
+    - Train a first classification model.
+    - Deploy version 1.
+    - Train an alternative TensorFlow implementation.
+    - Deploy version 2 under the same model resource.
+    - Reframe the task as delay regression.
+    - Deploy the changed contract separately.
+    expected_outputs:
+    - versioned model endpoints
+    - v1/v2 prediction comparison
+    - deployment contract
+    - classification-to-regression migration plan
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 257
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

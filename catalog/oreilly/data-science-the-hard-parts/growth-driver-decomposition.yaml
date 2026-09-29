@@ -1,0 +1,108 @@
+---
+id: oreilly/data-science-the-hard-parts/growth-driver-decomposition
+name: Growth Driver Decomposition
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: 'Data Science: The Hard Parts'
+  edition:
+  official_url:
+  companion_sources:
+  - title: Growth Decompositions
+    url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch3_growth_decompositions.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/dvaughan79/data-science-hard-parts-code
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch3_growth_decompositions.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 52
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Daniel Vaughan
+    publisher: O'Reilly Media
+    book: 'Data Science: The Hard Parts'
+    title: Growth Decompositions
+    url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch3_growth_decompositions.ipynb
+    repository:
+      url: https://github.com/dvaughan79/data-science-hard-parts-code
+      path: ch3_growth_decompositions.ipynb
+    description: 'The O''Reilly notebook develops additive, multiplicative, and mix-rate
+      decompositions for understanding which components generate observed growth.
+      It includes revenue decomposed into active users and revenue per user and a
+      multi-segment mix-rate example.
+
+'
+  data:
+    description: 'Deterministic synthetic time series and customer-segment data generated
+      in the notebook to isolate and explain the mechanics of growth decomposition.
+
+'
+    source_url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch3_growth_decompositions.ipynb
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - numpy
+    - additive decomposition
+    - multiplicative decomposition
+    - mix-rate decomposition
+    - matplotlib
+    language: Python
+    code_available: true
+    code_url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch3_growth_decompositions.ipynb
+  problem:
+    context: 'Business growth can hide opposing movements in customer volume, customer
+      value, and segment mix. Looking only at the aggregate metric does not reveal
+      which forces created the observed change.
+
+'
+    objective: 'Decompose changes in an aggregate business metric into interpretable
+      growth drivers and distinguish volume, rate, and mix effects.
+
+'
+    analytical_questions:
+    - How much of total growth comes from changes in volume versus rate?
+    - How do multiplicative drivers such as active users and revenue per user combine?
+    - How much apparent growth is caused by changes in customer-segment mix?
+    - Which components are tailwinds and which are headwinds?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - matplotlib
+    logical_steps:
+    - Create or load a reproducible business-metric time series.
+    - Validate the accounting relationship between the aggregate metric and its drivers.
+    - Compute additive changes between periods.
+    - Compute multiplicative growth contributions.
+    - Build a segmented dataset with segment volumes and rates.
+    - Separate within-segment rate effects from mix effects.
+    - Reconcile component contributions with the observed aggregate change.
+    - Visualize and interpret the resulting growth drivers.
+    expected_outputs:
+    - driver-level decomposition table
+    - reconciled aggregate growth calculation
+    - volume and rate contribution analysis
+    - segment mix-rate decomposition
+    - contribution visualizations
+    - written business interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 52
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

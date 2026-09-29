@@ -1,0 +1,98 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/loan-income-bootstrap
+name: Loan Income Bootstrap
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Data and Sampling Distributions
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%202%20-%20Data%20and%20sampling%20distributions.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 2 - Data and sampling distributions.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 241
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Data and Sampling Distributions
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%202%20-%20Data%20and%20sampling%20distributions.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 2 - Data and sampling distributions.ipynb
+    description: 'Quantify sampling variability and bootstrap uncertainty for applicant-income
+      statistics.
+
+'
+  data:
+    description: 'Applicant income observations used for repeated sampling and bootstrap
+      analysis.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/data/loans_income.csv
+    availability: repository
+    files:
+    - data/loans_income.csv
+  original_implementation:
+    technologies:
+    - sampling distributions
+    - bootstrap
+    - resampling
+    - confidence intervals
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%202%20-%20Data%20and%20sampling%20distributions.ipynb
+  problem:
+    context: 'A lender needs to understand how stable income summaries are under repeated
+      sampling.
+
+'
+    objective: 'Quantify sampling variability and bootstrap uncertainty for applicant-income
+      statistics.
+
+'
+    analytical_questions:
+    - How does sampling variability change with sample size?
+    - What bias and standard error arise in bootstrap estimates?
+    - What confidence intervals surround selected income statistics?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate income observations.
+    - Draw repeated samples at several sizes.
+    - Compare sampling distributions.
+    - Generate bootstrap resamples.
+    - Estimate bias, standard error, and confidence intervals.
+    expected_outputs:
+    - sampling distribution plots
+    - bootstrap summary table
+    - confidence intervals
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 241
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

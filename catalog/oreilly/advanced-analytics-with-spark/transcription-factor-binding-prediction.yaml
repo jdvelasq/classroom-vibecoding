@@ -1,0 +1,102 @@
+---
+id: oreilly/advanced-analytics-with-spark/transcription-factor-binding-prediction
+name: Transcription Factor Binding Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Transcription Factor Binding Sites
+    url: https://github.com/sryza/aas/tree/master/ch10-genomics
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch10-genomics/src/main/scala/com/cloudera/datascience/genomics/RunTFPrediction.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 376
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Predicting Transcription Factor Binding Sites
+    url: https://github.com/sryza/aas/tree/master/ch10-genomics
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch10-genomics/src/main/scala/com/cloudera/datascience/genomics/RunTFPrediction.scala
+    description: 'O''Reilly integrates genomic intervals, motifs, conservation, transcription
+      start sites, accessibility, and ChIP-seq labels for large-scale binding prediction.
+
+'
+  data:
+    description: 'Human reference genome, DNase-seq, ChIP-seq, conservation, and gene-annotation
+      data.
+
+'
+    source_url: https://github.com/sryza/aas/tree/master/ch10-genomics
+    availability: public_external
+    files: []
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - ADAM
+    - genomic interval joins
+    - feature engineering
+    - sequence motif scoring
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch10-genomics/src/main/scala/com/cloudera/datascience/genomics/RunTFPrediction.scala
+  problem:
+    context: 'Transcription-factor binding depends on local DNA sequence, chromatin
+      accessibility, conservation, and genomic context.
+
+'
+    objective: 'Build an integrated feature set and classifier for transcription-factor
+      binding.
+
+'
+    analytical_questions:
+    - How should heterogeneous genomic sources be joined?
+    - Which sequence and conservation features characterize candidate regions?
+    - How should binding labels be created?
+    - How well can binding be predicted across cell lines?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - pysam
+    - pybedtools
+    - scikit-learn
+    logical_steps:
+    - Load reference and genomic annotations.
+    - Load accessibility and binding intervals.
+    - Create labels from interval overlap.
+    - Join conservation measurements.
+    - Calculate motif and TSS-distance features.
+    - Combine cell-line datasets.
+    - Train and evaluate a classifier.
+    expected_outputs:
+    - integrated genomic feature table
+    - binding labels
+    - engineered genomic features
+    - predictive metrics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 376
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,111 @@
+---
+id: oreilly/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-third-edition/california-housing-valuation
+name: California Housing Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Third
+    Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: End-to-End Machine Learning Project
+    url: https://github.com/ageron/handson-ml3/blob/main/02_end_to_end_machine_learning_project.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/ageron/handson-ml3
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_end_to_end_machine_learning_project.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 35
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Aurélien Géron
+    publisher: O'Reilly Media
+    book: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Third
+      Edition
+    title: End-to-End Machine Learning Project
+    url: https://github.com/ageron/handson-ml3/blob/main/02_end_to_end_machine_learning_project.ipynb
+    repository:
+      url: https://github.com/ageron/handson-ml3
+      path: 02_end_to_end_machine_learning_project.ipynb
+    description: 'O''Reilly''s end-to-end case predicts median house values in California
+      districts and develops the complete machine-learning workflow from data acquisition
+      to model evaluation.
+
+'
+  data:
+    description: 'California district housing data with geographic, demographic, income,
+      housing-stock, and ocean-proximity variables.
+
+'
+    source_url: https://github.com/ageron/data/raw/main/housing.tgz
+    availability: public
+    files:
+    - housing.tgz
+  original_implementation:
+    technologies:
+    - pandas
+    - scikit-learn
+    - preprocessing pipelines
+    - feature engineering
+    - regression
+    - cross-validation
+    language: Python
+    code_available: true
+    code_url: https://github.com/ageron/handson-ml3/blob/main/02_end_to_end_machine_learning_project.ipynb
+  problem:
+    context: 'A housing organization needs district-level estimates of median property
+      values from demographic, geographic, and housing characteristics.
+
+'
+    objective: 'Build an end-to-end predictive analytics workflow for estimating median
+      district house values and evaluating model generalization.
+
+'
+    analytical_questions:
+    - Which variables are most associated with district housing value?
+    - How should missing, categorical, and skewed variables be prepared?
+    - Which engineered features improve predictive performance?
+    - How do alternative regression models compare under cross-validation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - numpy
+    logical_steps:
+    - Download and freeze the housing dataset.
+    - Perform exploratory analysis and geographic visualization.
+    - Create a reproducible stratified train-test split.
+    - Build preprocessing and feature-engineering pipelines.
+    - Train and compare regression models.
+    - Tune the strongest candidates with cross-validation.
+    - Evaluate final performance on the untouched test set.
+    - Inspect feature importance and prediction errors.
+    expected_outputs:
+    - reproducible train-test datasets
+    - preprocessing pipeline
+    - fitted regression models
+    - cross-validation comparison
+    - final test metrics
+    - geographic and diagnostic visualizations
+    - written interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 35
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

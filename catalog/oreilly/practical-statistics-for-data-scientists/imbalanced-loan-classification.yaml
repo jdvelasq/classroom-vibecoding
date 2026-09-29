@@ -1,0 +1,101 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/imbalanced-loan-classification
+name: Imbalanced Loan Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Classification and Imbalanced Data
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 5 - Classification.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 244
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Classification and Imbalanced Data
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 5 - Classification.ipynb
+    description: 'Compare default classifiers and diagnose how imbalance remedies
+      alter minority-class performance.
+
+'
+  data:
+    description: 'Loan records with borrower, payment burden, employment, housing,
+      purpose, and default outcome.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/tree/master/data
+    availability: repository
+    files:
+    - data/loan3000.csv
+    - data/loan_data.csv.gz
+    - data/full_train_set.csv.gz
+  original_implementation:
+    technologies:
+    - naive Bayes
+    - LDA
+    - logistic regression
+    - ROC AUC
+    - SMOTE
+    - ADASYN
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+  problem:
+    context: 'Loan defaults are imbalanced, making overall accuracy potentially misleading.
+
+'
+    objective: 'Compare default classifiers and diagnose how imbalance remedies alter
+      minority-class performance.
+
+'
+    analytical_questions:
+    - How do candidate classifiers compare?
+    - What do ROC and confusion-matrix metrics reveal?
+    - How do weighting, SMOTE, and ADASYN change default detection?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - imbalanced-learn
+    logical_steps:
+    - Prepare loan data.
+    - Fit baseline classifiers.
+    - Evaluate ROC and confusion metrics.
+    - Apply weighting and resampling methods.
+    - Compare minority-class performance.
+    expected_outputs:
+    - classifier comparison
+    - ROC curves
+    - confusion matrices
+    - imbalance-remedy comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 244
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

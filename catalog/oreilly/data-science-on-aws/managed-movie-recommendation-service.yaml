@@ -1,0 +1,105 @@
+---
+id: oreilly/data-science-on-aws/managed-movie-recommendation-service
+name: Managed Movie Recommendation Service
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Data Science on AWS
+  edition:
+  official_url:
+  companion_sources:
+  - title: Amazon Personalize Recommendations
+    url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/personalize_recommendations
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/data-science-on-aws/data-science-on-aws
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_usecases/personalize_recommendations
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 408
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Data Science on AWS
+    title: Amazon Personalize Recommendations
+    url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/personalize_recommendations
+    repository:
+      url: https://github.com/data-science-on-aws/data-science-on-aws
+      path: 02_usecases/personalize_recommendations
+    description: 'The O''Reilly companion project validates user-item interactions,
+      trains user-personalization, similar-item, and personalized-ranking solutions,
+      evaluates them, deploys campaigns, and serves recommendations.
+
+'
+  data:
+    description: 'MovieLens-style user-item interaction histories with timestamps
+      and optional item metadata.
+
+'
+    source_url: https://grouplens.org/datasets/movielens/
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - Amazon Personalize
+    - user personalization
+    - similar items
+    - personalized ranking
+    - recommendation evaluation
+    - campaign deployment
+    language: Python
+    code_available: true
+    code_url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/personalize_recommendations
+  problem:
+    context: 'A media platform needs multiple recommendation behaviors: personalized
+      item selection, similar-item discovery, and personalized ranking of candidate
+      items.
+
+'
+    objective: 'Build, evaluate, deploy, and query a managed recommendation service.
+
+'
+    analytical_questions:
+    - How should user-item interaction data be validated?
+    - Which recommendation recipe fits each use case?
+    - How should recommendation quality be evaluated?
+    - How can trained recommenders be exposed to applications?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - implicit
+    - scikit-surprise
+    - fastapi
+    logical_steps:
+    - Load and validate interaction data.
+    - Define recommendation tasks and baselines.
+    - Train personalized and item-similarity models.
+    - Evaluate ranking quality.
+    - Select deployable models.
+    - Build recommendation endpoints.
+    - Test personalized and similar-item queries.
+    expected_outputs:
+    - validated interaction dataset
+    - recommender evaluation table
+    - personalized recommendations
+    - similar-item recommendations
+    - deployed recommendation service
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 408
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

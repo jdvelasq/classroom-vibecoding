@@ -1,0 +1,109 @@
+---
+id: oreilly/text-mining-with-r/nasa-dataset-relationship-discovery
+name: NASA Dataset Relationship Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Text Mining with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Mining NASA Metadata
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/08-nasa-metadata.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/juliasilge/tidy-text-mining
+    relationship: Repository recorded in the legacy case inventory.
+    path: '08-nasa-metadata.Rmd'
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 100
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Text Mining with R
+    title: Mining NASA Metadata
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/08-nasa-metadata.Rmd
+    repository:
+      url: https://github.com/juliasilge/tidy-text-mining
+      path: '08-nasa-metadata.Rmd'
+    description: 'The book treats NASA dataset metadata as text and combines word
+      co-occurrence, correlations, tf-idf, networks, and topic modeling to reveal
+      relationships among thousands of datasets.
+
+'
+  data:
+    description: 'NASA open-data metadata containing dataset titles, descriptions,
+      keywords, publishers, identifiers, and other catalog fields.
+
+'
+    source_url: https://data.nasa.gov/data.json
+    availability: public
+    files:
+    - data/metadata.rda
+  original_implementation:
+    technologies:
+    - tidytext
+    - tf-idf
+    - pairwise co-occurrence
+    - correlation networks
+    - topic modeling
+    - igraph
+    - ggraph
+    language: R
+    code_available: true
+    code_url: https://github.com/juliasilge/tidy-text-mining/blob/main/08-nasa-metadata.Rmd
+  problem:
+    context: 'A large scientific data catalog contains tens of thousands of datasets
+      whose textual metadata can reveal thematic connections and redundancies not
+      obvious from individual catalog records.
+
+'
+    objective: 'Discover thematic relationships among NASA datasets from titles, descriptions,
+      and keywords.
+
+'
+    analytical_questions:
+    - Which terms and keywords commonly occur together?
+    - What networks of related datasets or concepts emerge?
+    - Which keywords are redundant or strongly correlated?
+    - What latent thematic structure appears in the catalog?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - networkx
+    - gensim
+    - matplotlib
+    logical_steps:
+    - Load and normalize NASA metadata.
+    - Tokenize title, description, and keyword fields.
+    - Calculate term frequencies and tf-idf.
+    - Build word and keyword co-occurrence relationships.
+    - Construct and analyze correlation networks.
+    - Fit exploratory topic models.
+    - Interpret thematic structure across datasets.
+    expected_outputs:
+    - cleaned metadata corpus
+    - characteristic-term tables
+    - keyword relationship network
+    - topic summaries
+    - dataset-theme diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 100
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

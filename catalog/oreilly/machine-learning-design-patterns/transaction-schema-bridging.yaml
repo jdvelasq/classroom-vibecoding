@@ -1,0 +1,99 @@
+---
+id: oreilly/machine-learning-design-patterns/transaction-schema-bridging
+name: Transaction Schema Bridging
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Machine Learning Design Patterns
+  edition:
+  official_url:
+  companion_sources:
+  - title: Bridging Schema
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/bridging_schema.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+    relationship: Repository recorded in the legacy case inventory.
+    path: 06_reproducibility/bridging_schema.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 256
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Machine Learning Design Patterns
+    title: Bridging Schema
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/bridging_schema.ipynb
+    repository:
+      url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+      path: 06_reproducibility/bridging_schema.ipynb
+    description: 'Bridge old and new transaction schemas and determine how much historical
+      data can be reused without degrading performance.
+
+'
+  data:
+    description: 'Synthetic old and new transaction schemas with a shared tipping
+      prediction task.
+
+'
+    source_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/bridging_schema.ipynb
+    availability: repository_or_generated
+    files: []
+  original_implementation:
+    technologies:
+    - schema evolution
+    - backward compatibility
+    - bridging data
+    - holdout evaluation
+    - grid search
+    language: Python
+    code_available: true
+    code_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/bridging_schema.ipynb
+  problem:
+    context: 'A production data schema can change while historical data remain valuable
+      for model training.
+
+'
+    objective: 'Bridge old and new transaction schemas and determine how much historical
+      data can be reused without degrading performance.
+
+'
+    analytical_questions:
+    - How should legacy categories be mapped into the new schema?
+    - How much new data must be reserved for reliable evaluation?
+    - How much bridged historical data improves rather than harms performance?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    logical_steps:
+    - Simulate old and new schemas.
+    - Hold out new-schema evaluation data.
+    - Define a static bridging transformation.
+    - Augment new training data with varying amounts of bridged history.
+    - Measure validation performance.
+    - Select the useful historical-data volume.
+    expected_outputs:
+    - bridged dataset
+    - validation curve
+    - recommended historical-data amount
+    - schema migration diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 256
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

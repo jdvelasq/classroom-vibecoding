@@ -1,0 +1,104 @@
+---
+id: oreilly/python-for-data-analysis-third-edition/food-nutrient-profiling
+name: Food Nutrient Profiling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Python for Data Analysis, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: USDA Food Database Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/wesm/pydata-book
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch13.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 147
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Python for Data Analysis, Third Edition
+    title: USDA Food Database Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    repository:
+      url: https://github.com/wesm/pydata-book
+      path: ch13.ipynb
+    description: 'O''Reilly normalizes nested USDA food records, joins food and nutrient
+      tables, and identifies characteristic and extreme nutrient values across food
+      groups.
+
+'
+  data:
+    description: 'USDA food database represented as nested JSON with food descriptions,
+      food groups, nutrient names, units, and measured values.
+
+'
+    source_url: https://github.com/wesm/pydata-book/blob/3rd-edition/datasets/usda_food/database.json
+    availability: repository
+    files:
+    - datasets/usda_food/database.json
+  original_implementation:
+    technologies:
+    - JSON normalization
+    - pandas
+    - relational transformation
+    - grouped quantiles
+    - extrema analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+  problem:
+    context: 'Food-composition data are stored as nested records, while nutritional
+      comparison requires a normalized table linking foods, food groups, nutrients,
+      units, and values.
+
+'
+    objective: 'Transform the nested food database and compare nutrient profiles across
+      food groups.
+
+'
+    analytical_questions:
+    - How should nested food and nutrient records be normalized?
+    - Which food groups have high or low typical nutrient values?
+    - Which foods contain the maximum values for selected nutrients?
+    - How do nutrient distributions differ across food groups?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - json
+    logical_steps:
+    - Load nested USDA JSON records.
+    - Normalize food metadata.
+    - Normalize nutrient observations.
+    - Harmonize field names and units.
+    - Join nutrient and food tables.
+    - Calculate group-level nutrient summaries.
+    - Identify extreme nutrient-food combinations.
+    expected_outputs:
+    - normalized food table
+    - normalized nutrient table
+    - integrated food-nutrient dataset
+    - food-group nutrient profiles
+    - extreme nutrient rankings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 147
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,109 @@
+---
+id: oreilly/feature-engineering-for-machine-learning/academic-paper-recommendation
+name: Academic Paper Recommendation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Feature Engineering for Machine Learning
+  edition:
+  official_url:
+  companion_sources:
+  - title: End-to-End Recommender Example
+    url: https://github.com/alicezheng/feature-engineering-book/blob/master/09.06-14_%5BEnd-to-End_Example%5D_Recommender_Take_2.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/alicezheng/feature-engineering-book
+    relationship: Repository recorded in the legacy case inventory.
+    path: '09.06-14_[End-to-End_Example]_Recommender_Take_2.ipynb'
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 370
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Feature Engineering for Machine Learning
+    title: End-to-End Recommender Example
+    url: https://github.com/alicezheng/feature-engineering-book/blob/master/09.06-14_%5BEnd-to-End_Example%5D_Recommender_Take_2.ipynb
+    repository:
+      url: https://github.com/alicezheng/feature-engineering-book
+      path: '09.06-14_[End-to-End_Example]_Recommender_Take_2.ipynb'
+    description: 'O''Reilly develops a content-based academic-paper recommender while
+      progressively engineering publication year, fields of study, abstracts, authors,
+      titles, and keywords to improve recommendation quality and reduce feature-space
+      cost.
+
+'
+  data:
+    description: 'Microsoft Academic Graph/Open Academic Graph paper metadata including
+      titles, years, fields of study, abstracts, authors, and keywords.
+
+'
+    source_url: https://www.openacademic.ai/oag/
+    availability: external_public
+    files:
+    - mag_subset20K.txt
+  original_implementation:
+    technologies:
+    - feature engineering
+    - sparse matrices
+    - binning
+    - TF-IDF
+    - one-hot encoding
+    - cosine similarity
+    - content-based recommendation
+    language: Python
+    code_available: true
+    code_url: https://github.com/alicezheng/feature-engineering-book/blob/master/09.06-14_%5BEnd-to-End_Example%5D_Recommender_Take_2.ipynb
+  problem:
+    context: 'Researchers need recommendations for related papers, but raw scholarly
+      metadata contains heterogeneous and high-dimensional fields whose representation
+      strongly affects both recommendation relevance and computational cost.
+
+'
+    objective: 'Build a content-based paper recommender and quantify how successive
+      feature engineering choices alter recommendation quality and feature-space efficiency.
+
+'
+    analytical_questions:
+    - Which scholarly metadata fields produce useful similarity signals?
+    - How does decade binning change the representation of publication year?
+    - What do abstracts and author features add to recommendations?
+    - How can sparse representations reduce computational cost?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scipy
+    - scikit-learn
+    - nltk
+    logical_steps:
+    - Load and clean scholarly metadata.
+    - Establish a simple metadata similarity baseline.
+    - Bin publication years and encode fields of study.
+    - Add TF-IDF abstract features.
+    - Add sparse author and keyword features.
+    - Compute paper similarities efficiently.
+    - Compare recommendation relevance and representation size across feature sets.
+    expected_outputs:
+    - engineered scholarly feature matrix
+    - feature-space size comparison
+    - paper similarity scores
+    - ranked related-paper recommendations
+    - feature engineering impact analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: externally_referenced
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 370
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

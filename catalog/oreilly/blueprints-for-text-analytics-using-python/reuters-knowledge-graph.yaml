@@ -1,0 +1,107 @@
+---
+id: oreilly/blueprints-for-text-analytics-using-python/reuters-knowledge-graph
+name: Reuters Knowledge Graph
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Blueprints for Text Analytics Using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Building a Knowledge Graph
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch12/Knowledge_Graph.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch12/Knowledge_Graph.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 103
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Blueprints for Text Analytics Using Python
+    title: Building a Knowledge Graph
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch12/Knowledge_Graph.ipynb
+    repository:
+      url: https://github.com/blueprints-for-text-analytics-python/blueprints-text
+      path: ch12/Knowledge_Graph.ipynb
+    description: 'O''Reilly builds a knowledge graph from Reuters acquisition news
+      through text cleaning, named-entity recognition, entity normalization, coreference
+      resolution, co-occurrence analysis, relation extraction, and graph construction.
+
+'
+  data:
+    description: 'Reuters acquisition news from the NLTK Reuters corpus.
+
+'
+    source_url: https://www.nltk.org/book/ch02.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - spaCy
+    - NLTK Reuters
+    - named-entity recognition
+    - entity normalization
+    - coreference resolution
+    - relation extraction
+    - NetworkX
+    language: Python
+    code_available: true
+    code_url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch12/Knowledge_Graph.ipynb
+  problem:
+    context: 'Acquisition news contains organizations and relationships in unstructured
+      prose; downstream analysis requires these entities and relationships to be normalized
+      into a structured graph.
+
+'
+    objective: 'Transform acquisition news into a curated entity-relation knowledge
+      graph.
+
+'
+    analytical_questions:
+    - Which organizations and entities occur in the corpus?
+    - How should aliases and name variations be resolved?
+    - Which entities co-occur and what relationships connect them?
+    - What graph structure emerges after normalization?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - nltk
+    - spacy
+    - networkx
+    logical_steps:
+    - Load and clean Reuters acquisition articles.
+    - Extract named entities.
+    - Normalize aliases and entity variants.
+    - Resolve selected references and coreference patterns.
+    - Extract co-occurrences and relations.
+    - Construct a directed multigraph.
+    - Validate and inspect graph structure.
+    expected_outputs:
+    - cleaned Reuters corpus
+    - normalized entity table
+    - relation table
+    - co-occurrence graph
+    - knowledge graph
+    - graph diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 103
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

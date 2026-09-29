@@ -1,0 +1,104 @@
+---
+id: oreilly/practical-natural-language-processing/social-trend-monitoring
+name: Social Trend Monitoring
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Natural Language Processing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Trending Topics
+    url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch8/03_TrendingTopics.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/practical-nlp/practical-nlp-code
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch8/03_TrendingTopics.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 25
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Practical NLP
+    publisher: O'Reilly Media
+    book: Practical Natural Language Processing
+    title: Trending Topics
+    url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch8/03_TrendingTopics.ipynb
+    repository:
+      url: https://github.com/practical-nlp/practical-nlp-code
+      path: Ch8/03_TrendingTopics.ipynb
+    description: 'The O''Reilly companion repository retrieves trending Twitter topics
+      by geographic location and compares overlapping trends.
+
+'
+  data:
+    description: 'Location-specific social-media trend lists originally retrieved
+      through the Twitter API.
+
+'
+    source_url:
+    availability: live_api_or_frozen_replay
+    files: []
+    notes: 'A CLASSROOM rewrite should use a frozen historical trend snapshot or an
+      open alternative source so that execution does not depend on current Twitter/X
+      access.
+
+'
+  original_implementation:
+    technologies:
+    - Tweepy
+    - Twitter API
+    - JSON
+    language: Python
+    code_available: true
+    code_url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch8/03_TrendingTopics.ipynb
+  problem:
+    context: 'Organizations need to detect which topics are gaining attention and
+      how trend patterns differ across geographic markets.
+
+'
+    objective: 'Compare social-media trend lists across locations and identify common,
+      local, and emerging topics for monitoring.
+
+'
+    analytical_questions:
+    - Which topics are trending in each location?
+    - Which trends are shared across markets?
+    - Which trends are unique to a location?
+    - Which topics persist or disappear across successive snapshots?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load frozen trend snapshots for multiple locations and times.
+    - Normalize topic names.
+    - Compare intersections and differences across locations.
+    - Measure persistence across snapshots.
+    - Rank topics by geographic reach and persistence.
+    - Visualize trend overlap and evolution.
+    expected_outputs:
+    - normalized trend table
+    - cross-location overlap table
+    - persistence metrics
+    - ranked trend list
+    - visualizations
+    - written monitoring summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partial
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 25
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

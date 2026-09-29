@@ -1,0 +1,101 @@
+---
+id: oreilly/advanced-analytics-with-spark/wikipedia-latent-concept-discovery
+name: Wikipedia Latent Concept Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Understanding Wikipedia with Latent Semantic Analysis
+    url: https://github.com/sryza/aas/tree/master/ch06-lsa
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch06-lsa/src/main/scala/com/cloudera/datascience/lsa/RunLSA.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 367
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Understanding Wikipedia with Latent Semantic Analysis
+    url: https://github.com/sryza/aas/tree/master/ch06-lsa
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch06-lsa/src/main/scala/com/cloudera/datascience/lsa/RunLSA.scala
+    description: 'O''Reilly builds a distributed TF-IDF document-term matrix from
+      Wikipedia, computes truncated SVD, interprets latent concepts, and implements
+      semantic term and document similarity queries.
+
+'
+  data:
+    description: 'English Wikipedia article dump with article titles and text.
+
+'
+    source_url: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - TF-IDF
+    - latent semantic analysis
+    - SVD
+    - semantic similarity
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch06-lsa/src/main/scala/com/cloudera/datascience/lsa/RunLSA.scala
+  problem:
+    context: 'A very large encyclopedia contains latent semantic structure that cannot
+      be inspected directly from raw article text.
+
+'
+    objective: 'Discover major latent concepts and support semantic similarity queries
+      across Wikipedia terms and documents.
+
+'
+    analytical_questions:
+    - Which concepts explain the largest amount of corpus variation?
+    - Which terms characterize each latent concept?
+    - Which documents are most representative of a concept?
+    - Which terms or articles are semantically similar?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - numpy
+    logical_steps:
+    - Parse the Wikipedia dump.
+    - Tokenize and remove stop words.
+    - Build a distributed TF-IDF matrix.
+    - Compute truncated SVD.
+    - Extract top terms and documents per component.
+    - Normalize latent representations.
+    - Implement semantic similarity queries.
+    expected_outputs:
+    - distributed document-term matrix
+    - singular values
+    - latent concept summaries
+    - term similarity results
+    - article similarity results
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 367
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

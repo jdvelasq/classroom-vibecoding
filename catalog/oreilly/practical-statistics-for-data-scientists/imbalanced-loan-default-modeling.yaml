@@ -1,0 +1,110 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/imbalanced-loan-default-modeling
+name: Imbalanced Loan Default Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Classification
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 5 - Classification.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 143
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Classification
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 5 - Classification.ipynb
+    description: 'O''Reilly models loan default using Naive Bayes, discriminant analysis,
+      logistic regression, decision trees, ROC/AUC, and multiple strategies for class
+      imbalance including weighting, SMOTE, and ADASYN.
+
+'
+  data:
+    description: 'Loan records with borrower score, payment-to-income ratio, purpose,
+      housing, employment length, and paid-off/default outcomes.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/tree/master/data
+    availability: repository
+    files:
+    - data/loan_data.csv.gz
+    - data/loan3000.csv
+    - data/full_train_set.csv.gz
+  original_implementation:
+    technologies:
+    - Naive Bayes
+    - LDA
+    - logistic regression
+    - decision trees
+    - ROC AUC
+    - class weighting
+    - SMOTE
+    - ADASYN
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%205%20-%20Classification.ipynb
+  problem:
+    context: 'Loan-default events may be imbalanced, causing accuracy-focused models
+      to underrepresent the minority outcome that is operationally important.
+
+'
+    objective: 'Compare default classifiers and quantify how imbalance-handling strategies
+      change predictive behavior.
+
+'
+    analytical_questions:
+    - Which borrower attributes distinguish default from paid-off loans?
+    - How do alternative classifiers compare?
+    - What does ROC/AUC reveal beyond accuracy?
+    - How do weighting, SMOTE, and ADASYN affect minority-class predictions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - imbalanced-learn
+    - statsmodels
+    logical_steps:
+    - Load and prepare loan data.
+    - Encode categorical predictors.
+    - Fit several baseline classifiers.
+    - Evaluate confusion-matrix and ROC metrics.
+    - Diagnose class imbalance.
+    - Compare weighting, SMOTE, and ADASYN strategies.
+    - Interpret changes in minority-class performance.
+    expected_outputs:
+    - classifier comparison table
+    - confusion matrices
+    - ROC curves and AUC
+    - imbalance-strategy comparison
+    - default probability scores
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 143
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

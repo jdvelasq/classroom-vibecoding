@@ -1,0 +1,109 @@
+---
+id: oreilly/building-machine-learning-pipelines/consumer-complaint-ml-pipeline
+name: Consumer Complaint ML Pipeline
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Building Machine Learning Pipelines
+  edition:
+  official_url:
+  companion_sources:
+  - title: Consumer Complaint Pipeline
+    url: https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines
+    relationship: Repository recorded in the legacy case inventory.
+    path: interactive-pipeline
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 104
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Building Machine Learning Pipelines
+    title: Consumer Complaint Pipeline
+    url: https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines
+    repository:
+      url: https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines
+      path: interactive-pipeline
+    description: 'The O''Reilly companion project turns a consumer-complaint model
+      into a complete TensorFlow Extended pipeline covering ingestion, validation,
+      transformation, training, analysis, orchestration, and serving.
+
+'
+  data:
+    description: 'Consumer Financial Protection Bureau complaints containing product
+      fields, complaint narratives, company responses, and dispute outcomes.
+
+'
+    source_url: https://www.consumerfinance.gov/data-research/consumer-complaints/
+    availability: public
+    files:
+    - consumer_complaints_with_narrative.csv
+  original_implementation:
+    technologies:
+    - TensorFlow
+    - TFX
+    - TensorFlow Data Validation
+    - TensorFlow Transform
+    - TensorFlow Model Analysis
+    - Apache Beam
+    - pipeline orchestration
+    language: Python
+    code_available: true
+    code_url: https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines
+  problem:
+    context: 'A useful complaint model must move beyond a notebook into a reproducible
+      production pipeline with consistent data validation, feature transformation,
+      training, evaluation, and deployment.
+
+'
+    objective: 'Build an end-to-end machine-learning pipeline for consumer complaint
+      modeling.
+
+'
+    analytical_questions:
+    - How should complaint data be validated before training?
+    - How can transformations be kept consistent between training and serving?
+    - What model-quality checks should gate deployment?
+    - How should pipeline components be orchestrated reproducibly?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - tfx
+    - apache-beam
+    - pandas
+    logical_steps:
+    - Acquire and filter complaint data.
+    - Define data schema and validation checks.
+    - Implement reusable feature transformations.
+    - Train the complaint model.
+    - Evaluate model quality with pipeline-aware metrics.
+    - Package and orchestrate pipeline components.
+    - Validate serving behavior.
+    expected_outputs:
+    - validated complaint dataset
+    - transformation graph
+    - trained model
+    - evaluation report
+    - reproducible ML pipeline
+    - serving-ready artifact
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 104
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

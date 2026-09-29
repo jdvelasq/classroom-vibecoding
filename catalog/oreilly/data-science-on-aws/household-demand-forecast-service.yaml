@@ -1,0 +1,105 @@
+---
+id: oreilly/data-science-on-aws/household-demand-forecast-service
+name: Household Demand Forecast Service
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Data Science on AWS
+  edition:
+  official_url:
+  companion_sources:
+  - title: Amazon Forecast Use Case
+    url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/forecast
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/data-science-on-aws/data-science-on-aws
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_usecases/forecast
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 406
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Data Science on AWS
+    title: Amazon Forecast Use Case
+    url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/forecast
+    repository:
+      url: https://github.com/data-science-on-aws/data-science-on-aws
+      path: 02_usecases/forecast
+    description: 'The O''Reilly companion project prepares household electricity demand
+      data, creates an Amazon Forecast dataset group, trains a predictor, deploys
+      it, and queries future hourly demand.
+
+'
+  data:
+    description: 'Household electric power consumption aggregated to hourly demand
+      for forecasting.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
+    availability: public
+    files:
+    - 02_usecases/forecast/data/item-demand-time.csv
+  original_implementation:
+    technologies:
+    - Amazon Forecast
+    - S3
+    - time-series forecasting
+    - predictor deployment
+    - forecast querying
+    language: Python
+    code_available: true
+    code_url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/forecast
+  problem:
+    context: 'Electricity demand changes hourly and a forecasting workflow must support
+      preparation, training, deployment, and repeatable querying rather than a one-off
+      model.
+
+'
+    objective: 'Build an operational forecasting service for future household electricity
+      demand.
+
+'
+    analytical_questions:
+    - What schema and frequency should the target time series use?
+    - How should chronological train and validation periods be separated?
+    - Which forecast model performs best on held-out demand?
+    - How can future hourly forecasts be served programmatically?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - boto3
+    - statsmodels
+    logical_steps:
+    - Load and aggregate electricity demand.
+    - Create chronological training and validation periods.
+    - Validate the forecast schema.
+    - Train candidate forecasting models.
+    - Compare holdout performance.
+    - Deploy the preferred predictor.
+    - Query and persist future forecasts.
+    expected_outputs:
+    - forecasting dataset
+    - predictor evaluation
+    - deployed forecasting service
+    - future demand forecasts
+    - forecast query workflow
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 406
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

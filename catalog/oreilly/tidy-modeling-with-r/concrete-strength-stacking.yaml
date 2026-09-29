@@ -1,0 +1,106 @@
+---
+id: oreilly/tidy-modeling-with-r/concrete-strength-stacking
+name: Concrete Strength Stacking
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Tidy Modeling with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Ensembles of Models
+    url: https://github.com/tidymodels/TMwR/blob/main/20-ensemble-models.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/tidymodels/TMwR
+    relationship: Repository recorded in the legacy case inventory.
+    path: 20-ensemble-models.Rmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 230
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Tidymodels
+    publisher: O'Reilly Media
+    book: Tidy Modeling with R
+    title: Ensembles of Models
+    url: https://github.com/tidymodels/TMwR/blob/main/20-ensemble-models.Rmd
+    repository:
+      url: https://github.com/tidymodels/TMwR
+      path: 20-ensemble-models.Rmd
+    description: 'Kuhn and Silge predict concrete compressive strength by stacking
+      resampled predictions from diverse tuned model types and learning regularized
+      blending weights.
+
+'
+  data:
+    description: 'Concrete mixture ingredients and measured compressive strength used
+      throughout the book''s workflow-set and ensemble examples.
+
+'
+    source_url: https://github.com/tidymodels/TMwR
+    availability: package_and_repository
+    files:
+    - RData/concrete_results.RData
+  original_implementation:
+    technologies:
+    - tidymodels
+    - workflow sets
+    - resampling
+    - model stacking
+    - lasso blending
+    - ensemble learning
+    language: R
+    code_available: true
+    code_url: https://github.com/tidymodels/TMwR/blob/main/20-ensemble-models.Rmd
+  problem:
+    context: 'Concrete strength is nonlinear and different model families capture
+      different aspects of the mixture-response relationship.
+
+'
+    objective: 'Combine diverse tuned models into a stacked ensemble that improves
+      compressive-strength prediction.
+
+'
+    analytical_questions:
+    - Which candidate models contribute useful out-of-sample information?
+    - How should highly correlated model predictions be blended?
+    - Which members survive regularized stacking?
+    - Does the ensemble outperform its strongest individual members?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - xgboost
+    - mlxtend
+    logical_steps:
+    - Load and split concrete-mixture data.
+    - Tune diverse regression models with common resamples.
+    - Retain out-of-fold predictions.
+    - Fit a regularized meta-model over candidate predictions.
+    - Select ensemble members and weights.
+    - Refit retained members on the full training data.
+    - Compare ensemble and individual holdout performance.
+    expected_outputs:
+    - candidate model leaderboard
+    - out-of-fold prediction matrix
+    - ensemble weights
+    - stacked model
+    - holdout performance comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 230
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,103 @@
+---
+id: oreilly/advanced-analytics-with-spark/artist-recommendation-at-scale
+name: Artist Recommendation at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Recommender Systems
+    url: https://github.com/sryza/aas/tree/master/ch03-recommender
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch03-recommender/src/main/scala/com/cloudera/datascience/recommender/RunRecommender.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 364
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Recommender Systems
+    url: https://github.com/sryza/aas/tree/master/ch03-recommender
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch03-recommender/src/main/scala/com/cloudera/datascience/recommender/RunRecommender.scala
+    description: 'O''Reilly builds an implicit-feedback music recommender with Spark
+      ALS, artist alias resolution, train-validation evaluation, hyperparameter comparison,
+      and personalized top-N recommendation.
+
+'
+  data:
+    description: 'Large-scale user-artist listening counts, artist metadata, and artist
+      alias mappings.
+
+'
+    source_url: https://storage.googleapis.com/aas-data-sets/profiledata_06-May-2005.tar.gz
+    availability: public
+    files:
+    - user_artist_data.txt
+    - artist_data.txt
+    - artist_alias.txt
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - ALS
+    - implicit feedback
+    - recommendation
+    - AUC evaluation
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch03-recommender/src/main/scala/com/cloudera/datascience/recommender/RunRecommender.scala
+  problem:
+    context: 'A music service wants to recommend artists from large volumes of implicit
+      listening behavior rather than explicit star ratings.
+
+'
+    objective: 'Train and evaluate a scalable implicit-feedback recommender and generate
+      personalized artist recommendations.
+
+'
+    analytical_questions:
+    - How should artist aliases be normalized before modeling?
+    - How does ALS compare with a popularity baseline?
+    - Which ALS hyperparameters improve ranking quality?
+    - Which artists should be recommended to a given listener?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load listening counts and artist metadata.
+    - Resolve artist aliases.
+    - Construct user-artist implicit-feedback records.
+    - Split training and validation interactions.
+    - Train popularity and ALS recommenders.
+    - Compare ranking quality.
+    - Generate top-N artist recommendations.
+    expected_outputs:
+    - cleaned interaction table
+    - recommender benchmark
+    - hyperparameter comparison
+    - personalized artist recommendations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 364
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,103 @@
+---
+id: oreilly/advanced-analytics-with-spark/network-intrusion-cluster-anomalies
+name: Network Intrusion Cluster Anomalies
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Anomaly Detection with K-means Clustering
+    url: https://github.com/sryza/aas/tree/master/ch05-kmeans
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch05-kmeans/src/main/scala/com/cloudera/datascience/kmeans/RunKMeans.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 366
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Anomaly Detection with K-means Clustering
+    url: https://github.com/sryza/aas/tree/master/ch05-kmeans
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch05-kmeans/src/main/scala/com/cloudera/datascience/kmeans/RunKMeans.scala
+    description: 'O''Reilly iteratively improves K-means clustering of KDD Cup network
+      traffic through scaling, categorical encoding, cluster-quality diagnostics,
+      and distance-based anomaly detection.
+
+'
+  data:
+    description: 'KDD Cup 1999 network connections with protocol, service, traffic
+      statistics, and labeled normal or attack behavior.
+
+'
+    source_url: https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
+    availability: public
+    files:
+    - kddcup.data
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - K-means
+    - scaling
+    - one-hot encoding
+    - cluster entropy
+    - anomaly detection
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch05-kmeans/src/main/scala/com/cloudera/datascience/kmeans/RunKMeans.scala
+  problem:
+    context: 'Large network-traffic logs contain heterogeneous connection patterns
+      and rare behaviors that may indicate suspicious activity.
+
+'
+    objective: 'Explore connection structure with clustering and identify observations
+      that lie unusually far from learned cluster centers.
+
+'
+    analytical_questions:
+    - How does preprocessing affect cluster structure?
+    - What number of clusters gives an interpretable partition?
+    - How pure are clusters relative to known traffic labels?
+    - Which connections are most anomalous by distance to centroid?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load and label network-traffic records.
+    - Separate numeric and categorical fields.
+    - Compare raw and scaled clustering solutions.
+    - Encode categorical variables.
+    - Evaluate cluster cost and entropy.
+    - Fit the selected clustering solution.
+    - Rank distant observations as anomalies.
+    expected_outputs:
+    - clustering diagnostics
+    - cluster-label profile
+    - anomaly threshold
+    - ranked anomalous connections
+    - preprocessing sensitivity analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 366
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

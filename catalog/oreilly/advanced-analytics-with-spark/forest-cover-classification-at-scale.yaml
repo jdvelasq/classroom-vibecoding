@@ -1,0 +1,102 @@
+---
+id: oreilly/advanced-analytics-with-spark/forest-cover-classification-at-scale
+name: Forest Cover Classification at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Forest Cover with Decision Trees
+    url: https://github.com/sryza/aas/tree/master/ch04-rdf
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch04-rdf/src/main/scala/com/cloudera/datascience/rdf/RunRDF.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 365
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Predicting Forest Cover with Decision Trees
+    url: https://github.com/sryza/aas/tree/master/ch04-rdf
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch04-rdf/src/main/scala/com/cloudera/datascience/rdf/RunRDF.scala
+    description: 'O''Reilly predicts forest cover type with decision trees and random
+      forests, evaluates multiclass performance, handles categorical features, and
+      tunes models with Spark pipelines.
+
+'
+  data:
+    description: 'UCI Covertype records with elevation, slope, hydrology, roadway,
+      fire-point, wilderness-area, soil-type, and forest-cover labels.
+
+'
+    source_url: https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/
+    availability: public
+    files:
+    - covtype.data
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - decision trees
+    - random forests
+    - multiclass classification
+    - train-validation tuning
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch04-rdf/src/main/scala/com/cloudera/datascience/rdf/RunRDF.scala
+  problem:
+    context: 'Forest-cover type can be predicted from terrain and environmental measurements
+      at a scale where distributed model training is useful.
+
+'
+    objective: 'Build and tune scalable multiclass models for forest-cover classification.
+
+'
+    analytical_questions:
+    - Which terrain variables are most informative?
+    - How does a simple tree compare with random forest?
+    - How should categorical soil and wilderness variables be represented?
+    - What performance generalizes to held-out observations?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load and label the Covertype dataset.
+    - Build a reproducible train/test split.
+    - Establish a random-classifier baseline.
+    - Train a decision tree.
+    - Tune tree parameters.
+    - Train and evaluate a random forest.
+    - Inspect confusion patterns and feature importance.
+    expected_outputs:
+    - multiclass baseline
+    - tuned decision tree
+    - random forest
+    - confusion matrix
+    - feature importance table
+    - held-out accuracy comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 365
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

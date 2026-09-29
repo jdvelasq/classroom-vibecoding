@@ -1,0 +1,108 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/web-conversion-experiment
+name: Web Conversion Experiment
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Statistical Experiments and Significance Testing
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%203%20-%20Statistical%20Experiments%20and%20Significance%20Testing.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 3 - Statistical Experiments and Significance Testing.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 141
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Statistical Experiments and Significance Testing
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%203%20-%20Statistical%20Experiments%20and%20Significance%20Testing.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 3 - Statistical Experiments and Significance
+        Testing.ipynb
+    description: 'O''Reilly compares web-page session and conversion outcomes using
+      permutation tests, t-tests, chi-square methods, and power/sample-size reasoning.
+
+'
+  data:
+    description: 'Web-page session times, click rates, and conversion counts used
+      for controlled experiment and significance-testing examples.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/tree/master/data
+    availability: repository
+    files:
+    - data/web_page_data.csv
+    - data/click_rates.csv
+    - data/four_sessions.csv
+  original_implementation:
+    technologies:
+    - permutation testing
+    - t-tests
+    - chi-square tests
+    - ANOVA
+    - power analysis
+    - resampling
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%203%20-%20Statistical%20Experiments%20and%20Significance%20Testing.ipynb
+  problem:
+    context: 'Website changes may alter engagement or conversion, but observed differences
+      must be distinguished from sampling variation before they are interpreted.
+
+'
+    objective: 'Evaluate whether observed web-experiment differences are statistically
+      meaningful and quantify the role of sample size and test design.
+
+'
+    analytical_questions:
+    - Are session-time differences between page variants larger than expected by chance?
+    - Do conversion rates differ materially?
+    - Which test is appropriate for continuous versus categorical outcomes?
+    - What sample size is needed to detect a practically relevant effect?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scipy
+    - statsmodels
+    - numpy
+    logical_steps:
+    - Load experiment outcome data.
+    - Summarize treatment and control groups.
+    - Build resampling and permutation null distributions.
+    - Run parametric and categorical significance tests.
+    - Compare p-values with practical effect sizes.
+    - Perform power and sample-size calculations.
+    - Summarize statistical and operational conclusions.
+    expected_outputs:
+    - treatment-control summaries
+    - permutation distributions
+    - significance test table
+    - effect-size comparison
+    - power or sample-size calculation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 141
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

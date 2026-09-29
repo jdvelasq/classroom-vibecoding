@@ -1,0 +1,105 @@
+---
+id: oreilly/practical-mlops/reuters-automl-text-classification
+name: Reuters AutoML Text Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical MLOps
+  edition:
+  official_url:
+  companion_sources:
+  - title: Ludwig AutoML with Text Categorization
+    url: https://github.com/paiml/practical-mlops-book/blob/main/Ludwig.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/paiml/practical-mlops-book
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ludwig.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 359
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical MLOps
+    title: Ludwig AutoML with Text Categorization
+    url: https://github.com/paiml/practical-mlops-book/blob/main/Ludwig.ipynb
+    repository:
+      url: https://github.com/paiml/practical-mlops-book
+      path: Ludwig.ipynb
+    description: 'O''Reilly uses Ludwig to configure and run an automated text-classification
+      experiment on Reuters documents with a declarative model specification.
+
+'
+  data:
+    description: 'Reuters news text paired with category labels in a prepared all-categories
+      dataset.
+
+'
+    source_url: https://github.com/paiml/practical-mlops-book/blob/main/chap05/reuters-allcats.csv
+    availability: repository
+    files:
+    - chap05/reuters-allcats.csv
+    - chap05/config.yaml
+  original_implementation:
+    technologies:
+    - Ludwig
+    - AutoML
+    - convolutional text encoder
+    - multiclass classification
+    - declarative model configuration
+    language: Python
+    code_available: true
+    code_url: https://github.com/paiml/practical-mlops-book/blob/main/Ludwig.ipynb
+  problem:
+    context: 'Analysts may need to build a document classifier quickly without manually
+      implementing the entire training pipeline and architecture.
+
+'
+    objective: 'Configure and evaluate an automated multiclass text classifier for
+      Reuters news.
+
+'
+    analytical_questions:
+    - How can text and target fields be specified declaratively?
+    - What predictive performance is obtained with the automated pipeline?
+    - Which modeling choices are hidden or exposed by AutoML?
+    - How does this workflow compare with a hand-built text-classification pipeline?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - ludwig
+    - scikit-learn
+    logical_steps:
+    - Load and validate Reuters text and labels.
+    - Inspect class balance.
+    - Define a declarative text-classification configuration.
+    - Train the AutoML model.
+    - Evaluate multiclass predictions.
+    - Inspect errors and per-class performance.
+    - Compare workflow complexity with a manual baseline.
+    expected_outputs:
+    - prepared Reuters dataset
+    - AutoML configuration
+    - trained text classifier
+    - multiclass evaluation report
+    - error analysis
+    - workflow comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 359
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

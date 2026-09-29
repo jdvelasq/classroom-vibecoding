@@ -1,0 +1,104 @@
+---
+id: oreilly/python-for-data-analysis-third-edition/movie-audience-preferences
+name: Movie Audience Preferences
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Python for Data Analysis, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: MovieLens 1M Dataset Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/wesm/pydata-book
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch13.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 145
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Python for Data Analysis, Third Edition
+    title: MovieLens 1M Dataset Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    repository:
+      url: https://github.com/wesm/pydata-book
+      path: ch13.ipynb
+    description: 'O''Reilly joins MovieLens user, rating, and movie tables and analyzes
+      audience preferences by gender, age, genre, rating volume, and disagreement.
+
+'
+  data:
+    description: 'MovieLens 1M users, movies, and ratings with demographic attributes
+      and genres.
+
+'
+    source_url: https://github.com/wesm/pydata-book/tree/3rd-edition/datasets/movielens
+    availability: repository
+    files:
+    - datasets/movielens/users.dat
+    - datasets/movielens/ratings.dat
+    - datasets/movielens/movies.dat
+  original_implementation:
+    technologies:
+    - pandas
+    - relational joins
+    - pivot tables
+    - grouped summaries
+    - audience segmentation
+    language: Python
+    code_available: true
+    code_url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+  problem:
+    context: 'Movie ratings become more informative when user demographics and movie
+      genres are integrated, allowing preference differences and disagreement to be
+      measured.
+
+'
+    objective: 'Diagnose how movie preferences vary across audience segments and genres.
+
+'
+    analytical_questions:
+    - Which movies receive the highest ratings among active titles?
+    - How do ratings differ by gender?
+    - Which movies generate the greatest disagreement?
+    - How do genre preferences vary across age groups?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load user, movie, and rating tables.
+    - Validate identifiers and join cardinalities.
+    - Merge the three sources.
+    - Restrict analysis to sufficiently rated titles.
+    - Compare segment-level mean ratings.
+    - Measure rating dispersion and disagreement.
+    - Expand genres and summarize preferences by age.
+    expected_outputs:
+    - integrated MovieLens table
+    - active-title rankings
+    - audience preference tables
+    - disagreement ranking
+    - genre-by-age profiles
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 145
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

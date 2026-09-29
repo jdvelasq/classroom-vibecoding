@@ -1,0 +1,101 @@
+---
+id: oreilly/machine-learning-design-patterns/text-model-continuous-evaluation
+name: Text Model Continuous Evaluation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Machine Learning Design Patterns
+  edition:
+  official_url:
+  companion_sources:
+  - title: Continuous Evaluation
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/05_resilience/continuous_eval.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+    relationship: Repository recorded in the legacy case inventory.
+    path: 05_resilience/continuous_eval.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 255
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Machine Learning Design Patterns
+    title: Continuous Evaluation
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/05_resilience/continuous_eval.ipynb
+    repository:
+      url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+      path: 05_resilience/continuous_eval.ipynb
+    description: 'Deploy a text classifier and establish a continuous evaluation loop
+      for online predictions.
+
+'
+  data:
+    description: 'Hacker News article titles labeled by source such as NYTimes, GitHub,
+      and TechCrunch.
+
+'
+    source_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/tree/master/05_resilience
+    availability: repository_or_generated
+    files: []
+  original_implementation:
+    technologies:
+    - TensorFlow
+    - online serving
+    - BigQuery
+    - continuous evaluation
+    - ground truth capture
+    - classification monitoring
+    language: Python
+    code_available: true
+    code_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/05_resilience/continuous_eval.ipynb
+  problem:
+    context: 'A deployed text classifier can degrade or fail in production even when
+      offline test metrics looked acceptable.
+
+'
+    objective: 'Deploy a text classifier and establish a continuous evaluation loop
+      for online predictions.
+
+'
+    analytical_questions:
+    - How should production predictions be captured?
+    - How is delayed ground truth joined to predictions?
+    - Which metrics reveal production model quality over time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - google-cloud-bigquery
+    - scikit-learn
+    logical_steps:
+    - Train and validate a text classifier.
+    - Export a serving signature.
+    - Deploy the model.
+    - Capture online prediction requests.
+    - Attach ground-truth labels.
+    - Calculate ongoing classification metrics.
+    - Review production errors.
+    expected_outputs:
+    - deployed classifier
+    - prediction log
+    - ground-truth-enriched evaluation table
+    - continuous evaluation report
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 255
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

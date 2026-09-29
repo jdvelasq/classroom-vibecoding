@@ -1,0 +1,107 @@
+---
+id: oreilly/blueprints-for-text-analytics-using-python/bug-triage-explanation
+name: Bug Triage Explanation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Blueprints for Text Analytics Using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: How to Explain a Text Classifier
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch07/Explainable_AI.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch07/Explainable_AI.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 105
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Blueprints for Text Analytics Using Python
+    title: How to Explain a Text Classifier
+    url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch07/Explainable_AI.ipynb
+    repository:
+      url: https://github.com/blueprints-for-text-analytics-python/blueprints-text
+      path: ch07/Explainable_AI.ipynb
+    description: 'O''Reilly trains a component classifier for software bug reports
+      and applies model-explanation techniques such as LIME, ELI5, and anchors to
+      understand predictions.
+
+'
+  data:
+    description: 'Eclipse JDT bug reports with textual descriptions and component
+      labels.
+
+'
+    source_url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/data/jdt-bugs-dataset/eclipse_jdt.csv.gz
+    availability: repository
+    files:
+    - data/jdt-bugs-dataset/eclipse_jdt.csv.gz
+  original_implementation:
+    technologies:
+    - text classification
+    - SVM
+    - LIME
+    - ELI5
+    - anchors
+    - classification diagnostics
+    language: Python
+    code_available: true
+    code_url: https://github.com/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch07/Explainable_AI.ipynb
+  problem:
+    context: 'Automated bug routing can assign reports to software components, but
+      engineering teams need to understand why a text classifier makes particular
+      assignments.
+
+'
+    objective: 'Predict bug-report components and explain individual and global classifier
+      behavior.
+
+'
+    analytical_questions:
+    - How accurately can bug reports be routed from text?
+    - Which words or phrases drive component predictions?
+    - How stable are local explanations?
+    - Which misclassifications are understandable from the explanation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - lime
+    - shap
+    logical_steps:
+    - Load and clean bug-report text.
+    - Construct a reproducible train/test split.
+    - Build the text classification pipeline.
+    - Evaluate class-level performance.
+    - Explain representative predictions.
+    - Inspect explanations for errors and ambiguous reports.
+    - Summarize global and local model behavior.
+    expected_outputs:
+    - bug component classifier
+    - classification report
+    - local explanations
+    - error explanation set
+    - interpretable feature summaries
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 105
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

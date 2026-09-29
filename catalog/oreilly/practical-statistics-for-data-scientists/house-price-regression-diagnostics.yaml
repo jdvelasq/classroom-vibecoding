@@ -1,0 +1,111 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/house-price-regression-diagnostics
+name: House Price Regression Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Regression and Prediction
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%204%20-%20Regression%20and%20Prediction.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 4 - Regression and Prediction.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 142
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Regression and Prediction
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%204%20-%20Regression%20and%20Prediction.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 4 - Regression and Prediction.ipynb
+    description: 'O''Reilly uses house-sales data to develop multiple regression,
+      model selection, weighted regression, factor encoding, interactions, influence
+      diagnostics, splines, generalized additive models, and regularization.
+
+'
+  data:
+    description: 'Residential house-sales records containing adjusted sale price,
+      living area, lot size, bathrooms, bedrooms, grade, property type, ZIP code,
+      and sale date.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/data/house_sales.csv
+    availability: repository
+    files:
+    - data/house_sales.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - weighted regression
+    - stepwise selection
+    - interactions
+    - influence diagnostics
+    - splines
+    - GAM
+    - Lasso
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%204%20-%20Regression%20and%20Prediction.ipynb
+  problem:
+    context: 'Residential valuation depends on physical, temporal, and geographic
+      attributes, and a useful model must also diagnose nonlinearities, influential
+      observations, and confounding.
+
+'
+    objective: 'Build and critically diagnose a house-price regression model rather
+      than relying only on a single fit statistic.
+
+'
+    analytical_questions:
+    - Which property characteristics explain adjusted sale price?
+    - Do time weighting and geographic factors improve the model?
+    - Which observations are influential or anomalous?
+    - Are interactions or nonlinear relationships needed?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - statsmodels
+    - pygam
+    logical_steps:
+    - Load and prepare house-sales data.
+    - Fit a multiple-regression baseline.
+    - Evaluate residual and fit metrics.
+    - Add categorical and geographic effects.
+    - Diagnose outliers and influential observations.
+    - Test interactions and nonlinear terms.
+    - Compare regularized and flexible alternatives.
+    expected_outputs:
+    - valuation model
+    - coefficient and fit summary
+    - residual diagnostics
+    - influence report
+    - nonlinear effect plots
+    - model comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 142
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

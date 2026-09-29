@@ -1,0 +1,104 @@
+---
+id: oreilly/advanced-analytics-with-spark/nyc-taxi-geotemporal-diagnostics
+name: NYC Taxi Geotemporal Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Geospatial and Temporal Data Analysis
+    url: https://github.com/sryza/aas/tree/master/ch08-geotime
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch08-geotime/src/main/scala/com/cloudera/datascience/geotime/RunGeoTime.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 368
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Geospatial and Temporal Data Analysis
+    url: https://github.com/sryza/aas/tree/master/ch08-geotime
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch08-geotime/src/main/scala/com/cloudera/datascience/geotime/RunGeoTime.scala
+    description: 'O''Reilly cleans NYC taxi trips, maps pickup and drop-off coordinates
+      into borough polygons, and analyzes trip and driver idle-time patterns by location.
+
+'
+  data:
+    description: 'NYC taxi trip records with vehicle identifier, pickup/drop-off timestamps,
+      and geographic coordinates, plus borough boundaries.
+
+'
+    source_url: https://storage.googleapis.com/aas-data-sets/trip_data_1.csv.zip
+    availability: public
+    files:
+    - trip_data_1.csv
+    - ch08-geotime/src/main/resources/nyc-boroughs.geojson
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - geospatial joins
+    - temporal analysis
+    - GeoJSON
+    - session analysis
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch08-geotime/src/main/scala/com/cloudera/datascience/geotime/RunGeoTime.scala
+  problem:
+    context: 'Taxi trip logs contain spatial and temporal behavior that can reveal
+      where trips concentrate and where drivers spend time waiting between rides.
+
+'
+    objective: 'Diagnose borough-level trip and idle-time patterns from large geotemporal
+      taxi data.
+
+'
+    analytical_questions:
+    - Which boroughs receive the most trips?
+    - Which records contain implausible trip durations or coordinates?
+    - How long do drivers wait between consecutive trips?
+    - How does idle time differ by borough?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - geopandas
+    - shapely
+    logical_steps:
+    - Load and safely parse taxi trips.
+    - Remove implausible durations and invalid coordinates.
+    - Load borough polygons.
+    - Assign trips to boroughs spatially.
+    - Order trips by driver and time.
+    - Calculate between-trip idle durations.
+    - Compare trip and idle-time patterns by borough.
+    expected_outputs:
+    - cleaned taxi dataset
+    - borough trip counts
+    - idle-time distributions
+    - borough performance table
+    - geotemporal diagnostic findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 368
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

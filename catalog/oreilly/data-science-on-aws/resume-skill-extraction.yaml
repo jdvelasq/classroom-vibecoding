@@ -1,0 +1,107 @@
+---
+id: oreilly/data-science-on-aws/resume-skill-extraction
+name: Resume Skill Extraction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Data Science on AWS
+  edition:
+  official_url:
+  companion_sources:
+  - title: Custom Entity Detection with Textract and Comprehend
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/text_extraction/Textract_Comprehend_Custom_Entity_Recognition.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/data-science-on-aws/data-science-on-aws
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_usecases/text_extraction/Textract_Comprehend_Custom_Entity_Recognition.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 409
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Data Science on AWS
+    title: Custom Entity Detection with Textract and Comprehend
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/text_extraction/Textract_Comprehend_Custom_Entity_Recognition.ipynb
+    repository:
+      url: https://github.com/data-science-on-aws/data-science-on-aws
+      path: 02_usecases/text_extraction/Textract_Comprehend_Custom_Entity_Recognition.ipynb
+    description: 'The O''Reilly companion project OCRs scanned resumes, creates entity
+      labels, trains a custom recognizer for skills, evaluates precision/recall/F1,
+      and converts extracted skill entities into structured output.
+
+'
+  data:
+    description: 'Public resume entity-recognition corpus with approximately 220 candidate
+      resumes and skill annotations, converted to PDF for document-processing workflow.
+
+'
+    source_url: https://www.kaggle.com/datasets/dataturks/resume-entities-for-ner
+    availability: public
+    files:
+    - 02_usecases/text_extraction/entity_list.csv
+  original_implementation:
+    technologies:
+    - Amazon Textract
+    - OCR
+    - Amazon Ground Truth
+    - Amazon Comprehend
+    - custom NER
+    - entity evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/text_extraction/Textract_Comprehend_Custom_Entity_Recognition.ipynb
+  problem:
+    context: 'Candidate resumes often arrive as scanned documents and the skills they
+      contain must be converted into structured attributes before workforce analytics
+      or matching.
+
+'
+    objective: 'Build a document-processing pipeline that extracts skill entities
+      from scanned resumes.
+
+'
+    analytical_questions:
+    - How should scanned resumes be converted to machine-readable text?
+    - How should skill entities be labeled for training?
+    - How accurately does the custom recognizer recover skills?
+    - How should extracted entities be transformed into structured candidate data?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pypdf
+    - spacy
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Ingest resume documents.
+    - Extract text from PDFs.
+    - Prepare skill entity annotations.
+    - Train a custom entity recognizer.
+    - Evaluate entity-level precision, recall, and F1.
+    - Run inference on unseen resumes.
+    - Convert skill entities into an analytical table.
+    expected_outputs:
+    - extracted resume text
+    - labeled NER dataset
+    - skill recognizer
+    - entity-level metrics
+    - structured candidate-skill table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 409
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

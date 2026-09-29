@@ -1,0 +1,115 @@
+---
+id: oreilly/data-science-the-hard-parts/prediction-to-action
+name: Prediction to Action
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: 'Data Science: The Hard Parts'
+  edition:
+  official_url:
+  companion_sources:
+  - title: From Prediction to Decisions
+    url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch14_decisions.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/dvaughan79/data-science-hard-parts-code
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch14_decisions.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 54
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Daniel Vaughan
+    publisher: O'Reilly Media
+    book: 'Data Science: The Hard Parts'
+    title: From Prediction to Decisions
+    url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch14_decisions.ipynb
+    repository:
+      url: https://github.com/dvaughan79/data-science-hard-parts-code
+      path: ch14_decisions.ipynb
+    description: 'The O''Reilly notebook moves from classifier probabilities to operational
+      decisions by varying the decision threshold and optimizing expected profit or
+      expected cost using confusion-matrix outcomes and user-supplied economics.
+
+'
+  data:
+    description: 'Synthetic latent-variable classification data generated in the notebook,
+      with intentionally omitted information to produce realistic imperfect prediction
+      probabilities.
+
+'
+    source_url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch14_decisions.ipynb
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - logistic regression
+    - probability scoring
+    - confusion matrix
+    - precision and recall
+    - threshold optimization
+    - expected profit
+    - expected cost
+    - scikit-learn
+    language: Python
+    code_available: true
+    code_url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch14_decisions.ipynb
+  problem:
+    context: 'A predictive model does not determine an operational action by itself.
+      Different probability thresholds create different volumes of true positives,
+      false positives, false negatives, and true negatives, each with a different
+      business consequence.
+
+'
+    objective: 'Convert prediction probabilities into an economically justified action
+      rule by selecting the threshold that maximizes expected profit or minimizes
+      expected cost.
+
+'
+    analytical_questions:
+    - How do precision, recall, and action volume change with the threshold?
+    - What economic value or cost should be assigned to each confusion-matrix outcome?
+    - Which threshold maximizes expected profit under the stated assumptions?
+    - How sensitive is the preferred action rule to changes in costs and benefits?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Generate a deterministic binary classification problem.
+    - Split the data and fit a probabilistic classifier.
+    - Produce out-of-sample class probabilities.
+    - Evaluate confusion-matrix outcomes across a threshold grid.
+    - Calculate precision, recall, false-positive rate, and action volume.
+    - Assign explicit economic values to decision outcomes.
+    - Calculate expected profit or expected cost at each threshold.
+    - Select and stress-test the economically preferred threshold.
+    - Compare the economic rule with a default probability threshold.
+    expected_outputs:
+    - probability-scored evaluation set
+    - threshold-performance table
+    - confusion-matrix outcome table
+    - expected-profit or expected-cost curve
+    - selected decision threshold
+    - sensitivity analysis
+    - written operational recommendation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 54
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

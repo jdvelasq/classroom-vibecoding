@@ -1,0 +1,99 @@
+---
+id: oreilly/advanced-analytics-with-spark/medline-topic-network
+name: MEDLINE Topic Network
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Analyzing Co-occurrence Networks with GraphX
+    url: https://github.com/sryza/aas/tree/master/ch07-graph
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch07-graph/src/main/scala/com/cloudera/datascience/graph/RunGraph.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 375
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Analyzing Co-occurrence Networks with GraphX
+    url: https://github.com/sryza/aas/tree/master/ch07-graph
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch07-graph/src/main/scala/com/cloudera/datascience/graph/RunGraph.scala
+    description: 'O''Reilly constructs a MeSH topic co-occurrence graph from MEDLINE
+      and analyzes statistically filtered relationships and network structure.
+
+'
+  data:
+    description: 'MEDLINE citation records with MeSH descriptors marked as major topics.
+
+'
+    source_url: https://ftp.nlm.nih.gov/nlmdata/sample/medline/
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - GraphX
+    - co-occurrence networks
+    - connected components
+    - chi-square filtering
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch07-graph/src/main/scala/com/cloudera/datascience/graph/RunGraph.scala
+  problem:
+    context: 'Biomedical literature contains recurring combinations of major MeSH
+      topics whose network structure can reveal connected research areas.
+
+'
+    objective: 'Construct and diagnose a biomedical topic network from article-level
+      co-occurrence.
+
+'
+    analytical_questions:
+    - Which MeSH topics occur most frequently?
+    - Which topic pairs co-occur more strongly than expected?
+    - What components and hubs appear?
+    - How cohesive is the statistically filtered graph?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - networkx
+    - scipy
+    logical_steps:
+    - Parse MEDLINE records.
+    - Extract major MeSH topics.
+    - Generate topic pairs and frequencies.
+    - Build a weighted graph.
+    - Filter edges statistically.
+    - Analyze components, degrees, clustering, and paths.
+    expected_outputs:
+    - topic frequency table
+    - weighted topic graph
+    - significant edge set
+    - network diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 375
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

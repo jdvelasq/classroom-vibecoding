@@ -1,0 +1,107 @@
+---
+id: oreilly/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-third-edition/model-serving-and-versioning
+name: Model Serving and Versioning
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Third
+    Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Training and Deploying TensorFlow Models at Scale
+    url: https://github.com/ageron/handson-ml3/blob/main/19_training_and_deploying_at_scale.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/ageron/handson-ml3
+    relationship: Repository recorded in the legacy case inventory.
+    path: 19_training_and_deploying_at_scale.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 144
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Third
+      Edition
+    title: Training and Deploying TensorFlow Models at Scale
+    url: https://github.com/ageron/handson-ml3/blob/main/19_training_and_deploying_at_scale.ipynb
+    repository:
+      url: https://github.com/ageron/handson-ml3
+      path: 19_training_and_deploying_at_scale.ipynb
+    description: 'O''Reilly trains and exports a TensorFlow model, serves it through
+      TensorFlow Serving over REST and gRPC, deploys new model versions, and demonstrates
+      cloud batch and online serving workflows.
+
+'
+  data:
+    description: 'MNIST image data used as the worked model-serving example.
+
+'
+    source_url: https://www.tensorflow.org/api_docs/python/tf/keras/datasets/mnist/load_data
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - TensorFlow
+    - SavedModel
+    - TensorFlow Serving
+    - REST
+    - gRPC
+    - model versioning
+    - Vertex AI
+    language: Python
+    code_available: true
+    code_url: https://github.com/ageron/handson-ml3/blob/main/19_training_and_deploying_at_scale.ipynb
+  problem:
+    context: 'A trained model must be packaged, versioned, queried, updated, and deployed
+      reliably before it can function as a reusable analytical service.
+
+'
+    objective: 'Turn a trained model into a versioned prediction service and validate
+      multiple serving modes.
+
+'
+    analytical_questions:
+    - How should a trained model be exported for serving?
+    - How can clients request predictions through REST and gRPC?
+    - How can a new model version be deployed without redesigning the client?
+    - What changes when inference is moved to managed cloud serving?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - requests
+    - grpcio
+    logical_steps:
+    - Train a reproducible image classifier.
+    - Export a SavedModel artifact.
+    - Launch a local TensorFlow Serving instance.
+    - Send REST and gRPC prediction requests.
+    - Export and deploy a second model version.
+    - Validate versioned serving behavior.
+    - Compare local and managed-cloud deployment patterns.
+    expected_outputs:
+    - exported model artifact
+    - REST prediction example
+    - gRPC prediction example
+    - versioned serving directory
+    - deployment validation
+    - working prediction service
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 144
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

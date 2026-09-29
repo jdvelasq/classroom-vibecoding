@@ -1,0 +1,105 @@
+---
+id: oreilly/tidy-modeling-with-r/bean-morphology-reduction
+name: Bean Morphology Reduction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Tidy Modeling with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Dimensionality Reduction
+    url: https://github.com/tidymodels/TMwR/blob/main/16-dimensionality-reduction.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/tidymodels/TMwR
+    relationship: Repository recorded in the legacy case inventory.
+    path: 16-dimensionality-reduction.Rmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 229
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Tidymodels
+    publisher: O'Reilly Media
+    book: Tidy Modeling with R
+    title: Dimensionality Reduction
+    url: https://github.com/tidymodels/TMwR/blob/main/16-dimensionality-reduction.Rmd
+    repository:
+      url: https://github.com/tidymodels/TMwR
+      path: 16-dimensionality-reduction.Rmd
+    description: 'Kuhn and Silge use dry-bean morphology measurements to demonstrate
+      PCA and related dimensionality-reduction methods for revealing lower-dimensional
+      structure before predictive modeling.
+
+'
+  data:
+    description: '13,611 labeled dry beans from seven varieties described by image-derived
+      morphology measurements such as area, perimeter, axes, roundness, and convexity.
+
+'
+    source_url: https://github.com/tidymodels/TMwR
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - R
+    - tidymodels
+    - PCA
+    - dimensionality reduction
+    - feature recipes
+    - visualization
+    language: R
+    code_available: true
+    code_url: https://github.com/tidymodels/TMwR/blob/main/16-dimensionality-reduction.Rmd
+  problem:
+    context: 'Morphological descriptors are correlated and difficult to interpret
+      jointly, so lower-dimensional representations can reveal structure among bean
+      varieties.
+
+'
+    objective: 'Explore and summarize latent structure in bean morphology while preserving
+      information useful for later modeling.
+
+'
+    analytical_questions:
+    - Which morphology variables are strongly correlated?
+    - How many latent dimensions capture most of the structure?
+    - Which measurements dominate the leading components?
+    - Do known bean varieties separate in reduced-dimensional space?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate bean morphology data.
+    - Create training and validation partitions.
+    - Standardize morphology variables.
+    - Fit PCA and alternative reduction methods.
+    - Inspect explained variance and loadings.
+    - Visualize observations in reduced space.
+    - Compare latent structure with known varieties.
+    expected_outputs:
+    - correlation diagnostics
+    - explained-variance table
+    - loading table
+    - low-dimensional embeddings
+    - variety structure visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 229
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

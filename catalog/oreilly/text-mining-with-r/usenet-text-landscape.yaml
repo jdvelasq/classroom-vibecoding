@@ -1,0 +1,107 @@
+---
+id: oreilly/text-mining-with-r/usenet-text-landscape
+name: Usenet Text Landscape
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Text Mining with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Analyzing Usenet Text
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/09-usenet.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/juliasilge/tidy-text-mining
+    relationship: Repository recorded in the legacy case inventory.
+    path: '09-usenet.Rmd'
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 102
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Text Mining with R
+    title: Analyzing Usenet Text
+    url: https://github.com/juliasilge/tidy-text-mining/blob/main/09-usenet.Rmd
+    repository:
+      url: https://github.com/juliasilge/tidy-text-mining
+      path: '09-usenet.Rmd'
+    description: 'The book performs a start-to-finish analysis of 20 Newsgroups messages
+      using text cleaning, tf-idf, similarity networks, topic modeling, and sentiment
+      diagnostics.
+
+'
+  data:
+    description: 'Approximately 20,000 historical Usenet messages from 20 topical
+      newsgroups.
+
+'
+    source_url: https://github.com/juliasilge/tidy-text-mining/tree/main/data/20news-bydate
+    availability: repository
+    files:
+    - data/20news-bydate
+  original_implementation:
+    technologies:
+    - tidytext
+    - tf-idf
+    - pairwise correlation
+    - network analysis
+    - LDA
+    - sentiment analysis
+    language: R
+    code_available: true
+    code_url: https://github.com/juliasilge/tidy-text-mining/blob/main/09-usenet.Rmd
+  problem:
+    context: 'Large discussion archives contain overlapping topical communities, distinctive
+      vocabulary, and sentiment patterns that can be reconstructed from raw messages.
+
+'
+    objective: 'Characterize the topical and relational structure of a large discussion
+      corpus.
+
+'
+    analytical_questions:
+    - Which terms are characteristic of each discussion group?
+    - Which groups are linguistically similar?
+    - Can unsupervised topics recover known communities?
+    - How do sentiment patterns vary across groups?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - gensim
+    - networkx
+    - nltk
+    logical_steps:
+    - Load raw messages and remove headers, signatures, and quoted material.
+    - Tokenize and remove stop words.
+    - Calculate group-specific tf-idf.
+    - Build similarity relationships among groups.
+    - Fit exploratory topic models.
+    - Compare topic assignments with known groups.
+    - Diagnose sentiment patterns and influential terms.
+    expected_outputs:
+    - cleaned message corpus
+    - distinctive-term tables
+    - group similarity network
+    - topic model summaries
+    - sentiment diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 102
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

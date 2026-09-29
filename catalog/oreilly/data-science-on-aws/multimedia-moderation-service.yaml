@@ -1,0 +1,106 @@
+---
+id: oreilly/data-science-on-aws/multimedia-moderation-service
+name: Multimedia Moderation Service
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Data Science on AWS
+  edition:
+  official_url:
+  companion_sources:
+  - title: Content Moderation with Amazon Rekognition
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/04_Content_Moderation.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/data-science-on-aws/data-science-on-aws
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_usecases/04_Content_Moderation.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 410
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Data Science on AWS
+    title: Content Moderation with Amazon Rekognition
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/04_Content_Moderation.ipynb
+    repository:
+      url: https://github.com/data-science-on-aws/data-science-on-aws
+      path: 02_usecases/04_Content_Moderation.ipynb
+    description: 'The O''Reilly companion project detects unsafe image and video content,
+      returns moderation labels with confidence scores and timestamps, and demonstrates
+      synchronous and asynchronous moderation workflows.
+
+'
+  data:
+    description: 'Example image and video assets used to demonstrate explicit, suggestive,
+      and violent content moderation.
+
+'
+    source_url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/media
+    availability: repository
+    files:
+    - 02_usecases/media/weapon.png
+    - 02_usecases/media/weapon.mp4
+  original_implementation:
+    technologies:
+    - Amazon Rekognition
+    - image moderation
+    - video moderation
+    - confidence thresholds
+    - asynchronous jobs
+    language: Python
+    code_available: true
+    code_url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/04_Content_Moderation.ipynb
+  problem:
+    context: 'A media platform must screen images and videos for unsafe content and
+      return structured moderation results that downstream systems can act on.
+
+'
+    objective: 'Build a moderation service that identifies unsafe content in images
+      and video.
+
+'
+    analytical_questions:
+    - Which moderation labels are detected in an image?
+    - How should confidence thresholds be selected?
+    - At what timestamps does unsafe content occur in video?
+    - How should asynchronous video moderation be orchestrated?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - transformers
+    - torch
+    - opencv-python
+    - fastapi
+    logical_steps:
+    - Load image and video assets.
+    - Apply a pre-trained moderation classifier.
+    - Convert predictions to standardized moderation labels.
+    - Apply configurable confidence thresholds.
+    - Process video frames or segments asynchronously.
+    - Aggregate label timestamps.
+    - Expose moderation results through an API.
+    expected_outputs:
+    - image moderation labels
+    - confidence scores
+    - video moderation timeline
+    - asynchronous processing workflow
+    - moderation service interface
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 410
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

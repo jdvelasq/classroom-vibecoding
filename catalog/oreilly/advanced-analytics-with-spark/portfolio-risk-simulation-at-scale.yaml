@@ -1,0 +1,111 @@
+---
+id: oreilly/advanced-analytics-with-spark/portfolio-risk-simulation-at-scale
+name: Portfolio Risk Simulation at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Advanced Analytics with Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Estimating Financial Risk through Monte Carlo Simulation
+    url: https://github.com/sryza/aas/tree/master/ch09-risk
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/sryza/aas
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch09-risk/src/main/scala/com/cloudera/datascience/risk/RunRisk.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 369
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Advanced Analytics with Spark
+    title: Estimating Financial Risk through Monte Carlo Simulation
+    url: https://github.com/sryza/aas/tree/master/ch09-risk
+    repository:
+      url: https://github.com/sryza/aas
+      path: ch09-risk/src/main/scala/com/cloudera/datascience/risk/RunRisk.scala
+    description: 'O''Reilly models stock returns with market factors and runs distributed
+      Monte Carlo simulations to estimate portfolio VaR, CVaR, confidence intervals,
+      and backtesting diagnostics.
+
+'
+  data:
+    description: 'Historical stock and market-factor price series included with the
+      companion repository.
+
+'
+    source_url: https://github.com/sryza/aas/tree/master/ch09-risk/data
+    availability: repository
+    files:
+    - ch09-risk/data/stocks.zip
+    - ch09-risk/data/factors.zip
+  original_implementation:
+    technologies:
+    - Apache Spark
+    - Monte Carlo simulation
+    - factor models
+    - VaR
+    - CVaR
+    - bootstrap confidence intervals
+    - Kupiec backtest
+    language: Scala
+    code_available: true
+    code_url: https://github.com/sryza/aas/blob/master/ch09-risk/src/main/scala/com/cloudera/datascience/risk/RunRisk.scala
+  problem:
+    context: 'Portfolio downside risk depends on correlated market-factor movements
+      and requires many simulated scenarios to estimate tail losses reliably.
+
+'
+    objective: 'Quantify portfolio downside risk with scalable factor-based Monte
+      Carlo simulation.
+
+'
+    analytical_questions:
+    - How should stock returns be related to common market factors?
+    - What loss distribution results from simulated factor scenarios?
+    - What are the portfolio VaR and CVaR?
+    - How uncertain are those tail-risk estimates?
+    - Does historical backtesting support the selected VaR level?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - numpy
+    - pandas
+    - scipy
+    logical_steps:
+    - Load and align stock and factor histories.
+    - Calculate multi-period returns.
+    - Fit factor regressions for portfolio instruments.
+    - Estimate factor means and covariance.
+    - Simulate large numbers of market scenarios.
+    - Calculate portfolio trial returns.
+    - Estimate VaR, CVaR, and confidence intervals.
+    - Backtest VaR against historical returns.
+    expected_outputs:
+    - fitted factor exposures
+    - simulated return distribution
+    - VaR estimate
+    - CVaR estimate
+    - confidence intervals
+    - backtest result
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 369
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,105 @@
+---
+id: oreilly/tidy-modeling-with-r/ridership-prediction-applicability
+name: Ridership Prediction Applicability
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Tidy Modeling with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: When Should You Trust Your Predictions?
+    url: https://github.com/tidymodels/TMwR/blob/main/19-when-should-you-trust-predictions.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/tidymodels/TMwR
+    relationship: Repository recorded in the legacy case inventory.
+    path: 19-when-should-you-trust-predictions.Rmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 231
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Tidymodels
+    publisher: O'Reilly Media
+    book: Tidy Modeling with R
+    title: When Should You Trust Your Predictions?
+    url: https://github.com/tidymodels/TMwR/blob/main/19-when-should-you-trust-predictions.Rmd
+    repository:
+      url: https://github.com/tidymodels/TMwR
+      path: 19-when-should-you-trust-predictions.Rmd
+    description: 'Kuhn and Silge model daily Chicago rail ridership using date features
+      and partial least squares, then examine prediction intervals and applicability
+      diagnostics to identify inputs for which predictions should not be trusted.
+
+'
+  data:
+    description: 'Daily Chicago rail-station ridership with lagged ridership from
+      multiple stations and calendar information.
+
+'
+    source_url: https://github.com/tidymodels/TMwR
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - tidymodels
+    - partial least squares
+    - time-based validation
+    - prediction intervals
+    - applicability domains
+    - extrapolation diagnostics
+    language: R
+    code_available: true
+    code_url: https://github.com/tidymodels/TMwR/blob/main/19-when-should-you-trust-predictions.Rmd
+  problem:
+    context: 'A ridership forecast can be numerically precise yet unreliable when
+      new predictor combinations fall outside the region represented by training data.
+
+'
+    objective: 'Predict daily rail ridership while diagnosing whether each new observation
+      lies inside a trustworthy model applicability region.
+
+'
+    analytical_questions:
+    - How accurately can daily ridership be predicted?
+    - How wide are prediction intervals for future observations?
+    - Which new observations represent extrapolation?
+    - When should the model abstain or flag a prediction for review?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - scipy
+    - matplotlib
+    logical_steps:
+    - Load and chronologically split ridership data.
+    - Engineer calendar and holiday features.
+    - Reduce correlated station predictors with PLS.
+    - Fit a regression model.
+    - Generate predictions and prediction intervals.
+    - Calculate distance or applicability diagnostics.
+    - Flag low-trust predictions.
+    expected_outputs:
+    - ridership forecast model
+    - prediction interval table
+    - applicability scores
+    - flagged low-trust predictions
+    - reliability visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 231
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

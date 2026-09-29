@@ -1,0 +1,105 @@
+---
+id: oreilly/data-science-on-aws/fraud-decision-service
+name: Fraud Decision Service
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Data Science on AWS
+  edition:
+  official_url:
+  companion_sources:
+  - title: Amazon Fraud Detector End-to-End
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/fraud_detector/Fraud_Detector_End_to_End.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/data-science-on-aws/data-science-on-aws
+    relationship: Repository recorded in the legacy case inventory.
+    path: 02_usecases/fraud_detector/Fraud_Detector_End_to_End.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 407
+  domain: data_products
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Data Science on AWS
+    title: Amazon Fraud Detector End-to-End
+    url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/fraud_detector/Fraud_Detector_End_to_End.ipynb
+    repository:
+      url: https://github.com/data-science-on-aws/data-science-on-aws
+      path: 02_usecases/fraud_detector/Fraud_Detector_End_to_End.ipynb
+    description: 'The O''Reilly companion project profiles fraud data, trains a managed
+      fraud model, derives model-score rules, defines operational outcomes, assembles
+      a detector, and exposes event-level predictions.
+
+'
+  data:
+    description: 'Synthetic online-event records containing event variables and fraud
+      labels.
+
+'
+    source_url: https://github.com/data-science-on-aws/data-science-on-aws/tree/oreilly-book/02_usecases/fraud_detector
+    availability: repository_and_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Amazon Fraud Detector
+    - supervised fraud modeling
+    - rule engine
+    - fraud scoring
+    - operational outcomes
+    - API prediction
+    language: Python
+    code_available: true
+    code_url: https://github.com/data-science-on-aws/data-science-on-aws/blob/oreilly-book/02_usecases/fraud_detector/Fraud_Detector_End_to_End.ipynb
+  problem:
+    context: 'Fraud prevention requires more than a probability score: model outputs
+      must be combined with business rules that map events to approve, investigate,
+      or fraud outcomes.
+
+'
+    objective: 'Build an operational fraud-decision service that combines learned
+      risk scores with explicit decision rules.
+
+'
+    analytical_questions:
+    - Which variables and labels define the fraud event?
+    - How well does the model rank fraudulent events?
+    - What score thresholds support different operational outcomes?
+    - How should rules and model scores be combined in a deployed detector?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - fastapi
+    logical_steps:
+    - Load and profile fraud events.
+    - Define event schema and fraud labels.
+    - Train a probabilistic fraud model.
+    - Evaluate ranking and threshold behavior.
+    - Define approve, investigate, and fraud rules.
+    - Combine rules and scores into a decision function.
+    - Expose event-level decisions through an API.
+    expected_outputs:
+    - fraud risk model
+    - score-threshold analysis
+    - decision rule table
+    - operational fraud outcomes
+    - prediction service
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 407
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

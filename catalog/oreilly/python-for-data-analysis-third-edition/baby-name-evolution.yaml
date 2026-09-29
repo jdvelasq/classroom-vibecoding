@@ -1,0 +1,105 @@
+---
+id: oreilly/python-for-data-analysis-third-edition/baby-name-evolution
+name: Baby Name Evolution
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Python for Data Analysis, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: US Baby Names Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/wesm/pydata-book
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch13.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 146
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Python for Data Analysis, Third Edition
+    title: US Baby Names Analysis
+    url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+    repository:
+      url: https://github.com/wesm/pydata-book
+      path: ch13.ipynb
+    description: 'O''Reilly combines more than a century of annual US baby-name files
+      and studies popularity, diversity, naming concentration, ending-letter patterns,
+      and long-run changes in specific name families.
+
+'
+  data:
+    description: 'US Social Security baby-name counts by year, sex, and given name
+      from 1880 onward.
+
+'
+    source_url: https://github.com/wesm/pydata-book/tree/3rd-edition/datasets/babynames
+    availability: repository
+    files:
+    - datasets/babynames/yob1880.txt
+    - datasets/babynames/yearly yob files
+  original_implementation:
+    technologies:
+    - pandas
+    - multi-file ingestion
+    - longitudinal aggregation
+    - concentration measures
+    - pivot tables
+    - trend analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/wesm/pydata-book/blob/3rd-edition/ch13.ipynb
+  problem:
+    context: 'Naming preferences evolve over generations and thousands of annual observations
+      must be combined before long-run cultural patterns can be observed.
+
+'
+    objective: 'Characterize long-run shifts in baby-name popularity, diversity, and
+      naming conventions.
+
+'
+    analytical_questions:
+    - How concentrated are births among the most popular names over time?
+    - Has naming diversity increased or decreased?
+    - How have last-letter patterns changed by sex?
+    - How do selected name families rise and decline over decades?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load yearly name files.
+    - Append year and combine all observations.
+    - Calculate annual name shares.
+    - Identify top names by year and sex.
+    - Measure concentration and diversity.
+    - Analyze ending-letter distributions.
+    - Track selected name families longitudinally.
+    expected_outputs:
+    - longitudinal names dataset
+    - popularity trends
+    - diversity indicators
+    - ending-letter profiles
+    - selected-name time series
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 146
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

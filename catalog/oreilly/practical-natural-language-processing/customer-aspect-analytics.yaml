@@ -1,0 +1,102 @@
+---
+id: oreilly/practical-natural-language-processing/customer-aspect-analytics
+name: Customer Aspect Analytics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Natural Language Processing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Aspect Based Sentiment Analysis
+    url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/practical-nlp/practical-nlp-code
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 23
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Practical NLP
+    publisher: O'Reilly Media
+    book: Practical Natural Language Processing
+    title: Aspect Based Sentiment Analysis
+    url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+    repository:
+      url: https://github.com/practical-nlp/practical-nlp-code
+      path: Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+    description: 'The O''Reilly companion repository demonstrates aspect-based sentiment
+      analysis with restaurant-review statements using VADER and Stanford CoreNLP.
+
+'
+  data:
+    description: 'Review-like restaurant sentences that contain positive and negative
+      opinions about different product or service aspects.
+
+'
+    source_url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+    availability: embedded_examples
+    files: []
+  original_implementation:
+    technologies:
+    - VADER
+    - Stanford CoreNLP
+    - NLTK
+    language: Python
+    code_available: true
+    code_url: https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch9/01_Aspect_Based_Sentiment_analysis.ipynb
+  problem:
+    context: 'Aggregate sentiment can hide the fact that customers evaluate different
+      aspects of the same product or service differently.
+
+'
+    objective: 'Identify product or service aspects in customer feedback and summarize
+      sentiment separately for each aspect.
+
+'
+    analytical_questions:
+    - Which product or service aspects receive the most feedback?
+    - Which aspects have predominantly positive or negative sentiment?
+    - Which reviews contain mixed sentiment across aspects?
+    - Which aspects should be prioritized for managerial attention?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - nltk
+    - spacy
+    - matplotlib
+    logical_steps:
+    - Load or freeze a review corpus with multiple aspects per review.
+    - Normalize and sentence-split the review text.
+    - Identify candidate aspects.
+    - Compute sentiment at phrase or aspect level.
+    - Aggregate sentiment by aspect.
+    - Rank aspects by volume and negative sentiment.
+    - Visualize the results and interpret operational implications.
+    expected_outputs:
+    - aspect-level review table
+    - aspect frequency table
+    - aspect sentiment summary
+    - priority ranking
+    - visualizations
+    - written interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 23
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

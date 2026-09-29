@@ -1,0 +1,96 @@
+---
+id: oreilly/practical-statistics-for-data-scientists/equity-return-factor-discovery
+name: Equity Return Factor Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Practical Statistics for Data Scientists
+  edition:
+  official_url:
+  companion_sources:
+  - title: Principal Components Analysis of Stock Returns
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%207%20-%20Unsupervised%20Learning.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists
+    relationship: Repository recorded in the legacy case inventory.
+    path: python/notebooks/Chapter 7 - Unsupervised Learning.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 242
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Practical Statistics for Data Scientists
+    title: Principal Components Analysis of Stock Returns
+    url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%207%20-%20Unsupervised%20Learning.ipynb
+    repository:
+      url: https://github.com/gedeck/practical-statistics-for-data-scientists
+      path: python/notebooks/Chapter 7 - Unsupervised Learning.ipynb
+    description: 'Discover latent return factors and interpret the stocks and sectors
+      driving them.
+
+'
+  data:
+    description: 'Daily S&P 500 stock-return data with sector metadata.
+
+'
+    source_url: https://github.com/gedeck/practical-statistics-for-data-scientists/tree/master/data
+    availability: repository
+    files:
+    - data/sp500_data.csv.gz
+    - data/sp500_sectors.csv
+  original_implementation:
+    technologies:
+    - PCA
+    - explained variance
+    - component loadings
+    language: Python
+    code_available: true
+    code_url: https://github.com/gedeck/practical-statistics-for-data-scientists/blob/master/python/notebooks/Chapter%207%20-%20Unsupervised%20Learning.ipynb
+  problem:
+    context: 'Equity returns share market and sector structure that is difficult to
+      see in high dimensions.
+
+'
+    objective: 'Discover latent return factors and interpret the stocks and sectors
+      driving them.
+
+'
+    analytical_questions:
+    - How much variance is explained by the leading components?
+    - Which stocks dominate each component?
+    - Do latent components align with sectors?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load returns and sector metadata.
+    - Prepare a consistent analysis window.
+    - Fit PCA.
+    - Analyze explained variance and loadings.
+    - Map important loadings to sectors.
+    expected_outputs:
+    - scree plot
+    - component loading table
+    - factor interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 242
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

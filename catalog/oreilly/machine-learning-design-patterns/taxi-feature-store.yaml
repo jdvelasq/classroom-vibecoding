@@ -1,0 +1,101 @@
+---
+id: oreilly/machine-learning-design-patterns/taxi-feature-store
+name: Taxi Feature Store
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: O'Reilly Media
+  title: Machine Learning Design Patterns
+  edition:
+  official_url:
+  companion_sources:
+  - title: Feature Store
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/feature_store.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+    relationship: Repository recorded in the legacy case inventory.
+    path: 06_reproducibility/feature_store.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 254
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: O'Reilly
+    publisher: O'Reilly Media
+    book: Machine Learning Design Patterns
+    title: Feature Store
+    url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/feature_store.ipynb
+    repository:
+      url: https://github.com/GoogleCloudPlatform/ml-design-patterns
+      path: 06_reproducibility/feature_store.ipynb
+    description: 'Build and use a feature store that serves consistent taxi features
+      for training and online prediction.
+
+'
+  data:
+    description: 'Taxi fare observations with pickup/dropoff coordinates, passenger
+      count, timestamps, taxi identifiers, and fares.
+
+'
+    source_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/taxi-train.csv
+    availability: repository_or_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Feast
+    - offline features
+    - online features
+    - feature registry
+    - batch retrieval
+    - online serving
+    language: Python
+    code_available: true
+    code_url: https://github.com/GoogleCloudPlatform/ml-design-patterns/blob/master/06_reproducibility/feature_store.ipynb
+  problem:
+    context: 'Training and serving can silently use inconsistent features unless the
+      same definitions and historical values are managed centrally.
+
+'
+    objective: 'Build and use a feature store that serves consistent taxi features
+      for training and online prediction.
+
+'
+    analytical_questions:
+    - How should reusable taxi features be defined and registered?
+    - How are historical features retrieved without leakage?
+    - How are the same features served online at inference time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - feast
+    - xgboost
+    logical_steps:
+    - Load taxi records.
+    - Engineer reusable distance features.
+    - Register entity and feature definitions.
+    - Ingest feature values.
+    - Retrieve historical training features.
+    - Train a fare model.
+    - Retrieve online features and score entities.
+    expected_outputs:
+    - feature definitions
+    - offline training dataset
+    - online feature retrieval
+    - model predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 254
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.
