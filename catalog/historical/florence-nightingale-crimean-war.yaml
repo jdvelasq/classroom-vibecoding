@@ -1,0 +1,85 @@
+id: historical/florence-nightingale-crimean-war
+name: Florence Nightingale's Crimean War mortality analysis
+aliases:
+  - Nightingale Crimean War data
+  - Nightingale coxcomb
+  - Diagram of the Causes of Mortality in the Army in the East
+type: historical_case
+
+historical_context: >
+  Florence Nightingale used mortality statistics and polar-area diagrams during the
+  Crimean War to argue for sanitary reform. The documented series distinguishes deaths
+  from preventable or mitigable disease, battle wounds, and other causes, before and
+  after sanitary intervention in March 1855.
+
+case:
+  decision_or_problem: >
+    What did monthly mortality and army-strength data indicate about preventable causes
+    of death and the need for sanitary reform?
+  analytical_relevance: >
+    The case connects data definition, rate construction, visual communication,
+    interpretation, and public-health action; it also makes aggregation and causal
+    inference limits visible.
+
+datasets:
+  - name: Nightingale (HistData R package)
+    relationship_to_case: >
+      Reproduces Nightingale's Crimean War mortality series and the data underlying
+      the associated coxcomb diagrams.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load dataset Nightingale after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Twenty-four monthly observations with date, month, year, estimated average
+      British-army strength, deaths by disease, wounds, and other causes, plus annual
+      rates per 1,000. HistData documents that its version was obtained from Pearson
+      and Short (2007); it is a historical reconstruction, not a complete individual-level record.
+
+sources:
+  - role: historical_context
+    title: Nightingale — Florence Nightingale's data on deaths in the Crimean War
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: >
+      Documents Nightingale's reform argument, the cause-of-death series, and the
+      pre/post March 1855 context.
+  - role: dataset_provenance
+    title: HistData reference manual, Nightingale dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: >
+      Documents the 24 observations, variables, rate calculation, and cited source.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies public package access and GPL-2 | GPL-3 license terms.
+
+benchmark_connections: []
+benchmark_connection_notes: >
+  No substantive local benchmark connection was found for the canonical name or aliases
+  during this execution.
+
+possible_analytical_questions:
+  - How do counts and rates by cause differ before and after March 1855?
+  - What can this aggregated series support, and not support, about sanitary intervention?
+
+curricular_signal:
+  analytics_capabilities:
+    - Construct and interpret rates with explicit denominators.
+    - Communicate evidence for action while preserving limits of the data.
+  contributing_disciplines:
+    - Statistics: supports rate construction and cautious comparison in service of public-health interpretation.
+  cautions:
+    - The data are aggregated monthly and cannot establish individual-level causal mechanisms.
+    - Cause classifications and historical collection practices must not be treated as modern clinical records.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

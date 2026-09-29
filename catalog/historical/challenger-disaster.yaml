@@ -1,0 +1,87 @@
+id: historical/challenger-disaster
+name: Space Shuttle Challenger disaster
+aliases:
+  - Challenger disaster
+  - STS-51L
+  - Challenger O-ring case
+type: historical_case
+
+historical_context: >
+  Space Shuttle Challenger was lost 73 seconds after launch on 28 January 1986.
+  NASA identifies failure of an O-ring in the right solid rocket booster, aggravated
+  by unusually cold weather before launch, as the cause established after investigation.
+
+case:
+  decision_or_problem: >
+    What did the pre-launch evidence about O-ring performance and launch conditions
+    support, and what uncertainty and limits should have been communicated in a
+    launch decision?
+  analytical_relevance: >
+    The case joins operational data, risk assessment, interpretation under sparse
+    evidence, and a consequential decision. It supports examination of what the
+    recorded prior-flight data can and cannot establish.
+
+datasets:
+  - name: Challeng (alr4 R package)
+    relationship_to_case: >
+      Documents O-ring performance in 23 U.S. space-shuttle flights before the
+      Challenger disaster.
+    source_url: https://CRAN.R-project.org/package=alr4
+    provider: Comprehensive R Archive Network; package maintained by Sanford Weisberg
+    access_method: Public R package download; load dataset Challeng after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL >= 2), as declared by alr4 on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Twenty-three pre-disaster flights, indexed by launch date, with launch-air
+      temperature, leak-check pressure, failed O-rings, number of O-rings, erosion,
+      blowby, and total damage index. The package documentation attributes the data
+      to Dalal, Fowlkes, and Hoadley (1989); it is a curated analytic dataset rather
+      than the complete engineering and decision record.
+
+sources:
+  - role: historical_context
+    title: NASA STS-51L mission history
+    url: https://www.nasa.gov/mission/sts-51l/
+    access_date: 2026-09-29
+    notes: >
+      Verifies the date, loss of the crew, and the identified O-ring failure and cold
+      weather context.
+  - role: dataset_provenance
+    title: Challeng — Challenger data, alr4 reference manual
+    url: https://search.r-project.org/CRAN/refmans/alr4/html/challeng.html
+    access_date: 2026-09-29
+    notes: >
+      Documents the variables, the 23 prior flights, and the cited scholarly source.
+  - role: data_terms
+    title: alr4 package on CRAN
+    url: https://CRAN.R-project.org/package=alr4
+    access_date: 2026-09-29
+    notes: >
+      Identifies public package access and GPL-2 | GPL-3 license terms.
+
+benchmark_connections:
+  - path: design/benchmarks/institutional/mit-data-science-and-machine-learning.pdf
+    locator: 'Week 8, "Case Study 1: Logistic Regression: The Challenger Disaster"'
+    notes: Substantive named-case connection in the institutional benchmark.
+
+possible_analytical_questions:
+  - How do observed O-ring damage rates vary with recorded launch temperature?
+  - Which uncertainty, extrapolation, and missing-context limits constrain a launch-risk claim?
+
+curricular_signal:
+  analytics_capabilities:
+    - Frame evidence for a consequential decision and state its limits.
+    - Assess data fitness, uncertainty, and interpretation before recommending action.
+  contributing_disciplines:
+    - Statistics: supports risk modelling and uncertainty interpretation in service of the decision.
+  cautions:
+    - The dataset is small, observational, and does not contain the full decision record.
+    - Retrospective analysis must not imply that one model alone determines historical responsibility.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: verified

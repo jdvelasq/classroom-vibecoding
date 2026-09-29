@@ -1,0 +1,84 @@
+id: historical/john-snow-broad-street-cholera
+name: John Snow's 1854 Broad Street cholera investigation
+aliases:
+  - John Snow cholera map
+  - Broad Street cholera outbreak
+  - Soho cholera outbreak of 1854
+type: historical_case
+
+historical_context: >
+  During London's 1854 cholera outbreak, John Snow examined local death records,
+  household accounts, and the distribution of cases relative to water pumps. CDC
+  documents his suspicion of the Broad Street pump and the subsequent public-health
+  response, while also showing why the event should not be reduced to a simple legend.
+
+case:
+  decision_or_problem: >
+    What did the spatial distribution of cholera cases and water-pump locations
+    indicate about a possible exposure source and an appropriate public-health action?
+  analytical_relevance: >
+    The case connects data collection, spatial comparison, contextual investigation,
+    uncertainty, communication with decision-makers, and intervention.
+
+datasets:
+  - name: SnowData R package datasets
+    relationship_to_case: >
+      Provides historical datasets for John Snow's 1854 outbreak map, including
+      cholera cases, water-pump locations, and street layout.
+    source_url: https://CRAN.R-project.org/package=SnowData
+    provider: Comprehensive R Archive Network; package maintained by Niamh Mimnagh
+    access_method: Public R package download; load cholera_cases, pump_locations, and streets
+    availability: public
+    license_or_terms: GPL-3, as declared by SnowData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Geolocated or map-coordinate representations of cholera cases, water-pump
+      locations, and streets for 1854 Soho. The datasets support reconstruction and
+      visualization of Snow's map; they do not by themselves establish individual
+      exposure, timing, or causal attribution.
+
+sources:
+  - role: historical_context
+    title: CDC — 150th Anniversary of John Snow and the Pump Handle
+    url: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5334a1.htm
+    access_date: 2026-09-29
+    notes: >
+      Documents Snow's investigation of death records and household information, the
+      Broad Street hypothesis, and the public-health response.
+  - role: dataset_provenance
+    title: SnowData package reference manual
+    url: https://CRAN.R-project.org/package=SnowData
+    access_date: 2026-09-29
+    notes: >
+      Documents package datasets for cholera cases, pump locations, and street layout.
+  - role: data_terms
+    title: SnowData package on CRAN
+    url: https://CRAN.R-project.org/package=SnowData
+    access_date: 2026-09-29
+    notes: Identifies public package access and GPL-3 license terms.
+
+benchmark_connections: []
+benchmark_connection_notes: >
+  No substantive local benchmark connection was found for the canonical name or aliases
+  during this execution.
+
+possible_analytical_questions:
+  - How are cases distributed relative to the mapped water pumps?
+  - What additional evidence is needed before moving from spatial association to a public-health recommendation?
+
+curricular_signal:
+  analytics_capabilities:
+    - Combine spatial evidence with contextual and stakeholder information.
+    - Distinguish association, interpretation, and action under uncertainty.
+  contributing_disciplines:
+    - Spatial analysis: supports location-based evidence assessment in service of the public-health problem.
+  cautions:
+    - Historical accounts differ on details of the pump-handle action and timing.
+    - The reconstructed map data omit much of the population at risk, exposure behavior, and case chronology.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

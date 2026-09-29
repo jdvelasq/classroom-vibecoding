@@ -1,0 +1,85 @@
+id: historical/napoleon-russian-campaign-minard
+name: Napoleon's 1812 Russian campaign as represented by Minard
+aliases:
+  - Minard's map
+  - Napoleon's march on Moscow
+  - French campaign in Russia 1812
+type: historical_case
+
+historical_context: >
+  Charles Joseph Minard's well-known graphic represents the advance toward Moscow and
+  retreat from it in Napoleon's Russian campaign. A Library of Congress map record
+  independently documents the invasion route to Moscow and the retreat route.
+
+case:
+  decision_or_problem: >
+    How can geographic path, direction, estimated surviving troop counts, and retreat
+    temperatures be combined to communicate the scale and uncertainty of a campaign?
+  analytical_relevance: >
+    The case joins heterogeneous spatial, quantitative, temporal, and visual evidence.
+    It supports examination of how an integrated display informs interpretation without
+    converting a reconstruction into a complete historical account.
+
+datasets:
+  - name: Minard.troops, Minard.cities, and Minard.temp (HistData R package)
+    relationship_to_case: >
+      Documented digital reconstruction of the components of Minard's graphic of
+      Napoleon's march on Moscow and retreat.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load the three Minard datasets after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Fifty-one troop-path records with coordinates, survivors, direction, and group;
+      20 city locations; and nine retreat-temperature records with longitude,
+      temperature, days, and date labels. HistData attributes the reconstruction to a
+      text file associated with Lee Wilkinson's The Grammar of Graphics (1990), so it
+      is a documented reconstruction of Minard's representation rather than original
+      campaign muster data.
+
+sources:
+  - role: historical_context
+    title: Map of the Russian Campaign 1812
+    url: https://www.loc.gov/item/2012593516/
+    access_date: 2026-09-29
+    notes: >
+      Library of Congress record documents the invasion route to Moscow and retreat
+      route from Moscow for the Russian campaign.
+  - role: dataset_provenance
+    title: HistData reference manual, Minard datasets
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents the three data frames, their variables, and reconstruction source.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies public package access and GPL-2 | GPL-3 license terms.
+
+benchmark_connections: []
+benchmark_connection_notes: >
+  No substantive local benchmark connection was found for the canonical name or aliases
+  during this execution.
+
+possible_analytical_questions:
+  - What patterns become visible when troop counts, route direction, location, and temperature are viewed together?
+  - Which claims about the campaign exceed the scope or provenance of this reconstruction?
+
+curricular_signal:
+  analytics_capabilities:
+    - Integrate data with different spatial, temporal, and measurement structures.
+    - Assess provenance and communicate the limits of a visual reconstruction.
+  contributing_disciplines:
+    - Data visualization: supports integrated evidence communication in service of historical interpretation.
+  cautions:
+    - The package documentation contains reconstructed and label-based fields, including historical date handling.
+    - It is not a complete primary-source record of casualties, causes, or decisions in the campaign.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found
