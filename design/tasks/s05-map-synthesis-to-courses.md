@@ -1,10 +1,11 @@
-# S05 — Map the consolidated Analytics synthesis to the courses
+# S05 — Design the content of the Analytics courses
 
 Read and comply with the repository-level `AGENTS.md` before execution.
 
 ## Objective
 
-Translate the evidence-backed capabilities and boundaries in
+Generate auditable course-content design documents by translating the
+evidence-backed capabilities and boundaries in
 `design/synthesis/s04-synthesis.md` into a visible allocation across these six
 courses:
 
@@ -12,7 +13,7 @@ courses:
 - Posgrado: Analítica descriptiva y visualización de datos; Analítica
   predictiva; Analítica prescriptiva; Productos de datos.
 
-This is a content-allocation task. It determines each course's principal and
+This is a course-content design task. It determines each course's principal and
 recurring responsibility for Analytics capabilities; it is not a weekly plan,
 theory redesign, workshop design, lab design, assessment design, or final
 international audit. Its construction must itself be auditable and reproducible
@@ -61,19 +62,20 @@ Create exactly these six files in `design/synthesis/`:
 - `s05-diseno-prescriptiva.md`
 - `s05-diseno-productos.md`
 
-Each file must include:
+Each file is a **course-content design document** and must include:
 
-1. purpose and scope boundaries;
-2. a canonical set of map-ready Analytics capabilities derived from the
+1. `# Diseño de contenido: <nombre del curso>`;
+2. purpose and scope boundaries;
+3. the applicable map-ready Analytics capabilities derived from the
    synthesis, with contributing disciplines described only functionally;
-3. the course's responsibility for each applicable capability, using explicit
+4. the course's responsibility for each applicable capability, using explicit
    labels for principal, recurring, contextual, and out-of-scope treatment;
-4. a profile of that course, including its distinctive content responsibility
+5. a profile of that course, including its distinctive content responsibility
    and what it deliberately does not own;
-5. explicit content boundaries and unresolved scope decisions; and
-6. an audit-readiness boundary identifying what the map can support and what
+6. explicit content boundaries and unresolved scope decisions; and
+7. an audit-readiness boundary identifying what the document can support and what
    remains pending until later design stages; and
-7. a construction record containing: task identifier, course identifier, and execution date;
+8. a construction record containing: task identifier, course identifier, and execution date;
    exact local input path; source revision or content fingerprint when
    available; capability-allocation rules; section-level traceability to the
    synthesis; unresolved decisions; and the result of the quality checks.
