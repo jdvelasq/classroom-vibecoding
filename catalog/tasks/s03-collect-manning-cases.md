@@ -40,6 +40,35 @@ in this repository. Record provenance, access, and terms only.
 
 ---
 
+## Periodic collection behavior
+
+This task is intended to be run repeatedly. The existing contents of
+`catalog/manning/` are the local record of what has already been considered;
+they are a baseline for comparison, not evidence that the Manning catalog is
+complete or current.
+
+At the start of every execution:
+
+1. Inspect the existing Manning book directories and records, including their
+   editions and access dates.
+2. Search current first-party Manning listings and documented book pages for
+   books or new editions published since the newest relevant materials already
+   represented locally, as well as older eligible books that are absent from
+   the local catalog.
+3. For each newly found or revised book, locate its specific companion sources
+   and apply this task's verification gate to its cases.
+
+A newer book, edition, dataset revision, or better-documented case may be a
+potential successor to an existing case, but it must be added as a separate
+record. Never delete, overwrite, or silently replace the earlier record. Make
+the possible relationship visible in the new record and final report so that a
+later course-design decision can choose between them.
+
+If no qualifying material is found during a run, leave the existing catalog
+unchanged and report the sources searched and the date of the review.
+
+---
+
 ## Output structure
 
 For a verified new case discovered through a Manning book, create one YAML
@@ -127,14 +156,17 @@ identifies and supports that provenance.
 ## Execution method
 
 1. Identify a current Manning book and its official page.
-2. Locate documented book-specific companion materials and repositories.
-3. Identify named candidate cases, then apply the duplicate search.
-4. Verify case identity, dataset provenance, access, terms, contents, and
+2. Compare it with the books and editions already represented in
+   `catalog/manning/`, and determine whether it is newly discovered, a new
+   edition, or an update to a previously considered source.
+3. Locate documented book-specific companion materials and repositories.
+4. Identify named candidate cases, then apply the duplicate search.
+5. Verify case identity, dataset provenance, access, terms, contents, and
    limitations from the strongest available sources.
-5. Create only qualifying YAML records in the book-specific Manning path.
-6. Search `design/benchmarks/` for substantive case connections without
+6. Create only qualifying YAML records in the book-specific Manning path.
+7. Search `design/benchmarks/` for substantive case connections without
    editing benchmark files.
-7. Validate all YAML files created or updated.
+8. Validate all YAML files created or updated.
 
 ---
 
@@ -150,6 +182,7 @@ benchmark lookup is recorded.
 Report:
 
 - Manning books and companion sources inspected;
+- new or revised books and editions found since the prior local collection;
 - YAML records created or updated;
 - duplicates intentionally not created, with their existing catalog paths;
 - excluded leads and the verification condition each failed;

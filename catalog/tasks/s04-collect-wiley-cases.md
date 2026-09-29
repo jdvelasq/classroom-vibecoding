@@ -52,6 +52,36 @@ not treat the package itself as proof that third-party data may be reused.
 
 ---
 
+## Periodic collection behavior
+
+This task is intended to be run repeatedly. The existing contents of
+`catalog/wiley/` are the local record of what has already been considered;
+they are a baseline for comparison, not evidence that the Wiley catalog is
+complete or current.
+
+At the start of every execution:
+
+1. Inspect the existing Wiley book directories and records, including their
+   editions and access dates.
+2. Search current first-party Wiley listings and documented book pages for
+   books or new editions published since the newest relevant materials already
+   represented locally, as well as older eligible books that are absent from
+   the local catalog.
+3. For each newly found or revised book, locate its specific companion sources
+   and apply this task's companion-package rule and verification gate to its
+   cases.
+
+A newer book, edition, dataset revision, or better-documented case may be a
+potential successor to an existing case, but it must be added as a separate
+record. Never delete, overwrite, or silently replace the earlier record. Make
+the possible relationship visible in the new record and final report so that a
+later course-design decision can choose between them.
+
+If no qualifying material is found during a run, leave the existing catalog
+unchanged and report the sources searched and the date of the review.
+
+---
+
 ## Output structure
 
 For a verified new case discovered through a Wiley book, create one YAML
@@ -135,19 +165,22 @@ Record original dataset provenance separately in `datasets` and `sources`.
 ## Execution method
 
 1. Identify a current Wiley book and its official page.
-2. Locate documented book-specific companion materials and repositories.
-3. Determine whether each dataset comes from the book-specific companion or
+2. Compare it with the books and editions already represented in
+   `catalog/wiley/`, and determine whether it is newly discovered, a new
+   edition, or an update to a previously considered source.
+3. Locate documented book-specific companion materials and repositories.
+4. Determine whether each dataset comes from the book-specific companion or
    merely from a general library or tool.
-4. Identify named candidate cases, then apply the duplicate search.
-5. Verify case identity, original dataset provenance, access, terms, contents,
+5. Identify named candidate cases, then apply the duplicate search.
+6. Verify case identity, original dataset provenance, access, terms, contents,
    and limitations from the strongest available sources.
-6. Create only qualifying YAML records in the book-specific Wiley path.
-7. Remove each migrated legacy entry from `catalog/case-inventory.yaml`; if one
+7. Create only qualifying YAML records in the book-specific Wiley path.
+8. Remove each migrated legacy entry from `catalog/case-inventory.yaml`; if one
    canonical record consolidates multiple legacy entries, remove every covered
    entry and retain their names as aliases.
-8. Search `design/benchmarks/` for substantive case connections without
+9. Search `design/benchmarks/` for substantive case connections without
    editing benchmark files.
-9. Validate all YAML files created or updated.
+10. Validate all YAML files created or updated.
 
 ---
 
@@ -163,6 +196,7 @@ and its local benchmark lookup is recorded.
 Report:
 
 - Wiley books and companion sources inspected;
+- new or revised books and editions found since the prior local collection;
 - the companion-package decision for each source;
 - YAML records created or updated;
 - legacy inventory records removed;
