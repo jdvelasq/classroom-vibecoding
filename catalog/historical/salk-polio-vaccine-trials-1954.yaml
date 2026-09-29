@@ -1,0 +1,77 @@
+id: historical/salk-polio-vaccine-trials-1954
+name: Salk polio vaccine field trials of 1954
+aliases:
+  - PolioTrials
+  - 1954 poliomyelitis vaccine trials
+  - Francis polio vaccine trial
+type: historical_case
+
+historical_context: >
+  The National Foundation for Infantile Paralysis conducted 1954 field trials of
+  the Salk polio vaccine. The trials used two different designs, and their
+  comparison became an important milestone in the development of randomized
+  clinical trials.
+
+case:
+  decision_or_problem: >
+    What did the trial results support about vaccine effectiveness, and how did
+    the design of the comparison affect the strength of that evidence?
+  analytical_relevance: >
+    The case links evidence, design, outcome definitions, uncertainty, and a
+    high-consequence public-health decision.
+
+datasets:
+  - name: PolioTrials (HistData R package, version 1.1.0)
+    relationship_to_case: Results from the 1954 Salk vaccine field trials.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load dataset PolioTrials after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Eight group-level observations across observed-control and randomized-control
+      designs, with population, paralytic and non-paralytic polio, and false reports.
+      The two designs must be analyzed separately; the package is a summarized trial
+      table rather than participant-level records.
+
+sources:
+  - role: historical_context
+    title: HistData reference manual, PolioTrials dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents the 1954 field trials, two designs, and their role in trial methodology.
+  - role: dataset_provenance
+    title: HistData reference manual, PolioTrials source note
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Attributes the data to Francis et al. (1955) and describes the summarized fields.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies version 1.1.0, public access, and GPL-2 | GPL-3 terms.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - How do observed and randomized control designs change the interpretation of the outcome counts?
+  - Which outcome definitions and denominators must be made explicit before comparing groups?
+
+curricular_signal:
+  analytics_capabilities:
+    - Assess evidence in relation to the data-generating and comparison design.
+    - Interpret summarized outcomes before supporting a public-health decision.
+  contributing_disciplines:
+    - Statistics: supports experimental-design reasoning within an Analytics decision context.
+  cautions:
+    - The available table is highly aggregated and does not support participant-level analysis.
+    - Historical clinical-trial norms and terminology require contextual treatment.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

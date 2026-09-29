@@ -1,0 +1,77 @@
+id: historical/playfair-agricultural-distress-wheat-wages
+name: "Playfair's agricultural distress: wheat prices and wages"
+aliases:
+  - Playfair wheat and wages
+  - Letter on Agricultural Distresses
+  - Playfair 1821 wheat chart
+type: historical_case
+
+historical_context: >
+  William Playfair's 1821 Letter on Agricultural Distresses presented a long-run
+  comparison of wheat prices and weekly wages to argue about the burden of food
+  costs and agricultural distress in Britain.
+
+case:
+  decision_or_problem: >
+    How did wheat prices, wages, and the implied labor cost of wheat change over
+    time, and what can such a comparison support in an argument about hardship?
+  analytical_relevance: >
+    The case links time-series construction, denominator choice, visual argument,
+    and the limits of interpreting long historical economic series.
+
+datasets:
+  - name: Wheat and Wheat.monarchs (HistData R package, version 1.1.0)
+    relationship_to_case: >
+      Digital values underlying Playfair's 1821 chart of wheat price and weekly wages.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load datasets Wheat and Wheat.monarchs after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Fifty-three observations at five-year intervals from 1565 to 1821 with wheat
+      price and weekly wages, plus 12 reign intervals. Values were digitized from a
+      historical graphic, so the data support re-analysis of the visual argument but
+      not fine-grained economic measurement.
+
+sources:
+  - role: historical_context
+    title: HistData reference manual, Wheat dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents Playfair's 1821 publication, variables, and historical chart context.
+  - role: dataset_provenance
+    title: HistData reference manual, Wheat source note
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: States that the data values were originally digitized from Playfair's graphic.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies version 1.1.0, public access, and GPL-2 | GPL-3 terms.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - How does expressing wheat price relative to weekly wages change the historical interpretation?
+  - What precision and comparability limits follow from digitizing a historical graphic?
+
+curricular_signal:
+  analytics_capabilities:
+    - Construct an interpretable derived measure with clear assumptions.
+    - Evaluate how visual and numerical choices shape an argument for action.
+  contributing_disciplines:
+    - Data visualization: supports time-series evidence communication within an Analytics argument.
+  cautions:
+    - Values are digitized from a graphic and are not an original transactional price series.
+    - Wage and price series require contextual interpretation before claims about welfare or policy.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

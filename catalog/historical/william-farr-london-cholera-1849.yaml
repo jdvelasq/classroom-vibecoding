@@ -1,0 +1,77 @@
+id: historical/william-farr-london-cholera-1849
+name: William Farr's 1849 London cholera analysis
+aliases:
+  - Farr cholera 1849
+  - William Farr cholera data
+  - London cholera epidemic 1849
+type: historical_case
+
+historical_context: >
+  William Farr's 1852 Registrar-General report analyzed the 1848-1849 cholera
+  epidemic. Farr initially linked cholera to low elevation and miasma; later
+  reanalysis of the period's data highlighted the role of water supply.
+
+case:
+  decision_or_problem: >
+    Which district-level conditions were associated with cholera mortality in
+    London in 1849, and how should competing explanations be assessed?
+  analytical_relevance: >
+    The case makes explicit the distinction between data patterns, explanatory
+    hypotheses, model assumptions, and later revision of an interpretation.
+
+datasets:
+  - name: Cholera (HistData R package, version 1.1.0)
+    relationship_to_case: >
+      Reworking of tables from Farr's 1849 cholera mortality report for London districts.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load dataset Cholera after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Thirty-eight London districts and 15 variables, including cholera deaths and
+      death rates for 1849, elevation, and predictors transcribed from Farr's table.
+      The data are a later analytic reworking, not a complete record of individual
+      exposures or disease transmission.
+
+sources:
+  - role: historical_context
+    title: HistData reference manual, Cholera dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents Farr's report, initial miasma interpretation, and subsequent reanalysis.
+  - role: dataset_provenance
+    title: HistData reference manual, Cholera dataset source note
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Attributes the dataset to Bingham, Verlander, and Cheal's reworking of Farr's tables.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies version 1.1.0, public access, and GPL-2 | GPL-3 terms.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - What patterns do district mortality rates show relative to the recorded predictors?
+  - Which causal claims are unsupported by these aggregated observational data?
+
+curricular_signal:
+  analytics_capabilities:
+    - Compare competing explanations against documented evidence.
+    - Separate descriptive association from causal and policy claims.
+  contributing_disciplines:
+    - Statistics: supports cautious comparison and modelling in service of the public-health question.
+  cautions:
+    - The ecological data cannot identify individual exposure or prove a mechanism.
+    - The case should preserve the historical revision of Farr's explanation rather than judge it only retrospectively.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

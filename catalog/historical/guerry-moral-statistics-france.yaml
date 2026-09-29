@@ -1,0 +1,80 @@
+id: historical/guerry-moral-statistics-france
+name: Guerry's Moral Statistics of France
+aliases:
+  - Andre-Michel Guerry moral statistics
+  - Essai sur la statistique morale de la France
+  - Guerry 1833
+type: historical_case
+
+historical_context: >
+  In 1833, Andre-Michel Guerry systematically collected and analyzed social data
+  on crime, literacy, suicide, and related conditions across French departments
+  to investigate possible social regularities.
+
+case:
+  decision_or_problem: >
+    What geographic patterns and relationships among recorded social conditions
+    were visible in France around 1830, and what limits constrain their use in
+    social interpretation or public action?
+  analytical_relevance: >
+    The case connects administrative data, geographic comparison, visualization,
+    interpretation, and the ethical risks of reducing social phenomena to ranked
+    indicators.
+
+datasets:
+  - name: Guerry (HistData R package, version 1.1.0)
+    relationship_to_case: >
+      Digital representation of Guerry's moral-statistics data for France around
+      1830, including crime, literacy, suicide, wealth, and other departmental measures.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load dataset Guerry after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Eighty-six departmental observations with 23 variables. Quantitative values
+      were taken from the English translation of Guerry (1833), while ranked values
+      were transcribed with documented corrections. Several measures are rankings or
+      inversely scaled indicators, so direction and meaning require careful reading.
+
+sources:
+  - role: historical_context
+    title: HistData reference manual, Guerry dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents Guerry's 1833 social-data investigation and the departmental data structure.
+  - role: dataset_provenance
+    title: HistData project site
+    url: https://friendly.github.io/HistData/
+    access_date: 2026-09-29
+    notes: Identifies HistData as a reproducible collection for historical research and instruction.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies version 1.1.0, public access, and GPL-2 | GPL-3 terms.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - Which geographic patterns appear across the recorded social indicators?
+  - How do rankings, denominators, and moralized labels affect interpretation?
+
+curricular_signal:
+  analytics_capabilities:
+    - Examine provenance, definitions, and comparability before interpreting indicators.
+    - Communicate geographic evidence without converting association into social causation.
+  contributing_disciplines:
+    - Data visualization: supports comparative evidence communication within an Analytics inquiry.
+  cautions:
+    - Historical administrative categories and moral labels embed period-specific assumptions.
+    - The data are ecological and cannot support individual-level claims.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found

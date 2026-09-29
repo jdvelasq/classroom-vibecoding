@@ -1,0 +1,78 @@
+id: historical/cavendish-density-earth-1798
+name: Cavendish's 1798 density-of-the-Earth experiment
+aliases:
+  - Cavendish experiment
+  - Cavendish density of the Earth
+  - Cavendish torsion balance measurements
+type: historical_case
+
+historical_context: >
+  Henry Cavendish made repeated 1798 determinations of the Earth's mean density
+  using a torsion-balance experiment, as an indirect route to the gravitational
+  constant. His record also includes an apparatus change and a documented
+  numerical correction in later treatment of the measurements.
+
+case:
+  decision_or_problem: >
+    How should repeated experimental measurements be summarized, checked, and
+    interpreted when instrument changes and possible recording errors are present?
+  analytical_relevance: >
+    The case links measurement provenance, data-quality review, robust summary,
+    and scientific inference.
+
+datasets:
+  - name: Cavendish (HistData R package, version 1.1.0)
+    relationship_to_case: >
+      Curated versions of Cavendish's 29 density determinations from the 1798 experiment.
+    source_url: https://CRAN.R-project.org/package=HistData
+    provider: Comprehensive R Archive Network; HistData maintained by Michael Friendly
+    access_method: Public R package download; load dataset Cavendish after installation
+    availability: public
+    license_or_terms: GPL-2 | GPL-3 (expanded from GPL), as declared by HistData on CRAN
+    access_date: 2026-09-29
+    contents: >
+      Twenty-nine density determinations relative to water, plus a version correcting
+      the third value and a version omitting the first six readings after an apparatus
+      change. The package documents its derivation through Stigler (1977), rather than
+      as a digitized laboratory notebook.
+
+sources:
+  - role: historical_context
+    title: HistData reference manual, Cavendish dataset
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Documents the 1798 experiment, repeated measurements, apparatus change, and correction issue.
+  - role: dataset_provenance
+    title: HistData reference manual, Cavendish source note
+    url: https://stat.ethz.ch/CRAN/web/packages/HistData/HistData.pdf
+    access_date: 2026-09-29
+    notes: Attributes the curated data to Stigler (1977) and cites Cavendish's 1798 publication.
+  - role: data_terms
+    title: HistData package on CRAN
+    url: https://CRAN.R-project.org/package=HistData
+    access_date: 2026-09-29
+    notes: Identifies version 1.1.0, public access, and GPL-2 | GPL-3 terms.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+possible_analytical_questions:
+  - How do the three curated versions affect summaries of the density measurements?
+  - What provenance information is required before treating a value as an outlier or correction?
+
+curricular_signal:
+  analytics_capabilities:
+    - Audit data quality and measurement context before drawing conclusions.
+    - Compare alternative, documented data treatments transparently.
+  contributing_disciplines:
+    - Statistics: supports robust summarization in service of measurement-based inference.
+  cautions:
+    - The packaged values are curated historical versions, not a substitute for the original experimental record.
+    - A correction or exclusion must remain traceable to its documented rationale.
+
+verification:
+  historical_context: verified
+  dataset_provenance: verified
+  data_access: verified
+  data_terms: verified
+  benchmark_connection: not_found
