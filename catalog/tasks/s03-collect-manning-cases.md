@@ -79,6 +79,35 @@ unchanged and report the sources searched and the date of the review.
 
 ---
 
+## Exhaustive-completion rule
+
+Do not stop after finding the first qualifying case. A run may report the
+Manning review as **complete** only after it has exhausted the documented search
+scope available on the access date:
+
+1. Enumerate the relevant books and editions in Manning's current first-party
+   catalog, including pagination or category listings where used.
+2. Compare that set with the book paths already represented under
+   `catalog/manning/` and identify absent books and newer editions.
+3. For every relevant absent or revised book, inspect the documented companion
+   material far enough to enumerate its named projects or cases with concrete
+   data.
+4. Classify every candidate as a created case record, an existing cross-source
+   duplicate, or an excluded lead with the exact unmet verification condition.
+
+Completion is a bounded claim about Manning's documented catalog at the review
+date; it is not a claim that every Manning book ever published has been found.
+If a catalog page, companion source, or candidate cannot be inspected, report
+the run as **partial**, name the unreviewed scope, and do not say Manning has
+been exhausted.
+
+The final response must list reviewed books and editions, all created case
+files, duplicates, exclusions, and any unreviewed or inaccessible material. No
+book-level YAML, publisher inventory, or placeholder file may be created to
+record that coverage.
+
+---
+
 ## Output structure
 
 For a verified new case discovered through a Manning book, create one YAML
