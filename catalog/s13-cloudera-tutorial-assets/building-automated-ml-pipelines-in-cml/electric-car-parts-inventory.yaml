@@ -1,0 +1,57 @@
+id: s13-cloudera-tutorial-assets/building-automated-ml-pipelines-in-cml/electric-car-parts-inventory
+name: Synthetic electric-car parts inventory
+aliases: [mock factory parts production, Cloudera CML parts inventory]
+type: tutorial_dataset
+book_source:
+  publisher: Cloudera
+  title: Building Automated ML Pipelines in Cloudera Machine Learning
+  edition: null
+  official_url: https://www.cloudera.com/tutorials/building-automated-ml-pipelines-in-cml.html
+  companion_sources:
+    - title: Tutorial asset repository
+      url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/building-automated-ml-pipelines-in-cml/assets
+      relationship: Contains the generated CSV assets and generator used by the tutorial.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/building-automated-ml-pipelines-in-cml/assets
+  provider: Cloudera tutorial-assets contributors
+  access_method: Versioned CSV assets and a Python generator in the public source repository.
+  availability: public_repository
+  license_or_terms: Repository and generator identify AGPL-3.0, but generator headers also state that use is pursuant to a written agreement. Treat as conditional; do not redistribute raw data through course materials.
+  contents: Synthetic 2020 factory part-production observations, supplemented by car-sales and surplus records for an electric-car inventory exercise.
+  status: private_class_candidate
+associated_cases:
+  - name: Parts inventory forecasting
+    decision_or_problem: Estimate inventory required for a part at seven, fourteen, and twenty-one day horizons.
+    relationship_to_dataset: The tutorial explicitly presents this predictive inventory workflow using the synthetic electric-car data.
+sources:
+  - role: tutorial_identity
+    title: Cloudera tutorial README
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/blob/main/building-automated-ml-pipelines-in-cml/README.md
+    access_date: 2026-09-29
+    notes: Defines the inventory-prediction objective and synthetic setting.
+  - role: generator_and_terms
+    title: data_generator.py
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/blob/main/building-automated-ml-pipelines-in-cml/assets/data_generator.py
+    access_date: 2026-09-29
+    notes: Generates mock-factory part production and carries the conditional use notice.
+possible_analytical_questions:
+  - How does historical part consumption translate into inventory forecasts at several lead times?
+  - Which error measures make an inventory forecast operationally useful?
+limitations:
+  - Synthetic data cannot support claims about an actual manufacturer.
+  - Conditional source terms limit this record to the course owner's private classroom use and prohibit redistribution of the raw assets.
+curricular_signal:
+  analytics_capabilities: [Connect a forecast to an operational inventory decision.]
+  contributing_disciplines: [Machine Learning contributes prediction methods.]
+  cautions: [Do not present this as real manufacturer evidence.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: conditional_private_class_use
+  original_external_data_provenance: synthetic_by_tutorial_generator
+  real_world_status: synthetic
+  benchmark_connection: not_found

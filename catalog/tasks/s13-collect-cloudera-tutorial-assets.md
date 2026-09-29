@@ -42,7 +42,15 @@ technology is only a contributing implementation context.
    - terms sufficient for a later educational-use decision;
    - reproducible relation to the tutorial; and
    - no duplicate canonical record elsewhere in the catalog.
-6. If no asset in a reviewed tutorial passes, create only
+6. A synthetic asset that fails only because its terms are conditional or
+   ambiguous may still be recorded for the course owner's **private classroom
+   use** when its generator, contents, and tutorial case are reproducible.
+   Set `dataset.status: private_class_candidate` and make the limitation and
+   non-redistribution rule explicit. It is not `selection_ready`, must not be
+   offered as a redistributable course asset, and does not establish a legal
+   right beyond the owner's intended private use.
+7. If no asset in a reviewed tutorial passes or qualifies as a private-class
+   candidate, create only
    `catalog/s13-cloudera-tutorial-assets/<tutorial-slug>/.gitkeep`. A review
    marker is not a dataset record and must never be described as one.
 
@@ -55,8 +63,9 @@ technology is only a contributing implementation context.
 - For assets derived from an external provider, record that provider and its
   terms rather than the repository license.
 - When a notice requires a separate agreement, is contradictory, or does not
-  clearly cover the data, the terms gate fails. Leave only `.gitkeep` and state
-  the limitation in the execution report.
+  clearly cover the data, the normal terms gate fails. It may be retained only
+  under the private-class exception above; otherwise leave only `.gitkeep` and
+  state the limitation in the execution report.
 - Do not catalog generic platform demonstrations, code-only examples, or data
   that is merely created during execution without an inspectable source.
 

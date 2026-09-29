@@ -1,0 +1,57 @@
+id: s13-cloudera-tutorial-assets/enrich-data-using-cloudera-data-engineering/electric-vehicle-customer-enrichment
+name: Synthetic electric-vehicle customer enrichment
+aliases: [mock car sales and installs, experimental motors]
+type: tutorial_dataset
+book_source:
+  publisher: Cloudera
+  title: Enrich Data using Cloudera Data Engineering
+  edition: null
+  official_url: https://www.cloudera.com/tutorials/enrich-data-using-cloudera-data-engineering.html
+  companion_sources:
+    - title: Tutorial asset repository
+      url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/enrich-data-using-cloudera-data-engineering/assets
+      relationship: Provides customer, sales, installation, part-production, and enrichment assets.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/enrich-data-using-cloudera-data-engineering/assets
+  provider: Cloudera tutorial-assets contributors
+  access_method: Versioned CSV assets with Python generators in the source repository.
+  availability: public_repository
+  license_or_terms: Repository and generator identify AGPL-3.0, but individual headers condition use on a written agreement. Treat as conditional; do not redistribute raw data through course materials.
+  contents: Synthetic customer profiles, car sales, vehicle installations, postal data, factory part production, and experimental-motor records linked through customer, vehicle, and serial identifiers.
+  status: private_class_candidate
+associated_cases:
+  - name: Link manufacturing, vehicle, and customer records for enrichment
+    decision_or_problem: Create an enriched analytical table that traces experimental motors from factory production through vehicle sale and customer context.
+    relationship_to_dataset: The tutorial's generators produce the linked tables used by its data-enrichment workflow.
+sources:
+  - role: tutorial_identity
+    title: Cloudera tutorial README
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/blob/main/enrich-data-using-cloudera-data-engineering/README.md
+    access_date: 2026-09-29
+    notes: Defines the data-enrichment tutorial context.
+  - role: generators_and_terms
+    title: datagen_car.py and datagen_customer.py
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/enrich-data-using-cloudera-data-engineering/assets
+    access_date: 2026-09-29
+    notes: Identify generated output tables and the conditional use notice.
+possible_analytical_questions:
+  - Can product and customer records be linked reliably enough to support a recall investigation?
+  - What data-quality checks are required before joining production, sale, and installation records?
+limitations:
+  - The people, products, and transactions are synthetic.
+  - Conditional source terms restrict use to the course owner's private classroom setting and prohibit raw-data redistribution.
+curricular_signal:
+  analytics_capabilities: [Prepare and assess linked operational data before decision analysis.]
+  contributing_disciplines: [Data Engineering contributes integration and lineage practices.]
+  cautions: [Treat personal-looking fields as synthetic and avoid normalizing their use in real settings.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: conditional_private_class_use
+  original_external_data_provenance: synthetic_by_tutorial_generators
+  real_world_status: synthetic
+  benchmark_connection: not_found

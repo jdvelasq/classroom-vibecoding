@@ -1,0 +1,57 @@
+id: s13-cloudera-tutorial-assets/data-exploration-and-reporting-with-cloudera-data-warehouse/global-factory-operations
+name: Synthetic global-factory operations
+aliases: [Cloudera mock factory data, factory revenue downturn]
+type: tutorial_dataset
+book_source:
+  publisher: Cloudera
+  title: Data Exploration and Reporting with Cloudera Data Warehouse
+  edition: null
+  official_url: https://www.cloudera.com/tutorials/data-exploration-and-reporting-with-cdw.html
+  companion_sources:
+    - title: Tutorial asset repository
+      url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/data-exploration-and-reporting-with-cloudera-data-warehouse/assets
+      relationship: Provides the data tables and generator for the tutorial.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://github.com/jdvelasq/cloudera-tutorial-assets/tree/main/data-exploration-and-reporting-with-cloudera-data-warehouse/assets
+  provider: Cloudera tutorial-assets contributors
+  access_method: Versioned CSV assets and Python generator in the source repository.
+  availability: public_repository
+  license_or_terms: Repository and generator identify AGPL-3.0, but generator headers also condition use on a written agreement. Treat as conditional; do not redistribute raw data through course materials.
+  contents: Synthetic one-year factory, machine, ambient-condition, employee, absence, and revenue tables for five global high-tech factories.
+  status: private_class_candidate
+associated_cases:
+  - name: Diagnose a fiscal-year revenue downturn
+    decision_or_problem: Investigate possible operational causes of revenue decline across factories.
+    relationship_to_dataset: The tutorial README defines this mock-company diagnostic question; the generator specifies the tables and simulated factory variation.
+sources:
+  - role: tutorial_identity
+    title: Cloudera tutorial README
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/blob/main/data-exploration-and-reporting-with-cloudera-data-warehouse/README.md
+    access_date: 2026-09-29
+    notes: Identifies the synthetic mock-company setting and revenue-downturn question.
+  - role: generator_and_terms
+    title: data_generator.py
+    url: https://github.com/jdvelasq/cloudera-tutorial-assets/blob/main/data-exploration-and-reporting-with-cloudera-data-warehouse/assets/data_generator.py
+    access_date: 2026-09-29
+    notes: Documents table contents, one-year simulation, and conditional terms.
+possible_analytical_questions:
+  - Which factories exhibit unusual relationships among ambient conditions, uptime, throughput, and revenue?
+  - What evidence would distinguish a production bottleneck from a workforce-availability issue?
+limitations:
+  - Values and relationships are simulated, not observations of a real enterprise.
+  - Conditional source terms restrict this record to private classroom use; learners should obtain assets from the source rather than receive redistributed copies.
+curricular_signal:
+  analytics_capabilities: [Diagnose an operational business problem across linked tables.]
+  contributing_disciplines: [Data Engineering contributes multi-table preparation.]
+  cautions: [Avoid causal conclusions from descriptive synthetic patterns alone.]
+benchmark_connections: []
+benchmark_connection_notes: No specific benchmark connection was verified.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: conditional_private_class_use
+  original_external_data_provenance: synthetic_by_tutorial_generator
+  real_world_status: synthetic
+  benchmark_connection: not_found
