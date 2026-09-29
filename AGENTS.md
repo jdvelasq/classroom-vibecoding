@@ -50,3 +50,15 @@ and practices to avoid.
 
 `PRE_*` directories do not contain a `README.md`. This convention will be
 refined as the implementation materials are organized and audited.
+
+All assessment of a `PRE_*` workshop uses `pytest`. Students must be able to
+run its tests through VS Code's Testing view.
+
+When a course is distributed, its `PRE_*` directories are copied into a new
+repository under `distribution/`; their depth relative to that repository's
+root can change. Test discovery and execution must therefore be independent
+of the workshop's relative depth. `pytest` must never fail during test
+discovery because of the distribution layout.
+
+`PRE_*` assessment is verified through GitHub Actions in the distributed
+course repository.
