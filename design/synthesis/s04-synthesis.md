@@ -2,21 +2,26 @@
 
 ## 1. Scope and integration method
 
-This consolidation integrates the independent S03 syntheses produced by
+This consolidation integrates the source-specific professional-learning
+syntheses from S01 and S02 and the independent S03 syntheses produced by
 ChatGPT/Codex, Claude, and Gemini:
 
-- `synthesis-chatgpt.md`
-- `synthesis-claude.md`
-- `synthesis-gemini.md`
+- `s01-datacamp.md`
+- `s02-pluralsight.md`
+- `s03-synthesis-chatgpt.md`
+- `s03-synthesis-claude.md`
+- `s03-synthesis-gemini.md`
 
-It compares their conclusions rather than treating them as votes or ranking
-them by model. A finding is treated as strongest when the syntheses agree and
-their reasoning remains traceable to diverse underlying evidence families:
+It compares the S03 conclusions rather than treating them as votes or ranking
+them by model, and retains S01/S02 as direct provider-specific evidence. A
+finding is treated as strongest when the independent syntheses agree and their
+reasoning remains traceable to diverse underlying evidence families:
 authoritative, institutional, professional-learning, and literature-derived.
-Repeated reference to the same source family is not treated as independent
-confirmation.
+Repeated reference to the same provider or source family is not treated as
+independent confirmation. A DataCamp or Pluralsight finding is not counted
+twice merely because it appears in S01/S02 and is cited by S03.
 
-After the S03 consolidation, the approved master's thesis *Strategies for
+After the original S03 analyses, the approved master's thesis *Strategies for
 Executing Analytics Projects: Toward a Unified Framework of Methodologies*
 (PRODIG8) was added to the literature-derived benchmark family. It is used
 here as an additional, clearly identified academic synthesis of
@@ -231,13 +236,13 @@ module plan at this stage.
 
 ## 10. Traceability map
 
-| Consolidated finding | Agent-specific syntheses | Principal underlying evidence families cited there |
+| Consolidated finding | Relevant S01–S03 syntheses | Principal underlying evidence families cited there |
 |---|---|---|
-| Analytics connects data, decisions, and action | ChatGPT §§2, 11; Claude §§2, 11; Gemini §§2, 11 | Authoritative, institutional, professional, literature-derived |
-| Data stewardship and quality are foundational | ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 5, 11 | All four families |
+| Analytics connects data, decisions, and action | S01 §3; S02 §3; ChatGPT §§2, 11; Claude §§2, 11; Gemini §§2, 11 | Authoritative, institutional, professional, literature-derived |
+| Data stewardship and quality are foundational | S01 §§3, 7; S02 §§3, 7; ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 5, 11 | All four families |
 | Statistical reasoning, visualization, and interpretation recur | ChatGPT §§4–5, 11; Claude §§4–5, 11; Gemini §§4–5, 11 | Authoritative, institutional, professional; literature-derived support varies |
-| Communication and stakeholder use are core | ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 11 | All four families |
-| Authentic integrated work matters | ChatGPT §7; Claude §§7, 11, 14; Gemini §§7, 11 | All four families |
+| Communication and stakeholder use are core | S01 §3; S02 §3; ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 11 | All four families |
+| Authentic integrated work matters | S01 §8; S02 §8; ChatGPT §7; Claude §§7, 11, 14; Gemini §§7, 11 | All four families |
 | Tools are enabling rather than curricular identity | ChatGPT §8; Claude §§8, 11, 14; Gemini §§8, 11 | Authoritative and professional, reinforced institutionally |
 | Predictive and prescriptive scope remains contested | ChatGPT §§12–14; Claude §§12–14; Gemini §§12–14 | Varies by authoritative, institutional, and professional sources |
 | Lifecycle, deployment, and operations are role-dependent | ChatGPT §§6, 10, 12; Claude §§12–14; Gemini §§6, 12, 14 | INFORMS, technical institutional, professional, and DataOps material |
