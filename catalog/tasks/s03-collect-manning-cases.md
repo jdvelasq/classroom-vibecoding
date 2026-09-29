@@ -45,23 +45,30 @@ in this repository. Record provenance, access, and terms only.
 
 ---
 
-## Review scope (required for a completion claim)
+## Automatic review scope
 
-Before searching, state the exact, first-party Manning listing or listings that
-bound the run (URL, category or search criterion, pagination status, and access
-date). For example, a run may be bounded to Manning's current `Data Analytics`
-category.
+Establish the review scope yourself on every run; do not ask the user to supply
+a category, URL, or cutoff date. Begin from Manning's current first-party
+catalog landing page and its subject taxonomy. Enumerate every pagination page
+in the first-party categories that can contain Analytics cases, including at
+minimum **Data Analysis**, **Data Analytics**, **Data Science**, **Business
+Intelligence**, **Databases**, and **Statistics** when Manning exposes them.
+Follow cross-listings only once per book/edition.
 
-The chosen scope must be broad enough for the purpose of the run and must be
-recorded in the final response. A run may say **complete** only with the
-qualified wording “complete for `<named Manning listing(s)>` as accessed on
-`<date>`.” It must never imply that all Manning titles have been exhausted
-unless the scope actually enumerates all applicable first-party catalog pages.
+Treat a book as an *eligible lead* when its official description indicates a
+named analytical problem, case study, project, or companion data that could
+meet this task's verification gate. Do not reject a book merely because it is
+also classified as AI, ML, programming, or another contributing discipline;
+those labels do not redefine the curriculum. Conversely, do not review a book
+whose official description supports only generic API, language, framework, or
+library instruction and gives no indication of a bounded analytical case.
 
-If an execution begins with only the generic instruction to review Manning and
-no defensible first-party scope can be enumerated, it may discover and verify
-cases, but its final status is **partial**. It must name the missing scope
-rather than treating the first discovery as completion.
+Record in the final response the exact catalog URLs, pagination status,
+categories, filtering rationale, and access date that the task discovered.
+That automatically established set is the review scope for the run. If a
+first-party listing cannot be enumerated, or its pagination is inaccessible,
+the run is **partial** and must name that unresolved listing. It must not ask
+the user to choose a scope as a substitute for this work.
 
 ---
 
@@ -81,11 +88,11 @@ At the start of every execution:
 
 1. Inspect the existing Manning book directories and records, including their
    editions and access dates.
-2. Search current first-party Manning listings and documented book pages for
-   books or new editions published since the newest relevant materials already
-   represented locally, as well as older eligible books that are absent from
-   the local catalog.
-3. For each newly found or revised book, locate its specific companion sources
+2. Build the automatic review scope from the first-party catalog taxonomy and
+   all of its applicable pages, as specified above.
+3. Compare every eligible lead in that scope with local book paths and records,
+   identifying absent books, new editions, and materially revised companions.
+4. For each newly found or revised book, locate its specific companion sources
    and apply this task's verification gate to its cases.
 
 A newer book, edition, dataset revision, or better-documented case may be a
@@ -105,8 +112,9 @@ Do not stop after finding the first qualifying case. A run may report the
 Manning review as **complete** only after it has exhausted the documented search
 scope available on the access date:
 
-1. Enumerate the books and editions in the declared first-party review scope,
-   including pagination or category listings where used.
+1. Enumerate the books and editions in the automatically established
+   first-party review scope, including every applicable category and pagination
+   page.
 2. Compare that set with the book paths already represented under
    `catalog/manning/` and identify absent books and newer editions.
 3. For every relevant absent or revised book, inspect the documented companion
@@ -115,9 +123,9 @@ scope available on the access date:
 4. Classify every candidate as a created case record, an existing cross-source
    duplicate, or an excluded lead with the exact unmet verification condition.
 
-Completion is a bounded claim about the declared Manning listing(s) at the
-review date; it is not a claim that every Manning book ever published has been
-found.
+Completion is a bounded claim about the automatically established Manning
+listing(s) at the review date; it is not a claim that every Manning book ever
+published has been found.
 If a catalog page, companion source, or candidate cannot be inspected, report
 the run as **partial**, name the unreviewed scope, and do not say Manning has
 been exhausted.
