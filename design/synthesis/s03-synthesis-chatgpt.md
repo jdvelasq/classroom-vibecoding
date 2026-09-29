@@ -2,15 +2,25 @@
 
 ## 1. Scope and method
 
-This independent synthesis examines the available local corpus: 5 authoritative sources, 19 institutional offerings, 1 governmental programme document, 12 literature-derived sources, and the two designated derived professional-learning inputs (`s01-datacamp.md` and `s02-pluralsight.md`). It was produced without consulting any S03 synthesis by another agent and without external research.
+This independent synthesis examines the available local corpus: 5 authoritative sources, 21 institutional offerings, 2 governmental documents, 12 literature-derived sources, and the two designated derived professional-learning inputs (`s01-datacamp.md` and `s02-pluralsight.md`): 42 inputs in total. It was produced without consulting any S03 synthesis by another agent and without external research.
 
-The evidence families are used for different purposes: authoritative sources for durable competency and lifecycle claims; institutional sources for operationalized programmes; governmental evidence for public local priorities/delivery model; professional syntheses for role structures, tools and practice; literature-derived sources for historical, project-method and operational perspectives. Weight is qualitative—not frequency-based—and considers source independence, explicitness, relevance, depth and cross-family convergence. Public programme brochures and provider paths give uneven detail; DataOps is a concentrated perspective; the government document is a programme specification, not an international standard; and PRODIG8 is a newly proposed, not yet empirically validated, framework.
+The evidence families are used for different purposes: authoritative sources for durable competency and lifecycle claims; institutional sources for operationalized programmes and curricular coherence; governmental evidence for public local priorities, delivery models and external labour relevance; professional syntheses for role structures, tools and practice; literature-derived sources for historical, project-method and operational perspectives. Weight is qualitative—not frequency-based—and considers source independence, explicitness, relevance, depth and cross-family convergence. Public programme brochures and provider paths give uneven detail; DataOps is a concentrated perspective; the governmental documents are not international standards; and PRODIG8 is a newly proposed, not yet empirically validated, framework.
+
+## Actualización incremental — referentes institucionales y gubernamentales colombianos
+
+This local-only update adds `design/benchmarks/institutional/unal-lineamientos-armonizacion-curricular.pdf`, `design/benchmarks/institutional/unal-armonizacion-ejercicio-piloto.pdf`, and `design/benchmarks/governmental/mintic-fedesoft-talento-digital-2025-2030.pdf`.
+
+The two UNAL files are **institutional** evidence. The first supplies a methodological route from programme relevance and learning outcomes to curriculum organization, monitoring and adjustment; the pilot supplies participatory observations and proposals about harmonization, including dialogue with students, graduates, staff and related programmes. Their analytical function is to qualify curriculum-management claims: coherent traceability can connect context and needs, formative intentions and graduate profile, programme-specific learning outcomes, the study plan, and its implementation/programme-calendar. They distinguish macrocurricular (policy and academic/social relevance), mesocurricular (curricular proposal and study-plan deployment), and microcurricular (didactics and assessment) work. They do **not** constitute an international disciplinary benchmark, prescribe a universal pedagogy, or define what Analytics is or must contain.
+
+The MinTIC/FEDESOFT file is **governmental** evidence on Colombian external relevance. It studies supply, demand and qualitative/quantitative gaps in digital talent, reports demand categories that include data science, BI and AI, and examines the relation between educational provision and productive-sector needs. Its function here is to make labour-market signals, access and ongoing updating relevant inputs to Analytics review. Its scope is talent TI broadly: it is neither an international standard nor a warrant to redefine Analytics as AI, Data Engineering, Big Data, or the collection of all currently demanded digital roles.
 
 ## 2. Analytics as an educational domain
 
 **Strong convergence.** Analytics is represented as the disciplined use of data, methods and tools to understand consequential questions and improve decisions or actions. INFORMS explicitly spans business framing, analytics framing, data, method choice, model development, deployment and lifecycle management. The business-analytics history connects data, knowledge, decisions and value; USC and Warwick connect questions, data work, interpretation and insights to decisions; DataCamp and Pluralsight analyst learning combines data work, visualization and stakeholder communication. [Authoritative, institutional, literature-derived, professional]
 
 Thus, the evidence supports Analytics as more than reporting, coding or fitting a model. Its characteristic work connects problem context, data stewardship, reasoning, communication and use. Its boundary remains partly contested: some institutional/executive offerings use Analytics broadly enough to include ML/AI/data science, while professional benchmarks distinguish analyst from data-scientist roles. The corpus supports a shared architecture, not a single uncontested label.
+
+The new Colombian institutional and governmental evidence changes the conditions for reviewing that architecture, not the identity claim: it calls for context-sensitive, traceable and periodically reviewed Analytics provision while leaving Analytics—not any contributing discipline—as the curricular centre.
 
 ## 3. Analytics and contributing disciplines
 
@@ -38,6 +48,8 @@ The analytical conclusion is that these fields contribute functions; none alone 
 | Govern responsibly | Privacy, security, integrity, bias/fairness, legal/ethical obligations, transparency and consequences. ACM, National Academies, INFORMS, Berkeley/Warwick, AI/governance paths, PRODIG8. | Strong principle-level support; common teaching/assessment methods remain unclear. |
 | Deliver, learn and maintain | Validate, integrate/test, monitor, recalibrate, document and review value/side effects. INFORMS VI–VII, Berkeley C101, DataOps/PRODIG8, MIT and Pluralsight technical paths. | Strong lifecycle support, but detailed operations evidence is concentrated. |
 
+The UNAL materials add an institutional assurance condition rather than a further learner capability: review should make visible the chain from contextual needs and formative intentions through graduate profile and programme-specific learning outcomes to the study plan and its implemented programme-calendar. The circular further locates policy/relevance at macro level, curriculum/study-plan deployment at meso level, and pedagogy/assessment at micro level. This is a coherence and traceability claim, not a claim that these documents establish Analytics content.
+
 ## 5. Knowledge architecture
 
 The corpus supports an interconnected architecture rather than a discipline-first syllabus:
@@ -50,6 +62,8 @@ The corpus supports an interconnected architecture rather than a discipline-firs
 
 The layers are synthesis categories, not provider claims. They reflect that data/system methods enable analytical judgment, which in turn must be intelligible and usable in a decision context.
 
+For institutional governance, the UNAL distinction prevents collapsing this architecture into a single layer: macrocurricular review concerns institutional policy and academic/social relevance; mesocurricular work connects the architecture to the study plan; microcurricular work concerns the teaching and assessment through which it is enacted. Alignment across these levels is required, but the documents do not prescribe a discipline-first ordering or a particular Analytics syllabus.
+
 ## 6. Learning progression
 
 **Explicit progression:** DataCamp states analyst basics → data manipulation/EDA/statistics/visualization → application and moves associate data science toward predictive ML. Pluralsight’s Analytics Foundations targets entrants, while its Data Science Foundations targets analysts/engineers with 1–3 years’ experience and proceeds through data work, modelling, communication and deployment/maintenance. INFORMS represents framing → data → method/model → deployment → lifecycle. [Professional, authoritative]
@@ -57,6 +71,8 @@ The layers are synthesis categories, not provider claims. They reflect that data
 **Structural recurrence:** USC, Warwick, Berkeley and multiple MIT offerings commonly begin with foundation/data/tool work then reach analysis/modelling/cases. KDD/CRISP-DM, DataOps and PRODIG8 all organize analytical work as iterative rather than one-way: problem/data/design/evaluation/operation, with governance and feedback. [Institutional, literature-derived]
 
 **Inference and unresolved choice:** the recurring progression is from question/data understanding to analysis, interpretation/use and, in advanced/product contexts, operation. But no universal starting threshold, order of programming versus statistics, extent of deployment, or contact-time model is established. Governmental Talento Tech supports a compact bootcamp model (159 hours) but specifies priority themes rather than an internal Analytics sequence.
+
+The new UNAL route adds that any selected progression should be reviewable across levels: needs and relevance inform programme intentions/profile and learning outcomes; the study plan and its implementation must show correspondence; monitoring and evaluation support adjustment. It does not resolve the substantive sequencing choices above.
 
 ## 7. Practice and authentic analytical work
 
@@ -78,7 +94,9 @@ Institutional material demonstrates audience variation. Undergraduate syllabi ma
 
 Professional evidence reinforces data management, EDA, statistics, visualization, communication and practice, while making role distinctions and tool variants explicit. It adds projects, labs, certification practicals and current workflows, but can overrepresent job-role/tool specificity compared with authoritative educational rationale.
 
-Governmental evidence adds a distinct public-policy perspective: Talento Tech is a national Colombian bootcamp initiative addressing digital-skills inequality and employment, prioritizing Data Analysis among six technology themes, using 159-hour cohorts, regional adaptation, in-person/virtual delivery and inclusion targets. It reinforces demand for practical, accessible, intensive digital training but does not define Analytics competencies or an international standard.
+Governmental evidence adds distinct Colombian public-policy and external-relevance perspectives. Talento Tech is a national bootcamp initiative addressing digital-skills inequality and employment, prioritizing Data Analysis among six technology themes, using 159-hour cohorts, regional adaptation, in-person/virtual delivery and inclusion targets. The MinTIC/FEDESOFT 2025–2030 study analyzes educational offer, productive-sector demand and projected digital-talent gaps; its taxonomy places Data Science, BI and AI at 17.95% of the qualitative demand it reports, alongside many other TI families. Together they reinforce the need to read local access, employability and labour signals, not to treat a technology-demand taxonomy as an Analytics curriculum or international standard.
+
+The new institutional material serves a different role from both: UNAL's lineamientos and pilot make curriculum coherence, participatory reflection, self-evaluation and continuous improvement visible. The circular proposes sustained dialogue with the academic community and stakeholders; the pilot records the value and challenges of engaging graduates, students, staff and related programmes. These are institutional-process findings, not evidence for adding a particular Analytics technique.
 
 ## 10. Literature-derived perspectives
 
@@ -96,6 +114,7 @@ PRODIG8 adds a systematic, literature-derived unification of analytics-project m
 4. **Communication/stakeholder use is substantive.** It recurs in authoritative professionalism, institutional projects, professional roles/certification and project methods.
 5. **Responsible analytics is lifecycle-wide.** Privacy/security/integrity/ethics/bias are explicit in authoritative sources and reinforced by institutional AI/privacy, professional workflow and PRODIG8.
 6. **Authentic applied work matters.** Projects/cases/labs/realistic data and practice occur in every evidence family, including the public bootcamp document.
+7. **Coherence requires a reviewable curriculum-management chain.** The new UNAL institutional evidence supports linking context and needs, formative intentions/profile, learning outcomes, study-plan deployment and implementation, with monitoring, adjustment and participation. This complements, rather than replaces, the domain/lifecycle evidence that defines Analytics.
 
 ## 12. Areas of disagreement or uncertainty
 
@@ -105,13 +124,15 @@ PRODIG8 adds a systematic, literature-derived unification of analytics-project m
 - **Method scope:** descriptive/inferential/predictive work is broad; optimization, causal inference, deep learning, agents and distributed systems are narrower/specialized.
 - **Tools and assessment:** alternatives are plentiful; evidence supports practice but not a universal stack, project form, or rubric.
 - **Government programme interpretation:** Talento Tech substantiates local priorities/accessibility, not educational effectiveness or a content-level Analytics definition.
+- **External demand versus curricular identity and pace:** MinTIC/FEDESOFT supplies useful, time-bound Colombian demand signals across a broad TI taxonomy, while the UNAL pilot warns that curricular processes can be slow, bureaucratic or weakly connected to context. This supports deliberate, participatory and continuous review; it does not justify letting fast-moving AI/Big Data/Data Engineering demand labels override the integrated Analytics identity or the evidential hierarchy.
+- **Harmonization scope:** UNAL's macro–meso–micro distinction supports traceability between policy/relevance, study-plan deployment, and pedagogy/assessment, but neither document establishes the required programme-calendar format, a universal pedagogical model, or the detailed content/sequence of Analytics.
 
 ## 13. Core, supporting, specialized, and uncertain elements
 
 | Classification | Elements | Rationale |
 |---|---|---|
 | Core | Decision/problem framing; data acquisition/preparation/quality; EDA and quantitative reasoning; interpretation/communication; responsible practice; authentic application | Explicitly central across independent authoritative, institutional, professional and literature-derived families. |
-| Supporting | Programming/query fluency; databases/data architecture; visualization/reporting tools; reproducibility/documentation; teamwork/domain collaboration | Widely useful enablers, but proficiency level varies by audience/role. |
+| Supporting | Programming/query fluency; databases/data architecture; visualization/reporting tools; reproducibility/documentation; teamwork/domain collaboration; traceability from contextual needs and profile/outcomes to study-plan implementation, with participatory review | The first set are widely useful enablers whose proficiency varies by audience/role. The latter is supported as an institutional quality/management condition by UNAL, not as a replacement for the Analytics capability core. |
 | Specialized | Advanced ML/deep learning; optimization/simulation; causal/Bayesian/control work; distributed/cloud/Spark; engineering; DataOps/MLOps implementation; GenAI/agents; vendor technologies | Important but concentrated in advanced, role-specific, technology-specific or emerging sources. |
 | Uncertain/contested | Universal mathematical/programming bar; exact Analytics–Data Science boundary; required operational depth; stack; assessment model; generality of public bootcamp themes | Sources differ by purpose/audience, or evidence is insufficiently comparable. |
 
@@ -120,6 +141,8 @@ PRODIG8 adds a systematic, literature-derived unification of analytics-project m
 Later design is constrained to keep Analytics recognizable as integrated question–data–reasoning–interpretation–communication–action work, rather than a shortened version of ML, statistics, engineering, BI or AI. It must account for data quality, uncertainty, stakeholders, responsible use and authentic work.
 
 The corpus leaves deliberate choices: technical and mathematical depth; whether deployment/lifecycle is foundation or specialization; how to sequence programming, statistics and decision framing; which technologies demonstrate transferable capability; and how projects, cases, labs and assessment are combined. The public-policy evidence additionally raises questions of access, delivery intensity, regional context and inclusion without dictating the eventual academic design. No syllabus, course sequence, tools or assessment structure is selected here.
+
+Any subsequent design review should additionally preserve a visible, revisable chain from context/needs and formative intentions to graduate profile, learning outcomes, study plan and enacted programme-calendar; distinguish macro-, meso- and microcurricular decisions; and use participatory self-evaluation and continuous improvement. Colombian labour signals are an input to external relevance within that review, not a substitute for the Analytics identity or a mandate for a technology-led redesign.
 
 ## 15. Evidence map
 
@@ -133,3 +156,5 @@ The corpus leaves deliberate choices: technical and mathematical depth; whether 
 | Governance/responsibility | ACM DPSIA/professionalism; National Academies ethics; INFORMS risk/side effects; Berkeley C102; Stanford AI; PRODIG8 |
 | Deployment/operation | INFORMS VI–VII; Berkeley C101; MIT cloud/engineering; DataOps; PRODIG8; Pluralsight Spark/DP-100 |
 | Practice/access/public delivery | National Academies; ACM; USC/Cambridge/MIT/Stanford; S01/S02; `mintic-talento-tech-2024-2026.pdf` |
+| Institutional coherence, traceability and continuous improvement | `design/benchmarks/institutional/unal-lineamientos-armonizacion-curricular.pdf`; `design/benchmarks/institutional/unal-armonizacion-ejercicio-piloto.pdf` |
+| Colombian external relevance and digital-talent demand | `design/benchmarks/governmental/mintic-fedesoft-talento-digital-2025-2030.pdf` |

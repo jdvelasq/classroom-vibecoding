@@ -2,7 +2,7 @@
 
 **Task:** `design/tasks/s03-review-benchmarks.md`
 **Executor:** Claude (Claude Code)
-**Date:** 2026-09-29
+**Date:** 2026-09-29 (incremental update the same day: two UNAL institutional documents and one MinTIC/FEDESOFT governmental study added; see the section *Actualización incremental — referentes institucionales y gubernamentales colombianos*)
 **Governing instructions:** `AGENTS.md` — Analytics is the curricular identity; the other fields are contributing disciplines.
 
 ---
@@ -11,7 +11,9 @@
 
 ### 1.1 Corpus analyzed
 
-The corpus has 38 documents in five evidence families. It covers every file in `design/benchmarks/` plus the two professional-learning syntheses the task designates as inputs. The source identifiers below are used throughout.
+The corpus has 42 documents in five evidence families: 5 authoritative, 21 institutional, 2 governmental, 2 professional-learning and 12 literature-derived. It covers every file in `design/benchmarks/` plus the two professional-learning syntheses the task designates as inputs. The source identifiers below are used throughout.
+
+**Count correction.** The previous version stated "38 documents". The inventory it listed actually summed to 39 (5 + 19 + 1 + 2 + 12), so "38" was an arithmetic error. This update adds three documents: I20, I21 and G2.
 
 The task text refers to "four evidence families" but defines five (authoritative, institutional, governmental, professional-learning, literature-derived). All five are treated here as distinct families.
 
@@ -27,7 +29,7 @@ The task text refers to "four evidence families" but defines five (authoritative
 
 A3–A5 come from one framework, so they count as **one** independent voice (INFORMS).
 
-**Institutional (19 documents)**
+**Institutional (21 documents)**
 
 | ID | Document | ID | Document |
 |---|---|---|---|
@@ -40,13 +42,17 @@ A3–A5 come from one framework, so they count as **one** independent voice (INF
 | I7 | MIT IDSS, *Data Science and Machine Learning: Making Data-Driven Decisions* | I17 | USC ITP 249, *Introduction to Data Analytics* (syllabus) |
 | I8 | MIT xPRO, *Designing and Building AI Products and Services* | I18 | UT Austin McCombs / Great Learning, *Agentic AI for Business Applications* |
 | I9 | MIT PE, *Digital Platforms* | I19 | Warwick CS910, *Foundations of Data Analytics* (module spec) |
-| I10 | MIT, *Machine Learning, Modeling, and Simulation Principles* | | |
+| I10 | MIT, *Machine Learning, Modeling, and Simulation Principles* | I20 | `design/benchmarks/institutional/unal-lineamientos-armonizacion-curricular.pdf` — Universidad Nacional de Colombia (UNAL), Sede Manizales, Dirección Académica, *Circular No. 01 de 2023: Lineamientos para el proceso de armonización curricular* (4 pp.) |
+| | | I21 | `design/benchmarks/institutional/unal-armonizacion-ejercicio-piloto.pdf` — UNAL, Dirección Nacional de Programas Curriculares de Pregrado, *Ejercicio Piloto UNAL para la Armonización Curricular* (2021; 118 pp.) |
 
-**Governmental (1 document)**
+I20 and I21 are institutional **curriculum-governance** documents, not course offerings. See the incremental-update section for their evidential function.
+
+**Governmental (2 documents)**
 
 | ID | Document | Nature |
 |---|---|---|
 | G1 | `governmental/mintic-talento-tech-2024-2026.pdf` | Colombian Ministry of ICT (MinTIC) project sheet for *Talento Tech*: 159-hour digital-skills bootcamps; six prioritised themes; target of 94,696 participants over 2024–2026; regional distribution; cohort calendar; inclusion targeting. |
+| G2 | `design/benchmarks/governmental/mintic-fedesoft-talento-digital-2025-2030.pdf` | *Estudio de Empleabilidad y Talento Digital en Colombia*, produced by FEDESOFT under FUTIC–FEDESOFT Convenio de Asociación No. 1520-2025 (v1.0, 12-2025; 364 PDF pages, paginated "de 371"). Four chapters: 2025–2030 supply–demand projection model; pertinence of the educational offer (including curricular mapping of 478 programmes); emerging skills and BEBRAS computational-thinking results; salary bands. |
 
 **Professional-learning (2 derived syntheses)**
 
@@ -80,22 +86,112 @@ A3–A5 come from one framework, so they count as **one** independent voice (INF
 - **Source statements vs synthesis.** Findings attributed to a source restate what the source says. Text labelled **Interpretation** is my synthesis.
 - **Independence.** This synthesis was produced independently. No synthesis file by another agent, and no `s03-synthesis-*.md` or `s04-synthesis.md` file, was read, inspected or used. Such files were deleted in the working tree and were not opened.
 - **How this run was conducted.** The same Claude session earlier executed a related task on the same PDFs and earlier versions of this task. Reading of the unchanged benchmark PDFs from that session was reused after checking that page counts and timestamps were unchanged. The two new documents (G1, L12) were read in full for this run. No external web research was performed.
+- **Incremental update (I20, I21, G2).** This update used only the previous Claude synthesis as baseline; no other agent's synthesis was read. The three new PDFs were read substantively:
+  - I20 in full.
+  - I21's text in full. Its text-free pages were checked as images and found to be covers, photographs and decorative graphics.
+  - G2's executive summary, methodology and limitations; the demand, gap and role tables; the pertinence chapter (perceptions, alignment, curricular mapping, recommendations and conclusions); the emerging-skills introduction and conclusions; and the data/analytics salary section.
+  - G2's remaining chapters were not analysed line by line: most of the salary chapter for non-data areas, and the annexes. For G2, "Pág. N" locators equal PDF page numbers.
 
 ### 1.3 Important limitations
 
 1. **Thin authoritative base.** Only three independent authoritative bodies are present. Two of them (A1, A2) address *undergraduate data science*, not Analytics. The only framework that names Analytics as its object (A3–A5) is a professional-certification framework, not an educational one.
 2. **Recency.** A2 (2018) and A1 (2021) predate generative and agentic AI.
 3. **Institutional skew.**
-   - 15 of 19 institutional documents are executive or professional brochures; only I2, I3, I17 and I19 are credit-bearing courses.
-   - 8 of 19 are MIT.
+   - 15 of 21 institutional documents are executive or professional brochures; only I2, I3, I17 and I19 are credit-bearing courses.
+   - I20 and I21 are curriculum-governance documents from one university (UNAL). They contain no Analytics content.
+   - 8 of 21 are MIT.
    - Brochures show that a topic is included, rarely how deep it goes or how it is assessed.
    - Some sources are adjacent to Analytics rather than about it: I14 (physical prototyping), I9 (platform strategy), I5 (cloud/DevOps), I13 (systems-engineering tradespace).
 4. **Governmental evidence is a single project sheet.** G1 names "Análisis de Datos" as a theme but specifies **no curriculum content, competencies or learning outcomes** for it. It informs policy positioning, audience, delivery format and scale — not what Analytics education contains. Its stated goal (94,696 people) and its regional quota table (30,175 + 39,713 + 19,890 = 89,778 certificates) do not reconcile within the document. This is recorded, not resolved.
+   - **G2 has limits of its own:**
+     - It measures *IT talent*. Its job-posting demand is concentrated in the IT sector (80.38% of demand; Pág. 78), and it aggregates "Ciencia de datos, BI, IA" into a single demand category. It therefore cannot isolate Analytics as distinct from Data Science, BI or AI.
+     - It was produced by an industry federation (FEDESOFT) under a public agreement. Several of its figures rely on indirect inference, and non-formal training figures are not public (Pág. 26).
+     - Its executive summary cites a projected gap of "más de 160.000 perfiles" (Pág. 19; a figure taken from earlier sectoral studies). Its own model projects a base-scenario gap of about 85,000–90,000 for 2025–2030 (Tabla 47, Pág. 116). The discrepancy is recorded, not resolved.
 5. **Professional evidence is second-hand and partial.** P1 and P2 are task-generated reconstructions of public pages. Both documents state their own limits (no complete catalogue; ordered display ≠ prerequisite; assessment internals not inspected). Both were also framed around an Analytics-vs-Data Science comparison, and that framing may shape what they foreground.
 6. **Literature-derived concentration.**
    - Ten of the twelve literature-derived documents belong to one DataOps series. They give depth on process, operations and organization, but none on analytical methods.
    - L12 is conceptual and, by its own account, "has not yet been empirically evaluated" (L12 §6). Its corpus is English-only, from Scopus, 2010–2025.
    - L12's corresponding author (Juan D. Velasquez, Universidad Nacional de Colombia) has the same name as this repository's git author. If they are the same person, L12 represents the project team's own methodological perspective rather than an external benchmark. This bears on how much independent weight it should carry.
+
+---
+
+## Actualización incremental — referentes institucionales y gubernamentales colombianos
+
+This section documents what the three documents added in this update contribute, and what they do not. Findings elsewhere in the synthesis were adjusted only where these documents change them materially.
+
+### Files, families and analytical function
+
+| File | ID | Family | Analytical function in this synthesis |
+|---|---|---|---|
+| `design/benchmarks/institutional/unal-lineamientos-armonizacion-curricular.pdf` | I20 | Institutional | Evidence of how one Colombian university defines curricular coherence, harmonization, learning outcomes, self-evaluation and continuous improvement at macro, meso and micro levels |
+| `design/benchmarks/institutional/unal-armonizacion-ejercicio-piloto.pdf` | I21 | Institutional | Evidence of a participatory, university-wide diagnosis of curricular problems and proposals (four workshops, six teams, 17 undergraduate programmes invited, 126 invited participants; p. 10) |
+| `design/benchmarks/governmental/mintic-fedesoft-talento-digital-2025-2030.pdf` | G2 | Governmental | Colombian evidence of **external pertinence**: projected demand for digital talent, perceived misalignment between education and the labour market, and demanded competencies |
+
+### What I20 and I21 establish (institutional curriculum governance)
+
+- **Three curricular levels.** I20 (p. 2) defines harmonization as reviewing three dimensions:
+  - *macrocurricular*: institutional policies and guidelines, and the definition of the programme's academic and social pertinence;
+  - *mesocurricular*: the curricular proposal and deployment of the plan of studies;
+  - *microcurricular*: didactics and assessment of learning.
+
+  I21 (p. 9) uses a parallel three-level "curricular field": *determinación* (the institution's political-educational proposal), *estructuración* (epistemological and social dynamics of knowledge fields) and *desarrollo* (learning environments, teaching strategies, resources and assessment). **Interpretation:** the two schemes correspond closely, but neither document states the equivalence.
+- **Chain of coherence, with only partial textual support.** The links the documents state explicitly are:
+  - context and needs of the environment → programme educational project (PEP) coherent with mission, community needs and "nuevos requerimientos del medio" (I20 p. 2, eje 3);
+  - learning outcomes, defined per CESU Acuerdo 02 de 2020 as "declaraciones expresas de lo que se espera que un estudiante conozca y demuestre" at programme completion. They are set considering "las tendencias de las disciplinas que configuran la profesión; el perfil de formación…; la naturaleza, nivel de formación y modalidad… y los estándares internacionales" (I20 p. 2);
+  - curriculum, plan of studies, teaching methodologies and learning strategies, reviewed for "correspondencia" with pertinence and learning outcomes (I20 p. 3, etapa 3);
+  - incorporation of learning outcomes, with monitoring and evaluation mechanisms (I20 p. 3, etapa 4);
+  - in I21: fines formativos → contenidos → prácticas pedagógicas → evaluación (pp. 76–82); updating of the *perfil de egreso* with graduates' participation (pp. 91, 106); graduates who "validate the formative process and the learning outcomes" (p. 107, citing Acuerdo 002 de 2020).
+
+  **Not found in either UNAL document:** the terms *intencionalidades formativas*, *programa-calendario* and *trazabilidad*. The closest equivalents are I21's "fines formativos" and I20's "correspondencia"/"coherencia". A full traceability chain from context to programme-calendar is therefore **not** established by these sources. Only the links listed above are.
+- **Participatory harmonization and continuous improvement.**
+  - I20 (p. 3) requires "un sentido amplio de participación y diálogo entre la comunidad académica y los grupos de interés" and "una cultura de mejoramiento continuo". It frames improvement plans as a core axis (p. 2, eje 4).
+  - I21 reports that self-evaluation has become "coyuntural", driven by accreditation, and calls for periodic, critical self-evaluation (p. 28).
+  - I21 also asks for measurable objectives and indicators for harmonization (p. 110), and for "unificación de conceptos" across programmes (p. 108).
+- **Diagnosed problems.** Participants in I21 characterize UNAL curricula as:
+  - "endogámico", rigid, slow to adapt and "desactualizada" (pp. 19, 27);
+  - weakly connected to the productive sector and to graduates (p. 32);
+  - theory-dominated, needing "un equilibrio entre los componentes teóricos y los prácticos" (pp. 76–77).
+
+  They propose:
+  - internships and practice "como parte del núcleo formativo… y no únicamente como actividad suplementaria al final de la carrera" (p. 112);
+  - problem-oriented aims, content and assessment (pp. 77, 82);
+  - assessment of "saber hacer", with self- and peer-assessment (p. 82);
+  - pertinence understood as including social transformation, territorial and rural needs, and citizenship ("no solo se están formando profesionales sino también ciudadanos", p. 76).
+
+### What G2 establishes (Colombian external pertinence)
+
+- **Demand signals relevant to Analytics.**
+  - "Ciencia de datos, BI, IA" is the second-largest demanded role category (17.95%, after software development at 30.19%), and "Analista de Datos" is listed separately (2.17%) (Tabla 29, Pág. 78; Tabla 49, Pág. 117).
+  - "Científico de Datos" is the single most demanded role (9.46%; Pág. 164).
+  - "Big Data y Analítica" ranks first in critical scarcity (50%; Tabla 6, Pág. 163).
+- **Demanded competencies.** G2's canonical skill domains (Tabla 35, Págs. 96–97) include:
+  - *Comunicación analítica* (report presentation, "storytelling con datos");
+  - *Contexto de dominio* (risk analytics, industry domain);
+  - *Data & features* (advanced Excel, source integration, data mining, Python, advanced SQL);
+  - *Modelado y analítica* (advanced analytics, ML, deep learning, time series, forecasting, segmentation, model calibration, backtesting and monitoring);
+  - *Riesgo de modelos* (statistical validation);
+  - soft domains: business analysis, business vision, critical thinking and stakeholder management.
+
+  Employers also report a capability gap in "convertir desafíos de negocio en soluciones de ML, seleccionar algoritmos apropiados, validar modelos… y justificar predicciones" (Pág. 176), and in navigating "problemas… incompletos, contradictorios" (Pág. 177). BI and visualization tools are demanded for designing dashboards and communicating insights (Pág. 176).
+- **Relationship between education and work.** Across seven actor groups, curricular obsolescence and misalignment with the labour market are the dominant concerns (Págs. 135–136). Practical projects, portfolios, internships and certifications are also demanded (Págs. 136–137). Further findings:
+  - university curriculum update cycles of 4–6 years (Pág. 138), up to 10–12 years from need to effective change (Pág. 169);
+  - only 31% of programmes report active agreements with companies (Pág. 169);
+  - soft-skill deficits in communication, teamwork, critical thinking and adaptability (Pág. 158);
+  - a recommendation for industry co-design of curricula, update cycles of about two years, and real sector projects "desde semestres tempranos" (Págs. 187, 222).
+- **Durable capabilities as well as tools.** G2's emerging-skills chapter argues that demand converges on "capacidades de pensamiento que permiten transferir conocimiento entre dominios", not only on specific languages or tools. It makes computational thinking a transversal axis (Pág. 224; recommendation 5.5.1, Pág. 254).
+
+### Limits of inference
+
+- **I20 and I21 define no Analytics content.**
+  - They are generic, cross-programme curriculum-governance documents.
+  - I20 covers the Manizales campus. I21 was a national pilot whose 17 invited programmes included Statistics, Economics and Business Administration but no Analytics programme.
+  - They constrain *how* a curriculum should be justified, aligned, assessed and improved. They do not constrain *what* Analytics is. They are not international disciplinary benchmarks.
+- **G2 is Colombian, labour-market evidence of pertinence.**
+  - It is not an international standard or an educational framework.
+  - Its categories bundle data science, BI and AI. Its demand is IT-sector-centred. Its competency lists come from job postings, surveys and focus groups (452 surveys, 8 focus groups with 102 people, 419 AI-agent telephone interviews, more than 6,300 job profiles; Págs. 25, 96).
+  - It is **not** evidence that Analytics should become AI, Data Engineering or Big Data. That reading would contradict the task instructions and AGENTS.md.
+  - Its high-scarcity signals for data and analytics roles support the *relevance* of Analytics in Colombia. They do not decide its *identity*.
+- **Local context and independence.** The UNAL documents describe the curricular context of Universidad Nacional de Colombia. L12's authors are affiliated with the same university. These documents are local context for later design, not independent confirmation of the Analytics-identity findings.
 
 ---
 
@@ -119,6 +215,14 @@ A3–A5 come from one framework, so they count as **one** independent voice (INF
   - L12 calls analytics "no longer an auxiliary function but a central driver of value creation" (p. 3). It holds that deployment requires "integrating predictive and prescriptive outputs directly into organizational decision workflows" (§4.7).
 
 **The governmental family frames Analytics differently.** G1 lists "Análisis de Datos" as one of six digital-skill themes, alongside programming, AI, blockchain, cloud architecture and cybersecurity (p. 2). The justification is **employability and closing the digital-talent gap** (pp. 1–3), not decision-making.
+
+**Update (G2).** The second governmental document partly nuances this framing:
+
+- G2 still positions data work within an IT-talent gap.
+- It also describes AI and data science as disciplines that "redefinen la forma en que las organizaciones toman decisiones" (Pág. 204).
+- In its salary chapter, it forecasts that BI and big-data analysts "migrarán de un rol descriptivo (reportes) a uno predictivo y prescriptivo explicando qué va a pasar y qué debemos hacer" (Pág. 291).
+
+The governmental family therefore now contains *some* decision-oriented framing. It remains secondary to its labour-market framing, and G2 does not separate Analytics from data science, BI or AI.
 
 **Interpretation:** the corpus supports its most defensible identity claim through four independent families. **Analytics is defined by its orientation to decision and action, not by a method family.** This is what separates it most consistently from the contributing disciplines (Section 3). The governmental evidence does not contradict this; it positions the field at a different level, as a labour-market skill.
 
@@ -148,7 +252,7 @@ The corpus supports **several distinct interpretations** of Analytics, and they 
 | **(b) Analyst-role Analytics** | Analytics is the *data analyst* role: querying, cleaning, EDA, descriptive and inferential statistics, visualization, metrics, reports and dashboards, stakeholder communication. Predictive modelling and ML mark the step to Data Science. | P1 (analyst vs data-scientist tracks and certifications); P2 (Analytics Foundations vs Data Science Foundations); I17; A2's "business analysis" role (making sense of data "without necessarily relying on programming skills") |
 | **(c) Analytics as the business-context label for Data Science** | "Those interested in the business context… generally use the term 'analytics'" (A1 §1.1). Analytics is not a separate discipline, just DS applied to business. | A1; implicitly I19 (a CS department module in a "Data Analytics" MSc, taught with data-mining and ML content) |
 | **(d) Managerial / leadership Analytics** | Analytics as an organizational capability to commission, govern and exploit, needing literacy rather than technical execution. | I4 (no coding), I1, I6, I16, I15 masterclass ("Why analytics is every leader's problem"); L3, L8 |
-| **(e) Data analysis as a short-cycle digital employability skill** | "Análisis de Datos" is one digital skill among several technology themes, acquired quickly through intensive, practice-based bootcamps for job placement. | G1 (pp. 1–3); partially P1 and P2 (no-prerequisite entry tracks) |
+| **(e) Data analysis as a digital-talent / employability capability** | "Análisis de Datos" is one digital skill among several technology themes, acquired quickly through intensive, practice-based bootcamps for job placement (G1). Or: "Ciencia de datos, BI, IA" is one high-demand IT-talent category whose pertinence is judged by labour-market alignment (G2). | G1 (pp. 1–3); G2 (Tabla 29, Pág. 78; Págs. 135–138); partially P1 and P2 (no-prerequisite entry tracks) |
 
 **Interpretation:** These interpretations are not mutually exclusive. The largest tension is between (a) and (b):
 
@@ -201,7 +305,7 @@ The analysis below looks at the **function** each field serves inside Analytics,
   - It carries heavier computing expectations: A1's knowledge areas include OS, networks, compilers, big-data systems and software testing.
 - **Function within Analytics.** Data Science supplies modelling depth and computational practice.
 
-**Interpretation:** the corpus does **not** support treating Data Science and Analytics as synonyms. The professional evidence differentiates them. A3 defines an analytics lifecycle with no reliance on a data-science identity. Only A1 conflates them, and it does so explicitly from a computing perspective. L12 uses "analytics project" and "data science project" largely interchangeably when citing failure statistics (p. 3). The literature's terminology is not consistent either.
+**Interpretation:** the corpus does **not** support treating Data Science and Analytics as synonyms. The professional evidence differentiates them. A3 defines an analytics lifecycle with no reliance on a data-science identity. Only A1 conflates them, and it does so explicitly from a computing perspective. G2 does not distinguish them either. It groups "Ciencia de datos, BI, IA" as one demand category (Pág. 78) and treats "Analista de Datos" and "Científico de Datos" as separate roles within the same data/AI area (Págs. 164, 289–291). L12 uses "analytics project" and "data science project" largely interchangeably when citing failure statistics (p. 3). The literature's terminology is not consistent either.
 
 ### 3.2 Machine Learning
 
@@ -230,6 +334,11 @@ The analysis below looks at the **function** each field serves inside Analytics,
   - A2 lists "optimization" as a key mathematical concept.
   - Literature-derived: L1, L4, L12 ("predictive and prescriptive outputs" in decision workflows).
 - **Absence.** P1 and P2 record no substantial optimization component in analyst or data-scientist paths. A1 includes only combinatorial/heuristic optimization algorithms (PDA T2) and planning and search. G1 does not mention it.
+- **Update (G2).** G2 offers only weak, forward-looking governmental support.
+  - It forecasts a shift of BI and big-data roles toward "predictivo y prescriptivo" work (Pág. 291).
+  - It lists optimization only as a secondary technical topic.
+  - Prescriptive or optimization skills do not appear among its canonical demanded skill domains (Tabla 35, Págs. 96–97).
+  - The disagreement in D1 therefore stands.
 - **Function within Analytics.** Where present, OR converts predictions into choices under constraints — the step from "what will happen" to "what should we do".
 - **Interpretation.** This is the sharpest cross-family disagreement in the corpus (see Section 12). The decision-oriented definition of Analytics that the corpus most strongly supports (Section 2.1) implies a decision layer. Yet the job-market professional evidence does not operationalize it.
 
@@ -311,7 +420,8 @@ The capabilities below emerged from the corpus rather than from a predetermined 
   - P1 (certification practical begins with "review a business problem"), P2 (DS Foundations begins with "identifying/understanding business problems").
   - L4 (business problem → analytical problem; avoid "drive-by analytics"), L6/L7 (epic hypothesis statements).
   - L12 §4.1: "a business analytics project must always start with an explicit and multidimensional scope definition that integrates business needs, technical feasibility, and stakeholder alignment"; scope treated as "iterative, evolving".
-- **Families:** A, I, P, L.
+  - *Update:* G2 reports employers' gap in "convertir desafíos de negocio en soluciones de ML" and in navigating ill-defined, contradictory problems (Págs. 176–177).
+- **Families:** A, I, G, P, L.
 - **Convergence:** strong.
 - **Variation:** INFORMS treats framing as a formal, assessable domain. Professional sources treat it as a first step, and executive programmes as a strategic judgement. L12 widens it to include feasibility, ethics and "whether AI is the appropriate solution".
 
@@ -393,7 +503,8 @@ The capabilities below emerged from the corpus rather than from a predetermined 
   - P1 ("communicating insights to stakeholders"; Data Scientist certification requires a recorded presentation), P2 (*Communicating with Data*; results for technical and non-technical stakeholders).
   - L11 (data storytelling for data product owners).
   - L12 treats communication as "an output/activity rather than a new execution dimension" (Table 2, row 17), embedded in documentation and stakeholder deliverables.
-- **Families:** A, I, P, L.
+  - *Update:* G2 lists "Comunicación analítica" (report presentation, "storytelling con datos") as a demanded hard-skill domain (Tabla 35, Pág. 96). It reports deficits in explaining technical concepts to non-technical audiences (Págs. 158, 177).
+- **Families:** A, I, G, P, L.
 - **Convergence:** strong. It is the capability with the most uniform support across families.
 - **Variation:** its *status* differs. It is a first-tier competency in A1, A2, P1 and P2, but a cross-phase output in L12.
 
@@ -418,7 +529,8 @@ The capabilities below emerged from the corpus rather than from a predetermined 
   - P2 (privacy and ethics in the analyst foundation; fairness and SHAP labs in DP-100; responsible use in GenAI).
   - L3 (responsible use; governance as decision rights), L4 (transversal governance).
   - L12 §4.6: "Governance and Ethics" as a transversal control dimension "rather than a discrete or final step", aligned with EU Trustworthy AI guidelines.
-- **Families:** A, I, P, L.
+  - *Update:* G2 treats bias, ethics and algorithmic transparency as growing requirements for data and AI roles (Pág. 291), though only briefly.
+- **Families:** A, I, G (G2, briefly), P, L.
 - **Convergence:** strong on importance; divergent on placement (Section 12). P1 does not visibly treat it — an absence, possibly a limitation of the reconstruction.
 
 ### C12. Working with tools and computational workflows
@@ -443,6 +555,9 @@ The capabilities below emerged from the corpus rather than from a predetermined 
   - P2 (stakeholder work; "soft skills").
   - L6, L8 (relational coordination), L11 (team structures, T/Pi/M-shaped skills).
   - L12 ("cross-functional collaboration" as a convergent principle; project management "embedded across" the lifecycle, Table 2, row 13).
+  - *Update:*
+    - G2 records employer-reported deficits in teamwork and stakeholder management (Págs. 97, 158).
+    - I21 reports cooperative and peer work as valued pedagogical strategies (pp. 78–79).
 - **Families:** A, I, G, P, L.
 - **Convergence:** strong at the level of teamwork. Organizational design and management methods are concentrated in L and in executive institutional programmes.
 
@@ -579,6 +694,12 @@ Unresolved sequencing questions evidenced by the corpus:
 - **Where optimization goes:** before ML (I12) or after prediction (I4, I15, L4).
 - **Programming entry point:** none required (I4, I1, I16); an optional code or no-code track (I18); introductory with no prerequisites (P1, P2 Analytics); an admission/knowledge test (G1); assumed (P2 DS, P2 Spark).
 - **Where deployment goes:** included only for advanced or professional levels (A4 marks several deployment subtasks "not tested at this level"; P2 places it in DS rather than Analytics foundations), or integrated as a normal lifecycle phase (L4, L12, A3).
+- **Where practice with real problems and external actors enters (update).** A governmental source and an institutional source now both say *early and throughout*, not only at the end:
+  - G2 recommends real sector projects "desde semestres tempranos" (Págs. 187, 222).
+  - I21 proposes internships and practice "como parte del núcleo formativo… y no únicamente como actividad suplementaria al final de la carrera" (p. 112).
+
+  This strengthens the whole-cycle-early and practice-integrated models, but does not settle sequencing.
+- **Level at which progression is designed (update).** I20 and I21 add a distinction that the rest of the corpus lacks. Progression and coherence operate at three curricular levels (macro, meso, micro), and harmonization reviews them together (I20 p. 2; I21 p. 9). These documents specify **no** Analytics sequence.
 
 ---
 
@@ -595,7 +716,8 @@ Unresolved sequencing questions evidenced by the corpus:
 | **Exercises and labs** | P1 (in-browser coding exercises; practice challenges); P2 (labs in specialization and certification paths; "cannot be claimed" for every foundation path); I17 (a lab each session); I11, I8 (Jupyter exercises); I10 (graded assignments per module). | I, P |
 | **Portfolios** | I7 (3 projects), I11 (GitHub), I12, I18; P1 (portfolio). | I, P |
 | **Professional outputs** | Reports, dashboards and recommendations (P1; I17; I15); business validation reports (A4/A5 6.2); situation reports for senior managers (A1 PR T1); executive summaries and AI project proposals (I8, I16, I1); presentations (P1 recorded presentation; I14, I16); project charters and data description, exploration and quality reports (L12 §4.1–4.2). | A, I, P, L |
-| **Team work and peer evaluation** | I17 (2–3 members; peer evaluation 25% of the project grade); A1 (team software project, SDM T1); A2 (multidisciplinary teams); G1 (team challenges). | A, I, G |
+| **Team work and peer evaluation** | I17 (2–3 members; peer evaluation 25% of the project grade); A1 (team software project, SDM T1); A2 (multidisciplinary teams); G1 (team challenges); I21 (cooperative and peer work; self- and peer-assessment, pp. 78–82). | A, I, G |
+| **Internships, practice and industry-linked projects (update)** | G2 (actor groups demand practical projects, portfolios and internships, Págs. 136–137; industry projects from early semesters, Págs. 187, 222); I21 (theory-practice imbalance; internships as core, pp. 76–77, 112); A1 §4.1 (internships); A2 (summer programmes, internships). | A, I, G |
 
 ### 7.2 Pedagogical functions practice serves
 
@@ -636,6 +758,15 @@ The corpus shows practice serving **all four** functions. Different evidence fam
 - Literature-derived evidence supplies worked decision cases (L4) and lifecycle deliverables (L12). These show *why* practice must reach decisions, deployment and governance rather than stopping at models (L4 p. 3: "a good model does not guarantee a good analytics project"; L12 p. 3 cites that "approximately 87% of data science projects never reach production").
 
 Assessment detail is thin across the corpus: few sources publish weights or rubrics.
+
+**Update (I20, I21).** The UNAL documents add *principles* for assessment, but still no rubrics or weights:
+
+- Learning outcomes are the axis of an improvement process in which programmes assess how far students reach them (I20 p. 2).
+- Assessment should follow problem-solving and "saber hacer", rather than content reproduction and GPA-driven administrative use (I21 pp. 80–82).
+- Problem-based work may need assessment horizons longer than a single course (I21 p. 82).
+- Self-assessment, peer assessment and evaluation of teaching should be included (I21 p. 82).
+
+These principles are generic to UNAL programmes. They reinforce, but do not specify, assessment for Analytics.
 
 ---
 
@@ -689,6 +820,16 @@ L12 criticises early methodologies' "tool-oriented design" (p. 4) and describes 
    - GenAI tools are highly salient but, in P2, are explicitly a specialization.
    - G1's list of trending technology themes (blockchain, cloud, cybersecurity) must not be read as a definition of Analytics. The task instructions say so, and nothing else in the corpus places those themes inside Analytics.
 4. **Tool evaluation and selection is itself an assessed capability** in the only analytics-specific authoritative framework (A4/A5 4.3–4.4).
+5. **Update (G2): the Colombian demand evidence pulls both ways on tools.**
+   - *Toward named tools:*
+     - It reports the skills most demanded in job postings (Python, advanced SQL, advanced Excel; Tabla 35, Pág. 96).
+     - It reports that BI/visualization tools such as Power BI, Tableau and Looker are demanded for analyst roles (Pág. 176).
+     - It measures a 76.1% gap in university coverage of "Visualización (Power BI)" and a 33.3% gap for "Ciencia de datos, analítica, IA" (Tablas 39 and 48, Págs. 102, 116–117).
+     - It recommends integrating industry certifications into curricula (Pág. 158).
+   - *Toward durable capabilities:*
+     - Its emerging-skills chapter holds that demand converges on transferable thinking capacities and makes computational thinking a transversal axis (Págs. 224, 254).
+     - It notes that bootcamps' tool-specific stacks limit adaptability (Pág. 187).
+   - This tension matches Section 8's distinction between durable capabilities and implementations. G2's frequency counts are not grounds to adopt specific vendors or certifications.
 
 ---
 
@@ -759,6 +900,21 @@ G1 adds a distinct kind of evidence — **local public-policy positioning** — 
 - It specifies no competencies. Its alignment with any content is therefore unknowable from the document.
 
 **Interpretation:** G1 constrains *context* (audience, format, national priorities) far more than *content*. Following the task instruction, it is not treated as an international standard, and its technology list does not define Analytics.
+
+**Update — G2 and its relation to the other families.** G2 adds Colombian **external-pertinence** evidence that neither G1 nor any other family supplies: quantified projections of demand and gaps, role rankings, employer-perceived competency deficits, and a curricular mapping of 478 programmes.
+
+- **Where it reinforces other families:**
+  - Employer demand for "comunicación analítica", business analysis and domain context (Tabla 35) echoes A1 PR-Communication and A3 Domains I–II.
+  - The gap in turning business challenges into models (Pág. 176) echoes C1 and C6.
+  - The demand for practice, projects and internships (Págs. 136–137) echoes A2 and the institutional and professional practice evidence.
+  - Soft-skill deficits (Pág. 158) echo A1 PR T1 and A2 communication and teamwork.
+- **Where it diverges:**
+  - It organizes pertinence around fast-moving technology and certifications (cloud, DevOps, AI, BI tools). This contrasts with A2's preference for following the frontier over mastering today's architecture.
+  - It groups Analytics with data science, BI and AI.
+  - Its main pertinence criterion is labour-market alignment; the UNAL documents, by contrast, use broader social pertinence (Section 12, D16).
+- **Status:** it is context about Colombian relevance and demand, not a definition of the field's identity or content.
+
+**Update — institutional curriculum governance (I20, I21).** These documents are not comparable to the course and brochure evidence in 9.5. They do not describe what programmes teach. They describe how one Colombian university expects programmes to justify, align, assess and continuously improve curricula. Their relevance is therefore to *later design process*, not to the findings on Analytics' identity (see the incremental-update section).
 
 ---
 
@@ -867,6 +1023,13 @@ Each finding below is supported by at least three families and by independent so
     - A: A2, A1 (explicit).
     - P: P1 (language alternatives; "does not establish that any one is universally necessary"), P2 (programming *comparison* course; tool paths as modular specialization).
     - L: L12 (critique of "tool-oriented design").
+    - *Update:* G2 is ambivalent. It gives tool-heavy demand lists, but also stresses transferable thinking capacities (Section 8.3, item 5).
+11. **Curricula need a continuing, evidence-informed relationship with their external context. Slow, rigid updating is a recognised weakness (added in this update).**
+    - I: I20 (PEP coherent with "nuevos requerimientos del medio"; participation of stakeholder groups; continuous improvement, pp. 2–3); I21 (curricula perceived as "desactualizada", "lenta, rígida"; weak links with the productive sector and graduates; graduates as feedback source, pp. 19, 27, 32, 106–107).
+    - G: G2 (curricular obsolescence and labour-market misalignment named by all seven actor groups; update cycles of 4–6 years; only 31% of programmes with active company agreements; Págs. 135–138, 169).
+    - A: A2 (Rec. 5.1 and 5.3: evolve programmes over time; continuous evaluation).
+    - Why strong: an institutional diagnosis and a governmental labour-market study, produced independently and for different purposes, describe the same weakness, and A2 states the principle.
+    - Limits: this is a convergence about *curriculum process and pertinence*, not about Analytics content. The two families also disagree on what "pertinence" means (D16).
 
 ---
 
@@ -888,7 +1051,9 @@ Each finding below is supported by at least three families and by independent so
 | D12 | **Concepts vs practice balance** | Concept-integrated, with capstones: A1, A2 | Practice as the pedagogy: G1; practice-dense and tool-first: P1 (in-browser exercises), I11 (portfolio per section); decision-case-dense: I4, L4 | **Varies by family.** Practice is universal; its function differs (Section 7.2). |
 | D13 | **Employer vs academic priorities** | Academics: security and privacy required | Employers did not report security and privacy as required; they wanted more computing than statistics (A1 §2.3) | Recorded within A1. A1 interprets it as reflecting the applicant pool. |
 | D14 | **Discipline vs short-cycle skill** | A sustained, integrated discipline: A1 (degree programmes; "a random collection… does not constitute a meaningful program"), A2 (majors, minors), L12 ("mature interdisciplinary domain", §5.1) | A skill acquirable in 159 intensive hours outside standard curricula: G1; entry-level professional tracks of 36–39 hours (P1) | **Contested at the level of educational format and depth.** |
-| D15 | **Status of communication** | A first-tier, assessed competency: A1 PR T1, A2, A5 5.6.1, P1, P2 | An output or activity within lifecycle phases, not a dimension: L12 Table 2 (row 17) | **Partial.** Both views agree on importance; they differ on its structural status. |
+| D15 | **Status of communication** | A first-tier, assessed competency: A1 PR T1, A2, A5 5.6.1, P1, P2; G2 ("Comunicación analítica" as a demanded skill domain, Tabla 35) | An output or activity within lifecycle phases, not a dimension: L12 Table 2 (row 17) | **Partial.** Both views agree on importance; they differ on its structural status. |
+| D16 | **What "pertinence" means (update)** | Labour-market alignment: rapid technology updating, industry co-design, certifications, employability (G2 Págs. 158, 187, 222; G1) | Broader academic and social pertinence: social transformation, territorial and rural needs, integral formation of citizens, participation of the academic community and graduates (I21 pp. 30–32, 76, 99–104; I20 "pertinencia académica y social", p. 2) | **Unresolved; not necessarily exclusive.** Both criticise weak links with the labour sector, but they weigh it differently. The corpus does not say how to balance them. |
+| D17 | **How curricula should be updated (update)** | Fast, industry-driven cycles: about 2-year updates, incremental changes to subjects, industry co-design committees, bootcamp-like agility (G2 Págs. 158, 187, 212) | Participatory, institution-led harmonization respecting programme particularities, with shared concepts, self-evaluation and measurable improvement indicators (I20 pp. 2–3; I21 pp. 89, 108–110) | **Tension in process, not in content.** G2 treats university processes as the bottleneck; I21 treats bureaucratic culture as a problem but proposes participation, not market co-design, as the remedy. |
 
 **Weak evidence (not disagreement):**
 
@@ -899,6 +1064,8 @@ Each finding below is supported by at least three families and by independent so
 - Graduate-level expectations: no authoritative source addresses graduate or continuing education directly.
 - The competency content of the one governmental programme.
 - Empirical validation of the one systematically derived process model (L12).
+- *Update:* evidence on Analytics as a *distinct* labour category in Colombia. G2 bundles data science, BI and AI, so Colombian demand specific to Analytics (as defined in Section 2) cannot be separated.
+- *Update:* a full context-to-programme-calendar traceability chain. The UNAL documents support only some of its links (see the incremental-update section).
 
 ---
 
@@ -969,6 +1136,8 @@ Relevant to particular roles, contexts or advanced applications:
 | **Generative and agentic AI** | High salience in recent institutional and literature-derived sources; specialization in P2; a separate theme in G1; absent from authoritative sources (D10) |
 | **Required programming and mathematical depth** | D4, D5 |
 | **Low-code / no-code routes as legitimate primary routes** | P2 (Alteryx), I18, I4 vs A1/A2 expectations |
+| **Integrating vendor certifications and specific BI/cloud tools into the curriculum (update)** | Recommended by G2 on labour-market grounds (Págs. 102, 116–117, 158); P1 and P2 treat vendor tools as variants or specializations; A2 prefers durable capability over current tools |
+| **Weight given to labour-market vs broader social pertinence (update)** | D16: G2 vs I20/I21 |
 | **Educational format: sustained discipline vs short-cycle bootcamp** | D14 |
 | **Dispositions** (A1 CC2020 list) | Isolated evidence (A1 only) |
 
@@ -1028,7 +1197,27 @@ The evidence creates the constraints and questions below. It does not supply a d
 - the lifecycle methodology to teach (CRISP-DM, IAF, PRODIG8 or others) (D7);
 - the depth of big-data, cloud and MLOps content;
 - whether and how to respond to the local policy context (G1);
-- assessment structure, for which the evidence is thin.
+- assessment structure. The evidence is thin; I20 and I21 now add principles but not rubrics.
+
+### 14.7 Constraints from the Colombian institutional and governmental context (update)
+
+These constraints concern the **process** of later design, not the identity or content of Analytics:
+
+- **Coherence across curricular levels.** If later design is to fit UNAL's harmonization guidelines, it should show:
+  - *macro* coherence: institutional policy, and academic and social pertinence;
+  - *meso* coherence: the curricular proposal and plan of studies;
+  - *micro* coherence: didactics and assessment of learning (I20 p. 2).
+- **Explicit links between context, profile, learning outcomes, plan of studies and assessment.** The UNAL documents support these links (I20 pp. 2–3; I21 pp. 76–82, 106–107). Other links requested for the project — *intencionalidades formativas* and *programa-calendario* — are not defined in these sources. If later tasks use them, they rest on project conventions, not on this corpus.
+- **Learning outcomes.** Per I20's citation of CESU Acuerdo 02 de 2020, learning outcomes should reflect four things:
+  - the trends of the disciplines that make up the profession;
+  - the formation profile;
+  - the programme's nature, level and modality;
+  - international standards.
+
+  **Interpretation:** the authoritative and professional evidence summarised in Sections 2–13 is the corpus's evidence on the first and fourth of these.
+- **Participation and continuous improvement.** Stakeholder and graduate participation, periodic critical self-evaluation, shared concepts, and measurable indicators of improvement are all expected (I20 p. 3; I21 pp. 28, 106–110).
+- **External-pertinence signals.** G2 shows high Colombian demand and scarcity in data and analytics roles (Págs. 78, 163–164). It also shows employer demand for analytical communication, business analysis, domain context, statistical validation and model monitoring (Tabla 35). Designers may use these signals to justify relevance. The task instructions and AGENTS.md mean they should not use them to redefine Analytics as AI, Data Engineering or Big Data.
+- **Open tensions to decide explicitly:** D16 (what pertinence means) and D17 (how fast, and by whom, curricula are updated).
 
 ---
 
@@ -1056,4 +1245,12 @@ The evidence creates the constraints and questions below. It does not supply a d
 | Discipline vs short-cycle skill | A1 Ch. 2, 4; A2 Finding 3.1; L12 §5.1 vs G1 p. 2; P1 track durations | A, L vs G, P |
 | GenAI/agentic AI emerging and uncertain | I18; I16; I1; I6; I12; P2 GenAI path; G1 (AI as separate theme); L1 pp. 57–60; L12 §6; absent A1–A5 | I, G, P, L |
 | DataOps/methodology/organizational depth concentrated in L; L4 and L12 share one structure | L2–L12; L4 pp. 9–29 vs L12 §4; I5; I6; I16; A1 SDM T2 | L, I (A partial) |
-| Evidence limits | Section 1.3 (A1/A2 dates; 8/19 MIT; G1 single sheet without competencies; P1/P2 stated limits; L2–L11 single series; L12 unvalidated and possibly internal) | — |
+| Colombian demand and scarcity for data/analytics roles (bundled with DS, BI and AI) | G2 Tabla 29 (Pág. 78), Pág. 117, Tabla 6 (Pág. 163), Pág. 164, Págs. 289–291 | G |
+| Employer-demanded analytical communication, business analysis, domain context, statistical validation | G2 Tabla 35 (Págs. 96–97), Págs. 176–177 | G |
+| Curricular levels macro/meso/micro (determinación/estructuración/desarrollo) | I20 p. 2; I21 p. 9 | I |
+| Links among context, PEP, profile, learning outcomes, plan of studies, didactics and assessment (partial chain) | I20 pp. 2–3; I21 pp. 76–82, 91, 106–107 | I |
+| Participatory harmonization and continuous improvement | I20 pp. 2–3; I21 pp. 28, 89, 106–112 | I |
+| Curricula slow and weakly linked to context and labour market | I21 pp. 19, 27, 32; G2 Págs. 135–138, 168–169; A2 Rec. 5.1, 5.3 | I, G, A |
+| Practice and internships early and throughout | G2 Págs. 136–137, 187, 222; I21 pp. 76–77, 112; A1 §4.1; A2 | A, I, G |
+| What "pertinence" means; how curricula should be updated (D16, D17) | G2 Págs. 158, 187, 212, 222 vs I20 p. 2; I21 pp. 30–32, 76, 99–110 | G vs I |
+| Evidence limits | Section 1.3 (A1/A2 dates; 8/21 MIT; G1 single sheet without competencies; G2 IT-talent scope, bundled categories and internal figure discrepancy; I20/I21 generic curriculum governance without Analytics content; P1/P2 stated limits; L2–L11 single series; L12 unvalidated and possibly internal) | — |

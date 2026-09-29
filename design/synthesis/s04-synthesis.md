@@ -2,251 +2,201 @@
 
 ## 1. Scope and integration method
 
-This consolidation integrates the source-specific professional-learning
-syntheses from S01 and S02 and the independent S03 syntheses produced by
-ChatGPT/Codex, Claude, and Gemini:
+This consolidation integrates:
 
-- `s01-datacamp.md`
-- `s02-pluralsight.md`
-- `s03-synthesis-chatgpt.md`
-- `s03-synthesis-claude.md`
-- `s03-synthesis-gemini.md`
+- `design/synthesis/s01-datacamp.md`;
+- `design/synthesis/s02-pluralsight.md`;
+- `design/synthesis/s03-synthesis-chatgpt.md`;
+- `design/synthesis/s03-synthesis-claude.md`; and
+- `design/synthesis/s03-synthesis-gemini.md`.
 
-It compares the S03 conclusions rather than treating them as votes or ranking
-them by model, and retains S01/S02 as direct provider-specific evidence. A
-finding is treated as strongest when the independent syntheses agree and their
-reasoning remains traceable to diverse underlying evidence families:
-authoritative, institutional, professional-learning, and literature-derived.
-Repeated reference to the same provider or source family is not treated as
-independent confirmation. A DataCamp or Pluralsight finding is not counted
-twice merely because it appears in S01/S02 and is cited by S03.
+S01 and S02 are provider-specific professional-learning evidence; the three S03
+files are independent syntheses of the local corpus. S04 compares their
+evidence, convergence, and differences rather than treating models as votes. A
+provider finding is not independent confirmation when it appears both in S01 or
+S02 and an S03 synthesis.
 
-The updated corpus also includes MinTIC Talento TECH as a governmental source.
-It provides Colombian public-policy and delivery context, not an international
-standard or a complete definition of Analytics competencies.
+The updated corpus includes UNAL institutional material on curricular
+harmonization and MinTIC/FEDESOFT evidence about Colombian digital talent. They
+inform curriculum governance and external pertinence respectively; neither
+defines Analytics as a discipline or replaces international disciplinary
+evidence.
 
-After the original S03 analyses, the approved master's thesis *Strategies for
-Executing Analytics Projects: Toward a Unified Framework of Methodologies*
-(PRODIG8) was added to the literature-derived benchmark family. It is used
-here as an additional, clearly identified academic synthesis of
-analytics-project methodologies; it does not alter or resolve disagreements
-among the three agent syntheses. One inventory discrepancy remains visible:
-The regenerated S03 inputs identify the governmental family separately. Its
-single programme document names data analysis as a priority area but does not
-specify a competency framework; it therefore informs local context only.
+This revision assigns stable identifiers `S04.F01`–`S04.F11` for the first
+time. They replace prior unnumbered findings and must remain unchanged in later
+regenerations unless a finding is materially altered, split, merged, added, or
+retired.
+
+Evidence mixes undergraduate, postgraduate, executive, provider, public-policy,
+and operational contexts. Institutional brochures have uneven detail, DataOps
+is a concentrated literature perspective, and labour-market evidence is
+time-bound. This synthesis constrains later design; it does not choose a course
+sequence, programme-calendar, assessment model, or technology stack.
 
 ## 2. Convergent account of Analytics
 
-The strongest shared account is that **Analytics is decision- and
-action-connected work with data**. It begins with a consequential question,
-stakeholders, assumptions, and success criteria; it includes obtaining and
-assessing suitable data, applying and evaluating appropriate methods,
-interpreting results, communicating them, and enabling responsible use. Where
-an analytical solution is operationalized, the view extends to monitoring,
-adaptation, and review of consequences.
+**S04.F01 — Analytics is integrated, decision- and action-connected work with
+data.** It connects consequential questions, context, data, analytical
+reasoning, interpretation, communication, and responsible action or review. It
+is not reporting, model fitting, pipeline building, or optimization in
+isolation. The three S03 analyses converge strongly, with support from
+INFORMS, National Academies, institutional offerings, provider pathways, and
+project-method literature.
 
-This account is broader than reporting, dashboard construction, model fitting,
-or data-pipeline construction. The three syntheses agree that those activities
-may be important contributions, but none defines the whole educational domain.
-They also agree that the boundary between Analytics and Data Science is not
-uniformly drawn across the corpus: some sources foreground decision support and
-BI, while others include predictive modelling, optimization, or data-science
-practice. That variation must be preserved rather than collapsed into a single
-label.
+**S04.F02 — Problem framing and contextual judgment are integral capabilities,
+not a preamble to technical work.** Learners must identify decision-relevant
+questions, stakeholders, assumptions, constraints, success measures, and the
+limits of an analytical intervention. This is explicit in authoritative and
+lifecycle evidence but weaker in tool-oriented paths; it cannot be inferred
+from tool proficiency.
 
 ## 3. Analytics and contributing disciplines
 
-The syntheses converge on a functional, rather than ownership-based,
-relationship with contributing disciplines:
-
-| Contributing discipline | Function within Analytics | Consolidated boundary |
+| Contributing discipline | Function within Analytics | Boundary retained by the evidence |
 |---|---|---|
-| Statistics | Description, uncertainty, inference, experimentation, and valid interpretation. | Foundational reasoning, but not a complete Analytics architecture. |
-| Data Science | Programming, statistical modelling, predictive methods, and sometimes model lifecycle. | Overlaps strongly; professional sources often distinguish it by greater modelling/programming/deployment depth. |
-| Machine Learning | Predictive, unsupervised, and advanced modelling methods. | Important repertoire, not the organizing curriculum. |
-| Operations Research and Optimization | Prescriptive analysis, simulation, value modelling, and constrained decisions. | Closely related to decision orientation, but unevenly represented and not universally core. |
-| Data Engineering and Databases | Reliable data access, structure, quality, integration, scale, and reusable infrastructure. | Enables analytical work; production-scale ownership is role-dependent. |
-| Business Intelligence | Querying, metrics, visualization, dashboards, reporting, and communication. | A substantial applied layer, but insufficient by itself to define Analytics. |
-| Artificial Intelligence | Advanced methods, generative/agentic capabilities, products, governance, and risk. | Emerging and specialized in the available evidence. |
+| Statistics | Description, uncertainty, inference, experimentation, and valid interpretation. | Essential reasoning, not the whole architecture. |
+| Machine learning and Data Science | Predictive/exploratory modelling, programming, operational practices. | Important repertoire with variable depth. |
+| Operations Research and Optimization | Alternatives, constraints, trade-offs, simulation, prescriptive decisions. | Strong in selected sources; uneven in providers. |
+| Data Engineering and Databases | Data access, structure, quality, integration, provenance, infrastructure. | Full production ownership is role-dependent. |
+| BI and visualization | Metrics, reporting, visual explanation, dashboards, decision communication. | Substantial applied layer, insufficient as a complete definition. |
+| AI | Emerging methods, products, governance, and risk. | Extension, not a replacement for Analytics. |
 
-This preserves the governing identity: Analytics organizes the relationship
-among problem, data, methods, interpretation, and action. No contributing
-discipline should supply an independent syllabus that displaces that
-integration.
+**S04.F03 — Adjacent disciplines must be selected and sequenced by their
+function in Analytics, not imported as self-contained curricula.** This
+cross-synthesis finding preserves the repository's governing instruction:
+Analytics cannot become an abbreviated Statistics, ML, Data Engineering, BI, OR,
+or AI programme.
 
 ## 4. Recurring capabilities and knowledge architecture
 
-The following capabilities have cross-synthesis and cross-family support:
+| Stable finding | Consolidated capability | Strength and variation |
+|---|---|---|
+| **S04.F04** | Obtain, prepare, assess, document, and steward data fit for purpose, including querying/integration where relevant. | Strong across families; production-scale depth varies. |
+| **S04.F05** | Explore data and reason from evidence through description, visualization, statistical reasoning, uncertainty, and, when appropriate, experimentation. | Strong; formal mathematical and causal scope vary. |
+| **S04.F06** | Select, apply, validate, and interpret methods in relation to the problem, data, assumptions, and consequences. | Strong for judgment; predictive, prescriptive, and advanced depth is contested. |
+| **S04.F07** | Communicate findings, limitations, and recommendations so stakeholders can support responsible decisions. | Strong across authoritative, institutional, and professional evidence. |
+| **S04.F08** | Work responsibly and reproducibly across an appropriate lifecycle: governance, privacy, integrity, fairness, documentation, validation, monitoring, and learning from consequences. | Strong in principle; operational depth is role-dependent. |
 
-1. **Frame analytical problems and decisions.** Clarify context, stakeholders,
-   scope, constraints, assumptions, value, and success measures.
-2. **Obtain, prepare, assess, and steward data.** Include data access, SQL or
-   equivalent querying, integration, documentation, quality, and fitness for
-   purpose.
-3. **Explore and reason from evidence.** Use description, visualization,
-   statistical reasoning, inference, experimentation, and interpretation of
-   uncertainty.
-4. **Select, apply, and evaluate methods.** Match techniques to the question
-   and data; assess validity, limitations, and consequences rather than merely
-   run a method.
-5. **Communicate and support use.** Explain assumptions and results to
-   stakeholders through appropriate visual, written, and decision-oriented
-   outputs.
-6. **Act responsibly.** Address privacy, security, integrity, fairness, bias,
-   governance, and possible adverse effects.
-7. **Work reproducibly and, where appropriate, across a lifecycle.** Document,
-   test, validate, and maintain work at a depth appropriate to the role.
-
-The consolidated knowledge architecture has five related layers: foundations
-(domain, data, statistical/mathematical, computational, and ethical
-reasoning); data and computing enablers; analytical methods; decision and
-human context; and specialized or operational extensions. The three syntheses
-agree that this is an architecture of relationships, not a list of topics to
-be covered at identical depth. PRODIG8 reinforces this relational reading for
-analytics-project execution: project scope, data understanding and preparation,
-project design, model evaluation, and operation and maintenance form an
-execution lifecycle, while governance and ethics are transversal and continuous
-improvement supplies feedback. It is an analytic framework for organizing
-project work, not a prescribed course sequence.
+These findings are an architecture of relationships, not a flat list or a claim
+that every learner needs identical technical depth.
 
 ## 5. Learning progression and authentic practice
 
-The evidence supports a recurring movement from understanding a question and
-data, through analysis and interpretation, to communication and decision or
-action. Professional paths make variants of this progression explicit: analyst
-routes commonly move from tools and data work to EDA/statistics and applied
-outputs; data-science routes add more modelling and, sometimes, deployment.
-INFORMS and literature-derived process material make feedback, implementation,
-and lifecycle review more visible.
+**S04.F09 — Analytics learning must make the relationship among question, data,
+analysis, interpretation, communication, and use visible through integrated
+authentic practice.** Cases, realistic data, projects, labs, and communicative
+outputs recur across evidence families. They support reinforcement, integration,
+professional simulation, and evidence of learning, but do not establish one
+universal activity format, capstone model, or assessment scheme.
 
-This is not evidence for one universal sequence. The syntheses identify
-competing, defensible patterns: foundations-first, whole-lifecycle exposure
-early, problem-first learning, and iterative/spiral models. The later design
-stage must choose deliberately among them.
-
-The added thesis lends specific support to treating governance, ethics, and
-feedback as features that cut across project work rather than as a terminal
-stage. Its framework is suitable as a lens for examining the coherence of
-project-based learning, but it does not determine learning progression or the
-scope required of every learner.
-
-Authentic work is a strong convergence: real or messy data, cases, projects,
-labs, communication, and integrated outputs recur across the four evidence
-families. Practice serves different purposes—reinforcement, integration,
-assessment, and professional simulation—so the evidence supports its presence
-but not a single activity or assessment format.
+The corpus supports foundations-first, problem-first, early whole-lifecycle, and
+iterative or spiral patterns. It does not settle a universal order for
+programming and statistics, a common starting threshold, or the depth at which
+every learner must deploy or maintain solutions.
 
 ## 6. Tools, technologies, and implementation context
 
-The syntheses agree that durable capability should take priority over a fixed
-technology stack. SQL or relational data access, Python, R, spreadsheets,
-visualization and BI tools, databases, and common data/ML libraries recur, but
-their required depth and substitutions vary by learner and role.
+**S04.F10 — Durable capability has priority over any fixed technology stack.**
+SQL/relational access, Python or R, spreadsheets, visualization/BI tools,
+databases, and common libraries recur as enabling media for data work,
+reasoning, and communication. Cloud, distributed systems, DataOps/MLOps,
+specialized BI products, deep learning, vendor certificates, and generative or
+agentic AI are specialized, emerging, or role-dependent contexts.
 
-Distributed platforms, cloud services, MLOps/DataOps tooling, specialized BI
-products, deep-learning ecosystems, and vendor certifications are enabling or
-specialized context rather than common foundations. Generative and agentic AI
-are salient in recent institutional, professional, and literature-derived
-material, but lack support in the older authoritative material; they remain an
-emerging area rather than a settled curricular requirement.
+MinTIC/FEDESOFT makes current Colombian labour signals useful for reviewing
+external pertinence, including data, BI, AI, cloud, and hybrid
+technical/communication roles. It does not authorize a demand taxonomy to
+dictate an Analytics syllabus.
 
 ## 7. Convergences, differences, and unique contributions
 
 ### Strong, source-supported convergence
 
-- Analytics connects data work to decision, action, and stakeholder context.
-- Data acquisition, preparation, quality, and querying are foundational.
-- Exploration, visualization, statistical reasoning, and interpretation are
-  essential to trustworthy work.
-- Communication with non-technical stakeholders is a substantive capability.
-- Responsible practice—privacy, fairness, governance, integrity, and
-  consequences—cannot be an optional afterthought.
-- Integrated work with realistic problems and data is educationally important.
-- Tools enable the work but do not determine curricular identity.
+- `S04.F01`–`S04.F08` form a decision-connected architecture: framing;
+  data; evidence and methods; interpretation and communication; responsibility
+  and review.
+- Professional evidence makes role distinctions, workflows, tools, and current
+  practice visible; it does not replace authoritative educational rationale.
+- Authentic work matters, while its exact format remains open (`S04.F09`).
 
-### Source-dependent convergence
+### Institutional and governmental contributions
 
-The end-to-end lifecycle, including deployment, monitoring, and ongoing value
-review, has strong support in INFORMS and concentrated detail in DataOps and
-technical pathways. The three syntheses agree on its importance, but differ in
-how broadly it should apply to every learner. Likewise, predictive modelling
-is important across the corpus, while its placement within a shared Analytics
-foundation versus a Data Science specialization remains unresolved.
+**S04.F11 — Curriculum design requires a reviewable governance chain from
+context and needs through the Proyecto Educativo del Programa (PEP), formative
+intentions, graduate profile, learning outcomes, study plan, and enacted
+programme-calendar.** It must distinguish macro-, meso-, and microcurricular
+decisions; document participation by the relevant academic community and
+stakeholders; and define evidence of follow-up and evaluation that can inform
+continuous improvement. The UNAL lineamientos and pilot provide this
+institutional coherence condition. They do not add an Analytics learner
+competency, prescribe an Analytics syllabus, or establish an international
+benchmark.
 
-### Useful single-synthesis contributions
+Talento Tech describes an accelerated public delivery model, while
+MinTIC/FEDESOFT documents labour-market and educational-offer signals. Together
+they support periodic external-pertinence review, access, and responsiveness;
+they do not prove educational effectiveness or settle disciplinary scope.
 
-Claude supplies the most explicit inventory of disagreements and makes the
-role-level distinction between analyst, builder, and commissioner especially
-clear. ChatGPT supplies a compact five-layer knowledge architecture and a
-clear distinction between durable capability and tool choice. Gemini gives a
-particularly detailed source-to-finding map. These differences are
-complementary; none is a reason to privilege a model rather than the evidence
-it traces.
+### Material differences and useful emphases
 
-### Material disagreements
-
-- Whether prescriptive analytics, optimization, and simulation are core or
-  specialized.
-- Whether predictive modelling belongs to common Analytics foundations or the
-  Data Science boundary.
-- The appropriate ownership and depth of deployment and lifecycle management.
-- Required programming and mathematical depth, including code/no-code routes.
-- Whether ethics is embedded throughout learning or treated as a dedicated
-  component.
-- The status of causal inference, BI, GenAI/agentic AI, and specialized
-  methods.
+- Prescriptive analytics and optimization may be common core or advanced
+  specialization: evidence is substantial in INFORMS and selected institutions,
+  but limited in commercial provider paths.
+- Predictive modelling is broadly present, but its placement—shared Analytics
+  foundation versus Data Science boundary—remains unresolved.
+- Deployment and lifecycle management are central in INFORMS and DataOps; their
+  required depth for every learner is not established.
+- Claude supplies the most granular source inventory and role/tool detail;
+  ChatGPT/Codex most clearly separates institutional governance from
+  disciplinary content; Gemini most explicitly maps cross-family findings.
+  These are complementary emphases, not grounds for privileging a model.
 
 ## 8. Uncertainties and evidence limitations
 
-The underlying evidence is uneven. Authoritative sources represent relatively
-few independent bodies and differ in audience and date. Institutional material
-is often brochure-level, concentrated in a small set of providers, and mixes
-undergraduate, executive, and technical audiences. The literature-derived
-material is heavily concentrated in a DataOps perspective. Professional
-benchmarks make role structures and tools visible but do not establish a
-complete educational rationale or universal proficiency threshold.
+The corpus cannot determine a universal mathematical or programming threshold,
+a fixed code/no-code route, a technology stack, a standard assessment model, or
+a universal schedule. It cannot infer irrelevance from a source's omission.
+Governmental and labour-market evidence is time- and context-dependent: it must
+inform review, not overrule durable evidence or the Analytics identity.
 
-The PRODIG8 thesis is an approved master's thesis and a systematic synthesis of
-18 methodological documents, but its proposed framework remains conceptual.
-Its corpus was retrieved from Scopus, is limited to English-language material,
-and does not empirically validate the framework against completed analytics
-projects. It therefore strengthens the literature-derived account of
-project-execution architecture without serving as independent empirical
-validation or an authoritative standard.
-
-Consequently, the consolidation cannot settle a target learner, a universal
-mathematical or programming threshold, a required tool stack, a standard
-assessment model, or a universal sequencing model. It also cannot treat the
-apparent absence of a topic from a source as proof of irrelevance.
+UNAL establishes institutional coherence and quality improvement, not a
+universal programme-calendar format, instructional method, topic sequence, or
+course-level assessment. S04 therefore requires later artefacts to supply the
+actual PEP linkage, participation record, programme-calendar mapping, and
+follow-up/evaluation evidence; it cannot itself demonstrate that implementation.
+Practice evidence establishes the value of authentic integration, not an
+obligatory final capstone.
 
 ## 9. Constraints for the next design stage
 
-Subsequent design must preserve Analytics as an integrated, decision-oriented
-educational domain. It cannot become an abbreviated Machine Learning,
-Statistics, Data Engineering, Business Intelligence, or Operations Research
-curriculum.
+Subsequent design must:
 
-It must account for problem framing, data quality and stewardship, reasoning
-with evidence, method selection and evaluation, interpretation and
-communication, responsible practice, and authentic integrated work. It must
-also make explicit decisions about target learner, programming and mathematics
-depth, code/no-code expectations, the scope of predictive and prescriptive
-methods, lifecycle/deployment depth, ethics integration, and tool portability.
+1. preserve the decision-connected Analytics identity (`S04.F01`–`S04.F03`);
+2. make visible framing, data, evidence, methods, communication, and
+   responsibility (`S04.F02`, `S04.F04`–`S04.F08`);
+3. use authentic integrated work without presupposing one project or assessment
+   format (`S04.F09`);
+4. distinguish durable capability from specialized technologies (`S04.F10`);
+   and
+5. maintain bidirectional institutional traceability and periodically review
+   external pertinence without letting it redefine the curriculum (`S04.F11`).
 
-The evidence constrains these decisions but does not make them. It does not
-justify a final course sequence, technology stack, assessment structure, or
-module plan at this stage.
+Technical and mathematical depth, specialization boundaries, programming
+expectations, deployment scope, technology substitutions, and the
+implementation of learning and assessment remain later design decisions.
 
 ## 10. Traceability map
 
-| Consolidated finding | Relevant S01–S03 syntheses | Principal underlying evidence families cited there |
+| Finding | Upstream synthesis evidence | Underlying evidence traceable in the inputs |
 |---|---|---|
-| Analytics connects data, decisions, and action | S01 §3; S02 §3; ChatGPT §§2, 11; Claude §§2, 11; Gemini §§2, 11 | Authoritative, institutional, professional, literature-derived |
-| Data stewardship and quality are foundational | S01 §§3, 7; S02 §§3, 7; ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 5, 11 | All four families |
-| Statistical reasoning, visualization, and interpretation recur | ChatGPT §§4–5, 11; Claude §§4–5, 11; Gemini §§4–5, 11 | Authoritative, institutional, professional; literature-derived support varies |
-| Communication and stakeholder use are core | S01 §3; S02 §3; ChatGPT §§4, 11; Claude §§4, 11, 13; Gemini §§4, 11 | All four families |
-| Authentic integrated work matters | S01 §8; S02 §8; ChatGPT §7; Claude §§7, 11, 14; Gemini §§7, 11 | All four families |
-| Tools are enabling rather than curricular identity | ChatGPT §8; Claude §§8, 11, 14; Gemini §§8, 11 | Authoritative and professional, reinforced institutionally |
-| Predictive and prescriptive scope remains contested | ChatGPT §§12–14; Claude §§12–14; Gemini §§12–14 | Varies by authoritative, institutional, and professional sources |
-| Lifecycle, deployment, and operations are role-dependent | ChatGPT §§6, 10, 12; Claude §§12–14; Gemini §§6, 12, 14 | INFORMS, technical institutional, professional, and DataOps material |
-| Project execution links execution, governance/ethics, and improvement functions | Added PRODIG8 thesis (literature-derived) | Systematic synthesis of 18 analytics-project methodologies; conceptual framework, not empirical validation |
+| `S04.F01` | S03 ChatGPT §§2, 11; S03 Claude §§3–4; S03 Gemini §§2–3 | INFORMS/CAP, National Academies, institutional offerings, DataOps/PRODIG8, S01/S02 |
+| `S04.F02` | S03 ChatGPT §§2, 4; S03 Claude §§4–5; S03 Gemini §§2, 4 | INFORMS I–II, PRODIG8/DataOps, decision-oriented institutional offerings |
+| `S04.F03` | All S03 inputs; S01/S02 role analysis | ACM, National Academies, INFORMS, institutions, DataCamp, Pluralsight |
+| `S04.F04` | All S03 inputs; S01/S02 | INFORMS III, ACM/National Academies, Berkeley/USC/Warwick, providers, DataOps |
+| `S04.F05` | All S03 inputs; S01/S02 | Statistics, inference, EDA, experimentation evidence across the corpus |
+| `S04.F06` | All S03 inputs; S01/S02 | INFORMS IV–V, ACM, MIT/Cambridge, provider modelling, PRODIG8 |
+| `S04.F07` | All S03 inputs; S01/S02 | INFORMS communication, National Academies/ACM, institutional and provider outputs |
+| `S04.F08` | All S03 inputs | INFORMS VI–VII, ACM, National Academies, Berkeley, DataOps/PRODIG8 |
+| `S04.F09` | All S03 inputs; S01/S02 | Institutional cases/labs/projects, provider practicals, National Academies/ACM, Talento Tech |
+| `S04.F10` | All S03 inputs; S01/S02 | Institutional offerings, provider tracks, DataOps, `mintic-fedesoft-talento-digital-2025-2030.pdf` |
+| `S04.F11` | S03 incremental updates | `unal-lineamientos-armonizacion-curricular.pdf`; `unal-armonizacion-ejercicio-piloto.pdf`; governmental MinTIC documents |
