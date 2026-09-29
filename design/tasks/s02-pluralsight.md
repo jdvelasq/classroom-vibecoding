@@ -26,11 +26,12 @@ For this benchmark, reconstruct Pluralsight's own representation of these fields
 
 Create:
 
-`design/benchmarks/professional/pluralsight.md`
+`design/synthesis/s02-pluralsight.md`
 
 This is the only required output of this task.
 
-Do not modify other files under `design/benchmarks/`.
+Do not modify the benchmark corpus or synthesis outputs belonging to other
+tasks.
 
 ---
 
@@ -378,7 +379,7 @@ Follow `AGENTS.md` when interpreting relationships among these fields.
 
 ## Required structure of the output
 
-Create `design/benchmarks/professional/pluralsight.md` with the following structure.
+Create `design/synthesis/s02-pluralsight.md` with the following structure.
 
 ### `# Pluralsight Professional Benchmark`
 
@@ -493,6 +494,6 @@ Before completing the task, verify that:
 
 The task is complete when:
 
-`design/benchmarks/professional/pluralsight.md`
+`design/synthesis/s02-pluralsight.md`
 
 exists and satisfies the requirements above.

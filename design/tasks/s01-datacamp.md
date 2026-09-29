@@ -26,11 +26,12 @@ For this benchmark, reconstruct DataCamp's own representation of these fields fr
 
 Create:
 
-`design/benchmarks/professional/datacamp.md`
+`design/synthesis/s01-datacamp.md`
 
 This is the only required output of this task.
 
-Do not modify other files under `design/benchmarks/`.
+Do not modify the benchmark corpus or synthesis outputs belonging to other
+tasks.
 
 ---
 
@@ -378,7 +379,7 @@ Follow `AGENTS.md` when interpreting relationships among these fields.
 
 ## Required structure of the output
 
-Create `design/benchmarks/professional/datacamp.md` with the following structure.
+Create `design/synthesis/s01-datacamp.md` with the following structure.
 
 ### `# DataCamp Professional Benchmark`
 
@@ -493,6 +494,6 @@ Before completing the task, verify that:
 
 The task is complete when:
 
-`design/benchmarks/professional/datacamp.md`
+`design/synthesis/s01-datacamp.md`
 
 exists and satisfies the requirements above.

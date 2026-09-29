@@ -2,8 +2,9 @@
 
 ## Objective
 
-Produce a single, evidence-aware consolidation of the three independent
-benchmark syntheses created in S03.
+Produce a single, evidence-aware consolidation of the professional-learning
+syntheses created in S01 and S02 and the three independent benchmark syntheses
+created in S03.
 
 This task determines where the independent analyses converge, where they
 diverge, what each contributes uniquely, and which findings are sufficiently
@@ -29,14 +30,21 @@ they must not redefine the target curriculum.
 
 ## Required inputs
 
-Read all three S03 outputs:
+Read all five upstream synthesis outputs:
 
-- `design/synthesis/synthesis-chatgpt.md`
-- `design/synthesis/synthesis-claude.md`
-- `design/synthesis/synthesis-gemini.md`
+- `design/synthesis/s01-datacamp.md`
+- `design/synthesis/s02-pluralsight.md`
 
-These files are independent analyses of the same benchmark corpus. Treat them
-as analytical evidence, not as votes and not as authority rankings by model.
+- `design/synthesis/s03-synthesis-chatgpt.md`
+- `design/synthesis/s03-synthesis-claude.md`
+- `design/synthesis/s03-synthesis-gemini.md`
+
+S01 and S02 are source-specific reconstructions of professional-learning
+providers. The S03 files are independent analyses of the wider local corpus,
+which may already cite S01 and S02. Treat all five files as analytical
+evidence, not as votes and not as authority rankings by model. Do not count a
+professional finding twice merely because it appears in its source-specific
+synthesis and in one or more S03 syntheses.
 
 If any required input is missing, unreadable, or clearly incomplete, stop and
 report the missing or inadequate input. Do not create a partial consolidated
@@ -46,11 +54,10 @@ synthesis and do not substitute a different source.
 
 ## Source policy
 
-The three S03 synthesis files are the direct evidence base for this task.
+The five S01--S03 synthesis files are the direct evidence base for this task.
 
 Do not perform external web research. Do not rerun S01, S02, or S03. Do not
-modify benchmark files, the three agent-specific syntheses, or their source
-materials.
+modify benchmark files, upstream synthesis files, or their source materials.
 
 When a finding requires confirmation beyond what the syntheses make
 traceable, preserve the uncertainty rather than resolving it through new
@@ -62,15 +69,17 @@ research.
 
 ### Preserve independence
 
-The purpose of S04 is to compare the independent work after it was completed,
-not to erase differences between agents.
+The purpose of S04 is to compare the independent S03 work after it was
+completed and integrate the source-specific professional-learning syntheses,
+not to erase differences between agents or providers.
 
 Do not treat a finding as strong merely because several syntheses repeat it.
 They analyzed overlapping evidence and may share the same underlying source.
 
 Assess convergence in light of:
 
-- agreement among the syntheses;
+- agreement among the independent S03 syntheses;
+- the specific provider evidence retained by S01 and S02;
 - the benchmark evidence each synthesis cites;
 - independence and diversity of the underlying evidence families;
 - explicitness and depth of support;
@@ -97,7 +106,7 @@ address, but it must not make those later design decisions.
 
 ## Required analysis
 
-Analyze the three syntheses comparatively to determine:
+Analyze the S01--S03 syntheses comparatively to determine:
 
 1. their shared characterization of Analytics as an educational domain;
 2. the role of each contributing discipline within Analytics;
@@ -125,7 +134,7 @@ Distinguish among:
 
 Create exactly one file:
 
-`design/synthesis/synthesis.md`
+`design/synthesis/s04-synthesis.md`
 
 Use this structure:
 
@@ -133,7 +142,7 @@ Use this structure:
 
 ### `## 1. Scope and integration method`
 
-Name the three inputs, describe the comparative method, and state important
+Name the five inputs, describe the comparative method, and state important
 limitations.
 
 ### `## 2. Convergent account of Analytics`
@@ -163,9 +172,10 @@ or specialized technologies.
 
 ### `## 7. Convergences, differences, and unique contributions`
 
-Compare the three syntheses explicitly. Separate strong convergence,
-source-dependent convergence, useful single-synthesis insights, and genuine
-disagreement.
+Compare the three S03 syntheses explicitly and integrate the distinct
+professional-learning evidence from S01 and S02. Separate strong convergence,
+source-dependent convergence, useful single-synthesis insights, provider-
+specific observations, and genuine disagreement.
 
 ### `## 8. Uncertainties and evidence limitations`
 
@@ -180,8 +190,8 @@ curriculum design must address. Do not design the curriculum.
 ### `## 10. Traceability map`
 
 Provide a compact mapping from major consolidated findings to the relevant
-agent-specific synthesis files and, where available in those files, their
-underlying benchmark evidence.
+S01--S03 synthesis files and, where available in those files, their underlying
+benchmark or provider evidence.
 
 ---
 
@@ -189,9 +199,11 @@ underlying benchmark evidence.
 
 Before completing the task, verify that:
 
-- all three required S03 syntheses were read;
+- all five required S01--S03 syntheses were read;
 - no external research or replacement benchmark analysis was performed;
-- all three syntheses were treated symmetrically;
+- the three S03 syntheses were treated symmetrically;
+- S01 and S02 were incorporated as source-specific professional-learning
+  evidence without being double-counted as independent confirmation;
 - convergence was not treated as a simple vote count;
 - source dependence was considered where traceable;
 - disagreements and single-synthesis insights were preserved;
@@ -199,12 +211,12 @@ Before completing the task, verify that:
 - contributing disciplines are described only by their role within Analytics;
 - no final curriculum, course structure, technology stack, or assessment was
   designed;
-- the output remains traceable to the three independent syntheses;
+- the output remains traceable to all required S01--S03 syntheses;
 - exactly one consolidated output file was created.
 
 ---
 
 ## Completion condition
 
-The task is complete when all three required S03 outputs exist and
-`design/synthesis/synthesis.md` has been created in compliance with this task.
+The task is complete when all five required S01--S03 outputs exist and
+`design/synthesis/s04-synthesis.md` has been created in compliance with this task.

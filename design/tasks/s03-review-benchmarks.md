@@ -61,18 +61,16 @@ They may provide evidence about:
 - technologies;
 - applied orientation.
 
-### 3. Professional-learning benchmarks
+### 3. Professional-learning syntheses
 
-`design/benchmarks/professional/`
+The following task-generated syntheses reconstruct provider evidence and are
+inputs alongside the primary benchmark corpus:
 
-This directory includes structured professional-learning benchmarks such as:
+- `design/synthesis/s01-datacamp.md`;
+- `design/synthesis/s02-pluralsight.md`.
 
-- `datacamp.md`;
-- `pluralsight.md`.
-
-These documents were constructed in previous tasks from provider evidence.
-
-Treat them as part of the local benchmark corpus.
+Treat them as derived professional-learning evidence, not as primary benchmark
+documents.
 
 Do **not** repeat the DataCamp or Pluralsight web research performed in S01 and S02.
 
@@ -118,11 +116,11 @@ Do not read, inspect, compare, summarize, or use synthesis files produced by oth
 
 In particular, ignore any existing files matching patterns such as:
 
-- `synthesis-chatgpt.md`;
-- `synthesis-claude.md`;
-- `synthesis-gemini.md`;
-- `synthesis-*.md`;
-- `synthesis.md`.
+- `s03-synthesis-chatgpt.md`;
+- `s03-synthesis-claude.md`;
+- `s03-synthesis-gemini.md`;
+- `s03-synthesis-*.md`;
+- `s04-synthesis.md`.
 
 The later integration task is responsible for comparing independent syntheses.
 
@@ -134,9 +132,9 @@ Maintaining independence at this stage is mandatory.
 
 Determine which agent/model is executing the task and create exactly one corresponding output:
 
-- ChatGPT / Codex → `design/synthesis/synthesis-chatgpt.md`
-- Claude / Claude Code → `design/synthesis/synthesis-claude.md`
-- Gemini / Gemini CLI → `design/synthesis/synthesis-gemini.md`
+- ChatGPT / Codex → `design/synthesis/s03-synthesis-chatgpt.md`
+- Claude / Claude Code → `design/synthesis/s03-synthesis-claude.md`
+- Gemini / Gemini CLI → `design/synthesis/s03-synthesis-gemini.md`
 
 Do not create more than one synthesis file.
 
@@ -734,8 +732,8 @@ Before completing the task, verify that:
 
 The task is complete when exactly one of the following appropriate files exists as the output of this execution:
 
-- `design/synthesis/synthesis-chatgpt.md`
-- `design/synthesis/synthesis-claude.md`
-- `design/synthesis/synthesis-gemini.md`
+- `design/synthesis/s03-synthesis-chatgpt.md`
+- `design/synthesis/s03-synthesis-claude.md`
+- `design/synthesis/s03-synthesis-gemini.md`
 
 and that file satisfies the requirements above.

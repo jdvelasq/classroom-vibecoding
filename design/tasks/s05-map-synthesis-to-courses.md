@@ -5,7 +5,7 @@ Read and comply with the repository-level `AGENTS.md` before execution.
 ## Objective
 
 Translate the evidence-backed capabilities and boundaries in
-`design/synthesis/synthesis.md` into a visible allocation across these six
+`design/synthesis/s04-synthesis.md` into a visible allocation across these six
 courses:
 
 - Pregrado: Fundamentos de analítica; Fundamentos de data para analítica.
@@ -41,7 +41,7 @@ reproducible from the declared local inputs.
 
 ## Source policy
 
-Use only `design/synthesis/synthesis.md` as the evidence base. Do not conduct
+Use only `design/synthesis/s04-synthesis.md` as the evidence base. Do not conduct
 external research and do not modify the benchmark corpus or S01--S04 outputs.
 
 Every allocation in the map must be traceable to a finding or constraint in
@@ -52,7 +52,7 @@ same local input and determine why a capability was assigned to a course.
 
 ## Required output
 
-Create exactly one file: `design/course-capability-map.md`.
+Create exactly one file: `design/curriculum/s05-course-capability-map.md`.
 
 It must include:
 
@@ -83,6 +83,6 @@ Before completion, verify that:
 - the map does not claim that any course already earns a 10/10 audit score;
 - workshop scope is not confused with evaluative labs or theory.
 - all non-trivial course allocations have a recorded rationale traceable to
-  `design/synthesis/synthesis.md`;
+  `design/synthesis/s04-synthesis.md`;
 - the construction record is sufficient for a later independent audit or
   regeneration without relying on conversational memory.
