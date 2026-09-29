@@ -45,6 +45,26 @@ in this repository. Record provenance, access, and terms only.
 
 ---
 
+## Review scope (required for a completion claim)
+
+Before searching, state the exact, first-party Manning listing or listings that
+bound the run (URL, category or search criterion, pagination status, and access
+date). For example, a run may be bounded to Manning's current `Data Analytics`
+category.
+
+The chosen scope must be broad enough for the purpose of the run and must be
+recorded in the final response. A run may say **complete** only with the
+qualified wording “complete for `<named Manning listing(s)>` as accessed on
+`<date>`.” It must never imply that all Manning titles have been exhausted
+unless the scope actually enumerates all applicable first-party catalog pages.
+
+If an execution begins with only the generic instruction to review Manning and
+no defensible first-party scope can be enumerated, it may discover and verify
+cases, but its final status is **partial**. It must name the missing scope
+rather than treating the first discovery as completion.
+
+---
+
 ## Periodic collection behavior
 
 This task is intended to be run repeatedly. The existing contents of
@@ -85,8 +105,8 @@ Do not stop after finding the first qualifying case. A run may report the
 Manning review as **complete** only after it has exhausted the documented search
 scope available on the access date:
 
-1. Enumerate the relevant books and editions in Manning's current first-party
-   catalog, including pagination or category listings where used.
+1. Enumerate the books and editions in the declared first-party review scope,
+   including pagination or category listings where used.
 2. Compare that set with the book paths already represented under
    `catalog/manning/` and identify absent books and newer editions.
 3. For every relevant absent or revised book, inspect the documented companion
@@ -95,8 +115,9 @@ scope available on the access date:
 4. Classify every candidate as a created case record, an existing cross-source
    duplicate, or an excluded lead with the exact unmet verification condition.
 
-Completion is a bounded claim about Manning's documented catalog at the review
-date; it is not a claim that every Manning book ever published has been found.
+Completion is a bounded claim about the declared Manning listing(s) at the
+review date; it is not a claim that every Manning book ever published has been
+found.
 If a catalog page, companion source, or candidate cannot be inspected, report
 the run as **partial**, name the unreviewed scope, and do not say Manning has
 been exhausted.

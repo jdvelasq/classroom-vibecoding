@@ -1,0 +1,110 @@
+id: manning/fighting-churn-with-data/customer-retention-churnsim
+name: Customer retention analysis with ChurnSim
+aliases:
+  - Fighting Churn with Data
+  - ChurnSim customer churn simulation
+  - CRM5 churn simulation
+type: book_curated_case
+
+book_source:
+  publisher: Manning
+  title: Fighting Churn with Data
+  edition: null
+  official_url: https://www.manning.com/books/fighting-churn-with-data
+  companion_sources:
+    - title: Carl Gold's fight-churn companion repository
+      url: https://github.com/carl24k/fight-churn
+      relationship: >
+        Linked as source code from the Manning book page; its README identifies
+        it as the code for Fighting Churn with Data.
+  access_date: 2026-09-29
+
+case:
+  decision_or_problem: >
+    How can a subscription business use customer behavior, account, billing,
+    and product-use histories to understand retention risk and evaluate churn
+    interventions without claiming that a synthetic simulation represents a
+    particular real company?
+  analytical_relevance: >
+    The documented ChurnSim generator supplies a reproducible, book-specific
+    reconstruction for investigating customer retention, behavioral signals,
+    temporal leakage, and the operational implications of churn analysis.
+  scope: >
+    A book-curated synthetic simulation. It is suitable for reproducible
+    analytical practice, not for factual inference about an actual business or
+    customer population.
+
+datasets:
+  - name: ChurnSim simulated customer-retention data
+    relationship_to_case: >
+      The book companion generates the customer, account, activity, and churn
+      data used to run its retention-analysis code; the documented CRM5 option
+      adds a more detailed CRM-product simulation.
+    source_url: https://github.com/carl24k/fight-churn
+    provider: Carl S. Gold's documented companion repository for the Manning book
+    access_method: >
+      Run the public ChurnSim generator following the repository setup
+      instructions; the generated output is loaded into PostgreSQL.
+    availability: public, generated locally from the companion repository
+    license_or_terms: >
+      The companion repository is distributed under the MIT License. The data
+      are simulated outputs of that repository, not an externally licensed
+      real-world dataset.
+    access_date: 2026-09-29
+    contents: >
+      Simulated customer-retention data. The documented CRM5 configuration
+      includes product plans, multi-user customer accounts, multiple billing
+      periods, and valued actions; the repository warns that a full CRM5 run
+      can produce roughly 30 GB in PostgreSQL.
+
+sources:
+  - role: book_identity
+    title: Manning — Fighting Churn with Data
+    url: https://www.manning.com/books/fighting-churn-with-data
+    access_date: 2026-09-29
+    notes: >
+      The official page identifies the 2020 book and links directly to its
+      GitHub source-code repository.
+  - role: companion_material
+    title: fight-churn companion repository
+    url: https://github.com/carl24k/fight-churn
+    access_date: 2026-09-29
+    notes: >
+      The README identifies the repository as code for the book and documents
+      the ChurnSim educational simulation and the CRM5 configuration.
+  - role: repository_terms
+    title: fight-churn MIT License
+    url: https://github.com/carl24k/fight-churn/blob/master/LICENSE.md
+    access_date: 2026-09-29
+    notes: Governs distribution of the companion repository and generator.
+
+possible_analytical_questions:
+  - Which simulated usage, account, and billing signals precede churn in a defined observation window?
+  - How can a retention analysis avoid using information unavailable at the decision date?
+  - What changes when the unit of analysis is an account rather than an individual user?
+  - How should conclusions from simulated churn data be bounded before a decision is proposed?
+
+curricular_signal:
+  analytics_capabilities:
+    - Define a retention question, decision point, and analysis population.
+    - Inspect customer-event, account, and billing data for temporal and grain issues.
+    - Communicate the difference between a reproducible simulation and operational evidence.
+  contributing_disciplines:
+    - Statistics: contributes uncertainty-aware evaluation of retention signals.
+    - Data Engineering: contributes reproducible generation and relational loading of the data.
+  cautions:
+    - The data are simulated and must not be represented as observations from a real business.
+    - CRM5 may be impractical for routine classroom infrastructure because its documented output can be large.
+    - A repository license does not grant rights to any separately sourced real customer data.
+
+benchmark_connections: []
+benchmark_connection_notes: No substantive local benchmark connection found during this execution.
+
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified_for_book_curated_distribution
+  original_external_data_provenance: not_applicable_simulated_data
+  real_world_status: synthetic_simulation
+  benchmark_connection: not_found
