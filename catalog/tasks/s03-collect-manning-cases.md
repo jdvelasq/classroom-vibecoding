@@ -48,36 +48,57 @@ in this repository. Record provenance, access, and terms only.
 ## Automatic review scope
 
 Establish the review scope yourself on every run; do not ask the user to supply
-a category, URL, or cutoff date. Begin from Manning's current first-party
-catalog landing page and its subject taxonomy. Enumerate every pagination page
-in the first-party categories that can contain Analytics cases, including at
-minimum **Data Analysis**, **Data Analytics**, **Data Science**, **Business
-Intelligence**, **Databases**, and **Statistics** when Manning exposes them.
-Follow cross-listings only once per book/edition.
+a category, URL, or cutoff date. The stable publisher boundary for this task is
+the current first-party **Data Analysis** subject subtree, beginning at
+`https://www.manning.com/catalog/data-science/data-analysis/data-analysis`.
+Enumerate every page of that listing and every child category it links as a
+Data Analysis category (for example, Data Analytics, Data Analysis and
+Business Intelligence, Data Manipulation and Analysis, Data Presentations and
+Visualizations, Feature Engineering, Optimization and Experimentation, or
+Time Series Analysis when present). Follow cross-listings only once per
+book/edition.
 
-Treat a book as an *eligible lead* when its official description indicates a
-named analytical problem, case study, project, or companion data that could
-meet this task's verification gate. Do not reject a book merely because it is
-also classified as AI, ML, programming, or another contributing discipline;
-those labels do not redefine the curriculum. Conversely, do not review a book
-whose official description supports only generic API, language, framework, or
-library instruction and gives no indication of a bounded analytical case.
+Do **not** expand the scope to the parent Data Science catalog, to AI, ML,
+Databases, or Statistics catalogs merely because they overlap with Analytics.
+Those catalogs are too broad to be an exhaustible publisher-collection run.
+Their material can enter the catalog only through its own future source task or
+when a qualifying Data Analysis book explicitly links it as companion data.
 
-Record in the final response the exact catalog URLs, pagination status,
-categories, filtering rationale, and access date that the task discovered.
-That automatically established set is the review scope for the run. If a
-first-party listing cannot be enumerated, or its pagination is inaccessible,
-the run is **partial** and must name that unresolved listing. It must not ask
-the user to choose a scope as a substitute for this work.
+For each enumerated book page, apply this two-stage filter automatically:
+
+1. Treat it as an *eligible lead* only when the official description identifies
+   a named analytical problem, case study, project, or book-specific companion
+   data that could meet this task's verification gate.
+2. Exclude at discovery stage a title whose official description supports only
+   generic API, language, framework, library, or technique instruction and no
+   bounded analytical case. Record its title and that exact exclusion reason in
+   the final response; do not create a YAML merely to log it.
+
+Do not reject an eligible lead merely because it also uses AI, ML, programming,
+or another contributing discipline; those labels do not redefine the
+curriculum.
+
+Record in the final response the root and child catalog URLs, pagination
+status, discovered categories, filtering rationale, and access date. That
+automatically established Data Analysis subtree is the review scope for the
+run. If a listing or its pagination cannot be enumerated, the run is
+**partial** and must name that unresolved listing. It must not ask the user to
+choose a scope as a substitute for this work.
 
 ---
 
 ## Periodic collection behavior
 
-This task is intended to be run repeatedly. The existing contents of
-`catalog/manning/` are the local record of what has already been considered;
-they are a baseline for comparison, not evidence that the Manning catalog is
-complete or current.
+This task is intended to be run repeatedly. The existing book directories in
+`catalog/manning/` are the only persistent local signal that a Manning book has
+already contributed one or more qualifying cases. A book directory contains
+case YAML files only: do not add `book.yaml`, a publisher inventory, a review
+ledger, or an empty directory.
+
+The absence of a book directory means only that no qualifying case from that
+book is currently cataloged. It is not evidence that the book is irrelevant or
+that it was never examined. Reassessing such a book on a later run is expected
+and requires no persistent exclusion record.
 
 The directory and prior records are optional. If `catalog/manning/` does not
 exist or contains no case records, this is the first collection: establish the
@@ -86,14 +107,18 @@ passes the verification gate.
 
 At the start of every execution:
 
-1. Inspect the existing Manning book directories and records, including their
-   editions and access dates.
-2. Build the automatic review scope from the first-party catalog taxonomy and
-   all of its applicable pages, as specified above.
-3. Compare every eligible lead in that scope with local book paths and records,
-   identifying absent books, new editions, and materially revised companions.
-4. For each newly found or revised book, locate its specific companion sources
-   and apply this task's verification gate to its cases.
+1. Inspect the existing Manning book directories and case records, including
+   their editions and access dates.
+2. Build the automatic review scope from the first-party Data Analysis subtree
+   and all of its applicable pages, as specified above.
+3. Compare every eligible lead in that scope with local book directories and
+   case records, identifying books not yet represented, new editions, and
+   materially revised companions.
+4. For every eligible book, locate its specific companion sources and enumerate
+   its named projects or cases with concrete data. A pre-existing book directory
+   does not permit stopping after its first existing case: use duplicate checks
+   to preserve cases already cataloged and record any additional qualifying
+   cases separately.
 
 A newer book, edition, dataset revision, or better-documented case may be a
 potential successor to an existing case, but it must be added as a separate
@@ -115,11 +140,12 @@ scope available on the access date:
 1. Enumerate the books and editions in the automatically established
    first-party review scope, including every applicable category and pagination
    page.
-2. Compare that set with the book paths already represented under
-   `catalog/manning/` and identify absent books and newer editions.
-3. For every relevant absent or revised book, inspect the documented companion
-   material far enough to enumerate its named projects or cases with concrete
-   data.
+2. Compare that set with the book directories already represented under
+   `catalog/manning/` and identify books not yet represented, newer editions,
+   and revised companions.
+3. For every eligible book, including one already represented by a directory,
+   inspect the documented companion material far enough to enumerate its named
+   projects or cases with concrete data.
 4. Classify every candidate as a created case record, an existing cross-source
    duplicate, or an excluded lead with the exact unmet verification condition.
 
