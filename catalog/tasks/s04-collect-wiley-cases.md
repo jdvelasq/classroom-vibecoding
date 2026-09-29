@@ -61,8 +61,9 @@ complete or current.
 
 The directory and prior records are optional. If `catalog/wiley/` does not
 exist or contains no case records, this is the first collection: establish the
-baseline from current Wiley sources and create the directory only when a case
-passes the verification gate.
+baseline from current Wiley sources. Create a `book.yaml` for every Wiley book
+considered, and create case records only when a case passes the verification
+gate.
 
 At the start of every execution:
 
@@ -107,6 +108,13 @@ Each record must identify:
 - any substantive connection to `design/benchmarks/`.
 
 Use one YAML per case, never separate `datasets/` and `problems/` records.
+
+For every Wiley book considered, create or update:
+
+`catalog/wiley/<book-slug>/book.yaml`
+
+This book-level source record must distinguish a reviewed book from a verified
+case and state whether case-level data verification is still pending.
 
 ---
 
@@ -173,7 +181,8 @@ Record original dataset provenance separately in `datasets` and `sources`.
 2. Compare it with the books and editions already represented in
    `catalog/wiley/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
-3. Locate documented book-specific companion materials and repositories.
+3. Locate documented book-specific companion materials and repositories, then
+   create or update its `book.yaml` with the review result.
 4. Determine whether each dataset comes from the book-specific companion or
    merely from a general library or tool.
 5. Identify named candidate cases, then apply the duplicate search.

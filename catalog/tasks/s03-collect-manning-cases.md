@@ -49,8 +49,9 @@ complete or current.
 
 The directory and prior records are optional. If `catalog/manning/` does not
 exist or contains no case records, this is the first collection: establish the
-baseline from current Manning sources and create the directory only when a case
-passes the verification gate.
+baseline from current Manning sources. Create a `book.yaml` for every Manning
+book considered, and create case records only when a case passes the
+verification gate.
 
 At the start of every execution:
 
@@ -94,6 +95,13 @@ Each record must identify:
 - any substantive connection to `design/benchmarks/`.
 
 Use one YAML per case, never separate `datasets/` and `problems/` records.
+
+For every Manning book considered, create or update:
+
+`catalog/manning/<book-slug>/book.yaml`
+
+This book-level source record must distinguish a reviewed book from a verified
+case and state whether case-level data verification is still pending.
 
 ---
 
@@ -164,7 +172,8 @@ identifies and supports that provenance.
 2. Compare it with the books and editions already represented in
    `catalog/manning/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
-3. Locate documented book-specific companion materials and repositories.
+3. Locate documented book-specific companion materials and repositories, then
+   create or update its `book.yaml` with the review result.
 4. Identify named candidate cases, then apply the duplicate search.
 5. Verify case identity, dataset provenance, access, terms, contents, and
    limitations from the strongest available sources.

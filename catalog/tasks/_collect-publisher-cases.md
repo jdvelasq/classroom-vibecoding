@@ -12,9 +12,8 @@ publisher's current or historical catalog.
 
 The publisher directory and prior records are optional. If
 `catalog/<publisher>/` does not yet exist or contains no case records, treat the
-run as the first collection: create the directory only when at least one case
-passes verification. Do not create placeholder case files or infer prior
-coverage from an absent directory.
+run as the first collection. Do not create placeholder **case** files or infer
+prior coverage from an absent directory.
 
 This is catalog construction, not curriculum design, activity construction,
 assessment design, or audit. Analytics remains the curriculum's organizing
@@ -30,17 +29,22 @@ case.
    editions that are newer than the represented material, and for eligible older
    books not yet represented.
 3. Locate each book's documented companion materials.
-4. Identify candidate cases and apply the source-specific task's verification
+4. Create or update `<book-slug>/book.yaml` for every identified book or edition
+   considered in the run, including its publisher identity, official page,
+   documented companion sources, review date, and collection status.
+5. Identify candidate cases and apply the source-specific task's verification
    gate.
-5. Add only qualifying, nonduplicate case records.
+6. Add only qualifying, nonduplicate case records.
 
 If a later book, edition, dataset revision, or better-documented case might
 supersede an existing case, add it separately and report the relationship.
 Never delete, overwrite, or silently replace an existing case; course design
 will later decide which case to select.
 
-If a run finds no qualifying material, leave the catalog unchanged and report
-the sources searched and review date.
+If a reviewed book has no qualifying case, retain its `book.yaml` with a status
+such as `no_qualifying_cases_found` or `candidates_pending_case_audit`, plus a
+concise reason. This records collection coverage without representing the book
+as a case.
 
 ## Source and data boundary
 
@@ -62,6 +66,12 @@ limitations only.
 
 Create one YAML file per verified case at
 `catalog/<publisher>/<book-slug>/<case-slug>.yaml`.
+
+Every considered book additionally has
+`catalog/<publisher>/<book-slug>/book.yaml`. This is a source-discovery record,
+not a case record. It must state the edition, official and companion sources,
+review date, collection status, and whether individual case data remain pending
+audit.
 
 Before creating it, search all of `catalog/` by canonical name, aliases,
 dataset name, and meaningful source identifiers. Do not duplicate a case merely

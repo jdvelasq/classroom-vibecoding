@@ -1,0 +1,43 @@
+id: manning/machine-learning-for-tabular-data
+record_type: book_source
+
+book_source:
+  publisher: Manning
+  title: Machine Learning for Tabular Data
+  subtitle: XGBoost, Deep Learning, and AI
+  edition: null
+  publication_date: 2025-02
+  isbn: "9781633438545"
+  official_url: https://www.manning.com/books/machine-learning-for-tabular-data
+  companion_sources:
+    - title: Mark Ryan and Luca Massaron's book companion repository
+      url: https://github.com/lmassaron/Machine-Learning-on-Tabular-Data
+      relationship: >
+        The repository identifies itself as code for the Manning book and links
+        to runnable chapter notebooks.
+  access_date: 2026-09-29
+
+collection:
+  status: candidates_pending_case_audit
+  reviewed_on: 2026-09-29
+  discovery_basis: >
+    Identified during the periodic Manning review as a 2025 book absent from
+    the local Manning catalog.
+  candidate_summary: >
+    The companion repository documents chapter notebooks and the book describes
+    tabular business-data examples, including short-term-rental price
+    prediction.
+  verification_gap: >
+    The current review does not establish the original provider, access route,
+    or reuse terms for the dataset behind each example. Tool use alone does not
+    qualify an example as a publisher-sourced case.
+  legacy_inventory_records: []
+  case_records: []
+  next_action: >
+    Inspect each documented example and create a case YAML only when its named
+    case, original dataset provenance, access, and terms meet S03's
+    verification gate.
+
+notes:
+  - >
+    This source record is not a case record and is not selection-ready.
