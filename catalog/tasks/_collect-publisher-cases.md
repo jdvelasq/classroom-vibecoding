@@ -10,6 +10,12 @@ under `catalog/<publisher>/` are the local record of books, editions, and cases
 already considered; they are a baseline, not a complete representation of the
 publisher's current or historical catalog.
 
+The publisher directory and prior records are optional. If
+`catalog/<publisher>/` does not yet exist or contains no case records, treat the
+run as the first collection: create the directory only when at least one case
+passes verification. Do not create placeholder case files or infer prior
+coverage from an absent directory.
+
 This is catalog construction, not curriculum design, activity construction,
 assessment design, or audit. Analytics remains the curriculum's organizing
 identity; methods and tools have only bounded contributions to an Analytics
@@ -17,7 +23,9 @@ case.
 
 ## Recurring execution
 
-1. Inspect the existing publisher directory, book editions, and access dates.
+1. Inspect the existing publisher directory, if any, plus represented book
+   editions and access dates. If it is absent, establish the baseline from the
+   current first-party catalog instead.
 2. Search first-party publisher listings and documented book pages for books or
    editions that are newer than the represented material, and for eligible older
    books not yet represented.

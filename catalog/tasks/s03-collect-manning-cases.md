@@ -47,6 +47,11 @@ This task is intended to be run repeatedly. The existing contents of
 they are a baseline for comparison, not evidence that the Manning catalog is
 complete or current.
 
+The directory and prior records are optional. If `catalog/manning/` does not
+exist or contains no case records, this is the first collection: establish the
+baseline from current Manning sources and create the directory only when a case
+passes the verification gate.
+
 At the start of every execution:
 
 1. Inspect the existing Manning book directories and records, including their
