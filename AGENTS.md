@@ -41,11 +41,12 @@ supported Python version. Reproduce the environment from the root
 
 ## Presential workshops (`PRE_*`)
 
-Within each course implementation folder, `PRE_*` directories represent
-enumerated presential workshops led by the instructor. They are guided
-learning experiences: the instructor presents and discusses the problem,
-develops the solution progressively in code, and explains the analytical
-decisions, alternatives, and practices to avoid.
+This convention applies to **every course**. Within each course
+implementation folder, `PRE_*` directories represent enumerated presential
+workshops led by the instructor. They are guided learning experiences: the
+instructor presents and discusses the problem, develops the solution
+progressively in code, and explains the analytical decisions, alternatives,
+and practices to avoid.
 
 `PRE_*` directories do not contain a `README.md`. This convention will be
 refined as the implementation materials are organized and audited.
