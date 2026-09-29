@@ -4,7 +4,10 @@
 
 Produce an independent, evidence-based synthesis of the curriculum benchmark corpus in `design/benchmarks/`.
 
-The purpose of this task is to determine what the available authoritative, institutional, literature-derived, and professional-learning evidence collectively reveals about the **structure, boundaries, competencies, progression, and applied orientation of Analytics education**.
+The purpose of this task is to determine what the available authoritative,
+institutional, governmental, literature-derived, and professional-learning
+evidence collectively reveals about the **structure, boundaries, competencies,
+progression, and applied orientation of Analytics education**.
 
 This task is **benchmark synthesis**, not final curriculum design.
 
@@ -61,7 +64,19 @@ They may provide evidence about:
 - technologies;
 - applied orientation.
 
-### 3. Professional-learning syntheses
+### 3. Governmental benchmarks
+
+`design/benchmarks/governmental/`
+
+These materials document public policy, publicly funded training, or national
+digital-skills initiatives. They may provide context about local priorities,
+audiences, delivery models, and the public positioning of competencies.
+
+Do not treat them as international authoritative standards, and do not let a
+government programme's technology list define Analytics. Preserve their
+distinct evidentiary role in the synthesis.
+
+### 4. Professional-learning syntheses
 
 The following task-generated syntheses reconstruct provider evidence and are
 inputs alongside the primary benchmark corpus:
@@ -74,7 +89,7 @@ documents.
 
 Do **not** repeat the DataCamp or Pluralsight web research performed in S01 and S02.
 
-### 4. Literature-derived benchmarks
+### 5. Literature-derived benchmarks
 
 `design/benchmarks/literature-derived/`
 
