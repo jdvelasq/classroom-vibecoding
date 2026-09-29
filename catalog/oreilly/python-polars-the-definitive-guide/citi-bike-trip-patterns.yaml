@@ -1,0 +1,80 @@
+id: oreilly/python-polars-the-definitive-guide/citi-bike-trip-patterns
+name: Citi Bike trip patterns
+aliases: [NYC Citi Bike trip history, Citi Bike March 2024 trips]
+type: book_dataset
+book_source:
+  publisher: O'Reilly Media
+  title: "Python Polars: The Definitive Guide"
+  edition: First edition
+  official_url: https://www.oreilly.com/library/view/python-polars-the/9781098156077/
+  companion_sources:
+    - title: Official authors' companion repository
+      url: https://github.com/jeroenjanssens/python-polars-the-definitive-guide
+      relationship: Repository identifies itself as the scripts and datasets for the O'Reilly book.
+    - title: Citi Bike companion-data directory
+      url: https://github.com/jeroenjanssens/python-polars-the-definitive-guide/tree/main/data/citibike
+      relationship: Contains the March 2024 trip parquet files used by the book's introductory ETL showcase.
+  access_date: 2026-09-29
+dataset:
+  source_url: https://citibikenyc.com/system-data
+  provider: Lyft Bikes and Scooters, LLC (Citi Bike)
+  access_method: Public Citi Bike System Data downloads; the book-specific companion supplies a March 2024 parquet subset.
+  availability: public
+  license_or_terms: "Citi Bike's Data Sharing Policy grants a non-exclusive, royalty-free license for lawful use, including analysis and modification, but prohibits hosting, publishing, distributing, sublicensing, or selling the data as a stand-alone dataset."
+  contents: Anonymized New York City bike-share trip records for March 2024, accompanied by NYC neighborhood boundaries in GeoJSON; trip records support time, station, and borough aggregation.
+  status: book_curated
+associated_cases:
+  - name: Borough and station trip-pattern analysis
+    decision_or_problem: Describe where and when bike-share trips occur, then compare daily trip volumes by borough and station.
+    relationship_to_dataset: The book's Chapter 1 ETL showcase explicitly uses neighborhood and station visualizations and daily trips per borough; the companion's Citi Bike directory supplies its corresponding March 2024 trip files.
+sources:
+  - role: book_identity
+    title: "O'Reilly — Python Polars: The Definitive Guide"
+    url: https://www.oreilly.com/library/view/python-polars-the/9781098156077/
+    access_date: 2026-09-29
+    notes: Official O'Reilly page identifies the first edition, February 2025 publication, and GitHub-hosted real-world datasets.
+  - role: book_specific_companion
+    title: python-polars-the-definitive-guide
+    url: https://github.com/jeroenjanssens/python-polars-the-definitive-guide
+    access_date: 2026-09-29
+    notes: Authors' public repository states that it contains all code and data used in the book.
+  - role: companion_dataset
+    title: Citi Bike data directory in the companion repository
+    url: https://github.com/jeroenjanssens/python-polars-the-definitive-guide/tree/main/data/citibike
+    access_date: 2026-09-29
+    notes: Lists daily March 2024 parquet trip files and an NYC-neighborhood GeoJSON file.
+  - role: original_data_terms
+    title: Citi Bike Data Sharing Policy
+    url: https://citibikenyc.com/data-sharing-policy
+    access_date: 2026-09-29
+    notes: Specifies permitted lawful use and the restriction on stand-alone redistribution.
+possible_analytical_questions:
+  - Which boroughs and stations have the highest trip volumes, and how does that vary by day?
+  - How do departures and arrivals reveal possible spatial imbalances in bike-share demand?
+  - Which quality checks are needed before aggregating trip time and station fields?
+limitations:
+  - The companion subset covers March 2024 only; seasonal or long-run conclusions require additional official trip-history files.
+  - Data are anonymized trip records and do not establish rider-level behavior or causal explanations.
+  - Citi Bike terms allow analysis but restrict distribution of the raw data as a stand-alone dataset.
+curricular_signal:
+  analytics_capabilities:
+    - Produce defensible descriptive and geospatial summaries for an urban-service operation.
+    - Translate station-level evidence into questions about demand balance and service operations.
+  contributing_disciplines:
+    - "Data Engineering: contributes efficient file ingestion and transformation."
+    - "Statistics: contributes aggregation and uncertainty-aware interpretation."
+  cautions:
+    - Do not characterize correlations in trip patterns as causes without an appropriate design.
+    - Direct learners to retrieve data from Citi Bike rather than redistribute the companion subset.
+benchmark_connections:
+  - benchmark: design/benchmarks/professional/datacamp.md
+    connection: Supports a reproducible, real-data workflow with explicit source and use conditions.
+benchmark_connection_notes: Connection is at the level of real-data, reproducible analytics practice; no benchmark prescribes this dataset.
+verification:
+  book_connection: verified
+  case_definition: verified
+  dataset_availability: verified
+  data_terms: verified
+  original_external_data_provenance: verified
+  real_world_status: verified
+  benchmark_connection: contextual
