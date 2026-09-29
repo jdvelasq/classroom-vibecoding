@@ -2,131 +2,134 @@
 
 ## 1. Scope and method
 
-This is an independent synthesis of the complete local benchmark corpus: 5 authoritative PDFs, 19 institutional PDFs, 11 literature-derived PDFs, and 2 professional-learning benchmarks (DataCamp and Pluralsight). It was produced without consulting any other agent’s synthesis files and without external research.
+This independent synthesis examines the available local corpus: 5 authoritative sources, 19 institutional offerings, 1 governmental programme document, 12 literature-derived sources, and the two designated derived professional-learning inputs (`s01-datacamp.md` and `s02-pluralsight.md`). It was produced without consulting any S03 synthesis by another agent and without external research.
 
-The synthesis gives qualitative weight to explicitness, independence, cross-family convergence, relevance to Analytics, and depth of treatment. Authoritative material informs enduring competency/lifecycle claims; institutional material shows operationalized offerings; professional benchmarks show role-oriented structures and current tools; literature-derived material supplies process, operational and organizational detail. These functions are not interchangeable. Institutional brochures and professional benchmarks have uneven depth; the literature-derived DataOps set is concentrated; some PDFs contain limited usable course detail. These limitations constrain the conclusions below.
+The evidence families are used for different purposes: authoritative sources for durable competency and lifecycle claims; institutional sources for operationalized programmes; governmental evidence for public local priorities/delivery model; professional syntheses for role structures, tools and practice; literature-derived sources for historical, project-method and operational perspectives. Weight is qualitative—not frequency-based—and considers source independence, explicitness, relevance, depth and cross-family convergence. Public programme brochures and provider paths give uneven detail; DataOps is a concentrated perspective; the government document is a programme specification, not an international standard; and PRODIG8 is a newly proposed, not yet empirically validated, framework.
 
 ## 2. Analytics as an educational domain
 
-**Strong convergence:** the corpus represents Analytics as using data, methods and tools to understand a consequential question and improve decisions or action. INFORMS begins with business-question and analytics-problem framing and ends with deployment/lifecycle management; the business-analytics history describes data → knowledge → informed decision/value; USC and Warwick link posing questions, data work, interpretation and insights to decision-making; DataCamp analyst paths and Pluralsight Analytics Foundations combine data work with stakeholder communication and business context. [Authoritative, institutional, literature-derived, professional]
+**Strong convergence.** Analytics is represented as the disciplined use of data, methods and tools to understand consequential questions and improve decisions or actions. INFORMS explicitly spans business framing, analytics framing, data, method choice, model development, deployment and lifecycle management. The business-analytics history connects data, knowledge, decisions and value; USC and Warwick connect questions, data work, interpretation and insights to decisions; DataCamp and Pluralsight analyst learning combines data work, visualization and stakeholder communication. [Authoritative, institutional, literature-derived, professional]
 
-Analytics is therefore more than reporting or model fitting. It connects domain question, data quality and preparation, analysis/model choice, interpretation, communication, organizational adoption and—where the solution is operated—continuing oversight. This is a synthesis, not a single provider definition.
-
-**Partial convergence and boundary variation:** some sources use “analytics” chiefly for business decisions, BI and reporting (Cambridge, USC, DataCamp Business Analyst); others use it broadly enough to include predictive ML, optimization or data science (INFORMS, MIT Data Science and Analytics, Berkeley C102, DataOps). The corpus supports Analytics as the organizing perspective, but not one uncontested boundary with Data Science.
+Thus, the evidence supports Analytics as more than reporting, coding or fitting a model. Its characteristic work connects problem context, data stewardship, reasoning, communication and use. Its boundary remains partly contested: some institutional/executive offerings use Analytics broadly enough to include ML/AI/data science, while professional benchmarks distinguish analyst from data-scientist roles. The corpus supports a shared architecture, not a single uncontested label.
 
 ## 3. Analytics and contributing disciplines
 
-| Field | Function within Analytics evidenced by corpus | Boundary evidence |
+| Contributing discipline | Function evidenced within Analytics | Boundary / variation |
 |---|---|---|
-| Data Science | Supplies programming, statistical modelling, ML and, in professional paths, model lifecycle. | DataCamp and Pluralsight retain shared data/EDA/statistics/communication foundations but explicitly add modelling/programming/business acumen or deployment to Data Science. It is overlapping, not synonymous. |
-| Statistics | Enables description, uncertainty, experimentation, inference, hypothesis testing and valid interpretation. | ACM says its computing body needs probability/statistics/mathematics; Berkeley C102, Warwick, DataCamp and Pluralsight make inference/testing visible. Statistics alone does not establish decision framing, data systems or use. |
-| Machine Learning | Provides predictive/unsupervised/deep-learning methods and advanced modelling. | ACM, Berkeley, Warwick, DataCamp and Pluralsight put ML after/shared with data/EDA foundations; separate ML/MLOps paths signal specialization. |
-| Operations Research/optimization | Supports prescriptive analytics, simulation, value modelling and constrained decisions. | INFORMS explicitly distinguishes prescriptive work; MIT modelling/simulation and quantitative-systems material support it. It has substantially less broad coverage than descriptive/predictive analytics. |
-| Data Engineering/databases | Makes data accessible, structured, reliable, scalable and reusable: schemas, SQL, ETL, pipelines, warehousing and platforms. | Berkeley C101, USC, Warwick, MIT engineering, DataOps and professional SQL/engineering paths position it as enabling infrastructure, often a separate role family. |
-| Business Intelligence | Supports querying, metrics, visualization, reports/dashboards and communication. | USC, PwC, history material and analyst paths give BI a strong applied role, but Analytics also includes inference, modelling and decisions. |
-| Artificial Intelligence | Contributes ML, generative/agentic capabilities, product strategy and governance. | Recent institutional/professional AI paths are specialized/emerging; they do not displace the broader lifecycle. |
+| Data Science | Adds programming, modelling, ML and sometimes model lifecycle. | DataCamp and Pluralsight show shared data/EDA/statistics/communication foundations, then add modelling/programming/business acumen or deployment for Data Science. It overlaps but is not synonymous. |
+| Statistics | Enables descriptive/inferential reasoning, uncertainty, experimentation and valid interpretation. | ACM requires complementary mathematics/statistics; Berkeley C102, Warwick and professional analyst paths make testing visible. It does not by itself cover framing, systems or decision use. |
+| Machine Learning | Supplies predictive/unsupervised/deep methods and advanced evaluation. | ACM, Berkeley, MIT, DataCamp and Pluralsight put ML in technical or data-science depth; separate ML/MLOps paths imply specialization. |
+| OR/optimization/simulation | Supports prescriptive analytics, trade-offs and decision models. | INFORMS, MIT modelling/simulation and quantitative systems material support it, but it is less broadly represented than descriptive/inferential/predictive work. |
+| Data engineering/databases | Provides data access, structure, quality, scale and reproducible pipelines: SQL, ETL, warehousing, platforms. | Berkeley C101, USC, Warwick, MIT engineering, DataOps and professional paths locate it as enabling work and often a distinct role. |
+| Business intelligence | Enables metrics, querying, visualization, reporting and dashboards. | Strong in analyst/USC/PwC/history evidence, but insufficient as the total definition of Analytics. |
+| Artificial intelligence | Supplies current ML, generative/agentic capability, AI product strategy and governance. | AI sources are recent, specialized extensions; they do not replace the broader lifecycle. |
 
-This functional view preserves the project identity: no contributing discipline supplies the full educational architecture on its own.
+The analytical conclusion is that these fields contribute functions; none alone supplies the educational identity of Analytics.
 
 ## 4. Recurring capabilities
 
-| Capability | Meaning and principal support | Convergence / variation |
+| Capability | Evidence and families | Strength / variation |
 |---|---|---|
-| Frame a decision/problem | Clarify stakeholders, scope, assumptions, risks, inputs/outputs, baseline and success measures. INFORMS Domains I–II; Cambridge; DataOps; professional business-analyst material. | Strong across authoritative, institutional and professional sources; more explicit in INFORMS/business offerings than computing frameworks. |
-| Steward data | Identify/acquire, model/query, document, clean, integrate, validate, protect and assess fitness/quality. ACM DG/DPSIA; INFORMS Data; Berkeley C101; USC/Warwick; DataOps; professional tracks. | Very strong cross-family evidence; scale/platform depth varies by role. |
-| Explore and reason with evidence | Describe, visualize, profile, test, estimate and interpret variation/uncertainty. National Academies; ACM; Berkeley C102; Warwick; analyst tracks. | Strong; depth ranges from data literacy and basic testing to Bayesian/causal/inferential work. |
-| Select/build/evaluate methods | Match method to problem/data/resources, evaluate validity/performance/limitations, and calibrate. INFORMS; ACM mining/ML; Berkeley/Warwick/MIT; Data Science professional paths. | Strong for a repertoire; ML depth is variable and not equally evidenced for all Analytics roles. |
-| Communicate and enable use | Create visualizations/reports/dashboards, explain assumptions and results, work with users/stakeholders, and connect insight to action. ACM AP/professionalism; INFORMS documentation; National Academies; USC; DataCamp/Pluralsight. | Strong cross-family convergence. |
-| Act responsibly | Address privacy, security, integrity, fairness/bias, legal/ethical issues, transparency and impacts. ACM, National Academies, INFORMS; Berkeley/Warwick; AI/governance offerings. | Strong, though operational assessment methods are less consistently specified. |
-| Deliver and maintain | Validate in context, test/deploy, document, monitor, recalibrate and reassess value/side effects. INFORMS VI–VII; ACM systems/software; Berkeley C101; MIT/DataOps; Pluralsight DS paths. | Strong conceptual/lifecycle support but concentrated operational detail in DataOps and specialist paths. |
+| Frame questions for action | Stakeholders, scope, assumptions, risks, drivers, baseline and success measures: INFORMS I–II, Cambridge, DataOps/PRODIG8, Business Analyst paths. | Strong cross-family support; most explicit in professional-practice/business material. |
+| Steward data | Identify/acquire, query/model, document, clean, integrate, validate, secure and assess quality/fitness. ACM DG/DPSIA, INFORMS Data, Berkeley/USC/Warwick, DataOps, professional tracks. | Very strong; platform/scale depth is role-dependent. |
+| Explore and reason | Describe, visualize, test, estimate and interpret uncertainty. National Academies/ACM, Berkeley C102, Warwick, analyst paths. | Strong; ranges from literacy/basic hypothesis tests to Bayesian/causal work. |
+| Choose, build and evaluate methods | Fit method to question/data/resources; evaluate validity, performance, robustness and limitations. INFORMS IV–V, ACM ML/mining, Berkeley/Warwick/MIT, Data Science paths. | Strong for method choice/evaluation; ML depth is not uniform. |
+| Communicate for use | Produce explanations, visualization, reports/dashboards; disclose limitations; engage stakeholders. ACM AP/professionalism, INFORMS documentation, National Academies, institutional projects, professional paths. | Strong cross-family convergence. |
+| Govern responsibly | Privacy, security, integrity, bias/fairness, legal/ethical obligations, transparency and consequences. ACM, National Academies, INFORMS, Berkeley/Warwick, AI/governance paths, PRODIG8. | Strong principle-level support; common teaching/assessment methods remain unclear. |
+| Deliver, learn and maintain | Validate, integrate/test, monitor, recalibrate, document and review value/side effects. INFORMS VI–VII, Berkeley C101, DataOps/PRODIG8, MIT and Pluralsight technical paths. | Strong lifecycle support, but detailed operations evidence is concentrated. |
 
 ## 5. Knowledge architecture
 
-The corpus supports five related layers, not a single disciplinary syllabus:
+The corpus supports an interconnected architecture rather than a discipline-first syllabus:
 
-1. **Foundations:** domain/problem context; data literacy; mathematical/statistical reasoning; programming/query literacy; ethical/professional awareness. ACM/National Academies and foundational institutional/professional paths support this layer.
-2. **Data and computing enablers:** relational and non-relational structures, SQL, acquisition, cleaning, integration, metadata/quality, reusable computation and scalable architecture. These make analysis possible and trustworthy.
-3. **Analytical methods:** EDA/visualization, descriptive/diagnostic, inference/experimentation, predictive/ML, and—in a narrower subset—prescriptive optimization/simulation. Method choice and evaluation are as important as technique recognition.
-4. **Decision and human context:** stakeholders, success measures, business/domain framing, interpretation, communication, adoption, organizational strategy and governance.
-5. **Specialization/operations:** deep learning, GenAI/agents, distributed/cloud systems, specialized BI platforms, Spark/Azure/Databricks, MLOps/DataOps, and advanced security. These are important contextual extensions, not evidenced as universal common foundations.
+1. **Foundations:** problem/domain context, data literacy, quantitative/statistical reasoning, programming/query literacy, professional and ethical awareness.
+2. **Enablers:** data structures and databases, acquisition, cleaning, integration, metadata/quality, reproducible computing and scalable architecture.
+3. **Analytical methods:** EDA/visualization, descriptive/diagnostic/inferential work, experimentation, predictive methods and—in a narrower strand—prescriptive optimization/simulation.
+4. **Decision and organizational context:** framing, stakeholders, measures, interpretation, communication, adoption, strategy and governance.
+5. **Specialization/operations:** deep learning, cloud/distributed systems, data engineering, DataOps/MLOps, specialized BI platforms, generative/agentic AI and vendor technologies.
+
+The layers are synthesis categories, not provider claims. They reflect that data/system methods enable analytical judgment, which in turn must be intelligible and usable in a decision context.
 
 ## 6. Learning progression
 
-**Explicit progression:** DataCamp analyst paths state basics → data work → EDA/statistics → projects/communication; its associate data-science path adds predictive ML. Pluralsight Analytics Foundations targets entrants, whereas Data Science Foundations targets analysts/engineers with 1–3 years’ experience and visibly ends with model deployment/maintenance. INFORMS presents framing → data → method selection/model development → deployment → lifecycle. [Professional, authoritative]
+**Explicit progression:** DataCamp states analyst basics → data manipulation/EDA/statistics/visualization → application and moves associate data science toward predictive ML. Pluralsight’s Analytics Foundations targets entrants, while its Data Science Foundations targets analysts/engineers with 1–3 years’ experience and proceeds through data work, modelling, communication and deployment/maintenance. INFORMS represents framing → data → method/model → deployment → lifecycle. [Professional, authoritative]
 
-**Recurring structural pattern:** institutional courses commonly move from data/tools/foundations through analysis/modelling to cases/projects (Warwick, USC, MIT); literature-derived KDD/CRISP-DM and DataOps model an iterative problem/data/model/solution/decision/action/value flow. [Institutional, literature-derived]
+**Structural recurrence:** USC, Warwick, Berkeley and multiple MIT offerings commonly begin with foundation/data/tool work then reach analysis/modelling/cases. KDD/CRISP-DM, DataOps and PRODIG8 all organize analytical work as iterative rather than one-way: problem/data/design/evaluation/operation, with governance and feedback. [Institutional, literature-derived]
 
-**Analytical inference:** a defensible progression is not a fixed course order but a recurring movement from data and question understanding to appropriate analysis, interpretation/use, and—in advanced/product contexts—operation. Competing models remain: beginner analyst routes start with SQL/Python/R, while professional Data Science pathways assume such foundations; DataOps treats feedback and deployment as integral rather than terminal. The corpus does not settle a universal sequence, proficiency threshold, or duration.
+**Inference and unresolved choice:** the recurring progression is from question/data understanding to analysis, interpretation/use and, in advanced/product contexts, operation. But no universal starting threshold, order of programming versus statistics, extent of deployment, or contact-time model is established. Governmental Talento Tech supports a compact bootcamp model (159 hours) but specifies priority themes rather than an internal Analytics sequence.
 
 ## 7. Practice and authentic analytical work
 
-Practice is strongly supported, but its function differs. National Academies and ACM emphasize real-world data/problems and integrative projects; USC requires a team project including problem, collection/preparation, analysis and presentation; Cambridge/MIT/Stanford use cases, projects, simulations or capstones. DataCamp operationalizes exercises, realistic projects, portfolios and certification practicals; Pluralsight shows courses, Skill IQ, specialist labs and certification practice exams. [All families]
+Practice is strongly supported across families. National Academies and ACM support real-world data/problems and integrative projects; USC specifies a team project through problem, data preparation, analysis and presentation; Cambridge/MIT/Stanford feature cases, simulations or capstones. DataCamp supplies interactive coding, projects, portfolios and certification practicals; Pluralsight offers Skill IQ, labs and certification practice exams. Talento Tech describes learning-by-doing, concrete challenges, work-environment simulation, team work, agile methods and mentoring. [All families]
 
-Practice serves at least four functions: reinforcement of concepts; integration of the lifecycle; assessment of role readiness; and simulation of stakeholder/decision work. DataOps uniquely treats iterative delivery, automated quality and monitored use as part of professional practice. Evidence does not establish one universal project type, rubric or assessment balance.
+Practice appears as concept reinforcement, lifecycle integration, assessment, professional simulation and communication rehearsal. DataOps/PRODIG8 further position practice as iterative value delivery under governance and continuous improvement. The evidence does not identify one universal project, assessment balance, or required platform.
 
 ## 8. Tools and technologies
 
-The durable capability is to work critically with data and choose/operate a suitable method and environment; technologies are enablers, not curriculum identity. Widely recurring tools/families are SQL/relational databases, Python, R, spreadsheets/BI/dashboard tools, visualization libraries, cloud/data platforms and ML libraries. [Institutional, professional, literature-derived]
+The durable capability is to reason with data and select/operate a suitable environment—not allegiance to a tool. SQL/relational data work, Python, R, spreadsheets/BI/dashboard tools, visualization libraries, ML libraries and cloud/data platforms recur across independent sources. [Institutional, professional, literature-derived]
 
-SQL, Python and R recur across analyst/data-science routes. Pandas/NumPy/Matplotlib/Seaborn, dplyr/ggplot2/tidyverse, Tableau/Power BI, PostgreSQL/NoSQL, Spark and cloud platforms occur in technology- or role-specific variants. GenAI/agentic systems, Azure ML, Databricks, Alteryx, Docker/CI tools and vendor certifications are current/specialized rather than universal evidence. Tool frequency does not justify a final stack; provider-specific paths demonstrate alternatives and rapidly changing ecosystems.
+SQL, Python and R appear as alternatives or common enablers in professional routes. Pandas/NumPy/Matplotlib/Seaborn; dplyr/ggplot2; Tableau/Power BI; NoSQL/Spark/cloud platforms; containers/CI/orchestration; and Azure/Databricks/Alteryx are role-, vendor- or scale-specific. Generative/agentic AI is recent and fast-moving. Talento Tech lists data analysis alongside programming, AI, cloud, cybersecurity and blockchain as separate priority themes; it is not evidence that this list defines Analytics. Technology recurrence therefore informs portability and specialization questions, not a final stack.
 
-## 9. Authoritative, institutional, and professional perspectives
+## 9. Authoritative, institutional, governmental, and professional perspectives
 
-Authoritative sources provide the strongest justification for interdisciplinary foundations, responsible practice and a full lifecycle. ACM supplies detailed computing/data/system/ethics competencies but explicitly requires complementary mathematics, statistics and domain context. INFORMS turns the lifecycle into role tasks from framing to side-effect review. National Academies emphasizes data acumen, real-world problems, communication, inclusion and evolving pathways.
+Authoritative sources provide the strongest justification for interdisciplinarity, data/ethical responsibility and complete lifecycle thinking. ACM supplies computing/data/system/ethics KAs but calls for complementary mathematics, statistics and domain context. INFORMS turns lifecycle into explicit professional tasks. National Academies foregrounds data acumen, real-world learning, communication, inclusion and evolving pathways.
 
-Institutional material operationalizes this breadth differently: undergraduate syllabi make SQL, databases, statistics and methods explicit (USC, Warwick, Berkeley); executive offerings foreground decision-making, strategy, adoption, leadership and governance (Cambridge, MIT, Berkeley/Stanford); engineering/cloud offerings deepen platforms and operations. This is evidence of differentiated audiences, not a settled common curriculum.
+Institutional material demonstrates audience variation. Undergraduate syllabi make SQL, databases, statistics and methods concrete (USC, Warwick, Berkeley); executive offerings foreground decisions, strategy, adoption, leadership and governance (Cambridge, MIT, Berkeley/Stanford); engineering/cloud courses deepen platforms/operations. These are different operationalizations, not a single standard.
 
-Professional evidence reinforces data management, EDA, statistics, visualization, communication and practice. It makes role distinctions unusually explicit: DataCamp/Pluralsight analyst structures prioritize data work, insight and stakeholder/reporting use, while data-science structures add modelling/programming and, in Pluralsight, deployment/maintenance. It also operationalizes assessment, projects, labs and current technology variants. It may overrepresent role-specific tools and job-readiness relative to authoritative educational rationale.
+Professional evidence reinforces data management, EDA, statistics, visualization, communication and practice, while making role distinctions and tool variants explicit. It adds projects, labs, certification practicals and current workflows, but can overrepresent job-role/tool specificity compared with authoritative educational rationale.
+
+Governmental evidence adds a distinct public-policy perspective: Talento Tech is a national Colombian bootcamp initiative addressing digital-skills inequality and employment, prioritizing Data Analysis among six technology themes, using 159-hour cohorts, regional adaptation, in-person/virtual delivery and inclusion targets. It reinforces demand for practical, accessible, intensive digital training but does not define Analytics competencies or an international standard.
 
 ## 10. Literature-derived perspectives
 
-The history material aligns with the other families by showing the organizational development of databases, SQL, warehousing/ETL, BI, data mining, KDD/CRISP-DM and ML as mechanisms turning data into decisions. Its distinctive value is historical/process context rather than a current curriculum standard.
+The Business Analytics history aligns with the other evidence by explaining relational data, SQL, warehousing/ETL, BI, mining, KDD/CRISP-DM and ML as organizational routes from data to decisions. Its special value is historical/process context, not a current curricular standard.
 
-The DataOps sequence aligns strongly with INFORMS lifecycle management and with data-engineering/cloud specialist offerings: value must survive model creation through solution integration, testing, release, monitoring, recalibration, governance and team coordination. It adds depth on agile/lean work, versioning, environments, orchestration, data tests, observability, product/domain teams and organizational failure modes. But the materials are a concentrated perspective; their named architectures, role labels and tools should not automatically constrain general Analytics education.
+DataOps gives unusually detailed operational treatment: agile/lean work, tests, versioning, environments, orchestration, data quality, monitoring, platform/team design and delivery. This aligns with INFORMS lifecycle management and technical institutional offerings, but is a concentrated perspective whose named architectures/tools/roles should not automatically become universal.
+
+PRODIG8 adds a systematic, literature-derived unification of analytics-project methodologies: six core execution dimensions, transversal Governance and Ethics, and adaptive Continuous Improvement. It strengthens the case for execution–control–adaptation and explains why a model alone is insufficient. Yet it acknowledges that its 18-document Scopus corpus, interpretive reconciliation and framework have not been empirically validated. Its depth should be treated as a sophisticated project-method perspective, not settled standard.
 
 ## 11. Areas of convergence
 
-1. **Analytics is decision- and context-connected data work, not a method catalogue.** Explicit INFORMS framing, institutional business applications, and analyst professional structures provide independent support.
-2. **Data stewardship/quality is central.** It recurs in authoritative competency/lifecycle material, SQL/database/data-engineering offerings, analyst paths and DataOps.
-3. **Statistical/inferential reasoning, EDA and visualization support trustworthy interpretation.** This spans ACM/National Academies, Berkeley/Warwick/USC, and DataCamp/Pluralsight.
-4. **Communication and stakeholder use are substantive capabilities.** Professional roles, certification practicals, institutional projects and authoritative professionalism all converge.
-5. **Responsible analytics is not optional decoration.** Privacy/security/integrity/ethics/bias are explicit in authoritative evidence and reinforced by institutional AI/privacy offerings and professional workflow/governance content.
-6. **Authentic application matters.** Projects, cases, labs, datasets, capstones and practical certification recur across every evidence family.
+1. **Analytics is connected to a decision/action context, not only technical analysis.** Independent support comes from INFORMS, business/institutional offerings, professional analyst paths and literature-derived project methods.
+2. **Data stewardship and quality are central.** ACM/INFORMS, database/data-engineering courses, professional SQL paths, and DataOps/PRODIG8 converge.
+3. **EDA, quantitative/statistical reasoning and visualization enable trustworthy interpretation.** This appears across authoritative, undergraduate, analyst and literature evidence.
+4. **Communication/stakeholder use is substantive.** It recurs in authoritative professionalism, institutional projects, professional roles/certification and project methods.
+5. **Responsible analytics is lifecycle-wide.** Privacy/security/integrity/ethics/bias are explicit in authoritative sources and reinforced by institutional AI/privacy, professional workflow and PRODIG8.
+6. **Authentic applied work matters.** Projects/cases/labs/realistic data and practice occur in every evidence family, including the public bootcamp document.
 
 ## 12. Areas of disagreement or uncertainty
 
-- **Boundary with Data Science:** professional benchmarks explicitly separate analyst from data-scientist roles; several institutional certificates combine Data Science and Analytics. The corpus supports overlap, not a universally fixed division.
-- **Mathematical/programming depth:** ACM specifies broad foundations; Berkeley C102/Warwick are technical; executive and beginner analyst offerings assume less. No universal depth is established.
-- **Operational scope:** INFORMS and DataOps require lifecycle stewardship; many analyst/institutional courses stop nearer insight/reporting. It is unclear what operational competence belongs in every Analytics pathway versus advanced roles.
-- **Methods:** descriptive/inferential and predictive approaches are broad; optimization/simulation, causal inference, deep learning and agentic AI are concentrated/specialized.
-- **Tools:** SQL/Python/R recur, yet role/vendor paths offer alternatives; no single technology is universally required.
-- **Practice/assessment:** all families value practice, but evidence does not identify a single best balance of exercises, cases, projects, labs, exams or presentations.
+- **Analytics–Data Science boundary:** DataCamp/Pluralsight distinguish roles; several institutional certificates merge labels. Overlap is supported; a fixed boundary is not.
+- **Mathematical and programming depth:** ACM/Berkeley/Warwick are technically demanding; executive and entry analyst/bootcamp material is less so. No common threshold is demonstrated.
+- **Lifecycle/operations:** INFORMS, DataOps and PRODIG8 strongly include deployment/maintenance; many analyst programmes end nearer insights/reports. General versus advanced operational competence is unresolved.
+- **Method scope:** descriptive/inferential/predictive work is broad; optimization, causal inference, deep learning, agents and distributed systems are narrower/specialized.
+- **Tools and assessment:** alternatives are plentiful; evidence supports practice but not a universal stack, project form, or rubric.
+- **Government programme interpretation:** Talento Tech substantiates local priorities/accessibility, not educational effectiveness or a content-level Analytics definition.
 
 ## 13. Core, supporting, specialized, and uncertain elements
 
-| Classification | Elements | Evidence rationale |
+| Classification | Elements | Rationale |
 |---|---|---|
-| Core | Decision/problem framing; data acquisition/preparation/quality; EDA/statistical reasoning; interpretation/communication; responsible use; authentic applied work | Explicit and central across multiple independent families, including authoritative frameworks and professional role structures. |
-| Supporting | Programming/query fluency; relational/data architecture literacy; visualization/reporting tools; reproducibility/documentation; teamwork/domain collaboration | Clearly enables core work and recurs widely, but required depth varies by role/context. |
-| Specialized | Advanced ML/deep learning; optimization/simulation; causal/Bayesian/control methods; distributed/cloud/Spark; data engineering; MLOps/DataOps implementation; GenAI/agents; vendor BI/cloud tools | Substantial but concentrated in technical, role-specific, provider-specific or advanced sources. |
-| Uncertain or contested | Universal technical/mathematical threshold; exact Analytics–Data Science boundary; required deployment competence; tool stack; assessment model; relative centrality of OR/optimization | Evidence differs by audience and source family or is insufficiently comparable. |
+| Core | Decision/problem framing; data acquisition/preparation/quality; EDA and quantitative reasoning; interpretation/communication; responsible practice; authentic application | Explicitly central across independent authoritative, institutional, professional and literature-derived families. |
+| Supporting | Programming/query fluency; databases/data architecture; visualization/reporting tools; reproducibility/documentation; teamwork/domain collaboration | Widely useful enablers, but proficiency level varies by audience/role. |
+| Specialized | Advanced ML/deep learning; optimization/simulation; causal/Bayesian/control work; distributed/cloud/Spark; engineering; DataOps/MLOps implementation; GenAI/agents; vendor technologies | Important but concentrated in advanced, role-specific, technology-specific or emerging sources. |
+| Uncertain/contested | Universal mathematical/programming bar; exact Analytics–Data Science boundary; required operational depth; stack; assessment model; generality of public bootcamp themes | Sources differ by purpose/audience, or evidence is insufficiently comparable. |
 
 ## 14. Implications for subsequent curriculum design
 
-The corpus constrains later design to preserve an Analytics identity: analytical work must connect questions, data, reasoning, interpretation, communication and decision/action rather than becoming an abbreviated ML, statistics, engineering or BI syllabus. Later designers must explicitly decide the depth of programming/mathematics, how far lifecycle/deployment reaches, and which role/context specialization is intended.
+Later design is constrained to keep Analytics recognizable as integrated question–data–reasoning–interpretation–communication–action work, rather than a shortened version of ML, statistics, engineering, BI or AI. It must account for data quality, uncertainty, stakeholders, responsible use and authentic work.
 
-It also creates design questions rather than answers: how to integrate real data and projects without treating practice as an afterthought; how to make ethics/governance operative across the workflow; how to maintain tool portability amid SQL/Python/R/BI/cloud alternatives; and how to distinguish shared Analytics foundations from data-science, engineering and AI specializations. Evidence strongly supports accounting for professional outputs and stakeholder communication, but retains substantial discretion over sequence, tools, hours and assessment form.
+The corpus leaves deliberate choices: technical and mathematical depth; whether deployment/lifecycle is foundation or specialization; how to sequence programming, statistics and decision framing; which technologies demonstrate transferable capability; and how projects, cases, labs and assessment are combined. The public-policy evidence additionally raises questions of access, delivery intensity, regional context and inclusion without dictating the eventual academic design. No syllabus, course sequence, tools or assessment structure is selected here.
 
 ## 15. Evidence map
 
-| Major finding | Principal local support |
+| Finding | Principal local sources |
 |---|---|
-| End-to-end decision-to-lifecycle view | `informs-analytics-framework-2024.pdf`; CAP blueprints; `dataops-03-methodologies.pdf`; Pluralsight Data Science Foundations |
-| Interdisciplinary foundations and professionalism | `acm-computing-competencies-undergraduate-data-science-2021.pdf`; `national-academies-data-science-for-undergraduates-2018.pdf` |
-| Data/SQL/quality and applied analyst competence | Berkeley DATA C101/C102; `usc-introduction-to-data-analytics.pdf`; `warwick-foundations-of-data-analytics.pdf`; `professional/datacamp.md`; `professional/pluralsight.md` |
-| Statistics, EDA, visualization and interpretation | ACM; National Academies; Berkeley C102; Warwick; DataCamp and Pluralsight benchmarks |
-| Decision, communication and business context | INFORMS; Cambridge Business Analytics; USC; DataCamp Business Analyst; Pluralsight Analytics Foundations |
-| Responsible analytics/governance | ACM professionalism/DPSIA; National Academies ethics; INFORMS risk/side-effects; Berkeley C102; Stanford AI strategy/governance |
-| Deployment and operational practice | INFORMS VI–VII; Berkeley C101; MIT cloud/data-engineering; DataOps 01–10; Pluralsight Spark/DP-100 |
-| Practice/project orientation | National Academies; ACM; USC; Cambridge/MIT/Stanford; DataCamp and Pluralsight professional benchmarks |
-| Specialist/emerging technologies | ACM big-data/ML; MIT/Berkeley/Stanford AI offerings; DataOps; DataCamp and Pluralsight specialization paths |
+| Decision-to-lifecycle identity | `informs-analytics-framework-2024.pdf`; CAP blueprints; `dataops-03-methodologies.pdf`; `prodig8-strategies-executing-analytics-projects.pdf`; Pluralsight S02 |
+| Interdisciplinary foundations/professionalism | ACM competencies; National Academies report |
+| Data/SQL/quality and analyst competence | Berkeley C101/C102; USC; Warwick; DataCamp S01; Pluralsight S02; DataOps |
+| Statistics, EDA and visualization | ACM; National Academies; Berkeley C102; Warwick; S01/S02 |
+| Decisions, communication and stakeholder context | INFORMS; Cambridge; USC; DataCamp Business Analyst; Pluralsight Analytics Foundations |
+| Governance/responsibility | ACM DPSIA/professionalism; National Academies ethics; INFORMS risk/side effects; Berkeley C102; Stanford AI; PRODIG8 |
+| Deployment/operation | INFORMS VI–VII; Berkeley C101; MIT cloud/engineering; DataOps; PRODIG8; Pluralsight Spark/DP-100 |
+| Practice/access/public delivery | National Academies; ACM; USC/Cambridge/MIT/Stanford; S01/S02; `mintic-talento-tech-2024-2026.pdf` |

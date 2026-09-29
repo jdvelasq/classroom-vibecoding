@@ -21,16 +21,19 @@ Repeated reference to the same provider or source family is not treated as
 independent confirmation. A DataCamp or Pluralsight finding is not counted
 twice merely because it appears in S01/S02 and is cited by S03.
 
+The updated corpus also includes MinTIC Talento TECH as a governmental source.
+It provides Colombian public-policy and delivery context, not an international
+standard or a complete definition of Analytics competencies.
+
 After the original S03 analyses, the approved master's thesis *Strategies for
 Executing Analytics Projects: Toward a Unified Framework of Methodologies*
 (PRODIG8) was added to the literature-derived benchmark family. It is used
 here as an additional, clearly identified academic synthesis of
 analytics-project methodologies; it does not alter or resolve disagreements
 among the three agent syntheses. One inventory discrepancy remains visible:
-ChatGPT and Claude
-describe 37 corpus items (5 authoritative, 19 institutional, 11
-literature-derived, and 2 professional), while Gemini describes 36. The
-consolidation does not resolve that discrepancy without reopening the corpus.
+The regenerated S03 inputs identify the governmental family separately. Its
+single programme document names data analysis as a priority area but does not
+specify a competency framework; it therefore informs local context only.
 
 ## 2. Convergent account of Analytics
 
