@@ -1,0 +1,105 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/home-advantage-analysis
+name: Home Advantage Analysis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Home Advantage in Soccer and Basketball
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Home%20Advantage%20in%20Soccer%20and%20Basketball.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Home Advantage in Soccer and Basketball.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 66
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Home Advantage in Soccer and Basketball
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Home%20Advantage%20in%20Soccer%20and%20Basketball.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Home Advantage in Soccer and Basketball.ipynb
+    description: 'Packt compares home and away winning performance in NBA and soccer
+      data, constructs a home-advantage factor, and examines how the effect changes
+      over time.
+
+'
+  data:
+    description: 'Historical NBA and soccer league performance data, supplemented
+      with country information.
+
+'
+    source_url: https://github.com/rajeevratan84/data-analyst-bootcamp
+    availability: public
+    files:
+    - NBA.csv
+    - SoccerLEagues.csv
+    - Country_facts.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - comparative analysis
+    - derived metrics
+    - time trend analysis
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Home%20Advantage%20in%20Soccer%20and%20Basketball.ipynb
+  problem:
+    context: 'Sports teams appear to perform differently at home and away, but the
+      magnitude and stability of that difference can be tested empirically.
+
+'
+    objective: 'Quantify and compare home advantage across basketball and soccer and
+      examine whether it changes over time.
+
+'
+    analytical_questions:
+    - How large is the home-away performance gap?
+    - Does home advantage differ between basketball and soccer?
+    - How does the effect vary across teams and leagues?
+    - Has home advantage changed over time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - matplotlib
+    logical_steps:
+    - Load and validate league performance data.
+    - Calculate home and away performance metrics.
+    - Construct a comparable home-advantage index.
+    - Compare distributions across sports.
+    - Analyze temporal changes.
+    - Summarize robustness and limitations.
+    expected_outputs:
+    - home-away comparison tables
+    - home-advantage index
+    - cross-sport visualizations
+    - time-trend analysis
+    - written interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 66
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

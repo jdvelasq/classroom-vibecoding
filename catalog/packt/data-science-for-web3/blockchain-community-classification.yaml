@@ -1,0 +1,110 @@
+---
+id: packt/data-science-for-web3/blockchain-community-classification
+name: Blockchain Community Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Web3
+  edition:
+  official_url:
+  companion_sources:
+  - title: GraphSAGE Node Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter12/2.graphsage_node_classification.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter12/2.graphsage_node_classification.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 342
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Web3
+    title: GraphSAGE Node Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter12/2.graphsage_node_classification.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Web3
+      path: Chapter12/2.graphsage_node_classification.ipynb
+    description: 'Packt constructs a blockchain transaction graph, derives node features
+      from influential addresses, and trains GraphSAGE to classify addresses into
+      graph communities.
+
+'
+  data:
+    description: 'Binance and OpenSea transaction edges, community labels, and centrality-based
+      influencer features for blockchain addresses.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Web3/tree/main/Chapter12
+    availability: repository
+    files:
+    - Chapter12/joint_binance_opensea.csv
+    - Chapter12/modularity2comunities.csv
+    - Chapter12/influencers.csv
+  original_implementation:
+    technologies:
+    - NetworkX
+    - Louvain
+    - GraphSAGE
+    - StellarGraph
+    - node classification
+    - graph neural networks
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter12/2.graphsage_node_classification.ipynb
+  problem:
+    context: 'Blockchain addresses participate in transaction networks whose local
+      topology and relationships to influential nodes can help predict community membership.
+
+'
+    objective: 'Predict address communities from transaction-graph structure using
+      GraphSAGE.
+
+'
+    analytical_questions:
+    - What graph communities exist in the transaction network?
+    - Which influential nodes are useful as structural features?
+    - How accurately can GraphSAGE classify unseen addresses?
+    - Which communities are most often confused?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - networkx
+    - stellargraph
+    - tensorflow
+    - scikit-learn
+    logical_steps:
+    - Load transaction edges and community labels.
+    - Construct the transaction graph.
+    - Identify influential nodes.
+    - Build address-level structural features.
+    - Split nodes into stratified train and test sets.
+    - Train GraphSAGE.
+    - Evaluate class-level predictions.
+    expected_outputs:
+    - transaction graph
+    - node feature matrix
+    - trained GraphSAGE model
+    - classification report
+    - confusion matrix
+    - address community predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 342
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

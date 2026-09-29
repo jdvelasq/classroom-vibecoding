@@ -1,0 +1,110 @@
+---
+id: packt/managing-data-integrity-for-finance/sales-transaction-integrity-audit
+name: Sales Transaction Integrity Audit
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Managing Data Integrity for Finance
+  edition:
+  official_url:
+  companion_sources:
+  - title: Using Business Intelligence Tools to Fix Data Integrity Issues
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch05
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch05
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 345
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Managing Data Integrity for Finance
+    title: Using Business Intelligence Tools to Fix Data Integrity Issues
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch05
+    repository:
+      url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance
+      path: ch05
+    description: 'Packt uses transaction, product, manager, and postcode files to
+      identify and repair formatting errors, orphaned records, inconsistent reference
+      values, and other integrity issues using BI and data-preparation tools.
+
+'
+  data:
+    description: 'Sales transactions, product details, sales managers, postcode reference
+      data, and edited versions containing known integrity problems.
+
+'
+    source_url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch05
+    availability: repository
+    files:
+    - ch05/2020_Transactions.xlsx
+    - ch05/Product_Details.xlsx
+    - ch05/Sales_Managers.xlsx
+    - ch05/NSW_Post_Code.xlsx
+    - ch05/Sales_Transactions.xlsx
+    - ch05/Output Orphaned Records.xlsx
+  original_implementation:
+    technologies:
+    - Power Query
+    - Power BI
+    - Tableau Prep
+    - Alteryx
+    - reference-data validation
+    - orphan detection
+    language: visual_data_prep
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch05
+  problem:
+    context: 'Finance and sales reporting can be corrupted by malformed values, unmatched
+      reference keys, duplicate records, and inconsistent master-data attributes.
+
+'
+    objective: 'Audit, reconcile, and repair a multi-table sales dataset before it
+      is used for financial reporting or analytics.
+
+'
+    analytical_questions:
+    - Which transaction records fail reference-data checks?
+    - Which rows are orphaned after joins?
+    - Which product, manager, or postcode values are inconsistent?
+    - How should corrections be documented and validated?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - rapidfuzz
+    - openpyxl
+    logical_steps:
+    - Load transactional and reference files.
+    - Profile schema, keys, duplicates, and missingness.
+    - Validate foreign-key relationships.
+    - Detect orphaned and mismatched records.
+    - Normalize text and reference values.
+    - Apply reviewed corrections.
+    - Re-run integrity checks and export the cleaned dataset.
+    expected_outputs:
+    - integrity exception report
+    - orphaned-record table
+    - corrected reference mappings
+    - cleaned transaction dataset
+    - before-after validation summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 345
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

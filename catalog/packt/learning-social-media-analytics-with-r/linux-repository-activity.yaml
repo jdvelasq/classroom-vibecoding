@@ -1,0 +1,105 @@
+---
+id: packt/learning-social-media-analytics-with-r/linux-repository-activity
+name: Linux Repository Activity
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Social Media Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Mining and Analyzing Repository Activity in GitHub
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_repo_activity_analysis.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/github_repo_activity_analysis.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 427
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Social Media Analytics with R
+    title: Mining and Analyzing Repository Activity in GitHub
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_repo_activity_analysis.R
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+      path: Chapter05/github_repo_activity_analysis.R
+    description: 'Packt retrieves GitHub repository statistics and analyzes Linux
+      kernel commit frequency, day-of-week activity, contributor participation, and
+      additions/deletions over time.
+
+'
+  data:
+    description: 'GitHub API repository statistics for the Linux kernel, including
+      weekly commit activity, contributor participation, and code-frequency histories.
+
+'
+    source_url: https://api.github.com/repos/torvalds/linux/stats/commit_activity
+    availability: public_api
+    files: []
+  original_implementation:
+    technologies:
+    - GitHub API
+    - temporal aggregation
+    - commit activity
+    - contributor analysis
+    - code frequency
+    - ggplot2
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_repo_activity_analysis.R
+  problem:
+    context: 'Repository activity histories can reveal development cadence, contributor
+      participation, and bursts of code change that are not visible from aggregate
+      repository statistics.
+
+'
+    objective: 'Characterize the temporal development activity of a large open-source
+      repository.
+
+'
+    analytical_questions:
+    - How does commit volume vary by week and day of week?
+    - How does owner participation compare with other contributors?
+    - When do additions and deletions peak?
+    - Are there persistent temporal patterns in repository activity?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - requests
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Retrieve repository activity statistics from the GitHub API.
+    - Convert epoch timestamps to calendar time.
+    - Reconstruct daily and weekly commit histories.
+    - Compare owner and contributor participation.
+    - Analyze additions and deletions through time.
+    - Identify bursts and recurring temporal patterns.
+    - Summarize repository development cadence.
+    expected_outputs:
+    - weekly commit series
+    - day-of-week activity distributions
+    - contributor participation comparison
+    - code-change timeline
+    - repository activity diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 427
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,107 @@
+---
+id: packt/hands-on-exploratory-data-analysis-with-r/air-quality-anomaly-diagnostics
+name: Air Quality Anomaly Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Exploratory Data Analysis with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Air Quality Exploratory Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R/blob/master/Chapter07/Chapter_7.r
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/Chapter_7.r
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 320
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Exploratory Data Analysis with R
+    title: Air Quality Exploratory Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R/blob/master/Chapter07/Chapter_7.r
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R
+      path: Chapter07/Chapter_7.r
+    description: 'Packt examines multivariate air-quality sensor data with cleaning,
+      humidity relationships, iterative outlier detection, mixture-based grouping,
+      variance tests, autocorrelation, and spectral exploration.
+
+'
+  data:
+    description: 'UCI Air Quality measurements with gas-sensor responses, temperature,
+      relative humidity, absolute humidity, dates, and times.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R/blob/master/Chapter07/AirQualityUCI.xlsx
+    availability: repository
+    files:
+    - Chapter07/AirQualityUCI.xlsx
+  original_implementation:
+    technologies:
+    - exploratory data analysis
+    - Grubbs outlier test
+    - mixture clustering
+    - Bartlett test
+    - autocorrelation
+    - spectral analysis
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Exploratory-Data-Analysis-with-R/blob/master/Chapter07/Chapter_7.r
+  problem:
+    context: 'Environmental sensor data contain temporal dependence, unusual observations,
+      and correlated humidity and pollutant measurements that can distort later analysis.
+
+'
+    objective: 'Diagnose anomalies, distributional structure, and temporal dependence
+      in air-quality sensor measurements.
+
+'
+    analytical_questions:
+    - Which sensor values are statistically unusual?
+    - How do absolute and relative humidity relate?
+    - Are variance assumptions stable across time?
+    - What autocorrelation or periodic structure appears in the measurements?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scipy
+    - statsmodels
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and clean air-quality measurements.
+    - Parse date and time fields.
+    - Profile humidity and sensor distributions.
+    - Detect candidate outliers iteratively.
+    - Explore mixture-based group structure.
+    - Examine autocorrelation and spectral behavior.
+    - Document observations requiring downstream treatment.
+    expected_outputs:
+    - cleaned sensor dataset
+    - outlier report
+    - humidity relationship plots
+    - temporal diagnostics
+    - anomaly and structure summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 320
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

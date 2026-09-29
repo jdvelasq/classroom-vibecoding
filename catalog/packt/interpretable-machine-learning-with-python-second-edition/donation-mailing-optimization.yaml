@@ -1,0 +1,106 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/donation-mailing-optimization
+name: Donation Mailing Optimization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Non-Profit Donation Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/10/Mailer.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 10/Mailer.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 134
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Non-Profit Donation Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/10/Mailer.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 10/Mailer.ipynb
+    description: 'Packt predicts nonprofit donations, compares feature-selection strategies,
+      and evaluates decision thresholds using mailing cost, profit, ROI, and total
+      donations rather than predictive accuracy alone.
+
+'
+  data:
+    description: 'Nonprofit direct-mail fundraising records distributed through the
+      machine-learning-datasets package.
+
+'
+    source_url: https://pypi.org/project/machine-learning-datasets/
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - random forest
+    - feature selection
+    - SHAP
+    - decision thresholds
+    - profit curves
+    - ROI analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/10/Mailer.ipynb
+  problem:
+    context: 'A nonprofit pays a variable cost for every fundraising mailing, so contacting
+      every prospect may generate more donations but lower net profit.
+
+'
+    objective: 'Select model features and a mailing threshold that maximize fundraising
+      profitability while preserving interpretable targeting logic.
+
+'
+    analytical_questions:
+    - Which features materially improve donation targeting?
+    - How does feature selection affect model performance and interpretability?
+    - How do mailing costs alter the preferred probability threshold?
+    - Which threshold maximizes profit or ROI?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - shap
+    - matplotlib
+    logical_steps:
+    - Load and validate fundraising records.
+    - Build a baseline donation model.
+    - Compare filter, embedded, wrapper, and model-agnostic feature selection.
+    - Score held-out prospects.
+    - Define mailing cost and realized donation economics.
+    - Calculate profit and ROI across probability thresholds.
+    - Select the operational targeting threshold.
+    expected_outputs:
+    - feature-selection comparison
+    - donor probability scores
+    - threshold profit curve
+    - ROI curve
+    - optimized mailing list
+    - targeting interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 134
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

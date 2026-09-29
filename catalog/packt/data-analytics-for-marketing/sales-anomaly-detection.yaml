@@ -1,0 +1,108 @@
+---
+id: packt/data-analytics-for-marketing/sales-anomaly-detection
+name: Sales Anomaly Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Anomaly Detection
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter06/anomaly-detection.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/anomaly-detection.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 95
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Anomaly Detection
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter06/anomaly-detection.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter06/anomaly-detection.ipynb
+    description: 'Packt compares residual-based statistical anomaly detection, Isolation
+      Forest, and forecast-interval methods for identifying unusual sales observations.
+
+'
+  data:
+    description: 'Monthly and daily sales time series with injected or observed anomalous
+      periods.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/tree/main/Chapter06/data
+    availability: repository
+    files:
+    - Chapter06/data/anomaly_data.csv
+    - Chapter06/data/anomaly_daily_sales.csv
+  original_implementation:
+    technologies:
+    - seasonal decomposition
+    - generalized ESD
+    - Isolation Forest
+    - AutoETS
+    - prediction intervals
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter06/anomaly-detection.ipynb
+  problem:
+    context: 'Marketing and retail sales contain seasonal variation, so unusually
+      high or low observations should be separated from expected temporal behavior.
+
+'
+    objective: 'Detect and compare unusual sales periods using statistical, machine-learning,
+      and forecasting-based anomaly methods.
+
+'
+    analytical_questions:
+    - Which observations are unusual after accounting for seasonality?
+    - Do statistical and Isolation Forest methods flag the same periods?
+    - How does contamination choice affect the findings?
+    - Which observations fall outside forecast-based uncertainty bands?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scipy
+    - scikit-learn
+    - statsmodels
+    - statsforecast
+    - matplotlib
+    logical_steps:
+    - Load and validate sales time series.
+    - Diagnose seasonal structure.
+    - Calculate decomposition residuals.
+    - Apply a statistical outlier test.
+    - Fit Isolation Forest.
+    - Fit a forecasting model with prediction intervals.
+    - Compare anomaly sets and explain disagreements.
+    expected_outputs:
+    - anomaly score table
+    - statistical anomaly flags
+    - Isolation Forest flags
+    - forecast-interval flags
+    - method comparison
+    - anomaly visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 95
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,106 @@
+---
+id: packt/web-application-development-with-r-using-shiny-third-edition/global-development-dashboard
+name: Global Development Dashboard
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Web Application Development with R Using Shiny, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Final Gapminder Dashboard
+    url: https://github.com/PacktPublishing/Web-Application-Development-with-R-Using-Shiny-third-edition/tree/master/Chapter06/finalDashboard_V4
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Web-Application-Development-with-R-Using-Shiny-third-edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/finalDashboard_V4
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 220
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Web Application Development with R Using Shiny, Third Edition
+    title: Final Gapminder Dashboard
+    url: https://github.com/PacktPublishing/Web-Application-Development-with-R-Using-Shiny-third-edition/tree/master/Chapter06/finalDashboard_V4
+    repository:
+      url: https://github.com/PacktPublishing/Web-Application-Development-with-R-Using-Shiny-third-edition
+      path: Chapter06/finalDashboard_V4
+    description: 'Packt builds a complete Gapminder Shiny dashboard with year and
+      continent controls, life-expectancy trends, GDP indicators, notifications, gauges,
+      and an interactive geographic map.
+
+'
+  data:
+    description: 'Gapminder country-year observations with population, GDP per capita,
+      life expectancy, continent, and geocoded country coordinates.
+
+'
+    source_url: https://www.gapminder.org/data/
+    availability: package_and_repository
+    files:
+    - Chapter06/finalDashboard_V4/geocodedData.Rdata
+  original_implementation:
+    technologies:
+    - R
+    - Shiny
+    - shinydashboard
+    - ggplot2
+    - Leaflet
+    - GoogleVis
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Web-Application-Development-with-R-Using-Shiny-third-edition/tree/master/Chapter06/finalDashboard_V4
+  problem:
+    context: 'Global development indicators span countries and decades, so users benefit
+      from interactive temporal, geographic, and comparative exploration.
+
+'
+    objective: 'Deliver an interactive dashboard for exploring GDP and life-expectancy
+      patterns across countries, continents, and time.
+
+'
+    analytical_questions:
+    - How does life expectancy evolve by continent?
+    - How does GDP per capita compare across selected regions?
+    - What values characterize the latest selected year?
+    - How can geographic and temporal views be combined in one product?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - streamlit
+    - plotly
+    - folium
+    logical_steps:
+    - Load and validate Gapminder data.
+    - Add or validate geographic coordinates.
+    - Implement year and continent filters.
+    - Calculate selected KPIs.
+    - Build temporal trend views.
+    - Build an interactive geographic view.
+    - Assemble the components into a dashboard.
+    expected_outputs:
+    - interactive KPI cards
+    - trend chart
+    - geographic map
+    - user filters
+    - working dashboard
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 220
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

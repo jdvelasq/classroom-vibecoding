@@ -1,0 +1,100 @@
+---
+id: packt/data-analytics-for-marketing/product-preference-conjoint
+name: Product Preference Conjoint
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Conjoint Analysis
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter10/conjoint.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/conjoint.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 98
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Conjoint Analysis
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter10/conjoint.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter10/conjoint.ipynb
+    description: 'Packt estimates product attribute part-worth utilities and willingness
+      to pay from observed product choices using multinomial logistic regression.
+
+'
+  data:
+    description: 'Choice observations for alternative product configurations defined
+      by seat, cargo, engine, and price attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter10/data/conjoint.csv
+    availability: repository
+    files:
+    - Chapter10/data/conjoint.csv
+  original_implementation:
+    technologies:
+    - conjoint analysis
+    - multinomial logistic regression
+    - part-worth utility
+    - willingness to pay
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter10/conjoint.ipynb
+  problem:
+    context: 'Product choices reflect trade-offs among features and price, but raw
+      choice counts do not reveal the value customers assign to individual attributes.
+
+'
+    objective: 'Estimate attribute utilities and willingness to pay for alternative
+      product features.
+
+'
+    analytical_questions:
+    - Which product features increase choice probability?
+    - What utility is associated with each attribute level?
+    - How price-sensitive are observed choices?
+    - How much are customers willing to pay for selected feature improvements?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - numpy
+    logical_steps:
+    - Load and validate choice observations.
+    - Encode categorical product attributes.
+    - Fit a multinomial choice model.
+    - Extract part-worth utilities.
+    - Translate attribute coefficients into willingness to pay.
+    - Compare feature trade-offs.
+    expected_outputs:
+    - choice-model coefficients
+    - part-worth utility table
+    - willingness-to-pay estimates
+    - feature preference ranking
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 98
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

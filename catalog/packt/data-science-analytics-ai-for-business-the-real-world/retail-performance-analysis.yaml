@@ -1,0 +1,105 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/retail-performance-analysis
+name: Retail Performance Analysis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Product & Retail Analytics-Exploratory Data Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Product%20%26%20Retail%20Analytics-Exploratory%20Data%20Analysis.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Product & Retail Analytics-Exploratory Data
+      Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 64
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Product & Retail Analytics-Exploratory Data Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Product%20%26%20Retail%20Analytics-Exploratory%20Data%20Analysis.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Product & Retail Analytics-Exploratory
+        Data Analysis.ipynb
+    description: 'Packt performs exploratory analysis of a UK online retailer, covering
+      transaction quality, country patterns, repeat customers, free items, unit prices,
+      and product trends.
+
+'
+  data:
+    description: 'One year of online-retail transactions for a UK non-store retailer.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/ecommerce_data.zip
+    availability: public
+    files:
+    - ecommerce_data.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory data analysis
+    - grouping
+    - customer analysis
+    - product analysis
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Product%20%26%20Retail%20Analytics-Exploratory%20Data%20Analysis.ipynb
+  problem:
+    context: 'A retailer needs to understand purchasing patterns, repeat behavior,
+      product demand, pricing, and geographic performance from transaction records.
+
+'
+    objective: 'Diagnose retail performance and identify meaningful customer, product,
+      country, and temporal patterns.
+
+'
+    analytical_questions:
+    - Which products and countries account for the most activity?
+    - How important are repeat customers?
+    - What unusual price or quantity patterns require attention?
+    - How do product sales evolve over time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate the transaction data.
+    - Identify invalid, returned, or unusual transaction values.
+    - Build customer, product, country, and time summaries.
+    - Quantify repeat-customer activity.
+    - Analyze unit-price and product-demand patterns.
+    - Visualize the major performance drivers.
+    expected_outputs:
+    - retail KPI table
+    - customer repeat analysis
+    - product ranking tables
+    - geographic summaries
+    - temporal trend charts
+    - diagnostic findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 64
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

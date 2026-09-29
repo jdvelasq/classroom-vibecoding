@@ -1,0 +1,103 @@
+---
+id: packt/python-data-cleaning-cookbook-second-edition/climate-station-integration
+name: Climate Station Integration
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Combining DataFrames Safely
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/10.%20CombiningDataFrames/6.%20merge_routine.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: 10. CombiningDataFrames/6. merge_routine.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 148
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning Cookbook, Second Edition
+    title: Combining DataFrames Safely
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/10.%20CombiningDataFrames/6.%20merge_routine.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+      path: 10. CombiningDataFrames/6. merge_routine.py
+    description: 'Packt validates join keys before merging country and station-location
+      tables, identifies unmatched records explicitly, and creates an integrated climate
+      station dataset for downstream analysis.
+
+'
+  data:
+    description: 'Country and weather-station location tables derived from global
+      land-temperature data.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/tree/main/10.%20CombiningDataFrames/data
+    availability: repository
+    files:
+    - 10. CombiningDataFrames/data/ltcountries.csv
+    - 10. CombiningDataFrames/data/ltlocations.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - key validation
+    - outer joins
+    - unmatched-record diagnosis
+    - relational integration
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/10.%20CombiningDataFrames/6.%20merge_routine.py
+  problem:
+    context: 'Climate observations and station metadata cannot be combined safely
+      by assuming that join keys are complete and consistent across source tables.
+
+'
+    objective: 'Validate key coverage and produce an integrated station-country table
+      without silently losing or duplicating records.
+
+'
+    analytical_questions:
+    - Which keys occur in both source tables?
+    - Which countries or stations fail to match?
+    - What join cardinality is expected?
+    - Does the integrated table preserve the intended analytical grain?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    logical_steps:
+    - Load country and station tables.
+    - Check uniqueness of candidate join keys.
+    - Perform an outer diagnostic merge.
+    - Identify left-only and right-only keys.
+    - Resolve or document unmatched records.
+    - Execute the intended analytical merge.
+    - Validate row counts and cardinality after integration.
+    expected_outputs:
+    - key-quality report
+    - unmatched-record tables
+    - merge cardinality checks
+    - integrated climate station dataset
+    - validation summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 148
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

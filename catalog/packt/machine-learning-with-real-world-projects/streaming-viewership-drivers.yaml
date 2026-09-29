@@ -1,0 +1,109 @@
+---
+id: packt/machine-learning-with-real-world-projects/streaming-viewership-drivers
+name: Streaming Viewership Drivers
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with Real World Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Media Company Case Study
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%203/Hotstar_Netflix_Case%20Study/Media%2BCompany.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Section 3/Hotstar_Netflix_Case Study/Media+Company.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 161
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with Real World Projects
+    title: Media Company Case Study
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%203/Hotstar_Netflix_Case%20Study/Media%2BCompany.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+      path: Section 3/Hotstar_Netflix_Case Study/Media+Company.ipynb
+    description: 'Packt investigates a decline in viewership for a streaming show
+      by comparing alternative regression specifications using visitors, weekends,
+      character appearances, advertising impressions, lagged views, and sports events.
+
+'
+  data:
+    description: 'Daily streaming-platform observations with show views, platform
+      visitors, advertising impressions, character appearances, weekday/weekend indicators,
+      and cricket-event information.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%203/Hotstar_Netflix_Case%20Study/mediacompany.csv
+    availability: repository
+    files:
+    - Section 3/Hotstar_Netflix_Case Study/mediacompany.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory visualization
+    - linear regression
+    - correlation analysis
+    - residual analysis
+    - model comparison
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%203/Hotstar_Netflix_Case%20Study/Media%2BCompany.ipynb
+  problem:
+    context: 'A digital media company launched a show that initially performed well
+      but then experienced declining viewership and needs to understand what changed.
+
+'
+    objective: 'Diagnose the main drivers of show viewership and explain the observed
+      decline.
+
+'
+    analytical_questions:
+    - How do platform visitors and show views evolve over time?
+    - Do weekends or featured characters affect viewership?
+    - How strongly are advertising impressions associated with views?
+    - Do major cricket matches explain part of the decline?
+    - Which candidate explanatory model best accounts for observed viewership?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate daily media data.
+    - Create calendar and lagged-view features.
+    - Visualize viewership, traffic, and advertising trends.
+    - Fit alternative explanatory regressions.
+    - Compare fit and residual behavior.
+    - Diagnose omitted or redundant drivers.
+    - Summarize the most plausible causes of declining views.
+    expected_outputs:
+    - viewership trend charts
+    - driver correlation table
+    - model comparison
+    - residual diagnostics
+    - driver effect summary
+    - diagnostic narrative
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 161
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/python-data-analysis-fourth-edition/churn-ensemble-benchmark
+name: Churn Ensemble Benchmark
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Analysis, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Ensemble Methods
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter11/11_ensemble_methods.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/11_ensemble_methods.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 400
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Analysis, Fourth Edition
+    title: Ensemble Methods
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter11/11_ensemble_methods.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Analysis-4E
+      path: Chapter11/11_ensemble_methods.ipynb
+    description: 'Packt uses customer churn data to compare random forests, extra
+      trees, AdaBoost, gradient boosting, XGBoost, voting, and stacking classifiers.
+
+'
+  data:
+    description: 'Customer churn records with age, annual income, membership duration,
+      gender, location, and churn outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter11/churn.csv
+    availability: repository
+    files:
+    - Chapter11/churn.csv
+  original_implementation:
+    technologies:
+    - random forest
+    - extra trees
+    - AdaBoost
+    - gradient boosting
+    - XGBoost
+    - voting
+    - stacking
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter11/11_ensemble_methods.ipynb
+  problem:
+    context: 'A subscription business wants to identify customers likely to churn
+      and compare whether ensemble methods materially improve over simpler classifiers.
+
+'
+    objective: 'Benchmark multiple ensemble strategies for customer churn prediction.
+
+'
+    analytical_questions:
+    - Which ensemble method performs best on held-out customers?
+    - How do bagging and boosting approaches differ?
+    - Does model stacking improve generalization?
+    - What trade-offs appear across accuracy, precision, and recall?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - xgboost
+    logical_steps:
+    - Load and validate churn records.
+    - Encode categorical predictors.
+    - Create reproducible training and test data.
+    - Fit bagging and boosting ensembles.
+    - Fit voting and stacking classifiers.
+    - Compare held-out classification metrics.
+    - Interpret performance differences.
+    expected_outputs:
+    - ensemble benchmark table
+    - classification metrics
+    - confusion matrices
+    - best-model predictions
+    - comparison narrative
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 400
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

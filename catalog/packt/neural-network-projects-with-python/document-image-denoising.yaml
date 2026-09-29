@@ -1,0 +1,102 @@
+---
+id: packt/neural-network-projects-with-python/document-image-denoising
+name: Document Image Denoising
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Neural Network Projects with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Document Denoising with a Convolutional Autoencoder
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter05/deep_conv_autoencoder_denoise_documents.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/deep_conv_autoencoder_denoise_documents.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 442
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Neural Network Projects with Python
+    title: Document Denoising with a Convolutional Autoencoder
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter05/deep_conv_autoencoder_denoise_documents.py
+    repository:
+      url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+      path: Chapter05/deep_conv_autoencoder_denoise_documents.py
+    description: 'Packt trains a convolutional autoencoder on paired noisy and clean
+      office document images to reconstruct cleaner document scans.
+
+'
+  data:
+    description: 'Paired noisy and clean grayscale document images included with the
+      chapter.
+
+'
+    source_url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/tree/master/Chapter05/Noisy_Documents
+    availability: repository
+    files:
+    - Chapter05/Noisy_Documents/noisy
+    - Chapter05/Noisy_Documents/clean
+  original_implementation:
+    technologies:
+    - convolutional autoencoder
+    - image denoising
+    - paired image reconstruction
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter05/deep_conv_autoencoder_denoise_documents.py
+  problem:
+    context: 'Scanned business documents often contain noise that reduces readability
+      and degrades OCR or downstream extraction quality.
+
+'
+    objective: 'Transform noisy document images into cleaner analytical inputs.
+
+'
+    analytical_questions:
+    - How should noisy and clean document pairs be aligned?
+    - How much visual noise can an autoencoder remove?
+    - Which document artifacts remain after reconstruction?
+    - How could denoising affect downstream text extraction?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - keras
+    - pillow
+    - numpy
+    logical_steps:
+    - Load paired noisy and clean document images.
+    - Normalize and align image dimensions.
+    - Create reproducible train and test partitions.
+    - Train a convolutional autoencoder.
+    - Reconstruct held-out noisy documents.
+    - Compare noisy, clean, and reconstructed images.
+    - Quantify reconstruction quality.
+    expected_outputs:
+    - paired document dataset
+    - trained denoising model
+    - reconstructed documents
+    - reconstruction metrics
+    - before-and-after image comparisons
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 442
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

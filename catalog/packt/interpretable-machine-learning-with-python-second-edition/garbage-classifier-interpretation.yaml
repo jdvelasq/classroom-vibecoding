@@ -1,0 +1,102 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/garbage-classifier-interpretation
+name: Garbage Classifier Interpretation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Visualizing Convolutional Neural Networks
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/07/GarbageClassifier.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 07/GarbageClassifier.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 251
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Visualizing Convolutional Neural Networks
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/07/GarbageClassifier.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 07/GarbageClassifier.ipynb
+    description: 'Packt uses a garbage image classifier to study interpretation of
+      convolutional neural networks and identify which image regions drive model decisions.
+
+'
+  data:
+    description: 'Labeled garbage images supplied with the book for multiclass image
+      classification.
+
+'
+    source_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/datasets/garbage_dataset.zip
+    availability: repository
+    files:
+    - datasets/garbage_dataset.zip
+  original_implementation:
+    technologies:
+    - PyTorch
+    - EfficientNet
+    - CNN interpretation
+    - Captum
+    - attribution maps
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/07/GarbageClassifier.ipynb
+  problem:
+    context: 'An image classifier can achieve good accuracy while relying on irrelevant
+      backgrounds or spurious visual cues that aggregate metrics do not reveal.
+
+'
+    objective: 'Classify garbage images and explain which visual regions influence
+      predictions.
+
+'
+    analytical_questions:
+    - Which classes are predicted reliably?
+    - Which image regions drive each prediction?
+    - Are explanations aligned with the object being classified?
+    - Which errors reveal spurious visual dependence?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - torch
+    - torchvision
+    - captum
+    - matplotlib
+    logical_steps:
+    - Load and split the image dataset.
+    - Train or load the classifier.
+    - Evaluate class-level performance.
+    - Generate attribution maps.
+    - Compare correct and incorrect predictions.
+    - Diagnose suspicious visual dependencies.
+    expected_outputs:
+    - classifier metrics
+    - attribution maps
+    - explanation gallery
+    - error interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 251
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

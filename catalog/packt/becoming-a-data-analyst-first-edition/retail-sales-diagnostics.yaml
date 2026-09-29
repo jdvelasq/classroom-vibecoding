@@ -1,0 +1,103 @@
+---
+id: packt/becoming-a-data-analyst-first-edition/retail-sales-diagnostics
+name: Retail Sales Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Becoming a Data Analyst, First Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: EDA Case Study
+    url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition/blob/main/Chapter-17-EDA-Case-Study/EDA_Case_Study_Answers.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter-17-EDA-Case-Study/EDA_Case_Study_Answers.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 69
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Becoming a Data Analyst, First Edition
+    title: EDA Case Study
+    url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition/blob/main/Chapter-17-EDA-Case-Study/EDA_Case_Study_Answers.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition
+      path: Chapter-17-EDA-Case-Study/EDA_Case_Study_Answers.ipynb
+    description: 'Packt uses a retail sales dataset to investigate monthly seasonality,
+      weekday versus weekend activity, high-value customers, product performance,
+      payment behavior, and product-return patterns.
+
+'
+  data:
+    description: 'ShopEase retail transactions with orders, customers, products, categories,
+      quantities, values, payment methods, dates, and return indicators.
+
+'
+    source_url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition/blob/main/Chapter-17-EDA-Case-Study/ShopEase_Sales_Data.csv
+    availability: repository
+    files:
+    - Chapter-17-EDA-Case-Study/ShopEase_Sales_Data.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory data analysis
+    - customer ranking
+    - return-rate analysis
+    - time aggregation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Becoming-a-Data-Analyst-First-Edition/blob/main/Chapter-17-EDA-Case-Study/EDA_Case_Study_Answers.ipynb
+  problem:
+    context: 'A retailer wants to understand unstable sales, customer value, product
+      performance, and return behavior before changing staffing, marketing, and policy.
+
+'
+    objective: 'Diagnose sales and return patterns and identify customer and product
+      segments that explain business performance.
+
+'
+    analytical_questions:
+    - What seasonal and weekly patterns appear in sales?
+    - Which customers account for the highest spending?
+    - Which products lead sales within each category?
+    - Which products, categories, or payment methods have elevated return rates?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate transactions.
+    - Create calendar and order-value features.
+    - Analyze monthly and weekday patterns.
+    - Rank customers by spend.
+    - Rank products within categories.
+    - Calculate product, category, and payment-method return rates.
+    - Summarize operational implications.
+    expected_outputs:
+    - sales trend charts
+    - high-value customer table
+    - category product rankings
+    - return-rate diagnostics
+    - written business findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 69
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

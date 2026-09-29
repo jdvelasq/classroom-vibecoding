@@ -1,0 +1,107 @@
+---
+id: packt/practical-deep-learning-at-scale-with-mlflow/sentiment-inference-pipeline
+name: Sentiment Inference Pipeline
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Deep Learning at Scale with MLflow
+  edition:
+  official_url:
+  companion_sources:
+  - title: Multi-Step Inference Pipeline
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter07
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter07/pipeline/inference_pipeline_model.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 372
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Deep Learning at Scale with MLflow
+    title: Multi-Step Inference Pipeline
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter07
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+      path: chapter07/pipeline/inference_pipeline_model.py
+    description: 'Packt wraps a fine-tuned sentiment classifier as an MLflow pyfunc
+      inference pipeline with language detection, caching, metadata, model registration,
+      and scalable Spark batch inference.
+
+'
+  data:
+    description: 'IMDb review text used to train and exercise the sentiment inference
+      workflow.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter08/data/imdb
+    availability: repository
+    files:
+    - chapter08/data/imdb/train.csv
+    - chapter08/data/imdb/valid.csv
+    - chapter08/data/imdb/test.csv
+    - chapter08/data/imdb/predict.csv
+  original_implementation:
+    technologies:
+    - MLflow
+    - PyTorch
+    - pyfunc
+    - model registry
+    - language detection
+    - caching
+    - PySpark batch inference
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/blob/main/chapter07/pipeline/inference_pipeline_model.py
+  problem:
+    context: 'A production text model needs consistent preprocessing, efficient repeated
+      inference, provenance metadata, versioning, and batch scoring.
+
+'
+    objective: 'Package a sentiment model as a versioned multi-step inference product.
+
+'
+    analytical_questions:
+    - What preprocessing belongs inside the serving artifact?
+    - How should model and inference-pipeline versions be tracked?
+    - How can repeated requests be cached safely?
+    - How can the same model be used for Spark batch inference?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - mlflow
+    - torch
+    - pandas
+    - pyspark
+    logical_steps:
+    - Load or fine-tune the sentiment model.
+    - Define preprocessing, language detection, and caching.
+    - Wrap inference as an MLflow pyfunc model.
+    - Define input and output signatures.
+    - Register and reload the artifact.
+    - Apply the registered model at batch scale.
+    expected_outputs:
+    - registered inference model
+    - versioned model URI
+    - enriched predictions
+    - batch-scored review dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 372
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

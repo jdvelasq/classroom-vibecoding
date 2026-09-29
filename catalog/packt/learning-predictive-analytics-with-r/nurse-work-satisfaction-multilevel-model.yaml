@@ -1,0 +1,106 @@
+---
+id: packt/learning-predictive-analytics-with-r/nurse-work-satisfaction-multilevel-model
+name: Nurse Work Satisfaction Multilevel Model
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Predictive Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Multilevel Modeling
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: CODE/CH12 CODE.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 291
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Predictive Analytics with R
+    title: Multilevel Modeling
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R
+      path: CODE/CH12 CODE.R
+    description: 'Packt models nurse work satisfaction across 17 hospitals with random
+      intercepts and random slopes, then evaluates predictions separately by hospital.
+
+'
+  data:
+    description: 'Nurse-level accomplishment, depersonalization, exhaustion, work
+      satisfaction, and hospital identifiers split into training and test samples.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/tree/master/Data/Data%20Ch12
+    availability: repository
+    files:
+    - Data/Data Ch12/NursesMLtrain.dat
+    - Data/Data Ch12/NursesMLtest.dat
+    - Data/Data Ch12/nursesML.dat
+  original_implementation:
+    technologies:
+    - lme4
+    - mixed-effects models
+    - random intercepts
+    - random slopes
+    - multilevel prediction
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+  problem:
+    context: 'Nurses are nested within hospitals, so work-satisfaction relationships
+      may differ across institutions and violate independence assumptions of ordinary
+      regression.
+
+'
+    objective: 'Predict nurse work satisfaction while accounting for hospital-level
+      heterogeneity.
+
+'
+    analytical_questions:
+    - How much variation lies between hospitals versus within hospitals?
+    - Which nurse-level variables explain satisfaction?
+    - Do slopes vary meaningfully across hospitals?
+    - How well does the multilevel model predict satisfaction in held-out records?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load train and test nurse records.
+    - Quantify within- and between-hospital variation.
+    - Fit a random-intercept baseline.
+    - Add fixed nurse-level effects.
+    - Fit random-slope alternatives.
+    - Compare model fit.
+    - Evaluate predictions by hospital.
+    expected_outputs:
+    - variance decomposition
+    - mixed-model coefficient table
+    - hospital random effects
+    - model comparison
+    - hospital-level prediction diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 291
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

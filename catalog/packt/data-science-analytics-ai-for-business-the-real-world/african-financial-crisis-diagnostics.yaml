@@ -1,0 +1,102 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/african-financial-crisis-diagnostics
+name: African Financial Crisis Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Africa Economic, Banking and Systemic Crisis Data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Africa Economic, Banking _ Systematic Crisis
+      Data.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 186
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Africa Economic, Banking and Systemic Crisis Data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Africa Economic, Banking _ Systematic
+        Crisis Data.ipynb
+    description: 'Packt explores African exchange rates, inflation, systemic crises,
+      domestic and sovereign defaults, currency crises, and banking crises across
+      countries and time.
+
+'
+  data:
+    description: 'Historical macro-financial crisis records for African countries.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/data-analyst-bootcamp/master/african_crises.csv
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - longitudinal analysis
+    - correlation analysis
+    - crisis counts
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'Financial crises combine exchange-rate, inflation, banking, currency,
+      and sovereign-debt dimensions whose historical co-occurrence differs across
+      countries.
+
+'
+    objective: 'Characterize macro-financial crisis patterns across African countries
+      and time.
+
+'
+    analytical_questions:
+    - How do exchange-rate and inflation histories differ across countries?
+    - Which countries experienced the most crisis episodes?
+    - Which crisis indicators tend to co-occur?
+    - How have crisis patterns changed through time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate crisis records.
+    - Construct country and year summaries.
+    - Compare exchange-rate and inflation trajectories.
+    - Count default and crisis events.
+    - Analyze correlations among crisis indicators.
+    - Visualize country-level and temporal patterns.
+    expected_outputs:
+    - macro-financial KPI tables
+    - country crisis rankings
+    - crisis correlation matrix
+    - longitudinal charts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 186
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,105 @@
+---
+id: packt/data-science-with-sql-server-quick-start-guide/bike-buyer-segmentation
+name: Bike Buyer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science with SQL Server Quick Start Guide
+  edition:
+  official_url:
+  companion_sources:
+  - title: PCA and Gaussian Mixture Clustering
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter07.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 301
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science with SQL Server Quick Start Guide
+    title: PCA and Gaussian Mixture Clustering
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter07.py
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide
+      path: Chapter07.py
+    description: 'Packt extracts AdventureWorks target-mail customer data from SQL
+      Server, reduces correlated behavioral and demographic variables with PCA, and
+      applies Gaussian-mixture clustering to discover customer groups.
+
+'
+  data:
+    description: 'AdventureWorks target-mail customer records with children, home
+      ownership, age, income, cars owned, bike-buyer status, commute distance, education,
+      occupation, and region.
+
+'
+    source_url: https://github.com/microsoft/sql-server-samples
+    availability: public_database
+    files: []
+  original_implementation:
+    technologies:
+    - SQL Server
+    - pandas
+    - PCA
+    - Gaussian mixture models
+    - customer profiling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter07.py
+  problem:
+    context: 'A retailer wants to understand heterogeneous customer structure in its
+      target-mail population before designing differentiated marketing actions.
+
+'
+    objective: 'Discover and interpret customer segments from demographic, household,
+      and purchasing attributes.
+
+'
+    analytical_questions:
+    - Which variables dominate the main dimensions of customer variation?
+    - How much information is retained in two principal components?
+    - What customer groups emerge from a Gaussian mixture model?
+    - How do clusters differ in commute distance, occupation, car ownership, and bike
+      buying?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Extract or load the target-mail customer table.
+    - Select and validate segmentation variables.
+    - Standardize features where appropriate.
+    - Fit PCA and inspect explained variance.
+    - Fit candidate Gaussian mixture models.
+    - Attach cluster memberships to customers.
+    - Profile and interpret the clusters.
+    expected_outputs:
+    - PCA score table
+    - explained-variance summary
+    - customer cluster assignments
+    - segment profile table
+    - cluster visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 301
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

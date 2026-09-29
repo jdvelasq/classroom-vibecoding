@@ -1,0 +1,102 @@
+---
+id: packt/python-data-cleaning-cookbook-second-edition/museum-collection-normalization
+name: Museum Collection Normalization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Reshaping Many-to-Many Collection Data
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/11.%20TidyingReshaping/2.%20many_to_many_reshape.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: 11. TidyingReshaping/2. many_to_many_reshape.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 403
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning Cookbook, Second Edition
+    title: Reshaping Many-to-Many Collection Data
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/11.%20TidyingReshaping/2.%20many_to_many_reshape.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+      path: 11. TidyingReshaping/2. many_to_many_reshape.py
+    description: 'Packt decomposes a denormalized museum collection table containing
+      repeated creators and citations into separate item, creator, and citation tables
+      while preserving many-to-many relationships.
+
+'
+  data:
+    description: 'Cleveland Museum of Art collection records with item metadata, creators,
+      citations, creation dates, and artist life dates.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/11.%20TidyingReshaping/data/cmacollections.csv
+    availability: repository
+    files:
+    - 11. TidyingReshaping/data/cmacollections.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - duplicate analysis
+    - normalization
+    - many-to-many relationships
+    - reshaping
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/11.%20TidyingReshaping/2.%20many_to_many_reshape.py
+  problem:
+    context: 'Museum exports can repeat collection-item attributes once per creator
+      or citation, causing duplication and incorrect counts in downstream analysis.
+
+'
+    objective: 'Normalize a denormalized cultural-collection table into clean analytical
+      entities while preserving creator and citation relationships.
+
+'
+    analytical_questions:
+    - Which fields belong at item, creator, and citation grain?
+    - How much duplication is caused by many-to-many relationships?
+    - How should records be decomposed without losing relationships?
+    - How can derived artist attributes be merged back to collection items?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    logical_steps:
+    - Load and profile the denormalized collection export.
+    - Identify repeated item-creator and item-citation combinations.
+    - Define entity grain for each output table.
+    - Create deduplicated item, creator, and citation tables.
+    - Clean creator life-date fields.
+    - Derive creator-level indicators.
+    - Validate relationships after normalization.
+    expected_outputs:
+    - normalized collection table
+    - creator relation table
+    - citation relation table
+    - duplication diagnostics
+    - relationship validation report
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 403
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

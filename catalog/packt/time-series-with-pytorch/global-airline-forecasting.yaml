@@ -1,0 +1,107 @@
+---
+id: packt/time-series-with-pytorch/global-airline-forecasting
+name: Global Airline Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Time Series with PyTorch
+  edition:
+  official_url:
+  companion_sources:
+  - title: Global Forecasting Model Comparison
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_11/chp11_gfm_comparison_nf.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_11/chp11_gfm_comparison_nf.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 298
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Time Series with PyTorch
+    title: Global Forecasting Model Comparison
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_11/chp11_gfm_comparison_nf.py
+    repository:
+      url: https://github.com/PacktPublishing/Time-Series-with-PyTorch
+      path: Chapter_11/chp11_gfm_comparison_nf.py
+    description: 'Packt builds global forecasting models across multiple airline passenger
+      series and compares linear, tree-based, N-BEATS, and N-HiTS approaches using
+      common holdout horizons and multiple accuracy metrics.
+
+'
+  data:
+    description: 'Monthly international airline departure series by airline, with
+      airline code metadata, truncated before the pandemic period.
+
+'
+    source_url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/tree/main/Chapter_11
+    availability: referenced_not_in_repo
+    files:
+    - international_report_departures.csv
+    - airline_codes.csv
+  original_implementation:
+    technologies:
+    - NeuralForecast
+    - N-BEATS
+    - N-HiTS
+    - global forecasting
+    - multi-series evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_11/chp11_gfm_comparison_nf.py
+  problem:
+    context: 'Airlines exhibit related but heterogeneous passenger-demand series,
+      creating an opportunity to learn one global model across many series rather
+      than fit every airline independently.
+
+'
+    objective: 'Compare global forecasting approaches across airline series and evaluate
+      accuracy, computational cost, and transfer behavior.
+
+'
+    analytical_questions:
+    - Do global models outperform simpler machine-learning baselines?
+    - How variable is forecast accuracy across airlines?
+    - What is the accuracy-versus-training-time trade-off?
+    - Can a model trained on another collection transfer to airline series?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - neuralforecast
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and regularize monthly airline series.
+    - Remove short or incomplete histories.
+    - Create a common temporal holdout.
+    - Fit baseline and global neural forecasting models.
+    - Evaluate each series with common metrics.
+    - Compare median accuracy and elapsed time.
+    - Test cross-domain transfer where appropriate.
+    expected_outputs:
+    - multi-series airline panel
+    - global forecast models
+    - per-airline error table
+    - model comparison table
+    - accuracy-versus-time chart
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 298
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

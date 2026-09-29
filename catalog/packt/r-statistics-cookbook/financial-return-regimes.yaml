@@ -1,0 +1,105 @@
+---
+id: packt/r-statistics-cookbook/financial-return-regimes
+name: Financial Return Regimes
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Statistics Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Financial Hidden Markov Model
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__6__financialdata.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/10__6__financialdata.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 432
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Statistics Cookbook
+    title: Financial Hidden Markov Model
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__6__financialdata.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+      path: Chapter10/10__6__financialdata.R
+    description: 'Packt converts closing prices to returns and fits two- and three-state
+      Gaussian hidden Markov models to discover latent market regimes and their posterior
+      probabilities.
+
+'
+  data:
+    description: 'Historical financial closing-price series distributed with the chapter.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/hist_PAM20190304.csv
+    availability: repository
+    files:
+    - Chapter10/hist_PAM20190304.csv
+  original_implementation:
+    technologies:
+    - financial returns
+    - hidden Markov models
+    - Gaussian state distributions
+    - latent regimes
+    - posterior state probabilities
+    - depmixS4
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__6__financialdata.R
+  problem:
+    context: 'Financial returns may alternate between unobserved market conditions
+      whose means or volatility differ through time.
+
+'
+    objective: 'Discover latent return regimes and estimate the probability of each
+      regime through the historical series.
+
+'
+    analytical_questions:
+    - Does a multi-state model describe returns better than a single regime?
+    - What return behavior characterizes each latent state?
+    - When does the most probable state change?
+    - How uncertain are regime assignments through time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - hmmlearn
+    - matplotlib
+    logical_steps:
+    - Load closing prices and calculate returns.
+    - Inspect return distribution and temporal behavior.
+    - Fit candidate Gaussian HMMs with different state counts.
+    - Compare fit and state stability.
+    - Estimate posterior state probabilities.
+    - Assign the most likely regime over time.
+    - Interpret state-specific return distributions.
+    expected_outputs:
+    - return series
+    - HMM comparison
+    - state parameter table
+    - posterior regime probabilities
+    - regime timeline
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 432
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

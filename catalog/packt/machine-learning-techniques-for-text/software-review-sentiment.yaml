@@ -1,0 +1,100 @@
+---
+id: packt/machine-learning-techniques-for-text/software-review-sentiment
+name: Software Review Sentiment
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Techniques for Text
+  edition:
+  official_url:
+  companion_sources:
+  - title: Extracting Sentiments from Product Reviews
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-04/sentiment-analysis.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter-04/sentiment-analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 209
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Techniques for Text
+    title: Extracting Sentiments from Product Reviews
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-04/sentiment-analysis.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+      path: chapter-04/sentiment-analysis.ipynb
+    description: 'Packt explores Amazon software reviews and reviewer helpfulness
+      before building logistic and neural sentiment classifiers.
+
+'
+  data:
+    description: 'SNAP Amazon product metadata and software review text with ratings,
+      users, products, and helpfulness indicators.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/raw/main/chapter-04/data.zip
+    availability: repository
+    files:
+    - chapter-04/data.zip
+  original_implementation:
+    technologies:
+    - text EDA
+    - logistic regression
+    - neural networks
+    - vectorization
+    - sentiment classification
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-04/sentiment-analysis.ipynb
+  problem:
+    context: 'Product-review text and star ratings can be used to infer sentiment
+      while reviewer behavior provides additional diagnostic context.
+
+'
+    objective: 'Build sentiment classifiers for software reviews and diagnose review
+      structure.
+
+'
+    analytical_questions:
+    - How are ratings and review lengths distributed?
+    - How does reviewer helpfulness differ across reviewer types?
+    - How accurately can review text predict sentiment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - tensorflow
+    logical_steps:
+    - Load and deduplicate reviews.
+    - Explore ratings and helpfulness.
+    - Construct the sentiment target.
+    - Vectorize review text.
+    - Fit logistic and neural classifiers.
+    - Compare held-out performance.
+    expected_outputs:
+    - review diagnostics
+    - sentiment model comparison
+    - classification metrics
+    - example predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 209
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

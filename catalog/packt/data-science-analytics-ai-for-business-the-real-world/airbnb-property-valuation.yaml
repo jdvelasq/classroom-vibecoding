@@ -1,0 +1,104 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/airbnb-property-valuation
+name: Airbnb Property Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predict AirBnB Prices in Sydney
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predict%20AirBnB%20Prices%20in%20Sydney.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Predict AirBnB Prices in Sydney.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 62
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Predict AirBnB Prices in Sydney
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predict%20AirBnB%20Prices%20in%20Sydney.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Predict AirBnB Prices in Sydney.ipynb
+    description: 'Packt frames an end-to-end valuation task for a Sydney Airbnb property
+      and compares regression approaches using property, host, review, availability,
+      and location attributes.
+
+'
+  data:
+    description: 'Sydney Airbnb listings with prices and property, host, review, availability,
+      and geographic attributes.
+
+'
+    source_url: https://github.com/Finance-781/FinML
+    availability: public
+    files:
+    - datasets/sydney_airbnb.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - feature preparation
+    - linear regression
+    - random forest regression
+    - model evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predict%20AirBnB%20Prices%20in%20Sydney.ipynb
+  problem:
+    context: 'A property owner needs a defensible daily accommodation rate and the
+      same approach could be generalized to other listings.
+
+'
+    objective: 'Estimate fair nightly prices for Airbnb listings and assess the value
+      of a specific property relative to comparable listings.
+
+'
+    analytical_questions:
+    - Which listing attributes explain variation in nightly prices?
+    - How should price and date fields be cleaned before modeling?
+    - Which regression approach generalizes best?
+    - What nightly rate does the model imply for the target property?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the listing data.
+    - Clean monetary, date, categorical, and geographic fields.
+    - Explore price distributions and important relationships.
+    - Create a reproducible train/test split.
+    - Fit baseline and nonlinear regression models.
+    - Compare out-of-sample errors.
+    - Score the target property and explain the estimate.
+    expected_outputs:
+    - cleaned listing dataset
+    - valuation model comparison
+    - prediction diagnostics
+    - target-property price estimate
+    - written valuation interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 62
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

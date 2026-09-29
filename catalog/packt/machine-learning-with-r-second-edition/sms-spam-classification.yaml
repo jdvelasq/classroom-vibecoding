@@ -1,0 +1,102 @@
+---
+id: packt/machine-learning-with-r-second-edition/sms-spam-classification
+name: SMS Spam Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R - Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Filtering Spam SMS Messages
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2004/MLwR_v2_04.r
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 04/MLwR_v2_04.r
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 433
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Machine Learning with R - Second Edition
+    title: Filtering Spam SMS Messages
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2004/MLwR_v2_04.r
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+      path: Chapter 04/MLwR_v2_04.r
+    description: 'Packt builds an end-to-end text-classification workflow for SMS
+      spam using corpus cleaning, stemming, a document-term matrix, and Naive Bayes.
+
+'
+  data:
+    description: 'Labeled SMS messages classified as spam or legitimate messages.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2004/sms_spam.csv
+    availability: repository
+    files:
+    - Chapter 04/sms_spam.csv
+  original_implementation:
+    technologies:
+    - text mining
+    - document-term matrix
+    - stemming
+    - Naive Bayes
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2004/MLwR_v2_04.r
+  problem:
+    context: 'Messaging services need to distinguish unsolicited spam from legitimate
+      messages.
+
+'
+    objective: 'Transform raw SMS text into predictive features and classify messages
+      as spam or ham.
+
+'
+    analytical_questions:
+    - Which text-cleaning steps materially change the feature space?
+    - Which terms distinguish spam from legitimate messages?
+    - How accurately does Naive Bayes classify unseen messages?
+    - Does Laplace smoothing improve classification performance?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - nltk
+    logical_steps:
+    - Load and inspect labeled SMS messages.
+    - Normalize case and remove noise.
+    - Tokenize, remove stopwords, and stem terms.
+    - Build sparse document-term features.
+    - Split training and test data.
+    - Fit a multinomial Naive Bayes classifier.
+    - Evaluate confusion matrix and classification metrics.
+    - Compare smoothing settings.
+    expected_outputs:
+    - cleaned SMS corpus
+    - document-term matrix
+    - spam classifier
+    - classification metrics
+    - error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 433
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,105 @@
+---
+id: packt/python-machine-learning-blueprints-second-edition/personalized-news-selection
+name: Personalized News Selection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Machine Learning Blueprints, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Building a Personalized News Feed
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints-Second-Edition/blob/master/Chapter05/PMLB%20SE%20-%20Ch%205.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/PMLB SE - Ch 5.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 328
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Machine Learning Blueprints, Second Edition
+    title: Building a Personalized News Feed
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints-Second-Edition/blob/master/Chapter05/PMLB%20SE%20-%20Ch%205.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints-Second-Edition
+      path: Chapter05/PMLB SE - Ch 5.ipynb
+    description: 'Packt collects articles explicitly tagged as wanted or unwanted,
+      extracts article text, trains a TF-IDF linear SVM preference classifier, scores
+      new stories, corrects labels, and retrains the model.
+
+'
+  data:
+    description: 'User-curated Pocket articles labeled as wanted or unwanted plus
+      candidate news stories supplied through a spreadsheet.
+
+'
+    source_url: https://getpocket.com/developer/
+    availability: authenticated_external
+    files: []
+  original_implementation:
+    technologies:
+    - Pocket API
+    - article extraction
+    - TF-IDF
+    - n-grams
+    - LinearSVC
+    - active relabeling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints-Second-Edition/blob/master/Chapter05/PMLB%20SE%20-%20Ch%205.ipynb
+  problem:
+    context: 'A reader faces more incoming articles than can be reviewed manually
+      and has historical examples of stories they did and did not want to read.
+
+'
+    objective: 'Learn individual article preferences from text and rank or filter
+      incoming news stories.
+
+'
+    analytical_questions:
+    - Which textual features distinguish wanted from unwanted articles?
+    - How accurately can preferences be predicted for unseen stories?
+    - Which prediction errors should be relabeled?
+    - How does feedback improve the personalized classifier?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - beautifulsoup4
+    - requests
+    logical_steps:
+    - Acquire labeled article URLs.
+    - Extract and clean article text.
+    - Build TF-IDF n-gram features.
+    - Train a linear preference classifier.
+    - Score candidate stories.
+    - Review and correct uncertain or wrong predictions.
+    - Retrain and compare the updated model.
+    expected_outputs:
+    - labeled article corpus
+    - preference classifier
+    - candidate story scores
+    - error review table
+    - updated personalized model
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: externally_generated
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 328
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

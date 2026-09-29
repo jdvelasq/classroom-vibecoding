@@ -1,0 +1,103 @@
+---
+id: packt/principles-of-data-science-third-edition/rossmann-customer-flow-diagnostics
+name: Rossmann Customer Flow Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Principles of Data Science, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Rossmann Sales Exploration
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_09.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Code/chapter_09.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 397
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Principles of Data Science, Third Edition
+    title: Rossmann Sales Exploration
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_09.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition
+      path: Code/chapter_09.ipynb
+    description: 'Packt uses Rossmann retail data to explore customer-count distributions,
+      descriptive statistics, and store-level variation as part of a practical introduction
+      to correlation and exploratory analysis.
+
+'
+  data:
+    description: 'Rossmann store records with store identifiers, customer counts,
+      sales, promotions, calendar attributes, and related retail variables.
+
+'
+    source_url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/data/rossmann.csv
+    availability: repository
+    files:
+    - data/rossmann.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - descriptive statistics
+    - histograms
+    - boxplots
+    - correlation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_09.ipynb
+  problem:
+    context: 'Retail stores experience heterogeneous customer traffic that should
+      be understood before modeling sales or operational demand.
+
+'
+    objective: 'Diagnose customer-flow distributions and store-level variation in
+      a retail dataset.
+
+'
+    analytical_questions:
+    - How are customer counts distributed within a store?
+    - Which observations appear unusual?
+    - How much variability exists in customer traffic?
+    - Which variables show meaningful association with customer activity?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    - seaborn
+    logical_steps:
+    - Load and validate Rossmann store data.
+    - Select store-level customer observations.
+    - Calculate descriptive statistics.
+    - Visualize customer-count distributions.
+    - Identify unusual observations.
+    - Explore correlations with selected store and calendar variables.
+    expected_outputs:
+    - customer traffic summary
+    - distribution plots
+    - outlier diagnostics
+    - correlation table
+    - written retail interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 397
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

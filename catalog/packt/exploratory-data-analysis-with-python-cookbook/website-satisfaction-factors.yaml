@@ -1,0 +1,107 @@
+---
+id: packt/exploratory-data-analysis-with-python-cookbook/website-satisfaction-factors
+name: Website Satisfaction Factors
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Exploratory Data Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Factor Analysis of Website Survey Data
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/7.%20Implementing%20Factor%20Analysis%20on%20multiple%20variables%20using%20Factor%20Analysis.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch6/7. Implementing Factor Analysis on multiple variables.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 84
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Exploratory Data Analysis with Python Cookbook
+    title: Factor Analysis of Website Survey Data
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/7.%20Implementing%20Factor%20Analysis%20on%20multiple%20variables%20using%20Factor%20Analysis.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+      path: Ch6/7. Implementing Factor Analysis on multiple variables.ipynb
+    description: 'Packt applies factor analysis to website-survey responses, checks
+      suitability, determines the number of factors, applies varimax rotation, and
+      interprets the resulting latent dimensions.
+
+'
+  data:
+    description: 'Website satisfaction survey containing multiple correlated questionnaire
+      items.
+
+'
+    source_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/Data/website_survey.csv
+    availability: repository
+    files:
+    - Ch6/Data/website_survey.csv
+  original_implementation:
+    technologies:
+    - correlation analysis
+    - KMO
+    - factor analysis
+    - eigenvalues
+    - scree plot
+    - varimax rotation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/tree/main/Ch6
+  problem:
+    context: 'A website survey contains many correlated satisfaction questions that
+      may represent a smaller number of underlying experience dimensions.
+
+'
+    objective: 'Discover and interpret latent factors underlying website satisfaction
+      responses.
+
+'
+    analytical_questions:
+    - Is the survey suitable for factor analysis?
+    - How many latent factors are supported?
+    - Which survey items load together?
+    - What substantive interpretation can be assigned to each factor?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - factor-analyzer
+    - matplotlib
+    logical_steps:
+    - Load and validate survey responses.
+    - Select relevant questionnaire items.
+    - Inspect missingness and correlation structure.
+    - Evaluate factorability with KMO and related diagnostics.
+    - Determine a defensible factor count.
+    - Fit a rotated factor model.
+    - Inspect loadings and factor variance.
+    - Interpret and label latent dimensions.
+    expected_outputs:
+    - correlation diagnostics
+    - factorability statistics
+    - scree plot
+    - rotated loading matrix
+    - factor variance table
+    - latent-factor interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 84
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

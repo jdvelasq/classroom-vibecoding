@@ -1,0 +1,108 @@
+---
+id: packt/the-kaggle-workbook/question-answer-quality-prediction
+name: Question Answer Quality Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: The Kaggle Workbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: End-to-End NLP
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_04/ch4-end-to-end-nlp.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_04/ch4-end-to-end-nlp.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 352
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: The Kaggle Workbook
+    title: End-to-End NLP
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_04/ch4-end-to-end-nlp.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+      path: chapter_04/ch4-end-to-end-nlp.ipynb
+    description: 'Packt predicts multiple question-and-answer quality targets using
+      engineered text statistics, TF-IDF features, DistilBERT embeddings, preprocessing
+      pipelines, cross-validation, and regularized regression.
+
+'
+  data:
+    description: 'Google QUEST question-answer records with titles, question bodies,
+      answers, metadata, and multiple human-rated quality targets.
+
+'
+    source_url: https://www.kaggle.com/competitions/google-quest-challenge
+    availability: public_platform
+    files:
+    - train.csv
+    - test.csv
+    - sample_submission.csv
+  original_implementation:
+    technologies:
+    - TF-IDF
+    - DistilBERT embeddings
+    - text feature engineering
+    - multi-output regression
+    - cross-validation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_04/ch4-end-to-end-nlp.ipynb
+  problem:
+    context: 'Community question-answer content has multiple dimensions of perceived
+      quality, usefulness, clarity, and relevance that can be estimated from text
+      and metadata.
+
+'
+    objective: 'Predict multiple human-rated quality dimensions for unseen question-answer
+      pairs.
+
+'
+    analytical_questions:
+    - Which text representations best capture quality signals?
+    - Do transformer embeddings add value beyond TF-IDF and handcrafted features?
+    - Which quality dimensions are easiest or hardest to predict?
+    - How stable is performance across validation folds?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - transformers
+    - torch
+    logical_steps:
+    - Load and inspect question-answer records.
+    - Engineer structural text features.
+    - Build TF-IDF representations.
+    - Generate transformer embeddings.
+    - Combine text, numeric, and categorical features.
+    - Fit regularized multi-target models.
+    - Evaluate across cross-validation folds.
+    expected_outputs:
+    - engineered text feature matrix
+    - transformer embeddings
+    - multi-target model
+    - cross-validation metrics
+    - quality predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 352
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

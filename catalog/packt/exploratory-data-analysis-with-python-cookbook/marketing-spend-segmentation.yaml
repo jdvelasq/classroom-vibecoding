@@ -1,0 +1,103 @@
+---
+id: packt/exploratory-data-analysis-with-python-cookbook/marketing-spend-segmentation
+name: Marketing Spend Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Exploratory Data Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cluster Analysis on Marketing Campaign Data
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/1.%20Implementing%20Cluster%20Analysis%20on%20multiple%20variables%20using%20Kmeans.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch6/1. Implementing Cluster Analysis on multiple variables using Kmeans.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 85
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Exploratory Data Analysis with Python Cookbook
+    title: Cluster Analysis on Marketing Campaign Data
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/1.%20Implementing%20Cluster%20Analysis%20on%20multiple%20variables%20using%20Kmeans.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+      path: Ch6/1. Implementing Cluster Analysis on multiple variables using Kmeans.ipynb
+    description: 'Packt clusters marketing-campaign customers using spending across
+      product categories, standardized features, K-means, and cluster profiling.
+
+'
+  data:
+    description: 'Marketing-campaign customer data containing spending on wines, fruits,
+      meat, fish, sweets, gold, and related attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch6/Data/marketing_campaign.csv
+    availability: repository
+    files:
+    - Ch6/Data/marketing_campaign.csv
+  original_implementation:
+    technologies:
+    - standardization
+    - K-means
+    - cluster profiling
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/tree/main/Ch6
+  problem:
+    context: 'Customer spending is distributed across product categories and can reveal
+      distinct purchasing profiles useful for exploratory marketing analysis.
+
+'
+    objective: 'Discover customer groups from product-category spending patterns and
+      profile the resulting segments.
+
+'
+    analytical_questions:
+    - Which product categories distinguish spending behavior?
+    - How many clusters provide a useful segmentation?
+    - What characterizes each cluster?
+    - How clearly are segments separated in selected spending dimensions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate customer marketing data.
+    - Select product-spending attributes.
+    - Handle missing values.
+    - Standardize features.
+    - Compare candidate cluster counts.
+    - Fit K-means.
+    - Profile clusters in original units.
+    - Interpret segment differences.
+    expected_outputs:
+    - segmentation feature table
+    - cluster diagnostics
+    - customer cluster assignments
+    - segment profile table
+    - cluster visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 85
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

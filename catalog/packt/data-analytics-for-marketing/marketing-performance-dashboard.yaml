@@ -1,0 +1,106 @@
+---
+id: packt/data-analytics-for-marketing/marketing-performance-dashboard
+name: Marketing Performance Dashboard
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Marketing Dashboard
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter03/dashboard.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter03/dashboard.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 93
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Marketing Dashboard
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter03/dashboard.py
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter03/dashboard.py
+    description: 'Packt builds a Streamlit marketing dashboard with campaign, traffic-source,
+      country, device, account, campaign, and date filters plus interactive KPIs and
+      Plotly views.
+
+'
+  data:
+    description: 'Marketing campaign performance records with impressions, clicks,
+      revenue, advertising spend, gross profit, CPC, RPC, CPA, ROAS, device, country,
+      and source.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter03/data/campaign_data.csv
+    availability: repository
+    files:
+    - Chapter03/data/campaign_data.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - Streamlit
+    - Plotly
+    - interactive filtering
+    - KPI reporting
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter03/dashboard.py
+  problem:
+    context: 'Marketing teams need to monitor campaign economics across multiple sources,
+      countries, devices, accounts, campaigns, and time periods without rebuilding
+      static reports for every question.
+
+'
+    objective: 'Build an interactive marketing performance product that supports filtering,
+      KPI monitoring, campaign comparison, and temporal exploration.
+
+'
+    analytical_questions:
+    - Which traffic sources and campaigns generate the strongest gross profit?
+    - How do impressions and profit evolve over time?
+    - How do CPC, RPC, CPA, and ROAS differ across campaign slices?
+    - How should users drill into country, device, account, and campaign detail?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - streamlit
+    - plotly
+    logical_steps:
+    - Load and validate campaign data.
+    - Derive campaign and calendar fields.
+    - Implement reusable filters.
+    - Calculate campaign KPIs.
+    - Build source and campaign summary tables.
+    - Create interactive temporal charts.
+    - Validate filtered totals against source data.
+    expected_outputs:
+    - campaign KPI layer
+    - interactive filters
+    - campaign and source tables
+    - temporal charts
+    - working Streamlit dashboard
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 93
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

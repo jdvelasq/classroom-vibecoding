@@ -1,0 +1,100 @@
+---
+id: packt/machine-learning-with-bigquery-ml/taxi-driver-segmentation
+name: Taxi Driver Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with BigQuery ML
+  edition:
+  official_url:
+  companion_sources:
+  - title: Chicago Taxi Driver Clustering
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter07/07_taxi_drivers_clustering.sql
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/07_taxi_drivers_clustering.sql
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 167
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with BigQuery ML
+    title: Chicago Taxi Driver Clustering
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter07/07_taxi_drivers_clustering.sql
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+      path: Chapter07/07_taxi_drivers_clustering.sql
+    description: 'Packt aggregates Chicago taxi trips to the driver level and clusters
+      drivers by average speed and total income using BigQuery ML K-means.
+
+'
+  data:
+    description: 'Chicago taxi trips aggregated by taxi identifier to derive speed
+      and income features.
+
+'
+    source_url: https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips
+    availability: public_cloud_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - BigQuery
+    - BigQuery ML
+    - K-means
+    - SQL aggregation
+    - cluster profiling
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter07/07_taxi_drivers_clustering.sql
+  problem:
+    context: 'Driver-level operational behavior is hidden in millions of trip records
+      and can be summarized into interpretable performance groups.
+
+'
+    objective: 'Discover driver segments from operational speed and income patterns.
+
+'
+    analytical_questions:
+    - How should trip-level data be aggregated to driver-level features?
+    - Which drivers exhibit unusual speed or income values?
+    - What clusters emerge after standardization?
+    - Which cluster represents high-performing drivers?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Aggregate trips by driver.
+    - Calculate average speed and total income.
+    - Remove implausible operational outliers.
+    - Standardize driver features.
+    - Fit K-means.
+    - Inspect centroids and assignments.
+    - Profile high-performing and atypical driver groups.
+    expected_outputs:
+    - driver-level feature table
+    - cluster centroids
+    - driver segment assignments
+    - top-driver table
+    - segment interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 167
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

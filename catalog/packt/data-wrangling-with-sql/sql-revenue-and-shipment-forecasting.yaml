@@ -1,0 +1,106 @@
+---
+id: packt/data-wrangling-with-sql/sql-revenue-and-shipment-forecasting
+name: SQL Revenue and Shipment Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Wrangling with SQL
+  edition:
+  official_url:
+  companion_sources:
+  - title: Time Series Analysis with SQL
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL/tree/main/Chapter12
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter12/B19406_Chapter12.txt
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 347
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Wrangling with SQL
+    title: Time Series Analysis with SQL
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL/tree/main/Chapter12
+    repository:
+      url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL
+      path: Chapter12/B19406_Chapter12.txt
+    description: 'Packt develops time-series features directly in SQL using running
+      totals, lagged values, percentage changes, moving averages, and a simple regression
+      workflow to predict revenue and shipment volume.
+
+'
+  data:
+    description: 'Chapter 12 sales data containing dates, revenue, shipment counts,
+      and related temporal fields used for SQL-based time-series analysis.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL/blob/main/Chapter12/Chapter%2012%20dataset.xlsx
+    availability: repository
+    files:
+    - Chapter12/Chapter 12 dataset.xlsx
+  original_implementation:
+    technologies:
+    - SQL
+    - window functions
+    - lag and lead
+    - moving averages
+    - linear regression
+    - time-series feature engineering
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Wrangling-with-SQL/blob/main/Chapter12/B19406_Chapter12.txt
+  problem:
+    context: 'Analysts working primarily in SQL need to derive temporal signals and
+      simple forecasts without exporting operational sales data to a separate modeling
+      environment.
+
+'
+    objective: 'Build SQL-native temporal features and estimate short-horizon revenue
+      and shipment values.
+
+'
+    analytical_questions:
+    - How do revenue and shipments change from one period to the next?
+    - What running totals and moving averages summarize recent behavior?
+    - Which temporal features can be generated with window functions?
+    - What next-period values are implied by the fitted SQL regression?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - duckdb
+    - pandas
+    - statsmodels
+    logical_steps:
+    - Load the sales dataset into a SQL engine.
+    - Create ordered temporal views.
+    - Calculate lagged values and percentage changes.
+    - Build moving-average features.
+    - Derive calendar predictors.
+    - Fit a simple regression benchmark.
+    - Generate and validate next-period predictions.
+    expected_outputs:
+    - SQL time-series feature table
+    - running and moving metrics
+    - regression parameter table
+    - revenue predictions
+    - shipment predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 347
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

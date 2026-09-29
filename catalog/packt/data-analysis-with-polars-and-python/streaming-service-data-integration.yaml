@@ -1,0 +1,107 @@
+---
+id: packt/data-analysis-with-polars-and-python/streaming-service-data-integration
+name: Streaming Service Data Integration
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analysis with Polars and Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Joins
+    url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python/blob/main/complete/07%20-%20Joins.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: complete/07 - Joins.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 335
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analysis with Polars and Python
+    title: Joins
+    url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python/blob/main/complete/07%20-%20Joins.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python
+      path: complete/07 - Joins.ipynb
+    description: 'Packt integrates users, subscription plans, movie catalog, watch
+      history, and support tickets for a fictional streaming service, using multiple
+      join types to expose consumption behavior and data-integrity problems.
+
+'
+  data:
+    description: 'Relational CSV tables for streaming-service users, plans, movies,
+      watch history, and support tickets.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python/tree/main/complete/streaming_service
+    availability: repository_or_public
+    files:
+    - complete/streaming_service/users.csv
+    - complete/streaming_service/plans.csv
+    - complete/streaming_service/movies.csv
+    - complete/streaming_service/watch_history.csv
+    - complete/streaming_service/support.csv
+  original_implementation:
+    technologies:
+    - Polars
+    - inner joins
+    - full joins
+    - semi joins
+    - anti joins
+    - join validation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analysis-with-Polars-and-Python/blob/main/complete/07%20-%20Joins.ipynb
+  problem:
+    context: 'Streaming-service data are distributed across several operational tables
+      and contain unmatched records that must be identified before behavioral or customer
+      analytics.
+
+'
+    objective: 'Build and validate an integrated analytical view of subscribers, plans,
+      viewing history, catalog content, and support interactions.
+
+'
+    analytical_questions:
+    - Which users have viewing history and which do not?
+    - Which subscriptions reference nonexistent plans?
+    - Which support tickets can be linked to known customers?
+    - What orphan records reveal data-quality problems?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - polars
+    logical_steps:
+    - Load and validate all relational tables.
+    - Define keys and expected cardinalities.
+    - Join users to plans and viewing history.
+    - Attach movie and support information.
+    - Use anti/full joins to identify orphan records.
+    - Validate one-to-many relationships and resulting grain.
+    expected_outputs:
+    - integrated subscriber-viewing table
+    - orphan-record report
+    - join-cardinality audit
+    - analytics-ready streaming-service dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 335
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

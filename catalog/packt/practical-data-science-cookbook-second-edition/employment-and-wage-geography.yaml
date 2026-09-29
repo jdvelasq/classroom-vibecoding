@@ -1,0 +1,104 @@
+---
+id: packt/practical-data-science-cookbook-second-edition/employment-and-wage-geography
+name: Employment and Wage Geography
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Exploring US Employment Data
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter05/Code/Chapter05.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/Code/Chapter05.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 89
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Data Science Cookbook, Second Edition
+    title: Exploring US Employment Data
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter05/Code/Chapter05.R
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+      path: Chapter05/Code/Chapter05.R
+    description: 'Packt integrates US employment records with code tables and geographic
+      metadata to compare wages and employment by state, county, industry, and year.
+
+'
+  data:
+    description: 'US Bureau of Labor Statistics annual employment and wage records
+      supplemented with industry, ownership, size, area, state, and county metadata.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/tree/master/Chapter05/data
+    availability: repository
+    files:
+    - Chapter05/data/2012_annual_singlefile.zip
+  original_implementation:
+    technologies:
+    - R
+    - data.table
+    - relational joins
+    - grouped aggregation
+    - geospatial visualization
+    - longitudinal analysis
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter05/Code/Chapter05.R
+  problem:
+    context: 'Employment and wage information is distributed across coded administrative
+      tables and becomes meaningful only after geographic and industry integration.
+
+'
+    objective: 'Build an analytical view of employment and wage geography and diagnose
+      differences across regions, industries, and time.
+
+'
+    analytical_questions:
+    - Which states and counties have the highest average annual pay?
+    - Where are employment levels concentrated?
+    - How do industry patterns differ geographically?
+    - How do wage patterns evolve across years?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - geopandas
+    - matplotlib
+    logical_steps:
+    - Load employment records and lookup tables.
+    - Harmonize coded dimensions.
+    - Join geographic and industry metadata.
+    - Aggregate wages and employment at state and county levels.
+    - Compare selected industries.
+    - Build geographic and temporal views.
+    - Interpret regional concentration and disparities.
+    expected_outputs:
+    - integrated employment dataset
+    - state and county KPI tables
+    - industry comparison tables
+    - wage and employment maps
+    - temporal summaries
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 89
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

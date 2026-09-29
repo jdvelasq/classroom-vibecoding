@@ -1,0 +1,100 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/store-revenue-modeling
+name: Store Revenue Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Storefront Location Associations
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter05/Activity5.01-5.02.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/Activity5.01-5.02.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 71
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Storefront Location Associations
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter05/Activity5.01-5.02.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter05/Activity5.01-5.02.ipynb
+    description: 'Packt develops a regression case linking store-location characteristics
+      to revenue and evaluates predictions on held-out locations.
+
+'
+  data:
+    description: 'Store-location characteristics paired with observed revenue.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Exercise6.01/location_rev.csv
+    availability: repository
+    files:
+    - Chapter06/Exercise6.01/location_rev.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - linear regression
+    - train/test split
+    - prediction diagnostics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter05/Activity5.01-5.02.ipynb
+  problem:
+    context: 'A retailer needs to estimate the revenue potential of storefront locations
+      from measurable location characteristics.
+
+'
+    objective: 'Build and evaluate a regression model for store-location revenue.
+
+'
+    analytical_questions:
+    - Which location features are associated with revenue?
+    - How accurately can revenue be predicted for unseen locations?
+    - Where does the model systematically over- or under-predict?
+    - How can the model support comparison of prospective locations?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate location data.
+    - Explore predictor-revenue relationships.
+    - Split training and test locations.
+    - Fit a baseline regression model.
+    - Evaluate predictions against observed revenue.
+    - Diagnose residual patterns.
+    - Score prospective locations.
+    expected_outputs:
+    - location analysis table
+    - fitted revenue model
+    - test-set error metrics
+    - prediction-versus-actual chart
+    - scored candidate locations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 71
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

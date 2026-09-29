@@ -1,0 +1,107 @@
+---
+id: packt/modern-time-series-forecasting-with-python-second-edition/conformal-demand-forecasting
+name: Conformal Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Modern Time Series Forecasting with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Conformal Techniques
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter17/09-Conformal_Techniques.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: notebooks/Chapter17/09-Conformal_Techniques.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 133
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Modern Time Series Forecasting with Python, Second Edition
+    title: Conformal Techniques
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter17/09-Conformal_Techniques.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+      path: notebooks/Chapter17/09-Conformal_Techniques.ipynb
+    description: 'Packt compares vanilla conformal prediction, conformalized quantile
+      regression, weighted conformal prediction, and adaptive online conformal inference
+      for uncertainty-aware time-series forecasting.
+
+'
+  data:
+    description: 'M4 hourly time series used with separate training, calibration,
+      and test periods.
+
+'
+    source_url: https://github.com/Mcompetitions/M4-methods
+    availability: public
+    files:
+    - data/m4/M4-Hourly.csv
+  original_implementation:
+    technologies:
+    - NeuralForecast
+    - LSTM
+    - conformal prediction
+    - quantile regression
+    - weighted conformal prediction
+    - adaptive conformal inference
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter17/09-Conformal_Techniques.ipynb
+  problem:
+    context: 'Point forecasts alone do not communicate forecast risk, and conventional
+      uncertainty intervals may lose calibration when the data distribution changes.
+
+'
+    objective: 'Produce and compare calibrated forecast intervals, including methods
+      designed to adapt under temporal distribution shift.
+
+'
+    analytical_questions:
+    - How well do nominal interval levels match empirical coverage?
+    - What interval width is required for a given coverage target?
+    - How does weighted conformal prediction react to recent observations?
+    - Can adaptive conformal inference maintain coverage under distribution shift?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - neuralforecast
+    - numpy
+    - matplotlib
+    logical_steps:
+    - Load and partition time series into training, calibration, and test periods.
+    - Train a base forecasting model.
+    - Produce point and probabilistic forecasts.
+    - Calibrate vanilla conformal intervals.
+    - Compare conformalized quantile and uncertainty approaches.
+    - Apply weighted and adaptive online variants.
+    - Compare coverage and average interval length.
+    expected_outputs:
+    - point forecasts
+    - calibrated prediction intervals
+    - coverage table
+    - average interval length comparison
+    - distribution-shift diagnostics
+    - uncertainty visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 133
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

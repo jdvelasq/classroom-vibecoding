@@ -1,0 +1,103 @@
+---
+id: packt/machine-learning-techniques-for-text/newsgroup-topic-classification
+name: Newsgroup Topic Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Techniques for Text
+  edition:
+  official_url:
+  companion_sources:
+  - title: Classifying Topics of Newsgroup Posts
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-03/topic-classification.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter-03/topic-classification.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 208
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Techniques for Text
+    title: Classifying Topics of Newsgroup Posts
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-03/topic-classification.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+      path: chapter-03/topic-classification.ipynb
+    description: 'Packt develops a topic-classification workflow on 20 Newsgroups
+      while using PCA/LDA for exploration and comparing KNN and random forests.
+
+'
+  data:
+    description: 'Approximately 18,000 labeled messages from the scikit-learn 20 Newsgroups
+      corpus.
+
+'
+    source_url: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - text EDA
+    - PCA
+    - LDA
+    - word embeddings
+    - KNN
+    - random forest
+    - cross-validation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-03/topic-classification.ipynb
+  problem:
+    context: 'Organizations need to route or organize large collections of unstructured
+      posts, tickets, or messages into topical categories automatically.
+
+'
+    objective: 'Classify posts by topic and study how representation and dimensionality
+      reduction affect the task.
+
+'
+    analytical_questions:
+    - How separable are topics in reduced-dimensional spaces?
+    - Which text representation works best?
+    - How do KNN and random forest compare?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - gensim
+    - matplotlib
+    logical_steps:
+    - Load and profile selected categories.
+    - Prepare text representations.
+    - Explore reduced-dimensional spaces.
+    - Tune KNN with cross-validation.
+    - Fit random forest alternatives.
+    - Compare class-level performance.
+    expected_outputs:
+    - topic EDA
+    - reduced-space visualization
+    - classifier comparison
+    - classification report
+    - confusion matrix
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 208
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

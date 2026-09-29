@@ -1,0 +1,98 @@
+---
+id: packt/principles-of-data-science-second-edition/beer-product-segmentation
+name: Beer Product Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Principles of Data Science, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Beer Clustering
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition/blob/master/Chapter11/Chapter_11.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/Chapter_11.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 284
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Principles of Data Science, Second Edition
+    title: Beer Clustering
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition/blob/master/Chapter11/Chapter_11.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition
+      path: Chapter11/Chapter_11.ipynb
+    description: 'Packt clusters beer products by calories, sodium, alcohol, and related
+      attributes, compares candidate cluster counts, and profiles the resulting product
+      groups.
+
+'
+  data:
+    description: 'Beer product records with nutritional and alcohol characteristics.
+
+'
+    source_url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition/blob/master/Chapter11/beer.txt
+    availability: repository
+    files:
+    - Chapter11/beer.txt
+  original_implementation:
+    technologies:
+    - K-means
+    - scaling
+    - cluster profiling
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Principles-of-Data-Science-Second-Edition/blob/master/Chapter11/Chapter_11.ipynb
+  problem:
+    context: 'Beer products differ across nutritional and alcohol characteristics
+      that can reveal interpretable product segments.
+
+'
+    objective: 'Discover and profile product groups from measurable beer attributes.
+
+'
+    analytical_questions:
+    - How many distinct product groups are supported?
+    - Which attributes separate clusters?
+    - What characterizes each beer segment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate beer attributes.
+    - Standardize numeric variables.
+    - Compare candidate cluster counts.
+    - Fit K-means.
+    - Profile clusters in original units.
+    - Visualize and interpret segments.
+    expected_outputs:
+    - cluster diagnostics
+    - beer segment assignments
+    - segment profile table
+    - cluster visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 284
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

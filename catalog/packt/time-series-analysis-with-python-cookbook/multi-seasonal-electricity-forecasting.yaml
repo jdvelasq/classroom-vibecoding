@@ -1,0 +1,106 @@
+---
+id: packt/time-series-analysis-with-python-cookbook/multi-seasonal-electricity-forecasting
+name: Multi-Seasonal Electricity Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Time Series Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Advanced Techniques for Complex Time Series
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch15/Chapter%2015.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: code/Ch15/Chapter 15.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 396
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Time Series Analysis with Python Cookbook
+    title: Advanced Techniques for Complex Time Series
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch15/Chapter%2015.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook
+      path: code/Ch15/Chapter 15.ipynb
+    description: 'Packt models hourly electricity demand with multiple seasonal patterns
+      using MSTL decomposition, an unobserved-components model, Prophet, and NeuralProphet.
+
+'
+  data:
+    description: 'Hourly AEP electricity load from the PJM energy dataset, with related
+      regional hourly load series included in the repository.
+
+'
+    source_url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/datasets/Ch15/AEP_hourly.csv
+    availability: repository
+    files:
+    - datasets/Ch15/AEP_hourly.csv
+  original_implementation:
+    technologies:
+    - MSTL
+    - multiple seasonality
+    - unobserved components
+    - Prophet
+    - NeuralProphet
+    - forecast evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch15/Chapter%2015.ipynb
+  problem:
+    context: 'Hourly electricity load exhibits overlapping daily, weekly, and longer
+      seasonal patterns that simpler single-season models may fail to capture.
+
+'
+    objective: 'Diagnose multiple seasonalities and compare forecasting models designed
+      for complex electricity-demand patterns.
+
+'
+    analytical_questions:
+    - Which seasonal cycles are present in hourly electricity demand?
+    - How does MSTL separate overlapping seasonal components?
+    - How do structural and Prophet-family models compare out of sample?
+    - Which model best captures turning points and recurring load patterns?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - prophet
+    - neuralprophet
+    - matplotlib
+    logical_steps:
+    - Load and validate hourly demand.
+    - Regularize timestamps and inspect missing intervals.
+    - Decompose multiple seasonalities with MSTL.
+    - Create chronological training and test periods.
+    - Fit an unobserved-components forecast.
+    - Fit Prophet and NeuralProphet alternatives.
+    - Compare holdout errors and component behavior.
+    expected_outputs:
+    - multi-seasonal decomposition
+    - holdout forecasts
+    - forecast error comparison
+    - model component plots
+    - future electricity-demand forecast
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 396
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

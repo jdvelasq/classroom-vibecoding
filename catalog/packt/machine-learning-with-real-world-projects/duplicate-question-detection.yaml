@@ -1,0 +1,108 @@
+---
+id: packt/machine-learning-with-real-world-projects/duplicate-question-detection
+name: Duplicate Question Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with Real World Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Quora Question Pair Classification
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2019/Quora%20Project
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Section 19/Quora Project/4.ML_models.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 164
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with Real World Projects
+    title: Quora Question Pair Classification
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2019/Quora%20Project
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+      path: Section 19/Quora Project/4.ML_models.ipynb
+    description: 'Packt builds a duplicate-question classifier from engineered lexical,
+      fuzzy, frequency, and embedding features and compares logistic regression, linear
+      SVM, and XGBoost using log loss.
+
+'
+  data:
+    description: 'Quora question pairs labeled as duplicate or non-duplicate and enriched
+      through the project''s preceding feature-engineering notebooks.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2019/Quora%20Project
+    availability: repository_archive
+    files:
+    - Section 19/Quora Project/Quora Project.zip
+  original_implementation:
+    technologies:
+    - text preprocessing
+    - fuzzy similarity
+    - word embeddings
+    - logistic regression
+    - linear SVM
+    - XGBoost
+    - log loss
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%2019/Quora%20Project/4.ML_models.ipynb
+  problem:
+    context: 'A question-answer platform needs to identify semantically duplicate
+      questions even when their wording differs substantially.
+
+'
+    objective: 'Estimate the probability that two user-submitted questions express
+      the same intent.
+
+'
+    analytical_questions:
+    - Which lexical and semantic features distinguish duplicate pairs?
+    - How much do fuzzy similarity and embedding features contribute?
+    - How do linear and boosted classifiers compare on log loss?
+    - Which question pairs remain ambiguous for the best model?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - rapidfuzz
+    - gensim
+    - xgboost
+    logical_steps:
+    - Load labeled question pairs.
+    - Clean and normalize text.
+    - Generate length, overlap, frequency, and fuzzy-match features.
+    - Add embedding-based similarity features.
+    - Split training and validation data reproducibly.
+    - Fit logistic, SVM, and boosted models.
+    - Compare probabilistic performance with log loss.
+    expected_outputs:
+    - engineered question-pair dataset
+    - classifier comparison
+    - duplicate probability scores
+    - log-loss diagnostics
+    - ambiguous-pair analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 164
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

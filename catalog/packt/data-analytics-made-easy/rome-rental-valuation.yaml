@@ -1,0 +1,107 @@
+---
+id: packt/data-analytics-made-easy/rome-rental-valuation
+name: Rome Rental Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics Made Easy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Numbers through Regressions
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 5/Chapter 5 - Rome Houses.knwf
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 157
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics Made Easy
+    title: Predicting Numbers through Regressions
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+      path: Chapter 5/Chapter 5 - Rome Houses.knwf
+    description: 'Packt predicts fair monthly rents for Rome properties from historical
+      rental agreements using property characteristics, train/test validation, and
+      linear regression.
+
+'
+  data:
+    description: 'Historical Rome rental agreements and a separate table of incoming
+      properties requiring rent estimates.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    availability: repository
+    files:
+    - Chapter 5/RomeHousing-History.xlsx
+    - Chapter 5/RomeHousing-NewProperties.xlsx
+  original_implementation:
+    technologies:
+    - KNIME
+    - linear regression
+    - train/test split
+    - RMSE
+    - R-squared
+    - scoring
+    language: KNIME
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+  problem:
+    context: 'A Rome real-estate agency needs objective rent estimates because prices
+      set too low reduce commission while prices set too high delay transactions and
+      cash flow.
+
+'
+    objective: 'Estimate fair monthly rent for new properties from characteristics
+      of previously rented homes.
+
+'
+    analytical_questions:
+    - Which property characteristics explain monthly rent?
+    - How accurately does the regression generalize to held-out agreements?
+    - Which factors increase or decrease expected rent?
+    - What rent should be proposed for incoming properties?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scikit-learn
+    logical_steps:
+    - Load historical and new-property tables.
+    - Validate and encode property attributes.
+    - Create reproducible training and test samples.
+    - Fit a linear regression model.
+    - Evaluate RMSE and R-squared.
+    - Interpret major coefficients.
+    - Score incoming properties.
+    expected_outputs:
+    - rental valuation model
+    - regression summary
+    - holdout error metrics
+    - property-level rent estimates
+    - valuation interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 157
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

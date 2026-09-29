@@ -1,0 +1,112 @@
+---
+id: packt/data-wrangling-with-r/spam-classification-app
+name: Spam Classification App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Wrangling with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Building an Application with Shiny in R
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-R/blob/main/Part4/Chapter14/app.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Part4/Chapter14/app.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 174
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Wrangling with R
+    title: Building an Application with Shiny in R
+    url: https://github.com/PacktPublishing/Data-Wrangling-with-R/blob/main/Part4/Chapter14/app.R
+    repository:
+      url: https://github.com/PacktPublishing/Data-Wrangling-with-R
+      path: Part4/Chapter14/app.R
+    description: 'Packt turns a random-forest spam classifier into an interactive
+      Shiny application that accepts arbitrary text, derives the same engineered features
+      used during training, returns class probabilities, and visualizes the input
+      measurements.
+
+'
+  data:
+    description: 'UCI Spambase email records with word frequencies, punctuation frequencies,
+      capitalization measures, and spam labels.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/94/spambase
+    availability: public
+    files:
+    - Part4/Chapter13/dataset/spambase.data
+    - Part4/Chapter13/dataset/spambase.names
+    - Part4/Chapter14/rf_model.rds
+  original_implementation:
+    technologies:
+    - R
+    - randomForest
+    - Shiny
+    - Plotly
+    - text feature extraction
+    - interactive inference
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Wrangling-with-R/blob/main/Part4/Chapter14/app.R
+  problem:
+    context: 'A trained email-spam model needs to become usable by a person who wants
+      to paste new text and immediately receive both a prediction and interpretable
+      input measurements.
+
+'
+    objective: 'Build an interactive application that converts raw email text into
+      model features and serves spam probabilities to end users.
+
+'
+    analytical_questions:
+    - How should raw text be transformed consistently with the training features?
+    - What probability does the model assign to spam versus non-spam?
+    - Which measurable text characteristics are present in the submitted message?
+    - How should model inference and explanatory measurements be exposed in a simple
+      UI?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - streamlit
+    - plotly
+    logical_steps:
+    - Train or load the spam classifier.
+    - Implement deterministic text-to-feature transformation.
+    - Validate feature compatibility with training.
+    - Build a text-input interface.
+    - Return class probabilities for submitted text.
+    - Visualize derived spam-related measurements.
+    - Test representative spam and non-spam messages.
+    expected_outputs:
+    - trained spam classifier
+    - reusable text feature function
+    - interactive text input
+    - class probability output
+    - feature measurement chart
+    - working analytical application
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 174
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

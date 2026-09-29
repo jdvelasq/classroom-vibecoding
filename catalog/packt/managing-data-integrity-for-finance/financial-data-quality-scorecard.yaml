@@ -1,0 +1,105 @@
+---
+id: packt/managing-data-integrity-for-finance/financial-data-quality-scorecard
+name: Financial Data Quality Scorecard
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Managing Data Integrity for Finance
+  edition:
+  official_url:
+  companion_sources:
+  - title: Measuring the Impact of Data Integrity Issues
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch03
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch03
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 344
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Managing Data Integrity for Finance
+    title: Measuring the Impact of Data Integrity Issues
+    url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch03
+    repository:
+      url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance
+      path: ch03
+    description: 'Packt develops a structured data-quality scorecard for a finance-oriented
+      business case, using explicit dimensions, measures, thresholds, and visual status
+      indicators to quantify the impact of data-integrity problems.
+
+'
+  data:
+    description: 'Finance-oriented operational data and a completed quality-scorecard
+      workbook used to assess data integrity across defined quality dimensions.
+
+'
+    source_url: https://github.com/PacktPublishing/Managing-Data-Integrity-for-Finance/tree/main/ch03
+    availability: repository
+    files:
+    - ch03/Chapter 3 Data Quality Scorecard.xlsx
+  original_implementation:
+    technologies:
+    - Excel
+    - data quality dimensions
+    - scorecards
+    - thresholds
+    - conditional formatting
+    language: spreadsheet
+    code_available: false
+    code_url:
+  problem:
+    context: 'Finance teams need a repeatable way to quantify data-quality problems
+      rather than relying on ad hoc observations about completeness, accuracy, or
+      consistency.
+
+'
+    objective: 'Design and calculate a data-quality scorecard that converts integrity
+      checks into interpretable management indicators.
+
+'
+    analytical_questions:
+    - Which data-quality dimensions should be measured?
+    - What metrics and thresholds define acceptable quality?
+    - How should failed checks be aggregated into a scorecard?
+    - Which dimensions contribute most to overall data-quality risk?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - openpyxl
+    logical_steps:
+    - Load the source quality-assessment data.
+    - Define data-quality dimensions and checks.
+    - Calculate check-level pass rates.
+    - Convert metrics into standardized scores.
+    - Apply thresholds and status bands.
+    - Aggregate results by quality dimension.
+    - Produce an auditable scorecard.
+    expected_outputs:
+    - data-quality rules table
+    - check-level metrics
+    - dimension scores
+    - exception summary
+    - management scorecard
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: not_applicable
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 344
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,102 @@
+---
+id: packt/forecasting-time-series-data-with-prophet-second-edition/retail-forecast-cross-validation
+name: Retail Forecast Cross-Validation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Forecasting Time Series Data with Prophet, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cross-Validation
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter12
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter12/Chapter_12.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 393
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Forecasting Time Series Data with Prophet, Second Edition
+    title: Cross-Validation
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter12
+    repository:
+      url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+      path: Chapter12/Chapter_12.ipynb
+    description: 'Packt forecasts daily online retail sales and uses rolling-origin
+      Prophet cross-validation to evaluate performance across multiple historical
+      cutoffs.
+
+'
+  data:
+    description: 'Online retail transactions aggregated to daily sales.
+
+'
+    source_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/blob/main/data/online_retail.csv
+    availability: repository
+    files:
+    - data/online_retail.csv
+  original_implementation:
+    technologies:
+    - Prophet
+    - rolling-origin validation
+    - time-series cross-validation
+    - forecast diagnostics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter12
+  problem:
+    context: 'A retail forecast should be evaluated at several historical origins
+      rather than against a single arbitrary holdout period.
+
+'
+    objective: 'Forecast daily retail sales and measure generalization using temporal
+      cross-validation.
+
+'
+    analytical_questions:
+    - How stable is forecast accuracy across cutoffs?
+    - How far ahead does performance deteriorate?
+    - Which seasonal components are persistent?
+    - What uncertainty should accompany future sales forecasts?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - prophet
+    - matplotlib
+    logical_steps:
+    - Load and aggregate retail sales.
+    - Fit the baseline Prophet model.
+    - Define forecast horizon and rolling cutoffs.
+    - Run time-series cross-validation.
+    - Calculate horizon-specific error metrics.
+    - Refit on all available history.
+    - Produce future forecasts and intervals.
+    expected_outputs:
+    - daily sales series
+    - rolling-origin predictions
+    - forecast error by horizon
+    - future sales forecast
+    - validation diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 393
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

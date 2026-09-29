@@ -1,0 +1,107 @@
+---
+id: packt/r-data-mining-blueprints/art-auction-valuation
+name: Art Auction Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Mining Blueprints
+  edition:
+  official_url:
+  companion_sources:
+  - title: Neural Network
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%209/NeuralNetwork.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 9/NeuralNetwork.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 79
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Mining Blueprints
+    title: Neural Network
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%209/NeuralNetwork.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+      path: Chapter 9/NeuralNetwork.R
+    description: 'Packt prepares art-auction attributes and uses neural networks for
+      both auction price estimation and classification of whether an artwork represents
+      a good purchase.
+
+'
+  data:
+    description: 'Art-auction records with auction house, category, artistic attributes,
+      ratings, acquisition costs, market prices, guarantees, and purchase labels.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/tree/master/Chapter%209
+    availability: referenced_not_in_repo
+    files:
+    - ArtPiece_1.csv
+    notes: 'The implementation references ArtPiece_1.csv, but that file is not present
+      in the book repository under Chapter 9.
+
+'
+  original_implementation:
+    technologies:
+    - dummy encoding
+    - neural networks
+    - regression
+    - binary classification
+    - train/test split
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%209/NeuralNetwork.R
+  problem:
+    context: 'Art buyers and auction analysts need to estimate market value and distinguish
+      attractive purchases using heterogeneous artwork and market attributes.
+
+'
+    objective: 'Model auction value and purchase attractiveness from artwork characteristics
+      and market information.
+
+'
+    analytical_questions:
+    - Which attributes help explain auction value?
+    - Can a nonlinear model estimate current auction price?
+    - Which artwork characteristics distinguish good purchases?
+    - How should categorical art attributes be encoded for modeling?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate art-auction data.
+    - Clean missing and malformed values.
+    - Encode categorical artwork attributes.
+    - Create reproducible training and test sets.
+    - Fit nonlinear valuation and purchase classifiers.
+    - Evaluate regression and classification outputs separately.
+    - Explain important drivers.
+    expected_outputs:
+    - prepared auction dataset
+    - auction value predictions
+    - purchase classification metrics
+    - model diagnostics
+    - driver interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 79
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

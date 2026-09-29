@@ -1,0 +1,103 @@
+---
+id: packt/exploratory-data-analysis-with-python-cookbook/air-traffic-seasonality
+name: Air Traffic Seasonality
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Exploratory Data Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Time Series Decomposition
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch7/3%20Performing%20Time%20series%20data%20Decomposition.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch7/3 Performing Time series data Decomposition.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 86
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Exploratory Data Analysis with Python Cookbook
+    title: Time Series Decomposition
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch7/3%20Performing%20Time%20series%20data%20Decomposition.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+      path: Ch7/3 Performing Time series data Decomposition.ipynb
+    description: 'Packt uses additive and multiplicative decomposition to separate
+      trend, seasonal, and residual components in air-traffic and climate time series.
+
+'
+  data:
+    description: 'San Francisco air-traffic passenger statistics and daily Delhi climate
+      data.
+
+'
+    source_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/tree/main/Ch7/Data
+    availability: repository
+    files:
+    - Ch7/Data/SF_Air_Traffic_Passenger_Statistics_Transformed.csv
+    - Ch7/Data/DailyDelhiClimate.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - time-series decomposition
+    - additive decomposition
+    - multiplicative decomposition
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch7/3%20Performing%20Time%20series%20data%20Decomposition.ipynb
+  problem:
+    context: 'Passenger traffic varies over time and observed changes can combine
+      long-term growth, recurring seasonality, and irregular fluctuations.
+
+'
+    objective: 'Decompose passenger traffic into interpretable temporal components
+      and diagnose its dominant trend and seasonal structure.
+
+'
+    analytical_questions:
+    - What long-term trend is present in passenger traffic?
+    - What recurring seasonal pattern appears?
+    - Is additive or multiplicative decomposition more appropriate?
+    - Which periods contain unusually large residual movements?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate passenger time-series data.
+    - Create a regular datetime index.
+    - Plot and inspect the raw series.
+    - Apply additive and multiplicative decompositions.
+    - Compare trend, seasonal, and residual components.
+    - Identify periods with unusual residual behavior.
+    expected_outputs:
+    - time-series profile
+    - trend component
+    - seasonal component
+    - residual diagnostics
+    - decomposition comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 86
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

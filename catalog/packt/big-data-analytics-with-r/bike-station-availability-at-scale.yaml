@@ -1,0 +1,100 @@
+---
+id: packt/big-data-analytics-with-r/bike-station-availability-at-scale
+name: Bike Station Availability at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Spark with R
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%207/BDA_Ch08.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 7/BDA_Ch08.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 387
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics with R
+    title: Spark with R
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%207/BDA_Ch08.R
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+      path: Chapter 7/BDA_Ch08.R
+    description: 'Packt uses SparkR over bike-share status and trip tables to calculate
+      hourly station availability, identify stations with high dock availability,
+      and rank the most heavily used bikes by month and year.
+
+'
+  data:
+    description: 'Bike-share station status, station metadata, and trip records stored
+      in Hive.
+
+'
+    source_url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+    availability: referenced_big_data_source
+    files: []
+  original_implementation:
+    technologies:
+    - SparkR
+    - Hive
+    - distributed aggregation
+    - station utilization
+    - temporal analysis
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%207/BDA_Ch08.R
+  problem:
+    context: 'Bike-share operators need to understand when and where stations lack
+      bikes or empty docks and which bicycles accumulate the greatest usage.
+
+'
+    objective: 'Diagnose station availability and bike utilization patterns at scale.
+
+'
+    analytical_questions:
+    - How many bikes are available at each station by hour?
+    - Which stations have high percentages of empty docks?
+    - Which bikes accumulate the greatest monthly usage?
+    - Which bikes are most heavily used across the full year?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load station status, station metadata, and trip data.
+    - Parse timestamps and derive hour and month.
+    - Aggregate mean available bikes by station and hour.
+    - Join station capacity information.
+    - Calculate dock-availability percentages.
+    - Rank bikes by monthly and annual usage.
+    - Summarize operational bottlenecks.
+    expected_outputs:
+    - hourly station availability table
+    - dock availability diagnostics
+    - monthly bike utilization rankings
+    - annual utilization ranking
+    - operational findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 387
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

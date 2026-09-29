@@ -1,0 +1,97 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/brewery-market-geography
+name: Brewery Market Geography
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Brewery and Pub Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Brewery and Pub Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 183
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Brewery and Pub Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Brewery and Pub Analysis.ipynb
+    description: 'Packt analyzes brewery and pub locations by city, province, category,
+      postal code, and state, joins ZIP codes to geography, and maps market concentration.
+
+'
+  data:
+    description: 'US brewery and pub business-location records combined with ZIP-to-state
+      mappings.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/data-analyst-bootcamp/master/7160_1.csv
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - geospatial enrichment
+    - grouped aggregation
+    - choropleth visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'A market analyst wants to understand where breweries and pubs are concentrated
+      and which establishment categories dominate different geographic markets.
+
+'
+    objective: 'Characterize the geographic distribution and category composition
+      of breweries and pubs.
+
+'
+    analytical_questions:
+    - Which cities and states contain the most establishments?
+    - Which business categories are most common?
+    - How should postal-code records be enriched with geography?
+    - Where are market concentrations strongest?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate establishment records.
+    - Standardize postal codes.
+    - Join ZIP codes to geographic metadata.
+    - Aggregate by city, state, and category.
+    - Rank and map market concentrations.
+    expected_outputs:
+    - city and state rankings
+    - category frequency table
+    - enriched location dataset
+    - geographic concentration map
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 183
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

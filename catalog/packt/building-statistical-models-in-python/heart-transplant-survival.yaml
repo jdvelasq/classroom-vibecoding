@@ -1,0 +1,105 @@
+---
+id: packt/building-statistical-models-in-python/heart-transplant-survival
+name: Heart Transplant Survival
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Building Statistical Models in Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cox Proportional Hazards Regression Model
+    url: https://github.com/PacktPublishing/Building-Statistical-Models-in-Python/blob/main/chapter_14/3_Cox_Proportional_Hazards.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Building-Statistical-Models-in-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_14/3_Cox_Proportional_Hazards.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 115
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Building Statistical Models in Python
+    title: Cox Proportional Hazards Regression Model
+    url: https://github.com/PacktPublishing/Building-Statistical-Models-in-Python/blob/main/chapter_14/3_Cox_Proportional_Hazards.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Building-Statistical-Models-in-Python
+      path: chapter_14/3_Cox_Proportional_Hazards.ipynb
+    description: 'Packt analyzes Stanford heart-transplant survival data with Kaplan-Meier
+      estimates, log-rank testing, Cox proportional hazards, hazard-ratio interpretation,
+      and patient-level survival prediction.
+
+'
+  data:
+    description: 'Stanford heart-transplant waiting-list records with age, calendar
+      year, prior surgery, transplant status, follow-up duration, and event indicators.
+
+'
+    source_url: https://www.statsmodels.org/stable/datasets/generated/heart.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - Kaplan-Meier
+    - log-rank test
+    - Cox proportional hazards
+    - hazard ratios
+    - survival prediction
+    - lifelines
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Building-Statistical-Models-in-Python/blob/main/chapter_14/3_Cox_Proportional_Hazards.ipynb
+  problem:
+    context: 'Patients on a heart-transplant waiting list have censored follow-up
+      data, so ordinary regression does not correctly represent time-to-event outcomes.
+
+'
+    objective: 'Estimate survival patterns, quantify covariate effects on hazard,
+      and predict patient survival functions while accounting for censoring.
+
+'
+    analytical_questions:
+    - How do transplant and non-transplant survival curves differ?
+    - Which covariates are associated with higher or lower hazard?
+    - How should hazard ratios be interpreted?
+    - What survival trajectory is predicted for a held-out patient?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - lifelines
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate the survival dataset.
+    - Identify durations, events, censoring, and covariates.
+    - Estimate Kaplan-Meier curves.
+    - Compare groups with a log-rank test.
+    - Fit a Cox proportional-hazards model.
+    - Inspect proportional-hazards assumptions and hazard ratios.
+    - Predict survival functions for representative patients.
+    expected_outputs:
+    - Kaplan-Meier curves
+    - log-rank test results
+    - Cox coefficient and hazard-ratio table
+    - model diagnostics
+    - patient-level survival curves
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 115
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

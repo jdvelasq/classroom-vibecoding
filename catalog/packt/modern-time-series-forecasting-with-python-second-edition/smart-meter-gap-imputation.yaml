@@ -1,0 +1,99 @@
+---
+id: packt/modern-time-series-forecasting-with-python-second-edition/smart-meter-gap-imputation
+name: Smart Meter Gap Imputation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Modern Time Series Forecasting with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: 'Handling Missing Data: Long Gaps'
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter02/03-Handling_Missing_Data_(Long%20Gaps).ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: notebooks/Chapter02/03-Handling_Missing_Data_(Long Gaps).ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 249
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Modern Time Series Forecasting with Python, Second Edition
+    title: 'Handling Missing Data: Long Gaps'
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter02/03-Handling_Missing_Data_(Long%20Gaps).ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+      path: notebooks/Chapter02/03-Handling_Missing_Data_(Long Gaps).ipynb
+    description: 'Compare time-series-specific imputation strategies for long missing
+      consumption windows.
+
+'
+  data:
+    description: 'Half-hourly London smart-meter electricity consumption for residential
+      households.
+
+'
+    source_url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+    availability: repository_workflow
+    files: []
+  original_implementation:
+    technologies:
+    - missingness visualization
+    - pattern-based imputation
+    - seasonal interpolation
+    - MAE comparison
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter02/03-Handling_Missing_Data_(Long%20Gaps).ipynb
+  problem:
+    context: 'Long gaps in smart-meter series cannot be handled safely with simple
+      forward filling because demand has strong intraday and weekly patterns.
+
+'
+    objective: 'Compare time-series-specific imputation strategies for long missing
+      consumption windows.
+
+'
+    analytical_questions:
+    - How well does previous-day repetition reconstruct missing demand?
+    - Do hourly and weekday-hour profiles improve recovery?
+    - Which seasonal interpolation period minimizes imputation error?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - missingno
+    - matplotlib
+    logical_steps:
+    - Load a household energy series.
+    - Artificially mask a known interval.
+    - Apply previous-day, hourly-profile, and weekday-hour imputations.
+    - Apply daily and weekly seasonal interpolation.
+    - Compare methods using MAE against the hidden truth.
+    expected_outputs:
+    - missingness plot
+    - imputation comparison table
+    - reconstructed time series
+    - MAE ranking
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 249
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

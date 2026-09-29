@@ -1,0 +1,99 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/streaming-catalog-benchmark
+name: Streaming Catalog Benchmark
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Movies on Streaming Platforms Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Movies on Streaming Platforms Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 184
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Movies on Streaming Platforms Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Movies on Streaming Platforms Analysis.ipynb
+    description: 'Packt compares Netflix, Hulu, Prime Video, and Disney+ movie catalogs
+      by volume, IMDb ratings, release year, directors, genres, and runtime.
+
+'
+  data:
+    description: 'Cross-platform movie catalog with availability, titles, ratings,
+      directors, genres, release years, and runtimes.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/MoviesOnStreamingPlatforms_updated.csv
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - catalog benchmarking
+    - ranking
+    - Plotly
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'Streaming services compete on catalog breadth and perceived quality,
+      but raw listings make cross-platform comparison difficult.
+
+'
+    objective: 'Benchmark streaming-platform catalogs by availability, quality, genre,
+      director, release period, and runtime.
+
+'
+    analytical_questions:
+    - Which platform has the largest movie catalog?
+    - Which platform has the most highly rated films?
+    - Which genres and directors dominate each catalog?
+    - How have movie volume and runtime changed over time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate the catalog.
+    - Create platform-specific views.
+    - Compare catalog size and high-rating counts.
+    - Rank top films by platform.
+    - Aggregate by year, director, and genre.
+    - Diagnose runtime and quality patterns.
+    expected_outputs:
+    - platform benchmark table
+    - high-rating comparison
+    - top-movie lists
+    - genre and director rankings
+    - temporal catalog charts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 184
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

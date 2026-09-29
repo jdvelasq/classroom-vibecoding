@@ -1,0 +1,99 @@
+---
+id: packt/python-data-cleaning-cookbook-second-edition/covid-country-outlier-diagnosis
+name: COVID Country Outlier Diagnosis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Multivariate Outliers with Isolation Forest
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/4.%20OutliersMultivariate/6.%20isolation_forest.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: 4. OutliersMultivariate/6. isolation_forest.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 247
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning Cookbook, Second Edition
+    title: Multivariate Outliers with Isolation Forest
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/4.%20OutliersMultivariate/6.%20isolation_forest.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+      path: 4. OutliersMultivariate/6. isolation_forest.py
+    description: 'Identify and interpret multivariate country outliers in COVID outcomes
+      and contextual variables.
+
+'
+  data:
+    description: 'Country-level COVID totals combined with population density, median
+      age, and GDP per capita.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/4.%20OutliersMultivariate/data/covidtotals.csv
+    availability: repository
+    files:
+    - 4. OutliersMultivariate/data/covidtotals.csv
+  original_implementation:
+    technologies:
+    - standardization
+    - Isolation Forest
+    - multivariate anomaly detection
+    - 3D visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/blob/main/4.%20OutliersMultivariate/6.%20isolation_forest.py
+  problem:
+    context: 'Countries may exhibit unusual combinations of pandemic burden and demographic
+      or economic characteristics that univariate rules do not reveal.
+
+'
+    objective: 'Identify and interpret multivariate country outliers in COVID outcomes
+      and contextual variables.
+
+'
+    analytical_questions:
+    - Which countries are most anomalous in the joint feature space?
+    - How do anomaly scores relate to cases and deaths per million?
+    - Which contextual variables distinguish the strongest outliers?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate country-level data.
+    - Select complete multivariate records.
+    - Standardize numeric features.
+    - Fit Isolation Forest.
+    - Rank countries by anomaly score.
+    - Inspect and visualize outlier profiles.
+    expected_outputs:
+    - country anomaly scores
+    - outlier ranking
+    - multivariate diagnostic plot
+    - outlier profiles
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 247
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

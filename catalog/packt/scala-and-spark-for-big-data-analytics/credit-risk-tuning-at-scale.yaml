@@ -1,0 +1,102 @@
+---
+id: packt/scala-and-spark-for-big-data-analytics/credit-risk-tuning-at-scale
+name: Credit Risk Tuning at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Scala and Spark for Big Data Analytics
+  edition:
+  official_url:
+  companion_sources:
+  - title: Credit Risk Analysis Tuning
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/CreditRiskAnalysisTuning.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/CreditRiskAnalysisTuning.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 379
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Scala and Spark for Big Data Analytics
+    title: Credit Risk Analysis Tuning
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/CreditRiskAnalysisTuning.scala
+    repository:
+      url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+      path: Chapter11/CreditRiskAnalysisTuning.scala
+    description: 'Packt builds a Spark ML credit-risk pipeline with Random Forest,
+      train/test evaluation, parameter-grid search, and cross-validation.
+
+'
+  data:
+    description: 'German credit records with applicant financial, demographic, employment,
+      asset, and loan attributes plus creditability outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    availability: companion_repository
+    files:
+    - data/germancredit.csv
+  original_implementation:
+    technologies:
+    - Spark ML
+    - Random Forest
+    - CrossValidator
+    - ParamGridBuilder
+    - ROC AUC
+    - PR AUC
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/CreditRiskAnalysisTuning.scala
+  problem:
+    context: 'Credit-risk models must scale to distributed data while still supporting
+      reproducible model selection and held-out evaluation.
+
+'
+    objective: 'Train and tune a distributed credit-risk classifier and quantify the
+      effect of hyperparameter search on out-of-sample performance.
+
+'
+    analytical_questions:
+    - Which borrower attributes distinguish credit risk?
+    - How does the untuned model perform?
+    - Which parameter combination is selected by cross-validation?
+    - How much do ROC and precision-recall performance change after tuning?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load and parse credit records with Spark.
+    - Assemble predictors and index the target.
+    - Create reproducible train/test partitions.
+    - Fit a Random Forest baseline.
+    - Evaluate ROC and precision-recall metrics.
+    - Define a hyperparameter grid and cross-validation procedure.
+    - Compare tuned and untuned predictions.
+    expected_outputs:
+    - Spark analytical dataset
+    - baseline metrics
+    - cross-validation results
+    - best parameter configuration
+    - tuned test-set metrics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 379
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,95 @@
+---
+id: packt/alteryx-designer-cookbook/multilingual-survey-harmonization
+name: Multilingual Survey Harmonization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Alteryx Designer Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Dynamically Replacing Survey Values
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch9/Recipe3/WORKFLOWS/CH09-R03-Dynamically%20Replacing%20values.yxmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch9/Recipe3/WORKFLOWS/CH09-R03-Dynamically Replacing values.yxmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 279
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Alteryx Designer Cookbook
+    title: Dynamically Replacing Survey Values
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch9/Recipe3/WORKFLOWS/CH09-R03-Dynamically%20Replacing%20values.yxmd
+    repository:
+      url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+      path: ch9/Recipe3/WORKFLOWS/CH09-R03-Dynamically Replacing values.yxmd
+    description: 'Harmonizes English and Spanish survey files with dictionaries that
+      standardize question names and response values.
+
+'
+  data:
+    description: 'English and Spanish survey responses plus question and value dictionaries.
+
+'
+    source_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/tree/main/ch9/Recipe3
+    availability: repository
+    files:
+    - ch9/Recipe3/DATA/SurveyData_EN.xlsx
+    - ch9/Recipe3/DATA/SurveyData_SP.xlsx
+    - ch9/Recipe3/DICTIONARY/Dictionaries.xlsx
+  original_implementation:
+    technologies:
+    - Alteryx
+    - dictionary mapping
+    - multilingual harmonization
+    language: visual_workflow
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch9/Recipe3/WORKFLOWS/CH09-R03-Dynamically%20Replacing%20values.yxmd
+  problem:
+    context: 'Survey files collected in different languages use different labels and
+      encodings for the same underlying questions.
+
+'
+    objective: 'Harmonize multilingual surveys into one canonical analytical schema.
+
+'
+    analytical_questions:
+    - Which translated questions represent the same concept?
+    - Which response values require recoding?
+    - Which fields remain unmapped?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - openpyxl
+    logical_steps:
+    - Load surveys and dictionaries.
+    - Map questions to canonical names.
+    - Standardize response values.
+    - Validate unmapped values.
+    - Concatenate datasets.
+    expected_outputs:
+    - canonical question dictionary
+    - mapping exception report
+    - harmonized survey table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 279
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

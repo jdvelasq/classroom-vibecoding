@@ -1,0 +1,107 @@
+---
+id: packt/hands-on-business-intelligence-with-qlik-sense/citi-bike-exploration-app
+name: Citi Bike Exploration App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Business Intelligence with Qlik Sense
+  edition:
+  official_url:
+  companion_sources:
+  - title: On-Demand Citi Bike Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Business-Intelligence-with-Qlik-Sense/tree/master/Chapter08
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Business-Intelligence-with-Qlik-Sense
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/04 - Full Script.qvs
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 382
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Business Intelligence with Qlik Sense
+    title: On-Demand Citi Bike Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Business-Intelligence-with-Qlik-Sense/tree/master/Chapter08
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Business-Intelligence-with-Qlik-Sense
+      path: Chapter08/04 - Full Script.qvs
+    description: 'Packt builds an on-demand BI workflow over New York Citi Bike trips
+      in BigQuery, dynamically generating SQL from user-selected months and stations
+      and loading only the requested slice into Qlik Sense.
+
+'
+  data:
+    description: 'New York Citi Bike trip records in the BigQuery public dataset with
+      timestamps, origins, destinations, and trip duration.
+
+'
+    source_url: https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike
+    availability: public_cloud
+    files:
+    - Chapter08/NYC Bikes.zip
+  original_implementation:
+    technologies:
+    - Qlik Sense
+    - BigQuery
+    - dynamic SQL
+    - on-demand app generation
+    - interactive filtering
+    language:
+    - Qlik Script
+    - SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Business-Intelligence-with-Qlik-Sense/tree/master/Chapter08
+  problem:
+    context: 'A full bike-sharing trip table can be too large for interactive BI,
+      while analysts usually need only selected months and station combinations.
+
+'
+    objective: 'Build an interactive analytical product that queries and loads only
+      the user-selected slice of trip data.
+
+'
+    analytical_questions:
+    - Which origin-destination station pairs generate the most trips?
+    - How does trip activity vary by month?
+    - How can user selections be translated safely into source queries?
+    - How can large source data remain explorable without loading everything?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - duckdb
+    - streamlit
+    - plotly
+    logical_steps:
+    - Define trip dimensions and measures.
+    - Capture month and station selections.
+    - Translate selections into parameterized queries.
+    - Aggregate trip counts and durations.
+    - Build interactive origin-destination views.
+    - Validate filtered totals.
+    - Package the workflow as an on-demand analytical app.
+    expected_outputs:
+    - parameterized trip query
+    - trip KPI table
+    - station-pair analysis
+    - interactive filters
+    - working mobility analytics app
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 382
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,103 @@
+---
+id: packt/machine-learning-with-bigquery-ml/liquor-sales-forecasting
+name: Liquor Sales Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with BigQuery ML
+  edition:
+  official_url:
+  companion_sources:
+  - title: Iowa Liquor Sales Forecasting
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter08/08_liquor_sales.sql
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/08_liquor_sales.sql
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 168
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with BigQuery ML
+    title: Iowa Liquor Sales Forecasting
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter08/08_liquor_sales.sql
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+      path: Chapter08/08_liquor_sales.sql
+    description: 'Packt aggregates Iowa liquor transactions into daily liters sold
+      and uses BigQuery ML AutoARIMA to forecast the next 30 days with prediction
+      intervals.
+
+'
+  data:
+    description: 'Iowa liquor sales transactions containing transaction dates and
+      volume sold.
+
+'
+    source_url: https://console.cloud.google.com/marketplace/product/iowa-department-of-commerce/iowa-liquor-sales
+    availability: public_cloud_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - BigQuery
+    - BigQuery ML
+    - AutoARIMA
+    - time-series aggregation
+    - prediction intervals
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter08/08_liquor_sales.sql
+  problem:
+    context: 'Statewide liquor transactions form a large operational dataset that
+      can be aggregated into a demand series for short-term volume planning.
+
+'
+    objective: 'Forecast daily liquor volume sold and quantify uncertainty for a 30-day
+      horizon.
+
+'
+    analytical_questions:
+    - What temporal pattern appears in daily liters sold?
+    - Which ARIMA structure is selected automatically?
+    - How accurate is the fitted model?
+    - What range of sales volume is plausible over the next 30 days?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Aggregate transactions to daily liters sold.
+    - Create a complete daily time series.
+    - Fit an automatic ARIMA model.
+    - Inspect fitted parameters and residuals.
+    - Evaluate model fit.
+    - Forecast the next 30 days.
+    - Plot historical and forecast values with intervals.
+    expected_outputs:
+    - daily sales series
+    - ARIMA model summary
+    - forecast evaluation
+    - 30-day forecast
+    - prediction intervals
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 168
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/hands-on-machine-learning-with-scikit-learn-and-scientific-python-toolkits/automobile-price-ensemble
+name: Automobile Price Ensemble
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+  edition:
+  official_url:
+  companion_sources:
+  - title: Car Prices
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter08/Car%20Prices.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/Car Prices.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 121
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+    title: Car Prices
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter08/Car%20Prices.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+      path: Chapter08/Car Prices.ipynb
+    description: 'Packt predicts automobile prices and compares several ensemble-regression
+      strategies including random forests, bagging, gradient boosting, AdaBoost, early
+      stopping, and random-tree embeddings.
+
+'
+  data:
+    description: 'UCI Automobile data with vehicle specifications, performance attributes,
+      body characteristics, and observed prices.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/10/automobile
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - random forest
+    - bagging
+    - gradient boosting
+    - AdaBoost
+    - early stopping
+    - ensemble regression
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter08/Car%20Prices.ipynb
+  problem:
+    context: 'Automobile valuation depends on many interacting technical and market
+      attributes, making it suitable for comparing nonlinear ensemble models.
+
+'
+    objective: 'Predict vehicle prices and evaluate how alternative ensemble methods
+      trade off predictive accuracy and model complexity.
+
+'
+    analytical_questions:
+    - Which vehicle attributes explain price variation?
+    - How do bagging and boosting approaches compare?
+    - Does early stopping improve generalization?
+    - Which model yields the most stable held-out predictions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and clean automobile data.
+    - Handle missing prices and predictors.
+    - Encode categorical vehicle attributes.
+    - Create reproducible training and test samples.
+    - Fit several ensemble regressors.
+    - Compare held-out errors and learning behavior.
+    - Explain the preferred model and its predictions.
+    expected_outputs:
+    - prepared automobile dataset
+    - ensemble model comparison
+    - prediction error table
+    - learning or early-stopping diagnostics
+    - vehicle price predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 121
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

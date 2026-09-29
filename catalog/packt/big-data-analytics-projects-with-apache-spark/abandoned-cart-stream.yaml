@@ -1,0 +1,95 @@
+---
+id: packt/big-data-analytics-projects-with-apache-spark/abandoned-cart-stream
+name: Abandoned Cart Stream
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics Projects with Apache Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Abandoned Cart Streaming Job
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/abandonedCart/AbandonedCartJob.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    relationship: Repository recorded in the legacy case inventory.
+    path: section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/abandonedCart/AbandonedCartJob.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 304
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics Projects with Apache Spark
+    title: Abandoned Cart Streaming Job
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/abandonedCart/AbandonedCartJob.scala
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+      path: section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/abandonedCart/AbandonedCartJob.scala
+    description: 'Detects users whose observed cart stream contains add-to-cart events
+      without a corresponding completion event and emits abandoned-cart notifications.
+
+'
+  data:
+    description: 'Synthetic or generated event streams embedded in the companion Spark
+      Streaming project.
+
+'
+    source_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Spark Streaming
+    - DStreams
+    - Kafka sink
+    - stateful event grouping
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/abandonedCart/AbandonedCartJob.scala
+  problem:
+    context: 'An e-commerce platform needs to react to cart abandonment while user
+      activity is still recent rather than waiting for a batch report.
+
+'
+    objective: 'Build a streaming analytical product that identifies abandoned carts
+      and emits user-level notifications.
+
+'
+    analytical_questions:
+    - Which users have only add-to-cart events in the observed stream?
+    - How should events be grouped by user in real time?
+    - How can abandoned-cart detections be emitted to downstream systems?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - pandas
+    logical_steps:
+    - Define and validate the incoming event schema.
+    - Build the streaming transformation and aggregation logic.
+    - Apply the case-specific detection rules.
+    - Emit structured downstream events.
+    - Test representative and edge-case event sequences.
+    expected_outputs:
+    - abandoned-cart event stream
+    - user notification records
+    - stream-processing tests
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 304
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

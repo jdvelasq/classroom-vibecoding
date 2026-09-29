@@ -1,0 +1,108 @@
+---
+id: packt/applied-geospatial-data-science-with-python/spatial-demographic-segmentation
+name: Spatial Demographic Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Applied Geospatial Data Science with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Spatial Clustering
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter08/Chapter%208%20-%20Spatial%20Clustering%20NY_vf.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/Chapter 8 - Spatial Clustering NY_vf.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 138
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Applied Geospatial Data Science with Python
+    title: Spatial Clustering
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter08/Chapter%208%20-%20Spatial%20Clustering%20NY_vf.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+      path: Chapter08/Chapter 8 - Spatial Clustering NY_vf.ipynb
+    description: 'Packt combines New York census-tract geodemographic variables with
+      spatial boundaries, diagnoses spatial autocorrelation, and compares K-means,
+      hierarchical clustering, and spatially constrained clustering.
+
+'
+  data:
+    description: 'New York census-tract geometries and geodemographic indicators including
+      education, income, age, and population characteristics.
+
+'
+    source_url: https://www2.census.gov/geo/tiger/TIGER2019/TRACT/tl_2019_36_tract.zip
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - GeoPandas
+    - Moran's I
+    - K-means
+    - hierarchical clustering
+    - spatially constrained clustering
+    - PySAL
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter08/Chapter%208%20-%20Spatial%20Clustering%20NY_vf.ipynb
+  problem:
+    context: 'Census tracts differ demographically but are also geographically connected,
+      so useful segmentation should consider both attribute similarity and spatial
+      structure.
+
+'
+    objective: 'Discover and compare geodemographic regions using conventional and
+      spatially constrained clustering.
+
+'
+    analytical_questions:
+    - Which demographic variables exhibit spatial autocorrelation?
+    - What geodemographic clusters emerge from attribute similarity alone?
+    - How does enforcing spatial contiguity change the segments?
+    - Which clustering solution is most interpretable geographically?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - geopandas
+    - scikit-learn
+    - libpysal
+    - esda
+    - matplotlib
+    logical_steps:
+    - Acquire census attributes and tract geometries.
+    - Clean and standardize geodemographic variables.
+    - Construct spatial weights.
+    - Measure spatial autocorrelation.
+    - Fit K-means and unconstrained hierarchical clusters.
+    - Fit spatially constrained hierarchical clusters.
+    - Map and profile the competing segmentations.
+    expected_outputs:
+    - geodemographic feature table
+    - Moran statistics
+    - cluster assignments
+    - spatially constrained segments
+    - cluster profile table
+    - choropleth maps
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 138
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

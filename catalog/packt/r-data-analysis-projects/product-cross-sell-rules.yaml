@@ -1,0 +1,104 @@
+---
+id: packt/r-data-analysis-projects/product-cross-sell-rules
+name: Product Cross-Sell Rules
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Analysis Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cross-Sell Association Rules
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter01/scripts/AssocationRuleMining/crossSell.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter01/scripts/AssocationRuleMining/crossSell.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 81
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Analysis Projects
+    title: Cross-Sell Association Rules
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter01/scripts/AssocationRuleMining/crossSell.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+      path: Chapter01/scripts/AssocationRuleMining/crossSell.R
+    description: 'Packt mines product association rules, augments support and confidence
+      with leverage and conviction, and selects high-value rules for cross-sell analysis.
+
+'
+  data:
+    description: 'Order-product transaction pairs used to construct shopping baskets.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter01/data/data.csv
+    availability: repository
+    files:
+    - Chapter01/data/data.csv
+  original_implementation:
+    technologies:
+    - Apriori
+    - association rules
+    - support
+    - confidence
+    - leverage
+    - conviction
+    - igraph
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter01/scripts/AssocationRuleMining/crossSell.R
+  problem:
+    context: 'A retailer wants to identify product combinations that can support cross-selling
+      rather than relying only on item popularity.
+
+'
+    objective: 'Discover, rank, and visualize product association rules that are useful
+      for cross-sell campaigns.
+
+'
+    analytical_questions:
+    - Which product combinations occur frequently?
+    - Which rules have meaningful confidence and lift-related measures?
+    - How does leverage change the ranking of candidate rules?
+    - Which products form useful cross-sell neighborhoods?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - mlxtend
+    - networkx
+    logical_steps:
+    - Load transaction pairs.
+    - Construct baskets.
+    - Mine association rules across threshold choices.
+    - Calculate several interest measures.
+    - Prune and rank candidate rules.
+    - Build a graph of selected relationships.
+    - Interpret cross-sell opportunities.
+    expected_outputs:
+    - frequent itemsets
+    - ranked association rules
+    - interest-measure comparison
+    - cross-sell network
+    - campaign candidate table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 81
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

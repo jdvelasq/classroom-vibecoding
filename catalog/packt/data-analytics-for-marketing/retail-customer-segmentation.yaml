@@ -1,0 +1,105 @@
+---
+id: packt/data-analytics-for-marketing/retail-customer-segmentation
+name: Retail Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Customer Segmentation
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/segmentation.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/segmentation.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 97
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Customer Segmentation
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/segmentation.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter07/segmentation.ipynb
+    description: 'Packt segments retail customers with K-means and hierarchical clustering,
+      profiles segments using sales and profit economics, and examines their attractiveness.
+
+'
+  data:
+    description: 'Customer-level retail behavioral features including order size,
+      frequency, return rate, tenure, marketing contacts, sales, and profit-related
+      fields.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/data/retail_segmentation.csv
+    availability: repository
+    files:
+    - Chapter07/data/retail_segmentation.csv
+  original_implementation:
+    technologies:
+    - K-means
+    - hierarchical clustering
+    - segment profiling
+    - customer economics
+    - intercluster visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/segmentation.ipynb
+  problem:
+    context: 'A retailer needs to understand heterogeneous customer behavior and the
+      economic attractiveness of the groups that emerge.
+
+'
+    objective: 'Discover retail customer segments and characterize them by behavior,
+      sales, and profitability.
+
+'
+    analytical_questions:
+    - Which behavioral dimensions separate customers?
+    - How many segments are useful?
+    - How do segments differ in order behavior and returns?
+    - Which segments contribute the most sales and profit?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - yellowbrick
+    - matplotlib
+    logical_steps:
+    - Load and validate customer features.
+    - Select segmentation variables.
+    - Standardize where appropriate.
+    - Fit candidate K-means solutions.
+    - Compare with hierarchical clustering.
+    - Profile segments using behavioral and economic metrics.
+    - Interpret segment attractiveness.
+    expected_outputs:
+    - cluster diagnostics
+    - segment assignments
+    - behavior profile table
+    - sales and profit profile
+    - segment visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 97
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

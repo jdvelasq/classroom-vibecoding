@@ -1,0 +1,104 @@
+---
+id: packt/machine-learning-with-r-fourth-edition/teen-interest-segmentation
+name: Teen Interest Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Finding Teen Market Segments
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2009/Chapter_09.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 09/Chapter_09.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 109
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with R, Fourth Edition
+    title: Finding Teen Market Segments
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2009/Chapter_09.R
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+      path: Chapter 09/Chapter_09.R
+    description: 'Packt cleans adolescent social-network profile data, handles missing
+      age and gender fields, clusters interest indicators, and profiles the resulting
+      market segments.
+
+'
+  data:
+    description: 'Teen social-network profiles containing demographics, friend counts,
+      and multiple interest-word frequency indicators.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2009/snsdata.csv
+    availability: repository
+    files:
+    - Chapter 09/snsdata.csv
+  original_implementation:
+    technologies:
+    - missing-value handling
+    - standardization
+    - K-means
+    - cluster profiling
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2009/Chapter_09.R
+  problem:
+    context: 'Social-network profiles contain behavioral signals that can reveal groups
+      of adolescents with distinct interests and social patterns.
+
+'
+    objective: 'Discover and interpret teen market segments from social-network interest
+      profiles.
+
+'
+    analytical_questions:
+    - How should invalid and missing demographic values be handled?
+    - What interest-based clusters emerge?
+    - How do clusters differ in gender, age, and friend counts?
+    - Which interests characterize each segment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate social-profile data.
+    - Treat invalid ages and missing demographics.
+    - Select and standardize interest features.
+    - Fit candidate K-means solutions.
+    - Attach clusters to original profiles.
+    - Profile demographic and behavioral differences.
+    - Label segments from dominant interests.
+    expected_outputs:
+    - cleaned profile data
+    - cluster assignments
+    - cluster centers
+    - demographic profiles
+    - interest profiles
+    - segment interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 109
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

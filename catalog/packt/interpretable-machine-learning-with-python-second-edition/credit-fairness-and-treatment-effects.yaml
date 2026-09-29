@@ -1,0 +1,111 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/credit-fairness-and-treatment-effects
+name: Credit Fairness and Treatment Effects
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Loan Default Classification
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/11/CreditCardDefaults.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 11/CreditCardDefaults.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 153
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Loan Default Classification
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/11/CreditCardDefaults.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 11/CreditCardDefaults.ipynb
+    description: 'Packt uses credit-card default modeling to diagnose group bias,
+      compare mitigation strategies, and evaluate hypothetical interventions with
+      average and conditional treatment effects.
+
+'
+  data:
+    description: 'Credit-card default records distributed through the book''s data
+      utilities, including borrower attributes, protected-group information, and default
+      outcomes.
+
+'
+    source_url: https://pypi.org/project/machine-learning-datasets/
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - credit default classification
+    - fairness metrics
+    - reweighting
+    - disparate impact mitigation
+    - equalized odds
+    - causal inference
+    - ATE
+    - CATE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/11/CreditCardDefaults.ipynb
+  problem:
+    context: 'Credit decisions can exhibit group disparities, and proposed interventions
+      intended to reduce default may have heterogeneous effects across customers.
+
+'
+    objective: 'Diagnose and mitigate unfair predictive behavior and evaluate interventions
+      that could reduce default among vulnerable customers.
+
+'
+    analytical_questions:
+    - Does predictive performance differ across protected groups?
+    - Which mitigation strategies reduce measured disparities?
+    - What average treatment effect is expected from a proposed intervention?
+    - Which customers have the largest conditional treatment effects?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - fairlearn
+    - aif360
+    - econml
+    - dowhy
+    logical_steps:
+    - Load and prepare credit-default records.
+    - Fit a baseline default model.
+    - Calculate group-specific predictive and fairness metrics.
+    - Apply preprocessing or postprocessing mitigation.
+    - Define candidate treatment interventions.
+    - Estimate average and heterogeneous treatment effects.
+    - Compare predictive, fairness, and intervention outcomes.
+    expected_outputs:
+    - baseline default model
+    - fairness metric table
+    - mitigation comparison
+    - ATE estimates
+    - CATE distribution
+    - intervention targeting analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 153
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

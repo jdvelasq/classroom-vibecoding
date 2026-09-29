@@ -1,0 +1,99 @@
+---
+id: packt/data-ingestion-with-python-cookbook/holiday-api-ingestion
+name: Holiday API Ingestion
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Ingestion with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Creating Custom Airflow Operators
+    url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook/tree/main/Chapter_9/creating_custom_operators
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_9/creating_custom_operators/holiday_ingest/holiday_ingest_dag.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 374
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Ingestion with Python Cookbook
+    title: Creating Custom Airflow Operators
+    url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook/tree/main/Chapter_9/creating_custom_operators
+    repository:
+      url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook
+      path: Chapter_9/creating_custom_operators/holiday_ingest/holiday_ingest_dag.py
+    description: 'Packt implements a custom Airflow operator for authenticated holiday-data
+      ingestion and schedules a DAG that produces reusable JSON data.
+
+'
+  data:
+    description: 'Public-holiday records retrieved from an authenticated API for Brazil.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook/blob/main/datasets/holiday_brazil.json
+    availability: repository_and_api
+    files:
+    - datasets/holiday_brazil.json
+  original_implementation:
+    technologies:
+    - Apache Airflow
+    - custom operators
+    - API authentication
+    - scheduled ingestion
+    - JSON
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Ingestion-with-Python-Cookbook/blob/main/Chapter_9/creating_custom_operators/holiday_ingest/holiday_ingest_dag.py
+  problem:
+    context: 'Calendar effects used in forecasting and operations require reproducible
+      external holiday ingestion rather than manual copying.
+
+'
+    objective: 'Build a reusable scheduled ingestion component for holiday API data.
+
+'
+    analytical_questions:
+    - How should API credentials be separated from pipeline code?
+    - What belongs in a reusable Airflow operator?
+    - How should country and year parameters be exposed?
+    - How should output be validated for downstream analytics?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - apache-airflow
+    - requests
+    - pandas
+    logical_steps:
+    - Configure credentials outside source code.
+    - Implement authenticated holiday retrieval.
+    - Wrap retrieval in an Airflow operator.
+    - Parameterize country, year, and output.
+    - Schedule the DAG.
+    - Validate and normalize the resulting data.
+    expected_outputs:
+    - custom Airflow operator
+    - scheduled ingestion DAG
+    - holiday dataset
+    - validation report
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 374
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

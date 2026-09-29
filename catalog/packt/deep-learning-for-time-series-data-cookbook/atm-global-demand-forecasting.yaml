@@ -1,0 +1,106 @@
+---
+id: packt/deep-learning-for-time-series-data-cookbook/atm-global-demand-forecasting
+name: ATM Global Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Deep Learning for Time Series Data Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Global LSTM Forecasting
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_5/5.5_global_lstm.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_5/5.5_global_lstm.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 413
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Deep Learning for Time Series Data Cookbook
+    title: Global LSTM Forecasting
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_5/5.5_global_lstm.py
+    repository:
+      url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook
+      path: Chapter_5/5.5_global_lstm.py
+    description: 'Packt converts the NN5 collection of daily cash-withdrawal series
+      into a global forecasting problem, applies local scaling per series, and trains
+      one LSTM across many related demand histories.
+
+'
+  data:
+    description: 'NN5 daily time-series collection containing multiple related cash-withdrawal
+      demand series distributed through the GluonTS dataset repository.
+
+'
+    source_url: https://ts.gluon.ai/stable/api/gluonts/gluonts.dataset.repository.datasets.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - global forecasting
+    - LSTM
+    - PyTorch Forecasting
+    - local scaling
+    - multi-series learning
+    - temporal holdout
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_5/5.5_global_lstm.py
+  problem:
+    context: 'Cash-demand locations generate related time series with different scales;
+      training a separate model for each series can waste common temporal structure.
+
+'
+    objective: 'Train one global neural forecasting model that learns across many
+      related demand series and predicts future demand for each location.
+
+'
+    analytical_questions:
+    - How should multiple related time series be represented in one training table?
+    - Why is local scaling needed across locations?
+    - Can a single global LSTM learn transferable demand patterns?
+    - How should chronological validation and multi-step forecasts be evaluated?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - torch
+    - lightning
+    - pytorch-forecasting
+    - gluonts
+    logical_steps:
+    - Load the NN5 collection.
+    - Convert individual series to long panel format.
+    - Create chronological train, validation, and test periods.
+    - Fit location-specific scaling on training data.
+    - Construct lag windows and multi-step targets.
+    - Train a global LSTM across all series.
+    - Invert scaling and evaluate forecasts by series.
+    expected_outputs:
+    - panel time-series dataset
+    - global LSTM model
+    - per-series forecast errors
+    - multi-step forecasts
+    - comparison of local demand trajectories
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 413
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

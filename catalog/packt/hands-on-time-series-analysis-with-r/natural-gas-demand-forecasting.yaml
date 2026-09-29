@@ -1,0 +1,107 @@
+---
+id: packt/hands-on-time-series-analysis-with-r/natural-gas-demand-forecasting
+name: Natural Gas Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Time Series Analysis with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: US Natural Gas Consumption Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter08/Chapter%208%20R%20code.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/Chapter 8 R code.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 222
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Time Series Analysis with R
+    title: US Natural Gas Consumption Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter08/Chapter%208%20R%20code.R
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+      path: Chapter08/Chapter 8 R code.R
+    description: 'Packt forecasts monthly US natural-gas consumption with naive and
+      seasonal baselines, AutoARIMA, residual diagnostics, forecast intervals, simulation,
+      and rolling backtesting.
+
+'
+  data:
+    description: 'Monthly US natural-gas consumption distributed through the TSstudio
+      package.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - R
+    - AutoARIMA
+    - naive forecast
+    - seasonal naive
+    - residual diagnostics
+    - forecast simulation
+    - rolling backtesting
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter08/Chapter%208%20R%20code.R
+  problem:
+    context: 'Natural-gas consumption is seasonal and operational planning requires
+      forecasts that outperform simple baselines and remain credible across backtesting
+      windows.
+
+'
+    objective: 'Build, validate, and simulate monthly natural-gas demand forecasts.
+
+'
+    analytical_questions:
+    - Which baseline should a forecasting model beat?
+    - Does AutoARIMA improve holdout accuracy?
+    - Are residuals consistent with an adequate model?
+    - How uncertain are medium-term demand forecasts?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - pmdarima
+    - matplotlib
+    logical_steps:
+    - Load and validate the monthly series.
+    - Create chronological train/test partitions.
+    - Fit naive and seasonal-naive baselines.
+    - Fit an automatic ARIMA model.
+    - Diagnose residuals.
+    - Compare holdout accuracy.
+    - Run rolling backtests and forecast simulations.
+    expected_outputs:
+    - baseline comparison
+    - fitted ARIMA model
+    - residual diagnostics
+    - backtesting summary
+    - forecast intervals
+    - simulated future paths
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 222
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

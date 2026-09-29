@@ -1,0 +1,114 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/customer-lifetime-value
+name: Customer Lifetime Value
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Customer Life Time Value Modeling
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Customer%20Life%20Time%20Value%20Modeling.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Customer Life Time Value Modeling.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 59
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Customer Life Time Value Modeling
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Customer%20Life%20Time%20Value%20Modeling.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Customer Life Time Value Modeling.ipynb
+    description: 'Packt estimates repeat-purchase behavior and customer lifetime value
+      using BG/NBD and Gamma-Gamma models on transactional purchase histories.
+
+'
+  data:
+    description: 'Transaction-level online retail records with customer identifiers,
+      purchase dates, quantities, prices, and monetary values, supplemented in the
+      notebook by the lifetimes package example datasets.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/OnlineRetail.xlsx
+    availability: public
+    files:
+    - OnlineRetail.xlsx
+  original_implementation:
+    technologies:
+    - pandas
+    - lifetimes
+    - BG/NBD
+    - frequency-recency analysis
+    - probability alive
+    - Gamma-Gamma
+    - discounted cash flow
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Customer%20Life%20Time%20Value%20Modeling.ipynb
+  problem:
+    context: 'Historical transactions differ both in purchase frequency and monetary
+      value. A business needs forward-looking estimates of which customers are likely
+      to buy again and how much economic value they may generate.
+
+'
+    objective: 'Estimate future purchase activity and customer lifetime value from
+      transaction histories using probabilistic repeat-purchase and monetary-value
+      models.
+
+'
+    analytical_questions:
+    - How do frequency and recency characterize repeat-purchase behavior?
+    - Which customers are most likely to purchase again?
+    - What future transaction volume is expected for each customer?
+    - What lifetime monetary value is implied by purchase frequency and transaction
+      value?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - lifetimes
+    - matplotlib
+    logical_steps:
+    - Load and validate transaction-level retail data.
+    - Construct customer frequency, recency, age, and monetary-value summaries.
+    - Fit a BG/NBD repeat-purchase model.
+    - Estimate probability of being active and expected future purchases.
+    - Assess model fit against observed purchase patterns.
+    - Test the Gamma-Gamma model assumptions.
+    - Estimate expected transaction value.
+    - Calculate discounted customer lifetime value.
+    - Rank and interpret customers by predicted future value.
+    expected_outputs:
+    - customer transaction summary
+    - fitted BG/NBD model
+    - probability-alive estimates
+    - expected purchase counts
+    - fitted Gamma-Gamma model
+    - customer lifetime value estimates
+    - ranked customer table
+    - written business interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 59
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

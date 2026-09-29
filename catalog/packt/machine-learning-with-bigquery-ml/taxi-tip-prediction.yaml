@@ -1,0 +1,105 @@
+---
+id: packt/machine-learning-with-bigquery-ml/taxi-tip-prediction
+name: Taxi Tip Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with BigQuery ML
+  edition:
+  official_url:
+  companion_sources:
+  - title: Chicago Taxi Tip Classification
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter05/05_taxi_tip.sql
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/05_taxi_tip.sql
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 166
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with BigQuery ML
+    title: Chicago Taxi Tip Classification
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter05/05_taxi_tip.sql
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+      path: Chapter05/05_taxi_tip.sql
+    description: 'Packt builds successive BigQuery ML logistic-regression models to
+      predict whether a Chicago taxi ride will receive a tip, using temporally separated
+      training, evaluation, and prediction tables.
+
+'
+  data:
+    description: 'Chicago taxi trips with duration, fare, tolls, company, payment
+      type, pickup/dropoff locations, geographic coordinates, and tips.
+
+'
+    source_url: https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips
+    availability: public_cloud_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - BigQuery
+    - BigQuery ML
+    - logistic regression
+    - temporal holdout
+    - ROC AUC
+    - SQL
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter05/05_taxi_tip.sql
+  problem:
+    context: 'Taxi trip characteristics may indicate whether a rider will leave a
+      tip, and the prediction problem can be trained directly where the large dataset
+      resides.
+
+'
+    objective: 'Predict tip occurrence and compare how adding trip and payment features
+      changes model performance.
+
+'
+    analytical_questions:
+    - Which trip characteristics are informative for tip occurrence?
+    - How does model quality change as features are added?
+    - Does the model generalize to later months?
+    - Which future trips receive the highest tip probability?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - duckdb
+    logical_steps:
+    - Define clean trip eligibility rules.
+    - Split train, evaluation, and prediction periods chronologically.
+    - Create the binary tip target.
+    - Fit progressively richer logistic models.
+    - Compare ROC AUC on the evaluation period.
+    - Score the future-period trips.
+    - Interpret probability and threshold behavior.
+    expected_outputs:
+    - cleaned taxi trip tables
+    - model comparison
+    - ROC AUC summary
+    - future tip probabilities
+    - classification diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 166
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,108 @@
+---
+id: packt/mastering-machine-learning-with-r-third-edition/credit-card-customer-segmentation
+name: Credit Card Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Mastering Machine Learning with R, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Clustering
+    url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition/blob/master/Chapter08/8cluster.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/8cluster.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 173
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Mastering Machine Learning with R, Third Edition
+    title: Clustering
+    url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition/blob/master/Chapter08/8cluster.R
+    repository:
+      url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition
+      path: Chapter08/8cluster.R
+    description: 'Packt explores credit-card customer behavior, handles missing values
+      and scaling, evaluates cluster counts, and compares Ward hierarchical clustering
+      with K-means to derive customer segments.
+
+'
+  data:
+    description: 'Credit-card customer behavioral records including balances, purchase
+      and cash-advance activity, credit limits, payments, full-payment rates, and
+      tenure.
+
+'
+    source_url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition/blob/master/Data/cc_cluster.csv
+    availability: repository
+    files:
+    - Data/cc_cluster.csv
+  original_implementation:
+    technologies:
+    - R
+    - standardization
+    - hierarchical clustering
+    - Ward linkage
+    - K-means
+    - cluster profiling
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Mastering-Machine-Learning-with-R-Third-Edition/blob/master/Chapter08/8cluster.R
+  problem:
+    context: 'Credit-card customers differ substantially in balance, purchase, repayment,
+      and cash-advance behavior, creating an opportunity to discover behavioral segments.
+
+'
+    objective: 'Identify and profile customer groups from multidimensional credit-card
+      usage patterns.
+
+'
+    analytical_questions:
+    - Which behavioral attributes distinguish customers?
+    - How many clusters are supported by within-cluster variation?
+    - Do hierarchical and K-means solutions reveal similar structures?
+    - What financial behavior characterizes each customer segment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - scipy
+    - matplotlib
+    logical_steps:
+    - Load and validate credit-card behavior.
+    - Treat missing values explicitly.
+    - Standardize behavioral variables.
+    - Diagnose candidate cluster counts.
+    - Fit Ward hierarchical clustering.
+    - Fit K-means alternatives.
+    - Profile segments in original business units.
+    expected_outputs:
+    - standardized customer matrix
+    - cluster-count diagnostics
+    - hierarchical cluster assignments
+    - K-means assignments
+    - segment profile table
+    - segment interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 173
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

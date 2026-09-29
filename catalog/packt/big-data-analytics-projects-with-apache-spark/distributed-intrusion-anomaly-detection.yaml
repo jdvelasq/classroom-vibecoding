@@ -1,0 +1,100 @@
+---
+id: packt/big-data-analytics-projects-with-apache-spark/distributed-intrusion-anomaly-detection
+name: Distributed Intrusion Anomaly Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics Projects with Apache Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: K-means Anomaly Detection
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/src/main/scala/com/tomekl007/anomalydetection/RunKMeans.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    relationship: Repository recorded in the legacy case inventory.
+    path: src/main/scala/com/tomekl007/anomalydetection/RunKMeans.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 323
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics Projects with Apache Spark
+    title: K-means Anomaly Detection
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/src/main/scala/com/tomekl007/anomalydetection/RunKMeans.scala
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+      path: src/main/scala/com/tomekl007/anomalydetection/RunKMeans.scala
+    description: 'Packt builds a Spark ML pipeline over KDD Cup network traffic, encodes
+      categorical connection attributes, standardizes features, clusters records,
+      and flags observations whose distance from their assigned centroid exceeds a
+      data-derived threshold.
+
+'
+  data:
+    description: 'Network or pageview event data used by the companion Spark project.
+
+'
+    source_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    availability: repository_or_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Spark MLlib
+    - K-means
+    - StringIndexer
+    - OneHotEncoder
+    - StandardScaler
+    - distance-based anomaly detection
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/src/main/scala/com/tomekl007/anomalydetection/RunKMeans.scala
+  problem:
+    context: 'Large-scale network logs contain heterogeneous traffic patterns and
+      rare observations that may indicate anomalous behavior.
+
+'
+    objective: 'Detect unusual network connections at scale using distributed feature
+      preparation and distance-from-cluster anomaly scoring.
+
+'
+    analytical_questions:
+    - How should mixed categorical and numeric network fields be prepared in Spark?
+    - What cluster structure represents common traffic behavior?
+    - Which observations lie unusually far from their assigned centroid?
+    - How sensitive are anomaly results to cluster count and threshold choice?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - pandas
+    logical_steps:
+    - Load or receive the source data.
+    - Validate schema and event fields.
+    - Apply the case-specific distributed transformations.
+    - Produce analytics-ready outputs.
+    - Validate results on representative edge cases.
+    expected_outputs:
+    - distributed feature pipeline
+    - cluster assignments
+    - anomaly threshold
+    - flagged network connections
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 323
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

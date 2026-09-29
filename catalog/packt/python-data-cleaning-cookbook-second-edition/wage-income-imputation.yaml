@@ -1,0 +1,101 @@
+---
+id: packt/python-data-cleaning-cookbook-second-edition/wage-income-imputation
+name: Wage Income Imputation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Identifying and Fixing Missing Values
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/tree/main/7.%20IdentifyingandFixingMissingValues
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: 7. IdentifyingandFixingMissingValues
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 246
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning Cookbook, Second Edition
+    title: Identifying and Fixing Missing Values
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/tree/main/7.%20IdentifyingandFixingMissingValues
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition
+      path: 7. IdentifyingandFixingMissingValues
+    description: 'Diagnose missing wage data and compare several model-based imputation
+      strategies.
+
+'
+  data:
+    description: 'National Longitudinal Survey records with wage income, weeks worked,
+      parental income, and education.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/tree/main/7.%20IdentifyingandFixingMissingValues/data
+    availability: repository
+    files:
+    - 7. IdentifyingandFixingMissingValues/data/nls97g.csv
+  original_implementation:
+    technologies:
+    - missingness diagnosis
+    - regression imputation
+    - stochastic imputation
+    - MissForest
+    - MICE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook-Second-Edition/tree/main/7.%20IdentifyingandFixingMissingValues
+  problem:
+    context: 'Wage-income data contain nonrandom missing values that can distort downstream
+      analysis if imputed mechanically.
+
+'
+    objective: 'Diagnose missing wage data and compare several model-based imputation
+      strategies.
+
+'
+    analytical_questions:
+    - Are respondents with missing wages systematically different?
+    - How do deterministic and stochastic regression imputation compare?
+    - How do MissForest and MICE alter the wage distribution?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scikit-learn
+    - miceforest
+    logical_steps:
+    - Load and validate survey data.
+    - Convert coded missing values to nulls.
+    - Diagnose missingness patterns.
+    - Fit regression-based imputations.
+    - Compare stochastic, MissForest, and MICE alternatives.
+    - Assess distributional changes.
+    expected_outputs:
+    - missingness profile
+    - imputation comparison
+    - completed wage dataset
+    - distribution diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 246
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

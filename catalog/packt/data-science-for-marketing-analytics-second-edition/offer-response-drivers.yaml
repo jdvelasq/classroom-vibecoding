@@ -1,0 +1,101 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/offer-response-drivers
+name: Offer Response Drivers
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Offer Response Modeling
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.01/Activity6.01.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/Activity6.01/Activity6.01.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 72
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Offer Response Modeling
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.01/Activity6.01.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter06/Activity6.01/Activity6.01.ipynb
+    description: 'Packt models marketing-offer responses from offer quality, discount,
+      and reach, then removes predictors in turn to assess their contribution to predictive
+      error.
+
+'
+  data:
+    description: 'Marketing offers with quality, discount, reach, and observed response
+      counts.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.01/offer_responses.csv
+    availability: repository
+    files:
+    - Chapter06/Activity6.01/offer_responses.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - ablation analysis
+    - RMSE
+    - train/test split
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.01/Activity6.01.ipynb
+  problem:
+    context: 'Marketing managers need to understand which offer characteristics materially
+      contribute to customer response rather than relying only on overall model fit.
+
+'
+    objective: 'Predict offer responses and quantify the predictive contribution of
+      quality, discount, and reach.
+
+'
+    analytical_questions:
+    - How accurately can offer response be predicted?
+    - Which offer attributes reduce prediction error the most?
+    - What happens when each candidate driver is removed?
+    - Which variables deserve the most attention in offer design?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate offer-response data.
+    - Split observations reproducibly.
+    - Fit the full regression model.
+    - Calculate held-out RMSE.
+    - Remove each predictor separately and refit.
+    - Compare error changes across ablations.
+    - Summarize the most informative offer drivers.
+    expected_outputs:
+    - baseline response model
+    - ablation comparison table
+    - RMSE summary
+    - driver interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 72
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

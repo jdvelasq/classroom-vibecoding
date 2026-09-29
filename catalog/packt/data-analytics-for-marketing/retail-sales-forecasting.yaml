@@ -1,0 +1,108 @@
+---
+id: packt/data-analytics-for-marketing/retail-sales-forecasting
+name: Retail Sales Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Forecasting
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter05/forecasting.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/forecasting.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 94
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Forecasting
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter05/forecasting.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter05/forecasting.ipynb
+    description: 'Packt develops a monthly retail-sales forecasting workflow using
+      decomposition, seasonal-naive baselines, transformations, AutoARIMA, ETS, Holt-Winters,
+      Prophet, and forecast accuracy comparisons.
+
+'
+  data:
+    description: 'Superstore transactions with order dates, product categories, and
+      sales values.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter05/data/superstore.csv
+    availability: repository
+    files:
+    - Chapter05/data/superstore.csv
+  original_implementation:
+    technologies:
+    - seasonal decomposition
+    - seasonal naive
+    - AutoARIMA
+    - ETS
+    - Holt-Winters
+    - Prophet
+    - forecast accuracy
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter05/forecasting.ipynb
+  problem:
+    context: 'Retail sales exhibit trend, seasonality, and category differences that
+      must be understood before future demand can be forecast for planning.
+
+'
+    objective: 'Compare forecasting methods for monthly retail sales and produce defensible
+      out-of-sample forecasts.
+
+'
+    analytical_questions:
+    - What trend and seasonal patterns drive monthly sales?
+    - Which baseline is appropriate for comparison?
+    - How do ARIMA, ETS, Holt-Winters, and Prophet compare?
+    - How sensitive are forecasts to transformation and model choice?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - statsforecast
+    - matplotlib
+    logical_steps:
+    - Load and aggregate transactions to monthly sales.
+    - Diagnose trend and seasonality.
+    - Split the series chronologically.
+    - Build seasonal-naive benchmarks.
+    - Fit candidate statistical forecasting models.
+    - Compare holdout accuracy.
+    - Refit the preferred candidates and forecast future sales.
+    expected_outputs:
+    - monthly sales series
+    - decomposition diagnostics
+    - forecast benchmark table
+    - holdout predictions
+    - future sales forecasts
+    - prediction intervals
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 94
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

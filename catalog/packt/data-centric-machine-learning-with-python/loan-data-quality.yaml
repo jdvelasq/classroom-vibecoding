@@ -1,0 +1,108 @@
+---
+id: packt/data-centric-machine-learning-with-python/loan-data-quality
+name: Loan Data Quality
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data-Centric Machine Learning with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Techniques for Data Cleaning and Augmentation
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%205%20-%20Techniques%20for%20data%20cleaning%20and%20augmentation/Chapter%205-Code.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 5 - Techniques for data cleaning and augmentation/Chapter 5-Code.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 113
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data-Centric Machine Learning with Python
+    title: Techniques for Data Cleaning and Augmentation
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%205%20-%20Techniques%20for%20data%20cleaning%20and%20augmentation/Chapter%205-Code.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+      path: Chapter 5 - Techniques for data cleaning and augmentation/Chapter 5-Code.ipynb
+    description: 'Packt audits a loan-prediction dataset for consistency, uniqueness,
+      completeness, validity, accuracy, freshness, missingness structure, and imputation
+      effects before model development.
+
+'
+  data:
+    description: 'Loan application training and test records containing applicant
+      demographics, income, loan characteristics, credit history, and loan status.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/tree/main/Chapter%205%20-%20Techniques%20for%20data%20cleaning%20and%20augmentation
+    availability: repository
+    files:
+    - Chapter 5 - Techniques for data cleaning and augmentation/train_loan_prediction.csv
+    - Chapter 5 - Techniques for data cleaning and augmentation/test_loan_prediction.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - data quality profiling
+    - duplicate analysis
+    - missingno
+    - missingness diagnosis
+    - imputation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%205%20-%20Techniques%20for%20data%20cleaning%20and%20augmentation/Chapter%205-Code.ipynb
+  problem:
+    context: 'A loan model can produce misleading results when application records
+      contain duplicate, inconsistent, invalid, stale, or systematically missing information.
+
+'
+    objective: 'Audit and repair loan application data while measuring how cleaning
+      decisions alter the analytical dataset.
+
+'
+    analytical_questions:
+    - Are identifiers and records unique?
+    - Which variables contain missing values and is missingness associated with outcome?
+    - Which values violate validity or consistency rules?
+    - How do alternative imputation choices change distributions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - missingno
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load training and test loan records.
+    - Check schema and naming consistency.
+    - Diagnose duplicate applications.
+    - Quantify missingness and co-missingness.
+    - Test validity and range rules.
+    - Compare imputation strategies.
+    - Produce a cleaned analytics-ready dataset and quality report.
+    expected_outputs:
+    - data-quality report
+    - duplicate diagnostics
+    - missingness matrix
+    - validity exception table
+    - imputation comparison
+    - cleaned loan dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 113
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

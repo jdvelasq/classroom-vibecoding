@@ -1,0 +1,101 @@
+---
+id: packt/hands-on-data-science-for-marketing/customer-value-segmentation
+name: Customer Value Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Customer Segmentation
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/python/CustomerSegmentation.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 192
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science for Marketing
+    title: Customer Segmentation
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+      path: Chapter10/python/CustomerSegmentation.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Online retail customer transactions summarized into sales, order
+      count, and average order value.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing/tree/master/Chapter10/data
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - transaction cleaning
+    - customer aggregation
+    - K-means
+    - elbow method
+    - cluster profiling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+  problem:
+    context: 'A retailer wants to distinguish low-, medium-, and high-value customer
+      groups from transactional behavior.
+
+'
+    objective: 'Discover and interpret customer-value segments from sales and order
+      behavior.
+
+'
+    analytical_questions:
+    - Which customer-level measures capture commercial value?
+    - How many segments are supported?
+    - Which cluster contains the highest-value customers?
+    - What purchasing behavior characterizes each segment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Clean transaction records.
+    - Aggregate to customer-level metrics.
+    - Rank or scale customer variables.
+    - Compare candidate cluster counts.
+    - Fit K-means.
+    - Profile clusters in business units.
+    - Identify high-value segments.
+    expected_outputs:
+    - customer analytical table
+    - cluster diagnostics
+    - segment assignments
+    - segment profile table
+    - high-value customer list
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 192
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

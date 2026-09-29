@@ -1,0 +1,104 @@
+---
+id: packt/learning-data-mining-with-python-second-edition/social-network-community-discovery
+name: Social Network Community Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Data Mining with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Discovering Social Groups
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition/blob/master/Chapter07/ch7_graph.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/ch7_graph.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 386
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Data Mining with Python, Second Edition
+    title: Discovering Social Groups
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition/blob/master/Chapter07/ch7_graph.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+      path: Chapter07/ch7_graph.ipynb
+    description: 'Packt builds a social graph from relevant Twitter users and their
+      friend relationships, computes pairwise similarity, thresholds graph edges,
+      and examines connected social groups.
+
+'
+  data:
+    description: 'Twitter users and friend lists collected from the platform after
+      filtering users with a previously trained relevance classifier.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition/tree/master/Chapter07
+    availability: api_retrieval
+    files: []
+  original_implementation:
+    technologies:
+    - Twitter API
+    - NetworkX
+    - graph construction
+    - similarity networks
+    - connected components
+    - community exploration
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition/blob/master/Chapter07/ch7_graph.ipynb
+  problem:
+    context: 'Users who discuss a relevant topic may still belong to different social
+      groups whose structure can be inferred from overlapping friendship patterns.
+
+'
+    objective: 'Construct and explore a social similarity network to reveal groups
+      of related users.
+
+'
+    analytical_questions:
+    - Which relevant users share similar friendship neighborhoods?
+    - How does the similarity threshold alter the graph?
+    - What connected groups emerge?
+    - Which users bridge otherwise separate groups?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - networkx
+    - matplotlib
+    logical_steps:
+    - Start from a set of relevant users.
+    - Retrieve or load user friend lists.
+    - Calculate pairwise neighborhood similarity.
+    - Build weighted similarity graphs.
+    - Apply alternative edge thresholds.
+    - Identify connected components and bridges.
+    - Visualize and interpret the social groups.
+    expected_outputs:
+    - user similarity matrix
+    - weighted social graph
+    - connected-component table
+    - threshold sensitivity analysis
+    - community visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 386
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

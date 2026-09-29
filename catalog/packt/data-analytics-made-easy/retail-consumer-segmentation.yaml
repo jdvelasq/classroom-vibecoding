@@ -1,0 +1,105 @@
+---
+id: packt/data-analytics-made-easy/retail-consumer-segmentation
+name: Retail Consumer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics Made Easy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Segmenting Consumers with Clustering
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 5/Chapter 5 - Segmenting Consumers.knwf
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 159
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics Made Easy
+    title: Segmenting Consumers with Clustering
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+      path: Chapter 5/Chapter 5 - Segmenting Consumers.knwf
+    description: 'Packt returns to the online retailer and uses CRM data, normalization,
+      outlier handling, and K-means to build customer segments for differentiated
+      newsletters.
+
+'
+  data:
+    description: 'E-commerce CRM records containing customer attributes and behavioral
+      variables for customers eligible to receive marketing communications.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/blob/main/Chapter%205/eCommerce-CRM.csv
+    availability: repository
+    files:
+    - Chapter 5/eCommerce-CRM.csv
+  original_implementation:
+    technologies:
+    - KNIME
+    - outlier handling
+    - normalization
+    - K-means
+    - cluster profiling
+    - visualization
+    language: KNIME
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+  problem:
+    context: 'An online retailer wants to replace one-size-fits-all newsletters with
+      differentiated communication based on meaningful customer groups.
+
+'
+    objective: 'Discover and profile consumer segments that can support personalized
+      CRM communication.
+
+'
+    analytical_questions:
+    - Which customer variables should drive segmentation?
+    - Which observations require outlier treatment?
+    - What cluster structure emerges after normalization?
+    - How should each customer segment be characterized for CRM use?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate CRM records.
+    - Select segmentation variables.
+    - Diagnose and treat extreme observations.
+    - Standardize features.
+    - Fit candidate K-means solutions.
+    - Attach cluster labels to customers.
+    - Profile and interpret the segments.
+    expected_outputs:
+    - prepared CRM dataset
+    - cluster diagnostics
+    - customer segment assignments
+    - segment profiles
+    - CRM interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 159
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

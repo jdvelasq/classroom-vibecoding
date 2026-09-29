@@ -1,0 +1,107 @@
+---
+id: packt/learning-predictive-analytics-with-r/nurse-work-satisfaction-modeling
+name: Nurse Work Satisfaction Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Predictive Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Multilevel Modeling
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: CODE/CH12 CODE.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 293
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Predictive Analytics with R
+    title: Multilevel Modeling
+    url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R
+      path: CODE/CH12 CODE.R
+    description: 'Packt models nurse work satisfaction across hospitals using random-intercept
+      and random-slope multilevel models, then evaluates predictions on a held-out
+      set while preserving hospital-level structure.
+
+'
+  data:
+    description: 'Nurse-level job measures nested within 17 hospitals, including accomplishment,
+      depersonalization, exhaustion, work satisfaction, and hospital identifiers.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/tree/master/Data/Data%20Ch12
+    availability: repository
+    files:
+    - Data/Data Ch12/NursesMLtrain.dat
+    - Data/Data Ch12/NursesMLtest.dat
+    - Data/Data Ch12/nursesML.dat
+  original_implementation:
+    technologies:
+    - multilevel modeling
+    - random intercepts
+    - random slopes
+    - mixed-effects regression
+    - hierarchical prediction
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Predictive-Analytics-with-R/blob/master/CODE/CH12%20CODE.R
+  problem:
+    context: 'Nurses are nested within hospitals, so observations from the same hospital
+      are not independent and work-satisfaction relationships may vary across institutions.
+
+'
+    objective: 'Model and predict nurse work satisfaction while accounting for hospital-level
+      heterogeneity.
+
+'
+    analytical_questions:
+    - How much variation in work satisfaction occurs between hospitals?
+    - Which nurse-level predictors explain satisfaction?
+    - Do predictor effects vary across hospitals?
+    - How well do mixed-effects predictions generalize to held-out nurses?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate nurse and hospital identifiers.
+    - Quantify within- and between-hospital variation.
+    - Fit a random-intercept baseline.
+    - Add fixed nurse-level predictors.
+    - Compare random-intercept and random-slope specifications.
+    - Generate held-out predictions.
+    - Evaluate predictive performance by hospital.
+    expected_outputs:
+    - variance decomposition
+    - mixed-effects coefficient table
+    - hospital random effects
+    - model comparison
+    - held-out predictions
+    - hospital-level performance summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 293
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

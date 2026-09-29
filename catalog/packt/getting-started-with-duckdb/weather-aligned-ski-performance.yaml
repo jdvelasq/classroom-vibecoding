@@ -1,0 +1,104 @@
+---
+id: packt/getting-started-with-duckdb/weather-aligned-ski-performance
+name: Weather-Aligned Ski Performance
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Getting Started with DuckDB
+  edition:
+  official_url:
+  companion_sources:
+  - title: Temporal Joins with ASOF
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/blob/main/chapter_10/README.md
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_10/README.md
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 292
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Getting Started with DuckDB
+    title: Temporal Joins with ASOF
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/blob/main/chapter_10/README.md
+    repository:
+      url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB
+      path: chapter_10/README.md
+    description: 'Packt aligns skier scores with the most recent weather measurement
+      using DuckDB ASOF joins, illustrating event-time enrichment when timestamps
+      do not match exactly.
+
+'
+  data:
+    description: 'Skier identities, timestamped scores, and timestamped weather measurements.
+
+'
+    source_url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/tree/main/chapter_10
+    availability: repository
+    files:
+    - chapter_10/skiers.csv
+    - chapter_10/skier_scores.csv
+    - chapter_10/weather.csv
+  original_implementation:
+    technologies:
+    - DuckDB
+    - SQL
+    - ASOF joins
+    - temporal enrichment
+    - window functions
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/blob/main/chapter_10/README.md
+  problem:
+    context: 'Sports results and environmental measurements occur at different timestamps,
+      so exact joins cannot reliably attach the conditions in effect when each score
+      was recorded.
+
+'
+    objective: 'Build an analytics-ready event table by matching each skier score
+      to the most recent applicable weather observation.
+
+'
+    analytical_questions:
+    - Which weather observation should be attached to each score?
+    - How large are time gaps between events and matched measurements?
+    - Are unmatched or stale matches present?
+    - How can the enriched table support performance analysis?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - duckdb
+    - pandas
+    logical_steps:
+    - Load skier, score, and weather tables.
+    - Parse and validate timestamps.
+    - Sort event streams.
+    - Perform an ASOF temporal join.
+    - Calculate match-age diagnostics.
+    - Flag unmatched or stale weather records.
+    - Persist the enriched score table.
+    expected_outputs:
+    - temporally enriched score table
+    - match-age diagnostics
+    - unmatched-event report
+    - analytics-ready sports dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 292
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

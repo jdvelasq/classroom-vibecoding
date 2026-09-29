@@ -1,0 +1,103 @@
+---
+id: packt/data-analytics-for-marketing/marketing-channel-attribution
+name: Marketing Channel Attribution
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Markov Chain Attribution
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter11/Markov%20Chain.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/Markov Chain.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 99
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Markov Chain Attribution
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter11/Markov%20Chain.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter11/Markov Chain.ipynb
+    description: 'Packt reconstructs customer channel paths, estimates Markov transition
+      probabilities, calculates channel removal effects, and attributes conversions.
+
+'
+  data:
+    description: 'Customer interaction paths with channel, cookie, timestamp, and
+      conversion outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter11/data/attribution%20data%20markov%20chain.csv
+    availability: repository
+    files:
+    - Chapter11/data/attribution data markov chain.csv
+  original_implementation:
+    technologies:
+    - customer journey paths
+    - Markov chains
+    - transition matrix
+    - removal effects
+    - conversion attribution
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter11/Markov%20Chain.ipynb
+  problem:
+    context: 'Customers often interact with several marketing channels before conversion,
+      so last-touch counts can obscure the contribution of earlier interactions.
+
+'
+    objective: 'Estimate the contribution of marketing channels to observed conversions
+      using path-based Markov attribution.
+
+'
+    analytical_questions:
+    - What channel paths lead to conversion or abandonment?
+    - What transition probabilities characterize the customer journey?
+    - How much does conversion probability change when each channel is removed?
+    - How should observed conversions be attributed across channels?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - networkx
+    logical_steps:
+    - Sort interactions into customer journeys.
+    - Add start, conversion, and null states.
+    - Count channel transitions.
+    - Build the transition probability matrix.
+    - Calculate baseline conversion probability.
+    - Calculate channel removal effects.
+    - Allocate conversions from relative removal effects.
+    expected_outputs:
+    - customer path table
+    - transition matrix
+    - channel removal effects
+    - attributed conversions
+    - channel contribution summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 99
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

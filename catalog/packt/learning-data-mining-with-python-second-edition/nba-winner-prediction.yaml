@@ -1,0 +1,96 @@
+---
+id: packt/learning-data-mining-with-python-second-edition/nba-winner-prediction
+name: NBA Winner Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Data Mining with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Sports Winners with Decision Trees
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter03/chapter3_nba_prediction.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 188
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Data Mining with Python, Second Edition
+    title: Predicting Sports Winners with Decision Trees
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+      path: Chapter03/chapter3_nba_prediction.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Historical NBA game results combined with season standings.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition/tree/master/Chapter03
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - decision trees
+    - feature engineering
+    - classification
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+  problem:
+    context: 'Past team form, home-court status, and standings can be transformed
+      into features for predicting the winner of a future basketball game.
+
+'
+    objective: 'Predict game winners from historical outcomes and team-strength indicators.
+
+'
+    analytical_questions:
+    - How much does home advantage contribute?
+    - Do recent wins improve game prediction?
+    - How much do standings improve the baseline?
+    - Which features drive the decision tree?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load game results and standings.
+    - Create winner and home-team indicators.
+    - Derive recent-form and standings features.
+    - Split games chronologically or reproducibly.
+    - Fit decision-tree models.
+    - Compare successive feature sets.
+    expected_outputs:
+    - game-level feature table
+    - winner classifier
+    - model comparison
+    - feature importance summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 188
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

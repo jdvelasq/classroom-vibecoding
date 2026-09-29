@@ -1,0 +1,99 @@
+---
+id: packt/forecasting-time-series-data-with-prophet-second-edition/divvy-bike-demand-forecasting
+name: Divvy Bike Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Forecasting Time Series Data with Prophet, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Non-Daily Data and Seasonality
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter04
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter04/Chapter_04.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 392
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Forecasting Time Series Data with Prophet, Second Edition
+    title: Non-Daily Data and Seasonality
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter04
+    repository:
+      url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+      path: Chapter04/Chapter_04.ipynb
+    description: 'Packt models hourly Divvy bicycle demand with Prophet, handling
+      sub-daily seasonality and producing forecasts at the operational hourly grain.
+
+'
+  data:
+    description: 'Hourly Divvy bicycle usage time series.
+
+'
+    source_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/blob/main/data/divvy_hourly.csv
+    availability: repository
+    files:
+    - data/divvy_hourly.csv
+  original_implementation:
+    technologies:
+    - Prophet
+    - hourly forecasting
+    - multiplicative seasonality
+    - component analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter04
+  problem:
+    context: 'Bicycle demand varies strongly by hour and recurring temporal cycles,
+      making daily models too coarse for operational planning.
+
+'
+    objective: 'Forecast hourly bicycle demand while modeling sub-daily seasonal structure.
+
+'
+    analytical_questions:
+    - What intra-day and weekly seasonal patterns dominate demand?
+    - How should future hourly timestamps be generated?
+    - How well does multiplicative seasonality represent demand variation?
+    - What hourly demand is expected over the forecast horizon?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - prophet
+    - matplotlib
+    logical_steps:
+    - Load and validate hourly demand.
+    - Build the Prophet time-series schema.
+    - Fit an hourly forecasting model.
+    - Generate future timestamps.
+    - Produce forecasts and intervals.
+    - Inspect trend and seasonal components.
+    - Diagnose forecast behavior at peak hours.
+    expected_outputs:
+    - hourly forecast table
+    - prediction intervals
+    - seasonal component plots
+    - operational demand forecast
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 392
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

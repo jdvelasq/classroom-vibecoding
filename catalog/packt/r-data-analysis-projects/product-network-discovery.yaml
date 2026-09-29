@@ -1,0 +1,105 @@
+---
+id: packt/r-data-analysis-projects/product-network-discovery
+name: Product Network Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Analysis Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Product Network Analysis
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter08/Scrips/ProductNetworkAnalysis/Networks.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/Scrips/ProductNetworkAnalysis/Networks.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 76
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Analysis Projects
+    title: Product Network Analysis
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter08/Scrips/ProductNetworkAnalysis/Networks.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+      path: Chapter08/Scrips/ProductNetworkAnalysis/Networks.R
+    description: 'Packt converts product co-purchases into a weighted graph, identifies
+      product communities, calculates network measures, and explores product neighborhoods.
+
+'
+  data:
+    description: 'Retail transaction pairs containing order identifiers and product
+      identifiers.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter08/Scrips/ProductNetworkAnalysis/data.csv
+    availability: repository
+    files:
+    - Chapter08/Scrips/ProductNetworkAnalysis/data.csv
+  original_implementation:
+    technologies:
+    - Apriori
+    - frequent itemsets
+    - graph construction
+    - community detection
+    - random walks
+    - igraph
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter08/Scrips/ProductNetworkAnalysis/Networks.R
+  problem:
+    context: 'Retail transactions reveal a network of products that are repeatedly
+      purchased together and may form broader product communities.
+
+'
+    objective: 'Build and interpret a product co-purchase network to reveal communities,
+      central products, and local product relationships.
+
+'
+    analytical_questions:
+    - Which products are strongly connected by co-purchase behavior?
+    - What product communities emerge from the network?
+    - Which products occupy central positions?
+    - What nearby products are reached from a focal item?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - mlxtend
+    - networkx
+    - matplotlib
+    logical_steps:
+    - Load and validate transaction pairs.
+    - Mine frequent two-item sets.
+    - Convert item pairs into a weighted graph.
+    - Calculate degree and weighted-strength metrics.
+    - Detect product communities.
+    - Explore neighborhoods and random walks from focal products.
+    - Interpret product structure.
+    expected_outputs:
+    - product co-purchase graph
+    - centrality table
+    - product communities
+    - neighborhood analysis
+    - network visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 76
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

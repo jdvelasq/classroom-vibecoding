@@ -1,0 +1,103 @@
+---
+id: packt/practical-data-science-using-python/car-price-prediction
+name: Car Price Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Linear Regression - Car Price Prediction
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Car-price-prediction-linear-regression-Intro-version.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Car-price-prediction-linear-regression-Intro-version.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 416
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: Linear Regression - Car Price Prediction
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Car-price-prediction-linear-regression-Intro-version.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: Car-price-prediction-linear-regression-Intro-version.ipynb
+    description: 'Packt builds a regression model for automobile prices, including
+      data correction, feature engineering, significance testing, and recursive feature
+      elimination.
+
+'
+  data:
+    description: 'Automobile records with price, make, body, engine, dimensions, performance,
+      and other vehicle characteristics.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/CarPrice_Assignment.csv
+    availability: repository
+    files:
+    - CarPrice_Assignment.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - statsmodels
+    - recursive feature elimination
+    - feature engineering
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Car-price-prediction-linear-regression-Intro-version.ipynb
+  problem:
+    context: 'A vehicle seller needs to estimate prices for new cars entering inventory.
+
+'
+    objective: 'Build and validate a regression model that predicts vehicle price
+      from product attributes.
+
+'
+    analytical_questions:
+    - Which vehicle attributes have the strongest relationship with price?
+    - Which features remain significant after controlling for others?
+    - How much predictive performance is retained after feature selection?
+    - How well does the model generalize to held-out vehicles?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - statsmodels
+    logical_steps:
+    - Load and clean automobile records.
+    - Correct inconsistent categorical values.
+    - Engineer and encode predictors.
+    - Split training and test data.
+    - Fit baseline linear regression.
+    - Remove collinear or insignificant features.
+    - Apply recursive feature elimination.
+    - Evaluate holdout prediction performance.
+    expected_outputs:
+    - cleaned vehicle dataset
+    - selected feature set
+    - regression diagnostics
+    - test predictions
+    - performance comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 416
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,107 @@
+---
+id: packt/time-series-with-pytorch/contextual-sales-anomalies
+name: Contextual Sales Anomalies
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Time Series with PyTorch
+  edition:
+  official_url:
+  companion_sources:
+  - title: Unsupervised Time-Series Anomaly Detection
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_17/chapter17_unsupervised_anomaly.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_17/chapter17_unsupervised_anomaly.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 300
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Time Series with PyTorch
+    title: Unsupervised Time-Series Anomaly Detection
+    url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_17/chapter17_unsupervised_anomaly.py
+    repository:
+      url: https://github.com/PacktPublishing/Time-Series-with-PyTorch
+      path: Chapter_17/chapter17_unsupervised_anomaly.py
+    description: 'Packt constructs point, contextual, collective, and stockout anomalies
+      in a seasonal sales series and evaluates context-aware detection rules across
+      promotional regimes.
+
+'
+  data:
+    description: 'Synthetic daily sales history with seasonal peaks and promotional
+      regimes, augmented with controlled point and collective anomalies.
+
+'
+    source_url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_17/pseudo_sales_adj_v1.csv
+    availability: repository
+    files:
+    - Chapter_17/pseudo_sales_adj_v1.csv
+  original_implementation:
+    technologies:
+    - rolling statistics
+    - contextual anomalies
+    - collective anomalies
+    - control charts
+    - regime-aware detection
+    - precision and recall
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Time-Series-with-PyTorch/blob/main/Chapter_17/chapter17_unsupervised_anomaly.py
+  problem:
+    context: 'Sales observations that appear normal globally may be anomalous within
+      a local seasonal or promotional regime, while sequences of modest deviations
+      may represent a collective operational problem.
+
+'
+    objective: 'Distinguish point, contextual, and collective sales anomalies while
+      accounting for changing demand regimes.
+
+'
+    analytical_questions:
+    - Which extreme values are obvious point outliers?
+    - Which values are anomalous only in local context?
+    - How can multi-day anomalies and stockouts be detected?
+    - How much does regime conditioning improve precision and recall?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and profile the baseline sales series.
+    - Inject controlled anomaly types reproducibly.
+    - Build rolling and regime-aware reference distributions.
+    - Apply global and conditional anomaly rules.
+    - Detect point and collective anomalies.
+    - Compare detections with known labels.
+    - Analyze false positives and missed anomalies.
+    expected_outputs:
+    - labeled sales anomaly dataset
+    - anomaly score and flag table
+    - contextual detection visualizations
+    - precision-recall comparison
+    - regime-aware diagnostic findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 300
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

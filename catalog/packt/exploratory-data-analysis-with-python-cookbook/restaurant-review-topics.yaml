@@ -1,0 +1,106 @@
+---
+id: packt/exploratory-data-analysis-with-python-cookbook/restaurant-review-topics
+name: Restaurant Review Topics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Exploratory Data Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Topic Modelling
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch8/9.%20Performing%20Topic%20Modelling.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch8/9. Performing Topic Modelling.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 87
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Exploratory Data Analysis with Python Cookbook
+    title: Topic Modelling
+    url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch8/9.%20Performing%20Topic%20Modelling.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook
+      path: Ch8/9. Performing Topic Modelling.ipynb
+    description: 'Packt applies LDA to cleaned restaurant-review text, visualizes
+      learned topics, and assigns a dominant topic back to each review for exploratory
+      analysis.
+
+'
+  data:
+    description: 'Historical restaurant reviews together with cleaned and lemmatized
+      review text.
+
+'
+    source_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/tree/main/Ch8/Data
+    availability: repository
+    files:
+    - Ch8/Data/a1_RestaurantReviews_HistoricDump.tsv
+    - Ch8/Data/cleaned_reviews_lemmatized_data.csv
+  original_implementation:
+    technologies:
+    - text preprocessing
+    - Gensim
+    - LDA
+    - topic assignment
+    - pyLDAvis
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Exploratory-Data-Analysis-with-Python-Cookbook/blob/main/Ch8/9.%20Performing%20Topic%20Modelling.ipynb
+  problem:
+    context: 'A restaurant has large volumes of free-text reviews and needs to discover
+      recurring themes without manually defining categories.
+
+'
+    objective: 'Discover latent topics in restaurant reviews and characterize how
+      reviews are distributed across those themes.
+
+'
+    analytical_questions:
+    - What recurring topics appear in customer reviews?
+    - Which terms characterize each topic?
+    - How many topics provide an interpretable representation?
+    - Which topic dominates each review?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - gensim
+    - pyLDAvis
+    logical_steps:
+    - Load and validate review text.
+    - Tokenize and prepare a modeling corpus.
+    - Construct dictionary and bag-of-words representations.
+    - Fit candidate LDA topic models.
+    - Inspect and visualize topic-term distributions.
+    - Assign dominant topics to reviews.
+    - Summarize topic prevalence.
+    expected_outputs:
+    - prepared text corpus
+    - topic model
+    - topic-term summaries
+    - interactive topic visualization
+    - review-level topic assignments
+    - topic prevalence table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 87
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

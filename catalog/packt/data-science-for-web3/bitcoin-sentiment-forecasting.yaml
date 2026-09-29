@@ -1,0 +1,107 @@
+---
+id: packt/data-science-for-web3/bitcoin-sentiment-forecasting
+name: Bitcoin Sentiment Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Web3
+  edition:
+  official_url:
+  companion_sources:
+  - title: Traditional Time-Series Models
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter11/1.Traditional_time_series_models.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/1.Traditional_time_series_models.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 341
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Web3
+    title: Traditional Time-Series Models
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter11/1.Traditional_time_series_models.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Web3
+      path: Chapter11/1.Traditional_time_series_models.ipynb
+    description: 'Packt forecasts Bitcoin prices with ARIMA and Auto-ARIMA, then adds
+      daily news sentiment as an exogenous variable in SARIMAX and compares forecast
+      error.
+
+'
+  data:
+    description: 'Bitcoin daily closing prices combined with daily aggregated news-sentiment
+      signals.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter11/joint_news_df.csv
+    availability: repository_and_external
+    files:
+    - Chapter11/joint_news_df.csv
+  original_implementation:
+    technologies:
+    - ARIMA
+    - Auto-ARIMA
+    - SARIMAX
+    - sentiment aggregation
+    - exogenous forecasting
+    - RMSE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter11/1.Traditional_time_series_models.ipynb
+  problem:
+    context: 'Bitcoin prices are volatile and may react to contemporaneous news sentiment,
+      so an analyst can compare purely autoregressive forecasts with models that incorporate
+      external sentiment signals.
+
+'
+    objective: 'Forecast Bitcoin prices and evaluate whether news sentiment improves
+      out-of-sample accuracy.
+
+'
+    analytical_questions:
+    - What differencing and autocorrelation structure is present?
+    - How do manual ARIMA and Auto-ARIMA compare?
+    - Does aggregated news sentiment improve forecast accuracy?
+    - How stable are results over the final holdout period?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - pmdarima
+    - scikit-learn
+    logical_steps:
+    - Load and transform Bitcoin prices.
+    - Split chronologically into training and test periods.
+    - Diagnose autocorrelation and differencing needs.
+    - Fit ARIMA baselines.
+    - Aggregate and align daily news sentiment.
+    - Fit SARIMAX or Auto-ARIMA with exogenous sentiment.
+    - Compare holdout RMSE.
+    expected_outputs:
+    - time-series diagnostics
+    - baseline forecasts
+    - sentiment-enhanced forecasts
+    - RMSE comparison
+    - forecast plots
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 341
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,100 @@
+---
+id: packt/practical-deep-learning-at-scale-with-mlflow/sentiment-explainability-service
+name: Sentiment Explainability Service
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Deep Learning at Scale with MLflow
+  edition:
+  official_url:
+  companion_sources:
+  - title: NLP Sentiment Classifier Explainer
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/blob/main/chapter10/pipeline/nlp_sentiment_classifier_explainer.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter10/pipeline/nlp_sentiment_classifier_explainer.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 373
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Deep Learning at Scale with MLflow
+    title: NLP Sentiment Classifier Explainer
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/blob/main/chapter10/pipeline/nlp_sentiment_classifier_explainer.py
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+      path: chapter10/pipeline/nlp_sentiment_classifier_explainer.py
+    description: 'Packt packages SHAP explanations for a transformer sentiment classifier
+      as a reusable MLflow pyfunc explanation artifact.
+
+'
+  data:
+    description: 'Free-text sentiment inputs evaluated through a pretrained transformer
+      pipeline.
+
+'
+    source_url: https://huggingface.co/models
+    availability: model_download
+    files: []
+  original_implementation:
+    technologies:
+    - MLflow
+    - SHAP
+    - transformers
+    - sentiment analysis
+    - pyfunc
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/blob/main/chapter10/pipeline/nlp_sentiment_classifier_explainer.py
+  problem:
+    context: 'Production sentiment predictions may require inspectable token-level
+      explanations rather than a label alone.
+
+'
+    objective: 'Package sentiment explanations as a reusable versioned inference artifact.
+
+'
+    analytical_questions:
+    - Which tokens contribute most to a prediction?
+    - How can explanation generation be standardized?
+    - What interface should an explanation service expose?
+    - How should explanation artifacts be versioned?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - mlflow
+    - shap
+    - transformers
+    - pandas
+    logical_steps:
+    - Load a sentiment pipeline.
+    - Construct a SHAP explainer.
+    - Generate token-level attributions.
+    - Wrap explanation logic as an MLflow model.
+    - Define signatures and log the artifact.
+    - Validate explanations on representative text.
+    expected_outputs:
+    - token attribution values
+    - explanation visualizations
+    - registered explainer model
+    - reusable explanation interface
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 373
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

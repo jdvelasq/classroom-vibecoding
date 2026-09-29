@@ -1,0 +1,102 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/bank-campaign-conversion-diagnostics
+name: Bank Campaign Conversion Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Analyzing Conversion Rates of Marketing Campaigns
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Analyzing Conversion Rates of Marketing
+      Campaigns.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 182
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Analyzing Conversion Rates of Marketing Campaigns
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Analyzing Conversion Rates of Marketing
+        Campaigns.ipynb
+    description: 'Packt analyzes bank marketing conversion rates across contact frequency,
+      age, education, job, and marital-status segments while explicitly identifying
+      call duration as unavailable before the call.
+
+'
+  data:
+    description: 'UCI Bank Marketing customer, campaign, economic-context, and term-deposit-response
+      records.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/222/bank+marketing
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - conversion-rate analysis
+    - segmentation
+    - pivot tables
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'A bank wants to understand which customer and campaign segments convert
+      at different rates before designing the next marketing round.
+
+'
+    objective: 'Diagnose variation in campaign conversion rates across customer and
+      contact characteristics.
+
+'
+    analytical_questions:
+    - What is the overall conversion rate?
+    - How does conversion vary with contact frequency?
+    - Which demographic segments show higher or lower conversion?
+    - Which variables create time-of-prediction leakage?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate campaign records.
+    - Encode the conversion outcome.
+    - Calculate overall and campaign-level conversion rates.
+    - Build customer and contact segments.
+    - Compare conversion across segments.
+    - Identify variables unavailable before contact.
+    expected_outputs:
+    - conversion KPI table
+    - segment conversion tables
+    - conversion-rate charts
+    - leakage warning list
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 182
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

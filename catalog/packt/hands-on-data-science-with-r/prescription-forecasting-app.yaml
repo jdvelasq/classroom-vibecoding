@@ -1,0 +1,113 @@
+---
+id: packt/hands-on-data-science-with-r/prescription-forecasting-app
+name: Prescription Forecasting App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: R Shiny Forecasting Application
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter07/app.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/app.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 172
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science with R
+    title: R Shiny Forecasting Application
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter07/app.R
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R
+      path: Chapter07/app.R
+    description: 'Packt builds a Shiny forecasting application over NHS prescription
+      data, allowing users to choose a product, forecast quantity or sales revenue,
+      compare related products, select among several forecasting models, inspect actuals
+      and forecasts, and view prediction intervals.
+
+'
+  data:
+    description: 'NHS prescription product history with product names, chemical categories,
+      monthly quantities, and actual costs stored in the book''s product database.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/tree/master/Chapter07
+    availability: repository
+    files:
+    - Chapter07/productdb.rds
+  original_implementation:
+    technologies:
+    - R
+    - Shiny
+    - forecast
+    - Prophet
+    - Holt-Winters
+    - TBATS
+    - ARIMA
+    - Plotly
+    - interactive forecasting
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter07/app.R
+  problem:
+    context: 'Prescription analysts need to explore product histories and generate
+      forecasts interactively without writing a separate forecasting script for every
+      drug.
+
+'
+    objective: 'Build a self-service product forecasting application with selectable
+      models, metrics, related-product comparisons, and forecast intervals.
+
+'
+    analytical_questions:
+    - How have quantity and sales revenue evolved for a selected product?
+    - Which related products have the largest historical volume?
+    - How do alternative forecasting models change the outlook?
+    - What uncertainty surrounds future product demand or revenue?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - prophet
+    - plotly
+    - streamlit
+    logical_steps:
+    - Load and validate prescription history.
+    - Build product and category selectors.
+    - Generate regular monthly time series by product.
+    - Implement alternative forecasting models.
+    - Generate prediction intervals.
+    - Compare the selected product with related products.
+    - Expose forecasts and underlying data interactively.
+    expected_outputs:
+    - selectable product history
+    - model-specific forecasts
+    - prediction interval table
+    - related-product comparison chart
+    - interactive forecasting interface
+    - working analytical application
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 172
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

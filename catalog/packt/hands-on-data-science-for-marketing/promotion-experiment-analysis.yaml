@@ -1,0 +1,99 @@
+---
+id: packt/hands-on-data-science-for-marketing/promotion-experiment-analysis
+name: Promotion Experiment Analysis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: A/B Testing
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter12/python/ABTesting.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 193
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science for Marketing
+    title: A/B Testing
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+      path: Chapter12/python/ABTesting.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Fast-food promotion experiment with market size, store age, week,
+      promotion assignment, and sales.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing/tree/master/Chapter12/data
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - experimental comparison
+    - t-tests
+    - sales analysis
+    - group diagnostics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+  problem:
+    context: 'A business tests alternative promotions across stores and needs to determine
+      whether observed sales differences are statistically meaningful.
+
+'
+    objective: 'Compare promotion performance and quantify the statistical evidence
+      for sales differences.
+
+'
+    analytical_questions:
+    - Are treatment groups comparable on store characteristics?
+    - Which promotion produces higher observed sales?
+    - Are promotion differences statistically significant?
+    - Do effects appear stable across weeks?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate experimental data.
+    - Compare treatment-group composition.
+    - Summarize sales by promotion and week.
+    - Visualize treatment distributions.
+    - Run pairwise significance tests.
+    - Interpret effect direction and uncertainty.
+    expected_outputs:
+    - promotion KPI table
+    - group-balance diagnostics
+    - sales comparison charts
+    - t-test results
+    - experiment conclusion
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 193
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

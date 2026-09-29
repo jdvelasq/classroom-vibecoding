@@ -1,0 +1,94 @@
+---
+id: packt/interpretable-machine-learning-with-python/chocolate-rating-classification
+name: Chocolate Rating Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Chocolate Rating Classification
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python/blob/master/Chapter06/ChocoRatings.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/ChocoRatings.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 423
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Interpretable Machine Learning with Python
+    title: Chocolate Rating Classification
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python/blob/master/Chapter06/ChocoRatings.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python
+      path: Chapter06/ChocoRatings.ipynb
+    description: 'Packt classifies chocolate ratings and explains predictions with
+      SHAP and LIME, including tabular and text-based local explanations.
+
+'
+  data:
+    description: 'Case dataset supplied or downloaded by the companion implementation.
+
+'
+    source_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python/tree/master/datasets
+    availability: repository_or_download
+    files: []
+  original_implementation:
+    technologies:
+    - support vector classification
+    - LightGBM
+    - SHAP
+    - LIME
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python/blob/master/Chapter06/ChocoRatings.ipynb
+  problem:
+    context: 'Product-quality predictions can combine structured attributes and textual
+      information, but analysts also need to understand why particular products receive
+      predicted quality classes.
+
+'
+    objective: 'Classify chocolate quality and explain individual predictions from
+      tabular and textual evidence.
+
+'
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the case data.
+    - Prepare predictors and target.
+    - Reproduce the original model.
+    - Evaluate predictive performance.
+    - Apply the case-specific interpretation or robustness analysis.
+    - Summarize actionable analytical findings.
+    expected_outputs:
+    - prepared dataset
+    - fitted model
+    - performance metrics
+    - case-specific diagnostic outputs
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 423
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

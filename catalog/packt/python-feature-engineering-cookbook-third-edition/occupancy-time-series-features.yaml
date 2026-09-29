@@ -1,0 +1,106 @@
+---
+id: packt/python-feature-engineering-cookbook-third-edition/occupancy-time-series-features
+name: Occupancy Time-Series Features
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Feature Engineering Cookbook, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Extracting Time-Series Features with tsfresh
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch10-tsfresh/Recipe5-extract-features-automatically-within-pipeline.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch10-tsfresh/Recipe5-extract-features-automatically-within-pipeline.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 132
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Feature Engineering Cookbook, Third Edition
+    title: Extracting Time-Series Features with tsfresh
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch10-tsfresh/Recipe5-extract-features-automatically-within-pipeline.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition
+      path: ch10-tsfresh/Recipe5-extract-features-automatically-within-pipeline.ipynb
+    description: 'Packt transforms minute-level environmental sensor streams into
+      window-level features for occupancy analysis using tsfresh and a reusable feature-augmentation
+      pipeline.
+
+'
+  data:
+    description: 'UCI Occupancy Detection sensor data with temperature, humidity,
+      light, CO2, humidity ratio, timestamps, and room occupancy.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/357/occupancy+detection
+    availability: public
+    files:
+    - ch10-tsfresh/occupancy.csv
+    - ch10-tsfresh/occupancy_target.csv
+  original_implementation:
+    technologies:
+    - tsfresh
+    - time-series windows
+    - automated feature extraction
+    - feature selection
+    - scikit-learn pipeline
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch10-tsfresh/Recipe5-extract-features-automatically-within-pipeline.ipynb
+  problem:
+    context: 'Raw sensor readings arrive as dense time series, while occupancy models
+      often require fixed-length feature vectors representing recent environmental
+      behavior.
+
+'
+    objective: 'Convert multivariate sensor sequences into an analytics-ready window-level
+      feature matrix using automated time-series feature extraction.
+
+'
+    analytical_questions:
+    - How should raw sensor observations be grouped into analytical windows?
+    - Which time-series characteristics can be extracted automatically?
+    - Which extracted features are relevant to occupancy?
+    - How can feature generation be embedded safely in a modeling pipeline?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - tsfresh
+    - scikit-learn
+    logical_steps:
+    - Load and validate sensor observations.
+    - Define fixed temporal windows.
+    - Separate target occupancy labels.
+    - Configure time-series feature calculators.
+    - Extract candidate features from each sensor.
+    - Select relevant features without leaking test information.
+    - Package extraction in a reproducible pipeline.
+    expected_outputs:
+    - windowed sensor dataset
+    - extracted feature matrix
+    - selected feature list
+    - feature extraction pipeline
+    - analytics-ready occupancy table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 132
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

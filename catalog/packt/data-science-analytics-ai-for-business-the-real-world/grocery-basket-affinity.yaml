@@ -1,0 +1,110 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/grocery-basket-affinity
+name: Grocery Basket Affinity
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Market Basket Analysis - Grocery Data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Market%20Basket%20Anaylsis%20-%20Grocery%20Data.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Market Basket Anaylsis - Grocery Data.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 56
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Market Basket Analysis - Grocery Data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Market%20Basket%20Anaylsis%20-%20Grocery%20Data.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Market Basket Anaylsis - Grocery Data.ipynb
+    description: 'Packt implements market-basket analysis on grocery transactions
+      using frequent itemsets and association rules measured by support, confidence,
+      and lift.
+
+'
+  data:
+    description: 'Grocery transaction records containing customer or member identifiers,
+      purchase dates, and purchased items.
+
+'
+    source_url: https://github.com/rajeevratan84/datascienceforbusiness/blob/master/Groceries_dataset.csv
+    availability: public
+    files:
+    - Groceries_dataset.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - transaction encoding
+    - Apriori
+    - association rules
+    - support
+    - confidence
+    - lift
+    - mlxtend
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Market%20Basket%20Anaylsis%20-%20Grocery%20Data.ipynb
+  problem:
+    context: 'Retailers need to understand which products tend to be purchased together
+      so they can interpret shopping patterns and identify useful product affinities.
+
+'
+    objective: 'Discover frequent grocery-item combinations and quantify association
+      rules using support, confidence, and lift.
+
+'
+    analytical_questions:
+    - Which grocery items occur most frequently in transactions?
+    - Which item combinations occur together more often than expected?
+    - Which association rules have meaningful support and confidence?
+    - Which relationships remain strong after accounting for item popularity through
+      lift?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - mlxtend
+    - matplotlib
+    logical_steps:
+    - Load and validate grocery transaction records.
+    - Reconstruct customer baskets from item-level purchases.
+    - Encode transactions into a binary basket matrix.
+    - Calculate frequent itemsets with Apriori.
+    - Derive association rules.
+    - Filter and rank rules by support, confidence, and lift.
+    - Visualize the strongest product affinities.
+    - Interpret the resulting purchasing patterns.
+    expected_outputs:
+    - transaction basket matrix
+    - frequent itemset table
+    - association-rule table
+    - ranked product affinities
+    - affinity visualizations
+    - written retail interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 56
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

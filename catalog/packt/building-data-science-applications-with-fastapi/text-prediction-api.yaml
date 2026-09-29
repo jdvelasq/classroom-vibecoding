@@ -1,0 +1,108 @@
+---
+id: packt/building-data-science-applications-with-fastapi/text-prediction-api
+name: Text Prediction API
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Building Data Science Applications with FastAPI
+  edition:
+  official_url:
+  companion_sources:
+  - title: Machine Learning Prediction Backend
+    url: https://github.com/PacktPublishing/Building-Data-Science-Applications-with-FastAPI/blob/main/chapter13/chapter13_prediction_endpoint.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Building-Data-Science-Applications-with-FastAPI
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter13
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 112
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Building Data Science Applications with FastAPI
+    title: Machine Learning Prediction Backend
+    url: https://github.com/PacktPublishing/Building-Data-Science-Applications-with-FastAPI/blob/main/chapter13/chapter13_prediction_endpoint.py
+    repository:
+      url: https://github.com/PacktPublishing/Building-Data-Science-Applications-with-FastAPI
+      path: chapter13
+    description: 'Packt loads a serialized 20 Newsgroups text-classification pipeline
+      into a FastAPI service and exposes typed prediction requests and responses through
+      an asynchronous endpoint.
+
+'
+  data:
+    description: '20 Newsgroups text used to train the serialized classification pipeline
+      supplied with the book.
+
+'
+    source_url: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html
+    availability: library_download
+    files:
+    - chapter13/newsgroups_model.joblib
+  original_implementation:
+    technologies:
+    - FastAPI
+    - Pydantic
+    - scikit-learn
+    - joblib
+    - async API
+    - automated testing
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Building-Data-Science-Applications-with-FastAPI/tree/main/chapter13
+  problem:
+    context: 'A trained text classifier must be exposed as a reliable application
+      interface with validated inputs, typed outputs, efficient model loading, and
+      testable behavior.
+
+'
+    objective: 'Build a production-style REST prediction backend around a serialized
+      text classifier.
+
+'
+    analytical_questions:
+    - How should prediction requests and responses be validated?
+    - When should the model artifact be loaded?
+    - How can inference be exposed without retraining?
+    - How should endpoint behavior be tested?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - fastapi
+    - pydantic
+    - scikit-learn
+    - joblib
+    - pytest
+    logical_steps:
+    - Train or load a reproducible text model.
+    - Serialize the full preprocessing and prediction pipeline.
+    - Define typed request and response schemas.
+    - Load the model at application startup.
+    - Implement the prediction dependency and endpoint.
+    - Add valid and invalid request tests.
+    - Package the service for local deployment.
+    expected_outputs:
+    - serialized prediction pipeline
+    - FastAPI prediction endpoint
+    - OpenAPI schema
+    - endpoint tests
+    - working inference service
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 112
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

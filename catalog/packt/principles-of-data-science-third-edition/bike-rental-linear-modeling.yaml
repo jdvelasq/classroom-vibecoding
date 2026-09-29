@@ -1,0 +1,106 @@
+---
+id: packt/principles-of-data-science-third-edition/bike-rental-linear-modeling
+name: Bike Rental Linear Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Principles of Data Science, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Bike Sharing Regression
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_10.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Code/chapter_10.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 398
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Principles of Data Science, Third Edition
+    title: Bike Sharing Regression
+    url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_10.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition
+      path: Code/chapter_10.ipynb
+    description: 'Packt models bike-sharing demand with simple and multiple linear
+      regression, compares feature sets, and evaluates predictive error on train/test
+      splits.
+
+'
+  data:
+    description: 'Bike-sharing demand observations with total rental count, temperature,
+      humidity, season, weather, holiday, working-day, and wind-speed variables.
+
+'
+    source_url: https://raw.githubusercontent.com/justmarkham/DAT8/master/data/bikeshare.csv
+    availability: public
+    files:
+    - bikeshare.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - multiple regression
+    - train/test split
+    - MAE
+    - MSE
+    - RMSE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Principles-of-Data-Science-Third-Edition/blob/main/Code/chapter_10.ipynb
+  problem:
+    context: 'Bike-sharing demand varies with environmental and calendar conditions,
+      and operators need a transparent baseline for predicting rental volume.
+
+'
+    objective: 'Build and evaluate linear models for bike-rental demand and quantify
+      the incremental value of additional predictors.
+
+'
+    analytical_questions:
+    - How strongly is temperature associated with rental demand?
+    - Which additional predictors improve demand estimates?
+    - How does model error change as features are added?
+    - What prediction error remains on held-out observations?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    logical_steps:
+    - Load and validate bike-sharing observations.
+    - Explore demand versus temperature.
+    - Fit a single-predictor regression baseline.
+    - Add weather and calendar predictors.
+    - Split data into training and test sets.
+    - Compare MAE, MSE, and RMSE across models.
+    - Interpret coefficients and residual error.
+    expected_outputs:
+    - regression baseline
+    - coefficient table
+    - feature-set comparison
+    - holdout error metrics
+    - demand predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 398
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

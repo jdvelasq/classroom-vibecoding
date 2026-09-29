@@ -1,0 +1,103 @@
+---
+id: packt/data-science-for-web3/ethereum-fraud-detection
+name: Ethereum Fraud Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Web3
+  edition:
+  official_url:
+  companion_sources:
+  - title: Fraud Modeling
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter10/3.Models.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/3.Models.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 340
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Web3
+    title: Fraud Modeling
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter10/3.Models.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Web3
+      path: Chapter10/3.Models.ipynb
+    description: 'Packt compares KNN, decision trees, AdaBoost, gradient boosting,
+      and random forests for classifying fraudulent blockchain addresses, then tunes
+      the best candidate with grid search.
+
+'
+  data:
+    description: 'Engineered Ethereum-address features with a binary fraud flag.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter10/final.csv
+    availability: repository
+    files:
+    - Chapter10/final.csv
+  original_implementation:
+    technologies:
+    - KNN
+    - decision trees
+    - AdaBoost
+    - gradient boosting
+    - random forest
+    - cross-validation
+    - grid search
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter10/3.Models.ipynb
+  problem:
+    context: 'Blockchain transaction histories can be summarized into address-level
+      features that may distinguish fraudulent accounts from legitimate ones.
+
+'
+    objective: 'Compare and tune classifiers for detecting fraudulent Ethereum addresses.
+
+'
+    analytical_questions:
+    - Which address features distinguish fraud from legitimate behavior?
+    - Which model family performs best under cross-validation?
+    - How much does hyperparameter tuning improve performance?
+    - Where does the final model still make classification errors?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate address-level features.
+    - Separate target and predictors.
+    - Create reproducible train/test data.
+    - Compare several classification algorithms.
+    - Tune the strongest model.
+    - Evaluate confusion matrix and class-level metrics.
+    - Inspect error cases and important predictors.
+    expected_outputs:
+    - model comparison table
+    - tuned fraud classifier
+    - classification report
+    - confusion matrix
+    - address-level fraud predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 340
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

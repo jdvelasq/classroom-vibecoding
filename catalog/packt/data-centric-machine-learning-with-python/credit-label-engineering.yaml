@@ -1,0 +1,107 @@
+---
+id: packt/data-centric-machine-learning-with-python/credit-label-engineering
+name: Credit Label Engineering
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data-Centric Machine Learning with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Techniques for Programmatic Labelling
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 6 - Techniques for programmatic labelling/Chapter 6 - Techniques
+      for programmatic labelling.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 117
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data-Centric Machine Learning with Python
+    title: Techniques for Programmatic Labelling
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+      path: Chapter 6 - Techniques for programmatic labelling/Chapter 6 - Techniques
+        for programmatic labelling.ipynb
+    description: 'Packt constructs weak labels for credit and loan records from interpretable
+      rules, applies Snorkel labeling functions, combines noisy supervision with a
+      label model, and compares generated labels with known outcomes.
+
+'
+  data:
+    description: 'Credit-risk and loan-application records with financial and demographic
+      attributes used to design and evaluate programmatic labeling rules.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+    availability: repository_and_public
+    files:
+    - train_loan_prediction.csv
+  original_implementation:
+    technologies:
+    - pattern matching
+    - weak supervision
+    - Snorkel
+    - labeling functions
+    - label model
+    - label quality evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling/Chapter%206%20-%20Techniques%20for%20programmatic%20labelling.ipynb
+  problem:
+    context: 'Manually labeling enough records for supervised learning can be expensive,
+      but domain rules can provide multiple imperfect labeling signals at scale.
+
+'
+    objective: 'Build and evaluate a programmatic labeling pipeline that converts
+      domain rules into probabilistic training labels.
+
+'
+    analytical_questions:
+    - Which domain rules can be expressed as labeling functions?
+    - Where do labeling functions agree, conflict, or abstain?
+    - How can noisy labels be combined probabilistically?
+    - How closely do generated labels match trusted outcomes?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - snorkel
+    - scikit-learn
+    logical_steps:
+    - Load and prepare credit or loan records.
+    - Define transparent labeling functions.
+    - Apply all rules to each observation.
+    - Measure coverage, overlap, conflict, and empirical accuracy.
+    - Fit a probabilistic label model.
+    - Produce weak labels and label probabilities.
+    - Compare generated labels with available gold labels.
+    expected_outputs:
+    - labeling-function matrix
+    - coverage and conflict report
+    - label-model probabilities
+    - generated training labels
+    - label quality comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 117
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

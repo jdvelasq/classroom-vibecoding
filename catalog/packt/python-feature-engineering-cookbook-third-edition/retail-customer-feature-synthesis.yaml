@@ -1,0 +1,103 @@
+---
+id: packt/python-feature-engineering-cookbook-third-edition/retail-customer-feature-synthesis
+name: Retail Customer Feature Synthesis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Feature Engineering Cookbook, Third Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Creating Features with Aggregation Primitives
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch09-featuretools/Recipe6-Creating-features-with-aggregation-primitives.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch09-featuretools/Recipe6-Creating-features-with-aggregation-primitives.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 131
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Feature Engineering Cookbook, Third Edition
+    title: Creating Features with Aggregation Primitives
+    url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch09-featuretools/Recipe6-Creating-features-with-aggregation-primitives.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition
+      path: ch09-featuretools/Recipe6-Creating-features-with-aggregation-primitives.ipynb
+    description: 'Packt transforms Online Retail II transactions into customer-level
+      analytical features using entity relationships and automated aggregation primitives
+      in Featuretools.
+
+'
+  data:
+    description: 'UK Online Retail II transactions with customer, invoice, product,
+      quantity, price, and timestamp information.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/502/online+retail+ii
+    availability: public
+    files:
+    - ch09-featuretools/retail.csv
+  original_implementation:
+    technologies:
+    - Featuretools
+    - entity relationships
+    - aggregation primitives
+    - customer-level feature synthesis
+    - pandas
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook-Third-Edition/blob/main/ch09-featuretools/Recipe6-Creating-features-with-aggregation-primitives.ipynb
+  problem:
+    context: 'Retail transactions are recorded at invoice-line level, while many downstream
+      customer analyses require compact customer-level behavioral features.
+
+'
+    objective: 'Convert transactional retail history into a reproducible customer-level
+      feature table.
+
+'
+    analytical_questions:
+    - Which entity relationships exist among customers and transactions?
+    - Which aggregate behaviors can be generated automatically?
+    - How do transaction-level attributes become customer-level features?
+    - Which synthesized features are suitable for downstream segmentation or prediction?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - featuretools
+    logical_steps:
+    - Load and clean retail transactions.
+    - Define customer and transaction entities.
+    - Establish entity relationships.
+    - Configure aggregation primitives.
+    - Generate customer-level features.
+    - Inspect feature definitions and distributions.
+    - Export the analytical feature table.
+    expected_outputs:
+    - cleaned retail transactions
+    - entity set
+    - feature definitions
+    - customer-level feature matrix
+    - feature quality summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 131
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

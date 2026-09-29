@@ -1,0 +1,108 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/customer-churn-prediction
+name: Customer Churn Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Figuring Out Which Customers May Leave - Churn
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Figuring%20Our%20Which%20Customers%20May%20Leave%20-%20Churn.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Figuring Our Which Customers May Leave -
+      Churn.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 57
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Figuring Out Which Customers May Leave - Churn
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Figuring%20Our%20Which%20Customers%20May%20Leave%20-%20Churn.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Figuring Our Which Customers May Leave
+        - Churn.ipynb
+    description: 'Packt uses historical telecommunications customer records to identify
+      customers who are likely to churn from service.
+
+'
+  data:
+    description: 'IBM-style telecommunications churn data with 7,043 customers, service
+      subscriptions, contract information, tenure, charges, and observed churn.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/WA_Fn-UseC_-Telco-Customer-Churn.csv
+    availability: public
+    files:
+    - WA_Fn-UseC_-Telco-Customer-Churn.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory analysis
+    - categorical encoding
+    - classification
+    - model evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Figuring%20Our%20Which%20Customers%20May%20Leave%20-%20Churn.ipynb
+  problem:
+    context: 'A telecommunications provider wants to identify existing customers who
+      are at elevated risk of ending their relationship with the company.
+
+'
+    objective: 'Predict customer churn from historical account, service, contract,
+      tenure, and billing characteristics and interpret the resulting risk patterns.
+
+'
+    analytical_questions:
+    - Which customer characteristics are associated with observed churn?
+    - How should categorical service and contract variables be represented?
+    - How accurately can future churners be distinguished from retained customers?
+    - Which features are most informative for identifying elevated churn risk?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate customer records.
+    - Inspect churn prevalence and data quality.
+    - Prepare numeric and categorical predictors.
+    - Define leakage-safe training and test sets.
+    - Train alternative classification models.
+    - Evaluate discrimination and classification errors.
+    - Interpret important churn drivers.
+    - Produce customer-level churn probabilities.
+    expected_outputs:
+    - prepared customer dataset
+    - churn profile analysis
+    - fitted classification models
+    - evaluation metrics
+    - customer churn probabilities
+    - feature interpretation
+    - written business interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 57
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

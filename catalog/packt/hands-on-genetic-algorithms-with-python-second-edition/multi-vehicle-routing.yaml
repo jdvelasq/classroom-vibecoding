@@ -1,0 +1,106 @@
+---
+id: packt/hands-on-genetic-algorithms-with-python-second-edition/multi-vehicle-routing
+name: Multi-Vehicle Routing
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Genetic Algorithms with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Vehicle Routing Problem
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_04/04_solve_vrp.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_04/04_solve_vrp.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 125
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Genetic Algorithms with Python, Second Edition
+    title: Vehicle Routing Problem
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_04/04_solve_vrp.py
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition
+      path: chapter_04/04_solve_vrp.py
+    description: 'Packt formulates a multi-vehicle routing problem and uses a genetic
+      algorithm to minimize the maximum distance traveled by any vehicle while preserving
+      feasible route structure.
+
+'
+  data:
+    description: 'TSPLIB-style city locations and distance matrices based on the bayg29
+      instance, with a specified depot and three vehicles.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/tree/main/chapter_04/tsp-data
+    availability: repository
+    files:
+    - chapter_04/tsp-data/bayg29.tsp
+    - chapter_04/tsp-data/bayg29-dist.pickle
+    - chapter_04/tsp-data/bayg29-loc.pickle
+  original_implementation:
+    technologies:
+    - DEAP
+    - genetic algorithms
+    - vehicle routing
+    - elitism
+    - route optimization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_04/04_solve_vrp.py
+  problem:
+    context: 'Multiple vehicles must serve a set of locations from a common depot
+      while avoiding an excessively long route for any single vehicle.
+
+'
+    objective: 'Find a multi-vehicle routing plan that minimizes the longest vehicle
+      route.
+
+'
+    analytical_questions:
+    - How should locations be partitioned among vehicles?
+    - What route should each vehicle follow?
+    - How does the objective differ from minimizing only total distance?
+    - How quickly does the genetic algorithm converge?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - deap
+    - matplotlib
+    logical_steps:
+    - Load city locations and distances.
+    - Define depot and fleet size.
+    - Encode candidate multi-vehicle routes.
+    - Define maximum-route-distance fitness.
+    - Configure crossover, mutation, selection, and elitism.
+    - Run the genetic algorithm reproducibly.
+    - Decode and visualize the best route plan.
+    expected_outputs:
+    - vehicle route assignments
+    - total and maximum route distances
+    - convergence history
+    - route visualization
+    - optimized routing plan
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 125
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

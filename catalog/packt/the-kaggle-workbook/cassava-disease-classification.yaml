@@ -1,0 +1,107 @@
+---
+id: packt/the-kaggle-workbook/cassava-disease-classification
+name: Cassava Disease Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: The Kaggle Workbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: End-to-End Image Classification
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_03/ch3-end-to-end-image-classification.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_03/ch3-end-to-end-image-classification.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 351
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: The Kaggle Workbook
+    title: End-to-End Image Classification
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_03/ch3-end-to-end-image-classification.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+      path: chapter_03/ch3-end-to-end-image-classification.ipynb
+    description: 'Packt builds an end-to-end cassava leaf disease classifier with
+      image augmentation, EfficientNet transfer learning, validation splitting, checkpointing,
+      early stopping, and test-image prediction.
+
+'
+  data:
+    description: 'Cassava leaf images labeled by disease class from the Kaggle cassava
+      leaf disease classification competition.
+
+'
+    source_url: https://www.kaggle.com/competitions/cassava-leaf-disease-classification
+    availability: public_platform
+    files:
+    - train.csv
+    - train_images
+    - test_images
+  original_implementation:
+    technologies:
+    - TensorFlow
+    - Keras
+    - EfficientNet
+    - transfer learning
+    - image augmentation
+    - early stopping
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_03/ch3-end-to-end-image-classification.ipynb
+  problem:
+    context: 'Crop disease symptoms visible in leaf images can support automated field
+      screening when labeled examples are available.
+
+'
+    objective: 'Train and validate an image classifier for cassava leaf disease.
+
+'
+    analytical_questions:
+    - How should images be augmented for robust training?
+    - How well does transfer learning distinguish disease classes?
+    - Which classes are most frequently confused?
+    - How should the best validation checkpoint be selected?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - pandas
+    - pillow
+    - scikit-learn
+    logical_steps:
+    - Load labels and image paths.
+    - Create training and validation splits.
+    - Configure image augmentation.
+    - Initialize a pretrained EfficientNet backbone.
+    - Train with checkpointing and early stopping.
+    - Evaluate class-level errors.
+    - Predict labels for unseen images.
+    expected_outputs:
+    - trained image classifier
+    - learning curves
+    - validation metrics
+    - confusion diagnostics
+    - image-level disease predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 351
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

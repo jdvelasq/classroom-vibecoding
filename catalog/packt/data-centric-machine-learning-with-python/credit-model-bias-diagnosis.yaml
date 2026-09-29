@@ -1,0 +1,108 @@
+---
+id: packt/data-centric-machine-learning-with-python/credit-model-bias-diagnosis
+name: Credit Model Bias Diagnosis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data-Centric Machine Learning with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Techniques for Identifying and Removing Bias
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%208%20-%20Techniques%20for%20identifying%20and%20removing%20bias/Chapter%208-Code.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 8 - Techniques for identifying and removing bias/Chapter 8-Code.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 118
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data-Centric Machine Learning with Python
+    title: Techniques for Identifying and Removing Bias
+    url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%208%20-%20Techniques%20for%20identifying%20and%20removing%20bias/Chapter%208-Code.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+      path: Chapter 8 - Techniques for identifying and removing bias/Chapter 8-Code.ipynb
+    description: 'Packt evaluates a credit model with group-level fairness metrics
+      and compares resampling strategies intended to reduce performance disparities
+      while preserving predictive utility.
+
+'
+  data:
+    description: 'Credit-default records containing a protected sex attribute, financial
+      features, and default outcomes.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python
+    availability: referenced_dataset
+    files:
+    - loan_dataset.csv
+  original_implementation:
+    technologies:
+    - Fairlearn
+    - demographic parity
+    - equalized odds
+    - balanced accuracy
+    - SMOTE
+    - ADASYN
+    - resampling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Centric-Machine-Learning-with-Python/blob/main/Chapter%208%20-%20Techniques%20for%20identifying%20and%20removing%20bias/Chapter%208-Code.ipynb
+  problem:
+    context: 'A credit model can achieve acceptable aggregate accuracy while performing
+      differently across demographic groups, so model quality must be evaluated beyond
+      a single overall metric.
+
+'
+    objective: 'Diagnose group-level predictive disparities and compare data-level
+      mitigation strategies while tracking both fairness and predictive performance.
+
+'
+    analytical_questions:
+    - Does model performance differ across groups?
+    - What do demographic-parity and equalized-odds metrics reveal?
+    - How do alternative resampling methods change group performance?
+    - What trade-offs appear between fairness metrics and predictive accuracy?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - imbalanced-learn
+    - fairlearn
+    logical_steps:
+    - Load and prepare credit records.
+    - Separate the protected attribute from model features.
+    - Train a baseline classifier.
+    - Calculate aggregate and group-specific metrics.
+    - Calculate fairness metrics.
+    - Apply alternative resampling strategies.
+    - Refit and compare predictive and fairness outcomes.
+    expected_outputs:
+    - baseline classification metrics
+    - group-level performance table
+    - fairness metric table
+    - mitigation comparison
+    - trade-off analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 118
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

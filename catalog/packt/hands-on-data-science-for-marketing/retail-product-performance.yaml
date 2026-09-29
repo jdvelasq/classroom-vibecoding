@@ -1,0 +1,98 @@
+---
+id: packt/hands-on-data-science-for-marketing/retail-product-performance
+name: Retail Product Performance
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Product Analytics
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/python/Product Analytics.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 190
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science for Marketing
+    title: Product Analytics
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+      path: Chapter05/python/Product Analytics.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Online retail transactions with invoice dates, customers, products,
+      quantities, and sales values.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing/tree/master/Chapter05
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - time-series aggregation
+    - repeat-customer analysis
+    - product ranking
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+  problem:
+    context: 'A retailer needs to understand not only total sales but repeat-customer
+      contribution and changing product popularity through time.
+
+'
+    objective: 'Diagnose product, revenue, order, and repeat-customer performance
+      over time.
+
+'
+    analytical_questions:
+    - How do order volume and revenue evolve monthly?
+    - What share of customers are repeat buyers?
+    - How much revenue comes from repeat customers?
+    - Which products are gaining or losing popularity?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and clean retail transactions.
+    - Calculate monthly order and revenue series.
+    - Identify repeat customers by month.
+    - Measure repeat-customer revenue contribution.
+    - Rank products over time.
+    - Interpret performance changes.
+    expected_outputs:
+    - monthly order and revenue trends
+    - repeat-customer KPIs
+    - repeat-revenue analysis
+    - product popularity trends
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 190
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

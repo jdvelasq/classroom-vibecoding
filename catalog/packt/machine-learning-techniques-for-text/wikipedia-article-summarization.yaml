@@ -1,0 +1,99 @@
+---
+id: packt/machine-learning-techniques-for-text/wikipedia-article-summarization
+name: Wikipedia Article Summarization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Techniques for Text
+  edition:
+  official_url:
+  companion_sources:
+  - title: Summarizing Wikipedia Articles
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-07/text-summarization-transformer.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter-07/text-summarization-transformer.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 211
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Techniques for Text
+    title: Summarizing Wikipedia Articles
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-07/text-summarization-transformer.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+      path: chapter-07/text-summarization-transformer.ipynb
+    description: 'Packt acquires Wikipedia pages for world capitals, creates article-summary
+      pairs, trains a Transformer for abstractive summarization, and evaluates with
+      ROUGE.
+
+'
+  data:
+    description: 'Wikipedia content and lead summaries for forty capital-city pages.
+
+'
+    source_url: https://www.wikipedia.org/
+    availability: public_web
+    files: []
+  original_implementation:
+    technologies:
+    - Wikipedia acquisition
+    - Transformer
+    - attention
+    - abstractive summarization
+    - ROUGE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-07/text-summarization-transformer.ipynb
+  problem:
+    context: 'Long reference articles must be condensed while preserving their main
+      information.
+
+'
+    objective: 'Build an abstractive summarizer from Wikipedia article-summary pairs.
+
+'
+    analytical_questions:
+    - How should article and summary pairs be constructed?
+    - How does a Transformer generate summaries?
+    - How close are generated summaries to references under ROUGE?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - tensorflow
+    - wikipedia
+    - rouge-score
+    logical_steps:
+    - Acquire a fixed snapshot of selected pages.
+    - Separate content and reference summaries.
+    - Tokenize both corpora.
+    - Train an encoder-decoder Transformer.
+    - Generate held-out summaries.
+    - Calculate ROUGE metrics.
+    expected_outputs:
+    - article-summary corpus
+    - trained summarizer
+    - generated summaries
+    - ROUGE evaluation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 211
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,103 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/text-classifier-deployment
+name: Text Classifier Deployment
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Production Deplyoment using Flask Heroku
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Production%20Deplyoment%20using%20Flask%20Heroku.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Production Deplyoment using Flask Heroku.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 68
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Production Deplyoment using Flask Heroku
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Production%20Deplyoment%20using%20Flask%20Heroku.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Production Deplyoment using Flask Heroku.ipynb
+    description: 'Packt trains a text classifier, serializes the model, wraps it in
+      a Flask application, and demonstrates deployment as a user-facing prediction
+      service.
+
+'
+  data:
+    description: 'Scikit-learn 20 Newsgroups text corpus used to train and evaluate
+      the classifier.
+
+'
+    source_url: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - scikit-learn
+    - text classification
+    - model serialization
+    - Flask
+    - Heroku
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Production%20Deplyoment%20using%20Flask%20Heroku.ipynb
+  problem:
+    context: 'A trained analytical model creates value only when users or applications
+      can submit new text and obtain predictions reliably.
+
+'
+    objective: 'Turn a trained text-classification model into a deployable prediction
+      application.
+
+'
+    analytical_questions:
+    - What artifacts must be persisted from model training?
+    - How should inference inputs be transformed consistently?
+    - How can predictions be exposed through a simple web application?
+    - What checks are required before deployment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - scikit-learn
+    - joblib
+    - flask
+    logical_steps:
+    - Load and prepare the text corpus.
+    - Train and validate a text classifier.
+    - Persist the fitted preprocessing and model artifacts.
+    - Build a prediction function.
+    - Expose inference through a Flask endpoint or form.
+    - Test valid and invalid requests.
+    - Package the application for reproducible local deployment.
+    expected_outputs:
+    - trained classifier
+    - serialized model artifact
+    - inference function
+    - working web application
+    - deployment validation tests
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 68
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

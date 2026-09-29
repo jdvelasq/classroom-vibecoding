@@ -1,0 +1,102 @@
+---
+id: packt/hands-on-simulation-modeling-with-python-second-edition/forest-harvest-policy
+name: Forest Harvest Policy
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Simulation Modeling with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Forest Management
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/tiny_forest_management_modified.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/tiny_forest_management_modified.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 127
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Simulation Modeling with Python, Second Edition
+    title: Forest Management
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/tiny_forest_management_modified.py
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition
+      path: Chapter11/tiny_forest_management_modified.py
+    description: 'Packt models forest management as a Markov decision process and
+      uses policy iteration to choose between harvest and wait decisions under stochastic
+      fire risk.
+
+'
+  data:
+    description: 'Synthetic forest-state transition and reward matrices generated
+      with pymdptoolbox''s canonical forest-management example.
+
+'
+    source_url: https://pymdptoolbox.readthedocs.io/
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Markov decision process
+    - policy iteration
+    - stochastic transitions
+    - discounted rewards
+    - mdptoolbox
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/tiny_forest_management_modified.py
+  problem:
+    context: 'A forest manager repeatedly chooses whether to harvest or wait while
+      forest age and stochastic fire risk affect future rewards.
+
+'
+    objective: 'Determine the long-run state-dependent harvest policy that maximizes
+      discounted reward.
+
+'
+    analytical_questions:
+    - How do transition probabilities represent forest growth and fire risk?
+    - What rewards are associated with waiting and harvesting?
+    - Which action is optimal in each forest state?
+    - How sensitive is the policy to discounting and fire probability?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - pymdptoolbox
+    logical_steps:
+    - Define forest states and actions.
+    - Construct stochastic transition matrices.
+    - Define state-action rewards.
+    - Choose a discount factor.
+    - Solve the MDP with policy iteration.
+    - Inspect the value function and optimal policy.
+    - Run sensitivity scenarios for rewards and fire risk.
+    expected_outputs:
+    - transition matrices
+    - reward matrix
+    - state value function
+    - optimal harvest policy
+    - sensitivity comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 127
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

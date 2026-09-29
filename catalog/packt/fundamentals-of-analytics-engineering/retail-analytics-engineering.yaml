@@ -1,0 +1,112 @@
+---
+id: packt/fundamentals-of-analytics-engineering/retail-analytics-engineering
+name: Retail Analytics Engineering
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Fundamentals of Analytics Engineering
+  edition:
+  official_url:
+  companion_sources:
+  - title: Hands-on Analytics Engineering
+    url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering/tree/main/chapter_8
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_8
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 111
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Fundamentals of Analytics Engineering
+    title: Hands-on Analytics Engineering
+    url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering/tree/main/chapter_8
+    repository:
+      url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering
+      path: chapter_8
+    description: 'Packt develops an end-to-end analytics engineering exercise for
+      a retail stroopwafel shop using source files, ingestion guidance, dbt staging
+      models, dimensional marts, and an analytical fact table.
+
+'
+  data:
+    description: 'Retail source files for employees, products, promotions, sales,
+      sales lines, and shifts.
+
+'
+    source_url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering/tree/main/chapter_8/data
+    availability: repository
+    files:
+    - chapter_8/data/Employees.csv
+    - chapter_8/data/Products.csv
+    - chapter_8/data/Promotions.csv
+    - chapter_8/data/Sales.csv
+    - chapter_8/data/Sales_lines.csv
+    - chapter_8/data/Shifts.csv
+  original_implementation:
+    technologies:
+    - dbt
+    - SQL
+    - staging models
+    - dimensional modeling
+    - fact tables
+    - BigQuery
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Fundamentals-of-Analytics-Engineering/tree/main/chapter_8/dbt_stroopwafelshop
+  problem:
+    context: 'Raw retail operational tables need to be transformed into reliable analytical
+      models before sales, promotion, employee, product, and shift performance can
+      be analyzed.
+
+'
+    objective: 'Build a tested analytical data model from raw retail sources through
+      staging and dimensional marts.
+
+'
+    analytical_questions:
+    - How should raw retail source tables be staged?
+    - Which dimensions and fact tables support downstream analysis?
+    - How should keys and joins be standardized?
+    - What analytical grain should the sales fact table expose?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - duckdb
+    - dbt-duckdb
+    logical_steps:
+    - Load and validate source files.
+    - Define table grain and business keys.
+    - Build staging transformations.
+    - Construct employee, product, promotion, and shift dimensions.
+    - Construct the sales fact table.
+    - Add data-quality tests.
+    - Validate analytical joins and measures.
+    expected_outputs:
+    - staged source models
+    - analytical dimensions
+    - sales fact table
+    - data-quality tests
+    - lineage diagram
+    - analytics-ready retail mart
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 111
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/r-data-analysis-projects/sensor-stream-clustering
+name: Sensor Stream Clustering
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Analysis Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Stream Clustering
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter07/Scripts/StreamClustering/streamClustering.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/Scripts/StreamClustering/streamClustering.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 75
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Analysis Projects
+    title: Stream Clustering
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter07/Scripts/StreamClustering/streamClustering.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+      path: Chapter07/Scripts/StreamClustering/streamClustering.R
+    description: 'Packt simulates streaming sensor observations, introduces concept
+      drift, and applies online micro- and macro-clustering methods to evolving data.
+
+'
+  data:
+    description: 'Synthetic multivariate sensor streams with configurable clusters,
+      noise, and temporal drift generated in the R stream package.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter07/Scripts/StreamClustering/streamClustering.R
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - data streams
+    - DBSTREAM
+    - micro-clustering
+    - K-means macro-clustering
+    - concept drift
+    - stream
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter07/Scripts/StreamClustering/streamClustering.R
+  problem:
+    context: 'Sensor observations arrive continuously and their structure may drift,
+      making static clustering insufficient for monitoring evolving operating regimes.
+
+'
+    objective: 'Discover and track cluster structure in a streaming sensor process.
+
+'
+    analytical_questions:
+    - What clusters are present in the incoming stream?
+    - How does cluster structure change under drift?
+    - How do micro- and macro-cluster representations differ?
+    - How well do online clusters recover the simulated operating regimes?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - pandas
+    - river
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Generate a deterministic multivariate data stream.
+    - Introduce noise and controlled concept drift.
+    - Normalize streaming features.
+    - Update an online clustering model incrementally.
+    - Aggregate micro-clusters into interpretable macro-clusters.
+    - Track cluster centers and sizes over time.
+    - Evaluate cluster stability under drift.
+    expected_outputs:
+    - simulated sensor stream
+    - evolving cluster assignments
+    - cluster-center trajectories
+    - drift visualizations
+    - clustering quality summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 75
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,108 @@
+---
+id: packt/r-statistics-cookbook/subway-operating-state-discovery
+name: Subway Operating State Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Statistics Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Hidden Markov Subway Model
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__5__subwaymodel.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/10__5__subwaymodel.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 238
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Statistics Cookbook
+    title: Hidden Markov Subway Model
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__5__subwaymodel.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+      path: Chapter10/10__5__subwaymodel.R
+    description: 'Packt applies Poisson hidden Markov models to subway passenger counts
+      to infer latent open and closed operating states and extends state transitions
+      with weather and machinery-road information.
+
+'
+  data:
+    description: 'Subway observations containing passenger counts, weather, latent
+      operating state labels for evaluation, and an extended machinery-road indicator.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/tree/master/Chapter10
+    availability: repository
+    files:
+    - Chapter10/subway_data.csv
+    - Chapter10/subway_data_extended.csv
+  original_implementation:
+    technologies:
+    - R
+    - hidden Markov models
+    - Poisson emissions
+    - latent states
+    - transition covariates
+    - posterior probabilities
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter10/10__5__subwaymodel.R
+  problem:
+    context: 'Passenger counts contain indirect evidence about whether a subway system
+      is operating normally, while weather and infrastructure conditions may affect
+      transitions between latent operating regimes.
+
+'
+    objective: 'Infer hidden subway operating states from passenger-flow data and
+      diagnose the variables associated with state transitions.
+
+'
+    analytical_questions:
+    - Can passenger counts separate open and closed states?
+    - What posterior probability is assigned to each operating regime?
+    - How accurately do inferred states recover known states?
+    - How do weather and machinery conditions affect transition behavior?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - hmmlearn
+    - matplotlib
+    logical_steps:
+    - Load and validate subway observations.
+    - Encode weather and infrastructure covariates.
+    - Fit a count-oriented latent-state model.
+    - Estimate posterior state probabilities.
+    - Assign the most likely operating state.
+    - Compare inferred and known states.
+    - Examine transition behavior under operational covariates.
+    expected_outputs:
+    - latent state assignments
+    - posterior state probability series
+    - state confusion table
+    - transition diagnostics
+    - operating-regime visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 238
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

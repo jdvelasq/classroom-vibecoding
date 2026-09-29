@@ -1,0 +1,105 @@
+---
+id: packt/machine-learning-with-r-fourth-edition/auto-insurance-expense-modeling
+name: Auto Insurance Expense Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Insurance Expenses
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2006/Chapter_06.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 06/Chapter_06.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 108
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with R, Fourth Edition
+    title: Predicting Insurance Expenses
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2006/Chapter_06.R
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+      path: Chapter 06/Chapter_06.R
+    description: 'Packt predicts auto-insurance expenses from driver, vehicle, geography,
+      mileage, and driving-behavior attributes using regression with nonlinear and
+      interaction terms.
+
+'
+  data:
+    description: 'Auto-insurance records containing driver age, geography, vehicle
+      type and value, miles driven, education and driving-behavior indicators, and
+      expenses.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2006/autoinsurance.csv
+    availability: repository
+    files:
+    - Chapter 06/autoinsurance.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - nonlinear terms
+    - interaction effects
+    - regression diagnostics
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2006/Chapter_06.R
+  problem:
+    context: 'Insurance expenses may depend jointly on vehicle exposure and observed
+      driving behavior, including nonlinear age effects and interactions among risky
+      behaviors.
+
+'
+    objective: 'Estimate insurance expenses and diagnose how driver and vehicle characteristics
+      contribute to expected costs.
+
+'
+    analytical_questions:
+    - Which behaviors and vehicle attributes explain expenses?
+    - Does a nonlinear age effect improve the model?
+    - Which interactions matter?
+    - How do expected expenses change for hypothetical driver profiles?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scikit-learn
+    logical_steps:
+    - Load and validate insurance records.
+    - Explore expense distributions and correlations.
+    - Encode categorical predictors.
+    - Fit a baseline multiple regression.
+    - Add nonlinear and interaction terms.
+    - Compare diagnostics and predictive error.
+    - Score hypothetical customer profiles.
+    expected_outputs:
+    - regression coefficient table
+    - model comparison
+    - residual diagnostics
+    - customer expense predictions
+    - scenario comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 108
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

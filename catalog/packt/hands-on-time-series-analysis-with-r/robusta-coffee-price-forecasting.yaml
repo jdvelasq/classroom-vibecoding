@@ -1,0 +1,105 @@
+---
+id: packt/hands-on-time-series-analysis-with-r/robusta-coffee-price-forecasting
+name: Robusta Coffee Price Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Time Series Analysis with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Smoothing Methods for Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter10/Chapter%2010%20R%20code.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/Chapter 10 R code.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 429
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Time Series Analysis with R
+    title: Smoothing Methods for Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter10/Chapter%2010%20R%20code.R
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+      path: Chapter10/Chapter 10 R code.R
+    description: 'Packt forecasts monthly Robusta coffee prices using simple and weighted
+      moving averages and simple exponential smoothing, including holdout testing
+      and grid search over the smoothing parameter.
+
+'
+  data:
+    description: 'Monthly Robusta coffee price series distributed with the TSstudio
+      package.
+
+'
+    source_url: https://cran.r-project.org/package=TSstudio
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - moving averages
+    - weighted moving averages
+    - simple exponential smoothing
+    - holdout evaluation
+    - hyperparameter search
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter10/Chapter%2010%20R%20code.R
+  problem:
+    context: 'Commodity prices can be noisy and difficult to forecast, making them
+      useful for comparing simple smoothing methods and understanding the bias-variance
+      consequences of different memory lengths.
+
+'
+    objective: 'Compare smoothing-based forecasts of monthly Robusta coffee prices
+      and select settings using chronological validation.
+
+'
+    analytical_questions:
+    - How does moving-average window length affect forecast responsiveness?
+    - How does exponential-smoothing alpha affect forecast error?
+    - Which smoothing configuration performs best on held-out prices?
+    - How stable is the selected method across training, test, and validation periods?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - numpy
+    - matplotlib
+    logical_steps:
+    - Load and inspect monthly Robusta prices.
+    - Create chronological train, test, and validation partitions.
+    - Fit moving-average forecasts across several windows.
+    - Fit simple exponential smoothing across an alpha grid.
+    - Compare MAPE across partitions.
+    - Select the preferred smoothing configuration.
+    - Produce final price forecasts.
+    expected_outputs:
+    - price time series
+    - moving-average comparison
+    - smoothing-parameter validation curve
+    - forecast accuracy table
+    - final Robusta price forecast
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 429
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

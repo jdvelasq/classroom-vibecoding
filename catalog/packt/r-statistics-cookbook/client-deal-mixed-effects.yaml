@@ -1,0 +1,105 @@
+---
+id: packt/r-statistics-cookbook/client-deal-mixed-effects
+name: Client Deal Mixed Effects
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Statistics Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Mixed-Effects Regression
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter08/08__01__mixedintro.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/08__01__mixedintro.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 431
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Statistics Cookbook
+    title: Mixed-Effects Regression
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter08/08__01__mixedintro.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+      path: Chapter08/08__01__mixedintro.R
+    description: 'Packt models deal size as a function of sales effort while allowing
+      client-specific random effects and slopes through linear mixed models.
+
+'
+  data:
+    description: 'Repeated sales-deal observations by client with deal size, salespeople
+      involved, and time spent on the deal.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter08/sample_random_regression.csv
+    availability: repository
+    files:
+    - Chapter08/sample_random_regression.csv
+  original_implementation:
+    technologies:
+    - linear mixed models
+    - random intercepts
+    - random slopes
+    - lme4
+    - grouped repeated observations
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter08/08__01__mixedintro.R
+  problem:
+    context: 'Sales observations are nested within clients, so repeated deals from
+      the same client may share unobserved characteristics that violate independent-error
+      assumptions.
+
+'
+    objective: 'Separate population-level sales-effort effects from client-specific
+      variation in deal size.
+
+'
+    analytical_questions:
+    - How does sales effort relate to deal size on average?
+    - How much variation exists between clients?
+    - Do client-specific slopes improve the model?
+    - Which clients depart most strongly from the population pattern?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate repeated deal observations.
+    - Inspect the number of observations per client.
+    - Fit a fixed-effects baseline.
+    - Fit random-intercept and random-slope models.
+    - Compare model fit and variance components.
+    - Extract client-level effects.
+    - Interpret population and client-specific relationships.
+    expected_outputs:
+    - client observation profile
+    - mixed-model comparison
+    - fixed-effect estimates
+    - random-effect estimates
+    - variance component summary
+    - client-effect visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 431
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

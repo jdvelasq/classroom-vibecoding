@@ -1,0 +1,103 @@
+---
+id: packt/learning-social-media-analytics-with-r/github-language-trends
+name: GitHub Language Trends
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Social Media Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: GitHub Language Trend Analysis
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_language_trend_analysis.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/github_language_trend_analysis.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 313
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Social Media Analytics with R
+    title: GitHub Language Trend Analysis
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_language_trend_analysis.R
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+      path: Chapter05/github_language_trend_analysis.R
+    description: 'Packt analyzes trending GitHub repositories by programming language,
+      creation year, open issues, repository features, popularity, and cross-language
+      usage correlations.
+
+'
+  data:
+    description: 'Trending GitHub repository metadata including language, creation
+      date, stars, forks, open issues, wiki/pages flags, owner, and repository name.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/trending_repos.RData
+    availability: repository
+    files:
+    - Chapter05/trending_repos.RData
+  original_implementation:
+    technologies:
+    - GitHub metadata
+    - grouped aggregation
+    - temporal trend analysis
+    - correlation analysis
+    - visualization
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter05/github_language_trend_analysis.R
+  problem:
+    context: 'Repository metadata can reveal how programming-language ecosystems differ
+      in popularity, activity, issue burden, and co-usage over time.
+
+'
+    objective: 'Diagnose technology trends and relationships across programming languages
+      using GitHub repository activity.
+
+'
+    analytical_questions:
+    - Which languages dominate trending repositories?
+    - How has language representation changed over time?
+    - Which languages have the highest issue burden or popularity?
+    - Which languages tend to be used by the same repository owners?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate repository metadata.
+    - Derive creation-year and popularity measures.
+    - Aggregate repository counts by language and year.
+    - Compare issue and popularity metrics by language.
+    - Build owner-language incidence data.
+    - Calculate language correlations.
+    - Interpret technology trends.
+    expected_outputs:
+    - language trend tables
+    - issue and popularity rankings
+    - longitudinal language charts
+    - language correlation matrix
+    - technology trend interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 313
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

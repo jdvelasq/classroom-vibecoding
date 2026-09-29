@@ -1,0 +1,109 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/travel-customer-segmentation
+name: Travel Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Clustering Customer Data from Travel Agency
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Clustering%20Customer%20Data%20from%20Travel%20Agency.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Clustering Customer Data from Travel Agency.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 55
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Clustering Customer Data from Travel Agency
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Clustering%20Customer%20Data%20from%20Travel%20Agency.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Clustering Customer Data from Travel Agency.ipynb
+    description: 'Packt implements a complete customer-segmentation case using travel-agency
+      booking data, business-informed feature selection, standardization, K-means,
+      elbow and silhouette diagnostics, and cluster profiling.
+
+'
+  data:
+    description: 'Travel-agency customer and booking records used to characterize
+      customer behavior and identify groups with similar booking patterns.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/travel.csv
+    availability: public
+    files:
+    - travel.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - feature engineering
+    - standardization
+    - K-means
+    - elbow method
+    - silhouette coefficient
+    - cluster profiling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Clustering%20Customer%20Data%20from%20Travel%20Agency.ipynb
+  problem:
+    context: 'A travel agency has customer booking records but no predefined customer
+      segments. It needs to discover groups with distinct behavioral profiles.
+
+'
+    objective: 'Segment travel customers from booking behavior and profile the resulting
+      groups so that meaningful differences among customer types can be interpreted.
+
+'
+    analytical_questions:
+    - Which booking variables best characterize differences among customers?
+    - How many customer segments are supported by the observed data?
+    - Which behaviors distinguish the resulting clusters?
+    - How can each segment be described in business terms?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the travel booking dataset.
+    - Perform logical checks on customer and booking variables.
+    - Engineer analytically useful behavioral features.
+    - Select segmentation variables using business reasoning.
+    - Standardize the selected variables.
+    - Fit K-means solutions for alternative cluster counts.
+    - Compare elbow and silhouette diagnostics.
+    - Select a defensible cluster solution.
+    - Profile and interpret the customer segments.
+    expected_outputs:
+    - validated customer feature table
+    - cluster-number diagnostics
+    - customer segment assignments
+    - segment profile table
+    - cluster visualizations
+    - written segment interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 55
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

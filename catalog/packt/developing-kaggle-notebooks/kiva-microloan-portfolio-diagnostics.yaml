@@ -1,0 +1,109 @@
+---
+id: packt/developing-kaggle-notebooks/kiva-microloan-portfolio-diagnostics
+name: Kiva Microloan Portfolio Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Developing Kaggle Notebooks
+  edition:
+  official_url:
+  companion_sources:
+  - title: Kiva Microloans - A Data Exploration
+    url: https://github.com/PacktPublishing/Developing-Kaggle-Notebooks/blob/main/Chapter-05/kiva-microloans-a-data-exploration.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Developing-Kaggle-Notebooks
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter-05/kiva-microloans-a-data-exploration.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 355
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Developing Kaggle Notebooks
+    title: Kiva Microloans - A Data Exploration
+    url: https://github.com/PacktPublishing/Developing-Kaggle-Notebooks/blob/main/Chapter-05/kiva-microloans-a-data-exploration.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Developing-Kaggle-Notebooks
+      path: Chapter-05/kiva-microloans-a-data-exploration.ipynb
+    description: 'Packt explores Kiva microloans by country, region, sector, activity,
+      repayment interval, currency, borrower gender, and external country profiles
+      to diagnose portfolio composition and borrower welfare context.
+
+'
+  data:
+    description: 'Kiva crowdfunding loan records, regional MPI data, loan-theme tables,
+      and UNData country profiles.
+
+'
+    source_url: https://www.kaggle.com/datasets/kiva/data-science-for-good-kiva-crowdfunding
+    availability: public_platform
+    files:
+    - kiva_loans.csv
+    - kiva_mpi_region_locations.csv
+    - loan_theme_ids.csv
+    - loan_themes_by_region.csv
+    - country_profile_variables.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - Plotly
+    - geographic aggregation
+    - borrower profiling
+    - data quality diagnostics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Developing-Kaggle-Notebooks/blob/main/Chapter-05/kiva-microloans-a-data-exploration.ipynb
+  problem:
+    context: 'A global microfinance platform needs to understand where loans are concentrated,
+      which sectors and borrower groups are served, and how portfolio patterns relate
+      to local socioeconomic conditions.
+
+'
+    objective: 'Diagnose the composition and geographic distribution of a microloan
+      portfolio.
+
+'
+    analytical_questions:
+    - Which countries, regions, sectors, and activities dominate lending?
+    - How do loan amounts and repayment terms vary?
+    - How does borrower gender composition differ across sectors?
+    - Which portfolio concentrations merit further investigation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - plotly
+    - geopandas
+    logical_steps:
+    - Load and validate Kiva and country-profile datasets.
+    - Audit missingness and category cardinality.
+    - Aggregate loans by country, region, sector, and activity.
+    - Compare loan amounts and repayment structures.
+    - Derive borrower gender indicators.
+    - Build geographic and segment visualizations.
+    - Summarize portfolio concentrations and disparities.
+    expected_outputs:
+    - portfolio KPI tables
+    - geographic loan maps
+    - sector and activity profiles
+    - borrower gender diagnostics
+    - repayment structure analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 355
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

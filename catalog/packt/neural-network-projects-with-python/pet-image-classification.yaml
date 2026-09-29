@@ -1,0 +1,99 @@
+---
+id: packt/neural-network-projects-with-python/pet-image-classification
+name: Pet Image Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Neural Network Projects with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cats and Dogs Image Classification
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter04/main_basic_cnn.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter04/main_basic_cnn.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 441
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Neural Network Projects with Python
+    title: Cats and Dogs Image Classification
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter04/main_basic_cnn.py
+    repository:
+      url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+      path: Chapter04/main_basic_cnn.py
+    description: 'Packt trains a convolutional neural network to classify pet images
+      into cats and dogs and evaluates performance on a held-out image set.
+
+'
+  data:
+    description: 'Microsoft PetImages collection containing cat and dog photographs.
+
+'
+    source_url: https://www.microsoft.com/en-us/download/details.aspx?id=54765
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - convolutional neural network
+    - image classification
+    - image generators
+    - holdout evaluation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter04/main_basic_cnn.py
+  problem:
+    context: 'Image collections need automated labeling when manual categorization
+      is too slow or expensive.
+
+'
+    objective: 'Train and evaluate an image classifier that distinguishes cats from
+      dogs.
+
+'
+    analytical_questions:
+    - How should image data be partitioned for training and testing?
+    - How accurately can a compact CNN classify pet images?
+    - Which images are most difficult to classify?
+    - How does model complexity affect generalization?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - keras
+    - pandas
+    logical_steps:
+    - Freeze a reproducible subset of pet images.
+    - Create train and test partitions.
+    - Normalize and resize images.
+    - Train a baseline CNN.
+    - Evaluate held-out accuracy.
+    - Inspect representative misclassifications.
+    expected_outputs:
+    - image train/test split
+    - trained classifier
+    - accuracy metrics
+    - confusion summary
+    - misclassified image examples
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 441
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

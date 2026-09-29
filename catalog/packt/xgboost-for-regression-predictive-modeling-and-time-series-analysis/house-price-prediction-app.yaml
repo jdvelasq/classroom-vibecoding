@@ -1,0 +1,107 @@
+---
+id: packt/xgboost-for-regression-predictive-modeling-and-time-series-analysis/house-price-prediction-app
+name: House Price Prediction App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: XGBoost for Regression, Predictive Modeling, and Time Series Analysis
+  edition:
+  official_url:
+  companion_sources:
+  - title: Streamlit House Price Prediction Application
+    url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis/blob/main/ch13/windows/streamlit_app.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch13/windows/streamlit_app.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 288
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: XGBoost for Regression, Predictive Modeling, and Time Series Analysis
+    title: Streamlit House Price Prediction Application
+    url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis/blob/main/ch13/windows/streamlit_app.py
+    repository:
+      url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis
+      path: ch13/windows/streamlit_app.py
+    description: 'Packt turns a house-price XGBoost model into a Streamlit application
+      with integrated missing-value handling, scaling, categorical encoding, model
+      evaluation, user inputs, and interactive prediction.
+
+'
+  data:
+    description: 'House-pricing records containing lot size, construction year, floor
+      area, neighborhood, house style, garage type, sale condition, and sale price.
+
+'
+    source_url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis/blob/main/ch13/windows/house_pricing.csv
+    availability: repository
+    files:
+    - ch13/windows/house_pricing.csv
+  original_implementation:
+    technologies:
+    - XGBoost
+    - scikit-learn Pipeline
+    - ColumnTransformer
+    - one-hot encoding
+    - Streamlit
+    - interactive inference
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/XGBoost-for-Regression-Predictive-Modeling-and-Time-Series-Analysis/blob/main/ch13/windows/streamlit_app.py
+  problem:
+    context: 'A property valuation model becomes more useful when nontechnical users
+      can enter property characteristics and obtain a prediction through a consistent
+      preprocessing and inference workflow.
+
+'
+    objective: 'Build an interactive house-price prediction product around a reproducible
+      preprocessing and XGBoost pipeline.
+
+'
+    analytical_questions:
+    - How should numeric and categorical inputs be preprocessed consistently?
+    - How well does the fitted model perform on held-out homes?
+    - Which user inputs must the application collect?
+    - How can training-time transformations be reused safely at inference time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - xgboost
+    - streamlit
+    logical_steps:
+    - Load and validate house-pricing data.
+    - Separate numeric and categorical predictors.
+    - Build preprocessing and XGBoost pipeline.
+    - Evaluate held-out RMSE and R-squared.
+    - Define interactive input controls.
+    - Pass user inputs through the fitted pipeline.
+    - Display predictions and model-performance context.
+    expected_outputs:
+    - fitted valuation pipeline
+    - model performance metrics
+    - Streamlit input interface
+    - interactive house-price prediction
+    - deployable analytical application
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 288
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

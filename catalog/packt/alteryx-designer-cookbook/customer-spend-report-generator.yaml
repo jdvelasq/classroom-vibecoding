@@ -1,0 +1,98 @@
+---
+id: packt/alteryx-designer-cookbook/customer-spend-report-generator
+name: Customer Spend Report Generator
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Alteryx Designer Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Report Generation App
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/CH10/Recipe03/WORKFLOW/CH10-R03-ReportsGeneration.yxmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: CH10/Recipe03/WORKFLOW/CH10-R03-ReportsGeneration.yxmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 280
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Alteryx Designer Cookbook
+    title: Report Generation App
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/CH10/Recipe03/WORKFLOW/CH10-R03-ReportsGeneration.yxmd
+    repository:
+      url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+      path: CH10/Recipe03/WORKFLOW/CH10-R03-ReportsGeneration.yxmd
+    description: 'Packages customer-spending analytics into a reusable reporting app
+      with store, segment, and top-customer outputs.
+
+'
+  data:
+    description: 'Customer transaction summaries with store, market segment, visits,
+      location, and total spend.
+
+'
+    source_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/tree/main/CH10/Recipe03
+    availability: repository
+    files:
+    - CH10/Recipe03/DATA/CustomerSpent.yxdb
+  original_implementation:
+    technologies:
+    - Alteryx
+    - analytic app
+    - reusable macros
+    - parameterized reporting
+    language: visual_workflow
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/CH10/Recipe03/WORKFLOW/CH10-R03-ReportsGeneration.yxmd
+  problem:
+    context: 'Business users need repeatable customer-spending reports without manually
+      recreating the same aggregations.
+
+'
+    objective: 'Build a reusable analytical reporting product for customer and store
+      performance.
+
+'
+    analytical_questions:
+    - Which customers rank highest by total and average spend?
+    - How do stores and market segments compare?
+    - Which report sections should users be able to select?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - streamlit
+    - plotly
+    logical_steps:
+    - Load customer-spending data.
+    - Calculate store, segment, and customer metrics.
+    - Build reusable reporting functions.
+    - Expose selectable report sections.
+    - Validate outputs against source totals.
+    expected_outputs:
+    - store performance report
+    - segment summary
+    - top-customer tables
+    - reusable reporting app
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 280
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

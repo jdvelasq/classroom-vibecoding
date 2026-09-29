@@ -1,0 +1,101 @@
+---
+id: packt/data-science-with-sql-server-quick-start-guide/bike-buyer-prediction
+name: Bike Buyer Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science with SQL Server Quick Start Guide
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Bike Buyers
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter08.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 302
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science with SQL Server Quick Start Guide
+    title: Predicting Bike Buyers
+    url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter08.py
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide
+      path: Chapter08.py
+    description: 'Packt prepares AdventureWorks target-mail data in SQL Server, encodes
+      ordinal customer attributes, trains a Naive Bayes classifier, and evaluates
+      bike-buyer predictions on a predefined test set.
+
+'
+  data:
+    description: 'AdventureWorks target-mail customer train/test tables with household,
+      demographic, commute, education, occupation, vehicle, and bike-purchase attributes.
+
+'
+    source_url: https://github.com/microsoft/sql-server-samples
+    availability: public_database
+    files: []
+  original_implementation:
+    technologies:
+    - SQL Server
+    - ordinal encoding
+    - Naive Bayes
+    - train/test evaluation
+    - confusion matrix
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-with-SQL-Server-Quick-Start-Guide/blob/master/Chapter08.py
+  problem:
+    context: 'A bicycle retailer wants to identify customers likely to purchase a
+      bike from demographic and household information already stored in its data warehouse.
+
+'
+    objective: 'Build and evaluate a classifier that predicts bike-purchase propensity.
+
+'
+    analytical_questions:
+    - Which customer attributes are useful for predicting bike purchase?
+    - How should ordinal fields such as education and commute distance be encoded?
+    - How accurate is the model on held-out customers?
+    - Which customer profiles are most frequently misclassified?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load the train and test customer records.
+    - Encode ordinal attributes reproducibly.
+    - Separate predictors and bike-buyer target.
+    - Fit a Naive Bayes baseline.
+    - Generate held-out predictions.
+    - Calculate accuracy and confusion matrix.
+    - Profile false positives and false negatives.
+    expected_outputs:
+    - encoded customer dataset
+    - fitted bike-buyer classifier
+    - confusion matrix
+    - accuracy summary
+    - customer propensity predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 302
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

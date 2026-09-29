@@ -1,0 +1,106 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/traffic-forecast-interpretation
+name: Traffic Forecast Interpretation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Interpretation Methods for Multivariate Forecasting and Sensitivity Analysis
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/09/Traffic_compact1.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: '09/Traffic_compact1.ipynb'
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 253
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Interpretation Methods for Multivariate Forecasting and Sensitivity Analysis
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/09/Traffic_compact1.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: '09/Traffic_compact1.ipynb'
+    description: 'Packt forecasts traffic volume with a multivariate recurrent model
+      and applies interpretation and sensitivity-analysis methods to explain temporal
+      and exogenous drivers.
+
+'
+  data:
+    description: 'Traffic-volume time series with temporal, weather, and related explanatory
+      variables.
+
+'
+    source_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/datasets/traffic-volume-2e.csv.zip
+    availability: repository
+    files:
+    - datasets/traffic-volume-2e.csv.zip
+  original_implementation:
+    technologies:
+    - LSTM
+    - multivariate forecasting
+    - SHAP
+    - sensitivity analysis
+    - SALib
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/09/Traffic_compact1.ipynb
+  problem:
+    context: 'Traffic forecasts depend on temporal history and exogenous conditions,
+      but users need to understand which inputs and time windows drive predicted volumes.
+
+'
+    objective: 'Forecast traffic volume and explain the sensitivity of predictions
+      to temporal and external inputs.
+
+'
+    analytical_questions:
+    - Which lagged or external variables drive traffic forecasts?
+    - How sensitive are predictions to input perturbations?
+    - Which forecast errors occur under unusual conditions?
+    - Are explanation patterns stable across periods?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - tensorflow
+    - shap
+    - SALib
+    - matplotlib
+    logical_steps:
+    - Load and prepare multivariate traffic data.
+    - Create lagged forecasting inputs.
+    - Fit or load the recurrent model.
+    - Evaluate forecast errors.
+    - Generate local and global explanations.
+    - Perform sensitivity analysis.
+    - Compare explanation stability through time.
+    expected_outputs:
+    - traffic forecasts
+    - forecast error metrics
+    - feature and lag importance
+    - sensitivity indices
+    - explanation visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 253
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

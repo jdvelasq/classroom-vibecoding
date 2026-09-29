@@ -1,0 +1,96 @@
+---
+id: packt/alteryx-designer-cookbook/multiyear-sales-ingestion
+name: Multiyear Sales Ingestion
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Alteryx Designer Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Reading Multiple Excel Files
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch1/Recipe1/WORKFLOWS/CH01-R01-ReadAll%20ExcelFiles.yxmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch1/Recipe1/WORKFLOWS/CH01-R01-ReadAll ExcelFiles.yxmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 277
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Alteryx Designer Cookbook
+    title: Reading Multiple Excel Files
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch1/Recipe1/WORKFLOWS/CH01-R01-ReadAll%20ExcelFiles.yxmd
+    repository:
+      url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+      path: ch1/Recipe1/WORKFLOWS/CH01-R01-ReadAll ExcelFiles.yxmd
+    description: 'Consolidates monthly sales workbooks across multiple years through
+      a repeatable multi-file ingestion workflow.
+
+'
+  data:
+    description: 'Monthly sales workbooks for 2018 through 2022 with a common monthly-sales
+      schema.
+
+'
+    source_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/tree/main/ch1/Recipe1/DATA
+    availability: repository
+    files:
+    - ch1/Recipe1/DATA/MonthlySales_2022.xlsx
+  original_implementation:
+    technologies:
+    - Alteryx
+    - multi-file ingestion
+    - Excel
+    language: visual_workflow
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch1/Recipe1/WORKFLOWS/CH01-R01-ReadAll%20ExcelFiles.yxmd
+  problem:
+    context: 'Sales history is distributed across yearly workbooks and must be consolidated
+      reliably before longitudinal analysis.
+
+'
+    objective: 'Build a repeatable ingestion process that discovers, reads, validates,
+      and consolidates monthly sales files across years.
+
+'
+    analytical_questions:
+    - Which files conform to the expected sales schema?
+    - Are dates and sales values consistent after consolidation?
+    - Are any periods duplicated or missing?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - pathlib
+    - openpyxl
+    logical_steps:
+    - Discover matching workbooks recursively.
+    - Read and validate each workbook.
+    - Attach source metadata.
+    - Concatenate all periods.
+    - Validate temporal completeness.
+    expected_outputs:
+    - file inventory
+    - schema validation report
+    - consolidated sales table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 277
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

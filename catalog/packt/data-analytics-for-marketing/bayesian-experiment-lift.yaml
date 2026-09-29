@@ -1,0 +1,105 @@
+---
+id: packt/data-analytics-for-marketing/bayesian-experiment-lift
+name: Bayesian Experiment Lift
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Experiments
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter13/Experiments.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter13/Experiments.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 124
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: Experiments
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter13/Experiments.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter13/Experiments.ipynb
+    description: 'Packt develops an experiment-analysis case around binomial outcomes,
+      Type I and Type II errors, Beta posteriors, credible intervals, and posterior
+      lift between treatment and control conversion rates.
+
+'
+  data:
+    description: 'Synthetic control and treatment conversion counts used to illustrate
+      frequentist error and Bayesian uncertainty.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter13/Experiments.ipynb
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - binomial testing
+    - Type I error
+    - Type II error
+    - Beta distributions
+    - Bayesian credible intervals
+    - treatment lift
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter13/Experiments.ipynb
+  problem:
+    context: 'Marketing experiments require more than a point estimate of conversion
+      lift; decision makers need to understand sampling error and uncertainty around
+      treatment-versus-control differences.
+
+'
+    objective: 'Quantify experiment uncertainty and estimate the posterior distribution
+      of treatment lift.
+
+'
+    analytical_questions:
+    - What do Type I and Type II errors mean operationally?
+    - How does sample size affect uncertainty in conversion rates?
+    - What credible interval surrounds each conversion rate?
+    - What is the posterior distribution and credible interval of treatment lift?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - scipy
+    - matplotlib
+    logical_steps:
+    - Define control and treatment successes and trials.
+    - Demonstrate frequentist error concepts.
+    - Construct Beta posterior distributions.
+    - Calculate credible intervals for conversion rates.
+    - Sample posterior treatment and control rates.
+    - Derive posterior lift samples.
+    - Summarize uncertainty around lift.
+    expected_outputs:
+    - experiment error illustration
+    - posterior conversion distributions
+    - credible intervals
+    - posterior lift distribution
+    - lift credible interval
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 124
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

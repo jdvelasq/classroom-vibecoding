@@ -1,0 +1,105 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/recidivism-counterfactual-explanations
+name: Recidivism Counterfactual Explanations
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Criminal Recidivism Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/06/Recidivism.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 06/Recidivism.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 152
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Criminal Recidivism Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/06/Recidivism.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 06/Recidivism.ipynb
+    description: 'Packt uses criminal recidivism risk prediction as the worked case
+      for anchor and counterfactual explanations, showing how individual predictions
+      can be explained with sufficient conditions and actionable feature changes.
+
+'
+  data:
+    description: 'Recidivism-risk records distributed through the book''s machine-learning-datasets
+      package.
+
+'
+    source_url: https://pypi.org/project/machine-learning-datasets/
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - classification
+    - anchor explanations
+    - counterfactual explanations
+    - SHAP
+    - Alibi
+    - local interpretability
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/06/Recidivism.ipynb
+  problem:
+    context: 'Individual risk predictions are consequential and require explanations
+      that identify both sufficient conditions and changes that would alter the prediction.
+
+'
+    objective: 'Predict recidivism risk and generate local anchor and counterfactual
+      explanations.
+
+'
+    analytical_questions:
+    - Which features support a specific risk prediction?
+    - What compact rule is sufficient to anchor that prediction?
+    - What feasible feature changes would reverse the predicted class?
+    - How consistent are explanations across similar individuals?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - alibi
+    - shap
+    logical_steps:
+    - Load and prepare recidivism records.
+    - Fit and evaluate a risk classifier.
+    - Select representative individual predictions.
+    - Generate anchor explanations.
+    - Generate counterfactual explanations.
+    - Check feasibility and stability of suggested changes.
+    - Compare local explanation methods.
+    expected_outputs:
+    - recidivism risk model
+    - anchor rules
+    - counterfactual examples
+    - local explanation comparison
+    - explanation stability diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 152
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

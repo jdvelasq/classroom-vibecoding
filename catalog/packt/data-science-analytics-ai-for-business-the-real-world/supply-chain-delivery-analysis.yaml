@@ -1,0 +1,101 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/supply-chain-delivery-analysis
+name: Supply Chain Delivery Analysis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Supply-Chain for Shipping Data Analytics
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Supply-Chain%20for%20Shipping%20Data%20Analytics.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Supply-Chain for Shipping Data Analytics.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 65
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Supply-Chain for Shipping Data Analytics
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Supply-Chain%20for%20Shipping%20Data%20Analytics.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Supply-Chain for Shipping Data Analytics.ipynb
+    description: 'Packt analyzes shipment pricing, delivery delays, shipment modes,
+      countries, and manufacturing sites in a supply-chain delivery dataset.
+
+'
+  data:
+    description: 'Supply-chain shipment history containing countries, shipment modes,
+      pricing, delivery timing, products, and manufacturing sites.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/data-analyst-bootcamp/master/SCMS_Delivery_History_Dataset.csv
+    availability: public
+    files:
+    - SCMS_Delivery_History_Dataset.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory data analysis
+    - delivery delay analysis
+    - grouping
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Supply-Chain%20for%20Shipping%20Data%20Analytics.ipynb
+  problem:
+    context: 'Shipment records can reveal operational concentration, delivery delays,
+      and pricing patterns across countries, shipment modes, and manufacturing sites.
+
+'
+    objective: 'Diagnose supply-chain delivery performance and identify operational
+      patterns that merit attention.
+
+'
+    analytical_questions:
+    - Which countries and manufacturing sites dominate shipment activity?
+    - Where are delivery delays concentrated?
+    - How do shipment modes differ in volume and price?
+    - Which operational segments show unusual delivery behavior?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate shipment history.
+    - Prepare date, price, shipment-mode, and location fields.
+    - Calculate delivery delay indicators.
+    - Aggregate performance by country, site, and mode.
+    - Compare shipment-price distributions.
+    - Visualize operational concentrations and delays.
+    expected_outputs:
+    - supply-chain KPI table
+    - delivery delay summaries
+    - mode and country comparisons
+    - manufacturing-site rankings
+    - diagnostic visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 65
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

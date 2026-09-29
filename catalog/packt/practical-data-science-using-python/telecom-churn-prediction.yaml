@@ -1,0 +1,108 @@
+---
+id: packt/practical-data-science-using-python/telecom-churn-prediction
+name: Telecom Churn Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Logistic Regression - Telecom Churn Case Study
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/telecom-churn-prediction-logistic-regression.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: telecom-churn-prediction-logistic-regression.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 419
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: Logistic Regression - Telecom Churn Case Study
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/telecom-churn-prediction-logistic-regression.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: telecom-churn-prediction-logistic-regression.ipynb
+    description: 'Packt integrates three telecom customer tables, performs exploratory
+      analysis and preprocessing, and builds a logistic-regression churn model.
+
+'
+  data:
+    description: 'Telecom customer data split across churn, customer, and internet-service
+      tables, including demographics, tenure, services, charges, contracts, and churn.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    availability: repository
+    files:
+    - churn_data.csv
+    - customer_data.csv
+    - internet_data.csv
+  original_implementation:
+    technologies:
+    - logistic regression
+    - table joins
+    - exploratory data analysis
+    - feature selection
+    - classification metrics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/telecom-churn-prediction-logistic-regression.ipynb
+  problem:
+    context: 'A telecom provider is losing customers and wants to identify current
+      customers with a high probability of churn.
+
+'
+    objective: 'Integrate customer data and predict churn probability using logistic
+      regression.
+
+'
+    analytical_questions:
+    - Which customer, service, contract, and charge variables are associated with
+      churn?
+    - How should the three source tables be integrated?
+    - Which predictors remain useful after significance and correlation checks?
+    - How well does the final model identify customers who actually churn?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load the three customer source tables.
+    - Join them by customer identifier.
+    - Clean charges and missing values.
+    - Explore churn by tenure, contract, service, and charges.
+    - Encode categorical features and scale predictors.
+    - Remove highly correlated or insignificant variables.
+    - Fit logistic regression models.
+    - Evaluate probability predictions and classification metrics.
+    expected_outputs:
+    - integrated customer dataset
+    - churn diagnostic analysis
+    - selected feature set
+    - churn probabilities
+    - classification report
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 419
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

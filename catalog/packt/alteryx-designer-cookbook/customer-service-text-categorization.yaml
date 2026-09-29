@@ -1,0 +1,96 @@
+---
+id: packt/alteryx-designer-cookbook/customer-service-text-categorization
+name: Customer Service Text Categorization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Alteryx Designer Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Preparing Free Text for Analysis
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch5/Recipe1/WORKFLOW/CH05-R01-Prepare%20a%20free%20text%20field%20for%20Analysis.yxmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch5/Recipe1/WORKFLOW/CH05-R01-Prepare a free text field for Analysis.yxmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 278
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Alteryx Designer Cookbook
+    title: Preparing Free Text for Analysis
+    url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch5/Recipe1/WORKFLOW/CH05-R01-Prepare%20a%20free%20text%20field%20for%20Analysis.yxmd
+    repository:
+      url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook
+      path: ch5/Recipe1/WORKFLOW/CH05-R01-Prepare a free text field for Analysis.yxmd
+    description: 'Converts customer-service free text into categorized mentions using
+      tokenization, dictionary lookup, deduplication, and aggregation.
+
+'
+  data:
+    description: 'Customer-service review text with ratings plus a keyword-to-category
+      dictionary.
+
+'
+    source_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/tree/main/ch5/Recipe1/DATA
+    availability: repository
+    files:
+    - ch5/Recipe1/DATA/CustomerServiceTexts.xlsx
+    - ch5/Recipe1/DATA/SearchDictionary.xlsx
+  original_implementation:
+    technologies:
+    - Alteryx
+    - text tokenization
+    - dictionary matching
+    - category aggregation
+    language: visual_workflow
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Alteryx-Designer-Cookbook/blob/main/ch5/Recipe1/WORKFLOW/CH05-R01-Prepare%20a%20free%20text%20field%20for%20Analysis.yxmd
+  problem:
+    context: 'Customer-service feedback must be converted from free text into structured
+      issue categories before downstream analysis.
+
+'
+    objective: 'Produce standardized issue-category indicators from free-text feedback.
+
+'
+    analytical_questions:
+    - Which keywords map to each issue category?
+    - Which categories occur most frequently?
+    - Which records contain multiple issue categories?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - re
+    logical_steps:
+    - Load reviews and the category dictionary.
+    - Normalize and tokenize text.
+    - Match terms to categories.
+    - Deduplicate category mentions.
+    - Aggregate categories to review level.
+    expected_outputs:
+    - token-category matches
+    - review-level categories
+    - category frequency table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 278
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

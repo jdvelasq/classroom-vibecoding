@@ -1,0 +1,104 @@
+---
+id: packt/data-analytics-made-easy/bank-telemarketing-propensity
+name: Bank Telemarketing Propensity
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics Made Easy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Anticipating Preferences with Classification
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 5/Chapter 5 - Bank Telemarketing.knwf
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 158
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics Made Easy
+    title: Anticipating Preferences with Classification
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+      path: Chapter 5/Chapter 5 - Bank Telemarketing.knwf
+    description: 'Packt uses bank telemarketing data to build and compare classification
+      models for customer response and to expose the patterns associated with product
+      preference.
+
+'
+  data:
+    description: 'Bank telemarketing campaign records with customer, contact, campaign,
+      and response attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/blob/main/Chapter%205/BankTelemarketing.csv
+    availability: repository
+    files:
+    - Chapter 5/BankTelemarketing.csv
+  original_implementation:
+    technologies:
+    - KNIME
+    - decision tree
+    - random forest
+    - classification
+    - model validation
+    - propensity modeling
+    language: KNIME
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%205
+  problem:
+    context: 'A bank wants to learn which customer and campaign characteristics distinguish
+      people likely to respond positively to a telemarketing offer.
+
+'
+    objective: 'Predict customer response and compare interpretable and ensemble classification
+      approaches.
+
+'
+    analytical_questions:
+    - Which attributes are associated with positive campaign response?
+    - How accurately can response be predicted?
+    - How do decision-tree and random-forest models compare?
+    - Which customers have the strongest response propensity?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate telemarketing records.
+    - Prepare categorical and numeric features.
+    - Split training and test data.
+    - Fit a decision-tree classifier.
+    - Fit a random-forest classifier.
+    - Compare held-out performance.
+    - Produce response probabilities and interpretable drivers.
+    expected_outputs:
+    - response classifiers
+    - model comparison table
+    - confusion metrics
+    - response propensity scores
+    - driver interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 158
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

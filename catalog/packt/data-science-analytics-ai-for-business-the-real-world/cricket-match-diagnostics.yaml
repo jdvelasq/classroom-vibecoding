@@ -1,0 +1,100 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/cricket-match-diagnostics
+name: Cricket Match Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: IPL Cricket Data Analytics
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/IPL Cricket Data Analytics.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 187
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: IPL Cricket Data Analytics
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/IPL Cricket Data Analytics.ipynb
+    description: 'Packt analyzes IPL match and delivery data to compare venues, seasons,
+      players, toss decisions, batting order, and team performance.
+
+'
+  data:
+    description: 'Indian Premier League match summaries and ball-by-ball delivery
+      records.
+
+'
+    source_url: https://github.com/rajeevratan84/data-analyst-bootcamp
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - grouped aggregation
+    - venue analysis
+    - event analysis
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'Match and ball-level sports data permit systematic examination of venue
+      effects, toss decisions, batting order, and team performance.
+
+'
+    objective: 'Diagnose match-performance patterns across teams, venues, seasons,
+      and game decisions.
+
+'
+    analytical_questions:
+    - Which venues favor batting first or second?
+    - How strongly is winning the toss associated with match outcomes?
+    - Which players and teams dominate selected performance metrics?
+    - How do match patterns vary across seasons?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load match and delivery data.
+    - Validate season, venue, team, and outcome fields.
+    - Build season and venue summaries.
+    - Compare toss and match outcomes.
+    - Analyze batting-order results by venue.
+    - Rank selected player and team metrics.
+    expected_outputs:
+    - venue performance table
+    - toss-outcome comparison
+    - season summaries
+    - player and team rankings
+    - diagnostic visualizations
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 187
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

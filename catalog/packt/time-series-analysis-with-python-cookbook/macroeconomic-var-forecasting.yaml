@@ -1,0 +1,109 @@
+---
+id: packt/time-series-analysis-with-python-cookbook/macroeconomic-var-forecasting
+name: Macroeconomic VAR Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Time Series Analysis with Python Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Forecasting Multivariate Time Series Data using VAR
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch11/Chapter%2011.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: code/Ch11/Chapter 11.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 395
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Time Series Analysis with Python Cookbook
+    title: Forecasting Multivariate Time Series Data using VAR
+    url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch11/Chapter%2011.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook
+      path: code/Ch11/Chapter 11.ipynb
+    description: 'Packt models interacting macroeconomic series with vector autoregression,
+      tests Granger relationships, selects lag order, produces forecast intervals,
+      and compares unemployment forecasts with a univariate autoregressive model.
+
+'
+  data:
+    description: 'Monthly macroeconomic series retrieved from FRED, including the
+      federal funds rate and unemployment rate, with a frozen copy supplied in the
+      repository.
+
+'
+    source_url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/datasets/Ch11/economic_df.csv
+    availability: repository
+    files:
+    - datasets/Ch11/economic_df.csv
+    - datasets/Ch11/economic_df.pickle
+  original_implementation:
+    technologies:
+    - VAR
+    - Granger causality tests
+    - stationarity testing
+    - lag selection
+    - forecast intervals
+    - ARIMA benchmark
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Time-Series-Analysis-with-Python-Cookbook/blob/main/code/Ch11/Chapter%2011.ipynb
+  problem:
+    context: 'Unemployment and monetary-policy variables evolve jointly, so forecasts
+      may benefit from modeling cross-series dynamics rather than each series independently.
+
+'
+    objective: 'Build and evaluate a multivariate macroeconomic forecast and compare
+      it with a univariate benchmark.
+
+'
+    analytical_questions:
+    - Are the macroeconomic series stationary?
+    - Does one series provide predictive information about another?
+    - What lag order is supported by the data?
+    - Does VAR improve unemployment forecasting over an autoregressive benchmark?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and align monthly macroeconomic series.
+    - Diagnose stationarity.
+    - Test Granger relationships.
+    - Split chronologically into training and test periods.
+    - Select VAR lag order and fit the model.
+    - Produce multivariate forecasts and intervals.
+    - Compare unemployment forecasts with a univariate AR model.
+    expected_outputs:
+    - stationarity diagnostics
+    - Granger test summary
+    - lag-order comparison
+    - VAR forecast table
+    - forecast intervals
+    - benchmark error comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 395
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

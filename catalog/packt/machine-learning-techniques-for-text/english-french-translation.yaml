@@ -1,0 +1,101 @@
+---
+id: packt/machine-learning-techniques-for-text/english-french-translation
+name: English French Translation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Techniques for Text
+  edition:
+  official_url:
+  companion_sources:
+  - title: Teaching Machines to Translate
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-06/seq2seq-LSTM.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter-06/seq2seq-LSTM.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 210
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Techniques for Text
+    title: Teaching Machines to Translate
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-06/seq2seq-LSTM.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+      path: chapter-06/seq2seq-LSTM.ipynb
+    description: 'Packt trains an encoder-decoder LSTM on English-French sentence
+      pairs and evaluates generated translations with BLEU.
+
+'
+  data:
+    description: 'English-French bilingual sentence pairs; the worked neural example
+      uses 8,000 pairs.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/raw/main/chapter-06/data.zip
+    availability: repository
+    files:
+    - chapter-06/data.zip
+    - chapter-06/data/fra.txt
+  original_implementation:
+    technologies:
+    - sequence-to-sequence learning
+    - LSTM
+    - encoder-decoder
+    - neural machine translation
+    - BLEU
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-06/seq2seq-LSTM.ipynb
+  problem:
+    context: 'Translation requires mapping variable-length source-language sequences
+      into coherent target-language sequences.
+
+'
+    objective: 'Train and evaluate an end-to-end English-to-French neural translation
+      model.
+
+'
+    analytical_questions:
+    - How should source and target vocabularies be encoded?
+    - How does the encoder-decoder architecture represent context?
+    - How well do translations score under BLEU?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - tensorflow
+    - nltk
+    logical_steps:
+    - Load bilingual sentence pairs.
+    - Tokenize and encode both languages.
+    - Build encoder-decoder inputs.
+    - Train the seq2seq model.
+    - Generate translations.
+    - Evaluate representative outputs with BLEU.
+    expected_outputs:
+    - bilingual corpus
+    - trained translation model
+    - generated translations
+    - BLEU scores
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 210
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

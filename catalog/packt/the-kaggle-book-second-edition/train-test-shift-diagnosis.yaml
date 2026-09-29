@@ -1,0 +1,103 @@
+---
+id: packt/the-kaggle-book-second-edition/train-test-shift-diagnosis
+name: Train-Test Shift Diagnosis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: The Kaggle Book, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Adversarial Validation Example
+    url: https://github.com/PacktPublishing/The-Kaggle-Book-2nd-Edition/blob/main/Chapter_07/ch_07_adversarial-validation-example.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/The-Kaggle-Book-2nd-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_07/ch_07_adversarial-validation-example.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 119
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: The Kaggle Book, Second Edition
+    title: Adversarial Validation Example
+    url: https://github.com/PacktPublishing/The-Kaggle-Book-2nd-Edition/blob/main/Chapter_07/ch_07_adversarial-validation-example.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/The-Kaggle-Book-2nd-Edition
+      path: Chapter_07/ch_07_adversarial-validation-example.ipynb
+    description: 'Packt combines training and test observations, labels their source,
+      and uses cross-validated classification to determine whether the two samples
+      are distinguishable, thereby diagnosing dataset shift.
+
+'
+  data:
+    description: 'Training and test tables from Kaggle''s January 2021 Tabular Playground
+      Series.
+
+'
+    source_url: https://www.kaggle.com/competitions/tabular-playground-series-jan-2021
+    availability: public_platform
+    files:
+    - train.csv
+    - test.csv
+  original_implementation:
+    technologies:
+    - adversarial validation
+    - cross-validation
+    - ROC AUC
+    - feature importance
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/The-Kaggle-Book-2nd-Edition/blob/main/Chapter_07/ch_07_adversarial-validation-example.ipynb
+  problem:
+    context: 'A model-validation strategy can be misleading when training and future
+      scoring data come from measurably different distributions.
+
+'
+    objective: 'Test whether training and test samples are distinguishable and identify
+      the features driving distribution shift.
+
+'
+    analytical_questions:
+    - Can a classifier distinguish train from test observations?
+    - What ROC AUC indicates meaningful distribution shift?
+    - Which variables contribute most to the difference?
+    - What does the detected shift imply for model validation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load training and test features.
+    - Remove original target and identifiers.
+    - Label each row by source dataset.
+    - Combine and shuffle observations.
+    - Fit a cross-validated source classifier.
+    - Calculate adversarial ROC AUC.
+    - Rank features that distinguish the samples.
+    - Interpret implications for validation design.
+    expected_outputs:
+    - adversarial validation score
+    - source prediction diagnostics
+    - shift-driving feature ranking
+    - validation-risk interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 119
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

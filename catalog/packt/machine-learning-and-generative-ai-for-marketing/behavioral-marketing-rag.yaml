@@ -1,0 +1,106 @@
+---
+id: packt/machine-learning-and-generative-ai-for-marketing/behavioral-marketing-rag
+name: Behavioral Marketing RAG
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning and Generative AI for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Micro-Targeting with Retrieval-Augmented Generation
+    url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing/blob/main/ch.11/ch-11.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: ch.11/ch-11.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 343
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning and Generative AI for Marketing
+    title: Micro-Targeting with Retrieval-Augmented Generation
+    url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing/blob/main/ch.11/ch-11.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing
+      path: ch.11/ch-11.ipynb
+    description: 'Packt builds a behavioral retrieval layer from e-commerce events
+      and uses retrieved customer-product interactions to generate individualized
+      re-engagement, discount, upsell, and brand-targeting messages.
+
+'
+  data:
+    description: 'December 2019 e-commerce event logs containing users, product interactions,
+      brands, prices, event types, and timestamps.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing/tree/main/ch.11
+    availability: repository
+    files:
+    - ch.11/2019-Dec.csv.zip
+  original_implementation:
+    technologies:
+    - behavioral retrieval
+    - embeddings
+    - LangChain
+    - retrieval-augmented generation
+    - personalized messaging
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-and-Generative-AI-for-Marketing/blob/main/ch.11/ch-11.ipynb
+  problem:
+    context: 'E-commerce behavior contains signals about abandoned carts, product
+      interest, and brand affinity that can be retrieved to personalize marketing
+      outreach.
+
+'
+    objective: 'Build a data-driven RAG workflow that retrieves relevant customer
+      behavior and produces individualized marketing messages.
+
+'
+    analytical_questions:
+    - Which historical interactions are relevant to a given user?
+    - What complementary or upsell products should be surfaced?
+    - How can abandoned-cart context be incorporated into a message?
+    - How should retrieved evidence be passed to the generation layer?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - langchain
+    - sentence-transformers
+    - chromadb
+    logical_steps:
+    - Load and clean e-commerce events.
+    - Construct behavioral documents from user-product interactions.
+    - Embed and index the behavioral records.
+    - Retrieve relevant context for a customer.
+    - Define campaign strategy prompts.
+    - Generate personalized messages grounded in retrieved behavior.
+    - Validate retrieved evidence and generated outputs.
+    expected_outputs:
+    - behavioral retrieval index
+    - customer context records
+    - product targeting candidates
+    - personalized campaign messages
+    - reproducible RAG workflow
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 343
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

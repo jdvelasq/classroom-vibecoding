@@ -1,0 +1,108 @@
+---
+id: packt/getting-started-with-taipy/warehouse-optimization-app
+name: Warehouse Optimization App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Getting Started with Taipy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Taipy for Logistics
+    url: https://github.com/PacktPublishing/Getting-Started-with-Taipy/tree/main/chapter_08
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Getting-Started-with-Taipy
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_08
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 178
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Getting Started with Taipy
+    title: Taipy for Logistics
+    url: https://github.com/PacktPublishing/Getting-Started-with-Taipy/tree/main/chapter_08
+    repository:
+      url: https://github.com/PacktPublishing/Getting-Started-with-Taipy
+      path: chapter_08
+    description: 'Packt builds a supply-chain scenario application that selects warehouses
+      and assigns customers using mixed-integer optimization, allowing users to optimize
+      either monetary cost or CO2 emissions and compare alternative scenarios.
+
+'
+  data:
+    description: 'Synthetic but realistic European customer and candidate-warehouse
+      locations, annual order volumes, fixed facility costs, and facility CO2 emissions.
+
+'
+    source_url: https://github.com/PacktPublishing/Getting-Started-with-Taipy/tree/main/chapter_08/src/data
+    availability: repository
+    files:
+    - chapter_08/src/data/customers.csv
+    - chapter_08/src/data/warehouses.csv
+  original_implementation:
+    technologies:
+    - Taipy
+    - PuLP
+    - mixed-integer optimization
+    - facility location
+    - customer assignment
+    - scenario comparison
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Getting-Started-with-Taipy/tree/main/chapter_08/src
+  problem:
+    context: 'A distribution company must choose warehouse locations and assign customers
+      while balancing facility cost, transport cost, and carbon emissions.
+
+'
+    objective: 'Build an interactive decision application for comparing warehouse-network
+      scenarios under alternative objectives and business constraints.
+
+'
+    analytical_questions:
+    - Which warehouses should remain open?
+    - Which customers should be assigned to each warehouse?
+    - How does minimizing cost differ from minimizing CO2 emissions?
+    - How do warehouse-count and country constraints alter the solution?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - pulp
+    - plotly
+    - taipy
+    logical_steps:
+    - Load customer and candidate-warehouse data.
+    - Calculate warehouse-to-customer distances.
+    - Define binary facility and assignment variables.
+    - Specify cost and emissions objectives.
+    - Add assignment, facility-count, and geographic constraints.
+    - Solve alternative scenarios.
+    - Present maps, KPIs, and scenario comparisons interactively.
+    expected_outputs:
+    - selected warehouse table
+    - customer assignment table
+    - cost and emissions KPIs
+    - scenario comparison
+    - network visualization
+    - interactive optimization app
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 178
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

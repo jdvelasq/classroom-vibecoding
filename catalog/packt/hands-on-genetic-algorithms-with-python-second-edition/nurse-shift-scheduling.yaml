@@ -1,0 +1,104 @@
+---
+id: packt/hands-on-genetic-algorithms-with-python-second-edition/nurse-shift-scheduling
+name: Nurse Shift Scheduling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Genetic Algorithms with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Nurse Scheduling Problem
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_05/02_solve_nurses.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_05/02_solve_nurses.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 126
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Genetic Algorithms with Python, Second Edition
+    title: Nurse Scheduling Problem
+    url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_05/02_solve_nurses.py
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition
+      path: chapter_05/02_solve_nurses.py
+    description: 'Packt encodes nurse-shift assignments as a constrained optimization
+      problem and uses a genetic algorithm with penalties for hard-constraint violations.
+
+'
+  data:
+    description: 'Scheduling parameters and constraints embedded in the companion
+      nurse-scheduling problem class.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_05/nurses.py
+    availability: embedded
+    files:
+    - chapter_05/nurses.py
+  original_implementation:
+    technologies:
+    - DEAP
+    - genetic algorithms
+    - constraint penalties
+    - workforce scheduling
+    - elitism
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Genetic-Algorithms-with-Python-Second-Edition/blob/main/chapter_05/02_solve_nurses.py
+  problem:
+    context: 'A care service must assign nurses to shifts while satisfying staffing
+      and scheduling constraints and minimizing the total penalty of undesirable assignments.
+
+'
+    objective: 'Produce a feasible low-cost nurse schedule under explicit hard and
+      soft constraints.
+
+'
+    analytical_questions:
+    - Which candidate schedules violate hard constraints?
+    - How should hard violations be penalized?
+    - Which schedule minimizes total assignment cost?
+    - How does the solution improve across generations?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - deap
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Define nurses, shifts, and scheduling constraints.
+    - Encode a schedule as a binary decision vector.
+    - Separate hard and soft constraints.
+    - Define the penalized objective function.
+    - Configure genetic operators.
+    - Optimize the schedule reproducibly.
+    - Decode and audit the best schedule.
+    expected_outputs:
+    - optimized shift schedule
+    - hard-constraint audit
+    - soft-constraint cost
+    - convergence history
+    - schedule summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 126
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

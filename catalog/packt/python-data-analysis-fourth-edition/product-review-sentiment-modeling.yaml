@@ -1,0 +1,105 @@
+---
+id: packt/python-data-analysis-fourth-edition/product-review-sentiment-modeling
+name: Product Review Sentiment Modeling
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Analysis, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Analyzing Text Data
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter13/13_analyze_text_data.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter13/13_analyze_text_data.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 401
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Analysis, Fourth Edition
+    title: Analyzing Text Data
+    url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter13/13_analyze_text_data.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Analysis-4E
+      path: Chapter13/13_analyze_text_data.ipynb
+    description: 'Packt prepares product-review text, constructs TF-IDF features,
+      explores low-dimensional text structure, and trains a sentiment classifier with
+      held-out evaluation.
+
+'
+  data:
+    description: 'Product reviews with review text and sentiment labels.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter13/product_reviews.xlsx
+    availability: repository
+    files:
+    - Chapter13/product_reviews.xlsx
+  original_implementation:
+    technologies:
+    - text cleaning
+    - TF-IDF
+    - PCA
+    - sentiment classification
+    - classification report
+    - confusion matrix
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Analysis-4E/blob/main/Chapter13/13_analyze_text_data.ipynb
+  problem:
+    context: 'Product reviews contain customer opinions that can be transformed into
+      structured signals for monitoring sentiment at scale.
+
+'
+    objective: 'Build and evaluate a sentiment model for product reviews.
+
+'
+    analytical_questions:
+    - Which terms characterize the review corpus?
+    - What low-dimensional structure appears in TF-IDF features?
+    - How accurately can sentiment labels be predicted?
+    - Which reviews are most frequently misclassified?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - nltk
+    - matplotlib
+    logical_steps:
+    - Load and clean review text.
+    - Tokenize and normalize text.
+    - Build TF-IDF features.
+    - Explore reduced text representations.
+    - Split data reproducibly.
+    - Train a sentiment classifier.
+    - Evaluate predictions and errors.
+    expected_outputs:
+    - cleaned review corpus
+    - TF-IDF matrix
+    - text projection
+    - sentiment classifier
+    - classification report
+    - confusion matrix
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 401
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

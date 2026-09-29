@@ -1,0 +1,103 @@
+---
+id: packt/machine-learning-with-bigquery-ml/bike-trip-duration-prediction
+name: Bike Trip Duration Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with BigQuery ML
+  edition:
+  official_url:
+  companion_sources:
+  - title: NYC Bike Sharing DNN Regression
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter11/nyc_bike_sharing_dnn.sql
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/nyc_bike_sharing_dnn.sql
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 170
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with BigQuery ML
+    title: NYC Bike Sharing DNN Regression
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter11/nyc_bike_sharing_dnn.sql
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+      path: Chapter11/nyc_bike_sharing_dnn.sql
+    description: 'Packt uses BigQuery ML DNN regressors to predict Citi Bike trip
+      duration from start station, end station, weekend status, and rider age with
+      chronological evaluation.
+
+'
+  data:
+    description: 'New York Citi Bike trips with trip duration, station names, timestamps,
+      and rider birth year.
+
+'
+    source_url: https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike
+    availability: public_cloud_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - BigQuery
+    - BigQuery ML
+    - DNN regression
+    - temporal holdout
+    - feature engineering
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter11/nyc_bike_sharing_dnn.sql
+  problem:
+    context: 'Trip duration varies by origin, destination, calendar context, and rider
+      characteristics and can be estimated from large bike-sharing histories.
+
+'
+    objective: 'Predict trip duration for future rides using a neural regression model
+      trained in SQL.
+
+'
+    analytical_questions:
+    - Which trip attributes explain travel duration?
+    - How should implausible durations and ages be filtered?
+    - How do alternative activation functions compare?
+    - How accurate are predictions on a later month?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - tensorflow
+    logical_steps:
+    - Build chronological train, evaluation, and prediction tables.
+    - Derive weekend and rider-age features.
+    - Filter invalid durations and birth years.
+    - Encode station identifiers.
+    - Fit candidate neural regressors.
+    - Compare held-out error.
+    - Score future trips and inspect absolute error.
+    expected_outputs:
+    - prepared bike-trip dataset
+    - DNN model comparison
+    - held-out regression metrics
+    - trip duration predictions
+    - error distribution
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 170
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

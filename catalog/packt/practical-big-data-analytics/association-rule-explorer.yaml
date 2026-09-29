@@ -1,0 +1,106 @@
+---
+id: packt/practical-big-data-analytics/association-rule-explorer
+name: Association Rule Explorer
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Big Data Analytics
+  edition:
+  official_url:
+  companion_sources:
+  - title: Apriori Rules Shiny Application
+    url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics/blob/master/Chapter08/rulespackt/app.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/rulespackt/app.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 219
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Big Data Analytics
+    title: Apriori Rules Shiny Application
+    url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics/blob/master/Chapter08/rulespackt/app.R
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics
+      path: Chapter08/rulespackt/app.R
+    description: 'Packt wraps mined association rules in a Shiny dashboard that lets
+      users filter by company, left-hand side, right-hand side, support, confidence,
+      and lift, inspect matching rules, and export results.
+
+'
+  data:
+    description: 'Precomputed association-rule tables and factor data supplied with
+      the chapter application.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics/tree/master/Chapter08/rulespackt
+    availability: repository
+    files:
+    - Chapter08/rulespackt/cms_factor_dt.rds
+    - Chapter08/rulespackt/cms_rules_dt.rds
+    - Chapter08/rulespackt/cms_rules.rds
+  original_implementation:
+    technologies:
+    - R
+    - Shiny
+    - association rules
+    - Apriori
+    - interactive filtering
+    - data export
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Big-Data-Analytics/blob/master/Chapter08/rulespackt/app.R
+  problem:
+    context: 'Large rule sets are difficult to use directly; analysts need an interactive
+      product for finding commercially meaningful rules under changing thresholds.
+
+'
+    objective: 'Build an interactive rule-exploration application for inspecting and
+      exporting association rules under user-defined constraints.
+
+'
+    analytical_questions:
+    - Which rules remain after support, confidence, and lift thresholds change?
+    - Which antecedents or consequents match a search term?
+    - How do rules differ across companies?
+    - Which filtered rules should be exported for further analysis?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - streamlit
+    - mlxtend
+    logical_steps:
+    - Load or generate association rules.
+    - Expose support, confidence, and lift filters.
+    - Add antecedent and consequent text search.
+    - Add optional company filtering.
+    - Display matching rules interactively.
+    - Support CSV export.
+    expected_outputs:
+    - interactive rule table
+    - threshold controls
+    - text and company filters
+    - downloadable rule set
+    - working analytical app
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 219
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

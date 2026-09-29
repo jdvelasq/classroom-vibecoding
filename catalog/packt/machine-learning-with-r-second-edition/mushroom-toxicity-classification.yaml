@@ -1,0 +1,102 @@
+---
+id: packt/machine-learning-with-r-second-edition/mushroom-toxicity-classification
+name: Mushroom Toxicity Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R - Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Identifying Poisonous Mushrooms
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2005/MLwR_v2_05.r
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 05/MLwR_v2_05.r
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 434
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Machine Learning with R - Second Edition
+    title: Identifying Poisonous Mushrooms
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2005/MLwR_v2_05.r
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+      path: Chapter 05/MLwR_v2_05.r
+    description: 'Packt classifies edible and poisonous mushrooms using interpretable
+      rule learners.
+
+'
+  data:
+    description: 'Mushroom records described by categorical physical characteristics
+      and an edible/poisonous label.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2005/mushrooms.csv
+    availability: repository
+    files:
+    - Chapter 05/mushrooms.csv
+  original_implementation:
+    technologies:
+    - OneR
+    - JRip
+    - C5.0 rules
+    - rule-based classification
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2005/MLwR_v2_05.r
+  problem:
+    context: 'Mushroom identification requires highly interpretable rules because
+      misclassification of poisonous specimens has severe consequences.
+
+'
+    objective: 'Learn compact classification rules that distinguish poisonous from
+      edible mushrooms.
+
+'
+    analytical_questions:
+    - Which observable feature provides the strongest single-rule classifier?
+    - How much does a multi-rule learner improve classification?
+    - Which rules are easiest to interpret operationally?
+    - Which mistakes remain after model improvement?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - wittgenstein
+    logical_steps:
+    - Load and inspect mushroom attributes.
+    - Remove non-informative fields.
+    - Encode categorical predictors.
+    - Establish a simple one-feature rule baseline.
+    - Fit a multi-rule classifier.
+    - Compare predictive performance and rule complexity.
+    - Inspect misclassified cases.
+    expected_outputs:
+    - cleaned mushroom dataset
+    - baseline rule
+    - learned rule set
+    - classification metrics
+    - interpretable decision summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 434
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/r-data-mining-blueprints/credit-risk-dimension-reduction
+name: Credit Risk Dimension Reduction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Mining Blueprints
+  edition:
+  official_url:
+  companion_sources:
+  - title: Variable Reduction
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%208/VariableReduction.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 8/VariableReduction.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 78
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Mining Blueprints
+    title: Variable Reduction
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%208/VariableReduction.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+      path: Chapter 8/VariableReduction.R
+    description: 'Packt applies correlation analysis and principal component analysis
+      to a credit-default dataset to summarize multivariate structure and reduce dimensions.
+
+'
+  data:
+    description: 'Credit-default records containing multiple financial and customer
+      attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%208/default.csv
+    availability: repository
+    files:
+    - Chapter 8/default.csv
+  original_implementation:
+    technologies:
+    - correlation analysis
+    - PCA
+    - eigen decomposition
+    - scree plot
+    - biplot
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%208/VariableReduction.R
+  problem:
+    context: 'Credit data can contain many correlated financial attributes that obscure
+      underlying structure and complicate subsequent analysis.
+
+'
+    objective: 'Explore latent dimensions in credit-risk attributes and determine
+      how much information can be retained with fewer components.
+
+'
+    analytical_questions:
+    - Which original variables are strongly correlated?
+    - How many principal components explain most variation?
+    - Which variables dominate the leading components?
+    - What customer structure becomes visible in reduced dimensions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate credit data.
+    - Select and standardize numeric attributes.
+    - Inspect the correlation structure.
+    - Fit PCA.
+    - Analyze explained variance and loadings.
+    - Visualize observations in leading components.
+    - Interpret the latent dimensions.
+    expected_outputs:
+    - correlation matrix
+    - explained-variance table
+    - scree plot
+    - loading table
+    - reduced component dataset
+    - biplot or score visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 78
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,105 @@
+---
+id: packt/machine-learning-engineering-with-python-second-edition/online-model-drift-detection
+name: Online Model Drift Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Engineering with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Online Drift Detection
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/blob/main/Chapter03/drift/edition2-alibi-detect-examples/ed2-alibi-detect-ch3.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter03/drift/edition2-alibi-detect-examples/ed2-alibi-detect-ch3.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 377
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Engineering with Python, Second Edition
+    title: Online Drift Detection
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/blob/main/Chapter03/drift/edition2-alibi-detect-examples/ed2-alibi-detect-ch3.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition
+      path: Chapter03/drift/edition2-alibi-detect-examples/ed2-alibi-detect-ch3.ipynb
+    description: 'Packt configures online multivariate drift detection with Alibi
+      Detect, processes observations sequentially, raises drift flags, and evaluates
+      how an operational monitor behaves before and after distribution change.
+
+'
+  data:
+    description: 'Reference and sequential test observations used to simulate stable
+      and shifted model-input distributions.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter03/drift
+    availability: repository_and_library
+    files: []
+  original_implementation:
+    technologies:
+    - Alibi Detect
+    - MMDDriftOnline
+    - PyTorch
+    - streaming drift detection
+    - monitoring
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/blob/main/Chapter03/drift/edition2-alibi-detect-examples/ed2-alibi-detect-ch3.ipynb
+  problem:
+    context: 'A deployed model can become unreliable when incoming feature distributions
+      diverge from the reference data used during development.
+
+'
+    objective: 'Build an online monitoring component that detects distribution drift
+      as new observations arrive.
+
+'
+    analytical_questions:
+    - What reference sample should define normal input behavior?
+    - How quickly does the detector identify a sustained distribution change?
+    - How often does it signal drift under stable conditions?
+    - How should drift events be stored or surfaced operationally?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - alibi-detect
+    - pandas
+    - numpy
+    - torch
+    - matplotlib
+    logical_steps:
+    - Define a reference distribution.
+    - Configure an online MMD drift detector.
+    - Stream test observations sequentially.
+    - Record detector outputs and alert times.
+    - Simulate controlled distribution changes.
+    - Compare stable and drifted periods.
+    - Package drift results for monitoring.
+    expected_outputs:
+    - drift detector configuration
+    - sequential drift flags
+    - alert timeline
+    - false-alarm diagnostics
+    - monitoring visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 377
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,101 @@
+---
+id: packt/hands-on-data-science-for-marketing/marketing-engagement-prediction
+name: Marketing Engagement Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Engagement
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/python/PredictingEngagement.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 191
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science for Marketing
+    title: Predicting Engagement
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+      path: Chapter08/python/PredictingEngagement.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Customer-value and marketing-response records with demographics,
+      policy characteristics, and response outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing/tree/master/Chapter08/data
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - categorical encoding
+    - random forest
+    - ROC AUC
+    - precision
+    - recall
+    - feature importance
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-for-Marketing
+  problem:
+    context: 'A marketing team wants to identify customers most likely to respond
+      to outreach and understand the factors associated with engagement.
+
+'
+    objective: 'Predict customer marketing response and identify the strongest engagement
+      drivers.
+
+'
+    analytical_questions:
+    - Which customer characteristics predict response?
+    - How well does the model generalize?
+    - Which features are most influential?
+    - What precision-recall trade-off is appropriate?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate customer records.
+    - Encode response and predictors.
+    - Split training and test data.
+    - Fit a random-forest classifier.
+    - Evaluate accuracy, precision, recall, ROC, and AUC.
+    - Rank feature importance.
+    expected_outputs:
+    - response classifier
+    - classification metrics
+    - ROC curve
+    - feature importance table
+    - customer engagement scores
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 191
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

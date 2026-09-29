@@ -1,0 +1,108 @@
+---
+id: packt/deep-learning-for-time-series-data-cookbook/vehicle-time-series-classification
+name: Vehicle Time-Series Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Deep Learning for Time Series Data Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: CNN Time-Series Classification
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_8/8.3_cnn_tsc.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_8/8.3_cnn_tsc.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 412
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Deep Learning for Time Series Data Cookbook
+    title: CNN Time-Series Classification
+    url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_8/8.3_cnn_tsc.py
+    repository:
+      url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook
+      path: Chapter_8/8.3_cnn_tsc.py
+    description: 'Packt trains a one-dimensional convolutional neural network on the
+      UCR Car time-series dataset, using train/validation/test separation, scaling,
+      early stopping, and confusion-matrix evaluation.
+
+'
+  data:
+    description: 'UCR Car time-series classification dataset with labeled univariate
+      sequences representing four vehicle classes.
+
+'
+    source_url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/tree/main/assets/datasets/Car
+    availability: repository
+    files:
+    - assets/datasets/Car/Car_TRAIN.tsv
+    - assets/datasets/Car/Car_TEST.tsv
+  original_implementation:
+    technologies:
+    - PyTorch
+    - Lightning
+    - one-dimensional CNN
+    - time-series classification
+    - early stopping
+    - confusion matrix
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Deep-Learning-for-Time-Series-Data-Cookbook/blob/main/Chapter_8/8.3_cnn_tsc.py
+  problem:
+    context: 'Sequential sensor-like profiles may contain shape patterns that distinguish
+      object classes even when individual time points are not independently informative.
+
+'
+    objective: 'Classify complete time-series profiles into vehicle classes using
+      a convolutional model.
+
+'
+    analytical_questions:
+    - How should time-series observations be scaled without leaking test information?
+    - Which temporal patterns can a one-dimensional CNN learn?
+    - Which vehicle classes are most frequently confused?
+    - How does early stopping affect generalization?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - torch
+    - lightning
+    - scikit-learn
+    logical_steps:
+    - Load predefined training and test series.
+    - Separate class labels from sequential measurements.
+    - Fit scaling on training data only.
+    - Create an internal validation split.
+    - Train a one-dimensional CNN with early stopping.
+    - Evaluate held-out predictions.
+    - Inspect confusion patterns by class.
+    expected_outputs:
+    - prepared time-series tensors
+    - trained CNN classifier
+    - validation learning curves
+    - confusion matrix
+    - class-level error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 412
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

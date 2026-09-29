@@ -1,0 +1,104 @@
+---
+id: packt/practical-data-science-cookbook-second-edition/stock-relative-valuation
+name: Stock Relative Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Stock Screening and Relative Valuation
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter04/code/Chapter04.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter04/code/Chapter04.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 92
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Data Science Cookbook, Second Edition
+    title: Stock Screening and Relative Valuation
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter04/code/Chapter04.R
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+      path: Chapter04/code/Chapter04.R
+    description: 'Packt cleans stock-screener metrics, compares firms with sector
+      and industry averages, constructs a relative-value index, and analyzes selected
+      securities.
+
+'
+  data:
+    description: 'Historical Finviz stock-screener snapshot containing valuation,
+      price, growth, ownership, leverage, sector, and industry metrics.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter04/data/finviz.csv
+    availability: repository
+    files:
+    - Chapter04/data/finviz.csv
+  original_implementation:
+    technologies:
+    - R
+    - data cleaning
+    - relative benchmarking
+    - rule-based screening
+    - grouped summaries
+    - time-series visualization
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter04/code/Chapter04.R
+  problem:
+    context: 'Raw valuation ratios are difficult to interpret without benchmarks because
+      typical levels differ substantially across sectors and industries.
+
+'
+    objective: 'Diagnose relative valuation by benchmarking firms against sector and
+      industry peers and identify securities that satisfy explicit screening criteria.
+
+'
+    analytical_questions:
+    - How do valuation ratios differ by sector and industry?
+    - Which firms trade below multiple peer benchmarks?
+    - How sensitive is a candidate list to screening rules?
+    - What additional price history should be reviewed for shortlisted firms?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load the historical stock-screener snapshot.
+    - Clean percentage, currency, and ratio fields.
+    - Calculate sector and industry benchmark metrics.
+    - Compare each firm with relevant peer benchmarks.
+    - Construct a transparent relative-value score.
+    - Apply explicit screening criteria.
+    - Profile shortlisted firms.
+    expected_outputs:
+    - cleaned screener dataset
+    - sector and industry benchmarks
+    - relative-value indicators
+    - screening results
+    - shortlist diagnostics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 92
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

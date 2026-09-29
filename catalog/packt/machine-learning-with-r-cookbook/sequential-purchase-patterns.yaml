@@ -1,0 +1,100 @@
+---
+id: packt/machine-learning-with-r-cookbook/sequential-purchase-patterns
+name: Sequential Purchase Patterns
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Mining Frequent Sequential Patterns with cSPADE
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Cookbook/blob/master/Chapter10/chapter10.Rmd
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/chapter10.Rmd
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 303
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with R Cookbook
+    title: Mining Frequent Sequential Patterns with cSPADE
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Cookbook/blob/master/Chapter10/chapter10.Rmd
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Cookbook
+      path: Chapter10/chapter10.Rmd
+    description: 'Packt extends market-basket analysis from unordered baskets to ordered
+      transaction sequences and applies cSPADE to identify frequent temporal purchase
+      patterns.
+
+'
+  data:
+    description: 'Example transaction sequences with sequence and event identifiers,
+      together with the built-in Zaki sequential-pattern dataset.
+
+'
+    source_url: https://cran.r-project.org/package=arulesSequences
+    availability: embedded_and_package
+    files: []
+  original_implementation:
+    technologies:
+    - sequential pattern mining
+    - cSPADE
+    - transaction sequences
+    - support
+    - arulesSequences
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Cookbook/blob/master/Chapter10/chapter10.Rmd
+  problem:
+    context: 'Purchase order matters when a retailer wants to understand recurring
+      customer journeys rather than only products bought in the same basket.
+
+'
+    objective: 'Discover frequent ordered purchase sequences from transaction histories.
+
+'
+    analytical_questions:
+    - Which item sequences recur across customers?
+    - How does minimum support change the discovered sequence set?
+    - Which patterns would be invisible to ordinary basket analysis?
+    - How can sequence patterns be translated into customer-journey hypotheses?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - prefixspan
+    logical_steps:
+    - Represent transactions with customer or sequence and event identifiers.
+    - Sort events within each sequence.
+    - Convert event histories into ordered item sequences.
+    - Mine frequent sequences across support thresholds.
+    - Rank patterns by support and length.
+    - Compare sequential findings with unordered association rules.
+    expected_outputs:
+    - ordered transaction histories
+    - frequent sequence table
+    - support comparison
+    - customer-journey patterns
+    - interpretation of sequential relationships
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 303
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

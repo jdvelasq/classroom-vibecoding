@@ -1,0 +1,102 @@
+---
+id: packt/r-data-analysis-projects/customer-record-linkage
+name: Customer Record Linkage
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Analysis Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Record Linkage
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter06/scripts/RecordLinkage/RecordLinkage.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/scripts/RecordLinkage/RecordLinkage.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 74
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Analysis Projects
+    title: Record Linkage
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter06/scripts/RecordLinkage/RecordLinkage.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+      path: Chapter06/scripts/RecordLinkage/RecordLinkage.R
+    description: 'Packt demonstrates probabilistic and similarity-based record linkage
+      using blocking, string comparison, Levenshtein similarity, and phonetic comparison.
+
+'
+  data:
+    description: 'Person records containing identity fields with duplicates and variations,
+      distributed through the R RecordLinkage package.
+
+'
+    source_url: https://cran.r-project.org/package=RecordLinkage
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - blocking
+    - Levenshtein similarity
+    - phonetic matching
+    - duplicate detection
+    - RecordLinkage
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter06/scripts/RecordLinkage/RecordLinkage.R
+  problem:
+    context: 'Analytical datasets frequently contain multiple imperfect records that
+      refer to the same underlying person or entity.
+
+'
+    objective: 'Identify likely duplicate records and construct a reproducible linkage
+      process for producing cleaner entity-level analytical data.
+
+'
+    analytical_questions:
+    - Which fields are suitable for blocking candidate record pairs?
+    - How should textual similarity be quantified?
+    - Which candidate pairs are plausible duplicates?
+    - How do phonetic and string-based comparisons differ?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - recordlinkage
+    - rapidfuzz
+    logical_steps:
+    - Load and profile entity records.
+    - Standardize identity fields.
+    - Generate candidate pairs through blocking.
+    - Calculate exact, fuzzy, and phonetic similarity features.
+    - Score candidate matches.
+    - Inspect ambiguous pairs.
+    - Produce linked entity identifiers.
+    expected_outputs:
+    - standardized entity table
+    - candidate pair table
+    - similarity feature matrix
+    - matched record pairs
+    - linked analytical dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 74
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

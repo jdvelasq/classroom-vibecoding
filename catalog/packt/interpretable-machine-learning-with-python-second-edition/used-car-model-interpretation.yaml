@@ -1,0 +1,108 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/used-car-model-interpretation
+name: Used Car Model Interpretation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Used Cars Price Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/04/UsedCars.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 04/UsedCars.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 150
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Used Cars Price Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/04/UsedCars.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 04/UsedCars.ipynb
+    description: 'Packt uses used-car price prediction as the worked case for global
+      model-agnostic interpretation methods and examines how fitted models depend
+      on vehicle attributes at population level.
+
+'
+  data:
+    description: 'Used-car records distributed with the book and containing vehicle
+      attributes and observed sale prices.
+
+'
+    source_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/datasets/usedcars-2e.csv.zip
+    availability: repository
+    files:
+    - datasets/usedcars-2e.csv.zip
+  original_implementation:
+    technologies:
+    - predictive regression
+    - feature importance
+    - partial dependence
+    - accumulated local effects
+    - SHAP
+    - global interpretation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/04/UsedCars.ipynb
+  problem:
+    context: 'A high-performing vehicle-price model is not sufficient when analysts
+      also need to understand how major vehicle attributes influence predictions globally.
+
+'
+    objective: 'Predict used-car prices and compare global interpretation techniques
+      for the fitted model.
+
+'
+    analytical_questions:
+    - Which vehicle attributes contribute most to predicted price?
+    - How do predictions change across important feature ranges?
+    - Do alternative global interpretation methods agree?
+    - Where do nonlinear or interaction effects appear?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - shap
+    - pdpbox
+    - pyale
+    logical_steps:
+    - Load and prepare used-car records.
+    - Fit a competitive price model.
+    - Establish global feature importance.
+    - Calculate partial dependence profiles.
+    - Calculate accumulated local effects.
+    - Compare interpretation outputs.
+    - Relate model behavior to vehicle economics.
+    expected_outputs:
+    - fitted price model
+    - feature importance ranking
+    - partial dependence plots
+    - ALE plots
+    - SHAP summaries
+    - interpretation comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 150
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

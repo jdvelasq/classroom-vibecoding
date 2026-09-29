@@ -1,0 +1,108 @@
+---
+id: packt/applied-geospatial-data-science-with-python/spatial-facility-and-routing-optimization
+name: Spatial Facility and Routing Optimization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Applied Geospatial Data Science with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Spatial Optimization
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter10/Chapter%2010%20-%20Spatial%20Optimization-vf.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/Chapter 10 - Spatial Optimization-vf.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 140
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Applied Geospatial Data Science with Python
+    title: Spatial Optimization
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter10/Chapter%2010%20-%20Spatial%20Optimization-vf.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+      path: Chapter10/Chapter 10 - Spatial Optimization-vf.ipynb
+    description: 'Packt formulates facility set covering, traveling-salesperson, vehicle-routing,
+      and capacitated-routing problems on real street networks using spatial cost
+      matrices and mathematical optimization.
+
+'
+  data:
+    description: 'Washington, DC road networks and census geography together with
+      simulated patient, facility, warehouse, and customer locations.
+
+'
+    source_url: https://www.openstreetmap.org/
+    availability: public_and_generated
+    files: []
+  original_implementation:
+    technologies:
+    - OSMnx
+    - spatial networks
+    - facility location
+    - PuLP
+    - TSP
+    - VRP
+    - CVRP
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter10/Chapter%2010%20-%20Spatial%20Optimization-vf.ipynb
+  problem:
+    context: 'Service facilities and vehicle routes must be chosen using actual network
+      distances rather than straight-line geometry, while satisfying coverage or capacity
+      constraints.
+
+'
+    objective: 'Optimize facility coverage and routing decisions on a street network.
+
+'
+    analytical_questions:
+    - Which facility locations cover all demand within the required network distance?
+    - What tour minimizes total travel?
+    - How should customers be divided among multiple vehicles?
+    - How do vehicle capacity constraints change the optimal routes?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - geopandas
+    - osmnx
+    - networkx
+    - pulp
+    - ortools
+    logical_steps:
+    - Download and prepare the street network.
+    - Generate or load demand and facility locations.
+    - Snap points to the network.
+    - Compute network-distance cost matrices.
+    - Solve the location set-covering problem.
+    - Formulate and solve TSP and VRP variants.
+    - Add vehicle-capacity constraints and compare solutions.
+    expected_outputs:
+    - network cost matrix
+    - selected facility locations
+    - optimized tour
+    - vehicle route assignments
+    - capacity-feasible routing plan
+    - route maps
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: true
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 140
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

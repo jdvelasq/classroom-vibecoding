@@ -1,0 +1,113 @@
+---
+id: packt/practical-deep-learning-at-scale-with-mlflow/imdb-sentiment-serving-at-scale
+name: IMDB Sentiment Serving at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Deep Learning at Scale with MLflow
+  edition:
+  official_url:
+  companion_sources:
+  - title: Batch and Online Inference for Sentiment Models
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter08
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter08
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 338
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Deep Learning at Scale with MLflow
+    title: Batch and Online Inference for Sentiment Models
+    url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter08
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow
+      path: chapter08
+    description: 'Packt operationalizes an IMDB sentiment classifier with MLflow tracking
+      and registry, a multistep inference pipeline, batch inference with Spark, and
+      deployment paths for managed online serving.
+
+'
+  data:
+    description: 'IMDB movie-review sentiment data split into training, validation,
+      test, and prediction datasets.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter08/data/imdb
+    availability: repository
+    files:
+    - chapter08/data/imdb/train.csv
+    - chapter08/data/imdb/valid.csv
+    - chapter08/data/imdb/test.csv
+    - chapter08/data/imdb/predict.csv
+  original_implementation:
+    technologies:
+    - MLflow
+    - Hugging Face
+    - deep learning
+    - model registry
+    - PySpark UDF
+    - batch inference
+    - SageMaker
+    - Ray Serve
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Deep-Learning-at-Scale-with-MLFlow/tree/main/chapter08
+  problem:
+    context: 'A sentiment model must support reproducible training, versioned registration,
+      high-volume batch scoring, and online inference without rebuilding the analytical
+      workflow for each serving mode.
+
+'
+    objective: 'Build and operationalize a scalable sentiment-inference product from
+      model training through registry and multiple serving patterns.
+
+'
+    analytical_questions:
+    - How should training and inference steps be tracked and versioned?
+    - How can a reusable inference pipeline be registered?
+    - How should high-volume batch predictions be executed with Spark?
+    - How can the same model artifact be deployed for online serving?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - mlflow
+    - transformers
+    - pyspark
+    - pandas
+    logical_steps:
+    - Load and validate IMDB sentiment splits.
+    - Fine-tune the text classifier.
+    - Track experiments and artifacts with MLflow.
+    - Build and register an inference pipeline.
+    - Run batch inference through Spark UDFs.
+    - Package the model for online serving.
+    - Validate prediction consistency across serving modes.
+    expected_outputs:
+    - tracked training run
+    - registered sentiment model
+    - reusable inference pipeline
+    - batch prediction dataset
+    - online-serving artifact
+    - serving consistency tests
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 338
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

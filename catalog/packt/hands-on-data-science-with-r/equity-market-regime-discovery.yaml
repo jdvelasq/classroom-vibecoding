@@ -1,0 +1,106 @@
+---
+id: packt/hands-on-data-science-with-r/equity-market-regime-discovery
+name: Equity Market Regime Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Data Science with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Hidden Markov Models
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter09/chap_9.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/chap_9.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 175
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Data Science with R
+    title: Hidden Markov Models
+    url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter09/chap_9.R
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R
+      path: Chapter09/chap_9.R
+    description: 'Packt analyzes S&P 500 log returns, initializes latent market states
+      with K-means, and fits a hidden Markov model to identify persistent return regimes
+      and estimate transitions between them.
+
+'
+  data:
+    description: 'Historical S&P 500 closing prices and daily log returns obtained
+      through the ldhmm package.
+
+'
+    source_url: https://cran.r-project.org/package=ldhmm
+    availability: package_download
+    files: []
+  original_implementation:
+    technologies:
+    - R
+    - K-means
+    - hidden Markov models
+    - maximum likelihood
+    - regime decoding
+    - transition matrices
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Data-Science-with-R/blob/master/Chapter09/chap_9.R
+  problem:
+    context: 'Financial returns may alternate between latent market conditions with
+      different average returns and volatility rather than following one stable distribution.
+
+'
+    objective: 'Discover and characterize latent market regimes and the probabilities
+      of transitioning between them.
+
+'
+    analytical_questions:
+    - How many distinct return regimes appear in the series?
+    - What mean and volatility characterize each state?
+    - How persistent is each market regime?
+    - What transition probabilities govern movements between states?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - hmmlearn
+    - matplotlib
+    logical_steps:
+    - Load and validate market prices.
+    - Calculate log returns.
+    - Explore return distributions through time.
+    - Initialize candidate regimes with clustering.
+    - Fit a Gaussian hidden Markov model.
+    - Decode the most likely state sequence.
+    - Summarize regime statistics and transition probabilities.
+    expected_outputs:
+    - return time series
+    - latent regime assignments
+    - regime mean and volatility table
+    - transition matrix
+    - regime timeline visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 175
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

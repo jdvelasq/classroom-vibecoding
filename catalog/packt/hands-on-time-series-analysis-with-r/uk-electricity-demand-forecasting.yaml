@@ -1,0 +1,105 @@
+---
+id: packt/hands-on-time-series-analysis-with-r/uk-electricity-demand-forecasting
+name: UK Electricity Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Time Series Analysis with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Regression-Based Time Series Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter09/Chapter%209%20R%20code.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/Chapter 9 R code.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 428
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Time Series Analysis with R
+    title: Regression-Based Time Series Forecasting
+    url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter09/Chapter%209%20R%20code.R
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R
+      path: Chapter09/Chapter 9 R code.R
+    description: 'Packt models UK daily electricity demand using trend, annual seasonality,
+      weekday and month effects, and a 365-day lag, with chronological holdout evaluation
+      and future forecasting.
+
+'
+  data:
+    description: 'UK National Grid daily electricity demand obtained through the UKgrid
+      R package.
+
+'
+    source_url: https://cran.r-project.org/package=UKgrid
+    availability: package_download
+    files: []
+  original_implementation:
+    technologies:
+    - time-series regression
+    - calendar effects
+    - annual lag features
+    - chronological validation
+    - forecast
+    - TSstudio
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R/blob/master/Chapter09/Chapter%209%20R%20code.R
+  problem:
+    context: 'National electricity demand exhibits strong calendar and annual repetition,
+      and planners need forecasts that explicitly exploit these recurring patterns.
+
+'
+    objective: 'Forecast daily electricity demand using trend, seasonality, calendar
+      effects, and prior-year demand.
+
+'
+    analytical_questions:
+    - What annual and weekday patterns are present in electricity demand?
+    - How much does a 365-day lag improve prediction?
+    - Which calendar variables materially contribute to forecast accuracy?
+    - How accurately does the model predict a full held-out year?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate daily electricity demand.
+    - Create weekday, month, trend, and annual-lag features.
+    - Reserve the final year as a chronological test set.
+    - Fit nested regression-based time-series models.
+    - Compare holdout forecast accuracy.
+    - Diagnose residual autocorrelation.
+    - Refit the selected model and forecast the next year.
+    expected_outputs:
+    - calendar-feature dataset
+    - model comparison table
+    - holdout forecast metrics
+    - residual diagnostics
+    - one-year electricity demand forecast
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 428
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

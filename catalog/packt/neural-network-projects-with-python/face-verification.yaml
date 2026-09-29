@@ -1,0 +1,101 @@
+---
+id: packt/neural-network-projects-with-python/face-verification
+name: Face Verification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Neural Network Projects with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Face Recognition with Siamese Networks
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter07/siamese_nn.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/siamese_nn.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 443
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Neural Network Projects with Python
+    title: Face Recognition with Siamese Networks
+    url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter07/siamese_nn.py
+    repository:
+      url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python
+      path: Chapter07/siamese_nn.py
+    description: 'Packt trains a Siamese neural network on face pairs and integrates
+      it into an onboarding and live face-verification workflow.
+
+'
+  data:
+    description: 'AT&T face images with multiple grayscale images per person, plus
+      sample images used for onboarding and verification.
+
+'
+    source_url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/tree/master/Chapter07/att_faces
+    availability: repository
+    files:
+    - Chapter07/att_faces
+  original_implementation:
+    technologies:
+    - Siamese neural network
+    - contrastive loss
+    - face verification
+    - OpenCV
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Neural-Network-Projects-with-Python/blob/master/Chapter07/siamese_nn.py
+  problem:
+    context: 'Identity systems need to verify whether a newly observed face matches
+      a previously enrolled person rather than classify among a fixed set of identities.
+
+'
+    objective: 'Learn a face-similarity function and use it for identity verification.
+
+'
+    analytical_questions:
+    - How should positive and negative face pairs be constructed?
+    - How well does learned distance separate matching from nonmatching faces?
+    - What similarity threshold should trigger a match?
+    - How stable is verification across repeated video frames?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - tensorflow
+    - keras
+    - opencv-python
+    - numpy
+    logical_steps:
+    - Load and normalize face images.
+    - Create positive and negative image pairs.
+    - Train a Siamese network with contrastive loss.
+    - Evaluate pairwise verification accuracy.
+    - Select a similarity threshold.
+    - Test enrolled-user verification on held-out images.
+    expected_outputs:
+    - paired face dataset
+    - trained similarity model
+    - verification metrics
+    - threshold analysis
+    - face verification workflow
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 443
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

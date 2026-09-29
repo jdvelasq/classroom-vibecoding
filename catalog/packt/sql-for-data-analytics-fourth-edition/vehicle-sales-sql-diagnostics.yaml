@@ -1,0 +1,104 @@
+---
+id: packt/sql-for-data-analytics-fourth-edition/vehicle-sales-sql-diagnostics
+name: Vehicle Sales SQL Diagnostics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: SQL for Data Analytics, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Sales Analytics Activities
+    url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition/tree/main/Chapter%2012
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 12/Actitivty 12.txt
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 114
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: SQL for Data Analytics, Fourth Edition
+    title: Sales Analytics Activities
+    url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition/tree/main/Chapter%2012
+    repository:
+      url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition
+      path: Chapter 12/Actitivty 12.txt
+    description: 'Packt uses a vehicle-sales database to compare dealership and state
+      performance, construct rolling sales metrics, analyze weekday patterns, and
+      examine sales of limited-edition products using SQL.
+
+'
+  data:
+    description: 'Relational vehicle-sales database with customers, products, dealerships,
+      and sales transactions distributed as the book''s data dump.
+
+'
+    source_url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition/tree/main/Datasets
+    availability: repository
+    files:
+    - Datasets/data.dump
+    - Datasets/customer_sales.txt
+  original_implementation:
+    technologies:
+    - SQL
+    - joins
+    - grouped aggregation
+    - window functions
+    - rolling averages
+    - deciles
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/SQL-for-Data-Analytics-Fourth-Edition/tree/main/Chapter%2012
+  problem:
+    context: 'Business users need relational sales data transformed into interpretable
+      dealership, geography, product, and temporal performance diagnostics.
+
+'
+    objective: 'Answer multi-table sales performance questions directly in SQL using
+      joins, aggregation, and window analytics.
+
+'
+    analytical_questions:
+    - Which dealerships and states generate the most sales?
+    - How does recent sales performance compare with a rolling baseline?
+    - How do weekday and weekend sales differ?
+    - Are limited-edition products concentrated on particular days?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - duckdb
+    - pandas
+    logical_steps:
+    - Load the relational sales dataset.
+    - Join customer, product, dealership, and sales entities.
+    - Aggregate sales by geography and dealership.
+    - Calculate daily sales and rolling windows.
+    - Rank days using sales deciles.
+    - Compare weekday and product-category behavior.
+    expected_outputs:
+    - dealership sales table
+    - state sales comparison
+    - rolling sales diagnostics
+    - sales decile table
+    - weekday-product analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 114
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,108 @@
+---
+id: packt/the-kaggle-workbook/hierarchical-retail-demand-forecasting
+name: Hierarchical Retail Demand Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: The Kaggle Workbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: M5 Forecasting
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_02/m5-train-day-1913-horizon-28.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_02/m5-train-day-1913-horizon-28.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 350
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: The Kaggle Workbook
+    title: M5 Forecasting
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_02/m5-train-day-1913-horizon-28.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+      path: chapter_02/m5-train-day-1913-horizon-28.ipynb
+    description: 'Packt constructs an end-to-end M5 demand-forecasting pipeline with
+      long-format sales grids, price and calendar features, lags, rolling statistics,
+      target encodings, store-specific LightGBM models, and multi-horizon prediction.
+
+'
+  data:
+    description: 'Walmart item-store daily sales, prices, calendar events, and hierarchy
+      data from the M5 forecasting competition.
+
+'
+    source_url: https://www.kaggle.com/competitions/m5-forecasting-accuracy
+    availability: public_platform
+    files:
+    - sales_train_evaluation.csv
+    - sell_prices.csv
+    - calendar.csv
+    - sample_submission.csv
+  original_implementation:
+    technologies:
+    - LightGBM
+    - lag features
+    - rolling statistics
+    - target encoding
+    - multi-horizon forecasting
+    - hierarchical retail data
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_02/m5-train-day-1913-horizon-28.ipynb
+  problem:
+    context: 'A large retailer must forecast thousands of item-store demand series
+      while incorporating price, calendar, event, and hierarchical information.
+
+'
+    objective: 'Forecast item-level retail demand over multiple future horizons using
+      a scalable feature-engineering and gradient-boosting pipeline.
+
+'
+    analytical_questions:
+    - Which lag and rolling features capture short- and medium-term demand behavior?
+    - How do price and calendar variables improve forecasts?
+    - Should separate store-level models be used?
+    - How does accuracy change across forecast horizons?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - lightgbm
+    - pyarrow
+    logical_steps:
+    - Reshape sales history to long format.
+    - Join price and calendar information.
+    - Build lag and rolling features.
+    - Add target-encoding features.
+    - Split chronologically by forecast horizon.
+    - Train store-level gradient-boosting models.
+    - Produce recursive multi-horizon forecasts.
+    expected_outputs:
+    - long-format sales grid
+    - engineered forecasting features
+    - store-level models
+    - feature importance summaries
+    - multi-horizon demand forecasts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 350
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

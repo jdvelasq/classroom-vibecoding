@@ -1,0 +1,105 @@
+---
+id: packt/big-data-analytics-with-r/uk-property-market-nosql-analytics
+name: UK Property Market NoSQL Analytics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: R with NoSQL Databases
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%206/BDA_Ch07.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 6/BDA_Ch07.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 388
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics with R
+    title: R with NoSQL Databases
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%206/BDA_Ch07.R
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+      path: Chapter 6/BDA_Ch07.R
+    description: 'Packt queries UK Land Registry property transactions with MongoDB,
+      builds filtered property subsets, and uses aggregation pipelines and map-reduce
+      to compare transaction counts and average prices across geography and property
+      type.
+
+'
+  data:
+    description: 'UK Land Registry Price Paid Data containing property transaction
+      price, location, property type, tenure, and transaction metadata.
+
+'
+    source_url: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - MongoDB
+    - aggregation pipelines
+    - map-reduce
+    - filtering
+    - grouped summaries
+    - R
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%206/BDA_Ch07.R
+  problem:
+    context: 'A national property transaction dataset is too large for ad hoc local
+      analysis and benefits from queryable document storage and database-side aggregation.
+
+'
+    objective: 'Diagnose property-market patterns through scalable NoSQL filtering
+      and aggregation.
+
+'
+    analytical_questions:
+    - How many transactions occur by county and property type?
+    - Which towns have the highest average sale prices?
+    - How do selected price thresholds change the available property pool?
+    - Which geographic and property-type combinations dominate transactions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - pymongo
+    - duckdb
+    logical_steps:
+    - Load a frozen subset of Land Registry transactions.
+    - Normalize location and property-type fields.
+    - Store or query records in a document-oriented structure.
+    - Filter transactions by geography, price, and property type.
+    - Build database-side aggregation pipelines.
+    - Compare transaction counts and average prices.
+    - Produce interpretable market summaries.
+    expected_outputs:
+    - filtered property subsets
+    - county/property-type counts
+    - town average-price rankings
+    - aggregation results
+    - property-market diagnostic summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 388
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

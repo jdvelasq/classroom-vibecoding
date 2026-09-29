@@ -1,0 +1,104 @@
+---
+id: packt/hands-on-machine-learning-with-scikit-learn-and-scientific-python-toolkits/music-rating-recommendation
+name: Music Rating Recommendation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+  edition:
+  official_url:
+  companion_sources:
+  - title: Recommendation Systems
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter13/RecSys.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter13/RecSys.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 123
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+    title: Recommendation Systems
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter13/RecSys.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+      path: Chapter13/RecSys.ipynb
+    description: 'Packt compares random, neighborhood, baseline, and SVD recommenders
+      with train/test splits, cross-validation, grid search, and a music-ratings example.
+
+'
+  data:
+    description: 'User-item ratings used for collaborative filtering together with
+      a worked music artist-rating example.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/tree/master/Chapter13
+    availability: embedded_and_public
+    files: []
+  original_implementation:
+    technologies:
+    - collaborative filtering
+    - KNN
+    - baseline recommenders
+    - SVD
+    - cross-validation
+    - grid search
+    - top-N recommendation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter13/RecSys.ipynb
+  problem:
+    context: 'A media service wants to infer user preferences for unseen artists or
+      items from sparse historical ratings.
+
+'
+    objective: 'Compare collaborative-filtering approaches and generate personalized
+      recommendations from user-item interactions.
+
+'
+    analytical_questions:
+    - How sparse is the rating matrix?
+    - Which recommender minimizes out-of-sample rating error?
+    - How much does tuning improve neighborhood or factorization methods?
+    - Which artists or items should be recommended to each user?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-surprise
+    - scikit-learn
+    logical_steps:
+    - Load and inspect user-item ratings.
+    - Create reproducible evaluation splits.
+    - Establish random and baseline recommenders.
+    - Fit neighborhood-based recommenders.
+    - Fit matrix-factorization models.
+    - Tune candidate methods with cross-validation.
+    - Generate personalized top-N recommendations.
+    expected_outputs:
+    - rating sparsity summary
+    - recommender comparison table
+    - cross-validation results
+    - tuned recommendation model
+    - personalized recommendation lists
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 123
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

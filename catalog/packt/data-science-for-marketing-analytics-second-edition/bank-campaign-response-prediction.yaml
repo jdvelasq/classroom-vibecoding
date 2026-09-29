@@ -1,0 +1,104 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/bank-campaign-response-prediction
+name: Bank Campaign Response Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Imbalanced Bank Campaign Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.02/Activity9.02.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/Activity9.02/Activity9.02.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 439
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Imbalanced Bank Campaign Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.02/Activity9.02.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter09/Activity9.02/Activity9.02.ipynb
+    description: 'Packt predicts bank campaign response with a random forest and explicitly
+      compares performance before and after SMOTE resampling of the minority class.
+
+'
+  data:
+    description: 'Bank marketing records containing customer attributes, contact history,
+      campaign characteristics, and term-deposit subscription outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.02/bank.csv
+    availability: repository
+    files:
+    - Chapter09/Activity9.02/bank.csv
+  original_implementation:
+    technologies:
+    - random forest
+    - class imbalance
+    - SMOTE
+    - standardization
+    - classification metrics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.02/Activity9.02.ipynb
+  problem:
+    context: 'Positive responses to bank marketing campaigns are relatively rare,
+      so a classifier can appear accurate while failing to identify likely responders.
+
+'
+    objective: 'Predict campaign response and evaluate whether minority-class resampling
+      improves useful detection of positive responses.
+
+'
+    analytical_questions:
+    - How imbalanced is the campaign response target?
+    - How well does the baseline model identify positive responses?
+    - How does SMOTE change precision and recall?
+    - Which evaluation metrics reveal improvements hidden by overall accuracy?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - imbalanced-learn
+    - matplotlib
+    logical_steps:
+    - Load and encode bank marketing records.
+    - Split data with target stratification.
+    - Standardize predictors.
+    - Train a baseline random forest.
+    - Evaluate class-level precision, recall, and confusion matrix.
+    - Apply SMOTE to the training data only.
+    - Refit and compare minority-class performance.
+    expected_outputs:
+    - baseline classifier
+    - resampled classifier
+    - classification reports
+    - confusion matrices
+    - before/after imbalance comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 439
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

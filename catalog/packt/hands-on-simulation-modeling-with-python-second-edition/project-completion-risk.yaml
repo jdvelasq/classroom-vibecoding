@@ -1,0 +1,103 @@
+---
+id: packt/hands-on-simulation-modeling-with-python-second-edition/project-completion-risk
+name: Project Completion Risk
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Simulation Modeling with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Monte Carlo Task Scheduling
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/montecarlo_tasks_scheduling.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/montecarlo_tasks_scheduling.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 130
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Simulation Modeling with Python, Second Edition
+    title: Monte Carlo Task Scheduling
+    url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/montecarlo_tasks_scheduling.py
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition
+      path: Chapter11/montecarlo_tasks_scheduling.py
+    description: 'Packt simulates uncertain task durations with triangular distributions
+      and propagates them through parallel and sequential project activities to obtain
+      the distribution of total completion time.
+
+'
+  data:
+    description: 'Synthetic six-task project with optimistic, most-likely, and pessimistic
+      duration estimates embedded in the implementation.
+
+'
+    source_url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/montecarlo_tasks_scheduling.py
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Monte Carlo simulation
+    - triangular distributions
+    - task networks
+    - uncertainty propagation
+    - scheduling risk
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Simulation-Modeling-with-Python-Second-Edition/blob/main/Chapter11/montecarlo_tasks_scheduling.py
+  problem:
+    context: 'Project activities have uncertain durations and some tasks execute in
+      parallel, so a single deterministic completion date hides schedule risk.
+
+'
+    objective: 'Simulate project completion time and quantify the uncertainty created
+      by task-duration risk.
+
+'
+    analytical_questions:
+    - What distribution of completion time follows from uncertain task durations?
+    - Which parallel branches dominate total duration?
+    - What are plausible minimum, mean, and maximum completion times?
+    - What completion date corresponds to selected confidence levels?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - numpy
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Define the project task network.
+    - Encode optimistic, likely, and pessimistic task durations.
+    - Sample triangular task durations reproducibly.
+    - Propagate samples through sequential and parallel dependencies.
+    - Calculate total completion time for each simulation.
+    - Summarize percentiles and schedule risk.
+    - Identify tasks or branches driving variability.
+    expected_outputs:
+    - simulated task-duration table
+    - completion-time distribution
+    - schedule percentiles
+    - probability of meeting candidate deadlines
+    - schedule-risk interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 130
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

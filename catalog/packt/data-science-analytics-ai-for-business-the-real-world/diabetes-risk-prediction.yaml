@@ -1,0 +1,108 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/diabetes-risk-prediction
+name: Diabetes Risk Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Healthcare Analytics Diabeties data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Healthcare%20Analytics%20Diabeties%20data.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Healthcare Analytics Diabeties data.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 61
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Healthcare Analytics Diabeties data
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Healthcare%20Analytics%20Diabeties%20data.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Healthcare Analytics Diabeties data.ipynb
+    description: 'Packt integrates multiple NHANES-derived files and compares several
+      machine learning models for identifying diabetes from demographic, examination,
+      laboratory, dietary, and questionnaire information.
+
+'
+  data:
+    description: 'NHANES-derived demographic, examination, laboratory, dietary, and
+      questionnaire tables used to construct a diabetes modeling dataset.
+
+'
+    source_url: https://github.com/rajeevratan84/data-analyst-bootcamp
+    availability: public
+    files:
+    - labs.csv
+    - examination.csv
+    - demographic.csv
+    - diet.csv
+    - questionnaire.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - data integration
+    - classification
+    - ensemble models
+    - neural networks
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Healthcare%20Analytics%20Diabeties%20data.ipynb
+  problem:
+    context: 'Health survey information is distributed across multiple tables and
+      can be combined to study whether observed characteristics discriminate diabetes
+      status.
+
+'
+    objective: 'Integrate the survey components and compare predictive models for
+      diabetes status.
+
+'
+    analytical_questions:
+    - Which source tables and variables are needed for the analytical dataset?
+    - Which predictors are most informative for diabetes classification?
+    - How do alternative models compare on unseen observations?
+    - Where do classification errors concentrate?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate the component datasets.
+    - Integrate records using common respondent identifiers.
+    - Select and prepare candidate predictors.
+    - Split the data reproducibly.
+    - Train several classification models.
+    - Compare out-of-sample performance.
+    - Inspect errors and important predictors.
+    expected_outputs:
+    - integrated analytical dataset
+    - model comparison table
+    - classification metrics
+    - confusion matrix
+    - predictor importance summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 61
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

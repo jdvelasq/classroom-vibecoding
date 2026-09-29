@@ -1,0 +1,104 @@
+---
+id: packt/artificial-intelligence-with-power-bi/hotel-review-text-enrichment
+name: Hotel Review Text Enrichment
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Artificial Intelligence with Power BI
+  edition:
+  official_url:
+  companion_sources:
+  - title: Text Analytics in Power BI
+    url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI/tree/main/Chapter08
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 221
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Artificial Intelligence with Power BI
+    title: Text Analytics in Power BI
+    url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI/tree/main/Chapter08
+    repository:
+      url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI
+      path: Chapter08
+    description: 'Packt integrates cloud text analytics into Power BI so hotel reviews
+      can be enriched with sentiment and key phrases and then used in downstream BI
+      analysis.
+
+'
+  data:
+    description: 'Hotel review text supplied with the chapter.
+
+'
+    source_url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI/blob/main/Chapter08/hotel_reviews.csv
+    availability: repository
+    files:
+    - Chapter08/hotel_reviews.csv
+  original_implementation:
+    technologies:
+    - Power BI
+    - Power Query
+    - Azure Text Analytics
+    - sentiment analysis
+    - key phrase extraction
+    language:
+    - Power Query M
+    - Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI/blob/main/Chapter08/customfunctions.md
+  problem:
+    context: 'Hotel review text is difficult to summarize in standard BI until qualitative
+      content is converted into structured analytical attributes.
+
+'
+    objective: 'Enrich hotel reviews with sentiment and key phrases and make the derived
+      attributes available inside an interactive BI workflow.
+
+'
+    analytical_questions:
+    - What sentiment is associated with each review?
+    - Which key phrases recur across reviews?
+    - How can text-derived attributes be integrated into BI filtering and reporting?
+    - What service and authentication dependencies must be managed?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - transformers
+    - keybert
+    - streamlit
+    logical_steps:
+    - Load and validate hotel reviews.
+    - Apply sentiment analysis.
+    - Extract representative key phrases.
+    - Attach structured NLP outputs to each review.
+    - Aggregate sentiment and topics.
+    - Build an interactive review-analysis view.
+    expected_outputs:
+    - enriched review table
+    - sentiment summaries
+    - key phrase summaries
+    - interactive BI views
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 221
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

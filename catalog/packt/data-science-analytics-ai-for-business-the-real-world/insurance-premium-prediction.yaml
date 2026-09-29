@@ -1,0 +1,101 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/insurance-premium-prediction
+name: Insurance Premium Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Predicting Insurance Premiums
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predicting%20Insurance%20Premiums.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Predicting Insurance Premiums.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 63
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Predicting Insurance Premiums
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predicting%20Insurance%20Premiums.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Predicting Insurance Premiums.ipynb
+    description: 'Packt compares linear, polynomial, decision-tree, random-forest,
+      and support-vector regression for predicting insurance charges from customer
+      characteristics.
+
+'
+  data:
+    description: 'Insurance records containing age, sex, BMI, children, smoking status,
+      region, and observed charges.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/insurance.csv
+    availability: public
+    files:
+    - insurance.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - polynomial regression
+    - decision tree regression
+    - random forest regression
+    - support vector regression
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-/blob/main/All%20Resource%20files/Case%20Studies/Predicting%20Insurance%20Premiums.ipynb
+  problem:
+    context: 'An insurer wants to estimate expected customer charges using basic demographic
+      and risk-related attributes.
+
+'
+    objective: 'Compare regression models and predict insurance charges for new customers.
+
+'
+    analytical_questions:
+    - Which customer attributes are associated with higher charges?
+    - Do nonlinear models improve predictive accuracy?
+    - Which model generalizes best to held-out customers?
+    - How stable are predictions for new customer profiles?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the insurance dataset.
+    - Encode categorical variables and inspect distributions.
+    - Split training and test data.
+    - Fit multiple regression families.
+    - Compare out-of-sample RMSE and R-squared.
+    - Score example customer profiles.
+    expected_outputs:
+    - prepared insurance dataset
+    - model comparison table
+    - prediction diagnostics
+    - customer charge estimates
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 63
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

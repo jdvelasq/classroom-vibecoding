@@ -1,0 +1,103 @@
+---
+id: packt/learning-social-media-analytics-with-r/news-extractive-summarization
+name: News Extractive Summarization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Social Media Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Text Summarization
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter08/B06056_08_04_code.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter08/B06056_08_04_code.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 314
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Social Media Analytics with R
+    title: Text Summarization
+    url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter08/B06056_08_04_code.R
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R
+      path: Chapter08/B06056_08_04_code.R
+    description: 'Packt transforms long news articles into concise extractive summaries
+      by scoring sentence importance with LexRank/PageRank over sentence similarity.
+
+'
+  data:
+    description: 'Full-text news articles covering housing and business topics.
+
+'
+    source_url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/tree/master/Chapter08
+    availability: repository
+    files:
+    - Chapter08/Article-housing_crisis.txt
+    - Chapter08/Article-chris_woakes.txt
+  original_implementation:
+    technologies:
+    - text cleaning
+    - sentence segmentation
+    - LexRank
+    - PageRank
+    - extractive summarization
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Social-Media-Analytics-with-R/blob/master/Chapter08/B06056_08_04_code.R
+  problem:
+    context: 'Analysts often need to reduce long text documents into a smaller information
+      representation before review or downstream analysis.
+
+'
+    objective: 'Generate concise extractive summaries that preserve the most influential
+      sentences in a news article.
+
+'
+    analytical_questions:
+    - How should article text be segmented into candidate sentences?
+    - Which sentences are most central to the document?
+    - How does similarity threshold affect selected sentences?
+    - How much can the document be compressed while retaining its main content?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - networkx
+    - scikit-learn
+    - nltk
+    logical_steps:
+    - Load and normalize article text.
+    - Segment the article into sentences.
+    - Build sentence vector representations.
+    - Calculate sentence similarities.
+    - Construct the similarity graph.
+    - Rank sentences with PageRank.
+    - Reassemble the top sentences in source order.
+    expected_outputs:
+    - sentence similarity matrix
+    - sentence centrality scores
+    - ranked influential sentences
+    - extractive article summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 314
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

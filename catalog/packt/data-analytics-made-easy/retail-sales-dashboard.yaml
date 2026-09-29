@@ -1,0 +1,109 @@
+---
+id: packt/data-analytics-made-easy/retail-sales-dashboard
+name: Retail Sales Dashboard
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics Made Easy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Sales Dashboard
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%206
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 6/SalesDashboard.pbix
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 160
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics Made Easy
+    title: Sales Dashboard
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%206
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+      path: Chapter 6/SalesDashboard.pbix
+    description: 'Packt develops a Power BI sales dashboard for the online retailer,
+      enabling users to explore performance by quarter, country, customer, and product
+      instead of relying on a fixed set of static Excel reports.
+
+'
+  data:
+    description: 'Sales transactions plus customer and product metadata distributed
+      with the dashboard.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%206
+    availability: repository
+    files:
+    - Chapter 6/SalesDashboard-CustomerMD.csv
+    - Chapter 6/SalesDashboard-ProductMD.csv
+    - Chapter 6/SalesDashboard-Transactions.xlsx
+    - Chapter 6/SalesDashboard.pbix
+  original_implementation:
+    technologies:
+    - Power BI
+    - data modeling
+    - interactive filtering
+    - drill-down
+    - business visualization
+    language: Power BI
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%206
+  problem:
+    context: 'A growing retailer needs self-service descriptive analytics because
+      static Excel reports no longer support managers who want to explore product,
+      country, and period details independently.
+
+'
+    objective: 'Build an interactive sales dashboard that supports recurring management
+      exploration.
+
+'
+    analytical_questions:
+    - How are sales evolving quarter by quarter?
+    - Which countries, products, and customers drive performance?
+    - How should users move from summary KPIs to detailed records?
+    - Which filters and drill-downs support recurring management questions?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - plotly
+    - dash
+    logical_steps:
+    - Load and validate transactions and metadata.
+    - Build the analytical sales model.
+    - Calculate reusable sales KPIs.
+    - Create country, product, customer, and time dimensions.
+    - Build interactive views and filters.
+    - Add drill-down behavior.
+    - Validate dashboard totals against source data.
+    expected_outputs:
+    - analytical sales model
+    - KPI layer
+    - interactive filters
+    - sales visualizations
+    - drill-down views
+    - working dashboard
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 160
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

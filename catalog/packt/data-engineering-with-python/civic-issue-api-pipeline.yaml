@@ -1,0 +1,105 @@
+---
+id: packt/data-engineering-with-python/civic-issue-api-pipeline
+name: Civic Issue API Pipeline
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Engineering with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Querying SeeClickFix
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python/blob/master/Chapter06/querySCF.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/querySCF.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 37
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Data Engineering with Python
+    title: Querying SeeClickFix
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python/blob/master/Chapter06/querySCF.py
+    repository:
+      url: https://github.com/PacktPublishing/Data-Engineering-with-Python
+      path: Chapter06/querySCF.py
+    description: 'Packt demonstrates API-based ingestion of civic-service issues from
+      SeeClickFix for Bernalillo County and serializes the response as JSON.
+
+'
+  data:
+    description: 'Civic issue reports retrieved from the SeeClickFix API, including
+      issue metadata for a selected geographic area.
+
+'
+    source_url: https://seeclickfix.com/api/v2/issues
+    availability: live_api_or_frozen_replay
+    files: []
+    notes: 'The original example uses a live API. A CLASSROOM rewrite should freeze
+      a representative JSON response to guarantee deterministic execution.
+
+'
+  original_implementation:
+    technologies:
+    - Apache NiFi
+    - REST API
+    - JSON
+    - Jython
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Engineering-with-Python/blob/master/Chapter06/querySCF.py
+  problem:
+    context: 'Public-service analytics often depends on operational records exposed
+      through paginated external APIs rather than local files.
+
+'
+    objective: 'Ingest civic-issue records from an external API, normalize and validate
+      them, and deliver a stable dataset ready for downstream analytics.
+
+'
+    analytical_questions:
+    - Which fields are returned by the civic-issue API?
+    - How should API parameters and pagination be handled?
+    - Which fields require normalization before storage?
+    - How can the ingestion be made reproducible when the live API changes?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - requests
+    - pandas
+    - pydantic
+    - pathlib
+    logical_steps:
+    - Request or replay a fixed civic-issue API response.
+    - Validate HTTP and JSON structure.
+    - Normalize nested records into tabular form.
+    - Validate required fields and data types.
+    - Handle pagination deterministically.
+    - Persist raw and normalized artifacts.
+    - Produce an ingestion summary.
+    expected_outputs:
+    - raw JSON snapshot
+    - normalized civic-issue table
+    - schema validation report
+    - ingestion summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partial
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 37
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

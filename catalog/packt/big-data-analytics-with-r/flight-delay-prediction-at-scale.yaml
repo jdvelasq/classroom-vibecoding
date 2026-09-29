@@ -1,0 +1,105 @@
+---
+id: packt/big-data-analytics-with-r/flight-delay-prediction-at-scale
+name: Flight Delay Prediction at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics with R
+  edition:
+  official_url:
+  companion_sources:
+  - title: Big Data Machine Learning with R
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%208/BDA_Ch09.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 8/BDA_Ch09.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 80
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics with R
+    title: Big Data Machine Learning with R
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%208/BDA_Ch09.R
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R
+      path: Chapter 8/BDA_Ch09.R
+    description: 'Packt models US flight delays on large datasets with SparkR and
+      H2O, validating models on a later month and comparing scalable learning approaches.
+
+'
+  data:
+    description: 'US flight records with departure and arrival times, delays, weekday,
+      air time, distance, cancellation, and diversion indicators.
+
+'
+    source_url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/tree/master/Chapter%208/data/data
+    availability: repository
+    files:
+    - Chapter 8/data/data/flights_2014.zip
+    - Chapter 8/data/data/flights_jan_2015.csv
+  original_implementation:
+    technologies:
+    - SparkR
+    - H2O
+    - logistic regression
+    - Naive Bayes
+    - deep learning
+    - temporal validation
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-with-R/blob/master/Chapter%208/BDA_Ch09.R
+  problem:
+    context: 'Large flight datasets require scalable processing while airlines and
+      analysts need to identify flights likely to arrive late.
+
+'
+    objective: 'Build scalable flight-delay classifiers and test whether they generalize
+      to a later time period.
+
+'
+    analytical_questions:
+    - Which operational variables distinguish delayed flights?
+    - Can delay models be trained efficiently on large flight data?
+    - How do scalable algorithms compare?
+    - How much performance changes on a later month of flights?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and validate the large flight dataset.
+    - Remove cancelled and diverted flights.
+    - Derive arrival-delay and departure-period features.
+    - Train scalable classification models.
+    - Evaluate on the training-period holdout.
+    - Apply the model to later-period flight data.
+    - Compare temporal generalization and class-specific performance.
+    expected_outputs:
+    - prepared flight dataset
+    - scalable classification models
+    - delay prediction metrics
+    - temporal validation comparison
+    - operational error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 80
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

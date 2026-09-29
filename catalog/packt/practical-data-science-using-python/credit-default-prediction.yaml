@@ -1,0 +1,100 @@
+---
+id: packt/practical-data-science-using-python/credit-default-prediction
+name: Credit Default Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Random Forest - Credit Default Prediction
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Random-Forest-Credit-Default-Prediction.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Random-Forest-Credit-Default-Prediction.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 418
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: Random Forest - Credit Default Prediction
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Random-Forest-Credit-Default-Prediction.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: Random-Forest-Credit-Default-Prediction.ipynb
+    description: 'Packt builds and tunes a random-forest classifier for credit default,
+      studying depth, number of trees, feature sampling, and leaf-size controls.
+
+'
+  data:
+    description: 'Credit-card customer records with repayment, billing, demographic,
+      and default outcome fields.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/credit-card-default.csv
+    availability: repository
+    files:
+    - credit-card-default.csv
+  original_implementation:
+    technologies:
+    - random forest
+    - hyperparameter tuning
+    - classification
+    - model validation
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Random-Forest-Credit-Default-Prediction.ipynb
+  problem:
+    context: 'A credit provider wants to predict which customers are at risk of default.
+
+'
+    objective: 'Train and tune a random-forest model for credit-default prediction.
+
+'
+    analytical_questions:
+    - How does tree depth affect overfitting?
+    - How many trees are sufficient for stable performance?
+    - How do feature-sampling and leaf-size settings affect generalization?
+    - Which model configuration performs best on held-out data?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load the credit-default data.
+    - Separate predictors and target.
+    - Create train and test partitions.
+    - Fit a baseline random forest.
+    - Tune depth, number of trees, feature sampling, and leaf size.
+    - Compare training and test metrics.
+    - Select and evaluate the final model.
+    expected_outputs:
+    - baseline model
+    - tuning curves
+    - selected hyperparameters
+    - test-set predictions
+    - final classification metrics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 418
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

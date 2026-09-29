@@ -1,0 +1,99 @@
+---
+id: packt/machine-learning-with-r-second-edition/optical-character-recognition
+name: Optical Character Recognition
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R - Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Optical Character Recognition
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2007/MLwR_v2_07.r
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 07/MLwR_v2_07.r
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 436
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Machine Learning with R - Second Edition
+    title: Optical Character Recognition
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2007/MLwR_v2_07.r
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+      path: Chapter 07/MLwR_v2_07.r
+    description: 'Packt classifies letter images represented by numeric shape features
+      using linear and radial-basis support vector machines.
+
+'
+  data:
+    description: 'Letter-recognition records containing numeric image-derived attributes
+      and target letters.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2007/letterdata.csv
+    availability: repository
+    files:
+    - Chapter 07/letterdata.csv
+  original_implementation:
+    technologies:
+    - support vector machines
+    - linear kernel
+    - radial basis kernel
+    - multiclass classification
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2007/MLwR_v2_07.r
+  problem:
+    context: 'Scanned characters must be converted into machine-readable letters from
+      numerical image features.
+
+'
+    objective: 'Classify letters and compare linear and nonlinear SVM decision boundaries.
+
+'
+    analytical_questions:
+    - How accurately can a linear SVM recognize letters?
+    - Which errors remain under a linear decision boundary?
+    - How much does an RBF kernel improve recognition?
+    - Which letters are most frequently confused?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load letter-recognition features.
+    - Create deterministic training and test partitions.
+    - Fit a linear SVM classifier.
+    - Evaluate multiclass predictions.
+    - Fit an RBF-kernel SVM.
+    - Compare accuracy and confusion patterns.
+    expected_outputs:
+    - prepared OCR dataset
+    - linear SVM model
+    - RBF SVM model
+    - confusion matrix
+    - model comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 436
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,100 @@
+---
+id: packt/r-data-analysis-projects/joke-recommendation
+name: Joke Recommendation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Analysis Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Collaborative Filtering
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter03/Scripts/Collaborativefiltering/CF.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter03/Scripts/Collaborativefiltering/CF.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 82
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Analysis Projects
+    title: Collaborative Filtering
+    url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter03/Scripts/Collaborativefiltering/CF.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Analysis-Projects
+      path: Chapter03/Scripts/Collaborativefiltering/CF.R
+    description: 'Packt compares popularity, user-based, item-based, random, and SVD
+      recommenders on the Jester ratings dataset with split and cross-validation evaluation.
+
+'
+  data:
+    description: 'Jester joke ratings distributed through the R recommenderlab package.
+
+'
+    source_url: https://cran.r-project.org/package=recommenderlab
+    availability: package_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - recommenderlab
+    - user-based collaborative filtering
+    - item-based collaborative filtering
+    - SVD
+    - top-N evaluation
+    - cross-validation
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Analysis-Projects/blob/master/Chapter03/Scripts/Collaborativefiltering/CF.R
+  problem:
+    context: 'A recommendation service needs to infer which unrated items a user is
+      likely to appreciate from sparse historical ratings.
+
+'
+    objective: 'Compare collaborative-filtering strategies and generate top-N personalized
+      joke recommendations.
+
+'
+    analytical_questions:
+    - How sparse are user ratings?
+    - How do popularity and personalized methods compare?
+    - Which algorithm produces the best top-N recommendations?
+    - How does recommendation quality change with list length?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - scikit-surprise
+    logical_steps:
+    - Load and inspect the ratings matrix.
+    - Create reproducible evaluation splits.
+    - Implement popularity and collaborative-filtering baselines.
+    - Fit matrix-factorization recommendations.
+    - Generate top-N recommendations.
+    - Compare prediction and ranking metrics.
+    expected_outputs:
+    - ratings sparsity summary
+    - recommender comparison table
+    - top-N recommendations
+    - ranking performance curves
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 82
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

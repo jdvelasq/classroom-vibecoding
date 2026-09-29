@@ -1,0 +1,110 @@
+---
+id: packt/applied-geospatial-data-science-with-python/spatial-airbnb-valuation
+name: Spatial Airbnb Valuation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Applied Geospatial Data Science with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Spatial Regression
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter09/Chapter%209%20-%20Spatial%20Regression_vf.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/Chapter 9 - Spatial Regression_vf.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 139
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Applied Geospatial Data Science with Python
+    title: Spatial Regression
+    url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter09/Chapter%209%20-%20Spatial%20Regression_vf.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python
+      path: Chapter09/Chapter 9 - Spatial Regression_vf.ipynb
+    description: 'Packt models Manhattan Airbnb prices, diagnoses spatial structure
+      in residuals, engineers proximity-to-attraction features, and compares ordinary,
+      spatial-fixed-effect, geographically weighted, and multiscale regressions.
+
+'
+  data:
+    description: 'New York Airbnb listings enriched with neighborhood boundaries,
+      attractions, and geographic distances.
+
+'
+    source_url: http://insideairbnb.com/get-the-data/
+    availability: public
+    files:
+    - listings.csv.gz
+    - NYC neighborhood geometry
+    - attraction locations
+  original_implementation:
+    technologies:
+    - GeoPandas
+    - OLS
+    - spatial lag diagnostics
+    - spatial feature engineering
+    - geographically weighted regression
+    - multiscale GWR
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Applied-Geospatial-Data-Science-with-Python/blob/main/Chapter09/Chapter%209%20-%20Spatial%20Regression_vf.ipynb
+  problem:
+    context: 'Airbnb prices depend on listing characteristics and location, and ordinary
+      regression can leave systematic spatial structure unexplained.
+
+'
+    objective: 'Predict and explain listing prices while incorporating spatial dependence
+      and proximity effects explicitly.
+
+'
+    analytical_questions:
+    - Where are ordinary-regression residuals spatially clustered?
+    - Do distances to attractions improve price prediction?
+    - How do spatial fixed effects alter the model?
+    - Do local regression coefficients vary across Manhattan?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - geopandas
+    - pysal
+    - mgwr
+    - scikit-learn
+    logical_steps:
+    - Load and clean Airbnb listings.
+    - Geocode and project listing locations.
+    - Fit a baseline price regression.
+    - Diagnose spatial autocorrelation in residuals.
+    - Engineer proximity and neighborhood features.
+    - Fit spatial and geographically weighted alternatives.
+    - Compare predictive fit and spatial residual structure.
+    expected_outputs:
+    - baseline valuation model
+    - spatial residual diagnostics
+    - proximity feature table
+    - spatial model comparison
+    - local coefficient maps
+    - listing price estimates
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 139
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

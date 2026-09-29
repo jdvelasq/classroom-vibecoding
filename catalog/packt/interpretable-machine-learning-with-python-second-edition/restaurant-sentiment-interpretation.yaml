@@ -1,0 +1,104 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/restaurant-sentiment-interpretation
+name: Restaurant Sentiment Interpretation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Interpreting NLP Transformers
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/08/ReviewSentiment.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: '08/ReviewSentiment.ipynb'
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 252
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Interpreting NLP Transformers
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/08/ReviewSentiment.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: '08/ReviewSentiment.ipynb'
+    description: 'Packt uses restaurant-review sentiment classification to compare
+      explanation techniques for transformer-based NLP models.
+
+'
+  data:
+    description: 'NYC restaurant-review text and sentiment labels distributed with
+      the book.
+
+'
+    source_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/datasets/nyc_restaurant_reviews.zip
+    availability: repository
+    files:
+    - datasets/nyc_restaurant_reviews.zip
+  original_implementation:
+    technologies:
+    - transformers
+    - sentiment classification
+    - SHAP
+    - Captum
+    - BertViz
+    - LIT
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/08/ReviewSentiment.ipynb
+  problem:
+    context: 'Transformer sentiment models can classify reviews accurately but their
+      token-level reasoning is difficult to inspect without explanation methods.
+
+'
+    objective: 'Predict review sentiment and compare methods for explaining transformer
+      decisions.
+
+'
+    analytical_questions:
+    - Which words or phrases drive sentiment predictions?
+    - Do different explanation methods identify similar evidence?
+    - How are contextual terms and negation handled?
+    - Which prediction errors become understandable after explanation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - transformers
+    - torch
+    - shap
+    - captum
+    - bertviz
+    logical_steps:
+    - Load and prepare restaurant reviews.
+    - Fit or load a transformer sentiment model.
+    - Evaluate held-out predictions.
+    - Generate token-level explanations.
+    - Compare several explanation techniques.
+    - Inspect representative errors.
+    expected_outputs:
+    - sentiment metrics
+    - token attribution visualizations
+    - explanation comparisons
+    - interpreted error cases
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 252
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

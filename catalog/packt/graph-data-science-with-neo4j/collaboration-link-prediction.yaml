@@ -1,0 +1,105 @@
+---
+id: packt/graph-data-science-with-neo4j/collaboration-link-prediction
+name: Collaboration Link Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Graph Data Science with Neo4j
+  edition:
+  official_url:
+  companion_sources:
+  - title: Link Prediction for Future Collaborations
+    url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j/blob/main/Chapter09/notebooks/Link_Prediction_Collaboration.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/notebooks/Link_Prediction_Collaboration.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 312
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Graph Data Science with Neo4j
+    title: Link Prediction for Future Collaborations
+    url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j/blob/main/Chapter09/notebooks/Link_Prediction_Collaboration.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j
+      path: Chapter09/notebooks/Link_Prediction_Collaboration.ipynb
+    description: 'Packt builds a graph-data-science pipeline for predicting future
+      collaboration links using graph embeddings, community membership, and link-level
+      similarity features.
+
+'
+  data:
+    description: 'Collaboration graph stored in Neo4j with nodes, historical relationships,
+      training edges, and graph-derived node representations.
+
+'
+    source_url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j/tree/main/Chapter09
+    availability: repository
+    files: []
+  original_implementation:
+    technologies:
+    - Neo4j
+    - Graph Data Science
+    - Node2Vec
+    - Louvain
+    - cosine similarity
+    - link prediction pipeline
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Graph-Data-Science-with-Neo4j/blob/main/Chapter09/notebooks/Link_Prediction_Collaboration.ipynb
+  problem:
+    context: 'Historical collaboration networks can contain structural signals that
+      help identify pairs of actors likely to collaborate in the future.
+
+'
+    objective: 'Build and evaluate a graph-based model that predicts future collaboration
+      links.
+
+'
+    analytical_questions:
+    - Which graph features help distinguish future collaborations?
+    - How useful are embedding similarity and shared community membership?
+    - How should positive and negative links be sampled for training?
+    - Which candidate collaborations receive the highest predicted scores?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - networkx
+    - node2vec
+    - scikit-learn
+    logical_steps:
+    - Load the historical collaboration graph.
+    - Create reproducible train and test edge sets.
+    - Generate graph embeddings and communities.
+    - Construct link-level similarity features.
+    - Train a binary link classifier.
+    - Evaluate held-out links.
+    - Rank non-existing edges by predicted collaboration likelihood.
+    expected_outputs:
+    - graph feature table
+    - link-prediction model
+    - evaluation metrics
+    - ranked future collaboration candidates
+    - graph-based interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 312
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

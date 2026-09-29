@@ -1,0 +1,106 @@
+---
+id: packt/practical-data-science-cookbook-second-edition/visitor-arrivals-forecasting
+name: Visitor Arrivals Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Time Series Analysis and Forecasting
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter10/code/Chapter10.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/code/Chapter10.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 91
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Data Science Cookbook, Second Edition
+    title: Time Series Analysis and Forecasting
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter10/code/Chapter10.py
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+      path: Chapter10/code/Chapter10.py
+    description: 'Packt analyzes New Zealand overseas visitor arrivals with trend,
+      seasonality, ACF/PACF, ARIMA, seasonal ARIMA, error measures, and automatic
+      model selection.
+
+'
+  data:
+    description: 'Monthly New Zealand overseas visitor counts beginning in 1977.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/tree/master/Chapter10
+    availability: referenced_external
+    files:
+    - osvisit.dat
+  original_implementation:
+    technologies:
+    - time-series decomposition
+    - ACF
+    - PACF
+    - ARIMA
+    - seasonal ARIMA
+    - forecast accuracy
+    language:
+    - R-style code
+    - Python file container
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter10/code/Chapter10.py
+  problem:
+    context: 'Tourism arrivals exhibit long-run trend and strong seasonal behavior
+      that must be modeled before future visitor volumes can be forecast.
+
+'
+    objective: 'Build and compare time-series models for forecasting monthly overseas
+      visitor arrivals.
+
+'
+    analytical_questions:
+    - What trend and seasonal patterns are present?
+    - Which autocorrelation structure remains after modeling?
+    - Which ARIMA specification best balances fit and complexity?
+    - How accurate are the resulting forecasts?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - matplotlib
+    logical_steps:
+    - Load and validate monthly visitor counts.
+    - Create a regular monthly time index.
+    - Explore trend and seasonality.
+    - Inspect ACF and PACF.
+    - Fit candidate ARIMA and seasonal ARIMA models.
+    - Compare forecast-error measures.
+    - Generate future visitor forecasts.
+    expected_outputs:
+    - seasonal diagnostics
+    - candidate model comparison
+    - residual diagnostics
+    - forecast accuracy table
+    - visitor arrival forecasts
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: partially_verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 91
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

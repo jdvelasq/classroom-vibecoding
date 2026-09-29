@@ -1,0 +1,106 @@
+---
+id: packt/the-kaggle-workbook/safe-driver-risk-prediction
+name: Safe Driver Risk Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: The Kaggle Workbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Porto Seguro Safe Driver Prediction
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_01/workbook-lgb.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_01/workbook-lgb.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 349
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: The Kaggle Workbook
+    title: Porto Seguro Safe Driver Prediction
+    url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_01/workbook-lgb.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/The-Kaggle-Workbook
+      path: chapter_01/workbook-lgb.ipynb
+    description: 'Packt develops a LightGBM risk model for Porto Seguro''s Safe Driver
+      competition using stratified cross-validation, early stopping, normalized Gini
+      evaluation, out-of-fold predictions, and tuned gradient boosting.
+
+'
+  data:
+    description: 'Anonymized driver and policy attributes with a binary insurance-claim
+      target.
+
+'
+    source_url: https://www.kaggle.com/competitions/porto-seguro-safe-driver-prediction
+    availability: public_platform
+    files:
+    - train.csv
+    - test.csv
+    - sample_submission.csv
+  original_implementation:
+    technologies:
+    - LightGBM
+    - stratified cross-validation
+    - early stopping
+    - normalized Gini
+    - out-of-fold prediction
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/The-Kaggle-Workbook/blob/main/chapter_01/workbook-lgb.ipynb
+  problem:
+    context: 'An insurer wants to rank policyholders by future claim risk from anonymized
+      customer and policy attributes.
+
+'
+    objective: 'Build a robust claim-risk model and validate ranking performance across
+      folds.
+
+'
+    analytical_questions:
+    - Which features help rank high-risk drivers?
+    - How stable is normalized Gini across validation folds?
+    - How does early stopping affect model generalization?
+    - Which customers receive the highest predicted claim risk?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - lightgbm
+    - scikit-learn
+    logical_steps:
+    - Load and validate train and test tables.
+    - Separate identifiers, predictors, and target.
+    - Create stratified folds.
+    - Train LightGBM with early stopping.
+    - Generate out-of-fold predictions.
+    - Calculate normalized Gini.
+    - Fit final models and score the test set.
+    expected_outputs:
+    - cross-validation table
+    - normalized Gini summary
+    - out-of-fold predictions
+    - feature importance
+    - driver risk scores
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 349
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,101 @@
+---
+id: packt/practical-data-science-using-python/employee-attrition-prediction
+name: Employee Attrition Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Employee Attrition Prediction using Naive Bayes
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Employee-Attrition-using-Naive-Bayes.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Employee-Attrition-using-Naive-Bayes.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 417
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: Employee Attrition Prediction using Naive Bayes
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Employee-Attrition-using-Naive-Bayes.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: Employee-Attrition-using-Naive-Bayes.ipynb
+    description: 'Packt predicts employee attrition from historical workforce attributes
+      using a Gaussian Naive Bayes classifier.
+
+'
+  data:
+    description: 'Employee records containing demographic, job, compensation, satisfaction,
+      tenure, and attrition attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/HR-Employee-Attrition.csv
+    availability: repository
+    files:
+    - HR-Employee-Attrition.csv
+  original_implementation:
+    technologies:
+    - Gaussian Naive Bayes
+    - dummy encoding
+    - train-test split
+    - classification metrics
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Employee-Attrition-using-Naive-Bayes.ipynb
+  problem:
+    context: 'An organization wants to identify employees at risk of leaving based
+      on historical workforce characteristics.
+
+'
+    objective: 'Predict employee attrition and evaluate classification performance.
+
+'
+    analytical_questions:
+    - Which workforce attributes are available for attrition prediction?
+    - How should categorical employee attributes be encoded?
+    - How accurately can attrition be predicted on unseen employees?
+    - Which errors matter most for a retention use case?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and inspect employee records.
+    - Encode the attrition target.
+    - Remove constant fields.
+    - Encode categorical predictors.
+    - Create train and test partitions.
+    - Fit a Naive Bayes classifier.
+    - Evaluate confusion matrix and classification metrics.
+    - Inspect representative classification errors.
+    expected_outputs:
+    - model-ready employee dataset
+    - attrition classifier
+    - confusion matrix
+    - classification report
+    - error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 417
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

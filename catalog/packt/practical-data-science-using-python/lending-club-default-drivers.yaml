@@ -1,0 +1,104 @@
+---
+id: packt/practical-data-science-using-python/lending-club-default-drivers
+name: Lending Club Default Drivers
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Lending Club Case Study
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/EDA-Overview-Lending-Club.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: EDA-Overview-Lending-Club.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 414
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: Lending Club Case Study
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/EDA-Overview-Lending-Club.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: EDA-Overview-Lending-Club.ipynb
+    description: 'Packt performs exploratory analysis of Lending Club loans to identify
+      customer and loan attributes associated with default.
+
+'
+  data:
+    description: 'Lending Club loan records with borrower, loan-purpose, debt-to-income,
+      status, and other credit attributes.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    availability: repository
+    files:
+    - loan.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - exploratory data analysis
+    - univariate analysis
+    - bivariate analysis
+    - correlation analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/EDA-Overview-Lending-Club.ipynb
+  problem:
+    context: 'A lender is experiencing defaults and needs to understand which borrower
+      and loan characteristics are associated with higher default rates.
+
+'
+    objective: 'Diagnose the main drivers of loan default using exploratory and comparative
+      analysis.
+
+'
+    analytical_questions:
+    - Which borrower characteristics differ most between repaid and defaulted loans?
+    - How does debt-to-income relate to default?
+    - Which loan purposes have the highest default proportions?
+    - Which variables show the strongest associations with default?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    - scipy
+    logical_steps:
+    - Load and profile the loan data.
+    - Remove irrelevant and low-information fields.
+    - Quantify missingness and default prevalence.
+    - Transform selected variables and create analytical bins.
+    - Compare default rates across borrower and loan segments.
+    - Examine correlations and bivariate relationships.
+    - Summarize the strongest default drivers.
+    expected_outputs:
+    - cleaned loan dataset
+    - missingness report
+    - default-rate summary
+    - segmented default analysis
+    - diagnostic visualizations
+    - written findings
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 414
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

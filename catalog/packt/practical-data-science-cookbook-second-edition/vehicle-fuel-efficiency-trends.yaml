@@ -1,0 +1,104 @@
+---
+id: packt/practical-data-science-cookbook-second-edition/vehicle-fuel-efficiency-trends
+name: Vehicle Fuel Efficiency Trends
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Automobile Fuel Efficiency
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter02/code/Chapter02.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter02/code/Chapter02.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 88
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Data Science Cookbook, Second Edition
+    title: Automobile Fuel Efficiency
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter02/code/Chapter02.R
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+      path: Chapter02/code/Chapter02.R
+    description: 'Packt explores long-run automobile fuel-efficiency changes, engine
+      displacement, transmission types, makes, and models using historical vehicle
+      data.
+
+'
+  data:
+    description: 'Historical vehicle fuel-economy records with model year, make, model,
+      transmission, engine displacement, fuel type, and city/highway MPG.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter02/data/vehicles.csv.zip
+    availability: repository
+    files:
+    - Chapter02/data/vehicles.csv.zip
+    - Chapter02/data/varlabels.txt
+  original_implementation:
+    technologies:
+    - R
+    - data cleaning
+    - grouped summaries
+    - longitudinal analysis
+    - visualization
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter02/code/Chapter02.R
+  problem:
+    context: 'Vehicle efficiency has changed over decades while vehicle size, transmission,
+      fuel type, and manufacturer mix have also evolved.
+
+'
+    objective: 'Diagnose how automobile fuel efficiency has changed over time and
+      distinguish changes associated with vehicle characteristics and market composition.
+
+'
+    analytical_questions:
+    - How has average MPG changed by model year?
+    - How has engine displacement changed over the same period?
+    - How do automatic and manual vehicles compare?
+    - Which manufacturers show persistent efficiency differences?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate vehicle records.
+    - Normalize transmission and fuel-type fields.
+    - Restrict comparable gasoline vehicle subsets.
+    - Calculate annual MPG and engine-size summaries.
+    - Compare transmission categories.
+    - Track common manufacturers through time.
+    - Interpret changes in efficiency and vehicle mix.
+    expected_outputs:
+    - annual fuel-efficiency table
+    - engine-displacement trends
+    - transmission comparison
+    - manufacturer trend charts
+    - written diagnostic interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 88
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

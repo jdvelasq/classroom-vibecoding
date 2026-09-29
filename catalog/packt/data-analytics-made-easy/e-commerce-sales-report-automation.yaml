@@ -1,0 +1,107 @@
+---
+id: packt/data-analytics-made-easy/e-commerce-sales-report-automation
+name: E-Commerce Sales Report Automation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics Made Easy
+  edition:
+  official_url:
+  companion_sources:
+  - title: Sales Report Automation
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%203
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 3/Chapter 3 - Ecommerce.knwf
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 156
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics Made Easy
+    title: Sales Report Automation
+    url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%203
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy
+      path: Chapter 3/Chapter 3 - Ecommerce.knwf
+    description: 'Packt implements a KNIME workflow for a UK online retailer that
+      combines customer, product, and transaction sources, automates recurring sales
+      reporting, and replaces a manual Excel-based reporting process.
+
+'
+  data:
+    description: 'E-commerce customer, product, historical transaction, and recent
+      transaction tables.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%203
+    availability: repository
+    files:
+    - Chapter 3/eCommerce-CustomerMD.csv
+    - Chapter 3/eCommerce-ProductMD.csv
+    - Chapter 3/eCommerce-TransactionsHistory.xlsx
+    - Chapter 3/eCommerce-TransactionsL3M.xlsx
+  original_implementation:
+    technologies:
+    - KNIME
+    - data integration
+    - aggregation
+    - pivoting
+    - date filtering
+    - report automation
+    language: KNIME
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-Made-Easy/tree/main/Chapter%203
+  problem:
+    context: 'A growing online retailer relies on a finance analyst to manually assemble
+      weekly Excel reports from website exports, creating avoidable effort and delay.
+
+'
+    objective: 'Build a repeatable workflow that integrates retail data and automatically
+      produces recurring sales reporting outputs.
+
+'
+    analytical_questions:
+    - Which source tables are needed for sales reporting?
+    - How should customer, product, and transaction tables be joined?
+    - Which aggregations and pivots reproduce the required business measures?
+    - How can the process be rerun automatically when new transactions arrive?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - openpyxl
+    logical_steps:
+    - Load customer, product, and transaction sources.
+    - Validate keys and analytical grain.
+    - Combine historical and recent transactions.
+    - Join customer and product metadata.
+    - Derive calendar and sales measures.
+    - Aggregate and pivot recurring report tables.
+    - Export validated reporting outputs.
+    expected_outputs:
+    - integrated retail dataset
+    - automated KPI tables
+    - recurring sales report
+    - data-quality checks
+    - reusable reporting pipeline
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 156
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

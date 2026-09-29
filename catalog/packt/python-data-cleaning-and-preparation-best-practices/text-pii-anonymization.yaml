@@ -1,0 +1,102 @@
+---
+id: packt/python-data-cleaning-and-preparation-best-practices/text-pii-anonymization
+name: Text PII Anonymization
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning and Preparation Best Practices
+  edition:
+  official_url:
+  companion_sources:
+  - title: PII Detection
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter12/3.pii_detection.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter12/3.pii_detection.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 356
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning and Preparation Best Practices
+    title: PII Detection
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter12/3.pii_detection.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices
+      path: chapter12/3.pii_detection.py
+    description: 'Packt detects names, email addresses, and phone numbers in unstructured
+      text with Presidio and applies entity-specific masking to create anonymized
+      text.
+
+'
+  data:
+    description: 'Synthetic text messages containing names, email addresses, phone
+      numbers, and non-PII examples.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter12/3.pii_detection.py
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Microsoft Presidio
+    - named-entity detection
+    - PII detection
+    - masking
+    - text anonymization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter12/3.pii_detection.py
+  problem:
+    context: 'Free-text analytical data may contain direct personal identifiers that
+      must be detected and transformed before downstream analysis or sharing.
+
+'
+    objective: 'Detect selected PII types in text and generate an anonymized analytical
+      copy.
+
+'
+    analytical_questions:
+    - Which text spans are detected as personal information?
+    - How should different entity types be masked?
+    - Which PII remains undetected under the chosen recognizers?
+    - How can anonymization preserve analytical usefulness?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - presidio-analyzer
+    - presidio-anonymizer
+    logical_steps:
+    - Load or generate text records containing PII.
+    - Configure entity types to detect.
+    - Run PII analysis over each text record.
+    - Apply entity-specific masking rules.
+    - Compare original and anonymized text.
+    - Audit false positives and false negatives.
+    - Export the anonymized analytical dataset.
+    expected_outputs:
+    - detected PII spans
+    - anonymized text dataset
+    - entity-type counts
+    - anonymization audit table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 356
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,111 @@
+---
+id: packt/machine-learning-engineering-with-python-second-edition/taxi-anomaly-etml-pipeline
+name: Taxi Anomaly ETML Pipeline
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Engineering with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Extract Transform Machine Learn Load Pipeline
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter09/etml-scripts
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/etml-scripts
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 371
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Engineering with Python, Second Edition
+    title: Extract Transform Machine Learn Load Pipeline
+    url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter09/etml-scripts
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition
+      path: Chapter09/etml-scripts
+    description: 'Packt implements a daily Airflow ETML pipeline that extracts taxi-ride
+      data from S3, clusters rides with DBSCAN, identifies anomalous rides, summarizes
+      associated traffic, weather, and news with an LLM, and writes enriched output
+      back to S3.
+
+'
+  data:
+    description: 'Simulated Glasgow taxi rides with ride distance, ride time, traffic,
+      weather, and news context stored as JSON.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/blob/main/Chapter09/etml-scripts/data/taxi-rides-20230524.json
+    availability: repository
+    files:
+    - Chapter09/etml-scripts/data/taxi-rides-20230524.json
+  original_implementation:
+    technologies:
+    - Apache Airflow
+    - AWS S3
+    - DBSCAN
+    - StandardScaler
+    - OpenAI API
+    - LLM summarization
+    - ETML
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter09/etml-scripts
+  problem:
+    context: 'Operational taxi data arrives daily and unusual rides require more context
+      than a cluster label alone; traffic, weather, and news can be summarized for
+      investigation and stored as an enriched analytical product.
+
+'
+    objective: 'Build an orchestrated data-and-ML pipeline that detects unusual taxi
+      rides, enriches them with contextual summaries, and persists the results.
+
+'
+    analytical_questions:
+    - Which rides form dense behavioral clusters and which are anomalies?
+    - Which ride-distance and ride-time patterns trigger anomaly labels?
+    - What contextual traffic, weather, and news information explains anomalous rides?
+    - How should extraction, ML, enrichment, and persistence be orchestrated daily?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - apache-airflow
+    - boto3
+    - openai
+    logical_steps:
+    - Extract daily ride JSON from object storage.
+    - Standardize ride-distance and ride-time features.
+    - Cluster rides with DBSCAN.
+    - Mark noise observations as anomalies.
+    - Construct contextual prompts from traffic, weather, and news.
+    - Summarize context for anomalous rides.
+    - Persist clustered and enriched records.
+    - Orchestrate the workflow with Airflow.
+    expected_outputs:
+    - clustered taxi ride dataset
+    - anomaly labels
+    - contextual anomaly summaries
+    - enriched JSON output
+    - reproducible Airflow DAG
+  reproducibility:
+    self_contained_python_rewrite_possible: false
+    external_web_required_after_data_download: true
+    authentication_required: true
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 371
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

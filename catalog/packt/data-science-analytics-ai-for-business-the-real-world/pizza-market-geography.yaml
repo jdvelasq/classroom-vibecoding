@@ -1,0 +1,101 @@
+---
+id: packt/data-science-analytics-ai-for-business-the-real-world/pizza-market-geography
+name: Pizza Market Geography
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science, Analytics & AI for Business & the Real World
+  edition:
+  official_url:
+  companion_sources:
+  - title: Pizza Restaurants Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    relationship: Repository recorded in the legacy case inventory.
+    path: All Resource files/Case Studies/Pizza Resturants Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 185
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science, Analytics & AI for Business & the Real World
+    title: Pizza Restaurants Analysis
+    url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+      path: All Resource files/Case Studies/Pizza Resturants Analysis.ipynb
+    description: 'Packt profiles US pizza restaurants and menu offerings, enriches
+      records with state geography, compares restaurant and pizza-name popularity,
+      analyzes average prices, and maps restaurant locations.
+
+'
+  data:
+    description: 'US restaurant and menu records with names, addresses, coordinates,
+      pizza items, and price ranges.
+
+'
+    source_url: https://raw.githubusercontent.com/rajeevratan84/data-analyst-bootcamp/master/8358_1.csv
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - pandas
+    - deduplication
+    - geospatial enrichment
+    - pricing analysis
+    - mapping
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-Analytics-AI-for-Business-the-Real-World-
+  problem:
+    context: 'Restaurant location and menu data can reveal market concentration, popular
+      pizza offerings, and geographic price differences.
+
+'
+    objective: 'Diagnose US pizza-market structure across restaurant chains, menu
+      items, states, cities, and prices.
+
+'
+    analytical_questions:
+    - Which restaurant chains appear most frequently?
+    - Which pizza names are most common?
+    - Which states have the highest restaurant concentration?
+    - How does average pizza price vary geographically?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and validate restaurant and menu records.
+    - Deduplicate restaurant-item combinations.
+    - Count restaurant and menu-item frequency.
+    - Enrich postal codes with state information.
+    - Calculate representative menu prices.
+    - Compare prices and counts geographically.
+    expected_outputs:
+    - restaurant-chain ranking
+    - pizza-item ranking
+    - state concentration table
+    - geographic price comparison
+    - restaurant maps
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 185
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

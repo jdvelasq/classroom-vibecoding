@@ -1,0 +1,108 @@
+---
+id: packt/extending-power-bi-with-python-and-r-second-edition/restaurant-entity-resolution
+name: Restaurant Entity Resolution
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Extending Power BI with Python and R, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Deduplicating Restaurants with Splink
+    url: https://github.com/PacktPublishing/Extending-Power-BI-with-Python-and-R-2nd-edition/blob/main/Ch13%20-%20Calculating%20Columns%20Using%20Complex%20Algorithms%2C%20Fuzzy%20Matching/Python/01-dedup-resturants-with-splink.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Extending-Power-BI-with-Python-and-R-2nd-edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Ch13 - Calculating Columns Using Complex Algorithms, Fuzzy Matching/Python/01-dedup-resturants-with-splink.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 180
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Extending Power BI with Python and R, Second Edition
+    title: Deduplicating Restaurants with Splink
+    url: https://github.com/PacktPublishing/Extending-Power-BI-with-Python-and-R-2nd-edition/blob/main/Ch13%20-%20Calculating%20Columns%20Using%20Complex%20Algorithms%2C%20Fuzzy%20Matching/Python/01-dedup-resturants-with-splink.py
+    repository:
+      url: https://github.com/PacktPublishing/Extending-Power-BI-with-Python-and-R-2nd-edition
+      path: Ch13 - Calculating Columns Using Complex Algorithms, Fuzzy Matching/Python/01-dedup-resturants-with-splink.py
+    description: 'Packt cleans restaurant names and addresses, blocks candidate pairs,
+      estimates probabilistic comparison parameters with expectation maximization
+      in Splink, predicts duplicate pairs, and validates the matches against known
+      classes.
+
+'
+  data:
+    description: 'Restaurant records containing IDs, names, addresses, cities, and
+      known duplicate classes.
+
+'
+    source_url: https://www.cs.utexas.edu/users/ml/riddle/data.html
+    availability: repository_and_public
+    files:
+    - Ch13 - Calculating Columns Using Complex Algorithms, Fuzzy Matching/restaurants.csv
+  original_implementation:
+    technologies:
+    - Splink
+    - DuckDB
+    - probabilistic record linkage
+    - blocking
+    - Jaro-Winkler similarity
+    - expectation maximization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Extending-Power-BI-with-Python-and-R-2nd-edition/blob/main/Ch13%20-%20Calculating%20Columns%20Using%20Complex%20Algorithms%2C%20Fuzzy%20Matching/Python/01-dedup-resturants-with-splink.py
+  problem:
+    context: 'Restaurant databases can contain multiple records for the same establishment
+      with spelling, punctuation, and address variations, producing duplicated analytical
+      entities.
+
+'
+    objective: 'Identify duplicate restaurant records using probabilistic entity resolution
+      and quantify match quality against known duplicate classes.
+
+'
+    analytical_questions:
+    - How should names and addresses be standardized before matching?
+    - Which blocking rules balance recall and computational cost?
+    - How should name, address, and city similarities be weighted?
+    - What match threshold produces acceptable false-positive and false-negative behavior?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - splink
+    - duckdb
+    logical_steps:
+    - Load and standardize restaurant identity fields.
+    - Define candidate blocking rules.
+    - Define exact and fuzzy comparison features.
+    - Estimate probabilistic linkage parameters.
+    - Generate pairwise match scores.
+    - Choose a match threshold.
+    - Compare predicted matches with known duplicate classes.
+    expected_outputs:
+    - standardized restaurant table
+    - candidate pair table
+    - match probability table
+    - duplicate pair decisions
+    - confusion matrix
+    - resolved entity dataset
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 180
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

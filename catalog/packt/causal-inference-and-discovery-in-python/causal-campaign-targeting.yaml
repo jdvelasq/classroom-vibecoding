@@ -1,0 +1,108 @@
+---
+id: packt/causal-inference-and-discovery-in-python/causal-campaign-targeting
+name: Causal Campaign Targeting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Causal Inference and Discovery in Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Heterogeneous Treatment Effects with Experimental Data
+    url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python/blob/main/Chapter_10.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_10.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 128
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Causal Inference and Discovery in Python
+    title: Heterogeneous Treatment Effects with Experimental Data
+    url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python/blob/main/Chapter_10.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python
+      path: Chapter_10.ipynb
+    description: 'Packt uses the Hillstrom email-marketing experiment to estimate
+      heterogeneous treatment effects with causal learners, compare uplift by decile,
+      and choose the treatment with the highest predicted response for each customer.
+
+'
+  data:
+    description: 'Hillstrom email-marketing experiment with customer features, randomized
+      treatment assignments, visits, conversions, and spend outcomes.
+
+'
+    source_url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python/blob/main/data/hillstrom_clean.csv
+    availability: repository
+    files:
+    - data/hillstrom_clean.csv
+    - data/hillstrom_clean_label_mapping.json
+  original_implementation:
+    technologies:
+    - causal forests
+    - doubly robust learning
+    - heterogeneous treatment effects
+    - uplift modeling
+    - treatment assignment
+    - expected response
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python/blob/main/Chapter_10.ipynb
+  problem:
+    context: 'Different customers may respond differently to alternative marketing
+      messages, so selecting a treatment from average response alone can waste campaign
+      opportunity.
+
+'
+    objective: 'Estimate customer-level treatment effects and assign the treatment
+      expected to produce the highest response.
+
+'
+    analytical_questions:
+    - How heterogeneous are treatment effects across customers?
+    - Which causal learner produces useful uplift separation?
+    - Which customers should receive each treatment rather than control?
+    - What expected response follows from individualized treatment assignment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - econml
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the randomized marketing experiment.
+    - Separate features, treatment, and spend outcome.
+    - Fit candidate heterogeneous-treatment-effect models.
+    - Estimate treatment-specific effects for each customer.
+    - Evaluate uplift by decile.
+    - Select the treatment with maximum estimated effect.
+    - Calculate expected response under the targeting policy.
+    expected_outputs:
+    - customer-level treatment effects
+    - uplift-by-decile charts
+    - treatment recommendation table
+    - expected response comparison
+    - targeted campaign policy
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 128
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/python-data-cleaning-and-preparation-best-practices/audio-emotion-structuring
+name: Audio Emotion Structuring
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Data Cleaning and Preparation Best Practices
+  edition:
+  official_url:
+  companion_sources:
+  - title: Emotion Detection from Audio
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter13/6.emotion_detection.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter13/6.emotion_detection.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 357
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Python Data Cleaning and Preparation Best Practices
+    title: Emotion Detection from Audio
+    url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter13/6.emotion_detection.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices
+      path: chapter13/6.emotion_detection.py
+    description: 'Packt splits audio into chunks, transcribes each chunk with Whisper,
+      applies a transformer emotion classifier to the transcript, and exports structured
+      chunk-level text and emotion labels.
+
+'
+  data:
+    description: 'Audio recording bundled with the chapter and processed into 30-second
+      chunks.
+
+'
+    source_url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/tree/main/chapter13
+    availability: repository
+    files:
+    - chapter13/audio/3.chain orchestrator.mp3
+  original_implementation:
+    technologies:
+    - Whisper
+    - transformers
+    - audio chunking
+    - speech transcription
+    - emotion classification
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Data-Cleaning-and-Preparation-Best-Practices/blob/main/chapter13/6.emotion_detection.py
+  problem:
+    context: 'Audio recordings are difficult to analyze directly, but can be converted
+      into timestamped text and categorical emotion signals for downstream analytics.
+
+'
+    objective: 'Transform an audio recording into structured transcript and emotion
+      features.
+
+'
+    analytical_questions:
+    - How should long audio be segmented for processing?
+    - What transcript is produced for each chunk?
+    - Which emotion label is assigned to each segment?
+    - How can the resulting structure support later analysis?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - librosa
+    - transformers
+    - torch
+    - pandas
+    logical_steps:
+    - Load the audio file.
+    - Resample and split audio into fixed-duration chunks.
+    - Transcribe each chunk with Whisper.
+    - Classify transcript emotion.
+    - Store chunk index, transcription, and emotion.
+    - Validate transcription and label quality.
+    - Export a structured analytical table.
+    expected_outputs:
+    - chunked audio metadata
+    - transcript table
+    - emotion labels
+    - structured CSV for downstream analytics
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 357
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

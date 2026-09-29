@@ -1,0 +1,104 @@
+---
+id: packt/machine-learning-with-bigquery-ml/e-commerce-product-recommendation
+name: E-Commerce Product Recommendation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with BigQuery ML
+  edition:
+  official_url:
+  companion_sources:
+  - title: Product Recommendation with Matrix Factorization
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter09/09_matrix_factorization.sql
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/09_matrix_factorization.sql
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 169
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with BigQuery ML
+    title: Product Recommendation with Matrix Factorization
+    url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter09/09_matrix_factorization.sql
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML
+      path: Chapter09/09_matrix_factorization.sql
+    description: 'Packt extracts purchases from nested Google Analytics sessions and
+      fits an implicit-feedback matrix factorization model in BigQuery ML to recommend
+      products.
+
+'
+  data:
+    description: 'Google Analytics sample e-commerce sessions with visitors, nested
+      hits, products, purchases, and product quantities.
+
+'
+    source_url: https://developers.google.com/analytics/bigquery/web-ecommerce-demo-dataset
+    availability: public_cloud_dataset
+    files: []
+  original_implementation:
+    technologies:
+    - BigQuery
+    - nested repeated data
+    - UNNEST
+    - matrix factorization
+    - implicit feedback
+    - recommendation
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-BigQuery-ML/blob/master/Chapter09/09_matrix_factorization.sql
+  problem:
+    context: 'E-commerce browsing data are nested at session level, while recommendation
+      requires a visitor-product interaction matrix derived from actual purchases.
+
+'
+    objective: 'Build personalized product recommendations from implicit purchase
+      behavior.
+
+'
+    analytical_questions:
+    - How should nested session data be converted into visitor-product interactions?
+    - What implicit signal should represent user preference?
+    - How well does matrix factorization reconstruct interactions?
+    - Which products should be recommended to each visitor?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - implicit
+    - scipy
+    logical_steps:
+    - Flatten session and product interactions.
+    - Identify completed purchases.
+    - Aggregate purchase quantity by visitor and product.
+    - Build a sparse interaction matrix.
+    - Fit an implicit matrix-factorization model.
+    - Evaluate held-out interactions.
+    - Generate ranked product recommendations.
+    expected_outputs:
+    - visitor-product interaction table
+    - sparse interaction matrix
+    - fitted recommender
+    - recommendation quality metrics
+    - personalized product lists
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 169
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

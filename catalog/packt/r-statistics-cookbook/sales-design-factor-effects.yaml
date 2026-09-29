@@ -1,0 +1,104 @@
+---
+id: packt/r-statistics-cookbook/sales-design-factor-effects
+name: Sales Design Factor Effects
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Statistics Cookbook
+  edition:
+  official_url:
+  companion_sources:
+  - title: Two-Way ANOVA
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter02/02__05__2wayanova.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter02/02__05__2wayanova.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 430
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Statistics Cookbook
+    title: Two-Way ANOVA
+    url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter02/02__05__2wayanova.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Statistics-Cookbook
+      path: Chapter02/02__05__2wayanova.R
+    description: 'Packt analyzes sales under combinations of visual design factors
+      using two-way ANOVA, interaction effects, residual diagnostics, and Tukey post-hoc
+      comparisons.
+
+'
+  data:
+    description: 'Sales observations measured under combinations of color and font
+      treatments.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter02/2wayanova.csv
+    availability: repository
+    files:
+    - Chapter02/2wayanova.csv
+  original_implementation:
+    technologies:
+    - two-way ANOVA
+    - interaction effects
+    - residual diagnostics
+    - Shapiro-Wilk test
+    - Tukey HSD
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Statistics-Cookbook/blob/master/Chapter02/02__05__2wayanova.R
+  problem:
+    context: 'A seller wants to understand whether visual presentation choices affect
+      sales independently or through interactions.
+
+'
+    objective: 'Estimate and diagnose the effects of color, font, and their interaction
+      on sales.
+
+'
+    analytical_questions:
+    - Does color significantly affect sales?
+    - Does font significantly affect sales?
+    - Is there a color-by-font interaction?
+    - Which treatment levels differ after post-hoc comparison?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - statsmodels
+    - scipy
+    logical_steps:
+    - Load and validate the factorial sales data.
+    - Visualize sales across treatment combinations.
+    - Fit a two-way ANOVA with interaction.
+    - Diagnose residual normality and influential observations.
+    - Refit after justified data-quality review if necessary.
+    - Perform post-hoc pairwise comparisons.
+    - Interpret main and interaction effects.
+    expected_outputs:
+    - treatment summary table
+    - ANOVA table
+    - residual diagnostics
+    - interaction plot
+    - Tukey comparison table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 430
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

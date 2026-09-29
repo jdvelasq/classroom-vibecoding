@@ -1,0 +1,108 @@
+---
+id: packt/modern-time-series-forecasting-with-python-second-edition/household-energy-global-forecasting
+name: Household Energy Global Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Modern Time Series Forecasting with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Global Forecasting Models
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter10/01-Global_Forecasting_Models-ML.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: notebooks/Chapter10/01-Global_Forecasting_Models-ML.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 149
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Modern Time Series Forecasting with Python, Second Edition
+    title: Global Forecasting Models
+    url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter10/01-Global_Forecasting_Models-ML.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
+      path: notebooks/Chapter10/01-Global_Forecasting_Models-ML.ipynb
+    description: 'Packt builds global machine-learning forecasts across many London
+      smart-meter household series, incorporates lags, rolling features and metadata,
+      tunes LightGBM, and compares alternative household partitioning strategies.
+
+'
+  data:
+    description: 'Half-hourly electricity consumption for thousands of London households
+      enriched with household metadata, weather, and holiday information.
+
+'
+    source_url: https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
+    availability: public_platform
+    files: []
+  original_implementation:
+    technologies:
+    - LightGBM
+    - global forecasting
+    - lag features
+    - rolling features
+    - metadata encoding
+    - hyperparameter optimization
+    - clustering
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter10/01-Global_Forecasting_Models-ML.ipynb
+  problem:
+    context: 'Thousands of related household electricity series can share predictive
+      information, making one global model an alternative to fitting an independent
+      model for every household.
+
+'
+    objective: 'Build and evaluate global forecasting models for household electricity
+      consumption.
+
+'
+    analytical_questions:
+    - How much do lag and rolling features improve forecasts?
+    - Does household metadata improve a global model?
+    - How should households be partitioned or clustered for modeling?
+    - How does global forecasting perform across heterogeneous households?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - lightgbm
+    - scikit-learn
+    - optuna
+    logical_steps:
+    - Prepare household time series and metadata.
+    - Create leakage-safe lag and rolling features.
+    - Define chronological train and validation windows.
+    - Fit a global LightGBM baseline.
+    - Add household metadata and categorical encodings.
+    - Tune hyperparameters reproducibly.
+    - Compare global and partitioned modeling strategies.
+    expected_outputs:
+    - global training table
+    - tuned forecasting model
+    - household forecast metrics
+    - partition strategy comparison
+    - feature importance summary
+    - household-level forecasts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 149
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,103 @@
+---
+id: packt/machine-learning-with-r-fourth-edition/cost-sensitive-loan-default
+name: Cost-Sensitive Loan Default
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R, Fourth Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Identifying Risky Bank Loans
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2005/Chapter_05.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 05/Chapter_05.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 107
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with R, Fourth Edition
+    title: Identifying Risky Bank Loans
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2005/Chapter_05.R
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition
+      path: Chapter 05/Chapter_05.R
+    description: 'Packt models bank-loan default with decision trees and boosting,
+      then introduces asymmetric error costs so expensive missed defaults receive
+      greater penalty.
+
+'
+  data:
+    description: 'German credit-style loan applicant records with balances, loan duration,
+      amount, applicant attributes, and default outcome.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2005/credit.csv
+    availability: repository
+    files:
+    - Chapter 05/credit.csv
+  original_implementation:
+    technologies:
+    - decision trees
+    - boosting
+    - cost matrix
+    - cost-sensitive classification
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition/blob/main/Chapter%2005/Chapter_05.R
+  problem:
+    context: 'A lender faces asymmetric classification consequences because approving
+      a borrower who defaults can be substantially more costly than rejecting a safe
+      borrower.
+
+'
+    objective: 'Predict loan default while explicitly studying how asymmetric error
+      costs change classifier behavior.
+
+'
+    analytical_questions:
+    - Which applicant attributes help distinguish risky loans?
+    - How does boosting affect predictive performance?
+    - What changes when false negatives receive higher cost?
+    - Which confusion-matrix trade-offs are induced by the cost matrix?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    logical_steps:
+    - Load and inspect loan records.
+    - Create reproducible training and test samples.
+    - Fit a decision-tree baseline.
+    - Evaluate default classification.
+    - Fit boosted alternatives.
+    - Introduce asymmetric sample or decision costs.
+    - Compare cost-sensitive and accuracy-focused results.
+    expected_outputs:
+    - loan default classifier
+    - boosted model comparison
+    - confusion matrices
+    - cost-sensitive error summary
+    - borrower risk predictions
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 107
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

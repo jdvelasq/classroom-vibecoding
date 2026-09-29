@@ -1,0 +1,104 @@
+---
+id: packt/scala-and-spark-for-big-data-analytics/movie-recommendation-at-scale
+name: Movie Recommendation at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Scala and Spark for Big Data Analytics
+  edition:
+  official_url:
+  companion_sources:
+  - title: Movie Recommendation
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/MovieRecommendation.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/MovieRecommendation.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 380
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Scala and Spark for Big Data Analytics
+    title: Movie Recommendation
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/MovieRecommendation.scala
+    repository:
+      url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+      path: Chapter11/MovieRecommendation.scala
+    description: 'Packt analyzes distributed movie ratings and trains an Alternating
+      Least Squares recommender in Spark, evaluates held-out RMSE, and generates top-N
+      recommendations.
+
+'
+  data:
+    description: 'MovieLens-style user ratings and movie metadata containing user
+      IDs, movie IDs, ratings, timestamps, titles, and genres.
+
+'
+    source_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    availability: companion_repository
+    files:
+    - data/ratings.csv
+    - data/movies.csv
+  original_implementation:
+    technologies:
+    - Spark
+    - ALS
+    - collaborative filtering
+    - matrix factorization
+    - RMSE
+    - top-N recommendation
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/MovieRecommendation.scala
+  problem:
+    context: 'A media platform has a large sparse user-movie rating matrix and needs
+      scalable personalized recommendations.
+
+'
+    objective: 'Train and evaluate a distributed collaborative-filtering model and
+      generate personalized movie recommendations.
+
+'
+    analytical_questions:
+    - How many users, movies, and ratings are represented?
+    - Which users and movies dominate activity?
+    - How accurately does ALS reconstruct held-out ratings?
+    - Which movies should be recommended to a selected user?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load ratings and movie metadata.
+    - Profile rating activity.
+    - Split ratings reproducibly into training and test sets.
+    - Train an ALS matrix-factorization model.
+    - Calculate held-out RMSE.
+    - Generate top-N recommendations for selected users.
+    - Join recommendations back to movie titles.
+    expected_outputs:
+    - rating activity profile
+    - trained ALS model
+    - held-out RMSE
+    - user-level recommendation lists
+    - recommendation table with titles
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 380
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

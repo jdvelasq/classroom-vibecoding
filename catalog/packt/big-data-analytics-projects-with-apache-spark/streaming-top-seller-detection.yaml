@@ -1,0 +1,97 @@
+---
+id: packt/big-data-analytics-projects-with-apache-spark/streaming-top-seller-detection
+name: Streaming Top Seller Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Big Data Analytics Projects with Apache Spark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Find Top Seller Job
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/transactions/FindTopSellerJob.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    relationship: Repository recorded in the legacy case inventory.
+    path: section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/transactions/FindTopSellerJob.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 306
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Big Data Analytics Projects with Apache Spark
+    title: Find Top Seller Job
+    url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/transactions/FindTopSellerJob.scala
+    repository:
+      url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+      path: section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/transactions/FindTopSellerJob.scala
+    description: 'Aggregates transactions in sliding windows and emits products that
+      exceed transaction-count or revenue thresholds, enriching detected products
+      before output.
+
+'
+  data:
+    description: 'Synthetic or generated event streams embedded in the companion Spark
+      Streaming project.
+
+'
+    source_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark
+    availability: embedded_generated
+    files: []
+  original_implementation:
+    technologies:
+    - Spark Streaming
+    - sliding windows
+    - combineByKey
+    - Kafka sink
+    - stream enrichment
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Big-Data-Analytics-Projects-with-Apache-Spark/blob/master/section_4/packt-big-data-spark-streaming/spark-streaming/src/main/scala/com/tomekl007/sparkstreaming/transactions/FindTopSellerJob.scala
+  problem:
+    context: 'A retailer wants to identify rapidly selling products while demand is
+      unfolding so merchandising or inventory actions can be triggered quickly.
+
+'
+    objective: 'Detect top-selling products continuously from transaction streams
+      using sliding-window rules.
+
+'
+    analytical_questions:
+    - Which products exceed count or revenue thresholds in each window?
+    - How should sliding-window aggregates be maintained?
+    - How should detected products be enriched before downstream use?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    - pandas
+    logical_steps:
+    - Define and validate the incoming event schema.
+    - Build the streaming transformation and aggregation logic.
+    - Apply the case-specific detection rules.
+    - Emit structured downstream events.
+    - Test representative and edge-case event sequences.
+    expected_outputs:
+    - top-seller stream
+    - window-level aggregates
+    - enriched product alerts
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 306
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,102 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/customer-spend-model-comparison
+name: Customer Spend Model Comparison
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Comparing Models for Customer Spend
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.03/Activity6.03.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/Activity6.03/Activity6.03.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 438
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Comparing Models for Customer Spend
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.03/Activity6.03.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter06/Activity6.03/Activity6.03.ipynb
+    description: 'Packt compares linear regression, decision trees, and random forests
+      for predicting customer spending from age, income, and education.
+
+'
+  data:
+    description: 'Customer records with age, income, years of education, and observed
+      spending.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.03/spend_age_income_ed.csv
+    availability: repository
+    files:
+    - Chapter06/Activity6.03/spend_age_income_ed.csv
+  original_implementation:
+    technologies:
+    - linear regression
+    - decision tree regression
+    - random forest regression
+    - model comparison
+    - RMSE
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter06/Activity6.03/Activity6.03.ipynb
+  problem:
+    context: 'Customer spending may depend nonlinearly on demographic and socioeconomic
+      attributes, so alternative regression families should be compared.
+
+'
+    objective: 'Compare linear and tree-based models for predicting customer spending.
+
+'
+    analytical_questions:
+    - Does a nonlinear model improve spending predictions?
+    - How does tree depth affect generalization?
+    - Does a random forest outperform a single tree?
+    - Which model produces the lowest held-out error?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate customer spend data.
+    - Create train and test partitions.
+    - Fit linear regression.
+    - Fit shallow and deeper decision trees.
+    - Fit shallow and deeper random forests.
+    - Compare held-out RMSE across models.
+    - Summarize the bias-complexity tradeoff.
+    expected_outputs:
+    - fitted regression models
+    - model comparison table
+    - RMSE comparison
+    - selected model
+    - interpretation of model complexity
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 438
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

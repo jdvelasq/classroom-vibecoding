@@ -1,0 +1,105 @@
+---
+id: packt/data-analytics-for-marketing/rfm-campaign-targeting
+name: RFM Campaign Targeting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Analytics for Marketing
+  edition:
+  official_url:
+  companion_sources:
+  - title: RFM Analysis
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/rfm.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/rfm.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 96
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Analytics for Marketing
+    title: RFM Analysis
+    url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/rfm.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing
+      path: Chapter07/rfm.ipynb
+    description: 'Packt constructs independent and sequential RFM scores, compares
+      purchase response by segment, selects target segments, and calculates campaign
+      profit.
+
+'
+  data:
+    description: 'Customer-level recency, order-frequency, revenue, purchase-response,
+      and campaign economics data.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/data/retail_rfm.csv
+    availability: repository
+    files:
+    - Chapter07/data/retail_rfm.csv
+  original_implementation:
+    technologies:
+    - RFM scoring
+    - customer ranking
+    - response analysis
+    - segment targeting
+    - campaign profitability
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Analytics-for-Marketing/blob/main/Chapter07/rfm.ipynb
+  problem:
+    context: 'A marketing campaign should not necessarily contact every customer because
+      campaign, shipping, and product costs can overwhelm revenue from low-response
+      groups.
+
+'
+    objective: 'Use RFM behavior and observed response economics to select profitable
+      customer segments for a campaign.
+
+'
+    analytical_questions:
+    - How do independent and sequential RFM scores differ?
+    - Which RFM groups have the highest purchase rates?
+    - Which segments should be targeted under the stated economics?
+    - What revenue and profit result from the targeting rule?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - numpy
+    - matplotlib
+    logical_steps:
+    - Load customer-level RFM data.
+    - Construct independent and sequential RFM scores.
+    - Estimate response rates by segment.
+    - Define campaign revenue and cost components.
+    - Evaluate segment-level expected profitability.
+    - Select target segments.
+    - Calculate campaign profit and compare alternatives.
+    expected_outputs:
+    - RFM score table
+    - segment response table
+    - targeting rule
+    - targeted customer list
+    - campaign revenue and profit analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 96
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

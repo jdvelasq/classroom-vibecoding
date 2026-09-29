@@ -1,0 +1,104 @@
+---
+id: packt/forecasting-time-series-data-with-prophet-second-edition/pedestrian-shock-forecasting
+name: Pedestrian Shock Forecasting
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Forecasting Time Series Data with Prophet, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Outliers and Special Events
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter10
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter10/Chapter_10.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 394
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Forecasting Time Series Data with Prophet, Second Edition
+    title: Outliers and Special Events
+    url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter10
+    repository:
+      url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition
+      path: Chapter10/Chapter_10.ipynb
+    description: 'Packt models pedestrian counts and explicitly represents lockdown
+      periods as special events so structural shocks do not distort ordinary trend
+      and seasonality.
+
+'
+  data:
+    description: 'Daily pedestrian-count time series spanning normal periods and lockdown
+      shocks.
+
+'
+    source_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/blob/main/data/pedestrian_counts.csv
+    availability: repository
+    files:
+    - data/pedestrian_counts.csv
+  original_implementation:
+    technologies:
+    - Prophet
+    - special events
+    - structural shocks
+    - outlier handling
+    - time-series forecasting
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Forecasting-Time-Series-Data-with-Prophet-Second-Edition/tree/main/Chapter10
+  problem:
+    context: 'Pedestrian traffic experienced abrupt lockdown-driven shocks that should
+      not be learned as ordinary recurring demand behavior.
+
+'
+    objective: 'Forecast pedestrian activity while isolating known structural shocks
+      as explicit events.
+
+'
+    analytical_questions:
+    - How do lockdown periods distort an untreated forecast?
+    - How should shock windows be encoded as special events?
+    - Does explicit event modeling improve trend and seasonal interpretation?
+    - What post-shock pedestrian trajectory does the model imply?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - prophet
+    - matplotlib
+    logical_steps:
+    - Load and validate pedestrian counts.
+    - Fit a baseline forecast.
+    - Identify shock periods.
+    - Encode lockdown windows as special events.
+    - Refit and compare the event-aware model.
+    - Inspect trend, seasonality, and uncertainty.
+    - Produce post-shock forecasts.
+    expected_outputs:
+    - baseline forecast
+    - event-aware forecast
+    - shock effect comparison
+    - component diagnostics
+    - pedestrian forecast table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 394
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

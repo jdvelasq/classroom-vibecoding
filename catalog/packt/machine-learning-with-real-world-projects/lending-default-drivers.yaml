@@ -1,0 +1,109 @@
+---
+id: packt/machine-learning-with-real-world-projects/lending-default-drivers
+name: Lending Default Drivers
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with Real World Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Lending Club Default Analysis
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%2021/Teclov_Loan%20Analysis/Teclov_Loan.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Section 21/Teclov_Loan Analysis/Teclov_Loan.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 163
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with Real World Projects
+    title: Lending Club Default Analysis
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%2021/Teclov_Loan%20Analysis/Teclov_Loan.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+      path: Section 21/Teclov_Loan Analysis/Teclov_Loan.ipynb
+    description: 'Packt cleans Lending Club records, removes post-approval behavior
+      variables that would create leakage, and compares observed default rates across
+      applicant and loan characteristics without fitting a predictive model.
+
+'
+  data:
+    description: 'Lending Club loan records with loan characteristics, applicant attributes,
+      status, grade, purpose, income, interest rate, and post-approval behavior fields.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2021/Teclov_Loan%20Analysis
+    availability: repository
+    files:
+    - Section 21/Teclov_Loan Analysis/loan.zip
+    - Section 21/Teclov_Loan Analysis/Data_Dictionary.xlsx
+  original_implementation:
+    technologies:
+    - pandas
+    - missing-data diagnosis
+    - leakage avoidance
+    - binning
+    - univariate analysis
+    - segmented analysis
+    - default-rate comparison
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%2021/Teclov_Loan%20Analysis/Teclov_Loan.ipynb
+  problem:
+    context: 'A lender wants to understand which characteristics available at application
+      time are associated with later default and must avoid relying on information
+      generated only after loan approval.
+
+'
+    objective: 'Diagnose applicant and loan characteristics associated with elevated
+      default rates.
+
+'
+    analytical_questions:
+    - Which variables are available at loan-approval time?
+    - Which fields would introduce post-outcome or post-approval leakage?
+    - How does default rate vary by grade, term, purpose, amount, income, and interest
+      rate?
+    - Which segments show the largest differences in observed default rate?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and profile loan records.
+    - Remove unusable and heavily missing fields.
+    - Separate application-time from post-approval variables.
+    - Define a clean binary default outcome.
+    - Bin selected continuous attributes.
+    - Compare default rates across categories.
+    - Perform segmented analysis by loan purpose.
+    - Rank variables by observed default-rate spread.
+    expected_outputs:
+    - cleaned application-time dataset
+    - leakage exclusion table
+    - default-rate summaries
+    - segment comparison charts
+    - ranked diagnostic drivers
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 163
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

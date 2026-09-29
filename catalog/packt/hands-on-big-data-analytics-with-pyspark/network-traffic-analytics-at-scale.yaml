@@ -1,0 +1,103 @@
+---
+id: packt/hands-on-big-data-analytics-with-pyspark/network-traffic-analytics-at-scale
+name: Network Traffic Analytics at Scale
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Big Data Analytics with PySpark
+  edition:
+  official_url:
+  companion_sources:
+  - title: Large-Scale Network Traffic Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Big-Data-Analytics-with-PySpark/tree/master/Chapter04
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Big-Data-Analytics-with-PySpark
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter04/Chapter 4.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 120
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Big Data Analytics with PySpark
+    title: Large-Scale Network Traffic Analysis
+    url: https://github.com/PacktPublishing/Hands-On-Big-Data-Analytics-with-PySpark/tree/master/Chapter04
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Big-Data-Analytics-with-PySpark
+      path: Chapter04/Chapter 4.ipynb
+    description: 'Packt uses the KDD Cup network-traffic dataset across Spark chapters
+      to aggregate connection behavior, compare normal and attack traffic, calculate
+      large-scale summary statistics, and structure the data with Spark SQL.
+
+'
+  data:
+    description: 'KDD Cup 1999 network connection records with traffic attributes
+      and normal or attack labels.
+
+'
+    source_url: https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
+    availability: public
+    files:
+    - kddcup.data.gz
+  original_implementation:
+    technologies:
+    - PySpark
+    - RDDs
+    - reduceByKey
+    - MLlib statistics
+    - hypothesis testing
+    - Spark SQL
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Big-Data-Analytics-with-PySpark/tree/master/Chapter04
+  problem:
+    context: 'Network connection logs are large enough to motivate distributed analysis
+      and contain heterogeneous normal and attack traffic patterns.
+
+'
+    objective: 'Use distributed computation to summarize and diagnose large-scale
+      network traffic behavior.
+
+'
+    analytical_questions:
+    - How are connection types distributed at scale?
+    - How do normal and attack records differ on key metrics?
+    - Which summaries can be computed efficiently with distributed aggregation?
+    - How can the raw traffic be structured for interactive SQL analysis?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load compressed network records with Spark.
+    - Parse and validate connection fields.
+    - Compare normal and attack traffic volumes.
+    - Aggregate durations and selected metrics by traffic class.
+    - Calculate distributed descriptive statistics and correlations.
+    - Create structured Spark DataFrames.
+    - Query diagnostic patterns with Spark SQL.
+    expected_outputs:
+    - distributed traffic summaries
+    - class-level KPI tables
+    - statistical comparisons
+    - Spark SQL views
+    - scalability discussion
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 120
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

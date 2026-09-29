@@ -1,0 +1,103 @@
+---
+id: packt/hands-on-machine-learning-with-scikit-learn-and-scientific-python-toolkits/network-intrusion-anomaly-detection
+name: Network Intrusion Anomaly Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+  edition:
+  official_url:
+  companion_sources:
+  - title: Outliers
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter12/Outliers.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter12/Outliers.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 122
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Hands-On Machine Learning with Scikit-Learn and Scientific Python Toolkits
+    title: Outliers
+    url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter12/Outliers.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits
+      path: Chapter12/Outliers.ipynb
+    description: 'Packt compares percentile rules, Local Outlier Factor, novelty detection,
+      and Isolation Forest on network-traffic and synthetic anomaly data.
+
+'
+  data:
+    description: 'KDD Cup 1999 network traffic available through scikit-learn together
+      with synthetic data for controlled anomaly-evaluation experiments.
+
+'
+    source_url: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_kddcup99.html
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - percentile thresholds
+    - Local Outlier Factor
+    - novelty detection
+    - Isolation Forest
+    - precision
+    - recall
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Hands-On-Machine-Learning-with-scikit-learn-and-Scientific-Python-Toolkits/blob/master/Chapter12/Outliers.ipynb
+  problem:
+    context: 'Network traffic contains rare patterns that may represent attacks or
+      unusual behavior, but anomaly methods differ in assumptions and sensitivity.
+
+'
+    objective: 'Compare unsupervised and novelty-detection methods for identifying
+      anomalous network behavior.
+
+'
+    analytical_questions:
+    - Which observations are flagged by each anomaly method?
+    - How sensitive are findings to neighborhood and contamination settings?
+    - How do LOF and Isolation Forest differ?
+    - What precision-recall trade-offs appear when labels are available for evaluation?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and prepare network-traffic features.
+    - Establish simple percentile baselines.
+    - Fit Local Outlier Factor under alternative settings.
+    - Evaluate novelty-detection mode.
+    - Fit Isolation Forest.
+    - Compare anomaly rankings and labeled performance.
+    - Interpret method disagreements.
+    expected_outputs:
+    - anomaly score table
+    - LOF anomaly flags
+    - Isolation Forest flags
+    - precision-recall comparison
+    - sensitivity analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 122
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

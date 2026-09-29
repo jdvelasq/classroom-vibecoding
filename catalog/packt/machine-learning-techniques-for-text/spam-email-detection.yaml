@@ -1,0 +1,102 @@
+---
+id: packt/machine-learning-techniques-for-text/spam-email-detection
+name: Spam Email Detection
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning Techniques for Text
+  edition:
+  official_url:
+  companion_sources:
+  - title: Detecting Spam Emails
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-02/spam-detection.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter-02/spam-detection.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 207
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning Techniques for Text
+    title: Detecting Spam Emails
+    url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-02/spam-detection.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text
+      path: chapter-02/spam-detection.ipynb
+    description: 'Packt builds a spam detector from raw SpamAssassin email messages,
+      progressing through text EDA, representation, preprocessing, Naive Bayes, and
+      SVM evaluation.
+
+'
+  data:
+    description: 'Labeled SpamAssassin public email corpus containing ham and spam
+      messages.
+
+'
+    source_url: https://spamassassin.apache.org/old/publiccorpus/
+    availability: repository_and_public
+    files:
+    - chapter-02/data.zip
+  original_implementation:
+    technologies:
+    - bag of words
+    - tf-idf
+    - text preprocessing
+    - Naive Bayes
+    - SVM
+    - ROC analysis
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-02/spam-detection.ipynb
+  problem:
+    context: 'Email systems need to separate unwanted or dangerous spam from legitimate
+      correspondence.
+
+'
+    objective: 'Build and compare text classifiers for detecting spam from raw email
+      content.
+
+'
+    analytical_questions:
+    - Which terms distinguish spam from legitimate email?
+    - How do alternative text representations affect classification?
+    - How do Naive Bayes and SVM compare on held-out messages?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - nltk
+    logical_steps:
+    - Parse raw email bodies.
+    - Explore class balance and characteristic terms.
+    - Normalize and vectorize text.
+    - Fit baseline and SVM classifiers.
+    - Compare held-out metrics and ROC behavior.
+    expected_outputs:
+    - cleaned email corpus
+    - characteristic-term analysis
+    - classifier comparison
+    - confusion matrix
+    - ROC curve
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 207
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

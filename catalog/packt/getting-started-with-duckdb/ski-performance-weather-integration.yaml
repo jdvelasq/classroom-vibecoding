@@ -1,0 +1,105 @@
+---
+id: packt/getting-started-with-duckdb/ski-performance-weather-integration
+name: Ski Performance Weather Integration
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Getting Started with DuckDB
+  edition:
+  official_url:
+  companion_sources:
+  - title: Temporal Joins with ASOF
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/tree/main/chapter_10
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB
+    relationship: Repository recorded in the legacy case inventory.
+    path: chapter_10/README.md
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 315
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Getting Started with DuckDB
+    title: Temporal Joins with ASOF
+    url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/tree/main/chapter_10
+    repository:
+      url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB
+      path: chapter_10/README.md
+    description: 'Packt uses DuckDB temporal ASOF joins to align skier performance
+      records with the latest available weather measurement and demonstrates robust
+      analytical integration of asynchronous event streams.
+
+'
+  data:
+    description: 'Skier profiles and scores with timestamps together with weather
+      measurements containing observation times, wind speed, and temperature.
+
+'
+    source_url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/tree/main/chapter_10
+    availability: repository
+    files:
+    - chapter_10/skiers.csv
+    - chapter_10/skier_scores.csv
+    - chapter_10/weather.csv
+  original_implementation:
+    technologies:
+    - DuckDB
+    - SQL
+    - ASOF joins
+    - temporal integration
+    - window functions
+    language: SQL
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Getting-Started-with-DuckDB/blob/main/chapter_10/README.md
+  problem:
+    context: 'Performance events and environmental measurements occur at different
+      times, so ordinary equality joins cannot correctly attach the relevant weather
+      conditions to each performance observation.
+
+'
+    objective: 'Build an analytics-ready skier-performance dataset by aligning each
+      score with the latest preceding weather observation.
+
+'
+    analytical_questions:
+    - Which weather observation should be associated with each skier score?
+    - Why does an equality join fail for asynchronous timestamps?
+    - How can ASOF joins create reproducible temporal alignment?
+    - What performance-weather relationships become analyzable after integration?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - duckdb
+    - pandas
+    logical_steps:
+    - Load skier, score, and weather tables.
+    - Parse and validate timestamps.
+    - Inspect temporal coverage and ordering.
+    - Join skier profiles to scores.
+    - Apply an ASOF join from scores to weather.
+    - Validate matched timestamps.
+    - Export the integrated analytical table.
+    expected_outputs:
+    - temporal coverage diagnostics
+    - ASOF joined dataset
+    - unmatched-record audit
+    - performance-weather analytical table
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 315
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

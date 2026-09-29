@@ -1,0 +1,105 @@
+---
+id: packt/r-data-mining-blueprints/wholesale-customer-segmentation
+name: Wholesale Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: R Data Mining Blueprints
+  edition:
+  official_url:
+  companion_sources:
+  - title: Clustering Techniques
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%206/Clustering%20Techniques.R
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 6/Clustering Techniques.R
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 77
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: R Data Mining Blueprints
+    title: Clustering Techniques
+    url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%206/Clustering%20Techniques.R
+    repository:
+      url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints
+      path: Chapter 6/Clustering Techniques.R
+    description: 'Packt segments wholesale customers after explicit outlier treatment
+      and scaling, comparing K-means, hierarchical, model-based, and self-organizing-map
+      approaches.
+
+'
+  data:
+    description: 'Wholesale customer annual spending across fresh, milk, grocery,
+      frozen, detergents/paper, and delicatessen product categories.
+
+'
+    source_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%206/Wholesalecustomers.csv
+    availability: repository
+    files:
+    - Chapter 6/Wholesalecustomers.csv
+  original_implementation:
+    technologies:
+    - outlier treatment
+    - scaling
+    - K-means
+    - hierarchical clustering
+    - model-based clustering
+    - self-organizing maps
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/R-Data-Mining-Blueprints/blob/master/Chapter%206/Clustering%20Techniques.R
+  problem:
+    context: 'A wholesaler wants to understand heterogeneous customer purchasing profiles
+      across several product categories.
+
+'
+    objective: 'Discover and compare customer segments using several clustering paradigms.
+
+'
+    analytical_questions:
+    - How should extreme spending values be handled before segmentation?
+    - How many customer groups are supported by the data?
+    - Do alternative clustering methods reveal similar segment structure?
+    - Which product categories characterize each segment?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - scipy
+    - matplotlib
+    logical_steps:
+    - Load and profile wholesale spending.
+    - Treat extreme values transparently.
+    - Standardize spending features.
+    - Compare candidate cluster counts.
+    - Fit K-means and hierarchical solutions.
+    - Compare with model-based alternatives where practical.
+    - Profile and interpret segments.
+    expected_outputs:
+    - cleaned spending dataset
+    - clustering diagnostics
+    - segment assignments
+    - segment profile table
+    - method comparison
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 77
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,107 @@
+---
+id: packt/practical-guide-to-applied-conformal-prediction/credit-risk-prediction-sets
+name: Credit Risk Prediction Sets
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Guide to Applied Conformal Prediction
+  edition:
+  official_url:
+  companion_sources:
+  - title: Classical Full Transductive Conformal Prediction for Binary Classification
+    url: https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction/blob/main/Chapter_05_TCP.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter_05_TCP.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 287
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Guide to Applied Conformal Prediction
+    title: Classical Full Transductive Conformal Prediction for Binary Classification
+    url: https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction/blob/main/Chapter_05_TCP.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction
+      path: Chapter_05_TCP.ipynb
+    description: 'Packt applies transductive conformal prediction to the German Credit
+      dataset, building prediction sets around a probabilistic classifier and explicitly
+      controlling classification uncertainty at a chosen significance level.
+
+'
+  data:
+    description: 'German Credit data from OpenML with customer financial and demographic
+      attributes and a binary credit-risk target.
+
+'
+    source_url: https://www.openml.org/d/31
+    availability: public
+    files: []
+  original_implementation:
+    technologies:
+    - logistic regression
+    - XGBoost
+    - transductive conformal prediction
+    - nonconformity scores
+    - prediction sets
+    - coverage
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction/blob/main/Chapter_05_TCP.ipynb
+  problem:
+    context: 'Credit-risk classification decisions are uncertain, and a single class
+      label hides whether the model can distinguish a borrower confidently from ambiguous
+      cases.
+
+'
+    objective: 'Produce valid prediction sets for credit-risk classification and quantify
+      uncertainty at a user-selected significance level.
+
+'
+    analytical_questions:
+    - Which borrowers receive singleton versus ambiguous prediction sets?
+    - How does the significance level affect prediction-set size?
+    - Does empirical coverage match the requested confidence level?
+    - How does conformal uncertainty complement ordinary classification accuracy?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - xgboost
+    - openml
+    logical_steps:
+    - Load and prepare German Credit data.
+    - Split training and test observations reproducibly.
+    - Fit a probabilistic baseline classifier.
+    - Define nonconformity scores.
+    - Construct conformal p-values for candidate labels.
+    - Generate prediction sets at selected significance levels.
+    - Evaluate empirical coverage and set efficiency.
+    expected_outputs:
+    - probabilistic credit classifier
+    - nonconformity score diagnostics
+    - borrower prediction sets
+    - coverage table
+    - prediction-set size distribution
+    - uncertainty interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 287
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

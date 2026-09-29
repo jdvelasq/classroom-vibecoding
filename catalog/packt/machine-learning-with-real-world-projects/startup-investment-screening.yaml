@@ -1,0 +1,111 @@
+---
+id: packt/machine-learning-with-real-world-projects/startup-investment-screening
+name: Startup Investment Screening
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with Real World Projects
+  edition:
+  official_url:
+  companion_sources:
+  - title: Investment Requirement Analysis
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2020/Investment%20Requirement%20Analysis
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+    relationship: Repository recorded in the legacy case inventory.
+    path: Section 20/Investment Requirement Analysis/Teclov_Investment Requirement
+      Analysis/teclov_3_Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 162
+  domain: prescriptive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Machine Learning with Real World Projects
+    title: Investment Requirement Analysis
+    url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2020/Investment%20Requirement%20Analysis
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects
+      path: Section 20/Investment Requirement Analysis/Teclov_Investment Requirement
+        Analysis/teclov_3_Analysis.ipynb
+    description: 'Packt screens startup investment opportunities by funding type,
+      investment size, country, and sector, applying an explicit USD 5–15 million
+      investment constraint and ranking attractive markets and sectors.
+
+'
+  data:
+    description: 'Crunchbase-style company, funding-round, and sector-mapping tables
+      containing funding type, amount, country, company categories, and sector classifications.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/tree/master/Section%2020/Investment%20Requirement%20Analysis/Teclov_Investment%20Requirement%20Analysis
+    availability: repository
+    files:
+    - companies.txt
+    - rounds2.csv
+    - mapping.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - data cleaning
+    - descriptive statistics
+    - constrained screening
+    - country ranking
+    - sector ranking
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-Real-World-Projects/blob/master/Section%2020/Investment%20Requirement%20Analysis/Teclov_Investment%20Requirement%20Analysis/teclov_3_Analysis.ipynb
+  problem:
+    context: 'An investment firm wants to deploy capital in startup opportunities
+      but limits individual investments to a target range and needs to choose suitable
+      funding types, countries, and sectors.
+
+'
+    objective: 'Narrow the investment universe to funding types, countries, and sectors
+      that satisfy the firm''s investment constraints and historical market evidence.
+
+'
+    analytical_questions:
+    - Which funding type has a representative investment size within the target range?
+    - Which countries attract the most capital for that funding type?
+    - Which sectors dominate investment activity in shortlisted countries?
+    - Which combinations satisfy the stated investment mandate?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - matplotlib
+    logical_steps:
+    - Load and clean company and funding-round data.
+    - Restrict candidate funding types.
+    - Compare robust representative investment sizes.
+    - Apply the investment-size constraint.
+    - Rank countries by total qualifying investment.
+    - Normalize and map company categories to sectors.
+    - Rank sectors within shortlisted countries.
+    - Produce the final investment screening table.
+    expected_outputs:
+    - funding-type comparison
+    - qualifying country ranking
+    - sector investment table
+    - constrained opportunity shortlist
+    - investment screening recommendation set
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 162
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,101 @@
+---
+id: packt/practical-data-science-using-python/customer-segmentation
+name: Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science using Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: K-Means Clustering - Customer Segmentation
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/customer-segmentation-k-means-analysis.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: customer-segmentation-k-means-analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 415
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Practical Data Science using Python
+    title: K-Means Clustering - Customer Segmentation
+    url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/customer-segmentation-k-means-analysis.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python
+      path: customer-segmentation-k-means-analysis.ipynb
+    description: 'Packt segments retail customers using age, gender, annual income,
+      and spending score to support targeted merchandising campaigns.
+
+'
+  data:
+    description: 'Store-customer records with age, gender, annual income, and spending
+      score.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/Mall_Customers.csv
+    availability: repository
+    files:
+    - Mall_Customers.csv
+  original_implementation:
+    technologies:
+    - K-Means
+    - silhouette score
+    - elbow method
+    - exploratory visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-using-Python/blob/main/customer-segmentation-k-means-analysis.ipynb
+  problem:
+    context: 'A large store wants to identify groups of customers with similar profiles
+      and spending behavior so that promotions can be targeted more effectively.
+
+'
+    objective: 'Discover interpretable customer segments and characterize each segment.
+
+'
+    analytical_questions:
+    - How many customer segments are supported by the data?
+    - Which variables distinguish the resulting segments?
+    - How do income and spending patterns differ across segments?
+    - Which segments suggest distinct campaign strategies?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and inspect the customer data.
+    - Encode and scale relevant features.
+    - Fit K-Means across candidate values of k.
+    - Compare inertia and silhouette scores.
+    - Select a practical number of clusters.
+    - Assign cluster labels and profile each segment.
+    - Visualize and interpret the customer groups.
+    expected_outputs:
+    - segmented customer dataset
+    - cluster-selection diagnostics
+    - customer profiles by segment
+    - cluster visualizations
+    - campaign-oriented interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 415
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

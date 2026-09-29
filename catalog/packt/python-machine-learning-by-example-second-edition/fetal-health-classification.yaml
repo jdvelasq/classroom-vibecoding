@@ -1,0 +1,103 @@
+---
+id: packt/python-machine-learning-by-example-second-edition/fetal-health-classification
+name: Fetal Health Classification
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Python Machine Learning By Example, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Cardiotocography Classification
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-By-Example-Second-Edition/blob/master/Chapter05/B12322_05_code%20upload/ctg.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-By-Example-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter05/B12322_05_code upload/ctg.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 32
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Python Machine Learning By Example, Second Edition
+    title: Cardiotocography Classification
+    url: https://github.com/PacktPublishing/Python-Machine-Learning-By-Example-Second-Edition/blob/master/Chapter05/B12322_05_code%20upload/ctg.py
+    repository:
+      url: https://github.com/PacktPublishing/Python-Machine-Learning-By-Example-Second-Edition
+      path: Chapter05/B12322_05_code upload/ctg.py
+    description: 'Packt uses cardiotocography measurements to classify fetal health
+      states with an RBF support vector machine and grid-search tuning.
+
+'
+  data:
+    description: 'Cardiotocography records with fetal heart-rate and uterine-contraction
+      features.
+
+'
+    source_url: https://archive.ics.uci.edu/dataset/193/cardiotocography
+    availability: public
+    files:
+    - Chapter05/B12322_05_code upload/CTG.xls
+  original_implementation:
+    technologies:
+    - support vector machine
+    - RBF kernel
+    - grid search
+    - scikit-learn
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Python-Machine-Learning-By-Example-Second-Edition/blob/master/Chapter05/B12322_05_code%20upload/ctg.py
+  problem:
+    context: 'Clinical monitoring records can be used to support the identification
+      of fetal health states from multiple physiological measurements.
+
+'
+    objective: 'Classify fetal health states from cardiotocography features and evaluate
+      the effect of model tuning on predictive performance.
+
+'
+    analytical_questions:
+    - How balanced are the fetal health classes?
+    - Which feature patterns distinguish the classes?
+    - How sensitive is performance to SVM hyperparameters?
+    - Which classes generate the largest prediction errors?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate the CTG dataset.
+    - Inspect class balance and feature distributions.
+    - Create reproducible train and test partitions.
+    - Standardize predictors where appropriate.
+    - Tune an RBF SVM with cross-validation.
+    - Evaluate class-level precision, recall, F1, and confusion patterns.
+    - Interpret model limitations.
+    expected_outputs:
+    - cleaned analytical dataset
+    - class distribution summary
+    - tuned classifier
+    - evaluation metrics
+    - confusion matrix
+    - written interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 32
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

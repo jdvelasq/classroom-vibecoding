@@ -1,0 +1,105 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/bank-customer-segmentation
+name: Bank Customer Segmentation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Bank Customer Segmentation for Loan Campaign
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter03/Activity3.01-3.02.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter03/Activity3.01-3.02.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 70
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Bank Customer Segmentation for Loan Campaign
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter03/Activity3.01-3.02.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter03/Activity3.01-3.02.ipynb
+    description: 'Packt segments bank customers for a loan campaign using standardized
+      customer attributes, K-means, cluster profiling, and PCA for low-dimensional
+      visualization.
+
+'
+  data:
+    description: 'Bank customer records containing demographics, income, spending,
+      and other attributes relevant to personal-loan marketing.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/tree/master/Chapter03/Datasets
+    availability: repository
+    files:
+    - Chapter03/Datasets/Bank_Personal_Loan_Modelling-1.csv
+    - Chapter03/Datasets/Bank_Personal_Loan_Modelling-2.csv
+  original_implementation:
+    technologies:
+    - standardization
+    - K-means
+    - PCA
+    - cluster profiling
+    - visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter03/Activity3.01-3.02.ipynb
+  problem:
+    context: 'A bank wants interpretable customer groups that can support differentiated
+      personal-loan marketing rather than treating all customers alike.
+
+'
+    objective: 'Discover and profile customer segments using financial and demographic
+      behavior.
+
+'
+    analytical_questions:
+    - Which variables meaningfully differentiate bank customers?
+    - What customer groups emerge from standardized attributes?
+    - How can PCA help visualize the segment structure?
+    - How do segment profiles differ in income, spending, and demographics?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate customer data.
+    - Select segmentation variables.
+    - Standardize numeric attributes.
+    - Fit and inspect K-means segments.
+    - Project customers with PCA for visualization.
+    - Profile clusters in original units.
+    - Translate clusters into marketing descriptions.
+    expected_outputs:
+    - standardized feature matrix
+    - customer segment assignments
+    - PCA visualization
+    - segment profile table
+    - marketing interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 70
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

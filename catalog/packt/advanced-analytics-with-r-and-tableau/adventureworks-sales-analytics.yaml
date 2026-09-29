@@ -1,0 +1,110 @@
+---
+id: packt/advanced-analytics-with-r-and-tableau/adventureworks-sales-analytics
+name: AdventureWorks Sales Analytics
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Advanced Analytics with R and Tableau
+  edition:
+  official_url:
+  companion_sources:
+  - title: Advanced Tableau Sales Analytics
+    url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau/tree/master/Chapter07
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/Chapter 7.twb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 348
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Advanced Analytics with R and Tableau
+    title: Advanced Tableau Sales Analytics
+    url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau/tree/master/Chapter07
+    repository:
+      url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau
+      path: Chapter07/Chapter 7.twb
+    description: 'Packt builds a Tableau analytical workbook over AdventureWorks sales,
+      product, subcategory, category, and date data with relational joins, period
+      comparisons, window calculations, and interactive sales analysis.
+
+'
+  data:
+    description: 'AdventureWorks Internet Sales fact data joined with date, product,
+      product-subcategory, and product-category dimensions.
+
+'
+    source_url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau/tree/master/Chapter07
+    availability: repository
+    files:
+    - Chapter07/Chapter 7.twb
+    - Chapter07/TDE Files/DimDate.tde
+    - Chapter07/TDE Files/DimProduct.tde
+    - Chapter07/TDE Files/DimProductSubcategory.tde
+    - Chapter07/TDE Files/FactInternetSales.tde
+  original_implementation:
+    technologies:
+    - Tableau
+    - dimensional joins
+    - window calculations
+    - period benchmarking
+    - interactive visualization
+    language: Tableau
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Advanced-Analytics-with-R-and-Tableau/blob/master/Chapter07/Chapter%207.twb
+  problem:
+    context: 'Sales managers need an interactive view of Internet sales that connects
+      transaction facts with product hierarchies and calendar dimensions and allows
+      current performance to be compared with historical benchmarks.
+
+'
+    objective: 'Build an interactive sales analytics product over a dimensional sales
+      model.
+
+'
+    analytical_questions:
+    - How do sales vary by product category and fiscal period?
+    - How does current-period sales compare with historical averages?
+    - Which product hierarchies drive changes in sales?
+    - How should the fact and dimension tables be joined for reliable analysis?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - duckdb
+    - plotly
+    - streamlit
+    logical_steps:
+    - Load sales fact and dimension tables.
+    - Reconstruct the dimensional joins.
+    - Validate analytical grain and measures.
+    - Calculate period and benchmark metrics.
+    - Build product hierarchy drilldowns.
+    - Create interactive filtering and comparisons.
+    - Validate dashboard totals against the fact table.
+    expected_outputs:
+    - integrated sales model
+    - KPI and benchmark calculations
+    - category and period drilldowns
+    - interactive sales dashboard
+    - reconciliation checks
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 348
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/data-engineering-with-python/user-event-streaming
+name: User Event Streaming
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Engineering with Python
+  edition:
+  official_url:
+  companion_sources:
+  - title: Kafka Producer and Consumer
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python/blob/master/Chapter13/kproducer.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter13
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 38
+  domain: data_for_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Data Engineering with Python
+    title: Kafka Producer and Consumer
+    url: https://github.com/PacktPublishing/Data-Engineering-with-Python/blob/master/Chapter13/kproducer.py
+    repository:
+      url: https://github.com/PacktPublishing/Data-Engineering-with-Python
+      path: Chapter13
+    description: 'Packt generates synthetic user records with Faker, publishes them
+      to a Kafka topic, and consumes the resulting JSON event stream.
+
+'
+  data:
+    description: 'Synthetic user events containing name, age, street, city, state,
+      and ZIP code.
+
+'
+    source_url:
+    availability: generated
+    files:
+    - Chapter13/kproducer.py
+    - Chapter13/kclient.py
+  original_implementation:
+    technologies:
+    - Apache Kafka
+    - confluent-kafka
+    - Faker
+    - JSON
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Engineering-with-Python/tree/master/Chapter13
+  problem:
+    context: 'Analytics systems increasingly depend on operational event streams that
+      must be captured, validated, and made replayable before they can support analysis.
+
+'
+    objective: 'Generate, publish, consume, validate, and persist a reproducible stream
+      of user events as an analytical data source for downstream processing.
+
+'
+    analytical_questions:
+    - What schema should each event follow?
+    - How are events partitioned and consumed?
+    - How should malformed events be handled?
+    - How can a finite replayable stream be created for downstream analytics?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - confluent-kafka
+    - faker
+    - pydantic
+    - pandas
+    logical_steps:
+    - Define a deterministic user-event schema.
+    - Generate a finite seeded event stream.
+    - Serialize events as JSON.
+    - Publish events to a Kafka topic.
+    - Consume and deserialize the events.
+    - Validate schema and count successful and failed records.
+    - Persist a replayable analytical snapshot.
+    expected_outputs:
+    - generated event dataset
+    - Kafka producer
+    - Kafka consumer
+    - validation summary
+    - replayable event snapshot
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 38
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

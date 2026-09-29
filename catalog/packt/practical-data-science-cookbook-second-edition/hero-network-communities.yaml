@@ -1,0 +1,103 @@
+---
+id: packt/practical-data-science-cookbook-second-edition/hero-network-communities
+name: Hero Network Communities
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Practical Data Science Cookbook, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Network and Community Analysis
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter07/code/cluster.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter07/code/cluster.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 90
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Practical Data Science Cookbook, Second Edition
+    title: Network and Community Analysis
+    url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter07/code/cluster.py
+    repository:
+      url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition
+      path: Chapter07/code/cluster.py
+    description: 'Packt builds a Marvel hero co-occurrence network and applies community
+      detection to reveal groups of strongly connected characters.
+
+'
+  data:
+    description: 'Marvel hero co-occurrence network represented as graph edge data.
+
+'
+    source_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/tree/master/Chapter07/data
+    availability: repository
+    files:
+    - Chapter07/data/hero-network.csv
+    - Chapter07/data/comic-hero-network.gdf
+  original_implementation:
+    technologies:
+    - NetworkX
+    - graph construction
+    - Louvain community detection
+    - network visualization
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Practical-Data-Science-Cookbook-Second-Edition/blob/master/Chapter07/code/cluster.py
+  problem:
+    context: 'Character co-occurrence data form a large network whose community structure
+      can reveal recurring groups and subuniverses that are not explicit in raw edges.
+
+'
+    objective: 'Discover and characterize communities in a character co-occurrence
+      network.
+
+'
+    analytical_questions:
+    - Which characters are connected most strongly?
+    - What communities emerge from the graph?
+    - How large are the detected communities?
+    - Which characters connect otherwise distinct groups?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - networkx
+    - python-louvain
+    - matplotlib
+    logical_steps:
+    - Load and validate network edges.
+    - Construct the undirected co-occurrence graph.
+    - Calculate basic structural measures.
+    - Detect communities reproducibly.
+    - Summarize community size and membership.
+    - Identify bridging and central characters.
+    - Visualize community structure.
+    expected_outputs:
+    - network summary
+    - community assignments
+    - community size table
+    - centrality diagnostics
+    - community visualization
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 90
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

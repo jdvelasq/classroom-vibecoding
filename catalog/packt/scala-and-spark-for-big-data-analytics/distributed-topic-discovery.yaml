@@ -1,0 +1,104 @@
+---
+id: packt/scala-and-spark-for-big-data-analytics/distributed-topic-discovery
+name: Distributed Topic Discovery
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Scala and Spark for Big Data Analytics
+  edition:
+  official_url:
+  companion_sources:
+  - title: Topic Modelling with LDA
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/topicModellingwithLDA.scala
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter11/topicModellingwithLDA.scala
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 381
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Scala and Spark for Big Data Analytics
+    title: Topic Modelling with LDA
+    url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/topicModellingwithLDA.scala
+    repository:
+      url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+      path: Chapter11/topicModellingwithLDA.scala
+    description: 'Packt builds a distributed text preprocessing pipeline and fits
+      Spark LDA with EM or online optimization to discover latent topics in a document
+      collection.
+
+'
+  data:
+    description: 'Text documents stored as whole files together with a customizable
+      stop-word list.
+
+'
+    source_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics
+    availability: companion_repository
+    files:
+    - data/docs/
+  original_implementation:
+    technologies:
+    - Spark ML
+    - RegexTokenizer
+    - StopWordsRemover
+    - CountVectorizer
+    - distributed LDA
+    - EM
+    - online LDA
+    language: Scala
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Scala-and-Spark-for-Big-Data-Analytics/blob/master/Chapter11/topicModellingwithLDA.scala
+  problem:
+    context: 'Large text collections require scalable preprocessing and unsupervised
+      thematic discovery beyond single-machine workflows.
+
+'
+    objective: 'Discover and interpret latent document topics using a distributed
+      Spark pipeline.
+
+'
+    analytical_questions:
+    - How large is the corpus and vocabulary after preprocessing?
+    - What topics emerge from the distributed LDA model?
+    - Which terms carry the greatest weight in each topic?
+    - How do EM and online optimization differ operationally?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pyspark
+    logical_steps:
+    - Load a distributed document collection.
+    - Lemmatize and clean text.
+    - Tokenize and remove stop words.
+    - Create count-vector representations.
+    - Fit distributed LDA.
+    - Extract top weighted terms per topic.
+    - Compare alternative optimization strategies.
+    expected_outputs:
+    - corpus and vocabulary diagnostics
+    - distributed topic model
+    - topic-term tables
+    - training-time summary
+    - thematic interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 381
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

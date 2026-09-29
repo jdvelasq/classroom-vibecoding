@@ -1,0 +1,106 @@
+---
+id: packt/getting-started-with-streamlit-for-data-science/penguin-classifier-app
+name: Penguin Classifier App
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Getting Started with Streamlit for Data Science
+  edition:
+  official_url:
+  companion_sources:
+  - title: Penguin Classifier
+    url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science/blob/main/Chapter04/penguin_ml/penguins_streamlit.py
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter04/penguin_ml/penguins_streamlit.py
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 337
+  domain: data_products
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Getting Started with Streamlit for Data Science
+    title: Penguin Classifier
+    url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science/blob/main/Chapter04/penguin_ml/penguins_streamlit.py
+    repository:
+      url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science
+      path: Chapter04/penguin_ml/penguins_streamlit.py
+    description: 'Packt builds an interactive Streamlit application around a random-forest
+      penguin classifier, including optional data upload, retraining, user inputs,
+      model scoring, and interactive inference.
+
+'
+  data:
+    description: 'Palmer Penguins measurements with island, bill dimensions, flipper
+      length, body mass, sex, and species labels.
+
+'
+    source_url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science/blob/main/Chapter04/penguin_ml/penguins.csv
+    availability: repository
+    files:
+    - Chapter04/penguin_ml/penguins.csv
+  original_implementation:
+    technologies:
+    - Streamlit
+    - random forest
+    - model serialization
+    - file upload
+    - interactive inference
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Getting-started-with-Streamlit-for-Data-Science/blob/main/Chapter04/penguin_ml/penguins_streamlit.py
+  problem:
+    context: 'A classification model becomes an accessible analytical product when
+      users can supply measurements, optionally upload data, and obtain predictions
+      through a simple interface.
+
+'
+    objective: 'Build an interactive species-classification application around a trained
+      model.
+
+'
+    analytical_questions:
+    - How should user inputs be validated and encoded?
+    - How should a pretrained model be loaded safely?
+    - How can uploaded data trigger retraining?
+    - What model-quality information should be shown to users?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - streamlit
+    - joblib
+    logical_steps:
+    - Load and validate the penguin data.
+    - Train and evaluate a classifier.
+    - Persist the model and label mapping.
+    - Build Streamlit input controls.
+    - Support optional uploaded training data.
+    - Transform inputs consistently.
+    - Display model score and species prediction.
+    expected_outputs:
+    - trained classifier
+    - serialized model
+    - Streamlit interface
+    - interactive prediction
+    - optional retraining workflow
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 337
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

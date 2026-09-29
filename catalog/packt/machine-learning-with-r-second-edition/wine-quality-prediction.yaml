@@ -1,0 +1,101 @@
+---
+id: packt/machine-learning-with-r-second-edition/wine-quality-prediction
+name: Wine Quality Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Machine Learning with R - Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Estimating Wine Quality
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2006/MLwR_v2_06.r
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter 06/MLwR_v2_06.r
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 435
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt Publishing
+    publisher: Packt
+    book: Machine Learning with R - Second Edition
+    title: Estimating Wine Quality
+    url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2006/MLwR_v2_06.r
+    repository:
+      url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition
+      path: Chapter 06/MLwR_v2_06.r
+    description: 'Packt predicts white-wine quality with a regression tree and improves
+      the model using an M5 model tree.
+
+'
+  data:
+    description: 'White-wine physicochemical measurements with expert quality ratings.
+
+'
+    source_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2006/whitewines.csv
+    availability: repository
+    files:
+    - Chapter 06/whitewines.csv
+  original_implementation:
+    technologies:
+    - regression trees
+    - model trees
+    - MAE
+    - holdout validation
+    language: R
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Machine-Learning-with-R-Second-Edition/blob/master/Chapter%2006/MLwR_v2_06.r
+  problem:
+    context: 'Wine producers want to estimate perceived quality from measurable chemical
+      characteristics.
+
+'
+    objective: 'Predict wine-quality scores and compare simple regression trees with
+      model trees.
+
+'
+    analytical_questions:
+    - Which physicochemical variables drive predicted wine quality?
+    - How well does a regression tree predict held-out ratings?
+    - Does a model tree reduce prediction error?
+    - How much better are the models than a mean-value baseline?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and profile white-wine data.
+    - Create deterministic train and test partitions.
+    - Fit a regression-tree baseline.
+    - Visualize and interpret the tree.
+    - Evaluate predictions with MAE and correlation.
+    - Fit a stronger tree-based regression model.
+    - Compare both models against a naive baseline.
+    expected_outputs:
+    - wine-quality dataset
+    - regression tree
+    - prediction table
+    - MAE comparison
+    - model interpretation
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 435
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

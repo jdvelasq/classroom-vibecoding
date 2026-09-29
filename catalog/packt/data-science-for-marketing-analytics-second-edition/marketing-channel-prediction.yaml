@@ -1,0 +1,104 @@
+---
+id: packt/data-science-for-marketing-analytics-second-edition/marketing-channel-prediction
+name: Marketing Channel Prediction
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Marketing Analytics, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Marketing Channel Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.01/Activity9.01.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/Activity9.01/Activity9.01.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 73
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Marketing Analytics, Second Edition
+    title: Marketing Channel Classification
+    url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.01/Activity9.01.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition
+      path: Chapter09/Activity9.01/Activity9.01.ipynb
+    description: 'Packt builds a multiclass random-forest model for predicting the
+      marketing channel associated with customer records and evaluates class-level
+      performance.
+
+'
+  data:
+    description: 'Marketing records labeled with channel categories including retail,
+      roadshow, social media, and television.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.01/MarketingData.csv
+    availability: repository
+    files:
+    - Chapter09/Activity9.01/MarketingData.csv
+  original_implementation:
+    technologies:
+    - random forest
+    - multiclass classification
+    - confusion matrix
+    - precision
+    - recall
+    - F-score
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Marketing-Analytics-Second-Edition/blob/master/Chapter09/Activity9.01/Activity9.01.ipynb
+  problem:
+    context: 'Marketing records span several channels and a model can be used to learn
+      which observed customer or campaign patterns distinguish those channels.
+
+'
+    objective: 'Build and evaluate a multiclass model that predicts marketing channel.
+
+'
+    analytical_questions:
+    - Which classes are easiest or hardest to distinguish?
+    - How accurate is the model on held-out records?
+    - Which channel confusions occur most often?
+    - Which predictors contribute most to channel discrimination?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and validate marketing data.
+    - Separate predictors and channel target.
+    - Create a stratified train/test split.
+    - Fit a random-forest classifier.
+    - Calculate multiclass precision, recall, and F-score.
+    - Inspect the confusion matrix.
+    - Rank important predictors.
+    expected_outputs:
+    - trained multiclass classifier
+    - classification report
+    - confusion matrix
+    - feature importance table
+    - channel-level error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 73
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

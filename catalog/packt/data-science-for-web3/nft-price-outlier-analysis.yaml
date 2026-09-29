@@ -1,0 +1,104 @@
+---
+id: packt/data-science-for-web3/nft-price-outlier-analysis
+name: NFT Price Outlier Analysis
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Data Science for Web3
+  edition:
+  official_url:
+  companion_sources:
+  - title: Outliers
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter06/3.Outliers.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter06/3.Outliers.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 339
+  domain: descriptive_and_diagnostics_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Data Science for Web3
+    title: Outliers
+    url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter06/3.Outliers.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Data-Science-for-Web3
+      path: Chapter06/3.Outliers.ipynb
+    description: 'Packt analyzes NFT sale prices, identifies extreme Ethereum-denominated
+      sales using IQR rules, and profiles the traits and timing of anomalous tokens.
+
+'
+  data:
+    description: 'NFT token records with sales counts, ETH sale prices, token identifiers,
+      timestamps, names, descriptions, and categorical traits.
+
+'
+    source_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter06/witches.csv
+    availability: repository
+    files:
+    - Chapter06/witches.csv
+  original_implementation:
+    technologies:
+    - pandas
+    - IQR outlier detection
+    - boxplots
+    - pairplots
+    - categorical profiling
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Data-Science-for-Web3/blob/main/Chapter06/3.Outliers.ipynb
+  problem:
+    context: 'NFT collections can contain unusually high or low sale prices that may
+      reflect rare traits, market anomalies, or data issues rather than typical trading
+      behavior.
+
+'
+    objective: 'Identify and characterize extreme NFT sales and investigate the traits
+      associated with them.
+
+'
+    analytical_questions:
+    - Which sale prices are statistical outliers?
+    - Which token IDs correspond to extreme transactions?
+    - Do outlier tokens share particular traits?
+    - How are extreme sales distributed over time?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - seaborn
+    - matplotlib
+    logical_steps:
+    - Load and validate NFT sales records.
+    - Convert raw Ethereum values into interpretable units.
+    - Inspect price distributions.
+    - Calculate IQR-based outlier thresholds.
+    - Identify outlier tokens.
+    - Profile outliers by year and token traits.
+    - Compare anomalous and typical sales.
+    expected_outputs:
+    - NFT price distribution
+    - outlier threshold table
+    - anomalous token list
+    - trait profile of outliers
+    - temporal anomaly summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 339
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

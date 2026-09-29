@@ -1,0 +1,97 @@
+---
+id: packt/learning-data-mining-with-python-second-edition/enron-email-authorship
+name: Enron Email Authorship
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Learning Data Mining with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Authorship Analysis
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    relationship: Repository recorded in the legacy case inventory.
+    path: Chapter09/Chapter 9 Authorship Analysis.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 189
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Learning Data Mining with Python, Second Edition
+    title: Authorship Analysis
+    url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+    repository:
+      url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+      path: Chapter09/Chapter 9 Authorship Analysis.ipynb
+    description: 'Implemented case from the book companion repository.
+
+'
+  data:
+    description: 'Enron employee email messages grouped by author.
+
+'
+    source_url: https://www.cs.cmu.edu/~enron/
+    availability: public_or_repository
+    files: []
+  original_implementation:
+    technologies:
+    - email parsing
+    - function-word features
+    - text classification
+    - confusion matrix
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Learning-Data-Mining-with-Python-Second-Edition
+  problem:
+    context: 'Writing style can contain stable signals that distinguish authors even
+      when message topics vary.
+
+'
+    objective: 'Identify the likely author of an email from stylistic text features.
+
+'
+    analytical_questions:
+    - Which function words differ most across authors?
+    - How accurately can authorship be classified?
+    - Which authors are most frequently confused?
+    - What stylistic signals appear stable?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    logical_steps:
+    - Load and parse author email folders.
+    - Clean message bodies.
+    - Construct stylistic and function-word features.
+    - Create training and test partitions.
+    - Fit the authorship classifier.
+    - Analyze the confusion matrix.
+    expected_outputs:
+    - author corpus
+    - stylistic feature matrix
+    - authorship classifier
+    - confusion matrix
+    - error analysis
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 189
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.

@@ -1,0 +1,104 @@
+---
+id: packt/interpretable-machine-learning-with-python-second-edition/flight-delay-interpretation
+name: Flight Delay Interpretation
+aliases: []
+type: legacy_book_case
+book_source:
+  publisher: Packt
+  title: Interpretable Machine Learning with Python, Second Edition
+  edition:
+  official_url:
+  companion_sources:
+  - title: Flight Delay Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/03/FlightDelays.ipynb
+    relationship: Companion material recorded in the legacy case inventory.
+  - title: Recorded repository
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+    relationship: Repository recorded in the legacy case inventory.
+    path: 03/FlightDelays.ipynb
+  access_date: '2026-09-29'
+legacy_inventory:
+  record_id: 151
+  domain: predictive_analytics
+  source:
+    category: book
+    organization: Packt
+    publisher: Packt
+    book: Interpretable Machine Learning with Python, Second Edition
+    title: Flight Delay Prediction
+    url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/03/FlightDelays.ipynb
+    repository:
+      url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E
+      path: 03/FlightDelays.ipynb
+    description: 'Packt uses flight-delay prediction to examine interpretation challenges
+      and compares predictive modeling with interpretable model structures and diagnostics.
+
+'
+  data:
+    description: 'Flight records with operational and schedule attributes used to
+      predict delayed arrivals.
+
+'
+    source_url: https://pypi.org/project/machine-learning-datasets/
+    availability: library_download
+    files: []
+  original_implementation:
+    technologies:
+    - classification
+    - interpretable models
+    - RuleFit
+    - explainable boosting
+    - generalized additive modeling
+    - model comparison
+    language: Python
+    code_available: true
+    code_url: https://github.com/PacktPublishing/Interpretable-Machine-Learning-with-Python-2E/blob/main/03/FlightDelays.ipynb
+  problem:
+    context: 'Flight-delay models can be accurate but difficult to trust operationally
+      when their learned relationships are opaque or unstable.
+
+'
+    objective: 'Predict flight delays while comparing models that differ in predictive
+      power and intrinsic interpretability.
+
+'
+    analytical_questions:
+    - Which operational variables are associated with delays?
+    - How do interpretable models compare with more flexible alternatives?
+    - Which relationships are nonlinear?
+    - What predictive performance is lost or gained through interpretability constraints?
+  python_rewrite:
+    feasible: true
+    suggested_libraries:
+    - pandas
+    - scikit-learn
+    - interpret
+    - matplotlib
+    logical_steps:
+    - Load and prepare flight records.
+    - Create reproducible training and test sets.
+    - Fit a baseline predictive model.
+    - Fit interpretable alternative models.
+    - Compare predictive metrics.
+    - Inspect learned effects and rules.
+    - Summarize interpretability-performance trade-offs.
+    expected_outputs:
+    - flight delay classifier
+    - model comparison table
+    - interpretable rule or effect plots
+    - error diagnostics
+    - interpretation-performance summary
+  reproducibility:
+    self_contained_python_rewrite_possible: true
+    external_web_required_after_data_download: false
+    authentication_required: false
+  verification:
+    source: verified
+    data: verified
+    code: verified
+migration:
+  source_file: catalog/case-inventory.yaml
+  source_record_id: 151
+  status: imported_from_legacy_pending_source_audit
+  notes: Imported without re-verifying current book linkage, dataset provenance, access,
+    or terms. Do not treat as selection-ready until audited.
