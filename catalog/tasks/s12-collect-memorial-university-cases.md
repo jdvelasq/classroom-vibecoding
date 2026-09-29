@@ -98,7 +98,7 @@ names as aliases when a record consolidates them.
 
 This is an **institutional source**, not a commercial publisher. Treat Memorial
 University of Newfoundland and each identifiable course or book as distinct
-subsources. Inspect `catalog/memorial-university-newfoundland/` first, then use
+subsources. Inspect `catalog/s12-memorial-university-newfoundland/` first, then use
 official institutional pages and documented course repositories to find absent
 or revised materials.
 
@@ -106,7 +106,7 @@ or revised materials.
 
 Create only verified, nonduplicate records at:
 
-`catalog/memorial-university-newfoundland/<source-slug>/<case-slug>.yaml`
+`catalog/s12-memorial-university-newfoundland/<source-slug>/<case-slug>.yaml`
 
 Use an `institutional_source` block rather than asserting a publisher. Verify
 the institutional relationship, original data provenance, access, and terms

@@ -3,7 +3,7 @@
 ## Objective
 
 Use the **HistData** project as a defined discovery source to identify and
-verify additional historical cases for `catalog/historical/`.
+verify additional historical cases for `catalog/s02-histdata/`.
 
 HistData is an external source, not the catalog's output. The output of this
 task is one updated or new case record per qualifying case; it is never a
@@ -89,7 +89,7 @@ is not enough when it lacks a bounded case or clear provenance.
 
 For each qualifying case, create or update exactly one file:
 
-`catalog/historical/<case-slug>.yaml`
+`catalog/s02-histdata/<case-slug>.yaml`
 
 Use the case-record structure defined by
 `catalog/tasks/s01-collect-historical-cases.md`. In addition:
@@ -110,7 +110,7 @@ the Milestones Project. They are discovery sources, not cases.
 ## Execution method
 
 1. Read the current HistData dataset index and package terms.
-2. Compare its named cases with `catalog/historical/` to identify additions,
+2. Compare its named cases with `catalog/s02-histdata/` to identify additions,
    updates, aliases, and possible duplicates.
 3. For each candidate, verify historical context, dataset provenance, access,
    terms, contents, and limitations from HistData documentation and stronger

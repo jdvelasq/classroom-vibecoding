@@ -97,7 +97,7 @@ names as aliases when a record consolidates them.
 ## Source scope
 
 Treat **Apress** as the publisher source and each identifiable Apress book as a
-distinct subsource. Inspect `catalog/apress/` first, then use first-party Apress
+distinct subsource. Inspect `catalog/s09-apress/` first, then use first-party Apress
 book pages and documented book-specific repositories or author materials to
 find absent books and recent editions.
 
@@ -105,7 +105,7 @@ find absent books and recent editions.
 
 Create only verified, nonduplicate records at:
 
-`catalog/apress/<book-slug>/<case-slug>.yaml`
+`catalog/s09-apress/<book-slug>/<case-slug>.yaml`
 
 Use `book_source.publisher: Apress`. Separate a repository's code license from
 the provenance and terms of every dataset it contains or references.
@@ -129,11 +129,11 @@ pages; retain published Analytics-relevant books with a bounded analytical case
 or book-specific data lead, excluding prepublication and generic tool-only
 titles. Do not ask the user to choose scope, URL, or book.
 
-Sort eligible books without `catalog/apress/<book-slug>/` by official publication
+Sort eligible books without `catalog/s09-apress/<book-slug>/` by official publication
 date descending, then title, and process **exactly one**. Its directory marks
 that book reviewed, including when legacy YAMLs are present. Inspect all
 documented companion material. Create one `type: book_dataset` YAML per passing
-dataset at `catalog/apress/<book-slug>/<dataset-slug>.yaml`, or create only
+dataset at `catalog/s09-apress/<book-slug>/<dataset-slug>.yaml`, or create only
 `.gitkeep` in that directory when none passes. Never create `book.yaml`, a
 review ledger, publisher inventory, case-only YAML, or placeholder.
 

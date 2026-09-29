@@ -97,7 +97,7 @@ names as aliases when a record consolidates them.
 ## Source scope
 
 Treat **Springer** as the publisher source and each identifiable Springer book
-as a distinct subsource. Inspect `catalog/springer/` first, then use first-party
+as a distinct subsource. Inspect `catalog/s07-springer/` first, then use first-party
 Springer book pages and documented book-specific repositories or author
 materials to find absent books and recent editions.
 
@@ -105,7 +105,7 @@ materials to find absent books and recent editions.
 
 Create only verified, nonduplicate records at:
 
-`catalog/springer/<book-slug>/<case-slug>.yaml`
+`catalog/s07-springer/<book-slug>/<case-slug>.yaml`
 
 Use `book_source.publisher: Springer`. A fictional or synthetic business case
 may be documented only when its synthetic nature and pedagogical limitation are
@@ -130,11 +130,11 @@ book pages; retain published Analytics-relevant books with a bounded analytical
 case or book-specific data lead, excluding prepublication and generic tool-only
 titles. Do not ask the user to choose scope, URL, or book.
 
-Sort eligible books without `catalog/springer/<book-slug>/` by official
+Sort eligible books without `catalog/s07-springer/<book-slug>/` by official
 publication date descending, then title, and process **exactly one**. Its
 directory marks that book reviewed, including when legacy YAMLs are present.
 Inspect all documented companion material. Create one `type: book_dataset` YAML
-per passing dataset at `catalog/springer/<book-slug>/<dataset-slug>.yaml`, or
+per passing dataset at `catalog/s07-springer/<book-slug>/<dataset-slug>.yaml`, or
 create only `.gitkeep` in that directory when none passes. Never create
 `book.yaml`, a review ledger, publisher inventory, case-only YAML, or placeholder.
 

@@ -61,11 +61,11 @@ not treat the package itself as proof that third-party data may be reused.
 ## Periodic collection behavior
 
 This task is intended to be run repeatedly. The existing contents of
-`catalog/wiley/` are the local record of what has already been considered;
+`catalog/s04-wiley/` are the local record of what has already been considered;
 they are a baseline for comparison, not evidence that the Wiley catalog is
 complete or current.
 
-The directory and prior records are optional. If `catalog/wiley/` does not
+The directory and prior records are optional. If `catalog/s04-wiley/` does not
 exist or contains no case records, this is the first collection: establish the
 baseline from current Wiley sources and create the directory only when a case
 passes the verification gate.
@@ -98,7 +98,7 @@ unchanged and report the sources searched and the date of the review.
 For a verified new case discovered through a Wiley book, create one YAML
 record under:
 
-`catalog/wiley/<book-slug>/<case-slug>.yaml`
+`catalog/s04-wiley/<book-slug>/<case-slug>.yaml`
 
 The publisher and book path records **where the case was discovered**. It does
 not imply that Wiley owns the case, dataset, or historical event.
@@ -177,7 +177,7 @@ Record original dataset provenance separately in `datasets` and `sources`.
 
 1. Identify a current Wiley book and its official page.
 2. Compare it with the books and editions already represented in
-   `catalog/wiley/`, and determine whether it is newly discovered, a new
+   `catalog/s04-wiley/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
 3. Locate documented book-specific companion materials and repositories.
 4. Determine whether each dataset comes from the book-specific companion or
@@ -231,13 +231,13 @@ filter to published Analytics-relevant books with a bounded analytical case or
 book-specific data lead; exclude MEAP/prepublication and generic tool-only
 titles. Do not ask the user for a category, URL, or book choice.
 
-Sort eligible Wiley books without `catalog/wiley/<book-slug>/` by official
+Sort eligible Wiley books without `catalog/s04-wiley/<book-slug>/` by official
 publication date descending, title as tie-breaker, and process **exactly one**.
 Its directory is the persistent marker that the book has been reviewed, even
 when it contains legacy records. Inspect all documented companion materials.
 Create one `type: book_dataset` YAML for each dataset that meets the verification
-gate at `catalog/wiley/<book-slug>/<dataset-slug>.yaml`; otherwise create only
-`catalog/wiley/<book-slug>/.gitkeep`. Do not create `book.yaml`, a review
+gate at `catalog/s04-wiley/<book-slug>/<dataset-slug>.yaml`; otherwise create only
+`catalog/s04-wiley/<book-slug>/.gitkeep`. Do not create `book.yaml`, a review
 ledger, a publisher inventory, a case-only YAML, or a placeholder.
 
 Every dataset YAML must contain `book_source`, `dataset`, `associated_cases`,

@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build `catalog/historical/` by discovering historically established cases from
+Build `catalog/s01-historical/` by discovering historically established cases from
 Internet sources and documenting only those for which a concrete, usable
 dataset can be verified.
 
@@ -118,13 +118,13 @@ project's existing benchmark corpus. It does not determine eligibility.
 
 Create or update one YAML file per verified case:
 
-`catalog/historical/<case-slug>.yaml`
+`catalog/s01-historical/<case-slug>.yaml`
 
 Examples:
 
-- `catalog/historical/challenger-disaster.yaml`
-- `catalog/historical/florence-nightingale-crimean-war.yaml`
-- `catalog/historical/napoleon-russian-campaign.yaml`
+- `catalog/s01-historical/challenger-disaster.yaml`
+- `catalog/s01-historical/florence-nightingale-crimean-war.yaml`
+- `catalog/s01-historical/napoleon-russian-campaign.yaml`
 
 Use lowercase kebab-case slugs. Do not create a consolidated inventory file.
 

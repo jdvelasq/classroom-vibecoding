@@ -97,7 +97,7 @@ names as aliases when a record consolidates them.
 ## Source scope
 
 Treat **O'Reilly Media** as the publisher source and each identifiable O'Reilly
-book as a distinct subsource. Inspect `catalog/oreilly/` first, then use
+book as a distinct subsource. Inspect `catalog/s05-oreilly/` first, then use
 first-party O'Reilly book pages and documented book-specific repositories or
 author materials to find absent books and recent editions.
 
@@ -105,7 +105,7 @@ author materials to find absent books and recent editions.
 
 Create only verified, nonduplicate records at:
 
-`catalog/oreilly/<book-slug>/<case-slug>.yaml`
+`catalog/s05-oreilly/<book-slug>/<case-slug>.yaml`
 
 Use `book_source.publisher: O'Reilly Media`. Do not assume an author repository
 or a generic library establishes data provenance; document the original data
@@ -130,11 +130,11 @@ book pages; retain published Analytics-relevant books with a bounded analytical
 case or book-specific data lead, excluding MEAP/prepublication and generic
 tool-only titles. Do not ask the user to choose scope, URL, or book.
 
-Sort eligible books without `catalog/oreilly/<book-slug>/` by official
+Sort eligible books without `catalog/s05-oreilly/<book-slug>/` by official
 publication date descending, then title, and process **exactly one**. Its
 directory marks that book reviewed, including when legacy YAMLs are present.
 Inspect all documented companion material. Create one `type: book_dataset` YAML
-per passing dataset at `catalog/oreilly/<book-slug>/<dataset-slug>.yaml`, or
+per passing dataset at `catalog/s05-oreilly/<book-slug>/<dataset-slug>.yaml`, or
 create only `.gitkeep` in that directory when none passes. Never create
 `book.yaml`, a review ledger, publisher inventory, case-only YAML, or placeholder.
 

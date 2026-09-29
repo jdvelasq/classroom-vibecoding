@@ -98,7 +98,7 @@ Each execution processes exactly **one** newly discovered eligible book. Do not
 ask the user to choose it, approve it, provide a URL, or tell you to continue.
 
 After enumerating the publisher scope and applying the relevance filter, sort
-eligible books not yet represented by a `catalog/manning/<book-slug>/`
+eligible books not yet represented by a `catalog/s03-manning/<book-slug>/`
 directory by the publication date shown on Manning's official page, newest
 first; use normalized title as a deterministic tie-breaker. Select the first
 book only.
@@ -123,7 +123,7 @@ the next unrepresented eligible book.
 ## Periodic collection behavior
 
 This task is intended to be run repeatedly. The existing book directories in
-`catalog/manning/` are the persistent local record of reviewed Manning books.
+`catalog/s03-manning/` are the persistent local record of reviewed Manning books.
 
 - A reviewed book with one or more usable datasets contains one YAML per
   dataset.
@@ -142,7 +142,7 @@ contract when `type: book_dataset` and the required `dataset` and
 legacy inputs to be migrated in a separate, evidence-based maintenance pass;
 do not overwrite or reinterpret them during this collection run.
 
-The directory and prior records are optional. If `catalog/manning/` does not
+The directory and prior records are optional. If `catalog/s03-manning/` does not
 exist or contains no dataset records, this is the first collection: establish
 the baseline from current Manning sources and create a book directory after its
 review, using `.gitkeep` when no dataset passes the verification gate.
@@ -183,7 +183,7 @@ that book's documented companion material available on the access date:
    first-party review scope, including every applicable category and pagination
    page.
 2. Compare that set with the book directories already represented under
-   `catalog/manning/` and identify books not yet represented, newer editions,
+   `catalog/s03-manning/` and identify books not yet represented, newer editions,
    and revised companions.
 3. For the selected book, inspect the documented companion material far enough
    to enumerate its datasets and their associated cases with concrete data.
@@ -210,7 +210,7 @@ record that coverage.
 For a verified dataset discovered through a Manning book, create one YAML
 record under:
 
-`catalog/manning/<book-slug>/<dataset-slug>.yaml`
+`catalog/s03-manning/<book-slug>/<dataset-slug>.yaml`
 
 The publisher and book path record **where the dataset was discovered**. It
 does not imply that Manning owns the dataset or its associated real-world case.
@@ -316,7 +316,7 @@ identifies and supports that provenance.
 
 1. Identify a current Manning book and its official page.
 2. Compare it with the books and editions already represented in
-   `catalog/manning/`, and determine whether it is newly discovered, a new
+   `catalog/s03-manning/`, and determine whether it is newly discovered, a new
    edition, or an update to a previously considered source.
 3. Locate documented book-specific companion materials and repositories.
 4. Inspect those materials to identify every distinct concrete dataset and its
