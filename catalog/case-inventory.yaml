@@ -2354,7 +2354,7 @@
     organization: Packt
     publisher: Packt
     book: Modern Time Series Forecasting with Python, Second Edition
-    title: Handling Missing Data: Long Gaps
+    title: "Handling Missing Data: Long Gaps"
     url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E/blob/main/notebooks/Chapter02/03-Handling_Missing_Data_(Long%20Gaps).ipynb
     repository:
       url: https://github.com/PacktPublishing/Modern-Time-Series-Forecasting-with-Python-2E
@@ -4820,7 +4820,7 @@
     category: book
     organization: Daniel Vaughan
     publisher: O'Reilly Media
-    book: Data Science: The Hard Parts
+    book: "Data Science: The Hard Parts"
     title: Growth Decompositions
     url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch3_growth_decompositions.ipynb
     repository:
@@ -9628,7 +9628,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.6 Segmenting Consumers of Bath Soap
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -9699,7 +9699,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.8 Catalog Cross-Selling
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -13406,7 +13406,7 @@
     organization: Packt
     publisher: Packt
     book: Biostatistics with Python
-    title: Advanced Biostatistical Techniques: PCA, Feature Selection, and SEM
+    title: "Advanced Biostatistical Techniques: PCA, Feature Selection, and SEM"
     url: https://github.com/PacktPublishing/Biostatistics-with-Python/blob/main/Chapter_17.ipynb
     repository:
       url: https://github.com/PacktPublishing/Biostatistics-with-Python
@@ -14167,7 +14167,7 @@
     category: book
     organization: Daniel Vaughan
     publisher: O'Reilly Media
-    book: Data Science: The Hard Parts
+    book: "Data Science: The Hard Parts"
     title: Data Leakage
     url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch11_data_leakage.ipynb
     repository:
@@ -19826,7 +19826,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.5 Taxi Cancellations
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -19898,7 +19898,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.9 Forecasting Public Transportation Demand
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -23640,7 +23640,7 @@
     category: book
     organization: Memorial University of Newfoundland
     publisher: Memorial University of Newfoundland
-    book: Business Analytics: Theory and Applications
+    book: "Business Analytics: Theory and Applications"
     title: Business Process Prediction with LSTM
     url: https://github.com/jevermann/busi4720-ml/blob/main/process_prediction.py
     repository:
@@ -23712,7 +23712,7 @@
     category: book
     organization: Memorial University of Newfoundland
     publisher: Memorial University of Newfoundland
-    book: Business Analytics: Theory and Applications
+    book: "Business Analytics: Theory and Applications"
     title: Stock Market Prediction
     url: https://github.com/jevermann/busi4720-ml/blob/main/lstm_example.py
     repository:
@@ -23784,7 +23784,7 @@
     category: book
     organization: OTexts
     publisher: OTexts
-    book: Forecasting: Principles and Practice, Third Edition
+    book: "Forecasting: Principles and Practice, Third Edition"
     title: Forecast Reconciliation
     url: https://otexts.com/fpp3/reconciliation.html
     repository:
@@ -23862,7 +23862,7 @@
     category: book
     organization: OTexts
     publisher: OTexts
-    book: Forecasting: Principles and Practice, Third Edition
+    book: "Forecasting: Principles and Practice, Third Edition"
     title: Forecast Combinations
     url: https://otexts.com/fpp3/combinations.html
     repository:
@@ -23938,7 +23938,7 @@
     category: book
     organization: OTexts
     publisher: OTexts
-    book: Forecasting: Principles and Practice, Third Edition
+    book: "Forecasting: Principles and Practice, Third Edition"
     title: Dynamic Regression with Electricity Demand
     url: https://otexts.com/fpp3/dynamic.html
     repository:
@@ -28147,7 +28147,7 @@
     category: book
     organization: Daniel Vaughan
     publisher: O'Reilly Media
-    book: Data Science: The Hard Parts
+    book: "Data Science: The Hard Parts"
     title: From Prediction to Decisions
     url: https://github.com/dvaughan79/data-science-hard-parts-code/blob/main/ch14_decisions.ipynb
     repository:
@@ -29240,7 +29240,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.1 Charles Book Club
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -29310,7 +29310,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.2 German Credit
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -29382,7 +29382,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.3 Tayko Software Cataloger
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -29454,7 +29454,7 @@
     category: book
     organization: Wiley
     publisher: Wiley
-    book: Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python
+    book: "Data Mining for Business Analytics: Concepts, Techniques, and Applications in Python"
     title: Case 21.7 Direct-Mail Fundraising
     url: https://www.dataminingbook.com/book/python-edition
     repository:
@@ -29682,7 +29682,7 @@
     category: book
     organization: DMwR2
     publisher: CRC Press
-    book: Data Mining with R: Learning with Case Studies, Second Edition
+    book: "Data Mining with R: Learning with Case Studies, Second Edition"
     title: Trading Simulation
     url: https://github.com/ltorgo/DMwR2/blob/master/R/trading.R
     repository:
