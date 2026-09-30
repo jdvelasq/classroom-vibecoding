@@ -39,6 +39,14 @@ Before adding a dependency, verify that it is compatible with the repository's
 supported Python version. Reproduce the environment from the root
 `requirements.txt`.
 
+## Code clarity
+
+Code in this repository must be clear, pedagogical, and self-explanatory
+through its structure and names. Do not add comments or docstrings that merely
+describe what the code does. Comments and docstrings are reserved for a
+decision, constraint, rationale, or non-obvious limitation that cannot be made
+clear in the code itself.
+
 ## Presential workshops (`Pxxx_`)
 
 This convention applies to **every course**. Within each course

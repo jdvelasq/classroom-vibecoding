@@ -1,0 +1,38 @@
+---
+id: datalabs/commerce/superstore-orders
+name: Superstore Orders
+aliases: [superstore-orders.csv]
+type: repository_dataset
+book_source:
+  organization: jdvelasq
+  title: datalabs
+  repository_url: https://github.com/jdvelasq/datalabs
+  path: commerce/superstore-orders.csv
+dataset:
+  status: private_class_candidate
+  description: Retail order-line data with sales, profit, discount, customer, product, geographic, and date fields.
+  access_url: https://github.com/jdvelasq/datalabs/blob/main/commerce/superstore-orders.csv
+  format: CSV separated by semicolons; Latin-1-compatible encoding; comma decimal mark.
+  grain: One product line within an order; Row ID is not globally unique.
+  real_world_status: Unverified provenance in the repository mirror.
+  terms: Original provider and license are undocumented; retain only for private classroom use and do not redistribute the raw file.
+associated_cases:
+  - Define a sales-metric contract before descriptive analysis or BI.
+  - Compare monthly sales, profit, order count, and average order value.
+sources:
+  - title: Local datalabs checkout
+    path: /Volumes/GitHub/datalabs/commerce/superstore-orders.csv
+possible_analytical_questions:
+  - How do monthly sales, profit, order count, and average order value evolve?
+  - Which source assumptions must be fixed before reusing these metrics?
+limitations:
+  - Product Base Margin has 16 missing values.
+  - Row ID has a duplicate value and cannot be used alone as a business key.
+  - Provenance and terms require verification for use beyond the private classroom.
+curricular_signal: [data.C01, data.C02, data.C03, data.C04, data.C05]
+benchmark_connections: [S04.F01, S04.F02, S04.F03, S04.F04, S04.F08, S04.F10]
+verification:
+  repository_file: verified
+  schema_and_grain: verified
+  provenance_and_terms: incomplete
+  access_date: '2026-09-29'

@@ -1,0 +1,39 @@
+{
+  "dataset": "superstore_orders.csv",
+  "source_format": {
+    "delimiter": ";",
+    "encoding": "latin1",
+    "decimal_mark": ",",
+    "date_format": "%d/%m/%y"
+  },
+  "grain": "Una fila por producto dentro de una orden; Row ID no es una clave única global.",
+  "quality_checks": [
+    "Order ID + Product Name es único",
+    "Order Date se interpreta con formato día/mes/año",
+    "Discount está entre 0 y 1",
+    "Product Base Margin tiene 16 valores faltantes y no se usa en estas métricas"
+  ],
+  "tool_boundary": "Las métricas se definen independientemente de la herramienta; Python solo ejecuta la definición.",
+  "metrics": [
+    {
+      "name": "sales",
+      "formula": "sum(Sales)",
+      "grain": "Mes"
+    },
+    {
+      "name": "profit",
+      "formula": "sum(Profit)",
+      "grain": "Mes"
+    },
+    {
+      "name": "order_count",
+      "formula": "count_distinct(Order ID)",
+      "grain": "Mes"
+    },
+    {
+      "name": "average_order_value",
+      "formula": "sales / order_count",
+      "grain": "Mes"
+    }
+  ]
+}

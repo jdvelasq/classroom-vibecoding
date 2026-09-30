@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Cómo evolucionan mensualmente las ventas, la utilidad, el número de órdenes y el valor promedio por orden?",
+    "archivo_respuesta": "monthly_sales_metrics.csv"
+  }
+]
