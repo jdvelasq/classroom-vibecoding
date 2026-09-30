@@ -9,17 +9,23 @@ P004:
   - descriptiva.C05
 P005:
   - descriptiva.C02
-P010:
-  - descriptiva.C05
+  - descriptiva.C03
+P006:
+  - descriptiva.C02
+  - descriptiva.C03
 P007:
   - descriptiva.C02
   - descriptiva.C03
+  - descriptiva.C05
 P008:
   - descriptiva.C02
-  - descriptiva.C03
+  - descriptiva.C05
 P009:
   - descriptiva.C02
-  - descriptiva.C03
+  - descriptiva.C05
+P010:
+  - descriptiva.C05
+P011:
   - descriptiva.C05
 P100:
   - descriptiva.C01

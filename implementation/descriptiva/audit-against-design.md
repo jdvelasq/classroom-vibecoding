@@ -18,7 +18,7 @@ se integren las demás evidencias del curso.
 |---|---|
 | `design/synthesis/s05-diseno-descriptiva.md` | Diseño de contenido y capacidades C01–C05. |
 | `implementation/descriptiva/traceability.yaml` | Declaración de trazabilidad actividad-capacidad. |
-| `implementation/common/P001_*`–`P009_*` | Fundamentación común reutilizada por el curso. |
+| `implementation/common/P001_*`–`P011_*` | Fundamentación común reutilizada por el curso. |
 | `implementation/descriptiva/P100_*`–`P105_*`, `P150_*`–`P154_*` | Talleres propios de Descriptiva. |
 | `AGENTS.md` | Identidad curricular y reglas técnicas de distribución. |
 
@@ -29,10 +29,10 @@ No se encontró `distribution/descriptiva/` al ejecutar la auditoría.
 | Capacidad de diseño | Talleres que la evidencian | Evidencia implementada |
 |---|---|---|
 | `descriptiva.C01` — preguntas y métricas para decidir | P100–P105 | Casos con preguntas de negocio; P103 formula preguntas de inteligencia tecnológica; P105 evalúa preguntas y respuestas persistidas. |
-| `descriptiva.C02` — exploración antes de concluir | P002, P004, P005, P007–P009, P100–P105, P150–P154 | Datos, código/notebooks, resultados en `submission/` cuando aplica y pruebas de actividad. |
-| `descriptiva.C03` — visualización e interpretación | P007, P008, P009, P100–P105, P150–P154 | Talleres de análisis y comunicación visual, incluidos dashboard, OLAP y serving BI. |
+| `descriptiva.C02` — exploración antes de concluir | P002, P004–P009, P100–P105, P150–P154 | Datos, código/notebooks, resultados en `submission/` cuando aplica y pruebas de actividad. |
+| `descriptiva.C03` — visualización e interpretación | P005–P007, P100–P105, P150–P154 | Talleres de análisis y comunicación visual, incluidos dashboard, OLAP y serving BI. |
 | `descriptiva.C04` — límites entre descripción, diagnóstico, asociación y causalidad | P105 | Preguntas de salarios que exigen interpretar brechas sin convertir asociaciones en causalidad. |
-| `descriptiva.C05` — documentación y comunicación responsable | P003, P004, P009, P103–P105, P150–P154 | Productos persistentes, comunicación de hallazgos y artefactos BI. |
+| `descriptiva.C05` — documentación y comunicación responsable | P003, P004, P007–P011, P103–P105, P150–P154 | Productos persistentes, comunicación de hallazgos y artefactos BI. |
 
 La secuencia preserva Analytics: los componentes de bases de datos y BI
 (`P150`–`P154`) aparecen después de los casos descriptivos y operan como
@@ -47,11 +47,13 @@ autónomo.
 | P002 | `descriptiva.C02`. |
 | P003 | `descriptiva.C05`. |
 | P004 | `descriptiva.C02`, `descriptiva.C05`. |
-| P005 | `descriptiva.C02`. |
+| P005 | `descriptiva.C02`, `descriptiva.C03`. |
+| P006 | `descriptiva.C02`, `descriptiva.C03`. |
+| P007 | `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
+| P008 | `descriptiva.C02`, `descriptiva.C05`. |
+| P009 | `descriptiva.C02`, `descriptiva.C05`. |
 | P010 | `descriptiva.C05`. |
-| P007 | `descriptiva.C02`, `descriptiva.C03`. |
-| P008 | `descriptiva.C02`, `descriptiva.C03`. |
-| P009 | `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
+| P011 | `descriptiva.C05`. |
 | P100–P102 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`. |
 | P103 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
 | P104 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |

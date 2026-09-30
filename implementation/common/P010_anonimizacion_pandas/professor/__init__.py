@@ -1,1 +1,1 @@
-"""Material privado del profesor para P006."""
+"""Material privado del profesor para P010."""
