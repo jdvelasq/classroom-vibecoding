@@ -1,7 +1,10 @@
 from pathlib import Path
 
 import pandas as pd
-from s05_countries_frequency_report import make_frequency_report
+try:
+    from .s05_countries_frequency_report import make_frequency_report
+except ImportError:
+    from s05_countries_frequency_report import make_frequency_report
 
 SUBMISSION_DIRECTORY = Path(__file__).resolve().parent.parent / "submission"
 REPORT_FREQUENCY_FILE = SUBMISSION_DIRECTORY / "source_frequency.csv"
