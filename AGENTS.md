@@ -66,6 +66,11 @@ audited.
 All assessment of a `Pxxx_` workshop uses `pytest`. Students must be able to
 run its tests through VS Code's Testing view.
 
+`tests/test_activity.py` evaluates participation in the guided activity, not
+software correctness. Its checks should be proportionate to that purpose,
+normally verifying the expected persistent artifacts in `submission/` rather
+than reimplementing or exhaustively testing the student's solution.
+
 When a course is distributed, its `Pxxx_` directories are copied into a new
 repository under `distribution/`; their depth relative to that repository's
 root can change. Test discovery and execution must therefore be independent
