@@ -6,7 +6,11 @@ SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
 def test_01_submission_contains_required_artifacts():
-    required_artifacts = ["recent_sources.csv", "questions.json"]
+    required_artifacts = [
+        "recent_sources.csv",
+        "scopus_delivery.db",
+        "questions.json",
+    ]
     missing = [
         artifact
         for artifact in required_artifacts
