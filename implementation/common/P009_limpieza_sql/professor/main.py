@@ -77,6 +77,16 @@ def normalize_discount(value):
     return number / 100 if number > 1 else number
 
 
+def normalize_unit_price(value):
+    text = normalize_text(value)
+    if text is None or not text or text == "N/A":
+        return None
+    text = text.replace("$", "")
+    if text.endswith(".00"):
+        text = text[:-3]
+    return float(text.replace(",", "").replace(".", ""))
+
+
 def normalize_weight(value):
     text = normalize_text(value)
     if not text or text == "N/A":
@@ -93,7 +103,7 @@ def normalize_weight(value):
 
 def normalize_units(value):
     text = normalize_text(value)
-    return None if not text or text.lower() == "nan" else float(text)
+    return None if text is None or not text or text.lower() in {"nan", "n/a"} else float(text)
 
 
 def main():
@@ -108,6 +118,7 @@ def main():
         database.create_function("normalize_date", 1, normalize_date)
         database.create_function("normalize_number", 1, normalize_number)
         database.create_function("normalize_discount", 1, normalize_discount)
+        database.create_function("normalize_unit_price", 1, normalize_unit_price)
         database.create_function("normalize_weight", 1, normalize_weight)
         database.create_function("normalize_units", 1, normalize_units)
 
@@ -124,7 +135,7 @@ def main():
                 normalize_discount(discount) AS discount,
                 normalize_weight(weight) AS weight,
                 normalize_units(units) AS units,
-                normalize_number(unit_price) AS unit_price,
+                normalize_unit_price(unit_price) AS unit_price,
                 TRIM(contact_email) AS contact_email
             FROM raw_sales
             """
