@@ -39,26 +39,28 @@ Before adding a dependency, verify that it is compatible with the repository's
 supported Python version. Reproduce the environment from the root
 `requirements.txt`.
 
-## Presential workshops (`PRE_*`)
+## Presential workshops (`Pxxx_`)
 
 This convention applies to **every course**. Within each course
-implementation folder, `PRE_*` directories represent enumerated presential
+implementation folder, `Pxxx_` directories represent enumerated presential
 workshops led by the instructor. They are guided learning experiences: the
 instructor presents and discusses the problem, develops the solution
 progressively in code, and explains the analytical decisions, alternatives,
 and practices to avoid.
 
-`PRE_*` directories do not contain a `README.md`. This convention will be
-refined as the implementation materials are organized and audited.
+`P001`–`P099` are common foundational activities. `P100`–`P199` are reserved
+for activities specific to the Descriptive Analytics course. `Pxxx_`
+directories do not contain a `README.md`. This convention will be refined as
+the implementation materials are organized and audited.
 
-All assessment of a `PRE_*` workshop uses `pytest`. Students must be able to
+All assessment of a `Pxxx_` workshop uses `pytest`. Students must be able to
 run its tests through VS Code's Testing view.
 
-When a course is distributed, its `PRE_*` directories are copied into a new
+When a course is distributed, its `Pxxx_` directories are copied into a new
 repository under `distribution/`; their depth relative to that repository's
 root can change. Test discovery and execution must therefore be independent
 of the workshop's relative depth. `pytest` must never fail during test
 discovery because of the distribution layout.
 
-`PRE_*` assessment is verified through GitHub Actions in the distributed
+`Pxxx_` assessment is verified through GitHub Actions in the distributed
 course repository.
