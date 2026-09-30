@@ -64,6 +64,22 @@ materially clarify a relationship, structure, or process for the reader. Use
 them selectively as explanatory comments, not as decoration or a substitute
 for clear code.
 
+## Case and dataset provenance
+
+Prefer a real, traceable dataset already recorded in `catalog/` or available
+in `datalabs/` when designing or revising a workshop. Reuse a suitable case
+across a pedagogical sequence when it strengthens continuity. Do not introduce
+fictitious or newly generated source data merely for convenience when a
+suitable real case is available.
+
+Derived teaching artifacts, such as a deliberately scoped extract or a
+normalized representation of a real source, are permitted when their origin,
+transformation, and limitations are documented. Preserve known provenance,
+access, redistribution, and classroom-use restrictions with the activity.
+Synthetic data is an exception: use it only when the learning objective
+requires a controlled simulation that a real source cannot support, and state
+that limitation explicitly.
+
 ## Presential workshops (`Pxxx_`)
 
 This convention applies to **every course**. Within each course
