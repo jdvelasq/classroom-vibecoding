@@ -36,6 +36,11 @@ P506:
   - data.C02
   - data.C03
   - data.C05
+P507:
+  - data.C01
+  - data.C02
+  - data.C03
+  - data.C05
 P508:
   - data.C01
   - data.C02
