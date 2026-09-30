@@ -6,3 +6,6 @@ P002:
 P008:
   - data.C02
   - data.C05
+P500:
+  - data.C02
+  - data.C05
