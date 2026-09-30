@@ -32,13 +32,24 @@ No cubre arquitectura empresarial, operaciones distribuidas, pipelines productiv
 
 | Hallazgo S04 | Capacidades del curso |
 |---|---|
+| `S04.F01` | `data.C01`, `data.C02`, `data.C03`, `data.C04` |
+| `S04.F02` | `data.C01`, `data.C03`, `data.C04` |
+| `S04.F03` | `data.C05` |
+| `S04.F04` | `data.C01`, `data.C02`, `data.C03`, `data.C04` |
+| `S04.F05` | `data.C01`, `data.C02`, `data.C03` (habilitación de la evidencia; no enseñanza de análisis descriptivo) |
+| `S04.F06` | `data.C01`, `data.C03` (requisitos y límites de datos para seleccionar métodos; no enseñanza de métodos) |
+| `S04.F07` | `data.C04` (documentación de datos y límites; no comunicación integral de hallazgos) |
+| `S04.F08` | `data.C03`, `data.C04` |
+| `S04.F09` | `data.C01`, `data.C02`, `data.C03`, `data.C04` |
+| `S04.F10` | `data.C02`, `data.C05` |
+| `S04.F11` | Gobernanza del diseño y de esta trazabilidad; no corresponde a una capacidad terminal del estudiante. |
 
 
 ## Registro de construcción
 
 - Tarea: `S05`; curso: `data`; fecha: 2026-09-29.
 - Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`).
-- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: `S04.F01`–`S04.F10` a capacidades y `S04.F11` a la gobernanza del diseño.
 - Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
 - Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 
