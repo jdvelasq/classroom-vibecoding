@@ -55,6 +55,11 @@ Blank lines within a notebook cell may separate conceptually distinct elements
 or key stages of a process when that improves readability; they must not be
 added mechanically to otherwise cohesive code.
 
+Notebook cells and Python files may include concise text diagrams when they
+materially clarify a relationship, structure, or process for the reader. Use
+them selectively as explanatory comments, not as decoration or a substitute
+for clear code.
+
 ## Presential workshops (`Pxxx_`)
 
 This convention applies to **every course**. Within each course
