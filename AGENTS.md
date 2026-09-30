@@ -47,6 +47,11 @@ describe what the code does. Comments and docstrings are reserved for a
 decision, constraint, rationale, or non-obvious limitation that cannot be made
 clear in the code itself.
 
+In notebooks, a code cell may begin with a comment when it materially improves
+the pedagogical sequence by explaining the reason for that step. Such a comment
+must be the first line of the cell and must be followed by a blank line. It is
+not required in every cell and must not restate what the code makes clear.
+
 ## Presential workshops (`Pxxx_`)
 
 This convention applies to **every course**. Within each course

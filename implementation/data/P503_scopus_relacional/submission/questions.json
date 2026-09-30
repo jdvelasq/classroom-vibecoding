@@ -1,0 +1,14 @@
+[
+  {
+    "pregunta": "¿Cómo se estructura la producción científica sobre proptech por año, autores y fuentes?",
+    "archivo_respuesta": "documents_by_year.csv"
+  },
+  {
+    "pregunta": "¿Qué autores tienen más documentos en el resultado?",
+    "archivo_respuesta": "authors_by_documents.csv"
+  },
+  {
+    "pregunta": "¿Qué revistas y conferencias concentran más documentos?",
+    "archivo_respuesta": "sources_by_documents.csv"
+  }
+]
