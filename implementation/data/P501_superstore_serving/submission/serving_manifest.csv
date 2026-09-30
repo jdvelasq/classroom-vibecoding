@@ -1,0 +1,4 @@
+artifact,grain,interface,consumer,purpose
+sales_detail.csv,Una fila por producto dentro de una orden,CSV,Analista,Detalle para exploración y trazabilidad
+monthly_sales,Una fila por mes,SQLite,Dashboard,Indicadores mensuales de ventas
+category_sales,Una fila por categoría,SQLite,Dashboard,Comparación de categorías

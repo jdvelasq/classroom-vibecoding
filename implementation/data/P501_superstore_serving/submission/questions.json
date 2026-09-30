@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Qué interfaces permiten responder la evolución mensual de ventas y la contribución de cada categoría?",
+    "archivo_respuesta": "sales_serving.db"
+  }
+]
