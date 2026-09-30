@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Cuál es el linaje desde Superstore hasta las interfaces que responden ventas mensuales y ventas por categoría?",
+    "archivo_respuesta": "lineage.csv"
+  }
+]

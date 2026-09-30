@@ -1,0 +1,5 @@
+dataset,description,grain,location,consumer
+superstore_orders,Fuente original de líneas de pedido,Una fila por producto dentro de una orden,data,Privado
+sales_detail,Detalle publicado para exploración,Una fila por producto dentro de una orden,submission,Analista
+monthly_sales,Métricas mensuales de ventas,Una fila por mes,sales_serving.db,Dashboard
+category_sales,Ventas y utilidad por categoría,Una fila por categoría,sales_serving.db,Dashboard

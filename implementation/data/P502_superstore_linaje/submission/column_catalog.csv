@@ -1,0 +1,7 @@
+dataset,column,description,role
+superstore_orders,Order ID,Identificador de orden,Clave de negocio
+superstore_orders,Order Date,Fecha de la orden,Dimensión temporal
+superstore_orders,Sales,Valor de ventas,Métrica fuente
+superstore_orders,Profit,Utilidad,Métrica fuente
+monthly_sales,average_order_value,Ventas divididas por órdenes,Métrica derivada
+category_sales,Product Category,Categoría de producto,Dimensión de análisis

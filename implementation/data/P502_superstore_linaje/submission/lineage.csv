@@ -1,0 +1,4 @@
+source_dataset,target_dataset,transformation
+superstore_orders,sales_detail,Selección de campos para exploración
+superstore_orders,monthly_sales,"Agregación mensual de ventas, utilidad y órdenes"
+superstore_orders,category_sales,Agregación de ventas y utilidad por categoría
