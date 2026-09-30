@@ -92,3 +92,8 @@ discovery because of the distribution layout.
 
 `Pxxx_` assessment is verified through GitHub Actions in the distributed
 course repository.
+
+Whenever a particular `Pxxx_` activity is inspected, designed, modified, or
+approved, review its course-level `traceability.yaml` entry as part of that
+activity's audit. Confirm that the mapped capabilities reflect the evidence in
+the activity; do not defer this review to a later course-level audit.
