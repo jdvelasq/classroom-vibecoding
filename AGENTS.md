@@ -51,6 +51,9 @@ In notebooks, a code cell may begin with a comment when it materially improves
 the pedagogical sequence by explaining the reason for that step. Such a comment
 must be the first line of the cell and must be followed by a blank line. It is
 not required in every cell and must not restate what the code makes clear.
+Blank lines within a notebook cell may separate conceptually distinct elements
+or key stages of a process when that improves readability; they must not be
+added mechanically to otherwise cohesive code.
 
 ## Presential workshops (`Pxxx_`)
 
