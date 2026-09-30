@@ -1,0 +1,3 @@
+source_name,row_count,status,raw_path
+superstore_orders_2015_q1.csv,1012,SUCCESS,temp/raw/superstore_orders_2015_q1.parquet
+superstore_orders_2015_q2.csv,940,SUCCESS,temp/raw/superstore_orders_2015_q2.parquet
