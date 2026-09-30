@@ -49,9 +49,11 @@ progressively in code, and explains the analytical decisions, alternatives,
 and practices to avoid.
 
 `P001`–`P099` are common foundational activities. `P100`–`P199` are reserved
-for activities specific to the Descriptive Analytics course. `Pxxx_`
-directories do not contain a `README.md`. This convention will be refined as
-the implementation materials are organized and audited.
+for activities specific to the Descriptive Analytics course. `P500`–`P599`
+are reserved for activities specific to the Fundamentos de data para
+analítica course. `Pxxx_` directories do not contain a `README.md`. This
+convention will be refined as the implementation materials are organized and
+audited.
 
 All assessment of a `Pxxx_` workshop uses `pytest`. Students must be able to
 run its tests through VS Code's Testing view.
