@@ -1,0 +1,7 @@
+{
+  "source_dataset": "datalabs/commerce/superstore-orders.csv",
+  "source_url": "https://github.com/jdvelasq/datalabs/blob/main/commerce/superstore-orders.csv",
+  "source_grain": "Una fila por producto dentro de una orden.",
+  "derived_tables": "Filas existentes separadas en órdenes, contextos de cliente, contextos de producto y líneas de orden; no se inventan ni modifican valores.",
+  "key_decision": "Order ID no es una clave única suficiente en el extracto. Las claves contextuales son sustitutas deterministas para combinaciones distintas de atributos fuente."
+}
