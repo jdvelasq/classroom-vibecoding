@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Qué calidad tiene la tabla de ventas después de normalizar sus campos en SQL?",
+    "archivo_respuesta": "quality_report.csv"
+  }
+]

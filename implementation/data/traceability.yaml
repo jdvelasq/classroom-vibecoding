@@ -46,6 +46,11 @@ P508:
   - data.C02
   - data.C04
   - data.C05
+P509:
+  - data.C02
+  - data.C03
+  - data.C04
+  - data.C05
 P510:
   - data.C01
   - data.C02
