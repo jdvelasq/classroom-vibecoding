@@ -48,7 +48,7 @@ autónomo.
 | P003 | `descriptiva.C05`. |
 | P004 | `descriptiva.C02`, `descriptiva.C05`. |
 | P005 | `descriptiva.C02`. |
-| P006 | `descriptiva.C05`. |
+| P010 | `descriptiva.C05`. |
 | P007 | `descriptiva.C02`, `descriptiva.C03`. |
 | P008 | `descriptiva.C02`, `descriptiva.C03`. |
 | P009 | `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
