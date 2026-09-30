@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué documentos de proptech se publicaron desde 2020?",
+    "archivo_respuesta": "documents_recent.csv"
+  },
+  {
+    "pregunta": "¿Qué tipos de documento componen el resultado de la búsqueda?",
+    "archivo_respuesta": "documents_by_type.csv"
+  }
+]
