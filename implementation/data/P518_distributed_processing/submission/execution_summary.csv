@@ -1,0 +1,6 @@
+metric,value
+input_rows,17075
+teaching_input_partitions,4
+shuffle_partitions,4
+output_event_types,5
+validation_status,PASS
