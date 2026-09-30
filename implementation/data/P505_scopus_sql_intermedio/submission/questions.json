@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué autores concentran más documentos sobre proptech?",
+    "archivo_respuesta": "authors_by_documents.csv"
+  },
+  {
+    "pregunta": "¿Qué fuentes concentran más documentos sobre proptech?",
+    "archivo_respuesta": "sources_by_documents.csv"
+  }
+]
