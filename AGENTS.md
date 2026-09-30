@@ -66,11 +66,12 @@ for clear code.
 
 ## Case and dataset provenance
 
-Prefer a real, traceable dataset already recorded in `catalog/` or available
-in `datalabs/` when designing or revising a workshop. Reuse a suitable case
+Prefer an existing, traceable dataset already recorded in `catalog/` or
+available in `datalabs/` when designing or revising a workshop. `datalabs/` is
+a primary course source under the instructor's control. Reuse a suitable case
 across a pedagogical sequence when it strengthens continuity. Do not introduce
 fictitious or newly generated source data merely for convenience when a
-suitable real case is available.
+suitable existing case is available.
 
 Derived teaching artifacts, such as a deliberately scoped extract or a
 normalized representation of a real source, are permitted when their origin,
