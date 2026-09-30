@@ -22,12 +22,15 @@ P009:
   - descriptiva.C03
   - descriptiva.C05
 P100:
+  - descriptiva.C01
   - descriptiva.C02
   - descriptiva.C03
 P101:
+  - descriptiva.C01
   - descriptiva.C02
   - descriptiva.C03
 P102:
+  - descriptiva.C01
   - descriptiva.C02
   - descriptiva.C03
 P103:
@@ -36,10 +39,12 @@ P103:
   - descriptiva.C03
   - descriptiva.C05
 P104:
+  - descriptiva.C01
   - descriptiva.C02
   - descriptiva.C03
   - descriptiva.C05
 P105:
+  - descriptiva.C01
   - descriptiva.C02
   - descriptiva.C03
   - descriptiva.C04

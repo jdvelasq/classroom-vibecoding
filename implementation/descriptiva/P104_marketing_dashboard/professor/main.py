@@ -1,5 +1,6 @@
 """Funciones analíticas para el tablero de desempeño de campañas."""
 
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -146,6 +147,17 @@ def export_dashboard_tables(output_folder=SUBMISSION_FOLDER):
     summarize_by_source(data).to_csv(output_folder / "source_summary.csv", index=False)
     summarize_by_campaign(data).to_csv(
         output_folder / "campaign_summary.csv", index=False
+    )
+    (output_folder / "questions.json").write_text(
+        json.dumps(
+            [
+                {"pregunta": "¿Qué fuentes de tráfico aportan mayor utilidad bruta?", "archivo_respuesta": "source_summary.csv"},
+                {"pregunta": "¿Cómo evoluciona la utilidad bruta de las campañas?", "archivo_respuesta": "daily_summary.csv"},
+            ],
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
     )
 
 

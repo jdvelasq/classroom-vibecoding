@@ -12,6 +12,7 @@ EXPECTED = {
     "campaign_summary.csv",
     "daily_summary.csv",
     "kpis.csv",
+    "questions.json",
     "source_summary.csv",
 }
 

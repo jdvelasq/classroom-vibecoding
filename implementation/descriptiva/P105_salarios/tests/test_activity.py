@@ -1,5 +1,6 @@
 """Evalúa los productos agregados del diagnóstico salarial."""
 
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -10,6 +11,7 @@ DATA = Path("data/salarios.csv")
 OUT = Path("submission")
 EXPECTED = {
     "analysis_conclusions.csv",
+    "questions.json",
     "compensation_recommendations.csv",
     "department_pay_gap.csv",
     "high_salary_by_career.csv",
@@ -38,6 +40,27 @@ def test_01():
 
 
 def test_02():
+    questions = json.loads((OUT / "questions.json").read_text(encoding="utf-8"))
+    assert questions == [
+        {
+            "pregunta": (
+                "¿En qué áreas debemos revisar los salarios porque los "
+                "profesionales podrían ganar menos que pares comparables "
+                "dentro de la empresa?"
+            ),
+            "archivo_respuesta": "department_pay_gap.csv",
+        },
+        {
+            "pregunta": (
+                "¿Un profesional técnico puede alcanzar los salarios más "
+                "altos sin tener que convertirse en directivo?"
+            ),
+            "archivo_respuesta": "high_salary_by_career.csv",
+        },
+    ]
+
+
+def test_03():
     data = salary_data()
     delivered = pd.read_csv(OUT / "department_pay_gap.csv")
     expected = (
@@ -57,7 +80,7 @@ def test_02():
     assert_frame_equal(delivered, expected, check_dtype=False, rtol=1e-10)
 
 
-def test_03():
+def test_04():
     data = salary_data()
     department_gap = (
         data.groupby(["gerencia", "departamento"], as_index=False)
@@ -83,7 +106,7 @@ def test_03():
     assert delivered["alternativa_3"].str.contains("sin divulgar salarios").all()
 
 
-def test_04():
+def test_05():
     data = salary_data()
     threshold = data["salario_mensual_cop"].quantile(0.90)
     data["salario_alto"] = data["salario_mensual_cop"].ge(threshold)
@@ -103,7 +126,7 @@ def test_04():
     assert_frame_equal(delivered, expected, check_dtype=False, rtol=1e-10)
 
 
-def test_05():
+def test_06():
     delivered = pd.read_csv(OUT / "analysis_conclusions.csv")
     assert list(delivered.columns) == ["pregunta", "respuesta", "límite"]
     assert len(delivered) == 2

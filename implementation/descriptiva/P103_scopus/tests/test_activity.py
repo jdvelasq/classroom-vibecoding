@@ -6,7 +6,7 @@ import pandas as pd
 
 
 OUT = Path("submission")
-EXPECTED = {"authors_frequency.csv", "country_clusters.txt", "country_collab_network.html", "country_cooc_heatmap.html", "country_cooc_matrix.csv", "country_frequency.csv", "country_frequency_plot.html", "documents_by_year.html", "keywords_clusters.txt", "keywords_cooc_matrix.csv", "keywords_cooc_network.html", "keywords_frequency.csv", "scopus.csv.gz", "source_frequency.csv", "world_map.html"}
+EXPECTED = {"authors_frequency.csv", "country_clusters.txt", "country_collab_network.html", "country_cooc_heatmap.html", "country_cooc_matrix.csv", "country_frequency.csv", "country_frequency_plot.html", "documents_by_year.html", "keywords_clusters.txt", "keywords_cooc_matrix.csv", "keywords_cooc_network.html", "keywords_frequency.csv", "questions.json", "scopus.csv.gz", "source_frequency.csv", "world_map.html"}
 
 
 def test_01():

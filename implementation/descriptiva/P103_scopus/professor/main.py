@@ -1,3 +1,8 @@
+"""Caso de inteligencia tecnológica basado en producción bibliográfica."""
+
+import json
+from pathlib import Path
+
 try:
     from .s01_ingest import s01_ingest
     from .s02_make_documents_by_year_plot import s02_make_documents_by_year_plot
@@ -42,7 +47,24 @@ except ImportError:
     from s20_keywords_network import s20_keywords_network
 
 
+QUESTIONS_FILE = Path(__file__).resolve().parents[1] / "submission" / "questions.json"
+
+
+def show_analysis_questions():
+    """Hace visibles las preguntas que guían el caso antes de calcular."""
+    questions = [
+        {"pregunta": "¿Qué países concentran la mayor producción bibliográfica en el área?", "archivo_respuesta": "country_frequency.csv"},
+        {"pregunta": "¿Cómo evoluciona la producción bibliográfica en el tiempo y qué períodos se distinguen?", "archivo_respuesta": "documents_by_year.html"},
+        {"pregunta": "¿Qué fuentes, autores y palabras clave caracterizan el campo?", "archivo_respuesta": "keywords_frequency.csv"},
+    ]
+    QUESTIONS_FILE.write_text(json.dumps(questions, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("Preguntas de inteligencia tecnológica:")
+    for item in questions:
+        print(item["pregunta"])
+
+
 def main():
+    show_analysis_questions()
     s01_ingest()
     s02_make_documents_by_year_plot()
     s03_countries_create()
