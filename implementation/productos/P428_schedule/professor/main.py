@@ -12,15 +12,22 @@ import schedule
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
+def build_report(data):
+    """El reporte concentra la capacidad analítica que la agenda ejecuta después."""
+
+    return {
+        "executed_at": datetime.now(timezone.utc).isoformat(),
+        "factory_totals": data.groupby("factory_id")["daily_units_produced"]
+        .sum()
+        .to_dict(),
+    }
+
+
 def generate_report():
     """La tarea es pequeña para que la periodicidad sea el único concepto nuevo."""
 
     data = pd.read_csv(ROOT_DIR / "data" / "daily_operations.csv")
-    totals = data.groupby("factory_id")["daily_units_produced"].sum().to_dict()
-    report = {
-        "executed_at": datetime.now(timezone.utc).isoformat(),
-        "factory_totals": totals,
-    }
+    report = build_report(data)
     (ROOT_DIR / "submission" / "scheduled_report.json").write_text(
         json.dumps(report, indent=2), encoding="utf-8"
     )
