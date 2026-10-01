@@ -7,10 +7,11 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def build_observability_report():
+def build_observability_report(signals=None):
     """Una vista integrada permite priorizar la operación sin revisar indicadores aislados."""
 
-    signals = json.loads((ROOT_DIR / "data" / "signals.json").read_text())
+    if signals is None:
+        signals = json.loads((ROOT_DIR / "data" / "signals.json").read_text())
     checks = {
         "freshness": signals["age_days"] <= signals["maximum_age_days"],
         "volume": signals["rows"] >= signals["minimum_rows"],
