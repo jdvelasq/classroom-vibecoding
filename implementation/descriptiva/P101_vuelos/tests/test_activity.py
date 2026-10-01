@@ -2,11 +2,14 @@
 
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-OUT = Path("submission")
+OUT = ACTIVITY_DIR / "submission"
 METRICS = ["scheduled_flights", "cancelled_flights", "operated_flights", "delayed_departure_15_flights", "positive_departure_delay_minutes"]
 
 
@@ -20,8 +23,8 @@ def rates(frame):
 
 def source():
     return (
-        pd.read_csv("data/flights_by_carrier_day_hour.csv.gz"),
-        pd.read_csv("data/flights_by_carrier_month.csv.gz"),
+        pd.read_csv(ACTIVITY_DIR / "data/flights_by_carrier_day_hour.csv.gz"),
+        pd.read_csv(ACTIVITY_DIR / "data/flights_by_carrier_month.csv.gz"),
     )
 
 

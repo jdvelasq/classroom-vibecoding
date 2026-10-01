@@ -2,12 +2,15 @@
 
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-DATA = Path("data/campaign_data.csv")
-OUT = Path("submission")
+DATA = ACTIVITY_DIR / "data/campaign_data.csv"
+OUT = ACTIVITY_DIR / "submission"
 EXPECTED = {
     "campaign_summary.csv",
     "daily_summary.csv",

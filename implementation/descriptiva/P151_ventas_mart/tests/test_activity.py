@@ -2,14 +2,17 @@
 
 import json
 from pathlib import Path
+
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 import sqlite3
 
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-DATA = Path("data")
-MART = Path("submission/sales_mart.db")
+DATA = ACTIVITY_DIR / "data"
+MART = ACTIVITY_DIR / "submission/sales_mart.db"
 QUESTIONS = [
     {
         "pregunta": "¿Qué combinación de región y categoría aporta más ventas netas en el mart?",
@@ -107,6 +110,6 @@ def test_04():
             """,
             connection,
         )
-    delivered = pd.read_csv("submission/region_category_sales.csv")
+    delivered = pd.read_csv(ACTIVITY_DIR / "submission/region_category_sales.csv")
     assert_frame_equal(delivered, expected, check_dtype=False, rtol=1e-10)
-    assert json.loads(Path("submission/questions.json").read_text(encoding="utf-8")) == QUESTIONS
+    assert json.loads(ACTIVITY_DIR / "submission/questions.json".read_text(encoding="utf-8")) == QUESTIONS

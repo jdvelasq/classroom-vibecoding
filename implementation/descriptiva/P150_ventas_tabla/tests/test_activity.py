@@ -3,12 +3,15 @@
 import json
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-DATA = Path("data")
-OUT = Path("submission/sales_analytics.csv")
+DATA = ACTIVITY_DIR / "data"
+OUT = ACTIVITY_DIR / "submission/sales_analytics.csv"
 QUESTIONS = [
     {
         "pregunta": "¿Cómo cambian las ventas netas mensuales por categoría después de integrar las fuentes?",
@@ -59,7 +62,7 @@ def test_03():
 
 
 def test_04():
-    monthly = pd.read_csv("submission/monthly_category_sales.csv")
+    monthly = pd.read_csv(ACTIVITY_DIR / "submission/monthly_category_sales.csv")
     delivered = pd.read_csv(OUT, parse_dates=["order_date"])
     delivered["month"] = delivered["order_date"].dt.to_period("M").dt.to_timestamp()
     expected = (
@@ -68,4 +71,4 @@ def test_04():
         .sort_values(["month", "category"], ignore_index=True)
     )
     assert_frame_equal(monthly, expected, check_dtype=False, rtol=1e-10)
-    assert json.loads(Path("submission/questions.json").read_text(encoding="utf-8")) == QUESTIONS
+    assert json.loads(ACTIVITY_DIR / "submission/questions.json".read_text(encoding="utf-8")) == QUESTIONS

@@ -2,13 +2,16 @@
 
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import matplotlib.image as mpimg
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-SUMMARY_FILE = Path("submission/summary.csv")
-TOP_DRIVERS_FILE = Path("submission/top10_drivers.png")
+SUMMARY_FILE = ACTIVITY_DIR / "submission/summary.csv"
+TOP_DRIVERS_FILE = ACTIVITY_DIR / "submission/top10_drivers.png"
 
 
 def test_01():
@@ -18,8 +21,8 @@ def test_01():
 
 def test_02():
     summary = pd.read_csv(SUMMARY_FILE)
-    drivers = pd.read_csv("data/drivers.csv")
-    timesheet = pd.read_csv("data/timesheet.csv")
+    drivers = pd.read_csv(ACTIVITY_DIR / "data/drivers.csv")
+    timesheet = pd.read_csv(ACTIVITY_DIR / "data/timesheet.csv")
 
     expected = (
         timesheet.groupby("driverId", as_index=False)[["hours-logged", "miles-logged"]]

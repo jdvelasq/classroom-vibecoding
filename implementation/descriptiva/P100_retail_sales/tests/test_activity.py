@@ -2,15 +2,18 @@
 
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-SUBMISSION_DIR = Path("submission")
+SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
 def prepared_sales():
-    sales = pd.read_csv("data/sales.csv")
+    sales = pd.read_csv(ACTIVITY_DIR / "data/sales.csv")
     sales["OrderDate"] = pd.to_datetime(sales["OrderDate"])
     sales["OrderMonth"] = sales["OrderDate"].dt.to_period("M").dt.to_timestamp()
     sales["DayType"] = sales["OrderDate"].dt.dayofweek.map(

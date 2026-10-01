@@ -2,14 +2,17 @@
 
 import json
 from pathlib import Path
+
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 import sqlite3
 
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-MART = Path("data/sales_mart.db")
-OUT = Path("submission")
+MART = ACTIVITY_DIR / "data/sales_mart.db"
+OUT = ACTIVITY_DIR / "submission"
 QUESTIONS = [
     {"pregunta": "¿Cómo evolucionan las ventas netas mensuales por región?", "archivo_respuesta": "monthly_region_sales.csv"},
     {"pregunta": "¿Qué categorías lideran las ventas y unidades en la región Norte?", "archivo_respuesta": "north_category_sales.csv"},

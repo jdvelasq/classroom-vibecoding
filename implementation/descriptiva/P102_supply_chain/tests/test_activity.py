@@ -2,16 +2,19 @@
 
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-OUT = Path("submission")
+OUT = ACTIVITY_DIR / "submission"
 FILES = {"country_mode_summary.csv", "country_summary.csv", "freight_by_mode.csv", "mode_summary.csv", "monthly_summary.csv", "overall_kpis.csv", "priority_countries.csv", "priority_segments.csv"}
 
 
 def prepared():
-    s = pd.read_csv("data/supply_chain.csv")
+    s = pd.read_csv(ACTIVITY_DIR / "data/supply_chain.csv")
     for col in ["Scheduled Delivery Date", "Delivered to Client Date"]:
         s[col] = pd.to_datetime(s[col], format="%d-%b-%y")
     s["days"] = (s["Delivered to Client Date"] - s["Scheduled Delivery Date"]).dt.days

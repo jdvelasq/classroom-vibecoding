@@ -3,12 +3,15 @@
 import json
 from pathlib import Path
 
+
+ACTIVITY_DIR = Path(__file__).resolve().parents[1]
+
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
 
-DATA = Path("data/salarios.csv")
-OUT = Path("submission")
+DATA = ACTIVITY_DIR / "data/salarios.csv"
+OUT = ACTIVITY_DIR / "submission"
 EXPECTED = {
     "analysis_conclusions.csv",
     "questions.json",
