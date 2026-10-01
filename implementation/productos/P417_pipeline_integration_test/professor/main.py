@@ -1,5 +1,3 @@
-"""Ejecuta un flujo mínimo desde datos de entrada hasta una salida publicada."""
-
 import json
 from pathlib import Path
 
