@@ -7,10 +7,11 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def is_compatible(consumer_version):
+def is_compatible(consumer_version, contract=None):
     """La compatibilidad explícita evita romper integraciones con un cambio de esquema."""
 
-    contract = json.loads((ROOT_DIR / "data" / "contract.json").read_text())
+    if contract is None:
+        contract = json.loads((ROOT_DIR / "data" / "contract.json").read_text())
     return consumer_version in contract["compatible_with"]
 
 
