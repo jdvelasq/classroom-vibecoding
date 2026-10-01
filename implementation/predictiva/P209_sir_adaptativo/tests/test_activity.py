@@ -1,7 +1,6 @@
 from pathlib import Path
 
-
 def test_01():
-    assert Path("submission/adaptive_evolution.png").is_file()
-    assert Path("submission/forecasts.csv").is_file()
-    assert Path("submission/infection_rate_forecast.csv").is_file()
+    submission = Path(__file__).resolve().parents[1] / "submission"
+    for name in ["adaptive_evolution.png", "forecasts.csv", "infection_rate_forecast.csv", "model_assumptions.json", "scenario_peaks.csv"]:
+        assert (submission / name).is_file()
