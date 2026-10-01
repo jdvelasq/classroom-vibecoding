@@ -1,6 +1,6 @@
 P001:
   - data.C04
-P002:
+common/P100:
   - data.C02
   - data.C05
 P500:

@@ -142,12 +142,15 @@ instructor presents and discusses the problem, develops the solution
 progressively in code, and explains the analytical decisions, alternatives,
 and practices to avoid.
 
-`P001`–`P099` are common foundational activities. `P100`–`P199` are reserved
-for activities specific to the Descriptive Analytics course. `P500`–`P599`
-are reserved for activities specific to the Fundamentos de data para
-analítica course. `Pxxx_` directories do not contain a `README.md`. This
-convention will be refined as the implementation materials are organized and
-audited.
+Activity identifiers are scoped to their parent implementation folder: the
+same `Pxxx` may exist in different folders when it identifies distinct
+activities. References to an activity outside its own course folder must use
+a path-qualified identifier such as `common/P100` to remain unambiguous.
+`P001` is the universal common activity. Within course folders, `P100`–`P199`
+are reserved for activities specific to Descriptive Analytics and `P500`–
+`P599` for Fundamentos de data para analítica. `Pxxx_` directories do not
+contain a `README.md`. This convention will be refined as the implementation
+materials are organized and audited.
 
 All assessment of a `Pxxx_` workshop uses `pytest`. Students must be able to
 run its tests through VS Code's Testing view.
