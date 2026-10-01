@@ -1,4 +1,4 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
+"""Verifica los artefactos persistentes de la actividad."""
 
 from pathlib import Path
 
@@ -7,14 +7,6 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
-
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
-    )
+def test_01_submission_contains_mapreduce_results():
+    assert (SUBMISSION_DIR / "origin_flights.csv").is_file()
+    assert (SUBMISSION_DIR / "benchmark.csv").is_file()
