@@ -1,6 +1,6 @@
 def main():
 
-    return NotImplementedError
+    raise NotImplementedError
 
 
 if __name__ == "__main__":
