@@ -1,5 +1,3 @@
-"""Genera un indicador simple dentro de un contenedor."""
-
 import json
 from pathlib import Path
 
