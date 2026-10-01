@@ -7,10 +7,11 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def capture_feedback(useful, comment):
+def capture_feedback(useful, comment, response=None):
     """La señal del consumidor conecta la salida analítica con su adopción real."""
 
-    response = json.loads((ROOT_DIR / "data" / "product_response.json").read_text())
+    if response is None:
+        response = json.loads((ROOT_DIR / "data" / "product_response.json").read_text())
     return {"response": response, "useful": useful, "comment": comment}
 
 
