@@ -67,7 +67,6 @@ adaptive,7
 add,8
 added,5
 adding,3
-addition,29
 additional,11
 additionally,9
 additives,2
@@ -240,12 +239,13 @@ arrangements,2
 array,2
 arrival,4
 art,4
-article,31
+article,36
 articles,9
 articulate,2
 artificial,36
 arts,2
 as,235
+as_a_result,12
 asia,2
 asked,2
 aspect,4
@@ -662,7 +662,7 @@ concise,2
 conclude,4
 concluded,2
 concludes,13
-conclusion,9
+conclusion,7
 conclusions,4
 concrete,4
 condition,6
@@ -1288,7 +1288,7 @@ examine,23
 examined,8
 examines,34
 examining,11
-example,11
+example,6
 examples,7
 excellent,3
 exceptional,3
@@ -1381,7 +1381,7 @@ facilitating,11
 facilities,11
 facility,16
 facing,4
-fact,3
+fact,2
 factor,19
 factors,46
 facts,2
@@ -1461,7 +1461,9 @@ following,10
 follows,5
 food,12
 foods,2
-for,312
+for,311
+for_example,6
+for_instance,5
 force,7
 forced,4
 forces,8
@@ -1629,7 +1631,7 @@ guided,6
 guidelines,3
 guiding,7
 had,16
-hand,10
+hand,4
 handle,3
 handling,5
 happening,2
@@ -1760,6 +1762,10 @@ improvements,7
 improves,5
 improving,20
 in,365
+in_addition,28
+in_conclusion,2
+in_this_paper,24
+in_this_study,10
 inadequate,2
 incentives,3
 inclined,2
@@ -1787,7 +1793,7 @@ indexed,2
 indexes,3
 india,12
 indian,6
-indicate,11
+indicate,15
 indicated,6
 indicates,6
 indicating,3
@@ -1840,7 +1846,6 @@ insight,8
 insights,42
 insignificant,3
 inspection,2
-instance,5
 instead,4
 institute,8
 institutional,9
@@ -2382,7 +2387,8 @@ often,25
 oil,9
 old,3
 older,2
-on,267
+on,266
+on_the_other_hand,7
 once,5
 one,54
 ones,4
@@ -2434,7 +2440,7 @@ organizations,14
 original,4
 originality,5
 origins,2
-other,73
+other,70
 others,12
 our,57
 out,28
@@ -3004,13 +3010,13 @@ restructuring,2
 result,6
 resulted,8
 resulting,10
-results,78
+results,83
 retail,10
 retains,2
 rethinking,2
 return,3
 returns,7
-reveal,15
+reveal,16
 revealed,10
 reveals,10
 revenue,3
@@ -3484,6 +3490,7 @@ than,36
 thanks,2
 that,262
 the,382
+the_results_show,12
 their,126
 them,31
 thematic,10
@@ -3511,7 +3518,7 @@ things,12
 think,4
 thinking,6
 third,4
-this,308
+this,311
 those,29
 though,8
 thought,5
