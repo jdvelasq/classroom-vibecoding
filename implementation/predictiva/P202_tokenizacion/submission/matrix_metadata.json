@@ -1,6 +1,6 @@
 {
   "documents": 385,
-  "terms": 3864,
+  "terms": 3863,
   "minimum_document_frequency": 2,
   "minimum_abstract_words": 20,
   "excluded_abstracts": 20,
