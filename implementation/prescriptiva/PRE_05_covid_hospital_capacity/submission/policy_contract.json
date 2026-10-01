@@ -1,0 +1,20 @@
+{
+  "policy_name": "capacidad_hospitalaria_por_demanda",
+  "decision": "Activar y escalar bloques de camas ante demanda incierta.",
+  "decision_owner": "Comando de incidentes hospitalario",
+  "decision_cadence": "Revisión diaria durante el horizonte de 21 días",
+  "response_need": "Cada bloque requiere 4 días de preparación.",
+  "baseline_action": "Activar un bloque el día 5 para disponer de 20 camas el día 9.",
+  "escalation_trigger": "Probabilidad revisada del escenario alto mayor o igual a 0.30.",
+  "safeguards": [
+    "La política no sustituye el juicio clínico ni automatiza la asignación de pacientes.",
+    "La apertura exige confirmar personal, equipos y condiciones de seguridad.",
+    "La dirección clínica puede suspender, modificar o escalar la acción recomendada."
+  ],
+  "monitoring": [
+    "Demanda y ocupación observadas diariamente.",
+    "Probabilidad revisada de demanda alta.",
+    "Camas-día no cubiertas y camas de expansión ociosas."
+  ],
+  "review_trigger": "Cambio material de demanda, recursos clínicos o plazo de activación."
+}

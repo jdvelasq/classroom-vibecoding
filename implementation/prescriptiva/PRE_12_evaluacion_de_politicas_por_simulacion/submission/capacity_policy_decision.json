@@ -1,0 +1,32 @@
+{
+  "decision": "Capacidad diaria del centro de atención",
+  "cadence": "Diaria, antes de abrir el servicio",
+  "response_need": "La capacidad debe quedar confirmada antes del inicio de la jornada.",
+  "selected_policy": {
+    "policy_id": "P1",
+    "action": "Operar refuerzo_flexible con 105 cupos diarios.",
+    "expected_service_rate": 0.9489,
+    "breach_probability": 0.15,
+    "daily_cost": 820
+  },
+  "constraints_and_safeguards": {
+    "minimum_expected_service_rate": 0.9,
+    "maximum_probability_of_service_breach": 0.2,
+    "maximum_daily_cost": 900
+  },
+  "authority": {
+    "routine_action": "La coordinación de operaciones activa la política seleccionada.",
+    "exception": "La gerencia de operaciones aprueba ampliar capacidad o contratar contingencia."
+  },
+  "triggers": [
+    "Escalar a gerencia si el pronóstico diario supera la capacidad seleccionada.",
+    "Revisar la política si ocurren dos incumplimientos de servicio en diez jornadas.",
+    "Suspender la política si su costo diario supera el límite presupuestal."
+  ],
+  "monitoring": [
+    "Tasa diaria de servicio observada.",
+    "Solicitudes no atendidas.",
+    "Costo diario de capacidad.",
+    "Frecuencia de escalamiento y de incumplimientos."
+  ]
+}

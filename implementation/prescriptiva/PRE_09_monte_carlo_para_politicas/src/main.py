@@ -19,20 +19,51 @@ def simulate_project(parameters: pd.Series, n_simulations: int = 10_000) -> pd.D
 def summarize_risk(simulations: pd.DataFrame) -> pd.DataFrame:
     loss_probability = (simulations.npv < 0).mean()
     mean_npv = simulations.npv.mean()
-    recommendation = "financiar" if mean_npv > 0 and loss_probability <= 0.35 else "no_financiar"
     return pd.DataFrame([{
-        "policy": "financiar_proyecto",
         "mean_npv": mean_npv,
         "p10_npv": simulations.npv.quantile(0.10),
         "loss_probability": loss_probability,
-        "recommendation": recommendation,
-        "review_trigger": "Escalar si la probabilidad de pérdida supera 35%.",
+    }])
+
+
+def define_investment_policy(risk_summary: pd.DataFrame) -> pd.DataFrame:
+    risk = risk_summary.iloc[0]
+
+    if risk.mean_npv <= 0:
+        action = "no_aprobar"
+        authority = "Comité de inversión"
+        rationale = "El valor esperado no compensa la inversión inicial."
+    elif risk.loss_probability > 0.35 or risk.p10_npv < -100_000:
+        action = "escalar_para_revision"
+        authority = "Comité de inversión y dirección financiera"
+        rationale = "El retorno esperado es positivo, pero el riesgo supera la guarda aprobada."
+    else:
+        action = "aprobar_inversion"
+        authority = "Dirección financiera"
+        rationale = "El retorno esperado y las guardas de riesgo permiten financiar el proyecto."
+
+    return pd.DataFrame([{
+        "decision_cadence": "Comité mensual mientras la expansión esté en evaluación",
+        "response_need": "Decisión documentada antes del siguiente ciclo presupuestal",
+        "action": action,
+        "authority": authority,
+        "objective": "Financiar expansiones con valor esperado positivo sin exceder el riesgo tolerado.",
+        "guardrail_loss_probability": 0.35,
+        "guardrail_p10_npv": -100_000,
+        "exception": "Supuestos nuevos o evidencia no representada en la simulación.",
+        "review_metric": "Ingresos realizados frente al escenario base aprobado",
+        "review_trigger": "Recalibrar y escalar si los ingresos acumulados caen 15% o más bajo el escenario base.",
+        "rationale": rationale,
     }])
 
 
 def main() -> None:
     parameters = pd.read_csv(ROOT / "data" / "project_parameters.csv").iloc[0]
-    summarize_risk(simulate_project(parameters)).to_csv(ROOT / "submission" / "project_risk_summary.csv", index=False)
+    risk_summary = summarize_risk(simulate_project(parameters))
+    policy = define_investment_policy(risk_summary)
+
+    risk_summary.to_csv(ROOT / "submission" / "project_risk_summary.csv", index=False)
+    policy.to_csv(ROOT / "submission" / "investment_policy.csv", index=False)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,13 @@
 # Evaluación de políticas por simulación
 
-## Problema
+## Pregunta analítica
 
-Un centro de atención debe elegir entre mantener, reforzar o ampliar su capacidad diaria. La demanda cambia por día; la política se evalúa por personas atendidas, costo y riesgo de dejar solicitudes sin atender. No se estudia teoría de colas: se comparan consecuencias de acciones gerenciales explícitas.
+¿Qué política de capacidad diaria debe operar un centro de atención ante demanda incierta, respetando la meta de servicio, el límite de riesgo y el presupuesto?
+
+La simulación compara consecuencias de políticas candidatas; el producto final es una política operable, no la comparación aislada. La coordinación de operaciones ejecuta la acción rutinaria y la gerencia aprueba ampliaciones o contingencias cuando se activa una excepción.
 
 ## Entregable
 
-`submission/capacity_policy_comparison.csv` compara políticas por costo, servicio esperado y probabilidad de incumplir la meta de atención.
+`submission/capacity_policy_comparison.csv` compara políticas por costo, servicio esperado, solicitudes no atendidas y probabilidad de incumplimiento.
+
+`submission/capacity_policy_decision.json` registra la acción seleccionada, restricciones, salvaguardas, autoridad, gatillos y métricas de monitoreo.

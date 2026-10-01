@@ -1,5 +1,3 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
-
 from pathlib import Path
 
 
@@ -7,14 +5,13 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
+def test_submission_contains_risk_evidence():
+    assert (SUBMISSION_DIR / "project_risk_summary.csv").is_file(), (
+        "Guarda el resumen de riesgo de la simulación en submission/."
+    )
 
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
+
+def test_submission_contains_a_decision_policy():
+    assert (SUBMISSION_DIR / "investment_policy.csv").is_file(), (
+        "Guarda la política de inversión en submission/."
     )
