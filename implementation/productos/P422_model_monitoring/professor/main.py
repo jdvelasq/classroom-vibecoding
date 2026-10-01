@@ -1,5 +1,3 @@
-"""Produce una alerta operativa cuando los datos de producción cambian."""
-
 import json
 from pathlib import Path
 
