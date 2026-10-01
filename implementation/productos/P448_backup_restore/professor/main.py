@@ -11,12 +11,12 @@ BACKUP = ROOT_DIR / "submission" / "registry.backup.json"
 RESTORED = ROOT_DIR / "submission" / "registry.restored.json"
 
 
-def backup_and_restore():
+def backup_and_restore(source=SOURCE, backup=BACKUP, restored=RESTORED):
     """La restauración comprobable hace que el respaldo sea más que una copia olvidada."""
 
-    shutil.copy2(SOURCE, BACKUP)
-    shutil.copy2(BACKUP, RESTORED)
-    return json.loads(RESTORED.read_text())
+    shutil.copy2(source, backup)
+    shutil.copy2(backup, restored)
+    return json.loads(restored.read_text())
 
 
 if __name__ == "__main__":
