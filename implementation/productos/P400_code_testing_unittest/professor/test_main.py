@@ -1,6 +1,15 @@
+import importlib.util
+from pathlib import Path
+
 import unittest
 
-from main import summarize_by_factory
+
+module_path = Path(__file__).resolve().with_name("main.py")
+spec = importlib.util.spec_from_file_location("p400_professor_main", module_path)
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+
+summarize_by_factory = module.summarize_by_factory
 
 
 class TestSummarizeByFactory(unittest.TestCase):

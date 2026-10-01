@@ -1,11 +1,14 @@
-import sys
+import importlib.util
 from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+module_path = Path(__file__).resolve().with_name("main.py")
+spec = importlib.util.spec_from_file_location("p402_professor_main", module_path)
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
 
-from main import validate_data
+validate_data = module.validate_data
 
 
 def test_01_accepts_data_that_satisfies_the_contract():
