@@ -1,31 +1,31 @@
 P001:
   - S04.F08
-common/P100:
+P100:
   - descriptiva.C02
-common/P101:
+P101:
   - descriptiva.C05
-common/P102:
+P102:
   - descriptiva.C02
   - descriptiva.C05
-common/P103:
+P103:
   - descriptiva.C02
   - descriptiva.C03
-common/P104:
+P104:
   - descriptiva.C02
   - descriptiva.C03
-common/P105:
+P105:
   - descriptiva.C02
   - descriptiva.C03
   - descriptiva.C05
-common/P106:
+P106:
   - descriptiva.C02
   - descriptiva.C05
-common/P107:
+P107:
   - descriptiva.C02
   - descriptiva.C05
-common/P108:
+P108:
   - descriptiva.C05
-common/P109:
+P109:
   - descriptiva.C05
 P120:
   - descriptiva.C01

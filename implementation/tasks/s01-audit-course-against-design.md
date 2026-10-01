@@ -18,8 +18,7 @@ The task is parameterized by `<course-id>`. For `descriptiva`, use:
   design;
 - `implementation/descriptiva/traceability.yaml` as the declared link from
   workshops to capabilities;
-- `implementation/common/P001_*` and `implementation/common/P100_*` through
-  `P109_*`, plus
+- `implementation/common/P001_*` and
   `implementation/descriptiva/P100_*` through `P199_*` as the implementation
   inventory; and
 - the future course template under `distribution/descriptiva/`, if it exists.

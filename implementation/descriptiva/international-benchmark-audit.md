@@ -4,7 +4,7 @@
 
 | Alcance calificado | Puntaje |
 |---|---:|
-| Secuencia presencial implementada (P001–P011, P120–P125, P150–P154) | **9.3 / 10** |
+| Secuencia presencial implementada (P001, P100–P109, P120–P125, P150–P154) | **9.3 / 10** |
 | Curso completo, con evidencia disponible al 29 de septiembre de 2026 | **8.8 / 10** |
 
 La diferencia no obedece a una carencia de identidad, casos o profundidad
@@ -22,9 +22,9 @@ otra institución.
 |---|---:|---:|---|
 | Identidad de Analytics, decisión y alcance | 15 | 14.5 | C01 formula preguntas y métricas en P120–P125. La secuencia preserva que SQL, Pandas y BI sean medios para el análisis, coherente con S04.F01–F03. |
 | Exploración, visualización, interpretación y límites | 20 | 18.5 | C02–C04 se ejercitan mediante casos de ventas, vuelos, cadena de suministro, Scopus, marketing y salarios; P125 hace explícito el límite asociación/causalidad. Falta verificar sistemáticamente ese límite en la evaluación de todos los casos. |
-| Preparación, acceso y fluidez técnica durable | 10 | 9.5 | P002–P009 cubren programación, transformación, limpieza, Pandas y SQLite; las actividades no dependen de una plataforma única. |
+| Preparación, acceso y fluidez técnica durable | 10 | 9.5 | P100–P107 cubren programación, transformación, limpieza, Pandas y SQLite; las actividades no dependen de una plataforma única. |
 | Práctica auténtica, casos integrados y portafolio | 15 | 14.0 | La secuencia contiene casos reales y productos persistentes, sin depender de un capstone. Resta verificar la presentación final del portafolio en los repositorios individuales. |
-| Trabajo responsable, reproducible y documentado | 10 | 8.0 | P001, P003, P009–P011 y las pruebas apoyan reproducibilidad, privacidad y productos verificables. Falta evidencia de criterios recurrentes para límites, integridad y comunicación responsable en la evaluación. |
+| Trabajo responsable, reproducible y documentado | 10 | 8.0 | P001, P101, P107–P109 y las pruebas apoyan reproducibilidad, privacidad y productos verificables. Falta evidencia de criterios recurrentes para límites, integridad y comunicación responsable en la evaluación. |
 | Evidencia de evaluación y retroalimentación | 15 | 11.5 | `pytest` y los productos en `submission/` permiten evaluación técnica de P. Los LABs, que aportarán evaluación independiente y evidencia de aprendizaje, aún no pertenecen a esta implementación. |
 | Entrega escalable y flujo del estudiante | 5 | 3.0 | El sitio público sostiene el aula invertida y ya publica sesiones, DataCamp y evaluación. No existe todavía la plantilla `distribution/descriptiva/` para auditar su uso con GitHub Classroom. |
 | Gobernanza, trazabilidad y mejora continua | 10 | 9.0 | `traceability.yaml` permite ir de cada P a C01–C05 y existe una auditoría contra diseño. Resta regenerar S05 con su tabla inversa completa y materializar la trazabilidad hasta distribución. |
@@ -64,7 +64,7 @@ de la secuencia.
 
 ## Registro de construcción
 
-- Tarea: `distribution/tasks/s02-score-course-against-international-benchmarks.md`.
+- Tarea: `implementation/tasks/s02-score-course-against-international-benchmarks.md`.
 - Curso: `descriptiva`.
 - Fecha de ejecución: 2026-09-29.
 - Fuentes locales: `design/synthesis/s04-synthesis.md`,

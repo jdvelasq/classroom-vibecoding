@@ -145,9 +145,9 @@ and practices to avoid.
 Activity identifiers are scoped to their parent implementation folder: the
 same `Pxxx` may exist in different folders when it identifies distinct
 activities. References to an activity outside its own course folder must use
-a path-qualified identifier such as `common/P100` to remain unambiguous.
-`P001` is the universal common activity. Within course folders, `P100`–`P199`
-are reserved for activities specific to Descriptive Analytics and `P500`–
+a path-qualified identifier such as `descriptiva/P100` to remain unambiguous.
+`P001` is the universal common activity. `P100`–`P199` are reserved for
+Descriptive Analytics and `P500`–
 `P599` for Fundamentos de data para analítica. `Pxxx_` directories do not
 contain a `README.md`. This convention will be refined as the implementation
 materials are organized and audited.
