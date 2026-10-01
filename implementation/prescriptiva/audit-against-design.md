@@ -54,7 +54,8 @@ Classroom y evidencia observada de aprendizaje.
 1. Diseñar los LABs como evidencia independiente de las cinco capacidades;
    `pytest` confirma participación y artefactos, no dominio analítico.
 2. Materializar `distribution/prescriptiva/`, excluyendo `professor/`, y
-   verificar una copia generada por GitHub Classroom.
+   verificar la copia que se entregue a estudiantes mediante el mecanismo de
+   distribución que sustituya a GitHub Classroom.
 3. Auditar la experiencia de aula invertida y los resultados de cohortes antes
    de cualquier calificación frente a referentes internacionales.
 4. Mantener P320 y P321 como criterios transversales en cada taller, no solo
