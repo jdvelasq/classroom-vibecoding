@@ -29,6 +29,42 @@ a broader Analytics curriculum.
 When making major curriculum design decisions, explicitly verify that this
 identity has been preserved.
 
+## Course-identity audit questions
+
+Use this ordered sequence when auditing the design or implementation of every
+course. The audit evaluates the **terminal analytical product**, not the names
+of its techniques, models, or source disciplines.
+
+1. What analytical question does the terminal product answer, and for which
+   decision, user, or stakeholder context?
+2. What durable product does a successful student create: an explanation of
+   what occurred, a prediction with uncertainty, a repeatable decision policy,
+   a product capability, or another explicitly justified analytical artifact?
+3. Does that product answer the question appropriate to the course's line?
+   - Descriptive: what is occurring, for whom, where, when, and with what
+     evidence?
+   - Predictive: what future or unobserved result is estimated, over what
+     horizon, and with what uncertainty?
+   - Prescriptive: what recurrent action should be taken under which
+     objectives, constraints, safeguards, exceptions, and review mechanism?
+   - Data products: how is an analytical capability made usable, reliable,
+     maintainable, and observable for its users?
+4. Are Statistics, ML, OR/Optimization, Data Engineering, Databases, BI, AI,
+   or another discipline visibly serving that analytical product, rather than
+   supplying the course's organizing logic?
+5. Could the course still reasonably be described as an abbreviated,
+   introductory, or relabelled course in one contributing discipline? If so,
+   identify the missing analytical product, decision connection, or boundary
+   and treat the audit as unresolved.
+
+For Prescriptive Analytics, a model, Pareto frontier, simulation result, or
+decision tree alone is not a sufficient terminal product. It may support the
+design of a policy, but the audit must establish the connection from observable
+context to feasible action, including applicable constraints, guardrails,
+human authority, and outcome monitoring. Automation is a possible execution
+mode; require a stated decision cadence and response need, not an assumption
+that every valid policy is instantaneous or fully automated.
+
 ## Python environment
 
 The root-level `requirements.txt` is the single canonical definition of the

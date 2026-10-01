@@ -71,6 +71,20 @@ sections consulted, the allocation rule used, and any interpretation or
 unresolved tension. A future executor must be able to rerun the task from the
 same local input and determine why a capability was assigned to a course.
 
+## Course-identity audit rule
+
+For each course document, apply the ordered course-identity audit questions in
+the repository-level `AGENTS.md`. Record the terminal analytical product and
+the specific line question it answers. Do not treat a course title or a list
+of contributing techniques as evidence that its Analytics identity has been
+preserved.
+
+For Prescriptive Analytics, distinguish a policy for a recurrent decision from
+a one-off analytical aid. Optimization, simulation, decision trees,
+multicriteria analysis, and predictive estimates may contribute to policy
+design or validation; they do not independently define the course's terminal
+product.
+
 ## Required output
 
 Create exactly these six files in `design/synthesis/`:
@@ -108,6 +122,10 @@ Each file is a **course-content design document** and must include:
    exact local input path; source revision or content fingerprint when
    available; capability-allocation rules; section-level traceability to the
    synthesis; unresolved decisions; and the result of the quality checks.
+11. a concise **course-identity audit** recording the terminal analytical
+    product, the applicable line question from `AGENTS.md`, the contributing
+    disciplines used functionally, and any unresolved risk of disciplinary
+    relabelling.
 
 ## Bidirectional audit traceability
 
@@ -143,6 +161,8 @@ Before completion, verify that:
 - no contributing discipline becomes a course-organizing identity;
 - each course names a clear macro-level final capability rather than only
   generic labels or roles;
+- the course-identity audit identifies a terminal analytical product and does
+  not infer identity from course titles or technique inventories;
 - detailed techniques, tools, activities, units, and weeks remain deferred;
 - optional undergraduate courses are not assumed by postgraduate courses;
 - the map does not claim that any course already earns a 10/10 audit score;
