@@ -50,6 +50,13 @@ naturaleza de pruebas automatizadas y su contrato de evaluación, se preservó
 la modalidad Python y se retiraron únicamente los notebooks vacíos. No queda
 ninguna actividad P4xx con dos modalidades de resolución para estudiantes.
 
+P408–P411 y P415–P416 no contienen una solución Python bajo `professor/`: son
+talleres guiados de Git y automatización cuya solución ocurre en un repositorio
+temporal y deja evidencia en `submission/`. P433 ejecuta un proyecto dbt y
+conserva sus artefactos de herramienta en la raíz de la actividad. Las siete
+actividades tienen `HOW_TO_RUN_ME.txt`; por tanto, son excepciones justificadas
+al patrón de solución Python, no faltantes de material del profesor.
+
 P426 dejó de tener un manifiesto local de dependencias: su Dockerfile y
 `HOW_TO_RUN_ME.txt` ahora se construyen desde la raíz del repositorio y usan
 el único `requirements.txt` canónico. Esto evita una segunda fuente de verdad
