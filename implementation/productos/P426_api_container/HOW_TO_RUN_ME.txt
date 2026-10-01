@@ -1,10 +1,10 @@
 Este PRE publica localmente una capacidad analítica mínima. Docker ejecuta el servicio en un contenedor y conecta su puerto con el computador del estudiante.
 
-1. Con Docker Desktop abierto, desde la raíz del PRE construya la imagen:
+1. Con Docker Desktop abierto, desde la raíz del repositorio construya la imagen:
 
-   docker build --tag pre22-api .
+   docker build --file implementation/productos/P426_api_container/Dockerfile --tag pre22-api .
 
-   En `--tag pre22-api`, `--tag` asigna el nombre de la imagen. El punto `.` indica que Docker debe usar esta carpeta y su `Dockerfile`.
+   En `--file`, se indica el Dockerfile de la actividad. En `--tag pre22-api`, `--tag` asigna el nombre de la imagen. El punto `.` usa la raíz del repositorio como contexto, por lo que la imagen instala el `requirements.txt` canónico.
 
 2. Inicie el servicio:
 

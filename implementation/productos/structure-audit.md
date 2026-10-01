@@ -33,8 +33,9 @@ contrato Pxxx. No se cambió código, datos, pruebas ni lógica de actividad.
 ## Verificación
 
 La comprobación estructural de las 56 actividades registró cero violaciones.
-La suite existente se ejecutó sobre todas las actividades P4xx y aprobó 56
-pruebas.
+La suite existente aprobó 56 pruebas. P405 requiere primero ejecutar
+`professor/main.py`, pues su prueba comprueba el log persistente y, por diseño,
+no ejecuta el código del profesor.
 
 ## Separación entre solución y plantilla
 
@@ -48,6 +49,11 @@ P402–P404 tenían simultáneamente plantilla Python y notebooks vacíos. Por s
 naturaleza de pruebas automatizadas y su contrato de evaluación, se preservó
 la modalidad Python y se retiraron únicamente los notebooks vacíos. No queda
 ninguna actividad P4xx con dos modalidades de resolución para estudiantes.
+
+P426 dejó de tener un manifiesto local de dependencias: su Dockerfile y
+`HOW_TO_RUN_ME.txt` ahora se construyen desde la raíz del repositorio y usan
+el único `requirements.txt` canónico. Esto evita una segunda fuente de verdad
+sin cambiar la capacidad que se ejecuta en el contenedor.
 
 ## Resultado
 
