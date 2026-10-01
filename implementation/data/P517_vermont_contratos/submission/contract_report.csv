@@ -1,5 +1,6 @@
 batch_name,status,change_type,action
-valid,PASS,NONE,ACCEPT
+valid_zipcode_scope,PASS,NONE,ACCEPT
+statewide_total_present,REVIEW,SCOPE,FILTER_ZIPCODE_0
 missing_income_group,FAIL,BREAKING,REJECT
 wrong_state,FAIL,BREAKING,REJECT
 invalid_income_group,FAIL,BREAKING,REJECT
