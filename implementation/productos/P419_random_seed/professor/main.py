@@ -1,5 +1,3 @@
-"""Demuestra una selección reproducible mediante una semilla declarada."""
-
 import json
 from pathlib import Path
 import random
