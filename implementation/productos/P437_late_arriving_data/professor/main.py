@@ -20,7 +20,9 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "arrival_classification.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(classify_arrival(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(classify_arrival(), indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

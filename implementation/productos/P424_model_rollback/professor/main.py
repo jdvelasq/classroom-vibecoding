@@ -29,7 +29,9 @@ def rollback(target_version):
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     previous_version = registry["production_version"]
-    shutil.copy2(ROOT_DIR / registry["versions"][target_version], OUTPUT_DIR / "model.pkl")
+    shutil.copy2(
+        ROOT_DIR / registry["versions"][target_version], OUTPUT_DIR / "model.pkl"
+    )
     record = {
         "previous_version": previous_version,
         "production_version": target_version,

@@ -18,7 +18,9 @@ def build_factory_totals():
         GROUP BY factory_id
         ORDER BY factory_id
     """
-    return duckdb.execute(query, [str(ROOT_DIR / "data" / "daily_operations.csv")]).fetchall()
+    return duckdb.execute(
+        query, [str(ROOT_DIR / "data" / "daily_operations.csv")]
+    ).fetchall()
 
 
 def main():
@@ -26,7 +28,14 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "factory_totals.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps({"factory_totals": [list(row) for row in build_factory_totals()]}, indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            {"factory_totals": [list(row) for row in build_factory_totals()]},
+            indent=2,
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

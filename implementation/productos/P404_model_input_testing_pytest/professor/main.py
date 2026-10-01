@@ -37,13 +37,18 @@ def main() -> None:
     # El reporte permite revisar la decisión de compatibilidad antes de habilitar el scoring.
 
     training_inputs, new_inputs, features = load_inputs()
-    shifted_inputs = new_inputs.assign(texture_mean=lambda dataframe: dataframe["texture_mean"] + 100)
+    shifted_inputs = new_inputs.assign(
+        texture_mean=lambda dataframe: dataframe["texture_mean"] + 100
+    )
     new_rate, new_compatible = assess_inputs(training_inputs, new_inputs)
     shifted_rate, shifted_compatible = assess_inputs(training_inputs, shifted_inputs)
     report = {
         "features": features,
         "new_inputs": {"anomaly_rate": new_rate, "compatible": new_compatible},
-        "shifted_inputs": {"anomaly_rate": shifted_rate, "compatible": shifted_compatible},
+        "shifted_inputs": {
+            "anomaly_rate": shifted_rate,
+            "compatible": shifted_compatible,
+        },
     }
     report_path = ACTIVITY_DIR / "submission" / "input_distribution_report.json"
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

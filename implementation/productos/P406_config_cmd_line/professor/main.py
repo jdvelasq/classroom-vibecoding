@@ -46,7 +46,11 @@ def main() -> None:
     print(f"Accuracy: {accuracy:.4f}")
     print(f"Balanced accuracy: {balanced_accuracy:.4f}")
 
-    metrics = {"dataset": arguments.dataset, "accuracy": accuracy, "balanced_accuracy": balanced_accuracy}
+    metrics = {
+        "dataset": arguments.dataset,
+        "accuracy": accuracy,
+        "balanced_accuracy": balanced_accuracy,
+    }
     output_path = ACTIVITY_DIR / "submission" / "metrics.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")

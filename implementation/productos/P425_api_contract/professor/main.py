@@ -55,7 +55,9 @@ def main():
     }
     output_path = ROOT_DIR / "submission" / "score_examples.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(examples, indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(examples, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     app.run(port=8000)
 
 

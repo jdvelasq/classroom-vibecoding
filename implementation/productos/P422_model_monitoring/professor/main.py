@@ -32,8 +32,12 @@ def main():
     reference = pd.read_csv(ROOT_DIR / "data" / "reference.csv")
     production = pd.read_csv(ROOT_DIR / "data" / "production.csv")
     features = [column for column in reference.columns if column != "quality"]
-    comparisons = [compare_feature(reference, production, feature) for feature in features]
-    alerts = [comparison["feature"] for comparison in comparisons if comparison["alert"]]
+    comparisons = [
+        compare_feature(reference, production, feature) for feature in features
+    ]
+    alerts = [
+        comparison["feature"] for comparison in comparisons if comparison["alert"]
+    ]
     report = {"threshold": ALERT_THRESHOLD, "alerts": alerts, "features": comparisons}
 
     output_path = ROOT_DIR / "submission" / "monitoring_report.json"

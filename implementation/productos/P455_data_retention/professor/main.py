@@ -22,7 +22,9 @@ def apply_retention_policy(as_of):
         if event_date >= cutoff:
             retained.append(event)
         else:
-            expired.append({"event_id": event["event_id"], "reason": "retention_period_expired"})
+            expired.append(
+                {"event_id": event["event_id"], "reason": "retention_period_expired"}
+            )
 
     return {"cutoff": cutoff.isoformat(), "retained": retained, "expired": expired}
 
@@ -32,7 +34,12 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "retention_result.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(apply_retention_policy(date(2026, 9, 1)), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            apply_retention_policy(date(2026, 9, 1)), indent=2, ensure_ascii=False
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

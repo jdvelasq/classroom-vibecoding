@@ -21,7 +21,11 @@ def validate_data(dataframe: pd.DataFrame) -> list[str]:
         violations.append("machine_id debe contener valores positivos.")
     if not dataframe["daily_units_produced"].ge(0).all():
         violations.append("daily_units_produced no puede ser negativo.")
-    if pd.to_datetime(dataframe["factory_date"], format="%Y-%m-%d", errors="coerce").isna().any():
+    if (
+        pd.to_datetime(dataframe["factory_date"], format="%Y-%m-%d", errors="coerce")
+        .isna()
+        .any()
+    ):
         violations.append("factory_date debe contener fechas válidas.")
     if dataframe.duplicated(BUSINESS_KEY).any():
         violations.append("La llave factory_id-machine_id-factory_date debe ser única.")
@@ -34,10 +38,19 @@ def main() -> None:
     results = []
     for data_path in sorted((ACTIVITY_DIR / "data").glob("*.csv")):
         violations = validate_data(pd.read_csv(data_path))
-        results.append({"dataset": data_path.name, "accepted": not violations, "violations": violations})
+        results.append(
+            {
+                "dataset": data_path.name,
+                "accepted": not violations,
+                "violations": violations,
+            }
+        )
 
     report_path = ACTIVITY_DIR / "submission" / "validation_report.json"
-    report_path.write_text(json.dumps({"datasets": results}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    report_path.write_text(
+        json.dumps({"datasets": results}, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     print(f"Reporte generado: {report_path.name}")
 
 

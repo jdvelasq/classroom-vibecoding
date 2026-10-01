@@ -19,7 +19,18 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "backfill_selection.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps({"start_date": "2026-09-20", "end_date": "2026-09-21", "event_ids": select_backfill("2026-09-20", "2026-09-21")}, indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            {
+                "start_date": "2026-09-20",
+                "end_date": "2026-09-21",
+                "event_ids": select_backfill("2026-09-20", "2026-09-21"),
+            },
+            indent=2,
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

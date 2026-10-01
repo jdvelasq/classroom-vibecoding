@@ -12,7 +12,10 @@ def reconcile():
 
     source = json.loads((ROOT_DIR / "data" / "source.json").read_text())
     target = json.loads((ROOT_DIR / "data" / "target.json").read_text())
-    checks = {"rows": source["rows"] == target["rows"], "total_amount": source["total_amount"] == target["total_amount"]}
+    checks = {
+        "rows": source["rows"] == target["rows"],
+        "total_amount": source["total_amount"] == target["total_amount"],
+    }
     return {"checks": checks, "reconciled": all(checks.values())}
 
 
@@ -21,7 +24,9 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "reconciliation.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(reconcile(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(reconcile(), indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

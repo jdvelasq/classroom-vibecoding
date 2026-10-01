@@ -20,7 +20,11 @@ def create_masked_report():
 
     with (ROOT_DIR / "data" / "customers.csv").open() as source:
         row = next(csv.DictReader(source))
-    return {"customer_id": row["customer_id"], "email": mask_email(row["email"]), "risk": row["risk"]}
+    return {
+        "customer_id": row["customer_id"],
+        "email": mask_email(row["email"]),
+        "risk": row["risk"],
+    }
 
 
 def main():
@@ -28,7 +32,10 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "masked_report.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(create_masked_report(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(create_masked_report(), indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

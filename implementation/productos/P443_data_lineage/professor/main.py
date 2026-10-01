@@ -23,12 +23,17 @@ def main():
     """El linaje explica un resultado sin obligar a reconstruir la transformación."""
 
     raw_data = pd.read_csv(INPUT_PATH)
-    curated_data = raw_data.groupby("factory_id", as_index=False)["daily_units_produced"].sum()
+    curated_data = raw_data.groupby("factory_id", as_index=False)[
+        "daily_units_produced"
+    ].sum()
     curated_path = OUTPUT_DIR / "factory_totals.csv"
     curated_data.to_csv(curated_path, index=False)
 
     lineage = {
-        "input": {"path": "data/raw_operations.csv", "sha256": file_checksum(INPUT_PATH)},
+        "input": {
+            "path": "data/raw_operations.csv",
+            "sha256": file_checksum(INPUT_PATH),
+        },
         "output": {"path": "submission/factory_totals.csv", "rows": len(curated_data)},
         "created_at": datetime.now(timezone.utc).isoformat(),
     }

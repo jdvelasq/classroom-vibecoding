@@ -12,7 +12,11 @@ def evaluate_service_level():
 
     executions = json.loads((ROOT_DIR / "data" / "executions.json").read_text())
     availability = executions["successful"] / executions["total"]
-    return {"availability": availability, "target": executions["target"], "met": availability >= executions["target"]}
+    return {
+        "availability": availability,
+        "target": executions["target"],
+        "met": availability >= executions["target"],
+    }
 
 
 def main():
@@ -20,7 +24,10 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "service_level.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(evaluate_service_level(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(evaluate_service_level(), indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

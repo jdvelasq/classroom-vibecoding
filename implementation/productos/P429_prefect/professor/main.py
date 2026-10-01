@@ -30,7 +30,9 @@ def operations_flow():
 
     totals = summarize_operations(load_operations())
     report_path = ROOT_DIR / "submission" / "prefect_report.json"
-    report_path.write_text(json.dumps({"factory_totals": totals}, indent=2), encoding="utf-8")
+    report_path.write_text(
+        json.dumps({"factory_totals": totals}, indent=2), encoding="utf-8"
+    )
     return totals
 
 

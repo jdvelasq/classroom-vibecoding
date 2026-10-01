@@ -19,7 +19,14 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "feedback.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(capture_feedback(True, "Permitió priorizar la inspección."), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            capture_feedback(True, "Permitió priorizar la inspección."),
+            indent=2,
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

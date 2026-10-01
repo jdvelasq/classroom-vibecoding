@@ -11,8 +11,14 @@ def review_recommendation(decision):
     """La decisión humana conserva responsabilidad sobre la acción operacional."""
 
     recommendation = json.loads((ROOT_DIR / "data" / "recommendation.json").read_text())
-    return {"recommendation": recommendation, "human_decision": decision, "action_authorized": decision == "approve"}
+    return {
+        "recommendation": recommendation,
+        "human_decision": decision,
+        "action_authorized": decision == "approve",
+    }
 
 
 if __name__ == "__main__":
-    (ROOT_DIR / "submission" / "review.json").write_text(json.dumps(review_recommendation("approve")))
+    (ROOT_DIR / "submission" / "review.json").write_text(
+        json.dumps(review_recommendation("approve"))
+    )

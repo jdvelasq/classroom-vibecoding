@@ -22,7 +22,9 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "cost_report.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(monitor_cost(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(monitor_cost(), indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

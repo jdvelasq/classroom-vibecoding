@@ -20,9 +20,8 @@ def build_certified_driver_totals(
     if not TIMESHEET_COLUMNS.issubset(timesheet.columns):
         raise ValueError("La tabla de turnos no contiene las columnas requeridas.")
 
-    totals = (
-        timesheet.groupby("driverId", as_index=False)
-        .agg(total_hours=("hours-logged", "sum"), total_miles=("miles-logged", "sum"))
+    totals = timesheet.groupby("driverId", as_index=False).agg(
+        total_hours=("hours-logged", "sum"), total_miles=("miles-logged", "sum")
     )
     certified_drivers = drivers.loc[drivers["certified"].eq("Y"), ["driverId", "name"]]
 

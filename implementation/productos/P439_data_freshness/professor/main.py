@@ -12,9 +12,18 @@ def main():
     """La frescura explícita evita usar datos viejos sin advertencia."""
 
     status = json.loads((ROOT_DIR / "data" / "source_status.json").read_text())
-    age = (date.fromisoformat(status["checked_at"]) - date.fromisoformat(status["data_as_of"])).days
-    report = {"age_days": age, "maximum_age_days": status["maximum_age_days"], "alert": age > status["maximum_age_days"]}
-    (ROOT_DIR / "submission" / "freshness_report.json").write_text(json.dumps(report), encoding="utf-8")
+    age = (
+        date.fromisoformat(status["checked_at"])
+        - date.fromisoformat(status["data_as_of"])
+    ).days
+    report = {
+        "age_days": age,
+        "maximum_age_days": status["maximum_age_days"],
+        "alert": age > status["maximum_age_days"],
+    }
+    (ROOT_DIR / "submission" / "freshness_report.json").write_text(
+        json.dumps(report), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

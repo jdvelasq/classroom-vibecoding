@@ -18,7 +18,9 @@ def main():
 
     output_path = ROOT_DIR / "submission" / "catalog_entry.json"
     output_path.parent.mkdir(exist_ok=True)
-    output_path.write_text(json.dumps(load_catalog_entry(), indent=2, ensure_ascii=False), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(load_catalog_entry(), indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

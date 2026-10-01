@@ -11,9 +11,9 @@ def summarize_by_factory(operations: list[dict]) -> list[dict]:
     totals = {}
     for operation in operations:
         factory_id = operation["factory_id"]
-        totals[factory_id] = totals.get(factory_id, 0) + operation[
-            "daily_units_produced"
-        ]
+        totals[factory_id] = (
+            totals.get(factory_id, 0) + operation["daily_units_produced"]
+        )
 
     return [
         {"factory_id": factory_id, "total_units": totals[factory_id]}

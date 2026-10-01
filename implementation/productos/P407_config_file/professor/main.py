@@ -21,9 +21,7 @@ def load_dataset_name(config_path: Path) -> str:
     dataset = config.get("dataset")
     if dataset not in ALLOWED_DATASETS:
         allowed_values = ", ".join(ALLOWED_DATASETS)
-        raise ValueError(
-            f"El valor de 'dataset' debe ser uno de: {allowed_values}."
-        )
+        raise ValueError(f"El valor de 'dataset' debe ser uno de: {allowed_values}.")
 
     return dataset
 
@@ -47,7 +45,11 @@ def main() -> None:
     print(f"Accuracy: {accuracy:.4f}")
     print(f"Balanced accuracy: {balanced_accuracy:.4f}")
 
-    metrics = {"dataset": dataset, "accuracy": accuracy, "balanced_accuracy": balanced_accuracy}
+    metrics = {
+        "dataset": dataset,
+        "accuracy": accuracy,
+        "balanced_accuracy": balanced_accuracy,
+    }
     output_path = ACTIVITY_DIR / "submission" / "metrics.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")

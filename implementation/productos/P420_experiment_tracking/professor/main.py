@@ -56,7 +56,9 @@ def save_run(run_id, model_name, model, x_train, x_test, y_train, y_test, accura
     x_train.assign(quality=y_train).to_csv(data_dir / "train.csv", index=False)
     x_test.assign(quality=y_test).to_csv(data_dir / "test.csv", index=False)
     (run_dir / "config.json").write_text(
-        json.dumps({"model": model_name, "random_state": 123, "test_size": 0.25}, indent=2),
+        json.dumps(
+            {"model": model_name, "random_state": 123, "test_size": 0.25}, indent=2
+        ),
         encoding="utf-8",
     )
     (run_dir / "metrics.json").write_text(
@@ -72,7 +74,11 @@ def update_index(run_id, model_name, accuracy):
     """Un índice permite ver y recuperar corridas sin explorar carpeta por carpeta."""
 
     index_path = EXPERIMENTS_DIR / "index.json"
-    index = json.loads(index_path.read_text(encoding="utf-8")) if index_path.exists() else []
+    index = (
+        json.loads(index_path.read_text(encoding="utf-8"))
+        if index_path.exists()
+        else []
+    )
     index.append(
         {
             "run_id": run_id,

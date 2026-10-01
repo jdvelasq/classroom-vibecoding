@@ -17,7 +17,10 @@ def generate_report():
 
     data = pd.read_csv(ROOT_DIR / "data" / "daily_operations.csv")
     totals = data.groupby("factory_id")["daily_units_produced"].sum().to_dict()
-    report = {"executed_at": datetime.now(timezone.utc).isoformat(), "factory_totals": totals}
+    report = {
+        "executed_at": datetime.now(timezone.utc).isoformat(),
+        "factory_totals": totals,
+    }
     (ROOT_DIR / "submission" / "scheduled_report.json").write_text(
         json.dumps(report, indent=2), encoding="utf-8"
     )
