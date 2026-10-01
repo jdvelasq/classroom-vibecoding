@@ -7,13 +7,15 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def process_new_events():
+def process_new_events(events=None, watermark=None):
     """La marca de agua evita reprocesar todo el historial en cada ejecución."""
 
-    events = json.loads((ROOT_DIR / "data" / "events.json").read_text())
-    watermark = json.loads((ROOT_DIR / "data" / "watermark.json").read_text())[
-        "last_processed"
-    ]
+    if events is None:
+        events = json.loads((ROOT_DIR / "data" / "events.json").read_text())
+    if watermark is None:
+        watermark = json.loads((ROOT_DIR / "data" / "watermark.json").read_text())[
+            "last_processed"
+        ]
     new_events = [event for event in events if event["timestamp"] > watermark]
     new_watermark = (
         max(event["timestamp"] for event in new_events) if new_events else watermark
