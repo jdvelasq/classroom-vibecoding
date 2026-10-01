@@ -1,4 +1,0 @@
-decision,rationale,requirement
-quality gate,defective records do not reach curated,data trust
-serving grain,dashboard uses category aggregation,consumer need
-batch processing,daily sales need no real-time latency,latency requirement
