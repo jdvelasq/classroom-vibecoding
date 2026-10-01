@@ -1,0 +1,5 @@
+policy,scenario,probability,repair_workload,reserved_regular_crews,emergency_crews_activated,remaining_unserved_workload,total_cost,action,action_authority,escalation_trigger
+adaptive_robust,mild,0.4,6.0,16,0.0,0.0,80.0,desplegar solo reserva regular,centro de operaciones,sin escalamiento
+adaptive_robust,moderate,0.3,12.0,16,0.0,0.0,80.0,desplegar solo reserva regular,centro de operaciones,sin escalamiento
+adaptive_robust,severe,0.2,18.0,16,2.0,0.0,98.0,desplegar reserva y activar emergencia,jefatura de respuesta,sin escalamiento
+adaptive_robust,extreme,0.1,24.0,16,8.0,0.0,152.0,desplegar reserva y activar emergencia,jefatura de respuesta,sin escalamiento

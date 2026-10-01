@@ -23,14 +23,14 @@ ni inmediata.
 
 ## Convención y preservación
 
-Las actividades finales usarán `P300_`–`P399_`. Los directorios `PRE_01_` a
-`PRE_23_` son el punto de partida preservado en `cc0bf71`; no se eliminan. La
-migración posterior de cada actividad aprobada conservará sus datos, artefactos
-y trazabilidad, y registrará la correspondencia con su identificador P300.
+Las actividades usan `P300_`–`P399_`. El commit `cc0bf71` preserva el punto de
+partida con la nomenclatura `PRE_`; la migración mecánica a P300–P322 conserva
+todo el contenido y su historial. La columna de origen registra la
+correspondencia verificable con ese punto de partida.
 
 ## Secuencia propuesta
 
-| Orden final | Actividad preservada | Rol macro | Producto de política esperado | Prioridad |
+| Orden final | Origen preservado | Rol macro | Producto de política esperado | Prioridad |
 |---|---|---|---|---|
 | P300 | `PRE_01_encuadre_analitico_de_decisiones` | Contrato de política | Política de contacto con valor, capacidad y gatillo de revisión | Núcleo |
 | P301 | `PRE_02_air_france_447` | Frontera crítica | Distinguir un plan excepcional de una política recurrente | Núcleo |

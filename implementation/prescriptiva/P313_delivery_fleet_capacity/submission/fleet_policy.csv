@@ -1,0 +1,2 @@
+decision,cadence,normal_action,contingency_action,guardrail,human_authority,monitoring_trigger
+reservar flota para el siguiente dia,"diaria, antes de las 18:00",reservar 8 vehiculos,reservar 10 vehiculos si el pronostico es >= 145 pedidos,no reservar mas de 10 vehiculos sin autorizacion,operaciones revisa y aprueba contingencias con pronostico >= 185 pedidos,revisar la politica si la tercerizacion mensual supera su linea base o si cambia el costo unitario

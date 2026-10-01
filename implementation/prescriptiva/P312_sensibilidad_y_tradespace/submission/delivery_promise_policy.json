@@ -1,0 +1,31 @@
+{
+  "decision": "Promesa de entrega para clientes elegibles",
+  "cadence": "Mensual, antes de publicar la promesa del mes siguiente",
+  "response_need": "La promesa debe quedar definida antes de abrir las campañas mensuales.",
+  "policy": {
+    "action": "Ofrecer entrega en un día.",
+    "when": "La ganancia de retención estimada supera el umbral y el costo mensual cabe en el presupuesto.",
+    "retention_gain_threshold": 0.0162,
+    "monthly_budget": 42000
+  },
+  "constraints_and_safeguards": {
+    "cost_limit": "La promesa no puede superar el presupuesto mensual aprobado.",
+    "uncertainty_guardrail": "No automatizar el cambio si el intervalo de incertidumbre de la ganancia de retención cruza el umbral.",
+    "dominated_option": "La entrega en dos días no se selecciona en los escenarios analizados; no debe mantenerse por costumbre."
+  },
+  "authority": {
+    "routine_action": "La gerencia comercial activa o mantiene la promesa cuando la evidencia supera el umbral.",
+    "exception": "La dirección comercial aprueba una excepción cuando la incertidumbre cruza el umbral o cambia el presupuesto."
+  },
+  "triggers": [
+    "Revisar la política si la ganancia de retención observada en cuatro semanas es menor o igual al umbral.",
+    "Suspender la promesa de un día si su costo mensual supera el presupuesto.",
+    "Recalibrar la estimación si cambia la composición de clientes o el costo de entrega."
+  ],
+  "monitoring": [
+    "Ganancia de retención observada frente al grupo de comparación.",
+    "Costo mensual de la promesa.",
+    "Valor neto observado.",
+    "Frecuencia de excepciones y decisiones suspendidas."
+  ]
+}

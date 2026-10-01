@@ -1,0 +1,7 @@
+retention_multiplier,selected_policy_id,selected_policy,selected_net_value
+0.2,P0,estandar,0.0
+0.3,P2,entrega_en_un_dia,900.0
+0.5,P2,entrega_en_un_dia,29500.0
+0.75,P2,entrega_en_un_dia,65250.0
+1.0,P2,entrega_en_un_dia,101000.0
+1.25,P2,entrega_en_un_dia,136750.0

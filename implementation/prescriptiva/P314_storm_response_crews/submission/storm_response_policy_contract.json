@@ -1,0 +1,16 @@
+{
+  "policy_name": "respuesta robusta a tormentas",
+  "decision_cadence": "cada alerta de tormenta; la reserva se confirma 72 horas antes",
+  "response_deadline": "activar emergencia dentro de 2 horas de clasificar el escenario",
+  "pre_event_authority": "gerencia de operaciones aprueba la reserva de 16 cuadrillas",
+  "post_event_authority": "jefatura de respuesta despliega y activa emergencia segun escenario",
+  "reserve_regular_crews": 16,
+  "service_guardrail": "carga de reparacion sin cubrir igual a cero en los escenarios evaluados",
+  "exception_trigger": "carga observada superior a reserva mas emergencia disponible",
+  "exception_action": "escalar al comando de incidente para solicitar ayuda mutua y priorizar servicios criticos",
+  "monitoring": {
+    "service_metric": "carga de reparacion sin cubrir",
+    "cost_metric": "costo total por escenario",
+    "review_trigger": "dos tormentas consecutivas con activacion de emergencia o cualquier escalamiento"
+  }
+}
