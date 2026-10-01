@@ -7,10 +7,11 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def evaluate_service_level():
+def evaluate_service_level(executions=None):
     """Una meta explícita permite decidir si la operación cumple lo acordado."""
 
-    executions = json.loads((ROOT_DIR / "data" / "executions.json").read_text())
+    if executions is None:
+        executions = json.loads((ROOT_DIR / "data" / "executions.json").read_text())
     availability = executions["successful"] / executions["total"]
     return {
         "availability": availability,
