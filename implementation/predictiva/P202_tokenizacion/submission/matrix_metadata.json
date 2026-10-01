@@ -1,5 +1,8 @@
 {
-  "documents": 405,
-  "terms": 3952,
-  "minimum_document_frequency": 2
+  "documents": 385,
+  "terms": 3857,
+  "minimum_document_frequency": 2,
+  "minimum_abstract_words": 20,
+  "excluded_abstracts": 20,
+  "copyright_notices_removed": 335
 }
