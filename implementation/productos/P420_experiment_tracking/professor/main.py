@@ -1,5 +1,3 @@
-"""Registra una corrida analítica para poder recuperarla y compararla después."""
-
 import argparse
 import json
 import pickle
