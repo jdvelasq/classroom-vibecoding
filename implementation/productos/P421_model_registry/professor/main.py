@@ -1,5 +1,3 @@
-"""Promueve un modelo candidato sin volver a explicar cómo fue entrenado."""
-
 import argparse
 import json
 import shutil
