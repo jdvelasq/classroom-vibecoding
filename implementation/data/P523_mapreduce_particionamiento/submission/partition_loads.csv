@@ -1,4 +1,4 @@
-partition,event_key_load,account_key_load
+partition,event_key_load,event_type_load
 0,4257,17041
 1,4365,11
 2,4248,7
