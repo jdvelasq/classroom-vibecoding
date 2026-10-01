@@ -1,0 +1,11 @@
+{
+  "question": "How long is a customer expected to remain, and how does estimated survival differ by contract type?",
+  "outcome": "Observed tenure in months; Churn=Yes is an event and Churn=No is right-censored.",
+  "method": "Kaplan\u2013Meier survival curves by contract type.",
+  "interpretation": "The curves estimate observed retention patterns; they do not establish a causal effect of contract type.",
+  "limitations": [
+    "IBM identifies this as sample data for a fictional telecommunications company.",
+    "The data are a cross-sectional snapshot rather than a common inception cohort.",
+    "The activity predicts time-to-event patterns; selecting a retention offer is a prescriptive question outside its scope."
+  ]
+}

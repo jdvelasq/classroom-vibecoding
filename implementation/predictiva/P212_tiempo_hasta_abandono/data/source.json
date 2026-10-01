@@ -1,0 +1,10 @@
+{
+  "title": "IBM Telco Customer Churn sample data",
+  "publisher": "IBM",
+  "source_url": "https://github.com/IBM/telco-customer-churn-on-icp4d/blob/master/data/Telco-Customer-Churn.csv",
+  "download_url": "https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv",
+  "retrieved_on": "2026-10-01",
+  "scope": "IBM sample data for a fictional telecommunications company; it is not an operational extract.",
+  "pedagogical_use": "Private, restricted classroom use. The activity demonstrates time-to-event analysis and does not prescribe retention actions.",
+  "local_file": "telco_customer_churn.csv.gz"
+}
