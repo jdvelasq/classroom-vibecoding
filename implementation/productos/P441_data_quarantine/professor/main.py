@@ -7,10 +7,11 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def quarantine_invalid_records():
+def quarantine_invalid_records(records=None):
     """La cuarentena protege la salida válida y permite investigar el dato rechazado."""
 
-    records = json.loads((ROOT_DIR / "data" / "records.json").read_text())
+    if records is None:
+        records = json.loads((ROOT_DIR / "data" / "records.json").read_text())
     valid = [record for record in records if record["amount"] >= 0]
     quarantined = [
         dict(record, rejection_reason="amount_must_be_non_negative")
