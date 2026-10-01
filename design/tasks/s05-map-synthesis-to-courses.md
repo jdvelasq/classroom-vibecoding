@@ -92,19 +92,15 @@ design and validation in Prescriptive Analytics; defer general product
 engineering, deployment infrastructure, and maintenance architecture to
 Productos de datos.
 
-## Course-identity audit rule
-
-For each course document, apply the ordered course-identity audit questions in
-the repository-level `AGENTS.md`. Record the terminal analytical product and
-the specific line question it answers. Do not treat a course title or a list
-of contributing techniques as evidence that its Analytics identity has been
-preserved.
-
-For Prescriptive Analytics, distinguish a policy for a recurrent decision from
-a one-off analytical aid. Optimization, simulation, decision trees,
-multicriteria analysis, and predictive estimates may contribute to policy
-design or validation; they do not independently define the course's terminal
-product.
+For Productos de datos, make its implementation identity explicit: it is the
+DataOps/MLOps line of the Analytics curriculum. Its terminal product is an
+analytical capability made reproducible, testable, deployable, observable,
+secure, recoverable, and governable for its intended users. It operates a
+descriptive, predictive, or prescriptive capability; it does not repeat the
+analysis, prediction, or policy design that originated that capability. Treat
+DataOps/MLOps practices as functional means to sustain Analytics, not as a
+generic course in software engineering, enterprise Data Engineering, cloud
+platforms, or a vendor toolchain.
 
 ## Required output
 

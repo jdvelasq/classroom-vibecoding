@@ -45,6 +45,17 @@ No cubre arquitectura empresarial, operaciones distribuidas, pipelines productiv
 | `S04.F11` | Gobernanza del diseño y de esta trazabilidad; no corresponde a una capacidad terminal del estudiante. |
 
 
+## Auditoría de identidad del curso
+
+- **Pregunta y producto terminal:** ¿qué datos documentados y aptos para un
+  propósito analítico están disponibles? El producto es un conjunto de datos
+  preparado, evaluado y trazable; no una explicación, predicción, política o
+  pipeline productivo.
+- **Disciplinas contribuyentes:** bases de datos, programación y prácticas de
+  ingeniería aportan acceso, transformación y documentación funcionales.
+- **Frontera:** habilita evidencia para Analytics sin convertirse en Data
+  Engineering, Big Data o MLOps.
+
 ## Registro de construcción
 
 - Tarea: `S05`; curso: `data`; fecha: 2026-09-29.

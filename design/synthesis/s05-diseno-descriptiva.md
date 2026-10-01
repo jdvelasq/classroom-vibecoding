@@ -4,7 +4,7 @@
 
 Curso autónomo de posgrado que convierte datos observados en descripciones, diagnósticos e interpretaciones útiles para decidir; se alinea con el perfil de egreso vigente de la maestría.
 
-+## Perfil de ingreso y condición de entrada
+## Perfil de ingreso y condición de entrada
 
 El programa admite profesionales de trayectorias cuantitativas preferentes
 (ingeniería, matemáticas, estadística, economía, administración, computación y
@@ -43,13 +43,35 @@ No posee predicción, optimización, ingeniería de datos ni construcción integ
 
 | Hallazgo S04 | Capacidades del curso |
 |---|---|
+| `S04.F01` | `descriptiva.C01` |
+| `S04.F02` | `descriptiva.C01` |
+| `S04.F03` | Contextual: selecciona contribuciones sin convertirlas en identidad curricular. |
+| `S04.F04` | `descriptiva.C02` |
+| `S04.F05` | `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C04` |
+| `S04.F06` | `descriptiva.C04` |
+| `S04.F07` | `descriptiva.C03`, `descriptiva.C05` |
+| `S04.F08` | `descriptiva.C05` |
+| `S04.F09` | Se materializa posteriormente en talleres; no es capacidad terminal separada. |
+| `S04.F10` | `descriptiva.C03` |
+| `S04.F11` | Gobernanza del diseño; no es capacidad terminal del estudiante. |
 
+
+## Auditoría de identidad del curso
+
+- **Pregunta y producto terminal:** ¿qué está ocurriendo, para quién, dónde,
+  cuándo y con qué evidencia? El producto es una descripción o diagnóstico
+  interpretado para decidir; no un pronóstico, una política ni una capacidad
+  desplegada.
+- **Disciplinas contribuyentes:** estadística, visualización, BI y bases de
+  datos aportan representación y razonamiento sobre evidencia.
+- **Frontera:** no infiere causalidad no demostrada, no predice ni prescribe,
+  y no organiza el curso como capacitación en BI o Estadística.
 
 ## Registro de construcción
 
 - Tarea: `S05`; curso: `descriptiva`; fecha: 2026-09-29.
 - Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`) y `design/program-context/maestria-en-analitica.pdf` (SHA-256 `844fcddb2381c8ca245a8f6b34f8e73883e6475cc7518e5190d97cbbdfe17d7f`).
-- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: `S04.F01`–`S04.F08`, `S04.F10`.
 - Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
 - Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 

@@ -57,7 +57,31 @@ No es un curso enciclopédico de Machine Learning, Deep Learning, MLOps o infrae
 
 | Hallazgo S04 | Capacidades del curso |
 |---|---|
+| `S04.F01` | `predictiva.C01` |
+| `S04.F02` | `predictiva.C01` |
+| `S04.F03` | Contextual: los métodos se subordinan a la tarea predictiva. |
+| `S04.F04` | `predictiva.C02` |
+| `S04.F05` | `predictiva.C02`, `predictiva.C04` |
+| `S04.F06` | `predictiva.C03` |
+| `S04.F07` | `predictiva.C04` |
+| `S04.F08` | `predictiva.C02`, `predictiva.C04`, `predictiva.C05` |
+| `S04.F09` | Se materializa posteriormente en talleres; no es capacidad terminal separada. |
+| `S04.F10` | `predictiva.C05` |
+| `S04.F11` | Gobernanza del diseño; no es capacidad terminal del estudiante. |
 
+
+## Auditoría de identidad del curso
+
+- **Pregunta y producto terminal:** ¿qué resultado futuro o no observado se
+  estima, para quién, en qué horizonte y con qué incertidumbre? El producto
+  es una estimación validada e interpretable, no una política de acción ni
+  una plataforma de operación.
+- **Disciplinas contribuyentes:** KDD, Data Mining, ML, Deep Learning,
+  estadística, modelos mecanísticos y simulación aportan métodos según el
+  fenómeno y no como taxonomía que defina el curso.
+- **Frontera:** una estimación pasa a Prescriptiva solo cuando se usa para
+  seleccionar una acción bajo objetivos, restricciones y salvaguardas; pasa a
+  Productos cuando el foco es operarla de forma confiable.
 
 ## Registro de construcción
 

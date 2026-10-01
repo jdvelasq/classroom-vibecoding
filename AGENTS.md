@@ -69,7 +69,15 @@ that every valid policy is instantaneous or fully automated.
 
 The root-level `requirements.txt` is the single canonical definition of the
 Python environment for this repository. Course folders and task folders must
-not introduce independent dependency manifests or environment definitions.
+not introduce an independent dependency manifest or environment definition.
+
+An activity may retain a local `requirements.txt` only when its execution
+contract requires that file at the activity root, for example a Docker build,
+a Nox session, or a self-contained repository template used in class. Such a
+file is an execution artifact, not a second source of truth: it must declare
+only the smallest compatible subset of packages already defined at the root.
+Before changing one, verify that every package and version constraint remains
+compatible with the root manifest.
 
 Before adding a dependency, verify that it is compatible with the repository's
 supported Python version. Reproduce the environment from the root

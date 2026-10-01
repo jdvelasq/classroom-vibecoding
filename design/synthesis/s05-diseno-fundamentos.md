@@ -32,13 +32,35 @@ No desarrolla ingeniería de datos, inferencia formal, modelado predictivo, opti
 
 | Hallazgo S04 | Capacidades del curso |
 |---|---|
+| `S04.F01` | `fundamentos.C01` |
+| `S04.F02` | `fundamentos.C01` |
+| `S04.F03` | `fundamentos.C05` |
+| `S04.F04` | `fundamentos.C02` |
+| `S04.F05` | `fundamentos.C02` |
+| `S04.F06` | Contextual: reconoce que los métodos se seleccionan por problema, sin enseñarlos. |
+| `S04.F07` | `fundamentos.C03` |
+| `S04.F08` | `fundamentos.C04` |
+| `S04.F09` | Se materializa posteriormente en talleres; no es capacidad terminal separada. |
+| `S04.F10` | `fundamentos.C05` |
+| `S04.F11` | Gobernanza del diseño; no es capacidad terminal del estudiante. |
 
+
+## Auditoría de identidad del curso
+
+- **Pregunta y producto terminal:** ¿qué evidencia permite comprender una
+  situación y sostener una recomendación inicial? El producto es una
+  interpretación analítica fundamentada, no una base de datos, modelo o
+  política operativa.
+- **Disciplinas contribuyentes:** estadística, programación, BI, ML y
+  optimización se reconocen para ubicar su función dentro de Analytics.
+- **Frontera:** introduce el razonamiento analítico y no desarrolla los
+  productos especializados de los demás cursos.
 
 ## Registro de construcción
 
 - Tarea: `S05`; curso: `fundamentos`; fecha: 2026-09-29.
 - Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`).
-- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: `S04.F01`–`S04.F05`, `S04.F07`, `S04.F08`, `S04.F10`.
 - Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
 - Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 
