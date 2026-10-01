@@ -2,9 +2,9 @@
 
 ## Propósito y alcance
 
-Curso autónomo de posgrado para anticipar resultados mediante modelos interpretables, validados y útiles para decisiones; se alinea con el perfil de egreso vigente de la maestría.
+Curso autónomo de posgrado para anticipar resultados mediante modelos interpretables, validados y útiles para decisiones; se alinea con el perfil de egreso vigente de la maestría. Se fundamenta en KDD y Data Mining, que aportan metodologías y experiencias previas al surgimiento de Analytics y continúan aportando problemas, metodologías y soluciones de valor analítico demostrable. Machine Learning y Deep Learning aportan modelos y avances metodológicos cuando resultan adecuados para la tarea.
 
-+## Perfil de ingreso y condición de entrada
+## Perfil de ingreso y condición de entrada
 
 El programa admite profesionales de trayectorias cuantitativas preferentes
 (ingeniería, matemáticas, estadística, economía, administración, computación y
@@ -25,9 +25,17 @@ ni autoriza a suponer una cohorte homogénea.
 
 Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
 
-## Fronteras de contenido
+## Frontera con Analítica prescriptiva
 
-No es un curso enciclopédico de Machine Learning, deep learning, MLOps o infraestructura de producción; no presupone cursos previos.
+La frontera se define por la pregunta y el producto analítico, no por la familia del modelo. Este curso construye, valida e interpreta estimaciones que responden «¿qué ocurrirá, con qué probabilidad, cuándo o para quién?». Puede usar modelos procedentes de KDD y Data Mining, Machine Learning, Deep Learning, simulación, modelos mecanísticos, de supervivencia, de estados, redes u otros modelos de dominio cuando sean adecuados para la tarea predictiva.
+
+Un modelo de Machine Learning o Deep Learning entra al curso porque permite resolver una tarea predictiva con valor analítico demostrable; no para cubrir una taxonomía de algoritmos. La elección del método se fundamenta en la dinámica y los supuestos del fenómeno, no en la popularidad de la técnica.
+
+Cuando una estimación se usa como insumo para seleccionar una alternativa bajo objetivos, restricciones, costos y actores, el producto principal corresponde a Analítica prescriptiva.
+
+## Límites de contenido
+
+No es un curso enciclopédico de Machine Learning, Deep Learning, MLOps o infraestructura de producción; no presupone cursos previos.
 
 ## Trazabilidad directa
 
@@ -49,7 +57,7 @@ No es un curso enciclopédico de Machine Learning, deep learning, MLOps o infrae
 
 - Tarea: `S05`; curso: `predictiva`; fecha: 2026-09-29.
 - Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`) y `design/program-context/maestria-en-analitica.pdf` (SHA-256 `844fcddb2381c8ca245a8f6b34f8e73883e6475cc7518e5190d97cbbdfe17d7f`).
-- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: `S04.F01`–`S04.F10` a capacidades y `S04.F11` a la gobernanza del diseño.
 - Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
 - Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 

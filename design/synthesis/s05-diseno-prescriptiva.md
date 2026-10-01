@@ -4,7 +4,7 @@
 
 Curso autónomo de posgrado para estructurar alternativas y recomendaciones bajo objetivos, restricciones, incertidumbre y consecuencias; se alinea con el perfil de egreso vigente de la maestría.
 
-+## Perfil de ingreso y condición de entrada
+## Perfil de ingreso y condición de entrada
 
 El programa admite profesionales de trayectorias cuantitativas preferentes
 (ingeniería, matemáticas, estadística, economía, administración, computación y
@@ -25,7 +25,13 @@ ni autoriza a suponer una cohorte homogénea.
 
 Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
 
-## Fronteras de contenido
+## Frontera con Analítica predictiva
+
+La frontera se define por la pregunta y el producto analítico, no por la familia del modelo. Este curso usa estimaciones predictivas, simulaciones, modelos mecanísticos, de supervivencia, de estados, redes u otros modelos de dominio para responder «¿qué debemos hacer entre alternativas, con qué objetivos, restricciones, costos y actores?». Construye y juzga modelos para comparar alternativas, su factibilidad y sus trade-offs, y comunica una recomendación.
+
+La Analítica predictiva construye, valida e interpreta la estimación. La Analítica prescriptiva usa esa estimación como insumo de una elección y no repite su ajuste como fin del taller. Por ejemplo, pronosticar un pico epidemiológico y la demanda de camas es Predictiva; elegir intervenciones y capacidad bajo restricciones es Prescriptiva.
+
+## Límites de contenido
 
 No es un currículo abreviado de Investigación de Operaciones, teoría avanzada de algoritmos o implementación de solvers; no presupone cursos previos.
 
@@ -49,7 +55,7 @@ No es un currículo abreviado de Investigación de Operaciones, teoría avanzada
 
 - Tarea: `S05`; curso: `prescriptiva`; fecha: 2026-09-29.
 - Insumos: `design/synthesis/s04-synthesis.md` (SHA-256 `ba832f2c5a6bea26256b5efbb264408dc4034e4b183aefddd0b7efb583ba22b2`) y `design/program-context/maestria-en-analitica.pdf` (SHA-256 `844fcddb2381c8ca245a8f6b34f8e73883e6475cc7518e5190d97cbbdfe17d7f`).
-- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: .
+- Hallazgos considerados: `S04.F01`–`S04.F11`; asignados: `S04.F01`–`S04.F10` a capacidades y `S04.F11` a la gobernanza del diseño.
 - Regla: las capacidades se expresan como resultados terminales macro; no crean prerrequisitos y subordinan las disciplinas contribuyentes a Analytics.
 - Pendiente: detallar contenidos, programa-calendario, RAA, talleres, LAB, evidencias de evaluación y seguimiento de RAP/RAA.
 
