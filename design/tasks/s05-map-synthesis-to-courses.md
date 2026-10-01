@@ -83,6 +83,27 @@ For Prescriptive Analytics, distinguish a policy for a recurrent decision from
 a one-off analytical aid. Optimization, simulation, decision trees,
 multicriteria analysis, and predictive estimates may contribute to policy
 design or validation; they do not independently define the course's terminal
+product. Its distinctive terminal product is a governed, computable policy:
+observable context and data → feasible action under objectives, constraints,
+and safeguards → execution or accountable human approval → recorded outcomes,
+monitoring, and revision. State a decision cadence and response need without
+assuming that every policy is instantaneous or fully automated. Keep policy
+design and validation in Prescriptive Analytics; defer general product
+engineering, deployment infrastructure, and maintenance architecture to
+Productos de datos.
+
+## Course-identity audit rule
+
+For each course document, apply the ordered course-identity audit questions in
+the repository-level `AGENTS.md`. Record the terminal analytical product and
+the specific line question it answers. Do not treat a course title or a list
+of contributing techniques as evidence that its Analytics identity has been
+preserved.
+
+For Prescriptive Analytics, distinguish a policy for a recurrent decision from
+a one-off analytical aid. Optimization, simulation, decision trees,
+multicriteria analysis, and predictive estimates may contribute to policy
+design or validation; they do not independently define the course's terminal
 product.
 
 ## Required output
