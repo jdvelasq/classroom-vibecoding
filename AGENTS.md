@@ -64,6 +64,14 @@ materially clarify a relationship, structure, or process for the reader. Use
 them selectively as explanatory comments, not as decoration or a substitute
 for clear code.
 
+Every instructor notebook must include visual evidence cells whenever a visual
+inspection materially helps students understand or verify a transformation,
+assumption, input condition, intermediate result, model behavior, or final
+output. Examples include a focused table, a sorted sample, a matrix view, a
+plot, or another rendered artifact. These cells are part of the pedagogical
+sequence: they make the evidence visible before the next analytical decision.
+Choose the smallest useful visual and do not add decorative displays.
+
 ## Case and dataset provenance
 
 Prefer an existing, traceable dataset available in `datalabs/`, documented in
