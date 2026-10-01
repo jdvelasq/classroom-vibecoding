@@ -7,11 +7,13 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def reconcile():
+def reconcile(source=None, target=None):
     """Coincidir en filas no basta: también debe conservarse un total de control."""
 
-    source = json.loads((ROOT_DIR / "data" / "source.json").read_text())
-    target = json.loads((ROOT_DIR / "data" / "target.json").read_text())
+    if source is None:
+        source = json.loads((ROOT_DIR / "data" / "source.json").read_text())
+    if target is None:
+        target = json.loads((ROOT_DIR / "data" / "target.json").read_text())
     checks = {
         "rows": source["rows"] == target["rows"],
         "total_amount": source["total_amount"] == target["total_amount"],
