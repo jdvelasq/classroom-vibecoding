@@ -72,6 +72,7 @@ def build_monthly_metrics(sales):
 
 
 def main():
+    SUBMISSION_DIR.mkdir(exist_ok=True)
     sales = load_sales()
     required_fields = {
         "Order ID", "Order Date", "Product Name", "Sales", "Profit", "Discount"

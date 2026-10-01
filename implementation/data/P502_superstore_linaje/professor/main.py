@@ -47,6 +47,7 @@ def build_lineage():
 
 
 def main():
+    SUBMISSION_DIR.mkdir(exist_ok=True)
     build_data_catalog().to_csv(SUBMISSION_DIR / "data_catalog.csv", index=False)
     build_column_catalog().to_csv(SUBMISSION_DIR / "column_catalog.csv", index=False)
     build_lineage().to_csv(SUBMISSION_DIR / "lineage.csv", index=False)

@@ -53,6 +53,7 @@ def build_manifest():
 
 
 def main():
+    SUBMISSION_DIR.mkdir(exist_ok=True)
     sales = load_sales()
     detail_columns = [
         "Order ID",

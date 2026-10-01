@@ -76,6 +76,7 @@ def publish(curated, sources):
 
 
 def main():
+    SUBMISSION_DIR.mkdir(exist_ok=True)
     sources = extract()
     publish(transform(sources), sources)
 
