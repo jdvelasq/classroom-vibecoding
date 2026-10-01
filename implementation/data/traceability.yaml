@@ -1,8 +1,5 @@
 P001:
   - data.C04
-P002:
-  - data.C02
-  - data.C05
 P500:
   - data.C01
   - data.C02
@@ -44,11 +41,6 @@ P507:
 P508:
   - data.C01
   - data.C02
-  - data.C04
-  - data.C05
-P009:
-  - data.C02
-  - data.C03
   - data.C04
   - data.C05
 P510:
