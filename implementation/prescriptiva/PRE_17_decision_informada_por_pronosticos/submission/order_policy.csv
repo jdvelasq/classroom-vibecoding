@@ -1,0 +1,2 @@
+decision_cadence,decision_owner,selected_order_quantity,expected_value,stockout_probability,service_level,approval_required,review_trigger
+weekly,inventory_planner,110,1227.5,0.25,0.75,yes,forecast scenarios or service guardrail change

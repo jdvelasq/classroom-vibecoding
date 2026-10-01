@@ -1,0 +1,21 @@
+{
+  "policy_id": "refugee_resettlement_v1",
+  "decision": "Recomendar una localidad para cada familia elegible en la cohorte de reasentamiento.",
+  "cadence": "Por cohorte, antes de confirmar cupos y tras cualquier cambio de capacidad.",
+  "response_need": "La recomendación debe estar disponible antes de la reunión de asignación; no se ejecuta automáticamente.",
+  "execution_mode": "Recomendación con aprobación humana obligatoria.",
+  "objective": "Maximizar la suma de probabilidades estimadas de empleo a seis meses, sin vulnerar compatibilidades ni cupos.",
+  "limitations": "La probabilidad de empleo no representa bienestar integral, reunificación familiar, seguridad ni preferencias.",
+  "guardrails": [
+    "Cada familia recibe exactamente una recomendación compatible.",
+    "Ninguna localidad supera su capacidad confirmada.",
+    "No se confirma una decisión sin revisión por la autoridad de reasentamiento.",
+    "Una persona puede anular la recomendación y debe registrar su motivo."
+  ],
+  "hold_conditions": [
+    "Falta una predicción o su fecha de vigencia es desconocida.",
+    "El cupo o el servicio disponible cambió desde el cálculo.",
+    "La familia, la autoridad o un equipo de protección solicita revisión."
+  ],
+  "review_authority": "Equipo autorizado de reasentamiento y protección."
+}

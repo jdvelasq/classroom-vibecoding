@@ -1,0 +1,5 @@
+metric,cadence,trigger,action,authority
+capacidad usada,semanal,ofertas recomendadas > K,bloquear lote y revisar ranking,responsable de campanas de retencion
+valor incremental estimado medio,semanal,no es positivo,suspender la politica,responsable de campanas de retencion
+retencion observada por lote,mensual,desviacion material frente a la validacion,recalibrar y validar antes del siguiente lote,dueno analitico de la politica
+quejas o impacto adverso,continuo,alerta material,suspender contactos y escalar revision,responsable de campanas y cumplimiento

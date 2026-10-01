@@ -1,20 +1,30 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
-
 from pathlib import Path
+
+import pandas as pd
 
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
+def test_01_submission_contains_order_policy():
+    policy_path = SUBMISSION_DIR / "order_policy.csv"
 
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
+    assert policy_path.exists(), (
+        "Guarda la política de pedido semanal en submission/order_policy.csv."
     )
+
+
+def test_02_order_policy_makes_the_decision_auditable():
+    policy = pd.read_csv(SUBMISSION_DIR / "order_policy.csv")
+
+    assert len(policy) == 1
+    assert {
+        "decision_cadence",
+        "selected_order_quantity",
+        "expected_value",
+        "stockout_probability",
+        "service_level",
+        "approval_required",
+        "review_trigger",
+    }.issubset(policy.columns)

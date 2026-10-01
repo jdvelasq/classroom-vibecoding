@@ -1,0 +1,7 @@
+metric,meaning,trigger,required_response
+compatibility_violations,Asignaciones incompatibles confirmadas,0,Bloquear confirmación y revisar datos de servicios.
+capacity_excess,Cupos confirmados excedidos,0,Bloquear confirmación y recalcular con capacidad vigente.
+missing_approval,Recomendaciones sin aprobación registrada,0,No ejecutar; solicitar revisión de la autoridad.
+override_rate,Proporción de recomendaciones modificadas por la autoridad,Revisión contextual por cohorte,Analizar motivos; no interpretar por sí sola como falla.
+employment_outcome_gap,Resultado observado a seis meses menos probabilidad estimada,Desviación material sostenida,Revisar calibración y límites del modelo antes de otra cohorte.
+protection_concern,Solicitud de revisión de familia o equipo de protección,Cualquier caso,Suspender la recomendación individual y activar revisión humana.

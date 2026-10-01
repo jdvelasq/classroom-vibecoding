@@ -1,0 +1,9 @@
+family_id,recommended_location_id,estimated_employment_probability,decision_status,review_authority,exception_status,decision_rationale
+F01,L04,0.78,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F02,L01,0.86,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F03,L02,0.84,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F04,L02,0.82,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F05,L03,0.83,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F06,L03,0.81,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F07,L04,0.85,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.
+F08,L01,0.88,pending_human_approval,Equipo autorizado de reasentamiento y protección.,none_detected_in_training_case,Compatible location selected under confirmed cohort capacity.

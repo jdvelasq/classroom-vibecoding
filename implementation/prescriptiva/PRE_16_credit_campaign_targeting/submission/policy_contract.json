@@ -1,0 +1,20 @@
+{
+  "policy_id": "credit_retention_causal_value_v1",
+  "decision": "recomendar clientes para una oferta de retencion",
+  "cadence": "semanal; antes del lote de contacto",
+  "response_need": "el lote aprobado debe estar disponible antes de iniciar los contactos de la semana",
+  "mode": "recomendacion con aprobacion humana",
+  "authority": "responsable de campanas de retencion",
+  "action": "enviar oferta de retencion",
+  "eligibility": [
+    "valor incremental estimado positivo",
+    "estar entre los K mayores valores incrementales estimados",
+    "capacidad maxima de 20% del lote evaluado"
+  ],
+  "exceptions": [
+    "puntaje dentro de la banda de revision alrededor del corte",
+    "dato requerido ausente o fuera de rango",
+    "alerta de deriva, resultado adverso o queja material"
+  ],
+  "fairness_limit": "el caso no contiene atributos protegidos ni proxies validados; no permite afirmar equidad y exige revision humana antes de operar"
+}

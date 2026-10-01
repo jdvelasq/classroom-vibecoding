@@ -22,9 +22,13 @@ P305:
 P306:
   - prescriptiva.C02
   - prescriptiva.C04
+  - prescriptiva.C05
 P307:
+  - prescriptiva.C01
   - prescriptiva.C02
   - prescriptiva.C03
+  - prescriptiva.C04
+  - prescriptiva.C05
 P308:
   - prescriptiva.C01
   - prescriptiva.C02
