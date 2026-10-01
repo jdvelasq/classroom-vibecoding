@@ -1,0 +1,4 @@
+stage,observable_trigger,action,authority,response_need
+preseason,pronóstico anual de riesgo aprobado,activar B01;B03,director de operaciones contra incendios,antes del inicio de temporada
+revisión programada,cambio semanal de pesos de riesgo o tiempo esperado > 40 min,reoptimizar las dos bases autorizadas y proponer reasignación,analista propone; comandante aprueba,dentro de 24 horas
+alerta territorial,alguna zona supera 60 min de respuesta estimada,evaluar base temporal o mover unidad de reserva; no desactivar cobertura sin aprobación,comandante de incidente,antes del siguiente período operativo

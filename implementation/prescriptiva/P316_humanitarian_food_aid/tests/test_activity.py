@@ -1,5 +1,6 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
+"""Verifica la evidencia persistente de la política de abastecimiento."""
 
+import json
 from pathlib import Path
 
 
@@ -7,14 +8,20 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
+def test_submission_contains_policy_and_plan():
+    """La participación deja una política y el plan concreto que esa política libera."""
+    assert (SUBMISSION_DIR / "shipment_plan.csv").is_file()
+    assert (SUBMISSION_DIR / "policy_contract.json").is_file()
 
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
-    )
+
+def test_policy_contract_makes_governance_visible():
+    """La política no puede reducirse al resultado de un optimizador."""
+    policy = json.loads((SUBMISSION_DIR / "policy_contract.json").read_text())
+
+    assert policy["action"]
+    assert policy["decision_cadence"]
+    assert policy["constraints"]
+    assert policy["guardrails"]
+    assert policy["authority"]["approver"]
+    assert policy["monitoring"]
+    assert policy["review_triggers"]

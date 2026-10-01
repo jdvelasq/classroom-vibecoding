@@ -4,3 +4,5 @@ alpha,1.0
 D,500000000
 k,500000
 h_max,6.0
+annual_budget,1000000
+target_annual_probability,0.001

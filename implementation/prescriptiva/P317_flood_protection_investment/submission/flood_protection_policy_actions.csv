@@ -1,0 +1,4 @@
+risk_case,observed_annual_flood_probability,economic_protection_m,approved_protection_m,approved_annual_investment,achieved_annual_flood_probability,target_protection_m,target_annual_investment,action,action_authority,escalation_required
+riesgo reducido,0.005,1.6094379124341003,1.6094379124341003,804718.9562170501,0.001,1.6094379124341003,804718.9562170501,aprobar protección dentro del presupuesto,dirección de infraestructura,False
+riesgo de referencia,0.01,2.302585092994046,2.0,1000000.0,0.0013533528323661271,2.302585092994046,1151292.546497023,elevar solicitud de presupuesto y protección al comité de riesgo,comité de riesgo y junta de inversión,True
+riesgo elevado,0.02,2.995732273553991,2.0,1000000.0,0.0027067056647322543,2.995732273553991,1497866.1367769954,elevar solicitud de presupuesto y protección al comité de riesgo,comité de riesgo y junta de inversión,True

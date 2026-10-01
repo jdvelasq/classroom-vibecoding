@@ -1,0 +1,14 @@
+{
+  "decision": "posicionamiento preventivo y reasignación de recursos contra incendios",
+  "cadence": "anual antes de temporada; revisión semanal y por alerta",
+  "authorized_base_count": 2,
+  "baseline_active_bases": [
+    "B01",
+    "B03"
+  ],
+  "objective": "minimizar tiempo esperado de respuesta ponderado por riesgo",
+  "safeguard": "no exceder las bases autorizadas ni retirar cobertura durante una alerta sin aprobación humana",
+  "human_authority": "el comandante de operaciones aprueba toda reasignación preventiva",
+  "monitoring_artifact": "policy_monitoring.csv",
+  "reassignment_artifact": "reassignment_rules.csv"
+}

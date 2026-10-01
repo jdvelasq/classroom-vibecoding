@@ -1,0 +1,51 @@
+{
+  "policy_name": "abastecimiento_y_distribucion_humanitaria",
+  "decision_cadence": "diaria, ante cada actualizacion de oferta, demanda o rutas",
+  "response_requirement": "el plan se aprueba antes de emitir compras y despachos",
+  "observable_inputs": [
+    "toneladas disponibles y costo de compra por proveedor",
+    "demanda requerida por destino",
+    "costo de transporte por ruta"
+  ],
+  "action": "comprar y despachar las toneladas de shipment_plan.csv por proveedor y destino",
+  "objective": "cubrir la demanda declarada al menor costo total entregado",
+  "constraints": [
+    "no superar la oferta disponible de ningun proveedor",
+    "cubrir exactamente la demanda declarada de cada destino",
+    "no asignar toneladas negativas"
+  ],
+  "guardrails": [
+    {
+      "condition": "la oferta total es menor que la demanda total",
+      "action": "no liberar el plan de costo minimo; preparar una asignacion de escasez",
+      "authority": "coordinacion humanitaria"
+    },
+    {
+      "condition": "un destino no alcanza 100 por ciento de cumplimiento",
+      "action": "bloquear el despacho y escalar la priorizacion por necesidad",
+      "authority": "coordinacion humanitaria"
+    },
+    {
+      "condition": "cambia la oferta, la demanda o una ruta antes del despacho",
+      "action": "recalcular y someter el nuevo plan a aprobacion",
+      "authority": "coordinacion logistica"
+    }
+  ],
+  "authority": {
+    "system": "calcula una recomendacion factible; no emite compras ni despachos",
+    "approver": "coordinacion logistica",
+    "escalation": "coordinacion humanitaria cuando hay escasez o incumplimiento"
+  },
+  "monitoring": [
+    "cumplimiento por destino",
+    "utilizacion por proveedor",
+    "costo total entregado",
+    "desviacion entre toneladas planificadas y entregadas"
+  ],
+  "review_triggers": [
+    "oferta total inferior a demanda total",
+    "cambio de oferta, demanda o costo de ruta",
+    "cumplimiento real inferior al plan"
+  ],
+  "case_limitation": "Los datos son una respuesta humanitaria sintetica para aislar el contrato de decision; no representan una crisis real."
+}

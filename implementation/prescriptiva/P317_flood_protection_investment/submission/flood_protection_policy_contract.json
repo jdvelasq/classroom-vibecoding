@@ -1,0 +1,23 @@
+{
+  "policy_name": "inversión anual de protección contra inundación",
+  "decision": "aprobar altura adicional de protección para el siguiente ciclo de capital",
+  "decision_cadence": "anual, durante la planeación de capital; también después de un estudio de riesgo actualizado o una inundación extrema",
+  "response_deadline": "presentar la decisión dentro de 30 días del cierre del estudio de riesgo",
+  "normal_authority": "dirección de infraestructura aprueba inversiones hasta el presupuesto anual",
+  "escalation_authority": "comité de riesgo y junta de inversión aprueban excedentes presupuestales o aceptan formalmente el riesgo residual",
+  "objective": "reducir la pérdida anual esperada sin exceder la altura constructiva ni el presupuesto ordinario",
+  "guardrails": {
+    "annual_budget": 1000000.0,
+    "maximum_protection_m": 6.0,
+    "target_annual_flood_probability": 0.001,
+    "no_silent_risk_acceptance": "si la inversión aprobada no alcanza la probabilidad objetivo, se debe escalar o registrar la aceptación explícita del riesgo residual"
+  },
+  "exception_trigger": "la probabilidad estimada después de la inversión ordinaria supera el objetivo o cambia la pérdida potencial evaluada",
+  "exception_action": "solicitar presupuesto adicional, revisar medidas no estructurales y documentar la decisión de riesgo",
+  "monitoring": {
+    "risk_metric": "probabilidad anual de inundación estimada",
+    "impact_metric": "pérdida anual esperada",
+    "delivery_metric": "altura construida frente a altura aprobada",
+    "review_trigger": "cualquier inundación que exceda el escenario de diseño, actualización del mapa de amenaza o desviación de costo superior al 10%"
+  }
+}

@@ -1,0 +1,3 @@
+metric,baseline_value,review_threshold,cadence,review_action
+tiempo_esperado_respuesta_min,32.65,40.0,semanal antes de temporada; diario bajo alerta,Recalcular posiciones y escalar al comandante de operaciones
+maximo_tiempo_zona_min,53.75,60.0,semanal antes de temporada; por alerta,Evaluar base temporal o reasignar una unidad de reserva
