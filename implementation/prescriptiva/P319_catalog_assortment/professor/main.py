@@ -27,6 +27,23 @@ def expected_margin(assortment, attractiveness, unit_margin):
     )
 
 
+def validate_products(products):
+    required_columns = {"product_id", "price", "unit_cost", "attractiveness"}
+    missing_columns = required_columns.difference(products.columns)
+    if missing_columns:
+        raise ValueError(f"Faltan atributos requeridos: {sorted(missing_columns)}")
+
+    if products[list(required_columns)].isna().any().any():
+        raise ValueError("No se puede publicar una política con atributos incompletos.")
+
+    if not products.product_id.is_unique:
+        raise ValueError("Cada producto debe tener un identificador único.")
+
+    products = products.copy()
+    products["unit_margin"] = products.price - products.unit_cost
+    return products
+
+
 def select_assortment(products, capacity=MAX_PRODUCTS):
     attractiveness = products.set_index("product_id").attractiveness.to_dict()
     unit_margin = products.set_index("product_id").unit_margin.to_dict()
@@ -61,22 +78,27 @@ def build_policy(products, evaluated):
     decision_table["recommended_action"] = decision_table.product_id.map(
         lambda product_id: "include" if product_id in selected else "exclude"
     )
-    decision_table["decision_reason"] = decision_table.product_id.map(
-        lambda product_id: (
-            "maximizes expected catalog margin within capacity"
-            if product_id in selected
-            else "does not improve the feasible catalog policy"
-        )
-    )
+    decision_table["decision_reason"] = "does not improve the feasible catalog policy"
+    decision_table.loc[
+        decision_table.unit_margin <= 0, "decision_reason"
+    ] = "excluded by the non-positive margin safeguard"
+    decision_table.loc[
+        decision_table.product_id.isin(selected), "decision_reason"
+    ] = "maximizes expected catalog margin within capacity"
     return decision_table
 
 
 def main():
-    products = pd.read_csv(DATA_DIR / "products.csv")
-    products["unit_margin"] = products.price - products.unit_cost
-    evaluated = select_assortment(products)
+    products = validate_products(pd.read_csv(DATA_DIR / "products.csv"))
+    eligible_products = products.loc[products.unit_margin > 0].copy()
+    evaluated = select_assortment(eligible_products)
     policy = build_policy(products, evaluated)
     selected = evaluated.loc[0, "assortment"].split("|")
+    selected_attractiveness = eligible_products.set_index("product_id").attractiveness
+    no_purchase_probability = NO_PURCHASE_ATTRACTIVENESS / (
+        NO_PURCHASE_ATTRACTIVENESS
+        + sum(selected_attractiveness[product_id] for product_id in selected)
+    )
 
     policy_contract = {
         "decision": "incorporar o retirar productos del catalogo de una categoria",
@@ -87,12 +109,17 @@ def main():
         ],
         "policy": "seleccionar hasta cuatro productos que maximicen el margen esperado por cliente",
         "recommended_assortment": selected,
+        "execution_mode": "recomendación con aprobación humana antes de publicar el catálogo",
         "constraints_and_guardrails": [
             "no exceder cuatro plazas de catalogo",
             "no incorporar productos con margen unitario no positivo",
             "no publicar cambios con atributos incompletos o no validados",
         ],
         "authority": "el gerente de categoria aprueba cambios; precios, costos o capacidad anómalos se escalan a comercial y operaciones",
+        "exceptions": [
+            "un producto sin atributos validados bloquea la publicación",
+            "un producto con margen no positivo queda excluido del surtido",
+        ],
         "monitoring": [
             "margen realizado frente al margen esperado",
             "tasa de no compra frente a la estimada",
@@ -114,7 +141,7 @@ def main():
             },
             {
                 "metric": "no_purchase_probability",
-                "baseline": 0.2,
+                "baseline": no_purchase_probability,
                 "review_trigger": "10 percentage points above expected",
                 "owner": "category manager",
             },

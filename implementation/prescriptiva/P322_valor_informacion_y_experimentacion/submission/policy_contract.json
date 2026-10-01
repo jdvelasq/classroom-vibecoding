@@ -1,0 +1,32 @@
+{
+  "decision": "medir antes de lanzar una intervención de campaña y lanzar solo con señal positiva",
+  "cadence": "antes de cada campaña trimestral",
+  "response_need": "el resultado debe estar disponible antes de comprometer el presupuesto de la campaña",
+  "observable_inputs": [
+    "escenarios de demanda y valor esperado de lanzamiento",
+    "resultado positivo o negativo de la medición",
+    "costo real y precisión observada de la medición"
+  ],
+  "action_policy": {
+    "positive_measurement": "autorizar lanzamiento dentro del presupuesto aprobado",
+    "negative_measurement": "no lanzar y conservar el presupuesto; escalar una nueva hipótesis de campaña"
+  },
+  "guardrails": [
+    "el costo de la medición no puede superar 8,000 unidades monetarias",
+    "la precisión observada debe ser al menos 0.85 antes de reutilizar la medición",
+    "un resultado positivo no autoriza exceder el presupuesto de campaña aprobado"
+  ],
+  "authority": "el responsable de campaña aprueba el estudio y autoriza el lanzamiento positivo; una excepción de costo, precisión o presupuesto se escala al responsable comercial",
+  "monitoring": [
+    "valor esperado de lanzar ahora frente a medir antes",
+    "costo y precisión observados de la medición",
+    "resultado de la campaña después de cada señal positiva",
+    "proporción de campañas detenidas por señal negativa"
+  ],
+  "review_triggers": [
+    "costo de medición superior a 8,000 unidades monetarias",
+    "precisión observada inferior a 0.85",
+    "el valor esperado de medir antes deja de superar el de lanzar ahora",
+    "cambio material en el valor, presupuesto o demanda de la campaña"
+  ]
+}

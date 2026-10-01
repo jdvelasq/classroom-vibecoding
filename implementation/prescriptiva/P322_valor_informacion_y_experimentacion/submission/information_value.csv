@@ -1,3 +1,3 @@
-action,expected_value
-lanzar_ahora,10000.0
-medir_antes,37900.0
+policy_option,expected_value,decision,decision_reason
+lanzar_ahora,10000.0,no_recomendada,la incertidumbre de demanda expone la campaña a una pérdida esperada
+medir_antes_y_lanzar_si_positivo,31300.0,recomendada,la medición evita el lanzamiento cuando la señal es negativa y supera el costo del estudio

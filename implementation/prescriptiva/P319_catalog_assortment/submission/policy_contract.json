@@ -11,12 +11,17 @@
     "P2",
     "P3"
   ],
+  "execution_mode": "recomendación con aprobación humana antes de publicar el catálogo",
   "constraints_and_guardrails": [
     "no exceder cuatro plazas de catalogo",
     "no incorporar productos con margen unitario no positivo",
     "no publicar cambios con atributos incompletos o no validados"
   ],
   "authority": "el gerente de categoria aprueba cambios; precios, costos o capacidad anómalos se escalan a comercial y operaciones",
+  "exceptions": [
+    "un producto sin atributos validados bloquea la publicación",
+    "un producto con margen no positivo queda excluido del surtido"
+  ],
   "monitoring": [
     "margen realizado frente al margen esperado",
     "tasa de no compra frente a la estimada",

@@ -81,6 +81,8 @@ P318:
 P319:
   - prescriptiva.C02
   - prescriptiva.C03
+  - prescriptiva.C04
+  - prescriptiva.C05
 P320:
   - prescriptiva.C04
   - prescriptiva.C05
@@ -88,5 +90,7 @@ P321:
   - prescriptiva.C04
   - prescriptiva.C05
 P322:
+  - prescriptiva.C01
   - prescriptiva.C03
+  - prescriptiva.C04
   - prescriptiva.C05

@@ -1,0 +1,4 @@
+metric,guardrail,review_trigger,owner
+measurement_cost,8000,cost exceeds approved maximum,campaign owner
+measurement_accuracy,0.85,accuracy below approved minimum,commercial owner
+incremental_expected_value,must remain positive against launch now,measure-before value no longer exceeds launch-now value,campaign owner
