@@ -1,0 +1,6 @@
+metric,value
+event_count,112
+late_event_count,28
+session_count,16
+converted_session_count,8
+conversion_rate,0.5
