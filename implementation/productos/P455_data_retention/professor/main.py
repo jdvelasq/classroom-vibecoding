@@ -9,11 +9,12 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 RETENTION_DAYS = 90
 
 
-def apply_retention_policy(as_of):
+def apply_retention_policy(as_of, events=None):
     """La fecha de corte explícita permite explicar y repetir una decisión de retención."""
 
     cutoff = as_of - timedelta(days=RETENTION_DAYS)
-    events = json.loads((ROOT_DIR / "data" / "events.json").read_text())
+    if events is None:
+        events = json.loads((ROOT_DIR / "data" / "events.json").read_text())
     retained = []
     expired = []
 
