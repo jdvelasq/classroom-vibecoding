@@ -4,11 +4,11 @@
   "license": "CC0 1.0 Universal",
   "retrieved_on": "2026-10-01",
   "files": {
-    "800-number-average-speed-to-answer.csv": {
+    "ssa_800_average_speed_to_answer.csv.gz": {
       "url": "https://www.ssa.gov/data/800-number-average-speed-to-answer.csv",
       "definition": "Average Speed to Answer: total time calls spend in queue divided by calls answered."
     },
-    "800-number-call-volume-and-agent-busy-rate.csv": {
+    "ssa_800_call_volume_and_busy_rate.csv.gz": {
       "url": "https://www.ssa.gov/data/800-number-call-volume-and-agent-busy-rate.csv",
       "definition": "Monthly calls offered to customer service representatives, busy calls, and representative busy rate."
     }
