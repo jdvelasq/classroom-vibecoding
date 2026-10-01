@@ -7,15 +7,19 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def main():
+def build_release_manifest(version):
     """Una versión legible permite identificar qué capacidad recibió el consumidor."""
 
-    version = (ROOT_DIR / "VERSION").read_text().strip()
-    manifest = {
+    return {
         "product": "factory-risk-indicator",
         "version": version,
         "release_notes": "CHANGELOG.md",
     }
+
+
+def main():
+    version = (ROOT_DIR / "VERSION").read_text().strip()
+    manifest = build_release_manifest(version)
     (ROOT_DIR / "submission" / "release_manifest.json").write_text(
         json.dumps(manifest, indent=2)
     )
