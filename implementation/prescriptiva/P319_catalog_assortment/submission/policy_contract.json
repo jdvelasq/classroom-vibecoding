@@ -1,0 +1,30 @@
+{
+  "decision": "incorporar o retirar productos del catalogo de una categoria",
+  "cadence": "revision mensual; respuesta antes del siguiente ciclo de catalogo",
+  "input_requirements": [
+    "precio, costo unitario y atractivo vigentes para cada candidato",
+    "capacidad de exhibicion aprobada"
+  ],
+  "policy": "seleccionar hasta cuatro productos que maximicen el margen esperado por cliente",
+  "recommended_assortment": [
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "constraints_and_guardrails": [
+    "no exceder cuatro plazas de catalogo",
+    "no incorporar productos con margen unitario no positivo",
+    "no publicar cambios con atributos incompletos o no validados"
+  ],
+  "authority": "el gerente de categoria aprueba cambios; precios, costos o capacidad anómalos se escalan a comercial y operaciones",
+  "monitoring": [
+    "margen realizado frente al margen esperado",
+    "tasa de no compra frente a la estimada",
+    "ocupacion de las plazas del catalogo"
+  ],
+  "review_triggers": [
+    "margen realizado 15% menor que el esperado durante dos revisiones",
+    "tasa de no compra 10 puntos porcentuales mayor que la estimada",
+    "cambio de precio, costo, capacidad o disponibilidad de un producto seleccionado"
+  ]
+}

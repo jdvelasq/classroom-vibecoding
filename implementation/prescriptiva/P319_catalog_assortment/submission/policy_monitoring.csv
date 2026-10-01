@@ -1,0 +1,4 @@
+metric,baseline,review_trigger,owner
+expected_margin_per_customer,27.5,15% below expected for two monthly reviews,category manager
+no_purchase_probability,0.2,10 percentage points above expected,category manager
+catalog_capacity,4.0,"capacity, price, cost, or availability changes",commercial and operations
