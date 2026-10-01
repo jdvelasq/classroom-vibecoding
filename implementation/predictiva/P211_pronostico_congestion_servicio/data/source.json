@@ -1,0 +1,17 @@
+{
+  "title": "SSA National 800 Number Network operational data",
+  "publisher": "U.S. Social Security Administration",
+  "license": "CC0 1.0 Universal",
+  "retrieved_on": "2026-10-01",
+  "files": {
+    "800-number-average-speed-to-answer.csv": {
+      "url": "https://www.ssa.gov/data/800-number-average-speed-to-answer.csv",
+      "definition": "Average Speed to Answer: total time calls spend in queue divided by calls answered."
+    },
+    "800-number-call-volume-and-agent-busy-rate.csv": {
+      "url": "https://www.ssa.gov/data/800-number-call-volume-and-agent-busy-rate.csv",
+      "definition": "Monthly calls offered to customer service representatives, busy calls, and representative busy rate."
+    }
+  },
+  "pedagogical_use": "Private, restricted classroom use. The activity forecasts observed queue congestion; it does not optimize staffing."
+}

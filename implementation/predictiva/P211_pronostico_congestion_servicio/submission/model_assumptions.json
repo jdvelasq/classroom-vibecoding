@@ -1,0 +1,12 @@
+{
+  "question": "What average queue time should be expected next month in SSA's 800 network?",
+  "forecast_horizon": "One month ahead, evaluated for the final 12 observed months.",
+  "target": "Monthly Average Speed to Answer in seconds.",
+  "signals": "Prior-month queue time, calls offered, representative busy rate, and month of year.",
+  "baseline": "Same month of the previous year.",
+  "limitations": [
+    "The data are aggregate monthly national observations, not individual calls.",
+    "The model forecasts congestion; it does not estimate the number of agents or optimize staffing.",
+    "A shock that changes operations can invalidate a model trained on previous months."
+  ]
+}
