@@ -1,5 +1,6 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
+"""Verifica que la actividad deje evidencia de la política diseñada."""
 
+import json
 from pathlib import Path
 
 
@@ -7,14 +8,20 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
+def test_01_policy_contract_is_submitted():
+    """La política operable debe quedar disponible para su revisión."""
+    policy_path = SUBMISSION_DIR / "hydrothermal_policy.json"
 
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
-    )
+    assert policy_path.exists(), "Ejecuta la solución y guarda hydrothermal_policy.json en submission/."
+
+    policy = json.loads(policy_path.read_text(encoding="utf-8"))
+
+    for field in [
+        "action",
+        "constraints",
+        "guardrails",
+        "authority",
+        "monitoring",
+        "review_triggers",
+    ]:
+        assert policy.get(field), f"El contrato de política debe declarar {field}."

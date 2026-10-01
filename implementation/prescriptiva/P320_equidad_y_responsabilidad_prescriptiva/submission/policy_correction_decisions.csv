@@ -1,0 +1,3 @@
+policy,contact_rate_gap,benefit_gap,groups_audited,decision,decision_reason
+P0,0.0,0.0,2,approve,contact-rate gap is within the approved equity guardrail
+P1,0.3,90.0,2,suspend_and_correct,contact-rate gap exceeds the approved equity guardrail

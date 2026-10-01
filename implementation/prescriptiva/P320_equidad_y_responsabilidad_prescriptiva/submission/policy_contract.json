@@ -1,0 +1,25 @@
+{
+  "decision": "aprobar, suspender o corregir una política recurrente de contacto",
+  "cadence": "antes de cada campaña y en la revisión mensual de resultados",
+  "response_need": "la decisión debe estar disponible antes de publicar la lista de contactos",
+  "input_requirements": [
+    "personas elegibles y contactadas por grupo auditado",
+    "beneficio observado por grupo y política"
+  ],
+  "guardrail": {
+    "metric": "contact_rate_gap",
+    "maximum_allowed": 0.1,
+    "meaning": "la diferencia entre las tasas de contacto de grupos auditados no puede superar diez puntos porcentuales"
+  },
+  "authority": "el responsable de cumplimiento aprueba la política; una brecha superior al límite suspende la campaña y se escala al responsable de la política y al comité de equidad",
+  "monitoring": [
+    "brecha de tasa de contacto por política y grupo",
+    "beneficio por persona elegible por política y grupo",
+    "grupos incluidos y excluidos de la auditoría"
+  ],
+  "review_triggers": [
+    "brecha de tasa de contacto superior a diez puntos porcentuales",
+    "incorporación de un nuevo grupo, regla de elegibilidad o fuente de datos",
+    "cambio material en el beneficio observado o en la capacidad de contacto"
+  ]
+}

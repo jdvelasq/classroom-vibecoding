@@ -1,0 +1,41 @@
+{
+  "policy_name": "hydrothermal_generation_dispatch",
+  "decision_context": "Despacho diario para los seis periodos del horizonte operativo.",
+  "cadence": "Una vez por día y ante una actualización material de demanda, caudal o disponibilidad térmica.",
+  "response_need": "Publicar el despacho validado antes del inicio de cada periodo.",
+  "observable_inputs": [
+    "demanda pronosticada",
+    "caudal entrante",
+    "almacenamiento observado",
+    "capacidad térmica disponible"
+  ],
+  "action": "Asignar MWh hidroeléctricos, T1 y T2 por periodo; reservar agua antes del pico.",
+  "objective": "Satisfacer demanda al menor costo operativo factible.",
+  "constraints": [
+    "balance de demanda en cada periodo",
+    "balance y límites del embalse",
+    "capacidad hídrica y térmica",
+    "almacenamiento final mínimo"
+  ],
+  "guardrails": [
+    "no liberar agua que impida cubrir el pico del periodo 4",
+    "no publicar un despacho con demanda insatisfecha",
+    "no operar fuera de los límites de almacenamiento"
+  ],
+  "authority": {
+    "routine": "El centro de control aprueba y publica el despacho factible.",
+    "exception": "La jefatura de operación aprueba medidas de contingencia ante infactibilidad."
+  },
+  "exception_and_escalation": "Escalar si cambian demanda, caudal o capacidad y el modelo no puede satisfacer demanda respetando reservas.",
+  "monitoring": [
+    "demanda atendida",
+    "almacenamiento al cierre",
+    "uso de T2",
+    "costo operativo"
+  ],
+  "review_triggers": [
+    "demanda o caudal observado difiere materialmente del insumo de despacho",
+    "capacidad de T1 o T2 cambia",
+    "almacenamiento se aproxima al mínimo o al máximo"
+  ]
+}
