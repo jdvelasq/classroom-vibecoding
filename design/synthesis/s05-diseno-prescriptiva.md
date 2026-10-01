@@ -20,7 +20,7 @@ ni autoriza a suponer una cohorte homogénea.
 1. **formular decisiones en términos de alternativas, objetivos, restricciones, actores y criterios de valor** — `prescriptiva.C01`; S04.F01, S04.F02.
 2. **construir y juzgar modelos para comparar alternativas, factibilidad y trade-offs** — `prescriptiva.C02`; S04.F06.
 3. **analizar escenarios, sensibilidad, incertidumbre y dependencia de datos o supuestos** — `prescriptiva.C03`; S04.F04, S04.F05, S04.F06.
-4. **usar optimización y simulación como contribuciones funcionales a recomendaciones analíticas** — `prescriptiva.C04`; S04.F03, S04.F06.
+4. **usar optimización, simulación de alternativas y estimaciones predictivas como contribuciones funcionales a recomendaciones analíticas, distinguiendo la anticipación de un resultado de la elección de una acción** — `prescriptiva.C04`; S04.F03, S04.F06.
 5. **comunicar recomendaciones, riesgos, impactos y límites de manera responsable** — `prescriptiva.C05`; S04.F07, S04.F08.
 
 Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
@@ -30,6 +30,12 @@ Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritm
 La frontera se define por la pregunta y el producto analítico, no por la familia del modelo. Este curso usa estimaciones predictivas, simulaciones, modelos mecanísticos, de supervivencia, de estados, redes u otros modelos de dominio para responder «¿qué debemos hacer entre alternativas, con qué objetivos, restricciones, costos y actores?». Construye y juzga modelos para comparar alternativas, su factibilidad y sus trade-offs, y comunica una recomendación.
 
 La Analítica predictiva construye, valida e interpreta la estimación. La Analítica prescriptiva usa esa estimación como insumo de una elección y no repite su ajuste como fin del taller. Por ejemplo, pronosticar un pico epidemiológico y la demanda de camas es Predictiva; elegir intervenciones y capacidad bajo restricciones es Prescriptiva.
+
+| Situación analítica | Producto de Predictiva | Producto de Prescriptiva |
+|---|---|---|
+| Capacidad hospitalaria | Estimar el pico de demanda de camas y su incertidumbre. | Elegir capacidad, compras o intervenciones bajo restricciones. |
+| Inventario | Estimar demanda, tiempos o riesgo de agotamiento. | Definir reposición, asignación o política de inventario. |
+| Riesgo | Estimar probabilidad, momento o perfil de riesgo. | Priorizar acciones, recursos o tratamientos con criterios explícitos. |
 
 ## Límites de contenido
 
@@ -42,7 +48,7 @@ No es un currículo abreviado de Investigación de Operaciones, teoría avanzada
 | `prescriptiva.C01` | Principal | S04.F01, S04.F02 | Decisión y valor. |
 | `prescriptiva.C02` | Principal | S04.F06 | Modelos de alternativas. |
 | `prescriptiva.C03` | Principal | S04.F04, S04.F05, S04.F06 | Incertidumbre y escenarios. |
-| `prescriptiva.C04` | Contextual | S04.F03, S04.F06 | Frontera funcional con OR. |
+| `prescriptiva.C04` | Contextual | S04.F03, S04.F06 | Optimización, simulación de alternativas e insumos predictivos. |
 | `prescriptiva.C05` | Principal | S04.F07, S04.F08 | Recomendación responsable. |
 
 ## Trazabilidad inversa

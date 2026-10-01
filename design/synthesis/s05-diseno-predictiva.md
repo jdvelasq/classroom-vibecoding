@@ -19,8 +19,8 @@ ni autoriza a suponer una cohorte homogénea.
 
 1. **traducir una decisión en objetivo predictivo, horizonte, variable objetivo, línea base y criterio de éxito** — `predictiva.C01`; S04.F01, S04.F02.
 2. **preparar y juzgar datos para predicción, identificando representación, fuga de información, sesgos y límites** — `predictiva.C02`; S04.F04, S04.F05, S04.F08.
-3. **seleccionar, validar y comparar modelos predictivos según su adecuación al problema y no sólo su desempeño técnico** — `predictiva.C03`; S04.F06.
-4. **interpretar desempeño, incertidumbre, explicabilidad y consecuencias de uso de una predicción** — `predictiva.C04`; S04.F05, S04.F07, S04.F08.
+3. **seleccionar, validar y comparar familias de modelos predictivos según la dinámica del fenómeno, los supuestos y su adecuación al problema, y no sólo su desempeño técnico** — `predictiva.C03`; S04.F06.
+4. **interpretar desempeño, incertidumbre, explicabilidad, supuestos y consecuencias de uso de una predicción, incluidos los límites propios de modelos temporales, mecanísticos o de simulación cuando correspondan** — `predictiva.C04`; S04.F05, S04.F07, S04.F08.
 5. **reconocer la necesidad de documentación, monitoreo y revisión responsable durante el ciclo de vida** — `predictiva.C05`; S04.F08, S04.F10.
 
 Estas son capacidades terminales macro: no fijan semanas, herramientas, algoritmos, talleres, LAB ni instrumentos de evaluación.
@@ -33,6 +33,12 @@ Un modelo de Machine Learning o Deep Learning entra al curso porque permite reso
 
 Cuando una estimación se usa como insumo para seleccionar una alternativa bajo objetivos, restricciones, costos y actores, el producto principal corresponde a Analítica prescriptiva.
 
+| Situación analítica | Producto de Predictiva | Producto de Prescriptiva |
+|---|---|---|
+| Capacidad hospitalaria | Estimar el pico de demanda de camas y su incertidumbre. | Elegir capacidad, compras o intervenciones bajo restricciones. |
+| Inventario | Estimar demanda, tiempos o riesgo de agotamiento. | Definir reposición, asignación o política de inventario. |
+| Riesgo | Estimar probabilidad, momento o perfil de riesgo. | Priorizar acciones, recursos o tratamientos con criterios explícitos. |
+
 ## Límites de contenido
 
 No es un curso enciclopédico de Machine Learning, Deep Learning, MLOps o infraestructura de producción; no presupone cursos previos.
@@ -43,8 +49,8 @@ No es un curso enciclopédico de Machine Learning, Deep Learning, MLOps o infrae
 |---|---|---|---|
 | `predictiva.C01` | Principal | S04.F01, S04.F02 | Problema y objetivo predictivo. |
 | `predictiva.C02` | Recurrente | S04.F04, S04.F05, S04.F08 | Datos y riesgos. |
-| `predictiva.C03` | Principal | S04.F06 | Juicio sobre modelos. |
-| `predictiva.C04` | Principal | S04.F05, S04.F07, S04.F08 | Interpretación para decisión. |
+| `predictiva.C03` | Principal | S04.F06 | Juicio sobre familias de modelos, dinámica y supuestos. |
+| `predictiva.C04` | Principal | S04.F05, S04.F07, S04.F08 | Interpretación, incertidumbre y límites para decisión. |
 | `predictiva.C05` | Recurrente | S04.F08, S04.F10 | Ciclo responsable. |
 
 ## Trazabilidad inversa
