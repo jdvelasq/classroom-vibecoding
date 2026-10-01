@@ -1,7 +1,7 @@
-application_id,default_probability,requested_amount,documentation_complete,action,reason,human_owner
-A01,0.04,4000,True,aprobar_recomendación,riesgo bajo y documentación completa,Analista de crédito
-A02,0.11,8500,True,revisión_humana,"incertidumbre, monto alto o documentación incompleta",Analista de crédito
-A03,0.19,2500,True,revisión_humana,"incertidumbre, monto alto o documentación incompleta",Analista de crédito
-A04,0.28,15000,True,revisión_humana,"incertidumbre, monto alto o documentación incompleta",Analista de crédito
-A05,0.07,12000,False,revisión_humana,"incertidumbre, monto alto o documentación incompleta",Analista de crédito
-A06,0.33,3000,False,revisión_humana,"incertidumbre, monto alto o documentación incompleta",Analista de crédito
+application_id,default_probability,requested_amount,documentation_complete,policy_version,decision_cadence,response_target,execution_mode,action,reason,human_authority,review_trigger,outcome_to_monitor
+A01,0.04,4000,True,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,recomendar_aprobación,riesgo bajo dentro del límite delegable,analista_de_crédito,"resultado, excepción o cambio de política",incumplimiento y tiempo de decisión
+A02,0.11,8500,True,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,escalar_a_revisión_humana,riesgo intermedio: se requiere juicio documentado,analista_de_crédito,"resultado, excepción o cambio de política",incumplimiento y tiempo de decisión
+A03,0.19,2500,True,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,escalar_a_revisión_humana,riesgo intermedio: se requiere juicio documentado,analista_de_crédito,"resultado, excepción o cambio de política",incumplimiento y tiempo de decisión
+A04,0.28,15000,True,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,escalar_a_revisión_humana,monto superior al límite delegable,supervisor_de_crédito,"resultado, excepción o cambio de política",incumplimiento y tiempo de decisión
+A05,0.07,12000,False,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,escalar_a_revisión_humana,documentación incompleta,gestor_de_documentación,documentación completada,incumplimiento y tiempo de decisión
+A06,0.33,3000,False,P303-v1,cada solicitud recibida,recomendación durante la revisión de la solicitud,recomendación_con_aprobación_humana,escalar_a_revisión_humana,documentación incompleta,gestor_de_documentación,documentación completada,incumplimiento y tiempo de decisión

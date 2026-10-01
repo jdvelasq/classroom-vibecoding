@@ -6,11 +6,20 @@ Un banco debe decidir qué política de contacto usar en una campaña de depósi
 
 ## Competencia
 
-Convertir evidencia disponible en una pregunta prescriptiva con responsable, alternativas, valor, restricciones, supuestos y criterio de revisión. El resultado es un artefacto de decisión, no un producto de datos ni una decisión automatizada.
+Convertir evidencia disponible en un contrato de política para una decisión
+recurrente: responsable, alternativas, valor, restricciones, salvaguarda,
+autoridad, cadencia, excepción, resultado esperado y criterio de revisión. La
+política recomienda una acción para aprobación humana; no requiere ejecución
+automática.
 
 ## Decisión y entregable
 
-La solución compara políticas explícitas y genera `submission/decision_brief.csv`: recomendación, valor neto esperado, contactos, conversión esperada, verificación de restricciones y gatillo de revisión. La recomendación debe poder ser aceptada o cuestionada por la responsable comercial.
+La solución compara políticas explícitas y genera
+`submission/decision_brief.csv` y `submission/policy_contract.csv`. El contrato
+deja explícitos la acción, valor neto esperado, responsable, cadencia,
+restricciones, salvaguarda de exposición, modo de ejecución, excepción,
+resultado esperado y gatillo de revisión. La recomendación debe poder ser
+aceptada o cuestionada por la responsable comercial.
 
 ## Datos
 

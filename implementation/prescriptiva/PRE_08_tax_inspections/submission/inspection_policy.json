@@ -1,0 +1,32 @@
+{
+  "policy_name": "priorizacion_semanal_de_inspecciones",
+  "decision_cadence": "semanal",
+  "response_need": "programar inspecciones antes de iniciar la siguiente semana",
+  "observable_inputs": [
+    "probabilidad de incumplimiento",
+    "monto recuperable condicionado al incumplimiento",
+    "jornadas requeridas por inspección",
+    "capacidad disponible"
+  ],
+  "recommended_action": "priorizar contribuyentes seleccionados para programación de inspección",
+  "objective": "maximizar recuperación esperada",
+  "constraint": "no superar 14 jornadas de inspección",
+  "authority": "supervisor de fiscalización aprueba o rechaza la programación",
+  "exceptions": [
+    "datos inválidos o incompletos",
+    "capacidad distinta a la programada",
+    "restricción legal, de debido proceso o de equidad identificada por el supervisor"
+  ],
+  "review_triggers": [
+    "cambio de capacidad",
+    "desviación sostenida entre recuperación esperada y observada",
+    "cambio regulatorio o alerta de equidad"
+  ],
+  "recommended_taxpayer_ids": [
+    "T06",
+    "T07",
+    "T08"
+  ],
+  "inspection_days_used": 14,
+  "total_expected_recovery": 2610.0
+}

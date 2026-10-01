@@ -1,0 +1,35 @@
+{
+  "policy_id": "airline_low_fare_acceptance",
+  "decision": "Aceptar o rechazar cada solicitud temprana de tarifa baja.",
+  "cadence": "Cada solicitud temprana, antes de confirmar la reserva.",
+  "response_need": "Inmediata: la solicitud no puede quedar sin respuesta durante la compra.",
+  "observable_inputs": {
+    "capacity_before": "Asientos aún disponibles en el vuelo.",
+    "offered_fare": "Tarifa baja fija de la solicitud temprana.",
+    "protection_target": "Capacidad que la política reserva para demanda posterior de tarifa alta.",
+    "opportunity_cost": "Valor esperado de conservar el siguiente asiento disponible."
+  },
+  "action_rule": "Aceptar si queda capacidad y la tarifa ofrecida es al menos igual al costo de oportunidad; de lo contrario, rechazar para conservar capacidad.",
+  "objective": "Maximizar el ingreso esperado total sin exceder la capacidad.",
+  "constraints": [
+    "No aceptar más reservas que la capacidad disponible.",
+    "No usar sobreventa ni cancelaciones en este caso.",
+    "Mantener las tarifas del escenario mientras la política esté vigente."
+  ],
+  "safeguards": [
+    "Recalcular la protección cuando cambien capacidad, tarifas o probabilidades de demanda.",
+    "Escalar solicitudes fuera de la ventana temprana o con datos incompletos."
+  ],
+  "execution_mode": "Automatización acotada para solicitudes con datos válidos; escalamiento al revenue manager ante excepciones.",
+  "authority": "El revenue manager aprueba cambios de parámetros y resuelve excepciones; el sistema aplica la regla vigente.",
+  "monitoring": [
+    "Ingreso realizado frente al ingreso esperado.",
+    "Asientos de tarifa alta rechazados.",
+    "Asientos vacíos al cierre del vuelo."
+  ],
+  "review_triggers": [
+    "Desviación material entre demanda alta observada y escenarios usados.",
+    "Cambio de tarifa, capacidad o patrón de solicitudes.",
+    "Resultado recurrente de demanda alta rechazada o asientos vacíos."
+  ]
+}

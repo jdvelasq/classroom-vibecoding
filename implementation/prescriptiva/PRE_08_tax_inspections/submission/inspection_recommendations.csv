@@ -1,0 +1,4 @@
+taxpayer_id,expected_recovery,inspection_days,recommended_action,approval_status,review_trigger
+T06,950.0,5,programar inspección,pendiente de supervisor,"capacidad, recuperación observada o alerta regulatoria"
+T07,900.0,5,programar inspección,pendiente de supervisor,"capacidad, recuperación observada o alerta regulatoria"
+T08,760.0,4,programar inspección,pendiente de supervisor,"capacidad, recuperación observada o alerta regulatoria"

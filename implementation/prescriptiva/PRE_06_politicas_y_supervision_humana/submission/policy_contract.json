@@ -1,0 +1,21 @@
+{
+  "policy_version": "P303-v1",
+  "decision": "revisar solicitudes de crédito",
+  "cadence": "cada solicitud recibida",
+  "response_target": "recomendación durante la revisión de la solicitud",
+  "actions": [
+    "recomendar_aprobación",
+    "recomendar_rechazo",
+    "escalar_a_revisión_humana"
+  ],
+  "safeguards": [
+    "no se automatiza la decisión crediticia",
+    "la documentación incompleta siempre escala",
+    "los montos superiores al límite delegable requieren supervisor"
+  ],
+  "review_trigger": "resultado, excepción o cambio de política",
+  "outcomes_to_monitor": [
+    "incumplimiento",
+    "tiempo de decisión"
+  ]
+}

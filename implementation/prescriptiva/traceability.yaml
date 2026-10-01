@@ -1,2 +1,72 @@
-P001:
-  - S04.F08
+P300:
+  - prescriptiva.C01
+  - prescriptiva.C04
+P301:
+  - prescriptiva.C01
+P302:
+  - prescriptiva.C01
+  - prescriptiva.C02
+  - prescriptiva.C04
+P303:
+  - prescriptiva.C01
+  - prescriptiva.C04
+P304:
+  - prescriptiva.C01
+  - prescriptiva.C02
+  - prescriptiva.C03
+  - prescriptiva.C04
+P305:
+  - prescriptiva.C01
+  - prescriptiva.C02
+  - prescriptiva.C04
+P306:
+  - prescriptiva.C02
+  - prescriptiva.C04
+P307:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P308:
+  - prescriptiva.C01
+  - prescriptiva.C02
+  - prescriptiva.C04
+P309:
+  - prescriptiva.C02
+  - prescriptiva.C03
+  - prescriptiva.C04
+P310:
+  - prescriptiva.C03
+P311:
+  - prescriptiva.C03
+P312:
+  - prescriptiva.C03
+P313:
+  - prescriptiva.C03
+  - prescriptiva.C04
+P314:
+  - prescriptiva.C02
+  - prescriptiva.C03
+  - prescriptiva.C04
+P315:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P316:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P317:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P318:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P319:
+  - prescriptiva.C02
+  - prescriptiva.C03
+P320:
+  - prescriptiva.C04
+  - prescriptiva.C05
+P321:
+  - prescriptiva.C04
+  - prescriptiva.C05
+P322:
+  - prescriptiva.C03
+  - prescriptiva.C05
