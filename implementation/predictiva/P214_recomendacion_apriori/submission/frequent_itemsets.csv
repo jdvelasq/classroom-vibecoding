@@ -218,8 +218,8 @@ rolls/buns | whipped/sour cream,2,144,0.014641586171835282
 brown bread | yogurt,2,143,0.014539908490086425
 fruit/vegetable juice | rolls/buns,2,143,0.014539908490086425
 napkins | other vegetables,2,142,0.01443823080833757
-domestic eggs | yogurt,2,141,0.014336553126588714
 domestic eggs | root vegetables,2,141,0.014336553126588714
+domestic eggs | yogurt,2,141,0.014336553126588714
 bottled water | fruit/vegetable juice,2,140,0.014234875444839857
 onions | other vegetables,2,140,0.014234875444839857
 margarine | yogurt,2,140,0.014234875444839857
@@ -341,8 +341,8 @@ butter | domestic eggs,2,95,0.009659379766141332
 chicken | rolls/buns,2,95,0.009659379766141332
 hygiene articles | other vegetables,2,94,0.009557702084392475
 soda | waffles,2,94,0.009557702084392475
-domestic eggs | sausage,2,94,0.009557702084392475
 fruit/vegetable juice | pip fruit,2,94,0.009557702084392475
+domestic eggs | sausage,2,94,0.009557702084392475
 pork | yogurt,2,94,0.009557702084392475
 hard cheese | other vegetables,2,93,0.00945602440264362
 frankfurter | tropical fruit,2,93,0.00945602440264362
@@ -364,9 +364,9 @@ berries | whipped/sour cream,2,89,0.009049313675648195
 domestic eggs | pastry,2,89,0.009049313675648195
 grapes | other vegetables,2,89,0.009049313675648195
 canned beer | other vegetables,2,89,0.009049313675648195
-fruit/vegetable juice | whipped/sour cream,2,89,0.009049313675648195
 white bread | yogurt,2,89,0.009049313675648195
 other vegetables | sliced cheese,2,89,0.009049313675648195
+fruit/vegetable juice | whipped/sour cream,2,89,0.009049313675648195
 sausage | whipped/sour cream,2,89,0.009049313675648195
 domestic eggs | shopping bags,2,89,0.009049313675648195
 bottled water | butter,2,88,0.008947635993899338
@@ -396,8 +396,8 @@ brown bread | fruit/vegetable juice,2,82,0.008337569903406202
 citrus fruit | newspapers,2,82,0.008337569903406202
 domestic eggs | margarine,2,82,0.008337569903406202
 brown bread | citrus fruit,2,82,0.008337569903406202
-chicken | yogurt,2,82,0.008337569903406202
 chicken | soda,2,82,0.008337569903406202
+chicken | yogurt,2,82,0.008337569903406202
 frankfurter | pastry,2,82,0.008337569903406202
 fruit/vegetable juice | newspapers,2,81,0.008235892221657347
 pork | whipped/sour cream,2,81,0.008235892221657347
@@ -491,13 +491,13 @@ herbs | root vegetables,2,69,0.007015760040671073
 napkins | pastry,2,69,0.007015760040671073
 candy | other vegetables,2,68,0.006914082358922217
 newspapers | shopping bags,2,68,0.006914082358922217
-coffee | pastry,2,68,0.006914082358922217
 sugar | yogurt,2,68,0.006914082358922217
+coffee | pastry,2,68,0.006914082358922217
 ham | rolls/buns,2,68,0.006914082358922217
 domestic eggs | newspapers,2,68,0.006914082358922217
 chicken | citrus fruit,2,68,0.006914082358922217
-coffee | sausage,2,68,0.006914082358922217
 fruit/vegetable juice | napkins,2,68,0.006914082358922217
+coffee | sausage,2,68,0.006914082358922217
 meat | rolls/buns,2,68,0.006914082358922217
 pot plants | whole milk,2,68,0.006914082358922217
 coffee | pip fruit,2,68,0.006914082358922217
@@ -526,12 +526,12 @@ berries | root vegetables,2,65,0.0066090493136756485
 pip fruit | white bread,2,65,0.0066090493136756485
 citrus fruit | frozen vegetables,2,65,0.0066090493136756485
 newspapers | pork,2,65,0.0066090493136756485
-brown bread | margarine,2,64,0.006507371631926792
 curd | domestic eggs,2,64,0.006507371631926792
+brown bread | margarine,2,64,0.006507371631926792
 citrus fruit | frankfurter,2,64,0.006507371631926792
 citrus fruit | pork,2,64,0.006507371631926792
-specialty bar | whole milk,2,64,0.006507371631926792
 pork | sausage,2,64,0.006507371631926792
+specialty bar | whole milk,2,64,0.006507371631926792
 hamburger meat | yogurt,2,64,0.006507371631926792
 cat food | other vegetables,2,64,0.006507371631926792
 rolls/buns | white bread,2,64,0.006507371631926792
@@ -731,9 +731,9 @@ butter | tropical fruit | whole milk,3,61,0.0062023385866802234
 pip fruit | rolls/buns | whole milk,3,61,0.0062023385866802234
 frozen vegetables | root vegetables | whole milk,3,61,0.0062023385866802234
 pork | rolls/buns | whole milk,3,61,0.0062023385866802234
-curd | root vegetables | whole milk,3,61,0.0062023385866802234
 frankfurter | whole milk | yogurt,3,61,0.0062023385866802234
 tropical fruit | whipped/sour cream | yogurt,3,61,0.0062023385866802234
+curd | root vegetables | whole milk,3,61,0.0062023385866802234
 napkins | whole milk | yogurt,3,60,0.006100660904931368
 curd | other vegetables | yogurt,3,60,0.006100660904931368
 frozen vegetables | whole milk | yogurt,3,60,0.006100660904931368

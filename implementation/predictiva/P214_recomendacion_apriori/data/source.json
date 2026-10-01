@@ -1,0 +1,10 @@
+{
+  "title": "Groceries Transactions Data Set",
+  "publisher": "arules package contributors",
+  "documentation_url": "https://search.r-project.org/CRAN/refmans/arules/html/Groceries.html",
+  "retrieved_on": "2026-10-01",
+  "local_file": "groceries_baskets.csv.gz",
+  "scope": "One month of real-world point-of-sale data from a typical local grocery outlet: 9,835 transactions and 169 aggregated item categories.",
+  "citation": "Hahsler, M., Hornik, K., & Reutterer, T. (2006). Implications of probabilistic data modeling for mining association rules.",
+  "pedagogical_use": "Private, restricted classroom use. The activity predicts a likely basket completion; it does not select a promotion or commercial intervention."
+}

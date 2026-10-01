@@ -1,6 +1,7 @@
 """Encuentra asociaciones y recomendaciones en canastas de supermercado."""
 
 from collections import Counter
+import gzip
 from itertools import combinations
 from pathlib import Path
 
@@ -8,7 +9,7 @@ import pandas as pd
 
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-DATA_PATH = ACTIVITY_DIR / "data" / "groceries.csv"
+DATA_PATH = ACTIVITY_DIR / "data" / "groceries_baskets.csv.gz"
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 MIN_SUPPORT = 0.006
 MIN_CONFIDENCE = 0.25
@@ -19,7 +20,7 @@ SELECTED_ITEMS = frozenset({"tropical fruit", "yogurt"})
 def load_transactions():
     """Lee las filas de longitud variable y las convierte en canastas."""
     transactions = []
-    with DATA_PATH.open(encoding="utf-8") as file:
+    with gzip.open(DATA_PATH, mode="rt", encoding="utf-8") as file:
         for line in file:
             basket = frozenset(item.strip() for item in line.split(",") if item.strip())
             if basket:

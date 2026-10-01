@@ -1,0 +1,3 @@
+metric,value
+mean_absolute_confidence_gap,0.059709821428571425
+recommendations_with_heldout_support,4.0

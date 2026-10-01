@@ -1,0 +1,10 @@
+{
+  "question": "Given a partial basket with tropical fruit and yogurt, which product is likely to complete that same basket?",
+  "method": "Apriori frequent itemsets and association rules, validated on a held-out transaction segment.",
+  "target": "A product co-occurring in the same purchase, not a future purchase by an identified customer.",
+  "limitations": [
+    "The data contain no customer identity, time stamp, price, or intervention outcome.",
+    "Association and lift do not establish that a recommendation causes an additional purchase.",
+    "Selecting a promotion, price, or placement is a prescriptive decision outside this activity."
+  ]
+}
