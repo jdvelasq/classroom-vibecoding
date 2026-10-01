@@ -126,20 +126,21 @@ P526:
   - data.C01
   - data.C02
   - data.C03
+  - data.C04
   - data.C05
 P527:
-  - data.C01
-  - data.C02
   - data.C03
   - data.C04
   - data.C05
 P528:
-  - data.C03
-  - data.C04
-  - data.C05
-P529:
   - data.C02
   - data.C03
+  - data.C05
+P529:
+  - data.C01
+  - data.C02
+  - data.C03
+  - data.C04
   - data.C05
 P530:
   - data.C01
@@ -148,12 +149,6 @@ P530:
   - data.C04
   - data.C05
 P531:
-  - data.C01
-  - data.C02
-  - data.C03
-  - data.C04
-  - data.C05
-P532:
   - data.C01
   - data.C02
   - data.C03
