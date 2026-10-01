@@ -4,7 +4,7 @@
 
 | Alcance calificado | Puntaje |
 |---|---:|
-| Secuencia presencial implementada (P001–P011, P100–P105, P150–P154) | **9.3 / 10** |
+| Secuencia presencial implementada (P001–P011, P120–P125, P150–P154) | **9.3 / 10** |
 | Curso completo, con evidencia disponible al 29 de septiembre de 2026 | **8.8 / 10** |
 
 La diferencia no obedece a una carencia de identidad, casos o profundidad
@@ -20,8 +20,8 @@ otra institución.
 
 | Dimensión | Máx. | Puntaje | Evidencia y juicio |
 |---|---:|---:|---|
-| Identidad de Analytics, decisión y alcance | 15 | 14.5 | C01 formula preguntas y métricas en P100–P105. La secuencia preserva que SQL, Pandas y BI sean medios para el análisis, coherente con S04.F01–F03. |
-| Exploración, visualización, interpretación y límites | 20 | 18.5 | C02–C04 se ejercitan mediante casos de ventas, vuelos, cadena de suministro, Scopus, marketing y salarios; P105 hace explícito el límite asociación/causalidad. Falta verificar sistemáticamente ese límite en la evaluación de todos los casos. |
+| Identidad de Analytics, decisión y alcance | 15 | 14.5 | C01 formula preguntas y métricas en P120–P125. La secuencia preserva que SQL, Pandas y BI sean medios para el análisis, coherente con S04.F01–F03. |
+| Exploración, visualización, interpretación y límites | 20 | 18.5 | C02–C04 se ejercitan mediante casos de ventas, vuelos, cadena de suministro, Scopus, marketing y salarios; P125 hace explícito el límite asociación/causalidad. Falta verificar sistemáticamente ese límite en la evaluación de todos los casos. |
 | Preparación, acceso y fluidez técnica durable | 10 | 9.5 | P002–P009 cubren programación, transformación, limpieza, Pandas y SQLite; las actividades no dependen de una plataforma única. |
 | Práctica auténtica, casos integrados y portafolio | 15 | 14.0 | La secuencia contiene casos reales y productos persistentes, sin depender de un capstone. Resta verificar la presentación final del portafolio en los repositorios individuales. |
 | Trabajo responsable, reproducible y documentado | 10 | 8.0 | P001, P003, P009–P011 y las pruebas apoyan reproducibilidad, privacidad y productos verificables. Falta evidencia de criterios recurrentes para límites, integridad y comunicación responsable en la evaluación. |
@@ -56,7 +56,7 @@ de la secuencia.
    analítico y comunicación.
 3. Reforzar y evaluar de forma visible C04 —límites entre descripción,
    diagnóstico, asociación y causalidad— en más de un caso, o justificar que
-   P105 es la demostración concentrada suficiente.
+   P125 es la demostración concentrada suficiente.
 4. Regenerar S05 para reparar la tabla inversa y el encabezado formal; volver
    a ejecutar la auditoría de S01 y esta rúbrica.
 5. Auditar una asignación real generada por GitHub Classroom y comprobar que

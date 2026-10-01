@@ -19,7 +19,7 @@ se integren las demás evidencias del curso.
 | `design/synthesis/s05-diseno-descriptiva.md` | Diseño de contenido y capacidades C01–C05. |
 | `implementation/descriptiva/traceability.yaml` | Declaración de trazabilidad actividad-capacidad. |
 | `implementation/common/P001_*`–`P011_*` | Fundamentación común reutilizada por el curso. |
-| `implementation/descriptiva/P100_*`–`P105_*`, `P150_*`–`P154_*` | Talleres propios de Descriptiva. |
+| `implementation/descriptiva/P120_*`–`P125_*`, `P150_*`–`P154_*` | Talleres propios de Descriptiva. |
 | `AGENTS.md` | Identidad curricular y reglas técnicas de distribución. |
 
 No se encontró `distribution/descriptiva/` al ejecutar la auditoría.
@@ -28,11 +28,11 @@ No se encontró `distribution/descriptiva/` al ejecutar la auditoría.
 
 | Capacidad de diseño | Talleres que la evidencian | Evidencia implementada |
 |---|---|---|
-| `descriptiva.C01` — preguntas y métricas para decidir | P100–P105 | Casos con preguntas de negocio; P103 formula preguntas de inteligencia tecnológica; P105 evalúa preguntas y respuestas persistidas. |
-| `descriptiva.C02` — exploración antes de concluir | P002, P004–P009, P100–P105, P150–P154 | Datos, código/notebooks, resultados en `submission/` cuando aplica y pruebas de actividad. |
-| `descriptiva.C03` — visualización e interpretación | P005–P007, P100–P105, P150–P154 | Talleres de análisis y comunicación visual, incluidos dashboard, OLAP y serving BI. |
-| `descriptiva.C04` — límites entre descripción, diagnóstico, asociación y causalidad | P105 | Preguntas de salarios que exigen interpretar brechas sin convertir asociaciones en causalidad. |
-| `descriptiva.C05` — documentación y comunicación responsable | P003, P004, P007–P011, P103–P105, P150–P154 | Productos persistentes, comunicación de hallazgos y artefactos BI. |
+| `descriptiva.C01` — preguntas y métricas para decidir | P120–P125 | Casos con preguntas de negocio; P123 formula preguntas de inteligencia tecnológica; P125 evalúa preguntas y respuestas persistidas. |
+| `descriptiva.C02` — exploración antes de concluir | P002, P004–P009, P120–P125, P150–P154 | Datos, código/notebooks, resultados en `submission/` cuando aplica y pruebas de actividad. |
+| `descriptiva.C03` — visualización e interpretación | P005–P007, P120–P125, P150–P154 | Talleres de análisis y comunicación visual, incluidos dashboard, OLAP y serving BI. |
+| `descriptiva.C04` — límites entre descripción, diagnóstico, asociación y causalidad | P125 | Preguntas de salarios que exigen interpretar brechas sin convertir asociaciones en causalidad. |
+| `descriptiva.C05` — documentación y comunicación responsable | P003, P004, P007–P011, P123–P125, P150–P154 | Productos persistentes, comunicación de hallazgos y artefactos BI. |
 
 La secuencia preserva Analytics: los componentes de bases de datos y BI
 (`P150`–`P154`) aparecen después de los casos descriptivos y operan como
@@ -54,10 +54,10 @@ autónomo.
 | P009 | `descriptiva.C02`, `descriptiva.C05`. |
 | P010 | `descriptiva.C05`. |
 | P011 | `descriptiva.C05`. |
-| P100–P102 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`. |
-| P103 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
-| P104 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
-| P105 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C04`, `descriptiva.C05`. |
+| P120–P122 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`. |
+| P123 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
+| P124 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
+| P125 | `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C04`, `descriptiva.C05`. |
 | P150–P154 | `descriptiva.C02`, `descriptiva.C03`, `descriptiva.C05`. |
 
 ## Hallazgos
@@ -67,7 +67,7 @@ autónomo.
 - La tabla de trazabilidad inversa de `s05-diseno-descriptiva.md` está vacía,
   aunque su tabla directa sí define C01–C05.
 - El encabezado de perfil de ingreso contiene el carácter inicial `+`.
-- La capacidad C04 cuenta con una evidencia explícita en P105. Es cobertura
+- La capacidad C04 cuenta con una evidencia explícita en P125. Es cobertura
   válida, pero una auditoría posterior deberá comprobar que la discusión
   docente y los criterios de evaluación hacen visible ese límite conceptual.
 
@@ -77,7 +77,7 @@ autónomo.
   `traceability.yaml`; no se detectó un taller huérfano.
 - La existencia de `pytest` aporta verificación técnica de los productos, pero
   no prueba por sí sola que se alcanzó una capacidad terminal.
-- P100–P105 hacen explícito el contexto de decisión; la auditoría posterior
+- P120–P125 hacen explícito el contexto de decisión; la auditoría posterior
   debe verificar semánticamente el archivo de preguntas en cada caso, no solo
   su presencia.
 
