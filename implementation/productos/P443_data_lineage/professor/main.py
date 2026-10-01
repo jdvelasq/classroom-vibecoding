@@ -19,13 +19,17 @@ def file_checksum(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def build_factory_totals(raw_data):
+    """El agregado conserva una tabla que puede relacionarse con su origen."""
+
+    return raw_data.groupby("factory_id", as_index=False)["daily_units_produced"].sum()
+
+
 def main():
     """El linaje explica un resultado sin obligar a reconstruir la transformación."""
 
     raw_data = pd.read_csv(INPUT_PATH)
-    curated_data = raw_data.groupby("factory_id", as_index=False)[
-        "daily_units_produced"
-    ].sum()
+    curated_data = build_factory_totals(raw_data)
     curated_path = OUTPUT_DIR / "factory_totals.csv"
     curated_data.to_csv(curated_path, index=False)
 
