@@ -9,8 +9,11 @@ import duckdb
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def build_factory_totals():
+def build_factory_totals(data_path=None):
     """La transformación declarada en SQL puede revisarse y repetirse sin pasos manuales."""
+
+    if data_path is None:
+        data_path = ROOT_DIR / "data" / "daily_operations.csv"
 
     query = """
         SELECT factory_id, SUM(daily_units_produced) AS total_units_produced
@@ -18,9 +21,7 @@ def build_factory_totals():
         GROUP BY factory_id
         ORDER BY factory_id
     """
-    return duckdb.execute(
-        query, [str(ROOT_DIR / "data" / "daily_operations.csv")]
-    ).fetchall()
+    return duckdb.execute(query, [str(data_path)]).fetchall()
 
 
 def main():
