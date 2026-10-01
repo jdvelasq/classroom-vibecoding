@@ -1,5 +1,3 @@
-# Uso: python3 src/main.py
-
 import json
 import pickle
 from pathlib import Path

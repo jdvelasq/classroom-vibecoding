@@ -1,5 +1,3 @@
-# Uso: python3 src/main.py
-
 import json
 from pathlib import Path
 
