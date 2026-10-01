@@ -1,14 +1,14 @@
 La verificación automática puede reutilizar la misma sesión de Nox que se ejecuta localmente. Así, GitHub y el computador del estudiante comprueban el producto de la misma manera.
 
-1. Desde la raíz de este PRE, copie el repositorio local que terminó en PRE-17 y abra una rama:
+1. Desde la raíz de este taller, copie el repositorio local que terminó en P415 y abra una rama:
 
-   cp -R ../PRE_17_github_actions/temp/github_actions_case temp/github_actions_nox_case
+   cp -R ../P415_github_actions/temp/github_actions_case temp/github_actions_nox_case
    cd temp/github_actions_nox_case
    git switch -c add-nox-check
 
    En `cp -R`, `-R` copia una carpeta y todo su contenido. En `git switch -c add-nox-check`, `-c` crea la rama add-nox-check y cambia inmediatamente a ella.
 
-2. Reemplace la verificación de PRE-17 por una sesión de Nox:
+2. Reemplace la verificación de P415 por una sesión de Nox:
 
    cp ../../data/repository_template/noxfile.py .
    cp ../../data/repository_template/src/main.py src/
@@ -16,7 +16,7 @@ La verificación automática puede reutilizar la misma sesión de Nox que se eje
    cp ../../data/repository_template/.github/workflows/tests.yml .github/workflows/
    git rm .github/workflows/quality.yml tests/test_environment_report.py
 
-   `noxfile.py` declara la sesión `tests`, que instala `requirements.txt` y ejecuta `tests/test_report.py`. `tests.yml` le indica a GitHub que instale Nox y ejecute esa sesión en cada push y en cada pull request. `git rm` retira del repositorio el flujo y la prueba de PRE-17, que esta sesión reemplaza.
+   `noxfile.py` declara la sesión `tests`, que instala `requirements.txt` y ejecuta `tests/test_report.py`. `tests.yml` le indica a GitHub que instale Nox y ejecute esa sesión en cada push y en cada pull request. `git rm` retira del repositorio el flujo y la prueba de P415, que esta sesión reemplaza.
 
 3. Compruebe localmente la misma sesión que ejecutará GitHub:
 

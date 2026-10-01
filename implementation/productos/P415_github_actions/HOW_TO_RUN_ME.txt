@@ -1,8 +1,8 @@
 Una verificación automática da una señal visible antes de integrar un cambio. GitHub crea un ambiente temporal, instala las dependencias declaradas y ejecuta automáticamente una prueba del indicador. El flujo se ejecutará con cada push y con cada pull request.
 
-1. Desde la raíz de este PRE, copie el repositorio local que terminó en PRE-13 y abra una rama:
+1. Desde la raíz de este taller, copie el repositorio local que terminó en P411 y abra una rama:
 
-   cp -R ../PRE_13_pull_request/temp/pull_request_case temp/github_actions_case
+   cp -R ../P411_pull_request/temp/pull_request_case temp/github_actions_case
    cd temp/github_actions_case
    git switch -c add-quality-check
 

@@ -1,8 +1,8 @@
-Este PRE continúa la práctica de PRE-12. Debe conservar el repositorio remoto personal de su cuenta de GitHub y la carpeta temporal creados allí. No use un repositorio del curso ni de otro estudiante.
+Este taller continúa P410. Debe conservar el repositorio remoto personal de su cuenta de GitHub y la carpeta temporal creados allí. No use un repositorio del curso ni de otro estudiante.
 
 1. Desde la raíz de este PRE, cree una copia de trabajo y abra una rama:
 
-   cp -R ../PRE_12_github_remote/temp/github_remote_case temp/pull_request_case
+   cp -R ../P410_github_remote/temp/github_remote_case temp/pull_request_case
    cd temp/pull_request_case
    git switch -c add-owner
 
@@ -21,7 +21,7 @@ Este PRE continúa la práctica de PRE-12. Debe conservar el repositorio remoto 
    En `git commit -m`, `-m` indica que el texto siguiente es el mensaje del commit.
    En `git push -u origin add-owner`, `-u` asocia la rama local con la rama remota para futuros push y pull.
 
-3. En GitHub, abra el repositorio personal de su cuenta usado en PRE-12:
+3. En GitHub, abra el repositorio personal de su cuenta usado en P410:
 
    a. Haga clic en Compare & pull request.
    b. Verifique que la rama base sea main y la rama de comparación sea add-owner.
