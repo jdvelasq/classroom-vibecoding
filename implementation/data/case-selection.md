@@ -21,18 +21,19 @@ uso en clase.
 
 ## Bloque de MapReduce y modelo clave–valor
 
-- `P519_mapreduce_basico` usa el registro de turnos de conductores para una
+- `P519_mapreduce_operators` introduce las operaciones genéricas y hace
+  visibles sus entradas y salidas con un extracto pequeño del mismo dominio.
+- `P520_mapreduce_drivers` usa el registro de turnos de conductores para una
   agregación clave–valor por `driverId`: horas, millas y número de semanas.
-- `P520_mapreduce_avanzado` continúa con el mismo dominio y añade la unión de
-  esas métricas con los datos maestros de conductores.
-- Cada taller presenta primero la pregunta y su SQL como especificación
-  declarativa; después muestra, paso a paso, la transformación a pares
-  clave–valor, el agrupamiento y la reducción.
+- `P521_mapreduce_drivers_join` continúa con el mismo dominio y añade la unión
+  de esas métricas con los datos maestros de conductores.
+- Los casos presentan primero la pregunta y su SQL como especificación
+  declarativa; después aplican las operaciones ya introducidas en P519.
 - Las operaciones locales con nombres como `mapPairs` o `reduceByKey` sirven
   para explicar el modelo de cómputo. No introducen PySpark, RDD, Pig, Hive ni
   la operación de plataformas distribuidas como contenido del curso.
 - En este bloque, el SQL debe permanecer deliberadamente acotado: agregación
-  por clave en P519; unión, agregación y ordenamiento sencillo en P520. SQL
+  por clave en P520; unión, agregación y ordenamiento sencillo en P521. SQL
   avanzado pertenece a la secuencia SQL, no a la explicación de MapReduce.
 
 ## Casos externos evaluados
