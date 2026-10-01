@@ -52,7 +52,6 @@ def run(repetitions=50, workers=None):
     parallel_seconds = perf_counter() - started
     assert sequential == parallel
 
-    SUBMISSION_DIR.mkdir(exist_ok=True)
     with (SUBMISSION_DIR / "origin_flights.csv").open(
         "w", encoding="utf-8", newline=""
     ) as file:
