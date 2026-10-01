@@ -3,3 +3,17 @@ P001:
 P400:
   - productos.C02
   - productos.C05
+P401:
+  - productos.C02
+  - productos.C05
+P402:
+  - productos.C02
+  - productos.C05
+P403:
+  - productos.C02
+  - productos.C03
+  - productos.C05
+P404:
+  - productos.C02
+  - productos.C03
+  - productos.C05
