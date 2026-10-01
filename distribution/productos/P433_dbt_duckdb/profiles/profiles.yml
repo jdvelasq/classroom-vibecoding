@@ -1,0 +1,7 @@
+p433_dbt_duckdb:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "submission/pre54.duckdb"
+      schema: main

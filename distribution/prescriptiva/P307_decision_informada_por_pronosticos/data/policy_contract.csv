@@ -1,0 +1,2 @@
+decision_cadence,decision_owner,maximum_stockout_probability,approval_required,review_trigger
+weekly,inventory_planner,0.25,yes,forecast scenarios or service guardrail change

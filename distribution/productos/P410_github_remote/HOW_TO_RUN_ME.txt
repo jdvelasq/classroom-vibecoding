@@ -1,0 +1,54 @@
+Esta práctica usa un repositorio temporal y un repositorio remoto personal del estudiante. No modifica el repositorio del curso ni utiliza un repositorio compartido.
+
+1. En GitHub
+
+   a. Ingrese a github.com e inicie sesión.
+   b. Haga clic en el signo + de la esquina superior derecha y seleccione New repository.
+   c. El propietario debe ser su cuenta personal de GitHub, visible antes del nombre del repositorio.
+   d. Escriba como nombre: p410-github-remote.
+   e. Seleccione Private o Public, según la indicación del docente.
+   f. NO marque Add a README file, Add .gitignore ni Choose a license.
+   g. Haga clic en Create repository.
+   h. Copie la URL HTTPS que termina en .git. Tiene una forma similar a:
+
+      https://github.com/SU_USUARIO/p410-github-remote.git
+
+   SU_USUARIO debe ser su usuario personal de GitHub.
+
+2. En la terminal, desde la raíz de este taller, ejecute:
+
+   cp -R data/repository_template temp/github_remote_case
+   cd temp/github_remote_case
+   git init --initial-branch=main
+   git config user.name "Estudiante"
+   git config user.email "estudiante@example.com"
+   git add product_card.md
+   git commit -m "chore: create product card"
+
+   En `git init --initial-branch=main`, `--initial-branch=main` asigna el nombre main a la primera rama.
+   En `git commit -m`, `-m` indica que el texto siguiente es el mensaje del commit.
+
+3. Reemplace URL_DE_GITHUB por la URL HTTPS que copió en el paso 1:
+
+   git remote add origin URL_DE_GITHUB
+   git remote -v
+   git push -u origin main
+   git branch -vv
+
+   En `git remote -v`, `-v` muestra las URL configuradas para enviar y recibir cambios.
+   En `git push -u origin main`, `-u` deja asociada la rama local main con origin/main para que los siguientes `git push` y `git pull` sean más simples.
+   En `git branch -vv`, cada `-v` agrega detalle: el commit reciente y la rama remota asociada.
+
+4. Vuelva a GitHub y recargue la página. Debe ver product_card.md y el commit.
+
+5. Vuelva a la raíz de este taller:
+
+   cd ../..
+
+Si GitHub solicita autenticación durante push, complete el proceso en el navegador. No escriba contraseñas en el código ni en archivos del taller.
+
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
+
+   git -C temp/github_remote_case log --oneline -1 > submission/git_log.txt
+
+   `git -C temp/github_remote_case` ejecuta Git dentro del repositorio de práctica sin cambiar de carpeta. El símbolo `>` guarda la salida del comando en `submission/git_log.txt`.

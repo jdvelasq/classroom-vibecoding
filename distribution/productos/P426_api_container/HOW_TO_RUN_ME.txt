@@ -1,0 +1,21 @@
+Este taller publica localmente una capacidad analítica mínima. Docker ejecuta el servicio en un contenedor y conecta su puerto con el computador del estudiante.
+
+1. Con Docker Desktop abierto, desde la raíz del taller construya la imagen:
+
+   docker build --tag p426-api-container .
+
+   En `--tag p426-api-container`, `--tag` asigna el nombre de la imagen. El punto `.` usa esta carpeta como contexto de construcción; el Dockerfile instala el manifiesto local compatible con el entorno canónico del repositorio.
+
+2. Inicie el servicio:
+
+   docker run --rm --publish 8000:8000 p426-api-container
+
+   `--rm` elimina el contenedor temporal cuando se detenga. `--publish 8000:8000` conecta el puerto 8000 de su computador con el puerto 8000 del contenedor. Mantenga esta terminal abierta.
+
+3. En otra terminal, pruebe la capacidad:
+
+   curl --request POST http://localhost:8000/score --header "Content-Type: application/json" --data '{"daily_units_produced":4200}' --output submission/score_response.json
+
+   En `curl`, `--request POST` indica el método de la solicitud, `--header` declara que se envía JSON, `--data` contiene el dato de entrada y `--output` guarda la respuesta en `submission/score_response.json`. Abra ese archivo: la respuesta debe incluir `risk` y `threshold`.
+
+4. Vuelva a la primera terminal y presione Control+C para detener el servicio.

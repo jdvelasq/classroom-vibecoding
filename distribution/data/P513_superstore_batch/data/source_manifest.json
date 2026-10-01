@@ -1,0 +1,12 @@
+{
+  "source_dataset": "datalabs/commerce/superstore-orders.csv",
+  "source_url": "https://github.com/jdvelasq/datalabs/blob/main/commerce/superstore-orders.csv",
+  "source_grain": "Una fila por producto dentro de una orden.",
+  "derived_batches": "Filas existentes separadas por trimestre de Order Date; no se inventan ni modifican valores.",
+  "format": {
+    "delimiter": ";",
+    "encoding": "utf-8-sig",
+    "decimal_mark": ",",
+    "date_format": "%d/%m/%y"
+  }
+}

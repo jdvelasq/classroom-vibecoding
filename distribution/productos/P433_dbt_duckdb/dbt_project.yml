@@ -1,0 +1,8 @@
+name: p433_dbt_duckdb
+version: "1.0.0"
+profile: p433_dbt_duckdb
+model-paths: ["models"]
+seed-paths: ["seeds"]
+models:
+  p433_dbt_duckdb:
+    +materialized: table

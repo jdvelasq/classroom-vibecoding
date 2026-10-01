@@ -1,0 +1,56 @@
+Abra una terminal en esta carpeta y ejecute los comandos en el orden indicado.
+
+1. Cree un repositorio de práctica aislado con una versión inicial:
+
+   cp -R data/repository_template temp/branch_merge_case
+   cd temp/branch_merge_case
+   git init --initial-branch=main
+   git config user.name "Estudiante"
+   git config user.email "estudiante@example.com"
+   git add product_card.md
+   git commit -m "chore: create product card"
+
+   En `git init --initial-branch=main`, `--initial-branch=main` asigna el nombre main a la primera rama.
+   En `git commit -m`, `-m` indica que el texto siguiente es el mensaje del commit.
+
+2. Cree una rama para incorporar un consumidor del producto:
+
+   git switch -c add-consumer
+   git branch
+
+   En `git switch -c add-consumer`, `-c` significa crear la rama add-consumer y cambiar inmediatamente a ella.
+   `git branch` lista las ramas; el asterisco identifica la rama activa.
+
+   Abra product_card.md. Reemplace esta línea:
+
+   - Consumidor: Pendiente de definir.
+
+   por esta línea:
+
+   - Consumidor: equipo de mantenimiento.
+
+   Guarde el archivo y ejecute:
+
+   git add product_card.md
+   git commit -m "docs: define product consumer"
+
+3. Vuelva a main y fusione el cambio:
+
+   git switch main
+   git branch
+   git merge --no-ff add-consumer -m "merge: add product consumer"
+   git log --oneline --graph -3
+   cd ../..
+
+   En `git merge --no-ff`, `--no-ff` conserva un commit de fusión para hacer visible que el cambio llegó desde una rama.
+   En `git merge -m`, `-m` define el mensaje del commit de fusión.
+   En `git log --oneline --graph -3`, `--oneline` resume cada commit en una línea, `--graph` dibuja las ramas y `-3` muestra los tres commits más recientes.
+
+Para cambiar a cualquier rama ya existente, use `git switch NOMBRE_DE_LA_RAMA`.
+Al finalizar, main conserva la versión inicial y el cambio realizado en la rama.
+
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
+
+   git -C temp/branch_merge_case log --oneline -3 > submission/git_log.txt
+
+   `git -C temp/branch_merge_case` ejecuta Git dentro del repositorio de práctica sin cambiar de carpeta. El símbolo `>` guarda la salida del comando en `submission/git_log.txt`.

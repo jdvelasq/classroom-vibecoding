@@ -1,0 +1,1858 @@
+Order ID,Order Date,Ship Date,Order Priority,Ship Mode,Customer ID,order_context_key
+88522,7/01/15,8/01/15,High,Express Air,3,1
+90193,13/06/15,15/06/15,Not Specified,Delivery Truck,5,2
+90192,15/02/15,17/02/15,Critical,Regular Air,11,3
+86838,12/05/15,14/05/15,Medium,Regular Air,14,4
+86838,12/05/15,13/05/15,Medium,Regular Air,14,5
+86837,8/04/15,9/04/15,Critical,Regular Air,15,6
+86839,28/05/15,28/05/15,Medium,Regular Air,15,7
+86836,12/02/15,15/02/15,High,Regular Air,16,8
+86836,12/02/15,14/02/15,High,Regular Air,16,9
+90031,15/05/15,16/05/15,High,Regular Air,18,10
+90032,21/05/15,23/05/15,Not Specified,Regular Air,19,11
+41793,15/05/15,16/05/15,High,Regular Air,21,12
+42949,21/05/15,22/05/15,Not Specified,Regular Air,21,13
+42949,21/05/15,23/05/15,Not Specified,Regular Air,21,14
+87651,28/01/15,29/01/15,High,Regular Air,24,15
+87651,28/01/15,30/01/15,High,Regular Air,24,16
+87652,2/05/15,4/05/15,Not Specified,Regular Air,27,17
+89199,22/02/15,23/02/15,High,Regular Air,32,18
+89200,27/03/15,28/03/15,High,Regular Air,32,19
+89202,20/01/15,22/01/15,Medium,Express Air,32,20
+89203,12/03/15,19/03/15,Low,Regular Air,32,21
+89201,15/06/15,17/06/15,Not Specified,Regular Air,33,22
+89201,15/06/15,16/06/15,Not Specified,Regular Air,33,23
+91454,10/05/15,11/05/15,High,Regular Air,43,24
+88426,10/03/15,10/03/15,Not Specified,Regular Air,52,25
+88425,28/01/15,30/01/15,Critical,Delivery Truck,53,26
+88426,10/03/15,11/03/15,Not Specified,Regular Air,53,27
+88075,20/04/15,21/04/15,Medium,Regular Air,56,28
+87407,9/05/15,11/05/15,High,Regular Air,62,29
+87408,12/06/15,14/06/15,High,Regular Air,62,30
+87406,2/03/15,4/03/15,Not Specified,Regular Air,64,31
+87406,2/03/15,2/03/15,Not Specified,Express Air,64,32
+87946,2/01/15,9/01/15,Low,Regular Air,67,33
+37537,2/01/15,2/01/15,Low,Delivery Truck,68,34
+37537,2/01/15,4/01/15,Low,Delivery Truck,68,35
+37537,2/01/15,9/01/15,Low,Regular Air,68,36
+55713,2/02/15,4/02/15,High,Delivery Truck,68,37
+87947,2/02/15,4/02/15,High,Delivery Truck,70,38
+87365,15/03/15,15/03/15,High,Delivery Truck,83,39
+87364,2/02/15,3/02/15,Not Specified,Regular Air,84,40
+87366,30/03/15,2/04/15,High,Regular Air,84,41
+90596,3/06/15,8/06/15,Low,Regular Air,87,42
+90597,22/03/15,23/03/15,High,Regular Air,87,43
+90597,22/03/15,25/03/15,High,Delivery Truck,87,44
+87175,17/05/15,18/05/15,High,Regular Air,91,45
+87176,18/02/15,20/02/15,Medium,Regular Air,91,46
+87177,4/03/15,6/03/15,Medium,Regular Air,91,47
+87175,17/05/15,19/05/15,High,Regular Air,92,48
+87175,17/05/15,18/05/15,High,Regular Air,92,49
+87178,7/06/15,9/06/15,Medium,Express Air,92,50
+44231,3/05/15,5/05/15,Not Specified,Delivery Truck,94,51
+44231,3/05/15,5/05/15,Not Specified,Regular Air,94,52
+87306,3/05/15,5/05/15,Not Specified,Delivery Truck,97,53
+87306,3/05/15,4/05/15,Not Specified,Regular Air,97,54
+88205,22/06/15,24/06/15,Medium,Regular Air,101,55
+42599,6/04/15,7/04/15,Medium,Delivery Truck,102,56
+3397,22/06/15,24/06/15,Medium,Regular Air,102,57
+3397,22/06/15,23/06/15,Medium,Regular Air,102,58
+88204,6/04/15,7/04/15,Medium,Delivery Truck,107,59
+88205,22/06/15,23/06/15,Medium,Regular Air,109,60
+89583,3/01/15,4/01/15,High,Regular Air,114,61
+89584,4/04/15,6/04/15,Medium,Regular Air,114,62
+89584,4/04/15,6/04/15,Medium,Express Air,114,63
+89585,9/04/15,11/04/15,Low,Regular Air,115,64
+7909,3/01/15,4/01/15,High,Regular Air,117,65
+13959,4/04/15,6/04/15,Medium,Regular Air,117,66
+13959,4/04/15,6/04/15,Medium,Express Air,117,67
+58914,9/04/15,11/04/15,Low,Regular Air,117,68
+86520,12/01/15,13/01/15,High,Regular Air,120,69
+86520,12/01/15,14/01/15,High,Express Air,120,70
+90669,9/04/15,10/04/15,Critical,Regular Air,123,71
+86693,27/01/15,28/01/15,Not Specified,Regular Air,129,72
+86694,25/05/15,26/05/15,Not Specified,Regular Air,129,73
+88534,16/05/15,17/05/15,Critical,Regular Air,136,74
+91087,2/06/15,3/06/15,Critical,Regular Air,142,75
+91087,2/06/15,3/06/15,Critical,Regular Air,144,76
+91086,15/01/15,17/01/15,Medium,Regular Air,145,77
+91089,16/03/15,16/03/15,Low,Express Air,145,78
+91088,12/03/15,13/03/15,Not Specified,Regular Air,146,79
+91090,23/04/15,24/04/15,Medium,Delivery Truck,146,80
+89521,22/01/15,23/01/15,Critical,Regular Air,151,81
+89523,20/04/15,22/04/15,High,Regular Air,151,82
+89520,15/01/15,16/01/15,Critical,Regular Air,152,83
+89522,19/04/15,26/04/15,Low,Regular Air,152,84
+89524,29/03/15,1/04/15,High,Regular Air,152,85
+89525,18/06/15,22/06/15,Low,Regular Air,152,86
+87671,14/05/15,15/05/15,Critical,Regular Air,156,87
+87672,25/01/15,26/01/15,High,Regular Air,156,88
+89961,2/01/15,4/01/15,Medium,Delivery Truck,164,89
+89961,2/01/15,3/01/15,Medium,Regular Air,164,90
+89426,11/01/15,18/01/15,Low,Delivery Truck,166,91
+87463,3/01/15,5/01/15,Low,Regular Air,169,92
+87463,3/01/15,10/01/15,Low,Regular Air,169,93
+87463,3/01/15,7/01/15,Low,Regular Air,169,94
+87464,13/04/15,15/04/15,Critical,Regular Air,171,95
+38087,21/02/15,21/02/15,Critical,Regular Air,181,96
+3585,22/05/15,23/05/15,High,Regular Air,181,97
+88360,21/02/15,21/02/15,Critical,Regular Air,184,98
+88361,22/05/15,22/05/15,High,Regular Air,188,99
+88361,22/05/15,23/05/15,High,Regular Air,188,100
+89092,12/02/15,13/02/15,High,Regular Air,190,101
+89092,12/02/15,15/02/15,High,Regular Air,191,102
+89093,9/04/15,11/04/15,Not Specified,Regular Air,191,103
+89093,9/04/15,9/04/15,Not Specified,Regular Air,191,104
+89093,9/04/15,10/04/15,Not Specified,Regular Air,191,105
+90430,3/01/15,5/01/15,Not Specified,Delivery Truck,193,106
+90432,30/03/15,1/04/15,Medium,Regular Air,193,107
+90431,10/01/15,11/01/15,Not Specified,Regular Air,194,108
+90432,30/03/15,1/04/15,Medium,Regular Air,194,109
+88921,2/04/15,4/04/15,Critical,Regular Air,197,110
+51072,2/04/15,4/04/15,Critical,Regular Air,198,111
+88971,27/04/15,28/04/15,Not Specified,Regular Air,202,112
+88972,16/01/15,18/01/15,High,Regular Air,202,113
+85965,17/01/15,21/01/15,Low,Regular Air,210,114
+85966,2/06/15,2/06/15,Medium,Express Air,210,115
+85966,2/06/15,2/06/15,Medium,Regular Air,210,116
+85966,2/06/15,3/06/15,Medium,Regular Air,210,117
+85964,6/01/15,8/01/15,Medium,Regular Air,211,118
+85966,2/06/15,3/06/15,Medium,Regular Air,211,119
+88048,9/06/15,11/06/15,Medium,Delivery Truck,218,120
+88527,2/04/15,3/04/15,Medium,Delivery Truck,228,121
+90237,20/02/15,22/02/15,Medium,Regular Air,233,122
+90237,20/02/15,21/02/15,Medium,Regular Air,233,123
+90236,5/02/15,6/02/15,Critical,Delivery Truck,234,124
+90238,27/03/15,29/03/15,High,Regular Air,234,125
+90239,28/04/15,30/04/15,Low,Express Air,234,126
+86621,22/02/15,22/02/15,Not Specified,Delivery Truck,236,127
+90479,20/04/15,20/04/15,Medium,Express Air,240,128
+90479,20/04/15,21/04/15,Medium,Delivery Truck,241,129
+90480,26/05/15,2/06/15,Low,Regular Air,241,130
+90480,26/05/15,26/05/15,Low,Regular Air,241,131
+89139,23/02/15,23/02/15,Medium,Delivery Truck,247,132
+89139,23/02/15,24/02/15,Medium,Regular Air,247,133
+89140,21/03/15,23/03/15,Medium,Regular Air,247,134
+87214,28/05/15,29/05/15,Critical,Express Air,250,135
+87214,28/05/15,29/05/15,Critical,Regular Air,250,136
+86268,10/06/15,11/06/15,Medium,Delivery Truck,254,137
+86267,31/01/15,2/02/15,Critical,Regular Air,256,138
+85858,2/01/15,4/01/15,Medium,Regular Air,258,139
+85857,19/01/15,19/01/15,Low,Regular Air,259,140
+86297,21/01/15,23/01/15,High,Delivery Truck,263,141
+90593,18/05/15,20/05/15,Not Specified,Express Air,266,142
+90594,15/05/15,16/05/15,Medium,Regular Air,266,143
+88941,7/04/15,12/04/15,Low,Regular Air,268,144
+88941,7/04/15,14/04/15,Low,Regular Air,268,145
+88942,5/06/15,10/06/15,Low,Regular Air,269,146
+88942,5/06/15,12/06/15,Low,Regular Air,269,147
+88942,5/06/15,7/06/15,Low,Regular Air,269,148
+88940,30/03/15,31/03/15,Medium,Delivery Truck,271,149
+5509,7/04/15,12/04/15,Low,Regular Air,272,150
+5509,7/04/15,14/04/15,Low,Regular Air,272,151
+36069,5/06/15,10/06/15,Low,Regular Air,272,152
+36069,5/06/15,7/06/15,Low,Regular Air,272,153
+89292,24/01/15,25/01/15,Not Specified,Regular Air,275,154
+89291,21/05/15,22/05/15,Critical,Express Air,276,155
+89291,21/05/15,22/05/15,Critical,Regular Air,282,156
+89293,17/06/15,18/06/15,High,Regular Air,283,157
+89761,17/06/15,21/06/15,Low,Regular Air,286,158
+89761,17/06/15,21/06/15,Low,Delivery Truck,286,159
+89762,16/01/15,19/01/15,Critical,Regular Air,288,160
+89762,16/01/15,18/01/15,Critical,Express Air,288,161
+90837,25/03/15,26/03/15,Not Specified,Regular Air,290,162
+87057,14/02/15,15/02/15,High,Regular Air,306,163
+87057,14/02/15,16/02/15,High,Regular Air,306,164
+37760,14/02/15,15/02/15,High,Regular Air,308,165
+89166,20/03/15,22/03/15,Medium,Regular Air,314,166
+89166,20/03/15,20/03/15,Medium,Regular Air,315,167
+86041,17/06/15,18/06/15,Not Specified,Regular Air,317,168
+91057,4/04/15,9/04/15,Low,Regular Air,321,169
+90973,9/06/15,10/06/15,Not Specified,Regular Air,326,170
+89726,14/04/15,15/04/15,Medium,Delivery Truck,329,171
+89726,14/04/15,16/04/15,Medium,Express Air,331,172
+87277,4/05/15,5/05/15,Critical,Regular Air,335,173
+87277,4/05/15,4/05/15,Critical,Regular Air,335,174
+90583,17/03/15,18/03/15,Medium,Regular Air,339,175
+90583,17/03/15,19/03/15,Medium,Regular Air,339,176
+3332,4/05/15,6/05/15,Critical,Regular Air,342,177
+88151,31/01/15,1/02/15,Critical,Delivery Truck,343,178
+88152,4/05/15,6/05/15,Critical,Regular Air,344,179
+17446,9/06/15,11/06/15,Critical,Express Air,349,180
+11527,2/01/15,4/01/15,Medium,Regular Air,349,181
+88685,9/06/15,11/06/15,Critical,Express Air,351,182
+88686,2/01/15,4/01/15,Medium,Regular Air,351,183
+89647,14/05/15,14/05/15,Low,Express Air,353,184
+89647,14/05/15,21/05/15,Low,Regular Air,353,185
+91131,24/05/15,25/05/15,Critical,Delivery Truck,357,186
+91130,9/01/15,16/01/15,Low,Regular Air,358,187
+87347,17/01/15,19/01/15,Medium,Delivery Truck,366,188
+90292,11/04/15,13/04/15,Low,Express Air,369,189
+90291,27/05/15,29/05/15,Not Specified,Regular Air,370,190
+90291,27/05/15,29/05/15,Not Specified,Express Air,371,191
+24193,14/03/15,16/03/15,Not Specified,Delivery Truck,373,192
+24193,14/03/15,15/03/15,Not Specified,Regular Air,373,193
+24193,14/03/15,16/03/15,Not Specified,Regular Air,373,194
+90917,14/03/15,16/03/15,Not Specified,Delivery Truck,375,195
+90917,14/03/15,15/03/15,Not Specified,Regular Air,375,196
+89579,17/04/15,17/04/15,Medium,Regular Air,377,197
+88929,1/05/15,1/05/15,Not Specified,Regular Air,381,198
+88928,19/03/15,19/03/15,Critical,Regular Air,383,199
+88928,19/03/15,21/03/15,Critical,Express Air,383,200
+90339,12/06/15,14/06/15,High,Express Air,387,201
+90337,3/01/15,5/01/15,Critical,Regular Air,388,202
+90337,3/01/15,6/01/15,Critical,Regular Air,388,203
+90338,6/02/15,10/02/15,Low,Delivery Truck,389,204
+86383,5/03/15,7/03/15,Medium,Regular Air,392,205
+86383,5/03/15,8/03/15,Medium,Regular Air,392,206
+86382,15/02/15,22/02/15,Low,Regular Air,393,207
+86384,18/06/15,19/06/15,Critical,Regular Air,395,208
+86384,18/06/15,20/06/15,Critical,Regular Air,395,209
+89319,2/02/15,3/02/15,Critical,Regular Air,397,210
+89320,23/05/15,25/05/15,Medium,Regular Air,398,211
+87804,21/05/15,22/05/15,High,Regular Air,406,212
+89639,2/05/15,6/05/15,Low,Regular Air,408,213
+87905,4/05/15,7/05/15,High,Express Air,411,214
+87700,6/02/15,8/02/15,Critical,Regular Air,421,215
+88479,15/01/15,16/01/15,High,Regular Air,428,216
+88480,3/03/15,5/03/15,Not Specified,Regular Air,428,217
+90695,22/06/15,27/06/15,Low,Regular Air,437,218
+88085,25/05/15,28/05/15,Critical,Regular Air,444,219
+88083,11/04/15,13/04/15,Not Specified,Regular Air,445,220
+88084,23/06/15,24/06/15,High,Delivery Truck,445,221
+88084,23/06/15,24/06/15,High,Regular Air,445,222
+90449,25/06/15,28/06/15,Not Specified,Delivery Truck,447,223
+90449,25/06/15,25/06/15,Not Specified,Regular Air,447,224
+86010,10/04/15,11/04/15,High,Regular Air,451,225
+86012,27/05/15,28/05/15,Critical,Regular Air,451,226
+86013,5/01/15,10/01/15,Low,Regular Air,451,227
+86013,5/01/15,14/01/15,Low,Regular Air,451,228
+86012,27/05/15,28/05/15,Critical,Regular Air,452,229
+86011,8/05/15,10/05/15,Not Specified,Regular Air,453,230
+86014,23/05/15,30/05/15,Low,Regular Air,460,231
+88061,14/01/15,16/01/15,Low,Regular Air,463,232
+88060,11/01/15,11/01/15,Not Specified,Delivery Truck,466,233
+88060,11/01/15,12/01/15,Not Specified,Regular Air,467,234
+88060,11/01/15,12/01/15,Not Specified,Regular Air,468,235
+88060,11/01/15,13/01/15,Not Specified,Express Air,469,236
+88060,11/01/15,11/01/15,Not Specified,Regular Air,470,237
+3138,8/02/15,8/02/15,Not Specified,Express Air,471,238
+88023,8/02/15,8/02/15,Not Specified,Express Air,472,239
+90353,27/01/15,28/01/15,Critical,Regular Air,483,240
+90354,23/04/15,24/04/15,Not Specified,Regular Air,483,241
+90354,23/04/15,25/04/15,Not Specified,Regular Air,483,242
+91062,18/03/15,20/03/15,Not Specified,Regular Air,485,243
+91063,18/05/15,19/05/15,Medium,Express Air,487,244
+91063,18/05/15,20/05/15,Medium,Regular Air,488,245
+91063,18/05/15,18/05/15,Medium,Regular Air,489,246
+8353,15/05/15,17/05/15,Medium,Regular Air,491,247
+10464,10/02/15,11/02/15,Critical,Regular Air,491,248
+6562,20/06/15,22/06/15,Critical,Delivery Truck,491,249
+42852,20/06/15,22/06/15,Not Specified,Regular Air,491,250
+88906,20/01/15,22/01/15,Not Specified,Regular Air,493,251
+88906,20/01/15,21/01/15,Not Specified,Regular Air,493,252
+88905,15/05/15,17/05/15,Medium,Regular Air,494,253
+88907,10/02/15,11/02/15,Critical,Regular Air,494,254
+88908,20/06/15,22/06/15,Critical,Delivery Truck,494,255
+88908,20/06/15,22/06/15,Not Specified,Regular Air,494,256
+90706,14/05/15,16/05/15,Critical,Regular Air,497,257
+87357,18/04/15,20/04/15,Critical,Express Air,507,258
+87357,18/04/15,19/04/15,Critical,Regular Air,507,259
+87356,23/02/15,23/02/15,High,Delivery Truck,508,260
+87357,18/04/15,21/04/15,Critical,Regular Air,508,261
+90058,13/01/15,13/01/15,Low,Regular Air,510,262
+90059,1/02/15,2/02/15,Critical,Regular Air,510,263
+90867,5/06/15,12/06/15,Low,Regular Air,518,264
+89327,22/06/15,24/06/15,Medium,Express Air,522,265
+89327,22/06/15,24/06/15,Medium,Regular Air,522,266
+89327,22/06/15,23/06/15,Medium,Delivery Truck,522,267
+91127,20/01/15,22/01/15,Not Specified,Regular Air,524,268
+91127,20/01/15,22/01/15,Not Specified,Delivery Truck,524,269
+90026,25/05/15,27/05/15,High,Regular Air,526,270
+90027,17/01/15,18/01/15,Not Specified,Regular Air,526,271
+88511,21/04/15,25/04/15,Low,Regular Air,535,272
+91174,14/05/15,15/05/15,Medium,Regular Air,539,273
+91174,14/05/15,16/05/15,Medium,Regular Air,540,274
+91175,23/05/15,25/05/15,Medium,Regular Air,540,275
+86250,14/06/15,15/06/15,Not Specified,Express Air,547,276
+90908,20/01/15,20/01/15,Not Specified,Regular Air,549,277
+90909,30/01/15,31/01/15,High,Regular Air,550,278
+90909,30/01/15,1/02/15,High,Delivery Truck,550,279
+90910,12/06/15,13/06/15,Medium,Delivery Truck,550,280
+90910,12/06/15,13/06/15,Medium,Express Air,550,281
+90909,30/01/15,1/02/15,High,Regular Air,551,282
+17155,28/01/15,29/01/15,Medium,Express Air,553,283
+2433,21/02/15,21/02/15,Not Specified,Delivery Truck,553,284
+8165,15/04/15,24/04/15,Low,Regular Air,553,285
+359,18/06/15,19/06/15,Medium,Delivery Truck,553,286
+86190,21/02/15,21/02/15,Not Specified,Delivery Truck,555,287
+86191,15/04/15,24/04/15,Low,Regular Air,555,288
+86192,18/06/15,19/06/15,Medium,Delivery Truck,555,289
+86189,28/01/15,29/01/15,Medium,Express Air,556,290
+86189,28/01/15,28/01/15,Medium,Express Air,556,291
+88879,4/03/15,5/03/15,Critical,Delivery Truck,568,292
+88880,15/04/15,15/04/15,Not Specified,Regular Air,568,293
+88882,1/04/15,3/04/15,Medium,Express Air,568,294
+88881,13/01/15,13/01/15,Low,Regular Air,570,295
+86555,13/03/15,14/03/15,Critical,Regular Air,573,296
+86556,26/02/15,27/02/15,High,Regular Air,573,297
+88645,13/01/15,17/01/15,Low,Regular Air,576,298
+88644,13/05/15,14/05/15,Medium,Regular Air,578,299
+88644,13/05/15,15/05/15,Medium,Regular Air,579,300
+88644,13/05/15,14/05/15,Medium,Regular Air,580,301
+88646,21/01/15,23/01/15,Not Specified,Regular Air,584,302
+88644,13/05/15,14/05/15,Medium,Regular Air,585,303
+86307,17/01/15,17/01/15,Critical,Regular Air,592,304
+86307,17/01/15,19/01/15,Critical,Regular Air,593,305
+86309,15/03/15,17/03/15,Critical,Regular Air,594,306
+86311,19/06/15,22/06/15,Critical,Regular Air,594,307
+86311,19/06/15,20/06/15,Critical,Regular Air,594,308
+86308,15/02/15,17/02/15,Critical,Regular Air,596,309
+86308,15/02/15,16/02/15,Critical,Delivery Truck,596,310
+86310,10/06/15,10/06/15,Not Specified,Regular Air,597,311
+87579,13/03/15,14/03/15,Medium,Regular Air,600,312
+87020,3/02/15,5/02/15,Not Specified,Regular Air,603,313
+28647,14/03/15,15/03/15,Critical,Express Air,604,314
+34882,24/01/15,25/01/15,Critical,Regular Air,604,315
+91144,14/03/15,15/03/15,Critical,Express Air,605,316
+88198,29/04/15,30/04/15,Not Specified,Regular Air,617,317
+88197,24/03/15,25/03/15,Critical,Regular Air,618,318
+88198,29/04/15,30/04/15,Not Specified,Express Air,618,319
+88198,29/04/15,30/04/15,Not Specified,Regular Air,618,320
+88196,7/01/15,8/01/15,Critical,Regular Air,619,321
+91432,26/02/15,27/02/15,Medium,Regular Air,621,322
+91432,26/02/15,28/02/15,Medium,Regular Air,622,323
+91433,1/04/15,3/04/15,High,Regular Air,623,324
+91433,1/04/15,1/04/15,High,Regular Air,624,325
+90469,21/04/15,22/04/15,Medium,Regular Air,627,326
+89284,5/04/15,5/04/15,High,Regular Air,635,327
+89284,5/04/15,6/04/15,High,Delivery Truck,635,328
+87953,20/03/15,24/03/15,Low,Delivery Truck,637,329
+87954,30/04/15,1/05/15,Critical,Express Air,638,330
+87954,30/04/15,2/05/15,Critical,Express Air,638,331
+87952,14/02/15,15/02/15,Not Specified,Delivery Truck,639,332
+56452,14/02/15,15/02/15,Not Specified,Delivery Truck,640,333
+11077,20/03/15,24/03/15,Low,Delivery Truck,640,334
+45380,30/04/15,1/05/15,Critical,Express Air,640,335
+45380,30/04/15,2/05/15,Critical,Express Air,640,336
+90735,17/06/15,22/06/15,Low,Regular Air,646,337
+91365,21/06/15,22/06/15,Not Specified,Regular Air,648,338
+91366,29/05/15,30/05/15,Medium,Regular Air,649,339
+91575,7/01/15,8/01/15,High,Regular Air,651,340
+91576,15/02/15,19/02/15,Low,Delivery Truck,651,341
+91576,15/02/15,20/02/15,Low,Regular Air,651,342
+91576,15/02/15,22/02/15,Low,Regular Air,651,343
+91213,16/04/15,17/04/15,Not Specified,Express Air,653,344
+91212,19/01/15,21/01/15,Critical,Regular Air,657,345
+91212,19/01/15,20/01/15,Critical,Delivery Truck,659,346
+90922,29/05/15,1/06/15,Critical,Regular Air,663,347
+88677,16/01/15,20/01/15,Low,Regular Air,665,348
+88678,18/04/15,19/04/15,Critical,Delivery Truck,665,349
+88679,22/04/15,26/04/15,Low,Regular Air,666,350
+22147,16/01/15,20/01/15,Low,Regular Air,667,351
+48257,22/04/15,26/04/15,Low,Regular Air,667,352
+88475,20/03/15,22/03/15,Medium,Regular Air,669,353
+88475,20/03/15,21/03/15,Medium,Regular Air,669,354
+88474,5/03/15,12/03/15,Low,Delivery Truck,670,355
+88173,5/02/15,9/02/15,Low,Regular Air,672,356
+88173,5/02/15,12/02/15,Low,Regular Air,672,357
+88174,2/01/15,3/01/15,Critical,Regular Air,674,358
+88889,22/04/15,23/04/15,Medium,Express Air,678,359
+88890,4/03/15,5/03/15,Medium,Regular Air,679,360
+88890,4/03/15,6/03/15,Medium,Regular Air,680,361
+87765,7/04/15,8/04/15,Medium,Express Air,683,362
+88503,16/05/15,16/05/15,Critical,Regular Air,688,363
+88504,6/03/15,8/03/15,Low,Regular Air,688,364
+88502,4/02/15,5/02/15,Medium,Regular Air,689,365
+89915,21/03/15,22/03/15,High,Regular Air,691,366
+87811,25/03/15,25/03/15,Low,Delivery Truck,693,367
+87812,8/03/15,15/03/15,Low,Express Air,693,368
+87812,8/03/15,15/03/15,Low,Delivery Truck,693,369
+87812,8/03/15,15/03/15,Low,Regular Air,693,370
+87813,5/05/15,7/05/15,High,Delivery Truck,693,371
+89847,27/03/15,28/03/15,Medium,Regular Air,696,372
+89848,7/04/15,9/04/15,Low,Regular Air,696,373
+89847,27/03/15,28/03/15,Medium,Regular Air,697,374
+89849,7/02/15,9/02/15,Critical,Regular Air,697,375
+32869,27/03/15,28/03/15,Medium,Regular Air,698,376
+8994,7/04/15,9/04/15,Low,Regular Air,698,377
+53410,7/02/15,9/02/15,Critical,Regular Air,698,378
+44517,23/04/15,24/04/15,Medium,Regular Air,699,379
+55392,6/06/15,7/06/15,Critical,Regular Air,699,380
+55392,6/06/15,8/06/15,Critical,Regular Air,699,381
+36647,30/06/15,1/07/15,High,Regular Air,699,382
+36647,30/06/15,3/07/15,High,Regular Air,699,383
+32420,29/01/15,31/01/15,Medium,Regular Air,699,384
+32420,29/01/15,31/01/15,Medium,Delivery Truck,699,385
+3042,20/05/15,21/05/15,Medium,Regular Air,699,386
+87980,20/05/15,21/05/15,Medium,Regular Air,700,387
+87977,23/04/15,24/04/15,Medium,Regular Air,702,388
+87979,30/06/15,1/07/15,High,Regular Air,702,389
+87979,30/06/15,3/07/15,High,Regular Air,702,390
+87978,6/06/15,8/06/15,Critical,Regular Air,711,391
+89344,28/02/15,2/03/15,Not Specified,Regular Air,719,392
+91053,24/06/15,25/06/15,Not Specified,Regular Air,721,393
+91053,24/06/15,26/06/15,Not Specified,Express Air,721,394
+91054,11/04/15,13/04/15,Medium,Regular Air,721,395
+90359,15/03/15,16/03/15,Medium,Regular Air,724,396
+90359,15/03/15,16/03/15,Medium,Regular Air,727,397
+90362,26/04/15,27/04/15,High,Regular Air,731,398
+90361,15/06/15,17/06/15,Not Specified,Delivery Truck,736,399
+90360,7/06/15,14/06/15,Low,Regular Air,737,400
+90361,15/06/15,16/06/15,Not Specified,Delivery Truck,738,401
+90361,15/06/15,17/06/15,Not Specified,Regular Air,741,402
+87725,28/01/15,6/02/15,Low,Regular Air,744,403
+87725,28/01/15,1/02/15,Low,Regular Air,744,404
+87726,17/01/15,19/01/15,Medium,Delivery Truck,744,405
+87727,25/05/15,2/06/15,Low,Regular Air,744,406
+87726,17/01/15,19/01/15,Medium,Regular Air,745,407
+91200,12/01/15,13/01/15,Not Specified,Regular Air,750,408
+91201,27/02/15,6/03/15,Low,Delivery Truck,751,409
+90438,11/03/15,11/03/15,Critical,Express Air,753,410
+90438,11/03/15,13/03/15,Critical,Regular Air,753,411
+90437,4/06/15,5/06/15,High,Delivery Truck,754,412
+90439,12/04/15,19/04/15,Low,Delivery Truck,754,413
+90258,11/02/15,13/02/15,Not Specified,Regular Air,757,414
+86639,29/05/15,5/06/15,Low,Regular Air,759,415
+87525,27/04/15,29/04/15,Not Specified,Regular Air,762,416
+86279,30/01/15,1/02/15,Critical,Regular Air,767,417
+88667,19/03/15,19/03/15,Critical,Regular Air,770,418
+88667,19/03/15,21/03/15,Critical,Regular Air,771,419
+88666,14/01/15,16/01/15,Critical,Regular Air,772,420
+88666,14/01/15,16/01/15,Critical,Express Air,772,421
+88668,17/05/15,21/05/15,Low,Express Air,772,422
+88668,17/05/15,21/05/15,Low,Regular Air,772,423
+90962,29/04/15,30/04/15,High,Regular Air,782,424
+90961,6/01/15,6/01/15,Low,Delivery Truck,783,425
+91513,6/04/15,7/04/15,Medium,Regular Air,786,426
+88753,21/06/15,22/06/15,Not Specified,Regular Air,792,427
+86867,11/03/15,12/03/15,Not Specified,Regular Air,796,428
+86869,19/06/15,22/06/15,Not Specified,Regular Air,796,429
+86868,1/06/15,4/06/15,Not Specified,Regular Air,797,430
+86868,1/06/15,3/06/15,Not Specified,Regular Air,797,431
+86870,6/03/15,8/03/15,Low,Regular Air,797,432
+89909,6/01/15,8/01/15,Not Specified,Delivery Truck,799,433
+89909,6/01/15,8/01/15,Not Specified,Express Air,799,434
+89909,6/01/15,7/01/15,Not Specified,Regular Air,799,435
+89910,28/03/15,3/04/15,Low,Regular Air,800,436
+89910,28/03/15,30/03/15,Low,Regular Air,800,437
+90048,29/04/15,30/04/15,Medium,Regular Air,803,438
+40547,9/01/15,11/01/15,Critical,Express Air,806,439
+90244,21/05/15,25/05/15,Low,Regular Air,820,440
+89257,12/01/15,17/01/15,Low,Regular Air,823,441
+89257,12/01/15,19/01/15,Low,Delivery Truck,824,442
+89258,21/05/15,24/05/15,Critical,Regular Air,825,443
+89259,25/05/15,26/05/15,Medium,Regular Air,827,444
+90271,22/02/15,24/02/15,Not Specified,Regular Air,829,445
+90270,24/01/15,24/01/15,High,Regular Air,830,446
+89770,9/01/15,11/01/15,High,Express Air,833,447
+88569,7/03/15,8/03/15,Not Specified,Regular Air,850,448
+88568,25/02/15,27/02/15,Low,Regular Air,851,449
+88569,7/03/15,9/03/15,Not Specified,Regular Air,851,450
+88571,30/04/15,30/04/15,Critical,Regular Air,851,451
+88570,16/03/15,18/03/15,High,Regular Air,853,452
+88571,30/04/15,2/05/15,Critical,Regular Air,854,453
+88571,30/04/15,1/05/15,Critical,Regular Air,855,454
+88571,30/04/15,2/05/15,Critical,Express Air,858,455
+90674,27/05/15,28/05/15,Critical,Regular Air,865,456
+90675,26/02/15,2/03/15,Low,Express Air,865,457
+91194,25/02/15,27/02/15,Not Specified,Express Air,868,458
+91194,25/02/15,27/02/15,Not Specified,Regular Air,868,459
+91195,6/03/15,7/03/15,Critical,Regular Air,868,460
+91195,6/03/15,7/03/15,Critical,Delivery Truck,868,461
+90577,15/03/15,17/03/15,Not Specified,Regular Air,871,462
+90578,20/05/15,23/05/15,Not Specified,Regular Air,871,463
+90578,20/05/15,22/05/15,Not Specified,Regular Air,871,464
+89059,21/02/15,22/02/15,High,Regular Air,875,465
+89059,21/02/15,23/02/15,High,Regular Air,875,466
+86153,25/03/15,27/03/15,Critical,Regular Air,880,467
+89537,24/05/15,25/05/15,Critical,Delivery Truck,885,468
+89536,5/01/15,6/01/15,Critical,Regular Air,890,469
+89536,5/01/15,5/01/15,Critical,Regular Air,890,470
+14596,10/01/15,12/01/15,Critical,Regular Air,894,471
+14596,10/01/15,11/01/15,Critical,Regular Air,894,472
+38529,2/02/15,2/02/15,Low,Regular Air,894,473
+90166,10/01/15,12/01/15,Critical,Regular Air,896,474
+90166,10/01/15,11/01/15,Critical,Regular Air,896,475
+90167,20/06/15,22/06/15,Critical,Regular Air,896,476
+33635,12/01/15,13/01/15,High,Delivery Truck,898,477
+33635,12/01/15,13/01/15,High,Regular Air,898,478
+9606,27/01/15,27/01/15,Not Specified,Regular Air,898,479
+9606,27/01/15,29/01/15,Not Specified,Express Air,898,480
+86263,12/01/15,13/01/15,High,Delivery Truck,899,481
+86263,12/01/15,13/01/15,High,Regular Air,899,482
+86264,27/01/15,27/01/15,Not Specified,Regular Air,899,483
+86264,27/01/15,29/01/15,Not Specified,Express Air,899,484
+90806,12/03/15,14/03/15,Not Specified,Regular Air,903,485
+86459,26/02/15,27/02/15,Critical,Regular Air,907,486
+86460,17/06/15,19/06/15,Medium,Regular Air,907,487
+90187,14/05/15,14/05/15,Critical,Regular Air,910,488
+90185,31/01/15,2/02/15,Not Specified,Regular Air,911,489
+90185,31/01/15,1/02/15,Not Specified,Delivery Truck,911,490
+90186,4/04/15,6/04/15,High,Regular Air,911,491
+86356,4/01/15,5/01/15,High,Delivery Truck,915,492
+86357,4/01/15,11/01/15,Low,Regular Air,916,493
+90492,12/04/15,14/04/15,High,Regular Air,918,494
+90493,20/05/15,21/05/15,Critical,Delivery Truck,918,495
+90492,12/04/15,12/04/15,High,Regular Air,919,496
+90491,27/03/15,1/04/15,Low,Regular Air,920,497
+90492,12/04/15,14/04/15,High,Regular Air,920,498
+87135,20/05/15,21/05/15,Not Specified,Express Air,922,499
+87134,6/04/15,6/04/15,Critical,Regular Air,925,500
+87134,6/04/15,8/04/15,Critical,Delivery Truck,929,501
+90588,17/02/15,19/02/15,Critical,Express Air,936,502
+90589,27/06/15,27/06/15,Not Specified,Regular Air,936,503
+90589,27/06/15,28/06/15,Not Specified,Regular Air,937,504
+90844,14/04/15,19/04/15,Low,Delivery Truck,940,505
+86567,6/03/15,6/03/15,Not Specified,Regular Air,945,506
+86566,1/03/15,2/03/15,Critical,Express Air,946,507
+86565,11/01/15,13/01/15,Critical,Express Air,947,508
+9285,2/01/15,4/01/15,Critical ,Regular Air,949,509
+8257,22/03/15,26/03/15,Low,Regular Air,949,510
+89083,2/01/15,4/01/15,Critical,Regular Air,950,511
+89084,22/03/15,22/03/15,Low,Delivery Truck,950,512
+89084,22/03/15,26/03/15,Low,Regular Air,950,513
+89084,22/03/15,29/03/15,Low,Regular Air,950,514
+90771,12/02/15,21/02/15,Low,Regular Air,954,515
+90771,12/02/15,12/02/15,Low,Regular Air,954,516
+91581,22/03/15,23/03/15,Not Specified,Delivery Truck,959,517
+89401,4/02/15,8/02/15,Low,Regular Air,960,518
+89402,24/02/15,24/02/15,Not Specified,Delivery Truck,961,519
+17636,4/02/15,8/02/15,Low,Regular Air,962,520
+86173,20/04/15,21/04/15,Medium,Delivery Truck,970,521
+87259,28/02/15,5/03/15,Low,Delivery Truck,972,522
+87259,28/02/15,28/02/15,Low,Regular Air,972,523
+87260,4/04/15,9/04/15,Low,Regular Air,975,524
+87258,5/02/15,6/02/15,Medium,Regular Air,980,525
+90201,27/04/15,27/04/15,Low,Regular Air,983,526
+89432,19/02/15,19/02/15,High,Regular Air,993,527
+89433,14/03/15,15/03/15,High,Delivery Truck,994,528
+89434,10/05/15,15/05/15,Low,Regular Air,995,529
+89431,24/01/15,29/01/15,Low,Regular Air,997,530
+89433,14/03/15,15/03/15,High,Regular Air,999,531
+89433,14/03/15,15/03/15,High,Regular Air,1000,532
+90043,4/03/15,4/03/15,Low,Regular Air,1005,533
+90044,27/02/15,28/02/15,High,Regular Air,1005,534
+88371,25/05/15,27/05/15,High,Regular Air,1008,535
+88372,19/06/15,21/06/15,High,Delivery Truck,1009,536
+88387,1/03/15,2/03/15,Critical,Regular Air,1014,537
+88387,1/03/15,3/03/15,Critical,Regular Air,1014,538
+88387,1/03/15,2/03/15,Critical,Express Air,1014,539
+88388,5/03/15,6/03/15,Not Specified,Regular Air,1014,540
+88390,18/03/15,18/03/15,Medium,Regular Air,1015,541
+88389,12/06/15,13/06/15,High,Express Air,1016,542
+88391,8/04/15,9/04/15,Medium,Regular Air,1018,543
+88391,8/04/15,8/04/15,Medium,Regular Air,1018,544
+88632,7/03/15,7/03/15,Critical,Delivery Truck,1020,545
+88634,6/02/15,7/02/15,Critical,Regular Air,1020,546
+88634,6/02/15,8/02/15,Critical,Regular Air,1020,547
+88633,15/05/15,15/05/15,Critical,Regular Air,1023,548
+88633,15/05/15,16/05/15,Critical,Regular Air,1023,549
+89005,7/02/15,7/02/15,Not Specified,Regular Air,1026,550
+89008,29/05/15,30/05/15,High,Regular Air,1026,551
+89008,29/05/15,1/06/15,High,Regular Air,1026,552
+89004,12/03/15,13/03/15,High,Regular Air,1027,553
+89006,29/03/15,30/03/15,Medium,Express Air,1028,554
+89007,8/05/15,9/05/15,Not Specified,Express Air,1028,555
+90710,13/03/15,13/03/15,Critical,Regular Air,1035,556
+90710,13/03/15,14/03/15,Critical,Regular Air,1036,557
+90641,16/06/15,17/06/15,Critical,Regular Air,1038,558
+87846,17/04/15,18/04/15,Critical,Regular Air,1041,559
+87846,17/04/15,17/04/15,Critical,Regular Air,1041,560
+87847,16/05/15,17/05/15,Critical,Express Air,1042,561
+28001,14/06/15,14/06/15,Critical,Regular Air,1044,562
+28001,14/06/15,16/06/15,Critical,Regular Air,1044,563
+47813,27/02/15,28/02/15,High,Regular Air,1044,564
+89389,27/02/15,28/02/15,High,Regular Air,1047,565
+90069,25/05/15,27/05/15,Not Specified,Express Air,1054,566
+90069,25/05/15,26/05/15,Not Specified,Regular Air,1054,567
+90069,25/05/15,27/05/15,Not Specified,Regular Air,1054,568
+58628,24/03/15,25/03/15,Medium,Delivery Truck,1060,569
+57061,30/05/15,30/05/15,Low,Regular Air,1060,570
+91354,24/03/15,25/03/15,Medium,Delivery Truck,1062,571
+91355,30/05/15,7/06/15,Low,Regular Air,1062,572
+91355,30/05/15,2/06/15,Low,Regular Air,1062,573
+88899,18/02/15,20/02/15,Critical,Regular Air,1065,574
+87109,16/03/15,16/03/15,Low,Regular Air,1068,575
+87110,14/05/15,15/05/15,Medium,Regular Air,1069,576
+89631,27/03/15,30/03/15,Not Specified,Delivery Truck,1072,577
+86422,9/03/15,10/03/15,High,Regular Air,1075,578
+88461,8/05/15,9/05/15,Not Specified,Regular Air,1080,579
+88460,31/03/15,2/04/15,Not Specified,Express Air,1083,580
+86122,5/01/15,6/01/15,Not Specified,Regular Air,1085,581
+86123,24/04/15,25/04/15,High,Regular Air,1085,582
+86124,13/05/15,15/05/15,Not Specified,Regular Air,1085,583
+86124,13/05/15,14/05/15,Not Specified,Regular Air,1085,584
+86123,24/04/15,25/04/15,High,Regular Air,1086,585
+91488,5/05/15,6/05/15,Medium,Regular Air,1101,586
+90977,10/04/15,11/04/15,Not Specified,Delivery Truck,1103,587
+27456,10/04/15,11/04/15,Not Specified,Delivery Truck,1104,588
+20261,20/05/15,23/05/15,Medium,Regular Air,1106,589
+646,21/05/15,22/05/15,High,Regular Air,1106,590
+45824,6/06/15,8/06/15,Not Specified,Regular Air,1106,591
+86411,21/05/15,22/05/15,High,Regular Air,1107,592
+86409,20/05/15,20/05/15,Medium,Express Air,1108,593
+86409,20/05/15,23/05/15,Medium,Regular Air,1108,594
+86409,20/05/15,21/05/15,Medium,Express Air,1108,595
+86410,29/06/15,29/06/15,Medium,Regular Air,1109,596
+90832,2/04/15,4/04/15,Not Specified,Delivery Truck,1112,597
+90833,6/04/15,7/04/15,Critical,Regular Air,1113,598
+90833,6/04/15,8/04/15,Critical,Regular Air,1113,599
+86768,5/02/15,6/02/15,Not Specified,Regular Air,1117,600
+86767,7/02/15,14/02/15,Low,Regular Air,1121,601
+86767,7/02/15,9/02/15,Low,Regular Air,1121,602
+87015,15/03/15,18/03/15,High,Regular Air,1123,603
+87016,20/06/15,22/06/15,High,Regular Air,1123,604
+87016,20/06/15,21/06/15,High,Delivery Truck,1124,605
+87221,24/02/15,26/02/15,Medium,Regular Air,1127,606
+87222,22/06/15,26/06/15,Low,Regular Air,1127,607
+87222,22/06/15,27/06/15,Low,Regular Air,1128,608
+32037,16/02/15,23/02/15,Low,Regular Air,1129,609
+32037,16/02/15,20/02/15,Low,Regular Air,1129,610
+49125,29/03/15,31/03/15,Not Specified,Express Air,1129,611
+13735,21/05/15,23/05/15,Medium,Regular Air,1129,612
+39430,13/06/15,17/06/15,Low,Regular Air,1129,613
+57794,26/01/15,28/01/15,Low,Regular Air,1129,614
+88103,21/05/15,23/05/15,Medium,Regular Air,1131,615
+88101,10/02/15,11/02/15,Medium,Regular Air,1132,616
+88102,16/02/15,23/02/15,Low,Regular Air,1132,617
+88102,16/02/15,20/02/15,Low,Regular Air,1132,618
+88104,13/06/15,17/06/15,Low,Regular Air,1132,619
+88105,26/01/15,28/01/15,Low,Regular Air,1133,620
+87940,2/01/15,4/01/15,High,Delivery Truck,1136,621
+86574,16/02/15,19/02/15,Medium,Delivery Truck,1138,622
+86573,4/01/15,6/01/15,Medium,Regular Air,1142,623
+86575,6/06/15,9/06/15,Medium,Regular Air,1142,624
+91344,9/06/15,9/06/15,Low,Regular Air,1151,625
+90853,2/01/15,4/01/15,Critical,Express Air,1155,626
+90853,2/01/15,2/01/15,Critical,Regular Air,1155,627
+90855,14/02/15,15/02/15,High,Regular Air,1156,628
+90854,20/05/15,21/05/15,High,Delivery Truck,1159,629
+87520,2/06/15,3/06/15,Not Specified,Regular Air,1170,630
+87520,2/06/15,4/06/15,Not Specified,Regular Air,1170,631
+89787,9/04/15,11/04/15,High,Regular Air,1178,632
+89787,9/04/15,11/04/15,High,Delivery Truck,1178,633
+89787,9/04/15,11/04/15,High,Express Air,1178,634
+89787,9/04/15,10/04/15,High,Delivery Truck,1178,635
+86913,23/05/15,23/05/15,High,Regular Air,1182,636
+86914,29/06/15,29/06/15,Not Specified,Regular Air,1183,637
+85938,21/03/15,22/03/15,Medium,Regular Air,1185,638
+85940,10/04/15,13/04/15,Not Specified,Regular Air,1185,639
+85939,9/04/15,10/04/15,Critical,Delivery Truck,1186,640
+87584,17/06/15,22/06/15,Low,Regular Air,1189,641
+87584,17/06/15,19/06/15,Low,Regular Air,1189,642
+87587,28/06/15,1/07/15,Low,Regular Air,1191,643
+5984,17/06/15,22/06/15,Low,Regular Air,1193,644
+5984,17/06/15,19/06/15,Low,Regular Air,1193,645
+29350,25/02/15,27/02/15,High,Regular Air,1193,646
+29350,25/02/15,26/02/15,High,Express Air,1193,647
+38852,1/05/15,3/05/15,Not Specified,Regular Air,1193,648
+11206,28/06/15,30/06/15,Low,Regular Air,1193,649
+11206,28/06/15,1/07/15,Low,Regular Air,1193,650
+87586,1/05/15,3/05/15,Not Specified,Regular Air,1194,651
+87583,18/03/15,20/03/15,High,Delivery Truck,1197,652
+87585,25/02/15,28/02/15,High,Regular Air,1199,653
+87585,25/02/15,27/02/15,High,Regular Air,1200,654
+87585,25/02/15,26/02/15,High,Express Air,1202,655
+87587,28/06/15,30/06/15,Low,Regular Air,1203,656
+88598,1/02/15,6/02/15,Low,Regular Air,1211,657
+88600,15/01/15,16/01/15,High,Regular Air,1212,658
+88599,4/02/15,9/02/15,Low,Express Air,1213,659
+88599,4/02/15,8/02/15,Low,Regular Air,1213,660
+88600,15/01/15,17/01/15,High,Regular Air,1213,661
+54595,28/04/15,1/05/15,Medium,Delivery Truck,1217,662
+90800,28/04/15,30/04/15,Medium,Regular Air,1226,663
+90800,28/04/15,1/05/15,Medium,Delivery Truck,1227,664
+55874,16/02/15,17/02/15,Medium,Regular Air,1228,665
+55874,16/02/15,18/02/15,Medium,Express Air,1228,666
+55874,16/02/15,16/02/15,Medium,Regular Air,1228,667
+90378,16/02/15,18/02/15,Medium,Express Air,1229,668
+89375,9/04/15,11/04/15,Critical,Express Air,1233,669
+89376,4/06/15,6/06/15,High,Regular Air,1233,670
+89376,4/06/15,5/06/15,High,Regular Air,1233,671
+86075,31/01/15,2/02/15,Medium,Regular Air,1237,672
+86076,29/03/15,30/03/15,Not Specified,Regular Air,1237,673
+86077,25/05/15,26/05/15,Medium,Regular Air,1237,674
+86077,25/05/15,26/05/15,Medium,Express Air,1237,675
+86075,31/01/15,2/02/15,Medium,Delivery Truck,1238,676
+90880,16/03/15,17/03/15,Not Specified,Regular Air,1241,677
+90881,25/03/15,25/03/15,Critical,Delivery Truck,1241,678
+36452,5/04/15,6/04/15,High,Regular Air,1246,679
+36452,5/04/15,7/04/15,High,Regular Air,1246,680
+46853,22/05/15,22/05/15,Low,Regular Air,1246,681
+91555,5/04/15,6/04/15,High,Regular Air,1247,682
+91555,5/04/15,7/04/15,High,Regular Air,1247,683
+87877,9/04/15,9/04/15,High,Regular Air,1250,684
+87877,9/04/15,11/04/15,High,Delivery Truck,1250,685
+87877,9/04/15,10/04/15,High,Regular Air,1250,686
+89981,23/04/15,23/04/15,Low,Regular Air,1253,687
+89981,23/04/15,25/04/15,Low,Delivery Truck,1253,688
+89982,21/05/15,23/05/15,Medium,Regular Air,1254,689
+89983,12/03/15,13/03/15,Critical,Regular Air,1254,690
+89984,24/03/15,25/03/15,Medium,Regular Air,1254,691
+86535,22/05/15,23/05/15,Medium,Delivery Truck,1257,692
+86536,24/04/15,24/04/15,Critical,Regular Air,1257,693
+86534,20/04/15,20/04/15,High,Express Air,1259,694
+89730,7/05/15,10/05/15,Critical,Regular Air,1261,695
+89729,11/06/15,12/06/15,Critical,Regular Air,1265,696
+89514,10/02/15,11/02/15,Critical,Regular Air,1267,697
+89515,12/05/15,13/05/15,Not Specified,Regular Air,1267,698
+89515,12/05/15,14/05/15,Not Specified,Regular Air,1267,699
+88410,9/04/15,10/04/15,Medium,Regular Air,1271,700
+88411,1/05/15,6/05/15,Low,Regular Air,1271,701
+90114,1/03/15,2/03/15,Critical,Regular Air,1279,702
+90115,5/03/15,5/03/15,Not Specified,Delivery Truck,1279,703
+19042,1/03/15,2/03/15,Critical,Regular Air,1280,704
+89112,24/01/15,26/01/15,Low,Regular Air,1281,705
+89112,24/01/15,26/01/15,Low,Express Air,1281,706
+29319,24/01/15,26/01/15,Low,Regular Air,1282,707
+29319,24/01/15,26/01/15,Low,Express Air,1282,708
+90662,12/02/15,15/02/15,Not Specified,Regular Air,1298,709
+90662,12/02/15,14/02/15,Not Specified,Regular Air,1298,710
+87003,19/02/15,21/02/15,High,Regular Air,1303,711
+87005,19/02/15,26/02/15,Low,Regular Air,1303,712
+87004,23/04/15,24/04/15,Medium,Regular Air,1304,713
+87002,17/02/15,19/02/15,High,Regular Air,1305,714
+91451,30/06/15,7/07/15,Low,Regular Air,1307,715
+22755,30/03/15,1/04/15,Medium,Regular Air,1314,716
+27013,5/01/15,9/01/15,Low,Regular Air,1314,717
+27013,5/01/15,5/01/15,Low,Regular Air,1314,718
+87602,30/03/15,31/03/15,Medium,Regular Air,1315,719
+87602,30/03/15,1/04/15,Medium,Regular Air,1316,720
+87603,5/01/15,9/01/15,Low,Regular Air,1316,721
+87603,5/01/15,5/01/15,Low,Regular Air,1316,722
+91244,10/02/15,10/02/15,Low,Regular Air,1338,723
+21636,10/02/15,17/02/15,Low,Express Air,1340,724
+21636,10/02/15,15/02/15,Low,Regular Air,1340,725
+21636,10/02/15,10/02/15,Low,Regular Air,1340,726
+24455,6/06/15,9/06/15,Not Specified,Regular Air,1340,727
+91244,10/02/15,15/02/15,Low,Regular Air,1341,728
+91245,6/06/15,8/06/15,Not Specified,Regular Air,1341,729
+91245,6/06/15,9/06/15,Not Specified,Regular Air,1341,730
+89686,30/04/15,6/05/15,Low,Regular Air,1347,731
+88233,17/04/15,18/04/15,High,Express Air,1350,732
+88232,27/01/15,29/01/15,Not Specified,Express Air,1351,733
+88234,30/04/15,1/05/15,High,Regular Air,1352,734
+91209,11/02/15,11/02/15,High,Regular Air,1354,735
+91209,11/02/15,13/02/15,High,Regular Air,1354,736
+88184,3/06/15,5/06/15,Medium,Regular Air,1357,737
+88185,28/06/15,30/06/15,High,Delivery Truck,1357,738
+89595,26/01/15,27/01/15,High,Regular Air,1360,739
+89595,26/01/15,28/01/15,High,Regular Air,1361,740
+89596,10/02/15,11/02/15,Critical,Express Air,1361,741
+89596,10/02/15,12/02/15,Critical,Regular Air,1361,742
+89993,4/02/15,6/02/15,Medium,Regular Air,1363,743
+89994,17/03/15,17/03/15,Not Specified,Regular Air,1364,744
+90513,7/01/15,10/01/15,Medium,Regular Air,1367,745
+90514,23/03/15,25/03/15,Medium,Regular Air,1368,746
+90514,23/03/15,25/03/15,Medium,Express Air,1369,747
+88212,7/06/15,8/06/15,Critical,Regular Air,1374,748
+88213,27/06/15,3/07/15,Low,Regular Air,1380,749
+89406,1/05/15,2/05/15,Medium,Regular Air,1383,750
+89407,30/06/15,2/07/15,Not Specified,Regular Air,1384,751
+89408,7/06/15,14/06/15,Low,Regular Air,1384,752
+88726,25/01/15,26/01/15,Critical,Regular Air,1389,753
+88728,13/05/15,15/05/15,High,Express Air,1389,754
+88729,3/06/15,5/06/15,High,Regular Air,1389,755
+88731,16/05/15,16/05/15,Critical,Regular Air,1390,756
+88731,16/05/15,18/05/15,Critical,Regular Air,1390,757
+88727,24/04/15,24/04/15,Not Specified,Express Air,1391,758
+88730,3/05/15,10/05/15,Low,Regular Air,1391,759
+37729,15/01/15,15/01/15,Not Specified,Regular Air,1402,760
+43079,21/01/15,22/01/15,Medium,Regular Air,1402,761
+86144,15/01/15,15/01/15,Not Specified,Regular Air,1405,762
+86145,21/01/15,22/01/15,Medium,Regular Air,1405,763
+87086,7/04/15,8/04/15,Medium,Regular Air,1410,764
+87087,2/02/15,4/02/15,Not Specified,Regular Air,1412,765
+10277,7/04/15,8/04/15,Medium,Regular Air,1413,766
+45539,2/02/15,4/02/15,Not Specified,Express Air,1413,767
+90538,6/05/15,7/05/15,Critical,Delivery Truck,1416,768
+90540,25/06/15,27/06/15,High,Regular Air,1416,769
+90539,1/01/15,3/01/15,Low,Regular Air,1418,770
+90540,25/06/15,26/06/15,Not Specified,Delivery Truck,1419,771
+89448,12/01/15,14/01/15,Low,Delivery Truck,1424,772
+89448,12/01/15,16/01/15,Low,Regular Air,1424,773
+89449,20/06/15,22/06/15,Not Specified,Regular Air,1424,774
+89450,1/01/15,6/01/15,Low,Delivery Truck,1425,775
+90905,5/02/15,9/02/15,Low,Regular Air,1427,776
+86826,5/03/15,6/03/15,Not Specified,Regular Air,1432,777
+86827,20/06/15,27/06/15,Low,Regular Air,1432,778
+86826,5/03/15,6/03/15,Not Specified,Express Air,1433,779
+86828,19/05/15,21/05/15,High,Delivery Truck,1433,780
+86828,19/05/15,19/05/15,High,Delivery Truck,1433,781
+90120,22/01/15,24/01/15,Critical,Regular Air,1438,782
+90121,28/04/15,29/04/15,Critical,Regular Air,1439,783
+89076,25/06/15,27/06/15,Not Specified,Regular Air,1442,784
+89077,30/01/15,3/02/15,Low,Express Air,1442,785
+89077,30/01/15,30/01/15,Low,Express Air,1442,786
+86735,24/05/15,25/05/15,Medium,Express Air,1450,787
+86734,5/04/15,7/04/15,High,Regular Air,1459,788
+86397,2/06/15,4/06/15,High,Regular Air,1461,789
+91115,11/06/15,13/06/15,High,Regular Air,1466,790
+91116,12/06/15,12/06/15,Low,Delivery Truck,1466,791
+91116,12/06/15,16/06/15,Low,Regular Air,1469,792
+91116,12/06/15,14/06/15,Low,Delivery Truck,1469,793
+87077,21/03/15,22/03/15,High,Regular Air,1471,794
+87078,30/06/15,1/07/15,Not Specified,Express Air,1472,795
+87079,25/05/15,26/05/15,Medium,Regular Air,1472,796
+87076,21/01/15,22/01/15,Critical,Express Air,1473,797
+53953,27/03/15,28/03/15,Not Specified,Regular Air,1481,798
+91362,27/03/15,28/03/15,Not Specified,Regular Air,1482,799
+91363,28/02/15,28/02/15,Not Specified,Regular Air,1482,800
+91235,11/03/15,14/03/15,High,Regular Air,1484,801
+91235,11/03/15,12/03/15,High,Regular Air,1484,802
+91235,11/03/15,11/03/15,High,Express Air,1484,803
+91236,20/02/15,23/02/15,Not Specified,Regular Air,1485,804
+91236,20/02/15,21/02/15,Not Specified,Regular Air,1485,805
+91236,20/02/15,22/02/15,Not Specified,Delivery Truck,1485,806
+88004,16/06/15,18/06/15,High,Delivery Truck,1492,807
+85880,11/03/15,13/03/15,Critical,Regular Air,1494,808
+85880,11/03/15,13/03/15,Critical,Express Air,1494,809
+85880,11/03/15,12/03/15,Critical,Regular Air,1497,810
+85880,11/03/15,13/03/15,Critical,Regular Air,1497,811
+90731,4/02/15,5/02/15,Medium,Regular Air,1499,812
+90731,4/02/15,5/02/15,Medium,Delivery Truck,1499,813
+89193,7/05/15,10/05/15,Critical,Regular Air,1502,814
+89194,29/06/15,3/07/15,Low,Express Air,1502,815
+89194,29/06/15,2/07/15,Low,Regular Air,1502,816
+86181,13/06/15,18/06/15,Low,Regular Air,1505,817
+90303,22/06/15,24/06/15,Critical,Regular Air,1511,818
+89957,14/06/15,14/06/15,Critical,Regular Air,1519,819
+89957,14/06/15,15/06/15,Critical,Delivery Truck,1522,820
+86812,10/02/15,11/02/15,High,Regular Air,1526,821
+86813,9/01/15,11/01/15,Critical,Express Air,1527,822
+86814,30/03/15,9/04/15,Low,Regular Air,1527,823
+86815,21/05/15,28/05/15,Low,Regular Air,1527,824
+86813,9/01/15,11/01/15,Critical,Regular Air,1528,825
+88852,17/01/15,18/01/15,Critical,Regular Air,1531,826
+91328,6/02/15,7/02/15,High,Regular Air,1533,827
+88487,23/06/15,25/06/15,Low,Regular Air,1548,828
+87488,25/06/15,1/07/15,Low,Regular Air,1551,829
+87486,1/01/15,4/01/15,Critical,Delivery Truck,1552,830
+87484,22/03/15,24/03/15,Not Specified,Regular Air,1553,831
+87485,18/05/15,18/05/15,High,Regular Air,1554,832
+87487,13/02/15,14/02/15,High,Delivery Truck,1554,833
+87425,1/06/15,3/06/15,Not Specified,Regular Air,1556,834
+87426,25/03/15,2/04/15,Low,Regular Air,1557,835
+87426,25/03/15,27/03/15,Low,Regular Air,1557,836
+87424,15/04/15,17/04/15,Critical,Delivery Truck,1559,837
+88093,1/03/15,2/03/15,High,Regular Air,1561,838
+88094,13/04/15,14/04/15,Critical,Regular Air,1561,839
+86966,9/02/15,10/02/15,Medium,Regular Air,1574,840
+90934,16/02/15,20/02/15,Low,Regular Air,1580,841
+86668,4/04/15,4/04/15,Medium,Express Air,1590,842
+86668,4/04/15,6/04/15,Medium,Regular Air,1593,843
+90796,11/05/15,12/05/15,High,Delivery Truck,1595,844
+90796,11/05/15,12/05/15,High,Regular Air,1595,845
+90796,11/05/15,13/05/15,High,Regular Air,1595,846
+89680,10/04/15,12/04/15,Critical,Regular Air,1602,847
+89679,16/01/15,18/01/15,Critical,Regular Air,1603,848
+89679,16/01/15,18/01/15,Critical,Delivery Truck,1603,849
+87993,7/01/15,8/01/15,Medium,Regular Air,1606,850
+87993,7/01/15,8/01/15,Medium,Express Air,1606,851
+87994,15/04/15,15/04/15,Not Specified,Regular Air,1607,852
+87995,6/02/15,10/02/15,Low,Express Air,1607,853
+87824,11/05/15,12/05/15,High,Regular Air,1609,854
+87824,11/05/15,11/05/15,High,Regular Air,1609,855
+87823,8/04/15,12/04/15,Low,Regular Air,1614,856
+90248,6/04/15,6/04/15,High,Regular Air,1618,857
+90248,6/04/15,7/04/15,High,Express Air,1620,858
+87611,24/05/15,26/05/15,High,Regular Air,1623,859
+87611,24/05/15,25/05/15,High,Regular Air,1623,860
+90600,27/03/15,29/03/15,Medium,Delivery Truck,1625,861
+90600,27/03/15,29/03/15,Medium,Regular Air,1625,862
+90600,27/03/15,28/03/15,Medium,Regular Air,1625,863
+90601,16/02/15,18/02/15,Medium,Regular Air,1625,864
+90602,28/05/15,30/05/15,High,Regular Air,1627,865
+90530,15/01/15,16/01/15,High,Express Air,1632,866
+90533,15/04/15,17/04/15,High,Regular Air,1632,867
+90531,10/02/15,12/02/15,Not Specified,Regular Air,1633,868
+90532,9/04/15,10/04/15,Not Specified,Delivery Truck,1634,869
+89704,14/01/15,16/01/15,Critical,Delivery Truck,1636,870
+89704,14/01/15,17/01/15,Critical,Regular Air,1636,871
+89706,12/01/15,14/01/15,High,Express Air,1636,872
+89705,26/02/15,28/02/15,Critical,Regular Air,1639,873
+87342,14/06/15,16/06/15,Low,Regular Air,1644,874
+90932,15/03/15,17/03/15,Not Specified,Regular Air,1646,875
+91043,25/03/15,27/03/15,Critical,Regular Air,1648,876
+91043,25/03/15,25/03/15,Critical,Regular Air,1648,877
+91041,24/02/15,26/02/15,Critical,Express Air,1649,878
+91042,9/05/15,9/05/15,High,Regular Air,1650,879
+91042,9/05/15,10/05/15,High,Regular Air,1650,880
+91042,9/05/15,11/05/15,High,Express Air,1650,881
+89885,24/01/15,25/01/15,Not Specified,Express Air,1653,882
+89885,24/01/15,25/01/15,Not Specified,Regular Air,1653,883
+90678,26/02/15,27/02/15,High,Regular Air,1665,884
+86722,24/04/15,26/04/15,Low,Regular Air,1670,885
+86722,24/04/15,3/05/15,Low,Regular Air,1670,886
+86724,9/02/15,13/02/15,Low,Regular Air,1671,887
+86725,12/05/15,13/05/15,Critical,Regular Air,1671,888
+86723,7/06/15,12/06/15,Low,Delivery Truck,1672,889
+86723,7/06/15,9/06/15,Low,Regular Air,1672,890
+86646,20/03/15,21/03/15,Medium,Regular Air,1679,891
+86645,3/05/15,5/05/15,Low,Regular Air,1680,892
+14115,14/02/15,16/02/15,Not Specified,Regular Air,1682,893
+38080,14/03/15,15/03/15,Not Specified,Regular Air,1682,894
+90612,14/02/15,16/02/15,Not Specified,Regular Air,1683,895
+90613,14/03/15,15/03/15,Not Specified,Regular Air,1683,896
+86973,3/03/15,10/03/15,Low,Regular Air,1686,897
+91077,24/03/15,25/03/15,High,Regular Air,1689,898
+91076,24/01/15,28/01/15,Low,Regular Air,1690,899
+91078,1/06/15,2/06/15,Not Specified,Regular Air,1690,900
+90189,23/01/15,24/01/15,Not Specified,Regular Air,1692,901
+90189,23/01/15,25/01/15,Not Specified,Regular Air,1693,902
+90190,11/05/15,11/05/15,Low,Express Air,1693,903
+86338,16/01/15,17/01/15,Medium,Regular Air,1697,904
+87345,25/03/15,29/03/15,Low,Regular Air,1699,905
+87345,25/03/15,25/03/15,Low,Regular Air,1699,906
+90473,17/01/15,20/01/15,Medium,Regular Air,1702,907
+90473,17/01/15,19/01/15,Medium,Express Air,1702,908
+88781,17/01/15,18/01/15,Medium,Regular Air,1708,909
+88784,20/05/15,21/05/15,Not Specified,Regular Air,1708,910
+88782,21/01/15,22/01/15,Not Specified,Regular Air,1709,911
+88783,10/05/15,12/05/15,Medium,Regular Air,1709,912
+87747,16/03/15,18/03/15,Not Specified,Regular Air,1711,913
+87749,11/04/15,20/04/15,Low,Regular Air,1712,914
+87748,29/05/15,31/05/15,High,Regular Air,1713,915
+90621,8/03/15,15/03/15,Low,Delivery Truck,1718,916
+90786,17/01/15,19/01/15,Medium,Regular Air,1719,917
+90787,16/05/15,17/05/15,High,Regular Air,1721,918
+40101,31/01/15,5/02/15,Low,Express Air,1723,919
+44002,7/02/15,9/02/15,Medium,Regular Air,1723,920
+44002,7/02/15,7/02/15,Medium,Regular Air,1723,921
+32710,16/05/15,17/05/15,High,Regular Air,1723,922
+87193,7/05/15,9/05/15,High,Regular Air,1725,923
+87194,21/01/15,23/01/15,Not Specified,Express Air,1727,924
+87195,22/02/15,24/02/15,High,Regular Air,1728,925
+90653,7/04/15,9/04/15,High,Express Air,1730,926
+3841,4/04/15,6/04/15,Not Specified,Regular Air,1733,927
+59937,28/06/15,29/06/15,High,Regular Air,1733,928
+88443,4/04/15,6/04/15,Not Specified,Regular Air,1734,929
+88443,4/04/15,6/04/15,Not Specified,Express Air,1734,930
+88444,28/06/15,29/06/15,High,Regular Air,1735,931
+85866,3/06/15,5/06/15,Not Specified,Regular Air,1737,932
+85866,3/06/15,5/06/15,Not Specified,Express Air,1737,933
+85865,28/03/15,28/03/15,Medium,Regular Air,1738,934
+85868,14/06/15,21/06/15,Low,Regular Air,1738,935
+85867,3/05/15,4/05/15,High,Delivery Truck,1739,936
+91025,12/02/15,14/02/15,Medium,Regular Air,1743,937
+18561,9/01/15,10/01/15,Not Specified,Regular Air,1745,938
+13408,14/02/15,16/02/15,Low,Regular Air,1745,939
+12224,12/06/15,14/06/15,High,Delivery Truck,1745,940
+12224,12/06/15,12/06/15,High,Regular Air,1745,941
+87245,12/06/15,14/06/15,High,Delivery Truck,1748,942
+87243,9/01/15,10/01/15,Not Specified,Regular Air,1749,943
+87244,14/02/15,16/02/15,Low,Regular Air,1749,944
+90178,27/02/15,28/02/15,Low,Regular Air,1754,945
+90178,27/02/15,27/02/15,Low,Regular Air,1754,946
+90178,27/02/15,3/03/15,Low,Regular Air,1754,947
+89775,22/01/15,22/01/15,High,Regular Air,1764,948
+89776,1/03/15,3/03/15,High,Regular Air,1764,949
+89776,1/03/15,2/03/15,High,Regular Air,1764,950
+89777,4/05/15,5/05/15,Not Specified,Regular Air,1765,951
+89211,26/03/15,27/03/15,Critical,Regular Air,1767,952
+89106,6/03/15,7/03/15,Medium,Regular Air,1771,953
+89944,14/06/15,21/06/15,Low,Regular Air,1775,954
+89941,4/02/15,5/02/15,Not Specified,Regular Air,1776,955
+89939,22/04/15,26/04/15,Low,Regular Air,1777,956
+89940,3/01/15,8/01/15,Low,Regular Air,1777,957
+89942,2/04/15,3/04/15,Not Specified,Regular Air,1777,958
+89943,10/05/15,12/05/15,High,Regular Air,1778,959
+89943,10/05/15,10/05/15,High,Regular Air,1778,960
+89857,12/06/15,14/06/15,High,Regular Air,1781,961
+89858,7/01/15,12/01/15,Low,Regular Air,1781,962
+89856,6/01/15,8/01/15,High,Regular Air,1782,963
+88256,21/01/15,22/01/15,Critical,Regular Air,1788,964
+87853,6/01/15,7/01/15,Critical,Delivery Truck,1793,965
+91543,1/06/15,2/06/15,Critical,Regular Air,1802,966
+89251,17/03/15,18/03/15,Medium,Express Air,1808,967
+90524,23/05/15,25/05/15,Not Specified,Express Air,1814,968
+90524,23/05/15,25/05/15,Not Specified,Regular Air,1814,969
+90525,11/02/15,12/02/15,Medium,Delivery Truck,1815,970
+85990,5/02/15,7/02/15,Low,Regular Air,1816,971
+85991,15/04/15,17/04/15,Not Specified,Regular Air,1818,972
+85991,15/04/15,18/04/15,Not Specified,Express Air,1818,973
+34435,5/02/15,7/02/15,Low,Regular Air,1821,974
+47108,15/04/15,16/04/15,Not Specified,Regular Air,1821,975
+47108,15/04/15,17/04/15,Not Specified,Regular Air,1821,976
+47108,15/04/15,18/04/15,Not Specified,Express Air,1821,977
+47108,15/04/15,16/04/15,Not Specified,Express Air,1821,978
+86958,18/04/15,19/04/15,Medium,Express Air,1826,979
+86959,12/05/15,14/05/15,Medium,Regular Air,1826,980
+86956,19/02/15,20/02/15,Not Specified,Regular Air,1827,981
+86958,18/04/15,21/04/15,Medium,Delivery Truck,1827,982
+86958,18/04/15,20/04/15,Medium,Regular Air,1827,983
+86956,19/02/15,20/02/15,Not Specified,Regular Air,1828,984
+86960,6/01/15,6/01/15,Low,Regular Air,1828,985
+86960,6/01/15,11/01/15,Low,Regular Air,1828,986
+86957,25/03/15,27/03/15,Critical,Express Air,1829,987
+86960,6/01/15,13/01/15,Low,Regular Air,1829,988
+86960,6/01/15,15/01/15,Low,Regular Air,1829,989
+86600,19/04/15,20/04/15,High,Express Air,1836,990
+86600,19/04/15,21/04/15,High,Regular Air,1837,991
+86599,30/03/15,1/04/15,Not Specified,Regular Air,1840,992
+89697,1/04/15,3/04/15,High,Regular Air,1849,993
+89697,1/04/15,2/04/15,High,Regular Air,1849,994
+86847,19/03/15,21/03/15,Not Specified,Express Air,1852,995
+86847,19/03/15,22/03/15,Not Specified,Regular Air,1854,996
+86846,15/06/15,17/06/15,Critical,Regular Air,1860,997
+89209,3/05/15,4/05/15,Not Specified,Regular Air,1869,998
+90099,17/01/15,19/01/15,Medium,Regular Air,1873,999
+90099,17/01/15,17/01/15,Medium,Regular Air,1873,1000
+90899,29/01/15,31/01/15,Critical,Regular Air,1875,1001
+87378,1/03/15,3/03/15,Not Specified,Regular Air,1882,1002
+87378,1/03/15,3/03/15,Not Specified,Delivery Truck,1885,1003
+90631,17/04/15,21/04/15,Low,Regular Air,1889,1004
+90630,5/04/15,7/04/15,Not Specified,Delivery Truck,1891,1005
+91262,26/04/15,30/04/15,Low,Delivery Truck,1893,1006
+91261,24/02/15,25/02/15,Critical,Delivery Truck,1894,1007
+91261,24/02/15,26/02/15,Critical,Regular Air,1894,1008
+91263,18/03/15,19/03/15,High,Regular Air,1894,1009
+86500,17/05/15,17/05/15,Low,Regular Air,1906,1010
+86500,17/05/15,26/05/15,Low,Regular Air,1907,1011
+91371,1/01/15,2/01/15,Not Specified,Regular Air,1910,1012
+85893,27/02/15,28/02/15,Critical,Regular Air,1916,1013
+85895,16/04/15,18/04/15,High,Regular Air,1916,1014
+85894,27/03/15,28/03/15,Medium,Regular Air,1917,1015
+85897,1/03/15,3/03/15,High,Regular Air,1917,1016
+85898,4/04/15,11/04/15,Low,Express Air,1918,1017
+85896,24/02/15,25/02/15,High,Regular Air,1919,1018
+88579,6/02/15,6/02/15,High,Delivery Truck,1927,1019
+88580,21/01/15,21/01/15,Not Specified,Regular Air,1928,1020
+86687,19/04/15,23/04/15,Low,Regular Air,1933,1021
+86688,30/05/15,30/05/15,Low,Delivery Truck,1934,1022
+86686,8/04/15,10/04/15,Critical,Express Air,1935,1023
+86688,30/05/15,5/06/15,Low,Regular Air,1935,1024
+86688,30/05/15,4/06/15,Low,Regular Air,1935,1025
+86688,30/05/15,7/06/15,Low,Express Air,1935,1026
+88870,22/03/15,23/03/15,Medium,Express Air,1938,1027
+88870,22/03/15,24/03/15,Medium,Regular Air,1940,1028
+88871,19/04/15,26/04/15,Low,Regular Air,1940,1029
+88871,19/04/15,24/04/15,Low,Delivery Truck,1940,1030
+86331,26/01/15,28/01/15,Medium,Regular Air,1946,1031
+90415,1/02/15,5/02/15,Low,Delivery Truck,1949,1032
+90414,6/01/15,8/01/15,Not Specified,Regular Air,1950,1033
+89820,19/06/15,21/06/15,High,Regular Air,1956,1034
+89818,7/04/15,9/04/15,High,Regular Air,1957,1035
+89819,18/06/15,22/06/15,Low,Express Air,1958,1036
+28225,22/01/15,22/01/15,Critical,Regular Air,1959,1037
+26342,18/04/15,27/04/15,Low,Regular Air,1959,1038
+26342,18/04/15,23/04/15,Low,Regular Air,1959,1039
+26342,18/04/15,25/04/15,Low,Regular Air,1959,1040
+88857,18/04/15,23/04/15,Low,Regular Air,1962,1041
+88857,18/04/15,25/04/15,Low,Regular Air,1962,1042
+89456,18/03/15,19/03/15,Medium,Express Air,1967,1043
+91550,18/01/15,19/01/15,Medium,Regular Air,1971,1044
+91550,18/01/15,20/01/15,Medium,Delivery Truck,1972,1045
+91550,18/01/15,20/01/15,Medium,Express Air,1972,1046
+89040,20/05/15,21/05/15,Medium,Regular Air,1974,1047
+89039,10/01/15,11/01/15,Critical,Delivery Truck,1976,1048
+89039,10/01/15,12/01/15,Critical,Regular Air,1976,1049
+89041,23/03/15,25/03/15,Critical,Regular Air,1976,1050
+87757,5/05/15,6/05/15,Not Specified,Regular Air,1979,1051
+91258,16/05/15,16/05/15,Not Specified,Regular Air,1984,1052
+90888,6/05/15,7/05/15,Not Specified,Regular Air,1986,1053
+90888,6/05/15,8/05/15,Not Specified,Express Air,1986,1054
+89999,3/01/15,4/01/15,High,Regular Air,1988,1055
+90000,21/01/15,22/01/15,Not Specified,Delivery Truck,1989,1056
+90000,21/01/15,22/01/15,Not Specified,Regular Air,1989,1057
+90001,15/05/15,16/05/15,High,Regular Air,1989,1058
+90001,15/05/15,18/05/15,High,Regular Air,1989,1059
+90003,30/04/15,30/04/15,Medium,Regular Air,1989,1060
+90002,22/02/15,24/02/15,Medium,Regular Air,1991,1061
+90333,25/01/15,28/01/15,Not Specified,Regular Air,1997,1062
+90334,7/05/15,8/05/15,Medium,Regular Air,1997,1063
+90335,2/06/15,2/06/15,Low,Regular Air,1997,1064
+90568,3/06/15,5/06/15,Not Specified,Regular Air,1998,1065
+91277,17/04/15,19/04/15,Medium,Regular Air,2004,1066
+88798,5/03/15,6/03/15,Not Specified,Regular Air,2006,1067
+86874,18/06/15,19/06/15,Medium,Regular Air,2016,1068
+88367,22/03/15,24/03/15,High,Regular Air,2014,1069
+88368,4/04/15,4/04/15,Critical,Regular Air,2014,1070
+86933,13/02/15,15/02/15,Critical,Delivery Truck,2020,1071
+91059,17/03/15,17/03/15,Critical,Regular Air,2030,1072
+91059,17/03/15,19/03/15,Critical,Regular Air,2030,1073
+91060,18/03/15,20/03/15,Medium,Regular Air,2030,1074
+87117,18/05/15,20/05/15,Critical,Regular Air,2035,1075
+89333,12/03/15,14/03/15,Not Specified,Regular Air,2037,1076
+89334,21/04/15,21/04/15,High,Regular Air,2038,1077
+88692,24/06/15,1/07/15,Low,Regular Air,2044,1078
+88219,12/06/15,14/06/15,Critical,Regular Air,2046,1079
+88219,12/06/15,14/06/15,Critical,Delivery Truck,2046,1080
+88219,12/06/15,13/06/15,Critical,Delivery Truck,2046,1081
+88220,21/06/15,23/06/15,High,Regular Air,2049,1082
+88220,21/06/15,24/06/15,High,Regular Air,2049,1083
+87234,19/02/15,21/02/15,Not Specified,Regular Air,2052,1084
+87234,19/02/15,20/02/15,Not Specified,Regular Air,2052,1085
+87234,19/02/15,20/02/15,Not Specified,Express Air,2052,1086
+88040,13/02/15,15/02/15,Medium,Regular Air,2058,1087
+88039,17/01/15,18/01/15,Not Specified,Regular Air,2059,1088
+88041,27/03/15,28/03/15,Critical,Regular Air,2059,1089
+87146,29/01/15,31/01/15,Medium,Delivery Truck,2061,1090
+87146,29/01/15,1/02/15,Medium,Regular Air,2062,1091
+87148,26/06/15,30/06/15,Low,Delivery Truck,2062,1092
+87147,8/05/15,8/05/15,Low,Regular Air,2063,1093
+85833,26/03/15,27/03/15,Medium,Regular Air,2066,1094
+85834,31/03/15,1/04/15,Critical,Express Air,2066,1095
+85835,19/04/15,23/04/15,Low,Regular Air,2066,1096
+88554,12/01/15,14/01/15,Medium,Regular Air,2069,1097
+88558,16/05/15,20/05/15,Low,Regular Air,2070,1098
+88555,1/02/15,1/02/15,Not Specified,Regular Air,2071,1099
+88555,1/02/15,2/02/15,Not Specified,Regular Air,2071,1100
+88558,16/05/15,23/05/15,Low,Express Air,2071,1101
+88555,1/02/15,3/02/15,Not Specified,Regular Air,2072,1102
+88556,11/02/15,13/02/15,High,Delivery Truck,2072,1103
+88556,11/02/15,13/02/15,High,Regular Air,2072,1104
+88556,11/02/15,13/02/15,High,Express Air,2072,1105
+88557,7/04/15,9/04/15,Not Specified,Delivery Truck,2073,1106
+86092,3/01/15,5/01/15,Low,Regular Air,2081,1107
+88348,30/06/15,6/07/15,Low,Regular Air,2089,1108
+88348,30/06/15,8/07/15,Low,Regular Air,2089,1109
+88348,30/06/15,4/07/15,Low,Express Air,2089,1110
+86629,5/02/15,6/02/15,Medium,Delivery Truck,2094,1111
+87889,18/04/15,19/04/15,Medium,Regular Air,2097,1112
+87889,18/04/15,20/04/15,Medium,Regular Air,2098,1113
+87888,8/01/15,9/01/15,Not Specified,Regular Air,2099,1114
+39015,6/06/15,6/06/15,Medium,Delivery Truck,2107,1115
+39015,6/06/15,6/06/15,Medium,Regular Air,2107,1116
+87862,6/06/15,6/06/15,Medium,Regular Air,2108,1117
+88403,26/03/15,28/03/15,Critical,Regular Air,2114,1118
+88404,23/04/15,23/04/15,Critical,Regular Air,2114,1119
+88405,26/02/15,27/02/15,Critical,Delivery Truck,2114,1120
+88405,26/02/15,28/02/15,Critical,Delivery Truck,2114,1121
+88406,29/04/15,1/05/15,Medium,Delivery Truck,2115,1122
+90891,20/04/15,22/04/15,High,Regular Air,2117,1123
+90891,20/04/15,21/04/15,High,Regular Air,2117,1124
+89664,1/02/15,3/02/15,Critical,Delivery Truck,2122,1125
+89665,1/01/15,2/01/15,High,Regular Air,2124,1126
+89666,26/03/15,27/03/15,High,Delivery Truck,2124,1127
+88418,18/03/15,20/03/15,Critical,Regular Air,2127,1128
+90079,3/01/15,4/01/15,High,Delivery Truck,2131,1129
+90078,10/01/15,14/01/15,Low,Express Air,2132,1130
+91583,6/02/15,7/02/15,High,Regular Air,2135,1131
+86002,31/01/15,2/02/15,Not Specified,Regular Air,2137,1132
+86003,16/04/15,17/04/15,Critical,Delivery Truck,2139,1133
+87570,18/02/15,19/02/15,High,Regular Air,2141,1134
+87570,18/02/15,20/02/15,High,Delivery Truck,2141,1135
+87570,18/02/15,19/02/15,High,Express Air,2141,1136
+87570,18/02/15,20/02/15,High,Regular Air,2141,1137
+87569,13/06/15,16/06/15,High,Regular Air,2143,1138
+87072,10/02/15,12/02/15,Medium,Regular Air,2145,1139
+87071,6/01/15,10/01/15,Low,Regular Air,2146,1140
+90404,5/01/15,6/01/15,Not Specified,Delivery Truck,2151,1141
+90405,9/02/15,11/02/15,High,Regular Air,2151,1142
+90385,16/03/15,16/03/15,Low,Regular Air,2157,1143
+90385,16/03/15,25/03/15,Low,Delivery Truck,2157,1144
+90386,3/05/15,4/05/15,High,Regular Air,2157,1145
+90386,3/05/15,4/05/15,High,Delivery Truck,2157,1146
+90386,3/05/15,5/05/15,High,Delivery Truck,2157,1147
+90387,20/05/15,21/05/15,Medium,Regular Air,2159,1148
+90387,20/05/15,22/05/15,Medium,Delivery Truck,2162,1149
+90387,20/05/15,22/05/15,Medium,Regular Air,2162,1150
+88794,9/01/15,10/01/15,Not Specified,Regular Air,2164,1151
+88794,9/01/15,9/01/15,Not Specified,Regular Air,2164,1152
+88794,9/01/15,11/01/15,Not Specified,Regular Air,2165,1153
+89465,27/01/15,29/01/15,Medium,Regular Air,2178,1154
+91571,15/06/15,17/06/15,Not Specified,Regular Air,2183,1155
+89440,8/05/15,10/05/15,High,Regular Air,2187,1156
+7364,8/05/15,10/05/15,High,Regular Air,2189,1157
+41636,14/02/15,16/02/15,Critical,Regular Air,2190,1158
+90685,14/02/15,16/02/15,Critical,Regular Air,2193,1159
+89175,7/04/15,8/04/15,Medium,Regular Air,2196,1160
+89175,7/04/15,9/04/15,Medium,Regular Air,2196,1161
+89176,26/06/15,27/06/15,Critical,Regular Air,2197,1162
+89174,22/05/15,25/05/15,Not Specified,Regular Air,2198,1163
+89174,22/05/15,22/05/15,Not Specified,Delivery Truck,2198,1164
+86054,25/03/15,27/03/15,Critical,Regular Air,2201,1165
+86050,31/01/15,31/01/15,Low,Delivery Truck,2202,1166
+86050,31/01/15,31/01/15,Low,Regular Air,2202,1167
+86050,31/01/15,7/02/15,Low,Regular Air,2202,1168
+86051,4/02/15,4/02/15,Low,Delivery Truck,2203,1169
+86052,4/01/15,6/01/15,Critical,Delivery Truck,2203,1170
+86051,4/02/15,8/02/15,Low,Delivery Truck,2204,1171
+86053,10/02/15,11/02/15,Critical,Delivery Truck,2204,1172
+86258,5/01/15,6/01/15,High,Regular Air,2206,1173
+86258,5/01/15,7/01/15,High,Regular Air,2206,1174
+88030,22/01/15,29/01/15,Low,Regular Air,2209,1175
+88028,1/01/15,3/01/15,Not Specified,Express Air,2211,1176
+88029,19/04/15,21/04/15,High,Express Air,2212,1177
+90314,23/06/15,23/06/15,Low,Regular Air,2215,1178
+90314,23/06/15,30/06/15,Low,Regular Air,2216,1179
+90314,23/06/15,25/06/15,Low,Regular Air,2216,1180
+91036,28/02/15,1/03/15,Low,Regular Air,2220,1181
+89970,21/02/15,22/02/15,Critical,Delivery Truck,2225,1182
+89102,6/04/15,13/04/15,Low,Express Air,2240,1183
+86699,13/04/15,20/04/15,Low,Regular Air,2250,1184
+89278,27/01/15,1/02/15,Low,Regular Air,2254,1185
+89279,28/04/15,30/04/15,High,Regular Air,2254,1186
+89279,28/04/15,28/04/15,High,Regular Air,2254,1187
+87963,2/01/15,4/01/15,Critical,Express Air,2256,1188
+87964,24/03/15,26/03/15,Medium,Delivery Truck,2256,1189
+87965,12/06/15,13/06/15,High,Regular Air,2257,1190
+87962,9/03/15,13/03/15,Low,Express Air,2258,1191
+87962,9/03/15,13/03/15,Low,Delivery Truck,2258,1192
+89601,15/02/15,16/02/15,Critical,Regular Air,2260,1193
+89602,21/04/15,22/04/15,High,Regular Air,2260,1194
+89602,21/04/15,23/04/15,High,Delivery Truck,2260,1195
+86611,26/01/15,29/01/15,Not Specified,Regular Air,2264,1196
+86612,29/01/15,1/02/15,Critical,Regular Air,2265,1197
+86612,29/01/15,31/01/15,Critical,Regular Air,2265,1198
+86610,26/05/15,28/05/15,Critical,Regular Air,2266,1199
+86610,26/05/15,27/05/15,Critical,Regular Air,2266,1200
+89571,3/06/15,7/06/15,Low,Delivery Truck,2268,1201
+89572,6/02/15,8/02/15,Low,Regular Air,2270,1202
+89572,6/02/15,11/02/15,Low,Regular Air,2270,1203
+90110,16/03/15,18/03/15,High,Express Air,2272,1204
+90109,5/05/15,5/05/15,Low,Regular Air,2273,1205
+90109,5/05/15,9/05/15,Low,Delivery Truck,2274,1206
+91502,30/06/15,30/06/15,Not Specified,Regular Air,2276,1207
+85949,22/06/15,26/06/15,Low,Express Air,2279,1208
+85948,27/01/15,28/01/15,Not Specified,Regular Air,2281,1209
+85950,5/02/15,7/02/15,Medium,Regular Air,2282,1210
+85947,24/01/15,26/01/15,Medium,Regular Air,2283,1211
+90148,13/03/15,15/03/15,Medium,Express Air,2285,1212
+90145,4/02/15,6/02/15,Medium,Regular Air,2286,1213
+90145,4/02/15,5/02/15,Medium,Regular Air,2286,1214
+90145,4/02/15,7/02/15,Medium,Regular Air,2286,1215
+90146,25/03/15,25/03/15,Not Specified,Regular Air,2287,1216
+90146,25/03/15,26/03/15,Not Specified,Regular Air,2287,1217
+90146,25/03/15,27/03/15,Not Specified,Express Air,2287,1218
+90147,19/02/15,24/02/15,Low,Regular Air,2287,1219
+88165,4/05/15,4/05/15,Critical,Regular Air,2289,1220
+88163,6/01/15,8/01/15,Not Specified,Regular Air,2290,1221
+88164,4/02/15,6/02/15,Medium,Regular Air,2290,1222
+87695,11/02/15,13/02/15,Critical,Delivery Truck,2302,1223
+87696,3/01/15,4/01/15,High,Regular Air,2302,1224
+87696,3/01/15,4/01/15,High,Delivery Truck,2302,1225
+47493,11/02/15,13/02/15,Critical,Delivery Truck,2303,1226
+37987,3/01/15,4/01/15,High,Delivery Truck,2303,1227
+89869,21/06/15,24/06/15,High,Regular Air,2305,1228
+90557,24/03/15,26/03/15,Low,Regular Air,2308,1229
+90557,24/03/15,28/03/15,Low,Regular Air,2308,1230
+88721,16/03/15,17/03/15,High,Delivery Truck,2323,1231
+88721,16/03/15,18/03/15,High,Regular Air,2323,1232
+88722,19/06/15,19/06/15,Not Specified,Express Air,2323,1233
+90964,24/03/15,27/03/15,Medium,Regular Air,2330,1234
+89611,23/06/15,24/06/15,High,Delivery Truck,2333,1235
+89608,6/04/15,8/04/15,Low,Regular Air,2334,1236
+89609,9/04/15,11/04/15,Not Specified,Regular Air,2334,1237
+89609,9/04/15,10/04/15,Not Specified,Regular Air,2334,1238
+89610,2/06/15,9/06/15,Low,Regular Air,2334,1239
+91480,13/01/15,13/01/15,Critical,Regular Air,2338,1240
+91481,29/03/15,29/03/15,High,Regular Air,2338,1241
+91482,25/05/15,28/05/15,Medium,Regular Air,2339,1242
+89504,14/03/15,15/03/15,Medium,Delivery Truck,2345,1243
+89504,14/03/15,14/03/15,Medium,Delivery Truck,2345,1244
+89503,10/01/15,15/01/15,Low,Delivery Truck,2346,1245
+89505,20/05/15,21/05/15,High,Delivery Truck,2346,1246
+86163,30/03/15,2/04/15,Critical,Regular Air,2351,1247
+86165,20/06/15,23/06/15,Critical,Regular Air,2352,1248
+86166,23/06/15,24/06/15,Not Specified,Regular Air,2352,1249
+86164,29/04/15,30/04/15,Critical,Regular Air,2353,1250
+91304,15/02/15,16/02/15,Not Specified,Regular Air,2355,1251
+91306,16/06/15,18/06/15,Medium,Delivery Truck,2355,1252
+91305,15/03/15,17/03/15,Medium,Regular Air,2356,1253
+88267,4/03/15,8/03/15,Low,Regular Air,2358,1254
+88268,14/02/15,16/02/15,Critical,Regular Air,2358,1255
+88265,5/02/15,5/02/15,Critical,Regular Air,2359,1256
+88266,25/02/15,26/02/15,High,Regular Air,2361,1257
+90040,11/04/15,13/04/15,High,Regular Air,2363,1258
+90408,13/01/15,15/01/15,Low,Regular Air,2369,1259
+90714,15/03/15,16/03/15,Medium,Regular Air,2372,1260
+91321,5/03/15,6/03/15,High,Regular Air,2376,1261
+91321,5/03/15,7/03/15,High,Regular Air,2376,1262
+86655,5/05/15,7/05/15,Low,Regular Air,2379,1263
+86654,26/04/15,28/04/15,Not Specified,Regular Air,2380,1264
+86655,5/05/15,7/05/15,Low,Delivery Truck,2380,1265
+13606,26/04/15,28/04/15,Not Specified,Regular Air,2382,1266
+962,5/05/15,7/05/15,Low,Regular Air,2382,1267
+962,5/05/15,7/05/15,Low,Delivery Truck,2382,1268
+89184,22/05/15,24/05/15,Critical,Delivery Truck,2385,1269
+91122,25/05/15,26/05/15,Not Specified,Regular Air,2391,1270
+91122,25/05/15,27/05/15,Not Specified,Regular Air,2391,1271
+91123,4/06/15,6/06/15,Not Specified,Regular Air,2391,1272
+91123,4/06/15,5/06/15,Not Specified,Express Air,2391,1273
+86950,29/05/15,31/05/15,Medium,Regular Air,2393,1274
+86951,4/01/15,6/01/15,High,Regular Air,2393,1275
+86949,1/05/15,3/05/15,Critical,Regular Air,2394,1276
+86949,1/05/15,1/05/15,Critical,Regular Air,2394,1277
+86952,23/03/15,24/03/15,Not Specified,Regular Air,2395,1278
+86373,24/02/15,26/02/15,Not Specified,Regular Air,2398,1279
+86754,14/03/15,15/03/15,Medium,Regular Air,2417,1280
+86750,6/01/15,7/01/15,Critical,Regular Air,2418,1281
+86753,10/01/15,11/01/15,High,Regular Air,2418,1282
+86753,10/01/15,12/01/15,High,Regular Air,2418,1283
+86751,26/03/15,26/03/15,Not Specified,Regular Air,2419,1284
+86751,26/03/15,29/03/15,Not Specified,Regular Air,2419,1285
+86752,6/05/15,6/05/15,High,Regular Air,2420,1286
+89053,24/05/15,25/05/15,Not Specified,Delivery Truck,2422,1287
+89055,22/01/15,24/01/15,Medium,Express Air,2422,1288
+89054,21/01/15,26/01/15,Low,Regular Air,2423,1289
+90859,15/03/15,16/03/15,High,Regular Air,2426,1290
+90861,2/05/15,2/05/15,Low,Regular Air,2426,1291
+90861,2/05/15,9/05/15,Low,Regular Air,2426,1292
+90860,17/02/15,18/02/15,High,Regular Air,2427,1293
+91108,24/03/15,25/03/15,Not Specified,Regular Air,2430,1294
+91109,10/04/15,11/04/15,Not Specified,Regular Air,2430,1295
+91110,29/03/15,6/04/15,Low,Regular Air,2430,1296
+24869,10/06/15,11/06/15,Not Specified,Regular Air,2431,1297
+5920,19/05/15,19/05/15,High,Regular Air,2431,1298
+89096,19/05/15,19/05/15,High,Regular Air,2432,1299
+89097,6/06/15,8/06/15,Not Specified,Express Air,2432,1300
+89095,10/06/15,11/06/15,Not Specified,Regular Air,2433,1301
+90301,1/03/15,3/03/15,Low,Delivery Truck,2437,1302
+89300,4/04/15,4/04/15,Medium,Regular Air,2441,1303
+89300,4/04/15,6/04/15,Medium,Regular Air,2442,1304
+89299,18/01/15,18/01/15,High,Regular Air,2443,1305
+89301,1/06/15,3/06/15,Not Specified,Regular Air,2443,1306
+87790,29/06/15,1/07/15,High,Regular Air,2448,1307
+90322,23/05/15,25/05/15,Not Specified,Regular Air,2450,1308
+89219,1/03/15,4/03/15,Medium,Express Air,2454,1309
+89218,22/01/15,23/01/15,High,Regular Air,2456,1310
+89218,22/01/15,23/01/15,High,Express Air,2456,1311
+89218,22/01/15,22/01/15,High,Regular Air,2457,1312
+91285,3/01/15,5/01/15,High,Regular Air,2458,1313
+91286,23/05/15,25/05/15,Medium,Regular Air,2458,1314
+30785,3/01/15,5/01/15,High,Regular Air,2460,1315
+30785,3/01/15,6/01/15,High,Regular Air,2460,1316
+88713,11/05/15,13/05/15,High,Express Air,2464,1317
+88713,11/05/15,11/05/15,High,Delivery Truck,2464,1318
+88714,20/01/15,23/01/15,Not Specified,Regular Air,2464,1319
+88714,20/01/15,21/01/15,Not Specified,Regular Air,2464,1320
+88136,27/02/15,28/02/15,Medium,Regular Air,2466,1321
+88136,27/02/15,28/02/15,Medium,Express Air,2466,1322
+88136,27/02/15,27/02/15,Medium,Regular Air,2466,1323
+88135,27/04/15,29/04/15,Critical,Express Air,2468,1324
+88137,13/03/15,14/03/15,Critical,Regular Air,2468,1325
+86514,21/02/15,21/02/15,Low,Express Air,2472,1326
+91000,6/04/15,8/04/15,Critical,Express Air,2481,1327
+88998,13/03/15,14/03/15,Medium,Regular Air,2484,1328
+91414,6/02/15,7/02/15,High,Regular Air,2486,1329
+91414,6/02/15,8/02/15,High,Express Air,2486,1330
+91416,3/02/15,5/02/15,Low,Delivery Truck,2486,1331
+91415,20/06/15,21/06/15,Not Specified,Regular Air,2487,1332
+91417,2/06/15,3/06/15,Not Specified,Express Air,2487,1333
+86887,9/04/15,9/04/15,High,Regular Air,2488,1334
+86887,9/04/15,10/04/15,High,Regular Air,2488,1335
+86883,11/02/15,13/02/15,High,Delivery Truck,2489,1336
+86885,26/04/15,27/04/15,Medium,Regular Air,2489,1337
+86886,12/01/15,12/01/15,Not Specified,Regular Air,2489,1338
+86884,14/02/15,16/02/15,Critical,Delivery Truck,2490,1339
+86886,12/01/15,14/01/15,Not Specified,Express Air,2490,1340
+48836,14/02/15,16/02/15,Critical,Delivery Truck,2491,1341
+11712,26/04/15,28/04/15,Low,Regular Air,2491,1342
+23042,26/04/15,27/04/15,Medium,Regular Air,2491,1343
+23877,12/01/15,12/01/15,Not Specified,Regular Air,2491,1344
+23877,12/01/15,14/01/15,Not Specified,Express Air,2491,1345
+14785,9/04/15,9/04/15,High,Regular Air,2491,1346
+14785,9/04/15,10/04/15,High,Regular Air,2491,1347
+86885,26/04/15,28/04/15,Low,Regular Air,2495,1348
+16547,18/02/15,20/02/15,Not Specified,Delivery Truck,2498,1349
+16547,18/02/15,18/02/15,Not Specified,Delivery Truck,2498,1350
+54567,2/02/15,4/02/15,Medium,Regular Air,2498,1351
+20007,5/02/15,6/02/15,Not Specified,Regular Air,2498,1352
+88319,18/02/15,20/02/15,Not Specified,Delivery Truck,2499,1353
+88320,2/02/15,4/02/15,Medium,Regular Air,2500,1354
+91310,19/03/15,19/03/15,High,Regular Air,2502,1355
+91310,19/03/15,20/03/15,High,Express Air,2502,1356
+87033,5/06/15,7/06/15,Medium,Regular Air,2506,1357
+87033,5/06/15,7/06/15,Medium,Express Air,2507,1358
+87031,8/01/15,12/01/15,Low,Regular Air,2508,1359
+87029,5/05/15,5/05/15,Medium,Regular Air,2509,1360
+87030,15/06/15,17/06/15,Not Specified,Regular Air,2512,1361
+87033,5/06/15,7/06/15,Medium,Regular Air,2516,1362
+87033,5/06/15,6/06/15,Medium,Regular Air,2520,1363
+87032,18/02/15,21/02/15,Medium,Regular Air,2521,1364
+87033,5/06/15,8/06/15,Medium,Delivery Truck,2522,1365
+87208,23/05/15,25/05/15,Critical,Regular Air,2526,1366
+87208,23/05/15,25/05/15,Critical,Regular Air,2527,1367
+87451,29/03/15,30/03/15,High,Regular Air,2530,1368
+87452,2/05/15,4/05/15,Medium,Regular Air,2531,1369
+87451,29/03/15,31/03/15,High,Regular Air,2534,1370
+91017,7/04/15,8/04/15,Not Specified,Regular Air,2539,1371
+91017,7/04/15,8/04/15,Not Specified,Regular Air,2540,1372
+87917,11/06/15,12/06/15,Medium,Regular Air,2543,1373
+87915,10/03/15,12/03/15,Medium,Express Air,2545,1374
+87916,19/04/15,19/04/15,Low,Regular Air,2547,1375
+46436,4/04/15,11/04/15,Low,Regular Air,2548,1376
+40997,21/04/15,21/04/15,Low,Express Air,2548,1377
+40997,21/04/15,28/04/15,Low,Regular Air,2548,1378
+40997,21/04/15,25/04/15,Low,Delivery Truck,2548,1379
+29889,4/06/15,7/06/15,Not Specified,Regular Air,2548,1380
+88657,21/04/15,21/04/15,Low,Express Air,2549,1381
+88657,21/04/15,28/04/15,Low,Regular Air,2549,1382
+88657,21/04/15,25/04/15,Low,Delivery Truck,2549,1383
+88658,4/06/15,7/06/15,Not Specified,Regular Air,2549,1384
+88656,4/04/15,11/04/15,Low,Regular Air,2551,1385
+86528,12/02/15,13/02/15,Medium,Regular Air,2553,1386
+86527,9/01/15,14/01/15,Low,Regular Air,2555,1387
+86529,2/02/15,3/02/15,Critical,Regular Air,2555,1388
+86529,2/02/15,2/02/15,Critical,Regular Air,2555,1389
+86465,22/03/15,25/03/15,Not Specified,Delivery Truck,2561,1390
+86466,8/04/15,10/04/15,Not Specified,Regular Air,2561,1391
+86466,8/04/15,8/04/15,Not Specified,Regular Air,2561,1392
+91447,8/04/15,9/04/15,Not Specified,Regular Air,2563,1393
+90327,25/04/15,27/04/15,Critical,Regular Air,2570,1394
+90327,25/04/15,26/04/15,Critical,Delivery Truck,2570,1395
+90327,25/04/15,25/04/15,Critical,Regular Air,2570,1396
+90327,25/04/15,26/04/15,Critical,Regular Air,2570,1397
+50656,25/04/15,26/04/15,Critical,Delivery Truck,2571,1398
+50656,25/04/15,26/04/15,Critical,Regular Air,2571,1399
+88298,2/05/15,4/05/15,Low,Regular Air,2578,1400
+88298,2/05/15,6/05/15,Low,Regular Air,2578,1401
+88298,2/05/15,9/05/15,Low,Delivery Truck,2578,1402
+88296,3/01/15,4/01/15,High,Delivery Truck,2579,1403
+88297,17/01/15,17/01/15,Medium,Regular Air,2579,1404
+89657,7/06/15,9/06/15,Medium,Delivery Truck,2583,1405
+89657,7/06/15,9/06/15,Medium,Regular Air,2583,1406
+89658,9/06/15,11/06/15,Critical,Regular Air,2584,1407
+91166,28/02/15,28/02/15,Medium,Express Air,2587,1408
+91167,26/06/15,26/06/15,Not Specified,Regular Air,2587,1409
+87772,17/04/15,17/04/15,Low,Regular Air,2593,1410
+87773,12/03/15,17/03/15,Low,Regular Air,2593,1411
+87382,21/03/15,26/03/15,Low,Regular Air,2601,1412
+87383,5/04/15,6/04/15,Critical,Regular Air,2603,1413
+87383,5/04/15,6/04/15,Critical,Delivery Truck,2604,1414
+86118,16/05/15,17/05/15,High,Regular Air,2610,1415
+86119,24/01/15,24/01/15,Low,Express Air,2613,1416
+91495,11/03/15,13/03/15,Critical,Regular Air,2616,1417
+91496,27/06/15,28/06/15,Not Specified,Regular Air,2617,1418
+46884,17/01/15,19/01/15,Medium,Regular Air,2618,1419
+46884,17/01/15,18/01/15,Medium,Regular Air,2618,1420
+34017,23/03/15,23/03/15,High,Express Air,2618,1421
+34017,23/03/15,25/03/15,High,Regular Air,2618,1422
+53153,23/03/15,24/03/15,Critical,Regular Air,2618,1423
+88014,23/03/15,23/03/15,High,Express Air,2619,1424
+88015,9/02/15,11/02/15,Not Specified,Regular Air,2619,1425
+88017,23/03/15,24/03/15,Critical,Regular Air,2620,1426
+88016,19/03/15,20/03/15,High,Express Air,2621,1427
+90927,7/02/15,8/02/15,High,Regular Air,2626,1428
+85916,17/01/15,19/01/15,Medium,Express Air,2628,1429
+85914,5/01/15,7/01/15,Critical,Regular Air,2630,1430
+85914,5/01/15,6/01/15,Critical,Regular Air,2630,1431
+85914,5/01/15,7/01/15,Critical,Delivery Truck,2630,1432
+85915,7/01/15,8/01/15,High,Regular Air,2630,1433
+90951,8/06/15,8/06/15,Low,Express Air,2638,1434
+90952,19/03/15,19/03/15,Not Specified,Regular Air,2639,1435
+91386,17/03/15,24/03/15,Low,Regular Air,2647,1436
+91386,17/03/15,19/03/15,Low,Regular Air,2647,1437
+88814,11/06/15,12/06/15,High,Regular Air,2649,1438
+88815,4/05/15,5/05/15,Critical,Regular Air,2650,1439
+89361,25/05/15,27/05/15,Medium,Regular Air,2652,1440
+89360,22/02/15,23/02/15,Not Specified,Regular Air,2653,1441
+89360,22/02/15,24/02/15,Not Specified,Regular Air,2653,1442
+86063,18/04/15,18/04/15,Medium,Delivery Truck,2655,1443
+86064,8/04/15,9/04/15,Critical,Regular Air,2655,1444
+86486,24/02/15,26/02/15,Critical,Regular Air,2660,1445
+87831,2/04/15,4/04/15,High,Regular Air,2667,1446
+87831,2/04/15,4/04/15,High,Express Air,2667,1447
+87830,28/03/15,29/03/15,High,Regular Air,2668,1448
+87830,28/03/15,30/03/15,High,Regular Air,2668,1449
+87832,21/04/15,23/04/15,Not Specified,Regular Air,2668,1450
+37924,29/05/15,29/05/15,High,Regular Air,2670,1451
+90551,29/05/15,29/05/15,High,Regular Air,2671,1452
+86633,16/06/15,17/06/15,Critical,Express Air,2677,1453
+86633,16/06/15,16/06/15,Critical,Regular Air,2677,1454
+89146,15/02/15,20/02/15,Low,Express Air,2684,1455
+89146,15/02/15,20/02/15,Low,Regular Air,2684,1456
+89148,10/04/15,15/04/15,Low,Regular Air,2684,1457
+89148,10/04/15,12/04/15,Low,Regular Air,2684,1458
+89148,10/04/15,10/04/15,Low,Regular Air,2684,1459
+89147,4/04/15,5/04/15,High,Regular Air,2685,1460
+90624,4/05/15,6/05/15,Critical,Regular Air,2689,1461
+90624,4/05/15,4/05/15,Critical,Regular Air,2693,1462
+87676,5/03/15,6/03/15,Critical,Regular Air,2696,1463
+87678,23/02/15,25/02/15,Critical,Regular Air,2697,1464
+87678,23/02/15,24/02/15,Critical,Delivery Truck,2697,1465
+87677,22/05/15,24/05/15,Critical,Regular Air,2699,1466
+87679,8/04/15,10/04/15,Not Specified,Delivery Truck,2699,1467
+91407,30/04/15,2/05/15,Critical,Regular Air,2704,1468
+91408,30/04/15,4/05/15,Low,Express Air,2704,1469
+89240,28/05/15,30/05/15,Medium,Regular Air,2709,1470
+88701,21/06/15,24/06/15,Critical,Regular Air,2713,1471
+88701,21/06/15,22/06/15,Critical,Delivery Truck,2713,1472
+88702,12/01/15,16/01/15,Low,Regular Air,2715,1473
+89394,1/03/15,3/03/15,Critical,Regular Air,2718,1474
+88766,16/06/15,17/06/15,Critical,Regular Air,2720,1475
+88959,1/05/15,2/05/15,Critical,Regular Air,2724,1476
+88959,1/05/15,3/05/15,Critical,Regular Air,2724,1477
+88958,17/01/15,18/01/15,Not Specified,Regular Air,2725,1478
+88114,6/03/15,10/03/15,Low,Delivery Truck,2729,1479
+89018,22/04/15,24/04/15,Not Specified,Regular Air,2737,1480
+89019,1/06/15,2/06/15,Medium,Regular Air,2737,1481
+89017,13/04/15,15/04/15,Critical,Regular Air,2738,1482
+89481,12/03/15,19/03/15,Low,Regular Air,2741,1483
+86184,18/03/15,19/03/15,Medium,Delivery Truck,2745,1484
+35200,5/02/15,7/02/15,Medium,Regular Air,2747,1485
+23751,18/03/15,19/03/15,Medium,Delivery Truck,2747,1486
+91424,8/03/15,8/03/15,Critical,Regular Air,2750,1487
+90724,22/04/15,24/04/15,Medium,Regular Air,2760,1488
+90724,22/04/15,22/04/15,Medium,Regular Air,2764,1489
+90725,28/05/15,30/05/15,Low,Regular Air,2765,1490
+88975,8/03/15,10/03/15,Critical,Regular Air,2770,1491
+88974,13/06/15,13/06/15,High,Regular Air,2771,1492
+91584,26/03/15,28/03/15,Not Specified,Regular Air,2773,1493
+91229,30/01/15,4/02/15,Low,Regular Air,2775,1494
+91228,12/01/15,15/01/15,Critical,Delivery Truck,2776,1495
+91228,12/01/15,14/01/15,Critical,Regular Air,2776,1496
+87160,11/02/15,12/02/15,High,Express Air,2778,1497
+87160,11/02/15,12/02/15,High,Regular Air,2778,1498
+87161,11/06/15,12/06/15,Critical,Regular Air,2779,1499
+87162,31/01/15,4/02/15,Low,Regular Air,2781,1500
+87162,31/01/15,7/02/15,Low,Delivery Truck,2781,1501
+87162,31/01/15,7/02/15,Low,Regular Air,2781,1502
+91316,12/03/15,13/03/15,Not Specified,Express Air,2787,1503
+88758,15/01/15,15/01/15,Critical,Regular Air,2791,1504
+87554,20/03/15,22/03/15,Medium,Regular Air,2794,1505
+87555,7/06/15,7/06/15,High,Regular Air,2794,1506
+87556,26/01/15,28/01/15,Low,Regular Air,2795,1507
+87556,26/01/15,30/01/15,Low,Regular Air,2795,1508
+87556,26/01/15,26/01/15,Low,Regular Air,2795,1509
+87553,21/01/15,23/01/15,Medium,Regular Air,2796,1510
+87552,10/01/15,11/01/15,Medium,Regular Air,2797,1511
+87553,21/01/15,22/01/15,Medium,Regular Air,2797,1512
+91049,28/06/15,3/07/15,Low,Regular Air,2801,1513
+86227,5/02/15,6/02/15,Medium,Delivery Truck,2803,1514
+86227,5/02/15,7/02/15,Medium,Regular Air,2803,1515
+88819,7/02/15,7/02/15,Medium,Regular Air,2813,1516
+89743,1/06/15,2/06/15,High,Express Air,2817,1517
+87899,10/05/15,12/05/15,Low,Regular Air,2820,1518
+87900,14/01/15,15/01/15,Not Specified,Regular Air,2820,1519
+87240,30/04/15,2/05/15,Low,Regular Air,2823,1520
+89497,20/05/15,27/05/15,Low,Regular Air,2825,1521
+89497,20/05/15,24/05/15,Low,Regular Air,2825,1522
+87720,19/02/15,21/02/15,High,Regular Air,2828,1523
+87721,1/06/15,2/06/15,Medium,Regular Air,2828,1524
+91030,25/03/15,27/03/15,Not Specified,Delivery Truck,2833,1525
+91030,25/03/15,26/03/15,Not Specified,Regular Air,2833,1526
+89801,8/03/15,10/03/15,High,Regular Air,2837,1527
+89801,8/03/15,11/03/15,High,Delivery Truck,2837,1528
+87884,19/03/15,20/03/15,High,Regular Air,2840,1529
+87885,11/06/15,13/06/15,Medium,Regular Air,2840,1530
+87885,11/06/15,12/06/15,Medium,Regular Air,2840,1531
+85928,9/04/15,11/04/15,Not Specified,Regular Air,2847,1532
+85928,9/04/15,10/04/15,Not Specified,Regular Air,2847,1533
+85929,6/06/15,8/06/15,Medium,Regular Air,2848,1534
+86454,9/04/15,13/04/15,Low,Regular Air,2851,1535
+87316,21/01/15,22/01/15,Medium,Regular Air,2855,1536
+87317,10/03/15,14/03/15,Low,Regular Air,2855,1537
+88279,17/05/15,18/05/15,Medium,Regular Air,2858,1538
+88282,23/05/15,28/05/15,Low,Regular Air,2858,1539
+88282,23/05/15,23/05/15,Low,Delivery Truck,2858,1540
+88282,23/05/15,23/05/15,Low,Regular Air,2858,1541
+88281,1/04/15,3/04/15,Not Specified,Regular Air,2859,1542
+88280,28/02/15,28/02/15,Medium,Regular Air,2861,1543
+88278,11/04/15,12/04/15,High,Regular Air,2862,1544
+90871,23/02/15,25/02/15,Critical,Regular Air,2865,1545
+90871,23/02/15,24/02/15,Critical,Regular Air,2865,1546
+11013,17/04/15,18/04/15,High,Regular Air,2867,1547
+85826,8/01/15,10/01/15,High,Regular Air,2868,1548
+85827,17/04/15,18/04/15,High,Regular Air,2868,1549
+85828,25/05/15,27/05/15,Not Specified,Express Air,2868,1550
+89872,22/01/15,24/01/15,Medium,Regular Air,2873,1551
+89872,22/01/15,23/01/15,Medium,Delivery Truck,2873,1552
+89873,6/04/15,15/04/15,Low,Regular Air,2874,1553
+89874,22/06/15,24/06/15,Critical,Regular Air,2874,1554
+91492,2/03/15,4/03/15,Not Specified,Express Air,2877,1555
+54369,2/03/15,4/03/15,Not Specified,Express Air,2878,1556
+88626,28/03/15,29/03/15,Medium,Regular Air,2880,1557
+88627,8/05/15,13/05/15,Low,Delivery Truck,2880,1558
+55300,20/02/15,22/02/15,High,Regular Air,2882,1559
+55300,20/02/15,21/02/15,High,Regular Air,2882,1560
+16676,19/03/15,19/03/15,High,Regular Air,2882,1561
+4839,9/05/15,9/05/15,Critical,Regular Air,2882,1562
+21958,5/06/15,6/06/15,High,Regular Air,2882,1563
+40224,30/06/15,7/07/15,Low,Express Air,2882,1564
+50917,21/01/15,25/01/15,Low,Regular Air,2882,1565
+87632,9/05/15,9/05/15,Critical,Regular Air,2883,1566
+87631,19/03/15,19/03/15,High,Regular Air,2884,1567
+87633,5/06/15,6/06/15,High,Regular Air,2884,1568
+87634,30/06/15,7/07/15,Low,Express Air,2885,1569
+87630,20/02/15,22/02/15,High,Regular Air,2886,1570
+87630,20/02/15,21/02/15,High,Regular Air,2886,1571
+90011,23/02/15,25/02/15,High,Regular Air,2892,1572
+90011,23/02/15,24/02/15,High,Regular Air,2893,1573
+86925,22/01/15,26/01/15,Low,Delivery Truck,2896,1574
+86927,12/03/15,14/03/15,Critical,Regular Air,2896,1575
+86926,13/02/15,14/02/15,High,Delivery Truck,2897,1576
+86926,13/02/15,15/02/15,High,Regular Air,2897,1577
+87374,25/06/15,25/06/15,Not Specified,Delivery Truck,2903,1578
+88156,8/01/15,8/01/15,High,Regular Air,2908,1579
+88157,28/02/15,3/03/15,Not Specified,Express Air,2908,1580
+88157,28/02/15,2/03/15,Not Specified,Regular Air,2908,1581
+87396,28/04/15,30/04/15,High,Express Air,2912,1582
+87396,28/04/15,30/04/15,High,Regular Air,2912,1583
+59365,7/06/15,9/06/15,Medium,Delivery Truck,2920,1584
+86592,28/02/15,2/03/15,Medium,Regular Air,2923,1585
+86591,16/01/15,18/01/15,Critical,Regular Air,2924,1586
+90218,26/05/15,28/05/15,Critical,Regular Air,2928,1587
+90218,26/05/15,27/05/15,Critical,Regular Air,2928,1588
+87619,28/02/15,28/02/15,Not Specified,Regular Air,2931,1589
+87620,22/04/15,23/04/15,High,Regular Air,2932,1590
+87617,11/05/15,15/05/15,Low,Regular Air,2935,1591
+87620,22/04/15,25/04/15,High,Regular Air,2938,1592
+87618,26/05/15,27/05/15,Critical,Regular Air,2941,1593
+90309,5/03/15,7/03/15,Low,Regular Air,2944,1594
+87511,4/02/15,7/02/15,Not Specified,Regular Air,2947,1595
+91397,15/02/15,17/02/15,Medium,Express Air,2951,1596
+91397,15/02/15,18/02/15,Medium,Delivery Truck,2951,1597
+91398,15/04/15,17/04/15,Medium,Express Air,2952,1598
+86427,18/06/15,25/06/15,Low,Regular Air,2954,1599
+90264,2/04/15,4/04/15,Medium,Express Air,2957,1600
+90265,23/03/15,28/03/15,Low,Regular Air,2958,1601
+90646,5/04/15,7/04/15,Not Specified,Regular Air,2960,1602
+88611,7/05/15,9/05/15,High,Express Air,2962,1603
+88612,22/06/15,23/06/15,Critical,Regular Air,2963,1604
+88610,21/04/15,23/04/15,High,Regular Air,2964,1605
+86085,22/02/15,24/02/15,Not Specified,Regular Air,2968,1606
+86085,22/02/15,23/02/15,Not Specified,Delivery Truck,2968,1607
+86086,28/03/15,30/03/15,High,Regular Air,2968,1608
+87186,13/04/15,15/04/15,High,Regular Air,2973,1609
+87187,20/05/15,21/05/15,Critical,Delivery Truck,2973,1610
+89047,22/05/15,23/05/15,Medium,Regular Air,2976,1611
+86544,27/01/15,28/01/15,Critical,Regular Air,2979,1612
+86545,26/02/15,28/02/15,Critical,Regular Air,2979,1613
+86545,26/02/15,27/02/15,Critical,Regular Air,2979,1614
+86546,14/06/15,16/06/15,Not Specified,Regular Air,2979,1615
+86544,27/01/15,29/01/15,Critical,Regular Air,2980,1616
+86544,27/01/15,30/01/15,Critical,Regular Air,2980,1617
+86547,25/02/15,27/02/15,Medium,Regular Air,2980,1618
+86548,30/05/15,4/06/15,Low,Regular Air,2980,1619
+91180,28/06/15,28/06/15,Critical,Delivery Truck,2987,1620
+91180,28/06/15,28/06/15,Critical,Regular Air,2987,1621
+91466,8/05/15,13/05/15,Low,Regular Air,2991,1622
+91466,8/05/15,15/05/15,Low,Regular Air,2992,1623
+87041,10/04/15,11/04/15,Not Specified,Regular Air,2999,1624
+87042,26/01/15,28/01/15,Low,Regular Air,3000,1625
+87043,17/03/15,19/03/15,Not Specified,Regular Air,3001,1626
+91586,5/03/15,6/03/15,Medium,Regular Air,3003,1627
+54949,10/02/15,15/02/15,Low,Regular Air,3004,1628
+54949,10/02/15,17/02/15,Low,Delivery Truck,3004,1629
+91389,8/06/15,11/06/15,Critical,Express Air,3005,1630
+91388,10/02/15,15/02/15,Low,Regular Air,3006,1631
+91388,10/02/15,17/02/15,Low,Delivery Truck,3006,1632
+89414,6/03/15,7/03/15,Critical,Regular Air,3008,1633
+89415,11/06/15,12/06/15,High,Regular Air,3008,1634
+56486,28/05/15,29/05/15,Critical,Regular Air,3011,1635
+7623,28/04/15,30/04/15,Critical,Regular Air,3011,1636
+7623,28/04/15,29/04/15,Critical,Regular Air,3011,1637
+86346,28/04/15,30/04/15,Critical,Regular Air,3012,1638
+86346,28/04/15,29/04/15,Critical,Regular Air,3012,1639
+89071,9/01/15,10/01/15,Critical,Regular Air,3017,1640
+89128,15/01/15,20/01/15,Low,Regular Air,3035,1641
+89129,16/01/15,18/01/15,Not Specified,Regular Air,3036,1642
+89129,16/01/15,19/01/15,Not Specified,Regular Air,3036,1643
+89130,13/03/15,16/03/15,Critical,Regular Air,3036,1644
+86102,15/05/15,18/05/15,Not Specified,Regular Air,3041,1645
+86102,15/05/15,17/05/15,Not Specified,Regular Air,3041,1646
+86101,4/02/15,5/02/15,Medium,Regular Air,3042,1647
+86104,6/06/15,7/06/15,High,Regular Air,3045,1648
+86103,12/02/15,14/02/15,High,Delivery Truck,3046,1649
+89789,5/03/15,7/03/15,High,Express Air,3048,1650
+86662,3/02/15,5/02/15,Medium,Regular Air,3053,1651
+88447,26/02/15,28/02/15,Medium,Regular Air,3063,1652
+88447,26/02/15,27/02/15,Medium,Regular Air,3063,1653
+88449,24/05/15,26/05/15,Not Specified,Regular Air,3063,1654
+88448,14/01/15,19/01/15,Low,Regular Air,3064,1655
+91376,2/03/15,3/03/15,Not Specified,Delivery Truck,3067,1656
+88191,1/06/15,3/06/15,High,Delivery Truck,3069,1657
+88191,1/06/15,3/06/15,High,Regular Air,3069,1658
+88192,14/02/15,15/02/15,Critical,Regular Air,3069,1659
+14756,28/02/15,28/02/15,Low,Regular Air,3075,1660
+88241,7/01/15,8/01/15,Medium,Delivery Truck,3076,1661
+88239,7/05/15,9/05/15,Medium,Regular Air,3077,1662
+88240,11/06/15,11/06/15,Not Specified,Regular Air,3078,1663
+88240,11/06/15,14/06/15,Not Specified,Regular Air,3078,1664
+41253,7/05/15,9/05/15,Medium,Regular Air,3079,1665
+53476,11/06/15,11/06/15,Not Specified,Regular Air,3079,1666
+53476,11/06/15,14/06/15,Not Specified,Regular Air,3079,1667
+53476,11/06/15,12/06/15,Not Specified,Regular Air,3079,1668
+53476,11/06/15,11/06/15,Not Specified,Express Air,3079,1669
+12480,7/01/15,8/01/15,Medium,Delivery Truck,3079,1670
+48483,10/06/15,11/06/15,Critical,Express Air,3079,1671
+89879,20/04/15,22/04/15,High,Express Air,3084,1672
+89880,24/06/15,25/06/15,Not Specified,Regular Air,3084,1673
+88380,18/05/15,19/05/15,High,Express Air,3086,1674
+91219,24/01/15,29/01/15,Low,Regular Air,3089,1675
+86220,19/01/15,21/01/15,Critical,Regular Air,3095,1676
+86221,24/05/15,25/05/15,High,Express Air,3096,1677
+86221,24/05/15,25/05/15,High,Delivery Truck,3096,1678
+86222,17/06/15,18/06/15,Critical,Express Air,3096,1679
+89314,8/04/15,9/04/15,Critical,Regular Air,3098,1680
+89315,17/06/15,19/06/15,Low,Express Air,3098,1681
+89316,28/02/15,28/02/15,Low,Regular Air,3098,1682
+89988,25/03/15,27/03/15,Critical,Regular Air,3100,1683
+86327,20/03/15,21/03/15,Critical,Regular Air,3105,1684
+86327,20/03/15,22/03/15,Critical,Regular Air,3105,1685
+548,20/03/15,21/03/15,Critical,Regular Air,3106,1686
+548,20/03/15,22/03/15,Critical,Regular Air,3106,1687
+86860,17/05/15,18/05/15,Not Specified,Regular Air,3113,1688
+86860,17/05/15,17/05/15,Not Specified,Regular Air,3113,1689
+86860,17/05/15,19/05/15,Not Specified,Express Air,3113,1690
+86432,30/06/15,2/07/15,Critical,Delivery Truck,3119,1691
+90160,14/06/15,14/06/15,Not Specified,Regular Air,3120,1692
+87287,7/01/15,9/01/15,Low,Regular Air,3123,1693
+87286,30/05/15,31/05/15,Not Specified,Regular Air,3124,1694
+87285,5/01/15,7/01/15,High,Delivery Truck,3125,1695
+89810,25/06/15,30/06/15,Low,Regular Air,3128,1696
+86790,22/06/15,23/06/15,High,Delivery Truck,3132,1697
+86794,17/05/15,18/05/15,Medium,Regular Air,3132,1698
+86789,16/01/15,17/01/15,Medium,Regular Air,3133,1699
+86792,4/03/15,4/03/15,Critical,Regular Air,3133,1700
+86792,4/03/15,7/03/15,Critical,Express Air,3133,1701
+86792,4/03/15,5/03/15,Critical,Regular Air,3133,1702
+86791,22/02/15,22/02/15,Critical,Delivery Truck,3136,1703
+86795,8/06/15,9/06/15,Not Specified,Regular Air,3137,1704
+86796,19/06/15,21/06/15,Not Specified,Express Air,3138,1705
+86793,2/05/15,5/05/15,Critical,Delivery Truck,3139,1706
+86369,1/06/15,8/06/15,Low,Regular Air,3141,1707
+86369,1/06/15,3/06/15,Low,Express Air,3141,1708
+86368,24/03/15,25/03/15,Medium,Regular Air,3143,1709
+85850,4/01/15,5/01/15,Critical,Regular Air,3146,1710
+85850,4/01/15,6/01/15,Critical,Express Air,3146,1711
+89716,14/01/15,14/01/15,Medium,Regular Air,3148,1712
+89716,14/01/15,16/01/15,Medium,Delivery Truck,3149,1713
+88543,3/06/15,3/06/15,Not Specified,Delivery Truck,3151,1714
+88544,4/02/15,5/02/15,Critical,Delivery Truck,3151,1715
+88544,4/02/15,5/02/15,Critical,Regular Air,3151,1716
+88545,16/02/15,18/02/15,Not Specified,Express Air,3151,1717
+88546,28/02/15,28/02/15,Medium,Regular Air,3151,1718
+88547,11/03/15,12/03/15,Medium,Regular Air,3151,1719
+88548,29/03/15,2/04/15,High,Regular Air,3151,1720
+86899,26/01/15,27/01/15,High,Express Air,3154,1721
+86900,28/05/15,30/05/15,Critical,Regular Air,3154,1722
+86901,30/03/15,30/03/15,Critical,Regular Air,3154,1723
+86898,20/01/15,21/01/15,Critical,Regular Air,3155,1724
+86899,26/01/15,27/01/15,High,Delivery Truck,3155,1725
+86899,26/01/15,27/01/15,High,Regular Air,3155,1726
+86902,19/04/15,21/04/15,Critical,Regular Air,3155,1727
+86491,19/06/15,20/06/15,Not Specified,Delivery Truck,3167,1728
+86491,19/06/15,21/06/15,Not Specified,Regular Air,3167,1729
+86490,13/04/15,14/04/15,Critical,Express Air,3169,1730
+86489,13/02/15,13/02/15,Medium,Regular Air,3170,1731
+90820,4/05/15,6/05/15,High,Regular Air,3176,1732
+90821,25/06/15,1/07/15,Low,Delivery Truck,3176,1733
+90821,25/06/15,1/07/15,Low,Regular Air,3176,1734
+90818,14/03/15,16/03/15,Not Specified,Regular Air,3177,1735
+90819,31/03/15,2/04/15,Critical,Regular Air,3177,1736
+86989,12/06/15,19/06/15,Low,Regular Air,3179,1737
+89025,2/03/15,4/03/15,High,Delivery Truck,3187,1738
+86447,18/03/15,18/03/15,Critical,Regular Air,3191,1739
+86448,10/04/15,12/04/15,High,Regular Air,3191,1740
+89805,10/03/15,11/03/15,Medium,Regular Air,3194,1741
+89805,10/03/15,12/03/15,Medium,Regular Air,3194,1742
+24294,2/02/15,3/02/15,Not Specified,Delivery Truck,3196,1743
+90850,2/02/15,3/02/15,Not Specified,Delivery Truck,3197,1744
+87933,30/03/15,3/04/15,Low,Regular Air,3205,1745
+87933,30/03/15,4/04/15,Low,Regular Air,3206,1746
+87934,21/05/15,23/05/15,Not Specified,Express Air,3206,1747
+87935,28/05/15,29/05/15,Not Specified,Regular Air,3206,1748
+90739,28/06/15,29/06/15,Critical,Express Air,3209,1749
+91522,15/02/15,16/02/15,High,Regular Air,3211,1750
+90815,12/04/15,13/04/15,Not Specified,Regular Air,3221,1751
+90814,19/03/15,19/03/15,High,Express Air,3222,1752
+90814,19/03/15,20/03/15,High,Regular Air,3222,1753
+86508,1/04/15,2/04/15,Critical,Delivery Truck,3224,1754
+86507,14/01/15,14/01/15,Not Specified,Delivery Truck,3225,1755
+86507,14/01/15,15/01/15,Not Specified,Regular Air,3226,1756
+86507,14/01/15,16/01/15,Not Specified,Express Air,3226,1757
+86509,28/06/15,30/06/15,Medium,Regular Air,3226,1758
+87435,21/01/15,22/01/15,Not Specified,Regular Air,3229,1759
+87435,21/01/15,23/01/15,Not Specified,Regular Air,3230,1760
+87436,13/06/15,13/06/15,Critical,Express Air,3230,1761
+87436,13/06/15,14/06/15,Critical,Express Air,3230,1762
+89564,4/06/15,6/06/15,Low,Regular Air,3238,1763
+88329,10/06/15,10/06/15,High,Regular Air,3243,1764
+88330,1/04/15,1/04/15,Low,Regular Air,3246,1765
+87297,7/05/15,8/05/15,High,Regular Air,3248,1766
+87298,23/05/15,24/05/15,High,Regular Air,3249,1767
+39076,11/06/15,12/06/15,Critical,Regular Air,3251,1768
+87296,30/03/15,1/04/15,Critical,Regular Air,3252,1769
+87299,11/06/15,12/06/15,Critical,Regular Air,3252,1770
+90488,18/02/15,20/02/15,Critical,Regular Air,3255,1771
+88825,26/05/15,27/05/15,Not Specified,Delivery Truck,3257,1772
+88826,13/05/15,15/05/15,Medium,Regular Air,3257,1773
+88824,21/03/15,23/03/15,Not Specified,Regular Air,3258,1774
+90296,25/06/15,26/06/15,Not Specified,Express Air,3261,1775
+89835,19/05/15,21/05/15,Medium,Regular Air,3264,1776
+89836,28/01/15,29/01/15,Critical,Delivery Truck,3266,1777
+89836,28/01/15,30/01/15,Critical,Express Air,3269,1778
+86233,21/03/15,23/03/15,Low,Regular Air,3275,1779
+86234,1/01/15,5/01/15,Low,Regular Air,3275,1780
+86234,1/01/15,10/01/15,Low,Regular Air,3275,1781
+90766,6/04/15,8/04/15,High,Regular Air,3279,1782
+90766,6/04/15,6/04/15,High,Regular Air,3279,1783
+90767,14/03/15,16/03/15,Medium,Regular Air,3279,1784
+90752,21/04/15,21/04/15,Critical,Express Air,3283,1785
+90753,10/05/15,11/05/15,High,Regular Air,3283,1786
+90751,20/02/15,22/02/15,High,Express Air,3284,1787
+90750,6/01/15,7/01/15,Not Specified,Regular Air,3285,1788
+90750,6/01/15,8/01/15,Not Specified,Regular Air,3285,1789
+89897,25/05/15,27/05/15,Low,Regular Air,3287,1790
+87795,7/01/15,12/01/15,Low,Regular Air,3303,1791
+90461,1/04/15,3/04/15,Medium,Regular Air,3306,1792
+90462,26/01/15,2/02/15,Low,Regular Air,3307,1793
+90460,24/03/15,26/03/15,Critical,Regular Air,3309,1794
+90460,24/03/15,25/03/15,Critical,Regular Air,3310,1795
+90462,26/01/15,31/01/15,Low,Regular Air,3311,1796
+90462,26/01/15,30/01/15,Low,Delivery Truck,3314,1797
+90104,21/05/15,21/05/15,Low,Regular Air,3319,1798
+90103,27/04/15,28/04/15,Not Specified,Regular Air,3320,1799
+90103,27/04/15,29/04/15,Not Specified,Express Air,3320,1800
+90985,12/02/15,15/02/15,Medium,Regular Air,3324,1801
+90986,24/06/15,26/06/15,Low,Regular Air,3325,1802
+90987,24/04/15,26/04/15,Critical,Regular Air,3325,1803
+87272,6/03/15,8/03/15,Not Specified,Delivery Truck,3327,1804
+87272,6/03/15,8/03/15,Not Specified,Regular Air,3327,1805
+86283,5/01/15,6/01/15,Medium,Regular Air,3331,1806
+86284,9/01/15,9/01/15,Not Specified,Regular Air,3331,1807
+85979,7/05/15,7/05/15,High,Regular Air,3338,1808
+85981,14/06/15,15/06/15,High,Regular Air,3339,1809
+85980,13/01/15,14/01/15,Medium,Regular Air,3340,1810
+21572,13/02/15,15/02/15,Critical,Regular Air,3342,1811
+89928,13/02/15,15/02/15,Critical,Regular Air,3344,1812
+89355,6/01/15,8/01/15,Medium,Express Air,3347,1813
+89356,27/01/15,29/01/15,Medium,Regular Air,3347,1814
+91296,23/01/15,25/01/15,Medium,Regular Air,3350,1815
+91297,4/02/15,6/02/15,Critical,Regular Air,3351,1816
+91298,7/02/15,9/02/15,High,Express Air,3351,1817
+88589,16/05/15,17/05/15,High,Regular Air,3354,1818
+88589,16/05/15,18/05/15,High,Regular Air,3354,1819
+88590,27/03/15,29/03/15,Not Specified,Regular Air,3354,1820
+88587,28/02/15,9/03/15,Low,Regular Air,3355,1821
+88587,28/02/15,4/03/15,Low,Express Air,3355,1822
+88587,28/02/15,28/02/15,Low,Regular Air,3355,1823
+88588,4/05/15,6/05/15,Medium,Regular Air,3356,1824
+88588,4/05/15,5/05/15,Medium,Delivery Truck,3356,1825
+88588,4/05/15,4/05/15,Medium,Express Air,3356,1826
+91437,28/04/15,30/04/15,High,Regular Air,3359,1827
+91435,20/03/15,22/03/15,Not Specified,Regular Air,3360,1828
+91435,20/03/15,22/03/15,Not Specified,Regular Air,3361,1829
+91436,26/01/15,26/01/15,Medium,Regular Air,3361,1830
+91438,9/06/15,11/06/15,Medium,Regular Air,3361,1831
+90501,24/05/15,29/05/15,Low,Delivery Truck,3366,1832
+90501,24/05/15,28/05/15,Low,Regular Air,3366,1833
+90502,2/05/15,3/05/15,Critical,Regular Air,3367,1834
+90502,2/05/15,4/05/15,Critical,Express Air,3367,1835
+90500,12/02/15,13/02/15,Medium,Regular Air,3369,1836
+87473,2/06/15,4/06/15,Medium,Delivery Truck,3374,1837
+87474,29/06/15,30/06/15,High,Regular Air,3374,1838
+87474,29/06/15,1/07/15,High,Regular Air,3374,1839
+88837,26/03/15,29/03/15,Critical,Express Air,3379,1840
+88839,25/04/15,26/04/15,Critical,Express Air,3379,1841
+88838,20/04/15,22/04/15,Critical,Regular Air,3380,1842
+88838,20/04/15,21/04/15,Critical,Regular Air,3380,1843
+88836,23/03/15,25/03/15,Not Specified,Regular Air,3381,1844
+88840,29/04/15,29/04/15,Medium,Regular Air,3381,1845
+88745,16/01/15,16/01/15,Low,Express Air,3385,1846
+88745,16/01/15,21/01/15,Low,Regular Air,3385,1847
+88746,3/05/15,5/05/15,Critical,Regular Air,3386,1848
+88746,3/05/15,6/05/15,Critical,Express Air,3386,1849
+90154,11/05/15,12/05/15,Not Specified,Regular Air,3388,1850
+87908,29/04/15,30/04/15,Medium,Regular Air,3393,1851
+87909,14/02/15,15/02/15,Critical,Regular Air,3393,1852
+87535,7/06/15,9/06/15,Low,Regular Air,3397,1853
+87536,11/03/15,12/03/15,High,Regular Air,3397,1854
+87534,29/03/15,31/03/15,Not Specified,Regular Air,3399,1855
+87537,4/04/15,4/04/15,Medium,Express Air,3400,1856
+87530,8/02/15,11/02/15,High,Express Air,3403,1857

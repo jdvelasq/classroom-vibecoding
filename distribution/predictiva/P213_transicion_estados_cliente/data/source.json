@@ -1,0 +1,11 @@
+{
+  "title": "UCI Online Retail",
+  "publisher": "UCI Machine Learning Repository",
+  "dataset_url": "https://archive.ics.uci.edu/dataset/352/online+retail",
+  "download_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00352/Online%20Retail.xlsx",
+  "citation": "Chen, D. (2015). Online Retail. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33",
+  "retrieved_on": "2026-10-01",
+  "local_file": "customer_month_states.csv.gz",
+  "derivation": "Positive, non-cancelled transactions with a customer identifier are aggregated by customer and calendar month. The partially observed final month is excluded. Activo means a purchase in the month, latente means one month without a purchase, and inactivo means two or more months without a purchase.",
+  "pedagogical_use": "Private, restricted classroom use. The activity forecasts state transitions and does not choose retention interventions."
+}
