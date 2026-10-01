@@ -2,15 +2,15 @@ Un contenedor empaqueta el código y sus dependencias para ejecutar el producto 
 
 1. Desde la raíz de este taller, construya la imagen:
 
-   docker build --tag pre16-container .
+   docker build --tag p418-container .
 
-   En `docker build`, `--tag pre16-container` asigna un nombre corto a la imagen creada. El punto `.` indica que Docker debe usar esta carpeta como contexto de construcción; allí encuentra el `Dockerfile`, los datos y el código.
+   En `docker build`, `--tag p418-container` asigna un nombre corto a la imagen creada. El punto `.` indica que Docker debe usar esta carpeta como contexto de construcción; allí encuentra el `Dockerfile`, los datos y el código.
 
 2. Ejecute el contenedor y conserve el resultado en su computador:
 
-   docker run --rm --volume "$(pwd)/submission:/app/submission" pre16-container
+   docker run --rm --volume "$(pwd)/submission:/app/submission" p418-container
 
-   En `docker run`, `--rm` elimina el contenedor temporal cuando termina. `--volume` conecta una carpeta local con una carpeta del contenedor: `$(pwd)/submission` es su carpeta de resultados y `/app/submission` es la ubicación donde el programa escribe dentro del contenedor. `pre16-container` es la imagen creada en el paso anterior.
+   En `docker run`, `--rm` elimina el contenedor temporal cuando termina. `--volume` conecta una carpeta local con una carpeta del contenedor: `$(pwd)/submission` es su carpeta de resultados y `/app/submission` es la ubicación donde el programa escribe dentro del contenedor. `p418-container` es la imagen creada en el paso anterior.
 
 3. Abra `submission/factory_report.json` y compruebe que contiene los totales por fábrica.
 
