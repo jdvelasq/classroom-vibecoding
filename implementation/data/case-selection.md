@@ -23,9 +23,9 @@ uso en clase.
 
 - `P519_mapreduce_operators` introduce las operaciones genéricas y hace
   visibles sus entradas y salidas con un extracto pequeño del mismo dominio.
-- `P520_mapreduce_drivers` usa el registro de turnos de conductores para una
+- `P520_mapreduce_basico` usa el registro de turnos de conductores para una
   agregación clave–valor por `driverId`: horas, millas y número de semanas.
-- `P521_mapreduce_drivers_join` continúa con el mismo dominio y añade la unión
+- `P521_mapreduce_avanzado` continúa con el mismo dominio y añade la unión
   de esas métricas con los datos maestros de conductores.
 - Los casos presentan primero la pregunta y su SQL como especificación
   declarativa; después aplican las operaciones ya introducidas en P519.
