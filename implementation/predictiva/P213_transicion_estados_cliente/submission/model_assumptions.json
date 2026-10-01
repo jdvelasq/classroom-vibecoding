@@ -1,0 +1,15 @@
+{
+  "question": "What is the probability that a customer in each observed purchase state changes state next month?",
+  "method": "First-order Markov transition matrix estimated from customer-month observations.",
+  "states": {
+    "activo": "Purchase in the current month.",
+    "latente": "No purchase in the current month; purchase one month earlier.",
+    "inactivo": "No purchase in the current or previous month."
+  },
+  "baseline": "Persistence: predict that the next state equals the current state.",
+  "limitations": [
+    "State definitions are analytical choices based only on purchase recency.",
+    "The transition estimates describe this retailer and observation window; they do not establish causes of customer behavior.",
+    "Choosing an intervention, cost, or contact policy is a prescriptive question outside this activity."
+  ]
+}
