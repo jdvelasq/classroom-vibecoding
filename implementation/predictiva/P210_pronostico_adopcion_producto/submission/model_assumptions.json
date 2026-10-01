@@ -1,0 +1,14 @@
+{
+  "source": {
+    "title": "Monthly new electric car registrations in the United States, 2020-2023",
+    "publisher": "International Energy Agency",
+    "url": "https://www.iea.org/data-and-statistics/charts/monthly-new-electric-car-registrations-in-the-united-states-2020-2023",
+    "license": "CC BY 4.0",
+    "access_date": "2026-10-01",
+    "notes": "The source chart reports monthly BEV and PHEV registrations in thousands. Rows were transcribed from the official downloadable chart data; October 2020 through March 2023."
+  },
+  "training_end": "2022-09-01",
+  "evaluation_start": "2022-10-01",
+  "model": "Bass diffusion model fitted to cumulative registrations",
+  "limitation": "Bass does not represent monthly seasonality, supply constraints, regulation, prices, or causal effects."
+}
