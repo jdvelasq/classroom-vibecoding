@@ -1,3 +1,4 @@
-model,peak_day,peak_active_cases,peak_required_beds,rate_at_peak
-tasa_adaptativa,44,26411.362117022396,1320.56810585112,0.2217372817985599
-tasa_estatica,51,18514.05621406651,925.7028107033256,0.173
+model,peak_date,peak_infected
+Evolución observada (proxy),2021-06-28,421392.0
+SIR adaptativo,2021-06-30,319912.1853472405
+SIR estático,2021-02-17,69297.0
