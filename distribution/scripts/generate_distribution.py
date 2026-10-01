@@ -201,6 +201,9 @@ COURSE_ACTIVITIES = {
 
 DISTRIBUTION_DIR = Path(__file__).resolve().parent.parent
 IMPLEMENTATION_DIR = DISTRIBUTION_DIR.parent / "implementation"
+EMPTY_DIRECTORIES = ("professor", "submission", "temp")
+LOCAL_DIRECTORY_NAMES = ("__pycache__", ".pytest_cache", ".ipynb_checkpoints")
+LOCAL_FILE_NAMES = (".DS_Store",)
 
 
 def prepare_course_directories():
@@ -242,10 +245,53 @@ def populate_course_directories():
             copy_activity(source_dir, target_dir)
 
 
+def empty_directory(directory):
+    directory.mkdir(exist_ok=True)
+
+    for path in directory.iterdir():
+        if path.is_dir():
+            shutil.rmtree(path)
+        else:
+            path.unlink()
+
+    (directory / ".gitkeep").touch()
+
+
+def remove_local_artifacts(activity_dir):
+    local_paths = [
+        path
+        for path in activity_dir.rglob("*")
+        if path.name in LOCAL_DIRECTORY_NAMES or path.name in LOCAL_FILE_NAMES
+    ]
+
+    for path in sorted(local_paths, key=lambda item: len(item.parts), reverse=True):
+        if path.is_dir():
+            shutil.rmtree(path)
+        elif path.exists():
+            path.unlink()
+
+
+def clean_activity(activity_dir):
+    for directory_name in EMPTY_DIRECTORIES:
+        empty_directory(activity_dir / directory_name)
+
+    remove_local_artifacts(activity_dir)
+
+
+def clean_course_directories():
+    for course_id in COURSE_ACTIVITIES:
+        course_dir = DISTRIBUTION_DIR / course_id
+
+        for activity_dir in course_dir.iterdir():
+            if activity_dir.is_dir():
+                clean_activity(activity_dir)
+
+
 def main():
     validate_activity_directories()
     prepare_course_directories()
     populate_course_directories()
+    clean_course_directories()
 
 
 if __name__ == "__main__":
