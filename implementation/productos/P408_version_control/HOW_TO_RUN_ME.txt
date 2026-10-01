@@ -1,0 +1,41 @@
+Abra una terminal en esta carpeta y ejecute cada comando en el orden indicado.
+
+1. Cree un repositorio de práctica aislado:
+
+   cp -R data/repository_template temp/version_control_case
+   cd temp/version_control_case
+   git init
+   git config user.name "Estudiante"
+   git config user.email "estudiante@example.com"
+   git status
+
+2. Abra el archivo product_card.md con su editor. Reemplace esta línea:
+
+   - Unidad de medida: Pendiente de definir.
+
+   por esta línea:
+
+   - Unidad de medida: unidades producidas por fábrica y día.
+
+   Guarde el archivo.
+
+3. Revise el cambio y cree la versión recuperable:
+
+   git diff
+   git add product_card.md
+   git status
+   git commit -m "docs: define unit of measure"
+   git log --oneline -1
+
+   En `git commit -m`, `-m` indica que el texto siguiente es el mensaje del commit.
+   En `git log --oneline -1`, `--oneline` muestra cada commit en una línea y `-1` muestra solo el commit más reciente.
+
+4. Vuelva a la carpeta de este PRE:
+
+   cd ../..
+
+Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+
+   git -C temp/version_control_case log --oneline -1 > submission/git_log.txt
+
+   `git -C temp/version_control_case` ejecuta Git dentro del repositorio de práctica sin cambiar de carpeta. El símbolo `>` guarda la salida del comando en `submission/git_log.txt`.

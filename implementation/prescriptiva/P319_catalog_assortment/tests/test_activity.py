@@ -1,4 +1,4 @@
-"""Valida que la actividad entregue al menos un artefacto final."""
+"""Valida la evidencia final de la política de surtido."""
 
 from pathlib import Path
 
@@ -7,14 +7,15 @@ ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 
-def test_submission_contains_an_artifact():
-    """La solución debe producir al menos un archivo final en submission/."""
-    artifacts = [
-        path
-        for path in SUBMISSION_DIR.rglob("*")
-        if path.is_file() and path.name != ".gitkeep"
-    ]
+def test_submission_contains_policy_evidence():
+    """La solución debe entregar la política, su contrato y su monitoreo."""
+    expected = {
+        "assortment_policy.csv",
+        "policy_contract.json",
+        "policy_monitoring.csv",
+    }
+    delivered = {path.name for path in SUBMISSION_DIR.iterdir() if path.is_file()}
 
-    assert artifacts, (
-        "Ejecuta la solución y guarda al menos un artefacto final en submission/."
+    assert expected.issubset(delivered), (
+        "Ejecuta la solución y guarda la política de surtido, su contrato y monitoreo."
     )
