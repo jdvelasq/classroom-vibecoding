@@ -7,19 +7,20 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def can_access(resource, role):
+def can_access(resource, role, policy=None):
     """La política separa quién puede consumir un resultado de cómo se calcula."""
 
-    policy = json.loads(
-        (ROOT_DIR / "data" / "access_policy.json").read_text(encoding="utf-8")
-    )
+    if policy is None:
+        policy = json.loads(
+            (ROOT_DIR / "data" / "access_policy.json").read_text(encoding="utf-8")
+        )
     return role in policy.get(resource, [])
 
 
-def get_factory_risk_report(role):
+def get_factory_risk_report(role, policy=None):
     """Un rechazo explícito protege el producto frente a accesos no autorizados."""
 
-    if not can_access("factory_risk_report", role):
+    if not can_access("factory_risk_report", role, policy):
         raise PermissionError("Rol no autorizado para factory_risk_report.")
     return {"factory_id": 2, "risk": "high"}
 
