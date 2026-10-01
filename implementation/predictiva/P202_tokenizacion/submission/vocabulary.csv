@@ -2,7 +2,7 @@ token,document_frequency
 abbreviation,2
 ability,15
 able,9
-about,48
+about,45
 above,6
 absorption,4
 abstract,3
@@ -239,7 +239,7 @@ arrangements,2
 array,2
 arrival,4
 art,4
-article,31
+article,29
 articles,9
 articulate,2
 artificial,36
@@ -320,7 +320,7 @@ banking,4
 banks,3
 barriers,23
 base,3
-based,79
+based,74
 basic,16
 basically,2
 basis,14
@@ -1287,7 +1287,7 @@ exacerbated,3
 examination,5
 examine,23
 examined,8
-examines,34
+examines,33
 examining,11
 example,6
 examples,7
@@ -1348,7 +1348,7 @@ exploration,4
 exploratory,7
 explore,24
 explored,15
-explores,36
+explores,35
 exploring,4
 exponential,5
 exposure,2
@@ -1410,7 +1410,7 @@ fermentation,2
 few,16
 fewer,2
 fiber,6
-field,36
+field,31
 fields,16
 figure,2
 file,4
@@ -1762,7 +1762,7 @@ improvement,11
 improvements,7
 improves,5
 improving,20
-in,365
+in,364
 in_addition,28
 in_conclusion,2
 in_particular,14
@@ -1793,7 +1793,7 @@ indexed,2
 indexes,3
 india,12
 indian,6
-indicate,11
+indicate,15
 indicated,6
 indicates,6
 indicating,3
@@ -1940,7 +1940,7 @@ ip,7
 ipfs,3
 iron,2
 irrigation,2
-is,287
+is,285
 isolated,3
 isolation,2
 issue,13
@@ -1979,7 +1979,7 @@ kinds,4
 kinematic,2
 know,4
 knowledge,47
-known,15
+known,12
 korea,4
 laboratory,2
 labour,2
@@ -2074,7 +2074,7 @@ listing,7
 listings,6
 literacy,2
 literature,54
-little,7
+little,3
 live,3
 lives,4
 living,6
@@ -2138,7 +2138,7 @@ manually,2
 manufacture,2
 manufacturers,5
 manufacturing,16
-many,43
+many,42
 map,8
 mapped,2
 mapping,15
@@ -2387,7 +2387,7 @@ often,25
 oil,9
 old,3
 older,2
-on,266
+on,265
 on_the_other_hand,7
 once,5
 one,54
@@ -3010,13 +3010,13 @@ restructuring,2
 result,6
 resulted,8
 resulting,10
-results,78
+results,89
 retail,10
 retains,2
 rethinking,2
 return,3
 returns,7
-reveal,15
+reveal,16
 revealed,10
 reveals,10
 revenue,3
@@ -3189,7 +3189,7 @@ short,4
 shorten,2
 shortly,2
 should,35
-show,31
+show,41
 showcase,3
 showcases,3
 showed,14
@@ -3380,7 +3380,7 @@ successive,2
 such,123
 suffer,2
 suffering,3
-suggest,22
+suggest,23
 suggested,7
 suggesting,8
 suggestions,4
@@ -3517,7 +3517,7 @@ things,12
 think,4
 thinking,6
 third,4
-this,308
+this,307
 those,29
 though,8
 thought,5
@@ -3833,7 +3833,7 @@ without,16
 wood,2
 wooden,2
 word,2
-work,41
+work,37
 worked,3
 worker,2
 workers,2
