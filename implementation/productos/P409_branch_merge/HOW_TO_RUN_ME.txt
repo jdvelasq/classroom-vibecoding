@@ -49,7 +49,7 @@ Abra una terminal en esta carpeta y ejecute los comandos en el orden indicado.
 Para cambiar a cualquier rama ya existente, use `git switch NOMBRE_DE_LA_RAMA`.
 Al finalizar, main conserva la versión inicial y el cambio realizado en la rama.
 
-Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
 
    git -C temp/branch_merge_case log --oneline -3 > submission/git_log.txt
 

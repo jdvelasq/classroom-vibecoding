@@ -1,4 +1,4 @@
-Este PRE publica localmente una capacidad analítica mínima. Docker ejecuta el servicio en un contenedor y conecta su puerto con el computador del estudiante.
+Este taller publica localmente una capacidad analítica mínima. Docker ejecuta el servicio en un contenedor y conecta su puerto con el computador del estudiante.
 
 1. Con Docker Desktop abierto, desde la raíz del repositorio construya la imagen:
 

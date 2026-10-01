@@ -40,7 +40,7 @@ La verificación automática puede reutilizar la misma sesión de Nox que se eje
    c. Espere a que aparezca el resultado verde de `Nox tests` en la sección de checks.
    d. Solo cuando el check esté en verde, haga Merge pull request y confirme la fusión.
 
-6. Actualice la rama local y vuelva a la raíz de este PRE:
+6. Actualice la rama local y vuelva a la raíz de este taller:
 
    git switch main
    git pull --ff-only
@@ -49,7 +49,7 @@ La verificación automática puede reutilizar la misma sesión de Nox que se eje
 
    En `git pull --ff-only`, `--ff-only` acepta la actualización solo si Git puede avanzar main sin crear una fusión local adicional.
 
-Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
 
    git -C temp/github_actions_nox_case log --oneline -2 > submission/git_log.txt
 

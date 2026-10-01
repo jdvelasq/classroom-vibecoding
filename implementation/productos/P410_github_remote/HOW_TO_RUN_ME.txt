@@ -15,7 +15,7 @@ Esta práctica usa un repositorio temporal y un repositorio remoto personal del 
 
    SU_USUARIO debe ser su usuario personal de GitHub.
 
-2. En la terminal, desde la raíz de este PRE, ejecute:
+2. En la terminal, desde la raíz de este taller, ejecute:
 
    cp -R data/repository_template temp/github_remote_case
    cd temp/github_remote_case
@@ -41,13 +41,13 @@ Esta práctica usa un repositorio temporal y un repositorio remoto personal del 
 
 4. Vuelva a GitHub y recargue la página. Debe ver product_card.md y el commit.
 
-5. Vuelva a la raíz de este PRE:
+5. Vuelva a la raíz de este taller:
 
    cd ../..
 
-Si GitHub solicita autenticación durante push, complete el proceso en el navegador. No escriba contraseñas en el código ni en archivos del PRE.
+Si GitHub solicita autenticación durante push, complete el proceso en el navegador. No escriba contraseñas en el código ni en archivos del taller.
 
-Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
 
    git -C temp/github_remote_case log --oneline -1 > submission/git_log.txt
 

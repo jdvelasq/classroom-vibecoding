@@ -1,6 +1,6 @@
-El mismo código debe poder ejecutarse sin depender de paquetes instalados globalmente en el computador. En este PRE se crea un ambiente aislado y se instala exactamente la dependencia declarada.
+El mismo código debe poder ejecutarse sin depender de paquetes instalados globalmente en el computador. En este taller se crea un ambiente aislado y se instala exactamente la dependencia declarada.
 
-1. Desde la raíz de este PRE, cree el ambiente:
+1. Desde la raíz de este taller, cree el ambiente:
 
    python3 -m venv .venv
 

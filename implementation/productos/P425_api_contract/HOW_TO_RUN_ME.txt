@@ -1,6 +1,6 @@
 Una API publica una capacidad analítica con un contrato estable: qué datos recibe, qué responde y qué error devuelve cuando la solicitud no cumple el contrato.
 
-1. Desde la raíz del PRE, inicie el servicio:
+1. Desde la raíz del taller, inicie el servicio:
 
    python3 src/main.py
 

@@ -1,6 +1,6 @@
-Cada corrida de un modelo debe poder recuperarse después: su configuración, sus datos, su modelo y sus métricas. En este PRE se registran dos corridas y se comparan.
+Cada corrida de un modelo debe poder recuperarse después: su configuración, sus datos, su modelo y sus métricas. En este taller se registran dos corridas y se comparan.
 
-1. Desde la raíz del PRE, instale las dependencias:
+1. Desde la raíz del taller, instale las dependencias:
 
    python3 -m pip install --requirement requirements.txt
 

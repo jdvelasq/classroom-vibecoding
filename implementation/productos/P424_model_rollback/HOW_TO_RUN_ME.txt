@@ -1,8 +1,8 @@
-Cuando una versión en producción falla, debe poder volverse a una versión anterior sin reconstruir el modelo. En este PRE se revierte producción a una versión registrada.
+Cuando una versión en producción falla, debe poder volverse a una versión anterior sin reconstruir el modelo. En este taller se revierte producción a una versión registrada.
 
 1. Revise `REGISTRY.json`. Allí están la versión que hoy está en producción y el archivo de cada versión registrada.
 
-2. Desde la raíz del PRE, revierta producción a la versión v1:
+2. Desde la raíz del taller, revierta producción a la versión v1:
 
    python3 src/main.py --to-version v1
 

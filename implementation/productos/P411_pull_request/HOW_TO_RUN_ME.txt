@@ -1,6 +1,6 @@
 Este taller continúa P410. Debe conservar el repositorio remoto personal de su cuenta de GitHub y la carpeta temporal creados allí. No use un repositorio del curso ni de otro estudiante.
 
-1. Desde la raíz de este PRE, cree una copia de trabajo y abra una rama:
+1. Desde la raíz de este taller, cree una copia de trabajo y abra una rama:
 
    cp -R ../P410_github_remote/temp/github_remote_case temp/pull_request_case
    cd temp/pull_request_case
@@ -42,7 +42,7 @@ Este taller continúa P410. Debe conservar el repositorio remoto personal de su 
 
 Al finalizar, la rama main local debe incluir el responsable incorporado mediante el pull request.
 
-Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
 
    git -C temp/pull_request_case log --oneline -2 > submission/git_log.txt
 

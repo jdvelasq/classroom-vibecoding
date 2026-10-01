@@ -1,6 +1,6 @@
 Un contenedor empaqueta el código y sus dependencias para ejecutar el producto de la misma manera en otro computador. Antes de comenzar, instale y abra Docker Desktop; el icono de Docker debe indicar que está en ejecución.
 
-1. Desde la raíz de este PRE, construya la imagen:
+1. Desde la raíz de este taller, construya la imagen:
 
    docker build --tag pre16-container .
 

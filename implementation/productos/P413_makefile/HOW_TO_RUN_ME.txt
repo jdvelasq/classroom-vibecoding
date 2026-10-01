@@ -1,6 +1,6 @@
 Un Makefile asigna nombres cortos a tareas que se repiten. Así no se depende de recordar la línea de comandos completa cada vez.
 
-En macOS o Linux, desde la raíz del PRE ejecute:
+En macOS o Linux, desde la raíz del taller ejecute:
 
    make report
    make test

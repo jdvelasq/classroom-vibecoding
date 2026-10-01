@@ -1,6 +1,6 @@
 dbt organiza transformaciones SQL como modelos, pruebas y documentación. DuckDB permite ejecutarlo localmente, sin una cuenta ni un servidor de base de datos.
 
-Desde la raíz del PRE y con el ambiente del curso activo, ejecute:
+Desde la raíz del taller y con el ambiente del curso activo, ejecute:
 
    dbt build --profiles-dir profiles
 

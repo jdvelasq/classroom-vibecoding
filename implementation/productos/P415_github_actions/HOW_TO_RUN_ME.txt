@@ -46,7 +46,7 @@ Una verificación automática da una señal visible antes de integrar un cambio.
 
 Al finalizar, la pestaña Actions de su repositorio personal debe mostrar al menos una ejecución exitosa de `Quality check` en main.
 
-Para terminar, desde la raíz de este PRE guarde la evidencia de su historial:
+Para terminar, desde la raíz de este taller guarde la evidencia de su historial:
 
    git -C temp/github_actions_case log --oneline -2 > submission/git_log.txt
 
