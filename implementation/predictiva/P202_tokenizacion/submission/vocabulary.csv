@@ -2,7 +2,7 @@ token,document_frequency
 abbreviation,2
 ability,15
 able,9
-about,45
+about,48
 above,6
 absorption,4
 abstract,3
@@ -27,7 +27,7 @@ accessing,3
 accommodation,5
 accomplished,2
 accordance,2
-according,18
+according_to,17
 accordingly,6
 account,11
 accountability,3
@@ -67,6 +67,7 @@ adaptive,7
 add,8
 added,5
 adding,3
+addition,29
 additional,11
 additionally,9
 additives,2
@@ -183,11 +184,12 @@ analysing,7
 analysis,108
 analytical,5
 analytics,25
-analyze,22
+analyze,11
 analyzed,23
 analyzes,11
 analyzing,6
 and,380
+and_its,25
 animals,2
 anisotropic,2
 annual,2
@@ -206,7 +208,7 @@ appears,3
 appliances,2
 applicability,7
 applicable,2
-application,57
+application,44
 applications,64
 applied,25
 applies,6
@@ -239,13 +241,14 @@ arrangements,2
 array,2
 arrival,4
 art,4
-article,29
+article,12
 articles,9
 articulate,2
 artificial,36
 arts,2
 as,220
 as_a_result,12
+as_such,4
 as_well_as,39
 asia,2
 asked,2
@@ -269,7 +272,8 @@ associations,4
 assume,2
 assumptions,3
 asymmetry,3
-at,101
+at,98
+at_least,5
 attempt,3
 attempted,2
 attempting,2
@@ -286,10 +290,10 @@ augmented,6
 australia,9
 australian,6
 authenticity,3
-author,7
+author,3
 authoritative,2
 authorities,2
-authors,22
+authors,5
 automate,6
 automated,15
 automates,2
@@ -320,7 +324,8 @@ banking,4
 banks,3
 barriers,23
 base,3
-based,74
+based,4
+based_on,77
 basic,16
 basically,2
 basis,14
@@ -465,7 +470,7 @@ care,7
 career,3
 careful,2
 carefully,3
-carried,8
+carried,9
 carrier,2
 case,44
 cases,16
@@ -663,7 +668,7 @@ concise,2
 conclude,4
 concluded,2
 concludes,13
-conclusion,7
+conclusion,9
 conclusions,4
 concrete,4
 condition,6
@@ -953,7 +958,7 @@ developed,46
 developer,4
 developers,20
 developing,13
-development,104
+development,82
 developments,17
 develops,6
 device,2
@@ -1088,7 +1093,8 @@ dt,4
 dual,2
 ductile,3
 ductility,3
-due,49
+due,4
+due_to,45
 duration,5
 during,32
 duties,2
@@ -1122,7 +1128,7 @@ effect,23
 effective,33
 effectively,10
 effectiveness,9
-effects,30
+effects,25
 efficacy,6
 efficiencies,4
 efficiency,29
@@ -1182,7 +1188,7 @@ encountered,5
 encourage,6
 encourages,4
 encouraging,3
-end,19
+end,8
 ending,2
 energy,28
 engage,7
@@ -1287,9 +1293,9 @@ exacerbated,3
 examination,5
 examine,23
 examined,8
-examines,33
+examines,22
 examining,11
-example,6
+example,11
 examples,7
 excellent,3
 exceptional,3
@@ -1348,7 +1354,7 @@ exploration,4
 exploratory,7
 explore,24
 explored,15
-explores,35
+explores,36
 exploring,4
 exponential,5
 exposure,2
@@ -1382,7 +1388,7 @@ facilitating,11
 facilities,11
 facility,16
 facing,4
-fact,2
+fact,3
 factor,19
 factors,46
 facts,2
@@ -1410,7 +1416,7 @@ fermentation,2
 few,16
 fewer,2
 fiber,6
-field,31
+field,36
 fields,16
 figure,2
 file,4
@@ -1429,7 +1435,7 @@ financialisation,2
 financialization,5
 financing,7
 find,17
-findings,86
+findings,68
 finds,5
 fine,4
 finnish,2
@@ -1455,16 +1461,13 @@ focal,3
 focus,45
 focused,17
 focuses,15
-focusing,16
 focussed,2
 followed,11
 following,10
 follows,5
 food,12
 foods,2
-for,311
-for_example,6
-for_instance,5
+for,312
 force,7
 forced,4
 forces,8
@@ -1492,7 +1495,7 @@ forward,4
 fossil,2
 foster,3
 fostering,2
-found,16
+found,17
 foundation,12
 foundational,4
 foundations,7
@@ -1632,7 +1635,7 @@ guided,6
 guidelines,3
 guiding,7
 had,16
-hand,4
+hand,10
 handle,3
 handling,5
 happening,2
@@ -1738,7 +1741,7 @@ immediate,4
 immersive,6
 immune,2
 immutable,4
-impact,63
+impact,37
 impacting,2
 impacts,11
 imperative,3
@@ -1752,7 +1755,7 @@ implication,3
 implications,50
 implies,3
 imply,3
-importance,32
+importance,13
 important,66
 impose,2
 imposed,2
@@ -1762,10 +1765,14 @@ improvement,11
 improvements,7
 improves,5
 improving,20
-in,364
-in_addition,28
-in_conclusion,2
-in_particular,14
+in,363
+in_order_to,19
+in_relation_to,6
+in_response_to,6
+in_terms_of,19
+in_that,7
+in_the_future,5
+in_the_process,7
 inadequate,2
 incentives,3
 inclined,2
@@ -1846,6 +1853,7 @@ insight,8
 insights,42
 insignificant,3
 inspection,2
+instance,5
 instead,4
 institute,8
 institutional,9
@@ -1861,7 +1869,7 @@ integrate,6
 integrated,18
 integrates,9
 integrating,16
-integration,38
+integration,28
 integrity,4
 intellectual,36
 intelligence,35
@@ -1940,7 +1948,7 @@ ip,7
 ipfs,3
 iron,2
 irrigation,2
-is,285
+is,287
 isolated,3
 isolation,2
 issue,13
@@ -1951,7 +1959,7 @@ italy,3
 item,4
 items,6
 iterative,4
-its,86
+its,74
 itself,5
 iv,2
 ivs,2
@@ -1979,7 +1987,7 @@ kinds,4
 kinematic,2
 know,4
 knowledge,47
-known,12
+known,15
 korea,4
 laboratory,2
 labour,2
@@ -2017,13 +2025,15 @@ lead,14
 leader,2
 leaders,5
 leadership,5
-leading,14
+leading,7
+leading_to,7
+leads_to,5
 learn,4
 learned,2
 learning,41
 lease,5
 leasing,2
-least,9
+least,4
 leaving,2
 led,8
 legal,20
@@ -2073,7 +2083,7 @@ listing,7
 listings,6
 literacy,2
 literature,54
-little,3
+little,7
 live,3
 lives,4
 living,6
@@ -2137,7 +2147,7 @@ manually,2
 manufacture,2
 manufacturers,5
 manufacturing,16
-many,42
+many,43
 map,8
 mapped,2
 mapping,15
@@ -2374,7 +2384,7 @@ occur,5
 occurred,2
 occurrence,2
 occurring,5
-of,379
+of,378
 offer,22
 offered,7
 offering,21
@@ -2386,8 +2396,7 @@ often,25
 oil,9
 old,3
 older,2
-on,265
-on_the_other_hand,7
+on,236
 once,5
 one,54
 ones,4
@@ -2426,7 +2435,7 @@ optimizing,2
 options,5
 optoelectronic,2
 or,95
-order,22
+order,3
 organic,6
 organisation,3
 organisational,7
@@ -2439,10 +2448,10 @@ organizations,14
 original,4
 originality,5
 origins,2
-other,70
+other,73
 others,12
 our,57
-out,27
+out,28
 outbreak,3
 outcome,2
 outcomes,11
@@ -2479,7 +2488,7 @@ paid,4
 pandemic,19
 panel,4
 panels,3
-paper,108
+paper,91
 papers,12
 paradigm,7
 parallel,4
@@ -2495,7 +2504,7 @@ participated,3
 participating,3
 participation,6
 particles,5
-particular,6
+particular,19
 particularly,28
 particulate,3
 parties,5
@@ -2921,7 +2930,7 @@ related,41
 relatedness,2
 relates,5
 relating,5
-relation,9
+relation,3
 relational,3
 relations,13
 relationship,20
@@ -2975,7 +2984,7 @@ required,16
 requirement,3
 requirements,11
 requires,10
-research,140
+research,126
 researchers,20
 reshape,6
 reshaped,4
@@ -2998,7 +3007,7 @@ respective,2
 respectively,9
 respond,3
 respondents,3
-response,10
+response,4
 responses,8
 responsibilities,2
 responsible,6
@@ -3009,7 +3018,7 @@ restructuring,2
 result,6
 resulted,8
 resulting,10
-results,89
+results,48
 retail,10
 retains,2
 rethinking,2
@@ -3046,7 +3055,7 @@ roadmap,3
 robotics,3
 robust,10
 robustness,3
-role,49
+role,36
 roles,6
 room,3
 rooms,4
@@ -3252,7 +3261,8 @@ solutions,35
 solve,7
 solved,3
 solving,4
-some,40
+some,33
+some_of,10
 sophisticated,3
 sophistication,3
 sort,2
@@ -3358,7 +3368,7 @@ student,4
 students,17
 studied,9
 studies,41
-study,136
+study,43
 studying,7
 subject,12
 subjected,3
@@ -3376,7 +3386,7 @@ success,17
 successful,13
 successfully,4
 successive,2
-such,123
+such,119
 suffer,2
 suffering,3
 suggest,23
@@ -3473,7 +3483,7 @@ tension,3
 term,6
 terminating,2
 terminology,4
-terms,26
+terms,7
 territorial,2
 territories,4
 test,12
@@ -3516,7 +3526,7 @@ things,12
 think,4
 thinking,6
 third,4
-this,307
+this,272
 those,29
 though,8
 thought,5
@@ -3537,7 +3547,8 @@ times,4
 tissue,4
 titanium,2
 titles,2
-to,358
+to,356
+to_this_end,11
 today,13
 together,16
 tokenization,3
@@ -3687,7 +3698,8 @@ usa,5
 usability,2
 usage,11
 use,97
-used,87
+used,78
+used_in,20
 useful,14
 usefulness,2
 user,24
@@ -3832,7 +3844,7 @@ without,16
 wood,2
 wooden,2
 word,2
-work,37
+work,41
 worked,3
 worker,2
 workers,2
