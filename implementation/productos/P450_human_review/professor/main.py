@@ -7,10 +7,13 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def review_recommendation(decision):
+def review_recommendation(decision, recommendation=None):
     """La decisión humana conserva responsabilidad sobre la acción operacional."""
 
-    recommendation = json.loads((ROOT_DIR / "data" / "recommendation.json").read_text())
+    if recommendation is None:
+        recommendation = json.loads(
+            (ROOT_DIR / "data" / "recommendation.json").read_text()
+        )
     return {
         "recommendation": recommendation,
         "human_decision": decision,
