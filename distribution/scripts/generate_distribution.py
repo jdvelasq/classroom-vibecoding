@@ -228,22 +228,8 @@ def validate_activity_directories():
         raise FileNotFoundError(f"Activity directories not found:\n{missing_text}")
 
 
-def clean_generated_directory(directory):
-    for path in directory.iterdir():
-        if path.name == ".gitkeep":
-            continue
-
-        if path.is_dir():
-            shutil.rmtree(path)
-        else:
-            path.unlink()
-
-
 def copy_activity(source_dir, target_dir):
-    shutil.copytree(source_dir, target_dir, ignore=shutil.ignore_patterns("professor"))
-
-    for directory_name in ("temp", "submission"):
-        clean_generated_directory(target_dir / directory_name)
+    shutil.copytree(source_dir, target_dir)
 
 
 def populate_course_directories():
