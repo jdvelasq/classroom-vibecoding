@@ -57,10 +57,10 @@ conserva sus artefactos de herramienta en la raíz de la actividad. Las siete
 actividades tienen `HOW_TO_RUN_ME.txt`; por tanto, son excepciones justificadas
 al patrón de solución Python, no faltantes de material del profesor.
 
-P426 dejó de tener un manifiesto local de dependencias: su Dockerfile y
-`HOW_TO_RUN_ME.txt` ahora se construyen desde la raíz del repositorio y usan
-el único `requirements.txt` canónico. Esto evita una segunda fuente de verdad
-sin cambiar la capacidad que se ejecuta en el contenedor.
+P426 conserva un `requirements.txt` local porque su Dockerfile lo necesita en
+el contexto de construcción de la actividad. Es un artefacto de ejecución, no
+una segunda fuente de verdad: declara únicamente `flask==3.1.3`, compatible
+con el límite `flask<3.2` del `requirements.txt` canónico de la raíz.
 
 ## Resultado
 
