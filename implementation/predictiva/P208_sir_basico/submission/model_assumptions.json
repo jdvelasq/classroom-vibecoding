@@ -1,7 +1,7 @@
 {
   "population": 50372424,
   "observation_cutoff_day": 116,
-  "forecast_days": 180,
+  "forecast_days": 365,
   "recovery_rate": 0.08,
   "death_rate": 0.0,
   "hospitalization_rate": 0.05,
