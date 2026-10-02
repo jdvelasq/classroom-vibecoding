@@ -6,11 +6,10 @@ import pandas as pd
 from pytest import approx
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-PROJECT_DIR = next(
-    (path.parent for path in ACTIVITY_DIR.parents if path.name == "implementation"),
-    None,
-)
-IS_PROFESSOR = PROJECT_DIR is not None and (PROJECT_DIR / ".PROFESSOR").exists()
+PROFESSOR_DIR = ACTIVITY_DIR / "professor"
+IS_PROFESSOR = any(
+    (path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents
+) and any(path.name != ".gitkeep" for path in PROFESSOR_DIR.iterdir())
 CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 REPORT_FILE = ACTIVITY_DIR / "submission" / "privacy_report.json"
 PUBLISHED_FILE = ACTIVITY_DIR / "submission" / "insurance_published.csv"
