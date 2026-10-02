@@ -4,7 +4,11 @@ from pathlib import Path
 import pandas as pd
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
+PROJECT_DIR = next(
+    (path.parent for path in ACTIVITY_DIR.parents if path.name == "implementation"),
+    None,
+)
+IS_PROFESSOR = PROJECT_DIR is not None and (PROJECT_DIR / ".PROFESSOR").exists()
 CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 SUBMISSION_FILE = ACTIVITY_DIR / "submission" / "solicitudes_de_credito.csv"
 TEXT_COLUMNS = [
