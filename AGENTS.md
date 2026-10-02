@@ -189,8 +189,10 @@ student dataset. For example, when an activity supplies a deliberately dirty
 dataset, both its clean source and its generator belong in `professor/`; only
 the resulting student-facing dataset belongs in `data/`.
 
-Laboratories do not contain a `README.md`. Their student instructions live in
-the question files or notebooks. Their `pytest` tests must be portable across
-distribution layouts and must select instructor material only when the
-root-level `.PROFESSOR` marker is present. Every `Lxxx_` activity must have a
-reviewed entry in its course-level `traceability.yaml`.
+Laboratories do not contain a `README.md`. Every `Lxxx_` activity has a
+root-level `DESCRIPTION.md` that states, in student-facing language, what is
+requested and which evidence must be delivered. The question files or
+notebooks contain the detailed instructions. Their `pytest` tests must be
+portable across distribution layouts and must select instructor material only
+when the root-level `.PROFESSOR` marker is present. Every `Lxxx_` activity
+must have a reviewed entry in its course-level `traceability.yaml`.
