@@ -62,7 +62,10 @@ def test_03():
 
 
 def test_04():
-    monthly = pd.read_csv(ACTIVITY_DIR / "submission/monthly_category_sales.csv")
+    monthly = pd.read_csv(
+        ACTIVITY_DIR / "submission/monthly_category_sales.csv",
+        parse_dates=["month"],
+    )
     delivered = pd.read_csv(OUT, parse_dates=["order_date"])
     delivered["month"] = delivered["order_date"].dt.to_period("M").dt.to_timestamp()
     expected = (
@@ -71,4 +74,9 @@ def test_04():
         .sort_values(["month", "category"], ignore_index=True)
     )
     assert_frame_equal(monthly, expected, check_dtype=False, rtol=1e-10)
-    assert json.loads(ACTIVITY_DIR / "submission/questions.json".read_text(encoding="utf-8")) == QUESTIONS
+
+
+def test_05():
+    questions_path = ACTIVITY_DIR / "submission/questions.json"
+    questions = json.loads(questions_path.read_text(encoding="utf-8"))
+    assert questions == QUESTIONS
