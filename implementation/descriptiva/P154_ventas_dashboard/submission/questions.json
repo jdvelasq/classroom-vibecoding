@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Qué región y categoría deben recibir atención en el dashboard de ventas?",
+    "archivo_respuesta": "priority_region_category.csv"
+  }
+]

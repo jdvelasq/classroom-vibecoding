@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué segmentos país–modo se deben priorizar para reducir riesgo, considerando volumen, cumplimiento y valor tardío?",
+    "archivo_respuesta": "priority_segments.csv"
+  },
+  {
+    "pregunta": "¿Qué modos tienen suficiente cobertura de costo para comparar el flete sobre el valor observado?",
+    "archivo_respuesta": "freight_by_mode.csv"
+  }
+]

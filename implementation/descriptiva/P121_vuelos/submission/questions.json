@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué segmentos aerolínea–día–hora se deben priorizar para investigar y reducir las demoras?",
+    "archivo_respuesta": "priority_segments.csv"
+  },
+  {
+    "pregunta": "¿La evolución de las aerolíneas de mayor volumen revela un patrón estacional?",
+    "archivo_respuesta": "seasonality.csv"
+  }
+]

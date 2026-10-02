@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué fuentes de tráfico aportan mayor utilidad bruta?",
+    "archivo_respuesta": "source_summary.csv"
+  },
+  {
+    "pregunta": "¿Cómo evoluciona la utilidad bruta de las campañas?",
+    "archivo_respuesta": "daily_summary.csv"
+  }
+]

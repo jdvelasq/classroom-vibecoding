@@ -1,0 +1,6 @@
+[
+  {
+    "pregunta": "¿Qué combinación de región y categoría aporta más ventas netas en el mart?",
+    "archivo_respuesta": "region_category_sales.csv"
+  }
+]

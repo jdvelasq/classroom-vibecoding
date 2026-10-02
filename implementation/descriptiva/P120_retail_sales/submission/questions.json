@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿Qué segmentos se deben priorizar para investigar y reducir las devoluciones?",
+    "archivo_respuesta": "priority_segments.csv"
+  },
+  {
+    "pregunta": "¿Qué medios de pago combinan ventas netas y tasas de devolución que requieren investigación?",
+    "archivo_respuesta": "payment_summary.csv"
+  }
+]

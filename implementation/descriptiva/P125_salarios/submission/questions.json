@@ -1,0 +1,10 @@
+[
+  {
+    "pregunta": "¿En qué áreas debemos revisar los salarios porque los profesionales podrían ganar menos que pares comparables dentro de la empresa?",
+    "archivo_respuesta": "department_pay_gap.csv"
+  },
+  {
+    "pregunta": "¿Un profesional técnico puede alcanzar los salarios más altos sin tener que convertirse en directivo?",
+    "archivo_respuesta": "high_salary_by_career.csv"
+  }
+]

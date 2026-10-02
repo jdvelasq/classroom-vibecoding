@@ -1,9 +1,6 @@
-"""Evaluación del artefacto de anonimización entregado por el estudiante."""
-
 from pathlib import Path
 
 import pandas as pd
-
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
 SUBMISSION_FILE = ACTIVITY_DIR / "submission" / "anonymized.csv"
@@ -28,9 +25,12 @@ def test_02():
         "occupation_group",
     ]
     assert anonymized["annual_spend"].tolist() == raw["annual_spend"].tolist()
-    assert anonymized["loyalty_card_number"].tolist() == (
-        "********" + raw["loyalty_card_number"].astype(str).str.zfill(12).str[-4:]
-    ).tolist()
+    assert (
+        anonymized["loyalty_card_number"].tolist()
+        == (
+            "********" + raw["loyalty_card_number"].astype(str).str.zfill(12).str[-4:]
+        ).tolist()
+    )
 
 
 def test_03():
@@ -45,8 +45,12 @@ def test_03():
         "occupation",
     }
     assert prohibited_columns.isdisjoint(anonymized.columns)
-    assert anonymized["loyalty_card_number"].astype(str).str.fullmatch(r"\*{8}\d{4}").all()
-    assert anonymized["customer_id"].astype(str).str.fullmatch(r"CUST-[0-9A-F]{12}").all()
+    assert (
+        anonymized["loyalty_card_number"].astype(str).str.fullmatch(r"\*{8}\d{4}").all()
+    )
+    assert (
+        anonymized["customer_id"].astype(str).str.fullmatch(r"CUST-[0-9A-F]{12}").all()
+    )
     assert anonymized["customer_id"].is_unique
 
 
@@ -61,4 +65,9 @@ def test_04():
         "Servicios profesionales",
         "Tecnología y diseño",
     }
-    assert anonymized[["annual_spend", "age_group", "region", "occupation_group"]].notna().all().all()
+    assert (
+        anonymized[["annual_spend", "age_group", "region", "occupation_group"]]
+        .notna()
+        .all()
+        .all()
+    )

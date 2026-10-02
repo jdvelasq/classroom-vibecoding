@@ -1,0 +1,14 @@
+[
+  {
+    "pregunta": "¿Cómo evolucionan las ventas netas mensuales por región?",
+    "archivo_respuesta": "monthly_region_sales.csv"
+  },
+  {
+    "pregunta": "¿Qué categorías lideran las ventas y unidades en la región Norte?",
+    "archivo_respuesta": "north_category_sales.csv"
+  },
+  {
+    "pregunta": "¿Qué productos explican la categoría líder de la región Norte?",
+    "archivo_respuesta": "north_product_drilldown.csv"
+  }
+]
