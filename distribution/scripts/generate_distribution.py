@@ -137,6 +137,10 @@ COURSE_ACTIVITIES = {
         "predictiva/P223_lasso",
         "predictiva/P224_reduccion_dimensionalidad",
         "predictiva/P225_estructura_mercado",
+        "predictiva/L200_regresion_valor_de_reventa",
+        "predictiva/L201_priorizacion_riesgo_credito",
+        "predictiva/L202_sentimiento_amazon",
+        "predictiva/L203_pronostico_demanda_electrica",
     ],
     "prescriptiva": [
         "common/P001_hola_mundo",
