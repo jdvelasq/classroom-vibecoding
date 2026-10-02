@@ -231,6 +231,7 @@ COURSE_ACTIVITIES = {
 
 DISTRIBUTION_DIR = Path(__file__).resolve().parent.parent
 IMPLEMENTATION_DIR = DISTRIBUTION_DIR.parent / "implementation"
+TEST_ISOLATION_FILE = DISTRIBUTION_DIR.parent / "conftest.py"
 EMPTY_DIRECTORIES = ("professor", "submission", "temp")
 LOCAL_DIRECTORY_NAMES = ("__pycache__", ".pytest_cache", ".ipynb_checkpoints")
 LOCAL_FILE_NAMES = (".DS_Store",)
@@ -244,6 +245,7 @@ def prepare_course_directories():
             shutil.rmtree(course_dir)
 
         course_dir.mkdir()
+        shutil.copy2(TEST_ISOLATION_FILE, course_dir / "conftest.py")
 
 
 def validate_activity_directories():
