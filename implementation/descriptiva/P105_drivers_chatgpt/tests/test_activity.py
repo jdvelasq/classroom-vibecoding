@@ -5,7 +5,12 @@ from pathlib import Path
 
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-NOTEBOOK = ACTIVITY_DIR / "notebooks/notebook.ipynb"
+STUDENT_NOTEBOOK = ACTIVITY_DIR / "notebooks/notebook.ipynb"
+PROFESSOR_NOTEBOOK = ACTIVITY_DIR / "professor/notebook.ipynb"
+IS_PROFESSOR = any(
+    (path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents
+) and PROFESSOR_NOTEBOOK.is_file()
+NOTEBOOK = PROFESSOR_NOTEBOOK if IS_PROFESSOR else STUDENT_NOTEBOOK
 
 
 def test_01():
