@@ -112,4 +112,9 @@ def test_04():
         )
     delivered = pd.read_csv(ACTIVITY_DIR / "submission/region_category_sales.csv")
     assert_frame_equal(delivered, expected, check_dtype=False, rtol=1e-10)
-    assert json.loads(ACTIVITY_DIR / "submission/questions.json".read_text(encoding="utf-8")) == QUESTIONS
+
+
+def test_05():
+    questions_path = ACTIVITY_DIR / "submission/questions.json"
+    questions = json.loads(questions_path.read_text(encoding="utf-8"))
+    assert questions == QUESTIONS
