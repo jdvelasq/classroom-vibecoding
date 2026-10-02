@@ -6,8 +6,8 @@ from pathlib import Path
 from pytest import approx
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-IS_TEACHER = any((path / ".TEACHER").exists() for path in ACTIVITY_DIR.parents)
-CODE_DIR = ACTIVITY_DIR / ("scripts" if IS_TEACHER else "src")
+IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
+CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 
 TABLES = {
     "tbl0": "K0 CHAR(1), c01 INT, c02 INT, c03 CHAR(4), c04 FLOAT",

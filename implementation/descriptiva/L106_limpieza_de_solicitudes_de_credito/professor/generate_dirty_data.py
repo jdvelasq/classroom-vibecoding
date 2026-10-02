@@ -7,7 +7,7 @@ def generate_dirty_data():
     """Genera `data/solicitudes_de_credito.csv.gz` a partir del archivo limpio."""
 
     root = Path(__file__).resolve().parents[1]
-    clean_file = root / "scripts" / "SOLICITUDES_DE_CREDITO.csv"
+    clean_file = root / "professor" / "SOLICITUDES_DE_CREDITO.csv"
     dirty_file = root / "data" / "solicitudes_de_credito.csv.gz"
     clean = pd.read_csv(clean_file, sep=";")
 

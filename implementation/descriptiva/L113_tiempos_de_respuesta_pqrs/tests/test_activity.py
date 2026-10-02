@@ -5,8 +5,8 @@ import pandas as pd
 from pytest import approx
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-IS_TEACHER = any((path / ".TEACHER").exists() for path in ACTIVITY_DIR.parents)
-CODE_DIR = ACTIVITY_DIR / ("scripts" if IS_TEACHER else "src")
+IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
+CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 FILES = ["channel_summary.csv", "yearly_summary.csv", "entry_day_summary.csv"]
 

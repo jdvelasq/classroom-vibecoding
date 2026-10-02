@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-IS_TEACHER = any((path / ".TEACHER").exists() for path in ACTIVITY_DIR.parents)
-CODE_DIR = ACTIVITY_DIR / ("scripts" if IS_TEACHER else "src")
+IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
+CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 REPORT_FILE = ACTIVITY_DIR / "submission" / "data_quality_report.json"
 
 

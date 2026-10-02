@@ -173,3 +173,24 @@ Whenever a particular `Pxxx_` activity is inspected, designed, modified, or
 approved, review its course-level `traceability.yaml` entry as part of that
 activity's audit. Confirm that the mapped capabilities reflect the evidence in
 the activity; do not defer this review to a later course-level audit.
+
+## Evaluation laboratories (`Lxxx_`)
+
+`Lxxx_` directories are evaluable laboratories. Their `pregunta_*.py` or
+`pregunta_*.sql` files may define one or more questions; they are not required
+to expose a `main.py`. They use the same canonical activity structure as
+presential workshops: `data/`, `notebooks/`, `professor/`, `src/`,
+`submission/`, `temp/`, and `tests/`. Each directory is retained with a
+`.gitkeep` file, even when it also contains activity files.
+
+`professor/` contains only instructor-facing material: the solved answer,
+source data that must not be distributed, and code used to construct a derived
+student dataset. For example, when an activity supplies a deliberately dirty
+dataset, both its clean source and its generator belong in `professor/`; only
+the resulting student-facing dataset belongs in `data/`.
+
+Laboratories do not contain a `README.md`. Their student instructions live in
+the question files or notebooks. Their `pytest` tests must be portable across
+distribution layouts and must select instructor material only when the
+root-level `.PROFESSOR` marker is present. Every `Lxxx_` activity must have a
+reviewed entry in its course-level `traceability.yaml`.

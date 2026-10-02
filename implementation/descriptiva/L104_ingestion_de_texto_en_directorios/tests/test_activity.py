@@ -4,8 +4,8 @@ from pathlib import Path
 import pandas as pd
 
 ACTIVITY_DIR = Path(__file__).resolve().parents[1]
-IS_TEACHER = any((path / ".TEACHER").exists() for path in ACTIVITY_DIR.parents)
-CODE_DIR = ACTIVITY_DIR / ("scripts" if IS_TEACHER else "src")
+IS_PROFESSOR = any((path / ".PROFESSOR").exists() for path in ACTIVITY_DIR.parents)
+CODE_DIR = ACTIVITY_DIR / ("professor" if IS_PROFESSOR else "src")
 SUBMISSION_DIR = ACTIVITY_DIR / "submission"
 
 EXPECTED = {

@@ -18,7 +18,7 @@ def pregunta_01():
     """
 
     root = Path(__file__).resolve().parents[1]
-    clean = pd.read_csv(root / "scripts" / "SOLICITUDES_DE_CREDITO.csv", sep=";")
+    clean = pd.read_csv(root / "professor" / "SOLICITUDES_DE_CREDITO.csv", sep=";")
     for column in TEXT_COLUMNS:
         clean[column] = (
             clean[column]
