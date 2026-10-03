@@ -5,6 +5,7 @@
 **/L[0-9][0-9][0-9]_*/temp/*
 !**/L[0-9][0-9][0-9]_*/temp/.gitkeep
 
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
