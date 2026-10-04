@@ -20,3 +20,9 @@
 - **Auditoría de Analytics:** el producto es una representación textual
   verificable para análisis posterior; NLP y vectorización contribuyen a ese
   producto sin redefinir la identidad del curso.
+
+## S01.P202.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H06, superficies de corpus/representación/producto,
+  contrato de evidencia y dependencia demostrable hacia P203.

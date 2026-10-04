@@ -12,37 +12,43 @@
 Usa 228 meses para especificar modelos y 24 meses posteriores para evaluarlos.
 La actividad genera pronósticos, métricas y visualizaciones comparables.
 
-### Hitos de aprendizaje actuales
+### Highlights de contribución
 
-- **Centralizar funciones reutilizables:** separa carga, gráficos, ACF/PACF,
+- **H01 — Trata el tiempo como estructura y no como filas intercambiables:** usa
+  228 observaciones mensuales de 1946:01–1964:12 para especificación y las 24
+  posteriores para evaluación. Es la particularidad del dataset de Sutter; sin
+  este hito, los modelos se podrían juzgar con una partición aleatoria que filtra
+  el futuro hacia el pasado.
+
+- **H02 — Centralizar funciones reutilizables:** separa carga, gráficos, ACF/PACF,
   componentes, rezagos, evaluación y almacenamiento en `functions.ipynb`, e
   importa ese notebook desde los demás.
-- **Diagnosticar la dependencia temporal:** calcula y grafica ACF y PACF de la
+- **H03 — Diagnosticar la dependencia temporal:** calcula y grafica ACF y PACF de la
   serie original, de la primera diferencia y de la diferencia estacional; hace
   visible qué cambia al remover tendencia y ciclo.
-- **Construir la línea base de pronóstico:** implementa en Python regresiones
+- **H04 — Construir la línea base de pronóstico:** implementa en Python regresiones
   con tendencia temporal de distinto orden y dummies mensuales estacionales.
-- **Representar ciclo con Fourier:** sustituye las dummies por componentes seno
+- **H05 — Representar ciclo con Fourier:** sustituye las dummies por componentes seno
   y coseno para construir una alternativa de tendencia más ciclo.
-- **Mostrar el problema de una MLP sin escalamiento:** crea rezagos y entrena
+- **H06 — Mostrar el problema de una MLP sin escalamiento:** crea rezagos y entrena
   una `MLPRegressor` sobre la serie original sin escalar, para contrastar su
   comportamiento con las variantes posteriores.
-- **Escalar el flujo completo de MLP:** usa `Pipeline`, transformadores y
+- **H07 — Escalar el flujo completo de MLP:** usa `Pipeline`, transformadores y
   `TransformedTargetRegressor` para escalar entradas y objetivo antes de
   pronosticar desde los rezagos de la serie.
-- **Pronosticar la serie diferenciada:** repite el enfoque MLP tras remover
+- **H08 — Pronosticar la serie diferenciada:** repite el enfoque MLP tras remover
   tendencia y ciclo, y reconstruye el pronóstico en la escala original.
-- **Apilar pronósticos:** alimenta un segundo MLP con el pronóstico del primero
+- **H09 — Apilar pronósticos:** alimenta un segundo MLP con el pronóstico del primero
   además de los rezagos para implementar un modelo *stacked*.
-- **Implementar un AR con herramientas generales:** usa rezagos de la serie
+- **H10 — Implementar un AR con herramientas generales:** usa rezagos de la serie
   diferenciada y `LinearRegression` para construir y reconstruir un modelo
   autoregresivo, sin esconder su mecánica detrás de una llamada especializada.
-- **Combinar pronósticos:** calcula tanto el promedio de pronósticos disponibles
+- **H11 — Combinar pronósticos:** calcula tanto el promedio de pronósticos disponibles
   como una combinación lineal aprendida mediante `LinearRegression`.
-- **Persistir y comparar evidencia:** cada familia agrega sus columnas a
+- **H12 — Persistir y comparar evidencia:** cada familia agrega sus columnas a
   `forecasts.csv` y sus métricas de entrenamiento/prueba a `metrics.csv`, de
   modo que los resultados sobreviven a los notebooks y pueden compararse.
-- **Evaluar como pronóstico:** reserva los últimos 24 meses para medir el
+- **H13 — Evaluar como pronóstico:** reserva los últimos 24 meses para medir el
   desempeño fuera del período usado para especificar; el tiempo no se trata como
   filas intercambiables en una partición aleatoria.
 
@@ -66,6 +72,49 @@ secuencia explícita de construcción, transformación y comparación de modelos
 Sin P216 se pierde la competencia de evaluar modelos temporales con estructura
 de tendencia, estacionalidad y rezagos, en lugar de tratar el tiempo como una
 variable ordinaria.
+
+### Evidencia de los highlights
+
+| Highlight | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- |
+| H01 — Partición temporal | `implementation/predictiva/P216_series_de_tiempo/professor/notebook_1.ipynb`; `data/sutter.csv` | No se documenta la procedencia ni uso operativo de la serie de mano de obra. |
+| H02 — Funciones reutilizables | `implementation/predictiva/P216_series_de_tiempo/professor/functions.ipynb`; notebooks 1–9 | `nbimporter` es un contrato de notebook, no un paquete Python distribuido. |
+| H03 — ACF, PACF y diferencias | `professor/functions.ipynb`: `acf_pacf_plots`; `professor/notebook_1.ipynb` | La actividad no formaliza pruebas de estacionariedad. |
+| H04 — Tendencia y dummies | `professor/notebook_2.ipynb` | La línea base no establece utilidad operativa de sus predicciones. |
+| H05 — Fourier | `professor/notebook_3.ipynb` | Los términos elegidos no se seleccionan mediante validación explícita. |
+| H06 — MLP sin escalamiento | `professor/notebook_4.ipynb` | La conclusión depende de esta serie y configuración. |
+| H07 — Pipeline y escalamiento | `professor/notebook_5.ipynb` | No se evalúa operación del pipeline fuera del notebook. |
+| H08 — MLP diferenciado | `professor/notebook_8.ipynb`; `functions.ipynb`: diferencias y reconstrucción | Diferenciar regular y estacionalmente no prueba remover un ciclo económico. |
+| H09 — Stacking | `professor/notebook_6.ipynb` | No hay validación separada del segundo nivel. |
+| H10 — AR con regresión | `professor/notebook_7.ipynb` | Los rezagos y la forma de reconstrucción son específicos del caso. |
+| H11 — Combinación | `professor/notebook_9.ipynb` | La combinación lineal se ajusta sobre pronósticos disponibles sin una nueva partición visible. |
+| H12 — Persistencia acumulativa | `functions.ipynb`: `save_forecasts`, `save_metrics`; `submission/forecasts.csv`; `metrics.csv` | Los tests no prueban la consistencia de columnas acumuladas. |
+| H13 — Evaluación fuera de especificación | `functions.ipynb`: `compute_evaluation_metrics`; notebooks 2–8 | Reporta MSE y MAE, no incertidumbre ni intervalos de predicción. |
+
+### Superficies de cambio para revisión posterior
+
+| ID | Componente actual | Rutas afectadas | Restricción observable |
+| --- | --- | --- | --- |
+| S01 | Serie, horizonte y partición temporal | `data/sutter.csv`; `functions.ipynb`; notebooks | Debe preservarse la separación cronológica 228/24. |
+| S02 | Transformaciones y representación | `functions.ipynb`; notebooks 1–8 | Diferencias, rezagos y escalamiento determinan comparabilidad. |
+| S03 | Familias y combinación de modelos | Notebooks 2–9; `forecasts.csv`; `metrics.csv` | La comparación actual usa métricas puntuales, sin incertidumbre. |
+| S04 | Producto, pruebas y trazabilidad | `submission/`; `tests/`; `traceability.yaml` | No hay entrada P216 y las pruebas deben revisarse. |
+
+### Contrato de evidencia actual
+
+- **Notebook o código:** diagnostica, transforma, ajusta familias temporales,
+  reconstruye pronósticos y combina resultados.
+- **`submission/`:** acumula columnas de pronóstico y métricas por modelo.
+- **Pruebas:** requieren artefactos persistentes, sin verificar partición,
+  métricas, incertidumbre o consistencia entre modelos.
+- **Trazabilidad:** no existe entrada P216; requiere escalación.
+
+### Dependencias en la secuencia
+
+- **Recibe de P210–P211:** uso aplicado de pronósticos temporales; no hay
+  dependencia de código o dataset demostrable.
+- **Habilita para P217–P220:** no hay dependencia demostrable; aporta una base
+  de implementación temporal que futuros cambios podrían reutilizar.
 
 ## Mejoras aceptadas pendientes de implementación
 

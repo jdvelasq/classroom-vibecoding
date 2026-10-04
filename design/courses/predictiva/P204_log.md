@@ -23,3 +23,9 @@
 - **Decisión:** se añadió la particularidad del dataset —212 casos M, 357 B y
   muchas mediciones— para justificar la selección didáctica de dos entradas y
   reforzar el límite de no diagnóstico.
+
+## S01.P204.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H05 y las superficies, contrato y dependencias
+  que anclan cualquier mejora futura sin alterar el límite clínico educativo.

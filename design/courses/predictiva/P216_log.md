@@ -20,3 +20,10 @@
   verificables de la secuencia implementada, incluida la importación de
   funciones, ACF/PACF, escalamiento, reconstrucción de diferencias, *stacking*,
   combinación y persistencia acumulativa de pronósticos y métricas.
+
+## S01.P216.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H13, incluyendo la particularidad temporal del
+  dataset, y se añadieron superficies de cambio, contrato de evidencia y
+  dependencias comprobadas/no comprobadas para análisis posterior de benchmarks.

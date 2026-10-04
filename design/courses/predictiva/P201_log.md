@@ -22,3 +22,10 @@
 - **Auditoría de Analytics:** el producto permanece como clasificación y revisión
   de su evidencia; la regresión logística sirve ese producto y no organiza la
   actividad como una introducción general a ML.
+
+## S01.P201.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se asignaron IDs H01–H06 y se añadieron superficies, contrato y
+  dependencias para anclar futuras mejoras en representación, probabilidad o
+  evaluación sin inventar cambios curriculares.

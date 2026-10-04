@@ -23,3 +23,9 @@
 - **Decisión:** se precisó el highlight de evaluación con la distribución real
   de etiquetas (1,391 neutrales, 570 positivas y 303 negativas), para vincular
   el desbalance del dataset con exactitud balanceada y F1 macro.
+
+## S01.P203.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H05, superficies de caso/vectorización/evaluación,
+  contrato de evidencia y dependencias demostrables con P202 y P220.

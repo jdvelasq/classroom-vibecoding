@@ -18,3 +18,10 @@
   los tamaños desiguales de sus dos grupos.
 - **Auditoría de Analytics:** el producto es evidencia predictiva previa a una
   priorización; no define una política prescriptiva real.
+
+## S01.P205.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H05 y se documentaron superficies, contrato de
+  evidencia y dependencia comprobada con P204; no se inventó una dependencia
+  técnica con los talleres posteriores.

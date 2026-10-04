@@ -38,3 +38,10 @@
 - **Auditoría de Analytics:** el producto permanece como estimación verificable
   de MPG; preprocesamiento, regresión y MLP contribuyen a ese producto y no
   reorganizan la actividad como un curso introductorio de ML.
+
+## S01.P200.05
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se asignaron IDs estables H01–H10 y se documentaron superficies
+  de cambio, contrato de evidencia y dependencias demostrables para que futuras
+  propuestas de benchmarks puedan afectar un componente concreto.

@@ -15,29 +15,29 @@ especificaciones; el notebook prohíbe inferir diagnóstico clínico.
 
 ### Highlights de contribución
 
-- **Delimita una probabilidad educativa antes de mostrar el modelo:** define la
+- **H01 — Delimita una probabilidad educativa antes de mostrar el modelo:** define la
   clase positiva M a partir de la etiqueta histórica y declara que el resultado
   no es diagnóstico. El dataset contiene 212 casos M y 357 B y numerosas
   mediciones; el taller selecciona dos para un caso interpretable, pero no por
   ello clínicamente válido. Frente a P201, mantiene clasificación probabilística
   y añade un límite de uso de alto riesgo; sin este hito, una probabilidad de
   ejemplo podría interpretarse erróneamente como recomendación clínica.
-- **Construye una probabilidad binaria interpretable:** comienza con
+- **H02 — Construye una probabilidad binaria interpretable:** comienza con
   `texture_mean` y `compactness_mean`, visualiza casos B y M, y ajusta una
   logística base dentro de un pipeline. Es el primer contraste explícito entre
   clasificación binaria y multiclase; sin él no se vería cómo cambia el producto
   cuando sólo interesa la probabilidad de una clase.
-- **Flexibiliza el modelo sin abandonar su interpretación:** incorpora término
+- **H03 — Flexibiliza el modelo sin abandonar su interpretación:** incorpora término
   cuadrático de textura e interacción textura×compactness antes de la logística.
   Extiende la ingeniería de características de P200 a una probabilidad binaria;
   sin este hito, la comparación se reduciría a escoger un algoritmo en vez de
   discutir una representación alternativa de las mismas mediciones.
-- **Evalúa ordenamiento y decisión como propiedades diferentes:** reporta AUC y
+- **H04 — Evalúa ordenamiento y decisión como propiedades diferentes:** reporta AUC y
   exactitud sobre una muestra estratificada reservada. La versión flexible mejora
   AUC de 0.842 a 0.852, aunque baja exactitud de 0.754 a 0.746; sin este hito,
   una métrica única ocultaría la tensión entre clasificación por umbral y orden
   probabilístico.
-- **Conserva dos especificaciones comparables:** persiste estimadores base y
+- **H05 — Conserva dos especificaciones comparables:** persiste estimadores base y
   flexible, comparación y metadatos de entradas. Sin estos artefactos, no se
   podría revisar qué variables y transformaciones corresponden a cada AUC.
 
@@ -63,11 +63,34 @@ una probabilidad, pero P204 todavía no fija umbral ni política.
 
 | Highlight | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- |
-| Límite educativo y clase positiva | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: pregunta, `diagnosis == "M"` y notas de no diagnóstico | El límite pedagógico no sustituye validación clínica, consentimiento ni evaluación externa. |
-| Logística binaria base | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: dos variables, visualización y `LogisticRegression` | Dos mediciones no representan todos los factores clínicos pertinentes. |
-| Especificación flexible | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: `texture_mean_squared`, interacción y `flexible_estimator` | La forma funcional se prueba sólo en este conjunto. |
-| AUC frente a exactitud | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/model_comparison.csv`; `metrics.json`; notebook de profesor | AUC y exactitud no evalúan calibración, utilidad clínica ni equidad. |
-| Persistencia de comparación | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/`; `implementation/predictiva/P204_clasificacion_basica_numerica/tests/test_activity.py` | Las pruebas sólo verifican que existan los cuatro artefactos. |
+| H01 — Límite educativo y clase positiva | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: pregunta, `diagnosis == "M"` y notas de no diagnóstico | El límite pedagógico no sustituye validación clínica, consentimiento ni evaluación externa. |
+| H02 — Logística binaria base | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: dos variables, visualización y `LogisticRegression` | Dos mediciones no representan todos los factores clínicos pertinentes. |
+| H03 — Especificación flexible | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: `texture_mean_squared`, interacción y `flexible_estimator` | La forma funcional se prueba sólo en este conjunto. |
+| H04 — AUC frente a exactitud | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/model_comparison.csv`; `metrics.json`; notebook de profesor | AUC y exactitud no evalúan calibración, utilidad clínica ni equidad. |
+| H05 — Persistencia de comparación | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/`; `implementation/predictiva/P204_clasificacion_basica_numerica/tests/test_activity.py` | Las pruebas sólo verifican que existan los cuatro artefactos. |
+
+### Superficies de cambio para revisión posterior
+
+| ID | Componente actual | Rutas afectadas | Restricción observable |
+| --- | --- | --- | --- |
+| S01 | Caso clínico educativo y datos | `data/wisc_bc_data.csv`; notebook | No puede pasar a diagnóstico ni uso clínico por analogía. |
+| S02 | Variables y especificaciones | Notebook; estimadores `.pkl`; comparación | Dos variables base y dos derivadas determinan la comparación actual. |
+| S03 | Evaluación y producto | `metrics.json`; `model_comparison.csv`; pruebas | AUC y exactitud no prueban calibración, utilidad ni equidad. |
+
+### Contrato de evidencia actual
+
+- **Notebook o código:** define clase M, separa, ajusta dos pipelines y compara
+  AUC y exactitud.
+- **`submission/`:** conserva ambos estimadores, comparación y metadatos.
+- **Pruebas:** exigen cuatro artefactos, sin validar sus métricas.
+- **Trazabilidad:** P204 mapea `predictiva.C01`–`C04`.
+
+### Dependencias en la secuencia
+
+- **Recibe de P201:** clasificación probabilística, estratificación y análisis
+  de errores; de P200, ingeniería de características.
+- **Habilita para P205:** probabilidades binarias cuyo uso, calibración y umbral
+  podrán ser cuestionados antes de priorizar.
 
 ## Mejoras aceptadas pendientes de implementación
 

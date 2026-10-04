@@ -16,28 +16,28 @@ representación textual auditable para análisis posterior.
 
 ### Highlights de contribución
 
-- **Convierte ausencias textuales en una regla de calidad verificable:** mide la
+- **H01 — Convierte ausencias textuales en una regla de calidad verificable:** mide la
   longitud, identifica el marcador `[no abstract available]` y excluye textos de
   menos de 20 palabras antes de modelar. Sin este hito, la matriz mezclaría
   contenido con marcadores de ausencia.
-- **Deriva una limpieza desde evidencia del corpus:** alinea y ordena las colas
+- **H02 — Deriva una limpieza desde evidencia del corpus:** alinea y ordena las colas
   de abstracts para hacer visibles avisos editoriales repetitivos, formula una
   expresión regular y verifica el efecto tras removerla. Sin este hito, se
   aceptarían reglas opacas que pueden borrar contenido.
-- **Distingue expresiones que se preservan de fórmulas que se eliminan:** une
+- **H03 — Distingue expresiones que se preservan de fórmulas que se eliminan:** une
   conectores de varias palabras con guiones bajos, pero marca y remueve fórmulas
   retóricas como `this study`. Sin ello, el vectorizador fragmentaría expresiones
   útiles o sobrerrepresentaría la retórica del abstract.
-- **Hace visibles las transformaciones léxicas:** tokeniza, conserva tokens
+- **H04 — Hace visibles las transformaciones léxicas:** tokeniza, conserva tokens
   alfabéticos —incluidos los compuestos con guion bajo—, elimina *stopwords* y
   lematiza sin alterar los conectores unidos. Frente a P201, aquí construye las
   *features* desde texto crudo; sin este hito no se puede auditar qué término
   llegó a la matriz.
-- **Construye una matriz documento–término con un umbral declarado:** usa
+- **H05 — Construye una matriz documento–término con un umbral declarado:** usa
   `CountVectorizer(min_df=2)` y frecuencia documental, transformando abstracts
   en una matriz dispersa de 385 documentos y 2,806 términos. Sin ella P203 no
   recibiría entradas numéricas reproducibles.
-- **Persiste tanto la matriz como su explicación:** guarda textos procesados,
+- **H06 — Persiste tanto la matriz como su explicación:** guarda textos procesados,
   vocabulario, matriz `.npz` y metadatos de exclusiones, avisos retirados y
   umbrales. Sin este hito, la representación no podría inspeccionarse ni
   reproducirse independientemente del notebook.
@@ -66,12 +66,34 @@ apta para modelar.
 
 | Highlight | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- |
-| Regla de calidad para ausencias y textos breves | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `minimum_abstract_words`, marcadores y filtros; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json` | El umbral de 20 palabras es una decisión del taller; no se justifica como universal. |
-| Limpieza de avisos basada en evidencia | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `print_aligned_text_tails`, `copyright_pattern` y reemplazo | El patrón puede no cubrir todas las licencias ni todos los formatos editoriales. |
-| Preservación de conectores y remoción de retórica | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `selected_connectors`, `rhetorical_scaffolding` y marcadores con `_` | La distinción es curada para este corpus y requiere revisión si cambia el dominio. |
-| Tokenización y lematización auditables | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `word_tokenize`, filtro alfabético, `ENGLISH_STOP_WORDS` y `WordNetLemmatizer` | El proceso está diseñado para inglés; no valida calidad lingüística en otros idiomas. |
-| Matriz documento–término declarada | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `CountVectorizer(min_df=2)`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv` | Frecuencia documental no expresa por sí sola relevancia temática ni semántica. |
-| Persistencia de representación y decisiones | `implementation/predictiva/P202_tokenizacion/submission/tokenized_abstracts.csv`; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/tests/test_activity.py` | Las pruebas verifican existencia, no consistencia dimensional ni semántica de los artefactos. |
+| H01 — Regla de calidad para ausencias y textos breves | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `minimum_abstract_words`, marcadores y filtros; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json` | El umbral de 20 palabras es una decisión del taller; no se justifica como universal. |
+| H02 — Limpieza de avisos basada en evidencia | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `print_aligned_text_tails`, `copyright_pattern` y reemplazo | El patrón puede no cubrir todas las licencias ni todos los formatos editoriales. |
+| H03 — Preservación de conectores y remoción de retórica | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `selected_connectors`, `rhetorical_scaffolding` y marcadores con `_` | La distinción es curada para este corpus y requiere revisión si cambia el dominio. |
+| H04 — Tokenización y lematización auditables | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `word_tokenize`, filtro alfabético, `ENGLISH_STOP_WORDS` y `WordNetLemmatizer` | El proceso está diseñado para inglés; no valida calidad lingüística en otros idiomas. |
+| H05 — Matriz documento–término declarada | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `CountVectorizer(min_df=2)`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv` | Frecuencia documental no expresa por sí sola relevancia temática ni semántica. |
+| H06 — Persistencia de representación y decisiones | `implementation/predictiva/P202_tokenizacion/submission/tokenized_abstracts.csv`; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/tests/test_activity.py` | Las pruebas verifican existencia, no consistencia dimensional ni semántica de los artefactos. |
+
+### Superficies de cambio para revisión posterior
+
+| ID | Componente actual | Rutas afectadas | Restricción observable |
+| --- | --- | --- | --- |
+| S01 | Corpus, calidad y normalización | `data/scopus_abstracts.csv.gz`; notebook | Está diseñado para abstracts en inglés y reglas explícitas del corpus. |
+| S02 | Representación léxica | Notebook; vocabulario y matriz | `min_df=2`, *stopwords* y lematización definen el espacio de términos. |
+| S03 | Producto y verificación | `submission/`; pruebas; trazabilidad | Pruebas sólo exigen artefactos; la matriz no es aún una predicción. |
+
+### Contrato de evidencia actual
+
+- **Notebook o código:** filtra, normaliza, tokeniza, lematiza y vectoriza.
+- **`submission/`:** conserva textos procesados, vocabulario, matriz y
+  metadatos de parámetros y exclusiones.
+- **Pruebas:** verifican los cuatro archivos, no contenidos ni dimensiones.
+- **Trazabilidad:** P202 mapea únicamente `predictiva.C02`.
+
+### Dependencias en la secuencia
+
+- **Recibe de Pxxx:** ninguna representación textual previa demostrable.
+- **Habilita para P203:** vocabulario y el contrato de convertir texto crudo en
+  características numéricas auditables.
 
 ## Mejoras aceptadas pendientes de implementación
 

@@ -16,3 +16,17 @@
   interpretar centroides sin causalidad y asignar un perfil persistido.
 - **Límite:** la normalización elimina nivel absoluto; la actividad no pronostica
   demanda ni define capacidad operativa.
+
+## S01.P206.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H05 y se declararon superficies de serie,
+  clustering y producto, con contrato de evidencia y dependencia comprobada
+  hacia P207.
+
+## S01.P206.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Corrección:** H02 declara ahora la orientación filas=días, columnas=horas y
+  su consecuencia interpretativa: cada cluster es un arquetipo de forma diaria,
+  no una agrupación de horas individuales ni un pronóstico.
