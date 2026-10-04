@@ -60,7 +60,10 @@ No lo modifiques. No inspecciones ni modifiques otros cursos.
    fusiones ni reordenes actividades.
 2. Reconstruye el caso con prudencia: pregunta(s) analítica(s) en viñetas; usuario,
    decisión, entidad, tiempo, datos y procedencia sólo cuando la implementación
-   los demuestre. Marca lo que no esté especificado.
+   los demuestre. Identifica la particularidad que el dataset impone al problema:
+   unidad de análisis, estructura, etiqueta, granularidad, desbalance, faltantes,
+   temporalidad, ruido, sensibilidad, simulación, transformación necesaria o
+   restricción de uso. Marca lo que no esté especificado.
 3. Reconstruye el producto terminal actual: explicación, predicción, política,
    capacidad de datos u otro artefacto. Comprueba la identidad de Analytics con
    las preguntas de auditoría de `AGENTS.md`; las disciplinas contribuyentes
@@ -148,6 +151,23 @@ La cantidad no es fija. Un taller complejo puede requerir muchos; uno breve,
 pocos. Cada uno debe justificar una contribución distinguible, no cubrir cada
 línea de código. Los highlights no son mejoras propuestas ni declaraciones de
 logro real del estudiante.
+
+### Highlight obligatorio de caso y datos
+
+Cada actividad debe incluir al menos un highlight que vincule una particularidad
+evidenciada del caso o dataset con la práctica que exige. Debe responder:
+
+> ¿Qué hace que este problema no sea intercambiable con un CSV genérico y cómo
+> cambia esa condición la representación, validación, interpretación o límite
+> del producto?
+
+Ejemplos válidos: texto que exige conservar expresiones de varias palabras;
+clases desbalanceadas que justifican métricas por clase; imágenes que requieren
+convertir una matriz de píxeles en vector; una simulación que prohíbe inferir una
+política real; una serie temporal que impide partición aleatoria. «Usa un CSV»,
+«trabaja con datos reales» o el nombre del dataset no son highlights. Si la
+implementación no revela una particularidad distinguible, registra esa ausencia
+como límite: no inventes una.
 
 ### Inventario técnico y relación con la secuencia
 
