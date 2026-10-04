@@ -164,22 +164,30 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
      contribución propia y un contrato de no regresión verificable; o
    - **no sustentado / fuera de alcance:** no se propone cambio; explica el
      límite, tensión o riesgo de sustitución disciplinar.
-9. Para cada candidato, formula un contrato de cambio: pregunta o producto
+9. Antes de detallar candidatos, produce los **hallazgos prioritarios de
+   faltantes**: sólo las capacidades, casos, prácticas o evidencias que el
+   contraste demuestra ausentes o cubiertas parcialmente. Para cada uno, indica
+   por qué importa para el producto de Analytics, qué `Pxxx` no lo cubre o lo
+   cubre parcialmente, el candidato asociado y la siguiente decisión o
+   evidencia necesaria. Ordénalos por impacto curricular y certeza de la
+   evidencia. No repitas capacidades ya cubiertas ni presentes una lista de
+   técnicas del referente: ésta es la respuesta ejecutiva a «¿qué falta?».
+10. Para cada candidato, formula un contrato de cambio: pregunta o producto
    analítico que mejoraría; Pxxx/HNN/SNN afectados o posición propuesta para una
    actividad nueva; caso/dataset apropiado; práctica concreta; evidencia
    persistente esperada; prueba y trazabilidad que habría que revisar;
    dependencias, riesgos y condición de aceptación.
-10. Justifica la proporcionalidad: enumera las alternativas de menor impacto
+11. Justifica la proporcionalidad: enumera las alternativas de menor impacto
    consideradas y explica por qué bastan o no bastan. Para un cambio mayor o una
    actividad nueva, demuestra además su contribución no duplicada y el contrato
    de no regresión.
-11. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
+12. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
    dependencias que se conservan, y cada elemento que se sustituye junto con la
    evidencia que verificará una contribución al menos equivalente.
-12. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
+13. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
    línea base interpretable, un caso con valor pedagógico o un producto de
    Analytics sin una razón observable.
-13. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+14. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
 
 ## Salida
 
@@ -218,6 +226,11 @@ vigentes y registra qué PDFs o conclusiones cambiaron.
 ## Cobertura conceptual y técnica del referente
 
 | Capacidad del índice o sección | Rol para Analytics y práctica técnica asociada | Pxxx/HNN/SNN comparados | Cobertura actual verificable | Dictamen y siguiente evidencia necesaria |
+| --- | --- | --- | --- | --- |
+
+## Hallazgos prioritarios de faltantes
+
+| Prioridad | Falta demostrada | Por qué importa para Analytics | Pxxx/HNN/SNN relacionados | Candidato y siguiente decisión/evidencia |
 | --- | --- | --- | --- | --- |
 
 ## Propuestas candidatas — no aceptadas
@@ -278,5 +291,8 @@ Confirma que:
 - cada candidata a herramienta o técnica demuestra qué dificultad de datos o
   producto resuelve, cuál práctica transferible deja y por qué es una extensión
   o una actividad nueva en vez de una llamada adicional de biblioteca;
+- el informe presenta una sección breve, priorizada y separada que responde
+  explícitamente «qué falta», sin confundir cobertura existente, candidatos no
+  aceptados y cambios implementados;
 - se preservó la identidad de Analytics y se registraron tensiones; y
 - sólo se creó o actualizó el informe S02 del executor actual.
