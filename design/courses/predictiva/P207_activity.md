@@ -11,6 +11,13 @@
 
 Usa perfiles de estudiantes con conteos de intereses y atributos demográficos. El producto es una segmentación por intereses, sus tamaños, intereses característicos y perfiles complementarios. No predice comportamiento futuro ni autoriza una acción de mercadeo.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** segmenta intereses; no predice conducta ni autoriza mercadeo.
+- **Producto terminal:** clusters, perfiles e interpretaciones persistidas.
+- **Uso y límite:** atributos personales describen después; no prueban causalidad o acción.
+- **Disciplinas contribuyentes:** TF–IDF, KMeans y UMAP sirven a segmentación; identidad Predictiva no resuelta.
+
 ### Highlights de contribución
 
 - **H01 — Separa señales de segmentación de atributos de descripción:** usa 36 conteos de intereses para agrupar y reserva año de graduación, género, edad y amistades para caracterizar después. Es una dificultad propia del dataset: los perfiles mezclan intereses con atributos personales; sin esta separación, los clusters podrían reflejar directamente rasgos demográficos en vez de intereses.
@@ -29,21 +36,29 @@ Usa perfiles de estudiantes con conteos de intereses y atributos demográficos. 
 - **Extiende:** interpretación de clusters de P206 con términos principales, heatmap y perfiles complementarios.
 - **Reutiliza:** persistencia de asignaciones y evidencia gráfica del modelo no supervisado.
 
+### Índice de comparación externa
+
+| Ancla | Hitos | Mecanismo | Límite |
+| --- | --- | --- | --- |
+| Separación atributos/intereses | H01–H02 | Intereses para cluster, atributos después | No evita todos los proxies. |
+| Representación/selección | H03–H04 | TF–IDF, silueta y semilla | No predice conducta. |
+| Interpretación/auditoría | H05–H07 | Términos, UMAP y perfiles | Nombres son hipótesis. |
+
 ### Relación técnica con actividades anteriores
 
 P207 reutiliza la lógica no supervisada de P206, pero cambia el significado de la representación: perfiles de interés ponderados frente a curvas horarias normalizadas. No es sólo un nuevo caso de KMeans: exige separar atributos personales de señales de segmentación, resolver edad no plausible y justificar nombres a partir de términos ponderados. La ausencia de trazabilidad formal queda pendiente de corrección a nivel de curso.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Intereses separados de atributos personales | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `interest_columns` y `profile_columns` | Excluir atributos de la entrada no garantiza que los intereses no funcionen como proxies de atributos personales. |
-| H02 — Edad limpiada e imputada | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `age_clean`, medianas por `gradyear` y `age_imputed` | La mediana por cohorte es una regla de taller y puede ocultar variación individual. |
-| H03 — TF–IDF sobre intereses | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `TfidfTransformer` e `interest_matrix` | TF–IDF no valida que los intereses reflejen afinidad real ni intención de compra. |
-| H04 — Silueta, KMeans y reproducibilidad | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: bucle 2–8, `silhouette_score`, `random_state=42` y `n_init` | La tabla de selección no se persiste en `submission/`; no hay evidencia archivada de la comparación tras ejecutar. |
-| H05 — Términos principales, heatmap y UMAP | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `top_interests`, heatmap, UMAP y nombres; `implementation/predictiva/P207_clustering_mercadeo/submission/top_interests.csv`; `interests-heatmap.png`; `cluster-scatter.png` | UMAP es una proyección de inspección, no una prueba formal de separación ni de validez de etiquetas. |
-| H06 — Perfiles posteriores a la asignación | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `cluster_profiles`, `gender_profiles` y `gradyear_profiles` | Caracterizar después no elimina proxies ni prueba que los segmentos sean apropiados para una intervención. |
-| H07 — Persistencia de segmentación e interpretación | `implementation/predictiva/P207_clustering_mercadeo/submission/segmented.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_sizes.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gender_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gradyear_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no validez de segmentos ni uso ético de perfiles. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Intereses separados de atributos personales | S01 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `interest_columns` y `profile_columns` | Excluir atributos de la entrada no garantiza que los intereses no funcionen como proxies de atributos personales. |
+| H02 — Edad limpiada e imputada | S01 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `age_clean`, medianas por `gradyear` y `age_imputed` | La mediana por cohorte es una regla de taller y puede ocultar variación individual. |
+| H03 — TF–IDF sobre intereses | S02 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `TfidfTransformer` e `interest_matrix` | TF–IDF no valida que los intereses reflejen afinidad real ni intención de compra. |
+| H04 — Silueta, KMeans y reproducibilidad | S02 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: bucle 2–8, `silhouette_score`, `random_state=42` y `n_init` | La tabla de selección no se persiste en `submission/`; no hay evidencia archivada de la comparación tras ejecutar. |
+| H05 — Términos principales, heatmap y UMAP | S03 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `top_interests`, heatmap, UMAP y nombres; `implementation/predictiva/P207_clustering_mercadeo/submission/top_interests.csv`; `interests-heatmap.png`; `cluster-scatter.png` | UMAP es una proyección de inspección, no una prueba formal de separación ni de validez de etiquetas. |
+| H06 — Perfiles posteriores a la asignación | S03 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `cluster_profiles`, `gender_profiles` y `gradyear_profiles` | Caracterizar después no elimina proxies ni prueba que los segmentos sean apropiados para una intervención. |
+| H07 — Persistencia de segmentación e interpretación | S03 | `implementation/predictiva/P207_clustering_mercadeo/submission/segmented.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_sizes.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gender_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gradyear_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no validez de segmentos ni uso ético de perfiles. |
 
 ### Superficies de cambio para revisión posterior
 

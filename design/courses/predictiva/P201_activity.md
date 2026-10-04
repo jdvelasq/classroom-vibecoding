@@ -14,6 +14,13 @@ dígitos, sin caso organizacional, usuario ni procedencia externa documentados.
 El producto es un clasificador multiclase persistido, junto con su exactitud de
 prueba y evidencia visual de clases, errores y probabilidades.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** clasifica dígitos educativos; no hay usuario o decisión organizacional.
+- **Producto terminal:** clasificador multiclase y evidencia visual de probabilidad/error.
+- **Uso y límite:** probabilidades no se calibran ni se usa un caso operativo.
+- **Disciplinas contribuyentes:** logística y representación de imagen sirven a clasificación predictiva.
+
 ### Highlights de contribución
 
 - **H01 — Convierte una imagen en una entrada de modelo sin borrar su significado:**
@@ -56,6 +63,14 @@ prueba y evidencia visual de clases, errores y probabilidades.
   visual de las probabilidades por observación.
 - **Reutiliza:** persistencia con `pickle` y verificación posterior de artefactos.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo/dato/producto observable | Límite |
+| --- | --- | --- | --- |
+| Imagen como entrada | H01 | 8×8 a 64 intensidades | Dataset educativo. |
+| Clasificación visible | H02–H05 | Estratificación, logística, matriz y probabilidades | Sin calibración. |
+| Reuso | H06 | Estimador persistido | Tests no reproducen probabilidades. |
+
 ### Relación técnica con actividades anteriores
 
 P201 reutiliza el ciclo de ajustar, reservar, predecir y persistir de P200,
@@ -66,14 +81,14 @@ distinción entre métrica global e incertidumbre por imagen.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Imagen como vector de 64 entradas | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `digits.images`, `reshape((n_samples, -1))` y visualizaciones | El conjunto es educativo; no demuestra desempeño con imágenes operativas. |
-| H02 — Partición multiclase estratificada | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `train_test_split(..., stratify=digits.target)` | La prueba no reejecuta ni valida la composición de la partición. |
-| H03 — Etiquetas y probabilidades multiclase | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `LogisticRegression`, `predict` y `predict_proba` | Las probabilidades son puntajes del modelo; no se evalúa su calibración. |
-| H04 — Exactitud y matriz de confusión | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `accuracy_score` y `ConfusionMatrixDisplay`; `implementation/predictiva/P201_clasificacion_basica_imagenes/submission/metrics.json` | El archivo persistido conserva exactitud, pero no matriz de confusión ni métricas por clase. |
-| H05 — Revisión visual por observación | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `plot_image`, `plot_value_array` y cuadrícula de ejemplos | La selección de ejemplos es inicial y no constituye una auditoría sistemática de todos los errores. |
-| H06 — Persistencia probabilística | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `pickle.dump`, recarga y nuevo `predict_proba`; `implementation/predictiva/P201_clasificacion_basica_imagenes/submission/estimator.pkl`; `implementation/predictiva/P201_clasificacion_basica_imagenes/tests/test_activity.py` | Las pruebas verifican existencia de archivos, no que la recarga reproduzca exactamente cada probabilidad. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Imagen como vector de 64 entradas | S01 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `digits.images`, `reshape((n_samples, -1))` y visualizaciones | El conjunto es educativo; no demuestra desempeño con imágenes operativas. |
+| H02 — Partición multiclase estratificada | S01, S03 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `train_test_split(..., stratify=digits.target)` | La prueba no reejecuta ni valida la composición de la partición. |
+| H03 — Etiquetas y probabilidades multiclase | S02 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `LogisticRegression`, `predict` y `predict_proba` | Las probabilidades son puntajes del modelo; no se evalúa su calibración. |
+| H04 — Exactitud y matriz de confusión | S03 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `accuracy_score` y `ConfusionMatrixDisplay`; `implementation/predictiva/P201_clasificacion_basica_imagenes/submission/metrics.json` | El archivo persistido conserva exactitud, pero no matriz de confusión ni métricas por clase. |
+| H05 — Revisión visual por observación | S03 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `plot_image`, `plot_value_array` y cuadrícula de ejemplos | La selección de ejemplos es inicial y no constituye una auditoría sistemática de todos los errores. |
+| H06 — Persistencia probabilística | S02, S03 | `implementation/predictiva/P201_clasificacion_basica_imagenes/professor/notebook.ipynb`: `pickle.dump`, recarga y nuevo `predict_proba`; `implementation/predictiva/P201_clasificacion_basica_imagenes/submission/estimator.pkl`; `implementation/predictiva/P201_clasificacion_basica_imagenes/tests/test_activity.py` | Las pruebas verifican existencia de archivos, no que la recarga reproduzca exactamente cada probabilidad. |
 
 ### Superficies de cambio para revisión posterior
 

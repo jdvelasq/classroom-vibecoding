@@ -12,6 +12,13 @@ Usa `auto_mpg.csv`; elimina nulos, trata `Origin` como categoría y reserva una
 muestra reproducible. Compara regresión lineal con especificaciones de mayor
 flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** estima MPG desde características técnicas; no hay decisión de flota evidenciada.
+- **Producto terminal:** predictores comparados, preprocesadores y tabla MSE reutilizables.
+- **Uso y límite:** compara especificaciones en una partición; no prueba causalidad ni procedencia del dataset.
+- **Disciplinas contribuyentes:** regresión, MLP y preprocesamiento sirven al primer producto predictivo.
+
 ### Highlights de contribución
 
 - **H01 — Formula el primer producto predictivo del curso:** transforma la pregunta
@@ -62,6 +69,14 @@ flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
 - **Introduce:** partición train/test, escalamiento, codificación categórica y regresión lineal.
 - **Introduce:** MSE, visualización de predicción y comparación de modelos.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo/dato/producto observable | Límite |
+| --- | --- | --- | --- |
+| Representación segura | H02–H06 | Nulos, `Origin`, split, OHE y ColumnTransformer | Sin procedencia de Auto MPG. |
+| Flexibilidad comparada | H04, H07–H09 | Línea base, términos y MLP | MSE específico del caso. |
+| Reuso | H10 | Modelos/preprocesadores persistidos | Tests sólo archivos. |
+
 ### Relación técnica con actividades anteriores
 
 Primera actividad predictiva; establece la separación entre preparación,
@@ -71,18 +86,18 @@ posteriores reutilizan o especializan.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Producto predictivo inicial | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`; `implementation/predictiva/traceability.yaml` | La posición inicial proviene de la numeración P200; no demuestra por sí misma dominio estudiantil. |
-| H02 — Semántica de nulos y `Origin` | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: carga, `dropna()` y conversión de `Origin` a `category` | No explica la procedencia externa ni el sesgo del conjunto `auto_mpg.csv`. |
-| H03 — Partición y ausencia de filtración | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `train_test_split`, ajuste de escaladores/preprocesadores en entrenamiento | La prueba sólo verifica artefactos persistentes, no reejecuta la partición. |
-| H04 — Línea base con `Horsepower` | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `horsepower_model`, gráfica y MSE | Es una línea base del caso, no evidencia de causalidad del consumo. |
-| H05 — Codificación nominal con `OneHotEncoder` | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `OneHotEncoder(handle_unknown="ignore")` | No prueba desempeño en una categoría realmente no vista. |
-| H06 — Contrato heterogéneo con `ColumnTransformer` | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `ColumnTransformer` con bloques numérico y `Origin` | El contrato sólo se evalúa para este esquema de entradas. |
-| H07 — Flexibilidad lineal con términos derivados | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `Horsepower_squared`, `Weight_x_Horsepower` y `linear_flexible_model` | Los términos fueron definidos para este caso; no son una receta universal. |
-| H08 — MLP de una variable frente a línea base | `implementation/predictiva/P200_regresion_basica/submission/model_comparison.csv`; `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb` | La ventaja 15.60 frente a 22.03 es específica de esta partición y métrica MSE. |
-| H09 — Comparación de capacidad con todas las entradas | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `mlp`, `linear_model`, `linear_flexible_model` y comparación de MSE | No establece que una MLP sea preferible fuera del caso ni evalúa costos de operación. |
-| H10 — Persistencia y reutilización | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `pickle.dump`, recarga y predicción; `implementation/predictiva/P200_regresion_basica/submission/`; `implementation/predictiva/P200_regresion_basica/tests/test_activity.py` | Las pruebas verifican existencia de archivos, no la compatibilidad semántica completa entre artefactos. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Producto predictivo inicial | S04 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`; `implementation/predictiva/traceability.yaml` | La posición inicial proviene de la numeración P200; no demuestra por sí misma dominio estudiantil. |
+| H02 — Semántica de nulos y `Origin` | S01, S02 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: carga, `dropna()` y conversión de `Origin` a `category` | No explica la procedencia externa ni el sesgo del conjunto `auto_mpg.csv`. |
+| H03 — Partición y ausencia de filtración | S02 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `train_test_split`, ajuste de escaladores/preprocesadores en entrenamiento | La prueba sólo verifica artefactos persistentes, no reejecuta la partición. |
+| H04 — Línea base con `Horsepower` | S03 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `horsepower_model`, gráfica y MSE | Es una línea base del caso, no evidencia de causalidad del consumo. |
+| H05 — Codificación nominal con `OneHotEncoder` | S02 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `OneHotEncoder(handle_unknown="ignore")` | No prueba desempeño en una categoría realmente no vista. |
+| H06 — Contrato heterogéneo con `ColumnTransformer` | S02 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `ColumnTransformer` con bloques numérico y `Origin` | El contrato sólo se evalúa para este esquema de entradas. |
+| H07 — Flexibilidad lineal con términos derivados | S03 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `Horsepower_squared`, `Weight_x_Horsepower` y `linear_flexible_model` | Los términos fueron definidos para este caso; no son una receta universal. |
+| H08 — MLP de una variable frente a línea base | S03 | `implementation/predictiva/P200_regresion_basica/submission/model_comparison.csv`; `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb` | La ventaja 15.60 frente a 22.03 es específica de esta partición y métrica MSE. |
+| H09 — Comparación de capacidad con todas las entradas | S03 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `mlp`, `linear_model`, `linear_flexible_model` y comparación de MSE | No establece que una MLP sea preferible fuera del caso ni evalúa costos de operación. |
+| H10 — Persistencia y reutilización | S04 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `pickle.dump`, recarga y predicción; `implementation/predictiva/P200_regresion_basica/submission/`; `implementation/predictiva/P200_regresion_basica/tests/test_activity.py` | Las pruebas verifican existencia de archivos, no la compatibilidad semántica completa entre artefactos. |
 
 ### Superficies de cambio para revisión posterior
 

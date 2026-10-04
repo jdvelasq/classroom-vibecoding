@@ -11,6 +11,13 @@
 
 Parte de una tabla ancha de demanda por hora y fecha. El producto son perfiles diarios normalizados, asignaciones de cluster, evidencia para elegir el número de grupos y una descripción de su relación observada con el día de semana. No predice demanda futura ni prescribe capacidad.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** describe arquetipos diarios; no pronostica ni decide capacidad.
+- **Producto terminal:** perfiles normalizados, clusters, selección y asignación de perfil recibido.
+- **Uso y límite:** cluster es patrón, no causa, fecha o pronóstico.
+- **Disciplinas contribuyentes:** KMeans sirve a segmentación descriptiva; identidad Predictiva queda no resuelta.
+
 ### Highlights de contribución
 
 - **H01 — Separa forma de nivel en una serie de demanda:** transforma columnas horarias en serie larga para visualizar el nivel temporal, y luego divide cada día por su máximo para agrupar la forma relativa. Es la particularidad central del dataset: días de volumen distinto pueden tener curvas horarias semejantes; sin normalización, KMeans segmentaría sobre todo días grandes y pequeños, no patrones operativos.
@@ -32,19 +39,27 @@ Parte de una tabla ancha de demanda por hora y fecha. El producto son perfiles d
 - **Introduce:** interpretación descriptiva de clusters por forma horaria y día de semana, con límite explícito de no determinismo.
 - **Introduce:** persistencia de evidencia de selección, perfiles y asignación de un perfil recibido.
 
+### Índice de comparación externa
+
+| Ancla | Hitos | Mecanismo | Límite |
+| --- | --- | --- | --- |
+| Perfil día×hora | H01–H02 | Filas=días, columnas=horas, normalización | Pierde nivel absoluto. |
+| Selección/lectura | H03–H04 | Silueta, centroides y día semana | No causal/predictiva. |
+| Reuso | H05 | `kmeans.predict` y artefactos | No predice demanda. |
+
 ### Relación técnica con actividades anteriores
 
 P206 abre una rama no supervisada: P200–P205 usan una etiqueta o probabilidad; P206 descubre estructura en perfiles diarios sin objetivo. No duplica futuros pronósticos temporales: aunque usa demanda por hora, su producto es similitud de forma observada, no estimación de demanda futura.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Normalización de forma diaria | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: tabla ancha, `melt` y `data.div(data.max(axis=1), axis=0)` | Dividir por máximo descarta magnitud absoluta y puede amplificar días de demanda muy baja. |
-| H02 — Día como perfil horario | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `data` con fechas como índice y horas como columnas, perfiles y centroides | No documenta procedencia externa ni significado operacional de cada hora. |
-| H03 — Selección por silueta | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: bucle 2–5 y `silhouette_score`; `implementation/predictiva/P206_clustering_demanda/submission/cluster-selection.csv` | La silueta no garantiza utilidad operativa ni estabilidad en nuevos períodos. |
-| H04 — Interpretación por centroides y día | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: centroides, `day_of_week` y conteos; `implementation/predictiva/P206_clustering_demanda/submission/demanda-comercial-dias.csv` | Asociación con día de semana no prueba causalidad ni permite pronóstico determinista. |
-| H05 — Perfil recibido persistido | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `kmeans.predict`; `implementation/predictiva/P206_clustering_demanda/submission/perfil-recibido.csv`; `implementation/predictiva/P206_clustering_demanda/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no que el perfil sea reproducible al cambiar datos. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Normalización de forma diaria | S01 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: tabla ancha, `melt` y `data.div(data.max(axis=1), axis=0)` | Dividir por máximo descarta magnitud absoluta y puede amplificar días de demanda muy baja. |
+| H02 — Día como perfil horario | S01 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `data` con fechas como índice y horas como columnas, perfiles y centroides | No documenta procedencia externa ni significado operacional de cada hora. |
+| H03 — Selección por silueta | S02 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: bucle 2–5 y `silhouette_score`; `implementation/predictiva/P206_clustering_demanda/submission/cluster-selection.csv` | La silueta no garantiza utilidad operativa ni estabilidad en nuevos períodos. |
+| H04 — Interpretación por centroides y día | S03 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: centroides, `day_of_week` y conteos; `implementation/predictiva/P206_clustering_demanda/submission/demanda-comercial-dias.csv` | Asociación con día de semana no prueba causalidad ni permite pronóstico determinista. |
+| H05 — Perfil recibido persistido | S02, S03 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `kmeans.predict`; `implementation/predictiva/P206_clustering_demanda/submission/perfil-recibido.csv`; `implementation/predictiva/P206_clustering_demanda/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no que el perfil sea reproducible al cambiar datos. |
 
 ### Superficies de cambio para revisión posterior
 

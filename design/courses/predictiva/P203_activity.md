@@ -14,6 +14,13 @@ y entrega clasificador, vectorizador y métricas de prueba. El producto es una
 estimación de sentimiento; no contiene una decisión financiera automatizada ni
 evidencia de que el sentimiento cause un resultado de mercado.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** estima señal positiva, negativa o neutral; no autoriza decisión de mercado.
+- **Producto terminal:** vectorizador, clasificador y métricas sensibles al desbalance.
+- **Uso y límite:** no prueba causalidad ni calibración de probabilidades.
+- **Disciplinas contribuyentes:** texto y logística sirven a clasificación predictiva.
+
 ### Highlights de contribución
 
 - **H01 — Conecta una representación textual con una predicción supervisada:** ajusta
@@ -52,6 +59,14 @@ evidencia de que el sentimiento cause un resultado de mercado.
 - **Reutiliza:** persistencia de modelo y añade persistencia separada del
   vectorizador que define sus entradas.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo observable | Límite |
+| --- | --- | --- | --- |
+| Vocabulario supervisado | H01–H03 | Vectorizador entrenado y split estratificado | Sin causalidad financiera. |
+| Métrica por clase | H04 | Accuracy balanceada, F1 y matriz | Sin calibración. |
+| Reuso | H05 | Modelo/vectorizador persistidos | Revisión por ejemplo limitada. |
+
 ### Relación técnica con actividades anteriores
 
 P203 sólo existe gracias a P202, pero no lo duplica: P202 explica cómo se
@@ -62,13 +77,13 @@ indebidamente con texto reservado.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Vectorizador aprendido sólo en entrenamiento | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: separación, `CountVectorizer`, `fit_transform` y `transform` | La actividad no compara este vectorizador con la preparación específica de P202. |
-| H02 — Clasificación de señales textuales | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `LogisticRegression` y etiquetas de sentimiento | Una etiqueta de frase no demuestra impacto financiero ni recomendación de inversión. |
-| H03 — Partición estratificada de tres clases | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `train_test_split(..., stratify=dataframe.target)` | Las pruebas sólo verifican archivos persistidos. |
-| H04 — Métricas sensibles a clase | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `balanced_accuracy_score`, `f1_score` y matriz; `implementation/predictiva/P203_clasificacion_basica_texto/submission/metrics.json` | No persiste la matriz ni métricas desagregadas por clase. |
-| H05 — Revisión de predicción textual persistida | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: recarga, `predict_proba` y tabla `results`; `implementation/predictiva/P203_clasificacion_basica_texto/submission/clf.pkl`; `vectorizer.pkl` | La probabilidad máxima no se somete a una prueba de calibración. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Vectorizador aprendido sólo en entrenamiento | S02 | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: separación, `CountVectorizer`, `fit_transform` y `transform` | La actividad no compara este vectorizador con la preparación específica de P202. |
+| H02 — Clasificación de señales textuales | S01, S02 | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `LogisticRegression` y etiquetas de sentimiento | Una etiqueta de frase no demuestra impacto financiero ni recomendación de inversión. |
+| H03 — Partición estratificada de tres clases | S01, S03 | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `train_test_split(..., stratify=dataframe.target)` | Las pruebas sólo verifican archivos persistidos. |
+| H04 — Métricas sensibles a clase | S03 | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: `balanced_accuracy_score`, `f1_score` y matriz; `implementation/predictiva/P203_clasificacion_basica_texto/submission/metrics.json` | No persiste la matriz ni métricas desagregadas por clase. |
+| H05 — Revisión de predicción textual persistida | S02, S03 | `implementation/predictiva/P203_clasificacion_basica_texto/professor/notebook.ipynb`: recarga, `predict_proba` y tabla `results`; `implementation/predictiva/P203_clasificacion_basica_texto/submission/clf.pkl`; `vectorizer.pkl` | La probabilidad máxima no se somete a una prueba de calibración. |
 
 ### Superficies de cambio para revisión posterior
 

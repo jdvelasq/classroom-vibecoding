@@ -12,6 +12,13 @@
 
 Usa una simulación didáctica controlada de predicciones fuera de muestra. El producto son evidencias de calibración, tradeoff de umbrales y revisión por grupo; los costos son ilustrativos y no constituyen una política real de crédito.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** revisa probabilidades simuladas antes de priorizar; no define política crediticia.
+- **Producto terminal:** evidencia de calibración, umbrales y grupos.
+- **Uso y límite:** costos/grupos son ilustrativos; no prueba equidad ni autoriza negación de crédito.
+- **Disciplinas contribuyentes:** calibración y métricas sirven a revisión predictiva.
+
 ### Highlights de contribución
 
 - **H01 — Comprueba si una probabilidad significa lo que aparenta:** divide predicciones en bandas y compara probabilidad media con tasa observada de *default*, frente a la diagonal de calibración ideal. Extiende P204; sin este hito, una probabilidad alta podría usarse sin contrastar frecuencia observada.
@@ -27,19 +34,27 @@ Usa una simulación didáctica controlada de predicciones fuera de muestra. El p
 - **Introduce:** revisión descriptiva por grupo de predicciones y resultados.
 - **Introduce:** frontera explícita entre artefacto predictivo y política real.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos | Mecanismo | Límite |
+| --- | --- | --- | --- |
+| Probabilidad revisada | H01 | Bandas/calibración | Simulación. |
+| Umbral/consecuencia | H02–H03 | Costos y tradeoff | No política. |
+| Grupo/auditoría | H04–H05 | Resúmenes persistidos | No equidad demostrada. |
+
 ### Relación técnica con actividades anteriores
 
 P205 no entrena un clasificador: toma probabilidades ya generadas para juzgar calibración, umbral y revisión por grupo. Complementa P204 y no lo duplica. También evita convertirse en Prescriptiva: no define autoridad, restricciones, excepciones ni monitoreo de una política crediticia.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Bandas y diagonal de calibración | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `probability_band`, agregación y gráfico | Las bandas describen esta simulación y no prueban calibración en una población real. |
-| H02 — Consecuencias de umbrales | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: barrido, conteos y `expected_cost`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv` | Los costos 10 y 1 son ilustrativos, no pérdidas estimadas ni preferencias institucionales. |
-| H03 — Límite entre predicción y política | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: declaración inicial y comentario de costos/política | No implementa autoridad humana, excepciones ni monitoreo posterior. |
-| H04 — Revisión por grupo | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `groupby("group_code")`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv` | `group_code` proviene de una simulación y no permite concluir equidad ni discriminación. |
-| H05 — Persistencia de argumentos | `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/calibration_summary.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/tests/test_activity.py` | Las pruebas verifican archivos, no cálculos ni interpretación ética. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Bandas y diagonal de calibración | S02 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `probability_band`, agregación y gráfico | Las bandas describen esta simulación y no prueban calibración en una población real. |
+| H02 — Consecuencias de umbrales | S02 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: barrido, conteos y `expected_cost`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv` | Los costos 10 y 1 son ilustrativos, no pérdidas estimadas ni preferencias institucionales. |
+| H03 — Límite entre predicción y política | S01, S03 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: declaración inicial y comentario de costos/política | No implementa autoridad humana, excepciones ni monitoreo posterior. |
+| H04 — Revisión por grupo | S01 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `groupby("group_code")`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv` | `group_code` proviene de una simulación y no permite concluir equidad ni discriminación. |
+| H05 — Persistencia de argumentos | S03 | `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/calibration_summary.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/tests/test_activity.py` | Las pruebas verifican archivos, no cálculos ni interpretación ética. |
 
 ### Superficies de cambio para revisión posterior
 

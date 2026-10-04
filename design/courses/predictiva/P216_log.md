@@ -27,3 +27,9 @@
 - **Decisión:** se fijaron H01–H13, incluyendo la particularidad temporal del
   dataset, y se añadieron superficies de cambio, contrato de evidencia y
   dependencias comprobadas/no comprobadas para análisis posterior de benchmarks.
+
+## S01.P216.05
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se declaró producto, índice externo y vínculo H01–H13 con superficies actuales. Se preservaron la implementación y la ausencia de trazabilidad P216.
+- **Auditoría de Analytics:** regresión, MLP y análisis temporal sirven a pronósticos comparables; no justifican asignación operativa de mano de obra.

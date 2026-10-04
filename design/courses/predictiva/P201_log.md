@@ -29,3 +29,9 @@
 - **Decisión:** se asignaron IDs H01–H06 y se añadieron superficies, contrato y
   dependencias para anclar futuras mejoras en representación, probabilidad o
   evaluación sin inventar cambios curriculares.
+
+## S01.P201.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H06 con superficies observables. No se modificó la implementación ni se introdujeron mejoras.
+- **Auditoría de Analytics:** la representación de imagen y la logística sirven a la predicción multiclase evaluada.

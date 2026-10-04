@@ -12,6 +12,18 @@
 Usa 228 meses para especificar modelos y 24 meses posteriores para evaluarlos.
 La actividad genera pronósticos, métricas y visualizaciones comparables.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** estima la mano de obra mensual posterior al
+  período de especificación; usuario y decisión operativa no están evidenciados.
+- **Producto terminal:** pronósticos temporales comparables con métricas de
+  evaluación fuera del período de especificación.
+- **Uso y límite:** permite contrastar familias de pronóstico, no asignar
+  personal, fijar una política ni cuantificar incertidumbre.
+- **Disciplinas contribuyentes:** regresión, redes neuronales y análisis de
+  series sirven al producto predictivo; no organizan la actividad como curso
+  de modelos de series de tiempo.
+
 ### Highlights de contribución
 
 - **H01 — Trata el tiempo como estructura y no como filas intercambiables:** usa
@@ -65,6 +77,15 @@ La actividad genera pronósticos, métricas y visualizaciones comparables.
 - **Verifica y comunica:** separa especificación y evaluación temporal, guarda
   pronósticos y calcula métricas para comparar los modelos.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
+| --- | --- | --- | --- |
+| Horizonte temporal resguardado | H01, H13 | Serie mensual Sutter 1946–1966, 228 meses de especificación y 24 posteriores | `data/sutter.csv`, notebooks; no documenta decisión operativa ni procedencia. |
+| Diagnóstico y transformación | H02, H03, H06–H08, H10 | Funciones reutilizables, ACF/PACF, diferencias, rezagos y escalamiento | `functions.ipynb`, notebooks; no hay pruebas formales de estacionariedad. |
+| Familias y combinación | H04–H11 | Tendencia/dummies, Fourier, MLP, AR y combinaciones | Notebooks 2–9; no incorpora intervalos ni validación separada del segundo nivel. |
+| Evidencia persistente | H12 | `forecasts.csv` y `metrics.csv` acumulados | `submission/`, pruebas; no se comprueba consistencia integral de columnas. |
+
 ### Relación técnica con actividades anteriores
 
 Extiende los pronósticos temporales aplicados de P210–P211 mediante una
@@ -75,21 +96,21 @@ variable ordinaria.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| H01 — Partición temporal | `implementation/predictiva/P216_series_de_tiempo/professor/notebook_1.ipynb`; `data/sutter.csv` | No se documenta la procedencia ni uso operativo de la serie de mano de obra. |
-| H02 — Funciones reutilizables | `implementation/predictiva/P216_series_de_tiempo/professor/functions.ipynb`; notebooks 1–9 | `nbimporter` es un contrato de notebook, no un paquete Python distribuido. |
-| H03 — ACF, PACF y diferencias | `professor/functions.ipynb`: `acf_pacf_plots`; `professor/notebook_1.ipynb` | La actividad no formaliza pruebas de estacionariedad. |
-| H04 — Tendencia y dummies | `professor/notebook_2.ipynb` | La línea base no establece utilidad operativa de sus predicciones. |
-| H05 — Fourier | `professor/notebook_3.ipynb` | Los términos elegidos no se seleccionan mediante validación explícita. |
-| H06 — MLP sin escalamiento | `professor/notebook_4.ipynb` | La conclusión depende de esta serie y configuración. |
-| H07 — Pipeline y escalamiento | `professor/notebook_5.ipynb` | No se evalúa operación del pipeline fuera del notebook. |
-| H08 — MLP diferenciado | `professor/notebook_8.ipynb`; `functions.ipynb`: diferencias y reconstrucción | Diferenciar regular y estacionalmente no prueba remover un ciclo económico. |
-| H09 — Stacking | `professor/notebook_6.ipynb` | No hay validación separada del segundo nivel. |
-| H10 — AR con regresión | `professor/notebook_7.ipynb` | Los rezagos y la forma de reconstrucción son específicos del caso. |
-| H11 — Combinación | `professor/notebook_9.ipynb` | La combinación lineal se ajusta sobre pronósticos disponibles sin una nueva partición visible. |
-| H12 — Persistencia acumulativa | `functions.ipynb`: `save_forecasts`, `save_metrics`; `submission/forecasts.csv`; `metrics.csv` | Los tests no prueban la consistencia de columnas acumuladas. |
-| H13 — Evaluación fuera de especificación | `functions.ipynb`: `compute_evaluation_metrics`; notebooks 2–8 | Reporta MSE y MAE, no incertidumbre ni intervalos de predicción. |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| H01 — Partición temporal | S01 | `implementation/predictiva/P216_series_de_tiempo/professor/notebook_1.ipynb`; `data/sutter.csv` | No se documenta la procedencia ni uso operativo de la serie de mano de obra. |
+| H02 — Funciones reutilizables | S02 | `implementation/predictiva/P216_series_de_tiempo/professor/functions.ipynb`; notebooks 1–9 | `nbimporter` es un contrato de notebook, no un paquete Python distribuido. |
+| H03 — ACF, PACF y diferencias | S02 | `professor/functions.ipynb`: `acf_pacf_plots`; `professor/notebook_1.ipynb` | La actividad no formaliza pruebas de estacionariedad. |
+| H04 — Tendencia y dummies | S03 | `professor/notebook_2.ipynb` | La línea base no establece utilidad operativa de sus predicciones. |
+| H05 — Fourier | S03 | `professor/notebook_3.ipynb` | Los términos elegidos no se seleccionan mediante validación explícita. |
+| H06 — MLP sin escalamiento | S02, S03 | `professor/notebook_4.ipynb` | La conclusión depende de esta serie y configuración. |
+| H07 — Pipeline y escalamiento | S02, S03 | `professor/notebook_5.ipynb` | No se evalúa operación del pipeline fuera del notebook. |
+| H08 — MLP diferenciado | S02, S03 | `professor/notebook_8.ipynb`; `functions.ipynb`: diferencias y reconstrucción | Diferenciar regular y estacionalmente no prueba remover un ciclo económico. |
+| H09 — Stacking | S03 | `professor/notebook_6.ipynb` | No hay validación separada del segundo nivel. |
+| H10 — AR con regresión | S03 | `professor/notebook_7.ipynb` | Los rezagos y la forma de reconstrucción son específicos del caso. |
+| H11 — Combinación | S03 | `professor/notebook_9.ipynb` | La combinación lineal se ajusta sobre pronósticos disponibles sin una nueva partición visible. |
+| H12 — Persistencia acumulativa | S03, S04 | `functions.ipynb`: `save_forecasts`, `save_metrics`; `submission/forecasts.csv`; `metrics.csv` | Los tests no prueban la consistencia de columnas acumuladas. |
+| H13 — Evaluación fuera de especificación | S01, S03 | `functions.ipynb`: `compute_evaluation_metrics`; notebooks 2–8 | Reporta MSE y MAE, no incertidumbre ni intervalos de predicción. |
 
 ### Superficies de cambio para revisión posterior
 

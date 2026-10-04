@@ -26,3 +26,9 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se fijaron H01–H06, superficies de corpus/representación/producto,
   contrato de evidencia y dependencia demostrable hacia P203.
+
+## S01.P202.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H06 con superficies actuales; se preserva que el taller prepara representación y no un modelo predictivo.
+- **Auditoría de Analytics:** NLP y vectorización sirven a una representación textual verificable.

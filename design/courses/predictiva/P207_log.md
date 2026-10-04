@@ -25,3 +25,9 @@
   representación, interpretación y trazabilidad, junto con dependencia
   comprobada de P206. Se mantuvo como no demostrable cualquier dependencia con
   P225.
+
+## S01.P207.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H07 con superficies existentes. Se preservaron la ausencia de trazabilidad y los límites sobre proxies y uso de segmentos.
+- **Auditoría de Analytics:** TF–IDF y clustering sirven a una explicación segmentada, no a una decisión automatizada de mercadeo.

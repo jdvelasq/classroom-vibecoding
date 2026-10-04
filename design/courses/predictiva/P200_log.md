@@ -45,3 +45,9 @@
 - **Decisión:** se asignaron IDs estables H01–H10 y se documentaron superficies
   de cambio, contrato de evidencia y dependencias demostrables para que futuras
   propuestas de benchmarks puedan afectar un componente concreto.
+
+## S01.P200.06
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se declaró el producto predictivo, se añadió el índice externo y se vinculó H01–H10 con superficies existentes; se preservaron implementación y mejoras pendientes.
+- **Auditoría de Analytics:** regresión, MLP y preprocesamiento sirven a estimar MPG verificablemente.

@@ -30,3 +30,9 @@
 - **Corrección:** H02 declara ahora la orientación filas=días, columnas=horas y
   su consecuencia interpretativa: cada cluster es un arquetipo de forma diaria,
   no una agrupación de horas individuales ni un pronóstico.
+
+## S01.P206.05
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H05 con superficies actuales; se mantuvo que el clustering describe patrones, no pronostica demanda.
+- **Auditoría de Analytics:** normalización y clustering sirven al producto descriptivo limitado del taller.

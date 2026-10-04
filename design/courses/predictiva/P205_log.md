@@ -25,3 +25,9 @@
 - **Decisión:** se fijaron H01–H05 y se documentaron superficies, contrato de
   evidencia y dependencia comprobada con P204; no se inventó una dependencia
   técnica con los talleres posteriores.
+
+## S01.P205.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H05 con superficies existentes. Se preservó el límite entre evidencia predictiva simulada y política crediticia.
+- **Auditoría de Analytics:** calibración y umbrales sirven a evidencia previa, no a una política prescriptiva real.
