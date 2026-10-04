@@ -79,8 +79,10 @@ No lo modifiques. No inspecciones ni modifiques otros cursos.
 5. Contrasta cada actividad con las Pxxx anteriores del mismo curso. Una misma
    pregunta de negocio no prueba duplicación; busca el cambio analítico,
    técnico, de datos, de evidencia o de producto.
-6. Escribe los highlights y sólo después redacta el inventario técnico. Cada
-   afirmación importante debe tener una ruta de respaldo concreta.
+6. Escribe los highlights y sólo después redacta el inventario técnico y el
+   índice de comparación externa. Cada afirmación importante debe tener una
+   ruta de respaldo concreta. El índice registra cobertura presente; no deduce
+   que una ausencia sea un déficit ni propone incorporar un tema.
 7. En una ejecución incremental, conserva lo comprobado, corrige lo que la
    evidencia contradiga y registra ambigüedades. No reescribas por estilo ni
    borres una conclusión previa sin razón documentada.
@@ -103,6 +105,16 @@ Usa esta estructura. Añade secciones sólo cuando la evidencia lo requiera.
 
 Breve descripción del caso, datos, producto terminal y límites observables.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** lo evidenciado, o «no evidenciado».
+- **Producto terminal:** explicación, predicción, política, capacidad de datos
+  u otro artefacto observable.
+- **Uso y límite:** qué permite hacer el producto y qué no permite inferir o
+  decidir.
+- **Disciplinas contribuyentes:** métodos, datos o software que sirven al
+  producto de Analytics, sin convertirlos en la identidad del taller.
+
 ### Highlights de contribución
 
 - **H01 — Verbo de capacidad:** mecanismo concreto, artefacto o comportamiento
@@ -112,15 +124,21 @@ Breve descripción del caso, datos, producto terminal y límites observables.
 
 - **Introduce / extiende / reutiliza / aplica en nuevo caso:** práctica concreta.
 
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
+| --- | --- | --- | --- |
+| ... | ... | ... | ... |
+
 ### Relación técnica con actividades anteriores
 
 Comparación breve, incluidas posibles duplicaciones no resueltas.
 
 ### Evidencia de los highlights
 
-| Highlight | Rutas de respaldo | Límite de inferencia |
-| --- | --- | --- |
-| ... | ... | ... |
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- | --- |
+| ... | ... | ... | ... |
 
 ### Superficies de cambio para revisión posterior
 
@@ -182,6 +200,13 @@ nuevo ID; si se descubre que no está sustentado, conserva el ID y registra su
 corrección en el log. Las tareas posteriores de benchmarks los usarán como
 anclas, no como una taxonomía de competencias.
 
+Cada highlight debe vincularse con al menos una superficie `SNN` existente. La
+relación se registra en su fila de evidencia. Si un highlight atraviesa varias
+superficies, nómbralas todas; si no puede relacionarse con una, la lista de
+superficies está incompleta y debe corregirse. Este vínculo no significa que el
+hito deba cambiar: permite a una revisión posterior señalar exactamente qué
+parte de la implementación afectaría sin reinterpretar el taller.
+
 ### Highlight obligatorio de caso y datos
 
 Cada actividad debe incluir al menos un highlight que vincule una particularidad
@@ -209,6 +234,22 @@ caso. La relación con talleres previos debe diferenciar explícitamente:
 - misma técnica con nueva exigencia de evidencia o producto;
 - nuevo método al servicio del mismo producto; y
 - posible duplicación que requiere decisión posterior de curso.
+
+### Índice de comparación externa
+
+El índice permite contrastar evidencia externa sin redescubrir la actividad ni
+convertir un catálogo de ML en currículo. Cada fila es una ancla actual, no una
+competencia inventada ni una propuesta. Registra sólo cuando sea observable:
+
+- el mecanismo nombrable con precisión;
+- la condición del caso o datos que le da sentido;
+- el producto, entrega o evidencia que lo hace verificable; y
+- los highlights y límites que delimitan su uso.
+
+No enumera técnicas ausentes ni califica la cobertura como suficiente o
+insuficiente. Una tarea posterior podrá sostener «conservar», «aclarar»,
+«contrastar» o «proponer cambio» contra estas anclas; S01 no toma esas
+decisiones.
 
 ### Superficies, contrato y dependencias
 
@@ -246,7 +287,12 @@ Confirma que:
 
 - cada Pxxx fue inspeccionado en orden y desde su contenido, no su nombre;
 - cada highlight tiene evidencia y explica una contribución secuencial;
-- cada highlight tiene un ID estable y una fila de evidencia correspondiente;
+- cada highlight tiene un ID estable, al menos una superficie vinculada y una
+  fila de evidencia correspondiente;
+- el producto analítico, sus límites y las disciplinas contribuyentes se
+  declararon sin inventar usuario, decisión o contexto;
+- el índice de comparación externa registra sólo mecanismos, datos, productos
+  y evidencias actuales; no contiene brechas ni propuestas;
 - se declararon superficies de cambio existentes, contrato de evidencia y
   dependencias demostrables, sin convertirlas en propuestas de mejora;
 - preguntas, inventario, highlights y trazabilidad no se contradicen;
