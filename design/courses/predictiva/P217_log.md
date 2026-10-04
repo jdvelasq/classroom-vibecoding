@@ -5,3 +5,9 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
 - **Decisión:** se identificó como producto de datos orientado a uso, no como
   una nueva actividad de entrenamiento; se registró la trazabilidad ausente.
+
+## S01.P217.02
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
+- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se registró que la prueba sólo exige código no vacío.
+- **Trazabilidad:** continúa ausente la entrada P217.
