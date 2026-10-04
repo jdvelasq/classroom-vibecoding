@@ -35,3 +35,22 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se añadió producto, índice externo y vínculo H01–H05 con superficies existentes, sin modificar implementación ni aceptar cambios.
 - **Auditoría de Analytics:** vectorización y logística sirven a predicción textual multiclase evaluada.
+
+## S03.P203.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - precision/recall y F1 en clasificación binaria (p. 9): ya cubierta (H04 usa F1 macro y exactitud balanceada).
+  - detección de spam (p. 9): marginal; otro caso de clasificación de texto con el mismo método.
+
+## S03.P203.02
+
+- **Fecha / executor:** 2026-10-04 / OpenWork.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - aprendizaje supervisado y entrenamiento/validación/prueba (p. 5): ya cubiertos por H01–H04, incluyendo vocabulario aprendido sólo en entrenamiento y métricas sensibles al desbalance; no cambia materialmente el producto de estimación de sentimiento.
+  - sesgo algorítmico (p. 5): marginal para el caso de sentimiento de frases sin decisión financiera; el benchmark no identifica sesgo concreto ni proporciona grupos/etiquetas para una evaluación adicional rigurosa.
+  - NLP generativo (pp. 5–6): fuera de alcance de la pregunta clasificatoria actual; no se aporta caso/dataset ni criterio de evaluación para justificar desplazar la clasificación de sentimiento.

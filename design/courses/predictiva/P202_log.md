@@ -32,3 +32,21 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se añadió producto, índice externo y vínculo H01–H06 con superficies actuales; se preserva que el taller prepara representación y no un modelo predictivo.
 - **Auditoría de Analytics:** NLP y vectorización sirven a una representación textual verificable.
+
+## S03.P202.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Finding themes in the project description» (p. 7): marginal; agrupa textos, no cambia la preparación auditable de P202.
+  - NLP con deep learning (p. 9): fuera de alcance por la misma razón que en P201.
+
+## S03.P202.02
+
+- **Fecha / executor:** 2026-10-04 / OpenWork.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - obtención/gestión/calidad de datos para ML y NLP (p. 5): ya cubierta respecto al corpus Scopus (H01–H06); el benchmark no aporta criterio concreto que cambie las reglas auditables de exclusión, limpieza o vectorización.
+  - NLP generativo y modelos multimodales (pp. 5–6): fuera de alcance del producto de P202, que prepara abstracts en inglés para análisis posterior; el folleto no aporta corpus, tarea evaluable ni evidencia para reemplazar o extender su representación.

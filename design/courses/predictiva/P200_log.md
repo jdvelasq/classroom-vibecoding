@@ -51,3 +51,23 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se declaró el producto predictivo, se añadió el índice externo y se vinculó H01–H10 con superficies existentes; se preservaron implementación y mejoras pendientes.
 - **Auditoría de Analytics:** regresión, MLP y preprocesamiento sirven a estimar MPG verificablemente.
+
+## S03.P200.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios; aporta a N01 (árboles y ensambles).
+- **Señales descartadas relevantes:**
+  - regresión lineal con una y varias variables (p. 8): ya cubierta (H01, H04, H07–H09).
+  - regresión para inferencia causal, RCT y confusión (p. 8): fuera de alcance; la inferencia causal no es el producto de Predictiva y P200 ya declara el límite causal.
+  - árboles, Random Forest y boosting (p. 8): se descartó incluirlos en P200 por la carga del primer taller; se proponen como actividad nueva N01.
+
+## S03.P200.02
+
+- **Fecha / executor:** 2026-10-04 / OpenWork.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - fundamentos de ML, calidad/representatividad de datos y entrenamiento/validación/prueba (p. 5): ya cubiertos para el producto MPG (H02–H03, H06, H10); no generan una capacidad adicional específica a esta pregunta.
+  - aprendizaje profundo y redes neuronales (p. 5): marginal; P200 ya contrasta MLP con regresión para la predicción cuantitativa del caso (H08–H09), y añadir otra arquitectura no cambiaría qué aprende el estudiante a producir.
+  - casos de estrategia y creación de valor de IA (pp. 5–6): no anclan mejora a P200; su producto estima MPG, sin una decisión de flota ni caso organizacional de adopción de IA definido.

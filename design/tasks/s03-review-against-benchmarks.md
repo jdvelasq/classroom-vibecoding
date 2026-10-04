@@ -1,304 +1,257 @@
-# S03 — Evaluar un curso frente a evidencia de benchmarks
+# S03 — Proponer mejoras a un curso a partir de un benchmark
 
 ## Ejecución
 
 ```text
 execute design/tasks/s03-review-against-benchmarks.md \
-  course=<curso> benchmark=<ruta-pdf|ruta-directorio|all> executor=<LLM>
+  course=<curso> benchmark=<ruta-md> executor=<LLM>
 ```
 
-`course` identifica `design/courses/<curso>/`. `benchmark` es una ruta local
-relativa a `design/benchmarks-pdf/`, un directorio de una familia de evidencia o
-`all`. Al recibir un directorio, lee todos los PDFs que contiene y conserva su
-función individual en el inventario; no los convierte en una fuente homogénea.
-`executor` identifica una lectura independiente; no autoriza a usar el
-resultado de otro modelo como evidencia ni a sobrescribirlo.
+`benchmark` es **un** archivo bajo `design/benchmarks-md/` (versión Markdown
+generada por S01 a partir de `design/benchmarks-pdf/`). Los documentos se
+procesan uno a la vez y en secuencia: cada ejecución integra un documento en
+las propuestas que dejaron los anteriores. `executor` identifica quién realizó
+la lectura y queda registrado en los logs.
 
-## Propósito y límite
+## Propósito y lugar en el ciclo
 
-Esta tarea contrasta el diseño actualmente descrito por S02 con uno o varios
-documentos locales de `design/benchmarks-pdf/`. Produce un **informe de propuestas
-candidatas**, no modifica actividades, implementación ni trazabilidad. Su
-pregunta es:
+```text
+S01 convertir PDF → S02 describir Pxxx (línea base) → S03 proponer
+→ discusión con el profesor → S04 ejecutar lo aprobado → S05 verificar
+```
 
-> ¿La nueva evidencia justifica conservar, aclarar, reforzar, contrastar,
-> secuenciar de otro modo, cambiar una actividad o agregar una nueva?
+S03 responde, para un documento y un curso:
 
-La ausencia de un elemento en un benchmark no demuestra una brecha del curso;
-la aparición de una técnica tampoco justifica enseñarla. Las mejoras llegan a
-una actividad sólo mediante una decisión posterior, explícita y registrada.
+> ¿Este documento justifica cambiar algo que mejore **de forma material** lo
+> que el estudiante aprende en algún taller, sin regresión de lo que ya
+> funciona?
 
-## Principio de cambio mínimo
+S03 sólo **propone**. No modifica `implementation/`, `Pxxx_activity.md` ni
+`traceability.yaml`. Sus propuestas quedan pendientes de discusión y nada se
+ejecuta sin aprobación explícita. «Ninguna propuesta» es un resultado válido y
+frecuente.
 
-La implementación actual es una base construida que funciona. Por tanto, **el
-menor cambio que resuelva una necesidad evidenciada sin producir regresiones es
-el mejor cambio**. S03 parte de conservar caso, secuencia, prácticas,
-entregables y pruebas actuales.
-
-Antes de proponer una modificación, compara explícitamente estas alternativas,
-en este orden:
-
-1. no cambiar: la actividad ya cubre la señal con evidencia suficiente;
-2. aclarar o hacer visible: mejorar explicación, visualización, artefacto,
-   prueba o trazabilidad sin alterar la experiencia central;
-3. extender localmente: añadir una práctica o contraste pequeño que preserve
-   el caso, producto y contratos existentes; y
-4. cambiar de forma material: sustituir caso, método, producto, orden o
-   actividad cuando el beneficio evidenciado lo exige; o
-5. agregar una actividad: cuando falta una contribución distinguible que no
-   debe sobrecargar, desdibujar o degradar las actividades existentes.
-
-La carga de justificación crece en ese orden. Un cambio mayor o una actividad
-nueva son válidos cuando su necesidad, contribución y posición en la secuencia
-son claras. Pero deben declarar un **contrato de no regresión**: qué highlights,
-productos, prácticas, datos, evidencia, pruebas y dependencias actuales se
-preservan, y qué se reemplaza explícitamente con evidencia al menos equivalente.
-No basta con que lo nuevo parezca mejor; no puede perderse silenciosamente lo
-que ya aporta valor. Novedad, prestigio de la fuente, cobertura de una técnica
-o preferencia de herramienta no son por sí mismos razones para ampliar o
-reemplazar el diseño.
-
-## Entradas permitidas
+## Entradas
 
 Lee y cumple `AGENTS.md`. Lee sustantivamente:
 
-- el o los PDFs seleccionados bajo `design/benchmarks-pdf/`;
-- `design/courses/<curso>/Pxxx_activity.md` y `Pxxx_log.md`; y
+- el documento `design/benchmarks-md/<ruta>.md`, completo. Cita por página con
+  las marcas `<!-- fin de página N -->`. Si la cabecera o una nota `⚠️ S01`
+  señala una página con contenido en imagen y esa página parece relevante,
+  consulta sólo esa página del PDF homónimo en `design/benchmarks-pdf/`;
+- para cada Pxxx del curso: `Pxxx_activity.md`, `Pxxx_log.md` y
+  `Pxxx_tasks.md` si existe;
+- `design/courses/<curso>/course_tasks.md` si existe; y
 - `design/courses/<curso>/course_log.md` sólo si existe, para contexto.
 
-Cuando un PDF tenga tabla de contenido, índice, taxonomía o lista sustantiva de
-capacidades, léela además de las secciones pertinentes. Es un inventario para
-auditar cobertura; no un syllabus que deba copiarse.
+No lees `implementation/`: S02 es la lectura auditable de la implementación.
+Tampoco lees otros documentos de benchmarks, `benchmark_reviews/` históricos,
+`design/synthesis/` ni la web.
 
-No lees ni modificas `implementation/<curso>/`, otros cursos, informes de
-otros executors, síntesis de `design/synthesis/`, plataformas de aprendizaje ni web. S02
-es la lectura auditable de la implementación para este propósito.
+### Precondiciones
 
-Si falta un mapa S02 pertinente, registra el límite: no inventes highlights,
-superficies ni contenido implementado para poder emitir una propuesta.
+- Si el `Pxxx_log.md` de las actividades ya registra este documento con el
+  mismo `source_sha256` (cabecera del `.md`), el documento ya fue revisado:
+  informa y termina sin cambios.
+- Si a un Pxxx le falta `Pxxx_activity.md`, o éste no sigue el contrato
+  vigente de S02, no inventes su contenido: registra el límite en el resumen
+  final y no propongas cambios anclados a esa actividad.
 
-## Función de las familias de evidencia
+## Función de la evidencia
 
-Clasifica cada fuente y restringe su inferencia:
+Toma la familia de la cabecera (`family:`) y restringe la inferencia:
 
-- **authoritative:** principios, estándares o marcos durables; puede respaldar
-  expectativas generales, no copiar un syllabus.
-- **institutional:** oferta, articulación, coherencia o forma de operacionalizar
-  una institución; ilustra posibilidades, no impone identidad curricular.
-- **governmental:** pertinencia externa, entorno laboral o política pública; no
-  define un estándar internacional ni prescribe herramientas.
-- **professional-learning:** señales de actualización y práctica de plataformas;
-  no reemplaza la evidencia curricular o disciplinar.
-- **literature-derived:** perspectiva histórica, metodológica, organizacional o
-  conceptual; exige distinguir contexto de prescripción vigente.
+- **authoritative:** principios, estándares o marcos durables; respalda
+  expectativas generales, no un syllabus que copiar.
+- **institutional:** cómo otra institución operacionaliza un programa; ilustra
+  posibilidades, no impone identidad curricular.
+- **governmental:** pertinencia laboral o de política pública; no define un
+  estándar ni prescribe herramientas.
+- **professional-learning:** señales de práctica y herramientas; no reemplaza
+  la evidencia curricular o disciplinar.
+- **literature-derived:** perspectiva histórica, metodológica u organizacional;
+  distingue contexto de prescripción vigente.
 
-Analytics conserva la identidad curricular. Machine Learning, Estadística,
-Data Science, Data Mining, KDD, OR/optimización, Data Engineering, BI, IA y
-otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
-`AGENTS.md` a cada propuesta material.
+Analytics conserva la identidad curricular; las demás disciplinas son
+contribuyentes. Aplica las preguntas de auditoría de `AGENTS.md` a toda
+propuesta material.
+
+## Criterios de decisión
+
+### 1. Materialidad
+
+Una señal genera propuesta **sólo** si cumple al menos una condición:
+
+- cambia lo que el estudiante es capaz de **hacer o entender** al terminar el
+  taller (una capacidad, un contraste, una forma de evidencia o un producto
+  que hoy no ejerce); o
+- corrige un **defecto real**: algo incorrecto, engañoso u obsoleto en lo que
+  el taller enseña.
+
+No generan propuesta: variaciones de algo ya cubierto (otra pregunta de negocio
+cuando las existentes cubren el objetivo pedagógico, otro dataset equivalente,
+otra biblioteca para lo mismo); la mera presencia de una técnica en el
+documento; el prestigio de la fuente; ni la novedad por sí misma.
+
+### 2. Sin regresión
+
+Lo que ya funciona está en los highlights `HNN`, superficies `SNN` y
+dependencias de cada `Pxxx_activity.md`. Toda propuesta declara cuáles
+conserva y, si sustituye alguno, por qué y con qué evidencia al menos
+equivalente. Prefiere siempre el menor cambio que logre el beneficio:
+
+1. aclarar o hacer visible algo que ya existe;
+2. extender localmente sin cambiar caso, producto ni contratos;
+3. cambiar materialmente la actividad;
+4. crear una actividad nueva.
+
+La carga de justificación crece en ese orden.
+
+### 3. Identidad y capacidad del taller
+
+Cada taller enseña algo concreto en lo técnico y lo pedagógico; esa identidad
+está en su pregunta, producto y highlights. Una propuesta que **refuerza** esa
+contribución va a `Pxxx_tasks.md`. Una propuesta que **agrega una segunda
+contribución distinta** no se incrusta: va a `course_tasks.md` como actividad
+nueva. Un taller no puede crecer indefinidamente.
+
+### 4. Secuencia
+
+Los grupos avanzan a ritmos distintos y algunos no llegan a los últimos
+talleres. Una actividad nueva o un cambio de orden debe declarar qué
+actividades desplaza y qué perdería un grupo que avanza menos.
+
+### 5. Rechazos previos
+
+Antes de proponer, busca en `Pxxx_log.md` rechazos de propuestas equivalentes.
+Si existe uno, no la propongas de nuevo, salvo que el documento aporte un
+argumento distinto; en ese caso, cita el rechazo anterior y explica qué cambia.
 
 ## Método
 
-1. Declara rutas, páginas o secciones relevantes, familia de evidencia y límite
-   de inferencia. Con `benchmark=all`, cuenta y lista todos los PDFs leídos.
-2. Extrae sólo señales accionables: caso/dataset, representación, técnica,
-   validación, métrica, entrega persistente, práctica de código, uso operativo,
-   producto o guardrail. Distingue lo que el documento afirma de la inferencia.
-   Cuando el documento proponga aplicaciones o casos, registra también la
-   pregunta organizacional, entidad/unidad, horizonte, resultado a estimar,
-   decisión o usuario mencionado y contexto de error o riesgo.
-3. Para cada caso o aplicación del benchmark, pregunta explícitamente: «¿aporta
-   una contribución predictiva que el curso no trata?». Compárala contra los
-   `Pxxx_activity.md`, no contra el nombre del taller. Distingue: (a) un ejemplo
-   que ya ilustra una actividad existente; (b) un nuevo encuadre para el mismo
-   producto; (c) una variación que añade datos, representación, horizonte,
-   métrica, error, guardrail o producto terminal distinguible; y (d) un caso que
-   no puede proponerse porque el documento no aporta datos locales, procedencia
-   o una necesidad curricular. Una aplicación sectorial no basta: no atribuyas
-   esa industria al dataset actual ni inventes un caso.
-4. Para cada capacidad conceptual o técnica sustantiva que el referente
-   enumere —por ejemplo, detección de outliers, itemsets, clustering,
-   preparación, selección de variables, validación, persistencia o
-   interpretación— pregunta explícitamente: «¿dónde la practica y evidencia el
-   estudiante en este curso?». Un contenido de un referente reconocido tiene
-   **presunción de revisión obligatoria**, no presunción automática de
-   incorporación. Registra su ancla `Pxxx`/`HNN`/`SNN` o el motivo de ausencia.
-   Distingue entre conocer el nombre de una técnica, usar una función de una
-   librería y demostrar una capacidad mediante datos, código, producto
-   persistente y prueba.
-5. Para cada capacidad auditada, clasifica el resultado como:
-   - **cubierta:** la actividad ya contiene práctica y evidencia suficientes;
-   - **cubierta parcialmente:** existe una mención o uso aislado, pero falta
-     pregunta, representación, comparación, visualización, artefacto, prueba o
-     límite de interpretación;
-   - **candidata a extensión:** puede incorporarse preservando pregunta,
-     unidad, caso, producto y contrato de la actividad actual;
-   - **candidata estructural:** exige unidad, representación, horizonte,
-     métrica, contexto de error, producto o evidencia distinguible, por lo que
-     requiere cambio material o actividad nueva; o
-   - **fuera de alcance / no sustentada:** su incorporación desplazaría la
-     identidad de Analytics, duplicaría una contribución existente o carece de
-     caso/dato/procedencia que permita enseñarla con rigor.
+1. **Extrae señales** del documento: capacidades, técnicas, casos de uso,
+   KPIs, preguntas de negocio, metodologías, prácticas de implementación,
+   formas de evaluación y guardrails, cada una con su página. Si el documento
+   tiene índice o temario, recórrelo completo.
+2. **Contrasta cada señal** con los `Pxxx_activity.md`: primero con el índice
+   de comparación externa, después con `HNN` y `SNN`. Nunca contra el título
+   del taller.
+3. **Clasifica cada señal** en una sola categoría: ya cubierta, marginal (no
+   pasa materialidad), rechazada previamente, fuera de alcance (desplaza la
+   identidad de Analytics o carece de caso/datos que permitan enseñarla con
+   rigor), mejora de un Pxxx existente o actividad nueva.
+4. **Integra** cada mejora con las propuestas existentes. Si `Pxxx_tasks.md`
+   ya contiene una propuesta equivalente, no la dupliques: añade este
+   documento a sus fuentes y ajusta su contenido sólo si el documento aporta
+   algo nuevo. Lo mismo para `course_tasks.md`.
+5. **Revisa interacciones**: las propuestas de un mismo Pxxx se discutirán y
+   ejecutarán en conjunto. Declara cuáles dependen, compiten o se refuerzan.
+6. **Registra** la revisión en los logs (ver «Salidas»).
 
-   Una técnica adicional dentro de una actividad existente sólo es proporcional
-   si fortalece un `HNN` o una `SNN` actuales y puede compararse con lo ya
-   aprendido sobre el mismo problema. Propón una actividad nueva cuando la
-   capacidad requiera una pregunta, unidad de análisis, representación,
-   validación, tipo de error o producto terminal propio que diluiría la
-   contribución de la actividad existente.
-6. Audita también la práctica de implementación revelada por cada caso o
-   capacidad: transformación de datos, contrato de entrada, patrón de Python o
-   SQL, visualización, prueba, persistencia, reuso, interoperabilidad o límite
-   operacional. Una característica de herramienta sólo justifica cambio si
-   resuelve una dificultad real del dato o producto y deja una práctica
-   transferible y verificable; una llamada nueva de biblioteca no es, por sí
-   sola, una capacidad curricular.
-7. Busca primero anclas existentes en el **índice de comparación externa** de
-   S02. Vincula después `HNN` y `SNN` de la actividad. No uses un título de
-   taller como sustituto de evidencia.
-8. Para cada señal, elige un dictamen:
-   - **ya cubierto:** se conserva; explica por qué no exige cambio;
-   - **aclaración verificable:** el contenido existe, pero su evidencia,
-     explicación, artefacto o prueba debe hacerse visible;
-   - **candidato a cambio:** hay una mejora delimitada y una actividad con
-     ancla/superficie para recibirla;
-   - **candidato estructural:** un cambio mayor o una actividad nueva tiene una
-     contribución propia y un contrato de no regresión verificable; o
-   - **no sustentado / fuera de alcance:** no se propone cambio; explica el
-     límite, tensión o riesgo de sustitución disciplinar.
-9. Antes de detallar candidatos, produce los **hallazgos prioritarios de
-   faltantes**: sólo las capacidades, casos, prácticas o evidencias que el
-   contraste demuestra ausentes o cubiertas parcialmente. Para cada uno, indica
-   por qué importa para el producto de Analytics, qué `Pxxx` no lo cubre o lo
-   cubre parcialmente, el candidato asociado y la siguiente decisión o
-   evidencia necesaria. Ordénalos por impacto curricular y certeza de la
-   evidencia. No repitas capacidades ya cubiertas ni presentes una lista de
-   técnicas del referente: ésta es la respuesta ejecutiva a «¿qué falta?».
-10. Para cada candidato, formula un contrato de cambio: pregunta o producto
-   analítico que mejoraría; Pxxx/HNN/SNN afectados o posición propuesta para una
-   actividad nueva; caso/dataset apropiado; práctica concreta; evidencia
-   persistente esperada; prueba y trazabilidad que habría que revisar;
-   dependencias, riesgos y condición de aceptación.
-11. Justifica la proporcionalidad: enumera las alternativas de menor impacto
-   consideradas y explica por qué bastan o no bastan. Para un cambio mayor o una
-   actividad nueva, demuestra además su contribución no duplicada y el contrato
-   de no regresión.
-12. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
-   dependencias que se conservan, y cada elemento que se sustituye junto con la
-   evidencia que verificará una contribución al menos equivalente.
-13. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
-   línea base interpretable, un caso con valor pedagógico o un producto de
-   Analytics sin una razón observable.
-14. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+## Salidas
 
-## Salida
+S03 crea o actualiza sólo estos archivos de `design/courses/<curso>/`.
 
-Para una ruta única, deriva `<fuente>` del nombre del archivo sin extensión.
-Para un directorio, usa el nombre de su directorio —por ejemplo,
-`institutional`—; para `all`, usa `all`. Crea exactamente:
+### `Pxxx_tasks.md` — propuestas vigentes de una actividad
 
-`design/courses/<curso>/benchmark_reviews/<fuente>-<executor>.md`
+Estado actual, no historial. Se crea al primer cambio propuesto y queda vacío
+(«No hay propuestas pendientes.») cuando S05 verifica la ejecución.
 
-No sobrescribas el informe de otro executor. Una ejecución incremental del
-mismo executor lee sólo su informe anterior correspondiente, conserva hallazgos
-vigentes y registra qué PDFs o conclusiones cambiaron. Para un directorio o
-`all`, el registro incremental debe enumerar los PDFs leídos y declarar cuáles
-faltan; el informe no puede presentarse como una revisión completa mientras
-exista alguno sin leer.
+````markdown
+# Pxxx — Propuestas de mejora
+
+**Línea base:** `Pxxx_activity.md` (entrada S02 más reciente: `S02.Pxxx.NN`).
+
+## T01 — Título preciso del cambio
+
+- **Estado:** pendiente de discusión | aprobada | rechazada
+- **Tipo:** encuadre | producto/evidencia | método | caso/datos | proceso | pedagogía
+- **Fuentes:** `design/benchmarks-md/<ruta>.md` p. N (executor, fecha); una
+  línea por documento que respalda la propuesta.
+- **Qué gana el estudiante:** la capacidad o comprensión nueva, o el defecto
+  que se corrige. Es la justificación de materialidad.
+- **Anclas actuales:** `HNN`, `SNN` y dependencias afectadas.
+- **Alternativas menores descartadas:** por qué aclarar o extender no basta,
+  cuando aplique.
+- **Contrato de no regresión:** highlights, superficies, artefactos, pruebas y
+  dependencias que se conservan; sustituciones explícitas y su evidencia.
+- **Interacciones:** con otras `Txx` de este archivo.
+- **Criterio de aceptación:** lo que S05 debe verificar; normalmente un
+  highlight nuevo o modificado con evidencia en notebook, `submission/` o
+  pruebas.
+
+### Instrucciones de ejecución
+
+Prompt autocontenido para S04, ejecutable por cualquier herramienta. Indica
+las rutas a inspeccionar y modificar (tomadas de las `SNN`), los pasos, qué no
+debe tocarse, qué pruebas o artefactos añadir o actualizar y cómo comprobar
+el criterio de aceptación. Como S03 no lee `implementation/`, las
+instrucciones exigen que S04 inspeccione primero las rutas y se detenga si la
+implementación contradice la descripción.
+````
+
+Los IDs `T01`, `T02`… son estables dentro del archivo y no se reutilizan.
+
+### `course_tasks.md` — actividades nuevas por decidir
+
+````markdown
+# <curso> — Actividades nuevas por decidir
+
+## N01 — ⚠️ PENDIENTE DE DECISIÓN — Nombre tentativo
+
+- **Fuentes:** documento y páginas; una línea por documento.
+- **Contribución distinta:** qué enseñaría que ninguna Pxxx enseña, y por qué
+  no cabe en una existente sin desdibujar su identidad.
+- **Posición propuesta:** después de Pxxx; qué recibe de las anteriores y qué
+  habilita para las siguientes.
+- **Efecto en la secuencia:** qué actividades desplaza y qué perdería un grupo
+  que avanza menos.
+- **Caso y datos:** condición concreta que exige; o «requiere definición».
+- **Producto de Analytics:** pregunta, producto terminal y límite.
+- **Criterio de aceptación de una primera versión.**
+````
+
+Si en la discusión se aprueba, en ese momento se decide numeración y posición
+y S04 crea su primera versión con su trío de archivos; la entrada sale de
+`course_tasks.md`. Si se rechaza, sale con registro en `course_log.md`.
+
+### `Pxxx_log.md` — registro de la revisión
+
+Para **cada** Pxxx del curso agrega una entrada breve, aunque no haya
+propuestas, para que conste qué documentos ya fueron revisados:
 
 ```markdown
-# S03 — Revisión de <curso> contra <fuente> (<executor>)
+## S03.Pxxx.NN
 
-## Inventario y función de la evidencia
-
-| Ruta | Familia | Páginas/secciones leídas | Qué puede sustentar | Límite |
-| --- | --- | --- | --- | --- |
-
-## Señales extraídas
-
-| ID | Afirmación del documento | Inferencia permitida | Página/sección |
-| --- | --- | --- | --- |
-
-## Contraste con el diseño actual
-
-| Señal | Pxxx | Ancla S02 | Hitos | Superficies | Dictamen | Razón |
-| --- | --- | --- | --- | --- | --- |
-
-## Cobertura de casos y contribuciones predictivas
-
-| Caso/aplicación del benchmark | Pregunta, unidad, horizonte y resultado | Pxxx/HNN/SNN comparados | ¿Qué aporta que no exista? | Dictamen y evidencia adicional necesaria |
-| --- | --- | --- | --- | --- |
-
-## Cobertura conceptual y técnica del referente
-
-| Capacidad del índice o sección | Rol para Analytics y práctica técnica asociada | Pxxx/HNN/SNN comparados | Cobertura actual verificable | Dictamen y siguiente evidencia necesaria |
-| --- | --- | --- | --- | --- |
-
-## Hallazgos prioritarios de faltantes
-
-| Prioridad | Falta demostrada | Por qué importa para Analytics | Pxxx/HNN/SNN relacionados | Candidato y siguiente decisión/evidencia |
-| --- | --- | --- | --- | --- |
-
-## Propuestas candidatas — no aceptadas
-
-### C01 — Título preciso
-
-- **Evidencia externa:** ruta y página/sección.
-- **Actividad, posición y contrato actual:** Pxxx, ancla, HNN y SNN; o posición
-  propuesta y actividades contiguas si se propone una nueva actividad.
-- **Tipo y alcance:** aclaración, extensión, cambio material o actividad nueva.
-- **Cambio propuesto:** qué variaría, agregaría o reemplazaría.
-- **Alternativas de menor impacto descartadas:** no cambiar, aclarar o extender;
-  por qué no bastan, con evidencia.
-- **Contrato de no regresión:** HNN, SNN, artefactos, pruebas y dependencias que
-  se conservan; equivalencia verificable de todo elemento reemplazado.
-- **Producto de Analytics y decisión/usuario:** beneficio verificable o
-  «requiere definición».
-- **Caso, datos y práctica de implementación:** condición concreta; no un tema
-  genérico.
-- **Evidencia de aceptación futura:** artefacto persistente, visualización,
-  prueba y trazabilidad que deberían cambiar.
-- **Secuencia, riesgos y tensiones:** dependencias, sustitución disciplinar,
-  costo, procedencia, sesgo, validez o límites.
-- **Condición para aceptar:** evidencia adicional o decisión institucional
-  necesaria.
-
-## Señales ya cubiertas o descartadas
-
-## Auditoría de identidad de Analytics
-
-## Registro incremental
+- **Fecha / executor:** AAAA-MM-DD / <executor>.
+- **Documento:** `design/benchmarks-md/<ruta>.md` (`source_sha256`: <hash>).
+- **Resultado:** sin cambios | refuerza T0n | propone T0n | aporta a N0n.
+- **Señales descartadas relevantes:** sólo las que alguien podría esperar ver
+  propuestas, con su categoría (ya cubierta, marginal, fuera de alcance,
+  rechazada previamente).
 ```
 
-Si no hay un candidato sustentado, conserva las secciones y declara «ninguno».
-Ése es un resultado válido.
+## Discusión y decisiones (fuera de S03)
+
+El profesor discute **todas** las propuestas de un Pxxx en conjunto, porque
+interactúan. Al decidir:
+
+- **aprobada:** queda en `Pxxx_tasks.md` con estado «aprobada» para S04;
+- **rechazada:** se elimina de `Pxxx_tasks.md` y se registra en `Pxxx_log.md`
+  como `DEC.Pxxx.NN` con la propuesta, sus fuentes y la razón del rechazo.
+  Futuras ejecuciones de S03 la tratan como rechazo previo.
 
 ## Control antes de guardar
 
-Confirma que:
-
-- se leyeron los PDFs locales declarados y se citan por ruta y página/sección;
-- cada candidato está anclado a una actividad mapeada, `HNN` y `SNN`, o, para
-  una actividad nueva, declara su posición, contribución no duplicada y las
-  actividades contiguas afectadas;
-- cada propuesta especifica cambio, evidencia futura y condición de aceptación;
-- cada candidato demuestra que no existe una alternativa de menor impacto que
-  produzca el mismo beneficio verificable;
-- cada cambio mayor o actividad nueva tiene un contrato de no regresión que
-  preserva o sustituye explícitamente las contribuciones actuales;
-- los dictámenes de cobertura no se confunden con aceptación de cambios;
-- cada aplicación o caso del benchmark se contrastó explícitamente con la
-  cobertura actual y, cuando se propone una actividad nueva, se demostró su
-  producto, contribución no duplicada, posición y evidencia local pendiente;
-- cuando el referente contiene un índice o tabla de contenido sustantiva, cada
-  capacidad relevante recibió un dictamen explícito de cobertura conceptual y
-  técnica; la mera presencia de una técnica en el índice no se confundió con su
-  adopción automática;
-- cada candidata a herramienta o técnica demuestra qué dificultad de datos o
-  producto resuelve, cuál práctica transferible deja y por qué es una extensión
-  o una actividad nueva en vez de una llamada adicional de biblioteca;
-- el informe presenta una sección breve, priorizada y separada que responde
-  explícitamente «qué falta», sin confundir cobertura existente, candidatos no
-  aceptados y cambios implementados;
-- se preservó la identidad de Analytics y se registraron tensiones; y
-- sólo se creó o actualizó el informe S03 del executor actual.
+- Se leyó el documento completo y cada señal cita su página.
+- Toda propuesta pasa el criterio de materialidad y dice qué gana el estudiante.
+- Toda propuesta está anclada a `HNN`/`SNN` existentes o, si es actividad
+  nueva, declara posición, contribución distinta y efecto en la secuencia.
+- Se integró con propuestas existentes, sin duplicados.
+- Se consultaron los rechazos previos.
+- Cada propuesta tiene contrato de no regresión, criterio de aceptación e
+  instrucciones de ejecución.
+- Se registró la revisión en el log de cada Pxxx del curso.
+- Se preservó la identidad de Analytics.
+- No se modificó nada fuera de `Pxxx_tasks.md`, `course_tasks.md` y
+  `Pxxx_log.md` del curso indicado.

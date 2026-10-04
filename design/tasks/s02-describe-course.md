@@ -22,8 +22,12 @@ mantiene estos dos archivos:
 
 La actividad implementada es la línea base. S02 **describe y audita**; no
 rediseña, no acepta mejoras curriculares, no hace investigación web y no
-modifica `implementation/`. Si existen «Mejoras aceptadas pendientes de
-implementación» en una actividad, las preserva literalmente.
+modifica `implementation/`. Las propuestas de mejora viven en
+`Pxxx_tasks.md` (S03); S02 no las crea, modifica ni usa como evidencia. Si un
+`Pxxx_activity.md` previo conserva la sección heredada «Mejoras aceptadas
+pendientes de implementación», la elimina cuando declara que no hay mejoras
+pendientes; si tiene contenido, la conserva y lo registra como ambigüedad en
+el log.
 
 ## Principio rector: contribución, no inventario
 
@@ -159,10 +163,6 @@ Comparación breve, incluidas posibles duplicaciones no resueltas.
 - **Habilita para Pyyy:** salida, práctica o contrato que una actividad posterior
   usa de forma demostrable; o «no evidenciada».
 
-## Mejoras aceptadas pendientes de implementación
-
-No hay mejoras aceptadas pendientes.
-
 ## Trazabilidad y auditoría
 
 Entrada de `traceability.yaml` revisada, vacíos, producto de Analytics y papel
@@ -276,7 +276,7 @@ redescubrir la implementación:
 Cada ejecución agrega `S02.Pxxx.NN` e incluye: fecha, curso, executor, estado
 (inicial o incremental), rutas inspeccionadas, entrada de trazabilidad revisada,
 highlights confirmados/añadidos/corregidos/no inferibles, cambios realizados,
-mejoras pendientes preservadas, ambigüedades, cambios de IDs, superficies,
+ambigüedades, cambios de IDs, superficies,
 contrato y dependencias revisados, y resultado de la auditoría de Analytics. El
 log documenta; no resuelve asuntos de orden, capacidades compartidas o rediseño
 de curso.
@@ -298,7 +298,7 @@ Confirma que:
 - preguntas, inventario, highlights y trazabilidad no se contradicen;
 - se revisó la entrada de `traceability.yaml` o se registró su ausencia;
 - no se inventaron caso, procedencia, técnica, competencia, producto ni logro;
-- se preservaron mejoras aceptadas pendientes; y
+- no se crearon ni modificaron propuestas de mejora (corresponden a S03); y
 - sólo cambiaron los pares Pxxx de `design/courses/<curso>/` y, si faltaba, el
   directorio del curso.
 

@@ -36,3 +36,20 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se añadió producto, índice externo y vínculo H01–H05 con superficies actuales; se mantuvo que el clustering describe patrones, no pronostica demanda.
 - **Auditoría de Analytics:** normalización y clustering sirven al producto descriptivo limitado del taller.
+
+## S03.P206.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - K-means, evaluación de clustering, otras distancias y preprocesamiento (p. 7): ya cubiertas (H01–H03).
+  - clustering espectral y de modularidad (p. 7): marginal; otro algoritmo para la misma segmentación.
+
+## S03.P206.02
+
+- **Fecha / executor:** 2026-10-04 / OpenWork.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - optimización de cadena de suministro y robótica (pp. 2, 5): fuera de alcance; P206 produce una descripción de perfiles diarios, no estimación futura ni política. Reorientarlo exigiría un producto distinto y datos/decisión de operación no presentes en el S02.
