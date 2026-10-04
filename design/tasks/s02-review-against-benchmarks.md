@@ -98,10 +98,22 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
 2. Extrae sólo señales accionables: caso/dataset, representación, técnica,
    validación, métrica, entrega persistente, práctica de código, uso operativo,
    producto o guardrail. Distingue lo que el documento afirma de la inferencia.
-3. Busca primero anclas existentes en el **índice de comparación externa** de
+   Cuando el documento proponga aplicaciones o casos, registra también la
+   pregunta organizacional, entidad/unidad, horizonte, resultado a estimar,
+   decisión o usuario mencionado y contexto de error o riesgo.
+3. Para cada caso o aplicación del benchmark, pregunta explícitamente: «¿aporta
+   una contribución predictiva que el curso no trata?». Compárala contra los
+   `Pxxx_activity.md`, no contra el nombre del taller. Distingue: (a) un ejemplo
+   que ya ilustra una actividad existente; (b) un nuevo encuadre para el mismo
+   producto; (c) una variación que añade datos, representación, horizonte,
+   métrica, error, guardrail o producto terminal distinguible; y (d) un caso que
+   no puede proponerse porque el documento no aporta datos locales, procedencia
+   o una necesidad curricular. Una aplicación sectorial no basta: no atribuyas
+   esa industria al dataset actual ni inventes un caso.
+4. Busca primero anclas existentes en el **índice de comparación externa** de
    S01. Vincula después `HNN` y `SNN` de la actividad. No uses un título de
    taller como sustituto de evidencia.
-4. Para cada señal, elige un dictamen:
+5. Para cada señal, elige un dictamen:
    - **ya cubierto:** se conserva; explica por qué no exige cambio;
    - **aclaración verificable:** el contenido existe, pero su evidencia,
      explicación, artefacto o prueba debe hacerse visible;
@@ -111,22 +123,22 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
      contribución propia y un contrato de no regresión verificable; o
    - **no sustentado / fuera de alcance:** no se propone cambio; explica el
      límite, tensión o riesgo de sustitución disciplinar.
-5. Para cada candidato, formula un contrato de cambio: pregunta o producto
+6. Para cada candidato, formula un contrato de cambio: pregunta o producto
    analítico que mejoraría; Pxxx/HNN/SNN afectados o posición propuesta para una
    actividad nueva; caso/dataset apropiado; práctica concreta; evidencia
    persistente esperada; prueba y trazabilidad que habría que revisar;
    dependencias, riesgos y condición de aceptación.
-6. Justifica la proporcionalidad: enumera las alternativas de menor impacto
+7. Justifica la proporcionalidad: enumera las alternativas de menor impacto
    consideradas y explica por qué bastan o no bastan. Para un cambio mayor o una
    actividad nueva, demuestra además su contribución no duplicada y el contrato
    de no regresión.
-7. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
+8. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
    dependencias que se conservan, y cada elemento que se sustituye junto con la
    evidencia que verificará una contribución al menos equivalente.
-8. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
+9. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
    línea base interpretable, un caso con valor pedagógico o un producto de
    Analytics sin una razón observable.
-9. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+10. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
 
 ## Salida
 
@@ -156,6 +168,11 @@ vigentes y registra qué PDFs o conclusiones cambiaron.
 
 | Señal | Pxxx | Ancla S01 | Hitos | Superficies | Dictamen | Razón |
 | --- | --- | --- | --- | --- | --- |
+
+## Cobertura de casos y contribuciones predictivas
+
+| Caso/aplicación del benchmark | Pregunta, unidad, horizonte y resultado | Pxxx/HNN/SNN comparados | ¿Qué aporta que no exista? | Dictamen y evidencia adicional necesaria |
+| --- | --- | --- | --- | --- |
 
 ## Propuestas candidatas — no aceptadas
 
@@ -205,5 +222,8 @@ Confirma que:
 - cada cambio mayor o actividad nueva tiene un contrato de no regresión que
   preserva o sustituye explícitamente las contribuciones actuales;
 - los dictámenes de cobertura no se confunden con aceptación de cambios;
+- cada aplicación o caso del benchmark se contrastó explícitamente con la
+  cobertura actual y, cuando se propone una actividad nueva, se demostró su
+  producto, contribución no duplicada, posición y evidencia local pendiente;
 - se preservó la identidad de Analytics y se registraron tensiones; y
 - sólo se creó o actualizó el informe S02 del executor actual.
