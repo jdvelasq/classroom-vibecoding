@@ -159,9 +159,7 @@ def convert(pdf: Path) -> tuple[str, dict]:
         warnings.append(f"páginas con cobertura < {COVERAGE_MIN}: {low}")
     bad = body.count(REPLACEMENT)
     if bad:
-        warnings.append(
-            f"{bad} glifos sin mapeo de fuente aislados (U+FFFD)"
-        )
+        warnings.append(f"{bad} glifos sin mapeo de fuente aislados (U+FFFD)")
     meta = {
         "pages": doc.page_count,
         "min_coverage": round(min(covs), 3) if covs else 1.0,
@@ -236,11 +234,15 @@ def main() -> int:
         if meta["warnings"]:
             warned.append(rel)
 
-    orphans = [
-        md.relative_to(MD_DIR)
-        for md in sorted(MD_DIR.rglob("*.md"))
-        if not (PDF_DIR / md.relative_to(MD_DIR)).with_suffix(".pdf").exists()
-    ] if MD_DIR.exists() else []
+    orphans = (
+        [
+            md.relative_to(MD_DIR)
+            for md in sorted(MD_DIR.rglob("*.md"))
+            if not (PDF_DIR / md.relative_to(MD_DIR)).with_suffix(".pdf").exists()
+        ]
+        if MD_DIR.exists()
+        else []
+    )
 
     print(
         f"\nConvertidos: {len(converted)} · sin cambios: {len(skipped)} · "
