@@ -12,6 +12,19 @@
 Parte de Auto MPG y entrena una regresión lineal con `SelectKBest` y
 `f_regression` dentro de un pipeline evaluado.
 
+### Producto analítico actual y límite de identidad
+
+- **Pregunta, usuario o decisión:** predice MPG seleccionando entradas; no hay decisión de flota evidenciada.
+- **Producto terminal:** pipeline lineal persistido con número de entradas seleccionado por CV.
+- **Uso y límite:** conserva selección dentro del ajuste; no prueba causalidad ni procedencia del caso.
+- **Disciplinas contribuyentes:** selección estadística y CV sirven a predicción de MPG.
+
+### Highlights de contribución
+
+- **H01 — Selecciona entradas dentro del pipeline:** `SelectKBest(f_regression)` evita elegir columnas fuera del flujo evaluado.
+- **H02 — Busca `k` por validación cruzada:** separa número de entradas de evaluación final.
+- **H03 — Conserva modelo y selección conjuntamente:** el estimador persistido incluye el contrato de entrada.
+
 ### Inventario técnico de implementación
 
 - **Introduce:** `SelectKBest`, prueba `f_regression` y búsqueda de cantidad de
@@ -20,11 +33,47 @@ Parte de Auto MPG y entrena una regresión lineal con `SelectKBest` y
 - **Verifica y comunica:** compara MSE, MAE y R²; preserva el estimador elegido
   como artefacto de entrega.
 
+### Índice de comparación externa
+
+| Ancla | Hitos | Mecanismo | Límite |
+| --- | --- | --- | --- |
+| Selección integrada | H01–H02 | SelectKBest, f_regression, GridSearchCV | No persiste nombres/resultado de selección. |
+| Reuso | H03 | `estimator.pkl` | Test sólo presencia. |
+
 ### Relación técnica con actividades anteriores
 
 Profundiza P200 al tratar explícitamente qué información entra al modelo, y
 P220 al encapsular la transformación junto con el estimador. Sin P221 se pierde
 la competencia de justificar una regresión con selección reproducible de inputs.
+
+### Evidencia de los highlights
+
+| Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
+| --- | --- | --- | --- |
+| H01 | S01 | Notebook: pipeline y `SelectKBest` | No persiste entradas. |
+| H02 | S02 | Notebook: grilla CV | Sin resultados CV persistidos. |
+| H03 | S03, S04 | Estimador y prueba | Test sólo archivo. |
+
+### Superficies de cambio para revisión posterior
+
+| ID | Componente | Rutas | Restricción |
+| --- | --- | --- | --- |
+| S01 | Auto MPG/representación | Datos; notebook | `Origin` debe conservar codificación correcta. |
+| S02 | Selección y CV | Notebook; `.pkl` | Selección dentro de ajuste. |
+| S03 | Evidencia | Métricas/pruebas | Sin tabla de selección. |
+| S04 | Trazabilidad | YAML | Falta P221. |
+
+### Contrato de evidencia actual
+
+- **Código:** particiona, selecciona, busca y serializa.
+- **`submission/`:** estimador.
+- **Pruebas:** presencia de archivo.
+- **Trazabilidad:** falta P221.
+
+### Dependencias en la secuencia
+
+- **Recibe de P200/P220:** Auto MPG, pipeline y contrato de transformación.
+- **Habilita para P222–P223:** contraste entre selección de columnas y regularización.
 
 ## Mejoras aceptadas pendientes de implementación
 
