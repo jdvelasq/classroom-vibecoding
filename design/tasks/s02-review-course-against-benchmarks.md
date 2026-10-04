@@ -26,6 +26,28 @@ La ausencia de un elemento en un benchmark no demuestra una brecha del curso;
 la aparición de una técnica tampoco justifica enseñarla. Las mejoras llegan a
 una actividad sólo mediante una decisión posterior, explícita y registrada.
 
+## Principio de cambio mínimo
+
+La implementación actual es una base construida que funciona. Por tanto, **el
+menor cambio que resuelva una necesidad evidenciada es el mejor cambio**. S02
+parte de conservar caso, secuencia, prácticas, entregables y pruebas actuales.
+
+Antes de proponer una modificación, compara explícitamente estas alternativas,
+en este orden:
+
+1. no cambiar: la actividad ya cubre la señal con evidencia suficiente;
+2. aclarar o hacer visible: mejorar explicación, visualización, artefacto,
+   prueba o trazabilidad sin alterar la experiencia central;
+3. extender localmente: añadir una práctica o contraste pequeño que preserve
+   el caso, producto y contratos existentes; y
+4. cambiar de forma material: sustituir caso, método, producto, orden o
+   actividad sólo si las alternativas anteriores no resuelven el beneficio.
+
+La carga de la prueba crece en ese orden. Una propuesta no es aceptable si no
+explica por qué una alternativa de menor impacto es insuficiente. Novedad,
+prestigio de la fuente, cobertura de una técnica o preferencia de herramienta
+no son por sí mismos razones para ampliar o reemplazar el diseño.
+
 ## Entradas permitidas
 
 Lee y cumple `AGENTS.md`. Lee sustantivamente:
@@ -84,10 +106,12 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
    apropiado; práctica concreta; evidencia persistente esperada; prueba y
    trazabilidad que habría que revisar; dependencias, riesgos y condición de
    aceptación.
-6. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
+6. Justifica por qué el cambio propuesto es el menor suficiente: enumera las
+   alternativas de menor impacto consideradas y la evidencia de que no bastan.
+7. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
    línea base interpretable, un caso con valor pedagógico o un producto de
    Analytics sin una razón observable.
-7. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+8. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
 
 ## Salida
 
@@ -125,6 +149,8 @@ vigentes y registra qué PDFs o conclusiones cambiaron.
 - **Evidencia externa:** ruta y página/sección.
 - **Actividad y contrato actual:** Pxxx, ancla, HNN y SNN.
 - **Cambio mínimo propuesto:** qué variaría y qué debe conservarse.
+- **Alternativas de menor impacto descartadas:** no cambiar, aclarar o extender;
+  por qué no bastan, con evidencia.
 - **Producto de Analytics y decisión/usuario:** beneficio verificable o
   «requiere definición».
 - **Caso, datos y práctica de implementación:** condición concreta; no un tema
@@ -154,6 +180,8 @@ Confirma que:
 - cada candidato está anclado a una actividad mapeada, `HNN` y `SNN`, o se
   declara explícitamente que el mapeo falta;
 - cada propuesta especifica cambio, evidencia futura y condición de aceptación;
+- cada candidato demuestra que no existe una alternativa de menor impacto que
+  produzca el mismo beneficio verificable;
 - los dictámenes de cobertura no se confunden con aceptación de cambios;
 - se preservó la identidad de Analytics y se registraron tensiones; y
 - sólo se creó o actualizó el informe S02 del executor actual.
