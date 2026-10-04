@@ -1,191 +1,189 @@
-# S01 — Mapear las actividades implementadas de un curso
+# S01 — Describir y auditar las actividades implementadas de un curso
 
 ## Ejecución
 
-Ejecuta esta tarea como:
-
 ```text
-execute design/tasks/s01-map-course-activities.md course=<curso> executor=<LLM>
+execute design/tasks/s01-describe-course.md course=<curso> executor=<LLM>
 ```
 
-`course` identifica el directorio existente `implementation/<curso>/` y el
-directorio de diseño `design/courses/<curso>/`. `executor` identifica el LLM o
-entorno que realizó esta pasada y se registra únicamente para auditoría: el
-contrato, las entradas y los controles son independientes del modelo usado.
+`course` identifica `implementation/<curso>/` y `design/courses/<curso>/`.
+`executor` identifica la lectura independiente que realizó el trabajo; no cambia
+el contrato de la tarea ni autoriza a inventar consenso entre modelos.
 
-## Propósito
+## Resultado que debe producir
 
-Mapear fielmente cada actividad presencial `Pxxx_` ya implementada en
-`implementation/<curso>/` a dos archivos de diseño:
+Para cada directorio `implementation/<curso>/Pxxx_*/`, en orden numérico,
+mantiene estos dos archivos:
 
-- `design/courses/<curso>/Pxxx_activity.md`; y
-- `design/courses/<curso>/Pxxx_log.md`.
+- `design/courses/<curso>/Pxxx_activity.md`: descripción vigente, basada sólo
+  en implementación observable; y
+- `design/courses/<curso>/Pxxx_log.md`: registro acumulativo de la inspección y
+  sus decisiones de descripción.
 
-La actividad implementada es la línea base. Esta tarea documenta lo que existe
-hoy y puede mejorar la precisión, integridad o trazabilidad de su descripción
-mediante una nueva lectura independiente de la implementación. No rediseña la
-actividad, no añade mejoras curriculares y no modifica `implementation/`.
+La actividad implementada es la línea base. S01 **describe y audita**; no
+rediseña, no acepta mejoras curriculares, no hace investigación web y no
+modifica `implementation/`. Si existen «Mejoras aceptadas pendientes de
+implementación» en una actividad, las preserva literalmente.
 
-Una futura tarea de exploración externa podrá acumular mejoras ya aceptadas en
-`Pxxx_activity.md`. S01 debe preservarlas si existen, pero no crearlas,
-aceptarlas, rechazarlas ni modificarlas.
+## Principio rector: contribución, no inventario
 
-## Entradas obligatorias
+El resultado debe permitir decidir posteriormente si conservar, mejorar,
+combinar o reemplazar un taller al contrastarlo con benchmarks o nueva
+información. Para lograrlo, cada actividad debe responder con evidencia:
 
-Lee y cumple `AGENTS.md`. Para el curso indicado, inspecciona:
+> ¿Qué capacidad concreta se empieza a ejercer, se extiende, se contrasta o se
+> aplica de una forma nueva aquí, y qué se perdería de la secuencia si este
+> taller no existiera?
+
+No basta con decir «usa Python», «enseña regresión», «incluye un notebook» o
+nombrar una biblioteca. Tampoco basta con repetir la pregunta de negocio. La
+contribución se expresa mediante **highlights**, separados del inventario de
+técnicas.
+
+## Entradas que se deben inspeccionar
+
+Lee y cumple `AGENTS.md`. Para cada Pxxx, inspecciona contenido sustantivo de:
 
 - `implementation/<curso>/traceability.yaml`;
-- cada directorio `implementation/<curso>/Pxxx_*/`;
 - datos, manifiestos y documentación de procedencia disponibles;
-- notebooks, código, preguntas, material de profesor y archivos de
-  `submission/`;
-- pruebas de la actividad; y
-- los archivos existentes bajo `design/courses/<curso>/` para la actividad
-  correspondiente.
+- instrucciones, notebooks, código y material de profesor;
+- `submission/`, contratos, visualizaciones y otros entregables persistentes;
+- pruebas; y
+- su `Pxxx_activity.md` y `Pxxx_log.md` previos, si existen.
 
-Lee `design/courses/<curso>/course_log.md`, si existe, únicamente para entender
-decisiones transversales. No lo modifiques en S01.
+Lee `design/courses/<curso>/course_log.md` sólo si existe y sólo para contexto.
+No lo modifiques. No inspecciones ni modifiques otros cursos.
 
-No hagas investigación web. No modifiques archivos bajo `implementation/`, ni
-actividades de otro curso, ni `course_log.md`.
+## Cómo trabajar
 
-## Dos estados de trabajo
-
-### Estado inicial
-
-Si `Pxxx_activity.md` no existe o está vacío, crea una primera descripción del
-estado implementado y crea `Pxxx_log.md`. La descripción debe basarse en los
-artefactos reales, no en nombres de directorios ni en inferencias sobre lo que
-un curso “normalmente” debería enseñar.
-
-### Estado incremental
-
-Si `Pxxx_activity.md` ya existe, el executor debe volver a leer la
-implementación de manera independiente y contrastarla con el mapa existente y
-con `Pxxx_log.md`. Conserva las afirmaciones todavía sustentadas; completa,
-corrige o precisa sólo aquello que pueda justificar con una ruta concreta de
-implementación. No reescribas por estilo ni elimines una interpretación previa
-sin dejar la razón en el log.
-
-Las diferencias entre executors se tratan como evidencia auditable. Si la
-implementación no permite resolver una diferencia, regístrala como ambigüedad
-en vez de fabricar consenso.
-
-## Protocolo por actividad
-
-Procesa todas las actividades `Pxxx_` encontradas, en orden numérico. La
-numeración existente define la secuencia; S01 no crea, elimina, renumera,
-fusiona ni divide actividades.
-
-Para cada actividad:
-
-1. **Inventaria** los artefactos disponibles y separa material de estudiante,
-   material de profesor, datos de entrada, código/notebooks, entregables y
-   pruebas.
-2. **Reconstruye el caso actual**: preguntas analíticas como una lista de
-   viñetas, contexto, usuario o decisión sólo si están evidenciados; unidad de
-   análisis, tiempo, entidades, transformaciones y limitaciones de los datos.
-   No fusiona preguntas distintas en una formulación genérica.
-3. **Reconstruye la experiencia observada** desde instrucciones, notebooks,
-   código, entregables y pruebas. Distingue evidencia explícita, estructura
-   observable e inferencia.
-4. **Mapea evidencia de aprendizaje diseñada**, no logro real del estudiante:
-   relaciona prácticas, técnicas y capacidades que la actividad ejercita con
-   los entregables, las pruebas y la entrada de `traceability.yaml`.
-5. **Inventaría la implementación técnica** que la actividad realmente
-   ejercita: propiedades de datos, operaciones concretas, funciones o APIs,
-   patrones de código, validaciones, pruebas, contratos, reproducibilidad,
-   entrega u operación. Clasifica cada elemento como introducido, reutilizado,
-   extendido o aplicado a un nuevo caso frente a actividades `Pxxx` anteriores.
-   No confundas una biblioteca importada con una práctica ejercitada.
-6. **Compara valor curricular.** Una pregunta de negocio repetida no convierte
-   automáticamente una actividad en redundante. Identifica qué habilidad
-   analítica o de implementación se perdería si se eliminara la actividad; si
-   no hay una diferencia sustentada, regístrala como posible duplicación para
-   revisión de curso.
-7. **Audita la identidad de Analytics** usando `AGENTS.md`: identifica el
-   producto analítico y la función de disciplinas contribuyentes sin convertir
-   la actividad en una clase abreviada de una de ellas.
-8. **Actualiza de forma atómica** primero `Pxxx_activity.md` y después agrega
-   una entrada a `Pxxx_log.md`, incluso cuando la revisión confirme que no hay
-   nada que corregir.
+1. Identifica todos los Pxxx y conserva su orden. No crees, elimines, renombres,
+   fusiones ni reordenes actividades.
+2. Reconstruye el caso con prudencia: pregunta(s) analítica(s) en viñetas; usuario,
+   decisión, entidad, tiempo, datos y procedencia sólo cuando la implementación
+   los demuestre. Marca lo que no esté especificado.
+3. Reconstruye el producto terminal actual: explicación, predicción, política,
+   capacidad de datos u otro artefacto. Comprueba la identidad de Analytics con
+   las preguntas de auditoría de `AGENTS.md`; las disciplinas contribuyentes
+   sirven al producto, no organizan el currículo.
+4. Inventaría prácticas de implementación que realmente se ejercitan: datos,
+   transformaciones, funciones/métodos, patrones, validaciones, pruebas,
+   persistencia, entrega u operación. No confunde una importación con una
+   práctica ejercitada.
+5. Contrasta cada actividad con las Pxxx anteriores del mismo curso. Una misma
+   pregunta de negocio no prueba duplicación; busca el cambio analítico,
+   técnico, de datos, de evidencia o de producto.
+6. Escribe los highlights y sólo después redacta el inventario técnico. Cada
+   afirmación importante debe tener una ruta de respaldo concreta.
+7. En una ejecución incremental, conserva lo comprobado, corrige lo que la
+   evidencia contradiga y registra ambigüedades. No reescribas por estilo ni
+   borres una conclusión previa sin razón documentada.
 
 ## Contrato de `Pxxx_activity.md`
 
-El archivo describe el estado vigente de diseño de una actividad y separa con
-claridad dos capas:
+Usa esta estructura. Añade secciones sólo cuando la evidencia lo requiera.
 
-1. **Actividad actual implementada.** Identificador y ruta; propósito
-   observado; preguntas analíticas en una lista de viñetas; caso; datos y
-   procedencia disponible; experiencia de aula
-   invertida evidenciada; técnicas y herramientas realmente ejercitadas;
-   productos/entregables; evidencia de aprendizaje diseñada; límites y
-   ambigüedades.
-2. **Mejoras aceptadas pendientes de implementación.** Conserva, sin
-   alterarlas, las mejoras aprobadas por tareas posteriores. Cada mejora debe
-   indicar el cambio frente a la actividad actual y su estado. Si no existen,
-   declara explícitamente que no hay mejoras aceptadas pendientes.
+```markdown
+# Pxxx — Nombre observado
 
-Incluye además:
+## Actividad actual implementada
 
-- capacidades y habilidades que la actividad está diseñada para hacer
-  observables, nunca una afirmación no evidenciada de logro estudiantil;
-- un **inventario técnico de implementación** en viñetas: datos y sus
-  propiedades relevantes; operaciones, funciones, consultas o APIs realmente
-  ejercitadas; patrones de código; y prácticas de calidad, prueba, entrega u
-  operación. Cada elemento identifica su rol como introducido, reutilizado,
-  extendido o aplicado a un caso nuevo;
-- una **relación técnica con actividades anteriores**: qué se repite, qué se
-  añade, qué se extiende y qué habilidad observable se perdería al eliminar la
-  actividad. Una repetición sin diferencia sustentada se marca como posible
-  duplicación, no se resuelve localmente;
-- la relación revisada con la entrada aplicable de `traceability.yaml`;
-- una tabla de trazabilidad: afirmación → ruta(s) de implementación → tipo de
-  evidencia → límite; y
-- la auditoría de identidad de Analytics de `AGENTS.md`.
+**Implementación:** `ruta exacta`.
 
-No uses este archivo como historial de decisiones ni como lista de mejoras
-posibles no aceptadas.
+### Preguntas analíticas actuales
+
+- Pregunta 1.
+- Pregunta 2, si está evidenciada.
+
+Breve descripción del caso, datos, producto terminal y límites observables.
+
+### Highlights de contribución
+
+- **Verbo de capacidad:** mecanismo concreto, artefacto o comportamiento
+  observable; relación con Pxxx anteriores; qué se perdería sin este hito.
+
+### Inventario técnico de implementación
+
+- **Introduce / extiende / reutiliza / aplica en nuevo caso:** práctica concreta.
+
+### Relación técnica con actividades anteriores
+
+Comparación breve, incluidas posibles duplicaciones no resueltas.
+
+### Evidencia de los highlights
+
+| Highlight | Rutas de respaldo | Límite de inferencia |
+| --- | --- | --- |
+| ... | ... | ... |
+
+## Mejoras aceptadas pendientes de implementación
+
+No hay mejoras aceptadas pendientes.
+
+## Trazabilidad y auditoría
+
+Entrada de `traceability.yaml` revisada, vacíos, producto de Analytics y papel
+de disciplinas contribuyentes.
+```
+
+### Reglas para los highlights
+
+Un highlight es un hito de contribución, no una etiqueta. Debe contener:
+
+1. un verbo que describa lo que se aprende a hacer o a verificar;
+2. un mecanismo específico —por ejemplo, «codifica una nominal con
+   `OneHotEncoder` sin imponer orden», no «usa sklearn»—;
+3. la evidencia observable: notebook, función, prueba, salida, contrato o
+   visualización;
+4. su lugar en la secuencia: primera aparición, extensión, contraste o nueva
+   aplicación; y
+5. la capacidad que faltaría si el hito se elimina.
+
+Prefiere el nivel de precisión de «muestra que una MLP de una entrada compite
+con una regresión lineal de la misma entrada» al de «introduce MLP». Si se
+afirma un resultado cuantitativo, cítalo sólo si está en un artefacto persistido
+o en una salida verificable del repositorio. Si falta evidencia para un
+highlight, no lo inventes: descríbelo como límite o ambigüedad.
+
+La cantidad no es fija. Un taller complejo puede requerir muchos; uno breve,
+pocos. Cada uno debe justificar una contribución distinguible, no cubrir cada
+línea de código. Los highlights no son mejoras propuestas ni declaraciones de
+logro real del estudiante.
+
+### Inventario técnico y relación con la secuencia
+
+El inventario complementa, pero no duplica, los highlights. Debe clasificar las
+prácticas como introducidas, extendidas, reutilizadas o aplicadas a un nuevo
+caso. La relación con talleres previos debe diferenciar explícitamente:
+
+- misma pregunta con nueva implementación o dato;
+- misma técnica con nueva exigencia de evidencia o producto;
+- nuevo método al servicio del mismo producto; y
+- posible duplicación que requiere decisión posterior de curso.
 
 ## Contrato de `Pxxx_log.md`
 
-El log es acumulativo. Cada ejecución añade una entrada `S01.Pxxx.NN` con:
+Cada ejecución agrega `S01.Pxxx.NN` e incluye: fecha, curso, executor, estado
+(inicial o incremental), rutas inspeccionadas, entrada de trazabilidad revisada,
+highlights confirmados/añadidos/corregidos/no inferibles, cambios realizados,
+mejoras pendientes preservadas, ambigüedades y resultado de la auditoría de
+Analytics. El log documenta; no resuelve asuntos de orden, capacidades compartidas
+o rediseño de curso.
 
-- fecha, `course` y `executor`;
-- estado abordado: inicial o incremental;
-- rutas inspeccionadas y entrada revisada de `traceability.yaml`;
-- afirmaciones confirmadas, añadidas, corregidas o cuestionadas;
-- cambios concretos en la descripción de la actividad actual, o la razón de
-  no cambiarlos;
-- mejoras aceptadas pendientes que fueron preservadas sin modificación;
-- inventario técnico y comparación con actividades previas revisados;
-- ambigüedades, vacíos y posibles escalaciones de curso; y
-- resultado de la auditoría de identidad de Analytics.
-
-S01 registra en el log, pero no resuelve, cualquier problema que afecte orden
-`Pxxx`, identificación, asignación de capacidades entre actividades o más de
-una actividad. Esos cambios pertenecen a una tarea posterior de curso y a
-`course_log.md`.
-
-## Controles antes de guardar
+## Control antes de guardar
 
 Confirma que:
 
-- se procesó cada directorio `Pxxx_` del curso, en orden numérico;
-- se inspeccionó contenido sustantivo de la implementación, no sólo nombres;
-- toda afirmación importante tiene una ruta de respaldo;
-- se revisó la entrada correspondiente de `traceability.yaml`;
-- no se inventaron caso, dataset, técnica, producto, competencia ni logro de
-  aprendizaje;
-- se conservaron sin modificación las mejoras aceptadas pendientes;
-- sólo se modificaron `Pxxx_activity.md` y `Pxxx_log.md` del curso objetivo,
-  salvo crear `design/courses/<curso>/` si faltaba; y
-- los logs permiten a otro LLM repetir la inspección y aportar una lectura
-  independiente.
+- cada Pxxx fue inspeccionado en orden y desde su contenido, no su nombre;
+- cada highlight tiene evidencia y explica una contribución secuencial;
+- preguntas, inventario, highlights y trazabilidad no se contradicen;
+- se revisó la entrada de `traceability.yaml` o se registró su ausencia;
+- no se inventaron caso, procedencia, técnica, competencia, producto ni logro;
+- se preservaron mejoras aceptadas pendientes; y
+- sólo cambiaron los pares Pxxx de `design/courses/<curso>/` y, si faltaba, el
+  directorio del curso.
 
 ## Condición de finalización
 
-S01 termina cuando cada actividad `Pxxx_` de `implementation/<curso>/` tiene
-su par `Pxxx_activity.md` y `Pxxx_log.md`, ambos consistentes con la
-implementación existente y preparados para que futuras tareas acumulen mejoras
-aceptadas antes de una fase posterior de implementación integrada.
+S01 termina cuando todos los Pxxx del curso tienen su par de archivos coherente
+con la implementación, con highlights que permitan comparar su contribución
+antes de evaluar futuras mejoras externas.

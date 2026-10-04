@@ -12,6 +12,40 @@
 Usa 228 meses para especificar modelos y 24 meses posteriores para evaluarlos.
 La actividad genera pronósticos, métricas y visualizaciones comparables.
 
+### Hitos de aprendizaje actuales
+
+- **Centralizar funciones reutilizables:** separa carga, gráficos, ACF/PACF,
+  componentes, rezagos, evaluación y almacenamiento en `functions.ipynb`, e
+  importa ese notebook desde los demás.
+- **Diagnosticar la dependencia temporal:** calcula y grafica ACF y PACF de la
+  serie original, de la primera diferencia y de la diferencia estacional; hace
+  visible qué cambia al remover tendencia y ciclo.
+- **Construir la línea base de pronóstico:** implementa en Python regresiones
+  con tendencia temporal de distinto orden y dummies mensuales estacionales.
+- **Representar ciclo con Fourier:** sustituye las dummies por componentes seno
+  y coseno para construir una alternativa de tendencia más ciclo.
+- **Mostrar el problema de una MLP sin escalamiento:** crea rezagos y entrena
+  una `MLPRegressor` sobre la serie original sin escalar, para contrastar su
+  comportamiento con las variantes posteriores.
+- **Escalar el flujo completo de MLP:** usa `Pipeline`, transformadores y
+  `TransformedTargetRegressor` para escalar entradas y objetivo antes de
+  pronosticar desde los rezagos de la serie.
+- **Pronosticar la serie diferenciada:** repite el enfoque MLP tras remover
+  tendencia y ciclo, y reconstruye el pronóstico en la escala original.
+- **Apilar pronósticos:** alimenta un segundo MLP con el pronóstico del primero
+  además de los rezagos para implementar un modelo *stacked*.
+- **Implementar un AR con herramientas generales:** usa rezagos de la serie
+  diferenciada y `LinearRegression` para construir y reconstruir un modelo
+  autoregresivo, sin esconder su mecánica detrás de una llamada especializada.
+- **Combinar pronósticos:** calcula tanto el promedio de pronósticos disponibles
+  como una combinación lineal aprendida mediante `LinearRegression`.
+- **Persistir y comparar evidencia:** cada familia agrega sus columnas a
+  `forecasts.csv` y sus métricas de entrenamiento/prueba a `metrics.csv`, de
+  modo que los resultados sobreviven a los notebooks y pueden compararse.
+- **Evaluar como pronóstico:** reserva los últimos 24 meses para medir el
+  desempeño fuera del período usado para especificar; el tiempo no se trata como
+  filas intercambiables en una partición aleatoria.
+
 ### Inventario técnico de implementación
 
 - **Introduce:** inspección de tendencia, estacionalidad, primera diferencia y
