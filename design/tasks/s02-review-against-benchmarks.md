@@ -20,7 +20,7 @@ candidatas**, no modifica actividades, implementación ni trazabilidad. Su
 pregunta es:
 
 > ¿La nueva evidencia justifica conservar, aclarar, reforzar, contrastar,
-> secuenciar de otro modo o proponer un cambio en alguna actividad existente?
+> secuenciar de otro modo, cambiar una actividad o agregar una nueva?
 
 La ausencia de un elemento en un benchmark no demuestra una brecha del curso;
 la aparición de una técnica tampoco justifica enseñarla. Las mejoras llegan a
@@ -29,8 +29,9 @@ una actividad sólo mediante una decisión posterior, explícita y registrada.
 ## Principio de cambio mínimo
 
 La implementación actual es una base construida que funciona. Por tanto, **el
-menor cambio que resuelva una necesidad evidenciada es el mejor cambio**. S02
-parte de conservar caso, secuencia, prácticas, entregables y pruebas actuales.
+menor cambio que resuelva una necesidad evidenciada sin producir regresiones es
+el mejor cambio**. S02 parte de conservar caso, secuencia, prácticas,
+entregables y pruebas actuales.
 
 Antes de proponer una modificación, compara explícitamente estas alternativas,
 en este orden:
@@ -41,12 +42,19 @@ en este orden:
 3. extender localmente: añadir una práctica o contraste pequeño que preserve
    el caso, producto y contratos existentes; y
 4. cambiar de forma material: sustituir caso, método, producto, orden o
-   actividad sólo si las alternativas anteriores no resuelven el beneficio.
+   actividad cuando el beneficio evidenciado lo exige; o
+5. agregar una actividad: cuando falta una contribución distinguible que no
+   debe sobrecargar, desdibujar o degradar las actividades existentes.
 
-La carga de la prueba crece en ese orden. Una propuesta no es aceptable si no
-explica por qué una alternativa de menor impacto es insuficiente. Novedad,
-prestigio de la fuente, cobertura de una técnica o preferencia de herramienta
-no son por sí mismos razones para ampliar o reemplazar el diseño.
+La carga de justificación crece en ese orden. Un cambio mayor o una actividad
+nueva son válidos cuando su necesidad, contribución y posición en la secuencia
+son claras. Pero deben declarar un **contrato de no regresión**: qué highlights,
+productos, prácticas, datos, evidencia, pruebas y dependencias actuales se
+preservan, y qué se reemplaza explícitamente con evidencia al menos equivalente.
+No basta con que lo nuevo parezca mejor; no puede perderse silenciosamente lo
+que ya aporta valor. Novedad, prestigio de la fuente, cobertura de una técnica
+o preferencia de herramienta no son por sí mismos razones para ampliar o
+reemplazar el diseño.
 
 ## Entradas permitidas
 
@@ -99,19 +107,26 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
      explicación, artefacto o prueba debe hacerse visible;
    - **candidato a cambio:** hay una mejora delimitada y una actividad con
      ancla/superficie para recibirla;
+   - **candidato estructural:** un cambio mayor o una actividad nueva tiene una
+     contribución propia y un contrato de no regresión verificable; o
    - **no sustentado / fuera de alcance:** no se propone cambio; explica el
      límite, tensión o riesgo de sustitución disciplinar.
 5. Para cada candidato, formula un contrato de cambio: pregunta o producto
-   analítico que mejoraría; Pxxx/HNN/SNN afectados; cambio mínimo; caso/dataset
-   apropiado; práctica concreta; evidencia persistente esperada; prueba y
-   trazabilidad que habría que revisar; dependencias, riesgos y condición de
-   aceptación.
-6. Justifica por qué el cambio propuesto es el menor suficiente: enumera las
-   alternativas de menor impacto consideradas y la evidencia de que no bastan.
-7. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
+   analítico que mejoraría; Pxxx/HNN/SNN afectados o posición propuesta para una
+   actividad nueva; caso/dataset apropiado; práctica concreta; evidencia
+   persistente esperada; prueba y trazabilidad que habría que revisar;
+   dependencias, riesgos y condición de aceptación.
+6. Justifica la proporcionalidad: enumera las alternativas de menor impacto
+   consideradas y explica por qué bastan o no bastan. Para un cambio mayor o una
+   actividad nueva, demuestra además su contribución no duplicada y el contrato
+   de no regresión.
+7. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
+   dependencias que se conservan, y cada elemento que se sustituye junto con la
+   evidencia que verificará una contribución al menos equivalente.
+8. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
    línea base interpretable, un caso con valor pedagógico o un producto de
    Analytics sin una razón observable.
-8. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+9. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
 
 ## Salida
 
@@ -147,10 +162,14 @@ vigentes y registra qué PDFs o conclusiones cambiaron.
 ### C01 — Título preciso
 
 - **Evidencia externa:** ruta y página/sección.
-- **Actividad y contrato actual:** Pxxx, ancla, HNN y SNN.
-- **Cambio mínimo propuesto:** qué variaría y qué debe conservarse.
+- **Actividad, posición y contrato actual:** Pxxx, ancla, HNN y SNN; o posición
+  propuesta y actividades contiguas si se propone una nueva actividad.
+- **Tipo y alcance:** aclaración, extensión, cambio material o actividad nueva.
+- **Cambio propuesto:** qué variaría, agregaría o reemplazaría.
 - **Alternativas de menor impacto descartadas:** no cambiar, aclarar o extender;
   por qué no bastan, con evidencia.
+- **Contrato de no regresión:** HNN, SNN, artefactos, pruebas y dependencias que
+  se conservan; equivalencia verificable de todo elemento reemplazado.
 - **Producto de Analytics y decisión/usuario:** beneficio verificable o
   «requiere definición».
 - **Caso, datos y práctica de implementación:** condición concreta; no un tema
@@ -177,11 +196,14 @@ Si no hay un candidato sustentado, conserva las secciones y declara «ninguno».
 Confirma que:
 
 - se leyeron los PDFs locales declarados y se citan por ruta y página/sección;
-- cada candidato está anclado a una actividad mapeada, `HNN` y `SNN`, o se
-  declara explícitamente que el mapeo falta;
+- cada candidato está anclado a una actividad mapeada, `HNN` y `SNN`, o, para
+  una actividad nueva, declara su posición, contribución no duplicada y las
+  actividades contiguas afectadas;
 - cada propuesta especifica cambio, evidencia futura y condición de aceptación;
 - cada candidato demuestra que no existe una alternativa de menor impacto que
   produzca el mismo beneficio verificable;
+- cada cambio mayor o actividad nueva tiene un contrato de no regresión que
+  preserva o sustituye explícitamente las contribuciones actuales;
 - los dictámenes de cobertura no se confunden con aceptación de cambios;
 - se preservó la identidad de Analytics y se registraron tensiones; y
 - sólo se creó o actualizó el informe S02 del executor actual.
