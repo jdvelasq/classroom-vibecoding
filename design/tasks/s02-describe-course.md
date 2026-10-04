@@ -1,9 +1,9 @@
-# S01 — Describir y auditar las actividades implementadas de un curso
+# S02 — Describir y auditar las actividades implementadas de un curso
 
 ## Ejecución
 
 ```text
-execute design/tasks/s01-describe-course.md course=<curso> executor=<LLM>
+execute design/tasks/s02-describe-course.md course=<curso> executor=<LLM>
 ```
 
 `course` identifica `implementation/<curso>/` y `design/courses/<curso>/`.
@@ -20,7 +20,7 @@ mantiene estos dos archivos:
 - `design/courses/<curso>/Pxxx_log.md`: registro acumulativo de la inspección y
   sus decisiones de descripción.
 
-La actividad implementada es la línea base. S01 **describe y audita**; no
+La actividad implementada es la línea base. S02 **describe y audita**; no
 rediseña, no acepta mejoras curriculares, no hace investigación web y no
 modifica `implementation/`. Si existen «Mejoras aceptadas pendientes de
 implementación» en una actividad, las preserva literalmente.
@@ -248,7 +248,7 @@ competencia inventada ni una propuesta. Registra sólo cuando sea observable:
 
 No enumera técnicas ausentes ni califica la cobertura como suficiente o
 insuficiente. Una tarea posterior podrá sostener «conservar», «aclarar»,
-«contrastar» o «proponer cambio» contra estas anclas; S01 no toma esas
+«contrastar» o «proponer cambio» contra estas anclas; S02 no toma esas
 decisiones.
 
 ### Superficies, contrato y dependencias
@@ -273,7 +273,7 @@ redescubrir la implementación:
 
 ## Contrato de `Pxxx_log.md`
 
-Cada ejecución agrega `S01.Pxxx.NN` e incluye: fecha, curso, executor, estado
+Cada ejecución agrega `S02.Pxxx.NN` e incluye: fecha, curso, executor, estado
 (inicial o incremental), rutas inspeccionadas, entrada de trazabilidad revisada,
 highlights confirmados/añadidos/corregidos/no inferibles, cambios realizados,
 mejoras pendientes preservadas, ambigüedades, cambios de IDs, superficies,
@@ -304,6 +304,6 @@ Confirma que:
 
 ## Condición de finalización
 
-S01 termina cuando todos los Pxxx del curso tienen su par de archivos coherente
+S02 termina cuando todos los Pxxx del curso tienen su par de archivos coherente
 con la implementación, con highlights que permitan comparar su contribución
 antes de evaluar futuras mejoras externas.

@@ -1,9 +1,9 @@
-# S02 — Evaluar un curso frente a evidencia de benchmarks
+# S03 — Evaluar un curso frente a evidencia de benchmarks
 
 ## Ejecución
 
 ```text
-execute design/tasks/s02-review-against-benchmarks.md \
+execute design/tasks/s03-review-against-benchmarks.md \
   course=<curso> benchmark=<ruta-pdf|ruta-directorio|all> executor=<LLM>
 ```
 
@@ -16,7 +16,7 @@ resultado de otro modelo como evidencia ni a sobrescribirlo.
 
 ## Propósito y límite
 
-Esta tarea contrasta el diseño actualmente descrito por S01 con uno o varios
+Esta tarea contrasta el diseño actualmente descrito por S02 con uno o varios
 documentos locales de `design/benchmarks-pdf/`. Produce un **informe de propuestas
 candidatas**, no modifica actividades, implementación ni trazabilidad. Su
 pregunta es:
@@ -32,7 +32,7 @@ una actividad sólo mediante una decisión posterior, explícita y registrada.
 
 La implementación actual es una base construida que funciona. Por tanto, **el
 menor cambio que resuelva una necesidad evidenciada sin producir regresiones es
-el mejor cambio**. S02 parte de conservar caso, secuencia, prácticas,
+el mejor cambio**. S03 parte de conservar caso, secuencia, prácticas,
 entregables y pruebas actuales.
 
 Antes de proponer una modificación, compara explícitamente estas alternativas,
@@ -71,10 +71,10 @@ capacidades, léela además de las secciones pertinentes. Es un inventario para
 auditar cobertura; no un syllabus que deba copiarse.
 
 No lees ni modificas `implementation/<curso>/`, otros cursos, informes de
-otros executors, síntesis S03/S04/S05, plataformas de aprendizaje ni web. S01
+otros executors, síntesis de `design/synthesis/`, plataformas de aprendizaje ni web. S02
 es la lectura auditable de la implementación para este propósito.
 
-Si falta un mapa S01 pertinente, registra el límite: no inventes highlights,
+Si falta un mapa S02 pertinente, registra el límite: no inventes highlights,
 superficies ni contenido implementado para poder emitir una propuesta.
 
 ## Función de las familias de evidencia
@@ -154,7 +154,7 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
    transferible y verificable; una llamada nueva de biblioteca no es, por sí
    sola, una capacidad curricular.
 7. Busca primero anclas existentes en el **índice de comparación externa** de
-   S01. Vincula después `HNN` y `SNN` de la actividad. No uses un título de
+   S02. Vincula después `HNN` y `SNN` de la actividad. No uses un título de
    taller como sustituto de evidencia.
 8. Para cada señal, elige un dictamen:
    - **ya cubierto:** se conserva; explica por qué no exige cambio;
@@ -207,7 +207,7 @@ faltan; el informe no puede presentarse como una revisión completa mientras
 exista alguno sin leer.
 
 ```markdown
-# S02 — Revisión de <curso> contra <fuente> (<executor>)
+# S03 — Revisión de <curso> contra <fuente> (<executor>)
 
 ## Inventario y función de la evidencia
 
@@ -221,7 +221,7 @@ exista alguno sin leer.
 
 ## Contraste con el diseño actual
 
-| Señal | Pxxx | Ancla S01 | Hitos | Superficies | Dictamen | Razón |
+| Señal | Pxxx | Ancla S02 | Hitos | Superficies | Dictamen | Razón |
 | --- | --- | --- | --- | --- | --- |
 
 ## Cobertura de casos y contribuciones predictivas
@@ -301,4 +301,4 @@ Confirma que:
   explícitamente «qué falta», sin confundir cobertura existente, candidatos no
   aceptados y cambios implementados;
 - se preservó la identidad de Analytics y se registraron tensiones; y
-- sólo se creó o actualizó el informe S02 del executor actual.
+- sólo se creó o actualizó el informe S03 del executor actual.
