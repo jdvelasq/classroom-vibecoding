@@ -64,6 +64,10 @@ Lee y cumple `AGENTS.md`. Lee sustantivamente:
 - `design/courses/<curso>/Pxxx_activity.md` y `Pxxx_log.md`; y
 - `design/courses/<curso>/course_log.md` sólo si existe, para contexto.
 
+Cuando un PDF tenga tabla de contenido, índice, taxonomía o lista sustantiva de
+capacidades, léela además de las secciones pertinentes. Es un inventario para
+auditar cobertura; no un syllabus que deba copiarse.
+
 No lees ni modificas `implementation/<curso>/`, otros cursos, informes de
 otros executors, síntesis S03/S04/S05, plataformas de aprendizaje ni web. S01
 es la lectura auditable de la implementación para este propósito.
@@ -110,10 +114,47 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
    no puede proponerse porque el documento no aporta datos locales, procedencia
    o una necesidad curricular. Una aplicación sectorial no basta: no atribuyas
    esa industria al dataset actual ni inventes un caso.
-4. Busca primero anclas existentes en el **índice de comparación externa** de
+4. Para cada capacidad conceptual o técnica sustantiva que el referente
+   enumere —por ejemplo, detección de outliers, itemsets, clustering,
+   preparación, selección de variables, validación, persistencia o
+   interpretación— pregunta explícitamente: «¿dónde la practica y evidencia el
+   estudiante en este curso?». Un contenido de un referente reconocido tiene
+   **presunción de revisión obligatoria**, no presunción automática de
+   incorporación. Registra su ancla `Pxxx`/`HNN`/`SNN` o el motivo de ausencia.
+   Distingue entre conocer el nombre de una técnica, usar una función de una
+   librería y demostrar una capacidad mediante datos, código, producto
+   persistente y prueba.
+5. Para cada capacidad auditada, clasifica el resultado como:
+   - **cubierta:** la actividad ya contiene práctica y evidencia suficientes;
+   - **cubierta parcialmente:** existe una mención o uso aislado, pero falta
+     pregunta, representación, comparación, visualización, artefacto, prueba o
+     límite de interpretación;
+   - **candidata a extensión:** puede incorporarse preservando pregunta,
+     unidad, caso, producto y contrato de la actividad actual;
+   - **candidata estructural:** exige unidad, representación, horizonte,
+     métrica, contexto de error, producto o evidencia distinguible, por lo que
+     requiere cambio material o actividad nueva; o
+   - **fuera de alcance / no sustentada:** su incorporación desplazaría la
+     identidad de Analytics, duplicaría una contribución existente o carece de
+     caso/dato/procedencia que permita enseñarla con rigor.
+
+   Una técnica adicional dentro de una actividad existente sólo es proporcional
+   si fortalece un `HNN` o una `SNN` actuales y puede compararse con lo ya
+   aprendido sobre el mismo problema. Propón una actividad nueva cuando la
+   capacidad requiera una pregunta, unidad de análisis, representación,
+   validación, tipo de error o producto terminal propio que diluiría la
+   contribución de la actividad existente.
+6. Audita también la práctica de implementación revelada por cada caso o
+   capacidad: transformación de datos, contrato de entrada, patrón de Python o
+   SQL, visualización, prueba, persistencia, reuso, interoperabilidad o límite
+   operacional. Una característica de herramienta sólo justifica cambio si
+   resuelve una dificultad real del dato o producto y deja una práctica
+   transferible y verificable; una llamada nueva de biblioteca no es, por sí
+   sola, una capacidad curricular.
+7. Busca primero anclas existentes en el **índice de comparación externa** de
    S01. Vincula después `HNN` y `SNN` de la actividad. No uses un título de
    taller como sustituto de evidencia.
-5. Para cada señal, elige un dictamen:
+8. Para cada señal, elige un dictamen:
    - **ya cubierto:** se conserva; explica por qué no exige cambio;
    - **aclaración verificable:** el contenido existe, pero su evidencia,
      explicación, artefacto o prueba debe hacerse visible;
@@ -123,22 +164,22 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
      contribución propia y un contrato de no regresión verificable; o
    - **no sustentado / fuera de alcance:** no se propone cambio; explica el
      límite, tensión o riesgo de sustitución disciplinar.
-6. Para cada candidato, formula un contrato de cambio: pregunta o producto
+9. Para cada candidato, formula un contrato de cambio: pregunta o producto
    analítico que mejoraría; Pxxx/HNN/SNN afectados o posición propuesta para una
    actividad nueva; caso/dataset apropiado; práctica concreta; evidencia
    persistente esperada; prueba y trazabilidad que habría que revisar;
    dependencias, riesgos y condición de aceptación.
-7. Justifica la proporcionalidad: enumera las alternativas de menor impacto
+10. Justifica la proporcionalidad: enumera las alternativas de menor impacto
    consideradas y explica por qué bastan o no bastan. Para un cambio mayor o una
    actividad nueva, demuestra además su contribución no duplicada y el contrato
    de no regresión.
-8. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
+11. Explicita el contrato de no regresión: lista los HNN, SNN, artefactos y
    dependencias que se conservan, y cada elemento que se sustituye junto con la
    evidencia que verificará una contribución al menos equivalente.
-9. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
+12. Explicita tensiones. Una técnica más reciente o frecuente no desplaza una
    línea base interpretable, un caso con valor pedagógico o un producto de
    Analytics sin una razón observable.
-10. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
+13. No aceptes, implementes ni copies propuestas en `Pxxx_activity.md`.
 
 ## Salida
 
@@ -172,6 +213,11 @@ vigentes y registra qué PDFs o conclusiones cambiaron.
 ## Cobertura de casos y contribuciones predictivas
 
 | Caso/aplicación del benchmark | Pregunta, unidad, horizonte y resultado | Pxxx/HNN/SNN comparados | ¿Qué aporta que no exista? | Dictamen y evidencia adicional necesaria |
+| --- | --- | --- | --- | --- |
+
+## Cobertura conceptual y técnica del referente
+
+| Capacidad del índice o sección | Rol para Analytics y práctica técnica asociada | Pxxx/HNN/SNN comparados | Cobertura actual verificable | Dictamen y siguiente evidencia necesaria |
 | --- | --- | --- | --- | --- |
 
 ## Propuestas candidatas — no aceptadas
@@ -225,5 +271,12 @@ Confirma que:
 - cada aplicación o caso del benchmark se contrastó explícitamente con la
   cobertura actual y, cuando se propone una actividad nueva, se demostró su
   producto, contribución no duplicada, posición y evidencia local pendiente;
+- cuando el referente contiene un índice o tabla de contenido sustantiva, cada
+  capacidad relevante recibió un dictamen explícito de cobertura conceptual y
+  técnica; la mera presencia de una técnica en el índice no se confundió con su
+  adopción automática;
+- cada candidata a herramienta o técnica demuestra qué dificultad de datos o
+  producto resuelve, cuál práctica transferible deja y por qué es una extensión
+  o una actividad nueva en vez de una llamada adicional de biblioteca;
 - se preservó la identidad de Analytics y se registraron tensiones; y
 - sólo se creó o actualizó el informe S02 del executor actual.
