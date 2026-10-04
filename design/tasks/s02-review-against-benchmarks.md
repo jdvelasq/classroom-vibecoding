@@ -4,13 +4,15 @@
 
 ```text
 execute design/tasks/s02-review-against-benchmarks.md \
-  course=<curso> benchmark=<ruta-o-all> executor=<LLM>
+  course=<curso> benchmark=<ruta-pdf|ruta-directorio|all> executor=<LLM>
 ```
 
 `course` identifica `design/courses/<curso>/`. `benchmark` es una ruta local
-relativa a `design/benchmarks/` o `all`. `executor` identifica una lectura
-independiente; no autoriza a usar el resultado de otro modelo como evidencia ni
-a sobrescribirlo.
+relativa a `design/benchmarks/`, un directorio de una familia de evidencia o
+`all`. Al recibir un directorio, lee todos los PDFs que contiene y conserva su
+función individual en el inventario; no los convierte en una fuente homogénea.
+`executor` identifica una lectura independiente; no autoriza a usar el
+resultado de otro modelo como evidencia ni a sobrescribirlo.
 
 ## Propósito y límite
 
@@ -191,14 +193,18 @@ otras disciplinas son contribuyentes. Aplica las preguntas de auditoría de
 
 ## Salida
 
-Para una ruta única, deriva `<fuente>` del nombre del archivo sin extensión. Para
-`all`, usa `all`. Crea exactamente:
+Para una ruta única, deriva `<fuente>` del nombre del archivo sin extensión.
+Para un directorio, usa el nombre de su directorio —por ejemplo,
+`institutional`—; para `all`, usa `all`. Crea exactamente:
 
 `design/courses/<curso>/benchmark_reviews/<fuente>-<executor>.md`
 
 No sobrescribas el informe de otro executor. Una ejecución incremental del
 mismo executor lee sólo su informe anterior correspondiente, conserva hallazgos
-vigentes y registra qué PDFs o conclusiones cambiaron.
+vigentes y registra qué PDFs o conclusiones cambiaron. Para un directorio o
+`all`, el registro incremental debe enumerar los PDFs leídos y declarar cuáles
+faltan; el informe no puede presentarse como una revisión completa mientras
+exista alguno sin leer.
 
 ```markdown
 # S02 — Revisión de <curso> contra <fuente> (<executor>)
