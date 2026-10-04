@@ -3,7 +3,7 @@
 ## Ejecución
 
 ```text
-execute design/tasks/s02-review-course-against-benchmarks.md \
+execute design/tasks/s02-review-against-benchmarks.md \
   course=<curso> benchmark=<ruta-o-all> executor=<LLM>
 ```
 
