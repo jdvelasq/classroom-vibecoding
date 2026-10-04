@@ -8,7 +8,7 @@ execute design/tasks/s02-review-against-benchmarks.md \
 ```
 
 `course` identifica `design/courses/<curso>/`. `benchmark` es una ruta local
-relativa a `design/benchmarks/`, un directorio de una familia de evidencia o
+relativa a `design/benchmarks-pdf/`, un directorio de una familia de evidencia o
 `all`. Al recibir un directorio, lee todos los PDFs que contiene y conserva su
 función individual en el inventario; no los convierte en una fuente homogénea.
 `executor` identifica una lectura independiente; no autoriza a usar el
@@ -17,7 +17,7 @@ resultado de otro modelo como evidencia ni a sobrescribirlo.
 ## Propósito y límite
 
 Esta tarea contrasta el diseño actualmente descrito por S01 con uno o varios
-documentos locales de `design/benchmarks/`. Produce un **informe de propuestas
+documentos locales de `design/benchmarks-pdf/`. Produce un **informe de propuestas
 candidatas**, no modifica actividades, implementación ni trazabilidad. Su
 pregunta es:
 
@@ -62,7 +62,7 @@ reemplazar el diseño.
 
 Lee y cumple `AGENTS.md`. Lee sustantivamente:
 
-- el o los PDFs seleccionados bajo `design/benchmarks/`;
+- el o los PDFs seleccionados bajo `design/benchmarks-pdf/`;
 - `design/courses/<curso>/Pxxx_activity.md` y `Pxxx_log.md`; y
 - `design/courses/<curso>/course_log.md` sólo si existe, para contexto.
 
