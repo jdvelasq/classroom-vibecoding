@@ -367,3 +367,15 @@
   - «Pruebas y Evaluación de Sistemas Agentivos: Pruebas unitarias, Pruebas de integración, Pruebas del sistema» (p. 13) — ya cubierta: pruebas de regla, de transformación y del flujo publicado; el objeto (agentes LLM) es fuera de alcance.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - IA generativa, prompts, RAG, agentes, MCP, multiagente, LangChain/LangGraph/n8n (p. 3, 9–16, 18) — fuera de alcance: capacitación en una tecnología/plataforma, no operación de una capacidad analítica.
+
+## S03.P400.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de bodegas de datos tradicionales: modelado ER y dimensional de Kimball (incluye SCD tipos 1–3, hechos sin hechos, snapshots), y BI con SAP Business Objects (universos, loops, traps, seguridad por fila) y Tableau; declara explícitamente «ETL is not covered in this course» (p. 1). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Slowly Changing Dimensions - Type 1, Type 2, and Type 3 … Classroom Hands-on – Design a Type 2 SCD» (p. 2), modelado dimensional, bus architecture, dimensiones conformadas y de tiempo, manejo de nulos (p. 2) — fuera de alcance: modelado de datos (Fundamentos de data / Descriptiva); no se plantea como preocupación operativa.
+  - SAP Business Objects (universos, loops, chasm/fan traps, IDT, Web Intelligence) y Tableau (pp. 3–4) — fuera de alcance: capacitación en plataformas de BI, excluida por las fronteras del curso.
+  - «Publishing and sharing reports», «Sharing your dashboards» (p. 4) — marginal: publicación como función de herramienta; el control de acceso y la entrega de un producto ya están en P452 y P425–P426.

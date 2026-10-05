@@ -249,3 +249,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Evaluación con intervención humana» (p. 13) y «Registro de la toma de decisiones para una mayor transparencia» (p. 13) — ya cubierta: revisión humana explícita en P450 (H01, H02); el registro auditable de la revisión ya tiene propuesta en P450 desde otro documento; un folleto institucional sobre agentes no añade argumento distinto.
+
+## S03.P450.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de bodegas de datos tradicionales: modelado ER y dimensional de Kimball (incluye SCD tipos 1–3, hechos sin hechos, snapshots), y BI con SAP Business Objects (universos, loops, traps, seguridad por fila) y Tableau; declara explícitamente «ETL is not covered in this course» (p. 1). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

@@ -250,3 +250,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Pruebas y Evaluación de Sistemas Agentivos: Pruebas unitarias, Pruebas de integración, Pruebas del sistema» (p. 13) — ya cubierta: pruebas de regla, de transformación y del flujo publicado; el objeto (agentes LLM) es fuera de alcance.
+
+## S03.P401.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de bodegas de datos tradicionales: modelado ER y dimensional de Kimball (incluye SCD tipos 1–3, hechos sin hechos, snapshots), y BI con SAP Business Objects (universos, loops, traps, seguridad por fila) y Tableau; declara explícitamente «ETL is not covered in this course» (p. 1). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

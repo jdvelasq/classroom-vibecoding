@@ -249,3 +249,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Control de acceso e identidad» (p. 13) — ya cubierta (política por rol con rechazo explícito, H01–H02).
+
+## S03.P452.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Universe level restrictions • Row level security» (p. 4) — marginal: P452 H01–H02 ya controla qué rol recibe el reporte de riesgo; la seguridad por fila es una variante de granularidad del mismo control, enseñada aquí como función de una herramienta.
