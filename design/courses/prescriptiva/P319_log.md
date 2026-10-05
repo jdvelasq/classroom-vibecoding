@@ -130,3 +130,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sistemas de recomendación, *ranking* y personalización (p. 10) — fuera de alcance: predicción de preferencia; la decisión de surtido con elección interdependiente ya está en P319 H01–H03.
+
+## S03.P319.16
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso en línea de ocho semanas sobre el proceso de diseño de productos de IA (fundamentos de ML y deep learning, interacción humano–computador, «superminds», modelo de Lawler) con capstone de propuesta de producto. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
