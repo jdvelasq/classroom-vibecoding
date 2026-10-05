@@ -228,3 +228,13 @@
   - módulos 4–5, optimización y ML (p. 2: «Gradient Descent», «Regularization», «Assessing Model Fit») — fuera de alcance: construcción y ajuste de modelos corresponden a Predictiva/Prescriptiva; Productos no vuelve a predecir ni optimizar.
   - módulo 6, Monte Carlo, pronóstico probabilístico, análisis de sensibilidad, eventos raros (p. 2: «Probabilistic Forecasting», «Simulating Rare Events») — fuera de alcance: pertenecen a Predictiva/Prescriptiva; ningún Pxxx los requiere para operar una capacidad.
   - casos industriales con evaluación (p. 2: «✭ Aurora Flight Sciences», «✭ Schlumberger», «✭ BASF») — marginal: el temario no describe su contenido; la familia institucional sólo ilustra un formato (casos al cierre), que no cambia ningún taller de Productos.
+
+## S03.P400.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial de un certificado de 6 meses (MIT xPRO/Emeritus) de ingeniería de datos: Python, SQL, contenedores de bases de datos, CDC, APIs y seguridad web con JWT, ETL con NiFi, Hadoop/Spark/Airflow, ML y aprendizaje por refuerzo, streaming con Kafka/MQTT y portafolio en GitHub; el resto es servicios de carrera y financiación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Hadoop, Spark, DASK, Kafka, MQTT/ThingsBoard, streaming en vivo (p. 8, p. 11, p. 12) — fuera de alcance (Big Data); regresión lineal, Naïve Bayes, k-means, aprendizaje por refuerzo, redes profundas (p. 8, p. 11, p. 12) — fuera de alcance (Predictiva/IA); diseño de bases de datos y SQL (p. 8–10) — fuera de alcance (Fundamentos de data); aplicaciones web en Java, Mapbox, Maven, Node.js (p. 8, p. 10–11) — fuera de alcance (ingeniería de software general). El certificado ilustra justamente la lectura que el curso debe evitar: un programa organizado por herramientas de data engineering.

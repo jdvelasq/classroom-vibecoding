@@ -153,3 +153,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cronograma de un curso profesional del MIT: EDO y métodos numéricos, modelado espacial (EDP), optimización y modelado basado en datos, de optimización a ML (regresión, regularización, logística), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos (Aurora, Schlumberger, BASF). No contiene contenidos de operación, despliegue, validación operativa, monitoreo ni gobierno. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P436.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Perform change data capture (CDC)» y «Connect a database to Debezium» (p. 8); «use Debezium to perform CDC on containers» (p. 10) — marginal / fuera de alcance: la carga incremental ya se ejerce con marca de agua (P436 H01) y registros tardíos (P437); CDC con Debezium sobre MongoDB/Cassandra/Redis es ingeniería de datos y entrenamiento en plataforma sin capacidad analítica que lo exija.

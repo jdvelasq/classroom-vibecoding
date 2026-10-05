@@ -153,3 +153,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cronograma de un curso profesional del MIT: EDO y métodos numéricos, modelado espacial (EDP), optimización y modelado basado en datos, de optimización a ML (regresión, regularización, logística), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos (Aurora, Schlumberger, BASF). No contiene contenidos de operación, despliegue, validación operativa, monitoreo ni gobierno. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P452.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Configure a network to ensure data security»; «Identify the key concepts of security, encryption, and authentication»; «Define web token architecture and create an application using web tokens» (p. 8); proyecto «Protect your web server using JSON web tokens» (p. 12); OAuth2, Okta, OpenSSL (p. 6) — fuera de alcance: autenticación con tokens y seguridad de red son ingeniería de software/seguridad; el control de acceso por rol al producto analítico ya está en P452 (H01–H02) y la separación de credenciales en P427.
