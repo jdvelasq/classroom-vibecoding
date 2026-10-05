@@ -346,3 +346,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - síntoma de fallo: «Testing de la implementación en un ambiente que no es igual al ambiente de producción» y «El grupo de desarrollo difícilmente puede reproducir los fallos» (p. 4). Categoría: **ya cubierta**. Lo resuelven el ambiente declarado (P412 H01), la sesión aislada (P414 H01) y el contenedor (P418 H01).
+
+## S03.P412.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - prácticas «Uso de un sistema de control de versiones», «Estrategia de ramificación y fusión», «Reuso y contenerización», «Parametrización del proceso» (p. 4, p. 6, p. 11) — ya cubierta: P408–P411 (Git, ramas, remoto, PR), P418 (contenedor), P406–P407 (parametrización).
+  - «Uso de ambientes múltiples» dev/test/producción con «Subconjunto de datos para desarrollo», «para pruebas» y «para pruebas de desempeño y producción» (p. 6, p. 8) — marginal / fuera de alcance: el contexto de ejecución parametrizado (P406 H01, P407 H01) y el ambiente declarado (P412 H01) cubren lo operable; aprovisionar ambientes con Puppet/Chef/Ansible/Jenkins (p. 6) es cloud/infraestructura, excluido.

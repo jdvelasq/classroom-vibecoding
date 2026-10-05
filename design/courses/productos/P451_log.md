@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - priorizar mejoras a partir de entrevistas a usuarios con importancia y satisfacción en escala 1–10: «Oportunidad = Importancia + max(0, Importancia - Satisfacción)» (p. 7). Categoría: **marginal**. Podría parecer una salida para el límite registrado en P451 (la señal de utilidad no alimenta ninguna mejora, C05 sin ejercer). Pero en el documento la fórmula prioriza los pasos del *pipeline* de un equipo, no las respuestas de una capacidad analítica. Llevarla a P451 cambiaría su producto: dejaría de ser un registro de retroalimentación ligado a la respuesta (H01–H02) y pasaría a ser una encuesta de priorización. Además, al ser literatura derivada aporta contexto organizacional, no una prescripción.
+
+## S03.P451.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Obtenga retroalimentación de los usuarios. Repita iterativamente» (p. 12) — ya cubierta: P451 liga la valoración a la respuesta evaluada (H01–H02); la recomendación es genérica de Agile.

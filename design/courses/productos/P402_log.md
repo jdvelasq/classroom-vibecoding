@@ -351,3 +351,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - beneficios de DataOps: «Robustez: por el uso de tests», «Transparencia: Alertas automáticas, dashboards» (p. 2). El proceso combina «Tests de datos», «Tests de código», «Tests de integración» y pre-release antes de liberar (p. 5). Categoría: **ya cubierta**. El curso tiene pruebas de código (P400–P401), de datos (P402), de modelo (P403), de integración (P417) y verificación previa a fusionar (P415–P416).
+
+## S03.P402.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programación tradicional con «Tests basados en ejemplos» frente a ML, donde la lógica se aprende de datos y se prueba por comportamiento (p. 2); «Tests automáticos de data, código y modelos» (p. 3) — ya cubierta: P400–P401 (regla y transformación), P402 (contrato de datos, H01–H04) y P403 (familias de pruebas de modelo, H03).
+  - fallas para «Descubrir errores en los datos antes de que se publiquen las analíticas» (p. 5); «Monitoreo del pipeline de valor mediante pruebas» (p. 4); «Pruebas de validación de la data y la lógica de negocio» (p. 7); «Implemente procesos automáticos de monitoreo de datos» (p. 12) — ya cubierta: compuerta de aceptación (P402 H03), conciliación (P440), cuarentena (P441) y observabilidad integrada (P442 H02).

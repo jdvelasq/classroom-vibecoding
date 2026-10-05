@@ -348,3 +348,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - flujo de rama de característica, fusión, pre-release y release (p. 5). Categoría: **ya cubierta**. P409 H01 cubre el aislamiento en rama con fusión explícita y P411 H01 la integración mediante revisión. Un ambiente de pre-release intermedio es una variante sin caso que la exija.
+
+## S03.P410.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - prácticas «Uso de un sistema de control de versiones», «Estrategia de ramificación y fusión», «Reuso y contenerización», «Parametrización del proceso» (p. 4, p. 6, p. 11) — ya cubierta: P408–P411 (Git, ramas, remoto, PR), P418 (contenedor), P406–P407 (parametrización).

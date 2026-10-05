@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación de enfoque organizacional para directivos: silos entre equipos de datos, coordinación relacional, flujo de ramas y pruebas hasta la liberación, cuellos de botella con Kanban, priorización por oportunidad, trampas de valor diferido y etapas de madurez. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P452.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - plataforma DataOps con «Secretos», «Autorizaciones y Permisos» (Vault, Okta, Auth0) (p. 6) — ya cubierta: P427 (credencial fuera del código y de la evidencia) y P452 (política por rol); las herramientas nombradas no añaden práctica.

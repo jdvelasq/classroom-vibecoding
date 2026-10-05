@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Eficiencia: orquestación automática» y «Orquestación manual» como cuello de botella (pp. 2, 6). Categoría: **ya cubierta** por P428 H01 y P429 H01–H02.
+
+## S03.P428.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Doble orquestación» de los pipelines de valor (datos en producción) e innovación (cambios de código) (p. 4, p. 6) — marginal: ambas ya existen en el curso (CI antes de fusionar en P415–P416; ejecución periódica y orquestada en P428–P429). Nombrar explícitamente el contraste sería, a lo sumo, aclaración; la fuente es contexto organizacional sin prescripción operativa.

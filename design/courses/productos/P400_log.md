@@ -508,3 +508,13 @@
   - beneficios de DataOps: «Robustez: por el uso de tests», «Transparencia: Alertas automáticas, dashboards» (p. 2). El proceso combina «Tests de datos», «Tests de código», «Tests de integración» y pre-release antes de liberar (p. 5). Categoría: **ya cubierta**. El curso tiene pruebas de código (P400–P401), de datos (P402), de modelo (P403), de integración (P417) y verificación previa a fusionar (P415–P416).
 - **Señales de alcance de curso** (registradas sólo en este log):
   - silos y coordinación relacional entre equipos (pp. 2–3), Kanban, trabajo en progreso, tiempo de ciclo y teoría de restricciones (p. 6), trampas del CDO (valor diferido, defensa de los datos; p. 9) y etapas de madurez «Data Desert → Boutique → Waterfall → DataOps Analytics» (p. 11). Categoría: **fuera de alcance**. Son gestión organizacional de equipos y portafolio, no prácticas que hagan operable una capacidad analítica concreta. Servirían a lo sumo como encuadre del curso, no como contenido de un taller.
+
+## S03.P400.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programación tradicional con «Tests basados en ejemplos» frente a ML, donde la lógica se aprende de datos y se prueba por comportamiento (p. 2); «Tests automáticos de data, código y modelos» (p. 3) — ya cubierta: P400–P401 (regla y transformación), P402 (contrato de datos, H01–H04) y P403 (familias de pruebas de modelo, H03).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «El modelo es una pequeña fracción de lo requerido para el despliegue y monitoreo» (p. 3) — ya cubierta como encuadre del curso entero (s05: el producto terminal es la capacidad operable, no el modelo). Design thinking, Agile y Agile data warehousing (p. 7–8, p. 12), data lake/data marts y esquemas optimizados para lectura (p. 5, p. 9–10) — fuera de alcance (gestión de proyectos y arquitectura empresarial de datos).

@@ -346,3 +346,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación de enfoque organizacional para directivos: silos entre equipos de datos, coordinación relacional, flujo de ramas y pruebas hasta la liberación, cuellos de botella con Kanban, priorización por oportunidad, trampas de valor diferido y etapas de madurez. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P407.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Uso de ambientes múltiples» dev/test/producción con «Subconjunto de datos para desarrollo», «para pruebas» y «para pruebas de desempeño y producción» (p. 6, p. 8) — marginal / fuera de alcance: el contexto de ejecución parametrizado (P406 H01, P407 H01) y el ambiente declarado (P412 H01) cubren lo operable; aprovisionar ambientes con Puppet/Chef/Ansible/Jenkins (p. 6) es cloud/infraestructura, excluido.

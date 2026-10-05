@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Monitoreo de la lógica de negocio y validez de los datos» como fuente de confianza (p. 10). Categoría: **marginal**. La validez de los datos ya se observa (P439, P442 H01–H02) y la lógica de negocio se controla con conciliación (P440) y monitoreo de desempeño (P423). El documento sólo nombra la práctica, sin mecanismo, métrica ni caso que añadan una capacidad.
+
+## S03.P422.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas en español que contrastan software tradicional y ML, ubican la construcción del modelo dentro de un ciclo con pruebas, despliegue y monitoreo, enumeran prácticas DataOps para reducir deuda técnica (pruebas de código y datos, control de versiones, ramas, múltiples ambientes, contenedores, parametrización, «doble orquestación») y cierran con arquitectura de datos, Agile y recomendaciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
