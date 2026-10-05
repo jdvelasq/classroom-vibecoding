@@ -276,3 +276,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
+
+## S03.P220.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre el origen y la evolución de Business Analytics (1970–2026: bases de datos, BI, minería de datos, KDD, CRISP-DM, ciencia de datos, Big Data, DataOps, MLOps, modelos fundacionales, IA agéntica); su valor es de contexto histórico y conceptual. Para esta actividad no añade una señal distinta.

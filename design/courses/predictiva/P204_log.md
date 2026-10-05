@@ -307,3 +307,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
+
+## S03.P204.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - árboles de clasificación (CART, p. 9): se registra en N01.
