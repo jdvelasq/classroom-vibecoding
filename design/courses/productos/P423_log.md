@@ -129,3 +129,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Binary Classification: False Positive/Negative, Precision/Recall, F1-Score» (p. 9) — fuera de alcance: elegir la métrica de un clasificador es parte del método predictivo; P423 monitorea con un mínimo declarado (H02) y la falta de desglose por clase ya está registrada en S02. Un folleto institucional de ML no basta para cambiar la métrica operativa.
+
+## S03.P423.16
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso de 8 semanas (MIT xPRO/Emeritus) sobre el proceso de diseño de productos de IA: etapas de diseño, fundamentos de ML y deep learning, HCI inteligente, «superminds», GANs, modelo de Lawler para definir un problema de IA y un capstone que es una propuesta de diseño (resumen ejecutivo), no una capacidad operada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

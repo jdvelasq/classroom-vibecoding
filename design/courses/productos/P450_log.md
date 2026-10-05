@@ -129,3 +129,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa en línea de 12 semanas de ciencia de datos y ML (Python y estadística, no supervisado, regresión, clasificación, deep learning, sistemas de recomendación, redes y modelos gráficos) con casos de estudio; no trata despliegue, operación ni monitoreo de capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P450.16
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Learn to define an appropriate level of machine involvement in interactions with humans and computers» (p. 7, semana 5); «Analyze how humans and machines can work together» (p. 7, semana 6) — marginal: P450 ya separa recomendación y acción autorizada y exige aprobación explícita (H01–H02). Declarar qué recomendaciones exigen revisión humana y cuáles pueden ejecutarse automáticamente sería un contraste interesante, pero el documento sólo lo nombra en una línea, sin método, criterio ni evidencia de cómo se opera; como evidencia institucional no basta para modificar el taller.

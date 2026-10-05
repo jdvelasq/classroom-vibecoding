@@ -194,3 +194,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Building a system: Algorithmic and system challenges» de un sistema de recomendación (p. 10) — fuera de alcance: sin contenido detallado, y el curso no opera recomendadores.
   - resto del temario (estadística, clustering, PCA, regresión causal, deep learning, redes, Kalman; pp. 6–11) — fuera de alcance: contenidos de Descriptiva/Predictiva u otras disciplinas contribuyentes.
+
+## S03.P400.16
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso de 8 semanas (MIT xPRO/Emeritus) sobre el proceso de diseño de productos de IA: etapas de diseño, fundamentos de ML y deep learning, HCI inteligente, «superminds», GANs, modelo de Lawler para definir un problema de IA y un capstone que es una propuesta de diseño (resumen ejecutivo), no una capacidad operada. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Implement the Lawler Model for defining an AI problem and identify key steps to build an organization case» (p. 6; p. 7, semana 8); «Identify an operational challenge and propose a technical solution» (p. 6); capstone «plan for an AI-based product or service» (p. 8) — fuera de alcance: formular el problema y el caso organizacional corresponde a Fundamentos; el producto terminal es una propuesta, no una capacidad versionada, comprobable y observable.
+  - ML, deep learning, algoritmos bayesianos y de regresión (p. 6–7) — fuera de alcance (Predictiva/IA); diseño de interfaces HCI (p. 7) — fuera de alcance (UX), salvo la dimensión de autoridad humana ya tratada en P450; GANs y medios sintéticos, impacto social y económico (p. 4, p. 7) — fuera de alcance; «superminds» y diseño organizacional (p. 7) — fuera de alcance.
