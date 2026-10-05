@@ -210,3 +210,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificado en línea de diez meses con cinco cursos (ingeniería de datos, Python, estadística, IA/ML, storytelling y visualización), sin contenido prescriptivo explícito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P320.26
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Igualdad de género como eje transversal del currículo (p. 77: «considerar, como eje transversal, contenidos orientados hacia propósitos de igualdad de género»). Categoría: **marginal**. P320 ya audita brechas entre grupos como guarda que decide (H01–H02). El documento no aporta métrica, caso ni método. La familia institutional ilustra posibilidades y no impone un eje temático.
