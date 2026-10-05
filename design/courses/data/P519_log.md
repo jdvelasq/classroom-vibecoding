@@ -90,3 +90,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «managing data at scale … with a focus on use cases in data analysis and machine learning» (p. 1). Categoría: fuera de alcance. Sin temario, la ficha no muestra qué mecanismos de escala enseña; no aporta argumento para reforzar el bloque MapReduce/particionamiento, cuyo riesgo de identidad ya está registrado (P522–P523).
+
+## S03.P519.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado de inferencia y decisión en ciencia de datos (frecuentista/bayesiana, diseño experimental, causalidad, bandits, control, privacidad diferencial, ML), con prerrequisitos de probabilidad y Data C100. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

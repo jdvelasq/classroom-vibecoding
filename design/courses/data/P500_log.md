@@ -153,3 +153,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «principles and practices of managing data at scale» y «a focus on ensuring reliable, scalable operationalization» (p. 1). Categoría: fuera de alcance. Escala y operacionalización confiable son la frontera excluida (operaciones distribuidas, pipelines productivos, MLOps; pertenecen a productos de datos). El curso de Berkeley es explícitamente de Data Engineering y su posición —después de un curso de ciencia de datos y con prerrequisitos de programación— contrasta con un optativo de pregrado sin prerrequisitos subordinado a Analytics (`s05-diseno-data.md`); la ficha institutional ilustra otra operacionalización, no impone identidad.
   - «collaboration» como etapa del ciclo de vida (p. 1). Categoría: marginal. Mención sin práctica concreta; la documentación reproducible ya está en `data.C04` (manifiestos P501/P511, linaje P502, contrato P517).
+
+## S03.P500.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado de inferencia y decisión en ciencia de datos (frecuentista/bayesiana, diseño experimental, causalidad, bandits, control, privacidad diferencial, ML), con prerrequisitos de probabilidad y Data C100. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «differential privacy» como tópico (p. 1). Categoría: fuera de alcance. Es una técnica de inferencia/publicación con garantías formales que exige base probabilística ausente en un optativo sin prerrequisitos; la ficha no la operacionaliza. La preocupación de privacidad del curso (`ssn` en P519–P521, `user_id`/`user_session` en P526) es de procedencia y minimización, ya escalada por S02 en esos logs, no de privacidad diferencial.
+  - «modeling and decision-making life cycle in data science including its human, social, and ethical implications» (p. 1). Categoría: marginal. Enunciado genérico de catálogo, sin práctica ni evidencia concreta; la dimensión responsable ya está en `data.C04` y no cambia lo que el estudiante hace en ningún Pxxx.
+  - «basics of experimental design», «causal inference», «permutation testing», «false discovery rate», «Thompson sampling», «Q-learning» (p. 1). Categoría: fuera de alcance. Inferencia, causalidad y decisión secuencial pertenecen a los cursos descriptivo/predictivo/prescriptivo, no a la preparación de datos.
