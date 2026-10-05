@@ -274,3 +274,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación (diapositivas) de perspectiva histórica: recorre 1970–2026 (RDBMS, SQL, DW, ETL, BI 1.0/2.0, data mining, KDD, OLAP, data marts, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, producto de datos, DataOps, MLOps, modelos fundacionales, IA agéntica) y define los tipos de analítica; es contexto, no prescripción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P102.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diapositivas de un módulo DataOps que enumeran problemas organizacionales de la analítica (objetivos cambiantes, silos, mala calidad, desconfianza en los datos), mitos y brechas de conocimiento (alfabetización de datos, liderazgo) y falta de soporte (objetivos poco claros, acceso a datos, paso a producción). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

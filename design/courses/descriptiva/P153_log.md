@@ -283,3 +283,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - BI 1.0/2.0 con KPIs, dashboards ejecutivos, reportes y consultas ad hoc (pp. 14, 22: «Cálculo de indicadores (KPIs). Dashboards ejecutivos») — ya cubierta: P153 H01 (catálogo de KPI), P124 H03–H04 (tablero filtrable), P154 H01–H03 (capa de serving).
+
+## S03.P153.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: limpieza e invariantes (P106 H01–H05, P107 H01–H04) y calidad como compuerta de publicación (P153 H03).

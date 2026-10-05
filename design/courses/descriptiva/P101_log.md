@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - algoritmo MapReduce, shuffle & sort y jobs encadenados en HDFS (pp. 28–31: «Los problemas complejos se resuelven mediante la ejecución secuencial o en paralelo de múltiples jobs de MapReduce»; «El almacenamiento intermedio en HDFS … introducen una sobrecarga») — ya cubierta: P100 H01/H04 y P101 H02 implementan exactamente map/shuffle/reduce y convenciones de salida; encadenar jobs o Spark/Hive/Pig (pp. 38, 50, 51) sería ingeniería de datos, fuera de alcance.
+
+## S03.P101.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «DA y el desarrollo de software son similares» vs. «El código es simple y la complejidad está en los datos» (p. 4) — marginal: contraste conceptual de contexto; P101 ya usa el corpus fijo como oráculo de regresión (H04) y la diferencia no cambia lo que el estudiante hace.

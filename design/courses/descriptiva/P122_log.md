@@ -283,3 +283,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación (diapositivas) de perspectiva histórica: recorre 1970–2026 (RDBMS, SQL, DW, ETL, BI 1.0/2.0, data mining, KDD, OLAP, data marts, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, producto de datos, DataOps, MLOps, modelos fundacionales, IA agéntica) y define los tipos de analítica; es contexto, no prescripción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P122.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Se confunde el éxito del modelo con su máxima precisión», «El modelo es sabio y omnisciente», «No hay un producto mínimo viable», llevar modelos a producción, «laptop analytics», fricción con TI (pp. 3–5, 9) — fuera de alcance: modelos y operacionalización pertenecen a predictiva y productos de datos.

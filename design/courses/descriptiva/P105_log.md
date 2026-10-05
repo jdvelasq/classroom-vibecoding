@@ -274,3 +274,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - AI-augmented analytics y agentes que ejecutan código «pero que aún depende de la supervisión del usuario» (pp. 59–60) — marginal como propuesta: refuerza la necesidad de verificar respuestas del asistente, defecto ya registrado en P105 H01/H03 (sin respuestas ni verificación); el documento no aporta un método de verificación que permita anclar una mejora concreta más allá de lo que el propio log ya señala.
+
+## S03.P105.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diapositivas de un módulo DataOps que enumeran problemas organizacionales de la analítica (objetivos cambiantes, silos, mala calidad, desconfianza en los datos), mitos y brechas de conocimiento (alfabetización de datos, liderazgo) y falta de soporte (objetivos poco claros, acceso a datos, paso a producción). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

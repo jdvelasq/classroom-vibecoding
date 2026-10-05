@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Una transacción representa una operación. La historia revela el comportamiento» (p. 13: «¿Con qué frecuencia viene? … ¿Cuánto valor genera a lo largo del tiempo?») — marginal: sugiere un perfil histórico de cliente (frecuencia/valor), pero P120 ya rankea clientes (`top_customers.csv`) y P103 H01 agrega registros a entidad; el documento no aporta método ni datos para un análisis RFM y, como señal histórica de una diapositiva, no justifica una actividad.
+
+## S03.P120.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Se confunde el éxito del modelo con su máxima precisión», «El modelo es sabio y omnisciente», «No hay un producto mínimo viable», llevar modelos a producción, «laptop analytics», fricción con TI (pp. 3–5, 9) — fuera de alcance: modelos y operacionalización pertenecen a predictiva y productos de datos.

@@ -428,3 +428,15 @@
   - «La analítica transforma datos en conocimiento para apoyar mejores decisiones» (p. 2) y «Business Analytics no elimina la incertidumbre. La convierte en una decisión informada» (p. 4) — marginal: refuerzo retórico de la pregunta→decisión ya presente como contrato `questions.json` (P120 H01) y priorización (P120 H07, P125 H04); no cambia lo que el estudiante hace.
   - KDD/CRISP-DM (pp. 16, 21), ML estadístico, ensembles, gradient boosting, deep learning (pp. 9, 19, 25, 48, 52), MLOps (p. 55), producto de datos y DataOps (pp. 44, 53–54), cloud (pp. 26–27) — fuera de alcance: pertenecen a predictiva o productos de datos; la idea de «tests sobre los datos en cada paso» (p. 54) ya está en P150–P154 (aserciones de grano y reconciliación) y P153 H03.
   - analítica por dominio (p. 61: «People / HR Analytics … Marketing Analytics … Inventory Analytics») — ya cubierta: P120 (retail), P121 (operaciones), P122 (cadena de suministro), P124 (marketing), P125 (personas/compensación).
+
+## S03.P100.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diapositivas de un módulo DataOps que enumeran problemas organizacionales de la analítica (objetivos cambiantes, silos, mala calidad, desconfianza en los datos), mitos y brechas de conocimiento (alfabetización de datos, liderazgo) y falta de soporte (objetivos poco claros, acceso a datos, paso a producción). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Literacy es la habilidad de leer tablas y grafos, entenderlos para concluir correctamente y saber cuando se está potencialmente desinformado» (p. 6) — ya cubierta en parte / marginal por sí sola: los límites de lectura ya aparecen en P121 H04 (matriz día × hora como patrón agregado), P122 H03 (proporción a tiempo vs demora promedio) y P125 H06 (límite causal persistido). Si se aprueba la candidata de lectura persistida en P152 (documento `mintic-fedesoft-talento-digital-2025-2030`), esta página puede añadirse como fuente de contexto; literature-derived no la prescribe.
+  - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «La falta de objetivos claros puede llevar a responder preguntas de negocio de bajo valor» (p. 8); «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8) — ya registrada: la ausencia de usuario/decisión en P120–P154 está documentada en las auditorías S02 (pregunta de auditoría 1); la diapositiva es perspectiva organizacional, no un mecanismo enseñable que cambie un taller concreto.
+  - «Se sigue CRISP-DM y modelos de cascada», «Fatiga por procesos manuales», «Se ignoran los beneficios de la automatización» (pp. 2, 8) — fuera de alcance: crítica metodológica/organizacional (DataOps) propia de productos de datos; contexto histórico, no prescripción vigente.

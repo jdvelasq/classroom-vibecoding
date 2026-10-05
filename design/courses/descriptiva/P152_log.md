@@ -280,3 +280,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Data Warehouse «no volátil, variable en el tiempo, histórico» (p. 11), cubo OLAP con dimensiones y medida (p. 18: «Las dimensiones son: Fecha, Producto, Ciudad. La medida es: Ventas»), data marts (p. 20) — ya cubierta: P151 H01–H04 (hecho/dimensiones), P152 H01–H04 (roll-up, slice, drill-down). El carácter histórico/no volátil (slowly changing dimensions) no se desarrolla en el documento con caso; añadirlo sería modelado de ingeniería de datos.
+
+## S03.P152.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diapositivas de un módulo DataOps que enumeran problemas organizacionales de la analítica (objetivos cambiantes, silos, mala calidad, desconfianza en los datos), mitos y brechas de conocimiento (alfabetización de datos, liderazgo) y falta de soporte (objetivos poco claros, acceso a datos, paso a producción). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

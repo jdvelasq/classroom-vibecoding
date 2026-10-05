@@ -276,3 +276,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ETL como corrección de errores, eliminación de duplicados y unificación de formatos (p. 12: «corrigiendo errores, eliminando duplicados y unificando formatos») — ya cubierta: P106 H01–H04 y P107 H01–H03; la deduplicación no aparece como señal con caso propio en el documento.
+
+## S03.P106.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: limpieza e invariantes (P106 H01–H05, P107 H01–H04) y calidad como compuerta de publicación (P153 H03).

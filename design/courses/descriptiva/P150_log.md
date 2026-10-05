@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sistemas funcionales/ERP/CRM como fuentes de un DW (p. 8: «potenciales fuentes de información para un Data Warehouse») — ya cubierta: P150 H01–H02 integra fuentes operativas normalizadas protegiendo el grano.
+
+## S03.P150.34
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los datos viven en silos» y «Los formatos de los datos no optimizados para analytics» (p. 2); «Dificultad para encontrar las fuentes de datos adecuadas» (p. 9) — ya cubierta: integración de fuentes normalizadas en una tabla analítica (P150 H01–H02) y mart (P151 H01–H03).
