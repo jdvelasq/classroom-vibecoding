@@ -339,3 +339,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P150.41
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «la integración de datos de bases de datos dispersas es dura, pero es mucho mas dura de lo que la gente piensa» (p. 12) — ya cubierta en su forma enseñable: P150 H02 protege el grano y detecta *fan-out*; el límite de que sólo se ejercita el camino feliz ya está registrado en P150 S02 y el documento no aporta caso ni datos para ejercitar claves huérfanas.

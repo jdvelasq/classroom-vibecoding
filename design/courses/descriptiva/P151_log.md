@@ -339,3 +339,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P151.41
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - esquemas en DA «optimizado para lecturas, agregaciones y entendimiento de las personas» frente a esquemas operativos «optimizado para inserciones y actualizaciones» (p. 10) — ya cubierta: P150 H01 (fuentes normalizadas → tabla analítica) y P151 H01 (hecho y dimensiones para navegar). La pregunta «¿Qué pasa cuando se desea agregar un nuevo campo para análisis?» (p. 10) es evolución de esquema, propia de ingeniería de datos.
+  - principios del data lake y marts: «Limpie, cure y transforme solo los datos requeridos»; «Genere data marts con datasets que requieran los consumidores de datos» (p. 9) — marginal: P154 H01/H03 ya publica una capa con grano de consumo y manifiesto; el diseño de data lakes es ingeniería de datos.

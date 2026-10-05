@@ -341,3 +341,11 @@
 - **Señales descartadas relevantes:**
   - pruebas de datos y monitoreo de la validez de los datos y de la lógica de negocio antes de desplegar (p. 5: «Tests de datos – Tests de código»; p. 10: «Monitoreo de la lógica de negocio y validez de los datos»; p. 10: «Despliegue de datos precisos») — ya cubierta: P153 H03 condiciona la publicación de KPI a reglas verificables y deriva `APROBADO`/`BLOQUEADO`. El monitoreo continuo en producción es de productos de datos (fuera de alcance).
   - catálogo de datos y de resultados como función de gobierno (p. 2: «Gestión del catalogo de datos y resultados de los modelos»; herramientas Alation y Collibra) — ya cubierta: el catálogo de KPI (P153 H01) y el linaje (H04). Que se nombren herramientas comerciales no es material.
+
+## S03.P153.41
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre DataOps aplicado a ML e ingeniería de datos: programación tradicional vs ML, deuda técnica, arquitectura canónica y arquitectura DataOps (Airflow, Jenkins, Docker, Git…), *design thinking*, *agile data warehousing*, data lake/DW/marts, esquemas para análisis, reutilización de código y fallas típicas de proyectos de analítica. Perspectiva organizacional/metodológica orientada a productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

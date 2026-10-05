@@ -337,3 +337,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dashboards como mecanismo de transparencia (p. 2: «Transparencia: Alertas automáticas, dashboards»; p. 8, «El Dashboard de DataOps», en imagen no leída) — fuera de alcance tal como aparece aquí: es un tablero operativo del proceso DataOps (cuellos de botella, ciclos), no un producto descriptivo para un usuario de negocio. Los tableros descriptivos ya los cubren P124 H04 y P154 H03.
+
+## S03.P154.41
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los dashboards son tan valiosos como la data detrás de ellos, la cual usualmente es de baja calidad» (p. 12) — ya cubierta: P124 H02 valida esquema, tipos y no negatividad antes del tablero y H03 recalcula razones por alcance; P154 H01–H02 fija y reconcilia la fuente de consumo; P153 H03 condiciona la publicación a reglas.
+  - principios del data lake y marts: «Limpie, cure y transforme solo los datos requeridos»; «Genere data marts con datasets que requieran los consumidores de datos» (p. 9) — marginal: P154 H01/H03 ya publica una capa con grano de consumo y manifiesto; el diseño de data lakes es ingeniería de datos.

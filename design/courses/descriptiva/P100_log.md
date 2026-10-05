@@ -509,3 +509,14 @@
   - ramas de desarrollo, pruebas de integración, *pre-release*, *merge* y *release* (p. 5) y ambientes de desarrollo distintos de producción (p. 4) — fuera de alcance: es ingeniería y operación de productos de datos.
   - silos, coordinación relacional, Kanban, cuellos de botella y teoría de restricciones (pp. 2–4, 6) — fuera de alcance: son gestión organizacional de equipos de datos.
   - trampas del CDO (defensa de los datos, valor diferido, proyectos largos en cascada) y etapas de madurez (Data Desert → Boutique → Waterfall → DataOps Analytics) (pp. 9, 11) — fuera de alcance: es contexto histórico y organizacional, sin consecuencia sobre lo que el estudiante hace en un taller descriptivo.
+
+## S03.P100.41
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre DataOps aplicado a ML e ingeniería de datos: programación tradicional vs ML, deuda técnica, arquitectura canónica y arquitectura DataOps (Airflow, Jenkins, Docker, Git…), *design thinking*, *agile data warehousing*, data lake/DW/marts, esquemas para análisis, reutilización de código y fallas típicas de proyectos de analítica. Perspectiva organizacional/metodológica orientada a productos de datos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - *design thinking* para problemas mal definidos (p. 7: «Ganar entendimiento del problema consultado expertos, observando y empatizando») — fuera de alcance: metodología de diseño de productos; no tiene caso ni datos en el documento.
+  - deuda técnica de ML, orquestación, ambientes, CI/CD, contenedores, herramientas de plataforma (pp. 2–8, 11) — fuera de alcance: predictiva, ingeniería de datos y productos de datos.
