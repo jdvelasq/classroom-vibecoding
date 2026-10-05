@@ -303,3 +303,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre estrategia de datos (objetivos, capacidades, iniciativas, portafolio de casos de valor, fichas de indicadores, gobierno y uso responsable); opera en el nivel organizacional y no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P217.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - requisitos de producción, despliegue, adopción y operación (pp. 22–23): según `AGENTS.md` corresponde a productos de datos; H03 delimita el alcance actual.

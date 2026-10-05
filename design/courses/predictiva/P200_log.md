@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - caso de valor de mantenimiento predictivo y conexión entre objetivos e iniciativas (pp. 2–5): orientado a estrategia organizacional; no se añade como fuente de T01.
+
+## S03.P200.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - formular el problema de negocio, fijar línea base y criterios de éxito, y traducirlo en un problema analítico orientado a una decisión (pp. 9, 11): se añade como fuente de T01.
