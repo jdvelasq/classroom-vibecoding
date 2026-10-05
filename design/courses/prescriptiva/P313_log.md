@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Simulation Toolkit: Analysis ToolPak, Solver Optimization Tool» (p. 1). Categoría: marginal. Es otra herramienta (Excel) para lo mismo: la simulación ya se hace en Python con semilla y CRN (P310 H01, P313 H02–H04). Una señal de herramienta en un documento institucional no impone tema.
+
+## S03.P313.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 5 (p. 1: «Interpret and visualize the results of simulation models to evaluate complex business decisions in uncertain settings»). Categoría: **ya cubierta**. P310 resume una distribución simulada en indicadores y guardas (H01–H02, con histograma). P313 compara decisiones sobre futuros comunes con IC95 %, diferencias pareadas y validación de la política (H02–H06). El defecto conocido de P310 (la simulación no es decisiva, H03) y el nombre de P311 («por simulación» sin simulación) ya están registrados por S02, y esta frase de temario no aporta un argumento ni un caso nuevo para corregirlos. Que Wharton clasifique la simulación como «predictive» es una convención del programa. No es un defecto del curso, que la usa para validar políticas (`s05-diseno-prescriptiva.md`, C03).

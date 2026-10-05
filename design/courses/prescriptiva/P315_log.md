@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Optimization Models» (p. 1). Categoría: ya cubierta por mochila, asignación, localización, LP de flujo, optimización no lineal y LP intertemporal, cada uno convertido en política gobernada.
+
+## S03.P315.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 4 (p. 1: «Apply optimization models to specific business challenges with low uncertainty and determine the most favorable outcome») y Módulo 7 (p. 1: «Write prescriptions for data-driven decision-making for your organization using optimization models»). Categoría: **ya cubierta**. El curso ejerce optimización determinista sobre selección (P305 H03), asignación (P308 H04), localización (P315 H03), LP de flujos (P316 H05–H06) y LP intertemporal con duales (P318 H04–H05). Además la convierte en política gobernada (P305 H06, P308 H06, P316 H07, P318 H07), un producto que el temario no exige. «Prescriptions to change behavior» no añade una capacidad distinta.

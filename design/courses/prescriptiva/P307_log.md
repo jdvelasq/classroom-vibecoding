@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Forecasting» con sus ítems (objetivo y subjetivo, variación estacional, suavizamiento exponencial, tendencias y estacionalidad, producto nuevo) (p. 1). Categoría: fuera de alcance. Construir pronósticos corresponde a Predictiva; P307 recibe el pronóstico como escenarios y decide sobre ellos (H01–H03).
+
+## S03.P307.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 2 (p. 1: «use historical data such as trends and consumption patterns to estimate forecasts»). Categoría: **fuera de alcance**. Construir pronósticos corresponde a Predictiva (o a Descriptiva, en este temario). Prescriptiva consume el pronóstico como insumo de la política (P307 H01).

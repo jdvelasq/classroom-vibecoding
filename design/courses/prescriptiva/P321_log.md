@@ -276,3 +276,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P321.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 9 (p. 1: «Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization»). Categoría: **marginal**. Cada Pxxx ya cierra con un contrato que hace operable la recomendación (P300 H03 en adelante), y P321 registra la operación y el seguimiento (H01–H02). Un «plan para poner los datos a trabajar» de nivel organizacional no es una política recurrente y desplazaría la identidad del curso.

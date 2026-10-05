@@ -276,3 +276,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «A/B Testing» y «Correlation and Causation» (p. 1). Categoría: ya cubierta. P306 usa una oferta aleatorizada para estimar el efecto causal y focalizar la acción (H01–H02), y P322 decide cuándo medir antes de actuar (H01–H02). El documento es sólo un título, así que no da base para cambiar ninguno de los dos; mantener un grupo de control en la operación de P306 ya consta como ambigüedad (3) de S02 y no lo respalda esta fuente.
+
+## S03.P306.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 3 (p. 1: «Choose the right tool for decision-making»). Categoría: **ya cubierta**. El curso hace explícita la elección del método según la estructura del problema: ordenar es exacto con costo uniforme (P306 H03), LP frente a enumeración (P316 H05), optimizador no lineal frente a PuLP (P317 H04) y enumeración por objetivo no aditivo (P319 H03).

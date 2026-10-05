@@ -274,3 +274,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P319.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 3 (p. 1: «Choose the right tool for decision-making»). Categoría: **ya cubierta**. El curso hace explícita la elección del método según la estructura del problema: ordenar es exacto con costo uniforme (P306 H03), LP frente a enumeración (P316 H05), optimizador no lineal frente a PuLP (P317 H04) y enumeración por objetivo no aditivo (P319 H03).

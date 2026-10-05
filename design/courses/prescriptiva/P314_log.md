@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Decision Trees» (p. 1). Categoría: marginal. El documento no aclara si se refiere a árboles de decisión de análisis de decisiones o de aprendizaje automático. En el primer sentido, la decisión en dos etapas (P314 H01–H02) y la decisión condicionada a una señal (P322 H01–H02) ya ejercen la lógica. `AGENTS.md` además establece que un árbol aislado no es producto terminal. En el segundo sentido, sería fuera de alcance (Predictiva).
+
+## S03.P314.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - temario de un programa ejecutivo de Business Analytics. Tiene un módulo de orientación y nueve módulos, en secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con un título y una frase de resultado. Los módulos 4, 5, 7 y 8 tocan optimización, simulación y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

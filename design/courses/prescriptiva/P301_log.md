@@ -274,3 +274,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P301.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 8 (p. 1: «Determine the most favorable outcome for a business decision using decision trees in conjunction with optimization and simulation»). Categoría: **marginal**. La estructura de decisión secuencial bajo incertidumbre, que es lo que modela un árbol (medir → señal → actuar), ya la ejerce P322 (H01–H02, valor de la información muestral con regla condicionada a la señal), y P301 actualiza creencias tras un resultado (H03–H04). Integrar el árbol con optimización y simulación sería una técnica adicional sin un producto de política distinto. `AGENTS.md` advierte que un árbol de decisión aislado no basta como producto terminal. Las carencias de P322 (sin valor de la información perfecta ni sensibilidad) ya están en su log S02, y el temario no las justifica de forma independiente.

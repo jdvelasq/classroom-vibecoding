@@ -403,3 +403,13 @@
   - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Data Collection Methods» (encuestas, NPS, autorreportes, recolección pasiva y de medios), «Regression Analysis» y «Data Visualization and Interpretation» (p. 1). Categoría: fuera de alcance para recolección y regresión (Descriptiva, Fundamentos de data y Predictiva). Visualización es ya cubierta por los planeadores persistidos de varios Pxxx.
+
+## S03.P300.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - temario de un programa ejecutivo de Business Analytics. Tiene un módulo de orientación y nueve módulos, en secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con un título y una frase de resultado. Los módulos 4, 5, 7 y 8 tocan optimización, simulación y árboles de decisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Módulo 1 (p. 1: «collecting data on customer behavior») y Módulo 6 (p. 1: «Predict Employee Performance… hiring, internal mobility, and attrition»). Categoría: **fuera de alcance**. Son productos descriptivos y predictivos de otros cursos. Una política de RR. HH. podría ser un caso prescriptivo, pero el temario no lo plantea así y sería otro dominio equivalente, no una contribución nueva.

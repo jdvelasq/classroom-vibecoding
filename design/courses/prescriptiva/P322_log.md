@@ -276,3 +276,11 @@
 - **Señales descartadas relevantes:**
   - «A/B Testing» y «Correlation and Causation» (p. 1). Categoría: ya cubierta. P306 usa una oferta aleatorizada para estimar el efecto causal y focalizar la acción (H01–H02), y P322 decide cuándo medir antes de actuar (H01–H02). El documento es sólo un título, así que no da base para cambiar ninguno de los dos; mantener un grupo de control en la operación de P306 ya consta como ambigüedad (3) de S02 y no lo respalda esta fuente.
   - «Decision Trees» (p. 1). Categoría: marginal. El documento no aclara si se refiere a árboles de decisión de análisis de decisiones o de aprendizaje automático. En el primer sentido, la decisión en dos etapas (P314 H01–H02) y la decisión condicionada a una señal (P322 H01–H02) ya ejercen la lógica. `AGENTS.md` además establece que un árbol aislado no es producto terminal. En el segundo sentido, sería fuera de alcance (Predictiva).
+
+## S03.P322.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 8 (p. 1: «Determine the most favorable outcome for a business decision using decision trees in conjunction with optimization and simulation»). Categoría: **marginal**. La estructura de decisión secuencial bajo incertidumbre, que es lo que modela un árbol (medir → señal → actuar), ya la ejerce P322 (H01–H02, valor de la información muestral con regla condicionada a la señal), y P301 actualiza creencias tras un resultado (H03–H04). Integrar el árbol con optimización y simulación sería una técnica adicional sin un producto de política distinto. `AGENTS.md` advierte que un árbol de decisión aislado no basta como producto terminal. Las carencias de P322 (sin valor de la información perfecta ni sensibilidad) ya están en su log S02, y el temario no las justifica de forma independiente.
