@@ -75,3 +75,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - medidas de éxito ligadas a la decisión e identificación de riesgos (Tasks 2.4, 2.6, pp. 4–5): ya cubierta (H02–H03: costos de error y frontera con política).
+
+## S03.P205.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sesgo más probable de un modelo predictivo y causa de resultados sesgados o no éticos (Tasks 2.6, 5.3, pp. 12, 20): ya cubierta en la medida que el caso lo permite (H04: revisión por grupo simulado).

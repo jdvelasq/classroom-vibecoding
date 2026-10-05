@@ -54,3 +54,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - impulsores (*drivers*) del resultado y su relación con la salida (Task 2.2, p. 5): ya cubierta (H01–H02: selección integrada).
+
+## S03.P221.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.

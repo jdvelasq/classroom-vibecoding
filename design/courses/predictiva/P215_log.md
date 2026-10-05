@@ -56,3 +56,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - línea base del estado actual (Task 2.5, p. 5): se añade como fuente de T01.
+
+## S03.P215.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - línea base del estado actual (Task 2.5, p. 11): se añade como fuente de T01.

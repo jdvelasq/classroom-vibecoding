@@ -54,3 +54,11 @@
 - **Señales descartadas relevantes:**
   - validación y verificación del despliegue (Tasks 6.5–6.6, p. 7): ya cubierta parcialmente (H01–H03).
   - seguimiento del desempeño, recalibración y efectos secundarios en el tiempo (Domain VII, p. 7): no cubierta; según `AGENTS.md`, hacer observable y mantenible una capacidad analítica es propio de la línea de productos de datos, por lo que no se propone en Predictiva.
+
+## S03.P218.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.

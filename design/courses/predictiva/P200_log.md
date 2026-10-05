@@ -103,3 +103,11 @@
 - **Resultado:** propone T01 (encuadre, medida de éxito y línea base ingenua).
 - **Señales descartadas relevantes:**
   - documentación de supuestos y limitaciones del modelo (Task 5.6, p. 6): ya cubierta parcialmente en los límites declarados; T01 añade el encuadre explícito.
+
+## S03.P200.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - encuadre, medidas de éxito y línea base del estado actual (Tasks 1.1–2.5, pp. 7–11): se añade como fuente de T01.

@@ -77,3 +77,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P207 (producto descriptivo).
+
+## S03.P207.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad sin resolver (producto descriptivo).

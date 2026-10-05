@@ -53,3 +53,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - encuadre del problema de negocio, *stakeholders* y medida de éxito (Domain I–II, pp. 4–5): S02 registra que esta actividad no tiene usuario ni decisión evidenciados; el hábito se propone en P200 (T01) y extenderlo aquí sería una propuesta por actividad, a decidir después de discutir P200 T01.
+
+## S03.P219.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - división en entrenamiento, validación y prueba (Task 5.3, p. 20): ya cubierta (H02).

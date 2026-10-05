@@ -14,6 +14,7 @@
     como problema analítico), 2.4 («Define primary measures of success») y
     2.5 («Identify baseline performance of the current state») (Claude,
     2026-10-04).
+  - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 7–11 — objetivos de examen de nivel inicial: identificar *stakeholders*, la parte poco clara de un enunciado de negocio, las medidas primarias de éxito y «how to measure the baseline values of the primary measures of success of the current state» (Task 2.5) (Claude, 2026-10-04).
 - **Qué gana el estudiante:** desde el primer producto predictivo del curso,
   aprende a decir para qué decisión sirve la predicción, con qué medida se
   juzga el éxito y contra qué referencia trivial debe compararse. Hoy P200
