@@ -218,3 +218,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Igualdad de género como eje transversal del currículo (p. 77: «considerar, como eje transversal, contenidos orientados hacia propósitos de igualdad de género»). Categoría: **marginal**. P320 ya audita brechas entre grupos como guarda que decide (H01–H02). El documento no aporta métrica, caso ni método. La familia institutional ilustra posibilidades y no impone un eje temático.
+
+## S03.P320.27
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Circular de la Dirección Académica de la Sede Manizales que fija la «Ruta de Armonización Curricular». Tiene cuatro ejes: Acuerdo 02/2020 del CESU, resultados de aprendizaje, actualización del PEP y planes de mejoramiento. Distingue tres dimensiones (macro, meso y microcurricular) y cuatro etapas. No contiene contenidos disciplinares ni menciona analítica, decisión u optimización. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
