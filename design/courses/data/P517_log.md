@@ -355,3 +355,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - material de clase sobre DataOps: desarrollo tradicional frente a ML, deuda técnica, pruebas de datos y lógica, control de versiones, ambientes múltiples, contenedores, arquitectura canónica (raw lake → refined → data science), agile data warehousing, data lake y esquemas para análisis. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P517.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - *Historical balance* «Se comparan los datos actuales con datos previos o valores esperados» (p. 5) y severidad → acción (p. 4) — ya cubierta: H03 compara cada lote con el extracto de referencia y clasifica `BREAKING`/`SCOPE`/`COMPATIBLE` con acción `REJECT`/`FILTER_ZIPCODE_0`/`ACCEPT`. El incremento porcentual de registros entre versiones (p. 4) sería una variante sin entregas reales que lo sustenten (S03: lotes simulados).

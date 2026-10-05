@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - arquitectura raw lake → refined, «Limpie, cure y transforme solo los datos requeridos», data lake alineado al warehouse (pp. 5, 9) — fuera de alcance: arquitectura de datos y pipelines productivos excluidos; refuerza la lectura de P513/P514/P525 como ingeniería, ya registrada.
+
+## S03.P513.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

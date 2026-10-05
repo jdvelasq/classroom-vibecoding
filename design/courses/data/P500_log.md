@@ -551,3 +551,17 @@
   - «Tests de lógica y de datos», «Pruebas de validación de la data y la lógica de negocio» (pp. 6–7) — marginal: las reglas y aserciones de P500 H04, P511 H02, P516 H02 y P517 ya ejercen validación de datos al servicio de una pregunta; las pruebas automatizadas de pipeline son DataOps.
   - control de versiones, ramificación, ambientes dev/test/prod, Docker, orquestación (Airflow, Jenkins) (pp. 4, 6, 11) — fuera de alcance (operación de pipelines, MLOps).
   - «Los dashboards son tan valiosos como la data detrás de ellos, la cual usualmente es de baja calidad» (p. 12) — contexto: confirma el propósito del curso; no implica cambio.
+
+## S03.P500.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de salida «Precios positivos», «Rangos esperados de los datos» (p. 4) — ya cubierta: H04 condiciona la salida a controles de calidad ejecutables; los faltantes y `Row ID` no verificados (S03) son variantes locales.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - tipos de prueba de software —unitarias, integración, funcionales, regresión, desempeño, humo— (p. 2) — fuera de alcance: prácticas de desarrollo y despliegue de pipelines productivos (DataOps), frontera del curso; además, en el curso `pytest` evalúa participación, no corrección (AGENTS.md).
+  - *Value pipeline* / *Innovation pipeline*, ambientes de desarrollo idénticos a producción, proceso de liberación de código (p. 3) — fuera de alcance: operación de productos de datos.
+  - *Statistical process control* / *time balance tests*, monitoreo continuo de patrones anómalos (p. 5) — fuera de alcance: monitoreo en producción (curso de productos de datos); sin caso con flujo continuo.
+  - notificación automática y análisis de impacto de cambios entre equipos (pp. 2, 5) — fuera de alcance: gobierno operativo.
+  - «Cada vez que algo falla se agrega una nueva prueba» (p. 2) — marginal: práctica de proceso, no cambia una capacidad de taller.

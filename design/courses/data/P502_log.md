@@ -370,3 +370,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - material de clase sobre DataOps: desarrollo tradicional frente a ML, deuda técnica, pruebas de datos y lógica, control de versiones, ambientes múltiples, contenedores, arquitectura canónica (raw lake → refined → data science), agile data warehousing, data lake y esquemas para análisis. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P502.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Láminas de clase sobre DataOps: pruebas automatizadas en cada etapa del pipeline (acceso, transformación, modelado, visualización), tipos de prueba de datos (entradas, lógica de negocio, salidas; *balance tests* de ubicación, históricos y control estadístico de procesos) y una tabla de severidad → acción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «En DA debe ser optimizado para lecturas, agregaciones y entendimiento de las personas» frente al esquema operacional «optimizado para inserciones y actualizaciones» (p. 10) — ya cubierta por P512 H02–H03 (hecho y dimensiones para reagregar); la candidata de Kimball sobre P512 no depende de esta fuente.
+
+## S03.P512.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Láminas de clase sobre DataOps: pruebas automatizadas en cada etapa del pipeline (acceso, transformación, modelado, visualización), tipos de prueba de datos (entradas, lógica de negocio, salidas; *balance tests* de ubicación, históricos y control estadístico de procesos) y una tabla de severidad → acción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

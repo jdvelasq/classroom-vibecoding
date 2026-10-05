@@ -2,6 +2,104 @@
 
 **Línea base:** `P516_activity.md` (entrada S02 más reciente: `S02.P516.02`).
 
+## T01 — Declarar una severidad por regla de calidad y derivar el estado del reporte de severidad × hallazgos
+
+- **Estado:** pendiente de discusión
+- **Tipo:** producto/evidencia (corrección de defecto)
+- **Fuentes:**
+  - `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` p. 4 — tabla «Severidad | Acción requerida»: «Error | Detención del pipeline», «Alerta | Investigación de la falla», «Informativa | Ser consciente de la información»; cada regla de calidad lleva una severidad que determina la respuesta a sus hallazgos (Claude, 2026-10-05). Fuente *literature-derived*: aporta el mecanismo severidad → acción; el contexto de pipeline no se traslada al taller.
+- **Qué gana el estudiante:** un reporte de calidad que dice la verdad sobre
+  la aptitud del extracto. Hoy el estado se asigna con una regla que sólo
+  puede producir `REVIEW` para la regla de alcance: cualquier otra regla con
+  hallazgos > 0 (clave duplicada, `agi_stub` fuera de 1–6, `N1` negativo,
+  columna faltante) quedaría en `PASS` (S02.P516.02; límite de H02 y S02).
+  Con una severidad declarada en cada regla y el estado derivado de
+  severidad × `finding_count`, el estudiante distingue «la fuente no puede
+  responder la pregunta» (error) de «la responde tras una acción» (alerta,
+  el total estatal) y de «hallazgo que conviene conocer» (informativa), y
+  entiende que el estado es una decisión explícita sobre la regla, no una
+  excepción codificada para un nombre.
+- **Anclas actuales:** H02 (reglas nombradas con dimensión y conteo), H01
+  (regla de alcance `statewide_total_requires_filter`), H03 (clave y
+  dominio, que pasan a ser reglas de severidad error); superficies S02
+  (reglas en `professor/notebook.ipynb`), S03 (`quality_report.csv`) y S04
+  (pruebas); dependencia «Habilita para P517».
+- **Alternativas menores descartadas:** aclarar en markdown que el estado
+  sólo reacciona a la regla de alcance deja el reporte afirmando `PASS` en
+  casos que no lo son; el defecto está en el producto, no en su
+  explicación. Corregir la condición sin declarar severidades (por ejemplo,
+  «toda regla con hallazgos es `REVIEW`») borra la diferencia entre un
+  error que invalida el extracto y una acción de alcance, que es justamente
+  el contraste de H01.
+- **Contrato de no regresión:** se conservan las cinco reglas, sus nombres,
+  dimensiones y conteos, la clave (`zipcode`, `agi_stub`), el diagnóstico
+  sin filtrado (filtrar corresponde a P517) y las columnas actuales de
+  `quality_report.csv`; sólo se añade la columna `severity` y el estado se
+  deriva de ella. Con los datos actuales el reporte sigue siendo 4 `PASS` y
+  1 `REVIEW`. H01–H03 siguen presentes. La prueba existente se conserva. No
+  se introduce orquestación ni vocabulario de pipeline: la severidad expresa
+  qué significa el hallazgo para la pregunta por código postal (riesgo de
+  identidad hacia ingeniería de datos registrado por S02).
+- **Interacciones:** con T02, se refuerzan: si T02 añade alguna regla sobre
+  la medida de ingreso a partir del perfil, esa regla declara su severidad
+  con el mecanismo de T01; si se aprueban ambas, ejecutar T01 primero.
+  Hacia P517: las severidades propuestas reproducen la clasificación que
+  P517 ya usa en `validate` (error ↔ `BREAKING`/`REJECT`; alerta ↔
+  `SCOPE`/`FILTER_ZIPCODE_0`); P517 podría reutilizarlas en vez de
+  redefinirlas, pero eso no forma parte de esta T01 ni modifica P517.
+  Capacidad: cambio local de una tupla y una regla de estado; carga baja.
+- **Criterio de aceptación:** S05 encuentra H02 modificado (o un highlight
+  nuevo) en el que cada regla declara `severity` (`error`, `alert` o
+  `info`) y el estado se deriva de severidad × hallazgos (`PASS` si no hay
+  hallazgos; `FAIL` para error, `REVIEW` para alerta, `INFO` para
+  informativa cuando los hay); una celda de evidencia muestra que una copia
+  perturbada del extracto (una fila duplicada) produce `FAIL` en la regla de
+  clave sin tocar `data/vermont.csv`; `quality_report.csv` conserva sus
+  filas y columnas con `severity` añadida; una prueba verifica que el estado
+  de cada fila es consistente con su severidad y su conteo y que la regla de
+  alcance queda en `REVIEW`.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/data/P516_vermont_calidad/
+
+0. Inspecciona primero professor/notebook.ipynb (celdas 2 y 3),
+   data/vermont.csv, submission/quality_report.csv y tests/test_activity.py.
+   Anota los nombres exactos de las cinco reglas y de las columnas del
+   reporte, y la expresión que asigna el estado. Si la implementación no
+   coincide con design/courses/data/P516_activity.md (cinco reglas, estado
+   que sólo puede ser REVIEW para la regla de alcance), detente e informa
+   sin modificar nada. Si el estado ya se deriva de una severidad declarada,
+   detente e informa: la propuesta estaría cubierta.
+1. No cambies las reglas, sus nombres, dimensiones ni conteos, ni filtres el
+   extracto.
+2. Extiende cada tupla de regla con una severidad: error para columnas
+   requeridas, dominio de agi_stub, unicidad de (zipcode, agi_stub) y N1 no
+   negativo; alert para el total estatal. Si el profesor fijó otra
+   asignación en la discusión de esta T01 (registrada en P516_log.md), usa
+   esa.
+3. Sustituye la asignación de estado por una función explícita:
+   finding_count == 0 -> PASS; si no, error -> FAIL, alert -> REVIEW,
+   info -> INFO. Añade 2–4 líneas de markdown que expliquen qué decisión
+   sobre la pregunta por código postal implica cada estado.
+4. Añade una celda de evidencia que aplique las mismas reglas a una copia del
+   DataFrame con una fila duplicada y muestre el reporte resultante (la regla
+   de clave debe quedar FAIL). No persistas esa copia ni toques
+   data/vermont.csv.
+5. Persiste submission/quality_report.csv con las columnas actuales más
+   severity (orden: las existentes, con severity antes de status). Con los
+   datos actuales deben quedar 4 PASS y 1 REVIEW.
+6. Añade a tests/ una prueba que lea quality_report.csv y verifique: existe
+   la columna severity con valores en {error, alert, info}; para cada fila,
+   status es PASS si finding_count == 0 y, si no, el estado que corresponde a
+   su severidad; la regla de alcance tiene severity alert y status REVIEW.
+   No elimines pruebas existentes.
+7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
+8. No modifiques otras actividades (en particular P517), traceability.yaml
+   ni design/.
+```
+
 ## T02 — Ficha de procedencia y diccionario del extracto: fuente verificada, significado de `zipcode = 0` y de las variables usadas (incluido el perfil de la variable de ingreso), con la evidencia del diagnóstico de aptitud
 
 - **Estado:** pendiente de discusión
