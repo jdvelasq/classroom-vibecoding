@@ -287,3 +287,16 @@
   - «Build data solutions that integrate with other systems» (p. 6) — marginal: es un objetivo declarado sin contenido. La integración ya está en P417 y P425.
   - proyecto guiado con «organizational issues in implementing systems for predictive analytics … generating analytics project implementation plans» (p. 9) y «Analytics Requires Process and Incentive Changes» (p. 11) — fuera de alcance: gestión organizacional de proyectos analíticos, no operación de una capacidad.
   - visualización y dashboards, regresión, ML, series de tiempo, texto, optimización, experimentación A/B (p. 4–14) — fuera de alcance: pertenecen a Descriptiva, Predictiva y Prescriptiva.
+
+## S03.P400.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo (10+ años de experiencia) sobre estrategia, modelos de negocio, liderazgo, futuros y gobierno de IA; temario por fases sin contenidos operativos ni técnicos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «AI risk and safety • AI governance • AI and trust» y «AI Governance, Enterprise Controls» (p. 5; p. 17) — fuera de alcance: gobierno corporativo de IA y controles empresariales para ejecutivos; el gobierno operativo de una capacidad ya está en P450–P455.
+  - «Creating a culture of data excellence» (p. 16) y diseño de modelos operativos y capacidades organizacionales (p. 7) — fuera de alcance: transformación organizacional, no operación de una capacidad.
+  - capstone «Built around the pillars of technology, strategy, and organizational readiness … from vision toward execution» (p. 17) — fuera de alcance: proyecto de transformación empresarial; no ilustra una forma de evidencia aplicable a talleres del curso.
+  - futuros, prospectiva y planificación de escenarios (p. 17) — fuera de alcance: decisión estratégica bajo incertidumbre, ajena a la línea de productos.
