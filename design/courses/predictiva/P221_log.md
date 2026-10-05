@@ -198,3 +198,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P221.24
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa para altos ejecutivos sobre estrategia y gobierno de IA (fases I–V: modelos de negocio, liderazgo, innovación, gobierno y controles); trata la analítica predictiva sólo como capacidad organizacional que el líder integra; sin señales para esta actividad.

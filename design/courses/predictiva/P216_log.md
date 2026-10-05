@@ -225,3 +225,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - suavizamiento exponencial, ACF/PACF, ARIMA y metodología Box–Jenkins (p. 8): ya cubierta en lo esencial (H03, H10: ACF/PACF y AR con regresión); ARIMA como llamada especializada sería otra implementación del mismo contraste.
+
+## S03.P216.24
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa para altos ejecutivos sobre estrategia y gobierno de IA (fases I–V: modelos de negocio, liderazgo, innovación, gobierno y controles); trata la analítica predictiva sólo como capacidad organizacional que el líder integra; sin señales para esta actividad.

@@ -220,3 +220,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P205.24
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - riesgo, seguridad, confianza y controles de IA (fase V): ya cubierta como frontera entre evidencia predictiva y política (H03); el folleto no fija prácticas.
