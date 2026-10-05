@@ -234,3 +234,17 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Growing the Platform: Ensuring Quality and Robustness — Gating – Establishing Quality» (p. 15) — fuera de alcance: calidad de participantes de la plataforma, no calidad de datos.
   - «Modeling Network Effects» (p. 15) — fuera de alcance: modelado de dinámica de mercados, sin relación con C01–C05.
+
+## S03.P500.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Calendario de un curso de educación profesional del MIT: ecuaciones diferenciales y métodos numéricos, modelado espacial (EDP), optimización y modelado guiado por datos, de la optimización al ML (regresión, regularización, clasificación), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos industriales. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Parameter Estimation and Nonlinear Least Squares», «Regression Problems», «Regularization», «Logistic Regression», «Assessing Model Fit» (p. 2) — fuera de alcance: construcción y evaluación de modelos, propias del curso predictivo; el curso `data` excluye «la construcción completa de modelos».
+  - «Monte Carlo Simulation», «Probabilistic Forecasting», «Sensitivity Forecasting», «Simulating Rare Events» (p. 2) — fuera de alcance: análisis predictivo/prescriptivo.
+  - «Ordinary Differential Equations», «The Forward Euler Method», «Partial Differential Equations», «Linear Systems: Direct and Indirect Methods» (p. 1) — fuera de alcance: modelado y simulación numérica, sin relación con adquisición, estructuración, calidad o documentación de datos.
+  - casos «Aurora Flight Sciences», «Schlumberger», «BASF» (p. 2) — fuera de alcance: el calendario no describe ningún trabajo sobre datos que pueda contrastarse con un taller; la familia institucional sólo ilustra posibilidades.
+  - el documento no contiene ninguna señal sobre acceso, integración, calidad, procedencia, metadatos, privacidad o formatos de datos; no hay contraste posible con P500–P526.
