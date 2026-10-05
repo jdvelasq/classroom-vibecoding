@@ -397,3 +397,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - inspeccionar resultados intermedios en cada salida (p. 18: «Open Out-port View … you can inspect the data») y vistas enlazadas con hiliting (p. 10: «The propagation of the hilite status works for all views») — marginal: la inspección visual de evidencia intermedia ya es norma del curso (AGENTS.md, celdas de evidencia visual) y P124 H04 ofrece una vista filtrable; la selección enlazada es una prestación de herramienta.
+
+## S03.P122.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta (P106 H05, P107 H01, P122 H05, P153 H03); la detección de anomalías por algoritmos de minería queda fuera de alcance.

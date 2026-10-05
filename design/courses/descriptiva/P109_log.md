@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P109.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Hoja comercial de SQL Server 2005 Analysis Services Data Mining: casos de uso (cesta de mercado, abandono, segmentación, pronóstico, exploración, calidad de datos, texto), integración con SSIS/OLAP/Reporting, algoritmos, DMX y arquitectura. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

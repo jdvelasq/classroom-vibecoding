@@ -387,3 +387,11 @@
 - **Señales descartadas relevantes:**
   - organización de un flujo en pasos encadenados y subflujos reutilizables (p. 21: «Meta nodes are nodes that contain subworkflows»; p. 17: «if you execute the last node … all predecessor nodes will be executed») — ya cubierta: P123 H07 (pipeline `s01`–`s20` con funciones reutilizadas) y P101 H01–H02 (funciones y motor parametrizado).
   - documentar cada paso con nombre y descripción (p. 19: «change this name to better describe what the node is actually doing, e.g. "filter values > 10"») — marginal: equivale a funciones con nombre de responsabilidad (P101 H01, P106 H01); no aporta capacidad nueva.
+
+## S03.P101.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Hoja comercial de SQL Server 2005 Analysis Services Data Mining: casos de uso (cesta de mercado, abandono, segmentación, pronóstico, exploración, calidad de datos, texto), integración con SSIS/OLAP/Reporting, algoritmos, DMX y arquitectura. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -389,3 +389,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P107.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta (P106 H05, P107 H01, P122 H05, P153 H03); la detección de anomalías por algoritmos de minería queda fuera de alcance.

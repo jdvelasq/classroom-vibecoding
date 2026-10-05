@@ -594,3 +594,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - flujo visual de nodos configurables y ejecutables (p. 3: «A workflow is built by dragging nodes from the Node Repository onto the Workflow Editor and connecting them») — fuera de alcance: herramienta low-code alternativa; cambiar de herramienta no cambia lo que el estudiante aprende y el curso no es capacitación en plataformas. Una señal professional-learning no basta para imponer un tema.
   - ejemplo con K-Means sobre Iris (p. 5: «we read in data from an ASCII file, assign color to it, cluster the data») — fuera de alcance: modelado de agrupamiento sin pregunta descriptiva ni caso; pertenece a otro curso y el dataset es didáctico genérico.
+
+## S03.P100.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Text Analysis. Analyze feedback to find common themes and trends» (p. 1) — ya cubierta en su versión descriptiva (P123 H04–H05 co-ocurrencia y comunidades; P100 H02 tokenización).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Churn Analysis», «Forecasting», «Campaign Analysis. … targeting the people most likely to respond» (p. 1), lift y profit charts «to compare and contrast the quality of your models» (p. 2), DMX «A prediction against a data mining model is simply a join» (p. 2), algoritmos (árboles, Naïve Bayes, redes neuronales; p. 2) — fuera de alcance: predictiva.
+  - «Market Basket Analysis. Determine items sold together» y «Market Analysis. Define market segments by automatically grouping like customers» (p. 1) — fuera de alcance: minería no supervisada sin caso preparado; señal de herramienta que por sí sola no impone tema.
+  - «fine-grained role-based security» (p. 2) — marginal: rasgo de plataforma sin capacidad descriptiva asociada.
