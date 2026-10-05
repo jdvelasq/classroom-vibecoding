@@ -130,3 +130,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Platforms: Data Ingestion», «The Modern Data Stack», «Modern Data Stack Patterns» (p. 15); «Data Pipeline Automation» (p. 14) — fuera de alcance: arquitectura de plataformas y pipelines productivos.
+
+## S03.P513.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas: fundamentos de Python y estadística, aprendizaje no supervisado, regresión y predicción, clasificación y pruebas de hipótesis, aprendizaje profundo, sistemas de recomendación y modelos gráficos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

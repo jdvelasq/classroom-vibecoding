@@ -199,3 +199,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Apply best practices in data governance and cybersecurity» (p. 7); «Data Governance and Compliance», «Ethics – AI Bias and Fairness» (p. 15) — marginal: enunciados sin práctica; la documentación responsable del curso (C04) ya se ejerce en P500 H03, P502 y P517; sesgo de modelos de IA es de otros cursos.
   - «Leverage existing company data for success and derive value from dormant data» (p. 7); «Artisan vs. Factory» (p. 14) — fuera de alcance: estrategia organizacional sin caso ni datos.
+
+## S03.P500.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas: fundamentos de Python y estadística, aprendizaje no supervisado, regresión y predicción, clasificación y pruebas de hipótesis, aprendizaje profundo, sistemas de recomendación y modelos gráficos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Python, NumPy, pandas y visualización como fundamentos (p. 6 «Python for Data Science / Numpy / Pandas / Data Visualization») — ya cubierta como habilitador (pandas en P500, P511, P516); `data.C05` impide que la herramienta sea identidad.
+  - preprocesamiento y representación de datos para modelos (p. 7 «Beyond K-means: Data and pre-processing»; p. 5 «Choose how to represent your data when making predictions») — fuera de alcance: representación para predicción es de Predictiva; la elección de representación para almacenamiento ya está en P524.
+  - estadística descriptiva e inferencial, clustering, regresión, clasificación, deep learning, recomendación, redes (pp. 6–11) — fuera de alcance de `data`.
