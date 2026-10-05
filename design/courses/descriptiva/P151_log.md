@@ -233,3 +233,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Sílabo de un curso de minería de datos aplicada a salud (textos de Albright–Winston y Han–Kamber): preprocesamiento, exploración, probabilidad e incertidumbre, regresión, patrones frecuentes, clasificación, *clustering* y atípicos, minería de texto; proyecto por entregables (propuesta, reporte de recolección, reporte de preparación, informe final) y artículo de revisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P151.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelado relacional y ER, claves «primary, foreign, candidate, surrogate», cardinalidad (p. 5) — ya cubierta en lo que sirve a la descripción: fuentes normalizadas (P150 H01) y claves sustitutas con integridad referencial (P151 H01–H03).
+  - «Business Intelligence Systems: data warehouses and data marts; business reporting» (p. 6) — ya cubierta: mart estrella (P151), OLAP (P152), capa de consumo (P154).

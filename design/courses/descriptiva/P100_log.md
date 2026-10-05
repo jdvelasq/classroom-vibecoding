@@ -349,3 +349,16 @@
   - «Create business intelligence for healthcare through data analytics» (p. 3) — ya cubierta en general por P150–P154; el dominio de salud no aporta capacidad distinta.
   - formular hipótesis en la exploración (p. 6) — marginal: sin producto ni método asociado.
   - artículo de revisión de literatura, póster, foros (pp. 6–8) — fuera de alcance: formatos de evaluación ajenos al contrato `Pxxx`/`pytest`.
+
+## S03.P100.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Sílabo de un curso introductorio de 16 semanas centrado en herramientas (Excel, Access, SQL, MongoDB, SAS, Tableau): modelado ER y normalización, SQL (agregación, joins, subconsultas), NoSQL, sistemas de BI, visualización y tableros, proyecto final en equipo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - normalización y formas normales, diagramas de dependencias (p. 5) — fuera de alcance: diseño de bases de datos (disciplina contribuyente).
+  - «Tell compelling stories with data», «Present data-driven insights using data visualization and dashboards» (p. 1) — marginal desde este documento: enunciado de objetivo sin método; la ausencia de lectura persistida ya está registrada en las auditorías (p. ej., P152 H03, P154 S04).
+  - NoSQL/MongoDB y su framework de agregación (pp. 6–7); capacitación en Excel, Access, SAS, Tableau (p. 1) — fuera de alcance: plataformas concretas y bases no relacionales.
+  - proyecto final que identifica problema, recolecta, limpia, analiza y modela (pp. 2–3) — fuera de alcance como formato: el curso evalúa con talleres `Pxxx` y `pytest`; los «models» exceden la línea descriptiva.

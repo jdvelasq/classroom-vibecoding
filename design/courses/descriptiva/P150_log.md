@@ -232,3 +232,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Sílabo de un curso de minería de datos aplicada a salud (textos de Albright–Winston y Han–Kamber): preprocesamiento, exploración, probabilidad e incertidumbre, regresión, patrones frecuentes, clasificación, *clustering* y atípicos, minería de texto; proyecto por entregables (propuesta, reporte de recolección, reporte de preparación, informe final) y artículo de revisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P150.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de unión «INNER, RIGHT, FULL OUTER, EXCEPTION and CROSS JOINs» y «Cleaning Data and Creating Multiple Joins» con `COALESCE` (p. 6) — marginal: P150 H02 ya protege el grano (`validate="many_to_one"`, conservación de filas, sin atributos nulos), lo que detectaría claves huérfanas; que los datos sintéticos no las tengan (S02 «Sólo se ejercita el camino feliz») es un límite del caso, y la señal es de sintaxis SQL, no de capacidad analítica nueva.
+  - modelado relacional y ER, claves «primary, foreign, candidate, surrogate», cardinalidad (p. 5) — ya cubierta en lo que sirve a la descripción: fuentes normalizadas (P150 H01) y claves sustitutas con integridad referencial (P151 H01–H03).

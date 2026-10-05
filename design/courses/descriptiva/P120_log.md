@@ -234,3 +234,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Probability and Uncertainty» (p. 9) — respaldo débil a la candidata P120 de incertidumbre de tasas (`cambridge-business-analytics`): tema semanal de un curso de minería, sin indicación de su uso descriptivo.
+
+## S03.P120.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de variables y de gráficos, «Charting Considerations», «Heat Maps», «Interactive» (p. 7) — ya cubierta: ranking legible (P103 H04), magnitud y tasa en un gráfico y matrices (P120 H05–H06, P121 H04), tablero filtrable (P124 H04).

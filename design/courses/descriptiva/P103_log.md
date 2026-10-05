@@ -225,3 +225,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Getting to Know your Data», «Exploring Data» (p. 9), estadísticas descriptivas del conjunto (p. 6) — ya cubierta: agregación y ranking (P103), histograma (P122 H02), mediana/percentiles/caja (P125 H03).
+
+## S03.P103.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de variables y de gráficos, «Charting Considerations», «Heat Maps», «Interactive» (p. 7) — ya cubierta: ranking legible (P103 H04), magnitud y tasa en un gráfico y matrices (P120 H05–H06, P121 H04), tablero filtrable (P124 H04).
