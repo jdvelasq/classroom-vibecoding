@@ -386,3 +386,17 @@
   - regresión, clasificación (árboles, Naive Bayes, SVM), SVD/PCA y clustering (k-means, jerárquico, k-center) (p. 2) — fuera de alcance: predictiva o modelado no supervisado propio de otras disciplinas contribuyentes.
   - Bloom filters, sketches y estructuras para escalar a big data y flujos (p. 2–3) — fuera de alcance: ingeniería de datos / productos de datos.
   - casos de uso de analítica en empresas (Google, Facebook, Netflix) y proyecto final como 35 % de la evaluación (pp. 2, 4) — marginal: contexto motivacional; la evaluación del curso se rige por `pytest` sobre talleres (AGENTS.md) y la ficha no aporta un criterio de evaluación transferible.
+
+## S03.P100.31
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de métodos y herramientas de un programa de *business analytics*, sin descripciones: recolección de datos (encuestas, NPS, pasiva, medios), A/B testing, correlación y causalidad, pronóstico (suavizamiento exponencial, tendencia y estacionalidad, estadística descriptiva, nuevo producto), regresión, *simulation toolkit* (Analysis ToolPak, Solver), visualización e interpretación de datos, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Visualization and Interpretation» y «Descriptive Statistics» (p. 1) — ya cubierta: visualización en P103/P120–P125 y estadísticos robustos en P125 H03. El rótulo no especifica ninguna práctica nueva.
+  - «Data Collection Methods: Surveys, Net Promoter Score (NPS), and Self-Reports; Passive Data Collection; Media Data Collection» (p. 1) — fuera de alcance: el curso describe datos existentes y no diseña su recolección, y no hay caso de encuestas en el curso. NPS como KPI sería una variante de los KPI ya trabajados (P120, P124, P153): marginal.
+  - «A/B Testing» (p. 1) — fuera de alcance: es inferencia experimental o causal, no descripción, y no hay caso ni datos.
+  - «Forecasting» (objetivo/subjetivo, «Exponential Smoothing», «New Product») y «Regression Analysis» (p. 1) — fuera de alcance: pertenecen a analítica predictiva.
+  - «Simulation Toolkit: Analysis ToolPak, Solver Optimization Tool», «Optimization Models», «Decision Trees» (p. 1) — fuera de alcance: son analítica prescriptiva o predictiva y herramientas de hoja de cálculo. Una señal de herramienta institucional no basta para imponer un tema.

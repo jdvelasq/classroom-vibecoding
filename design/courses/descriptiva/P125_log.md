@@ -257,3 +257,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - distribuciones, varianza, colas y pruebas de significancia (p. 2: «Hypothesis testing for determining the significance of an observation») — fuera de alcance: P120–P125 usan umbrales de volumen (P120 H06, P121 H05, P125 H04) y estadísticos robustos (P125 H03) al servicio del diagnóstico; introducir inferencia formal convertiría los talleres en práctica de Estadística y la ficha institucional no lo impone.
+
+## S03.P125.31
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Correlation and Causation» (p. 1) — ya cubierta: P125 H06 persiste y verifica el límite causal junto a cada respuesta. Que P120–P122 no declaren ese límite ya está registrado por S02 y se trata en la candidata P120 del documento ACM. Al ser un simple rótulo institucional, esta señal no añade argumento propio.
