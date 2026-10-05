@@ -256,3 +256,11 @@
 - **Señales descartadas relevantes:**
   - «Anomalies and the need for normalization», «First, second, third normal forms», «Denormalization» (p. 5) — ya cubierta: normalización de campos multivalor en P503 H02 y contraste plano/dimensional P511–P512 H02. Enseñar formas normales como secuencia sería lógica interna de Bases de Datos (riesgo de identidad).
   - «Data warehouses and data marts», «Business reporting and intelligence» (p. 6) — ya cubierta: P512 H02–H03.
+
+## S03.P512.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

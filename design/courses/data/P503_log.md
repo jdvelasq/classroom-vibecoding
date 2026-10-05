@@ -265,3 +265,11 @@
 - **Señales descartadas relevantes:**
   - «Relational and entity-relationship modeling», «Keys: primary, foreign, candidate, surrogate, super», «Minimum and maximum cardinality», «Business rules» (p. 5) — ya cubierta: P503 H02 (relaciones muchos a muchos) y H04 (restricciones verificables); P511 H02 valida cardinalidad.
   - «Anomalies and the need for normalization», «First, second, third normal forms», «Denormalization» (p. 5) — ya cubierta: normalización de campos multivalor en P503 H02 y contraste plano/dimensional P511–P512 H02. Enseñar formas normales como secuencia sería lógica interna de Bases de Datos (riesgo de identidad).
+
+## S03.P503.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

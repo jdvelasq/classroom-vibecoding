@@ -385,3 +385,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - objetivo «Pose questions, collect relevant data, analyze data, interpret data and provide insights» (p. 1) y proyecto «identify a problem to solve, collect the necessary data, prepare, clean and format the data» (p. 2–3) — ya cubierta en el principio de C01 (pregunta → requisitos de datos) que siguen P500, P510, P516–P517 y P526; el proyecto integral de análisis y dashboards pertenece a Descriptiva.
   - «Use MS Excel, MS Access, SQL, NoSQL, MongoDB and leading industry tools» (p. 1) — fuera de alcance: organización por herramientas contraria a C05.
+
+## S03.P500.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Elementos clave de RAG (segmentación de datos, embeddings, almacén vectorial, recuperación, mejora, generación)» (p. 11) — fuera de alcance: preparación de datos para sistemas de IA generativa; no corresponde a C01–C05 ni hay caso en el curso.
+  - «Seguridad y privacidad de los datos», «Registro de la toma de decisiones para una mayor transparencia», «Control de acceso e identidad» (p. 13) — fuera de alcance: protección de sistemas agénticos; la privacidad de identificadores en datos del curso ya está registrada por S02 (P519, P526).
+  - «Pruebas unitarias», «Métricas de evaluación (precisión, latencia, robustez)», «Fundamentación, validación y veracidad» (p. 13) — fuera de alcance: evaluación de agentes, no de datos.
+  - casos de agentes para análisis de datos financieros, salud y documentos legales (p. 14–16) — fuera de alcance: productos de IA, otro curso.
