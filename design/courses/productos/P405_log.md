@@ -401,3 +401,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - niveles de log DEBUG/INFO/WARNING/ERROR con criterio de uso («WARNING … Default and recommended level for the console view», p. 14) y log a archivo (p. 13–15) — marginal: P405 H01 ya instrumenta eventos persistentes. Distinguir severidades es un detalle de la misma práctica y no cambia lo que el estudiante explica de una ejecución.
+
+## S03.P405.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial previo al lanzamiento de SQL Server 2005 Analysis Services: casos de uso de minería de datos, integración con Integration, Analysis y Reporting Services, API DMX y arquitectura (despliegue, escalabilidad, administración y seguridad por roles). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

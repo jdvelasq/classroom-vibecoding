@@ -592,3 +592,14 @@
   - guía de inicio de KNIME (versión 2.x): instalación, banco de trabajo, construcción de flujos por nodos y puertos, estados de los nodos, ejecución, consola y log, preferencias, clave maestra, importación y exportación de flujos y metanodos. Es una señal de herramienta, sin contenido de operación de productos. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - interfaz, repositorio de nodos, metanodos, hiliting y vistas (p. 5–25) — fuera de alcance: capacitación en una plataforma.
+
+## S03.P400.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial previo al lanzamiento de SQL Server 2005 Analysis Services: casos de uso de minería de datos, integración con Integration, Analysis y Reporting Services, API DMX y arquitectura (despliegue, escalabilidad, administración y seguridad por roles). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - escalabilidad a «thousands of concurrent users and … millions of queries per day» y administración centralizada (p. 2) — fuera de alcance: infraestructura y cloud engineering, excluidos por `s05-diseno-productos.md`.
+  - Reporting Services para «select just the right people to receive the reports based on data mining queries» (p. 1) — marginal: la distribución dirigida de reportes no añade una capacidad respecto del control de acceso (P452) y del catálogo de consumidores (P454). Por familia (professional-learning), el folleto sólo aporta señales de herramienta de 2005 y no basta para imponer un tema.

@@ -401,3 +401,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - flujo como grafo de nodos con dependencias y ejecución de los predecesores («if you execute the last node … all predecessor nodes will be executed», p. 17), estados configurado, ejecutado y reiniciado (p. 3–4, 18) — ya cubierta: tareas con dependencia declarada (P429 H01) y grafo de dependencias reconstruible (P433 H01, H03).
+
+## S03.P429.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial previo al lanzamiento de SQL Server 2005 Analysis Services: casos de uso de minería de datos, integración con Integration, Analysis y Reporting Services, API DMX y arquitectura (despliegue, escalabilidad, administración y seguridad por roles). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
