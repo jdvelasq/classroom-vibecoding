@@ -388,3 +388,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P308.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - monitoreo y «expiración» del modelo desplegado con umbrales (p. 40: «How will you determine when a model has "expired"? Give specifics on accuracy thresholds») — ya cubierta en su versión prescriptiva: P306 H07 (recalibrar/suspender por métrica) y P308 H07 (brecha observada–estimada como señal de recalibración); la ausencia de umbral numérico en algunos gatillos es una variante ya registrada en S02, no una señal nueva.

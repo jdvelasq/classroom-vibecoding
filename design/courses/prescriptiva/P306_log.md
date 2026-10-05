@@ -393,3 +393,11 @@
   - Compromiso entre tasa de acierto y cobertura de los segmentos (56,76 % con poca cobertura, p. 120; 39,81 % con más cobertura, p. 123; 45,63 % con 1.577 aciertos en 3.456 registros, p. 126) — marginal: variante del análisis de capacidad y rendimientos decrecientes de H06 (10/20/30 % del lote).
   - Regla de segmentos interpretables con exclusión explícita, «these segments capture almost 8,000 records with zero hits between them, so it makes sense to exclude them from future offers» (p. 124), y segmentos personalizados «based on your own business rules» (p. 135) — marginal: una regla por segmentos con exclusiones es otra forma de la regla con precedencias de P303 (H01) y de la banda de revisión de P306 (H07); cambiaría la técnica de minería, no lo que el estudiante hace con la política.
   - Elegir entre varias ofertas por cliente con un modelo que se reentrena al llegar nuevas respuestas (SLRM, «Maximum number of predictions per record … 2», p. 199; «Continue training existing model», p. 202) — fuera de alcance: es actualización de un modelo predictivo (Predictiva) y su operación continua (Productos de datos); no aporta una regla de exploración ni un diseño de medición, y el propio texto advierte que los resultados son sobre datos de entrenamiento (p. 204). El valor de medir antes de actuar ya está en P322.
+
+## S03.P306.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - monitoreo y «expiración» del modelo desplegado con umbrales (p. 40: «How will you determine when a model has "expired"? Give specifics on accuracy thresholds») — ya cubierta en su versión prescriptiva: P306 H07 (recalibrar/suspender por métrica) y P308 H07 (brecha observada–estimada como señal de recalibración); la ausencia de umbral numérico en algunos gatillos es una variante ya registrada en S02, no una señal nueva.

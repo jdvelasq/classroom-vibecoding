@@ -389,3 +389,11 @@
 - **Señales descartadas relevantes:**
   - Regla de segmentos interpretables con exclusión explícita, «these segments capture almost 8,000 records with zero hits between them, so it makes sense to exclude them from future offers» (p. 124), y segmentos personalizados «based on your own business rules» (p. 135) — marginal: una regla por segmentos con exclusiones es otra forma de la regla con precedencias de P303 (H01) y de la banda de revisión de P306 (H07); cambiaría la técnica de minería, no lo que el estudiante hace con la política.
   - Elegir el corte según el costo de los errores, «What constitutes a "desirable" gain depends on the cost of Type I and Type II errors» y el corte 0,248 para el 30 % superior (pp. 303–304) — ya cubierta en el curso: el corte derivado del valor/costo está en P304 (H02–H03, costo de oportunidad) y P306 (H03); P303 tiene como contribución el enrutamiento por autoridad y su límite S02 (umbrales sin justificación) no tiene datos de resultados con los que evaluar errores. Una señal de herramienta no basta para cambiar su caso.
+
+## S03.P303.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reglas aplicadas automáticamente a nuevos registros y actualización con criterio humano (p. 40: «Updating the rulesets is not an automatic process because cluster creation requires human input») — ya cubierta: P303 H01/H04 (autoridad humana por motivo) y P304 H06 (automatización acotada con autoridad sobre parámetros).

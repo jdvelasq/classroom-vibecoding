@@ -388,3 +388,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Elegir entre varias ofertas por cliente con un modelo que se reentrena al llegar nuevas respuestas (SLRM, «Maximum number of predictions per record … 2», p. 199; «Continue training existing model», p. 202) — fuera de alcance: es actualización de un modelo predictivo (Predictiva) y su operación continua (Productos de datos); no aporta una regla de exploración ni un diseño de medición, y el propio texto advierte que los resultados son sobre datos de entrenamiento (p. 204). El valor de medir antes de actuar ya está en P322.
+
+## S03.P322.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de IBM del proceso CRISP-DM para minería de datos: seis fases, listas de tareas y un ejemplo de e-retail; la acción y el monitoreo aparecen sólo como despliegue y mantenimiento de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

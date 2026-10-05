@@ -387,3 +387,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P320.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - entrevistar a los afectados tras el despliegue (p. 42: «interview those affected by the results such as customers») e impacto no previsto en clientes establecidos — marginal: refuerza la revisión de consecuencias por grupo que P320 H02–H03 ya ejerce; no aporta método ni dato enseñable.

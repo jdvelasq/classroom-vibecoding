@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Escenarios sobre una palanca controlable, `Lever3*1.25` y `Lever3*1.5`, con predicciones de los KPI afectados (pp. 352–355) — fuera de alcance: análisis qué-pasaría-si sobre un modelo causal temporal observacional (Predictiva); no define una regla ni un umbral de revisión, que es la contribución de P312 (H01–H02).
+
+## S03.P312.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - seguimiento de factores que cambian la validez (p. 40: «which factors or influences (such as market value or seasonal variation) need to be tracked?») — ya cubierta: H02 ancla el gatillo en la magnitud observable que hace indiferente la decisión.

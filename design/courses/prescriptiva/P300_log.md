@@ -566,3 +566,14 @@
   - Reentrenar mensualmente y comparar modelos Jan vs Jan-Feb (pp. 215–222) — fuera de alcance: recalibración del modelo predictivo, no revisión de la política; además se evalúa sobre los datos de entrenamiento (p. 222). Los gatillos de recalibración de la política ya están en P306 H07 y P308 H07.
   - Retención esperada con cotas superior e inferior por extrapolación fuera del rango de supervivencia («between 601 and 735 … between 288 and 597», p. 312) y orden de clientes que cambia según el trimestre (p. 319) — fuera de alcance: estimación con incertidumbre propia de Predictiva; no se convierte en acción.
   - Puntuar datos operativos y desplegar el modelo en un repositorio para «enterprise-wide deployment, scoring, and management of models» (pp. 41–42; p. 7) — fuera de alcance: despliegue y gestión de modelos corresponde a Productos de datos.
+
+## S03.P300.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - criterios de éxito de negocio objetivos/subjetivos y quién los arbitra (p. 10: «you can agree upon who makes the final decision») — ya cubierta: H03 fija objetivo, responsable, métrica de resultado y gatillo en `policy_contract.csv`.
+  - análisis costo/beneficio del proyecto (p. 13: «What is your bottom line?») — fuera de alcance: es la evaluación de un proyecto de minería, no de la acción recurrente; el valor esperado de la acción ya organiza H01–H02.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - fases de preparación de datos y modelado (cap. 3–5) — fuera de alcance: pertenecen a Predictiva y a Fundamentos de data; la evidencia predictiva llega dada o se usa como insumo (P306).
