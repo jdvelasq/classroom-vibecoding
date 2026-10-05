@@ -129,3 +129,11 @@
   - semanas 1–2 «Python for Data Science – Numpy – Pandas – Data Visualization», «Descriptive Statistics», caso «Fitness product customer footfall analysis» (p. 6) — ya cubierta: P103 H01–H04 (pandas, agregación, ranking visual), P120–P122 (resúmenes por segmento, series, matrices) y P125 H03 (mediana y percentiles).
   - «Inferential Statistics» (p. 6) e «Hypothesis Testing: … p-values: Confidence» (p. 9) — fuera de alcance como propuesta: P120 H06 y P121 H05 registran la falta de intervalos como límite, pero introducir inferencia formal desplazaría el foco hacia Estadística; el documento institucional no aporta un caso que lo ancle al producto descriptivo.
   - «Recommendations and Ranking – Using Population Averages – Using Population Comparisons and Ranking» (p. 10) — ya cubierta en su parte descriptiva (rankings por valor y tasa con umbral en P120 H06–H07); la recomendación personalizada es producto de datos.
+
+## S03.P120.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea de 8 semanas sobre diseño de productos de IA: proceso de diseño de IA en cuatro etapas, fundamentos de ML y deep learning, interacción humano-computador, «superminds», GANs y un proyecto final con el «Lawler Model» para definir un problema de IA. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

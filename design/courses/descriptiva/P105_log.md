@@ -121,3 +121,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un programa en línea de 12 semanas: fundamentos de Python/estadística (pandas, visualización, estadística descriptiva e inferencial), aprendizaje no supervisado (clustering, PCA, clustering espectral y de modularidad), regresión y predicción, clasificación y pruebas de hipótesis, deep learning, sistemas de recomendación y redes/modelos gráficos; con casos de estudio por semana. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P105.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Learn to define an appropriate level of machine involvement in interactions with humans and computers» (Semana 5, p. 7) y diseño de interfaces humano-máquina inteligentes (p. 6) — marginal / fuera de alcance: se refiere al diseño de productos de IA; la relación del analista con un asistente generativo en P105 ya tiene su salvaguarda propia (H03 «No inventes datos») y su límite (sin verificación) registrado en S02; esta señal no aporta un mecanismo de verificación aplicable.

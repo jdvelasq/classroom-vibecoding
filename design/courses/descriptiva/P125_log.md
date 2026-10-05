@@ -127,3 +127,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - casos «Predicting Wages» y «Gender Wage Gap» con regresión para inferencia causal (p. 8) — fuera de alcance: P125 compara contra pares por construcción (H02) y declara explícitamente que la brecha no identifica causa (H06); la regresión causal pertenece a otro curso y contradiría ese límite.
+
+## S03.P125.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea de 8 semanas sobre diseño de productos de IA: proceso de diseño de IA en cuatro etapas, fundamentos de ML y deep learning, interacción humano-computador, «superminds», GANs y un proyecto final con el «Lawler Model» para definir un problema de IA. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

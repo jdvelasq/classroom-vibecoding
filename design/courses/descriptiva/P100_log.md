@@ -185,3 +185,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - regresión, regularización, árboles, clasificación, SVM, deep learning, sistemas de recomendación, filtros de Kalman, modelos gráficos (pp. 8–11) — fuera de alcance: predictiva y productos de datos.
   - portafolio de «3 real-life projects and 50+ case studies» (p. 4) — marginal: formato de programa; el curso ya organiza talleres por casos (P120–P125).
+
+## S03.P100.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea de 8 semanas sobre diseño de productos de IA: proceso de diseño de IA en cuatro etapas, fundamentos de ML y deep learning, interacción humano-computador, «superminds», GANs y un proyecto final con el «Lawler Model» para definir un problema de IA. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Implement the Lawler Model for defining an AI problem» y resumen ejecutivo de un producto de IA (p. 6, p. 7) — fuera de alcance: definición de problemas para productos de IA (curso de productos de datos); el encuadre de preguntas descriptivas se trata con fuentes más pertinentes (INFORMS, `dataops-03`).
+  - algoritmos de ML supervisado, no supervisado y semisupervisado, deep learning, GANs, GPT-3, impacto social de los medios sintéticos (pp. 3, 6–7) — fuera de alcance: predictiva, IA y productos de datos.
