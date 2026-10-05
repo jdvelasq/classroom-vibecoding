@@ -169,3 +169,11 @@
   - «Analyzing and translating technical results into actionable insights for executives» (p. 7); «communicate results that are clear and meaningful to stakeholders» (p. 11) — ya cubierta en lo que toca a descripción: P120 H07 (prioridad frente a riesgo), P125 H06 (respuesta con límite); el folleto no describe cómo se evalúa esa comunicación, por lo que no aporta un mecanismo concreto (institutional ilustra, no impone).
   - «Thinking About Risk and Uncertainty Through Probability and Distributions» (Módulo 2, p. 7) — marginal: P125 H03 ya justifica medianas y percentiles frente a un único promedio; probabilidad formal es contenido de Estadística/predictiva.
   - «Fairness and Bias Issues in Data-Driven Predictions» (Módulo 16, p. 8) y caso de algoritmos de análisis facial (p. 10) — fuera de alcance en su forma (sesgo de modelos predictivos); la comparación justa frente a pares en un tema sensible ya está en P125 H02, H04 y H07.
+
+## S03.P125.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelos de valor con atributos organizados en jerarquías «for evaluation and summation» (p. 2) — fuera de alcance: agregar atributos ponderados en una función de valor convierte la priorización descriptiva en una regla de decisión (prescriptiva). Además está ya cubierta en su forma descriptiva: P120 H07 separa el criterio de riesgo del de prioridad y P125 H04 exige un doble criterio con umbrales explícitos sin fundirlos en un puntaje.

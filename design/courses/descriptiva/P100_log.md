@@ -244,3 +244,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - clustering (Módulo 4, p. 7) — fuera de alcance: segmentación no supervisada como técnica de ML sin caso descriptivo en el documento.
   - regresión, CART, *ensembles*, redes neuronales, NLP, filtrado colaborativo, optimización lineal, despliegue (pp. 7–9) — fuera de alcance: predictiva, prescriptiva y productos de datos.
+
+## S03.P100.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cronograma de un curso en línea de cuatro semanas sobre decisiones tempranas de diseño: selección de conceptos (Pugh), estudios de *trade-off*, modelos de valor, generación y evaluación de espacios de diseño, visualización del *tradespace*, frente de Pareto y sensibilidad. Sólo trae títulos de unidades y una descripción breve de cada una. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - selección de conceptos sin modelo (Pugh) y estructura de un estudio de *trade-off* (p. 1: «quantitative methods that do not require a model, such as the Pugh method … overview of how to structure a trade study») — fuera de alcance: son métodos para elegir entre alternativas de diseño, es decir, decisión y prescripción, no descripción de lo que ocurre.
+  - generación combinatoria y muestreo de espacios de diseño, y evaluación por valor, costo y desempeño (p. 3: «design decisions are combinatorially paired and sampled to generate a design space») — fuera de alcance: no hay caso ni datos observados que describir; el objeto es un espacio de alternativas construido.
+  - sensibilidad, robustez y representación de la incertidumbre de un diseño (p. 4: «define what sensitivity means for a design … how uncertainty can be captured and represented») — fuera de alcance: es robustez de una decisión (prescriptiva). La incertidumbre de una descripción no aparece en este documento como señal.
+  - pre-evaluación y post-evaluación para medir la línea base del estudiante (p. 1: «take a Pre-Assessment to get a baseline of your understanding»; p. 4: «Post-Assessment») — fuera de alcance: es una práctica institucional de evaluación del programa. La evaluación de los talleres está fijada por el contrato con `pytest` de `AGENTS.md`, y esta señal no cambia lo que el estudiante hace en ningún Pxxx.

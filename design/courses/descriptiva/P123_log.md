@@ -168,3 +168,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un certificado en línea de 6 meses (24 módulos en cinco partes: fundamentos de ciencia de datos, optimización, ML, ML avanzado y despliegue) con casos de la facultad de MIT Sloan; orientación dominante a modelado predictivo y prescriptivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P123.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - visualización e interacción con el *tradespace*, búsqueda de *clusters* y del frente de Pareto (pp. 3–4: «looking for patterns in the tradespace, such as clusters and the Pareto Front») — fuera de alcance: el patrón que se busca es el de alternativas de diseño para optimizar. La búsqueda de estructura descriptiva sobre datos observados ya la cubre P123 H04/H05 (co-ocurrencia y comunidades).

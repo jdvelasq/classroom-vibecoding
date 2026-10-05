@@ -170,3 +170,11 @@
 - **Señales descartadas relevantes:**
   - «Analyzing and translating technical results into actionable insights for executives» (p. 7); «communicate results that are clear and meaningful to stakeholders» (p. 11) — ya cubierta en lo que toca a descripción: P120 H07 (prioridad frente a riesgo), P125 H06 (respuesta con límite); el folleto no describe cómo se evalúa esa comunicación, por lo que no aporta un mecanismo concreto (institutional ilustra, no impone).
   - «Correlation» (Módulo 3, p. 7) — marginal: técnica aislada sin caso descriptivo asociado en el documento; las relaciones entre dimensiones ya se describen con matrices de segmentos (P120 H06, P121 H04, P122 H06).
+
+## S03.P120.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelos de valor con atributos organizados en jerarquías «for evaluation and summation» (p. 2) — fuera de alcance: agregar atributos ponderados en una función de valor convierte la priorización descriptiva en una regla de decisión (prescriptiva). Además está ya cubierta en su forma descriptiva: P120 H07 separa el criterio de riesgo del de prioridad y P125 H04 exige un doble criterio con umbrales explícitos sin fundirlos en un puntaje.
