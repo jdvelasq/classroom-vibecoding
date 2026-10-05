@@ -223,3 +223,14 @@
   - «Analyze technical and operational requirements to build AI models» (p. 6); costos y requisitos técnicos de un plan de desarrollo de IA (p. 6) — fuera de alcance: requisitos de productos de IA (curso de productos de datos/IA), no requisitos de datos para una pregunta.
   - ML, deep learning, HCI, GANs, GPT-3 (pp. 4, 6–7) — fuera de alcance.
   - ejercicios en Jupyter Notebook (p. 8) — marginal: práctica de herramienta ya presente en el curso.
+
+## S03.P500.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso ejecutivo sobre estrategia de plataformas digitales y mercados de dos lados: efectos de red, precios, arquitectura técnica, APIs y estándares, regulación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Growing the Platform: Ensuring Quality and Robustness — Gating – Establishing Quality» (p. 15) — fuera de alcance: calidad de participantes de la plataforma, no calidad de datos.
+  - «Modeling Network Effects» (p. 15) — fuera de alcance: modelado de dinámica de mercados, sin relación con C01–C05.
