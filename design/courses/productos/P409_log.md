@@ -435,3 +435,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - versionado de archivos PBIX como binarios, LFS y separación de modelo y reporte para desarrollo en paralelo (p. 17–18, 93–94) — fuera de alcance: problema propio de la herramienta. El versionado de la definición del producto ya está en P408 H01.
+
+## S03.P409.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

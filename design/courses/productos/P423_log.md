@@ -436,3 +436,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - taller práctico de Power BI empresarial: modelado dimensional, Power Query, medidas DAX, actualización incremental, separación de modelo y reporte, flujo de despliegue DEV/TEST/PROD y certificación de datasets dentro de un plan de gobierno. Como fuente professional-learning, aporta señales de práctica atadas a una plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P423.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Evalúe los resultados [...] ¿Sus modelos predictivos produjeron resultados tangibles, como un aumento de los ingresos o una reducción de los costos?» (p. 4) y «La evaluación constante [...] identificará la degradación de la precisión de los modelos» (p. 5) — degradación: ya cubierta (P423 H01–H02); medir impacto de negocio de las acciones: fuera de alcance, no hay caso con datos de resultado económico y desplaza hacia evaluación de la decisión (Prescriptiva).

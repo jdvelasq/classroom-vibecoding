@@ -436,3 +436,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificación de datasets por el responsable de datos y árbol de decisión entre contenido certificado y semiconfiable (p. 21, 91) — marginal: dueño y consumidor ya están en P454 H01, y la compuerta de aceptación de insumos en P402 H01–H03. El sello de certificación es un mecanismo de la plataforma.
+
+## S03.P454.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - proceso transparente «importante [...] especialmente para los auditores» (p. 4); activos de implementación «soportados por metadatos para brindar la documentación importante alrededor del proceso completo» (p. 9) — ya cubierta: P443 (linaje a la huella del insumo) y P454 (ficha operacional).

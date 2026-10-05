@@ -436,3 +436,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - taller práctico de Power BI empresarial: modelado dimensional, Power Query, medidas DAX, actualización incremental, separación de modelo y reporte, flujo de despliegue DEV/TEST/PROD y certificación de datasets dentro de un plan de gobierno. Como fuente professional-learning, aporta señales de práctica atadas a una plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P403.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - validar patrones con un conjunto de prueba y modificar hasta cumplir «los estándares deseados» antes de aplicarlos a los sistemas operativos (p. 8) — ya cubierta: P403 H02 traduce umbrales operativos en compuerta automatizada; el sobreajuste y la validación del método pertenecen a Predictiva.

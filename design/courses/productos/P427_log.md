@@ -433,3 +433,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reglas de despliegue por etapa, el mismo dataset con parámetro `DatabaseName` distinto en DEV y PROD (p. 86–87, imagen: «Create rules defining parameter values and data sources for this artifact. These rules will be applied when deploying to this stage») — marginal: la configuración externa al código y validada ya está en P406 H01 y P407 H01, y los secretos fuera del repositorio en P427 H01. Ligar la configuración a una etapa de despliegue es una variante de la misma práctica.
+
+## S03.P427.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

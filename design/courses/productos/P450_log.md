@@ -433,3 +433,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - taller práctico de Power BI empresarial: modelado dimensional, Power Query, medidas DAX, actualización incremental, separación de modelo y reporte, flujo de despliegue DEV/TEST/PROD y certificación de datasets dentro de un plan de gobierno. Como fuente professional-learning, aporta señales de práctica atadas a una plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P450.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - decisiones estratégicas tomadas por humanos frente a decisiones operativas automáticas «que no requieren de la intervención humana» (p. 4); reglas de negocio junto con modelos (p. 12) — ya cubierta / marginal: P450 H01–H02 separan recomendación y acción autorizada; distinguir qué decisiones se automatizan es una variante sin método en el documento.

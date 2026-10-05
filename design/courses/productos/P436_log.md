@@ -433,3 +433,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - actualización incremental con periodos archivados, periodos incrementales y «Detect data changes: Reprocesses any partition with a date newer than the last refresh date» (p. 64–65) — ya cubierta: marca de agua (P436 H01), registro tardío y reproceso (P437 H01–H02), backfill acotado (P438 H01).
+
+## S03.P436.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

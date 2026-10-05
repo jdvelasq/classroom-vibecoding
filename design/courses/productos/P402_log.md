@@ -441,3 +441,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificación de datasets por el responsable de datos y árbol de decisión entre contenido certificado y semiconfiable (p. 21, 91) — marginal: dueño y consumidor ya están en P454 H01, y la compuerta de aceptación de insumos en P402 H01–H03. El sello de certificación es un mecanismo de la plataforma.
+
+## S03.P402.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

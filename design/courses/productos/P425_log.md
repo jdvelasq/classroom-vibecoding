@@ -435,3 +435,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - taller práctico de Power BI empresarial: modelado dimensional, Power Query, medidas DAX, actualización incremental, separación de modelo y reporte, flujo de despliegue DEV/TEST/PROD y certificación de datasets dentro de un plan de gobierno. Como fuente professional-learning, aporta señales de práctica atadas a una plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P425.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modos de implementación por lotes, bajo demanda en una aplicación o en tiempo real sobre flujo (p. 12) — ya cubierta para lote (P418) y servicio (P425–P426, «Despliega un servicio, no un lote»); tiempo real/streaming fuera de alcance (Big Data).

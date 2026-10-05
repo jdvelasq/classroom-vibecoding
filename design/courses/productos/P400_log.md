@@ -634,3 +634,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - adopción y cultura de datos, patrocinio, comunidad de práctica y capacitación (p. 22) — fuera de alcance: estrategia organizacional, no operación de una capacidad.
   - modelado dimensional, DAX, grupos de cálculo, plegado de consultas, DirectQuery y modelos compuestos, ajuste de rendimiento con DAX Studio (p. 32–62, 69–74, 95–97, 100–101) — fuera de alcance: BI y modelado de datos (Descriptiva, Fundamentos) y capacitación en una plataforma, que es frontera explícita del curso.
+
+## S03.P400.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - pregunta de negocio → hipótesis analítica, tabla base analítica, muestreo, partición entrenamiento/prueba, exploración, clustering, reglas de asociación, analítica de texto, transparencia frente a precisión (p. 4–8) — fuera de alcance: formulación, Descriptiva y Predictiva; el curso no vuelve a enseñar el método analítico de origen. Cómputo distribuido en memoria y Hadoop (p. 10–11) — fuera de alcance (Big Data).
