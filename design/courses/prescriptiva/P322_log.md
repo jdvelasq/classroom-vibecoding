@@ -58,3 +58,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Informe de consenso sobre la formación de pregrado en ciencia de datos. Define el *data acumen*, es decir, la capacidad de «make good judgments … and ultimately make good decisions using data» (p. 22), en diez áreas conceptuales, y recomienda integrar la ética en todo el currículo y adoptar un código o juramento profesional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P322.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «El estudio, en sí mismo, genera una perturbación en la proyección, dado que su implementación podría conducir a la “corrección de curso”» (p. 120); «que los pronósticos sirvan como una advertencia y no como una trayectoria inevitable» (p. 110) — marginal: la observación de que el pronóstico cambia la acción que lo invalida es conceptualmente interesante, pero aquí es un comentario de política pública sin caso ni datos que permitan enseñarla con rigor. La relación entre trayectorias y acción ya está en P309 H02 y H06.

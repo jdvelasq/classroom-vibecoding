@@ -58,3 +58,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dashboards que dan «situational awareness for decision makers» (p. 45) y comunicación a no expertos (pp. 47–48: «Ability to understand client needs», «Clear and comprehensive reporting»). Categoría: ya cubierta y, en parte, fuera de alcance. El registro operativo con indicador, gatillo y responsable está en P321 H01–H02, y la explicación ante la autoridad en P305 H04 y P308 H05. El dashboard descriptivo corresponde a Descriptiva o a Productos de datos.
+
+## S03.P321.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Capacidad de explicar conceptos técnicos complejos a audiencias no técnicas» (p. 158); «comunicación efectiva» (pp. 177, 196) — marginal: la competencia comunicativa genérica no cambia el producto de P321 (registro operativo con indicador, meta, gatillo y responsable, H01–H02). Los límites de P321 (recomendación dada, sin datos de seguimiento) ya están en S02 y esta fuente no los toca.
+  - monitoreo de modelos («model drift, data drift») y reentrenamiento; «justificar predicciones (explicabilidad/interpretabilidad de modelos)» (p. 176) — fuera de alcance: son monitoreo y explicabilidad del modelo predictivo, que pertenecen a Predictiva y Productos de datos. El monitoreo de la política (resultados, gatillos y respuesta) ya está cubierto en P306 H07, P308 H07 y P319 H06.
+  - rol «AI Safety & Governance Lead: políticas de IA responsable, privacidad, cumplimiento, gestión de riesgo de modelo» (pp. 160, 332); «evals, observabilidad, gobierno y seguridad como “primeras clases”» (p. 333) — fuera de alcance: es gobierno de plataformas de IA y LLM (cumplimiento, privacidad, red-teaming), propio de Productos de datos o de un curso de IA. Prescriptiva gobierna la política (autoridad, salvaguardas, gatillos), lo que ya hacen P303, P308, P320 y P321.

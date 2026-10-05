@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Model assessment and sensitivity analysis» (p. 46). Categoría: ya cubierta. La sensibilidad como gatillo de revisión está en P304 H05, P309 H06 y P312 H01–H02. En el documento se refiere a modelos predictivos (frontera con Predictiva).
+
+## S03.P312.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el modelo de proyección trata los parámetros de IA «como supuestos de escenario… y reportar análisis de sensibilidad para mostrar los cambios en los resultados bajo cada configuración»; «Gobierno del modelo: revisiones anuales; actualización de (K,r,m) si cambian señales del mercado» (pp. 43–44) — marginal: es práctica de un modelo de pronóstico (Predictiva) y equivale a lo que P312 H01–H02 ya convierte en umbral y gatillo de revisión de una política.

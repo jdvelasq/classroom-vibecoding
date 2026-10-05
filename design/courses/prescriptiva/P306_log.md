@@ -59,3 +59,11 @@
 - **Señales descartadas relevantes:**
   - «Data science students need to know about randomized trials (commonly used in businesses running A/B comparisons)» y la advertencia de que las relaciones observadas «will not necessarily hold in the next set of records» (p. 44). Categoría: marginal para este documento. P306 ya explota un tratamiento aleatorizado e inferencia causal (H01–H02). La falta de un grupo de control en la operación propuesta, que impide medir el efecto observado con `monitoring_plan.csv` (S05), es un defecto real, pero ya está registrado en S02.P306.01, ambigüedad (3). Este documento lo trata como fundamento estadístico de pregrado y no aporta un argumento específico sobre el monitoreo de una política desplegada.
   - «Inaccurate predictions of flu trends … overreliance on outdated models» (p. 34). Categoría: ya cubierta. La recalibración y la brecha entre lo observado y lo estimado como gatillo están en P306 H07 y P308 H07.
+
+## S03.P306.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - monitoreo de modelos («model drift, data drift») y reentrenamiento; «justificar predicciones (explicabilidad/interpretabilidad de modelos)» (p. 176) — fuera de alcance: son monitoreo y explicabilidad del modelo predictivo, que pertenecen a Predictiva y Productos de datos. El monitoreo de la política (resultados, gatillos y respuesta) ya está cubierto en P306 H07, P308 H07 y P319 H06.

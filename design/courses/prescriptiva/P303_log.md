@@ -58,3 +58,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Informe de consenso sobre la formación de pregrado en ciencia de datos. Define el *data acumen*, es decir, la capacidad de «make good judgments … and ultimately make good decisions using data» (p. 22), en diez áreas conceptuales, y recomienda integrar la ética en todo el currículo y adoptar un código o juramento profesional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P303.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Necesitamos personas que… entiendan el problema de negocio, que puedan traducir preguntas estratégicas en modelos analíticos y que comuniquen resultados de manera efectiva a stakeholders no técnicos» (p. 173); «evaluar trade-offs y tomar decisiones informadas» (p. 177) — ya cubierta: el contrato de política (P300 H03, P302 H04) y las razones de descarte (P302 H01) responden a esa traducción. El intercambio explícito aparece en P307 H02, P309 H04 y P317 H02.

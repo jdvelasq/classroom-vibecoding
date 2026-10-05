@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Model assessment and sensitivity analysis» (p. 46). Categoría: ya cubierta. La sensibilidad como gatillo de revisión está en P304 H05, P309 H06 y P312 H01–H02. En el documento se refiere a modelos predictivos (frontera con Predictiva).
+
+## S03.P309.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «El estudio, en sí mismo, genera una perturbación en la proyección, dado que su implementación podría conducir a la “corrección de curso”» (p. 120); «que los pronósticos sirvan como una advertencia y no como una trayectoria inevitable» (p. 110) — marginal: la observación de que el pronóstico cambia la acción que lo invalida es conceptualmente interesante, pero aquí es un comentario de política pública sin caso ni datos que permitan enseñarla con rigor. La relación entre trayectorias y acción ya está en P309 H02 y H06.

@@ -58,3 +58,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - sesgos en *predictive policing* (p. 34) y «algorithmic bias» en la priorización de inspecciones o controles. Categoría: fuera de alcance para P305, porque su caso declara que no hay atributos protegidos (S01) y no hay datos para modelar equidad con rigor. La auditoría por grupo está cubierta en P320 H01–H02.
+
+## S03.P320.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - rol «AI Safety & Governance Lead: políticas de IA responsable, privacidad, cumplimiento, gestión de riesgo de modelo» (pp. 160, 332); «evals, observabilidad, gobierno y seguridad como “primeras clases”» (p. 333) — fuera de alcance: es gobierno de plataformas de IA y LLM (cumplimiento, privacidad, red-teaming), propio de Productos de datos o de un curso de IA. Prescriptiva gobierna la política (autoridad, salvaguardas, gatillos), lo que ya hacen P303, P308, P320 y P321.
