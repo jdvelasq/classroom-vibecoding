@@ -230,3 +230,11 @@
   - árboles CART y aprendizaje por ensambles como modelos no lineales de regresión y clasificación (módulos 14–15, p. 8): se añaden como fuente de N01.
   - caso BlueBike: regresión para predecir demanda y R² para elegir el modelo (p. 10): ya cubierta (H04, H07–H09).
   - «Interpretability and Causality in Models» (módulo 22, p. 9): segunda fuente para la señal de interpretación de modelos (con National Academies); N01 recoge la lectura de importancia de variables de árboles y ensambles.
+
+## S03.P200.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de ingeniería de sistemas orientada al valor (semanas 1–4: modelos de valor, generación y evaluación de alternativas, exploración de *tradespace* bajo incertidumbre); es contenido de decisión multicriterio, propio de Prescriptiva; sin señales para esta actividad.

@@ -196,3 +196,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - equidad y sesgo en predicciones basadas en datos; caso de algoritmos de análisis facial (módulo 16, pp. 8, 10): ya cubierta en la medida que el caso lo permite (H04); el folleto no detalla métodos.
+
+## S03.P205.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de ingeniería de sistemas orientada al valor (semanas 1–4: modelos de valor, generación y evaluación de alternativas, exploración de *tradespace* bajo incertidumbre); es contenido de decisión multicriterio, propio de Prescriptiva; sin señales para esta actividad.

@@ -177,3 +177,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelos de filtrado colaborativo y su diseño (módulo 8, p. 8): ya cubierta (H02–H03); el folleto no describe evaluación, por lo que no se añade a T01.
+
+## S03.P215.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de ingeniería de sistemas orientada al valor (semanas 1–4: modelos de valor, generación y evaluación de alternativas, exploración de *tradespace* bajo incertidumbre); es contenido de decisión multicriterio, propio de Prescriptiva; sin señales para esta actividad.

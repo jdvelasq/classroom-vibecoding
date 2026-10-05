@@ -201,3 +201,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - transfer learning para representar imágenes (parte 4, p. 9): fuera de alcance; requeriría una actividad propia con caso, datos e infraestructura que el folleto no aporta.
+
+## S03.P201.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de ingeniería de sistemas orientada al valor (semanas 1–4: modelos de valor, generación y evaluación de alternativas, exploración de *tradespace* bajo incertidumbre); es contenido de decisión multicriterio, propio de Prescriptiva; sin señales para esta actividad.
