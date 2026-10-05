@@ -115,3 +115,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «the typical metrics of high-performing companies … Wait Time, Deployment Frequency, Service Restoration Time, and Failure Rate» (p. 14) y «KPIs» como contenido técnico (p. 7) — fuera de alcance: métricas de operación de software; la definición de KPI como contrato ya está cubierta (P153 H01–H02).
+
+## S03.P153.13
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Apply best practices in data governance» (p. 7); «Data Governance and Compliance» (p. 15) — ya cubierta: P153 H01, H03–H04 (catálogo, compuerta de calidad, linaje).
