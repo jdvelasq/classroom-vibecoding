@@ -34,3 +34,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-E.1.2.2 «Identify stakeholders and bystanders» (p. 7) — marginal: P308 y P320 ya distinguen afectados (familias, grupos) de decisores; no cambia lo que el estudiante hace.
+
+## S03.P320.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - consecuencias indirectas y efectos adversos a lo largo del tiempo (p. 8: CAP-P.1.5.6; p. 25: CAP-P.7.5.1 «Identify likely adverse consequences of implementing the analytics solution») y temas éticos en el informe de validación (p. 22: CAP-P.6.1.2) — ya cubierta en su núcleo por P320 H01–H03 (guarda de equidad que decide y gobernanza) y, como consecuencias operativas, por P304 H04 y P309 H05; el documento sólo fija una expectativa general, sin método nuevo que enseñar.

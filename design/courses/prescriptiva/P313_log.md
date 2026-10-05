@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - desagrega cada tarea del INFORMS Analytics Framework en objetivos evaluables del examen CAP-E, con pesos por dominio (despliegue 9 %, ciclo de vida 8 %); incluye subtareas específicas para modelos prescriptivos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P313.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - línea base del estado actual (p. 12: CAP-P.2.5.1 «Identify current baseline performance») — ya cubierta: comparación contra reglas ingenuas con igual capacidad (P301 H02, P305 H02, P308 H02–H03, P313 H05, P318 H02).

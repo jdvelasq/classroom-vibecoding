@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - desagrega cada tarea del INFORMS Analytics Framework en objetivos evaluables del examen CAP-E, con pesos por dominio (despliegue 9 %, ciclo de vida 8 %); incluye subtareas específicas para modelos prescriptivos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P302.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - beneficios, costos y sus *tradeoffs* en el caso de negocio (p. 8: CAP-P.1.5.4 «Identify the tradeoffs of business benefits and costs») — ya cubierta: valor esperado bajo factibilidad (P300 H01–H02) y razón de descarte por valor (P302 H01).

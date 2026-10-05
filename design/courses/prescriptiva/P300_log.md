@@ -55,3 +55,14 @@
   - CAP-E.1.5.6 «Identify unintended direct consequences of the potential solution» y CAP-E.6.1.2 «Identify a potential ethical analytics risk» (pp. 8, 22) — ya cubierta: P320 H01–H02, P305 H06 (excepción por restricción legal/equidad) y P308 H06.
   - CAP-E.2.6.2 y 5.3.5 sesgo de modelos predictivos (pp. 12, 20) — fuera de alcance: pertenece a Predictiva; Prescriptiva recibe la estimación como evidencia.
   - Domain III (pp. 13–16: gobierno de datos, arquitectura, 4 V, normalización) y CAP-E.4.4 stack tecnológico y hoja de cálculo (p. 18) — fuera de alcance: Fundamentos de data / Productos de datos.
+
+## S03.P300.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - beneficios, costos y sus *tradeoffs* en el caso de negocio (p. 8: CAP-P.1.5.4 «Identify the tradeoffs of business benefits and costs») — ya cubierta: valor esperado bajo factibilidad (P300 H01–H02) y razón de descarte por valor (P302 H01).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - sesgo de datos de entrenamiento y causas de resultados no éticos de modelos predictivos (p. 12: CAP-P.2.6.2; p. 20: CAP-P.5.3.5) — fuera de alcance: pertenece a Predictiva; Prescriptiva recibe la estimación como insumo.
+  - gestión de datos, arquitectura, *stack* tecnológico, debilidades de hojas de cálculo, pruebas de despliegue y flujos de producción (p. 13–18, 23) — fuera de alcance: Fundamentos de data y Productos de datos.

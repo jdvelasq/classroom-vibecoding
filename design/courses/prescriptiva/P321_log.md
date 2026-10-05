@@ -34,3 +34,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P321.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - métricas de desempeño aceptable, documentación para distintas audiencias y para reutilizar la solución si cambian las circunstancias (p. 23: CAP-P.6.4.2; p. 24–25: CAP-P.7.1.1, 7.6.1) — ya cubierta: P321 H01–H02 conserva supuesto y alternativa no elegida y vincula indicador, meta, gatillo y responsable.

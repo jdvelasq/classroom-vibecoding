@@ -34,3 +34,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-E.5.4.2 «Identify which data or model issue is the cause of a client concern about the output of a simple prescriptive analytics model» (p. 21) — marginal: P308 H05 explica el óptimo familia por familia ante la autoridad y H07 trata la tasa de anulación como señal de revisión; diagnosticar una objeción del usuario sería una variante de esa explicación.
+
+## S03.P308.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - explicación no técnica de resultados y preocupación del cliente sobre la salida prescriptiva (p. 21: CAP-P.5.4.2, 5.6.1) — ya cubierta: exclusiones explicadas al supervisor (P305 H04) e intercambio familia por familia (P308 H05).
