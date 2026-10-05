@@ -309,3 +309,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «practical application with large data sets containing missing values and outliers» dentro de GLM (p. 8) — fuera de alcance (contexto de modelado predictivo); el tratamiento de faltantes como requisito de datos ya se discute en P500/P510.
   - visualización/dashboards con PowerBI/Tableau, regresión, ML, series de tiempo, optimización (pp. 4–14) — fuera de alcance (cursos descriptivo, predictivo y prescriptivo); la familia institutional ilustra, no impone.
+
+## S03.P500.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo combinado (en línea + 3,5 días en campus) sobre estrategia, liderazgo, innovación, futuros y gobernanza de IA generativa y agéntica para directivos con más de 10 años de experiencia. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - cultura de excelencia en datos (p. 16 «Creating a culture of data excellence»; p. 5 «Data excellence») — marginal: título de sesión sin contenido operativo; no cambia ninguna capacidad `data.C01`–`C05`.
+  - configurar flujos y decisiones para ML (p. 16 «Configuring workflows and decisions for machine learning (ML)») — fuera de alcance (Predictiva/Prescriptiva y organización).
+  - gobernanza, riesgo, controles empresariales y confianza (p. 17 «AI Governance, Enterprise Controls and Program Wrap-Up») — fuera de alcance: gobierno empresarial es frontera del curso.
+  - estrategia, modelos de negocio, futuros, liderazgo (pp. 3–19) — fuera de alcance.

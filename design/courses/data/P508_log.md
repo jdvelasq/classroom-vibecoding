@@ -205,3 +205,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data in Databases: Get an overview of relational and NoSQL databases and practice data manipulation with SQL» (p. 6); «Introduction to SQL» (p. 5) — ya cubierta por la secuencia SQL P503–P508 y P510; NoSQL marginal (P518 ya trata JSON anidado).
+
+## S03.P508.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo combinado (en línea + 3,5 días en campus) sobre estrategia, liderazgo, innovación, futuros y gobernanza de IA generativa y agéntica para directivos con más de 10 años de experiencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
