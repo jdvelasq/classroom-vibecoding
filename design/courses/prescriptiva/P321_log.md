@@ -374,3 +374,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Entendimiento y análisis de datos que influencian las decisiones» como habilidad del analista (p. 5) — marginal: enunciado genérico sin mecanismo.
+
+## S03.P321.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - operación: «integrating predictive and prescriptive outputs directly into organizational decision workflows… human-in-the-loop mechanisms» (p. 20) y «monitoring not only tracks technical performance but also verifies the benefits delivered» (p. 21) — ya cubierta: registro con estado de aprobación (P306 H07, P308 H06), plan de monitoreo con respuesta (P306 H07, P308 H07) e indicador–meta–gatillo–responsable (P321 H02). La verificación del beneficio en operación sólo refuerza, sin aportar método, la candidata de holdout de P306 propuesta desde otro documento; por sí sola esta fuente no la justifica.
+  - mejora continua: «lessons learned trigger new, more focused business questions», retrospectivas y documentación «viva» (pp. 21–22) — marginal: aprendizaje organizacional del proyecto; la revisión de la política por gatillos ya está en P321 H02 y P322 H02–H03.

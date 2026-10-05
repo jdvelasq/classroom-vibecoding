@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P302.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - alcance del proyecto: los equipos técnicos traducen metas en «precise data-science formulations of inputs, outputs, constraints, and quantitative evaluation criteria» y se definen «success criteria» (p. 14) — ya cubierta: el contrato de política con contexto, objetivo, restricción, salvaguarda, excepción y métrica de resultado ya es el entregable de P300 (H03) y P302 (H04).

@@ -544,3 +544,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - estructuras de equipo, roles (data engineer, DataOps engineer, data platform administrator) y perfiles de habilidades (pp. 2–8) — fuera de alcance: organización de capacidades de datos; corresponde, si a alguno, a Productos de datos o a gestión, no a una política de decisión.
   - «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Artifactos no reproducibles», «Monitoreo del modelo y rentrenamiento ineficientes» (p. 2) — fuera de alcance: operación de modelos e infraestructura (Productos de datos); el registro y la trazabilidad de decisiones de una política ya están en P303 H03, P306 H08 y P321.
+
+## S03.P300.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - alcance del proyecto: los equipos técnicos traducen metas en «precise data-science formulations of inputs, outputs, constraints, and quantitative evaluation criteria» y se definen «success criteria» (p. 14) — ya cubierta: el contrato de política con contexto, objetivo, restricción, salvaguarda, excepción y métrica de resultado ya es el entregable de P300 (H03) y P302 (H04).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - el marco completo (dimensiones de ejecución, Scrum/Sprint 0, preparación de datos, MLOps; pp. 12–24) — fuera de alcance: metodología de gestión de proyectos de analítica, no capacidad de diseño de políticas; útil como contexto organizacional (familia literature-derived), no como prescripción para un taller.

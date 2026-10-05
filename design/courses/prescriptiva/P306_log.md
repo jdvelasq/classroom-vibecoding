@@ -373,3 +373,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - operación: «integrating predictive and prescriptive outputs directly into organizational decision workflows… human-in-the-loop mechanisms» (p. 20) y «monitoring not only tracks technical performance but also verifies the benefits delivered» (p. 21) — ya cubierta: registro con estado de aprobación (P306 H07, P308 H06), plan de monitoreo con respuesta (P306 H07, P308 H07) e indicador–meta–gatillo–responsable (P321 H02). La verificación del beneficio en operación sólo refuerza, sin aportar método, la candidata de holdout de P306 propuesta desde otro documento; por sí sola esta fuente no la justifica.

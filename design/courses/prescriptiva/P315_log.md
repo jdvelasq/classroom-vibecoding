@@ -369,3 +369,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P315.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «policies for time-based or condition-based maintenance of data pipelines and deployed models» (p. 21), «retraining… drift detection» (pp. 20–21) — fuera de alcance: mantenimiento de modelos y pipelines (Productos de datos / Predictiva). La distinción cadencia fija vs. disparada por condición ya existe en las políticas del curso (revisión diaria y gatillo en P309 H06; etapas con gatillo en P315 H05).
+  - gobierno: «establishment of criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: la frase se refiere a selección de variables en modelado, no a umbrales de decisión; aunque los logs S02 registran umbrales no derivados (P303 0,08/0,30/10.000; P311 gatillos; P315 40/60 min; P320 0,10), esta fuente no aporta un método para derivarlos y P312 H02 ya enseña a anclar un umbral en el punto de indiferencia.

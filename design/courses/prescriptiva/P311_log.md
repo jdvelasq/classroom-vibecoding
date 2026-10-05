@@ -369,3 +369,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P311.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gobierno: «establishment of criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: la frase se refiere a selección de variables en modelado, no a umbrales de decisión; aunque los logs S02 registran umbrales no derivados (P303 0,08/0,30/10.000; P311 gatillos; P315 40/60 min; P320 0,10), esta fuente no aporta un método para derivarlos y P312 H02 ya enseña a anclar un umbral en el punto de indiferencia.
+  - evaluación: «trade-off analysis, balancing criteria such as accuracy versus interpretability… predictive performance versus usability» y «deployment decisions are based on both predictive accuracy and the capacity to generate measurable business value» (pp. 18–19) — ya cubierta/fuera de alcance: la evaluación de modelos predictivos es de Predictiva; la comparación por valor de decisión frente a precisión ya es P306 H04 y la validación frente a líneas base P311/P313.
