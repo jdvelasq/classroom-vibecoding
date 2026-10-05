@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 8 (p. 1: «Determine the most favorable outcome for a business decision using decision trees in conjunction with optimization and simulation»). Categoría: **marginal**. La estructura de decisión secuencial bajo incertidumbre, que es lo que modela un árbol (medir → señal → actuar), ya la ejerce P322 (H01–H02, valor de la información muestral con regla condicionada a la señal), y P301 actualiza creencias tras un resultado (H03–H04). Integrar el árbol con optimización y simulación sería una técnica adicional sin un producto de política distinto. `AGENTS.md` advierte que un árbol de decisión aislado no basta como producto terminal. Las carencias de P322 (sin valor de la información perfecta ni sensibilidad) ya están en su log S02, y el temario no las justifica de forma independiente.
+
+## S03.P301.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: conferencia histórica en diapositivas que recorre 50 años de hitos (RDBMS, SQL, DW/ETL, BI, minería, CRISP-DM, data science, big data, producto de datos, DataOps/MLOps, modelos fundacionales, IA agéntica) bajo la tesis «la analítica transforma datos en conocimiento para apoyar mejores decisiones». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 5 (p. 1: «Interpret and visualize the results of simulation models to evaluate complex business decisions in uncertain settings»). Categoría: **ya cubierta**. P310 resume una distribución simulada en indicadores y guardas (H01–H02, con histograma). P313 compara decisiones sobre futuros comunes con IC95 %, diferencias pareadas y validación de la política (H02–H06). El defecto conocido de P310 (la simulación no es decisiva, H03) y el nombre de P311 («por simulación» sin simulación) ya están registrados por S02, y esta frase de temario no aporta un argumento ni un caso nuevo para corregirlos. Que Wharton clasifique la simulación como «predictive» es una convención del programa. No es un defecto del curso, que la usa para validar políticas (`s05-diseno-prescriptiva.md`, C03).
+
+## S03.P310.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - caso House of Cards «¿Cómo decidir si invertir más de USD 100 millones en una serie sin producir primero un episodio piloto?… Business Analytics no elimina la incertidumbre. La convierte en una decisión informada» (pp. 3–4) — marginal: decisión única de inversión; el curso ya trata la inversión bajo incertidumbre con guardas y escalamiento (P310 H02, P317 H07) y el valor de medir antes (piloto) en P322 H01.

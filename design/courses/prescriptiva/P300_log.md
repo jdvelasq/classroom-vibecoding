@@ -413,3 +413,15 @@
   - temario de un programa ejecutivo de Business Analytics. Tiene un módulo de orientación y nueve módulos, en secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con un título y una frase de resultado. Los módulos 4, 5, 7 y 8 tocan optimización, simulación y árboles de decisión. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Módulo 1 (p. 1: «collecting data on customer behavior») y Módulo 6 (p. 1: «Predict Employee Performance… hiring, internal mobility, and attrition»). Categoría: **fuera de alcance**. Son productos descriptivos y predictivos de otros cursos. Una política de RR. HH. podría ser un caso prescriptivo, pero el temario no lo plantea así y sería otro dominio equivalente, no una contribución nueva.
+
+## S03.P300.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: conferencia histórica en diapositivas que recorre 50 años de hitos (RDBMS, SQL, DW/ETL, BI, minería, CRISP-DM, data science, big data, producto de datos, DataOps/MLOps, modelos fundacionales, IA agéntica) bajo la tesis «la analítica transforma datos en conocimiento para apoyar mejores decisiones». Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Analítica Prescriptiva: Uso de técnicas de simulación, optimización y análisis de riesgo e incertidumbre para la toma de decisiones organizacionales» (p. 37) — ya cubierta (contexto): es la definición tradicional por técnicas; el curso la supera deliberadamente al exigir una política recurrente y gobernada (AGENTS; s05). Útil como contraste histórico, no como prescripción vigente.
+  - UPS ORION «Una pequeña decisión × millones de veces = un impacto enorme… Datos → algoritmo → decisión → operación → nuevos datos → nueva decisión… La analítica… Empezó a formar parte de la operación» (p. 45) — ya cubierta: es exactamente el contrato de política recurrente con registro y revisión del curso (P300 H03; P303 H03; P306 H07); el ruteo como técnica no tiene caso en el curso.
+  - CART «¿Cómo pueden construirse reglas de decisión automáticamente a partir de los datos?» (p. 9) — fuera de alcance: árbol de clasificación (Predictiva), distinto de una regla de decisión con objetivo y restricciones.

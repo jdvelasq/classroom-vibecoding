@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 2 (p. 1: «use historical data such as trends and consumption patterns to estimate forecasts»). Categoría: **fuera de alcance**. Construir pronósticos corresponde a Predictiva (o a Descriptiva, en este temario). Prescriptiva consume el pronóstico como insumo de la política (P307 H01).
+
+## S03.P307.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: conferencia histórica en diapositivas que recorre 50 años de hitos (RDBMS, SQL, DW/ETL, BI, minería, CRISP-DM, data science, big data, producto de datos, DataOps/MLOps, modelos fundacionales, IA agéntica) bajo la tesis «la analítica transforma datos en conocimiento para apoyar mejores decisiones». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

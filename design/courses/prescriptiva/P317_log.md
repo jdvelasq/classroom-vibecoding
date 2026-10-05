@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 3 (p. 1: «Choose the right tool for decision-making»). Categoría: **ya cubierta**. El curso hace explícita la elección del método según la estructura del problema: ordenar es exacto con costo uniforme (P306 H03), LP frente a enumeración (P316 H05), optimizador no lineal frente a PuLP (P317 H04) y enumeración por objetivo no aditivo (P319 H03).
+
+## S03.P317.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - caso House of Cards «¿Cómo decidir si invertir más de USD 100 millones en una serie sin producir primero un episodio piloto?… Business Analytics no elimina la incertidumbre. La convierte en una decisión informada» (pp. 3–4) — marginal: decisión única de inversión; el curso ya trata la inversión bajo incertidumbre con guardas y escalamiento (P310 H02, P317 H07) y el valor de medir antes (piloto) en P322 H01.

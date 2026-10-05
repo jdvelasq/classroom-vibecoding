@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - temario de un programa ejecutivo de Business Analytics. Tiene un módulo de orientación y nueve módulos, en secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con un título y una frase de resultado. Los módulos 4, 5, 7 y 8 tocan optimización, simulación y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P304.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «2026 — Agentic AI… agentes inteligentes… ejecutan de forma autónoma procesos completos» y la pregunta de cierre «Si una máquina puede analizar, recomendar, decidir y ejecutar… ¿qué queda para nosotros?» (pp. 60, 63) — ya cubierta: la autoridad humana proporcional (automatizar, recomendar con aprobación o escalar) es C04 y se ejerce en P303 H01, P304 H06 y P308 H06; la pregunta motiva el curso pero no añade capacidad.

@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 4 (p. 1: «Apply optimization models to specific business challenges with low uncertainty and determine the most favorable outcome») y Módulo 7 (p. 1: «Write prescriptions for data-driven decision-making for your organization using optimization models»). Categoría: **ya cubierta**. El curso ejerce optimización determinista sobre selección (P305 H03), asignación (P308 H04), localización (P315 H03), LP de flujos (P316 H05–H06) y LP intertemporal con duales (P318 H04–H05). Además la convierte en política gobernada (P305 H06, P308 H06, P316 H07, P318 H07), un producto que el temario no exige. «Prescriptions to change behavior» no añade una capacidad distinta.
+
+## S03.P318.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: conferencia histórica en diapositivas que recorre 50 años de hitos (RDBMS, SQL, DW/ETL, BI, minería, CRISP-DM, data science, big data, producto de datos, DataOps/MLOps, modelos fundacionales, IA agéntica) bajo la tesis «la analítica transforma datos en conocimiento para apoyar mejores decisiones». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

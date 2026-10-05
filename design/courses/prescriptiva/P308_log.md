@@ -283,3 +283,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 4 (p. 1: «Apply optimization models to specific business challenges with low uncertainty and determine the most favorable outcome») y Módulo 7 (p. 1: «Write prescriptions for data-driven decision-making for your organization using optimization models»). Categoría: **ya cubierta**. El curso ejerce optimización determinista sobre selección (P305 H03), asignación (P308 H04), localización (P315 H03), LP de flujos (P316 H05–H06) y LP intertemporal con duales (P318 H04–H05). Además la convierte en política gobernada (P305 H06, P308 H06, P316 H07, P318 H07), un producto que el temario no exige. «Prescriptions to change behavior» no añade una capacidad distinta.
+
+## S03.P308.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Moneyball «¿Y si el mercado está equivocado sobre cuánto vale un jugador?» (p. 35) — marginal: anécdota sobre valoración, sin método ni política recurrente.

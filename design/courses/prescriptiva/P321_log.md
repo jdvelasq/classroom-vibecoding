@@ -284,3 +284,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 9 (p. 1: «Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization»). Categoría: **marginal**. Cada Pxxx ya cierra con un contrato que hace operable la recomendación (P300 H03 en adelante), y P321 registra la operación y el seguimiento (H01–H02). Un «plan para poner los datos a trabajar» de nivel organizacional no es una política recurrente y desplazaría la identidad del curso.
+
+## S03.P321.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DataOps «Los productos analíticos pasan de ser proyectos con un final definido a convertirse en activos que evolucionan» y MLOps «desplegar, monitorear y gestionar el ciclo de vida de los modelos» (pp. 53–55) — fuera de alcance: operación de productos de datos y modelos (Productos de datos); el monitoreo de resultados de la política ya está en P306 H07, P308 H07, P321 H02.
