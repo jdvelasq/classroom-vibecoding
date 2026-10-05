@@ -196,3 +196,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelo de Lawler para definir un problema de IA y su caso organizacional (Week 8, p. 5): relacionado con el encuadre de T01, pero orientado al diseño de productos de IA y sin detalle; no se añade como fuente.
+
+## S03.P200.17
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de estrategia de plataformas digitales y mercados de dos lados (temario, pp. 13–15: efectos de red, precios, arquitectura, gobierno de calidad); sin contenidos de modelado predictivo.
