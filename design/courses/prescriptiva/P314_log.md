@@ -145,3 +145,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: folleto de un curso online de estrategia y arquitectura de plataformas digitales y mercados de dos lados (efectos de red, precios, APIs y estándares, gating de calidad, regulación, modelado de dinámica de plataforma). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P314.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Simulating Rare Events (25 min)» (p. 2) — marginal: el riesgo de cola ya organiza P309 (H05, riesgo residual de la trayectoria alta) y P314 (H03, criterio robusto frente al peor escenario); técnicas de simulación de eventos raros (p. ej. muestreo por importancia) serían método de simulación, no un cambio en la política, y el cronograma no las especifica.

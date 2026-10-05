@@ -214,3 +214,15 @@
   - Resumen del documento en 1–2 líneas: folleto de un curso online de estrategia y arquitectura de plataformas digitales y mercados de dos lados (efectos de red, precios, APIs y estándares, gating de calidad, regulación, modelado de dinámica de plataforma). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «effective decision-making processes… when to open a platform, how to use APIs to build an ecosystem of partners» (p. 8) — fuera de alcance: decisiones estratégicas únicas de producto/negocio, no decisiones operativas recurrentes con contexto observable.
+
+## S03.P300.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cronograma de un curso corto en línea de MIT: ODE y métodos numéricos, PDE y modelado espacial, mínimos cuadrados y optimización (gradiente, Newton), del ajuste al aprendizaje automático, métodos probabilísticos (Monte Carlo, pronóstico probabilístico, sensibilidad, eventos raros) y tres casos industriales. Sólo lista títulos de módulos y duraciones. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ODE, Euler, métodos implícitos, PDE, discretización espacial, sistemas lineales y raíces (p. 1) — fuera de alcance: computación científica, sin relación con políticas de decisión.
+  - Regresión, regularización, regresión logística, ajuste de modelos (p. 2) y «Probabilistic Forecasting» (p. 2) — fuera de alcance: construcción y validación de estimaciones, propia de Predictiva; en Prescriptiva entran como insumo (P306 H02, P307 H01).
+  - Casos Aurora Flight Sciences, Schlumberger y BASF (p. 2) — fuera de alcance: sólo títulos, sin contenido para inferir un caso o una práctica; la familia institutional sólo ilustra posibilidades.

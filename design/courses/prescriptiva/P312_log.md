@@ -145,3 +145,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Módulo 7 «How can we Model a Platform? Modeling Network Effects» (p. 15) — fuera de alcance: modelado de dinámica de sistemas/efectos de red sin caso ni datos en el curso; desplazaría el taller de sensibilidad hacia un modelo de estrategia.
+
+## S03.P312.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Sensitivity Forecasting (45 min)» (p. 2) — ya cubierta: P312 H01–H02 convierte la sensibilidad de un supuesto en el umbral de una regla; P304 H05, P309 H06 y P314 H05 la conectan con gatillos. El documento sólo da el título, sin método que aporte un contraste nuevo.
