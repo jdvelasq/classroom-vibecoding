@@ -333,3 +333,12 @@
 - **Señales descartadas relevantes:**
   - ciclos de revisión con cadencias distintas (p. 6: «Trimestral: Strategy reviews / Mensual: Operations & risk reviews … Semanal: replenishment review») — marginal: son cadencias de gestión de trabajo de un equipo; la cadencia de decisión y de revisión de la política ya es campo del contrato desde P300 H03 y del registro de P321 H02.
   - *epic owner* que crea «el panel de monitoreo y medida para los KPIs» (p. 14) — marginal: rol de gestión de proyecto; responsable y acción de revisión ya están en P321 H02.
+
+## S03.P321.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ciclo de vida con monitoreo/medición de beneficio y retiro (p. 23: «Monitoring / benefit measurement … Decommission») — ya cubierta: gatillos de suspensión y revisión (P312 H02, P309 H06) y registro con acción de revisión (P321 H02); retirar una política está implícito en la suspensión.
+  - *epic hypothesis statement* con beneficio predicho y métrica (p. 25: «Resulting in [predicted benefit] … Measured by [metrics]») — marginal: plantilla de gestión de portafolio; el registro operativo de P321 ya vincula supuesto, indicador y meta.

@@ -331,3 +331,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación docente sobre gestión de proyectos: cascada frente a Agile, Scrum, XP, Kanban, escalamiento (Disciplined Agile, Scrum of Scrums, SAFe), manifiesto DataOps y prácticas ágiles para iniciativas de analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P308.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente que define DataOps como combinación de analítica, *lean*, *agile* y DevOps, con pasos de implementación (pruebas, versionado, ambientes, contenedores, parametrización), MLOps, ciclo de vida de ciencia de datos y la plantilla de *epic hypothesis*. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

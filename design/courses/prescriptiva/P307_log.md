@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación docente sobre gestión de proyectos: cascada frente a Agile, Scrum, XP, Kanban, escalamiento (Disciplined Agile, Scrum of Scrums, SAFe), manifiesto DataOps y prácticas ágiles para iniciativas de analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P307.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - parametrización del procesamiento por fuera del código (p. 14: «El pipeline incluye las decisiones en la lógica … Parametrización por fuera del código») — ya cubierta en su sentido prescriptivo: P307 H01 carga guardia, dueño y gatillo desde `policy_contract.csv`; P302 H04 contrato estructurado. El resto (ambientes y versiones de datos) es infraestructura.

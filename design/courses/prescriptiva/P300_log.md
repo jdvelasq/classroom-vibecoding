@@ -486,3 +486,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Hacer explícitas las políticas» de Kanban (p. 6) — fuera de alcance: alude a reglas del proceso de trabajo del equipo, no a políticas de decisión.
   - Scrum, XP, SAFe, MVP, manifiesto DataOps, ambientes y eliminación de pasos manuales (p. 2–14) — fuera de alcance: metodología de desarrollo y operación de productos de datos; contexto organizacional, no prescripción para este curso.
+
+## S03.P300.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente que define DataOps como combinación de analítica, *lean*, *agile* y DevOps, con pasos de implementación (pruebas, versionado, ambientes, contenedores, parametrización), MLOps, ciclo de vida de ciencia de datos y la plantilla de *epic hypothesis*. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - pruebas de datos y de lógica de negocio en cada paso, control de versiones, ramas, ambientes, contenedores, CI/CD, MLOps (p. 4, 9–20) — fuera de alcance: pertenece a Productos de datos («despliega, mantiene y observa la infraestructura»); las verificaciones con `assert` de los talleres (P304 H07, P316 H06) ya cubren lo que concierne a la validez de la política.
+  - «el software por sí mismo no hace mejores decisiones; una buena decisión requiere datos y algoritmos de alta calidad» (p. 21) — marginal: principio general sin consecuencia curricular nueva.
