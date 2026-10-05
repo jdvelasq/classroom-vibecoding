@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Lista de módulos de un programa ejecutivo de Business Analytics: orientación, descriptiva (módulos 1–2), predictiva (3–6), prescriptiva (4, 7–8) y aplicación de la analítica en el negocio (9), cada uno con una línea de propósito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P416.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La experimentación se separa de la operación para reducir el riesgo»; value pipeline frente a innovation pipeline; «Los tests sobre los datos en cada paso garantizan la calidad de la salida»; «Heroísmo», «Miedo» (p. 54) — ya cubierta: verificación antes de fusionar (P415 H01), misma verificación local y remota (P416 H01), contrato de datos (P402 H01, H04); mismo descarte que `dataops-06` (pp. 15–17).

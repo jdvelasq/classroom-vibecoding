@@ -282,3 +282,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Lista de módulos de un programa ejecutivo de Business Analytics: orientación, descriptiva (módulos 1–2), predictiva (3–6), prescriptiva (4, 7–8) y aplicación de la analítica en el negocio (9), cada uno con una línea de propósito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P411.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación histórica (1970–2026) de cómo las organizaciones pasaron de registrar datos a decidir y actuar con ellos: RDBMS, SQL, DW/ETL, BI, minería de datos, CRISP-DM, ciencia de datos, Big Data, Business Analytics, producto de datos, DataOps, MLOps, modelos fundacionales y agentes. Es contexto y encuadre, no prescripción vigente. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

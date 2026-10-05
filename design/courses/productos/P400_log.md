@@ -415,3 +415,15 @@
   - Módulo 9 «Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization» (p. 1) — fuera de alcance/marginal: es un plan organizacional de adopción de analítica (estrategia de negocio), no la operación de una capacidad; lo más cercano en el curso es el contrato operativo de C01 (tarjeta de producto en P408–P411, catálogo P454), que ya define consumidor, responsable y uso con más precisión que esta línea.
   - módulos descriptivos, predictivos y prescriptivos (1–8) (p. 1) — fuera de alcance: pertenecen a Descriptiva, Predictiva y Prescriptiva; la frontera de Productos prohíbe volver a formular, predecir o prescribir el problema analítico.
   - el programa no contiene ningún módulo de despliegue, operación, monitoreo, gobierno ni DataOps/MLOps (p. 1) — señal de contexto, no propuesta: confirma que la línea de productos de datos es una contribución diferencial del programa propio frente a este referente ejecutivo, pero no justifica cambios en ningún Pxxx.
+
+## S03.P400.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación histórica (1970–2026) de cómo las organizaciones pasaron de registrar datos a decidir y actuar con ellos: RDBMS, SQL, DW/ETL, BI, minería de datos, CRISP-DM, ciencia de datos, Big Data, Business Analytics, producto de datos, DataOps, MLOps, modelos fundacionales y agentes. Es contexto y encuadre, no prescripción vigente. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - definición de producto de datos: «aplicación o servicio que integra datos y algoritmos para generar continuamente predicciones, recomendaciones, decisiones o información útil y que, además, produce nuevos datos que pueden ser consumidos por otros productos» (p. 44); DataOps: «Los productos analíticos pasan de ser proyectos con un final definido a convertirse en activos que evolucionan junto con el negocio» (p. 53) — ya cubierta como encuadre: coincide con el propósito y el producto terminal de `s05-diseno-productos.md` (capacidad versionada, comprobable, desplegable y observable). Útil para la presentación del curso; no cambia un taller.
+  - modelos de servicio IaaS/PaaS/SaaS/FaaS, serverless, low-code, «Vibe Coding» (p. 27); Hadoop, Spark, Hive, data lake, NoSQL (pp. 28–31, 38–40, 50–51) — fuera de alcance: cloud engineering y Big Data, excluidos por las fronteras del curso.
+  - CRISP-DM con fase «Distribución» (p. 21), tipos de analítica (p. 37), casos Netflix/Moneyball/Amazon (pp. 3–4, 33, 35) — fuera de alcance: contexto histórico y de formulación (Fundamentos).

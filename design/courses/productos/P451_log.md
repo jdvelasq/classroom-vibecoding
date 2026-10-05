@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Lista de módulos de un programa ejecutivo de Business Analytics: orientación, descriptiva (módulos 1–2), predictiva (3–6), prescriptiva (4, 7–8) y aplicación de la analítica en el negocio (9), cada uno con una línea de propósito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P451.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ciclo UPS-ORION «Datos → algoritmo → decisión → operación → nuevos datos → nueva decisión» y «La analítica… Empezó a formar parte de la operación» (p. 45) — marginal: ilustra el límite ya registrado de P451 (la retroalimentación no alimenta ninguna mejora; C05 no ejercido) y de P423 (sin acción tras la alerta), pero como documento histórico no aporta un mecanismo localizable; la acción tras la alerta ya tiene candidata en P423 (`prodig8`) y P424.
