@@ -116,6 +116,7 @@ Actividad: implementation/descriptiva/P152_ventas_olap/
 - **Tipo:** método + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` p. 19 — «Business users often request year-to-date (YTD) values… A more reliable, extensible way to handle these assorted requests is to calculate the YTD metrics in the BI applications or OLAP cube rather than storing YTD facts in the fact table» (Claude, 2026-10-04). Fuente *authoritative*: ubica las comparaciones temporales en la capa de consulta, que es la de P152.
+  - `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` pp. 30, 74 y 76 — requisito de reporte: una serie que permita elegir «Month Over Month, Month Over Month % Change, Month To Date, Prior Month, Year To Date» a lo largo de años, meses o días; grupo de cálculo de *time intelligence* con «Current», «MoM %» y «YoY %» (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica; el mecanismo se enseña en SQL/pandas, no en la plataforma.
 - **Qué gana el estudiante:** responder la pregunta más frecuente de un
   usuario de BI, «¿cómo vamos frente al período anterior?», sobre el mismo
   hecho que ya navega. Hoy P152 sube a año–mes–región (H02), corta en Norte

@@ -461,3 +461,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, acciones, datos clave, comparaciones y excepciones). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.56
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - taller de soluciones empresariales con Power BI (modelo estrella, dimensión de fecha, medidas, inteligencia de tiempo, gobierno y despliegue). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

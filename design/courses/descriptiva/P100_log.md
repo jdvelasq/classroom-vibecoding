@@ -688,3 +688,15 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, acciones, datos clave, comparaciones y excepciones). Para esta actividad no añade una señal distinta.
+
+## S03.P100.56
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - taller de soluciones empresariales con Power BI (modelo estrella, dimensión de fecha, medidas, inteligencia de tiempo, gobierno y despliegue). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - DAX, grupos de cálculo, Tabular Editor, *incremental refresh*, *deployment pipelines*, Git, *workspaces* y Fabric (pp. 15–22, 64–66 y 72–73) — fuera de alcance: plataforma concreta y operación (productos de datos).
+  - BI de autoservicio frente a BI empresarial y gobierno de *datasets* certificados (pp. 13–14 y 21–22) — fuera de alcance: gobierno y entrega corresponden a productos de datos.
+  - matriz dimensional con varios hechos y hecho de cuotas (pp. 31 y 53–54) — fuera de alcance por caso (un solo proceso), salvo la comparación real–presupuesto, que entra en P154 T01.

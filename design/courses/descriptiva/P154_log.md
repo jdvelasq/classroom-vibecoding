@@ -458,3 +458,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P154.56
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

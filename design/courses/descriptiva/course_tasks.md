@@ -5,6 +5,7 @@
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` pp. 15–16 — «Type 1: Overwrite… this technique destroys history»; «Type 2: Add New Row… A minimum of three additional columns should be added to the dimension row with type 2 changes: 1) row effective date or date/time stamp; 2) row expiration date or date/time stamp; and 3) current row indicator»; los tipos 6 y 7 entregan a la vez la vista «as-was» y la «as-is» (Claude, 2026-10-04). Fuente *authoritative*.
   - `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` p. 2 — «Slowly Changing Dimensions - Type 1, Type 2, and Type 3» y «Classroom Hands-on – Design a Type 2 SCD» en la semana 4 del curso (Claude, 2026-10-04). Fuente *institutional*.
+  - `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` p. 14 — entre las preguntas del enfoque de BI empresarial: «Do we need to track changes & history?» (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica.
 - **Contribución distinta:** enseñar que una misma tabla de hechos puede
   describir dos realidades distintas según cómo se guarde la historia de una
   dimensión. Si un cliente cambia de región, las ventas pasadas pueden

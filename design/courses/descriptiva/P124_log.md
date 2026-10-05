@@ -455,3 +455,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - preguntas 1–6 del cuestionario (usuarios, preguntas, acciones, datos clave y agrupaciones) — marginal: es el encuadre que propone P120 T01 aplicado a un tablero; P124 no tiene propuesta propia y la fuente es un formulario de una página.
+
+## S03.P124.56
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - taller de soluciones empresariales con Power BI (modelo estrella, dimensión de fecha, medidas, inteligencia de tiempo, gobierno y despliegue). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

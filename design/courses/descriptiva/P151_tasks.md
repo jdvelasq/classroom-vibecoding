@@ -9,6 +9,7 @@
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` p. 11 — «Calendar date dimensions are attached to virtually every fact table to allow navigation of the fact table through familiar dates, months, fiscal periods, and special days on the calendar»; la dimensión lleva atributos como semana, nombre del mes, período fiscal e indicador de festivo, y una fila especial para fechas desconocidas (Claude, 2026-10-04). Fuente *authoritative*: técnica estándar del modelado dimensional.
   - `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` p. 2 — la unidad de modelado dimensional incluye «Time Dimension» y el ejercicio «Classroom Hands-on: Design your Time and Conformed Dimensions» (Claude, 2026-10-04). Fuente *institutional*: ilustra la práctica en un curso de posgrado de data warehousing.
+  - `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` pp. 43–44 y 58 — «Generating a Date dimension table» a partir de un rango de inicio y fin, «Adding Date Part Columns to the Dim Date Table» y «Mark table as Date table… Create date part hierarchies» (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica; no se prescribe la plataforma.
 - **Qué gana el estudiante:** entender que la dimensión de fecha es un
   calendario, no la lista de fechas en que hubo hechos, y ver qué se pierde
   cuando se deriva del hecho. Hoy `dim_date` se construye sólo con las fechas
