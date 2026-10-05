@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ciclo de vida con monitoreo/medición de beneficio y retiro (p. 23: «Monitoring / benefit measurement … Decommission») — ya cubierta: gatillos de suspensión y revisión (P312 H02, P309 H06) y registro con acción de revisión (P321 H02); retirar una política está implícito en la suspensión.
+
+## S03.P309.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación organizacional: silos entre equipos de datos, coordinación relacional, flujo de desarrollo y pruebas (ramas, tests de datos y de código), cuellos de botella con Kanban, priorización de mejoras por «oportunidad», trampas del CDO y etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

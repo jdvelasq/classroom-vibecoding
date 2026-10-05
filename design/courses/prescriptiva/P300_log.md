@@ -497,3 +497,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - pruebas de datos y de lógica de negocio en cada paso, control de versiones, ramas, ambientes, contenedores, CI/CD, MLOps (p. 4, 9–20) — fuera de alcance: pertenece a Productos de datos («despliega, mantiene y observa la infraestructura»); las verificaciones con `assert` de los talleres (P304 H07, P316 H06) ya cubren lo que concierne a la validez de la política.
   - «el software por sí mismo no hace mejores decisiones; una buena decisión requiere datos y algoritmos de alta calidad» (p. 21) — marginal: principio general sin consecuencia curricular nueva.
+
+## S03.P300.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación organizacional: silos entre equipos de datos, coordinación relacional, flujo de desarrollo y pruebas (ramas, tests de datos y de código), cuellos de botella con Kanban, priorización de mejoras por «oportunidad», trampas del CDO y etapas de madurez de la analítica. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - flujo de desarrollo con «Tests de datos», «Tests de código», «Orquestación» y entornos (pp. 4–5) — fuera de alcance: es ingeniería y operación de software analítico (Productos de datos). Lo que aplica a los talleres (pruebas `pytest`) ya está fijado en `AGENTS.md`.
+  - eliminación de cuellos de botella al estilo de la teoría de restricciones (p. 6: «Identifique la restricción … Haga mejoras en el rendimiento de la restricción con los recursos existentes») — fuera de alcance: describe la gestión del proceso de un equipo de datos, no una política analítica recurrente con datos y caso. La lógica de un recurso escaso que limita el sistema ya se ejerce en P305 (H05), P316 (H04) y P318 (H05).
+  - priorización de mejoras con «Oportunidad = Importancia + max(0, Importancia − Satisfacción)» (p. 7) — marginal / fuera de alcance: es una puntuación heurística de encuestas para planear trabajo, sin acción factible, restricciones ni monitoreo. No aporta un contraste distinto de las reglas de ranking que el curso ya compara con el óptimo (P305 H02, P308 H02–H03).
+  - «Resultados que impactan directamente la toma de decisiones» frente a la «Trampa del valor diferido» (p. 9) — fuera de alcance: es contexto de estrategia organizacional. Coincide con la exigencia del curso de que el producto sea una política operable y no una solución aislada, pero no prescribe nada nuevo para un taller.

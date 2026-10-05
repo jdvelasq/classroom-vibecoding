@@ -342,3 +342,11 @@
 - **Señales descartadas relevantes:**
   - ciclo de vida con monitoreo/medición de beneficio y retiro (p. 23: «Monitoring / benefit measurement … Decommission») — ya cubierta: gatillos de suspensión y revisión (P312 H02, P309 H06) y registro con acción de revisión (P321 H02); retirar una política está implícito en la suspensión.
   - *epic hypothesis statement* con beneficio predicho y métrica (p. 25: «Resulting in [predicted benefit] … Measured by [metrics]») — marginal: plantilla de gestión de portafolio; el registro operativo de P321 ya vincula supuesto, indicador y meta.
+
+## S03.P321.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Monitoreo de la lógica de negocio y validez de los datos» (p. 10) y «Transparencia: Alertas automáticas, dashboards» (p. 2) — fuera de alcance: la observabilidad y las alertas de un pipeline pertenecen a Productos de datos. En Prescriptiva, la validez de las entradas ya aparece como guarda o condición de retención (P308 H06 «predicción ausente o sin vigencia»; P304 H06 «solicitudes con datos válidos») y el monitoreo de resultados como gatillo (P306 H07, P321 H02).
