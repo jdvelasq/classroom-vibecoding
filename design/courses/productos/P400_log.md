@@ -571,3 +571,14 @@
   - datos «analíticos o históricos» frente a datos de scoring «operational data» (p. 42) — ya cubierta: distinción entrenamiento/producción en P404, P422 y P423.
   - Administration Console para monitorear y configurar servidores (p. 8) y «License tracking» con logs de uso (p. 11) — fuera de alcance: administración de plataforma y licencias, no observación de una capacidad analítica.
   - Self-Learning Response Model que se actualiza con nuevas respuestas (p. 195), causal temporal y causa raíz de atípicos (p. 346), monitoreo de condición de máquinas con redes neuronales (p. 227) — fuera de alcance: son métodos de modelado (Predictiva/Descriptiva), no prácticas de operación; «Condition Monitoring» es predicción de fallas, no monitoreo del producto.
+
+## S03.P400.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de ayuda de SPSS Modeler para CRISP-DM con listas de tareas por fase y un caso de minería web de un e-retailer; el capítulo 7 trata el despliegue como plan por modelo/hallazgo, el monitoreo como criterio de «expiración» del modelo y el cierre como informe final y revisión de lecciones aprendidas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - informe final por audiencia, presentación final y revisión de proyecto con lecciones aprendidas (pp. 35–36, 41–42) — fuera de alcance: gestión y comunicación de proyectos (Fundamentos); no hace más operable una capacidad. La difusión de «findings» a decisores (p. 39) pertenece a Descriptiva.
+  - objetivos de negocio, criterios de éxito objetivos/subjetivos con árbitro, riesgos y contingencias, plan de proyecto (pp. 10–15) — fuera de alcance como formulación (Fundamentos); el componente operativo (criterios de éxito en el contrato) ya está en `productos.C01` del diseño.

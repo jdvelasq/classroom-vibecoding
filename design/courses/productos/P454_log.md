@@ -388,3 +388,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Tutorial de una herramienta comercial de minería de datos: casos de modelado (clasificación, series de tiempo, supervivencia, GLM, SVM, reglas, KNN, TCM) construidos como «streams» de nodos; la operación aparece sólo como menciones a puntuación de datos nuevos, exportación PMML, repositorio de despliegue, modo batch, reaplicación de un modelo de series de tiempo y reentrenamiento mensual. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P454.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «good documentation becomes critical for assessing the business purpose for each data mining project» (p. 40); glosario de términos de negocio (p. 13) — marginal: la tarjeta de producto (P408 H01) y la ficha de catálogo (P454 H01) ya reúnen consumidor, métrica, responsable y contrato; añadir «propósito» es variante de un campo existente.

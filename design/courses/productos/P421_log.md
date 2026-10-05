@@ -386,3 +386,11 @@
 - **Señales descartadas relevantes:**
   - guardar el modelo, exportarlo en PMML o almacenarlo en un repositorio «which offers enterprise-wide deployment, scoring, and management of models» (p. 41); paquetes de stream con Solution Publisher (p. 7) — ya cubierta / marginal: el registro de un artefacto por identificador está en P421 H01–H02 y el empaquetado ejecutable en P418; PMML es un formato de herramienta (professional-learning no impone tema).
   - reentrenamiento mensual (modelo «Jan» → «Jan-Feb» con «Continue training existing model») y comparación de ambos con un Analysis node y un gains chart (pp. 215–221) — marginal por evidencia: la comparación candidato–vigente sería pertinente para el límite de P421 («no hay umbral de aprobación ni comparación con el modelo previo»), pero la fuente compara sobre datos de entrenamiento y lo admite (p. 222: «these results are based on the training data only»), por lo que no respalda un criterio de promoción. Si otra revisión propone en P421 comparar el candidato con el modelo vigente sobre datos comunes, este documento puede sumarse sólo como fuente secundaria de práctica.
+
+## S03.P421.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de ayuda de SPSS Modeler para CRISP-DM con listas de tareas por fase y un caso de minería web de un e-retailer; el capítulo 7 trata el despliegue como plan por modelo/hallazgo, el monitoreo como criterio de «expiración» del modelo y el cierre como informe final y revisión de lecciones aprendidas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

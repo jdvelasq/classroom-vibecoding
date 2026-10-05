@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Data Audit con pestaña de calidad (faltantes, atípicos, extremos), imputación con C&RT y filtro de campos «with a quality percentage below a specified threshold» (pp. 71–80) — fuera de alcance: es exploración y preparación previa al modelado (Fundamentos/Descriptiva); la compuerta operativa de calidad ya está en P402 H01 y la separación de registros inválidos con motivo en P441 H01.
+
+## S03.P441.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de problemas de calidad (faltantes codificados como «999», inconsistencias de codificación, «Bad metadata», delimitadores y número de campos por registro, pp. 19–21) — marginal: P402 ya opera un contrato con esquema exacto, valores y llave (H01–H02) y P441 separa inválidos con motivo; los centinelas de faltantes serían otra regla del mismo contrato. El diagnóstico de calidad para modelar pertenece a Descriptiva/Predictiva.

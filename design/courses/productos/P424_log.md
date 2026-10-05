@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reaplicar un modelo de series de tiempo guardado a datos actualizados para extender el horizonte «without rebuilding your models. Of course, if there is reason to think that a model has changed, you should rebuild it» (p. 180) — marginal: la distinción refrescar/reconstruir no trae criterio operativo ni señal que dispare la reconstrucción; la respuesta operativa a degradación ya está en P423 H02 (alerta) y P424 H01 (reversión); reentrenar pertenece al método de Predictiva.
+
+## S03.P424.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

@@ -387,3 +387,12 @@
 - **Señales descartadas relevantes:**
   - reentrenamiento mensual (modelo «Jan» → «Jan-Feb» con «Continue training existing model») y comparación de ambos con un Analysis node y un gains chart (pp. 215–221) — marginal por evidencia: la comparación candidato–vigente sería pertinente para el límite de P421 («no hay umbral de aprobación ni comparación con el modelo previo»), pero la fuente compara sobre datos de entrenamiento y lo admite (p. 222: «these results are based on the training data only»), por lo que no respalda un criterio de promoción. Si otra revisión propone en P421 comparar el candidato con el modelo vigente sobre datos comunes, este documento puede sumarse sólo como fuente secundaria de práctica.
   - reaplicar un modelo de series de tiempo guardado a datos actualizados para extender el horizonte «without rebuilding your models. Of course, if there is reason to think that a model has changed, you should rebuild it» (p. 180) — marginal: la distinción refrescar/reconstruir no trae criterio operativo ni señal que dispare la reconstrucción; la respuesta operativa a degradación ya está en P423 H02 (alerta) y P424 H01 (reversión); reentrenar pertenece al método de Predictiva.
+
+## S03.P423.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exigir umbrales concretos de expiración (p. 40) y criterios de éxito técnicos «Provide specific numbers» (p. 13) — marginal: P423 ya fija el borde de la alerta (H02); la falta de justificación del 0.75 está registrada en S02 y el documento no da un criterio aplicable al caso; la acción tras la alerta queda absorbida por la propuesta de P424.
+  - monitoreo del efecto de negocio del despliegue («Have cross-sales of recommended items increased?», p. 40) — fuera de alcance: medir impacto en el negocio exige datos de resultado comercial que el curso no tiene y desplaza hacia evaluación de valor (Fundamentos).

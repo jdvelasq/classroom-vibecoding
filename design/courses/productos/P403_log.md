@@ -388,3 +388,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - la regla de corte de clasificación (0.248, identificada en la evaluación) se aplica al puntuar (p. 316) y el scoring produce valores de confianza «$RC» (p. 38) — marginal: umbrales operativos y salidas de la capacidad ya se tratan en P403 H02 y P425 H01; añadir la confianza a la respuesta sería una variante del contrato sin nueva capacidad.
+
+## S03.P403.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diseño de prueba con partición train/test y registro de iteraciones de parámetros (pp. 29–33) — fuera de alcance como método (Predictiva); la recuperación de corridas ya está en P420 H01–H03.

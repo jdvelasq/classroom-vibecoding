@@ -387,3 +387,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Tutorial de una herramienta comercial de minería de datos: casos de modelado (clasificación, series de tiempo, supervivencia, GLM, SVM, reglas, KNN, TCM) construidos como «streams» de nodos; la operación aparece sólo como menciones a puntuación de datos nuevos, exportación PMML, repositorio de despliegue, modo batch, reaplicación de un modelo de series de tiempo y reentrenamiento mensual. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P409.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de ayuda de SPSS Modeler para CRISP-DM con listas de tareas por fase y un caso de minería web de un e-retailer; el capítulo 7 trata el despliegue como plan por modelo/hallazgo, el monitoreo como criterio de «expiración» del modelo y el cierre como informe final y revisión de lecciones aprendidas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

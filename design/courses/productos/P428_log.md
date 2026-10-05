@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ejecución sin interfaz para tareas «long-running or repetitive … with no user intervention» (SPSS Modeler Batch, p. 7) y scripting de automatización (p. 25) — ya cubierta: P413 (objetivos repetibles), P418 (ejecución empaquetada en lote), P428 (ejecución periódica).
+
+## S03.P428.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «the bulk of the monitoring should be automatic with regularly scheduled reports available for review» (pp. 40–41) — ya cubierta: agenda periódica (P428 H01–H02) y reporte integrado (P442 H02).
