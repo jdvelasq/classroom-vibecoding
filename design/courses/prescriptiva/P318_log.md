@@ -170,3 +170,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Learn how to construct a linear optimization model and interpret the results» (p. 8, Parte 2, cinco módulos de optimización) — ya cubierta: P316 H05–H06 (LP de transporte y validación) y P318 H04–H05 (LP intertemporal y precio sombra validado).
+
+## S03.P318.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Calendario de un curso profesional en línea de MIT: decisiones tempranas de trade-off (Pugh, estudios de trade), modelos de valor con atributos jerárquicos, generación y evaluación de espacios de diseño, y exploración del tradespace (Pareto, sensibilidad, robustez, asignación de tareas entre modelos y personas). Sólo títulos y descripciones semanales; sin contenido técnico. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -249,3 +249,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Module 23: Data, Models, and Decisions» (p. 9) — marginal: título sin contenido verificable; la conexión modelo–decisión es la identidad del curso.
   - regresión, clustering, CART, redes neuronales, NLP (pp. 7–9) — fuera de alcance: Predictiva / Descriptiva.
+
+## S03.P300.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Calendario de un curso profesional en línea de MIT: decisiones tempranas de trade-off (Pugh, estudios de trade), modelos de valor con atributos jerárquicos, generación y evaluación de espacios de diseño, y exploración del tradespace (Pareto, sensibilidad, robustez, asignación de tareas entre modelos y personas). Sólo títulos y descripciones semanales; sin contenido técnico. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Pugh method, generación de conceptos y estructura de un trade study (p. 1) — fuera de alcance: selección de conceptos en diseño de sistemas, decisión única no recurrente; desplazaría la identidad hacia ingeniería de sistemas.
+  - value-focused thinking y modelos de valor con jerarquías de atributos (p. 2) — marginal: el objetivo explícito de cada contrato (P300 H03, P302 H04) cumple la función en el curso; un modelo multiatributo completo sería un taller de análisis de decisiones multicriterio sin política recurrente.

@@ -169,3 +169,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificado en línea de seis meses con cinco partes (fundamentos, optimización, ML, ML avanzado, despliegue), casos de estudio y capstone de portafolio. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P314.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Determining Sensitivity and Robustness» y representación de la incertidumbre (p. 4) — ya cubierta: sensibilidad convertida en gatillo (P312 H01–H02), criterio robusto (P314 H03, H05).

@@ -170,3 +170,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Module 16: Fairness and Bias Issues in Data-Driven Predictions» y caso de algoritmos de análisis facial (pp. 8, 10) — fuera de alcance en su forma predictiva; la equidad de la política está cubierta por P320 H01–H02.
+
+## S03.P320.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - trade-off entre criterios en conflicto (pp. 2–4) — marginal para P320: el intercambio beneficio total–equidad que S02 señala como no discutido es un defecto propio de P320, pero este documento no aporta nada específico sobre equidad.
