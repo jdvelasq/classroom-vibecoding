@@ -246,3 +246,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa de prototipado físico rápido y fabricación (módulos 1–5); sin contenidos de analítica predictiva.
+
+## S03.P200.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - métodos basados en árboles y Random Forest (pp. 6, 8): se añaden como fuente de N01.
+  - diagnóstico de regresión y diferencia entre modelos para inferencia estadística y para predicción (pp. 5, 8): marginal; P200 ya delimita que su producto es predictivo y no causal.

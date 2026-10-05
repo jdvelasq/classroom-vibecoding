@@ -188,3 +188,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa de prototipado físico rápido y fabricación (módulos 1–5); sin contenidos de analítica predictiva.
+
+## S03.P212.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - análisis de supervivencia dentro de modelos lineales generalizados (p. 8): ya cubierta (H01–H03 con Kaplan–Meier).
