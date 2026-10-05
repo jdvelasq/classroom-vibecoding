@@ -129,3 +129,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - pertinencia laboral del análisis de datos (p. 2 «3. Análisis de Datos» entre las temáticas priorizadas; p. 2 «enfocado en las áreas más demandadas por el mercado: datos, programación, ciberseguridad…»; p. 1 «dominio de áreas como la inteligencia artificial (IA) y el análisis de datos») — ya cubierta: respalda la existencia del curso como optativo, sin definir estándar ni contenidos (familia governmental).
   - formato bootcamp intensivo (p. 2 «carecen de acreditación por entidades educativas convencionales, no siguen planes de estudio estándar») — fuera de alcance: modalidad de formación no aplicable a un curso de pregrado.
+
+## S03.P500.09
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo en línea de dos meses sobre IA para líderes de negocio: fundamentos de ML, redes neuronales, visión y PLN, robótica, estrategia, organización y futuro de la IA, con proyecto final de plan de negocio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - calidad y representatividad de datos como causa de fallas (p. 5, Módulo 2 «Calidad de datos, representatividad y por qué fallan los modelos») — ya cubierta en lo que corresponde a `data.C03` (P516 H01–H03, P510 H03); el vínculo con fallas de modelos es de Predictiva.
+  - obtención y gestión de datos para ML (p. 5 «Obtención y gestión de datos para machine learning») — marginal: enunciado de temario sin práctica; adquisición y estructuración ya ejercitadas (P503, P510, P518).
+  - privacidad y sesgos (p. 6, Módulo 8 «Consideraciones de política y riesgo: sesgos, propiedad intelectual, privacidad y alucinaciones») — marginal: la minimización de atributos sensibles se propone desde CRISP-DM (P519); aquí es un tema ejecutivo de IA generativa.
+  - gobernanza y estrategia de IA, equipos, robótica, visión, PLN (pp. 5–6) — fuera de alcance de `data`.
