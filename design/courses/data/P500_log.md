@@ -455,3 +455,16 @@
   - «Los tests sobre los datos en cada paso garantizan la calidad de la salida» (p. 54) — ya cubierta: P500 H04, P517 H04.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - DataOps, MLOps, producto de datos (pp. 44, 53–55) — fuera de alcance: productos de datos y operación.
+
+## S03.P500.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2). Categoría: ya cubierta. Controles ejecutables que condicionan la salida (P500 H04), diagnóstico de aptitud con reglas nombradas (P516 H01–H03) y contrato que clasifica cambios por su efecto en el análisis (P517 H02–H04). Es diagnóstico organizacional, sin práctica nueva.
+  - en ML/DA «La lógica y los datos son críticos», «El testeo se basa en precisión no en ejemplos», «Se usan datos de producción» (p. 4). Categoría: fuera de alcance / ya cubierta. El contraste con la programación tradicional apunta a pruebas de modelos y a producción (otros cursos/productos de datos); las pruebas sobre datos ya existen como aserciones de calidad (P500 H04, P516 H02).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Literacy es la habilidad de leer tablas y grafos, entenderlos para concluir correctamente y saber cuando se está potencialmente desinformado» (p. 6). Categoría: marginal / fuera de alcance. Leer y concluir pertenece a Descriptiva; «saber cuando se está desinformado» es la intuición de `data.C03`, ya ejercida en P516 (granos mezclados que confunden agregados) y P526 (tiempo de evento frente a orden de llegada).
+  - «No se tienen las habilidades para llevar un modelo a producción», «laptop analytics», «fricciones con el equipo de TI», «Formación de DS focalizada en los algoritmos y no en la creación de un producto de datos operativo» (pp. 3, 9). Categoría: fuera de alcance. Pipelines productivos y operación son frontera excluida del curso (pertenecen a productos de datos).
+  - CRISP-DM y cascada, decisiones por intuición, liderazgo y cultura, «Se debe buscar la gente correcta no educarla» (pp. 2, 5, 7). Categoría: fuera de alcance. Perspectiva de gestión organizacional, sin contenido de preparación de datos para un estudiante de pregrado.

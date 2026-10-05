@@ -302,3 +302,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Una transacción representa una operación. La historia revela el comportamiento» (p. 13) — ya cubierta: cambio de grano evento→entidad en P510 H02, P520 H03, P521 H01 y P526 H03.
+
+## S03.P510.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los datos viven en silos» (p. 2). Categoría: ya cubierta. Integración validada de tablas separadas (P511 H01–H02) y conciliación con la fuente (P510 H03).

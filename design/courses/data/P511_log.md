@@ -300,3 +300,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Recorrido histórico de RDBMS/SQL (1970) a la IA agéntica (2026): data warehouse, ETL, BI, KDD, OLAP, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, DataOps, MLOps y modelos fundacionales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P511.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los datos viven en silos» (p. 2). Categoría: ya cubierta. Integración validada de tablas separadas (P511 H01–H02) y conciliación con la fuente (P510 H03).

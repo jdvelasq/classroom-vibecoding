@@ -289,3 +289,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el mismo registro como pares clave–valor, documento JSON, column family, filas y YAML (p. 40) — ya cubierta: P524 H01–H03 (mismas filas en varios formatos) y P518 H02 (JSON anidado).
+
+## S03.P524.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los formatos de los datos no optimizados para analytics» (p. 2). Categoría: ya cubierta. Comparación de formatos sobre las mismas filas y decisión persistida (P524 H01–H03); partición por la dimensión temporal (P525 H01).
+  - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8). Categoría: marginal. Refuerza `data.C01`, pero la ausencia de pregunta analítica en esos talleres ya está registrada por S02 (auditorías no resueltas); la presentación no aporta un argumento ni una práctica distinta para resolverla.

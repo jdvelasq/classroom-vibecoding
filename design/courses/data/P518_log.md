@@ -289,3 +289,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el mismo registro como pares clave–valor, documento JSON, column family, filas y YAML (p. 40) — ya cubierta: P524 H01–H03 (mismas filas en varios formatos) y P518 H02 (JSON anidado).
+
+## S03.P518.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8). Categoría: marginal. Refuerza `data.C01`, pero la ausencia de pregunta analítica en esos talleres ya está registrada por S02 (auditorías no resueltas); la presentación no aporta un argumento ni una práctica distinta para resolverla.
+  - «Dificultad para encontrar las fuentes de datos adecuadas» y «Falta de permisos para acceder las fuentes requeridas en la organización» (p. 9). Categoría: marginal. Señal contextual de acceso y procedencia; la falta de procedencia y condiciones de uso de las fuentes ya está registrada en las superficies S01 de casi todos los Pxxx; no especifica práctica enseñable.

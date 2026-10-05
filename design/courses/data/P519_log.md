@@ -291,3 +291,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - algoritmo MapReduce (clave, valor; shuffle & sort; reduce) (p. 29); jobs en Hadoop y su limitación (p. 30–31) — ya cubierta/fuera de alcance: modelo clave–valor en P519–P520; jobs distribuidos excluidos por `case-selection.md`.
+
+## S03.P519.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8). Categoría: marginal. Refuerza `data.C01`, pero la ausencia de pregunta analítica en esos talleres ya está registrada por S02 (auditorías no resueltas); la presentación no aporta un argumento ni una práctica distinta para resolverla.

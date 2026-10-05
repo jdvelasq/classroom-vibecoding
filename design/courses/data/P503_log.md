@@ -314,3 +314,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - RDBMS con «Tipos de datos bien definidos», «Relaciones (uno a uno, uno a muchos, muchos a muchos)», «Campos clave», «Reglas de negocio» (p. 6) — ya cubierta: P503 H02 y H04.
+
+## S03.P503.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Dificultad para encontrar las fuentes de datos adecuadas» y «Falta de permisos para acceder las fuentes requeridas en la organización» (p. 9). Categoría: marginal. Señal contextual de acceso y procedencia; la falta de procedencia y condiciones de uso de las fuentes ya está registrada en las superficies S01 de casi todos los Pxxx; no especifica práctica enseñable.

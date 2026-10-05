@@ -300,3 +300,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Recorrido histórico de RDBMS/SQL (1970) a la IA agéntica (2026): data warehouse, ETL, BI, KDD, OLAP, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, DataOps, MLOps y modelos fundacionales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P516.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2). Categoría: ya cubierta. Controles ejecutables que condicionan la salida (P500 H04), diagnóstico de aptitud con reglas nombradas (P516 H01–H03) y contrato que clasifica cambios por su efecto en el análisis (P517 H02–H04). Es diagnóstico organizacional, sin práctica nueva.
+  - en ML/DA «La lógica y los datos son críticos», «El testeo se basa en precisión no en ejemplos», «Se usan datos de producción» (p. 4). Categoría: fuera de alcance / ya cubierta. El contraste con la programación tradicional apunta a pruebas de modelos y a producción (otros cursos/productos de datos); las pruebas sobre datos ya existen como aserciones de calidad (P500 H04, P516 H02).

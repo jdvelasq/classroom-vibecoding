@@ -291,3 +291,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Una transacción representa una operación. La historia revela el comportamiento» (p. 13) — ya cubierta: cambio de grano evento→entidad en P510 H02, P520 H03, P521 H01 y P526 H03.
+
+## S03.P521.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación organizacional que enumera problemas de Data Analytics/Data Science (objetivos cambiantes, silos, formatos no optimizados, mala calidad y desconfianza en los datos, trabajo manual), mitos y brechas de conocimiento (DA ≠ desarrollo de software, data literacy, el modelo «omnisciente») y falta de soporte (objetivos poco claros, acceso a fuentes y permisos, paso a producción). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
