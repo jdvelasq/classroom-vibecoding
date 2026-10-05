@@ -156,3 +156,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sesgo y equidad en IA (módulo 8, p. 14): ya cubierta en la medida que el caso lo permite (H04); el folleto sólo nombra el tema.
+
+## S03.P205.16
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa de diseño de productos de IA (módulos, pp. 4–5: proceso de diseño, panorama de algoritmos de ML y deep learning, interacción humano–máquina, organizaciones «superminds», GANs); no detalla prácticas de modelado o evaluación que contrastar con esta actividad.
