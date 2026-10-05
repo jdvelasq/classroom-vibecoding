@@ -308,3 +308,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ficha mínima de indicador con «Línea base y meta», «Responsable», «Frecuencia» y «Decisión asociada» (p. 23) — ya cubierta en su forma declarativa por P321 H02; su ejercicio con datos se integra en la candidata de P321 de `informs-analytics-framework-2024`.
+
+## S03.P321.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

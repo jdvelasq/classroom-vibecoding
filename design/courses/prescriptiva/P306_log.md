@@ -308,3 +308,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P306.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «El modelo identifica 10.000 clientes con alto riesgo … presupuesto para intervenir en 1.000 … Las intervenciones tienen costos diferentes … No todos responderán igual» (p. 18) — ya cubierta: P306 H02–H04 (riesgo vs. efecto, valor incremental, cupo). La heterogeneidad de costos por intervención es marginal: P305 H03 ya muestra que con costos heterogéneos el ranking deja de ser exacto, y P306 H03 justifica por qué con costo uniforme sí lo es.
+  - elegir «con qué acción» entre varias intervenciones (p. 18) — marginal: la asignación entre opciones con capacidad ya se ejerce en P308 H04; añadir tratamientos múltiples a P306 sería una variante.

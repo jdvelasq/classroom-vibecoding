@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre estrategia de datos (diagnóstico, brechas, objetivos, iniciativas, gobierno, uso responsable, caso de valor, priorización, hoja de ruta y evaluación), ilustrada con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P313.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «¿Funciona con datos no utilizados durante el desarrollo?» (p. 20) aplicado a la validación de la política de flota en la misma muestra simulada (límite de H06) — marginal: con 20.000 futuros, IC y umbrales de contingencia no optimizados, validar en futuros independientes no cambiaría de forma visible la evidencia ni lo que el estudiante entiende; podría mencionarse como aclaración si se toca P313 por otra razón.

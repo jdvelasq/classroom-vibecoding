@@ -450,3 +450,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Los datos no generan valor por sí mismos: el valor aparece cuando modifican una decisión, una acción» (p. 10) y «Comprender antes de decidir. Decidir antes de actuar. Medir para aprender» (p. 6) — ya cubierta: es la identidad del curso (contrato de política desde P300 H03).
   - diagnóstico, brechas, objetivos estratégicos de datos, gobierno, arquitectura y hoja de ruta (pp. 8–17, 21–22) — fuera de alcance: estrategia organizacional de datos, ajena a una política operativa recurrente.
+
+## S03.P300.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - recorrido histórico de metodologías (KDD, CRISP-DM, ASUM-DM, TDSP, INFORMS, CRISP-ML(Q)) y ciclo de vida completo de una solución analítica, ilustrado con un caso de abandono de clientes que pasa de predicción a decisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «El modelo no es la solución. Datos + Modelos + Reglas de decisión + Interfaces» (p. 19) y «La analítica genera valor cuando cambia una decisión o una acción» (p. 24) — ya cubierta: identidad del curso (contrato de política, P300 H03; P305 H06; P317 H07).
+  - «Seleccionar el enfoque … Validar la elección» de métodos (p. 17) — ya cubierta: P306 H03, P316 H05, P317 H04, P319 H03.
+  - «Verificar el modelo. Comprobar que la implementación representa correctamente la formulación» (p. 21) — ya cubierta: verificaciones cruzadas de P305, P308, P315 y validaciones de P316–P318.
+  - comprensión y preparación de datos, despliegue en producción, adopción y transferencia (pp. 12–15, 22–23) — fuera de alcance: Fundamentos de data y Productos de datos.

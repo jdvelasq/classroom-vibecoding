@@ -306,3 +306,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - uso responsable con «condiciones de suspensión» y la pregunta «¿Qué personas o grupos podrían resultar perjudicados sistemáticamente?» (p. 18) — ya cubierta: P320 H01 (guarda que suspende) y H03 (autoridad y comité).
+
+## S03.P320.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gobernanza transversal, «Evaluar sesgos y equidad» e impactos no deseados (pp. 27–29) — ya cubierta: P320 H01–H03; la transversalidad está declarada en la arquitectura.
