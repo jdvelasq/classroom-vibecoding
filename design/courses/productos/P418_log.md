@@ -161,3 +161,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Use Docker to create and manipulate Spark images and containers»; «Learn database containerization» (p. 8; p. 10) — ya cubierta: P418 H01 empaqueta una ejecución; contenerizar bases de datos o Spark es infraestructura.
+
+## S03.P418.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto comercial de un certificado en línea de seis meses (MIT xPRO/Emeritus). Cubre fundamentos de ciencia de datos, optimización, ML y aprendizaje profundo, y una parte final titulada «Deployment» que en realidad trata transformación digital y un portafolio de cierre. No describe prácticas de operación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

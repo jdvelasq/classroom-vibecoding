@@ -238,3 +238,16 @@
   - Folleto comercial de un certificado de 6 meses (MIT xPRO/Emeritus) de ingeniería de datos: Python, SQL, contenedores de bases de datos, CDC, APIs y seguridad web con JWT, ETL con NiFi, Hadoop/Spark/Airflow, ML y aprendizaje por refuerzo, streaming con Kafka/MQTT y portafolio en GitHub; el resto es servicios de carrera y financiación. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Hadoop, Spark, DASK, Kafka, MQTT/ThingsBoard, streaming en vivo (p. 8, p. 11, p. 12) — fuera de alcance (Big Data); regresión lineal, Naïve Bayes, k-means, aprendizaje por refuerzo, redes profundas (p. 8, p. 11, p. 12) — fuera de alcance (Predictiva/IA); diseño de bases de datos y SQL (p. 8–10) — fuera de alcance (Fundamentos de data); aplicaciones web en Java, Mapbox, Maven, Node.js (p. 8, p. 10–11) — fuera de alcance (ingeniería de software general). El certificado ilustra justamente la lectura que el curso debe evitar: un programa organizado por herramientas de data engineering.
+
+## S03.P400.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto comercial de un certificado en línea de seis meses (MIT xPRO/Emeritus). Cubre fundamentos de ciencia de datos, optimización, ML y aprendizaje profundo, y una parte final titulada «Deployment» que en realidad trata transformación digital y un portafolio de cierre. No describe prácticas de operación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Part 5 Deployment»: «Discover real-world applications of AI/ML», «Explore new applications of digital transformation», «Module 23: Data, Models, and Decisions», «Module 24: Leading Digital Transformations» (p. 9) — fuera de alcance: el rótulo «despliegue» no corresponde a práctica operativa alguna; es liderazgo de transformación digital.
+  - «Module 16: Fairness and Bias Issues in Data-Driven Predictions» y el caso de análisis facial: «detect, diagnose, and mitigate biases that can arise in model-based, data-driven decision-making» (p. 8, 10) — fuera de alcance: la detección y mitigación de sesgo es parte del método predictivo. El uso responsable en operación (revisión humana, acceso) ya está en P450 y P452.
+  - «Module 22: Interpretability and Causality in Models» (p. 9) — fuera de alcance: pertenece a Predictiva.
+  - regresión, clustering, filtrado colaborativo, optimización lineal, CART, ensambles, redes neuronales, NLP (p. 7–9) — fuera de alcance: métodos de otras líneas del programa.

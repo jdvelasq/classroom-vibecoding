@@ -161,3 +161,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Configure a network to ensure data security»; «Identify the key concepts of security, encryption, and authentication»; «Define web token architecture and create an application using web tokens» (p. 8); proyecto «Protect your web server using JSON web tokens» (p. 12); OAuth2, Okta, OpenSSL (p. 6) — fuera de alcance: autenticación con tokens y seguridad de red son ingeniería de software/seguridad; el control de acceso por rol al producto analítico ya está en P452 (H01–H02) y la separación de credenciales en P427.
+
+## S03.P427.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto comercial de un certificado en línea de seis meses (MIT xPRO/Emeritus). Cubre fundamentos de ciencia de datos, optimización, ML y aprendizaje profundo, y una parte final titulada «Deployment» que en realidad trata transformación digital y un portafolio de cierre. No describe prácticas de operación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
