@@ -475,3 +475,10 @@
 - **Origen:** reevaluación S03 de las señales descartadas como «fuera de alcance» por ser ingeniería de datos, tras la aclaración del profesor: el curso «está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven». Los documentos ya estaban revisados (`S03.P522.*`); esta nota no repite la revisión.
 - **Resultado:** propone T01 (aceleración a varias escalas con ejecuciones repetidas). Fuentes: `acm-computing-competencies-undergraduate-data-science-2021` pp. 56 y 59, `warwick-foundations-of-data-analytics` p. 2, `conf-origen-y-evolucion-business-analytics` p. 31.
 - **Límite conservado:** el taller sigue sin pregunta analítica (S02).
+
+## Nota.P522.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Origen:** decisión del profesor en la entrevista del 2026-10-05 (`P500_log.md`, `Nota.P500.02`): en los talleres que calculan sobre datos se plantea la pregunta analítica y se muestra cómo la resuelve ese procesamiento. No proviene de un benchmark.
+- **Resultado:** propone T02 (pregunta analítica resuelta por el procesamiento del taller). La redacción de la pregunta queda sujeta a aprobación del profesor; el límite «sin pregunta analítica» de S02 se cierra sólo cuando S05 verifique la ejecución.
+

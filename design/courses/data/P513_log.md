@@ -478,3 +478,10 @@
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.
 - **Trazabilidad:** sin cambios en el mapeo revisado ni en sus vacíos escalados.
 - **Highlights, superficies y dependencias:** sin cambios (IDs, filas de evidencia, superficies, contrato y dependencias intactos).
+
+## Nota.P513.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Origen:** decisión del profesor en la entrevista del 2026-10-05 (`P500_log.md`, `Nota.P500.02`): en los talleres que calculan sobre datos se plantea la pregunta analítica y se muestra cómo la resuelve ese procesamiento. No proviene de un benchmark.
+- **Resultado:** propone T02 (pregunta analítica resuelta por el procesamiento del taller). La redacción de la pregunta queda sujeta a aprobación del profesor; el límite «sin pregunta analítica» de S02 se cierra sólo cuando S05 verifique la ejecución.
+
