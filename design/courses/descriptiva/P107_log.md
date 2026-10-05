@@ -9,3 +9,12 @@
 - **Ambigüedades:** la limpieza está en Python y SQL sólo la orquesta; `country` es la constante `'COL'`, por lo que la aserción de país se cumple por construcción; no hay `tests/conftest.py` (presente en P100–P106); producto duplicado con P106 con tipos distintos no detectados por la prueba.
 - **Superficies / contrato / dependencias:** S01–S06; recibe de P106 y P104; habilita la práctica `create_function` de P109.
 - **Auditoría de Analytics:** producto = capacidad de datos idéntica a P106; contribución de bases de datos. Mapeo C02 (calidad) sustentado, C05 débil.
+
+## S03.P107.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dimensiones de calidad de datos, entity resolution, limpieza basada en reglas y dependencias funcionales (DG-Data Cleaning, pp. 73–74) — ya cubierta: P106 H01–H05 (función por defecto, canonización con diagnóstico de colisiones, invariantes de dominio) y P107 H01–H03. Nombrar las dimensiones de calidad o formalizar FD/CFD sería marginal (vocabulario, no capacidad nueva).
+  - transformación (estandarización, normalización, codificación, unidades; DG-Data Transformation, p. 73) — ya cubierta: P106 H04 lleva magnitudes a una unidad común.

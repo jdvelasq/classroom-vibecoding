@@ -11,3 +11,12 @@
 - **Cambios de IDs:** ninguno (primera asignación).
 - **Superficies, contrato y dependencias:** S01–S06 declaradas; contrato separa notebook, diez archivos de `submission/` y pruebas; dependencias demostrables con P103/P104 (patrón de resumen y prueba) y hacia P121/P122 (plantilla y `questions.json`).
 - **Auditoría de Analytics:** el producto es un diagnóstico descriptivo de devoluciones por segmento; pandas y Plotly sirven a ese producto. Responde qué, dónde y cuándo con evidencia persistida; usuario y decisión concreta no evidenciados.
+
+## S03.P120.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** propone T02.
+- **Señales descartadas relevantes:**
+  - métodos de validación «input validation, data type validation, range and constraint validation, and cross-reference validation» (DPSIA/DI, p. 92) — ya cubierta: P102 H01, P124 H02 y P120 H02 (identidad `Quantity × Price = TotalAmount`).
+  - *scores* y *rankings* con características deseables (DM-Proximity, p. 75) — ya cubierta: umbrales de volumen y separación entre riesgo y prioridad (P120 H06–H07, P121 H05, P122 H04/H06).

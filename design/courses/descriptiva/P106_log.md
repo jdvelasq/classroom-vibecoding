@@ -9,3 +9,12 @@
 - **Ambigüedades:** procedencia de `ventas.csv` no documentada y sin fuente limpia ni generador (no hay verdad de referencia); la regla día/mes asume `yyyy-mm-dd` cuando ambos componentes son ≤ 12; peso sin unidad se asume en kg; la prueba no ejecuta `main.py` y no cubre importes ni proveedores canónicos; `diagnostics.py` tiene sus llamadas principales comentadas.
 - **Superficies / contrato / dependencias:** S01–S06; habilita P107 (mismo dato, contrato y prueba).
 - **Auditoría de Analytics:** producto = capacidad de datos limpia, sin descripción posterior. C02 sustentado en la dimensión de calidad de datos; C05 débil. Domina la preparación de datos como disciplina contribuyente.
+
+## S03.P106.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dimensiones de calidad de datos, entity resolution, limpieza basada en reglas y dependencias funcionales (DG-Data Cleaning, pp. 73–74) — ya cubierta: P106 H01–H05 (función por defecto, canonización con diagnóstico de colisiones, invariantes de dominio) y P107 H01–H03. Nombrar las dimensiones de calidad o formalizar FD/CFD sería marginal (vocabulario, no capacidad nueva).
+  - transformación (estandarización, normalización, codificación, unidades; DG-Data Transformation, p. 73) — ya cubierta: P106 H04 lleva magnitudes a una unidad común.

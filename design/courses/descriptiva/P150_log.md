@@ -16,3 +16,11 @@
 - **Origen:** aclaración del profesor: *business intelligence* es un predecesor que, por su importancia, está contenido en la analítica descriptiva (como la minería de datos en la predictiva).
 - **Cambio en la auditoría de Analytics:** la auditoría trataba la integración del bloque P150–P154 como preparación de datos y dejaba la pregunta 5 no resuelta para el bloque. Se corrige: BI forma parte de la analítica descriptiva; el límite que se conserva es la falta de usuario y de lectura persistida.
 - **Highlights, superficies y dependencias:** sin cambios; no se renumeran IDs.
+
+## S03.P150.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integridad lógica «Entity integrity, referential integrity, domain integrity» (DPSIA/DI, p. 90); integración de fuentes y *data warehouse* (DG-Data Integration, p. 71) — ya cubierta: P150 H02, P151 H02–H03, P153 H03.

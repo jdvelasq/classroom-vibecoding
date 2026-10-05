@@ -9,3 +9,11 @@
 - **Ambigüedades:** producto duplicado con P108; se pierden la demostración ingenua y el contraste de utilidad; la consulta de ataque omite perfiles sin candidatos y no se persiste; clave HMAC en el código; reglas `CASE` duplicadas entre transformación y ataque.
 - **Superficies / contrato / dependencias:** S01–S06; recibe de P108, P107 y P104; no habilita dependencias demostrables por artefacto.
 - **Auditoría de Analytics:** producto = capacidad de datos compartible; C05 sustentado en su dimensión responsable. Domina la privacidad con SQL como disciplina contribuyente.
+
+## S03.P109.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas de privacidad en datos crudos «provide ranges or salting techniques» (DP-Social Responsibility, p. 84); funciones *hash* (DP-Cryptography, p. 85); tensión transparencia–privacidad (DP-Information Systems, p. 85) — ya cubierta: P108 H03 (`pd.cut`, HMAC con clave), H04–H05 (riesgo frente a utilidad). La clave HMAC escrita en el notebook (P108 S02) es un defecto real ya registrado por S02. ACM no aporta un argumento específico de gestión de secretos, por lo que no justifica aquí una propuesta propia.

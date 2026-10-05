@@ -16,3 +16,12 @@
 - **Origen:** aclaración del profesor: *business intelligence* es un predecesor que, por su importancia, está contenido en la analítica descriptiva (como la minería de datos en la predictiva).
 - **Cambio en la auditoría de Analytics:** la auditoría decía que la actividad «se lee como práctica de BI/gobierno de datos». Se corrige: el gobierno de métricas es BI y forma parte de la analítica descriptiva; se conserva como límite que las reglas no ejercitan el bloqueo.
 - **Highlights, superficies y dependencias:** sin cambios; no se renumeran IDs.
+
+## S03.P153.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integridad lógica «Entity integrity, referential integrity, domain integrity» (DPSIA/DI, p. 90); integración de fuentes y *data warehouse* (DG-Data Integration, p. 71) — ya cubierta: P150 H02, P151 H02–H03, P153 H03.
+  - procedencia de datos (DPSIA/DI, p. 91: «Data provenance assurance») y auditabilidad de sistemas de decisión (PR-On Automation, p. 111) — ya cubierta en lo descriptivo por el linaje de P153 H04. Lo demás es fuera de alcance (seguridad y automatización).

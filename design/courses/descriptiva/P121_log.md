@@ -11,3 +11,12 @@
 - **Cambios de IDs:** ninguno.
 - **Superficies, contrato y dependencias:** S01–S06 declaradas; dependencia demostrable de P120; salida hacia actividades posteriores no evidenciada como artefacto.
 - **Auditoría de Analytics:** diagnóstico descriptivo de concentración de demoras; disciplinas al servicio del producto. Sin declaración explícita de límite causal pese a la pregunta de «reducir».
+
+## S03.P121.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - series de tiempo (estacionariedad, motivos, pronóstico; DM-Time Series, E, p. 80) — el pronóstico está fuera de alcance (predictiva). «Measuring growth over time» ya está cubierta por P121 H06 y por las series de P120/P122/P150.
+  - *scores* y *rankings* con características deseables (DM-Proximity, p. 75) — ya cubierta: umbrales de volumen y separación entre riesgo y prioridad (P120 H06–H07, P121 H05, P122 H04/H06).

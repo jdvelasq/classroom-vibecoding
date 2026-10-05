@@ -11,3 +11,11 @@
 - **Cambios de IDs:** ninguno.
 - **Superficies, contrato y dependencias:** S01–S05 declaradas; dependencias demostrables de P103/P104 y P120–P122 (prácticas), conceptual con P108/P109; salida no evidenciada.
 - **Auditoría de Analytics:** diagnóstico de brechas con frontera causal explícita; responde qué ocurre, dónde y con qué evidencia. Las disciplinas contribuyentes sirven al producto.
+
+## S03.P125.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de medida nominal/ordinal/intervalo/razón (DM-Proximity, p. 76) — marginal: la elección de mediana y percentiles ya está justificada en P125 H03.

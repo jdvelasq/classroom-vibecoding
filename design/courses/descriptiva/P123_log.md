@@ -11,3 +11,13 @@
 - **Cambios de IDs:** ninguno.
 - **Superficies, contrato y dependencias:** S01–S07 declaradas; dependencias demostrables de P100/P101/P106 (prácticas) y P120 (`questions.json`); salida no evidenciada.
 - **Auditoría de Analytics:** descripción de un campo tecnológico por actor, lugar, tiempo y tema; disciplinas contribuyentes visibles. Auditoría con reserva: usuario y decisión no evidenciados y decisiones analíticas no expuestas en un notebook.
+
+## S03.P123.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - procesamiento de texto (bag-of-words, word-count, TF-IDF, n-gramas, *stop words*, *stemming*; DG-Working with Various Types of Data, p. 71) — marginal: P100 H02 ya fija la unidad textual por reglas de normalización y P123 H02–H03 normaliza vocabularios. Añadir TF-IDF o lematización sería otra técnica para lo mismo.
+  - estrategia de búsqueda, «narrowing and broadening», operadores booleanos (DM-Information Retrieval, p. 82); descubrimiento de comunidades (DM-Mining Web Data, p. 81); enmarcar la pregunta y obtener datos (DM-Data Preparation, p. 76) — ya cubierta: P123 H01 (consulta persistida) y H05 (Louvain). Documentar el refinamiento de la cadena sería marginal frente al límite ya registrado (falta de fecha y conteo).
+  - calidad del *clustering* (DM-Cluster Analysis, p. 77) — marginal: la falta de modularidad o estabilidad en P123 H05 ya está registrada por S02, y ACM sólo lo enuncia como conocimiento genérico de minería.

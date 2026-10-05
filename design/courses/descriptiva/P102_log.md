@@ -9,3 +9,12 @@
 - **Ambigüedades:** el docstring califica la exportación como «segura», pero conserva `name`; procedencia de `drivers.csv` no documentada; las ramas de error no se prueban.
 - **Superficies / contrato / dependencias:** S01–S06; habilita el uso del mismo dataset en P103–P105, sin artefacto compartido.
 - **Auditoría de Analytics:** producto = capacidad de datos (exportación minimizada). C05 parcialmente sustentado (minimización); C02 débil (sólo validación estructural). Dominan ingeniería de datos y protección de datos.
+
+## S03.P102.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - minimización de datos sensibles, regulaciones (GDPR, etc.; DG-Data Privacy and Security, p. 74; PR-Privacy, pp. 106–107) — ya cubierta en lo técnico (H02). El marco legal comparado es fuera de alcance: no hay caso que lo exija.
+  - métodos de validación «input validation, data type validation, range and constraint validation, and cross-reference validation» (DPSIA/DI, p. 92) — ya cubierta: P102 H01, P124 H02 y P120 H02 (identidad `Quantity × Price = TotalAmount`).

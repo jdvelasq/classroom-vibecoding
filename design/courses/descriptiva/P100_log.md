@@ -9,3 +9,19 @@
 - **Ambigüedades:** procedencia de los cuatro textos no documentada; el contenido de `submission/part-00000` no es visible en el digest, por lo que los conteos citados provienen de las aserciones de prueba; no hay instrucciones para el estudiante.
 - **Superficies / contrato / dependencias:** S01–S06 declaradas; las pruebas aceptan cualquier conteo correcto sin exigir map/reduce; habilita P101 (mismo flujo y contrato).
 - **Auditoría de Analytics:** producto = capacidad de datos (tabla de frecuencias) dominada por una destreza de disciplina contribuyente (MapReduce). El mapeo a C02 es habilitador, no evidencia de exploración antes de concluir. Identidad no resuelta a nivel de actividad.
+
+## S03.P100.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - MapReduce como paradigma paralelo (BDS-Parallel Programming, T2, p. 59) y problemas de escala (BDS-Problems of Scale, p. 56) — fuera de alcance: la fuente lo sitúa en sistemas de *big data* (ingeniería de datos), lo que confirma la auditoría S02 (identidad no resuelta), no una mejora descriptiva.
+  - procesamiento de texto (bag-of-words, word-count, TF-IDF, n-gramas, *stop words*, *stemming*; DG-Working with Various Types of Data, p. 71) — marginal: P100 H02 ya fija la unidad textual por reglas de normalización y P123 H02–H03 normaliza vocabularios. Añadir TF-IDF o lematización sería otra técnica para lo mismo.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «It is important for data science education to incorporate real data used in an appropriate context» (p. 30) — marginal: refuerza una preferencia que AGENTS.md ya establece. Su efecto concreto (calendario sintético uniforme en P150–P154, S01) es un defecto conocido de S02 que requiere decisión de caso y datos de curso, no una mejora local derivada de este documento.
+  - comunicación oral/escrita/electrónica a audiencias diversas, informes de situación para gerencia (PR-Communication, pp. 105–106); «Knowing the audience» (AP, p. 44); identificar los asuntos analíticos desde las preocupaciones del cliente (cap. 6, p. 39) — se concreta en las candidatas P120/P152. Extenderlo a todos los talleres sería repetir la misma mejora. La falta de usuario o decisión en P120–P154 es un hallazgo transversal de S02 que corresponde a una decisión de curso.
+  - AP-User-centred design, Interaction design, Interface design (T2/E; pp. 46–48: prototipado, estándares de interfaz, GUI, animación, accesibilidad) — fuera de alcance: pertenece a productos de datos o HCI y desplazaría la identidad descriptiva.
+  - sesgo y representatividad de muestras (PR-Ethical, p. 108: «Need for data, including samples of data, to be truly representative»; DM-Data Preparation, p. 76: «concerns around potential bias in data»; cap. 6, p. 39) — marginal: la frontera de población ya está declarada en P123 (H01, cadena de búsqueda) y P124 (datos no operativos). Ningún caso actual tiene un sesgo de muestreo demostrable que enseñar con rigor.
+  - *clustering*, clasificación, regresión, reglas de asociación (Apriori), ML, IA (DM pp. 77–80; ML; AI) — fuera de alcance: predictiva u otros cursos. Las reglas de asociación no tienen caso descriptivo ni datos en el curso actual.
+  - seguridad, criptografía, protocolos, análisis para seguridad (DPSIA/DS, DPSIA/AS, pp. 86–94) — fuera de alcance.

@@ -11,3 +11,12 @@
 - **Cambios de IDs:** ninguno.
 - **Superficies, contrato y dependencias:** S01–S06 declaradas; dependencias demostrables de P102, P120 y P121 (prácticas); salida no evidenciada.
 - **Auditoría de Analytics:** vista descriptiva de desempeño con razones recalculadas por alcance; Streamlit al servicio del producto. Auditoría con reserva por baja profundidad diagnóstica y ausencia de usuario o decisión.
+
+## S03.P124.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - métodos de validación «input validation, data type validation, range and constraint validation, and cross-reference validation» (DPSIA/DI, p. 92) — ya cubierta: P102 H01, P124 H02 y P120 H02 (identidad `Quantity × Price = TotalAmount`).
+  - «Dashboards and interactive visualisation» (AP-Visualization, p. 46); «Diagram the life of an interface, dashboard, or visualization including long-term use and maintenance» (AP-User-centred, T2, p. 47) — ya cubierta: tablero filtrable en P124 H04 (en P154 la p. 46 respalda T01, criterio de atención). Su ciclo de vida y mantenimiento es fuera de alcance (productos de datos).
