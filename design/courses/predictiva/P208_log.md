@@ -421,3 +421,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P208.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - intervalos de predicción (pp. 7, 143): S02 registra «sin incertidumbre»; la propuesta se ubica en P211 (T02) y podría extenderse a los escenarios SIR después de discutirla.

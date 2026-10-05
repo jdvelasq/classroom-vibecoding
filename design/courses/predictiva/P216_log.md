@@ -449,3 +449,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P216.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P211 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P211.
+  - híbridos de redes neuronales y modelos clásicos de series (p. 8): ya cubierta en lo esencial (H06–H11: MLP, AR, apilamiento y combinación).
+  - extracción de *features* de series y gradient boosting para pronóstico (p. 8): marginal; otra familia para el mismo producto.

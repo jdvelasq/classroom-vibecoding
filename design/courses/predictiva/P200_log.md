@@ -486,3 +486,11 @@
   - convertir una pregunta de negocio en una hipótesis analítica con un resultado bien definido (p. 7): se añade como fuente de T01.
   - árboles de decisión y bosques aleatorios (p. 8): se añaden como fuente de N01.
   - «Debido a que los datos están creciendo y cambiando continuamente, las relaciones… también cambian con el tiempo… identificará la degradación de la precisión de los modelos» (pp. 4–5): cuarta fuente para la señal de degradación de modelos; el documento la ubica en la fase de implementación y monitoreo, propia de productos de datos según `AGENTS.md`.
+
+## S03.P200.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - regresión cuantílica para modelar cuantiles condicionales (p. 143): se usa como alternativa en P211 T02; no aporta a P200.

@@ -420,3 +420,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P211.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** propone T01 (evaluación con orígenes móviles) y T02 (intervalo de predicción).
+- **Señales descartadas relevantes:**
+  - *Forecast Value Added* frente a un pronóstico ingenuo (p. 130): ya cubierta (H03: línea base estacional).
+  - monitoreo de errores de pronóstico con cartas de control (p. 10): según `AGENTS.md` corresponde a productos de datos.
