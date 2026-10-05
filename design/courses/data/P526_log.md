@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras de equipos para DataOps (pequeños, Big Data, híbridos, a gran escala; por función, por dominio, centralizados/descentralizados), roles y habilidades (perfiles T, Pi, M, E). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P526.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «anonymizing sensitive attributes» (p. 16); «anonymization of sensitive data» (p. 20) — marginal: defectos de identificadores sensibles ya registrados por S02 (`ssn`, `user_id`); corrección de higiene, no nueva capacidad.

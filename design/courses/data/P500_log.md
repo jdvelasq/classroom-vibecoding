@@ -577,3 +577,14 @@
   - responsabilidades del analista de datos «Consulta, Limpieza, Exploración, Interpretación» (p. 5) — ya cubierta: consulta (P503–P508), limpieza y calidad (P500, P516) a lo largo de la secuencia; no indica una capacidad ausente.
   - estructuras de equipo, roles (product owner de datos, arquitecto, plataforma) y perfiles de habilidades (pp. 2–8) — fuera de alcance: organización de equipos de datos (productos de datos / gestión), sin contenido enseñable en un taller de preparación de datos; la familia literature-derived aporta contexto organizacional, no prescripción curricular.
   - herramientas listadas por rol (SQL, Talend, Hadoop, Hive, Spark, Tableau…; p. 5) — fuera de alcance: lista de herramientas; Hadoop/Hive/Spark contradicen la frontera fijada en `case-selection.md`.
+
+## S03.P500.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «detecting missing values, duplicate records, or inconsistencies may prompt additional data acquisition or preprocessing» (p. 15) — ya cubierta: P503 H03 (identidad y faltantes antes de cargar), P500 H04.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Project Scope Definition — traducir objetivos de negocio a formulaciones con «inputs, outputs, constraints, and quantitative evaluation criteria» (p. 14) — ya cubierta en el principio de C01 (P500, P516–P517, P526); los talleres sin pregunta (P513, P518, P519, P522–P525) ya están escalados por S02.
+  - Project Design, Model Evaluation, Operation and Maintenance, Continuous Improvement (pp. 17–22) — fuera de alcance: modelado, despliegue y monitoreo pertenecen a otros cursos.

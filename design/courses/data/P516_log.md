@@ -381,3 +381,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras de equipos para DataOps (pequeños, Big Data, híbridos, a gran escala; por función, por dominio, centralizados/descentralizados), roles y habilidades (perfiles T, Pi, M, E). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P516.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** refuerza T02.
+- **Señales descartadas relevantes:**
+  - dimensiones de calidad «completeness, accuracy, timeliness, consistency, and representativeness» (p. 15) — ya cubierta: P516 H02 expresa reglas por dimensión (completeness, validity, uniqueness, scope). Añadir dimensiones sin caso que las exija sería marginal; la representatividad del corpus Scopus (P503–P507) es límite ya registrado por S02.

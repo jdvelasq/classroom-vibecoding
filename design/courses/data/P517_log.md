@@ -371,3 +371,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - rol DataOps con «Automatización de la calidad» y «Frameworks para tests de datos» (p. 5) — ya cubierta: P500 H04 condiciona la salida a aserciones ejecutables y P517 H02–H04 declara y ejercita un contrato de datos; automatizar en orquestación es pipeline productivo, fuera de la frontera.
+
+## S03.P517.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dimensiones de calidad «completeness, accuracy, timeliness, consistency, and representativeness» (p. 15) — ya cubierta: P516 H02 expresa reglas por dimensión (completeness, validity, uniqueness, scope). Añadir dimensiones sin caso que las exija sería marginal; la representatividad del corpus Scopus (P503–P507) es límite ya registrado por S02.

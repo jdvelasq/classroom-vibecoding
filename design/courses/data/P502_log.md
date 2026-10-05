@@ -386,3 +386,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - problemas «Artifactos no reproducibles», «El código y la data crecen independientemente» y «Falta de trazabilidad para el entrenamiento y monitoreo de modelos» (p. 2) — ya cubierta en lo que toca al curso: catálogo y linaje (P502 H01–H03), contrato persistido (P500 H03) y consulta preservada (P503 H01); trazabilidad de modelos es MLOps, excluido.
+
+## S03.P502.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática por expansión de citas de 18 metodologías (CRISP-DM, TDSP, ASUM-DM, DMME, MAISTRO…) que deriva PRODIG8: seis dimensiones de ejecución, gobierno y ética transversal y mejora continua. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

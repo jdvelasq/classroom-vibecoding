@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre estructuras de equipos para DataOps (pequeños, Big Data, híbridos, a gran escala; por función, por dominio, centralizados/descentralizados), roles y habilidades (perfiles T, Pi, M, E). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P513.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «producing detailed preparation reports documenting acquisition, cleaning activities, feature construction, and integration logic» (p. 17) — ya cubierta: reporte de ingestión por lote (P513 H03), reporte de filas por etapa (P514 H02), manifiesto de interfaces (P501 H02), linaje (P502 H03).
