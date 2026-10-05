@@ -364,3 +364,11 @@
 - **Señales descartadas relevantes:**
   - «Historical balance: Se comparan los datos actuales con datos previos o valores esperados» (p. 5) — marginal: sustituiría el mínimo fijo de volumen por una referencia histórica; exige una serie de ejecuciones que el caso no tiene (S03: «Un instante; sin historia»); la comparación referencia–actual ya se enseña en P422 H01.
   - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» (p. 5) — fuera de alcance en esta forma: requiere series temporales de métricas operativas que ningún caso del curso tiene; sin datos para enseñarlo con rigor.
+
+## S03.P442.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras de equipos para DataOps (small teams, Big Data Ops, hybrid, large scale), equipos por función frente a por dominio/producto, roles del grupo core y de soporte (incluidos DataOps engineer y data product owner) y perfiles T/Pi/M-shaped. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

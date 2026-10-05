@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» (p. 5) — fuera de alcance en esta forma: requiere series temporales de métricas operativas que ningún caso del curso tiene; sin datos para enseñarlo con rigor.
+
+## S03.P422.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - problemas típicos por estructura: «Artifactos no reproducibles», «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Monitoreo del modelo y rentrenamiento ineficientes», «El código y la data crecen independientemente» (p. 2) — ya cubierta: ambiente reproducible con procedencia (P412 H01–H02), corridas recuperables (P420 H02–H03), monitoreo de entradas y desempeño (P422 H01, P423 H01), reversión (P424 H01); separación datos/código versionados en P431 H01–H02.

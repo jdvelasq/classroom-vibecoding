@@ -363,3 +363,11 @@
 - **Señales descartadas relevantes:**
   - «Los tests deben incluirse en cada etapa del pipeline» con entradas / lógica del negocio / salidas (p. 4) — ya cubierta a lo largo de la secuencia: entradas (P402 H01, P404), lógica (P400–P401), salidas (P417 H01, P440 H02).
   - «Location Balance tests: … La cantidad de datos o sus dimensiones se mantienen» (p. 5) — ya cubierta: P440 H01–H02 (conteo y total de control entre etapas).
+
+## S03.P440.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras de equipos para DataOps (small teams, Big Data Ops, hybrid, large scale), equipos por función frente a por dominio/producto, roles del grupo core y de soporte (incluidos DataOps engineer y data product owner) y perfiles T/Pi/M-shaped. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

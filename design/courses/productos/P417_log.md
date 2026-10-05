@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tipos de pruebas unitarias, de integración, funcionales y de regresión (p. 2: «Pruebas de regresión: se ejecutan cada vez que hay un cambio») — ya cubierta: P400–P401 (unitarias), P417 H01 (flujo/artefacto publicado), P412 H03 y P414–P416 (regresión sobre resultado conocido).
+
+## S03.P417.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras de equipos para DataOps (small teams, Big Data Ops, hybrid, large scale), equipos por función frente a por dominio/producto, roles del grupo core y de soporte (incluidos DataOps engineer y data product owner) y perfiles T/Pi/M-shaped. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

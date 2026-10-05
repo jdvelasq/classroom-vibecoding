@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre calidad de datos en DataOps: análisis de impacto y automatización de pruebas, tipos de pruebas, «Analytics es código» (innovation pipeline vs. value pipeline), pruebas en cada etapa (entradas, lógica de negocio, salidas) con niveles de severidad y acción, y tipos de prueba con notificación (location balance, historical balance, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P423.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - problemas típicos por estructura: «Artifactos no reproducibles», «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Monitoreo del modelo y rentrenamiento ineficientes», «El código y la data crecen independientemente» (p. 2) — ya cubierta: ambiente reproducible con procedencia (P412 H01–H02), corridas recuperables (P420 H02–H03), monitoreo de entradas y desempeño (P422 H01, P423 H01), reversión (P424 H01); separación datos/código versionados en P431 H01–H02.

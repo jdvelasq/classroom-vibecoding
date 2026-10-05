@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tipos de pruebas unitarias, de integración, funcionales y de regresión (p. 2: «Pruebas de regresión: se ejecutan cada vez que hay un cambio») — ya cubierta: P400–P401 (unitarias), P417 H01 (flujo/artefacto publicado), P412 H03 y P414–P416 (regresión sobre resultado conocido).
+
+## S03.P401.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Altos costos debido al trabajo mundano y repetitivo» y «Si algo falla todo falla» (p. 2) — marginal: motivación general para automatizar y probar, ya ejercida en el bloque de pruebas y automatización.

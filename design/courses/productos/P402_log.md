@@ -369,3 +369,11 @@
 - **Señales descartadas relevantes:**
   - pruebas de entrada «Fechas en un rango válido», «Validación del rango de valores de un campo», «Porcentajes de incremento en la cantidad de registros» (p. 4) — marginal: variantes de reglas del contrato de H01; el límite «sin rangos ni completitud temporal» se resolvería con otra regla del mismo tipo, sin nueva capacidad.
   - «Los tests deben incluirse en cada etapa del pipeline» con entradas / lógica del negocio / salidas (p. 4) — ya cubierta a lo largo de la secuencia: entradas (P402 H01, P404), lógica (P400–P401), salidas (P417 H01, P440 H02).
+
+## S03.P402.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Altos costos debido al trabajo mundano y repetitivo» y «Si algo falla todo falla» (p. 2) — marginal: motivación general para automatizar y probar, ya ejercida en el bloque de pruebas y automatización.

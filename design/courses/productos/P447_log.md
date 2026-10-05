@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Cada vez que algo falla se agrega una nueva prueba» (p. 2) — marginal: práctica razonable (incidente → prueba de regresión), pero sin anclaje que cambie un taller; P447 termina en incidente abierto y P412/P414 ya fijan regresiones. Podría citarse como fuente secundaria si se propone cerrar el ciclo incidente–prueba en otra revisión.
+
+## S03.P447.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras de equipos para DataOps (small teams, Big Data Ops, hybrid, large scale), equipos por función frente a por dominio/producto, roles del grupo core y de soporte (incluidos DataOps engineer y data product owner) y perfiles T/Pi/M-shaped. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

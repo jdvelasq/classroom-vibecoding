@@ -531,3 +531,14 @@
   - pruebas de desempeño y de humo (p. 2: «capacidad de respuesta, estabilidad y disponibilidad bajo una carga») — fuera de alcance: ingeniería de software/rendimiento; sin capacidad analítica ni datos que lo justifiquen; la disponibilidad como nivel de servicio ya está en P445.
   - «Analytics es código»: innovation pipeline (datos fijos, código variable → pruebas de regresión) vs. value pipeline (código fijo, datos variables → tests de datos y monitoreo) (p. 3) — marginal: encuadre útil que ya está implícito en la secuencia (P412–P416 regresión con datos fijos; P402, P404, P422, P439–P442 datos variables); no cambia lo que el estudiante hace. Puede usarse para aclarar el encuadre de curso si se reorganiza la secuencia.
   - análisis de impacto por equipos y «Proceso Waterfall para reducir miedo e incertidumbre» frente a automatización de pruebas (p. 2) — ya cubierta: P415–P416 (verificación automática antes de fusionar).
+
+## S03.P400.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Altos costos debido al trabajo mundano y repetitivo» y «Si algo falla todo falla» (p. 2) — marginal: motivación general para automatizar y probar, ya ejercida en el bloque de pruebas y automatización.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - rol «DataOps Engineer»: «Orquestación del pipelines, Automatización de la calidad, Aprovisionamiento de ambientes, Despliegue a producción» con «Frameworks para tests de datos» (p. 5) — ya cubierta como conjunto de prácticas del curso (P429, P402/P433, P412/P414, P415/P426); el documento describe un rol, no una práctica nueva.
+  - estructuras de equipo (centralizada, descentralizada, por dominio, centro de excelencia, data platform team), coordinación por capítulos y perfiles T/Pi/M/E-shaped (pp. 2–4, 7–8) — fuera de alcance: diseño organizacional, no operación de una capacidad analítica.
