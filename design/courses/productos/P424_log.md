@@ -25,3 +25,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 7.2 «Recalibrate and maintain the analytics solution» (p. 7) — marginal: reversión sin reentrenar (P424 H01) y corridas recuperables (P420 H02) cubren la mecánica; el recalibrado es un método predictivo, fuera de la frontera del curso.
+
+## S03.P424.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Recalibrate and maintain the analytics solution» (p. 24, Tarea 7.2) — sin señal: ambas subtareas «Not tested at this level»; promoción y reversión ya en P421 y P424.

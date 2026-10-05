@@ -25,3 +25,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 7.1 «Track analytics solution performance» (p. 7) — ya cubierta: monitoreo de entradas (P422 H01) y de desempeño (P423 H01). La única brecha material, el origen del umbral, queda en la candidata P423.
+
+## S03.P422.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Identify the metrics that monitor analytics solution performance» (p. 24, CAP-E.7.1.1) — ya cubierta: P422 H01 (señal por variable de entrada), P423 H01–H02 (desempeño observado frente a mínimo), P445 H01–H02 (disponibilidad frente a meta).

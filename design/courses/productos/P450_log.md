@@ -25,3 +25,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Tasks 6.3 y 1.6 sobre «sponsor agreement and stakeholder alignment» (p. 4, 7) — ya cubierta: la autorización humana explícita es P450 H02. La aprobación de un patrocinador como ritual organizacional queda fuera de alcance.
+
+## S03.P450.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Identify a potential ethical analytics risk» (p. 22, CAP-E.6.1.2) — marginal: reconocimiento genérico; la salvaguarda operativa ya está en la revisión humana (P450 H01–H02).

@@ -25,3 +25,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 6.6 «Actively support deployment validation and verification, including production data flows» (p. 7) — ya cubierta: verificación del artefacto publicado de extremo a extremo (P417 H01) y conciliación origen-destino antes de publicar (P440 H02).
+
+## S03.P417.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «deployment validation and verification, including production data flows» (p. 23, Tarea 6.6) — subtarea no evaluada; ya cubierta por la verificación del artefacto publicado (P417 H01) y la conciliación origen–destino (P440 H01–H02).
