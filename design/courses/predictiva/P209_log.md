@@ -179,3 +179,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de ingeniería de sistemas orientada al valor (semanas 1–4: modelos de valor, generación y evaluación de alternativas, exploración de *tradespace* bajo incertidumbre); es contenido de decisión multicriterio, propio de Prescriptiva; sin señales para esta actividad.
+
+## S03.P209.22
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa de prototipado físico rápido y fabricación (módulos 1–5); sin contenidos de analítica predictiva.
