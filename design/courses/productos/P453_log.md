@@ -257,3 +257,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Syllabus de bodegas de datos tradicionales: modelado ER y dimensional de Kimball (incluye SCD tipos 1–3, hechos sin hechos, snapshots), y BI con SAP Business Objects (universos, loops, traps, seguridad por fila) y Tableau; declara explícitamente «ETL is not covered in this course» (p. 1). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P453.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Sharing: Privacy, Anonymization, Risks… k-anonymity, and differential privacy» (p. 2) y el resultado de aprendizaje «identify privacy risks in releasing information, and design techniques to mediate these risks» (p. 3). Categoría: marginal o fuera de alcance. P453 ya enmascara un identificador directo antes de compartir una salida. Pasar a riesgo de reidentificación por cuasi-identificadores (k-anonimato) exigiría un caso con cuasi-identificadores que hoy no existe: P453 tiene una sola fila (S01). La técnica pertenece además al tratamiento de datos de un módulo de fundamentos. Una ficha institucional sólo ilustra posibilidades.

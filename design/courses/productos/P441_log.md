@@ -257,3 +257,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Syllabus de bodegas de datos tradicionales: modelado ER y dimensional de Kimball (incluye SCD tipos 1–3, hechos sin hechos, snapshots), y BI con SAP Business Objects (universos, loops, traps, seguridad por fila) y Tableau; declara explícitamente «ETL is not covered in this course» (p. 1). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P441.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data quality, data cleaning… errors, missing values, lack of consistency» (p. 2). Categoría: ya cubierta. P402 (contrato de datos con aceptación y rechazo) y P441 (cuarentena con motivo) la operan frente al uso; en Warwick es limpieza analítica.

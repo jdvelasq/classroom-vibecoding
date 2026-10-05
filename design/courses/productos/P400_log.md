@@ -379,3 +379,13 @@
   - «Slowly Changing Dimensions - Type 1, Type 2, and Type 3 … Classroom Hands-on – Design a Type 2 SCD» (p. 2), modelado dimensional, bus architecture, dimensiones conformadas y de tiempo, manejo de nulos (p. 2) — fuera de alcance: modelado de datos (Fundamentos de data / Descriptiva); no se plantea como preocupación operativa.
   - SAP Business Objects (universos, loops, chasm/fan traps, IDT, Web Intelligence) y Tableau (pp. 3–4) — fuera de alcance: capacitación en plataformas de BI, excluida por las fronteras del curso.
   - «Publishing and sharing reports», «Sharing your dashboards» (p. 4) — marginal: publicación como función de herramienta; el control de acceso y la entrega de un producto ya están en P452 y P425–P426.
+
+## S03.P400.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ficha de un módulo introductorio de posgrado, de 10 semanas, del departamento de Computer Science. Recorre herramientas básicas, estadística, calidad de datos y SQL/NoSQL, regresión, matrices, clustering, clasificación, estructuras para big data, privacidad y anonimización, y grafos. Se evalúa con un proyecto, ejercicios y un examen. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Structures: Bloom Filters, Sketches, Summaries… to scale analytics to big data» y «NoSQL systems» (pp. 2–3). Categoría: fuera de alcance, por la frontera Big Data y arquitectura de datos. Regresión, clustering, clasificación, SVD/PCA y grafos (p. 2) corresponden a Predictiva, Descriptiva y Fundamentos. Herramientas de línea de comandos, gnuplot y Perl/Python/R (p. 2) son formación en herramientas.
