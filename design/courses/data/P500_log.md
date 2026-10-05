@@ -274,3 +274,16 @@
   - «Survey the essentials of data science including data, models, processes» (p. 7); prerrequisito «familiar with Excel datasets» (p. 6) — marginal: no especifica prácticas de datos.
   - «applying techniques such as data augmentation, transfer learning, and data filtering» (p. 11) — fuera de alcance (preparación para ML).
   - clustering, regresión, optimización, redes neuronales, NLP, «Data, Models, and Decisions» (pp. 7–9) — fuera de alcance (cursos de línea).
+
+## S03.P500.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Calendario de un curso en línea de cuatro semanas sobre decisiones tempranas de diseño en ingeniería de sistemas: método de Pugh, estudios de trade-off, modelos de valor, generación de espacios de diseño, tradespace, frente de Pareto y sensibilidad. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - modelos de valor y caracterización de diseños mediante atributos organizados en jerarquías (p. 2: «characterize a design using attributes and how to organize attributes in hierarchies for evaluation and summation») — fuera de alcance: modelado de valor para decidir entre alternativas (prescriptiva/ingeniería de sistemas); no trata requisitos ni preparación de datos.
+  - generación y evaluación de espacios de diseño, tradespace, frente de Pareto, sensibilidad y robustez (pp. 3–4) — fuera de alcance: pertenecen a la línea prescriptiva.
+  - pre-evaluación y post-evaluación para medir la línea base del estudiante (pp. 1, 4) — fuera de alcance de S03 por Pxxx: es diseño de evaluación del curso, no refuerzo de un taller; la evaluación de los Pxxx está fijada en `pytest` por `AGENTS.md`.
+  - reparto de tareas entre modelos y personas (p. 4: «task allocation between models and people») — fuera de alcance: autoridad humana en decisiones, tema de prescriptiva.
