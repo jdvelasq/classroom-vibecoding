@@ -364,3 +364,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre calidad de datos en DataOps: pruebas automáticas en cada etapa del pipeline (entradas, lógica de negocio, salidas), severidad con acción asociada (detener, investigar, informar), pruebas de balance por ubicación, balance histórico y control estadístico de procesos, y la separación entre pipeline de valor (datos variables) y de innovación (código variable). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P303.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data product owner … Responsable por el éxito del producto de datos y represéntale al usuario» y «Stakeholder: Usuario» (pp. 5–6) — ya cubierta/marginal: la autoridad y el dueño de la decisión ya son campos obligatorios del contrato (P300 H03, P303 H01); el documento habla del dueño de un producto de datos, no de la autoridad sobre una acción.

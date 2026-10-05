@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Verificar entradas antes de usarlas, «¿Están los datos de entrada libres de errores?» con conteos, formatos, rangos y tipos de campo (p. 4) — ya cubierta en la forma que importa a una política: P304 H06 automatiza sólo «solicitudes con datos válidos» y escala excepciones; P305 H06 declara excepción por datos inválidos; P308 H06 retiene la recomendación si la predicción falta o no está vigente; P319 H06 prohíbe publicar con atributos incompletos. El diseño de las pruebas de datos del pipeline pertenece a Productos de datos / Fundamentos de data.
+
+## S03.P319.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -366,3 +366,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» y balance histórico frente a «valores esperados» (p. 5) — fuera de alcance: se refiere a la calidad de los datos del pipeline, no a los resultados de una política. El límite de P321 (sin datos de seguimiento con los que aplicar el gatillo, log S02) es real, pero este documento no aporta evidencia sobre monitoreo de resultados de decisiones; la familia literature-derived da contexto organizacional, no prescripción.
+
+## S03.P321.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Entendimiento y análisis de datos que influencian las decisiones» como habilidad del analista (p. 5) — marginal: enunciado genérico sin mecanismo.

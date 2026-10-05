@@ -533,3 +533,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Tipos de pruebas (unitarias, integración, funcionales, regresión, desempeño, humo) y «Los tests deben incluirse en cada etapa del pipeline» (pp. 2, 4) — fuera de alcance: práctica de ingeniería de software y DataOps (Productos de datos); las pruebas `pytest` de los talleres evalúan participación (AGENTS.md), no la calidad del pipeline.
   - «Analytics es código», pipeline de valor frente a pipeline de innovación y ambiente idéntico al de producción (p. 3) — fuera de alcance: organización de la operación de datos, no diseño ni gobierno de una política.
+
+## S03.P300.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data product owner … Responsable por el éxito del producto de datos y represéntale al usuario» y «Stakeholder: Usuario» (pp. 5–6) — ya cubierta/marginal: la autoridad y el dueño de la decisión ya son campos obligatorios del contrato (P300 H03, P303 H01); el documento habla del dueño de un producto de datos, no de la autoridad sobre una acción.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - estructuras de equipo, roles (data engineer, DataOps engineer, data platform administrator) y perfiles de habilidades (pp. 2–8) — fuera de alcance: organización de capacidades de datos; corresponde, si a alguno, a Productos de datos o a gestión, no a una política de decisión.
+  - «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Artifactos no reproducibles», «Monitoreo del modelo y rentrenamiento ineficientes» (p. 2) — fuera de alcance: operación de modelos e infraestructura (Productos de datos); el registro y la trazabilidad de decisiones de una política ya están en P303 H03, P306 H08 y P321.

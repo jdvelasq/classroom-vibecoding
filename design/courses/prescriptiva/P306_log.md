@@ -365,3 +365,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Severidad con acción requerida, «Error → Detención del pipeline; Alerta → Investigación de la falla; Informativa → Ser consciente» (p. 4) — ya cubierta: P306 H07 asigna a cada métrica una acción (bloquear, suspender, recalibrar, escalar) y una autoridad; P308 H07 separa bloqueo, revisión contextual y recalibración. Es la misma idea aplicada a la política.
+
+## S03.P306.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

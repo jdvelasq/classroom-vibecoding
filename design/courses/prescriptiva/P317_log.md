@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre calidad de datos en DataOps: pruebas automáticas en cada etapa del pipeline (entradas, lógica de negocio, salidas), severidad con acción asociada (detener, investigar, informar), pruebas de balance por ubicación, balance histórico y control estadístico de procesos, y la separación entre pipeline de valor (datos variables) y de innovación (código variable). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P317.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre estructuras organizacionales de equipos de datos (small teams, big data ops, hybrid, large scale; equipos por función vs. por dominio), roles del grupo core y de soporte con habilidades y herramientas, perfiles T/Pi/M-shaped y estructuras centralizada/descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
