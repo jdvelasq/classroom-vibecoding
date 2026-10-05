@@ -430,3 +430,11 @@
   - «the predictive relationships discovered through data mining are not causal relationships» (p. 17). Ya cubierta: P306 (H02) separa riesgo de efecto causal estimado.
   - lift por cuantiles y ganancia acumulada para campañas: «Lift reveals how much of the population must be solicited» (p. 55). Fuera de alcance: es una métrica de evaluación predictiva. P306 (H04) ya fija como criterio el valor incremental de la política, no la precisión del modelo.
   - PREDICT elige el umbral que maximiza la exactitud promedio por clase (p. 42), y la exactitud engaña con clases desbalanceadas y priors (p. 59). Fuera de alcance: son calibración y evaluación del clasificador (Predictiva). El umbral por exactitud es justo el criterio que la candidata de P303 reemplaza por costos.
+
+## S03.P306.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

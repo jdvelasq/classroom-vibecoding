@@ -418,3 +418,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - scoring en tiempo real dentro de una transacción: «a sales representative could run a model that predicts the likelihood of fraud within the context of an online sales transaction» (p. 20); operadores SQL `PREDICTION_PROBABILITY` para desplegar modelos (pp. 29, 34). Fuera de alcance: desplegar e integrar en aplicaciones es tarea de Productos de datos. Lo prescriptivo, la automatización acotada por latencia con autoridad humana sobre parámetros, ya está en P304 (H06).
+
+## S03.P304.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

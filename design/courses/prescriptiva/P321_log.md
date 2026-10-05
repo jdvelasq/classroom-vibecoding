@@ -423,3 +423,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 158. Lectura: índice + secciones. Recorrí el índice completo (pp. 3–12). Leí completos: novedades 11g sobre decisiones sensibles al costo (p. 11); cap. 1, «What Is Data Mining?», que incluye información accionable, límites, proceso y despliegue (pp. 15–20); transparencia de modelos y operadores SQL de scoring (pp. 27–29); combinación de scoring y reglas de negocio en SQL (pp. 33–34); PREDICT y umbral (p. 42); cap. 5, evaluación y sesgo de clasificación: matriz de confusión, lift, ROC, costos y priors (pp. 54–60). Revisé con grep el resto (algoritmos, preparación de datos, minería de texto y glosario), buscando costo, umbral, despliegue, monitoreo, simulación, optimización, equidad y recomendación: sólo aparecen la matriz de costo del árbol de decisión (p. 86) y la definición de cost matrix del glosario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P321.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «What will they use the dashboard to do? What questions will they use it to answer? What actions will they take in response to these answers?» (p. 1, preg. 3). Ya cubierta: el registro de P321 (H01–H02) une recomendación, indicador, meta, gatillo, responsable y acción de revisión. El monitoreo de P306 (H07) y P308 (H07) también asigna a cada métrica una acción de respuesta y una autoridad.
+  - «For each of these data items, what would constitute an exception? Are there specific thresholds… or… statistical outliers» (p. 1, preg. 8). Marginal: los gatillos con umbral explícito ya existen (P319 H06, P315 H05, P321 H02). Pasar de un umbral fijo a uno por atipicidad estadística sería una variante del gatillo. Una fuente professional-learning de una página tampoco basta para imponerla.
+  - «What are the useful comparisons… do you have targets or historical data that could also be displayed» (p. 1, preg. 7). Ya cubierta: P321 declara meta (`service_rate >= 0.90`) y P315 (H05) y P319 (H06) persisten línea base y umbral por métrica. Construir el tablero de seguimiento es diseño visual y producto (Descriptiva o Productos de datos), no política.

@@ -420,3 +420,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - transparencia de modelos y reglas: «some algorithms produce rules, which express the logic used by the model» (p. 27). Marginal: P308 (H05) ya explica la recomendación familia por familia, y la transparencia del modelo es asunto de Predictiva.
+
+## S03.P308.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

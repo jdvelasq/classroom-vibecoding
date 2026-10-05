@@ -612,3 +612,14 @@
   - proceso iterativo: «a data mining project does not stop when a particular solution is deployed. The results of data mining trigger new business questions» (p. 18). Ya cubierta: los gatillos de revisión y el monitoreo de P306 (H07), P308 (H07) y P321 (H02) ya lo concretan con más exigencia.
   - «data mining… cannot tell you the value of the information to your organization» (p. 17). Ya cubierta: P322 (H01) calcula el valor de medir antes de actuar.
   - desarrollar varios modelos y elegir «the best of those for deployment» (p. 60); detección de anomalías para fraude (p. 61); confiabilidad de clusters «for business decision making» (p. 64). Fuera de alcance: selección y construcción de modelos (Predictiva o Descriptiva).
+
+## S03.P300.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «How often should the data be updated in the dashboard?» y «Who will use the dashboard?» (p. 1, preg. 1–2). Ya cubierta: cadencia, plazo de respuesta y autoridad son campos obligatorios del contrato desde P300 (H03) y se repiten en todos los talleres.
+  - datos clave, nivel de detalle y agrupaciones del tablero (p. 1, preg. 4–6). Fuera de alcance: son requisitos de diseño de visualización, que no cambian la política ni su validación.
