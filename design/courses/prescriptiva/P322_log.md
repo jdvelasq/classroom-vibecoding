@@ -380,3 +380,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - mejora continua: «lessons learned trigger new, more focused business questions», retrospectivas y documentación «viva» (pp. 21–22) — marginal: aprendizaje organizacional del proyecto; la revisión de la política por gatillos ya está en P321 H02 y P322 H02–H03.
+
+## S03.P322.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Elegir entre varias ofertas por cliente con un modelo que se reentrena al llegar nuevas respuestas (SLRM, «Maximum number of predictions per record … 2», p. 199; «Continue training existing model», p. 202) — fuera de alcance: es actualización de un modelo predictivo (Predictiva) y su operación continua (Productos de datos); no aporta una regla de exploración ni un diseño de medición, y el propio texto advierte que los resultados son sobre datos de entrenamiento (p. 204). El valor de medir antes de actuar ya está en P322.

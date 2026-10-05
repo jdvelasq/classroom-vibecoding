@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - alcance del proyecto: los equipos técnicos traducen metas en «precise data-science formulations of inputs, outputs, constraints, and quantitative evaluation criteria» y se definen «success criteria» (p. 14) — ya cubierta: el contrato de política con contexto, objetivo, restricción, salvaguarda, excepción y métrica de resultado ya es el entregable de P300 (H03) y P302 (H04).
+
+## S03.P302.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: revisión sistemática por expansión de citas de 18 metodologías de proyectos de analítica (KDD, CRISP-DM, ASUM-DM, TDSP, DMME, MAISTRO, DataPro…) que deriva PRODIG8: seis dimensiones de ejecución, Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P304.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

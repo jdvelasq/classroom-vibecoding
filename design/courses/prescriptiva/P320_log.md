@@ -379,3 +379,11 @@
 - **Señales descartadas relevantes:**
   - gobierno: «establishment of criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: la frase se refiere a selección de variables en modelado, no a umbrales de decisión; aunque los logs S02 registran umbrales no derivados (P303 0,08/0,30/10.000; P311 gatillos; P315 40/60 min; P320 0,10), esta fuente no aporta un método para derivarlos y P312 H02 ya enseña a anclar un umbral en el punto de indiferencia.
   - «Fairness and accountability emerge as recurring checkpoints, requiring explicit mechanisms for bias mitigation» (p. 20) — ya cubierta: P320 convierte un umbral de equidad en guarda que decide (H01) con autoridad y gatillos (H03); el documento no precisa métrica ni mecanismo de corrección que permita resolver el límite de P320 (suspender sin corregir).
+
+## S03.P320.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -554,3 +554,15 @@
   - alcance del proyecto: los equipos técnicos traducen metas en «precise data-science formulations of inputs, outputs, constraints, and quantitative evaluation criteria» y se definen «success criteria» (p. 14) — ya cubierta: el contrato de política con contexto, objetivo, restricción, salvaguarda, excepción y métrica de resultado ya es el entregable de P300 (H03) y P302 (H04).
 - **Señales de alcance de curso** (registradas sólo en este log):
   - el marco completo (dimensiones de ejecución, Scrum/Sprint 0, preparación de datos, MLOps; pp. 12–24) — fuera de alcance: metodología de gestión de proyectos de analítica, no capacidad de diseño de políticas; útil como contexto organizacional (familia literature-derived), no como prescripción para un taller.
+
+## S03.P300.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de producto con tutoriales de minería de datos sobre la herramienta (clasificación, regresión, series de tiempo, supervivencia, reglas); el único material cercano a decisión es elegir a quién ofrecer una campaña según respuesta estimada y un margen calculado en una plantilla de Excel. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Reentrenar mensualmente y comparar modelos Jan vs Jan-Feb (pp. 215–222) — fuera de alcance: recalibración del modelo predictivo, no revisión de la política; además se evalúa sobre los datos de entrenamiento (p. 222). Los gatillos de recalibración de la política ya están en P306 H07 y P308 H07.
+  - Retención esperada con cotas superior e inferior por extrapolación fuera del rango de supervivencia («between 601 and 735 … between 288 and 597», p. 312) y orden de clientes que cambia según el trimestre (p. 319) — fuera de alcance: estimación con incertidumbre propia de Predictiva; no se convierte en acción.
+  - Puntuar datos operativos y desplegar el modelo en un repositorio para «enterprise-wide deployment, scoring, and management of models» (pp. 41–42; p. 7) — fuera de alcance: despliegue y gestión de modelos corresponde a Productos de datos.

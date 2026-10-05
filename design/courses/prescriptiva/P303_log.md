@@ -380,3 +380,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gobierno: «establishment of criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: la frase se refiere a selección de variables en modelado, no a umbrales de decisión; aunque los logs S02 registran umbrales no derivados (P303 0,08/0,30/10.000; P311 gatillos; P315 40/60 min; P320 0,10), esta fuente no aporta un método para derivarlos y P312 H02 ya enseña a anclar un umbral en el punto de indiferencia.
+
+## S03.P303.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Regla de segmentos interpretables con exclusión explícita, «these segments capture almost 8,000 records with zero hits between them, so it makes sense to exclude them from future offers» (p. 124), y segmentos personalizados «based on your own business rules» (p. 135) — marginal: una regla por segmentos con exclusiones es otra forma de la regla con precedencias de P303 (H01) y de la banda de revisión de P306 (H07); cambiaría la técnica de minería, no lo que el estudiante hace con la política.
+  - Elegir el corte según el costo de los errores, «What constitutes a "desirable" gain depends on the cost of Type I and Type II errors» y el corte 0,248 para el 30 % superior (pp. 303–304) — ya cubierta en el curso: el corte derivado del valor/costo está en P304 (H02–H03, costo de oportunidad) y P306 (H03); P303 tiene como contribución el enrutamiento por autoridad y su límite S02 (umbrales sin justificación) no tiene datos de resultados con los que evaluar errores. Una señal de herramienta no basta para cambiar su caso.
