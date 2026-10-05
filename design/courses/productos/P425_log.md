@@ -146,3 +146,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Identify the technical choices a firm makes in creating APIs and industry standards» (p. 8); Módulo 4 «Technical Platforms… Industry Standards & Building Technical Coalitions» (p. 15) — fuera de alcance: diseño de APIs como estrategia de ecosistema; el contrato de interfaz de una capacidad y su compatibilidad entre versiones ya están en P425 H01–H02 y P434 H01.
+
+## S03.P425.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cronograma de un curso profesional del MIT: EDO y métodos numéricos, modelado espacial (EDP), optimización y modelado basado en datos, de optimización a ML (regresión, regularización, logística), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos (Aurora, Schlumberger, BASF). No contiene contenidos de operación, despliegue, validación operativa, monitoreo ni gobierno. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

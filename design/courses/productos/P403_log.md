@@ -146,3 +146,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un curso en línea sobre plataformas digitales y mercados de dos lados: efectos de red, precios, arquitectura de plataformas y APIs, estándares, gating de calidad, regulación, antimonopolio y modelado de dinámicas de plataforma. Es estrategia de producto/plataforma, no operación de capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P403.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Assessing Model Fit» (p. 2) — fuera de alcance: evaluación del ajuste como parte del método de origen; la validación operacional frente a umbrales de uso ya está en P403 H02 y P423 H02.

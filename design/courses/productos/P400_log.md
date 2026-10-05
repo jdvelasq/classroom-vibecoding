@@ -215,3 +215,16 @@
   - Folleto de un curso en línea sobre plataformas digitales y mercados de dos lados: efectos de red, precios, arquitectura de plataformas y APIs, estándares, gating de calidad, regulación, antimonopolio y modelado de dinámicas de plataforma. Es estrategia de producto/plataforma, no operación de capacidades analíticas. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - efectos de red, precios, kick-starting, antimonopolio, modelado de dinámicas de plataforma (pp. 9, 15) — fuera de alcance: estrategia y economía de plataformas.
+
+## S03.P400.18
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cronograma de un curso profesional del MIT: EDO y métodos numéricos, modelado espacial (EDP), optimización y modelado basado en datos, de optimización a ML (regresión, regularización, logística), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos (Aurora, Schlumberger, BASF). No contiene contenidos de operación, despliegue, validación operativa, monitoreo ni gobierno. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - módulos 2–3, simulación numérica con EDO/EDP (p. 1: «The Forward Euler Method», «Explicit and Implicit PDE Solutions») — fuera de alcance: modelado y simulación científica; no hacen operable una capacidad analítica.
+  - módulos 4–5, optimización y ML (p. 2: «Gradient Descent», «Regularization», «Assessing Model Fit») — fuera de alcance: construcción y ajuste de modelos corresponden a Predictiva/Prescriptiva; Productos no vuelve a predecir ni optimizar.
+  - módulo 6, Monte Carlo, pronóstico probabilístico, análisis de sensibilidad, eventos raros (p. 2: «Probabilistic Forecasting», «Simulating Rare Events») — fuera de alcance: pertenecen a Predictiva/Prescriptiva; ningún Pxxx los requiere para operar una capacidad.
+  - casos industriales con evaluación (p. 2: «✭ Aurora Flight Sciences», «✭ Schlumberger», «✭ BASF») — marginal: el temario no describe su contenido; la familia institucional sólo ilustra un formato (casos al cierre), que no cambia ningún taller de Productos.
