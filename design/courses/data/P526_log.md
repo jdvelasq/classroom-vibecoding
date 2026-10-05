@@ -394,3 +394,11 @@
 - **Señales descartadas relevantes:**
   - construir registros por entidad mediante «roll up» (p. 25 «when the event-per-row Web logs are "rolled up" so that each row is a session, new attributes … will be created») — ya cubierta: P520 H02–H03 (tabla por conductor), P526 H03 (grano sesión).
   - `user_id` y `user_session` copiados a `event_replay.csv` (p. 23, selección de atributos sensibles) — marginal: son seudónimos de una muestra cuya condición de uso está registrada como contexto en `case-selection.md`; `user_session` es la unidad de análisis; la restricción ya está escalada en S02.P526.01.
+
+## S03.P526.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio de una versión antigua (2.x) de KNIME: construir un flujo de nodos (File Reader → K-Means → Color Manager → tabla y dispersión), estados de nodo, puertos, preferencias, exportación de flujos y meta nodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

@@ -618,3 +618,17 @@
   - objetivos de negocio, criterios de éxito, glosario de términos (pp. 9–13; p. 13 «if "churn" for your business has a particular and unique meaning, it is worth explicitly stating that») — ya cubierta: P500 H03 (métricas definidas con independencia de la herramienta), P506 H02 (operacionalización de un concepto), P526 H03.
   - restricciones legales y de acceso a datos (p. 12 «Have you verified all legal constraints on data usage?») — marginal como señal autónoma: el vacío de manifiestos de procedencia ya está registrado en S02 de casi todas las actividades; se concreta sólo en la candidata P519.
   - modelado, evaluación, despliegue, monitoreo (caps. 5–7, pp. 29–42) — fuera de alcance.
+
+## S03.P500.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio de una versión antigua (2.x) de KNIME: construir un flujo de nodos (File Reader → K-Means → Color Manager → tabla y dispersión), estados de nodo, puertos, preferencias, exportación de flujos y meta nodos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - nombrar y describir cada paso (p. 19 «You can change this name to better describe what the node is actually doing, e.g. "filter values > 10"»; p. 19 «you can enter a more detailed description or notes about the node») — ya cubierta: documentación de decisiones en notebooks y manifiestos (`data.C04`; P500 H03, P501 H02, P516 H02); práctica de herramienta, no evidencia curricular.
+  - inspección del resultado intermedio en cada puerto (p. 18 «If a node does not have a view but you are interested in the result of the node's operation on the data, you can inspect the data») — ya cubierta: regla de celdas de evidencia visual de `AGENTS.md`.
+  - exportar el flujo sin datos (p. 21 «The option to exclude data from being exported is activated by default») y contraseñas cifradas con clave maestra (p. 17 «KNIME does not store any passwords … in plain text») — marginal: prácticas de herramienta sin efecto sobre lo que el estudiante aprende de los datos.
+  - metadatos de rango y valores nominales propagados entre nodos (p. 8 «all nominal values and ranges of all attributes are known: this meta information is propagated») — marginal: detalle interno de la herramienta.
+  - adoptar una herramienta visual de flujos (todo el documento) — fuera de alcance: una señal professional-learning de herramienta no basta para imponer un tema; `data.C05` mantiene las herramientas como habilitadores; el ejemplo central (K-Means) es de otro curso.

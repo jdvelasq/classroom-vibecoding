@@ -402,3 +402,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de IBM para el proceso CRISP-DM en SPSS Modeler; por cada fase da lista de tareas, ejemplo de e-retail (logs web, compras, productos, clientes) y el informe que debe producirse (recolección, descripción, exploración, calidad, limpieza). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P514.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - flujo de transformación como grafo de nodos con entradas y salidas explícitas (p. 3 «Nodes are the basic processing units of a workflow. Each node has a number of input- and/or output ports») — ya cubierta: P502 H03 (linaje por paso con cambio de grano) y P514 H01 (funciones de etapa); el documento sólo describe la interfaz de la herramienta.
