@@ -322,3 +322,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Working analytics over comprehensive documentation» y «Continually satisfy your consumer» (p. 10) — marginal: principios de equipo, sin método aplicable a un taller descriptivo; la orientación al usuario se trata en la candidata P120 de `informs-cap-pro-blueprint`.
+
+## S03.P120.39
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - *epic hypothesis statement* con «For [customers] … Measured by [metrics]» (p. 25) — fuera de alcance: plantilla de priorización de iniciativas de producto con beneficio y requerimientos no funcionales; la declaración de destinatario/decisión de una pregunta descriptiva se trata en la candidata P120 de `informs-cap-pro-blueprint`, sin necesidad de este formato.

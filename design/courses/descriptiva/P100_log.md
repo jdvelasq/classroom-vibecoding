@@ -485,3 +485,14 @@
   - principios DataOps «Make it reproducible», «Analytics is code», «Quality is paramount», «Reuse» (p. 10) — ya cubierta en lo que toca al curso: pruebas que recomputan los productos desde `data/` (P103 H03, P120 H08, P121 H07), funciones reutilizables (P101 H02, P123 H07) y compuerta de calidad (P153 H03). El resto (orquestación, ambientes desechables, *cycle times*) es productos de datos.
   - ciclo de vida analítico con *business understanding*, adquisición, exploración y preparación de datos (p. 11) — ya cubierta/fuera de alcance: exploración y preparación están en P106–P107, P120–P122; *feature engineering*, entrenamiento, despliegue y monitoreo pertenecen a predictiva y productos de datos.
   - Scrum, XP, Kanban, SAFe, Scrum of Scrums, *epic hypothesis statement*, MVP (pp. 2–9, 12–14) — fuera de alcance: gestión ágil de proyectos/productos; no cambia lo que el estudiante aprende en ningún taller descriptivo ni tiene caso para enseñarse con rigor en el curso.
+
+## S03.P100.39
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas que definen DataOps como combinación de analítica, *lean thinking*, Agile y DevOps; recorren cascada, lean, Agile, DevOps, siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, «sin miedo ni heroísmo»), diferencias DevOps/DataOps, cadena de suministro de datos, MLOps, ciclo de vida de ciencia de datos y *epic hypothesis statement*. Perspectiva metodológica/organizacional orientada a productos de datos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - control de versiones, ramas, múltiples ambientes, contenedores Docker, CI/CD, orquestación y monitoreo (pp. 6–17) — fuera de alcance: ingeniería de software y productos de datos.
+  - MLOps, *data science lifecycle*, *model serving* (pp. 20, 23) — fuera de alcance: predictiva y productos de datos.

@@ -324,3 +324,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el *epic owner* debe «Crear el panel de monitoreo y medida para los KPIs» (p. 14) — fuera de alcance: monitoreo de KPI de una iniciativa de producto; la definición y publicación de KPI descriptivos ya está en P153 H01–H04 y P154 H03.
+
+## S03.P153.39
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - Diapositivas que definen DataOps como combinación de analítica, *lean thinking*, Agile y DevOps; recorren cascada, lean, Agile, DevOps, siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, «sin miedo ni heroísmo»), diferencias DevOps/DataOps, cadena de suministro de datos, MLOps, ciclo de vida de ciencia de datos y *epic hypothesis statement*. Perspectiva metodológica/organizacional orientada a productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

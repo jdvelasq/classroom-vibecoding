@@ -8,6 +8,7 @@
 - **Tipo:** método + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 38, 41 y 46 — no basta con «a “canned” data set» (p. 38); *data acumen* exige «real-world data and problems that can reinforce the limitations of tools» (p. 41, Finding 2.3); «Data consistency checking» figura entre las habilidades clave de descripción de datos (p. 46): una compuerta que sólo se evalúa sobre datos íntegros por construcción no muestra lo que detecta (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general, no el mecanismo.
+  - `design/benchmarks-md/literature-derived/dataops-06-definition.md` pp. 4 y 9 — pruebas por etapa: entradas («Conteo», «Conformidad», «Balance», «Consistencia temporal»), salidas («Completitud», «Verificación de rango») y «Tests para verificar los datos (lógica de negocio, tipo de dato, outliers, tendencias, consistencia, …)» (p. 4); «Los tests también puede alertar situaciones extrañas» (p. 9) (Claude, 2026-10-04). Fuente *literature-derived*: respaldo metodológico de pruebas por etapa, no prescripción de DataOps.
 - **Qué gana el estudiante:** ver que una compuerta de publicación discrimina
   y distinguir un problema de integridad de uno de definición. Hoy P153
   pregunta «¿Podemos publicar estos KPI para la gerencia sin ocultar

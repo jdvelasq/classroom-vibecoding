@@ -313,3 +313,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - desarrollo basado en pruebas y refactorización (p. 5: «Test-driven development», «Refactoring») — marginal: P101 H01/H04 ya enseña refactorización con oráculo de regresión; TDD sería una variante de práctica de software.
+
+## S03.P101.39
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - principios de código: «Modularidad • Funciones dedicadas a una sola tarea • … Testing • Logging • Manejo de errores» (p. 22) y reutilización por componentes (p. 13) — ya cubierta: P101 H01–H03, P102 H04, P123 H07.
+  - «Parametrización por fuera del código» (p. 14: «¿Cuál versión de datos debe usarse? … ¿A cuál ambiente deben ir los resultados?») — marginal/fuera de alcance: P101 H02 ya parametriza el motor; versiones de datos y ambientes pertenecen a productos de datos.
