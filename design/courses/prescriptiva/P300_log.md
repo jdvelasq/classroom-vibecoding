@@ -623,3 +623,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «How often should the data be updated in the dashboard?» y «Who will use the dashboard?» (p. 1, preg. 1–2). Ya cubierta: cadencia, plazo de respuesta y autoridad son campos obligatorios del contrato desde P300 (H03) y se repiten en todos los talleres.
   - datos clave, nivel de detalle y agrupaciones del tablero (p. 1, preg. 4–6). Fuera de alcance: son requisitos de diseño de visualización, que no cambian la política ni su validación.
+
+## S03.P300.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: taller práctico de BI empresarial en Power BI: diseño extensible, versionado y DevOps de archivos, gobierno y certificación de datasets, Power Query, modelado dimensional, DAX/medidas, refresco incremental, pipelines de despliegue. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Dataset, Model and App Deployment & Delivery Cycle… Deployment pipelines… DEV TEST PROD» (p. 20) y versionado de archivos (pp. 17–18) — fuera de alcance: despliegue y operación de artefactos analíticos (Productos de datos).
+  - «Power BI adoption should blend with the organizational data governance strategy… Data Stewardship… Certification» (p. 22) — fuera de alcance: gobierno de datos/BI, no gobierno de decisiones.
+  - Power Query, modelado dimensional, DAX, time intelligence, refresco incremental (resto del documento) — fuera de alcance: BI / Descriptiva / Fundamentos de data.

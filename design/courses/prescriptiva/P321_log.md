@@ -433,3 +433,12 @@
   - «What will they use the dashboard to do? What questions will they use it to answer? What actions will they take in response to these answers?» (p. 1, preg. 3). Ya cubierta: el registro de P321 (H01–H02) une recomendación, indicador, meta, gatillo, responsable y acción de revisión. El monitoreo de P306 (H07) y P308 (H07) también asigna a cada métrica una acción de respuesta y una autoridad.
   - «For each of these data items, what would constitute an exception? Are there specific thresholds… or… statistical outliers» (p. 1, preg. 8). Marginal: los gatillos con umbral explícito ya existen (P319 H06, P315 H05, P321 H02). Pasar de un umbral fijo a uno por atipicidad estadística sería una variante del gatillo. Una fuente professional-learning de una página tampoco basta para imponerla.
   - «What are the useful comparisons… do you have targets or historical data that could also be displayed» (p. 1, preg. 7). Ya cubierta: P321 declara meta (`service_rate >= 0.90`) y P315 (H05) y P319 (H06) persisten línea base y umbral por métrica. Construir el tablero de seguimiento es diseño visual y producto (Descriptiva o Productos de datos), no política.
+
+## S03.P321.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Certified & Self-Service Decision Tree» (p. 21) — fuera de alcance: árbol de flujo para decidir qué ruta de reporte/dataset usar en gobierno de BI; no es una decisión operativa con política.
+  - iteración 2 con «Scenario Plan» y «Calculated difference between Actual Sales and Budget» (pp. 49–51) — marginal/fuera de alcance: comparación descriptiva real vs. presupuesto en un modelo BI; la comparación de resultado observado contra meta con gatillo y responsable ya es P321 H02, y una señal de herramienta no basta para imponer un tema.
