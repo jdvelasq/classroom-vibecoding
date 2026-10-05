@@ -298,3 +298,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el contraste entre programación tradicional y ML/DA: «El testeo prueba la lógica contra ejemplos» frente a «El testeo se basa en precisión no en ejemplos»; «Se usan datos de producción» (p. 4) — ya cubierta: la secuencia pasa de pruebas de código con casos construidos (P400 H02, P401 H02) a datos (P402 H01) y a compuertas de desempeño de un modelo (P403 H02). La dicotomía de la diapositiva es además una simplificación, porque P403 H03 combina con razón pruebas por ejemplos (interfaz, comportamiento conocido) con pruebas por métricas. Importarla tal cual sería una regresión.
+
+## S03.P401.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de estrategia de datos organizacional (diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, portafolio, hoja de ruta, ejecución y evaluación) ilustrado con mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

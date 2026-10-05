@@ -301,3 +301,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: contrato de datos (P402 H01), frescura (P439 H01), conciliación (P440 H01), cuarentena (P441 H01) y observabilidad integrada (P442 H02).
+
+## S03.P402.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de estrategia de datos organizacional (diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, portafolio, hoja de ruta, ejecución y evaluación) ilustrado con mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

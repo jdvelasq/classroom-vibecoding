@@ -298,3 +298,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: contrato de datos (P402 H01), frescura (P439 H01), conciliación (P440 H01), cuarentena (P441 H01) y observabilidad integrada (P442 H02).
+
+## S03.P442.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Ficha mínima de cada indicador»: definición, línea base y meta, fuente y método, responsable, frecuencia, «Decisión asociada: la acción que puede desencadenar su resultado» (p. 23) — marginal: la ficha es para indicadores de evaluación estratégica; la ausencia de ventana y de acción en P445 («sin periodo», «sin acción asociada») y P449 ya está registrada como límite en S02 y no se resuelve con evidencia de esta familia; la acción diferenciada por alerta ya tiene una propuesta en P442 desde otro documento.

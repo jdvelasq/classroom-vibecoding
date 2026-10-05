@@ -440,3 +440,15 @@
   - «Datos, conocimientos, decisiones y acciones no son sinónimos» y «No se deben buscar insights interesantes… sin un objetivo claro» (p. 8) — ya registrada: coincide con el límite que S02 anota en casi todo el bloque P400–P441 (capacidad sin usuario ni decisión). Respalda en lo conceptual `productos.C01`, pero no aporta un mecanismo ni un caso.
   - «Se sigue CRISP-DM y modelos de cascada» (p. 2); «Se requiere HPC y hardware especializado» (p. 4); cultura, data literacy y apoyo de la gerencia (pp. 6–8) — fuera de alcance: son temas de metodología de proyectos, infraestructura u organización, no de operar una capacidad.
   - «No hay un producto mínimo viable» (p. 3) — marginal: idea de gestión de producto que la diapositiva no desarrolla. El contrato operativo con criterios de éxito ya es `productos.C01`.
+
+## S03.P400.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de estrategia de datos organizacional (diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, portafolio, hoja de ruta, ejecución y evaluación) ilustrado con mantenimiento predictivo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - estrategia, diagnóstico, brechas, objetivos estratégicos, portafolio y hoja de ruta (p. 4–15, 19–21, 24) — fuera de alcance: gestión estratégica de datos a nivel organizacional; el curso excluye arquitectura empresarial y no formula el problema. La brecha «Procesos: ausencia de una operación reproducible del producto de datos» (p. 11) confirma la pertinencia del curso, pero no cambia ningún taller.
+  - arquitectura de datos (warehouse, lake, lakehouse, data mesh) (p. 17) — fuera de alcance: arquitectura empresarial de datos, excluida por las fronteras.
+  - caso de valor (VPN, ROI, costo total) (p. 19) — fuera de alcance: evaluación económica de iniciativas (Fundamentos/gestión), sin caso en el curso.

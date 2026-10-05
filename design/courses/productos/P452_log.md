@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Falta de permisos para acceder las fuentes requeridas en la organización» (p. 9) — fuera de alcance: es una barrera organizacional para el analista, no el control de acceso de los consumidores de la capacidad que enseña P452.
+
+## S03.P452.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tabla de derechos de decisión («Acceso y uso | ¿Quién puede utilizarlo y para qué propósitos? | Propietario, seguridad y privacidad») (p. 16) — ya cubierta: P452 declara consumidores autorizados por recurso y rechaza roles no declarados; excepciones y conflictos pertenecen al órgano de gobierno, no a un taller.
