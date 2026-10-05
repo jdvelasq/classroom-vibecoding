@@ -452,3 +452,11 @@
   - «Relationship MUST be on the same data type. watch for: Date <> DateTime» (p. 60); «Change all column data types» (p. 34) — ya cubierta: P500 H01 (convención regional) y P512 H01 (fecha `d/m/yy` con formato explícito).
   - generación de dimensión de fecha como rango completo de números (p. 43) — marginal: P512 registra que `dim_date` sólo cubre fechas observadas, pero en Superstore no hay meses sin órdenes que alteren la respuesta; podría anotarse dentro de la candidata, sin propuesta propia.
   - «Use natural keys rather than generating surrogate keys», «Flattened “spreadsheet” models are OK for small, informal projects but have significant limitations» (p. 100); «Fact table ... Ideally only contains keys and numeric measure base columns» (p. 45) — ya cubierta: P511 (plano) frente a P512 H02 (hecho/dimensiones); P512 ya usa claves contextuales del manifiesto.
+
+## S03.P512.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

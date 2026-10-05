@@ -446,3 +446,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P506.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - convertir un concepto de negocio en definición operativa (p. 7 «probablemente el abandono es definido de manera distinta en diferentes organizaciones. ¿Se refiere a alguien que cancela activamente un contrato o a alguien que no tiene ninguna actividad?») — ya cubierta: P506 H02 («producción sostenida» como años activos), P526 H03 (conversión al grano sesión), P500 H03.

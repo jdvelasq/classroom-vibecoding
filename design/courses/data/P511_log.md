@@ -444,3 +444,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Row Count & Validation Measures — Table row counts are a convenient initial data validation test» (p. 68) — ya cubierta: P511 H02, P514 H02, P510 H03, P525 H03.
+
+## S03.P511.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - determinar si los datos disponibles pueden responder la pregunta y unir fuentes (p. 7 «un analista evalúa los datos que están disponibles y decide si éstos tienen el potencial de responder a la pregunta»; p. 4 «persiste el problema de unir los datos en diferentes formas de diferentes fuentes») — ya cubierta: P516–P517 (aptitud para una pregunta), P511 H01–H02.

@@ -448,3 +448,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P516.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exploración para detectar errores, faltantes y distribuciones a transformar (p. 7 «identificar los problemas de calidad de los datos como los errores, valores faltantes o distribuciones de datos que necesitan transformarse») — ya cubierta en lo esencial (P516 H02); la parte de transformación para modelar es de Predictiva.

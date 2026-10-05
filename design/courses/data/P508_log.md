@@ -445,3 +445,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - parámetros `RangeStart`/`RangeEnd` para filtrar hechos por fecha y partición por periodo (p. 41, p. 46, p. 64) — ya cubierta/marginal: parametrización en P508 H02; partición temporal en P525 H01. Incremental refresh y detección de cambios (p. 65) — fuera de alcance: operación de pipelines productivos.
+
+## S03.P508.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

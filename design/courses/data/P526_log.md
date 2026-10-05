@@ -434,3 +434,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P526.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - convertir un concepto de negocio en definición operativa (p. 7 «probablemente el abandono es definido de manera distinta en diferentes organizaciones. ¿Se refiere a alguien que cancela activamente un contrato o a alguien que no tiene ninguna actividad?») — ya cubierta: P506 H02 («producción sostenida» como años activos), P526 H03 (conversión al grano sesión), P500 H03.
+  - una fila por entidad mediante agregación (p. 7 «Los modelos predictivos o supervisados requieren de un solo registro por entidad para modelarse»; «Esto a menudo requiere gran cantidad de agregación y transformación de datos») — ya cubierta: P520 H02–H03 (tabla por conductor), P521 H01, P526 H03; la tabla base analítica para modelado es de Predictiva.
+  - representatividad de la muestra (p. 7 «la muestra debe ser representativa y lo suficientemente grande para contener la información importante») — marginal: el criterio de selección de las 16 sesiones ya está escalado en S02.P526.01 y la tasa no se usa para inferir una población; la señal se formula para entrenar modelos.

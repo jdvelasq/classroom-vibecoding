@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «query folding produces a query, in the native language of the data source ... Perform the most critical steps first: Filtering, Grouping, Remove columns» (p. 47); «Import from tables or views, not using in-line SQL statements» (p. 39) — marginal/fuera de alcance: optimización de herramienta; el contraste de empujar transformación al motor ya está en P515 H01 y su riesgo de identidad no se resuelve con esto.
+
+## S03.P515.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Row Count & Validation Measures — Table row counts are a convenient initial data validation test» (p. 68) — ya cubierta: P511 H02, P514 H02, P510 H03, P525 H03.
+
+## S03.P514.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

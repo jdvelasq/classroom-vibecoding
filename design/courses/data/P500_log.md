@@ -681,3 +681,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - CI/CD, deployment pipelines DEV/TEST/PROD, APIs REST de despliegue, separación de PBIX (p. 18, p. 83–89, p. 93–94), DAX Studio y Tabular Editor (p. 72–74, p. 96–97) — fuera de alcance: herramientas y operación de productos de datos/BI.
   - «Iteration 2 — Change Request ... Currency conversion is based on the most current exchange rate, using real-time source data» (p. 50, p. 52) con hechos de grano distinto (cuota vs. ventas, p. 53) — marginal: unión de fuentes de grano distinto ya en P521 H01 y granos mezclados en P516 H01; tiempo real fuera de alcance.
+
+## S03.P500.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - metadatos que documentan todo el proceso (p. 9 «Todos estos activos son soportados por metadatos para brindar la documentación importante alrededor del proceso completo») — marginal: afirmación comercial sin práctica concreta; documentación ya ejercitada (P501 H02, P502).
+  - partición entrenamiento/prueba, torneos de modelos, código de calificación, despliegue y monitoreo (pp. 7–12) — fuera de alcance (Predictiva y productos de datos).
+  - analítica distribuida en memoria y Hadoop (p. 10 «Divida sus datos en piezas más pequeñas y distribuya el volumen de los datos») — fuera de alcance: operaciones distribuidas son frontera explícita del curso.

@@ -434,3 +434,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P520.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - una fila por entidad mediante agregación (p. 7 «Los modelos predictivos o supervisados requieren de un solo registro por entidad para modelarse»; «Esto a menudo requiere gran cantidad de agregación y transformación de datos») — ya cubierta: P520 H02–H03 (tabla por conductor), P521 H01, P526 H03; la tabla base analítica para modelado es de Predictiva.
