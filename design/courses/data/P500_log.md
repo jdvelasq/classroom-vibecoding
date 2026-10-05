@@ -298,3 +298,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Assess data gathered from concept prototypes to make smart decisions» (p. 5); «Part B: Participants will assess the data results for the different processes used» (p. 8) — fuera de alcance: evaluación de resultados de pruebas de fabricación, sin relación con preparación, calidad o documentación de datos para Analytics.
   - procesos de fabricación serial/paralela, DFM, costo de prototipos (pp. 6–7) — fuera de alcance (ingeniería de manufactura). La coincidencia léxica «serial y paralelo» no tiene relación con P522.
+
+## S03.P500.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo de cursos presenciales cortos (3–5 días): Data Science for Business Professionals/Beginners/Intermediate, Advanced and Predictive Analytics, masterclasses ejecutivas y *fast tracks*, centrados en visualización con PowerBI, R/Python, estadística, regresión, ML y series de tiempo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «practical application with large data sets containing missing values and outliers» dentro de GLM (p. 8) — fuera de alcance (contexto de modelado predictivo); el tratamiento de faltantes como requisito de datos ya se discute en P500/P510.
+  - visualización/dashboards con PowerBI/Tableau, regresión, ML, series de tiempo, optimización (pp. 4–14) — fuera de alcance (cursos descriptivo, predictivo y prescriptivo); la familia institutional ilustra, no impone.

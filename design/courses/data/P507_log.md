@@ -198,3 +198,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso en línea de 8 semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo), mapeo de atributos de prototipo y producto, decisiones de fabricación y análisis de costo-valor. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P507.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data in Databases: Get an overview of relational and NoSQL databases and practice data manipulation with SQL» (p. 6); «Introduction to SQL» (p. 5) — ya cubierta por la secuencia SQL P503–P508 y P510; NoSQL marginal (P518 ya trata JSON anidado).
