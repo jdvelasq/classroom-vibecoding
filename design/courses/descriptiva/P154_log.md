@@ -288,3 +288,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Mover datos de Excel a Power BI no lleva a mejores decisiones» (p. 6) — marginal: advierte que migrar de herramienta no mejora las decisiones, en línea con la frontera del curso (excluye la capacitación en una plataforma BI, no BI como tal); no aporta mecanismo nuevo.
+
+## S03.P154.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ciclo de vida del dato (captura → procesamiento → almacenamiento → compartición → uso) y data warehouse/data mart como usos que coexisten (pp. 4–5); «Data warehouse, data lake, lakehouse… son patrones posibles, no etapas obligatorias» (p. 17) — ya cubierta en lo que sirve a la descripción (tabla integrada P150, mart P151, serving P154); la elección de arquitectura es de ingeniería/productos de datos.

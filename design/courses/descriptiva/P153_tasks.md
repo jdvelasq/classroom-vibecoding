@@ -132,3 +132,93 @@ Actividad: implementation/descriptiva/P153_ventas_kpis/
    pruebas de la actividad sin errores.
 9. No modifiques otras actividades, traceability.yaml ni design/.
 ```
+
+## T02 — Completar la ficha de cada KPI con propósito, decisión asociada, frecuencia y un valor de línea base calculado
+
+- **Estado:** pendiente de discusión
+- **Tipo:** producto/evidencia
+- **Fuentes:**
+  - `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` p. 23 — «Ficha mínima de cada indicador»: «Definición y propósito: qué representa y por qué es relevante», «Línea base y meta: situación inicial y resultado esperado», «Fuente y método», «Responsable: quien produce, valida e interpreta la medición», «Frecuencia: cuándo se actualiza y se revisa», «Decisión asociada: la acción que puede desencadenar su resultado» (Claude, 2026-10-04). Fuente *literature-derived* y única: la ficha procede de la evaluación de una estrategia de datos (nivel organizacional); se adopta como práctica de definición de indicadores, no como prescripción de gestión estratégica.
+- **Qué gana el estudiante:** conectar el contrato de un KPI con su uso
+  descriptivo: para qué decisión se mira, cada cuánto se revisa y qué valor
+  se toma como punto de partida. Hoy el catálogo (H01) declara fórmula,
+  numerador, denominador, grano, período, propietario y fuente, pero «ningún
+  valor de KPI se calcula ni se persiste» y «el producto es el contrato de
+  los indicadores, no su lectura» (S02). El descuento ponderado de H02 está
+  definido pero «no calculado ni contrastado con el promedio simple». Con el
+  cambio, el estudiante calcula por primera vez los tres KPI sobre el mart y
+  ve, con números, por qué la razón de sumas difiere del promedio de tasas.
+  La ficha queda ligada a una decisión aportada por el profesor, no a una
+  etiqueta.
+- **Anclas actuales:** H01 (KPI como contrato), H02 (tasa ponderada; límite
+  «el KPI no se calcula»), H04 (linaje: la línea base se calcula con los
+  mismos campos); superficies S02 (catálogo; «ninguno calculado») y S05
+  (pruebas: `test_01` exige columnas y atributos no nulos).
+- **Alternativas menores descartadas:**
+  - Escribir propósito y decisión sin calcular nada: dejaría el catálogo sin
+    lectura y H02 sin evidencia numérica.
+  - Calcular los KPI en una tabla aparte sin ligarlos a la ficha: repetiría
+    lo que ya hacen P120–P122 y P124 (KPI sin catálogo), sin el contraste
+    que aporta P153.
+  - Fijar una meta inventada: la meta es texto de negocio; sólo se incluye
+    si el profesor la aporta.
+- **Contrato de no regresión:** se conservan los tres KPI, sus siete
+  atributos actuales, el linaje, las reglas, la decisión de publicación y
+  `test_02`–`test_05`. `kpi_catalog.csv` gana columnas; las existentes y sus
+  valores no cambian. La pregunta de publicación no cambia.
+- **Interacciones:** con T01, se refuerzan. La línea base se calcula sólo
+  sobre el mart de referencia y sólo si su decisión no es `BLOQUEADO`; la
+  regla de rango de `discount_pct` de T01 protege el valor del descuento
+  ponderado. Si T01 se ejecuta primero, T02 se apoya en su decisión de tres
+  estados; si T01 se rechaza, T02 usa la decisión binaria actual. Fuera de
+  P153: P154 T01 puede usar la misma definición de línea base para su
+  criterio de atención, recalculada desde su propia capa de consumo, porque
+  P154 no lee artefactos de P153. Capacidad: T02 es la más liviana del
+  archivo (columnas y un cálculo).
+- **Criterio de aceptación:** S05 encuentra un highlight nuevo en el que (1)
+  cada KPI del catálogo tiene propósito, decisión asociada y frecuencia
+  aportados por el profesor (registrados en `P153_log.md`, no inventados por
+  la herramienta); (2) cada KPI tiene una línea base calculada desde
+  `data/sales_mart.db` con su método declarado; (3) el descuento ponderado
+  se contrasta numéricamente con el promedio simple de `discount_pct`; y (4)
+  una prueba recalcula las líneas base. H01–H04 siguen presentes y H02 deja
+  de tener el límite «no se calcula».
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/descriptiva/P153_ventas_kpis/
+
+0. Inspecciona primero professor/notebook.ipynb (kpi_catalog), data/
+   sales_mart.db, submission/kpi_catalog.csv y tests/. Si el catálogo ya
+   tiene propósito, decisión asociada o valores calculados, detente e
+   informa. Si la implementación no coincide con
+   design/courses/descriptiva/P153_activity.md, detente e informa.
+1. TEXTO DE NEGOCIO: no inventes propósito, decisión asociada, frecuencia ni
+   meta. Usa el texto que el profesor haya aprobado en la discusión de esta
+   T02 (registrado en P153_log.md), uno por KPI. Si falta para algún KPI,
+   detente y pídelo. Incluye meta sólo si el profesor la aportó; si no, no
+   crees la columna ni un valor de relleno.
+2. LÍNEA BASE: calcula cada KPI desde data/sales_mart.db con la fórmula del
+   catálogo y en su período declarado (si el período es mensual, calcula el
+   valor de cada mes de la cobertura y toma la media mensual como línea
+   base; declara el método). Para el descuento ponderado usa
+   SUM(gross_sales * discount_pct) / SUM(gross_sales).
+3. Calcula también el promedio simple de discount_pct por línea y explica en
+   2–4 líneas, con ambos valores, por qué el catálogo usa la razón de sumas.
+4. Si la decisión de publicación del mart de referencia es BLOQUEADO, no
+   publiques líneas base y explícalo; esto no debería ocurrir con los datos
+   actuales.
+5. Añade a submission/kpi_catalog.csv las columnas purpose,
+   associated_decision, frequency, baseline_value, baseline_method (y target
+   sólo si el profesor la aportó), siguiendo la convención de idioma de las
+   columnas existentes. No cambies las columnas ni los valores actuales.
+6. Pruebas en tests/test_activity.py, sin eliminar ninguna:
+   - Amplía test_01 con las columnas nuevas (no nulas) sin quitar las
+     existentes.
+   - Añade una prueba que recalcula baseline_value de cada KPI desde
+     data/sales_mart.db con tolerancia numérica y verifica que la línea base
+     del descuento ponderado es la razón de sumas.
+7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
+8. No modifiques otras actividades, traceability.yaml ni design/.
+```

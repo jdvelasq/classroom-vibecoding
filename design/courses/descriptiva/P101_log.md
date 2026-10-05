@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «DA y el desarrollo de software son similares» vs. «El código es simple y la complejidad está en los datos» (p. 4) — marginal: contraste conceptual de contexto; P101 ya usa el corpus fijo como oráculo de regresión (H04) y la diferencia no cambia lo que el estudiante hace.
+
+## S03.P101.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

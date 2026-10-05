@@ -289,3 +289,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Se confunde el éxito del modelo con su máxima precisión», «El modelo es sabio y omnisciente», «No hay un producto mínimo viable», llevar modelos a producción, «laptop analytics», fricción con TI (pp. 3–5, 9) — fuera de alcance: modelos y operacionalización pertenecen a predictiva y productos de datos.
+
+## S03.P125.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La contribución no siempre implica una causalidad demostrada… deben explicitarse los supuestos» (p. 23) — ya cubierta: P125 H06 (límite causal persistido y probado).

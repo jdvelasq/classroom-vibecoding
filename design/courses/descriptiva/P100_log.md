@@ -440,3 +440,13 @@
   - «Data Literacy es la habilidad de leer tablas y grafos, entenderlos para concluir correctamente y saber cuando se está potencialmente desinformado» (p. 6) — ya cubierta en parte / marginal por sí sola: los límites de lectura ya aparecen en P121 H04 (matriz día × hora como patrón agregado), P122 H03 (proporción a tiempo vs demora promedio) y P125 H06 (límite causal persistido). Si se aprueba la candidata de lectura persistida en P152 (documento `mintic-fedesoft-talento-digital-2025-2030`), esta página puede añadirse como fuente de contexto; literature-derived no la prescribe.
   - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «La falta de objetivos claros puede llevar a responder preguntas de negocio de bajo valor» (p. 8); «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8) — ya registrada: la ausencia de usuario/decisión en P120–P154 está documentada en las auditorías S02 (pregunta de auditoría 1); la diapositiva es perspectiva organizacional, no un mecanismo enseñable que cambie un taller concreto.
   - «Se sigue CRISP-DM y modelos de cascada», «Fatiga por procesos manuales», «Se ignoran los beneficios de la automatización» (pp. 2, 8) — fuera de alcance: crítica metodológica/organizacional (DataOps) propia de productos de datos; contexto histórico, no prescripción vigente.
+
+## S03.P100.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - creación de valor (mejorar, enriquecer, ofrecer información) (p. 10), análisis de brechas y su plantilla (pp. 11–12), objetivos estratégicos de datos (p. 14), iniciativas (p. 15), caso de valor con VPN/ROI (p. 19), priorización de portafolio (p. 20), hoja de ruta (p. 21), ejecución y evaluación de la estrategia (pp. 22–23) — fuera de alcance: estrategia y gestión de datos a nivel organizacional; no hay producto descriptivo ni caso con datos para enseñarlo con rigor en un taller.

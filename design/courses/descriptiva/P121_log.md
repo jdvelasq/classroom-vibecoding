@@ -288,3 +288,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Se confunde el éxito del modelo con su máxima precisión», «El modelo es sabio y omnisciente», «No hay un producto mínimo viable», llevar modelos a producción, «laptop analytics», fricción con TI (pp. 3–5, 9) — fuera de alcance: modelos y operacionalización pertenecen a predictiva y productos de datos.
+
+## S03.P121.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

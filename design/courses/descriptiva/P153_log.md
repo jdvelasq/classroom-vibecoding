@@ -291,3 +291,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: limpieza e invariantes (P106 H01–H05, P107 H01–H04) y calidad como compuerta de publicación (P153 H03).
+
+## S03.P153.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** propone T02.
+- **Señales descartadas relevantes:**
+  - gobierno como «derechos de decisión, responsabilidades, reglas» y tabla de decisiones (definición y calidad → propietario funcional) (p. 16) — marginal: P153 ya declara propietario y compuerta de calidad; los derechos de decisión organizacionales no cambian el producto del taller.
