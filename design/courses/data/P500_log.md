@@ -77,3 +77,13 @@
   - pila tecnológica y debilidades de la hoja de cálculo (p. 18 «CAP-P.4.4.2 Identify the weaknesses of a spreadsheet analytics model») — marginal: `data.C05` ya trata herramientas como habilitadores (P500 `tool_boundary`).
   - datos incorrectos en producción, documentación para audiencias (p. 23 «CAP-P.6.6.1 Identify causes of incorrect data in production systems»; p. 25 «CAP-P.7.6.1 Identify the types of documentation needed for various audiences») — fuera de alcance (productos de datos) / ya cubierta (P501 H02: interfaz y consumidor por salida).
   - dominios I–II y IV–VII (encuadre, métodos, modelos, despliegue, ciclo de vida) — fuera de alcance de `data`.
+
+## S03.P500.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo «oficial» de técnicas de modelado dimensional (Toolkit, 3.ª ed.): proceso de cuatro pasos, grano, hechos y dimensiones, aditividad, claves, dimensiones degeneradas, SCD, jerarquías, tablas puente, hechos tardíos y esquemas especiales. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - matriz de bus, arquitectura de bus empresarial, dimensiones conformadas, hechos de tiempo real, supertipo/subtipo (pp. 13–14, 24) — fuera de alcance: arquitectura empresarial excluida por `s05-diseno-data.md`.

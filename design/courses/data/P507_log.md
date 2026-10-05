@@ -52,3 +52,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sesgo de la fuente (p. 15 «CAP-P.3.4.1 Identify the techniques appropriate in acquiring the data and identify data source bias») — marginal: la pertinencia del corpus recuperado y la presencia de términos de búsqueda en el ranking ya están escaladas en S02 (P503 auditoría; P507 S01); el documento no aporta caso ni método concreto para enseñarlo.
+
+## S03.P507.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo «oficial» de técnicas de modelado dimensional (Toolkit, 3.ª ed.): proceso de cuatro pasos, grano, hechos y dimensiones, aditividad, claves, dimensiones degeneradas, SCD, jerarquías, tablas puente, hechos tardíos y esquemas especiales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

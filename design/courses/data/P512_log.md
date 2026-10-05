@@ -50,3 +50,15 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - blueprint del examen CAP-Pro derivado del INFORMS Analytics Framework: siete dominios del ciclo de vida analítico con pesos (Data 19 %) y subtareas evaluables a nivel de profesional medio. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P512.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - dimensión de fecha como calendario completo con clave `YYYYMMDD` y fila «desconocida» (p. 11 «the date dimension table needs a special row to represent unknown … dates») — marginal: mejora local de H01 (hoy `date_key` por orden de aparición y sólo fechas observadas); puede incorporarse como detalle de la candidata anterior si se reconstruye `dim_date`, pero no justifica propuesta propia.
+  - proceso de cuatro pasos y requisitos con el negocio (p. 4 «Select the business process. Declare the grain. Identify the dimensions. Identify the facts») — ya cubierta en lo esencial por H02; la declaración explícita de grano se integra en la candidata.
+  - dimensiones lentamente cambiantes tipos 0–7 (pp. 15–16), mini-dimensiones, claves durables (p. 10) — fuera de alcance: Superstore no trae historia de cambios de atributos y el tema desplaza hacia arquitectura de data warehouse.
+  - copo de nieve frente a dimensión aplanada, jerarquías fijas/irregulares, tablas puente de jerarquía (pp. 12, 17) — marginal/fuera: P512 ya usa dimensiones planas; jerarquías irregulares no tienen caso.
+  - tablas agregadas, cubos OLAP y navegación de agregados (pp. 5, 8) — ya cubierta: P501 H01 publica agregados por pregunta; cubos OLAP fuera de alcance.

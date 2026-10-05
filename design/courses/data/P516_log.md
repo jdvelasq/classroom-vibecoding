@@ -52,3 +52,11 @@
 - **Señales descartadas relevantes:**
   - limitaciones a partir de atributos, contexto y metadatos (p. 14 «CAP-P.3.2.1 Identify data limitations and constraints based on data attributes, data context, and metadata, and propose appropriate course of actions») — ya cubierta en lo esencial por H01–H03; la verificación de metadatos se propone desde CRISP-DM.
   - perfilado multivariado (p. 15 «CAP-P.3.6.2 Identify patterns and characteristics of a multivariate dataset from data profiling outputs») — marginal: perfilar las 147 columnas contradice el contrato mínimo derivado de la pregunta (P517 H02); el perfilado exploratorio es de Descriptiva.
+
+## S03.P516.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - esquema de eventos de error y dimensión de auditoría (pp. 23–24) — ya cubierta por P516 H02 (reglas con dimensión y conteo) y P514 H02 (reporte por etapa); como esquema dimensional del *back room* es fuera de alcance.
