@@ -65,3 +65,12 @@
   - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una segmentación descriptiva de perfiles de demanda (H04). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
   - aprendizaje no supervisado (p. 5): ya cubierta (H01–H05).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P206.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - calidad del clustering y selección del número de grupos (T1, p. 100; DM-Cluster Analysis): ya cubierta (H03).
+  - clustering basado en densidad (DM, T1): marginal; otro algoritmo para la misma segmentación.

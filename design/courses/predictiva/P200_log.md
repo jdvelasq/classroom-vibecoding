@@ -84,3 +84,14 @@
   - calidad de datos, representatividad y «por qué fallan los modelos» (p. 5): no cubierta; ningún taller del curso trata representatividad ni cambio de distribución entre entrenamiento y uso. No sustentada como propuesta por este documento (un enunciado en un programa ejecutivo sin método ni caso); señal a contrastar con fuentes *authoritative*.
   - del ML tradicional a redes neuronales (p. 5): ya cubierta (H08–H09: MLP contrastada con regresión sobre la misma partición).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P200.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - árboles y ensambles como extensión supervisada T1 (pp. 97–98): se suman como fuente a N01; incluirlos en P200 sobrecargaría el primer taller.
+  - sesgo/varianza y curvas de aprendizaje (T2, p. 98): parcialmente cubierta (H08–H09 contrastan capacidad con MSE de prueba); se recoge en el criterio de N01 (sobreajuste con la profundidad).
+  - comparación de modelos con bootstrap (T2, p. 97): se propone en P204 (T01), donde las diferencias entre especificaciones son mínimas; en P200 la diferencia MLP–lineal (15.60 frente a 22.03) es grande.
+  - representatividad de los datos («truly representative», PR p. 108; BDS p. 58): fuente *authoritative* que confirma la señal ya registrada; sigue sin una competencia técnica concreta (método, evaluación) que permita anclarla a un taller.

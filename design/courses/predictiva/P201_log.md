@@ -64,3 +64,12 @@
   - redes neuronales convolucionales y visión artificial (p. 5): fuera de alcance; enunciado sin caso, datos ni evaluación, y una CNN sobre `load_digits` no cambiaría el producto de H03–H05.
   - interacción humano–IA en contextos de alto riesgo (p. 5): no aplica; el caso educativo de dígitos no tiene usuario ni decisión.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P201.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - matriz de confusión y clasificación multiclase (T1–T2, pp. 97–98): ya cubierta (H03–H04).
+  - redes convolucionales con un toolkit de deep learning (T2, pp. 101–102): no es competencia núcleo (T1); requeriría una actividad propia con caso y datos que este documento no aporta.

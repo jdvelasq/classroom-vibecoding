@@ -5,9 +5,9 @@
 - **Fuentes:**
   - `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md`
     p. 8 — «Regression Trees, Random Forest, Boosted Trees» dentro de «Modern
-    Regression with High-Dimensional Data» (Claude, 2026-10-04). Es una sola
-    fuente de familia *institutional*: ilustra una práctica, no la impone.
-    Conviene corroborarla con fuentes *authoritative* al revisarlas.
+    Regression with High-Dimensional Data» (Claude, 2026-10-04). Fuente
+    *institutional*: ilustra una práctica; la corrobora ACM (siguiente fuente).
+  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 97–98 y DM-Classification — fuente *authoritative*: exige como T1 «at least one linear and one non-linear algorithm» para clasificación y regresión (con árboles de decisión como ejemplo), y «Apply at least two extensions (e.g., ensemble methods)» (bagged, boosted, random forests); T2 añade diagnosticar sesgo/varianza con «learning curves». Hoy predictiva no tiene ningún clasificador no lineal: P201, P203, P204 y P222 usan regresión logística (Claude, 2026-10-04).
 - **Contribución distinta:** ninguna de P200–P225 usa árboles de decisión ni
   ensambles. Las familias actuales son lineales y logísticas (con términos
   derivados y regularización), MLP, modelos temporales, Markov, reglas y

@@ -65,3 +65,12 @@
   - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H01, H03: vocabulario aprendido sólo en entrenamiento y partición estratificada).
   - sesgos algorítmicos (p. 5): no sustentada para este caso; el documento no define grupos ni criterio, y las frases no tienen atributos de grupo.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P203.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - métricas macro y micro, precision/recall/F1 (T1–T2, pp. 97–98): ya cubierta (H04).
+  - Naive Bayes como clasificador probabilístico (DM-Classification, T1): marginal; otro algoritmo para el mismo producto de H02.

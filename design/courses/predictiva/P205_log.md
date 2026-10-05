@@ -59,3 +59,11 @@
   - supervisión humana, tolerancia al riesgo y gobernanza (pp. 5–6): ya cubierta como frontera entre umbral y política (H03).
   - gestión de riesgos como capacidad de IA (p. 2): ya cubierta (H02: consecuencias de umbrales con costos).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P205.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sensibilidad, especificidad y costo de errores (T1, p. 97): ya cubierta (H02).

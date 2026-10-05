@@ -39,3 +39,12 @@
 - **Señales descartadas relevantes:**
   - personalización de la experiencia del cliente (p. 2): contexto genérico de recomendación; no aporta evidencia a T01 (propuesta por la revisión del documento de MIT), por lo que no se añade a sus fuentes.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P215.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - filtrado colaborativo (T2, p. 101): ya cubierta (H02–H03).
+  - evaluación contra línea base y separación entrenamiento/prueba en recomendadores (pp. 96, 101): se añade como fuente de T01.

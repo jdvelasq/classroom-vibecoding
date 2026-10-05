@@ -41,3 +41,12 @@
   - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es tres proyecciones visuales sin estimador (H04). El documento sólo enuncia la distinción, sin caso ni criterio; T01 (revisión del documento de MIT) ya atiende esa identidad; este documento no le aporta evidencia y no se añade a sus fuentes.
   - visión artificial y redes convolucionales (p. 5): fuera de alcance; no cambia la capacidad pendiente que atiende T01.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P224.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - elegir el número de componentes de PCA y evaluar por utilidad para otra tarea (T1, p. 100): se añade como fuente de T01.
+  - otros métodos de reducción (ICA, NMF; T2–electiva): marginal.

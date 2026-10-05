@@ -61,3 +61,12 @@
   - procesamiento de lenguaje natural (p. 5) y modelos multimodales (p. 6): fuera de alcance; enunciados sin tarea ni corpus que modifiquen la preparación auditable de H01–H06.
   - obtención y gestión de datos para ML (p. 5): ya cubierta para el corpus (H01–H02: reglas de calidad derivadas de evidencia).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P202.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - extracción y representación de *features* (DM-Data Preparation, T1): ya cubierta para texto (H03–H05).
+  - extracción de información (DM, electiva): marginal.

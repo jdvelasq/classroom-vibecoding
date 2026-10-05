@@ -61,3 +61,12 @@
   - redes neuronales recurrentes (RNNs) (p. 5): marginal; enunciado sin detalle, y P216 ya contrasta MLP sobre rezagos con familias clásicas (H06–H11).
   - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H01, H13: evaluación cronológica de 24 meses).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P216.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - series de tiempo: estacionariedad, transformación y pronóstico (DM-Time Series, electiva): ya cubierta (H03, H08, H13).
+  - RNN y LSTM (ML-Deep Learning, T2): marginal; no son competencia núcleo y P216 ya contrasta MLP con familias clásicas.

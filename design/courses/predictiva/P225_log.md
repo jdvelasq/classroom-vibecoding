@@ -41,3 +41,11 @@
   - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una red descriptiva de dependencias (H05). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
   - gestión de riesgos (p. 2): no aplica; P225 no estima riesgo futuro (H05).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
+
+## S03.P225.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - métricas de similitud basadas en grafos (DM-Proximity, T2): marginal para la red de dependencias (H02–H04).

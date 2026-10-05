@@ -13,6 +13,7 @@
     «Embeddings: New features and their meaning» y el caso «PCA: Identifying
     faces»; p. 5 — «Choose how to represent your data when making
     predictions» (Claude, 2026-10-04).
+  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` p. 100 — competencia T1 de ML-Unsupervised: «Implement methods for choosing hyperparameters, e.g. … the number of components for PCA» y evaluar con «indirect metrics via utility towards another application» (Claude, 2026-10-04).
 - **Qué gana el estudiante:** decidir cuántas dimensiones conservar con
   evidencia predictiva, no sólo visual: entrenar el mismo clasificador con
   distintos números de componentes y ver cómo cambia el desempeño de prueba.
