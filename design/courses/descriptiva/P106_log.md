@@ -324,3 +324,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas de lógica de negocio y conformidad de campos (p. 4) — ya cubierta: invariantes de dominio de P106 H05 y contrato compartido de P107 H04 (las debilidades de esas pruebas ya están registradas en sus actividades; el documento no aporta argumento nuevo).
+
+## S03.P106.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

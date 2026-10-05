@@ -330,3 +330,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - *epic hypothesis statement* con «For [customers] … Measured by [metrics]» (p. 25) — fuera de alcance: plantilla de priorización de iniciativas de producto con beneficio y requerimientos no funcionales; la declaración de destinatario/decisión de una pregunta descriptiva se trata en la candidata P120 de `informs-cap-pro-blueprint`, sin necesidad de este formato.
+
+## S03.P120.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

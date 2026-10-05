@@ -332,3 +332,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - Diapositivas que definen DataOps como combinación de analítica, *lean thinking*, Agile y DevOps; recorren cascada, lean, Agile, DevOps, siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, «sin miedo ni heroísmo»), diferencias DevOps/DataOps, cadena de suministro de datos, MLOps, ciclo de vida de ciencia de datos y *epic hypothesis statement*. Perspectiva metodológica/organizacional orientada a productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P153.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de datos y monitoreo de la validez de los datos y de la lógica de negocio antes de desplegar (p. 5: «Tests de datos – Tests de código»; p. 10: «Monitoreo de la lógica de negocio y validez de los datos»; p. 10: «Despliegue de datos precisos») — ya cubierta: P153 H03 condiciona la publicación de KPI a reglas verificables y deriva `APROBADO`/`BLOQUEADO`. El monitoreo continuo en producción es de productos de datos (fuera de alcance).
+  - catálogo de datos y de resultados como función de gobierno (p. 2: «Gestión del catalogo de datos y resultados de los modelos»; herramientas Alation y Collibra) — ya cubierta: el catálogo de KPI (P153 H01) y el linaje (H04). Que se nombren herramientas comerciales no es material.

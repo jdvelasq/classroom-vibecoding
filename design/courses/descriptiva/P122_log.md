@@ -331,3 +331,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas que definen DataOps como combinación de analítica, *lean thinking*, Agile y DevOps; recorren cascada, lean, Agile, DevOps, siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, «sin miedo ni heroísmo»), diferencias DevOps/DataOps, cadena de suministro de datos, MLOps, ciclo de vida de ciencia de datos y *epic hypothesis statement*. Perspectiva metodológica/organizacional orientada a productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P122.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

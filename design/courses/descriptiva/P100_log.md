@@ -496,3 +496,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - control de versiones, ramas, múltiples ambientes, contenedores Docker, CI/CD, orquestación y monitoreo (pp. 6–17) — fuera de alcance: ingeniería de software y productos de datos.
   - MLOps, *data science lifecycle*, *model serving* (pp. 20, 23) — fuera de alcance: predictiva y productos de datos.
+
+## S03.P100.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - priorización de resultados deseados mediante entrevistas, con puntuación de importancia y satisfacción en escala 1–10 (p. 7: «Oportunidad = Importancia + max(0, Importancia - Satisfacción)») — fuera de alcance: es una técnica de gestión del portafolio de mejoras de un equipo de datos. Sirve para formular necesidades de los usuarios, pero no describe un fenómeno con evidencia y no tiene caso ni datos en el curso. La formulación de preguntas ya está representada en P109 H01 y en el contrato `questions.json` de P120 H01.
+  - ramas de desarrollo, pruebas de integración, *pre-release*, *merge* y *release* (p. 5) y ambientes de desarrollo distintos de producción (p. 4) — fuera de alcance: es ingeniería y operación de productos de datos.
+  - silos, coordinación relacional, Kanban, cuellos de botella y teoría de restricciones (pp. 2–4, 6) — fuera de alcance: son gestión organizacional de equipos de datos.
+  - trampas del CDO (defensa de los datos, valor diferido, proyectos largos en cascada) y etapas de madurez (Data Desert → Boutique → Waterfall → DataOps Analytics) (pp. 9, 11) — fuera de alcance: es contexto histórico y organizacional, sin consecuencia sobre lo que el estudiante hace en un taller descriptivo.

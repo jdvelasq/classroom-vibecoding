@@ -327,3 +327,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas que definen DataOps como combinación de analítica, *lean thinking*, Agile y DevOps; recorren cascada, lean, Agile, DevOps, siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, «sin miedo ni heroísmo»), diferencias DevOps/DataOps, cadena de suministro de datos, MLOps, ciclo de vida de ciencia de datos y *epic hypothesis statement*. Perspectiva metodológica/organizacional orientada a productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P124.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dashboards como mecanismo de transparencia (p. 2: «Transparencia: Alertas automáticas, dashboards»; p. 8, «El Dashboard de DataOps», en imagen no leída) — fuera de alcance tal como aparece aquí: es un tablero operativo del proceso DataOps (cuellos de botella, ciclos), no un producto descriptivo para un usuario de negocio. Los tableros descriptivos ya los cubren P124 H04 y P154 H03.

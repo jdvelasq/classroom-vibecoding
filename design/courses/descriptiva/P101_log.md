@@ -322,3 +322,11 @@
 - **Señales descartadas relevantes:**
   - principios de código: «Modularidad • Funciones dedicadas a una sola tarea • … Testing • Logging • Manejo de errores» (p. 22) y reutilización por componentes (p. 13) — ya cubierta: P101 H01–H03, P102 H04, P123 H07.
   - «Parametrización por fuera del código» (p. 14: «¿Cuál versión de datos debe usarse? … ¿A cuál ambiente deben ir los resultados?») — marginal/fuera de alcance: P101 H02 ya parametriza el motor; versiones de datos y ambientes pertenecen a productos de datos.
+
+## S03.P101.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación (diapositivas) sobre DataOps desde la perspectiva directiva. Trata los silos entre equipos (TI, ingeniería de datos, ciencia de datos, visualización, gobierno), la coordinación relacional, el flujo de desarrollo con ramas y pruebas, la eliminación de cuellos de botella con Kanban, la priorización por oportunidad, las «trampas» del CDO y las etapas de madurez de la analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

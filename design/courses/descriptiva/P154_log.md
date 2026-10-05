@@ -329,3 +329,11 @@
 - **Señales descartadas relevantes:**
   - prueba de «Balance» entre etapas (p. 4) — ya cubierta: reconciliación del *roll-up* contra el total del hecho (P152 H02) y de la capa de serving (P154 H01).
   - cadena de suministro de datos con *datasets* de alta calidad «en data lakes, data warehoses y data marts» (p. 19) — marginal: la capa de consumo con grano declarado ya está en P154 H01–H03; el documento no añade un criterio aplicable al taller.
+
+## S03.P154.40
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dashboards como mecanismo de transparencia (p. 2: «Transparencia: Alertas automáticas, dashboards»; p. 8, «El Dashboard de DataOps», en imagen no leída) — fuera de alcance tal como aparece aquí: es un tablero operativo del proceso DataOps (cuellos de botella, ciclos), no un producto descriptivo para un usuario de negocio. Los tableros descriptivos ya los cubren P124 H04 y P154 H03.
