@@ -250,3 +250,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa en línea de 12 semanas, con o sin código, sobre IA generativa, ingeniería de *prompts* y RAG, agentes con herramientas y memoria, planificación y razonamiento, sistemas multiagente, pruebas y evaluación de sistemas agénticos y su protección; casos y proyectos de automatización empresarial. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P123.30
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - grafos, centralidad e importancia en redes sociales (p. 3) — marginal: P123 H04–H05 ya construye redes de co-ocurrencia con comunidades; añadir centralidad sería otra métrica sobre el mismo producto sin cambiar lo que el estudiante entiende.

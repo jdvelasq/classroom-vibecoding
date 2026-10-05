@@ -242,3 +242,11 @@
 - **Señales descartadas relevantes:**
   - técnicas de *prompt* «Zero-shot, One-shot, Few-shot, Cadena de Pensamiento», «Plantillas reutilizables para prompts» (p. 11) — marginal: variantes de redacción; P105 H01 ya especifica instrucciones verificables por paso.
   - «Registro de la toma de decisiones para una mayor transparencia» (p. 13) — marginal: absorbido por la candidata (registrar respuestas del asistente).
+
+## S03.P105.30
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de módulo de posgrado (15 créditos, 10 semanas) del Departamento de Ciencias de la Computación: temario indicativo que va de herramientas y estadística a regresión, clustering, clasificación, estructuras para big data, privacidad y grafos; evaluación por proyecto (35 %), hojas de ejercicios y examen. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

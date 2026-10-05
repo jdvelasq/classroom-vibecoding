@@ -374,3 +374,15 @@
   - RAG, *embeddings*, almacén vectorial (p. 11); agentes con LangChain, herramientas, memoria y MCP, planificación y razonamiento (p. 12); sistemas multiagente, pruebas unitarias/de integración, métricas de latencia y robustez (p. 13); IA multimodal (p. 14) — fuera de alcance: construcción de productos de IA (productos de datos), no descripción.
   - casos y proyectos (agente de análisis de investigación financiera, chatbots, procesamiento documental) (pp. 14–16) — fuera de alcance: automatización de procesos con agentes; el «análisis de datos y generación de insights» automatizado (p. 14) no aporta método descriptivo.
   - resultados de aprendizaje en marketing, ventas y operaciones (p. 6) — marginal: enunciados generales sin contenido descriptivo.
+
+## S03.P100.30
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - herramientas de línea de comandos para ordenar, contar, agregar y unir (p. 2) — ya cubierta: P100 H01 reproduce el patrón contar/ordenar/agregar; cambiar de herramienta sería marginal.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - regresión, clasificación (árboles, Naive Bayes, SVM), SVD/PCA y clustering (k-means, jerárquico, k-center) (p. 2) — fuera de alcance: predictiva o modelado no supervisado propio de otras disciplinas contribuyentes.
+  - Bloom filters, sketches y estructuras para escalar a big data y flujos (p. 2–3) — fuera de alcance: ingeniería de datos / productos de datos.
+  - casos de uso de analítica en empresas (Google, Facebook, Netflix) y proyecto final como 35 % de la evaluación (pp. 2, 4) — marginal: contexto motivacional; la evaluación del curso se rige por `pytest` sobre talleres (AGENTS.md) y la ficha no aporta un criterio de evaluación transferible.

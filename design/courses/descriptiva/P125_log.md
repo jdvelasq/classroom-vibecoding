@@ -249,3 +249,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa en línea de 12 semanas, con o sin código, sobre IA generativa, ingeniería de *prompts* y RAG, agentes con herramientas y memoria, planificación y razonamiento, sistemas multiagente, pruebas y evaluación de sistemas agénticos y su protección; casos y proyectos de automatización empresarial. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.30
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - distribuciones, varianza, colas y pruebas de significancia (p. 2: «Hypothesis testing for determining the significance of an observation») — fuera de alcance: P120–P125 usan umbrales de volumen (P120 H06, P121 H05, P125 H04) y estadísticos robustos (P125 H03) al servicio del diagnóstico; introducir inferencia formal convertiría los talleres en práctica de Estadística y la ficha institucional no lo impone.
