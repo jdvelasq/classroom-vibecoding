@@ -147,3 +147,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Define metrics for success in adoption and customer engagement» (p. 8) — ya cubierta en lo descriptivo: la definición explícita de un KPI está en P153 H01–H02 y las métricas de desempeño de campañas en P124 H03; el documento no detalla cómo definirlas.
+
+## S03.P153.17
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cronograma de un curso profesional del MIT en ocho módulos: ecuaciones diferenciales ordinarias y parciales, métodos numéricos, optimización y estimación de parámetros, regresión y clasificación, métodos probabilísticos (Monte Carlo, pronóstico) y estudios de caso industriales. Sólo lista títulos y duraciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

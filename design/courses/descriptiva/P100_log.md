@@ -207,3 +207,17 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «How can we Model a Platform?», «Modeling Network Effects» (p. 15) — fuera de alcance: modelado de dinámicas (predictiva/simulación).
   - precios de plataforma, APIs y estándares, gating de calidad, antimonopolio, *roadmap* de funcionalidades (pp. 7–8, 14–15) — fuera de alcance: estrategia de producto y productos de datos, sin pregunta descriptiva.
+
+## S03.P100.17
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cronograma de un curso profesional del MIT en ocho módulos: ecuaciones diferenciales ordinarias y parciales, métodos numéricos, optimización y estimación de parámetros, regresión y clasificación, métodos probabilísticos (Monte Carlo, pronóstico) y estudios de caso industriales. Sólo lista títulos y duraciones. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - modelado y simulación con EDO/EDP, métodos de Euler, implícitos y de orden superior, sistemas lineales y no lineales (p. 1: «Ordinary Differential Equations (ODEs)», «Partial Differential Equations (PDEs)») — fuera de alcance: computación científica, sin relación con la pregunta descriptiva.
+  - optimización y modelado a partir de datos (p. 2: «Least Squares Problems», «Gradient Descent», «Parameter Estimation and Nonlinear Least Squares») — fuera de alcance: pertenece a predictiva/prescriptiva.
+  - regresión, regularización, regresión logística y ajuste de modelos (p. 2: «Regularization», «Logistic Regression», «Assessing Model Fit») — fuera de alcance: predictiva.
+  - simulación Monte Carlo, pronóstico probabilístico, sensibilidad y eventos raros (p. 2: «Monte Carlo Simulation», «Probabilistic Forecasting», «Simulating Rare Events») — fuera de alcance: predictiva/prescriptiva. Tampoco hay contenido que respalde la incertidumbre descriptiva que falta en P120–P122.
+  - estudios de caso evaluados (p. 2: «Aurora Flight Sciences», «Schlumberger», «BASF») — marginal: sólo nombra los casos, sin contenido; P120–P125 ya organizan el curso por casos.
