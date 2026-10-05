@@ -333,3 +333,18 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Aplicar las herramientas de inteligencia empresarial (BI) … paneles de Tableau» (p. 6); estadística, ML, *storytelling* (pp. 7–8) — fuera de alcance (descriptiva y otros cursos).
   - el programa nombra su primer curso «Data Engineering» (p. 5) — contexto institucional; no impone identidad: el curso `data` excluye explícitamente Data Engineering.
+
+## S03.P500.26
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - informe de la Dirección Nacional de Programas Curriculares de Pregrado de la UNAL sobre cuatro talleres participativos con 17 programas de pregrado (p. 8) acerca de qué es el currículo, pertinencia frente al contexto, integración de docencia/investigación/extensión, prácticas pedagógicas (fines, contenidos, estrategias, recursos, evaluación) y propuestas para superar el «currículo endogámico». Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - evaluación enfocada en la resolución de problemas y en el «saber hacer», con seguimiento por porcentajes de avance y no sólo del producto final (p. 82: «la evaluación debería adoptar una orientación sobre el seguimiento del “saber hacer”»; «debería expresarse como un seguimiento a diferentes porcentajes de su avance») — fuera de alcance: es una orientación institucional general de política de evaluación; los Pxxx son talleres guiados evaluados con `pytest` de participación (AGENTS.md), y la evaluación sumativa del saber hacer corresponde a los `Lxxx`, no a S03 sobre talleres. No cambia lo que el estudiante hace en ningún Pxxx concreto.
+  - autoevaluación y coevaluación (p. 69: «Incluir autoevaluación y coevaluación»; p. 82: «dos componentes hasta ahora dejados de lado en los mecanismos de evaluación: autoevaluación y coevaluación») — fuera de alcance: decisión de diseño de evaluación del curso/programa, no una capacidad de datos ni un defecto de un taller; un documento institutional ilustra posibilidades, no impone instrumentos.
+  - aprendizaje anclado a problemas reales y contexto (p. 72: «Apuntar a problemas reales»; p. 82: «conexión con el contexto a partir del abordaje de temas relevantes en el momento actual») — ya cubierta como principio: la identidad del curso (`data.C01`, pregunta → requisitos de datos) y `case-selection.md` ya exigen casos reales y trazables con pregunta analítica. Los talleres sin pregunta (P513, P518, P519, P522–P525) ya están registrados como auditorías no resueltas en S02; esta señal genérica no aporta un argumento ni un caso nuevo para resolverlos.
+  - recursos «simulaciones, casos de estudio», «laboratorios virtuales», «repositorio de software» (p. 72) y aulas híbridas/virtualidad (pp. 72, 80) — marginal: medios didácticos genéricos; el curso ya opera con talleres en código, datasets en repositorio y distribución por GitHub.
+  - participación de egresados para leer el mercado laboral y la pertinencia del perfil (pp. 106–107) y objetivos medibles de la armonización (p. 110) — fuera de alcance: gobernanza curricular de programa, no contenido de un taller.
+  - «Diferencias entre administración, contaduría, economía» y «No sólo la aplicación de modelos económicos» (p. 72) — fuera de alcance: notas de mapa mental de otros programas; sin relación con datos para analítica.

@@ -209,3 +209,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Diseñar código que se ejecute en paralelo utilizando funciones de multiprocesamiento y multihilo» (p. 6) — fuera de alcance: refuerza precisamente la lectura de P522 como computación paralela, cuya auditoría ya está no resuelta.
+
+## S03.P522.26
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - informe de la Dirección Nacional de Programas Curriculares de Pregrado de la UNAL sobre cuatro talleres participativos con 17 programas de pregrado (p. 8) acerca de qué es el currículo, pertinencia frente al contexto, integración de docencia/investigación/extensión, prácticas pedagógicas (fines, contenidos, estrategias, recursos, evaluación) y propuestas para superar el «currículo endogámico». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
