@@ -14,6 +14,7 @@
     T1: comparar modelos con «fair and honest comparisons» (Claude,
     2026-10-04).
   - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` p. 44 — fundamento estadístico que todo estudiante debe dominar: «Variability, uncertainty, sampling error, and inference»; p. 41: tener confianza en que lo que se afirma es cierto «within some margins of error» (Claude, 2026-10-04).
+  - `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` p. 1 — incluye «permutation testing» e intervalos de confianza dentro del ciclo de modelado y decisión (Claude, 2026-10-04).
 - **Qué gana el estudiante:** saber si una diferencia entre modelos es real o
   puede ser ruido de la muestra de prueba antes de concluir que uno es mejor.
   Hoy H04 lee que la versión flexible «mejora AUC de 0.842 a 0.852, aunque

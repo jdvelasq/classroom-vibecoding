@@ -105,3 +105,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ficha de catálogo de un curso de ingeniería de datos (p. 1): ciclo de vida de gestión de datos a escala; sin contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P225.12
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ficha de catálogo (p. 1) con temas de inferencia y decisión; para esta actividad no añade una señal distinta de las ya registradas.
