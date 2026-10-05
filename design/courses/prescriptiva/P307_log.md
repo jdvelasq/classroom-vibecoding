@@ -9,3 +9,11 @@
 - **Ambigüedades:** (1) la guardia de servicio no cambia la decisión: 110 es también el máximo sin restricción y está en el borde (0,25); (2) `order_comparison.csv` en `submission/` no lo produce el código actual; (3) notebook de dos celdas sin evidencia visual, importando `main` desde `src/` vacío; (4) no hay pronóstico construido: el título «informada por pronósticos» descansa en escenarios dados; (5) trazabilidad a cinco capacidades excede la evidencia; (6) posible duplicación técnica con P300/P302 y solapamiento con P304.
 - **Superficies / contrato / dependencias:** S01–S05; pruebas de forma; recibe patrón de P300/P302; no habilita actividades posteriores.
 - **Auditoría de Analytics:** auditoría no resuelta para el producto prescriptivo completo: hay acción factible, guardia, dueño, cadencia y gatillo, pero faltan excepción, validación (líneas base, sensibilidad) y monitoreo de resultados.
+
+## S03.P307.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de competencias de computación para el pregrado en ciencia de datos, organizado en 11 áreas de conocimiento con niveles T1/T2/E. Optimización, simulación y decisión secuencial aparecen sólo como técnicas sueltas (PDA, AI). Ética, sesgo, automatización auditable y comunicación con quien decide sí son expectativas transversales (PR, cap. 6–7). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

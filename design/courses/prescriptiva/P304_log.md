@@ -9,3 +9,12 @@
 - **Ambigüedades:** (1) procedencia de los datos no documentada y caso no declarado sintético; (2) valores de R12/R13 y totales esperados por política sólo verificables por aserciones del notebook, no en las cabeceras persistidas inspeccionadas; (3) la variante de sensibilidad cambia la protección a 12 pero no se persiste; (4) la prueba exige sólo dos de cinco artefactos.
 - **Superficies / contrato / dependencias:** S01–S06; recibe la regla por entidad de P303; sin artefactos que habiliten actividades posteriores.
 - **Auditoría de Analytics:** política prescriptiva operable con entradas observables, acción factible, restricciones, salvaguardas, autoridad, cadencia inmediata y gatillos; falta evidencia de monitoreo ejecutado. Identidad preservada.
+
+## S03.P304.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Explain to a non-technical audience the extent to which automated decision making occurs» y «The particular concerns of automation in critical situations» (PR-On Automation, p. 110). Categoría: ya cubierta por la automatización acotada con escalamiento y autoridad sobre parámetros (H06). P308 H06 y P303 H04 hacen el contraste con los casos que prohíben automatizar.
+  - Markov Decision Processes, «Demonstrate contexts in which MDPs can be useful (e.g., optimization or control problems)» (T2), y Reinforcement Learning (E) (AI, p. 51). Categoría: fuera de alcance. Formalizar MDP o RL convertiría el tramo secuencial en un módulo de IA/IO. La política dependiente del estado ya se ejerce en P304 (H03) y el acoplamiento intertemporal en P318 (H01–H04).

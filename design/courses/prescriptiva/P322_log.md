@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S05 declaradas. Recibe de P310/P311 la práctica de escenarios con probabilidad.
 - **Auditoría de Analytics:** producto terminal = política de medición con regla por resultado, guardas, autoridad y gatillos. Auditoría resuelta, con el defecto de la razón persistida.
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P322.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Infer the value to an organization of undertaking a particular investigation», «Argue the case for what data an organization should routinely gather» y «Evaluate the costs associated with the automation of a particular activity» (PR-Economic, p. 106). Categoría: ya cubierta por el valor de medir antes de actuar y las guardas de costo y precisión de la medición (H01–H03).

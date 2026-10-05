@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S07 declaradas. Recibe de P305/P308/P315 la enumeración verificada y las reglas ingenuas; contrasta con el LP de P316–P318. No habilita dependencias demostrables.
 - **Auditoría de Analytics:** producto terminal = política de surtido con guardas, aprobación humana, monitoreo con líneas base y gatillos cuantificados; el modelo de elección y la enumeración son evidencia. Auditoría resuelta, con el límite de que el contrato vive fuera del notebook.
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P319.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - disposición «there may be multiple acceptable solutions … depending on … the need for optimality, time constraints» y CSP (AI-Planning and Search, pp. 52–53). Categoría: ya cubierta. El método se elige según la estructura del problema en P306 H03, P317 H04 y P319 H03, y la elegibilidad por par entra como restricción en P308 H01.

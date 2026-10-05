@@ -9,3 +9,11 @@
 - **Ambigüedades:** (1) el volcado muestra sólo cinco de seis solicitudes y la fila A05 de `review_policy.csv` truncada; no se puede confirmar que la rama «recomendar_rechazo» se ejercite (ninguna solicitud visible con documentación completa y monto ≤ 10.000 supera 0,30); (2) umbrales 0,08, 0,30 y 10.000 sólo en código, ausentes del contrato; (3) el notebook importa `main` desde `src/`, vacío; (4) procedencia de las solicitudes y de la probabilidad no documentada.
 - **Superficies / contrato / dependencias:** S01–S05; prueba de columnas y campos no vacíos; recibe de P300/P302; práctica retomada en P306.
 - **Auditoría de Analytics:** regla prescriptiva por entidad con autoridad humana y escalamiento; faltan validación de umbrales y monitoreo ejecutado. Identidad de Analytics preservada.
+
+## S03.P303.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Identify steps needed to ensure that a decision-making system is auditable» (PR-On Automation, p. 110). Categoría: ya cubierta por el registro por solicitud con versión, razón y autoridad (H03) y las salvaguardas declaradas (H04).

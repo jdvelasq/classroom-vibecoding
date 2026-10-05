@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S06 declaradas. Recibe sólo el patrón de contrato; no habilita dependencias demostrables.
 - **Auditoría de Analytics:** producto terminal = decisión de aprobar o suspender una política con guarda, autoridad, escalamiento y gatillos. Auditoría resuelta en el contrato; incompleta frente a la arquitectura (falta la corrección).
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P320.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

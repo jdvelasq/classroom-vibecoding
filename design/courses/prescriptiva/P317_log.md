@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S08 declaradas. Recibe de P316 (y P305/P308/P315) el uso de PuLP + HiGHS que aquí se rechaza explícitamente; de P310, el patrón de escalamiento a comité. No habilita dependencias demostrables.
 - **Auditoría de Analytics:** producto terminal = regla anual de aprobación de inversión con tope presupuestal, autoridad en dos niveles, escalamiento y gatillos; la optimización no lineal es evidencia, como declara el notebook. Auditoría resuelta con el límite de casos de riesgo hipotéticos y prueba mínima.
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P317.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - disposición «there may be multiple acceptable solutions … depending on … the need for optimality, time constraints» y CSP (AI-Planning and Search, pp. 52–53). Categoría: ya cubierta. El método se elige según la estructura del problema en P306 H03, P317 H04 y P319 H03, y la elegibilidad por par entra como restricción en P308 H01.

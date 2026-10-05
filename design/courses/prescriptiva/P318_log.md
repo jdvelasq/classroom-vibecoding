@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S08 declaradas. Recibe de P316 LP continuo y validación sin enumeración. No habilita dependencias demostrables.
 - **Auditoría de Analytics:** producto terminal = política de despacho con cadencia, guardas, autoridad, escalamiento y gatillos; LP y duales son evidencia. Auditoría resuelta con límite de guardas específicas de la instancia y monitoreo no cuantificado.
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P318.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Markov Decision Processes, «Demonstrate contexts in which MDPs can be useful (e.g., optimization or control problems)» (T2), y Reinforcement Learning (E) (AI, p. 51). Categoría: fuera de alcance. Formalizar MDP o RL convertiría el tramo secuencial en un módulo de IA/IO. La política dependiente del estado ya se ejerce en P304 (H03) y el acoplamiento intertemporal en P318 (H01–H04).

@@ -9,3 +9,11 @@
 - **Ambigüedades:** el nombre «evaluación por simulación» y el rol «prueba de política» de `activity-architecture.md` no corresponden a la implementación, que calcula esperanzas exactas sobre cuatro escenarios. Posible duplicación con P307 (mismo cálculo con otra guarda). Gatillos y límites sin derivación. Sin procedencia. `src/` sin `main.py`.
 - **Superficies / contrato / dependencias:** S01–S05; pruebas sólo de existencia; recibe patrón de P307; habilitación no evidenciada.
 - **Auditoría de Analytics:** producto = regla diaria de capacidad con servicio, riesgo y presupuesto, autoridad y gatillos. Identidad prescriptiva preservada; aporte metodológico frente a P307 no distinguible.
+
+## S03.P311.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de competencias de computación para el pregrado en ciencia de datos, organizado en 11 áreas de conocimiento con niveles T1/T2/E. Optimización, simulación y decisión secuencial aparecen sólo como técnicas sueltas (PDA, AI). Ética, sesgo, automatización auditable y comunicación con quien decide sí son expectativas transversales (PR, cap. 6–7). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -10,3 +10,11 @@
 - **Superficies / contrato / dependencias:** S01–S05 declaradas. Sin dependencias demostrables.
 - **Auditoría de Analytics:** producto terminal = registro operativo de una política con autoridad, meta y gatillo. Auditoría parcialmente resuelta: el producto documenta una política pero no la produce ni la monitorea con evidencia.
 - **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».
+
+## S03.P321.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Design situation reports for senior managers …» y «Communication … must be underpinned by an evidence-based approach to decision making … where the reasons for decisions may require clarification» (PR-Communication, pp. 104–105), más la entrega de resultados «in the client's terminology» (cap. 6, p. 39). Categoría: ya cubierta por el registro operativo con supuesto, alternativa no elegida, indicador y responsable (H01–H03). La falta de evidencia que sustente la recomendación ya es un límite de S02 que este documento no especifica.
