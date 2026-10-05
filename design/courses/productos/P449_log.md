@@ -185,3 +185,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Calculate both the nontechnical and technical cost of a rapid prototype» y «Recognize how to optimize the cost value of a rapid prototype» (p. 7) — fuera de alcance: costo de fabricación de un objeto físico, no costo de operación de una capacidad analítica (P449 H01).
+
+## S03.P449.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo de cursos cortos presenciales de PwC Nigeria (ciencia de datos para principiantes, nivel intermedio y avanzado, analítica predictiva, clases magistrales para ejecutivos y cursos rápidos), centrado en visualización con Power BI, R y Python, estadística, ML y algo de optimización. No tiene contenido de operación ni de ciclo de vida de productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

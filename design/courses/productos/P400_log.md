@@ -273,3 +273,17 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Understand how to map desired product attributes to concept prototype attributes» y «Establish nontechnical and technical goals and requirements for a prototype» (p. 5, 7) — fuera de alcance: requisitos de diseño mecánico. La analogía con el contrato operativo (`productos.C01`) es sólo terminológica.
   - procesos de fabricación serial y paralela, 3D printing, CNC, moldeo de silicona (p. 6) — fuera de alcance: ingeniería mecánica y manufactura.
+
+## S03.P400.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo de cursos cortos presenciales de PwC Nigeria (ciencia de datos para principiantes, nivel intermedio y avanzado, analítica predictiva, clases magistrales para ejecutivos y cursos rápidos), centrado en visualización con Power BI, R y Python, estadística, ML y algo de optimización. No tiene contenido de operación ni de ciclo de vida de productos de datos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Generalised Linear Models … addresses issues of data preparation, model development, model validation, and model deployment» (p. 8) — fuera de alcance: el despliegue aparece sólo nombrado dentro de un curso de modelado predictivo, sin práctica operativa que contrastar.
+  - «Evaluate constraints on the use of data» y «Assess data structure and data lifecycle» (p. 7) — marginal: son objetivos genéricos sin desarrollo. Las restricciones de uso ya están en P452–P453 y el ciclo de vida en P455.
+  - «Build data solutions that integrate with other systems» (p. 6) — marginal: es un objetivo declarado sin contenido. La integración ya está en P417 y P425.
+  - proyecto guiado con «organizational issues in implementing systems for predictive analytics … generating analytics project implementation plans» (p. 9) y «Analytics Requires Process and Incentive Changes» (p. 11) — fuera de alcance: gestión organizacional de proyectos analíticos, no operación de una capacidad.
+  - visualización y dashboards, regresión, ML, series de tiempo, texto, optimización, experimentación A/B (p. 4–14) — fuera de alcance: pertenecen a Descriptiva, Predictiva y Prescriptiva.
