@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Sharing: Privacy, Anonymization, Risks… k-anonymity, and differential privacy» (p. 2) y el resultado de aprendizaje «identify privacy risks in releasing information, and design techniques to mediate these risks» (p. 3). Categoría: marginal o fuera de alcance. P453 ya enmascara un identificador directo antes de compartir una salida. Pasar a riesgo de reidentificación por cuasi-identificadores (k-anonimato) exigiría un caso con cuasi-identificadores que hoy no existe: P453 tiene una sola fila (S01). La técnica pertenece además al tratamiento de datos de un módulo de fundamentos. Una ficha institucional sólo ilustra posibilidades.
+
+## S03.P453.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de una página de métodos y herramientas de un programa de business analytics: recolección de datos (encuestas, NPS, pasiva, medios), A/B testing, correlación y causalidad, pronóstico (suavizamiento exponencial, tendencia y estacionalidad, nuevo producto), regresión, simulación con Analysis ToolPak y Solver, visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

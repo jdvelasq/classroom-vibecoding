@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ficha de un módulo introductorio de posgrado, de 10 semanas, del departamento de Computer Science. Recorre herramientas básicas, estadística, calidad de datos y SQL/NoSQL, regresión, matrices, clustering, clasificación, estructuras para big data, privacidad y anonimización, y grafos. Se evalúa con un proyecto, ejercicios y un examen. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P455.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de una página de métodos y herramientas de un programa de business analytics: recolección de datos (encuestas, NPS, pasiva, medios), A/B testing, correlación y causalidad, pronóstico (suavizamiento exponencial, tendencia y estacionalidad, nuevo producto), regresión, simulación con Analysis ToolPak y Solver, visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

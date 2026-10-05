@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data quality, data cleaning… errors, missing values, lack of consistency» (p. 2). Categoría: ya cubierta. P402 (contrato de datos con aceptación y rechazo) y P441 (cuarentena con motivo) la operan frente al uso; en Warwick es limpieza analítica.
+
+## S03.P441.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de una página de métodos y herramientas de un programa de business analytics: recolección de datos (encuestas, NPS, pasiva, medios), A/B testing, correlación y causalidad, pronóstico (suavizamiento exponencial, tendencia y estacionalidad, nuevo producto), regresión, simulación con Analysis ToolPak y Solver, visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

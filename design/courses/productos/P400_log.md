@@ -389,3 +389,17 @@
   - ficha de un módulo introductorio de posgrado, de 10 semanas, del departamento de Computer Science. Recorre herramientas básicas, estadística, calidad de datos y SQL/NoSQL, regresión, matrices, clustering, clasificación, estructuras para big data, privacidad y anonimización, y grafos. Se evalúa con un proyecto, ejercicios y un examen. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Data Structures: Bloom Filters, Sketches, Summaries… to scale analytics to big data» y «NoSQL systems» (pp. 2–3). Categoría: fuera de alcance, por la frontera Big Data y arquitectura de datos. Regresión, clustering, clasificación, SVD/PCA y grafos (p. 2) corresponden a Predictiva, Descriptiva y Fundamentos. Herramientas de línea de comandos, gnuplot y Perl/Python/R (p. 2) son formación en herramientas.
+
+## S03.P400.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de una página de métodos y herramientas de un programa de business analytics: recolección de datos (encuestas, NPS, pasiva, medios), A/B testing, correlación y causalidad, pronóstico (suavizamiento exponencial, tendencia y estacionalidad, nuevo producto), regresión, simulación con Analysis ToolPak y Solver, visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - métodos analíticos (p. 1: «A/B Testing», «Correlation and Causation», «Forecasting», «Exponential Smoothing», «Regression Analysis», «Optimization Models», «Decision Trees») — fuera de alcance: son métodos para formular, describir, predecir o prescribir (Descriptiva, Predictiva, Prescriptiva); productos no vuelve a enseñarlos.
+  - herramientas de hoja de cálculo (p. 1: «Simulation Toolkit», «Analysis ToolPak», «Solver Optimization Tool») — fuera de alcance: capacitación en una plataforma y métodos de otro curso.
+  - recolección de datos (p. 1: «Descriptive Data Collection: Surveys, Net Promoter Score (NPS), and Self-Reports»; «Passive Data Collection») — fuera de alcance: adquisición de datos (Fundamentos/Descriptiva). La captura de una señal de utilidad del consumidor ya está en P451 H01–H02 y la lista no aporta mecanismo operativo.
+  - «Data Visualization and Interpretation» (p. 1) — fuera de alcance: Descriptiva; no hay señal de interfaz operativa ni de mantenimiento.
+  - No hay en el documento ninguna señal de despliegue, pruebas, calidad, monitoreo, gobierno, versionado ni operación.
