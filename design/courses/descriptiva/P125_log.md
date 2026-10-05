@@ -63,3 +63,11 @@
   - «uso de datos anonimizados y agregados», cortes territoriales sólo «cuando hay masa crítica» y categoría NB «sólo descriptivamente» (p. 238); Privacy Engineer «PII» (p. 335); protección de datos personales (pp. 183, 203) — ya cubierta: minimización y anonimización con riesgo medido (P102 H02, P108 H01–H05), persistir sólo agregados con tamaño mínimo (P125 H04, H07).
   - mediana como «indicador más robusto», percentiles P25/P50/P75/P90 y bandas (p. 263) — ya cubierta: P125 H03 y H05.
   - bandas «puntuales» (BI 6,8–6,8 M) leídas como «perfiles bien tipificados» (pp. 290, 310) con sólo 42 observaciones en 6 cargos (p. 302) — marginal: contraejemplo útil de interpretar dispersión nula sin mirar tamaño de celda, pero P125 H04 ya exige tamaño mínimo antes de señalar; no aporta caso/datos reutilizables (microdatos no disponibles).
+
+## S03.P125.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

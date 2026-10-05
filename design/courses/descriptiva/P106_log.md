@@ -60,3 +60,11 @@
 - **Señales descartadas relevantes:**
   - procesamiento en capas Bronze/Silver/Gold con «validación, normalización y verificación de calidad» (p. 131); reglas de limpieza «tiempos mínimos, duplicados», «control de completitud» (p. 238) — ya cubierta: separación crudo/limpio (P107 H02), limpieza por columna e invariantes (P106 H01, H05).
   - reducción de granularidad mediante «Dominios canónicos» de habilidades y roles (pp. 29, 80–92, 96) — ya cubierta: canonización con diccionarios y diagnóstico de colisiones (P106 H02, P107 H03), normalización de vocabularios (P123 H03).
+
+## S03.P106.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

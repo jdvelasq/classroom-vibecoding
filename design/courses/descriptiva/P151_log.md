@@ -65,3 +65,11 @@
 - **Señales descartadas relevantes:**
   - «SQL avanzado», «Integración de fuentes», «Python aplicado», «Excel avanzado» en el dominio «Data & features» (p. 96); SQL 11,11 % de requerimiento (p. 79) — ya cubierta: SQL con vistas, ventanas y CTE (P104 H02–H04), UDF y capa cruda/limpia (P107 H02), consultas en estrella (P151 H04); integración de fuentes en P150 H01–H02.
   - Spark, Hadoop, Kafka, procesamiento distribuido (p. 175) y modelado avanzado, índices, sharding (p. 175) — fuera de alcance: ingeniería de datos/bases de datos; P100 ya usa MapReduce sólo como habilitador.
+
+## S03.P151.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

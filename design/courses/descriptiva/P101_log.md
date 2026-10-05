@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diagnóstico nacional de la brecha cuantitativa y cualitativa de talento TI en Colombia (demanda por roles, habilidades hard/soft, pertinencia curricular, salarios y rotación). Su valor para el curso es de pertinencia laboral del perfil analista de datos/BI; no define estándar ni prescribe herramientas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P101.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

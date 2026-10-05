@@ -63,3 +63,11 @@
 - **Señales descartadas relevantes:**
   - «Formular preguntas correctas ... interpretar métricas y KPIs» (p. 219); Índice de Rotación definido con variables, numerador y promedio de planta (pp. 305–306) — ya cubierta: pregunta enlazada a evidencia (P120 H01) y KPI como contrato con numerador/denominador (P153 H01).
   - demanda de «customer analytics», «analítica de clientes», «Perfil híbrido: marketing + analítica» (pp. 162–163) — ya cubierta: casos de marketing (P124) y retail (P120); otro dominio sería variación de caso.
+
+## S03.P120.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

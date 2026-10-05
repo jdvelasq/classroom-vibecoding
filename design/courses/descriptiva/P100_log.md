@@ -88,3 +88,17 @@
   - analistas Big Data/BI que «migrarán de un rol descriptivo (reportes) a uno predictivo y prescriptivo» (p. 291); ML, MLOps, series de tiempo, pronósticos, backtesting (pp. 96–97, 176) — fuera de alcance: pertenecen a predictiva/prescriptiva/productos de datos.
   - déficit de habilidad para «problemas mal definidos, ambiguos» y trabajo con proyectos del sector productivo (pp. 177, 183, 217, 221) — fuera de alcance como propuesta de taller: recomendación de nivel programa/política; el curso ya prioriza casos trazables (`datalabs/`) y la ausencia de usuario/decisión está registrada en las auditorías S02.
   - muestra no probabilística, «Margen de error: No aplica, dado el carácter no probabilístico, exploratorio y no inferencial del estudio» (p. 323) — marginal: buen ejemplo de declaración de límite de evidencia, pero el curso ya declara fronteras (P123 H01, P125 H06) y no hay caso con datos para enseñarlo distinto.
+
+## S03.P100.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión pública: bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas en 2024–2026, distribución regional, cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Análisis de Datos» como temática priorizada por demanda laboral (p. 2: «enfocado en las áreas más demandadas por el mercado: datos, programación, ciberseguridad …») — marginal: confirma pertinencia laboral del curso (función governmental), pero no define contenidos, estándar ni herramientas; no cambia lo que el estudiante hace en ningún taller.
+  - metodología *learning by doing* con desafíos concretos y simulación de situaciones reales de trabajo (p. 1: «la capacitación se centra en resolver problemas prácticos, fomentando el aprendizaje a través de la experiencia»; «el aula se convierte en un espacio que simula situaciones reales de trabajo») — ya cubierta: los talleres presenciales guiados por casos (P120–P125, P150–P154) ya siguen ese formato; un documento governmental no prescribe pedagogía.
+  - metodologías ágiles, colaboración y mentoría (p. 1: «La implementación de metodologías ágiles, la colaboración y el aprendizaje compartido también son elementos esenciales») — fuera de alcance: rasgo del formato bootcamp, sin relación con un producto descriptivo.
+  - focalización regional y poblacional (p. 2: «distribución regional que permita adaptar las iniciativas … a las particularidades y demandas específicas de cada área geográfica»; p. 3: lista de grupos focalizados) — fuera de alcance: describe el diseño de la política, no una señal curricular; no hay datos del programa en el documento que permitan construir un caso descriptivo.
+  - temáticas de IA, blockchain, nube y ciberseguridad (p. 2) — fuera de alcance: no pertenecen a descriptiva.
