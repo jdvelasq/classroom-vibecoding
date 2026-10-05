@@ -123,3 +123,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: folleto de un curso ejecutivo de 8 semanas sobre estrategia y ecosistema de datos (IA para líderes, plataformas y diseño de bases de datos, modern data stack, nube, Lean DevOps, ética/gobierno de datos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - regresión moderna para inferencia causal, ensayos controlados aleatorios y estudios observacionales con confusión (p. 8: «The Use of Modern Regression for Causal Inference / Randomized Control Trials / Observational Studies with Confounding») — ya cubierta como insumo: P306 H01–H02 usa la aleatorización y un T-learner para separar riesgo de efecto; enseñar la técnica causal en sí es de Predictiva.

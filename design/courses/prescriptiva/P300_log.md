@@ -184,3 +184,13 @@
   - Módulo 2 «Decision-Making Frameworks», «Axiomatic Design», «Design of Organizations» (p. 14) — marginal/fuera de alcance: marcos organizacionales de diseño y decisión sin contenido operativo enseñable; la autoridad y el modo de ejecución de cada política ya están en P303 H01, P304 H06, P308 H06.
   - Módulo 1 «Reinforcement Learning» (p. 14) — fuera de alcance: técnica de IA mencionada sin caso; no hay datos ni secuencia para enseñarla como mecanismo de política con rigor.
   - Lean DevOps, data platforms, modern data stack, nube (pp. 7, 14–15) — fuera de alcance: Productos de datos / Fundamentos de data.
+
+## S03.P300.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa en línea de 12 semanas: fundamentos de Python y estadística, aprendizaje no supervisado, regresión e inferencia causal, clasificación, deep learning, sistemas de recomendación y redes y modelos gráficos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - maximización de influencia en redes y filtro de Kalman (p. 11) — fuera de alcance: no hay caso ni datos en el curso para enseñarlo con rigor como política, y desplazaría la identidad hacia modelado de redes.
