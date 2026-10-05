@@ -81,3 +81,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Interacción humano - IA: supervisión, criterio y responsabilidad en contextos de alto riesgo» (p. 5) — ya cubierta: P450 separa recomendación y acción autorizada y autoriza sólo ante aprobación explícita (H01, H02); el folleto no aporta práctica concreta.
+
+## S03.P450.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado de 4 unidades (cruzado con COMPSCI C187) sobre gestión de datos a escala para análisis y ML, con énfasis en una operacionalización confiable. Sólo incluye la descripción, los prerrequisitos y datos administrativos; no trae temario, prácticas ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

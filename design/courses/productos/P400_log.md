@@ -127,3 +127,15 @@
   - «Implementación responsable de la IA: tolerancia al riesgo, supervisión y gobernanza» (p. 5) — ya cubierta en el nivel de mecanismos (P450, P452, P446–P447); el enfoque estratégico-ejecutivo es fuera de alcance.
   - «Calidad de datos, representatividad y por qué fallan los modelos» (p. 5) — fuera de alcance: pertenece a Predictiva; la validación operacional de entradas ya está en P404/P422.
   - módulos de redes neuronales, visión, NLP, robótica, estrategia y equipos de IA (p. 4–6) — fuera de alcance: capacitación ejecutiva en IA, sin relación con operar una capacidad analítica.
+
+## S03.P400.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado de 4 unidades (cruzado con COMPSCI C187) sobre gestión de datos a escala para análisis y ML, con énfasis en una operacionalización confiable. Sólo incluye la descripción, los prerrequisitos y datos administrativos; no trae temario, prácticas ni evaluación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «the entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration, with a focus on ensuring reliable, scalable operationalization» (p. 1) — ya cubierta: el énfasis en una operacionalización confiable coincide con `productos.C02`/`C05`. Preparación, exploración, visualización y ML corresponden a Fundamentos, Descriptiva y Predictiva, a los que el curso no vuelve.
+  - «managing data at scale» (p. 1) — fuera de alcance: escala y Big Data son una frontera explícita del curso. Además, la ficha no dice cómo se operacionaliza, así que no hay mecanismo que contrastar.
+  - prerrequisitos de programación (COMPSCI 61B o equivalente) y de ciencia de datos de nivel superior (DATA C100 o equivalente) (p. 1) — fuera de alcance: es una decisión de otra institución. El programa admite cohortes heterogéneas y declara que no hay prerrequisitos entre cursos (`s05-diseno-productos.md`).

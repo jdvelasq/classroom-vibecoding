@@ -82,3 +82,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa ejecutivo de dos meses sin requisitos técnicos sobre capacidades de IA (ML, redes neuronales, visión, NLP, robótica), estrategia de IA y equipos de IA, con proyecto final de plan de negocio. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P411.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «collaboration» como parte del ciclo de vida (p. 1) — ya cubierta: control de versiones, ramas, remoto y pull request (P408 H02, P409 H01, P411 H01). La ficha no detalla la práctica.
