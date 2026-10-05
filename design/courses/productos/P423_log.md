@@ -428,3 +428,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «what would constitute an exception? Are there specific thresholds … or will users simply be looking for values that represent statistical outliers» (p. 1). Categoría: marginal. Los talleres ya convierten señales en alertas con umbral explícito (P439 H01, P442 H01, P422 H01, P423 H02). La falta de justificación de esos umbrales por el uso es el mismo defecto que trata la candidata de P428; por sí sola, la pregunta no cambia lo que hace el estudiante en cada taller.
+
+## S03.P423.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - taller práctico de Power BI empresarial: modelado dimensional, Power Query, medidas DAX, actualización incremental, separación de modelo y reporte, flujo de despliegue DEV/TEST/PROD y certificación de datasets dentro de un plan de gobierno. Como fuente professional-learning, aporta señales de práctica atadas a una plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

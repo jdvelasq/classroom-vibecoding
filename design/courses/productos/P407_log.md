@@ -426,3 +426,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P407.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reglas de despliegue por etapa, el mismo dataset con parámetro `DatabaseName` distinto en DEV y PROD (p. 86–87, imagen: «Create rules defining parameter values and data sources for this artifact. These rules will be applied when deploying to this stage») — marginal: la configuración externa al código y validada ya está en P406 H01 y P407 H01, y los secretos fuera del repositorio en P427 H01. Ligar la configuración a una etapa de despliegue es una variante de la misma práctica.

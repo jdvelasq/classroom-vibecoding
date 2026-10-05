@@ -623,3 +623,14 @@
   - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - agrupaciones lógicas, ítems clave y comparaciones con metas o histórico para el diseño visual (p. 1). Categoría: fuera de alcance. Es diseño de dashboards y comunicación descriptiva (Descriptiva o BI), no operación de la capacidad.
+
+## S03.P400.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** aporta a N01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - adopción y cultura de datos, patrocinio, comunidad de práctica y capacitación (p. 22) — fuera de alcance: estrategia organizacional, no operación de una capacidad.
+  - modelado dimensional, DAX, grupos de cálculo, plegado de consultas, DirectQuery y modelos compuestos, ajuste de rendimiento con DAX Studio (p. 32–62, 69–74, 95–97, 100–101) — fuera de alcance: BI y modelado de datos (Descriptiva, Fundamentos) y capacitación en una plataforma, que es frontera explícita del curso.

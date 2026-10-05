@@ -425,3 +425,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P436.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - actualización incremental con periodos archivados, periodos incrementales y «Detect data changes: Reprocesses any partition with a date newer than the last refresh date» (p. 64–65) — ya cubierta: marca de agua (P436 H01), registro tardío y reproceso (P437 H01–H02), backfill acotado (P438 H01).

@@ -428,3 +428,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Who will use the dashboard?» y «What specific information should be displayed … level of summary/detail» (p. 1). Categoría: ya cubierta. La tarjeta de producto (P408 H01: consumidor, métrica, unidad; P411 H02: responsable) y la ficha de catálogo (P454 H01: dueño, frecuencia, versión de contrato, consumidor) ya declaran consumidor, grano y responsable.
+
+## S03.P454.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificación de datasets por el responsable de datos y árbol de decisión entre contenido certificado y semiconfiable (p. 21, 91) — marginal: dueño y consumidor ya están en P454 H01, y la compuerta de aceptación de insumos en P402 H01–H03. El sello de certificación es un mecanismo de la plataforma.
