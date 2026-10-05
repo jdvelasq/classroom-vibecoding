@@ -378,3 +378,12 @@
 - **Señales descartadas relevantes:**
   - «sustained retraining, drift detection, and incremental model refinement» (p. 21) — ya cubierta la detección: P422 H01–H03 (deriva de entradas), P423 H01 (degradación observada).
   - «monitoring not only tracks technical performance but also verifies the benefits delivered» (p. 21) e «integrating user feedback and contextual insights into subsequent iterations» (p. 22) — marginal en este documento: apunta al límite registrado de P451 (C05 «mejorar» no se ejerce; sin agregación de señales), pero el texto es genérico y el curso no tiene registros de uso reales con los que agregar utilidad sin fabricar datos; podría servir de fuente secundaria si otra revisión propone cerrar el ciclo retroalimentación → mejora con un caso concreto.
+
+## S03.P423.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reentrenamiento mensual (modelo «Jan» → «Jan-Feb» con «Continue training existing model») y comparación de ambos con un Analysis node y un gains chart (pp. 215–221) — marginal por evidencia: la comparación candidato–vigente sería pertinente para el límite de P421 («no hay umbral de aprobación ni comparación con el modelo previo»), pero la fuente compara sobre datos de entrenamiento y lo admite (p. 222: «these results are based on the training data only»), por lo que no respalda un criterio de promoción. Si otra revisión propone en P421 comparar el candidato con el modelo vigente sobre datos comunes, este documento puede sumarse sólo como fuente secundaria de práctica.
+  - reaplicar un modelo de series de tiempo guardado a datos actualizados para extender el horizonte «without rebuilding your models. Of course, if there is reason to think that a model has changed, you should rebuild it» (p. 180) — marginal: la distinción refrescar/reconstruir no trae criterio operativo ni señal que dispare la reconstrucción; la respuesta operativa a degradación ya está en P423 H02 (alerta) y P424 H01 (reversión); reentrenar pertenece al método de Predictiva.

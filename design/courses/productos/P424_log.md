@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «version management, retraining cycles, and constant monitoring» (p. 20) — ya cubierta en versión y recuperación: P421 H01–H02, P424 H01–H02, P444 H01–H02; el reentrenamiento como tal es Predictiva (la parte de política se recoge en la candidata de P423).
+
+## S03.P424.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reaplicar un modelo de series de tiempo guardado a datos actualizados para extender el horizonte «without rebuilding your models. Of course, if there is reason to think that a model has changed, you should rebuild it» (p. 180) — marginal: la distinción refrescar/reconstruir no trae criterio operativo ni señal que dispare la reconstrucción; la respuesta operativa a degradación ya está en P423 H02 (alerta) y P424 H01 (reversión); reentrenar pertenece al método de Predictiva.

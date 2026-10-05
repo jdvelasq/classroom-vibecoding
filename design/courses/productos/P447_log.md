@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «document lessons learned, conduct internal reviews» y retrospectivas (p. 22) — marginal: el cierre del incidente con lección aprendida sería una variante de P447 H02 sin caso; las retrospectivas son gestión de proyecto ágil (fuera de alcance).
+
+## S03.P447.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Tutorial de una herramienta comercial de minería de datos: casos de modelado (clasificación, series de tiempo, supervivencia, GLM, SVM, reglas, KNN, TCM) construidos como «streams» de nodos; la operación aparece sólo como menciones a puntuación de datos nuevos, exportación PMML, repositorio de despliegue, modo batch, reaplicación de un modelo de series de tiempo y reentrenamiento mensual. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

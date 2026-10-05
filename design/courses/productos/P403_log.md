@@ -380,3 +380,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - criterios de éxito «accuracy, precision, recall, latency, operational efficiency, adoption rates, and user satisfaction» y «deployment decisions are based on both predictive accuracy and the capacity to generate measurable business value» (pp. 18–19) — marginal: P403 H02 ya traduce umbrales operativos en compuerta; justificar los umbrales por valor de negocio exige la formulación del problema predictivo (fuera de la frontera del curso). Métricas como AUC, F1, MCC (p. 19) — fuera de alcance (Predictiva).
+
+## S03.P403.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - la regla de corte de clasificación (0.248, identificada en la evaluación) se aplica al puntuar (p. 316) y el scoring produce valores de confianza «$RC» (p. 38) — marginal: umbrales operativos y salidas de la capacidad ya se tratan en P403 H02 y P425 H01; añadir la confianza a la respuesta sería una variante del contrato sin nueva capacidad.

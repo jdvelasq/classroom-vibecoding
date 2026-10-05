@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Revisión sistemática (expansión por citas en Scopus, 18 metodologías) que deriva PRODIG8: seis dimensiones de ejecución (alcance, comprensión y preparación de datos, diseño, evaluación, operación y mantenimiento), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Es un marco de gestión de proyectos analíticos; sólo §4.6–4.8 tocan directamente la operación de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P413.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ejecución sin interfaz para tareas «long-running or repetitive … with no user intervention» (SPSS Modeler Batch, p. 7) y scripting de automatización (p. 25) — ya cubierta: P413 (objetivos repetibles), P418 (ejecución empaquetada en lote), P428 (ejecución periódica).

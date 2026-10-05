@@ -559,3 +559,15 @@
   - «help-desk administration and user support communities» (p. 21), complejidades políticas y culturales de adopción (p. 21), escalabilidad e infraestructura de alto desempeño (p. 21) — fuera de alcance: soporte organizacional, gestión del cambio y Big Data/cloud.
   - Scrum/XP, sprints, backlog, roles (pp. 5, 11–14, 22) y fases técnicas DMME de sensores (pp. 5, 9) — fuera de alcance: gestión de proyectos y adquisición de datos de ingeniería.
   - encuadre ejecución–control–adaptación (Gobierno y Ética transversal; Mejora Continua como retroalimentación; pp. 12–13, 22–23) — marginal: encuadre útil para presentar el curso (C05 transversal a C02–C04), pero no cambia lo que el estudiante hace en ningún taller.
+
+## S03.P400.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Tutorial de una herramienta comercial de minería de datos: casos de modelado (clasificación, series de tiempo, supervivencia, GLM, SVM, reglas, KNN, TCM) construidos como «streams» de nodos; la operación aparece sólo como menciones a puntuación de datos nuevos, exportación PMML, repositorio de despliegue, modo batch, reaplicación de un modelo de series de tiempo y reentrenamiento mensual. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - datos «analíticos o históricos» frente a datos de scoring «operational data» (p. 42) — ya cubierta: distinción entrenamiento/producción en P404, P422 y P423.
+  - Administration Console para monitorear y configurar servidores (p. 8) y «License tracking» con logs de uso (p. 11) — fuera de alcance: administración de plataforma y licencias, no observación de una capacidad analítica.
+  - Self-Learning Response Model que se actualiza con nuevas respuestas (p. 195), causal temporal y causa raíz de atípicos (p. 346), monitoreo de condición de máquinas con redes neuronales (p. 227) — fuera de alcance: son métodos de modelado (Predictiva/Descriptiva), no prácticas de operación; «Condition Monitoring» es predicción de fallas, no monitoreo del producto.

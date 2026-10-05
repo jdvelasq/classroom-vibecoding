@@ -378,3 +378,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Revisión sistemática (expansión por citas en Scopus, 18 metodologías) que deriva PRODIG8: seis dimensiones de ejecución (alcance, comprensión y preparación de datos, diseño, evaluación, operación y mantenimiento), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Es un marco de gestión de proyectos analíticos; sólo §4.6–4.8 tocan directamente la operación de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P425.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - puntuar datos nuevos exige los mismos campos de entrada con nombres y tipos iguales a los del modelo (p. 41: «the new dataset must contain the same input fields used by the model … as long as the field names and types match those used by the model») — ya cubierta: P404 H01 (alinea entradas con `feature_names_in_`) y P425 H01 (contrato con errores por presencia y tipo).
+  - la regla de corte de clasificación (0.248, identificada en la evaluación) se aplica al puntuar (p. 316) y el scoring produce valores de confianza «$RC» (p. 38) — marginal: umbrales operativos y salidas de la capacidad ya se tratan en P403 H02 y P425 H01; añadir la confianza a la respuesta sería una variante del contrato sin nueva capacidad.

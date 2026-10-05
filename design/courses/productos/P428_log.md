@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Secure environments and automated pipelines are recommended enablers for this integration» (p. 16) — ya cubierta: P428 H01–H02, P429 H01–H02.
+
+## S03.P428.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ejecución sin interfaz para tareas «long-running or repetitive … with no user intervention» (SPSS Modeler Batch, p. 7) y scripting de automatización (p. 25) — ya cubierta: P413 (objetivos repetibles), P418 (ejecución empaquetada en lote), P428 (ejecución periódica).
