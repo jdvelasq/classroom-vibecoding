@@ -480,3 +480,15 @@
   - ciclo de vida completo del dato (captura→eliminación segura, p. 5) — marginal/fuera: el curso cubre adquisición–preparación–documentación; archivo y eliminación son gestión organizacional.
   - gobierno de datos (derechos de decisión, modelos centralizado/federado, p. 16), arquitectura (warehouse, lake, lakehouse, mesh «patrones posibles, no etapas obligatorias», p. 17) — fuera de alcance (arquitectura empresarial); la advertencia de p. 17 sólo confirma la frontera ya fijada para P512/P525.
   - caso de valor, VPN/ROI, priorización de portafolio, hoja de ruta, ejecución y evaluación de la estrategia (pp. 19–23) — fuera de alcance: gestión estratégica, no preparación de datos para una pregunta.
+
+## S03.P500.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Identificar las necesidades de datos. Determinar qué información requiere el problema analítico» (p. 13) — ya cubierta por P500 H02 y P517 H02 (contrato mínimo derivado de la pregunta).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - problema de negocio/problema analítico, 5W, partes interesadas (pp. 9–11) — fuera de alcance como contenido propio (P001 y cursos de línea); el déficit recurrente «sin usuario ni decisión» de varios Pxxx no se resuelve con esta fuente sin desplazar la identidad del curso.
+  - descriptiva/predictiva/prescriptiva, diseño y evaluación de modelos, despliegue, monitoreo de *drift*, recalibración (pp. 16–26) — fuera de alcance (otros cursos y productos de datos).
+  - sesgos y equidad, impacto social (p. 29) — fuera de alcance como evaluación de modelos; el sesgo de datos ya aparece como límite en P510 (calificaciones como adopción) sin caso que permita enseñarlo con rigor aquí.

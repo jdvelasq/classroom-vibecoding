@@ -316,3 +316,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - material de clase sobre estrategia de datos organizacional: diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, priorización, hoja de ruta, ejecución y evaluación (caso de mantenimiento predictivo). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P511.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Integrar los datos. Combinar datos provenientes de diferentes fuentes y asegurar su consistencia»; caso con «identificadores diferentes entre sistemas» (pp. 14–15) — ya cubierta por P511 H01–H02.

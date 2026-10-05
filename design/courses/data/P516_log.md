@@ -317,3 +317,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Calidad y disponibilidad. Evaluar la adecuación al uso» (p. 8); brecha de datos «identificadores incompatibles y registros incompletos» (p. 11) — ya cubierta por P516 (aptitud para una pregunta) y P511 H01 (claves que no identifican).
+
+## S03.P516.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** refuerza T02.
+- **Señales descartadas relevantes:**
+  - dimensiones de calidad «exactitud, completitud, consistencia, actualidad, validez, relevancia y unicidad» (p. 13) — ya cubierta parcialmente por P516 H02 (completitud, validez, unicidad, alcance); añadir dimensiones por catálogo sería marginal.

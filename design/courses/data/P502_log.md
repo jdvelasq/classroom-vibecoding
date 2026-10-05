@@ -322,3 +322,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diagnóstico de activos de datos: «Inventario y significado. Identificar fuentes, dominios, definiciones, metadatos y trazabilidad» (p. 8) — ya cubierta por P502 H01–H03 (catálogo, roles de columna, linaje).
+
+## S03.P502.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - evolución KDD→CRISP-DM→ASUM/TDSP/CRISP-ML(Q)/INFORMS y un ciclo de proyecto analítico (problema de negocio, problema analítico, entendimiento y preparación de datos, diseño, evaluación, operación, mejora continua, gobernanza y ética transversal) ilustrado con un caso de abandono de clientes. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
