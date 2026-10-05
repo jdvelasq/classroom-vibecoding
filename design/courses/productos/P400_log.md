@@ -310,3 +310,17 @@
   - Folleto en español de un certificado de 10 meses con cinco cursos de 8 semanas (Data Engineering, Ciencia de Datos con Python, Estadística, IA y ML, Storytelling y visualización); sólo una línea toca la operación de modelos (despliegue como API o puntuación por lotes). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Definir casos de negocio (coste-beneficio) [...] para dar recomendaciones justificadas sobre una acción» (p. 8) — fuera de alcance (Fundamentos/Prescriptiva); SQL, NoSQL y carga en bases de datos (p. 5–6) — fuera de alcance (Fundamentos de data); Tableau y paneles (p. 6) — fuera de alcance (Descriptiva/BI); entrenamiento y evaluación de modelos, interpretación (p. 6–7) — fuera de alcance (Predictiva); multiprocesamiento y multihilo (p. 6) — fuera de alcance (ingeniería de software).
+
+## S03.P400.26
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Informe de la Dirección Nacional de Programas Curriculares de Pregrado (2021) sobre cuatro talleres de co-creación con programas de pregrado de varias sedes (contextos, dinámicas, prácticas pedagógicas, proyecciones). No contiene programas de analítica, cursos de datos/ingeniería de datos/MLOps ni resultados de aprendizaje disciplinares: «analítica» no aparece ni una vez; «datos» aparece sólo para la metodología de teoría fundamentada del propio estudio (p. 20) y «software» para Atlas.ti (p. 21). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - paso «de la enseñanza al aprendizaje»: «el estudiante no aprende simplemente escuchando, sino dialogando y haciendo» (p. 79) — ya cubierta: el formato `Pxxx_` de taller presencial guiado con desarrollo progresivo en código (AGENTS.md) ya lo encarna; no cambia ningún HNN.
+  - evaluación orientada al «seguimiento del “saber hacer”», con autoevaluación y coevaluación (pp. 80–82) — fuera de alcance: es una política pedagógica institucional general (pregrado UNAL) que no habla de productos de datos; el contrato de evaluación de talleres (`pytest` sobre `submission/`) es una decisión de programa, no de un Pxxx, y la familia institucional no impone un cambio de instrumento.
+  - «prácticas en el sector productivo», proyectos de extensión y salidas de campo como estrategia (pp. 56–57, 80) — marginal/fuera de alcance: no aporta caso, datos ni práctica operativa concreta; la necesidad de un caso con usuario y decisión en P400–P455 ya está registrada en las auditorías S02 y este documento no ofrece uno.
+  - «uso de metadatos para la investigación a través de ejercicios de modelación» y recursos como laboratorios virtuales, simuladores o repositorios de software (pp. 72, 79) — marginal: menciones genéricas de recursos didácticos sin relación con catálogo/linaje (P443, P454) más allá de la palabra.
+  - crítica a la «ausencia de objetivos medibles, y metas» en la armonización (p. 110) — fuera de alcance: se refiere al proceso institucional de reforma curricular, no a criterios de éxito de una capacidad analítica (C01).
