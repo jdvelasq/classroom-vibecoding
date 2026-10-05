@@ -360,3 +360,12 @@
 - **Señales descartadas relevantes:**
   - programación tradicional con «Tests basados en ejemplos» frente a ML, donde la lógica se aprende de datos y se prueba por comportamiento (p. 2); «Tests automáticos de data, código y modelos» (p. 3) — ya cubierta: P400–P401 (regla y transformación), P402 (contrato de datos, H01–H04) y P403 (familias de pruebas de modelo, H03).
   - fallas para «Descubrir errores en los datos antes de que se publiquen las analíticas» (p. 5); «Monitoreo del pipeline de valor mediante pruebas» (p. 4); «Pruebas de validación de la data y la lógica de negocio» (p. 7); «Implemente procesos automáticos de monitoreo de datos» (p. 12) — ya cubierta: compuerta de aceptación (P402 H03), conciliación (P440), cuarentena (P441) y observabilidad integrada (P442 H02).
+
+## S03.P402.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de entrada «Fechas en un rango válido», «Validación del rango de valores de un campo», «Porcentajes de incremento en la cantidad de registros» (p. 4) — marginal: variantes de reglas del contrato de H01; el límite «sin rangos ni completitud temporal» se resolvería con otra regla del mismo tipo, sin nueva capacidad.
+  - «Los tests deben incluirse en cada etapa del pipeline» con entradas / lógica del negocio / salidas (p. 4) — ya cubierta a lo largo de la secuencia: entradas (P402 H01, P404), lógica (P400–P401), salidas (P417 H01, P440 H02).

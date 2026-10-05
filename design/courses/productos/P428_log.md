@@ -353,3 +353,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Doble orquestación» de los pipelines de valor (datos en producción) e innovación (cambios de código) (p. 4, p. 6) — marginal: ambas ya existen en el curso (CI antes de fusionar en P415–P416; ejecución periódica y orquestada en P428–P429). Nombrar explícitamente el contraste sería, a lo sumo, aclaración; la fuente es contexto organizacional sin prescripción operativa.
+
+## S03.P428.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre calidad de datos en DataOps: análisis de impacto y automatización de pruebas, tipos de pruebas, «Analytics es código» (innovation pipeline vs. value pipeline), pruebas en cada etapa (entradas, lógica de negocio, salidas) con niveles de severidad y acción, y tipos de prueba con notificación (location balance, historical balance, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

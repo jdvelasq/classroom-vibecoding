@@ -355,3 +355,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - fallas para «Descubrir errores en los datos antes de que se publiquen las analíticas» (p. 5); «Monitoreo del pipeline de valor mediante pruebas» (p. 4); «Pruebas de validación de la data y la lógica de negocio» (p. 7); «Implemente procesos automáticos de monitoreo de datos» (p. 12) — ya cubierta: compuerta de aceptación (P402 H03), conciliación (P440), cuarentena (P441) y observabilidad integrada (P442 H02).
+
+## S03.P442.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - «Historical balance: Se comparan los datos actuales con datos previos o valores esperados» (p. 5) — marginal: sustituiría el mínimo fijo de volumen por una referencia histórica; exige una serie de ejecuciones que el caso no tiene (S03: «Un instante; sin historia»); la comparación referencia–actual ya se enseña en P422 H01.
+  - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» (p. 5) — fuera de alcance en esta forma: requiere series temporales de métricas operativas que ningún caso del curso tiene; sin datos para enseñarlo con rigor.

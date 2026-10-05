@@ -353,3 +353,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas en español que contrastan software tradicional y ML, ubican la construcción del modelo dentro de un ciclo con pruebas, despliegue y monitoreo, enumeran prácticas DataOps para reducir deuda técnica (pruebas de código y datos, control de versiones, ramas, múltiples ambientes, contenedores, parametrización, «doble orquestación») y cierran con arquitectura de datos, Agile y recomendaciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P422.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» (p. 5) — fuera de alcance en esta forma: requiere series temporales de métricas operativas que ningún caso del curso tiene; sin datos para enseñarlo con rigor.

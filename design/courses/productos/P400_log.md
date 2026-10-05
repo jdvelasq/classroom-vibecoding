@@ -518,3 +518,16 @@
   - programación tradicional con «Tests basados en ejemplos» frente a ML, donde la lógica se aprende de datos y se prueba por comportamiento (p. 2); «Tests automáticos de data, código y modelos» (p. 3) — ya cubierta: P400–P401 (regla y transformación), P402 (contrato de datos, H01–H04) y P403 (familias de pruebas de modelo, H03).
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «El modelo es una pequeña fracción de lo requerido para el despliegue y monitoreo» (p. 3) — ya cubierta como encuadre del curso entero (s05: el producto terminal es la capacidad operable, no el modelo). Design thinking, Agile y Agile data warehousing (p. 7–8, p. 12), data lake/data marts y esquemas optimizados para lectura (p. 5, p. 9–10) — fuera de alcance (gestión de proyectos y arquitectura empresarial de datos).
+
+## S03.P400.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de pruebas unitarias, de integración, funcionales y de regresión (p. 2: «Pruebas de regresión: se ejecutan cada vez que hay un cambio») — ya cubierta: P400–P401 (unitarias), P417 H01 (flujo/artefacto publicado), P412 H03 y P414–P416 (regresión sobre resultado conocido).
+  - «Los tests deben incluirse en cada etapa del pipeline» con entradas / lógica del negocio / salidas (p. 4) — ya cubierta a lo largo de la secuencia: entradas (P402 H01, P404), lógica (P400–P401), salidas (P417 H01, P440 H02).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - pruebas de desempeño y de humo (p. 2: «capacidad de respuesta, estabilidad y disponibilidad bajo una carga») — fuera de alcance: ingeniería de software/rendimiento; sin capacidad analítica ni datos que lo justifiquen; la disponibilidad como nivel de servicio ya está en P445.
+  - «Analytics es código»: innovation pipeline (datos fijos, código variable → pruebas de regresión) vs. value pipeline (código fijo, datos variables → tests de datos y monitoreo) (p. 3) — marginal: encuadre útil que ya está implícito en la secuencia (P412–P416 regresión con datos fijos; P402, P404, P422, P439–P442 datos variables); no cambia lo que el estudiante hace. Puede usarse para aclarar el encuadre de curso si se reorganiza la secuencia.
+  - análisis de impacto por equipos y «Proceso Waterfall para reducir miedo e incertidumbre» frente a automatización de pruebas (p. 2) — ya cubierta: P415–P416 (verificación automática antes de fusionar).

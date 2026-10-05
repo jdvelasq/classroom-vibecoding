@@ -354,3 +354,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programación tradicional con «Tests basados en ejemplos» frente a ML, donde la lógica se aprende de datos y se prueba por comportamiento (p. 2); «Tests automáticos de data, código y modelos» (p. 3) — ya cubierta: P400–P401 (regla y transformación), P402 (contrato de datos, H01–H04) y P403 (familias de pruebas de modelo, H03).
+
+## S03.P401.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de pruebas unitarias, de integración, funcionales y de regresión (p. 2: «Pruebas de regresión: se ejecutan cada vez que hay un cambio») — ya cubierta: P400–P401 (unitarias), P417 H01 (flujo/artefacto publicado), P412 H03 y P414–P416 (regresión sobre resultado conocido).

@@ -355,3 +355,11 @@
 - **Señales descartadas relevantes:**
   - prácticas «Uso de un sistema de control de versiones», «Estrategia de ramificación y fusión», «Reuso y contenerización», «Parametrización del proceso» (p. 4, p. 6, p. 11) — ya cubierta: P408–P411 (Git, ramas, remoto, PR), P418 (contenedor), P406–P407 (parametrización).
   - «Uso de ambientes múltiples» dev/test/producción con «Subconjunto de datos para desarrollo», «para pruebas» y «para pruebas de desempeño y producción» (p. 6, p. 8) — marginal / fuera de alcance: el contexto de ejecución parametrizado (P406 H01, P407 H01) y el ambiente declarado (P412 H01) cubren lo operable; aprovisionar ambientes con Puppet/Chef/Ansible/Jenkins (p. 6) es cloud/infraestructura, excluido.
+
+## S03.P412.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de pruebas unitarias, de integración, funcionales y de regresión (p. 2: «Pruebas de regresión: se ejecutan cada vez que hay un cambio») — ya cubierta: P400–P401 (unitarias), P417 H01 (flujo/artefacto publicado), P412 H03 y P414–P416 (regresión sobre resultado conocido).

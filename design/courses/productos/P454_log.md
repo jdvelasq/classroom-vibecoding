@@ -356,3 +356,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Historia y Metadatos» y «DataOps Métricas y Reportes» (p. 6); «Tenga un gobierno de datos estricto» (p. 9) — ya cubierta: linaje (P443), ficha de catálogo (P454), retención (P455).
+
+## S03.P454.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre calidad de datos en DataOps: análisis de impacto y automatización de pruebas, tipos de pruebas, «Analytics es código» (innovation pipeline vs. value pipeline), pruebas en cada etapa (entradas, lógica de negocio, salidas) con niveles de severidad y acción, y tipos de prueba con notificación (location balance, historical balance, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

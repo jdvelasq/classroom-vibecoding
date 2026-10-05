@@ -354,3 +354,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Uso de ambientes múltiples» dev/test/producción con «Subconjunto de datos para desarrollo», «para pruebas» y «para pruebas de desempeño y producción» (p. 6, p. 8) — marginal / fuera de alcance: el contexto de ejecución parametrizado (P406 H01, P407 H01) y el ambiente declarado (P412 H01) cubren lo operable; aprovisionar ambientes con Puppet/Chef/Ansible/Jenkins (p. 6) es cloud/infraestructura, excluido.
+
+## S03.P406.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre calidad de datos en DataOps: análisis de impacto y automatización de pruebas, tipos de pruebas, «Analytics es código» (innovation pipeline vs. value pipeline), pruebas en cada etapa (entradas, lógica de negocio, salidas) con niveles de severidad y acción, y tipos de prueba con notificación (location balance, historical balance, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
