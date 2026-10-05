@@ -122,3 +122,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Understand how the principles of Lean DevOps can be applied to optimizing data systems» (p. 7, resultado 08); testimonio sobre «data pipelines, low code/no-code, CI/CD, cloud deployment, data compliance» (p. 9) — ya cubierta: versiones, revisión y CI (P408–P416); «cloud deployment» y no-code son fuera de alcance (cloud engineering, capacitación en plataforma).
+
+## S03.P415.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas de ciencia de datos y ML (Python y estadística, no supervisado, regresión, clasificación, deep learning, sistemas de recomendación, redes y modelos gráficos) con casos de estudio; no trata despliegue, operación ni monitoreo de capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

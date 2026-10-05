@@ -122,3 +122,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «The API Problem and Apollo Graph» (p. 14, módulo 3) — marginal/fuera de alcance: GraphQL es otra tecnología de interfaz para lo que P425 ya enseña como contrato con errores explicables (H01–H02); su elección es arquitectura de software.
+
+## S03.P425.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas de ciencia de datos y ML (Python y estadística, no supervisado, regresión, clasificación, deep learning, sistemas de recomendación, redes y modelos gráficos) con casos de estudio; no trata despliegue, operación ni monitoreo de capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

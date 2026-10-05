@@ -183,3 +183,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - módulos de IA para líderes, SQL y diseño de bases de datos, «Modern Data Stack», nube, blockchain y diseño de organizaciones (pp. 7, 14–15) — fuera de alcance: liderazgo, arquitectura de datos y cloud, excluidos explícitamente por las fronteras del curso.
   - «Ethics – AI Bias and Fairness» (p. 15) — fuera de alcance: la evaluación de sesgo de un modelo pertenece a Predictiva y el curso no tiene caso con grupos.
+
+## S03.P400.15
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas de ciencia de datos y ML (Python y estadística, no supervisado, regresión, clasificación, deep learning, sistemas de recomendación, redes y modelos gráficos) con casos de estudio; no trata despliegue, operación ni monitoreo de capacidades analíticas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Building a system: Algorithmic and system challenges» de un sistema de recomendación (p. 10) — fuera de alcance: sin contenido detallado, y el curso no opera recomendadores.
+  - resto del temario (estadística, clustering, PCA, regresión causal, deep learning, redes, Kalman; pp. 6–11) — fuera de alcance: contenidos de Descriptiva/Predictiva u otras disciplinas contribuyentes.
