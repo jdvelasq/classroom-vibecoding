@@ -1,0 +1,12 @@
+# Log — P320
+
+## S02.P320.01
+
+- **Fecha:** 2026-10-04; **curso / executor:** `prescriptiva` / `Claude`; **estado:** inicial.
+- **Rutas inspeccionadas:** `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/` (`data/policy_impacts.csv`, `professor/main.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` sin celdas, cuatro artefactos de `submission/`, `tests/test_activity.py`); para relaciones, P300 y P306.
+- **Trazabilidad revisada:** P320 → `prescriptiva.C04`, `C05`. Ambas sustentadas en el contrato.
+- **Highlights:** añadidos H01–H03. H01 es el highlight obligatorio de caso y datos (grano política × grupo; la unidad de juicio es la política). Cifras de `equity_audit.csv` y `policy_correction_decisions.csv`; los totales de beneficio (21.000 y 18.000) son sumas de filas de los datos.
+- **Ambigüedades:** (1) las celdas de `professor/notebook.ipynb` contienen secuencias `\n` literales en vez de saltos de línea: la primera celda es un único comentario y la segunda no es Python válido, por lo que el notebook no se ejecuta; (2) la decisión «suspend_and_correct» no va acompañada de una corrección; (3) no se audita ninguna política producida en el curso, aunque la arquitectura la define como transversal; (4) procedencia del dataset no declarada; (5) la prueba sólo verifica presencia de archivos.
+- **Superficies / contrato / dependencias:** S01–S06 declaradas. Recibe sólo el patrón de contrato; no habilita dependencias demostrables.
+- **Auditoría de Analytics:** producto terminal = decisión de aprobar o suspender una política con guarda, autoridad, escalamiento y gatillos. Auditoría resuelta en el contrato; incompleta frente a la arquitectura (falta la corrección).
+- **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».

@@ -1,0 +1,12 @@
+# Log — P317
+
+## S02.P317.01
+
+- **Fecha:** 2026-10-04; **curso / executor:** `prescriptiva` / `Claude`; **estado:** inicial.
+- **Rutas inspeccionadas:** `implementation/prescriptiva/P317_flood_protection_investment/` (`data/protection_parameters.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` sin celdas, seis artefactos de `submission/`, `tests/test_activity.py`); para relaciones, P310, P313–P316 y P318.
+- **Trazabilidad revisada:** P317 → `prescriptiva.C02`, `C03`, `C04`, `C05`. C02 y C04 sustentadas; C03 limitada a referencias, validación analítica y sensibilidad determinista; C05 con un gatillo cuantificado y sin plan de monitoreo persistido.
+- **Highlights:** añadidos H01–H08. H01 es el highlight obligatorio de caso y datos (caso paramétrico de siete parámetros, riesgo como forma funcional, período de retorno como inverso de probabilidad). Cifras tomadas de `investment_comparison.csv`, `risk_sensitivity.csv`, `flood_protection_policy_actions.csv` y del contrato persistido; la fila `k = 750.000` de sensibilidad no es visible en la cabecera inspeccionada y no se cita.
+- **Ambigüedades:** (1) la prueba sólo exige un archivo cualquiera en `submission/`, desproporcionada frente al contrato que el notebook produce; (2) `target_protection_m` = `economic_protection_m` en los tres casos: el óptimo económico coincide con la probabilidad objetivo y el escalamiento depende sólo del presupuesto, sin mostrar conflicto entre eficiencia y objetivo de riesgo; (3) los casos de riesgo se fijan en código pero la columna se llama `observed_annual_flood_probability`; (4) procedencia declarada sólo como «inspirado en» la planeación holandesa; (5) presupuesto y objetivo no aparecen en la cabecera del CSV inspeccionado, sólo en el contrato.
+- **Superficies / contrato / dependencias:** S01–S08 declaradas. Recibe de P316 (y P305/P308/P315) el uso de PuLP + HiGHS que aquí se rechaza explícitamente; de P310, el patrón de escalamiento a comité. No habilita dependencias demostrables.
+- **Auditoría de Analytics:** producto terminal = regla anual de aprobación de inversión con tope presupuestal, autoridad en dos niveles, escalamiento y gatillos; la optimización no lineal es evidencia, como declara el notebook. Auditoría resuelta con el límite de casos de riesgo hipotéticos y prueba mínima.
+- **Cambios de IDs:** ninguno. No se creó la sección «Mejoras aceptadas pendientes de implementación».

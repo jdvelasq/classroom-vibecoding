@@ -1,0 +1,12 @@
+# Log — P316
+
+## S02.P316.01
+
+- **Fecha:** 2026-10-04; **curso / executor:** `prescriptiva` / `Claude`; **estado:** inicial.
+- **Rutas inspeccionadas:** `implementation/prescriptiva/P316_humanitarian_food_aid/` (`data/suppliers.csv`, `data/destinations.csv`, `data/transport.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` sin celdas, cinco artefactos de `submission/`, `tests/test_activity.py`); para relaciones, P305, P308, P313–P315 y P317–P318. Contexto de diseño: `activity-architecture.md`, `s05-diseno-prescriptiva.md`, `audit-against-design.md`.
+- **Trazabilidad revisada:** P316 → `prescriptiva.C02`, `C03`, `C04`, `C05`. C02 y C04 sustentadas; C03 parcial (líneas base y sensibilidad de un parámetro, sin incertidumbre); C05 parcial (monitoreo sin umbrales).
+- **Highlights:** añadidos H01–H08. H01 es el highlight obligatorio de caso y datos (red con holgura global 670/550 t y escasez local de S1; matrices filas = proveedores, columnas = destinos). Cifras citadas sólo de `plan_comparison.csv`, `shipment_plan.csv`, `supplier_utilization.csv` y de los datos; penalizaciones y sensibilidad de S1 se describen sin valores por no persistirse.
+- **Ambigüedades:** (1) los comentarios «W04–W06» y «W07» usan una numeración heredada que no coincide con P300–P322 (P313/P314 se llaman W12/W13), lo que sugiere que P316 precedía a P313–P315 en el orden original; (2) la guarda «un destino no alcanza 100 %» no puede activarse en el plan porque la demanda es restricción de igualdad, y no hay datos de ejecución; (3) las guardas escalan a una «asignación de escasez» y «priorización por necesidad» no implementadas; (4) el cumplimiento por destino se calcula pero no se persiste; (5) no se discute unicidad del óptimo.
+- **Superficies / contrato / dependencias:** S01–S09 declaradas. Pruebas verifican existencia de plan y contrato y campos no vacíos, no cálculos. Recibe el patrón de P305/P308/P315; habilita la práctica de LP continuo sin enumeración reutilizada en P318. Sin artefactos compartidos.
+- **Auditoría de Analytics:** el producto terminal es una política de abastecimiento-distribución con recomendación, aprobación humana, bloqueo y gatillos; el LP aporta factibilidad y validación. Auditoría resuelta con el límite de que monitoreo y escasez quedan declarados, no operados.
+- **Cambios de IDs:** ninguno (pasada inicial). No se creó la sección «Mejoras aceptadas pendientes de implementación».
