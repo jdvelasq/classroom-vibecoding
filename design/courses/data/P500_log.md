@@ -514,3 +514,16 @@
   - ciclo de vida con adquisición, exploración y preparación de datos (p. 11 «Data acquisition, Data exploration, Data preparation, Feature engineering, Data pipeline development») — ya cubierta en sus etapas de datos (P503, P510, P511, P516); el resto (despliegue, entrenamiento) fuera de alcance.
   - hipótesis de épica que declara fuentes a integrar (p. 13 «Integrating — Sources and data types — Financial transactions and customer identity data») — marginal: derivar fuentes de un objetivo ya se ejerce como requisitos desde la pregunta (P517 H02, P500 H02); el formato de épica es gestión de portafolio.
   - Scrum, XP, Kanban, SAFe, roles y ceremonias (pp. 2–9, 12–14) — fuera de alcance: gestión de proyectos y organización de equipos no son capacidades `data.C01`–`C05`.
+
+## S03.P500.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de lógica de negocio y de datos antes de entregar (p. 4 «Tests para verificar los datos (lógica de negocio, tipo de dato, outliers, tendencias, consistencia, …)»; p. 9 «Hay al menos un test en cada paso») — ya cubierta: P500 H04 (compuerta de calidad), P510 H03 (conciliación agregado–fuente, el «balance»), P511 H02 (cardinalidad), P516 H02 (reglas nombradas).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ramas, múltiples ambientes, contenedores, CI/CD, orquestación (pp. 11–17) — fuera de alcance: pipelines productivos y operación son frontera explícita del curso.
+  - MLOps (p. 20 «Model serving», «Monitoreo del desempeño, incidentes y reentrenamiento») — fuera de alcance (productos de datos/MLOps).
+  - cadena de suministro de datos y equipos (p. 19 «No se puede crear un dataset por cada idea nueva»; p. 18) — fuera de alcance: organización de equipos de datos.
+  - principios de código fuente (p. 22 «Modularidad • Funciones dedicadas a una sola tarea … Testing • Control de versiones • Logging») — ya cubierta por la sección «Code clarity» de `AGENTS.md`; no es contenido del curso.

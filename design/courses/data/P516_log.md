@@ -341,3 +341,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - calidad como prioridad y monitoreo (p. 10 «Quality is paramount», «Monitor quality and performance») — ya cubierta: P516 H02, P517 H03–H04; el monitoreo continuo es de productos de datos.
+
+## S03.P516.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación que define DataOps como combinación de Agile, Lean y DevOps para la calidad del dato; siete pasos de implementación (pruebas en cada etapa, control de versiones, ramas, ambientes, contenedores, parametrización, «trabajar sin miedo»), diferencias con DevOps, MLOps y ciclo de vida de ciencia de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

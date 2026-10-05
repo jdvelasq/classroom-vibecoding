@@ -331,3 +331,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - calidad como prioridad y monitoreo (p. 10 «Quality is paramount», «Monitor quality and performance») — ya cubierta: P516 H02, P517 H03–H04; el monitoreo continuo es de productos de datos.
+
+## S03.P517.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - contrato y aceptación de cambios (p. 7 «Historias de usuario — Requerimientos — Criterios de aceptación») — ya cubierta: P517 H02–H04.

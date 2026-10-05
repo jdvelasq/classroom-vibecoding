@@ -346,3 +346,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reproducibilidad como principio (p. 10 «Make it reproducible», «Analytics is code») — ya cubierta: `data.C04`; P503 H01 (consulta junto al export), P502 H03 (linaje), P500 H03 (contrato persistido).
+
+## S03.P502.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reproducibilidad determinista y control de versiones (p. 10 «El pipeline es determinístico con resultados reproducibles»; «El sistema de control de versiones permite manejar los cambios») — ya cubierta en lo que toca al curso: P503 H01 (consulta preservada), P502 H03 (linaje); el control de versiones del código es práctica transversal del repositorio, no contenido de `data`.
