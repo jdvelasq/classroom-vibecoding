@@ -262,3 +262,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ficha de módulo de posgrado (temario indicativo, pp. 1–2); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P210.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pronóstico de nuevos productos, tendencia y estacionalidad (p. 1): ya cubierta (H01–H03: difusión Bass frente a persistencia).

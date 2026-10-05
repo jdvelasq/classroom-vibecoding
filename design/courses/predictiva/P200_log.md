@@ -321,3 +321,11 @@
 - **Señales descartadas relevantes:**
   - árboles de decisión para clasificación (p. 1): se añade como fuente de N01.
   - regresión lineal, mínimos cuadrados y regresión logística (p. 1): ya cubiertas (P200, P201, P204).
+
+## S03.P200.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Decision Trees» (p. 1): en este programa son árboles de análisis de decisión usados con optimización y simulación (prescriptivo), no árboles de aprendizaje; no se añade como fuente de N01.

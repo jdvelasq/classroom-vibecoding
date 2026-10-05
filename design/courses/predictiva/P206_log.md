@@ -291,3 +291,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - clustering jerárquico, k-means y k-center, y elección de métricas de distancia (p. 1): ya cubierta en lo esencial (H01–H03); otros algoritmos serían variaciones.
+
+## S03.P206.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.

@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - análisis de redes sociales y medidas de centralidad (p. 1): fuera de alcance; producto descriptivo.
+
+## S03.P225.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.
