@@ -202,3 +202,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - configurar flujos de trabajo y decisiones para ML (p. 16: «Configuring workflows and decisions for machine learning (ML)») — ya cubierta: modo proporcional de ejecución por entidad (P303 H01) y automatización acotada con autoridad sobre parámetros (P304 H06).
+
+## S03.P303.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de diez meses con cinco cursos (ingeniería de datos, Python, estadística, IA/ML, storytelling y visualización), sin contenido prescriptivo explícito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

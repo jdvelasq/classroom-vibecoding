@@ -293,3 +293,14 @@
   - Folleto de un programa ejecutivo mixto en cinco fases: panorama y modelos de negocio de IA, liderazgo con analítica predictiva e IA generativa/agéntica, innovación, pensamiento de futuros para la decisión estratégica y gobernanza y controles de IA. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - modelos de negocio, transformación organizacional, capital de riesgo corporativo e IA agéntica (p. 5, 16, 19) — fuera de alcance: estrategia y gestión, no analítica prescriptiva.
+
+## S03.P300.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de diez meses con cinco cursos (ingeniería de datos, Python, estadística, IA/ML, storytelling y visualización), sin contenido prescriptivo explícito. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Definir casos de negocio (coste-beneficio) a partir del análisis de un conjunto de datos para dar recomendaciones justificadas sobre una acción a realizar» (p. 8) — ya cubierta: recomendaciones con valor esperado, costo y razón de descarte desde P300 H01 y P302 H01.
+  - ingeniería de datos, SQL, Python, estadística y ML (pp. 5–7) — fuera de alcance: Fundamentos de data, Descriptiva y Predictiva.

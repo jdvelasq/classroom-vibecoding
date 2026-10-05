@@ -201,3 +201,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - decisión bajo incertidumbre y planeación de escenarios (p. 5: «Scenario planning • Horizon scanning • Decision-making under uncertainty»; p. 17) — fuera de alcance en su forma (prospectiva estratégica cualitativa para la alta dirección, no política operativa recurrente); la decisión cuantitativa por escenarios ya está en P309 H02–H06 y P314 H01–H05.
+
+## S03.P309.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de diez meses con cinco cursos (ingeniería de datos, Python, estadística, IA/ML, storytelling y visualización), sin contenido prescriptivo explícito. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

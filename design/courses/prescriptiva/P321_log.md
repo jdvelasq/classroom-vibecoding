@@ -204,3 +204,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gobernanza de IA, controles empresariales, riesgo, confianza y rendición de cuentas (p. 4, 8, 17) — ya cubierta: salvaguardas, autoridad, monitoreo y gatillos de P320–P321; el documento sólo lista temas.
+
+## S03.P321.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Anticipar y gestionar las preguntas de los diversos públicos y audiencias» (p. 8) — marginal: la comunicación de la política a su autoridad ya se materializa en contratos y registros (P321 H01–H02); no cambia lo que el estudiante hace.
