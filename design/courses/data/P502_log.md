@@ -234,3 +234,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «el uso de metadatos para la investigación a través de ejercicios de modelación aplicables en distintos aspectos de la realidad» (p. 79) — ya cubierta: mención incidental sobre recursos didácticos, sin contenido técnico; la documentación de datos con catálogo y linaje ya está en P502 H01–H03 (`data.C04`). No aporta nada sobre qué metadatos ni cómo.
+
+## S03.P502.27
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - circular de la Dirección Académica de la Sede Manizales. Establece una «Ruta de Armonización Curricular» en cuatro etapas: marco normativo, pertinencia y resultados de aprendizaje, organización curricular, e implementación y evaluación continua. La orienta al Acuerdo 02 de 2020 del CESU (resultados de aprendizaje) y al Acuerdo 033 de 2007 del CSU, en las dimensiones macro, meso y microcurricular. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

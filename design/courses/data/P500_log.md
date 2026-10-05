@@ -348,3 +348,15 @@
   - recursos «simulaciones, casos de estudio», «laboratorios virtuales», «repositorio de software» (p. 72) y aulas híbridas/virtualidad (pp. 72, 80) — marginal: medios didácticos genéricos; el curso ya opera con talleres en código, datasets en repositorio y distribución por GitHub.
   - participación de egresados para leer el mercado laboral y la pertinencia del perfil (pp. 106–107) y objetivos medibles de la armonización (p. 110) — fuera de alcance: gobernanza curricular de programa, no contenido de un taller.
   - «Diferencias entre administración, contaduría, economía» y «No sólo la aplicación de modelos económicos» (p. 72) — fuera de alcance: notas de mapa mental de otros programas; sin relación con datos para analítica.
+
+## S03.P500.27
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - circular de la Dirección Académica de la Sede Manizales. Establece una «Ruta de Armonización Curricular» en cuatro etapas: marco normativo, pertinencia y resultados de aprendizaje, organización curricular, e implementación y evaluación continua. La orienta al Acuerdo 02 de 2020 del CESU (resultados de aprendizaje) y al Acuerdo 033 de 2007 del CSU, en las dimensiones macro, meso y microcurricular. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - resultados de aprendizaje como «declaraciones expresas de lo que se espera que un estudiante conozca y demuestre» (p. 2) — fuera de alcance de S03: es gobernanza del diseño (S04.F11). `s05-diseno-data.md` ya fija las capacidades `data.C01`–`C05` y deja pendientes los RAA. El documento no aporta contenido de datos que cambie un taller.
+  - dimensión microcurricular, es decir didácticas y evaluación de aprendizajes (p. 2), y diseño de «mecanismos de monitoreo y evaluación» de los RA (p. 3) — fuera de alcance de S03: afecta la trazabilidad RAP/RAA y la evaluación del curso, no lo que el estudiante hace en un Pxxx. La evaluación de talleres ya está fijada (participación con `pytest`).
+  - pertinencia frente a «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento» (p. 3) — marginal: principio institucional genérico sin señal disciplinar concreta. La familia institutional ilustra, no impone.
