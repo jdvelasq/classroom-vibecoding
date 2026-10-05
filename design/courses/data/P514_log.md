@@ -354,3 +354,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ramas feature/dev/master, tests de integración, pre-release, orquestación, despliegue a producción (p. 5); «Orquestación manual» como cuello de botella (p. 6). Categoría: fuera de alcance. Es CI/CD y operación de pipelines productivos, frontera excluida del curso (pertenece a productos de datos); reforzarlo agravaría el riesgo de identidad ya señalado en P513–P515.
+
+## S03.P514.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - arquitectura raw lake → refined, «Limpie, cure y transforme solo los datos requeridos», data lake alineado al warehouse (pp. 5, 9) — fuera de alcance: arquitectura de datos y pipelines productivos excluidos; refuerza la lectura de P513/P514/P525 como ingeniería, ya registrada.

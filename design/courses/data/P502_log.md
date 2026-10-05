@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - herramientas de catálogo (Alation, Collibra, Wikis) y Data Governance como «Gestión del catalogo de datos y resultados de los modelos» (p. 2). Categoría: ya cubierta. P502 H01–H03 (inventario con grano, consumidor y linaje); nombrar productos comerciales no cambia lo que el estudiante hace.
+
+## S03.P502.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - material de clase sobre DataOps: desarrollo tradicional frente a ML, deuda técnica, pruebas de datos y lógica, control de versiones, ambientes múltiples, contenedores, arquitectura canónica (raw lake → refined → data science), agile data warehousing, data lake y esquemas para análisis. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

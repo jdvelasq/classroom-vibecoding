@@ -347,3 +347,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Tests de datos» en el desarrollo (p. 5); «Robustez: por el uso de tests» (p. 2); «Monitoreo de la lógica de negocio y validez de los datos» (p. 10). Categoría: ya cubierta. Controles de calidad ejecutables que bloquean la salida (P500 H04), reglas nombradas con dimensión y conteo (P516 H02) y contratos ejercitados con lotes perturbados (P517 H04). La debilidad transversal «Pruebas: sólo existencia» ya está registrada por S02 en cada Pxxx; esta presentación organizacional no aporta un argumento nuevo para corregirla.
+
+## S03.P517.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - material de clase sobre DataOps: desarrollo tradicional frente a ML, deuda técnica, pruebas de datos y lógica, control de versiones, ambientes múltiples, contenedores, arquitectura canónica (raw lake → refined → data science), agile data warehousing, data lake y esquemas para análisis. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

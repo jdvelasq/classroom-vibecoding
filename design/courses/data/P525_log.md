@@ -348,3 +348,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación organizacional sobre DataOps: silos entre equipos (TI, ingeniería, ciencia de datos, visualización, gobierno), coordinación relacional, flujo de ramas con pruebas de datos y de código, Kanban y teoría de restricciones, priorización de resultados por oportunidad y trampas del CDO. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P525.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - arquitectura raw lake → refined, «Limpie, cure y transforme solo los datos requeridos», data lake alineado al warehouse (pp. 5, 9) — fuera de alcance: arquitectura de datos y pipelines productivos excluidos; refuerza la lectura de P513/P514/P525 como ingeniería, ya registrada.

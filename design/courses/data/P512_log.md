@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación organizacional sobre DataOps: silos entre equipos (TI, ingeniería, ciencia de datos, visualización, gobierno), coordinación relacional, flujo de ramas con pruebas de datos y de código, Kanban y teoría de restricciones, priorización de resultados por oportunidad y trampas del CDO. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P512.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «En DA debe ser optimizado para lecturas, agregaciones y entendimiento de las personas» frente al esquema operacional «optimizado para inserciones y actualizaciones» (p. 10) — ya cubierta por P512 H02–H03 (hecho y dimensiones para reagregar); la candidata de Kimball sobre P512 no depende de esta fuente.

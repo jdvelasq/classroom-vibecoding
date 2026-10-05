@@ -539,3 +539,15 @@
   - priorización de resultados por entrevistas y «Oportunidad = Importancia + max(0, Importancia - Satisfacción)» (p. 7). Categoría: fuera de alcance. Es gestión de mejoras de un equipo de datos, no derivación de requisitos de datos desde una pregunta analítica (`data.C01`); no hay caso ni producto de datos donde aplicarlo.
   - «Corrección de errores en las fuentes de datos», «Preparación de datasets» como trabajo no planificado (p. 4); «Errores en datos» como cuello de botella (p. 6). Categoría: marginal. Contexto organizacional que confirma la pertinencia de `data.C03`, ya ejercida en P516–P517; no especifica práctica alguna.
   - coordinación relacional, Kanban, teoría de restricciones, trampas del CDO, etapas «Data Desert → Boutique → Waterfall → DataOps Analytics» (pp. 3, 6, 9, 11). Categoría: fuera de alcance. Perspectiva de gestión y madurez organizacional, sin contenido de preparación de datos para un estudiante de pregrado.
+
+## S03.P500.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - material de clase sobre DataOps: desarrollo tradicional frente a ML, deuda técnica, pruebas de datos y lógica, control de versiones, ambientes múltiples, contenedores, arquitectura canónica (raw lake → refined → data science), agile data warehousing, data lake y esquemas para análisis. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Tests de lógica y de datos», «Pruebas de validación de la data y la lógica de negocio» (pp. 6–7) — marginal: las reglas y aserciones de P500 H04, P511 H02, P516 H02 y P517 ya ejercen validación de datos al servicio de una pregunta; las pruebas automatizadas de pipeline son DataOps.
+  - control de versiones, ramificación, ambientes dev/test/prod, Docker, orquestación (Airflow, Jenkins) (pp. 4, 6, 11) — fuera de alcance (operación de pipelines, MLOps).
+  - «Los dashboards son tan valiosos como la data detrás de ellos, la cual usualmente es de baja calidad» (p. 12) — contexto: confirma el propósito del curso; no implica cambio.
