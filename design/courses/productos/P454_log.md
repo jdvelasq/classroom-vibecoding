@@ -43,3 +43,11 @@
 - **Señales descartadas relevantes:**
   - CAP-P.6.4.2 documentación del modelo y del reporte «so that the analytics solutions can be reused if the business circumstances should change» (p. 23); Task 7.6 y CAP-P.7.6.1 «Identify the types of documentation needed for various audiences» (p. 25) — ya cubierta: ficha operacional (P454 H01–H02), runbook para quien atiende (P446 H01–H02), contrato documentado con respuestas ejecutadas para el consumidor (P425 H02).
   - CAP-P.3.2.2 «overlaps and gaps in responsibility, including roles responsible for data governance» (p. 14); CAP-P.3.3.1 consecuencias de «lack of responsibility for data ownership» (p. 14) — ya cubierta: responsable en la tarjeta (P411 H02) y en la ficha de catálogo (P454 H01).
+
+## S03.P454.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

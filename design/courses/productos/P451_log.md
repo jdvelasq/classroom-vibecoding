@@ -41,3 +41,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 7.5 «Analyze the side effects of the analytics solution over time»; CAP-P.7.5.1 «Identify likely adverse consequences» (p. 25) — fuera de alcance: sin caso ni datos de efectos; P451 ya conserva la señal negativa del consumidor (H02) como canal operativo.
+
+## S03.P451.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

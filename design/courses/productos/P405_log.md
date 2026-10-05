@@ -41,3 +41,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Temario del examen CAP-Pro derivado del INFORMS Analytics Framework: siete dominios del ciclo de vida analítico con tareas y subtareas evaluables (pesos: Deployment 10 %, Lifecycle Management 9 %). Sólo los dominios VI–VII y algunas subtareas de III (linaje, gobierno, calidad) tocan la operación de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P405.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sellos de tiempo de ejecución y versiones del entorno como metadatos de auditoría (p. 23) — ya cubierta en parte: P405 H01 (ciclo de vida de la ejecución) y P412 H02 (versiones de dependencias); lo que falta (versión de la lógica ligada a la salida) se recoge en la candidata de P443.

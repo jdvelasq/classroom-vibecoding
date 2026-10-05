@@ -41,3 +41,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-P.3.4.3 «Identify the purpose of lineage, traceability, and version control of data» (p. 15) — ya cubierta: huella de datos (P431 H01), linaje del agregado (P443 H02), versión de la definición (P408 H01–H02).
+
+## S03.P443.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - el grano como «binding contract on the design» y no mezclar granos (p. 5) — ya cubierta: P402 H02 (llave derivada del grano máquina-día) y P443 H01 (cambio de grano que el linaje explica).

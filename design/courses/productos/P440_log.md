@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-P.6.6.1 «Identify causes of incorrect data in production systems» (p. 23) — ya cubierta: contrato de datos (P402), compatibilidad de entradas (P404), registros tardíos (P437), frescura (P439), conciliación (P440), cuarentena (P441), observabilidad integrada (P442).
+
+## S03.P440.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - hechos aditivos, semiaditivos y no aditivos (p. 7) — fuera de alcance: semántica de medidas propia de Descriptiva/Fundamentos; el total de control de P440 opera sobre una medida aditiva sin requerir el contraste.

@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-P.3.2.2 «overlaps and gaps in responsibility, including roles responsible for data governance» (p. 14); CAP-P.3.3.1 consecuencias de «lack of responsibility for data ownership» (p. 14) — ya cubierta: responsable en la tarjeta (P411 H02) y en la ficha de catálogo (P454 H01).
+
+## S03.P411.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reunir requisitos del negocio y «data realities» en talleres colaborativos con representantes de gobierno de datos (p. 4) — ya cubierta en lo pertinente al curso: P408 H01 (consumidor, métrica y unidad), P411 H02 (autoridad responsable); el resto es diseño del modelo, de otros cursos.

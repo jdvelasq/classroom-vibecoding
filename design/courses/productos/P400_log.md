@@ -60,3 +60,14 @@
   - Task 7.3 «Support training activities»; CAP-P.7.3.1 «type of training that is needed for an IT audience» (p. 25) — fuera de alcance: gestión del cambio/capacitación, no operación de la capacidad.
   - CAP-P.4.4.1 fortalezas y debilidades del stack «on-premise, cloud, open source vs. proprietary, platforms» (p. 18) — fuera de alcance: selección de plataforma/cloud engineering, excluida por las fronteras del curso.
   - CAP-P.2.6.2 y CAP-P.5.3.5 sesgo en datos de entrenamiento y resultados no éticos (pp. 12, 20) — fuera de alcance: método predictivo de origen.
+
+## S03.P400.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - dimensiones lentamente cambiantes tipos 0–7 (pp. 15–16: tipo 1 «destroys history»; tipo 2 con «row effective date … row expiration date … current row indicator») — fuera de alcance: el diseño de historia de atributos es modelado dimensional (Fundamentos de data / Descriptiva). Como preocupación operativa (un agregado publicado cambia según se reporte «as-was» o «as-is»), no existe en el curso un atributo de referencia que cambie (p. ej., reasignación de máquina a fábrica) y crear uno sería un dato sintético por conveniencia; sólo se recuperó la consecuencia operativa (reexpresar agregados) en la candidata de P438.
+  - arquitectura de bus, matriz de bus y matriz oportunidad/interesados (pp. 13–14), agregados y navegación de agregados (p. 8), tablas de hechos en tiempo real con «hot partition» (p. 24), monedas y unidades múltiples (p. 19) — fuera de alcance: arquitectura empresarial de datos y diseño físico de bodegas, excluidos por las fronteras del curso.

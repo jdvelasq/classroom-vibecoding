@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Tasks 6.1–6.3 validación de negocio, «business validation report» y acuerdo del patrocinador antes de desplegar (pp. 22–23) — fuera de alcance en su núcleo (juzgar si la solución resuelve el problema de negocio es responsabilidad del curso de origen: Predictiva/Prescriptiva); la parte operable ya está en la compuerta técnica (P403 H02) y la autorización humana explícita (P450 H02).
+
+## S03.P403.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

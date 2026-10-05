@@ -43,3 +43,12 @@
 - **Señales descartadas relevantes:**
   - CAP-P.6.6.1 «Identify causes of incorrect data in production systems» (p. 23) — ya cubierta: contrato de datos (P402), compatibilidad de entradas (P404), registros tardíos (P437), frescura (P439), conciliación (P440), cuarentena (P441), observabilidad integrada (P442).
   - CAP-P.3.6.1 dimensiones de calidad «missing data, accuracy, completeness, consistency, timeliness, validity, uniqueness, and outliers» (p. 15) — ya cubierta en su uso operativo (contrato de seis reglas P402 H01, frescura P439 H01, señales integradas P442); el perfilado exploratorio es de Descriptiva.
+
+## S03.P402.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el grano como «binding contract on the design» y no mezclar granos (p. 5) — ya cubierta: P402 H02 (llave derivada del grano máquina-día) y P443 H01 (cambio de grano que el linaje explica).
+  - nulos en claves foráneas sustituidos por fila «unknown» (p. 7) y atributos nulos como «Unknown»/«Not Applicable» (p. 11) — fuera de alcance: reglas de diseño del modelo dimensional; la validación de completitud del insumo ya es P402 H01.
