@@ -73,3 +73,14 @@
   - aprendizaje profundo y redes neuronales (p. 5): marginal; P200 ya contrasta MLP con regresión para la predicción cuantitativa del caso (H08–H09), y añadir otra arquitectura no cambiaría qué aprende el estudiante a producir.
   - casos de estrategia y creación de valor de IA (pp. 5–6): no anclan mejora a P200; su producto estima MPG, sin una decisión de flota ni caso organizacional de adopción de IA definido.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se separó «calidad/representatividad» de «entrenamiento/validación/prueba»: la primera no está cubierta por H02–H03 (nulos y fuga de información), como afirmaba la entrada.
+
+## S03.P200.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H03: partición reproducible sin filtración).
+  - calidad de datos, representatividad y «por qué fallan los modelos» (p. 5): no cubierta; ningún taller del curso trata representatividad ni cambio de distribución entre entrenamiento y uso. No sustentada como propuesta por este documento (un enunciado en un programa ejecutivo sin método ni caso); señal a contrastar con fuentes *authoritative*.
+  - del ML tradicional a redes neuronales (p. 5): ya cubierta (H08–H09: MLP contrastada con regresión sobre la misma partición).
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

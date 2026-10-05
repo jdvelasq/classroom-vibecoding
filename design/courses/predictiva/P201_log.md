@@ -54,3 +54,13 @@
   - aprendizaje profundo y CNN para visión (p. 5): marginal; P201 ya permite hacer predicciones multiclase y revisar errores/probabilidades (H03–H05), y una arquitectura adicional con load_digits no cambia la pregunta ni el producto terminal.
   - interacción humano–IA, supervisión y responsabilidad de alto riesgo (p. 5): marginal para el clasificador educativo de dígitos, que no tiene usuario ni decisión organizacional; el texto no plantea un riesgo o contexto concreto que añadir a la revisión de incertidumbre existente.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P201.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - redes neuronales convolucionales y visión artificial (p. 5): fuera de alcance; enunciado sin caso, datos ni evaluación, y una CNN sobre `load_digits` no cambiaría el producto de H03–H05.
+  - interacción humano–IA en contextos de alto riesgo (p. 5): no aplica; el caso educativo de dígitos no tiene usuario ni decisión.
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

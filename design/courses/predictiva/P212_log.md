@@ -27,3 +27,12 @@
 - **Señales descartadas relevantes:**
   - personalización y gestión de riesgos (p. 2): marginal; P212 ya estima permanencia por contrato (H02–H03), pero trasladarlo a una oferta personalizada requeriría datos de intervención/resultado y una pregunta causal que el benchmark no suministra; la propuesta no altera ese límite.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P212.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - personalización y gestión de riesgos (p. 2): fuera de alcance; elegir una oferta de retención está fuera del producto (H04).
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

@@ -26,3 +26,12 @@
 - **Señales descartadas relevantes:**
   - simulaciones para predicción y gestión de riesgos (pp. 2, 4): ya cubiertas por el contraste de tasa estática/adaptativa y los supuestos persistidos (H02–H04); no añade evidencia de validación o incertidumbre que altere el pronóstico.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se eliminó la señal «menciones a vacunación (pp. 6, 9)»: el documento no menciona vacunación.
+
+## S03.P209.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - simulaciones predictivas (p. 4): ya cubierta (H03: contraste de pronósticos con tasa fija y adaptativa).
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

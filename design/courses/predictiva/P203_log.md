@@ -55,3 +55,13 @@
   - sesgo algorítmico (p. 5): marginal para el caso de sentimiento de frases sin decisión financiera; el benchmark no identifica sesgo concreto ni proporciona grupos/etiquetas para una evaluación adicional rigurosa.
   - NLP generativo (pp. 5–6): fuera de alcance de la pregunta clasificatoria actual; no se aporta caso/dataset ni criterio de evaluación para justificar desplazar la clasificación de sentimiento.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P203.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H01, H03: vocabulario aprendido sólo en entrenamiento y partición estratificada).
+  - sesgos algorítmicos (p. 5): no sustentada para este caso; el documento no define grupos ni criterio, y las frases no tienen atributos de grupo.
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

@@ -48,3 +48,14 @@
 - **Señales descartadas relevantes:**
   - supervisión y criterio humano, tolerancia al riesgo, gobernanza (pp. 5–6): ya expresan el límite que H03 traza entre probabilidad/umbral y política, pero no cambian materialmente la capacidad de P205 para revisar probabilidades simuladas; tampoco justifican crear una política con datos ficticios. Se conserva la identidad Predictiva, no se convierte la actividad en Prescriptiva.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P205.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sesgos algorítmicos (p. 5): ya cubierta en la medida que el caso permite (H04: revisión por grupo simulado, sin inferir equidad).
+  - supervisión humana, tolerancia al riesgo y gobernanza (pp. 5–6): ya cubierta como frontera entre umbral y política (H03).
+  - gestión de riesgos como capacidad de IA (p. 2): ya cubierta (H02: consecuencias de umbrales con costos).
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

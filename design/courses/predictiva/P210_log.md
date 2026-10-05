@@ -27,3 +27,12 @@
   - simulaciones para predicción (pp. 1, 4): ya cubierta por pronóstico Bass frente a persistencia y evaluación de seis meses (H02–H03); no se aporta nueva comparación o forma de incertidumbre.
   - estrategia/creación de valor de IA (p. 5): fuera de alcance para el pronóstico de matrículas EV; integrarla requeriría otra pregunta analítica y caso organizacional distinto, no una mejora local al producto predictivo terminal.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P210.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - IA generativa y simulaciones «para hacer predicciones» (pp. 1, 3, 4): no sustentada; el documento no indica método, dato ni evaluación.
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

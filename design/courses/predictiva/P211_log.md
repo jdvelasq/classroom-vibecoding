@@ -26,3 +26,12 @@
 - **Señales descartadas relevantes:**
   - optimización de operaciones/cadena de suministro (p. 2): fuera de alcance para el producto predictivo de P211; convertir el pronóstico de congestión en recomendación de capacidad sería una segunda contribución prescriptiva, sin objetivo, restricciones ni autoridad definidos en los artefactos S02.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+
+## S03.P211.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - optimización de la cadena de suministro (p. 2): fuera de alcance; decidir capacidad sería un producto prescriptivo.
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

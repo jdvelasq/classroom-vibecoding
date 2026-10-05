@@ -55,3 +55,13 @@
   - analítica descriptiva frente a analítica predictiva (p. 5): señal relevante para la identidad Predictiva que S02 dejó sin resolver en esta actividad, cuyo producto actual es descriptivo; el documento sólo enuncia la distinción, sin caso ni criterio para resolverla. Queda como insumo para la decisión de curso, no como propuesta.
   - optimización de cadena de suministro y robótica (pp. 2, 5): fuera de alcance; P206 produce una descripción de perfiles diarios, no estimación futura ni política. Reorientarlo exigiría un producto distinto y datos/decisión de operación no presentes en el S02.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se añadió la señal «analítica descriptiva frente a predictiva» (p. 5), omitida en la entrada original.
+
+## S03.P206.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una segmentación descriptiva de perfiles de demanda (H04). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
+  - aprendizaje no supervisado (p. 5): ya cubierta (H01–H05).
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.

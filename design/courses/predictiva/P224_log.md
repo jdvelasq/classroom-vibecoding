@@ -31,3 +31,13 @@
   - visión artificial, CNN, redes neuronales y capacidades emergentes (pp. 5–6): marginal; la lista técnica no cambia la capacidad pendiente en P224 —contrastar representación con desempeño predictivo— ni justifica añadir otra arquitectura al producto actual. T01 ya propone el menor cambio anclado a H01–H04/S01–S04.
   - proyecto de negocio integrador y caso aplicado a la organización (p. 6): fuera de alcance para anclar un cambio a P224; esa posibilidad implicaría una contribución distinta de curso, con caso/datos definidos y conexión a decisión de negocio, no disponible en la descripción S02 de P224.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado decía «refuerza T01» y a la vez que el documento no la respalda, sin agregarlo a sus fuentes; se dejó «sin cambios» y se añadió la señal descriptiva/predictiva omitida.
+
+## S03.P224.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es tres proyecciones visuales sin estimador (H04). El documento sólo enuncia la distinción, sin caso ni criterio; T01 (revisión del documento de MIT) ya atiende esa identidad; este documento no le aporta evidencia y no se añade a sus fuentes.
+  - visión artificial y redes convolucionales (p. 5): fuera de alcance; no cambia la capacidad pendiente que atiende T01.
+- **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
