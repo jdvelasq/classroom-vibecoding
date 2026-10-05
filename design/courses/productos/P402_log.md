@@ -343,3 +343,11 @@
 - **Señales descartadas relevantes:**
   - pruebas de entradas «Conteo, Conformidad, Historia, Balance, Consistencia temporal… Verificación de los campos» y de salidas «Completitud, Verificación de rango» (p. 4) — ya cubierta: contrato de seis reglas de P402 (H01, H04), conciliación con total de control de P440 (H01) y señales de volumen/esquema de P442.
   - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
+
+## S03.P402.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - beneficios de DataOps: «Robustez: por el uso de tests», «Transparencia: Alertas automáticas, dashboards» (p. 2). El proceso combina «Tests de datos», «Tests de código», «Tests de integración» y pre-release antes de liberar (p. 5). Categoría: **ya cubierta**. El curso tiene pruebas de código (P400–P401), de datos (P402), de modelo (P403), de integración (P417) y verificación previa a fusionar (P415–P416).

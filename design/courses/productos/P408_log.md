@@ -339,3 +339,11 @@
   - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
   - control de versiones, bifurcar y fusionar (p. 10–11) — ya cubierta (H01–H02 de P408–P411).
   - «Epic hypothesis statement» con «For [customers]… Measured by [metrics]… And requiring [non-functional requirements] … 99.99% availability» (p. 25) — marginal: la tarjeta de producto (P408–P411) y la ficha de catálogo (P454) ya declaran consumidor, métrica y responsable; agregar requisitos no funcionales sería un campo más; la desconexión de C01 con nivel de servicio ya está registrada en P445.
+
+## S03.P408.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - flujo de rama de característica, fusión, pre-release y release (p. 5). Categoría: **ya cubierta**. P409 H01 cubre el aislamiento en rama con fusión explícita y P411 H01 la integración mediante revisión. Un ambiente de pre-release intermedio es una variante sin caso que la exija.

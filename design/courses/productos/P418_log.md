@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - contenerización (p. 13) — ya cubierta.
+
+## S03.P418.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - síntoma de fallo: «Testing de la implementación en un ambiente que no es igual al ambiente de producción» y «El grupo de desarrollo difícilmente puede reproducir los fallos» (p. 4). Categoría: **ya cubierta**. Lo resuelven el ambiente declarado (P412 H01), la sesión aislada (P414 H01) y el contenedor (P418 H01).

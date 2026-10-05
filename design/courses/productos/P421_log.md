@@ -337,3 +337,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - fases MLOps (registro, serving, monitoreo, reentrenamiento) (p. 20) — ya cubierta en P420–P426 salvo el criterio de promoción (ver candidata de dataops-03).
+
+## S03.P421.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación de enfoque organizacional para directivos: silos entre equipos de datos, coordinación relacional, flujo de ramas y pruebas hasta la liberación, cuellos de botella con Kanban, priorización por oportunidad, trampas de valor diferido y etapas de madurez. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
+
+## S03.P414.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - síntoma de fallo: «Testing de la implementación en un ambiente que no es igual al ambiente de producción» y «El grupo de desarrollo difícilmente puede reproducir los fallos» (p. 4). Categoría: **ya cubierta**. Lo resuelven el ambiente declarado (P412 H01), la sesión aislada (P414 H01) y el contenedor (P418 H01).

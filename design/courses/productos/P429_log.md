@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Doble orquestación» (p. 16) — marginal: P429 ya declara tareas con dependencias.
+
+## S03.P429.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Eficiencia: orquestación automática» y «Orquestación manual» como cuello de botella (pp. 2, 6). Categoría: **ya cubierta** por P428 H01 y P429 H01–H02.

@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - métricas DevOps (tiempo a producción, frecuencia de liberación, «¿Cuánto tiempo requiere para restablecer el servicio?», porcentaje de cambios que degradan el servicio) (p. 6) — fuera de alcance/marginal: métricas de entrega de software; el curso ya mide nivel de servicio (P445) e incidentes (P447) sobre la capacidad, y añadir métricas de entrega desplaza hacia ingeniería de software.
+
+## S03.P447.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación de enfoque organizacional para directivos: silos entre equipos de datos, coordinación relacional, flujo de ramas y pruebas hasta la liberación, cuellos de botella con Kanban, priorización por oportunidad, trampas de valor diferido y etapas de madurez. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

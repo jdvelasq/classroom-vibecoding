@@ -337,3 +337,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - define DataOps como síntesis de Agile, Lean y DevOps; siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, trabajar sin heroísmo), diferencias DevOps/DataOps, fases de MLOps, ciclo de vida de ciencia de datos y «epic hypothesis statement». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P451.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - priorizar mejoras a partir de entrevistas a usuarios con importancia y satisfacción en escala 1–10: «Oportunidad = Importancia + max(0, Importancia - Satisfacción)» (p. 7). Categoría: **marginal**. Podría parecer una salida para el límite registrado en P451 (la señal de utilidad no alimenta ninguna mejora, C05 sin ejercer). Pero en el documento la fórmula prioriza los pasos del *pipeline* de un equipo, no las respuestas de una capacidad analítica. Llevarla a P451 cambiaría su producto: dejaría de ser un registro de retroalimentación ligado a la respuesta (H01–H02) y pasaría a ser una encuesta de priorización. Además, al ser literatura derivada aporta contexto organizacional, no una prescripción.

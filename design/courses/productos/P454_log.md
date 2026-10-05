@@ -340,3 +340,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Epic hypothesis statement» con «For [customers]… Measured by [metrics]… And requiring [non-functional requirements] … 99.99% availability» (p. 25) — marginal: la tarjeta de producto (P408–P411) y la ficha de catálogo (P454) ya declaran consumidor, métrica y responsable; agregar requisitos no funcionales sería un campo más; la desconexión de C01 con nivel de servicio ya está registrada en P445.
+
+## S03.P454.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación de enfoque organizacional para directivos: silos entre equipos de datos, coordinación relacional, flujo de ramas y pruebas hasta la liberación, cuellos de botella con Kanban, priorización por oportunidad, trampas de valor diferido y etapas de madurez. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

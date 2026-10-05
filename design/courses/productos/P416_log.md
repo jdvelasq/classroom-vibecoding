@@ -338,3 +338,11 @@
 - **Señales descartadas relevantes:**
   - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
   - separación innovation pipeline / value pipeline y pruebas que protegen producción (p. 15–17) — ya cubierta: verificación antes de fusionar (P415 H01) y misma verificación local y remota (P416 H01).
+
+## S03.P416.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - beneficios de DataOps: «Robustez: por el uso de tests», «Transparencia: Alertas automáticas, dashboards» (p. 2). El proceso combina «Tests de datos», «Tests de código», «Tests de integración» y pre-release antes de liberar (p. 5). Categoría: **ya cubierta**. El curso tiene pruebas de código (P400–P401), de datos (P402), de modelo (P403), de integración (P417) y verificación previa a fusionar (P415–P416).

@@ -339,3 +339,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas de entradas «Conteo, Conformidad, Historia, Balance, Consistencia temporal… Verificación de los campos» y de salidas «Completitud, Verificación de rango» (p. 4) — ya cubierta: contrato de seis reglas de P402 (H01, H04), conciliación con total de control de P440 (H01) y señales de volumen/esquema de P442.
+
+## S03.P442.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Monitoreo de la lógica de negocio y validez de los datos» como fuente de confianza (p. 10). Categoría: **marginal**. La validez de los datos ya se observa (P439, P442 H01–H02) y la lógica de negocio se controla con conciliación (P440) y monitoreo de desempeño (P423). El documento sólo nombra la práctica, sin mecanismo, métrica ni caso que añadan una capacidad.

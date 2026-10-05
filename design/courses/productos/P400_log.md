@@ -498,3 +498,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - ciclo de vida con «Decommission» / «Retirement» (p. 23) — marginal: retirar una capacidad no tiene caso ni datos; se menciona como respuesta de ciclo de vida dentro de la propuesta de P424.
   - kanban de ideación, WIP y priorización de épicas (p. 24) — fuera de alcance: gestión de portafolio/proyectos.
+
+## S03.P400.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - beneficios de DataOps: «Robustez: por el uso de tests», «Transparencia: Alertas automáticas, dashboards» (p. 2). El proceso combina «Tests de datos», «Tests de código», «Tests de integración» y pre-release antes de liberar (p. 5). Categoría: **ya cubierta**. El curso tiene pruebas de código (P400–P401), de datos (P402), de modelo (P403), de integración (P417) y verificación previa a fusionar (P415–P416).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - silos y coordinación relacional entre equipos (pp. 2–3), Kanban, trabajo en progreso, tiempo de ciclo y teoría de restricciones (p. 6), trampas del CDO (valor diferido, defensa de los datos; p. 9) y etapas de madurez «Data Desert → Boutique → Waterfall → DataOps Analytics» (p. 11). Categoría: **fuera de alcance**. Son gestión organizacional de equipos y portafolio, no prácticas que hagan operable una capacidad analítica concreta. Servirían a lo sumo como encuadre del curso, no como contenido de un taller.
