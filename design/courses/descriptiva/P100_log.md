@@ -174,3 +174,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Effective business decisions depend on precise forecasting» (p. 6) — fuera de alcance: predictiva.
   - *modern data stack*, ingesta, nube, DevOps Lean, ChatGPT y *no-code* (pp. 7, 14–15) — fuera de alcance: plataformas e ingeniería; estrategia organizacional sin producto descriptivo.
+
+## S03.P100.14
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa en línea de 12 semanas: fundamentos de Python/estadística (pandas, visualización, estadística descriptiva e inferencial), aprendizaje no supervisado (clustering, PCA, clustering espectral y de modularidad), regresión y predicción, clasificación y pruebas de hipótesis, deep learning, sistemas de recomendación y redes/modelos gráficos; con casos de estudio por semana. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - regresión, regularización, árboles, clasificación, SVM, deep learning, sistemas de recomendación, filtros de Kalman, modelos gráficos (pp. 8–11) — fuera de alcance: predictiva y productos de datos.
+  - portafolio de «3 real-life projects and 50+ case studies» (p. 4) — marginal: formato de programa; el curso ya organiza talleres por casos (P120–P125).

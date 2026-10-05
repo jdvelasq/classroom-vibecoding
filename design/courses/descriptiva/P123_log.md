@@ -119,3 +119,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un curso ejecutivo de 8 semanas sobre liderazgo de datos: IA para líderes, marcos de innovación continua de datos, arquitectura TI y SQL, plataformas de datos y diseño de bases, *modern data stack*, nube, ética y gobierno de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P123.14
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - redes con «Centrality measures: degree, eigenvector, and page-rank» y «Degree distribution, clustering» (p. 11) y «Modularity Clustering» (p. 7) — marginal: P123 ya construye co-ocurrencias, comunidades Louvain y redes (H04–H05); la ausencia de modularidad/estabilidad ya está registrada como límite en su actividad (H05) y el folleto sólo nombra el tema, sin argumento descriptivo que justifique la mejora por sí mismo. Una medida de centralidad sería una variante de la frecuencia (diagonal) ya reportada.
+  - caso «Finding themes in the project description» con clustering (p. 7) — marginal/fuera de alcance: la estructura temática ya se describe con co-ocurrencia de palabras clave y comunidades (P123 H04–H05); clustering de texto sería modelado no supervisado propio de otro curso.

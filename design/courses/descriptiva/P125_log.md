@@ -119,3 +119,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Ethics – AI Bias and Fairness» (p. 15) — fuera de alcance: sesgo de modelos de IA (predictiva); la dimensión de no divulgación individual ya está en P108 y P125 H07.
+
+## S03.P125.14
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - casos «Predicting Wages» y «Gender Wage Gap» con regresión para inferencia causal (p. 8) — fuera de alcance: P125 compara contra pares por construcción (H02) y declara explícitamente que la brecha no identifica causa (H06); la regresión causal pertenece a otro curso y contradiría ese límite.

@@ -120,3 +120,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «analyzes how to make relevant data accessible to decision-makers at every level of the organization» (p. 6); «Data Platforms: Data Reporting» (p. 15) — ya cubierta: P154 H02–H04 (fuente de consumo única con contrato declarado); el documento no aporta un criterio de lectura o atención que falte en P154.
+
+## S03.P154.14
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa en línea de 12 semanas: fundamentos de Python/estadística (pandas, visualización, estadística descriptiva e inferencial), aprendizaje no supervisado (clustering, PCA, clustering espectral y de modularidad), regresión y predicción, clasificación y pruebas de hipótesis, deep learning, sistemas de recomendación y redes/modelos gráficos; con casos de estudio por semana. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
