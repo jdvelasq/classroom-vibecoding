@@ -409,3 +409,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «A prediction against a data mining model is simply a join in a familiar SQL query» (DMX) y acceso a los modelos vía OLE DB, ADOMD.Net y XML/A (p. 2) — fuera de alcance: es una interfaz propia del proveedor (capacitación en una plataforma); el contrato de interfaz ya se enseña con una API (P425 H01, P426 H01).
+
+## S03.P426.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - scoring en tiempo real dentro de una transacción y operadores SQL de scoring incrustados en aplicaciones (p. 20, «scoring in real time»; p. 29, «scoring to be easily incorporated into SQL queries»). Categoría: ya cubierta. P425 y P426 exponen una capacidad como servicio con contrato; el scoring dentro de la base de datos es específico de la plataforma.

@@ -409,3 +409,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1); Integration Services para «flag outliers, separate data, and fill in missing values based on the predictive analytics» (p. 1) — validación al cargar y separación ya cubiertas (P402 H01, P441 H01); la imputación con modelos predictivos pertenece a otras líneas y desplaza la identidad del curso.
+
+## S03.P441.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - decidir si un outlier es error o señal válida requiere conocimiento del dominio (p. 130, «Domain knowledge is usually needed to determine outlier handling»). Categoría: marginal. P441 ya separa los registros con un motivo explícito; el tratamiento de outliers es preparación analítica, no operación.

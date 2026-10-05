@@ -417,3 +417,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1); Integration Services para «flag outliers, separate data, and fill in missing values based on the predictive analytics» (p. 1) — validación al cargar y separación ya cubiertas (P402 H01, P441 H01); la imputación con modelos predictivos pertenece a otras líneas y desplaza la identidad del curso.
+
+## S03.P402.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - manual de producto de un motor de minería integrado en la base de datos (Oracle 11g). Cubre funciones y algoritmos de minería, scoring con SQL, privilegios sobre modelos y modelos que llevan embebidas sus propias transformaciones («supermodels»). Su valor para Productos es sólo de práctica operativa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

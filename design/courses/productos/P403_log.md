@@ -412,3 +412,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «lift and profit charts are provided so you can compare and contrast the quality of your models before you commit to deployment» (p. 2) — ya cubierta: P403 H02 convierte umbrales en una compuerta antes de habilitar el modelo; las curvas de lift y beneficio son métodos de evaluación de la línea predictiva, no de productos.
+
+## S03.P403.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - matriz de costos para sesgar las decisiones de un clasificador y elegir umbrales con ROC (p. 57, «You can use this information to create cost matrices to influence the deployment of the model»). Categoría: fuera de alcance. Fijar el umbral por costo de error es diseño predictivo o prescriptivo; P403 valida frente a umbrales dados (la falta de justificación ya está registrada en H04).

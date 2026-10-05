@@ -409,3 +409,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «fine-grained role-based security to ensure that your intellectual property will be protected» (p. 2) — ya cubierta: P452 H01–H02 (política por rol y rechazo explícito).
+
+## S03.P452.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - privilegios para puntuar modelos (p. 21, «Only users with the appropriate privileges can score (apply) mining models»; p. 10, «New system and object privileges control access to mining model objects»). Categoría: ya cubierta o marginal. P452 H01–H02 ya declara consumidores autorizados por recurso y rechaza roles no declarados; pasar del reporte al modelo sería una variante.

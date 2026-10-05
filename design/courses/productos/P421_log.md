@@ -410,3 +410,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto comercial previo al lanzamiento de SQL Server 2005 Analysis Services: casos de uso de minería de datos, integración con Integration, Analysis y Reporting Services, API DMX y arquitectura (despliegue, escalabilidad, administración y seguridad por roles). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P421.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelos como objetos del diccionario de datos con vistas de propiedades, importación de modelos externos en PMML (pp. 9–10, p. 30, «Applications that are PMML-compliant can deploy PMML-compliant models that were created by any vendor»). Categoría: marginal o fuera de alcance. El registro por identificador estable ya está en P421 H02; la portabilidad entre proveedores es una cuestión de plataforma.

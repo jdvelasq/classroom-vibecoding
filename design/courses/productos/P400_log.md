@@ -603,3 +603,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - escalabilidad a «thousands of concurrent users and … millions of queries per day» y administración centralizada (p. 2) — fuera de alcance: infraestructura y cloud engineering, excluidos por `s05-diseno-productos.md`.
   - Reporting Services para «select just the right people to receive the reports based on data mining queries» (p. 1) — marginal: la distribución dirigida de reportes no añade una capacidad respecto del control de acceso (P452) y del catálogo de consumidores (P454). Por familia (professional-learning), el folleto sólo aporta señales de herramienta de 2005 y no basta para imponer un tema.
+
+## S03.P400.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - manual de producto de un motor de minería integrado en la base de datos (Oracle 11g). Cubre funciones y algoritmos de minería, scoring con SQL, privilegios sobre modelos y modelos que llevan embebidas sus propias transformaciones («supermodels»). Su valor para Productos es sólo de práctica operativa. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - preparación automática (ADP), binning, normalización, winsorizing y transparencia de los detalles del modelo (pp. 129–134), y los algoritmos de las partes II y III. Categoría: fuera de alcance. Son método predictivo o descriptivo, no operación de la capacidad.
