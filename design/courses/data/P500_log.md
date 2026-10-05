@@ -360,3 +360,17 @@
   - resultados de aprendizaje como «declaraciones expresas de lo que se espera que un estudiante conozca y demuestre» (p. 2) — fuera de alcance de S03: es gobernanza del diseño (S04.F11). `s05-diseno-data.md` ya fija las capacidades `data.C01`–`C05` y deja pendientes los RAA. El documento no aporta contenido de datos que cambie un taller.
   - dimensión microcurricular, es decir didácticas y evaluación de aprendizajes (p. 2), y diseño de «mecanismos de monitoreo y evaluación» de los RA (p. 3) — fuera de alcance de S03: afecta la trazabilidad RAP/RAA y la evaluación del curso, no lo que el estudiante hace en un Pxxx. La evaluación de talleres ya está fijada (participación con `pytest`).
   - pertinencia frente a «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento» (p. 3) — marginal: principio institucional genérico sin señal disciplinar concreta. La familia institutional ilustra, no impone.
+
+## S03.P500.28
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso de posgrado de minería de datos aplicada a datos de salud (EHR), con un proyecto por entregables (propuesta, reporte de recolección de datos, reporte de preparación, informe final) y un survey paper. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - temario de minería de datos — probabilidad, regresión, asociación, clasificación, clustering, text mining (p. 9; p. 1: «data preprocessing and sampling methods, data distributions and uncertainty, statistics, regression, time-series analysis, predictions and clustering») — fuera de alcance: pertenece a Descriptiva/Predictiva.
+  - «Getting to Know your Data» y «Data Preprocessing» (p. 9, semanas 2–3; TB2 caps. 2–3) — ya cubierta en su sentido de C02/C03 (perfilado y reglas en P516, limpieza e identidad en P503 H03, tipos y formato regional en P500 H01); el preprocesamiento orientado a modelado (normalización, discretización, reducción) es de Predictiva.
+  - «Data Mining Project Deliverable 1 – Proposal ... describes the dataset, repository from where the dataset will be obtained, define the problem» (p. 6) — ya cubierta en el principio de C01 (pregunta → datos) de P500/P516/P526; sin proyecto integral en el curso por diseño de talleres guiados.
+  - desafíos de datos clínicos de historias electrónicas (p. 1: «characteristics and analytic challenges on dealing with clinical data from electronic health records») — fuera de alcance: no hay caso ni datos trazables en `datalabs/`/catálogo que permitan enseñarlo con rigor, y añade sensibilidad de datos de salud.
+  - survey paper y simposio (p. 6–7) — fuera de alcance: forma de evaluación ajena a talleres `Pxxx` con `pytest`.
