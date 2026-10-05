@@ -35,3 +35,15 @@
   - Folleto que define los siete dominios del INFORMS Analytics Framework (framing de negocio, framing analítico, datos, metodología, desarrollo de modelos, despliegue, gestión del ciclo de vida) con la lista de tareas de cada uno; sin subtareas ni detalle evaluativo (el detalle está en el blueprint CAP-E). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - caso de negocio, selección de stack, modelos, despliegue y ciclo de vida (Tasks 1.5, 4.3–4.4, dominios V–VII, pp. 4–7) — fuera de alcance: gestión de proyectos, predictiva, prescriptiva y productos de datos.
+
+## S03.P100.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Blueprint del examen de entrada CAP-E: siete dominios del INFORMS Analytics Framework con sus tareas y subtareas evaluables y pesos (framing de negocio 16 %, framing analítico 16 %, datos 19 %, metodología 16 %, desarrollo 16 %, despliegue 9 %, ciclo de vida 8 %). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - roles de gobierno de datos (owner, steward, custodian) (CAP-E.3.2.2, p. 14) — marginal: P153 ya declara propietario del KPI; los roles de custodia no cambian lo que el estudiante produce.
+  - línea base del estado actual de las medidas de éxito (CAP-E.2.5.1, p. 12) — marginal: medir el estado actual es lo que ya hacen los KPI globales de P120–P122 y P124; no hay caso con medida de éxito de un proyecto contra la cual comparar.
+  - caso de negocio con beneficios y costos (Task 1.5, p. 8), selección de stack (Task 4.4, p. 18), modelos predictivos y prescriptivos, despliegue y ciclo de vida (dominios V–VII, pp. 19–25) — fuera de alcance: gestión de proyecto, predictiva, prescriptiva y productos de datos.

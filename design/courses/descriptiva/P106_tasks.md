@@ -8,6 +8,7 @@
 - **Tipo:** producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — Task 3.7 «Document and report data findings (e.g., data quality, impact analysis, results, and data management plan)», junto a Task 3.5 (limpiar, armonizar y validar): documentar lo hallado al preparar los datos es una tarea del dominio de datos, no un anexo (Claude, 2026-10-04). Fuente *authoritative*: respaldo general.
+  - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 15–16 — CAP-E.3.5.2 incluye «default data» entre los problemas comunes de *wrangling* (p. 15) y CAP-E.3.7.1 pide «Identify findings in a report about data sets that may affect analysis» (p. 16): los supuestos por defecto que afectan el análisis deben quedar en un reporte (Claude, 2026-10-04). Fuente *authoritative*: objetivo de examen de nivel inicial.
 - **Qué gana el estudiante:** entiende que una tabla «limpia» tiene un
   residuo de supuestos e incertidumbre que el usuario debe conocer, y
   aprende a entregarlo como evidencia junto al dataset. Hoy P106 entrega

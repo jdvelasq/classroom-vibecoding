@@ -27,3 +27,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 5.6 «Document and communicate model findings, including assumptions, limitations, and constraints» (p. 6) — ya cubierta en su forma descriptiva: P125 H06; extenderlo a otros talleres no se sostiene con esta señal genérica.
+
+## S03.P125.03
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - perfil univariado («data profiling outputs») y visualizaciones comunes con su propósito (CAP-E.3.6.2, 3.6.3, p. 15) — ya cubierta en la secuencia: histograma de P122 H02, mediana/percentiles y caja de P125 H03; la ausencia de distribución en P103 es marginal porque la secuencia la ejerce después.
+  - interpretación correcta de la salida de un modelo descriptivo/diagnóstico (CAP-E.5.3.1, p. 20) — ya cubierta: P125 H06 (respuesta con límite).
