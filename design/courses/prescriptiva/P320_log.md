@@ -242,3 +242,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: syllabus introductorio de pregrado centrado en bases de datos (Access, modelado ER, normalización, SQL, MongoDB), BI y visualización/dashboards, con proyecto final en equipo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P320.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «principios de diseño responsable en IA, incluyendo gestión de riesgos y gobernanza» (p. 3), «Seguridad y privacidad de los datos… Control de acceso e identidad» (p. 13) — fuera de alcance/marginal: gobernanza y seguridad de sistemas de IA; P320 ya cubre la salvaguarda de equidad de una política y el folleto no aporta métrica ni caso.

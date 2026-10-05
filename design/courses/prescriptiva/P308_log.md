@@ -243,3 +243,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: syllabus introductorio de pregrado centrado en bases de datos (Access, modelado ER, normalización, SQL, MongoDB), BI y visualización/dashboards, con proyecto final en equipo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P308.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «sistemas que actúen de manera autónoma, razonen por sí mismos y ejecuten tareas complejas con una supervisión mínima» (p. 3) y agentes «programados para tomar decisiones informadas y resolver problemas complejos de manera autónoma» (p. 12) — ya cubierta/fuera de alcance: el curso ya enseña el modo proporcional de ejecución (automatización acotada con escalamiento en P304 H06; aprobación obligatoria en P308 H06; enrutamiento a autoridad en P303 H01); la autonomía agéntica como tecnología pertenece a otro curso y desplazaría la identidad hacia la herramienta.

@@ -244,3 +244,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Present data-driven insights using data visualization and dashboards», «Tell compelling stories with data» (p. 1) y semanas 13–14 de visualización (p. 7) — fuera de alcance/marginal: comunicación descriptiva de hallazgos, no comunicación de una recomendación con su gatillo y autoridad, que P321 ya cubre (H01–H02).
+
+## S03.P321.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - módulo 03 «Registro de la toma de decisiones para una mayor transparencia», «Evaluación con intervención humana» (p. 13) — ya cubierta: el registro versionado por decisión y la autoridad humana están en P303 H03–H04, P306 H07–H08 y P321 H01–H03; el folleto no aporta método ni forma de evidencia distinta.

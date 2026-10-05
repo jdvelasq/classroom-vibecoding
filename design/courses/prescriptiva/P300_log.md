@@ -359,3 +359,14 @@
   - «leverage data to make critical business decisions… use data to make those decisions confidently» (p. 1) — marginal: declaración genérica de toma de decisiones basada en datos sin ningún contenido de decisión, optimización, simulación ni gobierno; el curso ya opera la decisión como política (P300 H03).
   - temario de modelado relacional, normalización, SQL, NoSQL/MongoDB, data warehouses y BI (pp. 5–6) — fuera de alcance: Fundamentos de data / Descriptiva.
   - proyecto final «identify a problem to solve, collect the necessary data… use insights to develop solutions» con evaluación por enunciado, informe y evaluación de pares (pp. 2–3) — marginal: formato de evaluación genérico; los talleres Pxxx se evalúan con pytest por contrato del proyecto.
+
+## S03.P300.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un programa online de 12 semanas (ruta con o sin código) sobre IA generativa, prompts y RAG, agentes con herramientas, memoria, planificación y razonamiento, sistemas multiagente, pruebas/evaluación y protección de soluciones agénticas, con casos prácticos y proyectos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - caso «Agente de análisis de investigación financiera… mejorando la toma de decisiones de inversión» (p. 14) y «Aplicación para startup de salud… programación de citas» (p. 15) — fuera de alcance: automatización de flujos con LLM, sin objetivo, restricciones ni política de decisión evaluable; no hay caso/datos para el curso.
+  - prompts, RAG, LangChain/LangGraph, MCP, multiagente, multimodal (pp. 9–14, 18) — fuera de alcance: herramientas de IA generativa; no pertenecen a Prescriptiva.
