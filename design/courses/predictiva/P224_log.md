@@ -210,3 +210,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa para altos ejecutivos sobre estrategia y gobierno de IA (fases I–V: modelos de negocio, liderazgo, innovación, gobierno y controles); trata la analítica predictiva sólo como capacidad organizacional que el líder integra; sin señales para esta actividad.
+
+## S03.P224.25
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reducción de dimensiones dentro de una evaluación de principio a fin (curso 3, p. 4): sólo se enumera; no aporta evidencia a T01.

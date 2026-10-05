@@ -228,3 +228,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - riesgo, seguridad, confianza y controles de IA (fase V): ya cubierta como frontera entre evidencia predictiva y política (H03); el folleto no fija prácticas.
+
+## S03.P205.25
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado profesional de ciencia de datos para negocios (estructura de contenidos, pp. 4–5); para esta actividad no añade una señal distinta de las ya registradas.
