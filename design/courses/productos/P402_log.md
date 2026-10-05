@@ -244,3 +244,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Keys: primary, foreign, candidate, surrogate» y normalización (pp. 5–6) — fuera de alcance: modelado de bases de datos; la llave de negocio derivada de la granularidad como regla de contrato ya está en P402 H02.
+
+## S03.P402.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas (rutas con y sin código) sobre IA generativa, prompts y RAG, agentes con herramientas y memoria, planificación, sistemas multiagente, pruebas/evaluación y protección de soluciones agénticas, con proyectos y casos prácticos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

@@ -241,3 +241,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Syllabus introductorio de pregrado: Excel, Access, modelado entidad-relación, normalización, SQL (consultas, joins, subconsultas), NoSQL/MongoDB y su pipeline de agregación, BI y data warehouses, visualización y dashboards; proyecto final en equipo. Sin contenido de operación, despliegue ni gobierno de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P450.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Evaluación con intervención humana» (p. 13) y «Registro de la toma de decisiones para una mayor transparencia» (p. 13) — ya cubierta: revisión humana explícita en P450 (H01, H02); el registro auditable de la revisión ya tiene propuesta en P450 desde otro documento; un folleto institucional sobre agentes no añade argumento distinto.

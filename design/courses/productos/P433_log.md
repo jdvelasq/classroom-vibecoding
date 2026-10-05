@@ -241,3 +241,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - SQL «GROUP BY, HAVING… Aggregation functions» y joins (p. 6) — fuera de alcance como contenido (bases de datos/Fundamentos); en Productos SQL ya aparece sólo como transformación declarada y repetible (P432 H01) y como modelo con pruebas (P433 H01–H02).
+
+## S03.P433.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa en línea de 12 semanas (rutas con y sin código) sobre IA generativa, prompts y RAG, agentes con herramientas y memoria, planificación, sistemas multiagente, pruebas/evaluación y protección de soluciones agénticas, con proyectos y casos prácticos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

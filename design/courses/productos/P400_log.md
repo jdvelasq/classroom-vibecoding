@@ -357,3 +357,13 @@
   - Syllabus introductorio de pregrado: Excel, Access, modelado entidad-relación, normalización, SQL (consultas, joins, subconsultas), NoSQL/MongoDB y su pipeline de agregación, BI y data warehouses, visualización y dashboards; proyecto final en equipo. Sin contenido de operación, despliegue ni gobierno de capacidades. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - NoSQL, MongoDB «Creating aggregation pipeline» (p. 6), data warehouses y data marts (p. 6), dashboards (p. 7) — fuera de alcance: bases de datos, BI y Descriptiva.
+
+## S03.P400.30
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Pruebas y Evaluación de Sistemas Agentivos: Pruebas unitarias, Pruebas de integración, Pruebas del sistema» (p. 13) — ya cubierta: pruebas de regla, de transformación y del flujo publicado; el objeto (agentes LLM) es fuera de alcance.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - IA generativa, prompts, RAG, agentes, MCP, multiagente, LangChain/LangGraph/n8n (p. 3, 9–16, 18) — fuera de alcance: capacitación en una tecnología/plataforma, no operación de una capacidad analítica.
