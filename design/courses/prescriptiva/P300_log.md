@@ -260,3 +260,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Pugh method, generación de conceptos y estructura de un trade study (p. 1) — fuera de alcance: selección de conceptos en diseño de sistemas, decisión única no recurrente; desplazaría la identidad hacia ingeniería de sistemas.
   - value-focused thinking y modelos de valor con jerarquías de atributos (p. 2) — marginal: el objetivo explícito de cada contrato (P300 H03, P302 H04) cumple la función en el curso; un modelo multiatributo completo sería un taller de análisis de decisiones multicriterio sin política recurrente.
+
+## S03.P300.22
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso en línea de ocho semanas sobre prototipado rápido en fabricación (procesos seriales y paralelos, mapeo de atributos de prototipo, costo–valor) con capstone de decisiones de fabricación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Participants will conduct a cost analysis to determine the most efficient process to use to build the prototype» (p. 8) — fuera de alcance: decisión de ingeniería de producto, única y no recurrente; no aporta una política gobernada.
+  - procesos de fabricación, DFM y prototipos conceptuales (pp. 5–7) — fuera de alcance: ingeniería mecánica, ajena a Analytics.
