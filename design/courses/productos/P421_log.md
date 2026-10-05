@@ -442,3 +442,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P421.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tipos de modelo en el repositorio, por defecto, generados, propios y de «external list… Custom (Read-Only)» (p. 98); estrategias propias versionadas con `metadata.json`, que «guarantees that the version of the modeling strategies matches the current version of Model Studio» (p. 54) — marginal: es un detalle de la plataforma. El registro con identificador estable ya está en P421 H02.
+  - campeón y retadores, «one of these models is defined as the champion model, and the other models are treated as challenger models for model quality performance monitoring over time» (p. 130) — marginal: la fuente sólo lo nombra, sin criterio de promoción ni comparación; el límite de P421 sin comparación con el modelo previo ya lo atienden otros documentos.

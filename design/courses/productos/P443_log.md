@@ -441,3 +441,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - proceso transparente «importante [...] especialmente para los auditores» (p. 4); activos de implementación «soportados por metadatos para brindar la documentación importante alrededor del proceso completo» (p. 9) — ya cubierta: P443 (linaje a la huella del insumo) y P454 (ficha operacional).
+
+## S03.P443.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - variables de ajuste previo y posterior que transforman la serie «without changing the original series» (pp. 94–95); un repositorio de eventos guardado «independently of the time series data» para reutilizarlo y actualizarlo (p. 96) — marginal: la separación entre la capa cruda y la derivada ya está en P431 H02 y P443 H01–H02, y el repositorio de eventos es una práctica de modelado.

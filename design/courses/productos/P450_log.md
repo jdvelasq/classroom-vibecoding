@@ -441,3 +441,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - decisiones estratégicas tomadas por humanos frente a decisiones operativas automáticas «que no requieren de la intervención humana» (p. 4); reglas de negocio junto con modelos (p. 12) — ya cubierta / marginal: P450 H01–H02 separan recomendación y acción autorizada; distinguir qué decisiones se automatizan es una variante sin método en el documento.
+
+## S03.P450.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ajustes manuales y «Forecast Value Added» («Do demand planners really improve forecast accuracy with their manual overwrites?», p. 127; «small changes to the forecast value usually do not improve forecast quality… the goal is to eliminate the small changes that do not add any benefit», p. 137; «The judgmental correction might also have a political reason», p. 136; FVA, «the added value of the forecast in accuracy, compared to a naïve or baseline forecast», p. 130; el «fiddling» y los sesgos que FVA «can identify», p. 167) — fuera de alcance por falta de caso y datos. Medir si la revisión humana agrega valor sería una contribución distinta de P450 (que autoriza o no una recomendación, H01–H02) y daría a P451 el «mejorar» que hoy no ejerce. Pero exige registros de la recomendación, la decisión final y el resultado observado para muchas decisiones. El curso no tiene ese caso y los datos de Svolba son privados (p. 130). Además, comparar el pronóstico humano con el estadístico es método de evaluación del proceso de pronóstico, más cerca de Predictiva. Habría que reconsiderarlo si el curso adopta un caso de pronóstico con ajustes manuales registrados.
+  - «People sometimes confuse automation with autonomy» (p. 161); elementos base de la automatización inteligente, «Centralized application with auditing and instrumentation… Continuous monitoring and automation governance» (p. 162) — ya cubierta: la autorización humana explícita (P450 H02), el registro y el monitoreo ya están; es un extracto de marketing sin práctica concreta.

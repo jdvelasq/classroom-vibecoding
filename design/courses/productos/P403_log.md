@@ -444,3 +444,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - validar patrones con un conjunto de prueba y modificar hasta cumplir «los estándares deseados» antes de aplicarlos a los sistemas operativos (p. 8) — ya cubierta: P403 H02 traduce umbrales operativos en compuerta automatizada; el sobreajuste y la validación del método pertenecen a Predictiva.
+
+## S03.P403.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - elegir el modelo sólo por ajuste histórico, «having perfect fit to history is no guarantee that the model will generate accurate forecasts» (p. 168); simulaciones de origen móvil para evaluar el desempeño ex ante (pp. 99–100); comparación de modelos (pp. 101–102) — fuera de alcance: son evaluación y selección del método predictivo, que corresponden a Predictiva. La compuerta operacional sobre un artefacto congelado ya está en P403 H01–H02.

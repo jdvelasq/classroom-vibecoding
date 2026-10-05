@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el código de calificación incluye «toda la línea de calificación (incluyendo las transformaciones de los datos)» (p. 10) y «desarrolle una vez, implemente varias veces» sin recodificar ni revalidar (p. 12; también p. 3) — ya cubierta: P404 H01 alinea entradas con la interfaz declarada del artefacto y P426 H01 sirve el mismo contrato desde contenedor; generación de código PMML/C/Java (p. 8–9) es capacitación en plataforma, fuera de alcance.
+
+## S03.P404.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Es una colección comercial de artículos de SAS sobre pronóstico. Trata sobre todo de modelado (TSMODEL, ML, RSM), pero incluye tres textos de proceso que importan para operar un pronóstico: el monitoreo automático de modelos con cartas de control sobre los residuos, el análisis de si los ajustes manuales mejoran el pronóstico y el «Forecast Value Added». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

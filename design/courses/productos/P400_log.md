@@ -644,3 +644,15 @@
   - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - pregunta de negocio → hipótesis analítica, tabla base analítica, muestreo, partición entrenamiento/prueba, exploración, clustering, reglas de asociación, analítica de texto, transparencia frente a precisión (p. 4–8) — fuera de alcance: formulación, Descriptiva y Predictiva; el curso no vuelve a enseñar el método analítico de origen. Cómputo distribuido en memoria y Hadoop (p. 10–11) — fuera de alcance (Big Data).
+
+## S03.P400.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Es una colección comercial de artículos de SAS sobre pronóstico. Trata sobre todo de modelado (TSMODEL, ML, RSM), pero incluye tres textos de proceso que importan para operar un pronóstico: el monitoreo automático de modelos con cartas de control sobre los residuos, el análisis de si los ajustes manuales mejoran el pronóstico y el «Forecast Value Added». Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «more accurate forecasting is not an end in itself… a means to effect better decisions» (p. 7) — ya cubierta: es la pregunta de identidad del curso (`productos.C01`) y no aporta un mecanismo.
+  - procesamiento distribuido de millones de series (DFS, ejecución paralela por grupo BY, 1,5 millones de series en 153,5 s; pp. 14–19, 29–31) e integración de Python y R dentro de TSMODEL (pp. 20–28) — fuera de alcance: es arquitectura de Big Data y capacitación en una plataforma, dos cosas que excluye la frontera del curso.
+  - análisis de escenarios con factores causales controlables (pp. 100–101), SASEFRED, RSM, redes neuronales, nodo GBM y extracción de características (pp. 35–86, 105–126) — fuera de alcance: son modelado predictivo o prescriptivo, o funciones de un producto comercial.

@@ -441,3 +441,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - White paper comercial de SAS (2015) centrado en el descubrimiento (preparación, exploración, modelado) dentro de un «ciclo de vida analítico» iterativo; dedica secciones breves a implementación, modelo campeón, monitoreo y gestión de modelos con sus productos (Enterprise Miner, Factory Miner, Decision Manager). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P441.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «If any problems occur during the execution of a particular time series (BY group), they are logged into an in-memory table» (p. 17); códigos de salida por serie, «You can verify… that all exit and return codes are 0» (p. 24); `try/except` por serie (p. 30) — ya cubierta o marginal: el registro de una ejecución (P405 H01), la separación de lo que falla con su motivo (P441 H01) y la disponibilidad como proporción de ejecuciones exitosas (P445 H01) ya enseñan el mismo patrón; aislar el fallo por unidad en un lote es una variante.
