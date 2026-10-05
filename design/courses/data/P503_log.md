@@ -434,3 +434,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DMX, donde «A prediction against a data mining model is simply a join in a familiar SQL query» (p. 2) — fuera de alcance: predicción dentro del motor, ligada a una herramienta obsoleta. El SQL del curso sirve a consultas descriptivas.
+
+## S03.P503.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - extracción de términos de texto libre a columna anidada, datos mixtos y 85 % de datos no estructurados (pp. 137–141) — fuera de alcance: representación de texto para minería (NLP) pertenece a otros cursos; las palabras clave multivalor ya se normalizan en P503 H02 y su efecto en el ranking se expone en P507 H02.

@@ -410,3 +410,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - folleto comercial de antes del lanzamiento de SQL Server 2005 Analysis Services Data Mining. Enumera casos de uso (canasta de mercado, churn, segmentación, pronóstico, calidad de datos, texto), la integración con Integration, OLAP y Reporting Services, asistentes, el lenguaje DMX, los algoritmos y la arquitectura empresarial. Es una señal de herramienta de 2005, no curricular. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P526.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - *case table* de registro único vs. multirregistro y agregar al nivel del caso (p. 128: «When the data source includes transactional data (multi-record case), it must be aggregated to the case level»; p. 68: «a set of records (rows) constitute a case») — ya cubierta: P510 H02 (calificación→curso), P511 H02–H03, P521 H01 (reduce al grano del maestro antes de unir) y P526 H03 (grano sesión).

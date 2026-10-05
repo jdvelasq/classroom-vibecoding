@@ -422,3 +422,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Integration Services para «flag outliers, separate data, and fill in missing values based on the predictive analytics of the data mining algorithms» (p. 1) — fuera de alcance: imputación predictiva dentro de un pipeline productivo (frontera con Predictiva y con productos de datos). El tratamiento de faltantes del curso se aborda desde la documentación y la decisión (ver la candidata P510 de NASEM).
+
+## S03.P510.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - *case table* de registro único vs. multirregistro y agregar al nivel del caso (p. 128: «When the data source includes transactional data (multi-record case), it must be aggregated to the case level»; p. 68: «a set of records (rows) constitute a case») — ya cubierta: P510 H02 (calificación→curso), P511 H02–H03, P521 H01 (reduce al grano del maestro antes de unir) y P526 H03 (grano sesión).

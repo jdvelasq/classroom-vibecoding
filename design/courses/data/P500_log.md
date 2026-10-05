@@ -644,3 +644,16 @@
   - casos de uso de minería (Market Basket, Churn, Forecasting, Campaign, Text Analysis; p. 1) y algoritmos (árboles, series de tiempo, clustering, reglas de asociación, Naïve Bayes, redes neuronales; p. 2) — fuera de alcance: análisis descriptivo, predictivo o prescriptivo de otros cursos.
   - arquitectura cliente-servidor, escalabilidad paralela, gestión y seguridad por roles (p. 2) — fuera de alcance: arquitectura empresarial y operación, frontera explícita del curso.
   - asistentes de «only a few mouse clicks» y gráficos de lift y profit (p. 2) — fuera de alcance: evaluación de modelos y herramientas de vendor.
+
+## S03.P500.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - del problema de negocio a los datos requeridos (p. 19: «A model that predicts who is most likely to purchase the product must be built on data that describes the customers who have purchased the product in the past») y «Asking the Right Questions» (p. 18) — ya cubierta: P500 H02 deriva campos del grano de la pregunta y P517 H02 deriva un contrato mínimo de la pregunta (data.C01).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - misma transformación en entrenamiento, prueba y *scoring*; preparación automática y embebida (ADP), binning, normalización, winsorización (p. 27, pp. 127–133) — fuera de alcance: preparación orientada a modelos (Predictiva / productos de datos).
+  - imputación media/moda y desajuste entre estadísticas de construcción y aplicación (p. 94) — fuera de alcance: pertenece al ciclo de modelado.
+  - datos transaccionales tipo canasta, Apriori, soporte/confianza/lift (pp. 67–68, 75–82) — fuera de alcance: reglas de asociación son análisis descriptivo; la forma multirregistro ya está cubierta.
+  - minería dentro de la base sin mover datos, seguridad por privilegios, *refresh* (pp. 21–22) — fuera de alcance: argumentos de producto/arquitectura; desplazaría la identidad hacia herramienta (data.C05).

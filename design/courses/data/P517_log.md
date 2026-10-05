@@ -411,3 +411,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta: reglas nombradas de calidad (P516 H02) y contrato de aceptación de lotes (P517 H02–H04). Que la señal venga de un producto no basta para imponer una técnica.
+
+## S03.P517.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** propone T02.
+- **Señales descartadas relevantes:**
+  - del problema de negocio a los datos requeridos (p. 19: «A model that predicts who is most likely to purchase the product must be built on data that describes the customers who have purchased the product in the past») y «Asking the Right Questions» (p. 18) — ya cubierta: P500 H02 deriva campos del grano de la pregunta y P517 H02 deriva un contrato mínimo de la pregunta (data.C01).

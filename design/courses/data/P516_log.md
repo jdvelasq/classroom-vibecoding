@@ -423,3 +423,12 @@
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta: reglas nombradas de calidad (P516 H02) y contrato de aceptación de lotes (P517 H02–H04). Que la señal venga de un producto no basta para imponer una técnica.
   - Integration Services para «flag outliers, separate data, and fill in missing values based on the predictive analytics of the data mining algorithms» (p. 1) — fuera de alcance: imputación predictiva dentro de un pipeline productivo (frontera con Predictiva y con productos de datos). El tratamiento de faltantes del curso se aborda desde la documentación y la decisión (ver la candidata P510 de NASEM).
+
+## S03.P516.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Gathering and Preparation» — evaluar qué tan bien los datos atienden el problema e identificar problemas de calidad (p. 19: «you can determine how well it addresses the business problem [...] identify data quality problems») — ya cubierta: P516 es exactamente un diagnóstico de aptitud para una pregunta (H01–H03).
+  - outliers válidos vs. errores que exigen conocimiento del dominio (p. 130: «in some cases, especially in the business arena, outliers may be perfectly valid [...] Domain knowledge is usually needed to determine outlier handling») — marginal: sería una regla más en el reporte de calidad de P516 (H02) sin cambiar la capacidad; el documento lo plantea como preparación para modelos.

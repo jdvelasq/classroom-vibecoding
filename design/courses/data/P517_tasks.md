@@ -121,3 +121,103 @@ Actividad: implementation/data/P517_vermont_contratos/
 9. No modifiques otras actividades (en particular P516), traceability.yaml
    ni design/.
 ```
+
+## T02 — Declarar en el contrato mínimo el tipo y la forma de `zipcode` (código categórico con cero inicial, distinto del centinela 0)
+
+- **Estado:** pendiente de discusión
+- **Tipo:** método (contrato)
+- **Fuentes:**
+  - `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` p. 128 — «zip codes identify different postal zones; they do not imply order. If the zip codes are stored in a numeric column, it will be interpreted as a numerical attribute»; la conversión a texto debe «retain the leading 0»; y al preparar los datos «Pay special attention to such items as phone numbers, zip codes, and dates» (Claude, 2026-10-05). Fuente *professional-learning*: señal de práctica sobre tipificar identificadores codificados; el contexto de minería de datos no se traslada.
+- **Qué gana el estudiante:** entender que un identificador codificado es
+  categórico y que su representación es parte del contrato que protege la
+  pregunta. Hoy el contrato de P517 protege una pregunta «por código
+  postal», pero no declara tipos (índice externo: «Sin tipos ni nulidad
+  declarados»; límite de H02: «No se verifican tipos de las columnas
+  requeridas») y la llave de la pregunta se compara como número
+  (`zipcode = 0`). Los códigos postales de Vermont empiezan por `05`; una
+  representación numérica pierde el cero inicial y deja en la misma columna
+  un centinela de agregación (`0`) y códigos reales. Con la forma declarada
+  (texto de cinco dígitos o el centinela documentado) y una rama de
+  contrato que la verifica, el estudiante ve que un lote donde el código
+  cambió de forma (`05001` → `5001`) es un cambio `BREAKING` para cualquier
+  integración por código postal, aunque las seis columnas estén presentes.
+- **Anclas actuales:** H02 (contrato mínimo derivado de la pregunta), H03
+  (clasificación de cambios: la nueva rama es `BREAKING`/`REJECT`), H04
+  (lotes perturbados: se añade un lote); superficies S01 (cómo está
+  almacenado `zipcode`), S02 (`validate`), S03 (`cases`), S04
+  (`contract_report.csv`) y S05; relación con P516 H03 (clave compuesta) y
+  H01 (centinela de alcance).
+- **Alternativas menores descartadas:** aclarar en markdown que `zipcode` es
+  categórico no lo verifica el contrato ni cambia ninguna decisión por lote.
+  Declarar tipos y nulidad de las seis columnas sería un esquema completo
+  más propio de ingeniería de datos; la propuesta se limita a la columna que
+  define la unidad de análisis. Si el paso 0 encuentra que `zipcode` ya se
+  lee y valida como texto de cinco caracteres, la propuesta se reduce a
+  hacerlo visible (nivel 1).
+- **Contrato de no regresión:** se conservan `REQUIRED`, las reglas y el
+  orden de `validate` (la nueva regla se inserta entre las de `BREAKING`,
+  antes de la regla de alcance), los seis lotes actuales con su decisión,
+  las columnas de `contract_report.csv` y H01–H04. Las decisiones de los
+  lotes existentes no cambian; el reporte gana una fila. `data/vermont.csv`
+  no se modifica. La prueba existente se conserva.
+- **Interacciones:** con T01, T02 va primero: el filtro de T01 y el CSV
+  preparado deben usar la representación declarada aquí. Con P516
+  (dependencia P516 → P517): si se ejecuta P516 T02, su diccionario declara
+  el tipo y la forma de `zipcode`; ambos deben coincidir, y si no coinciden
+  S04 se detiene e informa. Capacidad: cambio local (lectura, una regla, un
+  lote, una prueba).
+- **Criterio de aceptación:** S05 encuentra H02 modificado (o un highlight
+  nuevo) en el que el contrato declara que `zipcode` se lee como texto y
+  que cada valor es el centinela de total estatal o un código de cinco
+  dígitos; `validate` verifica esa forma y clasifica su violación como
+  `FAIL`/`BREAKING`/`REJECT`; `cases` incluye un lote con `zipcode`
+  convertido a número (sin cero inicial) que produce `REJECT`; los seis
+  lotes anteriores mantienen su decisión; una prueba verifica la fila nueva
+  de `contract_report.csv`.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/data/P517_vermont_contratos/
+
+0. Inspecciona primero cómo está almacenado zipcode en data/vermont.csv
+   (lee las primeras líneas como texto crudo, sin pandas: ¿los códigos
+   tienen cinco dígitos con cero inicial, p. ej. 05001, o aparecen como
+   5001?; ¿cómo aparece el total estatal: 0, 00000 u otro?) y cómo lo lee
+   professor/notebook.ipynb (dtype resultante y cómo compara el centinela).
+   Inspecciona también validate, cases, submission/contract_report.csv y
+   tests/. Luego:
+   - Si la implementación no coincide con
+     design/courses/data/P517_activity.md, detente e informa sin modificar
+     nada.
+   - Si zipcode ya se lee como texto y validate ya verifica su forma,
+     detente e informa: la propuesta se reduce a hacerlo visible y requiere
+     confirmación del profesor.
+   - Si el archivo crudo almacena los códigos sin cero inicial, detente e
+     informa: normalizarlos sería una transformación que debe decidir el
+     profesor (registrada en P517_log.md) antes de continuar.
+   - Si P516 T02 está ejecutada y su data_dictionary.csv declara otra forma
+     para zipcode, detente e informa la discrepancia.
+1. No modifiques data/vermont.csv, REQUIRED, las reglas existentes ni los
+   seis lotes de cases.
+2. Lee el extracto con dtype={"zipcode": str} y ajusta las comparaciones del
+   centinela a la forma observada en el paso 0 (por ejemplo, "0"). Verifica
+   que las decisiones de los seis lotes actuales no cambian; si cambian,
+   detente e informa.
+3. Declara junto a REQUIRED la forma esperada de zipcode (centinela
+   documentado o exactamente cinco dígitos) y añade a validate una regla que
+   la verifique, ubicada con las reglas BREAKING y antes de la regla de
+   alcance; su violación devuelve FAIL / BREAKING / REJECT.
+4. Añade a cases un lote zipcode_numeric: el extracto con zipcode convertido
+   a entero y de vuelta a texto (pierde el cero inicial). Persiste su fila en
+   submission/contract_report.csv con las columnas actuales.
+5. Añade 2–4 líneas de markdown: por qué un código postal es categórico, por
+   qué su forma es parte del contrato y por qué el centinela no debe
+   confundirse con un código real.
+6. Añade a tests/ una prueba que verifique que contract_report.csv tiene la
+   fila zipcode_numeric con action REJECT y que las filas anteriores
+   conservan su action. No elimines pruebas existentes.
+7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
+8. No modifiques otras actividades (en particular P516), traceability.yaml
+   ni design/.
+```

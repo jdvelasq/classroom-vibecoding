@@ -422,3 +422,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DMX, donde «A prediction against a data mining model is simply a join in a familiar SQL query» (p. 2) — fuera de alcance: predicción dentro del motor, ligada a una herramienta obsoleta. El SQL del curso sirve a consultas descriptivas.
+
+## S03.P506.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - transformaciones dictadas por la definición del problema (p. 129: «you need to define what "high-revenue" means [...] recode the revenue attribute into ranges») — ya cubierta: P506 H02 operacionaliza «producción sostenida».

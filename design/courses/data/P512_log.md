@@ -425,3 +425,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «adding data mining dimensions» al Unified Dimensional Model de OLAP (p. 1) — fuera de alcance: dimensiones derivadas de modelos; el modelo dimensional de P512 ya cubre hecho y dimensiones (H02–H03).
+
+## S03.P512.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - conversión de fechas a número o categoría según la pregunta (pp. 128–129) — ya cubierta: P512 H01 deriva la dimensión fecha desde texto ambiguo; la conversión a número es requisito de algoritmos (otro curso).
+  - «a data warehouse will be of no use if it does not contain the data you need to solve your problem» (p. 17) y apoyo a esquemas estrella mediante columnas anidadas (p. 26, p. 76) — marginal: encuadre ya planteado en la auditoría de P512 (riesgo de leerse como modelado dimensional sin pregunta); el documento no aporta un mecanismo para resolverlo; las columnas anidadas son específicas de Oracle.

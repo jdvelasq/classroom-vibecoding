@@ -421,3 +421,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DMX, donde «A prediction against a data mining model is simply a join in a familiar SQL query» (p. 2) — fuera de alcance: predicción dentro del motor, ligada a una herramienta obsoleta. El SQL del curso sirve a consultas descriptivas.
+
+## S03.P508.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de producto de Oracle: proceso de minería (definición del problema → preparación → modelo → despliegue), formato de *case table* (registro único vs. multirregistro/anidado), preparación automática y embebida (binning, normalización, outliers), tratamiento de faltantes vs. dispersión y preparación de texto. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
