@@ -221,3 +221,15 @@
   - regresión, regularización, regresión logística y ajuste de modelos (p. 2: «Regularization», «Logistic Regression», «Assessing Model Fit») — fuera de alcance: predictiva.
   - simulación Monte Carlo, pronóstico probabilístico, sensibilidad y eventos raros (p. 2: «Monte Carlo Simulation», «Probabilistic Forecasting», «Simulating Rare Events») — fuera de alcance: predictiva/prescriptiva. Tampoco hay contenido que respalde la incertidumbre descriptiva que falta en P120–P122.
   - estudios de caso evaluados (p. 2: «Aurora Flight Sciences», «Schlumberger», «BASF») — marginal: sólo nombra los casos, sin contenido; P120–P125 ya organizan el curso por casos.
+
+## S03.P100.18
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Hadoop, «Platforms for Handling Big Data», DASK para «simulate parallel processing across distributed machines» (pp. 6, 9, 11) — fuera de alcance: confirma que MapReduce y el paralelismo son materia de ingeniería de datos; no justifica ampliar P100/P101 (su auditoría ya registra la identidad no resuelta).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - CDC, Debezium, contenedores, streaming (Kafka, MQTT, ThingsBoard), aplicaciones web en Java/Node (pp. 8–11) — fuera de alcance: ingeniería de datos y productos de datos.
+  - regresión lineal, Naïve Bayes, k-means, aprendizaje por refuerzo, redes profundas (pp. 8, 11–12) — fuera de alcance: predictiva.
+  - «Learn data visualization», D3 (pp. 8, 11) — marginal: herramienta de visualización alternativa; la visualización ya está cubierta (P103 H04, P120 H05).

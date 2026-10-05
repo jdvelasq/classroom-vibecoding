@@ -152,3 +152,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cronograma de un curso profesional del MIT en ocho módulos: ecuaciones diferenciales ordinarias y parciales, métodos numéricos, optimización y estimación de parámetros, regresión y clasificación, métodos probabilísticos (Monte Carlo, pronóstico) y estudios de caso industriales. Sólo lista títulos y duraciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P150.18
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Perform extract, transform, and load (ETL) on a dataset», «ETL, Analysis, and Visualization» (pp. 8–10) — ya cubierta en lo que sirve a la descripción: integración de fuentes con grano protegido (P150 H01–H02); pipelines ETL orquestados (NiFi, Airflow) son de otro curso.

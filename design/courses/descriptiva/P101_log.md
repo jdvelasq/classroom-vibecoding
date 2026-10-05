@@ -145,3 +145,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cronograma de un curso profesional del MIT en ocho módulos: ecuaciones diferenciales ordinarias y parciales, métodos numéricos, optimización y estimación de parámetros, regresión y clasificación, métodos probabilísticos (Monte Carlo, pronóstico) y estudios de caso industriales. Sólo lista títulos y duraciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P101.18
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Hadoop, «Platforms for Handling Big Data», DASK para «simulate parallel processing across distributed machines» (pp. 6, 9, 11) — fuera de alcance: confirma que MapReduce y el paralelismo son materia de ingeniería de datos; no justifica ampliar P100/P101 (su auditoría ya registra la identidad no resuelta).
