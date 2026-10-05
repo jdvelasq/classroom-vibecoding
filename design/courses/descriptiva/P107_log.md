@@ -179,3 +179,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un curso en línea de 8 semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo, termoformado), mapeo de atributos prototipo–producto, decisiones de fabricación y análisis de costo-valor, con un proyecto final sobre una careta facial o un giróscopo satelital. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P107.22
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «access, organize, clean, prepare, transform, and explore data» (p. 7) — ya cubierta: P106 H01–H05, P107 H01–H04.

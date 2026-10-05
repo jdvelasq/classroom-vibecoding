@@ -269,3 +269,14 @@
   - «Assess data gathered from concept prototypes to make smart decisions on developing your desired product» (p. 5) y «Participants will assess the data results for the different processes used» (p. 8) — fuera de alcance: evaluación de pruebas de ingeniería de fabricación; el documento no contiene datos, preguntas ni métodos de descripción analítica.
   - desarrollar una hipótesis para un producto deseado y probar un prototipo virtual (Módulo 6, p. 7); análisis de costo y valor (Módulo 7, p. 7) — fuera de alcance: diseño de producto físico y decisión económica; no corresponde a descriptiva ni a otro curso de la línea de Analytics más allá de una analogía genérica con prototipos.
   - procesos de fabricación seriales y paralelos, DFM, cálculo de masa y momento de inercia (pp. 6–7) — fuera de alcance: ingeniería mecánica; sin relación con el curso.
+
+## S03.P100.22
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Describing a corpus of documents with a term–document matrix» (p. 13) — ya cubierta: P100 H02 (unidad textual), P123 H02–H04 (conteo de campos multivaluados y co-ocurrencia ítem × ítem).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - segmentación con K-Means y clustering jerárquico (p. 13), inferencia, pruebas de hipótesis y A/B testing (p. 6, p. 14), regresión, clasificación, series de tiempo, optimización y simulación (pp. 5–14) — fuera de alcance: predictiva, prescriptiva o contenido de Estadística; el catálogo no aporta caso ni datos para un uso descriptivo.
+  - EDA y gráficos estadísticos como primer paso de un proceso de modelado (p. 8) — marginal: el curso ya ejerce exploración al servicio de la descripción (P103, P120–P122, P125); aquí aparece como antesala del modelado.
