@@ -415,3 +415,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
+
+## S03.P217.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Debido a que los datos están creciendo y cambiando continuamente, las relaciones… también cambian con el tiempo… identificará la degradación de la precisión de los modelos» (pp. 4–5): cuarta fuente para la señal de degradación de modelos; el documento la ubica en la fase de implementación y monitoreo, propia de productos de datos según `AGENTS.md`.

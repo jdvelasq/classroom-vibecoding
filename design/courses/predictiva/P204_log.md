@@ -443,3 +443,11 @@
 - **Resultado:** sin cambios; aporta a N01.
 - **Señales descartadas relevantes:**
   - curva ROC para evaluar el comportamiento con distintos umbrales (p. 57): ya cubierta (H04: AUC frente a exactitud).
+
+## S03.P204.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.

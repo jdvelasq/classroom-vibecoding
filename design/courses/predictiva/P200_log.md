@@ -476,3 +476,13 @@
 - **Señales descartadas relevantes:**
   - árboles de decisión con reglas interpretables, confianza y soporte (pp. 27, 83–84): se añade como fuente de N01.
   - prueba de modelos de regresión con datos separados para construir y probar (p. 47): ya cubierta (H03).
+
+## S03.P200.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** refuerza T01; aporta a N01.
+- **Señales descartadas relevantes:**
+  - convertir una pregunta de negocio en una hipótesis analítica con un resultado bien definido (p. 7): se añade como fuente de T01.
+  - árboles de decisión y bosques aleatorios (p. 8): se añaden como fuente de N01.
+  - «Debido a que los datos están creciendo y cambiando continuamente, las relaciones… también cambian con el tiempo… identificará la degradación de la precisión de los modelos» (pp. 4–5): cuarta fuente para la señal de degradación de modelos; el documento la ubica en la fase de implementación y monitoreo, propia de productos de datos según `AGENTS.md`.
