@@ -289,3 +289,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - uso responsable: «¿Existe un propósito legítimo y se utilizan solamente los datos necesarios?», equidad y sesgo (p. 18) — ya cubierta: minimización (P102 H02), roles de riesgo y generalización con utilidad medida (P108 H01–H05).
+
+## S03.P108.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - privacidad, reglas de acceso y compartición, sesgos e impactos sobre grupos (pp. 28–29) — ya cubierta: P108 H01–H06, P109 H02–H03, P125 H07; evaluación de sesgo de modelos: fuera de alcance (predictiva).

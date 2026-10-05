@@ -299,3 +299,12 @@
 - **Resultado:** propone T02.
 - **Señales descartadas relevantes:**
   - gobierno como «derechos de decisión, responsabilidades, reglas» y tabla de decisiones (definición y calidad → propietario funcional) (p. 16) — marginal: P153 ya declara propietario y compuerta de calidad; los derechos de decisión organizacionales no cambian el producto del taller.
+
+## S03.P153.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Interpretar y comunicar los resultados… supuestos y limitaciones en términos del problema de negocio» (p. 23) — marginal desde este documento: la falta de lectura escrita ya está registrada en S02 de P150–P154 y el patrón existe en P125 H06; la señal aparece en la fase de operación/adopción y no aporta un mecanismo distinto al de la candidata de P120.
+  - transparencia y trazabilidad de cómo se obtienen los resultados (p. 29) — ya cubierta: P153 H01, H04.

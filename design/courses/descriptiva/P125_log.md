@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «La contribución no siempre implica una causalidad demostrada… deben explicitarse los supuestos» (p. 23) — ya cubierta: P125 H06 (límite causal persistido y probado).
+
+## S03.P125.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - privacidad, reglas de acceso y compartición, sesgos e impactos sobre grupos (pp. 28–29) — ya cubierta: P108 H01–H06, P109 H02–H03, P125 H07; evaluación de sesgo de modelos: fuera de alcance (predictiva).

@@ -298,3 +298,12 @@
 - **Señales descartadas relevantes:**
   - ciclo de vida del dato (captura → procesamiento → almacenamiento → compartición → uso) y data warehouse/data mart como usos que coexisten (pp. 4–5); «Data warehouse, data lake, lakehouse… son patrones posibles, no etapas obligatorias» (p. 17) — ya cubierta en lo que sirve a la descripción (tabla integrada P150, mart P151, serving P154); la elección de arquitectura es de ingeniería/productos de datos.
   - calidad y disponibilidad «adecuación al uso, la integración, la actualización y la accesibilidad» (p. 8) — ya cubierta: cobertura de flete (P122 H05), integración con grano protegido (P150 H02).
+
+## S03.P150.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - clientes duplicados, identificadores distintos entre sistemas, integración (pp. 14–15) — ya cubierta: P150 H02 (grano protegido con `validate="many_to_one"`), P151 H02–H03. Ejercitar claves huérfanas sería variante del mismo objetivo (límite ya registrado en P150 S02).
+  - «Interpretar y comunicar los resultados… supuestos y limitaciones en términos del problema de negocio» (p. 23) — marginal desde este documento: la falta de lectura escrita ya está registrada en S02 de P150–P154 y el patrón existe en P125 H06; la señal aparece en la fase de operación/adopción y no aporta un mecanismo distinto al de la candidata de P120.

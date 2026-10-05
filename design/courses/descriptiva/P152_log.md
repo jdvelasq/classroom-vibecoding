@@ -296,3 +296,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P152.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Interpretar y comunicar los resultados… supuestos y limitaciones en términos del problema de negocio» (p. 23) — marginal desde este documento: la falta de lectura escrita ya está registrada en S02 de P150–P154 y el patrón existe en P125 H06; la señal aparece en la fase de operación/adopción y no aporta un mecanismo distinto al de la candidata de P120.

@@ -289,3 +289,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P101.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente que recorre la evolución KDD → CRISP-DM → … → MAISTRO y las dimensiones de un proyecto de analítica (problema de negocio, problema analítico, datos, preparación, diseño, evaluación, operación, mejora continua, gobernanza) con un caso de abandono de clientes que transita de una pregunta descriptiva a una solución prescriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

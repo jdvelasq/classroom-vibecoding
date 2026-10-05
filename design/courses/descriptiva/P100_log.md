@@ -450,3 +450,15 @@
   - Material de clase (serie DataOps) que define estrategia de datos y su cadena objetivos → diagnóstico → valor → brechas → objetivos de datos → iniciativas → gobierno/arquitectura/uso responsable → caso de valor y priorización → hoja de ruta → ejecución → evaluación, con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - creación de valor (mejorar, enriquecer, ofrecer información) (p. 10), análisis de brechas y su plantilla (pp. 11–12), objetivos estratégicos de datos (p. 14), iniciativas (p. 15), caso de valor con VPN/ROI (p. 19), priorización de portafolio (p. 20), hoja de ruta (p. 21), ejecución y evaluación de la estrategia (pp. 22–23) — fuera de alcance: estrategia y gestión de datos a nivel organizacional; no hay producto descriptivo ni caso con datos para enseñarlo con rigor en un taller.
+
+## S03.P100.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente que recorre la evolución KDD → CRISP-DM → … → MAISTRO y las dimensiones de un proyecto de analítica (problema de negocio, problema analítico, datos, preparación, diseño, evaluación, operación, mejora continua, gobernanza) con un caso de abandono de clientes que transita de una pregunta descriptiva a una solución prescriptiva. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - procedencia y condiciones de uso no documentadas en P120, P121, P122, P124, P150–P154 (p. 13) — ya registrada: es un requisito de `AGENTS.md` («Case and dataset provenance») señalado en cada S02; este documento lo refuerza pero no aporta un argumento distinto por taller. Sólo se propone para P123, donde el defecto toca directamente la pregunta temporal.
+  - tipología descriptiva/predictiva/prescriptiva con «¿Qué ocurrió? ¿Quiénes abandonaron?» y métodos EDA, segmentación, visualización, minería de procesos (p. 16) — ya cubierta en identidad del curso; minería de procesos: fuera de alcance (sin caso ni datos de eventos en el curso).
+  - diseño de modelos, evaluación con datos no usados, despliegue, adopción, monitoreo de deriva, recalibración (pp. 17–26) — fuera de alcance: predictiva, prescriptiva y productos de datos.

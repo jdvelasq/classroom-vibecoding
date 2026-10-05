@@ -290,3 +290,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - uso responsable: «¿Existe un propósito legítimo y se utilizan solamente los datos necesarios?», equidad y sesgo (p. 18) — ya cubierta: minimización (P102 H02), roles de riesgo y generalización con utilidad medida (P108 H01–H05).
+
+## S03.P102.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente que recorre la evolución KDD → CRISP-DM → … → MAISTRO y las dimensiones de un proyecto de analítica (problema de negocio, problema analítico, datos, preparación, diseño, evaluación, operación, mejora continua, gobernanza) con un caso de abandono de clientes que transita de una pregunta descriptiva a una solución prescriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

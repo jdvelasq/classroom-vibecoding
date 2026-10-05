@@ -298,3 +298,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diagnóstico de «Contexto y prioridades» y «Decisiones y resultados» (p. 8) — marginal desde este documento: refuerza la falta de usuario/decisión en P120 ya tratada por la candidata de framing derivada de `informs-cap-essentials-blueprint`; en este material es contexto organizacional, no práctica de taller.
+
+## S03.P120.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - evaluar calidad por exactitud, completitud, consistencia, actualidad, validez, relevancia y unicidad (p. 13) — ya cubierta: P120 H02, P121 H02, P122 H01 y H05.
