@@ -62,3 +62,11 @@
   - dimensiones lentamente cambiantes tipos 0–7 (pp. 15–16), mini-dimensiones, claves durables (p. 10) — fuera de alcance: Superstore no trae historia de cambios de atributos y el tema desplaza hacia arquitectura de data warehouse.
   - copo de nieve frente a dimensión aplanada, jerarquías fijas/irregulares, tablas puente de jerarquía (pp. 12, 17) — marginal/fuera: P512 ya usa dimensiones planas; jerarquías irregulares no tienen caso.
   - tablas agregadas, cubos OLAP y navegación de agregados (pp. 5, 8) — ya cubierta: P501 H01 publica agregados por pregunta; cubos OLAP fuera de alcance.
+
+## S03.P512.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - las bases de datos modernas, relacionales y no relacionales (p. 45) — ya cubierta: relacional en P503–P510 y P512, JSON anidado en P518. Añadir NoSQL sería variante de herramienta.

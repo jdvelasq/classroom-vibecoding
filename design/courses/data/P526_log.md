@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - hechos y dimensiones de llegada tardía (pp. 20, 23) — ya cubierta/marginal: P526 H01 separa tiempo de evento y orden de llegada; la búsqueda de claves vigentes de Kimball presupone SCD tipo 2, fuera de alcance.
+
+## S03.P526.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - `user_id` y `user_session` copiados a `submission/` desde una muestra privada (privacidad, p. 45) — marginal como señal de este documento: `user_session` es la llave del grano y la restricción de uso es un requisito de cumplimiento de `AGENTS.md`. Se escala como higiene junto con la candidata P519, sin proponer un cambio de aprendizaje.

@@ -58,3 +58,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - esquema de eventos de error y dimensión de auditoría (pp. 23–24) — ya cubierta por P516 H02 (reglas con dimensión y conteo) y P514 H02 (reporte por etapa); como esquema dimensional del *back room* es fuera de alcance.
+
+## S03.P514.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - rol «Data storage and access» (ETL, batch y streaming; p. 37) — fuera de alcance: el documento lo describe como un rol diferenciado cercano a ingeniería, lo que confirma el riesgo de identidad ya registrado. No justifica ampliar ETL/ELT.

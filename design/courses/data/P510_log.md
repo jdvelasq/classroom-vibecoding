@@ -61,3 +61,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P510.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - número de calificaciones como aproximación a «adopción», un sesgo de selección (p. 44, «nonrandom selection») — marginal: basta declarar el límite en la nota de la candidata P510; no cambia la capacidad ejercitada.

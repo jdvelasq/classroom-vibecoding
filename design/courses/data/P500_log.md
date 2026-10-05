@@ -87,3 +87,20 @@
   - catálogo «oficial» de técnicas de modelado dimensional (Toolkit, 3.ª ed.): proceso de cuatro pasos, grano, hechos y dimensiones, aditividad, claves, dimensiones degeneradas, SCD, jerarquías, tablas puente, hechos tardíos y esquemas especiales. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - matriz de bus, arquitectura de bus empresarial, dimensiones conformadas, hechos de tiempo real, supertipo/subtipo (pp. 13–14, 24) — fuera de alcance: arquitectura empresarial excluida por `s05-diseno-data.md`.
+
+## S03.P500.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Missing and conflicting data» (p. 45) frente a «Product Base Margin tiene 16 valores faltantes», escrito como texto fijo — marginal respecto de este documento: defecto ya registrado por S02 (S03 «faltantes […] no verificados»); el documento no añade un argumento específico.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - necesidad de datos reales y «messy» y de preguntas mal planteadas, no «canned» (pp. 38–39) — ya cubierta: Superstore con BOM y convenciones regionales (P500 H01, P513 H01), Scopus (P503), Vermont con granos mezclados (P516 H01), volcado de otro motor (P510 H01).
+  - «Think about how a data processing workflow might be affected by data issues» y «Ingest, clean, and then wrangle» (p. 40) — ya cubierta (P500 H04, P511 H02, P516–P517, P526 H01).
+  - flujo de trabajo y reproducibilidad: documentación, notebooks, análisis reproducible (pp. 46–47) — ya cubierta por `data.C04` (P501 H02, P502 H03, P503 H01, P517 H04). El control de versiones (p. 47) queda fuera de alcance como tema del curso: ya opera como infraestructura de distribución (GitHub Actions).
+  - «Record retention policies» (p. 45) — fuera de alcance: gobernanza organizacional sin caso; sólo se recoge, como condición de uso, dentro de la candidata P502.
+  - ética entretejida en todo el currículo (Rec. 2.4, pp. 22 y 50; juramento pp. 137–138) — fuera de alcance como actividad nueva: no hay caso y desplazaría talleres. Sus vehículos locales y materiales son las candidatas P519 (privacidad) y P502 (permisos y crédito de fuentes).
+  - ausencia generalizada de manifiestos de procedencia (S01 «sin procedencia» en P500, P501, P510, P516, P519–P526) — marginal como señal de este documento: `AGENTS.md` ya exige preservar procedencia y restricciones. Es un defecto de cumplimiento de implementación más que una contribución nueva de aprendizaje; P502 concentra la parte conceptual.
+  - dashboards para monitorear una base que evoluciona (p. 45) — fuera de alcance (Descriptiva y productos de datos).
+  - evaluación del aprendizaje en ocho pasos de Jordan (p. 89) — fuera de alcance de S03 (la evaluación es participación con `pytest` por convención).

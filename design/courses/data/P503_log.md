@@ -68,3 +68,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dimensiones multivaluadas y tablas puente (p. 21) — ya cubierta por P503 H02 (relaciones muchos a muchos normalizadas).
+
+## S03.P503.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - considerar si los datos disponibles son apropiados para la pregunta (p. 39) y los datos observacionales como «found artifacts» no aleatorios (p. 44), aplicados a la pertinencia del corpus Scopus — ya cubierta en lo esencial (P503 H01 consulta preservada, P504 H03 heterogeneidad documental, P507 H02 palabras clave que condicionan el ranking). Ampliar a la evaluación estadística de selección es fuera de alcance (Estadística o Descriptiva).

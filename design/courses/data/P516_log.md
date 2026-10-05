@@ -60,3 +60,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - esquema de eventos de error y dimensión de auditoría (pp. 23–24) — ya cubierta por P516 H02 (reglas con dimensión y conteo) y P514 H02 (reporte por etapa); como esquema dimensional del *back room* es fuera de alcance.
+
+## S03.P516.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «use simple graphics to check data for artifacts, snafus, and inconsistencies» y «Data consistency checking» (pp. 45–46) — marginal: `AGENTS.md` ya exige celdas de evidencia visual y las reglas nombradas de P516 (H02) son el mecanismo de consistencia. Extender a las 147 columnas sin diccionario no tiene caso riguroso.
