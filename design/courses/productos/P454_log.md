@@ -34,3 +34,12 @@
 - **Señales descartadas relevantes:**
   - «Identify the types of documentation needed for various analytics methodologies» (p. 25, CAP-E.7.6.1) — ya cubierta: runbook (P446 H01–H02), ficha de catálogo (P454 H01), contrato documentado con respuestas ejecutadas (P425 H02).
   - roles de gobierno «data owner, data steward, data custodian» (p. 14, CAP-E.3.2.2) — marginal: P454 H01 y P411 H02 ya fijan un responsable; distinguir tres roles no cambia lo que el estudiante hace con la capacidad.
+
+## S03.P454.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-P.6.4.2 documentación del modelo y del reporte «so that the analytics solutions can be reused if the business circumstances should change» (p. 23); Task 7.6 y CAP-P.7.6.1 «Identify the types of documentation needed for various audiences» (p. 25) — ya cubierta: ficha operacional (P454 H01–H02), runbook para quien atiende (P446 H01–H02), contrato documentado con respuestas ejecutadas para el consumidor (P425 H02).
+  - CAP-P.3.2.2 «overlaps and gaps in responsibility, including roles responsible for data governance» (p. 14); CAP-P.3.3.1 consecuencias de «lack of responsibility for data ownership» (p. 14) — ya cubierta: responsable en la tarjeta (P411 H02) y en la ficha de catálogo (P454 H01).

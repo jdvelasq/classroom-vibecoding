@@ -34,3 +34,11 @@
 - **Señales descartadas relevantes:**
   - «Identify appropriate requirements for the analytics solution to be used in production» (p. 23, CAP-E.6.4.1; Tarea 6.4: «model, usability, system, and business») — ya cubierta de forma distribuida en `productos.C01`: consumidor y métrica (P408), responsable (P411), contrato de interfaz (P425), nivel de servicio (P445).
   - roles de gobierno «data owner, data steward, data custodian» (p. 14, CAP-E.3.2.2) — marginal: P454 H01 y P411 H02 ya fijan un responsable; distinguir tres roles no cambia lo que el estudiante hace con la capacidad.
+
+## S03.P411.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-P.3.2.2 «overlaps and gaps in responsibility, including roles responsible for data governance» (p. 14); CAP-P.3.3.1 consecuencias de «lack of responsibility for data ownership» (p. 14) — ya cubierta: responsable en la tarjeta (P411 H02) y en la ficha de catálogo (P454 H01).

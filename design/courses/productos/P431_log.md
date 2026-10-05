@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Identify characteristics of lineage, traceability, and version control of data» (p. 15, CAP-E.3.4.3) — ya cubierta: P431 H01 (identidad por contenido), P443 H02 (linaje entrada→salida).
+
+## S03.P431.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-P.3.4.3 «Identify the purpose of lineage, traceability, and version control of data» (p. 15) — ya cubierta: huella de datos (P431 H01), linaje del agregado (P443 H02), versión de la definición (P408 H01–H02).

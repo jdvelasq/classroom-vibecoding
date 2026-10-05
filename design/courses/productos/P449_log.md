@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Blueprint del examen de entrada CAP-E derivado del INFORMS Analytics Framework: siete dominios con tareas y subtareas evaluables (p. 6: Deployment 9 %, Lifecycle Management 8 %); varias subtareas de despliegue y mantenimiento figuran como «Not tested at this level». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P449.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 7.4 «Validate the business case for the analytics solution over time»; CAP-P.7.4.1 «Identify which benefit is attributable to the analytics solution over time» (p. 25) — fuera de alcance: la atribución de beneficio exige un diseño causal y datos de resultados que el curso no tiene; coincide con el descarte de ROI/beneficio en `dataops-03` (P449).

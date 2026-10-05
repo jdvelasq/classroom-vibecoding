@@ -47,3 +47,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Support training activities» (p. 25, CAP-E.7.3.1) — fuera de alcance: capacitación de audiencias, no operación de la capacidad.
   - dominios I–V (encuadre del problema de negocio y analítico, datos, selección de método, desarrollo de modelos; pp. 7–21) — fuera de alcance: responsabilidades de Fundamentos, Descriptiva, Predictiva y Prescriptiva según las fronteras del curso.
+
+## S03.P400.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Temario del examen CAP-Pro derivado del INFORMS Analytics Framework: siete dominios del ciclo de vida analítico con tareas y subtareas evaluables (pesos: Deployment 10 %, Lifecycle Management 9 %). Sólo los dominios VI–VII y algunas subtareas de III (linaje, gobierno, calidad) tocan la operación de capacidades. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Task 6.4 «Create requirements for a deployed analytics solution including model, usability, system, and business» (p. 23); CAP-P.6.4.1 «Identify what is missing or does not belong in an outline of the requirements of a production system» — marginal: los elementos del contrato operativo ya se acumulan en la tarjeta de producto (P408 H01, P409 H02 consumidor, P411 H02 responsable), el contrato de API (P425 H01), la compatibilidad de contrato (P434 H01), el nivel de servicio (P445) y la ficha de catálogo (P454 H01). Añadir campos a la tarjeta no cambia la contribución (Git) de P408–P411; la falta de mapeo de C01 es una decisión de curso ya registrada en S02 (P425, P434, P445).
+  - Task 7.3 «Support training activities»; CAP-P.7.3.1 «type of training that is needed for an IT audience» (p. 25) — fuera de alcance: gestión del cambio/capacitación, no operación de la capacidad.
+  - CAP-P.4.4.1 fortalezas y debilidades del stack «on-premise, cloud, open source vs. proprietary, platforms» (p. 18) — fuera de alcance: selección de plataforma/cloud engineering, excluida por las fronteras del curso.
+  - CAP-P.2.6.2 y CAP-P.5.3.5 sesgo en datos de entrenamiento y resultados no éticos (pp. 12, 20) — fuera de alcance: método predictivo de origen.

@@ -33,3 +33,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dimensiones de calidad «accuracy, completeness, consistency, timeliness, validity, uniqueness» (p. 15, CAP-E.3.6.1) — ya cubierta: contrato de datos (P402 H01), frescura (P439 H01), observabilidad integrada (P442 H02).
+
+## S03.P442.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-P.6.6.1 «Identify causes of incorrect data in production systems» (p. 23) — ya cubierta: contrato de datos (P402), compatibilidad de entradas (P404), registros tardíos (P437), frescura (P439), conciliación (P440), cuarentena (P441), observabilidad integrada (P442).
+  - CAP-P.3.6.1 dimensiones de calidad «missing data, accuracy, completeness, consistency, timeliness, validity, uniqueness, and outliers» (p. 15) — ya cubierta en su uso operativo (contrato de seis reglas P402 H01, frescura P439 H01, señales integradas P442); el perfilado exploratorio es de Descriptiva.

@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Identify the metrics that monitor analytics solution performance» (p. 24, CAP-E.7.1.1) — ya cubierta: P422 H01 (señal por variable de entrada), P423 H01–H02 (desempeño observado frente a mínimo), P445 H01–H02 (disponibilidad frente a meta).
+
+## S03.P423.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** refuerza T01; propone T02.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

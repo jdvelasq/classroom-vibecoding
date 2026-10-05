@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Identify a potential ethical analytics risk» (p. 22, CAP-E.6.1.2) — marginal: reconocimiento genérico; la salvaguarda operativa ya está en la revisión humana (P450 H01–H02).
+
+## S03.P450.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Tasks 6.1–6.3 validación de negocio, «business validation report» y acuerdo del patrocinador antes de desplegar (pp. 22–23) — fuera de alcance en su núcleo (juzgar si la solución resuelve el problema de negocio es responsabilidad del curso de origen: Predictiva/Prescriptiva); la parte operable ya está en la compuerta técnica (P403 H02) y la autorización humana explícita (P450 H02).

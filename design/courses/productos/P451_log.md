@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Identify the importance of reviewing analytic solutions post deployment for unintended consequences» (p. 25, CAP-E.7.5.1) e «Identify what has changed over time for the business case» (p. 25, CAP-E.7.4.1) — marginal: P451 ya liga la valoración del consumidor a la respuesta evaluada; el límite registrado (la señal no alimenta ninguna mejora, C05 no ejercido) no se resuelve con una competencia de reconocimiento sin práctica ni criterio. Podría citarse como fuente secundaria si otra revisión propone cerrar el ciclo retroalimentación → mejora.
+
+## S03.P451.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 7.5 «Analyze the side effects of the analytics solution over time»; CAP-P.7.5.1 «Identify likely adverse consequences» (p. 25) — fuera de alcance: sin caso ni datos de efectos; P451 ya conserva la señal negativa del consumidor (H02) como canal operativo.

@@ -34,3 +34,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «deployment validation and verification, including production data flows» (p. 23, Tarea 6.6) — subtarea no evaluada; ya cubierta por la verificación del artefacto publicado (P417 H01) y la conciliación origen–destino (P440 H01–H02).
+
+## S03.P440.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-P.6.6.1 «Identify causes of incorrect data in production systems» (p. 23) — ya cubierta: contrato de datos (P402), compatibilidad de entradas (P404), registros tardíos (P437), frescura (P439), conciliación (P440), cuarentena (P441), observabilidad integrada (P442).
