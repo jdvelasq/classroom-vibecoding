@@ -296,3 +296,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - proyecto por entregas que parte de definir el problema y la propuesta (Deliverable 1, p. 6): coherente con el encuadre de T01, pero es formato de evaluación de curso; no se añade como fuente.
+
+## S03.P200.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sílabo de introducción a la analítica centrado en bases de datos, SQL, NoSQL, BI y visualización (calendario, pp. 5–7); sin contenidos de modelado predictivo que contrastar con esta actividad.

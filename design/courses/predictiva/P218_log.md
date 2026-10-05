@@ -239,3 +239,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sílabo de posgrado en analítica de datos de salud (calendario, pp. 9–10: preprocesamiento, exploración, probabilidad, regresión, patrones frecuentes, clasificación y predicción, clustering), con evaluación basada en un proyecto de minería de datos por entregas y un artículo de revisión; los temas coinciden con los ya cubiertos y el formato de proyecto integrador es una decisión de curso, no de esta actividad.
+
+## S03.P218.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sílabo de introducción a la analítica centrado en bases de datos, SQL, NoSQL, BI y visualización (calendario, pp. 5–7); sin contenidos de modelado predictivo que contrastar con esta actividad.
