@@ -161,3 +161,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «use the DASK library to create, read, write, and analyze multiple files in parallel and simulate parallel processing across distributed machines» (p. 11); portafolio «Stream load 100 million lines of data and create and write 20 files in parallel using DASK» (p. 12) — fuera de alcance: refuerza precisamente el riesgo de identidad Big Data ya señalado en P522–P523; no justifica ampliarlo.
+
+## S03.P523.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de 6 meses con cinco partes (fundamentos de data science, optimización, ML, ML avanzado, despliegue), casos (retail, análisis facial, Filatoi Riuniti, BlueBike) y *capstone* de portafolio; herramientas Python y Google Colab. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

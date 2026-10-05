@@ -261,3 +261,16 @@
   - CDC con Debezium y bases MongoDB/Cassandra/Redis/Firebase en contenedores (p. 8: «Perform change data capture (CDC)»; p. 10: «perform CDC in different types of databases») — fuera de alcance: operación de sistemas y pipelines productivos.
   - pipelines con NiFi, Hadoop, Spark y Airflow (p. 11: «create data pipelines for big data processing. You will use PySpark to query big data») — fuera de alcance: Big Data y orquestación; `case-selection.md` excluye PySpark/Hive/Pig como contenido.
   - módulos de ML, RL y redes profundas (p. 9, p. 11, p. 12) — fuera de alcance: pertenecen a Predictiva/otros cursos.
+
+## S03.P500.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de 6 meses con cinco partes (fundamentos de data science, optimización, ML, ML avanzado, despliegue), casos (retail, análisis facial, Filatoi Riuniti, BlueBike) y *capstone* de portafolio; herramientas Python y Google Colab. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Module 16: Fairness and Bias Issues in Data-Driven Predictions» (p. 8) y caso de algoritmos de análisis facial «detect, diagnose, and mitigate biases» (p. 10) — fuera de alcance: sesgo de modelos predictivos (curso predictivo); el sesgo de datos del curso ya aparece como límite en P510 sin caso propio.
+  - «Survey the essentials of data science including data, models, processes» (p. 7); prerrequisito «familiar with Excel datasets» (p. 6) — marginal: no especifica prácticas de datos.
+  - «applying techniques such as data augmentation, transfer learning, and data filtering» (p. 11) — fuera de alcance (preparación para ML).
+  - clustering, regresión, optimización, redes neuronales, NLP, «Data, Models, and Decisions» (pp. 7–9) — fuera de alcance (cursos de línea).

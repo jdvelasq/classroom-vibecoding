@@ -161,3 +161,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Transit Data and Application Programming Interfaces» (p. 9) y «clean data from web pages ... create a sensemaking data pipeline» (p. 11) — marginal: variante de obtención desde API/web sin finalidad analítica explícita; no resuelve el vacío de pregunta de P518.
+
+## S03.P518.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de 6 meses con cinco partes (fundamentos de data science, optimización, ML, ML avanzado, despliegue), casos (retail, análisis facial, Filatoi Riuniti, BlueBike) y *capstone* de portafolio; herramientas Python y Google Colab. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

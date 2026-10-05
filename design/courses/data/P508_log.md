@@ -173,3 +173,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «write complex database queries, use Regular Expressions, clean a database, define drivers to read a table» (p. 10) — ya cubierta: esquema y limpieza previa a la carga (P503 H02–H03), consultas (P504–P507), acceso por engine (P508 H01). Regex como técnica sería marginal (otra herramienta para lo mismo).
+
+## S03.P508.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de 6 meses con cinco partes (fundamentos de data science, optimización, ML, ML avanzado, despliegue), casos (retail, análisis facial, Filatoi Riuniti, BlueBike) y *capstone* de portafolio; herramientas Python y Google Colab. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
