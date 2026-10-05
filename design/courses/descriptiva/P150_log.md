@@ -241,3 +241,11 @@
 - **Señales descartadas relevantes:**
   - tipos de unión «INNER, RIGHT, FULL OUTER, EXCEPTION and CROSS JOINs» y «Cleaning Data and Creating Multiple Joins» con `COALESCE` (p. 6) — marginal: P150 H02 ya protege el grano (`validate="many_to_one"`, conservación de filas, sin atributos nulos), lo que detectaría claves huérfanas; que los datos sintéticos no las tengan (S02 «Sólo se ejercita el camino feliz») es un límite del caso, y la señal es de sintaxis SQL, no de capacidad analítica nueva.
   - modelado relacional y ER, claves «primary, foreign, candidate, surrogate», cardinalidad (p. 5) — ya cubierta en lo que sirve a la descripción: fuentes normalizadas (P150 H01) y claves sustitutas con integridad referencial (P151 H01–H03).
+
+## S03.P150.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa en línea de 12 semanas, con o sin código, sobre IA generativa, ingeniería de *prompts* y RAG, agentes con herramientas y memoria, planificación y razonamiento, sistemas multiagente, pruebas y evaluación de sistemas agénticos y su protección; casos y proyectos de automatización empresarial. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

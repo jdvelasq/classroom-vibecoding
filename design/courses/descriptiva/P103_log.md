@@ -233,3 +233,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tipos de variables y de gráficos, «Charting Considerations», «Heat Maps», «Interactive» (p. 7) — ya cubierta: ranking legible (P103 H04), magnitud y tasa en un gráfico y matrices (P120 H05–H06, P121 H04), tablero filtrable (P124 H04).
+
+## S03.P103.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa en línea de 12 semanas, con o sin código, sobre IA generativa, ingeniería de *prompts* y RAG, agentes con herramientas y memoria, planificación y razonamiento, sistemas multiagente, pruebas y evaluación de sistemas agénticos y su protección; casos y proyectos de automatización empresarial. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

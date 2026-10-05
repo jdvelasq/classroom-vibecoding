@@ -362,3 +362,15 @@
   - «Tell compelling stories with data», «Present data-driven insights using data visualization and dashboards» (p. 1) — marginal desde este documento: enunciado de objetivo sin método; la ausencia de lectura persistida ya está registrada en las auditorías (p. ej., P152 H03, P154 S04).
   - NoSQL/MongoDB y su framework de agregación (pp. 6–7); capacitación en Excel, Access, SAS, Tableau (p. 1) — fuera de alcance: plataformas concretas y bases no relacionales.
   - proyecto final que identifica problema, recolecta, limpia, analiza y modela (pp. 2–3) — fuera de alcance como formato: el curso evalúa con talleres `Pxxx` y `pytest`; los «models» exceden la línea descriptiva.
+
+## S03.P100.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa en línea de 12 semanas, con o sin código, sobre IA generativa, ingeniería de *prompts* y RAG, agentes con herramientas y memoria, planificación y razonamiento, sistemas multiagente, pruebas y evaluación de sistemas agénticos y su protección; casos y proyectos de automatización empresarial. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - RAG, *embeddings*, almacén vectorial (p. 11); agentes con LangChain, herramientas, memoria y MCP, planificación y razonamiento (p. 12); sistemas multiagente, pruebas unitarias/de integración, métricas de latencia y robustez (p. 13); IA multimodal (p. 14) — fuera de alcance: construcción de productos de IA (productos de datos), no descripción.
+  - casos y proyectos (agente de análisis de investigación financiera, chatbots, procesamiento documental) (pp. 14–16) — fuera de alcance: automatización de procesos con agentes; el «análisis de datos y generación de insights» automatizado (p. 14) no aporta método descriptivo.
+  - resultados de aprendizaje en marketing, ventas y operaciones (p. 6) — marginal: enunciados generales sin contenido descriptivo.

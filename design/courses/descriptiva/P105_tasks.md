@@ -8,6 +8,7 @@
 - **Tipo:** método/evidencia (corrige un defecto real)
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 22 y 138 — entre las consideraciones éticas centrales están «validating the data’s accuracy» y «safeguarding the privacy of individuals referenced in the data» (p. 22), y el juramento propuesto incluye «I will respect the privacy of my data subjects» (p. 138): compartir datos de personas exige minimizarlos y lo producido debe validarse (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de privacidad y validación, no un procedimiento con asistentes.
+  - `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` pp. 11–13 — el programa incluye «Riesgos de la IA Generativa» (Módulo 01, p. 11), «Fundamentación y validación» (Módulo 02, p. 12) y, en el Módulo 03 (p. 13), «Fundamentación, validación y veracidad», «Evaluación con intervención humana» y «Seguridad y privacidad de los datos»: validar la salida y proteger los datos forman parte del uso profesional de IA generativa (Claude, 2026-10-04). Fuente *institutional*: el `.md` sólo contiene la cabecera web repetida; las páginas se leyeron como imágenes (`img/ut/p11.png`–`p13.png`). Ilustra la práctica; no impone el tema, que P105 ya tiene.
 - **Qué gana el estudiante:** pasa de redactar *prompts* a usar un
   asistente con dos salvaguardas que hoy faltan. Primero, decide qué datos
   pueden salir hacia un servicio externo: P105 modela compartir

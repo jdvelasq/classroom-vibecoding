@@ -233,3 +233,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Sílabo de un curso introductorio de 16 semanas centrado en herramientas (Excel, Access, SQL, MongoDB, SAS, Tableau): modelado ER y normalización, SQL (agregación, joins, subconsultas), NoSQL, sistemas de BI, visualización y tableros, proyecto final en equipo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P105.29
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - técnicas de *prompt* «Zero-shot, One-shot, Few-shot, Cadena de Pensamiento», «Plantillas reutilizables para prompts» (p. 11) — marginal: variantes de redacción; P105 H01 ya especifica instrucciones verificables por paso.
+  - «Registro de la toma de decisiones para una mayor transparencia» (p. 13) — marginal: absorbido por la candidata (registrar respuestas del asistente).
