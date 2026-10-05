@@ -317,3 +317,11 @@
 - **Señales descartadas relevantes:**
   - «El modelo identifica 10.000 clientes con alto riesgo … presupuesto para intervenir en 1.000 … Las intervenciones tienen costos diferentes … No todos responderán igual» (p. 18) — ya cubierta: P306 H02–H04 (riesgo vs. efecto, valor incremental, cupo). La heterogeneidad de costos por intervención es marginal: P305 H03 ya muestra que con costos heterogéneos el ranking deja de ser exacto, y P306 H03 justifica por qué con costo uniforme sí lo es.
   - elegir «con qué acción» entre varias intervenciones (p. 18) — marginal: la asignación entre opciones con capacidad ya se ejerce en P308 H04; añadir tratamientos múltiples a P306 sería una variante.
+
+## S03.P306.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: diapositivas de un curso de DataOps que trasladan Lean (TPS, Lean Software/Product Development, desperdicios, value stream mapping, teoría de restricciones, 5 porqués) al ciclo de vida de productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

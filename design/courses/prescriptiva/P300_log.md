@@ -463,3 +463,15 @@
   - «Seleccionar el enfoque … Validar la elección» de métodos (p. 17) — ya cubierta: P306 H03, P316 H05, P317 H04, P319 H03.
   - «Verificar el modelo. Comprobar que la implementación representa correctamente la formulación» (p. 21) — ya cubierta: verificaciones cruzadas de P305, P308, P315 y validaciones de P316–P318.
   - comprensión y preparación de datos, despliegue en producción, adopción y transferencia (pp. 12–15, 22–23) — fuera de alcance: Fundamentos de data y Productos de datos.
+
+## S03.P300.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: diapositivas de un curso de DataOps que trasladan Lean (TPS, Lean Software/Product Development, desperdicios, value stream mapping, teoría de restricciones, 5 porqués) al ciclo de vida de productos de datos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - desperdicios en analytics y value stream mapping del ciclo de creación de un producto de datos (pp. 6–7: «Trabajo que no llega a producción», «Tiempo requerido para crear un nuevo producto de datos») — fuera de alcance: organización del proceso de desarrollo/operación de productos de datos (Productos de datos / DataOps), no diseño de una política de decisión recurrente.
+  - «Entrega rápida» como sistema de colas («No se puede operar al 100% de capacidad», «control estadístico de procesos», p. 8) — fuera de alcance: gestión del flujo de trabajo del equipo de datos; la intuición de no operar al 100 % de capacidad ya aparece como riesgo residual y holgura en P309/P311/P313, sin que el documento aporte un método enseñable.
+  - capas del data lifecycle (p. 12: cómputo distribuido, contenedores, orquestación, monitoreo) — fuera de alcance: infraestructura (Productos de datos / Fundamentos de data).

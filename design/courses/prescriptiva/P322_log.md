@@ -316,3 +316,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - recorrido histórico de metodologías (KDD, CRISP-DM, ASUM-DM, TDSP, INFORMS, CRISP-ML(Q)) y ciclo de vida completo de una solución analítica, ilustrado con un caso de abandono de clientes que pasa de predicción a decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P322.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Diferir decisiones… Las decisiones irreversibles deben hacerse en el último momento posible» (p. 3) y ciclos construir–medir–aprender con «Aprendizaje validado», «Métricas accionables» (p. 4) — marginal: el valor de esperar/medir antes de comprometer recursos ya es el núcleo de P322 (H01–H02) y la decisión anticipada vs. tardía bajo demora está en P309 H04; la diapositiva es una consigna sin método.

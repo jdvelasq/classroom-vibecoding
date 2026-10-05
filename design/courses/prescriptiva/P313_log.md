@@ -313,3 +313,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «¿Funciona con datos no utilizados durante el desarrollo?» (p. 20) aplicado a la validación de la política de flota en la misma muestra simulada (límite de H06) — marginal: con 20.000 futuros, IC y umbrales de contingencia no optimizados, validar en futuros independientes no cambiaría de forma visible la evidencia ni lo que el estudiante entiende; podría mencionarse como aclaración si se toca P313 por otra razón.
+
+## S03.P313.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - teoría de restricciones («Identifique la mayor restricción… Subordine el resto del sistema a la restricción», p. 9) — marginal/fuera de alcance: marco de mejora de procesos, no de política computable; la noción de recurso restrictivo y su valor ya está cubierta (P304 H02 valor marginal de capacidad; P316 H04 y P318 H05 valor de la capacidad escasa).
