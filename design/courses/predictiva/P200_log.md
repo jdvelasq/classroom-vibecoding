@@ -220,3 +220,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelo de predicción de precios de vivienda con regresión lineal (módulos 7–8, p. 11): ya cubierta (H01–H09).
+
+## S03.P200.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - árboles CART y aprendizaje por ensambles como modelos no lineales de regresión y clasificación (módulos 14–15, p. 8): se añaden como fuente de N01.
+  - caso BlueBike: regresión para predecir demanda y R² para elegir el modelo (p. 10): ya cubierta (H04, H07–H09).
+  - «Interpretability and Causality in Models» (módulo 22, p. 9): segunda fuente para la señal de interpretación de modelos (con National Academies); N01 recoge la lectura de importancia de variables de árboles y ensambles.

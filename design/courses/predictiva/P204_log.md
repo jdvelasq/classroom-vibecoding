@@ -195,3 +195,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
+
+## S03.P204.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - clasificación con árboles (módulo 14, p. 8): se registra en N01.

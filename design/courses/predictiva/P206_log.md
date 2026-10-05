@@ -195,3 +195,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - k-means con scikit-learn (p. 10): ya cubierta (H03).
+
+## S03.P206.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado de ciencia de datos y analítica (currículo, pp. 7–9); para esta actividad no añade una señal distinta de las ya registradas.

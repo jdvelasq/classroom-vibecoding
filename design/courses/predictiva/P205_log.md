@@ -188,3 +188,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
+
+## S03.P205.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - equidad y sesgo en predicciones basadas en datos; caso de algoritmos de análisis facial (módulo 16, pp. 8, 10): ya cubierta en la medida que el caso lo permite (H04); el folleto no detalla métodos.

@@ -194,3 +194,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Naive Bayes y Gaussian Naive Bayes con scikit-learn (p. 10): marginal; otro clasificador para el mismo producto.
+
+## S03.P203.20
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - NLP y transformers (módulos 20–21, p. 9): fuera de alcance por la misma razón; P203 ya conecta texto con clasificación supervisada (H01–H05).
