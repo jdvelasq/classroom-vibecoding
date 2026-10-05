@@ -214,3 +214,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa ejecutivo combinado (en línea + 3,5 días en campus) sobre estrategia, liderazgo, innovación, futuros y gobernanza de IA generativa y agéntica para directivos con más de 10 años de experiencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P507.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «cómo limpiar los datos en bruto y cómo utilizar SQL para cargar y consultar datos en las bases de datos» (p. 5) — ya cubierta (P503 carga y modela; P504–P508 consultan; P510 carga un volcado).

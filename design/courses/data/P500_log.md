@@ -322,3 +322,14 @@
   - configurar flujos y decisiones para ML (p. 16 «Configuring workflows and decisions for machine learning (ML)») — fuera de alcance (Predictiva/Prescriptiva y organización).
   - gobernanza, riesgo, controles empresariales y confianza (p. 17 «AI Governance, Enterprise Controls and Program Wrap-Up») — fuera de alcance: gobierno empresarial es frontera del curso.
   - estrategia, modelos de negocio, futuros, liderazgo (pp. 3–19) — fuera de alcance.
+
+## S03.P500.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de diez meses en español con cinco cursos de ocho semanas: Data Engineering, Ciencia de Datos con Python, Estadística, IA y ML, y Storytelling y visualización. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Aplicar las herramientas de inteligencia empresarial (BI) … paneles de Tableau» (p. 6); estadística, ML, *storytelling* (pp. 7–8) — fuera de alcance (descriptiva y otros cursos).
+  - el programa nombra su primer curso «Data Engineering» (p. 5) — contexto institucional; no impone identidad: el curso `data` excluye explícitamente Data Engineering.
