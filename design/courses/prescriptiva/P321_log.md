@@ -358,3 +358,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre DataOps aplicado a ciencia de datos y ML: deuda técnica, pruebas automáticas, ambientes, orquestación, contenedores, arquitectura de datos y prácticas ágiles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P321.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Statistical process control … Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos» y balance histórico frente a «valores esperados» (p. 5) — fuera de alcance: se refiere a la calidad de los datos del pipeline, no a los resultados de una política. El límite de P321 (sin datos de seguimiento con los que aplicar el gatillo, log S02) es real, pero este documento no aporta evidencia sobre monitoreo de resultados de decisiones; la familia literature-derived da contexto organizacional, no prescripción.

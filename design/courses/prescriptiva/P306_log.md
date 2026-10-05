@@ -357,3 +357,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre DataOps aplicado a ciencia de datos y ML: deuda técnica, pruebas automáticas, ambientes, orquestación, contenedores, arquitectura de datos y prácticas ágiles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Severidad con acción requerida, «Error → Detención del pipeline; Alerta → Investigación de la falla; Informativa → Ser consciente» (p. 4) — ya cubierta: P306 H07 asigna a cada métrica una acción (bloquear, suspender, recalibrar, escalar) y una autoridad; P308 H07 separa bloqueo, revisión contextual y recalibración. Es la misma idea aplicada a la política.

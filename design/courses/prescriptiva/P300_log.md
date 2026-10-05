@@ -522,3 +522,14 @@
   - «Tests basados en comportamiento» para modelos codificados a mano (p. 2) aplicado a las pruebas que sólo verifican existencia de archivos — fuera de alcance: `AGENTS.md` fija que `tests/test_activity.py` evalúa participación, no corrección del modelo.
   - monitoreo del modelo ante «Cambios en los requerimientos o condiciones de negocio» (p. 3) — fuera de alcance como práctica de ingeniería (Productos de datos); el monitoreo de la política se trata en la candidata de P321 de `informs-analytics-framework-2024`.
   - control de versiones, ambientes múltiples, contenedores, orquestación y arquitecturas de datos (pp. 4–11) — fuera de alcance: Productos de datos / Fundamentos de data.
+
+## S03.P300.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre calidad de datos en DataOps: pruebas automáticas en cada etapa del pipeline (entradas, lógica de negocio, salidas), severidad con acción asociada (detener, investigar, informar), pruebas de balance por ubicación, balance histórico y control estadístico de procesos, y la separación entre pipeline de valor (datos variables) y de innovación (código variable). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Tipos de pruebas (unitarias, integración, funcionales, regresión, desempeño, humo) y «Los tests deben incluirse en cada etapa del pipeline» (pp. 2, 4) — fuera de alcance: práctica de ingeniería de software y DataOps (Productos de datos); las pruebas `pytest` de los talleres evalúan participación (AGENTS.md), no la calidad del pipeline.
+  - «Analytics es código», pipeline de valor frente a pipeline de innovación y ambiente idéntico al de producción (p. 3) — fuera de alcance: organización de la operación de datos, no diseño ni gobierno de una política.

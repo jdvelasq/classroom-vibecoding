@@ -358,3 +358,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre DataOps aplicado a ciencia de datos y ML: deuda técnica, pruebas automáticas, ambientes, orquestación, contenedores, arquitectura de datos y prácticas ágiles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P305.44
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Verificar entradas antes de usarlas, «¿Están los datos de entrada libres de errores?» con conteos, formatos, rangos y tipos de campo (p. 4) — ya cubierta en la forma que importa a una política: P304 H06 automatiza sólo «solicitudes con datos válidos» y escala excepciones; P305 H06 declara excepción por datos inválidos; P308 H06 retiene la recomendación si la predicción falta o no está vigente; P319 H06 prohíbe publicar con atributos incompletos. El diseño de las pruebas de datos del pipeline pertenece a Productos de datos / Fundamentos de data.
