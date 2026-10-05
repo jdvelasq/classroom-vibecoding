@@ -152,3 +152,14 @@
   - sesgos y trampas en decisiones (p. 7; Módulo 8, p. 8) — marginal: contexto de decisión, sin producto descriptivo nuevo.
   - Big Data y las cuatro V (p. 7) — marginal/fuera de alcance: P100 ya trata volumen como ejercicio de ingeniería; no cambia el producto descriptivo.
   - hacking, amenazas internas, caso TalkTalk (pp. 8, 11) — fuera de alcance: seguridad informática.
+
+## S03.P100.12
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea sobre computación en la nube y DevOps: historia de la web, Node.js, contenedores y PKI, DevOps y sus métricas, casos de migración a la nube, *serverless*, corporación ágil y *cloud native*. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - contenedores, orquestación, Kubernetes, *serverless*, AWS Lambda, *cloud native* (pp. 13–15) — fuera de alcance: infraestructura y productos de datos.
+  - casos de transformación organizacional y bucle OODA (pp. 14–15) — fuera de alcance: estrategia tecnológica, sin producto descriptivo.

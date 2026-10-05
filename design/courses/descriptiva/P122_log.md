@@ -106,3 +106,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Estadísticas descriptivas», «Distribuciones normales y no normales» (p. 7) — ya cubierta: histograma con referencia en cero (P122 H02), mediana/percentiles y caja (P125 H03).
+
+## S03.P122.12
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea sobre computación en la nube y DevOps: historia de la web, Node.js, contenedores y PKI, DevOps y sus métricas, casos de migración a la nube, *serverless*, corporación ágil y *cloud native*. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

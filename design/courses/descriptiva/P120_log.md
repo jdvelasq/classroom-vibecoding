@@ -103,3 +103,11 @@
 - **Resultado:** propone T03.
 - **Señales descartadas relevantes:**
   - nota de integración: revisiones previas (`national-academies-data-science-for-undergraduates-2018`, `berkeley-data-c102-data-inference-and-decisions`, `mit-data-science-and-machine-learning`) descartaron intervalos para P120 como marginales o fuera de alcance; este documento sitúa el intervalo dentro del módulo de análisis descriptivo y T03 lo limita a leer cada tasa contra la tasa base (con `ibm-spss-modeler-applications-guide` después), no a inferencia formal.
+
+## S03.P120.12
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea sobre computación en la nube y DevOps: historia de la web, Node.js, contenedores y PKI, DevOps y sus métricas, casos de migración a la nube, *serverless*, corporación ágil y *cloud native*. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
