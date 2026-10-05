@@ -8,6 +8,7 @@
 - **Tipo:** caso/datos + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 40, 45 y 51 — «Students also need to consider the provenance of the data used» (p. 40); «Data provenance» encabeza los conceptos de gestión y curaduría de datos importantes para todos los estudiantes (p. 45); entre las responsabilidades éticas, «the responsibility to ensure that results produced by the analyst are reproducible» (p. 51) (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de procedencia y reproducibilidad.
+  - `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` p. 6 — el entregable «Data Collection Report» debe «describe procedures followed to collect the data, […] data format, dataset size, how the data is stored, characteristics of the data» (Claude, 2026-10-04). Fuente *institutional*: ilustra cómo un programa exige declarar procedimiento y tamaño de la recolección.
 - **Qué gana el estudiante:** entender la evidencia bibliométrica como un
   corte fechado y acotado por la consulta, y no leer como caída lo que es
   un año en curso. P123 es el único taller cuyo dataset es el resultado de

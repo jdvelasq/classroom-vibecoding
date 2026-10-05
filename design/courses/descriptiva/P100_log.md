@@ -336,3 +336,16 @@
   - dimensión «Microcurricular: compete a las didácticas y procesos de evaluación de los aprendizajes» (p. 2) — marginal: no prescribe método; el formato de taller guiado y la evaluación con `pytest` ya son decisiones vigentes.
   - etapa 4, «diseñar los mecanismos de monitoreo y evaluación» de los resultados de aprendizaje (p. 3) — fuera de alcance: proceso de gestión curricular, no contenido de un taller.
   - atender «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento» (p. 3) — marginal: principio general sin señal técnica o pedagógica que ancle a un Pxxx; la familia institutional ilustra, no impone.
+
+## S03.P100.27
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Sílabo de un curso de minería de datos aplicada a salud (textos de Albright–Winston y Han–Kamber): preprocesamiento, exploración, probabilidad e incertidumbre, regresión, patrones frecuentes, clasificación, *clustering* y atípicos, minería de texto; proyecto por entregables (propuesta, reporte de recolección, reporte de preparación, informe final) y artículo de revisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Mining Frequent Patterns, Associations, and Correlations», «Classification and Prediction», «Clustering and Outlier Analysis», regresión, minería de texto (p. 9) — fuera de alcance: la minería de datos es predecesora contenida en la predictiva; el análisis de atípicos como técnica de minería no cabe en un Pxxx sin desplazar su identidad.
+  - «Create business intelligence for healthcare through data analytics» (p. 3) — ya cubierta en general por P150–P154; el dominio de salud no aporta capacidad distinta.
+  - formular hipótesis en la exploración (p. 6) — marginal: sin producto ni método asociado.
+  - artículo de revisión de literatura, póster, foros (pp. 6–8) — fuera de alcance: formatos de evaluación ajenos al contrato `Pxxx`/`pytest`.
