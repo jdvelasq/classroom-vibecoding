@@ -343,3 +343,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre el rol del CDO y los silos entre equipos de datos; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P223.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre DataOps para ingenieros y científicos de datos (arquitectura, reuso de código, deuda técnica, modelado tradicional frente a ML); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
