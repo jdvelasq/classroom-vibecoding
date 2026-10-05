@@ -432,3 +432,11 @@
 - **Señales descartadas relevantes:**
   - «Data Gathering and Preparation» — evaluar qué tan bien los datos atienden el problema e identificar problemas de calidad (p. 19: «you can determine how well it addresses the business problem [...] identify data quality problems») — ya cubierta: P516 es exactamente un diagnóstico de aptitud para una pregunta (H01–H03).
   - outliers válidos vs. errores que exigen conocimiento del dominio (p. 130: «in some cases, especially in the business arena, outliers may be perfectly valid [...] Domain knowledge is usually needed to determine outlier handling») — marginal: sería una regla más en el reporte de calidad de P516 (H02) sin cambiar la capacidad; el documento lo plantea como preparación para modelos.
+
+## S03.P516.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard: frecuencia de actualización, usuarios, preguntas y acciones, ítems de datos y su nivel de detalle, ítems clave, agrupaciones, comparaciones de contexto y umbrales de excepción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

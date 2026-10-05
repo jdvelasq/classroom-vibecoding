@@ -419,3 +419,11 @@
 - **Resultado:** propone T02.
 - **Señales descartadas relevantes:**
   - del problema de negocio a los datos requeridos (p. 19: «A model that predicts who is most likely to purchase the product must be built on data that describes the customers who have purchased the product in the past») y «Asking the Right Questions» (p. 18) — ya cubierta: P500 H02 deriva campos del grano de la pregunta y P517 H02 deriva un contrato mínimo de la pregunta (data.C01).
+
+## S03.P517.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - qué preguntas se responden y qué acciones siguen (p. 1: «What questions will they use it to answer? What actions will they take in response to these answers?») — ya cubierta: derivar requisitos de datos desde la pregunta está en P500 H02 y P517 H02 (data.C01); la acción en respuesta pertenece al producto descriptivo o prescriptivo, no al curso.

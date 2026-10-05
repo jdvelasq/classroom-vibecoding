@@ -434,3 +434,11 @@
 - **Señales descartadas relevantes:**
   - conversión de fechas a número o categoría según la pregunta (pp. 128–129) — ya cubierta: P512 H01 deriva la dimensión fecha desde texto ambiguo; la conversión a número es requisito de algoritmos (otro curso).
   - «a data warehouse will be of no use if it does not contain the data you need to solve your problem» (p. 17) y apoyo a esquemas estrella mediante columnas anidadas (p. 26, p. 76) — marginal: encuadre ya planteado en la auditoría de P512 (riesgo de leerse como modelado dimensional sin pregunta); el documento no aporta un mecanismo para resolverlo; las columnas anidadas son específicas de Oracle.
+
+## S03.P512.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard: frecuencia de actualización, usuarios, preguntas y acciones, ítems de datos y su nivel de detalle, ítems clave, agrupaciones, comparaciones de contexto y umbrales de excepción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

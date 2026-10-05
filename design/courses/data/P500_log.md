@@ -657,3 +657,14 @@
   - imputación media/moda y desajuste entre estadísticas de construcción y aplicación (p. 94) — fuera de alcance: pertenece al ciclo de modelado.
   - datos transaccionales tipo canasta, Apriori, soporte/confianza/lift (pp. 67–68, 75–82) — fuera de alcance: reglas de asociación son análisis descriptivo; la forma multirregistro ya está cubierta.
   - minería dentro de la base sin mover datos, seguridad por privilegios, *refresh* (pp. 21–22) — fuera de alcance: argumentos de producto/arquitectura; desplazaría la identidad hacia herramienta (data.C05).
+
+## S03.P500.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - qué preguntas se responden y qué acciones siguen (p. 1: «What questions will they use it to answer? What actions will they take in response to these answers?») — ya cubierta: derivar requisitos de datos desde la pregunta está en P500 H02 y P517 H02 (data.C01); la acción en respuesta pertenece al producto descriptivo o prescriptivo, no al curso.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - frecuencia de actualización de los datos (p. 1: «How often should the data be updated in the dashboard?») — fuera de alcance: requisito de frescura de una capacidad publicada (productos de datos); el curso no opera pipelines productivos.
+  - ítems clave, agrupaciones, comparaciones con metas o histórico y umbrales de excepción (p. 1, preguntas 5–8) — fuera de alcance: diseño de dashboards y lectura de desempeño corresponden a Analítica Descriptiva.
