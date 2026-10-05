@@ -267,3 +267,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - lista de un módulo de orientación y nueve módulos con una línea de descripción cada uno, organizados por la tríada descriptiva (M1–M2), predictiva (M3–M6) y prescriptiva (M4, M7–M8), más aplicación en el negocio (M9). No incluye contenidos detallados, datos, evaluación ni resultados de aprendizaje. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P107.33
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ETL como corrección de errores, eliminación de duplicados y unificación de formatos (p. 12: «corrigiendo errores, eliminando duplicados y unificando formatos») — ya cubierta: P106 H01–H04 y P107 H01–H03; la deduplicación no aparece como señal con caso propio en el documento.

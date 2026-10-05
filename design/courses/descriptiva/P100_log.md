@@ -414,3 +414,17 @@
   - «Module 5: … Interpret and visualize the results of simulation models to evaluate complex business decisions in uncertain settings» (p. 1) — fuera de alcance: visualizar resultados de simulación para evaluar decisiones bajo incertidumbre corresponde a predictiva o prescriptiva.
   - módulos 3, 4, 6, 7 y 8 (predicción del desempeño de empleados, optimización, árboles de decisión, «prescriptions») (p. 1) — fuera de alcance: son de predictiva y prescriptiva.
   - «Module 9: Application of Analytics for Business — Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization» (p. 1) — marginal: un plan organizacional de adopción de analítica no es un producto descriptivo. La conexión de la pregunta con un contexto de uso ya está en el contrato `questions.json` (P120 H01) y en la pregunta de publicación de P153.
+
+## S03.P100.33
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - algoritmo MapReduce, shuffle & sort y jobs encadenados en HDFS (pp. 28–31: «Los problemas complejos se resuelven mediante la ejecución secuencial o en paralelo de múltiples jobs de MapReduce»; «El almacenamiento intermedio en HDFS … introducen una sobrecarga») — ya cubierta: P100 H01/H04 y P101 H02 implementan exactamente map/shuffle/reduce y convenciones de salida; encadenar jobs o Spark/Hive/Pig (pp. 38, 50, 51) sería ingeniería de datos, fuera de alcance.
+  - las cinco V (p. 28: «Veracidad (Precisión?) – Valor (Utilidad?)») — marginal: vocabulario; el volumen artificial de P100 ya está reconocido como límite (H03).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - tipología descriptiva / diagnóstica / predictiva / prescriptiva (p. 37: «Analítica Descriptiva — Análisis de la situación actual para la toma de decisiones operativas»; «Analítica Diagnóstica — … identificar las causas y factores que explican por qué se observó un resultado») — fuera de alcance como propuesta: es un encuadre conceptual; la frontera descripción/causa ya está persistida y probada en P125 H06, y la diagnóstica causal desplazaría la identidad descriptiva del curso.
+  - «La analítica transforma datos en conocimiento para apoyar mejores decisiones» (p. 2) y «Business Analytics no elimina la incertidumbre. La convierte en una decisión informada» (p. 4) — marginal: refuerzo retórico de la pregunta→decisión ya presente como contrato `questions.json` (P120 H01) y priorización (P120 H07, P125 H04); no cambia lo que el estudiante hace.
+  - KDD/CRISP-DM (pp. 16, 21), ML estadístico, ensembles, gradient boosting, deep learning (pp. 9, 19, 25, 48, 52), MLOps (p. 55), producto de datos y DataOps (pp. 44, 53–54), cloud (pp. 26–27) — fuera de alcance: pertenecen a predictiva o productos de datos; la idea de «tests sobre los datos en cada paso» (p. 54) ya está en P150–P154 (aserciones de grano y reconciliación) y P153 H03.
+  - analítica por dominio (p. 61: «People / HR Analytics … Marketing Analytics … Inventory Analytics») — ya cubierta: P120 (retail), P121 (operaciones), P122 (cadena de suministro), P124 (marketing), P125 (personas/compensación).
