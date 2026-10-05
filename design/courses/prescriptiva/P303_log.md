@@ -138,3 +138,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Learn to define an appropriate level of machine involvement in interactions with humans and computers» (p. 7, semana 5) — ya cubierta: P303 H01 enruta cada caso a una autoridad humana y P304 H06 justifica la automatización acotada por latencia; es la capacidad `prescriptiva.C04`.
+
+## S03.P303.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un curso online de estrategia y arquitectura de plataformas digitales y mercados de dos lados (efectos de red, precios, APIs y estándares, gating de calidad, regulación, modelado de dinámica de plataforma). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

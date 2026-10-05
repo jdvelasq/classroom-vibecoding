@@ -204,3 +204,13 @@
   - curso en línea de ocho semanas sobre el proceso de diseño de productos de IA (fundamentos de ML y deep learning, interacción humano–computador, «superminds», modelo de Lawler) con capstone de propuesta de producto. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - diseño de productos de IA, modelo de Lawler, GANs, HCI (pp. 6–7) — fuera de alcance: Productos de datos / IA; desplaza la identidad del curso.
+
+## S03.P300.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un curso online de estrategia y arquitectura de plataformas digitales y mercados de dos lados (efectos de red, precios, APIs y estándares, gating de calidad, regulación, modelado de dinámica de plataforma). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «effective decision-making processes… when to open a platform, how to use APIs to build an ecosystem of partners» (p. 8) — fuera de alcance: decisiones estratégicas únicas de producto/negocio, no decisiones operativas recurrentes con contexto observable.
