@@ -339,3 +339,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - contrato y aceptación de cambios (p. 7 «Historias de usuario — Requerimientos — Criterios de aceptación») — ya cubierta: P517 H02–H04.
+
+## S03.P517.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Tests de datos» en el desarrollo (p. 5); «Robustez: por el uso de tests» (p. 2); «Monitoreo de la lógica de negocio y validez de los datos» (p. 10). Categoría: ya cubierta. Controles de calidad ejecutables que bloquean la salida (P500 H04), reglas nombradas con dimensión y conteo (P516 H02) y contratos ejercitados con lotes perturbados (P517 H04). La debilidad transversal «Pruebas: sólo existencia» ya está registrada por S02 en cada Pxxx; esta presentación organizacional no aporta un argumento nuevo para corregirla.

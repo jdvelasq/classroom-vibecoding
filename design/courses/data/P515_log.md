@@ -346,3 +346,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación que define DataOps como combinación de Agile, Lean y DevOps para la calidad del dato; siete pasos de implementación (pruebas en cada etapa, control de versiones, ramas, ambientes, contenedores, parametrización, «trabajar sin miedo»), diferencias con DevOps, MLOps y ciclo de vida de ciencia de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P515.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ramas feature/dev/master, tests de integración, pre-release, orquestación, despliegue a producción (p. 5); «Orquestación manual» como cuello de botella (p. 6). Categoría: fuera de alcance. Es CI/CD y operación de pipelines productivos, frontera excluida del curso (pertenece a productos de datos); reforzarlo agravaría el riesgo de identidad ya señalado en P513–P515.

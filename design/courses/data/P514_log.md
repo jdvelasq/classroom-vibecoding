@@ -346,3 +346,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas por etapa del pipeline (p. 9 «Ingestión Transformación Modelado Visualización Reporte»; p. 15 «Los tests sobre los datos en cada paso garantizan la calidad de la salida») — fuera de alcance: P514 tiene auditoría de identidad no resuelta (ETL sobre el mismo producto de P511) y reforzar su vocabulario de pipeline lo acercaría más a Data Engineering; la mezcla de granos en `pipeline_report.csv` (H02) debe resolverse con la decisión sobre P514–P515 en conjunto, no con más pruebas.
+
+## S03.P514.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ramas feature/dev/master, tests de integración, pre-release, orquestación, despliegue a producción (p. 5); «Orquestación manual» como cuello de botella (p. 6). Categoría: fuera de alcance. Es CI/CD y operación de pipelines productivos, frontera excluida del curso (pertenece a productos de datos); reforzarlo agravaría el riesgo de identidad ya señalado en P513–P515.

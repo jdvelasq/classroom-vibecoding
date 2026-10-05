@@ -527,3 +527,15 @@
   - MLOps (p. 20 «Model serving», «Monitoreo del desempeño, incidentes y reentrenamiento») — fuera de alcance (productos de datos/MLOps).
   - cadena de suministro de datos y equipos (p. 19 «No se puede crear un dataset por cada idea nueva»; p. 18) — fuera de alcance: organización de equipos de datos.
   - principios de código fuente (p. 22 «Modularidad • Funciones dedicadas a una sola tarea … Testing • Control de versiones • Logging») — ya cubierta por la sección «Code clarity» de `AGENTS.md`; no es contenido del curso.
+
+## S03.P500.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Tests de datos» en el desarrollo (p. 5); «Robustez: por el uso de tests» (p. 2); «Monitoreo de la lógica de negocio y validez de los datos» (p. 10). Categoría: ya cubierta. Controles de calidad ejecutables que bloquean la salida (P500 H04), reglas nombradas con dimensión y conteo (P516 H02) y contratos ejercitados con lotes perturbados (P517 H04). La debilidad transversal «Pruebas: sólo existencia» ya está registrada por S02 en cada Pxxx; esta presentación organizacional no aporta un argumento nuevo para corregirla.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - priorización de resultados por entrevistas y «Oportunidad = Importancia + max(0, Importancia - Satisfacción)» (p. 7). Categoría: fuera de alcance. Es gestión de mejoras de un equipo de datos, no derivación de requisitos de datos desde una pregunta analítica (`data.C01`); no hay caso ni producto de datos donde aplicarlo.
+  - «Corrección de errores en las fuentes de datos», «Preparación de datasets» como trabajo no planificado (p. 4); «Errores en datos» como cuello de botella (p. 6). Categoría: marginal. Contexto organizacional que confirma la pertinencia de `data.C03`, ya ejercida en P516–P517; no especifica práctica alguna.
+  - coordinación relacional, Kanban, teoría de restricciones, trampas del CDO, etapas «Data Desert → Boutique → Waterfall → DataOps Analytics» (pp. 3, 6, 9, 11). Categoría: fuera de alcance. Perspectiva de gestión y madurez organizacional, sin contenido de preparación de datos para un estudiante de pregrado.

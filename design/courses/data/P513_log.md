@@ -346,3 +346,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P513.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ramas feature/dev/master, tests de integración, pre-release, orquestación, despliegue a producción (p. 5); «Orquestación manual» como cuello de botella (p. 6). Categoría: fuera de alcance. Es CI/CD y operación de pipelines productivos, frontera excluida del curso (pertenece a productos de datos); reforzarlo agravaría el riesgo de identidad ya señalado en P513–P515.

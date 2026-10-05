@@ -348,3 +348,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas de lógica de negocio y de datos antes de entregar (p. 4 «Tests para verificar los datos (lógica de negocio, tipo de dato, outliers, tendencias, consistencia, …)»; p. 9 «Hay al menos un test en cada paso») — ya cubierta: P500 H04 (compuerta de calidad), P510 H03 (conciliación agregado–fuente, el «balance»), P511 H02 (cardinalidad), P516 H02 (reglas nombradas).
+
+## S03.P511.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación organizacional sobre DataOps: silos entre equipos (TI, ingeniería, ciencia de datos, visualización, gobierno), coordinación relacional, flujo de ramas con pruebas de datos y de código, Kanban y teoría de restricciones, priorización de resultados por oportunidad y trampas del CDO. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

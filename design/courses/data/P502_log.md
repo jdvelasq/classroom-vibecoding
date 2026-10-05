@@ -354,3 +354,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reproducibilidad determinista y control de versiones (p. 10 «El pipeline es determinístico con resultados reproducibles»; «El sistema de control de versiones permite manejar los cambios») — ya cubierta en lo que toca al curso: P503 H01 (consulta preservada), P502 H03 (linaje); el control de versiones del código es práctica transversal del repositorio, no contenido de `data`.
+
+## S03.P502.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - herramientas de catálogo (Alation, Collibra, Wikis) y Data Governance como «Gestión del catalogo de datos y resultados de los modelos» (p. 2). Categoría: ya cubierta. P502 H01–H03 (inventario con grano, consumidor y linaje); nombrar productos comerciales no cambia lo que el estudiante hace.

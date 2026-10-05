@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reproducibilidad determinista y control de versiones (p. 10 «El pipeline es determinístico con resultados reproducibles»; «El sistema de control de versiones permite manejar los cambios») — ya cubierta en lo que toca al curso: P503 H01 (consulta preservada), P502 H03 (linaje); el control de versiones del código es práctica transversal del repositorio, no contenido de `data`.
+
+## S03.P503.42
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-07-cdo.md` (`source_sha256`: e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación organizacional sobre DataOps: silos entre equipos (TI, ingeniería, ciencia de datos, visualización, gobierno), coordinación relacional, flujo de ramas con pruebas de datos y de código, Kanban y teoría de restricciones, priorización de resultados por oportunidad y trampas del CDO. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
