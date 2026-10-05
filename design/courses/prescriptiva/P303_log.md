@@ -82,3 +82,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - interacción humano–IA con supervisión, criterio y responsabilidad en contextos de alto riesgo (p. 5: «Interacción humano - IA: supervisión, criterio y responsabilidad en contextos de alto riesgo») — ya cubierta: P303 H01–H04 (autoridad por motivo y salvaguardas no negociables), P308 H06 (aprobación obligatoria y anulación con motivo).
+
+## S03.P303.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

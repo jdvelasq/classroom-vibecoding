@@ -84,3 +84,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - implementación responsable con tolerancia al riesgo, supervisión y gobernanza (p. 5) y sesgos (p. 5–6) — ya cubierta: guardas, autoridad y gatillos de P320 H01–H03 y registro operativo de P321; el folleto es de nivel directivo y no aporta método.
+
+## S03.P321.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «a focus on ensuring reliable, scalable operationalization» (p. 1) — fuera de alcance: operacionalizar con confiabilidad y escala es infraestructura (frontera con Productos de datos en s05). La operación de la política que sí toca a Prescriptiva ya está en el registro, los gatillos y el monitoreo (P303 H03, P306 H07, P321 H01–H02). Además, la ficha no describe prácticas concretas que puedan contrastarse.

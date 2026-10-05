@@ -129,3 +129,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «simulaciones para hacer predicciones» y capacidad de IA para «toma de decisiones» (p. 1, 4–5) — marginal: mención de folleto sin contenido operable; la simulación para validar políticas ya está en P310 y P313.
   - fundamentos de ML, redes neuronales, visión, NLP, robótica, construcción de equipos y estrategia corporativa de IA (p. 5–6) — fuera de alcance: Predictiva u otros programas; institutional ilustra, no impone identidad.
+
+## S03.P300.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «principles and practices of managing data at scale… entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration» (p. 1) — fuera de alcance: gestionar datos a escala y su ciclo de vida corresponde a Fundamentos de data y a Productos de datos, no a Prescriptiva (s05: Prescriptiva «no necesita convertirse en arquitectura o despliegue de software»).
