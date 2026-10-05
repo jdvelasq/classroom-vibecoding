@@ -210,3 +210,11 @@
 - **Señales descartadas relevantes:**
   - «Conocer distintos métodos de visualización para mostrar los datos temporales, espaciales y espacio-temporales» (p. 8) — ya cubierta: temporales en P121 H04 y H06 (matriz calendario día × hora; serie frente a patrón por mes), P122 y P150; espaciales en P123 (mapa coroplético de países, inventario y S05). Espacio-temporal combinado: marginal, sin caso con ambas dimensiones de grano adecuado en el curso.
   - «Contar una historia con los puntos claves para fundamentar las decisiones empresariales mediante informes, cuadros de mando, historias e infografías» y «Anticipar y gestionar las preguntas de los diversos públicos y audiencias» (p. 8) — marginal desde este documento: la falta de interpretación escrita en varios talleres ya está registrada en S02 y el patrón de conclusiones con límite existe en P125 H06; un folleto institucional no describe un mecanismo evaluable que justifique cambiar un taller concreto.
+
+## S03.P123.25
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - relata cuatro talleres participativos con 17 programas de pregrado de la UNAL sobre currículo, contextos, funciones misionales y prácticas pedagógicas, y recoge propuestas institucionales de armonización (superar el «currículo endogámico», egresados, unificación de conceptos). No contiene ningún programa ni curso de analítica, ningún resultado de aprendizaje disciplinar y ningún contenido de analítica descriptiva o de visualización. Estadística y Administración de Empresas sólo figuran como programas participantes (p. 8: «Economía, Zootecnia, Estadística…»). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

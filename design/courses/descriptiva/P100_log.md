@@ -305,3 +305,21 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Definir casos de negocio (coste-beneficio) a partir del análisis… para dar recomendaciones justificadas sobre una acción» (p. 8) — fuera de alcance: recomendación de acción es del curso prescriptivo; P125 ya marca el límite de sus «alternativas».
   - paralelismo, persistencia de modelos como API, reducción de dimensiones, clasificación, regresión, aprendizaje supervisado y no supervisado (pp. 6–7) — fuera de alcance: ingeniería de datos, predictiva y productos de datos.
+
+## S03.P100.25
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - relata cuatro talleres participativos con 17 programas de pregrado de la UNAL sobre currículo, contextos, funciones misionales y prácticas pedagógicas, y recoge propuestas institucionales de armonización (superar el «currículo endogámico», egresados, unificación de conceptos). No contiene ningún programa ni curso de analítica, ningún resultado de aprendizaje disciplinar y ningún contenido de analítica descriptiva o de visualización. Estadística y Administración de Empresas sólo figuran como programas participantes (p. 8: «Economía, Zootecnia, Estadística…»). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - evaluación centrada en la resolución de problemas y en el «saber hacer» (p. 82: «la evaluación debería adoptar una orientación sobre el seguimiento del "saber hacer"»; p. 69: «Enfocada en la resolución de problemas») — ya cubierta: los casos P120–P125 se organizan alrededor de preguntas con producto persistido y pruebas que lo recomputan (P120 H01/H08, P125 H06). El documento es una percepción institucional genérica y no cambia lo que el estudiante hace en ningún taller.
+  - autoevaluación y coevaluación (p. 82: «dos componentes hasta ahora dejados de lado en los mecanismos de evaluación: autoevaluación y coevaluación») — fuera de alcance: AGENTS.md fija `pytest` sobre `submission/` como contrato de evaluación de los talleres Pxxx. Es una práctica de gestión del curso, no una contribución de un taller, y la fuente sólo la ilustra.
+  - seguimiento del avance en proyectos que exceden el marco temporal del curso (p. 82: «seguimiento a diferentes porcentajes de su avance») — marginal: los talleres son guiados y se cierran en sesión, y la señal no tiene ancla en HNN/SNN.
+  - equilibrio teoría/práctica y conexión con problemas del contexto (pp. 76–77: «un equilibrio entre los componentes teóricos y los prácticos… predomina el primero»; «enfocar fines y contenidos en la resolución de problemas») — ya cubierta: el curso es taller práctico con casos de dominio (P120 devoluciones, P121 vuelos, P122 cadena de suministro, P125 salarios).
+  - métodos de estudio grupales y trabajo cooperativo (p. 79: «se resaltó el éxito de los métodos de estudio grupales») — marginal: es una estrategia de aula sin efecto sobre el producto analítico de ningún Pxxx.
+  - recursos innovadores, «uso de metadatos para la investigación a través de ejercicios de modelación» (p. 79) — marginal: la mención es vaga y no tiene caso ni datos. La exploración de metadatos bibliográficos ya existe en P123 (H01–H04).
+  - contenidos transversales de igualdad de género y diversidad (p. 77; p. 98: «tenemos formas únicas de evaluar») — fuera de alcance: es un propósito institucional transversal, no una capacidad descriptiva. La sensibilidad de comparar grupos ya está tratada en P125 (H02, H07).
+  - objetivos medibles e indicadores para el seguimiento de la armonización (p. 110: «indicadores que permitan un adecuado seguimiento… ausencia de objetivos medibles») — marginal: se refiere a la gestión del programa, no a un KPI que el estudiante construya. La definición de un KPI como contrato ya está en P153 (H01–H03).
+  - vínculo con egresados y mercado laboral para actualizar el perfil de egreso (pp. 106–107) — fuera de alcance: es pertinencia institucional del programa, no contenido de taller.
