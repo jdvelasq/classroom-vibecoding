@@ -372,3 +372,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - rol «Data product owner… Responsable por el éxito del producto de datos y represéntale al usuario. Garantiza el producto de datos correcto» (p. 6) y «No hay ownership» como falla de equipos ad hoc (p. 3) — ya cubierta: autoridad responsable en el contrato del producto (P411 H02) y responsable en la ficha de catálogo (P454 H01).
+
+## S03.P454.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «producing detailed preparation reports documenting acquisition, cleaning activities, feature construction, and integration logic» como base de auditoría (p. 17) — ya cubierta en su forma operativa: P443 (linaje con huella del insumo) y P454 (ficha de catálogo); el reporte de preparación como documento de proyecto es marginal.

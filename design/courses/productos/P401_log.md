@@ -370,3 +370,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Altos costos debido al trabajo mundano y repetitivo» y «Si algo falla todo falla» (p. 2) — marginal: motivación general para automatizar y probar, ya ejercida en el bloque de pruebas y automatización.
+
+## S03.P401.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática (expansión por citas en Scopus, 18 metodologías) que deriva PRODIG8: seis dimensiones de ejecución (alcance, comprensión y preparación de datos, diseño, evaluación, operación y mantenimiento), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Es un marco de gestión de proyectos analíticos; sólo §4.6–4.8 tocan directamente la operación de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

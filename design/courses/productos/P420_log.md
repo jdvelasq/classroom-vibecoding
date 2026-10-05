@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - problemas típicos por estructura: «Artifactos no reproducibles», «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Monitoreo del modelo y rentrenamiento ineficientes», «El código y la data crecen independientemente» (p. 2) — ya cubierta: ambiente reproducible con procedencia (P412 H01–H02), corridas recuperables (P420 H02–H03), monitoreo de entradas y desempeño (P422 H01, P423 H01), reversión (P424 H01); separación datos/código versionados en P431 H01–H02.
+
+## S03.P420.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «structured documentation, refinement logs, and knowledge-transfer guidelines» del diseño (p. 18) — ya cubierta: P420 H02–H03 (corridas recuperables e índice de comparación).

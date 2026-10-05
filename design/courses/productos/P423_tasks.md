@@ -169,6 +169,7 @@ Actividad: implementation/productos/P423_model_performance_monitoring/
 - **Tipo:** producto/evidencia + proceso
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` p. 24 — el dominio de ciclo de vida implica «ongoing oversight and calibration to ensure the analytics solution continues to perform effectively», con «Task 7.2: Recalibrate and maintain the analytics solution» y CAP-P.7.2.1 «Identify potential opportunities for recalibration of the analytics solution»: operar incluye decidir cuándo recalibrar o mantener, no sólo detectar (Claude, 2026-10-05). Fuente *authoritative*: expectativa general; el reentrenamiento en sí queda fuera del curso.
+  - `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` pp. 20–21 — la convergencia metodológica recomienda «retraining policies, and human-in-the-loop mechanisms to maintain trust and relevance over time» (p. 20) y la gobernanza exige «policies for time-based or condition-based maintenance of data pipelines and deployed models» y «explicit maintenance policies for drift detection and retraining» (p. 21): la respuesta a la degradación es una política explícita, no una decisión ad hoc (Claude, 2026-10-05). Fuente *literature-derived*: perspectiva metodológica, no herramienta.
 - **Qué gana el estudiante:** pasa de «detectar degradación» a «decidir la
   respuesta operativa a la degradación», que es la pregunta de Productos
   (C05: observar, gobernar, recuperar). Hoy P423 termina en `alert: true` sin

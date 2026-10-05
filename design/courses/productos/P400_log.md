@@ -542,3 +542,20 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - rol «DataOps Engineer»: «Orquestación del pipelines, Automatización de la calidad, Aprovisionamiento de ambientes, Despliegue a producción» con «Frameworks para tests de datos» (p. 5) — ya cubierta como conjunto de prácticas del curso (P429, P402/P433, P412/P414, P415/P426); el documento describe un rol, no una práctica nueva.
   - estructuras de equipo (centralizada, descentralizada, por dominio, centro de excelencia, data platform team), coordinación por capítulos y perfiles T/Pi/M/E-shaped (pp. 2–4, 7–8) — fuera de alcance: diseño organizacional, no operación de una capacidad analítica.
+
+## S03.P400.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática (expansión por citas en Scopus, 18 metodologías) que deriva PRODIG8: seis dimensiones de ejecución (alcance, comprensión y preparación de datos, diseño, evaluación, operación y mantenimiento), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Es un marco de gestión de proyectos analíticos; sólo §4.6–4.8 tocan directamente la operación de capacidades. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «approximately 87% of data science projects never reach production» y «over 80% of organizations lack a formal methodology» (p. 3) — marginal: motivación general de la línea de Productos; puede citarse en el encuadre del curso, no cambia ningún taller.
+  - Project Scope Definition: traducir objetivos en «precise data-science formulations of inputs, outputs, constraints, and quantitative evaluation criteria» (p. 14), project charters, Sprint 0, user stories (p. 14) — fuera de alcance: formulación del problema analítico y gestión de proyecto (Fundamentos); la parte operativa (contrato de entradas, salidas, errores, consumidor, responsable) ya está en P408 H01, P411 H02, P425 H01, P434 y P454 H01.
+  - Data Understanding y Data Preparation (pp. 14–17: exploración, 6Vs, limpieza, feature engineering, reducción de dimensionalidad) — fuera de alcance: pertenecen a Descriptiva/Fundamentos; las dimensiones de calidad aplicadas al uso operativo (completitud, frescura, consistencia) ya están en P402 H01, P439 H01 y P442 H01–H02.
+  - «user acceptance testing and system verification» antes del despliegue (p. 19) — marginal: sin caso ni usuarios reales en el curso; la verificación de la entrega ya está en P417 H01 y P415 H01.
+  - fairness y auditoría de sesgo, «criteria that avoid arbitrary thresholds in variable selection» (p. 20) — fuera de alcance: evaluación del método predictivo/ética del modelo, no operación; sin caso con atributos protegidos tratados (el `ssn` de P401 es privacidad, no equidad).
+  - «help-desk administration and user support communities» (p. 21), complejidades políticas y culturales de adopción (p. 21), escalabilidad e infraestructura de alto desempeño (p. 21) — fuera de alcance: soporte organizacional, gestión del cambio y Big Data/cloud.
+  - Scrum/XP, sprints, backlog, roles (pp. 5, 11–14, 22) y fases técnicas DMME de sensores (pp. 5, 9) — fuera de alcance: gestión de proyectos y adquisición de datos de ingeniería.
+  - encuadre ejecución–control–adaptación (Gobierno y Ética transversal; Mejora Continua como retroalimentación; pp. 12–13, 22–23) — marginal: encuadre útil para presentar el curso (C05 transversal a C02–C04), pero no cambia lo que el estudiante hace en ningún taller.

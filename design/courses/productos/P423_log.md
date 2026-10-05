@@ -369,3 +369,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - problemas típicos por estructura: «Artifactos no reproducibles», «Falta de trazabilidad para el entrenamiento y monitoreo de modelos», «Monitoreo del modelo y rentrenamiento ineficientes», «El código y la data crecen independientemente» (p. 2) — ya cubierta: ambiente reproducible con procedencia (P412 H01–H02), corridas recuperables (P420 H02–H03), monitoreo de entradas y desempeño (P422 H01, P423 H01), reversión (P424 H01); separación datos/código versionados en P431 H01–H02.
+
+## S03.P423.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** refuerza T02.
+- **Señales descartadas relevantes:**
+  - «sustained retraining, drift detection, and incremental model refinement» (p. 21) — ya cubierta la detección: P422 H01–H03 (deriva de entradas), P423 H01 (degradación observada).
+  - «monitoring not only tracks technical performance but also verifies the benefits delivered» (p. 21) e «integrating user feedback and contextual insights into subsequent iterations» (p. 22) — marginal en este documento: apunta al límite registrado de P451 (C05 «mejorar» no se ejerce; sin agregación de señales), pero el texto es genérico y el curso no tiene registros de uso reales con los que agregar utilidad sin fabricar datos; podría servir de fuente secundaria si otra revisión propone cerrar el ciclo retroalimentación → mejora con un caso concreto.

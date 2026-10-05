@@ -372,3 +372,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - rol «Data product owner… Responsable por el éxito del producto de datos y represéntale al usuario. Garantiza el producto de datos correcto» (p. 6) y «No hay ownership» como falla de equipos ad hoc (p. 3) — ya cubierta: autoridad responsable en el contrato del producto (P411 H02) y responsable en la ficha de catálogo (P454 H01).
+
+## S03.P411.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática (expansión por citas en Scopus, 18 metodologías) que deriva PRODIG8: seis dimensiones de ejecución (alcance, comprensión y preparación de datos, diseño, evaluación, operación y mantenimiento), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación adaptativa. Es un marco de gestión de proyectos analíticos; sólo §4.6–4.8 tocan directamente la operación de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

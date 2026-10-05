@@ -372,3 +372,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Altos costos debido al trabajo mundano y repetitivo» y «Si algo falla todo falla» (p. 2) — marginal: motivación general para automatizar y probar, ya ejercida en el bloque de pruebas y automatización.
+
+## S03.P403.46
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - criterios de éxito «accuracy, precision, recall, latency, operational efficiency, adoption rates, and user satisfaction» y «deployment decisions are based on both predictive accuracy and the capacity to generate measurable business value» (pp. 18–19) — marginal: P403 H02 ya traduce umbrales operativos en compuerta; justificar los umbrales por valor de negocio exige la formulación del problema predictivo (fuera de la frontera del curso). Métricas como AUC, F1, MCC (p. 19) — fuera de alcance (Predictiva).
