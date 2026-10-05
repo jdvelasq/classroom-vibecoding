@@ -201,3 +201,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Analyze key trade-offs in AI adoption, including considerations of cost, control, speed, and risk» (p. 7) — marginal: decisión estratégica de adopción; el control de costo operativo de una capacidad ya es P449 H01.
+
+## S03.P449.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto en español de un certificado de 10 meses con cinco cursos de 8 semanas (Data Engineering, Ciencia de Datos con Python, Estadística, IA y ML, Storytelling y visualización); sólo una línea toca la operación de modelos (despliegue como API o puntuación por lotes). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

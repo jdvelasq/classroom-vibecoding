@@ -300,3 +300,13 @@
   - «Creating a culture of data excellence» (p. 16) y diseño de modelos operativos y capacidades organizacionales (p. 7) — fuera de alcance: transformación organizacional, no operación de una capacidad.
   - capstone «Built around the pillars of technology, strategy, and organizational readiness … from vision toward execution» (p. 17) — fuera de alcance: proyecto de transformación empresarial; no ilustra una forma de evidencia aplicable a talleres del curso.
   - futuros, prospectiva y planificación de escenarios (p. 17) — fuera de alcance: decisión estratégica bajo incertidumbre, ajena a la línea de productos.
+
+## S03.P400.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto en español de un certificado de 10 meses con cinco cursos de 8 semanas (Data Engineering, Ciencia de Datos con Python, Estadística, IA y ML, Storytelling y visualización); sólo una línea toca la operación de modelos (despliegue como API o puntuación por lotes). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Definir casos de negocio (coste-beneficio) [...] para dar recomendaciones justificadas sobre una acción» (p. 8) — fuera de alcance (Fundamentos/Prescriptiva); SQL, NoSQL y carga en bases de datos (p. 5–6) — fuera de alcance (Fundamentos de data); Tableau y paneles (p. 6) — fuera de alcance (Descriptiva/BI); entrenamiento y evaluación de modelos, interpretación (p. 6–7) — fuera de alcance (Predictiva); multiprocesamiento y multihilo (p. 6) — fuera de alcance (ingeniería de software).

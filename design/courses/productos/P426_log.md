@@ -201,3 +201,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un programa ejecutivo (10+ años de experiencia) sobre estrategia, modelos de negocio, liderazgo, futuros y gobierno de IA; temario por fases sin contenidos operativos ni técnicos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P426.25
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Crear modelos persistentes para ser desplegados como una API o utilizados para la puntuación por lotes» (p. 6) — ya cubierta / marginal: el curso ya despliega un servicio con contrato (P425 H01–H02, P426 H01) y decide habilitar la puntuación de un lote (P404). El defecto real de P425 es que expone una regla de umbral sin procedencia en vez de un modelo (P425 H03); esta línea del folleto no aporta método ni criterio para resolverlo y la decisión de qué artefacto servir es de caso, ya registrada por S02.
