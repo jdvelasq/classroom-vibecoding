@@ -394,3 +394,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Requirements, Assumptions, and Constraints» y «Risks and Contingencies» del proyecto (p. 12: «Document a contingency plan for each risk») — marginal: plan de contingencia de gestión de proyectos; el contraste plan excepcional / política recurrente ya está en H01.
+
+## S03.P301.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

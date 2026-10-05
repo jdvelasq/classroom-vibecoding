@@ -399,3 +399,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - informe final diferenciado por audiencia (p. 41: «You may need to create separate reports for each audience») y revisión del proceso (p. 36) — marginal: el registro operativo de P321 H01–H02 ya fija qué debe comunicarse para operar y revisar; los informes de proyecto no cambian lo que el estudiante hace.
+
+## S03.P321.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

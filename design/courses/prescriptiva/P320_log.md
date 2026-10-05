@@ -395,3 +395,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - entrevistar a los afectados tras el despliegue (p. 42: «interview those affected by the results such as customers») e impacto no previsto en clientes establecidos — marginal: refuerza la revisión de consecuencias por grupo que P320 H02–H03 ya ejerce; no aporta método ni dato enseñable.
+
+## S03.P320.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

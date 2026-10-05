@@ -577,3 +577,14 @@
   - análisis costo/beneficio del proyecto (p. 13: «What is your bottom line?») — fuera de alcance: es la evaluación de un proyecto de minería, no de la acción recurrente; el valor esperado de la acción ya organiza H01–H02.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - fases de preparación de datos y modelado (cap. 3–5) — fuera de alcance: pertenecen a Predictiva y a Fundamentos de data; la evidencia predictiva llega dada o se usa como insumo (P306).
+
+## S03.P300.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - construcción de flujos visuales por nodos con ejecución en cascada y metanodos reutilizables (p. 3, 9, 21–25) — fuera de alcance: señal de herramienta de minería y orquestación sin contenido de decisión, optimización, simulación ni gobierno; una señal de professional-learning no basta para imponer un tema y el curso usa Python como herramienta canónica.
+  - ejemplo de clustering K-Means sobre Iris (p. 5–9) — fuera de alcance: técnica descriptiva/predictiva que pertenece a otros cursos.

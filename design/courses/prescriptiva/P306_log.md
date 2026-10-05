@@ -401,3 +401,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - monitoreo y «expiración» del modelo desplegado con umbrales (p. 40: «How will you determine when a model has "expired"? Give specifics on accuracy thresholds») — ya cubierta en su versión prescriptiva: P306 H07 (recalibrar/suspender por métrica) y P308 H07 (brecha observada–estimada como señal de recalibración); la ausencia de umbral numérico en algunos gatillos es una variante ya registrada en S02, no una señal nueva.
+
+## S03.P306.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

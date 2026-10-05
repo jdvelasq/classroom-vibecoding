@@ -397,3 +397,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reglas aplicadas automáticamente a nuevos registros y actualización con criterio humano (p. 40: «Updating the rulesets is not an automatic process because cluster creation requires human input») — ya cubierta: P303 H01/H04 (autoridad humana por motivo) y P304 H06 (automatización acotada con autoridad sobre parámetros).
+
+## S03.P303.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
