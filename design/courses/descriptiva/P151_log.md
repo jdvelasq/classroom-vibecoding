@@ -89,3 +89,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «collaboration» y operacionalización (p. 1) — fuera de alcance: pertenecen a productos de datos; P151/P154 ya tienen su tensión de identidad registrada en S02.
+
+## S03.P151.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado en Data Science (antes Statistics 102). Cubre fundamentos probabilísticos de la inferencia y el ciclo de modelado y decisión, con sus implicaciones humanas, sociales y éticas. Sólo lista temas: no tiene resultados de aprendizaje, casos ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

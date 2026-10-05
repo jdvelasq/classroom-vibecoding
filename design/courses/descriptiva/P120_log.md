@@ -87,3 +87,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ciclo «from data preparation to exploration, visualization and analysis» (p. 1) — ya cubierta: preparación y calidad (P106 H01–H05, P107 H01–H02), exploración y visualización al servicio de un diagnóstico (P120 H02–H05, P121 H02–H04, P122 H01–H05). La ficha no da detalle que permita contrastar más.
+
+## S03.P120.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - intervalos de confianza, pruebas de permutación y *false discovery rate* (p. 1: «permutation testing, false discovery rate, … confidence intervals») — fuera de alcance: los índices de P120–P122 registran como límite que las tasas por segmento no tienen intervalos ni pruebas de diferencia. Convertir ese límite en inferencia formal (por ejemplo, controlar comparaciones múltiples en un top N de segmentos) mete Estadística inferencial en el curso. Además, el documento no da caso ni profundidad para hacerlo con rigor. Los umbrales de volumen (P120 H06, P121 H05, P122 H06) siguen siendo la salvaguarda descriptiva vigente.

@@ -87,3 +87,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de pregrado de 4 unidades, con prerrequisitos de programación y de un curso de ciencia de datos (DATA C100 o equivalente), sobre gestión de datos a escala para análisis y machine learning a lo largo de todo el ciclo de vida, con foco en operacionalización confiable y escalable. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - inferencia causal (p. 1: «causal inference») — ya cubierta en lo que toca a descriptiva: P125 H06 persiste y verifica el límite «no identifica su causa / no prueba que … cause». La estimación causal en sí queda fuera de alcance.

@@ -81,3 +81,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de pregrado de 4 unidades, con prerrequisitos de programación y de un curso de ciencia de datos (DATA C100 o equivalente), sobre gestión de datos a escala para análisis y machine learning a lo largo de todo el ciclo de vida, con foco en operacionalización confiable y escalable. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P109.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - privacidad diferencial (p. 1: «differential privacy») — fuera de alcance: los índices de P108 y P109 registran como límite que no hay garantía formal de privacidad. Pero el documento sólo nombra la técnica, y en un taller descriptivo no hay caso ni datos para enseñarla con rigor sin desplazar la contribución de P108 (ataque de enlace y generalización medida, H02–H05).

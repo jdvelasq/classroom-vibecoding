@@ -81,3 +81,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gestión de datos «at scale» (p. 1) — fuera de alcance: no justifica ampliar el MapReduce simulado de P100–P101; si acaso, refuerza la auditoría S02 ya registrada de que esas actividades son habilitadoras de ingeniería de datos y no responden la pregunta descriptiva. No genera propuesta nueva.
+
+## S03.P101.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado en Data Science (antes Statistics 102). Cubre fundamentos probabilísticos de la inferencia y el ciclo de modelado y decisión, con sus implicaciones humanas, sociales y éticas. Sólo lista temas: no tiene resultados de aprendizaje, casos ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

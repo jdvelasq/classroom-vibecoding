@@ -124,3 +124,17 @@
   - gestión de datos «at scale» (p. 1) — fuera de alcance: no justifica ampliar el MapReduce simulado de P100–P101; si acaso, refuerza la auditoría S02 ya registrada de que esas actividades son habilitadoras de ingeniería de datos y no responden la pregunta descriptiva. No genera propuesta nueva.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «principles and practices of managing data at scale, with a focus on use cases in data analysis and machine learning» con «focus on ensuring reliable, scalable operationalization» (p. 1) — fuera de alcance: es la identidad de un curso de ingeniería de datos/productos de datos; Berkeley lo ubica como curso propio posterior a ciencia de datos (prerrequisito «DATA C100 ... or equivalent», p. 1), lo que ilustra (institutional, no prescribe) la frontera que el curso ya declara («no posee ... ingeniería de datos»).
+
+## S03.P100.10
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado en Data Science (antes Statistics 102). Cubre fundamentos probabilísticos de la inferencia y el ciclo de modelado y decisión, con sus implicaciones humanas, sociales y éticas. Sólo lista temas: no tiene resultados de aprendizaje, casos ni evaluación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - decisión frecuentista y bayesiana, Thompson sampling, control óptimo y Q-learning (p. 1) — fuera de alcance: son decisión secuencial y prescriptiva.
+  - modelos jerárquicos bayesianos, árboles de decisión, redes neuronales, ensambles y sistemas de recomendación (p. 1) — fuera de alcance: predictiva y aprendizaje automático.
+  - algoritmos de clustering (p. 1) — fuera de alcance aquí: el documento sólo nombra la técnica, sin uso descriptivo concreto. La única detección de grupos del curso (Louvain sobre co-ocurrencias en P123 H05) ya cubre la estructura relacional que el curso necesita.
+  - diseño experimental básico (p. 1) — fuera de alcance: el curso describe datos observados y no los diseña.
+  - implicaciones humanas, sociales y éticas del ciclo de modelado (p. 1) — ya cubierta en lo descriptivo por P102 H02 (minimización), P108 H01–H05 (riesgo de reidentificación) y P125 H07 (no divulgar salarios individuales). El documento no detalla prácticas que añadir.
