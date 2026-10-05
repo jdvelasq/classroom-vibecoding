@@ -294,3 +294,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - listado de un módulo de orientación y nueve módulos de un programa ejecutivo de Business Analytics organizado por la secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con una frase de resultado; no detalla contenidos, datos, herramientas ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P506.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Recorrido histórico de RDBMS/SQL (1970) a la IA agéntica (2026): data warehouse, ETL, BI, KDD, OLAP, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, DataOps, MLOps y modelos fundacionales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

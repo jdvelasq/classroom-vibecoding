@@ -445,3 +445,13 @@
   - Module 9 (p. 1: «create a plan to put data to work in your organization») — marginal: formulación genérica de `data.C01`/`data.C05` (datos al servicio de una finalidad); no aporta producto ni práctica nueva. Un plan organizacional de datos se acerca a estrategia/gobierno de datos empresarial, fuera de la frontera del curso.
   - Modules 2–8 (p. 1: pronóstico con datos históricos; predicciones; simulación; predicción de desempeño de empleados con «hiring, internal mobility, and attrition»; optimización; árboles de decisión) — fuera de alcance: análisis descriptivo, predictivo y prescriptivo pertenecen a los otros cursos de la línea. El caso de personal (Module 6) traería datos sensibles de empleados sin caso trazable en el repositorio.
   - ausencia de un módulo de datos en un programa de Business Analytics — fuera de alcance como inferencia: un documento institutional de una página no permite concluir nada sobre el alcance de un curso de fundamentos de datos; sólo ilustra que el programa subordina los datos a las preguntas de cada línea, coherente con la identidad ya fijada en `s05-diseno-data.md`.
+
+## S03.P500.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los tests sobre los datos en cada paso garantizan la calidad de la salida» (p. 54) — ya cubierta: P500 H04, P517 H04.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - DataOps, MLOps, producto de datos (pp. 44, 53–55) — fuera de alcance: productos de datos y operación.

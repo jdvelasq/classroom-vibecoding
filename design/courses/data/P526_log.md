@@ -281,3 +281,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Module 1 (p. 1: «Identify effective methods for collecting data on customer behavior and use it to make better decisions for your business») — ya cubierta / marginal: es la única señal de adquisición de datos del documento y se queda en una frase. Obtener datos de comportamiento y definir una métrica a un grano explícito ya lo hace P526 (H01 tiempo de evento frente a llegada, H03 conversión por sesión), y derivar qué datos sirven a una pregunta lo hacen P516 (aptitud de un extracto para una pregunta) y P517 (contrato mínimo derivado de la pregunta), en `data.C01`. Sin métodos concretos (instrumentos, muestreo, diseño de recolección), la señal no cambia lo que hace el estudiante en ningún taller; el criterio de selección de la muestra de P526, no documentado, ya está registrado en su S02.
+
+## S03.P526.35
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Recorrido histórico de RDBMS/SQL (1970) a la IA agéntica (2026): data warehouse, ETL, BI, KDD, OLAP, CRISP-DM, data science, Hadoop/MapReduce, data lake, NoSQL, DataOps, MLOps y modelos fundacionales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
