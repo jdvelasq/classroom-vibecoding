@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - columna «Done: Benefit measured versus plan • Stop or persist decision made» (p. 12) y fases «Retiro: Migrar, Remover» / «Monitoring → Decommission» (p. 7; p. 11) — fuera de alcance: decisión de portafolio sin caso ni datos; el retiro de una capacidad no tiene Pxxx, pero una línea de diapositiva no justifica una actividad nueva.
+
+## S03.P451.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - define DataOps como síntesis de Agile, Lean y DevOps; siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, trabajar sin heroísmo), diferencias DevOps/DataOps, fases de MLOps, ciclo de vida de ciencia de datos y «epic hypothesis statement». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

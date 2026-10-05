@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Se deben eliminar los pasos manuales» (p. 14), «Orchestrate» (p. 10) — ya cubierta: P413 H01, P428 H01–H02, P429 H01.
+
+## S03.P429.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Doble orquestación» (p. 16) — marginal: P429 ya declara tareas con dependencias.

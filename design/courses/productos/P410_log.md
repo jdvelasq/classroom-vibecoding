@@ -330,3 +330,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre gestión de proyectos: problemas de waterfall, manifiesto ágil, Scrum, XP, Kanban, escalamiento (Scrum of Scrums, SAFe, Disciplined Agile Delivery), manifiesto y principios DataOps, ciclo de vida analítico (ideación → retiro) y prácticas ágiles de DataOps (epic hypothesis statement, epic owner, MVP). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P410.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
+  - control de versiones, bifurcar y fusionar (p. 10–11) — ya cubierta (H01–H02 de P408–P411).
+  - «Epic hypothesis statement» con «For [customers]… Measured by [metrics]… And requiring [non-functional requirements] … 99.99% availability» (p. 25) — marginal: la tarjeta de producto (P408–P411) y la ficha de catálogo (P454) ya declaran consumidor, métrica y responsable; agregar requisitos no funcionales sería un campo más; la desconexión de C01 con nivel de servicio ya está registrada en P445.

@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Monitor quality and performance», «Quality is paramount» (p. 10) — ya cubierta: P442 H02, P422 H01, P423 H01.
+
+## S03.P423.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Tests para verificar los modelos (precisión, degradación del modelo…)» (p. 4) — ya cubierta: compuerta de P403 (H02, H03) y monitoreo de desempeño de P423 (H01).

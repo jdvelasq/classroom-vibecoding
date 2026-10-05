@@ -332,3 +332,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - responsabilidades del epic owner: «Crear el panel de monitoreo y medida para los KPIs» (p. 14) — marginal: la autoría responsable ya está en P411 H02 y P454 H01; el panel de KPIs de un proyecto no es una capacidad operada.
+
+## S03.P454.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Epic hypothesis statement» con «For [customers]… Measured by [metrics]… And requiring [non-functional requirements] … 99.99% availability» (p. 25) — marginal: la tarjeta de producto (P408–P411) y la ficha de catálogo (P454) ya declaran consumidor, métrica y responsable; agregar requisitos no funcionales sería un campo más; la desconexión de C01 con nivel de servicio ya está registrada en P445.

@@ -329,3 +329,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - XP «Continuous Integration», «10 Minutes Build», «Test-driven development» (p. 5) — ya cubierta: P415 H01, P416 H01, P400–P401.
+
+## S03.P416.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
+  - separación innovation pipeline / value pipeline y pruebas que protegen producción (p. 15–17) — ya cubierta: verificación antes de fusionar (P415 H01) y misma verificación local y remota (P416 H01).

@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Monitor quality and performance», «Quality is paramount» (p. 10) — ya cubierta: P442 H02, P422 H01, P423 H01.
+
+## S03.P422.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - define DataOps como síntesis de Agile, Lean y DevOps; siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, trabajar sin heroísmo), diferencias DevOps/DataOps, fases de MLOps, ciclo de vida de ciencia de datos y «epic hypothesis statement». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

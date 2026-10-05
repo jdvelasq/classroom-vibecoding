@@ -329,3 +329,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Los ambientes de desarrollo deben ser similares a los de producción» (p. 14), «Make it reproducible», «Disposable environments» (p. 10); waterfall: «Diferencia entre los ambientes de desarrollo, prueba y productivo … Falta de replicabilidad» (p. 2) — ya cubierta: P412 H01–H03, P414 H01, P418 H01, P416 H01 (misma verificación local y remota).
+
+## S03.P418.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - contenerización (p. 13) — ya cubierta.

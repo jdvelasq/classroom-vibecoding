@@ -330,3 +330,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas sobre gestión de proyectos: problemas de waterfall, manifiesto ágil, Scrum, XP, Kanban, escalamiento (Scrum of Scrums, SAFe, Disciplined Agile Delivery), manifiesto y principios DataOps, ciclo de vida analítico (ideación → retiro) y prácticas ágiles de DataOps (epic hypothesis statement, epic owner, MVP). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P437.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - define DataOps como síntesis de Agile, Lean y DevOps; siete pasos de implementación (pruebas de datos y lógica, control de versiones, ramas, ambientes, contenedores, parametrización, trabajar sin heroísmo), diferencias DevOps/DataOps, fases de MLOps, ciclo de vida de ciencia de datos y «epic hypothesis statement». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

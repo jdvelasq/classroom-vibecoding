@@ -487,3 +487,14 @@
   - XP «Continuous Integration», «10 Minutes Build», «Test-driven development» (p. 5) — ya cubierta: P415 H01, P416 H01, P400–P401.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Scrum, Kanban, XP, SAFe, Scrum of Scrums y Disciplined Agile Delivery (pp. 3–9), principios «Reduce heroism», «Self-organize», «It’s a team sport» (p. 10) — fuera de alcance: gestión ágil de proyectos y equipos, no operación de una capacidad analítica.
+
+## S03.P400.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Hay al menos un test en cada paso» del pipeline ingestión→reporte (p. 9) — ya cubierta: el bloque de pruebas cubre regla, transformación, datos, modelo, entradas y flujo publicado (P400–P404, P417, P433). El documento no ayuda con el riesgo de identidad del bloque (indicador trivial), sólo lista prácticas.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ciclo de vida con «Decommission» / «Retirement» (p. 23) — marginal: retirar una capacidad no tiene caso ni datos; se menciona como respuesta de ciclo de vida dentro de la propuesta de P424.
+  - kanban de ideación, WIP y priorización de épicas (p. 24) — fuera de alcance: gestión de portafolio/proyectos.

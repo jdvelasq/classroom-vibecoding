@@ -330,3 +330,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - epic hypothesis statement con «Measured by | Metrics» y «And requiring | Non-functional requirements | … achieve 99.99% availability» (p. 13) — marginal: P445 ya compara disponibilidad observada con una meta y P408 fija consumidor y métrica; derivar la meta del uso sería variante. Puede citarse como fuente secundaria si otra revisión propone justificar la meta de P445 desde la necesidad del consumidor.
+
+## S03.P445.41
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - métricas DevOps (tiempo a producción, frecuencia de liberación, «¿Cuánto tiempo requiere para restablecer el servicio?», porcentaje de cambios que degradan el servicio) (p. 6) — fuera de alcance/marginal: métricas de entrega de software; el curso ya mide nivel de servicio (P445) e incidentes (P447) sobre la capacidad, y añadir métricas de entrega desplaza hacia ingeniería de software.
