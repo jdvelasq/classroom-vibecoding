@@ -475,3 +475,14 @@
   - desperdicios en analytics y value stream mapping del ciclo de creación de un producto de datos (pp. 6–7: «Trabajo que no llega a producción», «Tiempo requerido para crear un nuevo producto de datos») — fuera de alcance: organización del proceso de desarrollo/operación de productos de datos (Productos de datos / DataOps), no diseño de una política de decisión recurrente.
   - «Entrega rápida» como sistema de colas («No se puede operar al 100% de capacidad», «control estadístico de procesos», p. 8) — fuera de alcance: gestión del flujo de trabajo del equipo de datos; la intuición de no operar al 100 % de capacidad ya aparece como riesgo residual y holgura en P309/P311/P313, sin que el documento aporte un método enseñable.
   - capas del data lifecycle (p. 12: cómputo distribuido, contenedores, orquestación, monitoreo) — fuera de alcance: infraestructura (Productos de datos / Fundamentos de data).
+
+## S03.P300.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente sobre gestión de proyectos: cascada frente a Agile, Scrum, XP, Kanban, escalamiento (Disciplined Agile, Scrum of Scrums, SAFe), manifiesto DataOps y prácticas ágiles para iniciativas de analítica. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Hacer explícitas las políticas» de Kanban (p. 6) — fuera de alcance: alude a reglas del proceso de trabajo del equipo, no a políticas de decisión.
+  - Scrum, XP, SAFe, MVP, manifiesto DataOps, ambientes y eliminación de pasos manuales (p. 2–14) — fuera de alcance: metodología de desarrollo y operación de productos de datos; contexto organizacional, no prescripción para este curso.

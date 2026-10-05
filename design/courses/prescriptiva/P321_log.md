@@ -324,3 +324,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Root Cause Analysis / 5 Whys / Current reality tree» (p. 10) — fuera de alcance: diagnóstico organizacional de un equipo de data science; no se aplica a la revisión de una política.
+
+## S03.P321.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ciclos de revisión con cadencias distintas (p. 6: «Trimestral: Strategy reviews / Mensual: Operations & risk reviews … Semanal: replenishment review») — marginal: son cadencias de gestión de trabajo de un equipo; la cadencia de decisión y de revisión de la política ya es campo del contrato desde P300 H03 y del registro de P321 H02.
+  - *epic owner* que crea «el panel de monitoreo y medida para los KPIs» (p. 14) — marginal: rol de gestión de proyecto; responsable y acción de revisión ya están en P321 H02.

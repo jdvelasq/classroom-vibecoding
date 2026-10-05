@@ -321,3 +321,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: diapositivas de un curso de DataOps que trasladan Lean (TPS, Lean Software/Product Development, desperdicios, value stream mapping, teoría de restricciones, 5 porqués) al ciclo de vida de productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P315.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente sobre gestión de proyectos: cascada frente a Agile, Scrum, XP, Kanban, escalamiento (Disciplined Agile, Scrum of Scrums, SAFe), manifiesto DataOps y prácticas ágiles para iniciativas de analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

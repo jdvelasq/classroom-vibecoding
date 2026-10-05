@@ -321,3 +321,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - teoría de restricciones («Identifique la mayor restricción… Subordine el resto del sistema a la restricción», p. 9) — marginal/fuera de alcance: marco de mejora de procesos, no de política computable; la noción de recurso restrictivo y su valor ya está cubierta (P304 H02 valor marginal de capacidad; P316 H04 y P318 H05 valor de la capacidad escasa).
+
+## S03.P311.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación docente sobre gestión de proyectos: cascada frente a Agile, Scrum, XP, Kanban, escalamiento (Disciplined Agile, Scrum of Scrums, SAFe), manifiesto DataOps y prácticas ágiles para iniciativas de analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
