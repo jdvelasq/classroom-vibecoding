@@ -323,3 +323,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - causa raíz «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines o las bases de datos» y «Porque no entienden cómo usan los datos los consumidores» (p. 10) — ya cubierta: controles ejecutables que condicionan la salida (P500 H04), reglas de calidad como reporte (P516 H02) y contrato derivado del uso analítico (P517 H02). Aporta contexto, no una práctica nueva.
+
+## S03.P517.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - calidad como prioridad y monitoreo (p. 10 «Quality is paramount», «Monitor quality and performance») — ya cubierta: P516 H02, P517 H03–H04; el monitoreo continuo es de productos de datos.

@@ -502,3 +502,15 @@
   - causa raíz «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines o las bases de datos» y «Porque no entienden cómo usan los datos los consumidores» (p. 10) — ya cubierta: controles ejecutables que condicionan la salida (P500 H04), reglas de calidad como reporte (P516 H02) y contrato derivado del uso analítico (P517 H02). Aporta contexto, no una práctica nueva.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - value stream mapping, colas, control estadístico de procesos, teoría de restricciones (p. 7–9); capas del ciclo de vida de datos con cómputo distribuido, contenedores y orquestación (p. 12) — fuera de alcance: gestión de procesos y operación de productos de datos.
+
+## S03.P500.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre gestión de proyectos: cascada frente a ágil, Scrum, XP, Kanban, escalamiento (SAFe, Scrum of Scrums, DAD), manifiesto DataOps, ciclo de vida analítico y prácticas ágiles para DataOps (épicas, MVP). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ciclo de vida con adquisición, exploración y preparación de datos (p. 11 «Data acquisition, Data exploration, Data preparation, Feature engineering, Data pipeline development») — ya cubierta en sus etapas de datos (P503, P510, P511, P516); el resto (despliegue, entrenamiento) fuera de alcance.
+  - hipótesis de épica que declara fuentes a integrar (p. 13 «Integrating — Sources and data types — Financial transactions and customer identity data») — marginal: derivar fuentes de un objetivo ya se ejerce como requisitos desde la pregunta (P517 H02, P500 H02); el formato de épica es gestión de portafolio.
+  - Scrum, XP, Kanban, SAFe, roles y ceremonias (pp. 2–9, 12–14) — fuera de alcance: gestión de proyectos y organización de equipos no son capacidades `data.C01`–`C05`.

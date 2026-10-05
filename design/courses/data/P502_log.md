@@ -338,3 +338,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación que traslada lean manufacturing, lean software y lean startup a la analítica: desperdicios, value stream mapping, entrega rápida, teoría de restricciones y análisis de causa raíz aplicados a la calidad de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P502.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reproducibilidad como principio (p. 10 «Make it reproducible», «Analytics is code») — ya cubierta: `data.C04`; P503 H01 (consulta junto al export), P502 H03 (linaje), P500 H03 (contrato persistido).

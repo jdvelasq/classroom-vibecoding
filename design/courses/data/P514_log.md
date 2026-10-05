@@ -330,3 +330,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - desperdicio «Duplicación de datos y transformaciones» (p. 6) — marginal como señal curricular; coincide con la duplicación ya registrada por S02 (P514/P515 repiten producto de P511; P520–P523 copian operadores), cuya resolución es de diseño del curso y no depende de este documento.
+
+## S03.P514.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre gestión de proyectos: cascada frente a ágil, Scrum, XP, Kanban, escalamiento (SAFe, Scrum of Scrums, DAD), manifiesto DataOps, ciclo de vida analítico y prácticas ágiles para DataOps (épicas, MVP). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
