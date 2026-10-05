@@ -8,6 +8,7 @@
 - **Tipo:** método + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 73 y 92 — DG-Data Cleaning incluye la habilidad «Evaluate data quality» (p. 73) y DPSIA/DI-Data corruption and data validation enumera «Validation methods including input validation, data type validation, range and constraint validation, and cross-reference validation» (p. 92): las tres comprobaciones de esta T01 (tipo, rango y conciliación cruzada con la fuente) (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general de validar después de leer.
+  - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` p. 15 — CAP-E.3.5.2 «Identify common issues in data wrangling, such as missing values, duplicates, redundancy, incorrect/mismatched data types, corrupt data, and default data» y CAP-E.3.4.3 «Identify characteristics of lineage, traceability, and version control of data»: el tipo incorrecto es un problema de nivel inicial que el analista debe identificar (Claude, 2026-10-05). Fuente *authoritative*: objetivo de examen de nivel inicial, no temario.
 - **Qué gana el estudiante:** aprender que declarar el formato en la lectura
   no basta: hay que comprobar después de leer que los datos quedaron como se
   esperaba. Hoy P513 lee con `decimal=","` lotes que usan punto decimal, de

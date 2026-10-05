@@ -34,3 +34,12 @@
 - **Resultado:** propone T02.
 - **Señales descartadas relevantes:**
   - Task 3.6 «Assess data quality and identify relationships in the data» (p. 5) — ya cubierta por P516 H02–H03.
+
+## S03.P516.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** refuerza T02.
+- **Señales descartadas relevantes:**
+  - CAP-E.3.6.1 «accuracy, completeness, consistency, timeliness, validity, uniqueness, and outliers» y 3.6.4 métodos de evaluación (p. 15) — ya cubierta por P516 H02; atípicos se integran en la candidata de perfil.
+  - CAP-E.3.7.1 y 3.8.1 (p. 16) — ya cubierta por P516 H01 (alcance que cambia la pregunta) y P517 H01; la parte no cubierta va a las candidatas.

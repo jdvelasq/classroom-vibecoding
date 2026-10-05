@@ -41,3 +41,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - definición del marco INFORMS en siete dominios con sus tareas (sin subtareas); el dominio III describe identificar datos requeridos y disponibles, hacerlos utilizables (limpiar, armonizar, transformar, unir, validar, evaluar calidad), privacidad y seguridad, gobierno, inventario y documentación para procesos repetibles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P503.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-E.3.2.6 «Identify characteristics of a normalized dataset» (p. 14) — ya cubierta por P503 H02–H04.
+  - CAP-E.3.4.3 «lineage, traceability, and version control of data» (p. 15) — ya cubierta por P502 H03 y P503 H01; versionado de datos como práctica es marginal.

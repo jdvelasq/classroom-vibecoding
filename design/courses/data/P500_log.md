@@ -53,3 +53,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Task 3.3 «Create a data management plan» (p. 5) — marginal: los manifiestos y contratos (P500 H03, P501 H02, P511 manifiesto, P517) ya cubren lo pertinente; un plan formal sería gestión de proyecto.
   - dominios I–II y IV–VII (pp. 4–7) — fuera de alcance (P001 y cursos de línea).
+
+## S03.P500.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-E.3.1.1 «Identify data needs, sources, and acquisition sequence» (p. 13) — ya cubierta por P500 H02 y P517 H02.
+  - CAP-E.4.4.1 características del *stack* (bases, nube, *open source*) (p. 18) — ya cubierta por la frontera de herramientas (P500 H03, P508 H01); profundizar sería identidad de herramienta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - CAP-E.3.6.3 visualizaciones comunes (p. 15) y dominios I–II, IV–VII (pp. 7–12, 17–25) — fuera de alcance: encuadre, métodos, modelos, despliegue y ciclo de vida pertenecen a P001 y a los cursos de línea.

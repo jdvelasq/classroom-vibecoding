@@ -8,6 +8,7 @@
 - **Tipo:** producto/evidencia + caso/datos
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — Task 3.2 «Identify and analyze data sources, including data structures» y Task 3.7 «Document and report data findings»; «Understanding the use of data inventory and documentation is incorporated in this Domain to ensure repeatable processes» (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general de documentar la fuente junto con los hallazgos.
+  - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 14–16 — CAP-E.3.2.1 «Identify limitations and possible constraints of data, given its attributes, context, and metadata» y CAP-E.3.2.3 «Identify the source of the data» (p. 14); CAP-E.3.6.2 «Identify patterns and characteristics of a univariate dataset with data profiling outputs» (p. 15); CAP-E.3.7.1 «Identify findings in a report about data sets that may affect analysis» (p. 16) (Claude, 2026-10-05). Fuente *authoritative* de nivel inicial: sostiene procedencia, metadatos y perfil univariado de la medida.
 - **Qué gana el estudiante:** apoyar el diagnóstico de aptitud en la
   documentación de la fuente y no en un comentario. Hoy la decisión central
   del taller (excluir `zipcode = 0` porque es el total estatal) «sólo lo

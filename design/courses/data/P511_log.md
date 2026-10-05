@@ -35,3 +35,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 3.5 (merge/join, transform) (p. 5) — ya cubierta por P511 H01–H03; P514/P515 repiten la técnica (duplicación ya registrada por S02).
+
+## S03.P511.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-E.3.5.1 «merging/joining data across sources may require business rules» (p. 15) — ya cubierta por P511 H01 (claves contextuales) y H02.

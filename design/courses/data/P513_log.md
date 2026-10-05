@@ -34,3 +34,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «ensuring proper data transport across systems» (p. 5) — fuera de alcance/marginal: transporte entre sistemas es práctica de ingeniería; P513 y P518 ya tienen la auditoría de identidad no resuelta.
+
+## S03.P513.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - CAP-E.3.2.4/3.2.5 fortalezas y elección de arquitectura de datos (p. 14) — fuera de alcance (arquitectura excluida).
