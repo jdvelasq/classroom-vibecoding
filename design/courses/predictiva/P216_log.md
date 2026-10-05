@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre pensamiento lean (Toyota, eliminación de desperdicios, mejora continua) aplicado a analítica; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P216.39
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre colaboración ágil (Scrum, Kanban, XP, SAFe, manifiesto DataOps); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
