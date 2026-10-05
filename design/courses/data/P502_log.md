@@ -12,3 +12,16 @@
 - **Trazabilidad:** `data.C03`–`data.C05` revisadas.
 - **Auditoría:** el producto sigue una pregunta de negocio y preserva
   Analytics como identidad.
+
+## S02.P502.02
+
+- **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
+- **Rutas inspeccionadas:** `implementation/data/P502_superstore_linaje/` (`data/superstore_orders.csv`, `professor/main.py`, `src/main.py`, `submission/data_catalog.csv`, `submission/column_catalog.csv`, `submission/lineage.csv`, `submission/questions.json`, `tests/test_activity.py`); contraste con `implementation/data/P501_superstore_serving/submission/serving_manifest.csv`.
+- **Trazabilidad revisada:** P502 → `data.C03`, `data.C04`, `data.C05`; C03 parcial, C05 débil.
+- **Preservado:** pregunta, tres artefactos de documentación, grano y consumidor por dataset, y la constatación previa de que no hay pipeline ejecutable.
+- **Corregido:** la descripción previa decía que P502 «reutiliza artefactos Superstore»; el código no lee el CSV ni los archivos de P501: catálogo y linaje son literales escritos a mano.
+- **Highlights añadidos:** H01 (catálogo de datasets), H02 (roles de columnas), H03 (cambio de grano en el linaje; highlight obligatorio de caso y datos). IDs nuevos.
+- **Sección heredada:** se eliminó «Mejoras aceptadas pendientes de implementación» porque declaraba que no había mejoras.
+- **Ambigüedades:** `data/superstore_orders.csv` presente sin uso; ubicación `submission` remite a P501; consumidor «Privado» sin explicación (¿restricción de uso?); catálogo de columnas parcial; linaje no verificable contra el código.
+- **Superficies / contrato / dependencias:** S01–S06; recibe de P501 nombres y granos; no habilita una actividad posterior de forma demostrable.
+- **Auditoría de Analytics:** documentación que sirve a la auditabilidad de métricas; riesgo de documentación formal desconectada de los datos.

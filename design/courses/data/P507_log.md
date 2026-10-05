@@ -7,3 +7,16 @@
   y trazabilidad.
 - **Decisión:** se creó mapa inicial y se conservó la distinción entre respuesta
   observable y técnica de consulta pendiente de validar.
+
+## S02.P507.02
+
+- **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
+- **Rutas inspeccionadas:** `implementation/data/P507_scopus_sql_analitico/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); normalización de palabras clave en `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`.
+- **Trazabilidad revisada:** P507 → `data.C01`, `data.C02`, `data.C03`, `data.C05`; C03 sin evidencia.
+- **Preservado:** pregunta, entregable, combinación de condición temporal con conteo por año y palabra clave.
+- **Completado:** se confirmó la consulta pendiente (dos CTE y `ROW_NUMBER` particionado por año, top 10); pruebas sólo de existencia; notebook del estudiante sin celdas.
+- **Highlights añadidos:** H01 (ventana por año), H02 (palabras clave de autor y empates; highlight obligatorio de caso y datos). IDs nuevos.
+- **Sección heredada:** se eliminó «Mejoras aceptadas pendientes de implementación» porque declaraba que no había mejoras.
+- **Ambigüedades:** empates de baja frecuencia ordenados alfabéticamente; términos de búsqueda en el ranking; join redundante con `keywords`; el notebook alude a una visualización inexistente.
+- **Superficies / contrato / dependencias:** S01–S05; recibe de P503–P506; no habilita una actividad posterior de forma demostrable.
+- **Auditoría de Analytics:** descripción temática anual; riesgo moderado de lectura como lección de funciones de ventana.

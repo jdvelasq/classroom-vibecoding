@@ -4,3 +4,17 @@
 
 - **Fecha:** 2026-10-03; **curso / executor:** `data` / `ChatGPT`; **estado:** inicial.
 - **Decisión:** se creó mapa y se escaló la ausencia de pregunta analítica explícita.
+
+## S02.P513.02
+
+- **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
+- **Rutas inspeccionadas:** `implementation/data/P513_superstore_batch/` (`data/*.csv`, `data/source_manifest.json`, `professor/main.py`, `src/main.py`, `submission/ingestion_report.csv`, `tests/test_activity.py`); P500–P502 para relaciones; P518 y P524 para reaparición de Parquet.
+- **Trazabilidad revisada:** P513 → `data.C02`–`data.C05`; sin C01, coherente con la ausencia de pregunta.
+- **Highlights:** añadidos H01 (lectura de lotes con BOM y formato declarado; caso y datos), H02 (descubrimiento por patrón y aterrizaje Parquet), H03 (reporte de ingestión por lote).
+- **Preservado:** ausencia de pregunta analítica, dos lotes trimestrales, Parquet en zona raw, reporte por lote y la escalación de identidad.
+- **Corregido:** «lectura con contrato de formato» es parcialmente incorrecta: `decimal=","` no coincide con el punto decimal de los lotes y deja las columnas numéricas como texto (comprobado con `pandas.read_csv`).
+- **Añadido:** suma 1012 + 940 = 1952 no verificada; `utf-8-sig` frente al arreglo `latin1` de P500; estado `SUCCESS` constante; Parquet no persistido; interfaz del estudiante en `src/main.py` sin enunciado.
+- **Sección heredada:** eliminada «Mejoras aceptadas pendientes de implementación» (declaraba que no había).
+- **Ambigüedades:** el bloque `format` del manifiesto no se ve completo; no se puede confirmar qué separador decimal declara.
+- **Superficies / contrato / dependencias:** S01–S05; recibe caso de P500; no habilita dependencias evidenciadas.
+- **Auditoría de Analytics:** no resuelta; la actividad se lee como ingestión batch de ingeniería de datos sin producto analítico.
