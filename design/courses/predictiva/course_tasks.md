@@ -48,9 +48,27 @@
   de la importancia de variables (no causal). El límite debe quedar explícito:
   más exactitud no implica mejor producto si se pierde interpretabilidad o
   estabilidad.
+- **Herramientas de scikit-learn sugeridas** (scikit-learn 1.5.x, compatible
+  con `requirements.txt`; no son fuentes S03, sólo concretan la ejecución)
+  (Claude, 2026-10-04):
+  - `DecisionTreeRegressor`/`Classifier` → `RandomForest*` →
+    `HistGradientBoosting*`: del mecanismo legible (reglas) al ensamble de
+    referencia actual para datos tabulares (faltantes y categorías nativos).
+  - `sklearn.model_selection.validation_curve` sobre `max_depth` (y, si cabe,
+    `learning_curve`): hace visible el sobreajuste con error de
+    entrenamiento frente a validación; responde a «learning curves» del T2
+    de ACM. Hoy ningún taller del curso las usa.
+  - `sklearn.inspection.permutation_importance` calculada sobre prueba,
+    contrastada con `feature_importances_` (basada en impureza), y
+    `PartialDependenceDisplay` para una o dos variables: enseña a interrogar
+    un modelo de caja negra sin leerlo como causal. Responde a la señal de
+    interpretabilidad acumulada en el curso (National Academies, MIT PC
+    DS&A, UChicago, ACM).
 - **Criterio de aceptación de una primera versión:** un notebook que ajusta un
   árbol, un Random Forest y un modelo de *boosting* sobre el caso elegido;
-  muestra el sobreajuste al crecer la profundidad; compara contra la línea
+  muestra el sobreajuste al crecer la profundidad con una curva de
+  validación; interpreta el mejor modelo con importancia por permutación
+  sobre prueba (contrastada con la de impureza) y dependencia parcial; compara contra la línea
   base previa del mismo caso; persiste métricas e importancias en
   `submission/`; incluye pruebas y entrada en `traceability.yaml`; y su
   `Pxxx_activity.md` (S02) evidencia highlights propios, no duplicados de

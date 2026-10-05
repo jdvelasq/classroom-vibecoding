@@ -429,3 +429,9 @@
 - **Señales descartadas relevantes:**
   - *Forecast Value Added* frente a un pronóstico ingenuo (p. 130): ya cubierta (H03: línea base estacional).
   - monitoreo de errores de pronóstico con cartas de control (p. 10): según `AGENTS.md` corresponde a productos de datos.
+
+## Nota.P211.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Origen:** revisión de técnicas de scikit-learn pedida por el profesor (no es una revisión S03 de un benchmark).
+- **Cambio:** T01 admite `TimeSeriesSplit(n_splits=12, test_size=1)` como forma de generar los orígenes móviles; el criterio de aceptación no cambia.

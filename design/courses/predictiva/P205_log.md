@@ -452,3 +452,10 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
+
+## Nota.P205.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Origen:** revisión de técnicas de scikit-learn pedida por el profesor (no es una revisión S03 de un benchmark).
+- **Resultado:** sin cambios.
+- **Señal descartada:** `TunedThresholdClassifierCV` (scikit-learn 1.5) para elegir el umbral con validación cruzada. No aplica: P205 no entrena un clasificador, recibe probabilidades simuladas ya generadas, y H02 enseña el barrido manual como mecanismo. Llevarlo a P204 duplicaría el propósito de P205.

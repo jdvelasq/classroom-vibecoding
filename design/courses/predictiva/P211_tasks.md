@@ -64,7 +64,11 @@ Actividad: implementation/predictiva/P211_pronostico_congestion_servicio/
    b. En cada origen, reajusta Ridge (mismas features, rezagos y
       preprocesamiento) sólo con datos hasta ese origen y pronostica un
       paso adelante; calcula también el pronóstico de la línea base
-      estacional.
+      estacional. Puedes generar los orígenes con
+      sklearn.model_selection.TimeSeriesSplit(n_splits=12, test_size=1)
+      (ventana expansiva) en lugar de un bucle manual, siempre que los
+      rezagos y la línea base de cada origen se construyan sólo con datos
+      anteriores a él; si el cálculo de rezagos lo impide, usa el bucle.
    c. Registra el error absoluto de cada modelo por origen.
    d. Grafica los errores por origen para ambos modelos y resume MAE,
       mediana y fracción de orígenes en que Ridge gana.
