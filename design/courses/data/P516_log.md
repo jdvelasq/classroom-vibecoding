@@ -116,3 +116,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «¿Qué opinas de los datos que encontraste?» y «Limpieza de datos» (p. 7); «Sé capaz de recopilar, limpiar y describir los datos que tienes» (p. 6) — ya cubierta en P516 (aptitud de una fuente para una pregunta); como mucho refuerza la candidata de procedencia de P516 derivada de UNF, sin aportar práctica concreta propia.
+
+## S03.P516.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso ejecutivo-técnico sobre historia de la web y la nube, contenedores, PKI, DevOps, serverless y cloud native, con casos (Microsoft, GE, Netflix, AWS). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

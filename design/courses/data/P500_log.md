@@ -176,3 +176,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Las cuatro “V” del Big Data: volumen, variedad, velocidad y veracidad» (p. 7) — marginal: marco conceptual; veracidad como calidad ya se ejerce en P516–P517.
   - experimentación, ML, redes neuronales, prescriptivo y sesgos de decisión (p. 6–8) — fuera de alcance: pertenecen a otros cursos.
+
+## S03.P500.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso ejecutivo-técnico sobre historia de la web y la nube, contenedores, PKI, DevOps, serverless y cloud native, con casos (Microsoft, GE, Netflix, AWS). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Containers and Keys ... container orchestration ... Public Key Infrastructure» (p. 13); «Serverless», «Cloud Native ... Kubernetes» (p. 14–15) — fuera de alcance: infraestructura y arquitectura, excluidas por la frontera del curso.
+  - métricas DevOps «Wait Time, Deployment Frequency, Service Restoration Time, and Failure Rate» (p. 14) — fuera de alcance: operación de software/productos de datos.
+  - «Mobile and IoT: Everyone Generating Data» (p. 13) — marginal: contexto histórico sin práctica ni caso asociado.

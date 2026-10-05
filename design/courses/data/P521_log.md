@@ -106,3 +106,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «RGPD (Reglamento General de Protección de Datos)», «Privacidad y anonimización» (p. 8); caso TalkTalk sobre protección de datos de clientes (p. 11) — marginal: S02 ya registra `ssn` en `drivers.csv` (P519, P521) y `user_id`/`user_session` copiados en `event_replay.csv` (P526) como defectos de distribución/sensibilidad; P521 ya proyecta sólo `name` del maestro. La corrección (retirar o seudonimizar identificadores, documentar restricciones) es higiene de datos que no requiere este benchmark, y un bullet de temario ejecutivo no basta para crear un contenido de privacidad propio.
+
+## S03.P521.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso ejecutivo-técnico sobre historia de la web y la nube, contenedores, PKI, DevOps, serverless y cloud native, con casos (Microsoft, GE, Netflix, AWS). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

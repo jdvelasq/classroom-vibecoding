@@ -105,3 +105,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Web scraping», «Interfaz de programación de aplicaciones (API)», «Amazon y APIs» (p. 7) — ya cubierta/marginal: obtención desde API en P518 H01–H02; web scraping sería otra vía de obtención sin caso trazable.
+
+## S03.P518.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «develop a web server ... send data at your request. This data can be found in files or generated from machines or devices (eg. sensors)» (p. 13) — fuera de alcance: construir servidores de datos no es obtención de datos para una pregunta analítica.
