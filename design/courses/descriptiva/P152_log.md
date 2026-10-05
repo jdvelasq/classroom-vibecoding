@@ -352,3 +352,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas de balance de ubicación (p. 5: «Las propiedades de los datos se mantienen en cada etapa. La cantidad de datos o sus dimensiones se mantienen») — ya cubierta: conciliación entre granularidades en P121 H02, conservación de filas en la unión en P150 H02 y P151 H02, y reconciliación del *roll-up* contra el total en P152 H02 (y P154 H01).
+
+## S03.P152.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Láminas sobre cómo organizar equipos de datos: estructuras típicas (equipos pequeños, Big Data Ops, Hybrid, Large Scale), equipos por función o por dominio, roles del grupo central y de soporte con sus responsabilidades, habilidades y herramientas, perfiles en T, Pi y M, y estructuras centralizada y descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

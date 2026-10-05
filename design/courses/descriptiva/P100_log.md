@@ -532,3 +532,15 @@
   - «Analytics es código», *value pipeline* frente a *innovation pipeline*, ambientes idénticos a producción y liberación de código (p. 3) — fuera de alcance: operación de pipelines en producción, que es del curso de productos de datos.
   - tipos de pruebas de software (unitarias, de integración, funcionales, de regresión, de desempeño, de humo) y «Cada vez que algo falla se agrega una nueva prueba» (p. 2) — fuera de alcance como contenido: el curso ya usa `pytest` sólo para verificar participación (convención de los talleres), y enseñar tipología de pruebas desplaza la identidad hacia ingeniería de software.
   - control estadístico de procesos y pruebas de balance temporal con notificación automática (p. 5: «Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos») — fuera de alcance: monitoreo continuo de un producto en operación (productos de datos).
+
+## S03.P100.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Artifactos no reproducibles» y «El código y la data crecen independientemente» como problemas típicos (p. 2) — marginal: la reproducibilidad del curso ya está asegurada por las pruebas que recomputan los productos desde `data/` (P103 H03, P120 H08). Versionar datos frente a código es materia de productos de datos.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - el rol de analista de datos o BI tiene como responsabilidades «Consulta, Limpieza, Exploración, Interpretación, Visualizaciones, Tablas, Reportes» y como habilidad «Entendimiento y análisis de datos que influencian las decisiones» (p. 5) — ya cubierta: consulta (P104, P151–P152), limpieza (P106–P107), exploración y tablas (P103, P120–P122), visualización (P103 H04, P120 H05) y reporte filtrable (P124). La «interpretación» es la debilidad conocida de varios talleres (sin lectura persistida en P150–P154), pero un perfil de cargo no aporta el método ni el caso para corregirla, y la familia sólo da contexto organizacional.
+  - estructuras de equipo por función, por dominio, centralizadas o descentralizadas, sus cuellos de botella y la falta de *ownership* (pp. 2–4, 8) — fuera de alcance: es diseño organizacional, sin capacidad que el estudiante ejerza en un taller descriptivo.
+  - perfiles de habilidad (I, T, Pi, M, E) y equipos «altamente productivos» (p. 7) — fuera de alcance: es contexto de gestión de talento, no una capacidad del curso.

@@ -345,3 +345,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diapositivas sobre DataOps aplicado a la calidad de datos: pruebas automáticas en cada etapa del pipeline analítico (acceso, transformación, modelado, visualización, reportería), distinción entre *value pipeline* e *innovation pipeline*, ejemplos de pruebas de entradas, lógica de negocio y salidas, niveles de severidad y pruebas de balance (de ubicación, histórico, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P108.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Láminas sobre cómo organizar equipos de datos: estructuras típicas (equipos pequeños, Big Data Ops, Hybrid, Large Scale), equipos por función o por dominio, roles del grupo central y de soporte con sus responsabilidades, habilidades y herramientas, perfiles en T, Pi y M, y estructuras centralizada y descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

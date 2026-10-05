@@ -355,3 +355,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - verificar las entradas antes de transformar y detectar los problemas lo antes posible (p. 4: «Los tests deben incluirse en cada etapa del pipeline») — ya cubierta: grano y consistencia aritmética antes de agregar en P120 H02, y grano y faltantes en P122 H01.
+
+## S03.P122.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Láminas sobre cómo organizar equipos de datos: estructuras típicas (equipos pequeños, Big Data Ops, Hybrid, Large Scale), equipos por función o por dominio, roles del grupo central y de soporte con sus responsabilidades, habilidades y herramientas, perfiles en T, Pi y M, y estructuras centralizada y descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

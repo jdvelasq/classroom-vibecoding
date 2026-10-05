@@ -356,3 +356,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas de balance de ubicación (p. 5: «Las propiedades de los datos se mantienen en cada etapa. La cantidad de datos o sus dimensiones se mantienen») — ya cubierta: conciliación entre granularidades en P121 H02, conservación de filas en la unión en P150 H02 y P151 H02, y reconciliación del *roll-up* contra el total en P152 H02 (y P154 H01).
+
+## S03.P151.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el administrador de la plataforma de datos gestiona «Lagos de datos, Bodegas de datos, Data mars, Diseño de esquemas» (p. 5), y el flujo va de *raw lake* a *refined data* y a visualización (p. 8) — ya cubierta: P151 (mart estrella) y P154 (capa de consumo). Ir más allá, hacia lagos, ETL o Hadoop/Spark, es ingeniería de datos (fuera de alcance).

@@ -357,3 +357,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - balance histórico (p. 5: «Se comparan los datos actuales con datos previos o valores esperados»; p. 4: «Porcentajes de incremento en la cantidad de registros de una tabla») — fuera de alcance: requiere cargas sucesivas de un producto en operación; los casos del curso son cortes estáticos y sintéticos.
+
+## S03.P153.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el ingeniero DataOps se ocupa de la «Automatización de la calidad» con «Frameworks para tests de datos» (p. 5) — ya cubierta en lo que toca al curso: P153 H03 condiciona la publicación de KPI a reglas verificables. Automatizar y orquestar pipelines es materia de productos de datos (fuera de alcance).

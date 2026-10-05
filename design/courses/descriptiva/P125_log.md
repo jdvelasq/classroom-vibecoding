@@ -353,3 +353,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diapositivas sobre DataOps aplicado a la calidad de datos: pruebas automáticas en cada etapa del pipeline analítico (acceso, transformación, modelado, visualización, reportería), distinción entre *value pipeline* e *innovation pipeline*, ejemplos de pruebas de entradas, lógica de negocio y salidas, niveles de severidad y pruebas de balance (de ubicación, histórico, control estadístico de procesos). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.43
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el *data product owner* aporta «Data storytelling, Visualización» y representa al usuario (p. 6) — marginal: la necesidad de un usuario declarado y de comunicar la respuesta ya está registrada en las auditorías de S02. Esta lámina no añade un contraste ni una forma de evidencia distinta de P125 H06 (respuesta con su límite) o P120 H01 (pregunta enlazada a evidencia).
