@@ -282,3 +282,11 @@
 - **Señales descartadas relevantes:**
   - modelado ER y traducción a diseño físico (p. 2 «Students will learn ER modeling and how ER models are translated into physical database design»; «Assignment # 1 Creating ER model and implementing it using MySQL») — ya cubierta: P503 H02 (multivalor → muchos a muchos), H04 (PK/FK/`NOT NULL` verificables), S03 (esquema reutilizado por P504–P508).
   - manejo de nulos en dimensiones (p. 2 «Null handling») — ya cubierta: P510 H02 (`COALESCE` a `'unknown'` en lenguajes nulos), P503 H03 («Sin fuente identificada»).
+
+## S03.P503.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelo relacional y SQL (p. 2) — ya cubierta: P503 H02–H05 y P504–P508.

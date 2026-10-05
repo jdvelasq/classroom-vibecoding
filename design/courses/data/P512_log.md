@@ -273,3 +273,11 @@
 - **Señales descartadas relevantes:**
   - hechos y dimensiones, dimensión de tiempo, proceso de cuatro pasos (p. 2 «Dimension and Fact tables», «Time Dimension», «4 Step Design process»; «Classroom Hands-on – Design your first Fact table») — ya cubierta: P512 H01 (dimensión de fecha desde `d/m/yy`), H02 (hecho a grano línea), H03 (mart en estrella).
   - dimensiones conformadas, de rol, SCD tipos 1–3, hechos sin hechos y de snapshot (p. 2 «Conformed dimensions», «Slowly Changing Dimensions - Type 1, Type 2, and Type 3», «Role Playing Dimensions»; p. 3 «Fact less facts», «Snapshot facts») — fuera de alcance: mantenimiento histórico y arquitectura de bus de un almacén empresarial; el curso no es Data Engineering ni arquitectura empresarial (`s05-diseno-data.md`) y no hay caso con historia de cambios para enseñarlo con rigor. La pérdida de `Ship Date` en el mart (P512 S02) ya está tratada por otra fuente (Kimball).
+
+## S03.P512.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de módulo de posgrado (15 créditos, 10 semanas): de datos crudos a patrones para predicción y decisión; temario de herramientas, estadística, bases de datos y calidad, regresión, matrices, clustering, clasificación, estructuras para big data, privacidad y grafos; evaluación con proyecto (35 %), ejercicios y examen (50 %). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

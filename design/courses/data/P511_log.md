@@ -268,3 +268,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - trampas de abanico y abismo en uniones (p. 3 «Identifying Fan traps / Resolving Fan traps», «Identifying Chasm traps») — ya cubierta: el riesgo que modelan (doble conteo al unir por relaciones uno a muchos) está en P511 H02 (`validate="many_to_one"` + conservación del grano) y P505 H02 (autoría completa sobre muchos a muchos); la formulación como «trampa» es propia de diseño de universos BI.
+
+## S03.P511.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - calidad y limpieza de datos (p. 2: «Problems found in realistic data: errors, missing values, lack of consistency, and techniques for addressing them»; p. 2: «coping with missing and dirty data») — ya cubierta: P500 H04 (controles ejecutables), P510 H03 y P511 H02 (conciliación y cardinalidad), P516 H01–H03 (reglas con dimensión).

@@ -409,3 +409,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - universos BI, seguridad por fila, reportes Web Intelligence y Tableau (p. 3 «What is a Universe»; p. 4 «Row level security», «Data Blending», «Building dashboards») — fuera de alcance: herramientas BI y comunicación de resultados pertenecen a Descriptiva/productos de datos; una señal institucional no impone herramientas.
   - contraste OLTP/estrella (p. 3 «OLTP vs. Star schema based universes») — marginal: el contraste ER (P503) / dimensional (P512) ya existe en la secuencia.
+
+## S03.P500.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - calidad y limpieza de datos (p. 2: «Problems found in realistic data: errors, missing values, lack of consistency, and techniques for addressing them»; p. 2: «coping with missing and dirty data») — ya cubierta: P500 H04 (controles ejecutables), P510 H03 y P511 H02 (conciliación y cardinalidad), P516 H01–H03 (reglas con dimensión).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - herramientas de línea de comandos (sort, count, join) y gnuplot/Perl (p. 2) — marginal: otra herramienta para operaciones ya cubiertas (data.C05).
+  - estadística, regresión, SVD/PCA, clustering, clasificación, grafos (p. 2) — fuera de alcance: pertenecen a Descriptiva/Predictiva.
+  - proyecto con peso 35 % y examen 50 % (p. 4) — fuera de alcance: la evaluación de `Pxxx_` está fijada por `AGENTS.md` (pytest de participación).
