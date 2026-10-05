@@ -314,3 +314,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - recorre KDD → CRISP-DM → metodologías de ciclo de vida (TDSP, CRISP-ML(Q), MAISTRO) con un caso de abandono de clientes que avanza de pregunta descriptiva a predicción, decisión, despliegue, monitoreo/degradación y gobierno transversal. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P442.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Parada de la linea de producción ante defectos» y «Problema altamente visible para investigación y prevención» (p. 2) — ya cubierta: el contrato que corta la validación y persiste la decisión (P402 H01, H03), la cuarentena con motivo (P441 H01) y el veredicto integrado (P442 H02). La diferenciación por severidad (detener frente a alertar) ya tiene propuesta extraída de dataops-09 para P442; este documento no agrega nada.
+  - «Introducción del control estadístico de procesos» y «Detección de cuellos de botella en el proceso» (p. 8) — fuera de alcance: aparecen como tácticas para acortar el ciclo de entrega; aplicarlas exigiría series temporales de métricas operativas que ningún caso del curso tiene (coincide con el descarte del mismo tema en dataops-09).

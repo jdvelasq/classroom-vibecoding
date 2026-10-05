@@ -313,3 +313,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Evaluar costos y beneficios… KPIs y ROI» (p. 26) — fuera de alcance: medir beneficio/ROI no tiene caso ni datos en el curso y desplaza hacia evaluación de valor (Fundamentos).
+
+## S03.P449.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - traslada Lean (Toyota, Lean Software Development, Lean Startup) a la analítica: analítica como sistema de producción («value pipeline») y de desarrollo («innovation pipeline»), desperdicios en analítica, value stream mapping, entrega rápida (colas, ciclo, control estadístico de procesos), teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

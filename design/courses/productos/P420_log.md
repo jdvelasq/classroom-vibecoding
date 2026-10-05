@@ -313,3 +313,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Documentar para reproducibilidad y auditoría… parámetros, las versiones, las herramientas» (p. 21) — ya cubierta por H02/H03 de P420 (corrida persistida y comparable).
+
+## S03.P420.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Duplicación de datos y transformaciones» como desperdicio (p. 6) frente a S04 de P420 («datos duplicados por corrida») — marginal: copiar los datos por corrida es la forma en que P420 garantiza que la corrida sea recuperable (H02); sustituirlo por una referencia a la huella de P431 dependería de una actividad posterior y el documento sólo nombra el desperdicio en abstracto.

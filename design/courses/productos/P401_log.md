@@ -314,3 +314,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - recorre KDD → CRISP-DM → metodologías de ciclo de vida (TDSP, CRISP-ML(Q), MAISTRO) con un caso de abandono de clientes que avanza de pregunta descriptiva a predicción, decisión, despliegue, monitoreo/degradación y gobierno transversal. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P401.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Test-driven Development: pruebas unitarias y de aceptación» (p. 3) y «Errores de código y datos» como desperdicio (p. 6) — ya cubierta: pruebas de la regla y de la transformación (P400 H02, P401 H02) y contrato de datos con aceptación/rechazo (P402 H01, H04).

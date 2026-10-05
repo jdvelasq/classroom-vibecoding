@@ -313,3 +313,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Monitorear uso, adopción y retroalimentación» (p. 26) — marginal: P451 ya liga la valoración a la respuesta; convertirla en señal agregada de adopción exigiría datos de uso que el curso no tiene (registro simulado).
+
+## S03.P451.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Feedback por parte del cliente», «Aprendizaje validado», «Métricas accionables», producto mínimo viable (p. 4) — fuera de alcance: descubrimiento de producto (Lean Startup); P451 ya liga la valoración a la respuesta (H01–H02) y no hay datos de uso para cerrar un ciclo construir-medir-aprender.

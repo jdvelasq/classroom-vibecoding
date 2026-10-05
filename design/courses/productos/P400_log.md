@@ -464,3 +464,16 @@
   - «El modelo no es la solución. Datos + Modelos + Reglas de decisión + Interfaces → Solución analítica» (p. 19) y «La analítica genera valor cuando cambia una decisión o una acción» (p. 24) — ya cubierta como principio en `s05-diseno-productos.md` (C01, producto terminal); confirma el riesgo de identidad registrado en S02 (indicadores sin usuario ni decisión), pero no aporta un cambio localizable.
   - framing, problema analítico, entendimiento y preparación de datos, selección de métodos (p. 9–17) — fuera de alcance: responsabilidad de Fundamentos/Descriptiva/Predictiva/Prescriptiva según las fronteras del curso.
   - «Evaluar sesgos y equidad» e impactos sociales y ambientales (p. 28–29) — fuera de alcance: la evaluación de sesgo de un modelo pertenece a Predictiva y no hay caso con grupos en el curso.
+
+## S03.P400.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Test-driven Development: pruebas unitarias y de aceptación» (p. 3) y «Errores de código y datos» como desperdicio (p. 6) — ya cubierta: pruebas de la regla y de la transformación (P400 H02, P401 H02) y contrato de datos con aceptación/rechazo (P402 H01, H04).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «No contribuye a tomar decisiones o mejorar la experiencia del usuario», «No ayudan al usuario a tomar decisiones» y «Problema equivocado» como desperdicios (p. 6) — ya registrado: confirma el riesgo de identidad de S02 (indicadores sin usuario ni decisión en P400–P419, P428–P438), pero no aporta un cambio localizable en un taller.
+  - value pipeline «Ingestión Transformación Modelado Visualización Reporte» con entregas «Archivos, Herramientas BI, Dashboards, Web Apps, APIs» e innovation pipeline (p. 5) — ya cubierta como encuadre del curso (integración y entrega: C02; API en P425–P426).
+  - value stream mapping, proporción espera/valor agregado, tiempo de ciclo de producción y desarrollo (pp. 7–8) y teoría de restricciones en cinco pasos (p. 9) — fuera de alcance: mejora de procesos organizacionales sin caso ni datos en el curso.
+  - capas del ciclo de vida del dato: «Control de versiones, despliegue, monitoreo, herramientas de planificación y orquestación» (p. 12) — ya cubierta (P408–P416, P418, P422–P423, P428–P429); cómputo distribuido, flujos, NoSQL y almacenamiento en la nube son fuera de alcance (Big Data, cloud engineering).

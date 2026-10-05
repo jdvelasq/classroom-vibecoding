@@ -313,3 +313,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Transferir la operación. Establecer responsables, procedimientos y mecanismos para iniciar el monitoreo, el soporte y el mantenimiento» (p. 23) — ya cubierta (runbook, incidente con dueño).
+
+## S03.P447.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Análisis raiz causa» (p. 2) y 5 porqués / árbol de realidad actual (p. 10) — fuera de alcance: el ejemplo de la p. 10 diagnostica restricciones organizacionales («los equipos de IT no ven la calidad de los datos como una prioridad», «El ciclo de vida del dato pasa por varios equipos»), no la causa de un incidente de una capacidad; P447 (H01–H02) recibe una alerta escrita a mano sin datos que permitan trazar una causa con rigor.
