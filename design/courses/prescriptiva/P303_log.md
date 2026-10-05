@@ -50,3 +50,11 @@
 - **Señales descartadas relevantes:**
   - «Declaring the grain … becomes a binding contract on the design» (p. 5) aplicado al registro de decisiones por solicitud (H03) — marginal: P303 y P306 H08 ya fijan una fila por decisión con versión y razón; nombrar el grano no cambia lo que el estudiante hace.
   - dimensiones tipo 2 con fechas de vigencia (p. 15) para historiar versiones de política («una sola versión; sin historial») — fuera de alcance: es diseño de almacenamiento (Productos de datos / Fundamentos de data), no semántica de la política.
+
+## S03.P303.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Informe de consenso sobre la formación de pregrado en ciencia de datos. Define el *data acumen*, es decir, la capacidad de «make good judgments … and ultimately make good decisions using data» (p. 22), en diez áreas conceptuales, y recomienda integrar la ética en todo el currículo y adoptar un código o juramento profesional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

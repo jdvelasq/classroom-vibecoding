@@ -50,3 +50,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - catálogo oficial de técnicas de modelado dimensional (proceso, grano, hechos, dimensiones, dimensiones lentamente cambiantes, esquemas especiales) para data warehouses y BI. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data science students need to know about randomized trials (commonly used in businesses running A/B comparisons)» y la advertencia de que las relaciones observadas «will not necessarily hold in the next set of records» (p. 44). Categoría: marginal para este documento. P306 ya explota un tratamiento aleatorizado e inferencia causal (H01–H02). La falta de un grupo de control en la operación propuesta, que impide medir el efecto observado con `monitoring_plan.csv` (S05), es un defecto real, pero ya está registrado en S02.P306.01, ambigüedad (3). Este documento lo trata como fundamento estadístico de pregrado y no aporta un argumento específico sobre el monitoreo de una política desplegada.
+  - «Inaccurate predictions of flu trends … overreliance on outdated models» (p. 34). Categoría: ya cubierta. La recalibración y la brecha entre lo observado y lo estimado como gatillo están en P306 H07 y P308 H07.

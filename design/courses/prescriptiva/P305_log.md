@@ -53,3 +53,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tabla de hechos sin hechos y cobertura para analizar «what didn't happen» (p. 8) aplicada a casos no seleccionados — marginal: P305 H04 y P302 H01 ya explican exclusiones y descartes.
+
+## S03.P305.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Optimization» entre los fundamentos matemáticos (p. 42) y «Simulations» (p. 43). Categoría: ya cubierta. Optimización y simulación aparecen como contribuyentes en P305, P308, P313, P315–P318 y P310. El documento sólo las lista como fundamento, sin decir cómo usarlas en una política.
+  - sesgos en *predictive policing* (p. 34) y «algorithmic bias» en la priorización de inspecciones o controles. Categoría: fuera de alcance para P305, porque su caso declara que no hay atributos protegidos (S01) y no hay datos para modelar equidad con rigor. La auditoría por grupo está cubierta en P320 H01–H02.

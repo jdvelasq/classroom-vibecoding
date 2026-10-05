@@ -9,6 +9,7 @@
   precondición)
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 41, 108–109 — «the ethical issues should be seen to pervade the whole curriculum» (p. 41); PR-Ethical Considerations pide conocer «mechanisms for checking and avoiding bias» y «Algorithmic transparency and accountability» (p. 108) y la disposición «Responsive to issues of bias and be proactive in seeking to remove these» (p. 109): no basta detectar el sesgo, hay que actuar para removerlo y rendir cuentas (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general, no un método de corrección.
+  - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 50, 51 y 138 — Recomendación 2.4: ética «woven into the data science curriculum from the beginning and throughout» y «Ability to detect algorithmic bias» (p. 50); «the responsibility to ensure fairness in the use of machine learning algorithms» (p. 51); el juramento distingue la detección de la acción: «I will always look for a path to fair treatment and nondiscrimination» y «ensure my analyses help make better decisions» (p. 138) (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa, no el método.
 - **Qué gana el estudiante:** completar el ciclo detectar → corregir →
   reverificar → rendir cuentas del costo. Hoy P320 audita, decide
   «suspend_and_correct» para P1 y se detiene: no hay corrección (S02,
