@@ -348,3 +348,11 @@
 - **Señales descartadas relevantes:**
   - esquemas en DA «optimizado para lecturas, agregaciones y entendimiento de las personas» frente a esquemas operativos «optimizado para inserciones y actualizaciones» (p. 10) — ya cubierta: P150 H01 (fuentes normalizadas → tabla analítica) y P151 H01 (hecho y dimensiones para navegar). La pregunta «¿Qué pasa cuando se desea agregar un nuevo campo para análisis?» (p. 10) es evolución de esquema, propia de ingeniería de datos.
   - principios del data lake y marts: «Limpie, cure y transforme solo los datos requeridos»; «Genere data marts con datasets que requieran los consumidores de datos» (p. 9) — marginal: P154 H01/H03 ya publica una capa con grano de consumo y manifiesto; el diseño de data lakes es ingeniería de datos.
+
+## S03.P151.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de balance de ubicación (p. 5: «Las propiedades de los datos se mantienen en cada etapa. La cantidad de datos o sus dimensiones se mantienen») — ya cubierta: conciliación entre granularidades en P121 H02, conservación de filas en la unión en P150 H02 y P151 H02, y reconciliación del *roll-up* contra el total en P152 H02 (y P154 H01).

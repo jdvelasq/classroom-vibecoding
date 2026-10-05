@@ -347,3 +347,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «la integración de datos de bases de datos dispersas es dura, pero es mucho mas dura de lo que la gente piensa» (p. 12) — ya cubierta en su forma enseñable: P150 H02 protege el grano y detecta *fan-out*; el límite de que sólo se ejercita el camino feliz ya está registrado en P150 S02 y el documento no aporta caso ni datos para ejercitar claves huérfanas.
+
+## S03.P150.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de balance de ubicación (p. 5: «Las propiedades de los datos se mantienen en cada etapa. La cantidad de datos o sus dimensiones se mantienen») — ya cubierta: conciliación entre granularidades en P121 H02, conservación de filas en la unión en P150 H02 y P151 H02, y reconciliación del *roll-up* contra el total en P152 H02 (y P154 H01).

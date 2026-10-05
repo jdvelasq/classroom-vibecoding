@@ -343,3 +343,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Los dashboards son tan valiosos como la data detrás de ellos, la cual usualmente es de baja calidad» (p. 12) — ya cubierta: P124 H02 valida esquema, tipos y no negatividad antes del tablero y H03 recalcula razones por alcance; P154 H01–H02 fija y reconcilia la fuente de consumo; P153 H03 condiciona la publicación a reglas.
+
+## S03.P124.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pruebas de entrada sobre formato de fechas, tipo y rango de campos (p. 4) — ya cubierta: patrón de fechas y descuentos en [0, 1] en P106 H05 (y P107 H04), y tipos y no negatividad en P124 H02.

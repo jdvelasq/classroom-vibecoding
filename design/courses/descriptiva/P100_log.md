@@ -520,3 +520,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - *design thinking* para problemas mal definidos (p. 7: «Ganar entendimiento del problema consultado expertos, observando y empatizando») — fuera de alcance: metodología de diseño de productos; no tiene caso ni datos en el documento.
   - deuda técnica de ML, orquestación, ambientes, CI/CD, contenedores, herramientas de plataforma (pp. 2–8, 11) — fuera de alcance: predictiva, ingeniería de datos y productos de datos.
+
+## S03.P100.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - diapositivas sobre DataOps aplicado a la calidad de datos: pruebas automáticas en cada etapa del pipeline analítico (acceso, transformación, modelado, visualización, reportería), distinción entre *value pipeline* e *innovation pipeline*, ejemplos de pruebas de entradas, lógica de negocio y salidas, niveles de severidad y pruebas de balance (de ubicación, histórico, control estadístico de procesos). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Analytics es código», *value pipeline* frente a *innovation pipeline*, ambientes idénticos a producción y liberación de código (p. 3) — fuera de alcance: operación de pipelines en producción, que es del curso de productos de datos.
+  - tipos de pruebas de software (unitarias, de integración, funcionales, de regresión, de desempeño, de humo) y «Cada vez que algo falla se agrega una nueva prueba» (p. 2) — fuera de alcance como contenido: el curso ya usa `pytest` sólo para verificar participación (convención de los talleres), y enseñar tipología de pruebas desplaza la identidad hacia ingeniería de software.
+  - control estadístico de procesos y pruebas de balance temporal con notificación automática (p. 5: «Se monitorea cada aspecto del proceso constantemente buscando patrones anómalos») — fuera de alcance: monitoreo continuo de un producto en operación (productos de datos).

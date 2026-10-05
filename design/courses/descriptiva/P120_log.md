@@ -346,3 +346,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Los usuarios tienen conocimiento de negocio pero saben poco sobre que pueden hacer los datos por ellos» y «Obtenga retroalimentación de los usuarios» (p. 12) — marginal: refuerzo organizacional; la declaración de destinatario/decisión se trata en la candidata P120 de `informs-cap-pro-blueprint`.
+
+## S03.P120.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - verificar las entradas antes de transformar y detectar los problemas lo antes posible (p. 4: «Los tests deben incluirse en cada etapa del pipeline») — ya cubierta: grano y consistencia aritmética antes de agregar en P120 H02, y grano y faltantes en P122 H01.

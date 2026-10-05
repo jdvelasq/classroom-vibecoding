@@ -346,3 +346,11 @@
 - **Señales descartadas relevantes:**
   - «Los dashboards son tan valiosos como la data detrás de ellos, la cual usualmente es de baja calidad» (p. 12) — ya cubierta: P124 H02 valida esquema, tipos y no negatividad antes del tablero y H03 recalcula razones por alcance; P154 H01–H02 fija y reconcilia la fuente de consumo; P153 H03 condiciona la publicación a reglas.
   - principios del data lake y marts: «Limpie, cure y transforme solo los datos requeridos»; «Genere data marts con datasets que requieran los consumidores de datos» (p. 9) — marginal: P154 H01/H03 ya publica una capa con grano de consumo y manifiesto; el diseño de data lakes es ingeniería de datos.
+
+## S03.P154.42
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - balance histórico (p. 5: «Se comparan los datos actuales con datos previos o valores esperados»; p. 4: «Porcentajes de incremento en la cantidad de registros de una tabla») — fuera de alcance: requiere cargas sucesivas de un producto en operación; los casos del curso son cortes estáticos y sintéticos.
