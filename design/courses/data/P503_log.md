@@ -338,3 +338,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Documentar para reproducibilidad y auditoría. Registrar la formulación, los datos, las transformaciones… las versiones» (p. 21) — ya cubierta en el curso por P503 H01, P500 H03 y P502; aplicado a modelos es de otros cursos.
+
+## S03.P503.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación que traslada lean manufacturing, lean software y lean startup a la analítica: desperdicios, value stream mapping, entrega rápida, teoría de restricciones y análisis de causa raíz aplicados a la calidad de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

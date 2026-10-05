@@ -325,3 +325,11 @@
 - **Resultado:** refuerza T02.
 - **Señales descartadas relevantes:**
   - dimensiones de calidad «exactitud, completitud, consistencia, actualidad, validez, relevancia y unicidad» (p. 13) — ya cubierta parcialmente por P516 H02 (completitud, validez, unicidad, alcance); añadir dimensiones por catálogo sería marginal.
+
+## S03.P516.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - causa raíz «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines o las bases de datos» y «Porque no entienden cómo usan los datos los consumidores» (p. 10) — ya cubierta: controles ejecutables que condicionan la salida (P500 H04), reglas de calidad como reporte (P516 H02) y contrato derivado del uso analítico (P517 H02). Aporta contexto, no una práctica nueva.

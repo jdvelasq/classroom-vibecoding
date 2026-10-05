@@ -492,3 +492,13 @@
   - problema de negocio/problema analítico, 5W, partes interesadas (pp. 9–11) — fuera de alcance como contenido propio (P001 y cursos de línea); el déficit recurrente «sin usuario ni decisión» de varios Pxxx no se resuelve con esta fuente sin desplazar la identidad del curso.
   - descriptiva/predictiva/prescriptiva, diseño y evaluación de modelos, despliegue, monitoreo de *drift*, recalibración (pp. 16–26) — fuera de alcance (otros cursos y productos de datos).
   - sesgos y equidad, impacto social (p. 29) — fuera de alcance como evaluación de modelos; el sesgo de datos ya aparece como límite en P510 (calificaciones como adopción) sin caso que permita enseñarlo con rigor aquí.
+
+## S03.P500.39
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - causa raíz «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines o las bases de datos» y «Porque no entienden cómo usan los datos los consumidores» (p. 10) — ya cubierta: controles ejecutables que condicionan la salida (P500 H04), reglas de calidad como reporte (P516 H02) y contrato derivado del uso analítico (P517 H02). Aporta contexto, no una práctica nueva.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - value stream mapping, colas, control estadístico de procesos, teoría de restricciones (p. 7–9); capas del ciclo de vida de datos con cómputo distribuido, contenedores y orquestación (p. 12) — fuera de alcance: gestión de procesos y operación de productos de datos.
