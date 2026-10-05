@@ -129,3 +129,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Learn to define an appropriate level of machine involvement in interactions with humans and computers» (Semana 5, p. 7) y diseño de interfaces humano-máquina inteligentes (p. 6) — marginal / fuera de alcance: se refiere al diseño de productos de IA; la relación del analista con un asistente generativo en P105 ya tiene su salvaguarda propia (H03 «No inventes datos») y su límite (sin verificación) registrado en S02; esta señal no aporta un mecanismo de verificación aplicable.
+
+## S03.P105.16
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso sobre estrategia y diseño de plataformas digitales y mercados de dos lados: efectos de red, casos de éxito y fracaso, precios, arquitectura y APIs, gobierno de calidad, regulación y modelado de dinámicas de plataforma. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

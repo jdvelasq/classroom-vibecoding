@@ -196,3 +196,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Implement the Lawler Model for defining an AI problem» y resumen ejecutivo de un producto de IA (p. 6, p. 7) — fuera de alcance: definición de problemas para productos de IA (curso de productos de datos); el encuadre de preguntas descriptivas se trata con fuentes más pertinentes (INFORMS, `dataops-03`).
   - algoritmos de ML supervisado, no supervisado y semisupervisado, deep learning, GANs, GPT-3, impacto social de los medios sintéticos (pp. 3, 6–7) — fuera de alcance: predictiva, IA y productos de datos.
+
+## S03.P100.16
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso sobre estrategia y diseño de plataformas digitales y mercados de dos lados: efectos de red, casos de éxito y fracaso, precios, arquitectura y APIs, gobierno de calidad, regulación y modelado de dinámicas de plataforma. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «How can we Model a Platform?», «Modeling Network Effects» (p. 15) — fuera de alcance: modelado de dinámicas (predictiva/simulación).
+  - precios de plataforma, APIs y estándares, gating de calidad, antimonopolio, *roadmap* de funcionalidades (pp. 7–8, 14–15) — fuera de alcance: estrategia de producto y productos de datos, sin pregunta descriptiva.
