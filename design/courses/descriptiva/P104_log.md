@@ -41,3 +41,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - características de una base relacional y arquitectura de datos (p. 14: CAP-P.3.2.4–3.2.6) — ya cubierta (P104, P151) o fuera de alcance (selección de arquitectura = ingeniería de datos).
+
+## S03.P104.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Marco de consenso para la formación de pregrado en ciencia de datos: define «data acumen» como capacidad de juzgar, usar herramientas con responsabilidad y decidir con datos, y lista diez áreas conceptuales, con la ética transversal y una práctica repetida del ciclo completo con preguntas mal planteadas y datos «sucios». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

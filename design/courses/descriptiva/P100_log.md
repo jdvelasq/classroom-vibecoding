@@ -60,3 +60,18 @@
   - selección de métodos descriptivos/diagnósticos vs predictivos vs prescriptivos (p. 17: CAP-P.4.1.2–4.1.4) — fuera de alcance como propuesta de taller: es criterio de diseño curricular entre cursos.
   - debilidades de un modelo en hoja de cálculo y selección de stack tecnológico (p. 18: CAP-P.4.4.1–4.4.2) — marginal: el curso ya contrasta herramientas para el mismo producto (P103/P104, P106/P107, P108/P109).
   - desarrollo, validación cruzada, calibración y despliegue de modelos; seguimiento del ciclo de vida (pp. 19–25: Domains V–VII) — fuera de alcance: predictiva, prescriptiva y productos de datos.
+
+## S03.P100.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «processing text into data that can be analyzed» (p. 43) — ya cubierta (P100 H02, P123 H02–H03).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - áreas de *data acumen* (p. 41: «Data description and visualization», «Workflow and reproducibility», «Communication and teamwork»…) — ya cubierta en conjunto por C01–C05 de `traceability.yaml`; la familia authoritative respalda expectativas generales, no un syllabus.
+  - «Ability to understand client needs» (p. 48) y roles de *business analysis* «assembling and presenting data to inform a decision-making process» (p. 38) — marginal: la ausencia de usuario/decisión ya es límite registrado en casi todas las Pxxx; el documento no aporta un mecanismo distinto para cerrarla.
+  - fundamentos matemáticos y computacionales (pp. 41–43), «Data Modeling and Assessment» con *machine learning*, *deep learning* y *model assessment* (p. 46), «making inferences and predictions» en el ciclo (p. 40) — fuera de alcance: predictiva/otros cursos.
+  - «Source code (version) control systems» y «Collaboration» (p. 47) — marginal: la distribución por repositorio y GitHub Actions ya las ejercita fuera del contenido del taller.
+  - «Record retention policies» (p. 45) y código de ética/juramento (pp. 50–51, 138) — fuera de alcance: sin caso ni producto descriptivo que los ejercite con rigor; la dimensión responsable ya está en P102, P108, P109, P125 H07.
+  - pasos de evaluación de Jordan, «Create challenge questions and exercises» (p. 89) — marginal: orientación general de evaluación; el contrato `pytest` de participación es una decisión ya tomada.

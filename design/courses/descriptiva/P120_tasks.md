@@ -106,6 +106,7 @@ Actividad: implementation/descriptiva/P120_retail_sales/
 - **Tipo:** producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 39, 44 y 105 — el graduado debe «explain and interpret the numerical conclusions in the client’s terminology, and deliver text and graphics ready to be digested by non-technical personnel» (p. 39); «Importance of effectively presenting data, models, and inferences to clients in oral, written, and graphical formats» (p. 44); la comunicación incluye «the ability to have a discussion about limitations» (p. 105) (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa de comunicar resultados interpretados con su límite, no el formato.
+  - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 39, 44 y 47 — un flujo de trabajo eficaz incluye «drawing appropriate conclusions, and communicating results» (p. 39); «it is important for students to study confounding and causal inference early to make sense of the data around them» (p. 44); los estudiantes deben «construct effective visual displays and compelling written summaries» (p. 47): el límite causal se aprende pronto, no al final (Claude, 2026-10-04). Fuente *authoritative*.
 - **Qué gana el estudiante:** cerrar cada pregunta con una respuesta escrita
   para su destinatario, la evidencia persistida que la sostiene y lo que esa
   evidencia no permite afirmar. Hoy P120 entrega nueve CSV que las pruebas

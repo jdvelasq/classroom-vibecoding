@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - limpiar, armonizar, transformar, unir y validar (p. 15: Task 3.5) — ya cubierta: P106 H01–H04, P107 H01–H03, P150 H02 (`validate="many_to_one"`), P121 H02 (conciliación).
+
+## S03.P107.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data preparation, especially data cleansing and data transformation», «Missing and conflicting data» (p. 45) — ya cubierta (P106 H01–H05; P107 H01).
