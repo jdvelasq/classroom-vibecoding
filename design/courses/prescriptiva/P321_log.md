@@ -350,3 +350,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Monitoreo de la lógica de negocio y validez de los datos» (p. 10) y «Transparencia: Alertas automáticas, dashboards» (p. 2) — fuera de alcance: la observabilidad y las alertas de un pipeline pertenecen a Productos de datos. En Prescriptiva, la validez de las entradas ya aparece como guarda o condición de retención (P308 H06 «predicción ausente o sin vigencia»; P304 H06 «solicitudes con datos válidos») y el monitoreo de resultados como gatillo (P306 H07, P321 H02).
+
+## S03.P321.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre DataOps aplicado a ciencia de datos y ML: deuda técnica, pruebas automáticas, ambientes, orquestación, contenedores, arquitectura de datos y prácticas ágiles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

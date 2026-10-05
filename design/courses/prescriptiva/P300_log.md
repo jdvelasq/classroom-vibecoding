@@ -510,3 +510,15 @@
   - eliminación de cuellos de botella al estilo de la teoría de restricciones (p. 6: «Identifique la restricción … Haga mejoras en el rendimiento de la restricción con los recursos existentes») — fuera de alcance: describe la gestión del proceso de un equipo de datos, no una política analítica recurrente con datos y caso. La lógica de un recurso escaso que limita el sistema ya se ejerce en P305 (H05), P316 (H04) y P318 (H05).
   - priorización de mejoras con «Oportunidad = Importancia + max(0, Importancia − Satisfacción)» (p. 7) — marginal / fuera de alcance: es una puntuación heurística de encuestas para planear trabajo, sin acción factible, restricciones ni monitoreo. No aporta un contraste distinto de las reglas de ranking que el curso ya compara con el óptimo (P305 H02, P308 H02–H03).
   - «Resultados que impactan directamente la toma de decisiones» frente a la «Trampa del valor diferido» (p. 9) — fuera de alcance: es contexto de estrategia organizacional. Coincide con la exigencia del curso de que el producto sea una política operable y no una solución aislada, pero no prescribe nada nuevo para un taller.
+
+## S03.P300.43
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre DataOps aplicado a ciencia de datos y ML: deuda técnica, pruebas automáticas, ambientes, orquestación, contenedores, arquitectura de datos y prácticas ágiles. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Tests basados en comportamiento» para modelos codificados a mano (p. 2) aplicado a las pruebas que sólo verifican existencia de archivos — fuera de alcance: `AGENTS.md` fija que `tests/test_activity.py` evalúa participación, no corrección del modelo.
+  - monitoreo del modelo ante «Cambios en los requerimientos o condiciones de negocio» (p. 3) — fuera de alcance como práctica de ingeniería (Productos de datos); el monitoreo de la política se trata en la candidata de P321 de `informs-analytics-framework-2024`.
+  - control de versiones, ambientes múltiples, contenedores, orquestación y arquitecturas de datos (pp. 4–11) — fuera de alcance: Productos de datos / Fundamentos de data.
