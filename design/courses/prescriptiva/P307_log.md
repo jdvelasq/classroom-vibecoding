@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 5. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P307.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Forecasting» con sus ítems (objetivo y subjetivo, variación estacional, suavizamiento exponencial, tendencias y estacionalidad, producto nuevo) (p. 1). Categoría: fuera de alcance. Construir pronósticos corresponde a Predictiva; P307 recibe el pronóstico como escenarios y decide sobre ellos (H01–H03).

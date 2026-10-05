@@ -266,3 +266,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Sharing: Privacy, Anonymization, Risks… k-anonymity, and differential privacy» (p. 2), y el resultado de aprendizaje «identify privacy risks in releasing information» (p. 3). Fuera de alcance: la privacidad al publicar datos pertenece a los cursos de fundamentos de datos y de productos de datos. P320 audita la equidad de las consecuencias de una política, que es otra salvaguarda.
+
+## S03.P320.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

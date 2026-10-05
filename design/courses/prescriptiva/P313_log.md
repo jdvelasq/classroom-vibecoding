@@ -265,3 +265,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 5. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P313.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Simulation Toolkit: Analysis ToolPak, Solver Optimization Tool» (p. 1). Categoría: marginal. Es otra herramienta (Excel) para lo mismo: la simulación ya se hace en Python con semilla y CRN (P310 H01, P313 H02–H04). Una señal de herramienta en un documento institucional no impone tema.

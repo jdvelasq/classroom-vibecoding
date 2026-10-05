@@ -393,3 +393,13 @@
   - temario de regresión, clasificación (árboles, Naive Bayes, SVM), clustering, PCA/SVD y recomendación en redes sociales (p. 2). Fuera de alcance: son técnicas de construcción de estimaciones (Predictiva) o de descripción (Descriptiva). En Prescriptiva las estimaciones llegan como insumo (P303, P306, P308).
   - casos de Google, Facebook, Kaggle y Netflix como «how analytics is used in practice» (p. 2). Marginal: son ilustraciones motivacionales de otra institución, sin una decisión recurrente modelable.
   - herramientas (línea de comandos, gnuplot, Perl, R, Weka, SQL y NoSQL; pp. 2–3). Fuera de alcance: herramental de datos sin relación con la política prescriptiva.
+
+## S03.P300.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - una lista de títulos de métodos y herramientas de un programa de business analytics, sin descripciones, objetivos ni evaluación: recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, «Simulation Toolkit» (Analysis ToolPak, Solver), visualización, modelos de optimización y árboles de decisión. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Collection Methods» (encuestas, NPS, autorreportes, recolección pasiva y de medios), «Regression Analysis» y «Data Visualization and Interpretation» (p. 1). Categoría: fuera de alcance para recolección y regresión (Descriptiva, Fundamentos de data y Predictiva). Visualización es ya cubierta por los planeadores persistidos de varios Pxxx.

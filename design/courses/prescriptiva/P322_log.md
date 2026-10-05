@@ -267,3 +267,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 5. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P322.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «A/B Testing» y «Correlation and Causation» (p. 1). Categoría: ya cubierta. P306 usa una oferta aleatorizada para estimar el efecto causal y focalizar la acción (H01–H02), y P322 decide cuándo medir antes de actuar (H01–H02). El documento es sólo un título, así que no da base para cambiar ninguno de los dos; mantener un grupo de control en la operación de P306 ya consta como ambigüedad (3) de S02 y no lo respalda esta fuente.
+  - «Decision Trees» (p. 1). Categoría: marginal. El documento no aclara si se refiere a árboles de decisión de análisis de decisiones o de aprendizaje automático. En el primer sentido, la decisión en dos etapas (P314 H01–H02) y la decisión condicionada a una señal (P322 H01–H02) ya ejercen la lógica. `AGENTS.md` además establece que un árbol aislado no es producto terminal. En el segundo sentido, sería fuera de alcance (Predictiva).
