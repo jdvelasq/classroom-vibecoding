@@ -54,3 +54,12 @@
 - **Resultado:** refuerza T02.
 - **Señales descartadas relevantes:**
   - «Variability, uncertainty, sampling error, and inference» (p. 44) frente a tasas sin intervalos — marginal: el umbral de volumen (P120 H06, P121 H05, P122 H06) ya cumple la función descriptiva; intervalos desplazarían hacia Estadística.
+
+## S03.P120.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Formular preguntas correctas ... interpretar métricas y KPIs» (p. 219); Índice de Rotación definido con variables, numerador y promedio de planta (pp. 305–306) — ya cubierta: pregunta enlazada a evidencia (P120 H01) y KPI como contrato con numerador/denominador (P153 H01).
+  - demanda de «customer analytics», «analítica de clientes», «Perfil híbrido: marketing + analítica» (pp. 162–163) — ya cubierta: casos de marketing (P124) y retail (P120); otro dominio sería variación de caso.

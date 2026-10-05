@@ -53,3 +53,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - confusión y causalidad (p. 44) — ya cubierta (H06); la candidata P120 sólo adelanta el patrón.
+
+## S03.P125.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «uso de datos anonimizados y agregados», cortes territoriales sólo «cuando hay masa crítica» y categoría NB «sólo descriptivamente» (p. 238); Privacy Engineer «PII» (p. 335); protección de datos personales (pp. 183, 203) — ya cubierta: minimización y anonimización con riesgo medido (P102 H02, P108 H01–H05), persistir sólo agregados con tamaño mínimo (P125 H04, H07).
+  - mediana como «indicador más robusto», percentiles P25/P50/P75/P90 y bandas (p. 263) — ya cubierta: P125 H03 y H05.
+  - bandas «puntuales» (BI 6,8–6,8 M) leídas como «perfiles bien tipificados» (pp. 290, 310) con sólo 42 observaciones en 6 cargos (p. 302) — marginal: contraejemplo útil de interpretar dispersión nula sin mirar tamaño de celda, pero P125 H04 ya exige tamaño mínimo antes de señalar; no aporta caso/datos reutilizables (microdatos no disponibles).

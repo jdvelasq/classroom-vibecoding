@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Marco de consenso para la formación de pregrado en ciencia de datos: define «data acumen» como capacidad de juzgar, usar herramientas con responsabilidad y decidir con datos, y lista diez áreas conceptuales, con la ética transversal y una práctica repetida del ciclo completo con preguntas mal planteadas y datos «sucios». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P104.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «SQL avanzado», «Integración de fuentes», «Python aplicado», «Excel avanzado» en el dominio «Data & features» (p. 96); SQL 11,11 % de requerimiento (p. 79) — ya cubierta: SQL con vistas, ventanas y CTE (P104 H02–H04), UDF y capa cruda/limpia (P107 H02), consultas en estrella (P151 H04); integración de fuentes en P150 H01–H02.

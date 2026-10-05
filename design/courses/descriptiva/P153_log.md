@@ -57,3 +57,13 @@
 - **Resultado:** propone T01.
 - **Señales descartadas relevantes:**
   - «Data consistency checking» (p. 46), «document data quality problems» (p. 37) — ya cubierta (P121 H02 conciliación; P122 H05 cobertura; P153 H03).
+
+## S03.P153.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Formular preguntas correctas ... interpretar métricas y KPIs» (p. 219); Índice de Rotación definido con variables, numerador y promedio de planta (pp. 305–306) — ya cubierta: pregunta enlazada a evidencia (P120 H01) y KPI como contrato con numerador/denominador (P153 H01).
+  - rotación «promedio simple ≈ 27,5 %» frente a «ponderada por número de empleados ≈ 29,8 %» (p. 307) — ya cubierta: razón de sumas vs promedio de razones (P121 H03, P153 H02); ejemplo equivalente, no cambia lo que el estudiante hace.
+  - gobernanza y «linaje» como responsabilidad del arquitecto de datos (p. 290); SIEET-D «con un enfoque de gobernanza, trazabilidad y calidad» (p. 128) — ya cubierta: linaje campo→KPI (P153 H04) y calidad como compuerta (P153 H03); más allá es ingeniería de datos (fuera de alcance).

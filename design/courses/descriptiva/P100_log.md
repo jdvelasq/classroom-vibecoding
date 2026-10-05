@@ -75,3 +75,16 @@
   - «Source code (version) control systems» y «Collaboration» (p. 47) — marginal: la distribución por repositorio y GitHub Actions ya las ejercita fuera del contenido del taller.
   - «Record retention policies» (p. 45) y código de ética/juramento (pp. 50–51, 138) — fuera de alcance: sin caso ni producto descriptivo que los ejercite con rigor; la dimensión responsable ya está en P102, P108, P109, P125 H07.
   - pasos de evaluación de Jordan, «Create challenge questions and exercises» (p. 89) — marginal: orientación general de evaluación; el contrato `pytest` de participación es una decisión ya tomada.
+
+## S03.P100.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Spark, Hadoop, Kafka, procesamiento distribuido (p. 175) y modelado avanzado, índices, sharding (p. 175) — fuera de alcance: ingeniería de datos/bases de datos; P100 ya usa MapReduce sólo como habilitador.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Visualización (Power BI)» con 76,1 % de brecha curricular en IES (pp. 102, 116) y Power BI/Tableau/Looker como herramientas demandadas (p. 176); certificación Power BI 2,19 % (p. 79) — fuera de alcance: señal de herramienta en fuente governmental; la frontera del curso excluye la capacitación en una plataforma BI concreta, no BI como tal y ya produce visualizaciones (P103 H04, P120 H05) y un tablero (P124 H04).
+  - analistas Big Data/BI que «migrarán de un rol descriptivo (reportes) a uno predictivo y prescriptivo» (p. 291); ML, MLOps, series de tiempo, pronósticos, backtesting (pp. 96–97, 176) — fuera de alcance: pertenecen a predictiva/prescriptiva/productos de datos.
+  - déficit de habilidad para «problemas mal definidos, ambiguos» y trabajo con proyectos del sector productivo (pp. 177, 183, 217, 221) — fuera de alcance como propuesta de taller: recomendación de nivel programa/política; el curso ya prioriza casos trazables (`datalabs/`) y la ausencia de usuario/decisión está registrada en las auditorías S02.
+  - muestra no probabilística, «Margen de error: No aplica, dado el carácter no probabilístico, exploratorio y no inferencial del estudio» (p. 323) — marginal: buen ejemplo de declaración de límite de evidencia, pero el curso ya declara fronteras (P123 H01, P125 H06) y no hay caso con datos para enseñarlo distinto.

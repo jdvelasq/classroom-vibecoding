@@ -50,3 +50,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data preparation, especially data cleansing and data transformation», «Missing and conflicting data» (p. 45) — ya cubierta (P106 H01–H05; P107 H01).
+
+## S03.P107.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «SQL avanzado», «Integración de fuentes», «Python aplicado», «Excel avanzado» en el dominio «Data & features» (p. 96); SQL 11,11 % de requerimiento (p. 79) — ya cubierta: SQL con vistas, ventanas y CTE (P104 H02–H04), UDF y capa cruda/limpia (P107 H02), consultas en estrella (P151 H04); integración de fuentes en P150 H01–H02.
+  - procesamiento en capas Bronze/Silver/Gold con «validación, normalización y verificación de calidad» (p. 131); reglas de limpieza «tiempos mínimos, duplicados», «control de completitud» (p. 238) — ya cubierta: separación crudo/limpio (P107 H02), limpieza por columna e invariantes (P106 H01, H05).

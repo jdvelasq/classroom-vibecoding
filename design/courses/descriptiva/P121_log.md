@@ -55,3 +55,11 @@
   - «Variability, uncertainty, sampling error, and inference» (p. 44) frente a tasas sin intervalos — marginal: el umbral de volumen (P120 H06, P121 H05, P122 H06) ya cumple la función descriptiva; intervalos desplazarían hacia Estadística.
   - «the pitfalls of misrepresenting data and results» (p. 38) frente a la matriz día × hora sin volumen por celda (H04) — marginal: variante de P120 H05 (magnitud y tasa en un mismo gráfico).
   - «Data consistency checking» (p. 46), «document data quality problems» (p. 37) — ya cubierta (P121 H02 conciliación; P122 H05 cobertura; P153 H03).
+
+## S03.P121.06
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - rotación «promedio simple ≈ 27,5 %» frente a «ponderada por número de empleados ≈ 29,8 %» (p. 307) — ya cubierta: razón de sumas vs promedio de razones (P121 H03, P153 H02); ejemplo equivalente, no cambia lo que el estudiante hace.

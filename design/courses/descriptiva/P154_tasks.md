@@ -8,6 +8,7 @@
 - **Tipo:** encuadre + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` p. 46 — AP-Visualization incluye «Dashboards and interactive visualisation» y la habilidad «Implement an effective visualization, given a set of data that has to be used for a particular purpose»: lo que alimenta un tablero se diseña para un propósito declarado (Claude, 2026-10-04). Fuente *authoritative*: respaldo general; no prescribe el criterio.
+  - `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` pp. 176 y 219 — se valora «diseñar cuadros de mando (dashboards) efectivos, transmitir hallazgos (insights) mediante visualizaciones apropiadas» (p. 176) y la competencia de BI es «Construir dashboards e informes visuales para la toma de decisiones» (p. 219) (Claude, 2026-10-04). Fuente *governmental*: sólo pertinencia laboral; la fila de p. 219 nombra plataformas (Power BI, Tableau), que no se prescriben.
 - **Qué gana el estudiante:** definir y aplicar un criterio de atención que
   sólo la capa de consumo permite calcular, y reconocer qué métricas de esa
   capa no se pueden sumar. Hoy «¿Qué región y categoría deben recibir
