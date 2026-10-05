@@ -294,3 +294,14 @@
   - escenarios, prospectiva y «Decision-making under uncertainty» (p. 5; p. 17: «How to lead and make decisions through increasingly uncertain times») — fuera de alcance: pertenece a prescriptiva/estrategia; el curso describe con evidencia observada.
   - analítica predictiva y ML en flujos de decisión (p. 16: «How leaders create conditions for effective integration of predictive analytics»; «Configuring workflows and decisions for machine learning») — fuera de alcance: predictiva y productos de datos.
   - *capstone* orientado a implementación de una iniciativa de IA (p. 17) — fuera de alcance: formato ejecutivo de transformación organizacional, sin relación con un producto descriptivo.
+
+## S03.P100.24
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un certificado en línea de diez meses en español con cinco cursos de ocho semanas: Data Engineering, Ciencia de Datos con Python, Estadística para la Ciencia de Datos, IA y Machine Learning, y Storytelling y Visualización de Datos Estratégicos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Definir casos de negocio (coste-beneficio) a partir del análisis… para dar recomendaciones justificadas sobre una acción» (p. 8) — fuera de alcance: recomendación de acción es del curso prescriptivo; P125 ya marca el límite de sus «alternativas».
+  - paralelismo, persistencia de modelos como API, reducción de dimensiones, clasificación, regresión, aprendizaje supervisado y no supervisado (pp. 6–7) — fuera de alcance: ingeniería de datos, predictiva y productos de datos.

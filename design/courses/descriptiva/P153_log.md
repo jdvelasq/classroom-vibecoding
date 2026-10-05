@@ -203,3 +203,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gobernanza y controles empresariales de IA (p. 17: «AI Governance, Enterprise Controls»; p. 8: «AI safety, ethics, trust, governance, and enterprise controls») — fuera de alcance: gobierno de sistemas de IA a nivel organizacional; el gobierno de métricas descriptivas (catálogo, reglas, linaje, compuerta de publicación) ya está en P153 H01–H04.
+
+## S03.P153.24
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un certificado en línea de diez meses en español con cinco cursos de ocho semanas: Data Engineering, Ciencia de Datos con Python, Estadística para la Ciencia de Datos, IA y Machine Learning, y Storytelling y Visualización de Datos Estratégicos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
