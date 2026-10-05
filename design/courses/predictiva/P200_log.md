@@ -172,3 +172,11 @@
 - **Señales descartadas relevantes:**
   - sobreajuste, árboles, bosques aleatorios, ensambles e interpretación (pp. 7–8): se añade como fuente de N01.
   - redes neuronales: cómo predicen y cómo elegir arquitectura (p. 8): ya cubierta en lo que el curso necesita (H08–H09).
+
+## S03.P200.14
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de computación en la nube y DevOps (temario, pp. 12–14: web, Node.js, contenedores, PKI, métricas DevOps, casos de migración); sin contenidos de modelado predictivo que contrastar con esta actividad.
