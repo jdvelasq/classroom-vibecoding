@@ -82,3 +82,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Calidad de datos, representatividad y por qué fallan los modelos» (p. 5) — fuera de alcance/ya cubierta: el encuadre es de entrenamiento de modelos (predictiva); la calidad y el grano antes de agregar ya están en P120 H02, P122 H01 y P121 H02. El folleto no desarrolla método ni caso.
+
+## S03.P122.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ciclo «from data preparation to exploration, visualization and analysis» (p. 1) — ya cubierta: preparación y calidad (P106 H01–H05, P107 H01–H02), exploración y visualización al servicio de un diagnóstico (P120 H02–H05, P121 H02–H04, P122 H01–H05). La ficha no da detalle que permita contrastar más.

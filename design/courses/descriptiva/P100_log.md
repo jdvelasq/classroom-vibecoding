@@ -114,3 +114,13 @@
   - «Analítica descriptiva, analítica predictiva y sesgos algorítmicos» (p. 5) — marginal: mención de tema en un temario ejecutivo, sin contenido; la frontera descripción/predicción ya organiza el curso y el sesgo algorítmico pertenece a predictiva.
   - proyecto final integrador «un caso y un plan de negocios que utiliza la IA» (p. 6) y estudios de caso empresariales (pp. 8–9) — fuera de alcance: formato de programa ejecutivo centrado en estrategia de IA; el curso ya trabaja con casos (P120–P125) y no posee productos de IA.
   - ML supervisado/no supervisado, entrenamiento/validación/prueba, redes neuronales, visión artificial, PLN, robótica (pp. 4–5) — fuera de alcance: predictiva y productos de datos.
+
+## S03.P100.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gestión de datos «at scale» (p. 1) — fuera de alcance: no justifica ampliar el MapReduce simulado de P100–P101; si acaso, refuerza la auditoría S02 ya registrada de que esas actividades son habilitadoras de ingeniería de datos y no responden la pregunta descriptiva. No genera propuesta nueva.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «principles and practices of managing data at scale, with a focus on use cases in data analysis and machine learning» con «focus on ensuring reliable, scalable operationalization» (p. 1) — fuera de alcance: es la identidad de un curso de ingeniería de datos/productos de datos; Berkeley lo ubica como curso propio posterior a ciencia de datos (prerrequisito «DATA C100 ... or equivalent», p. 1), lo que ilustra (institutional, no prescribe) la frontera que el curso ya declara («no posee ... ingeniería de datos»).

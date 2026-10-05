@@ -73,3 +73,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Calidad de datos, representatividad y por qué fallan los modelos» (p. 5) — fuera de alcance/ya cubierta: el encuadre es de entrenamiento de modelos (predictiva); la calidad y el grano antes de agregar ya están en P120 H02, P122 H01 y P121 H02. El folleto no desarrolla método ni caso.
+
+## S03.P103.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de pregrado de 4 unidades, con prerrequisitos de programación y de un curso de ciencia de datos (DATA C100 o equivalente), sobre gestión de datos a escala para análisis y machine learning a lo largo de todo el ciclo de vida, con foco en operacionalización confiable y escalable. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

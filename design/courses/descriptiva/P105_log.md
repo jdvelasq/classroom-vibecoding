@@ -73,3 +73,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - consideraciones de riesgo de la IA generativa: «sesgos, propiedad intelectual, privacidad y alucinaciones» (p. 6) e «Interacción humano - IA: supervisión, criterio y responsabilidad» (p. 5) — marginal: refuerza los límites ya registrados en P105 H03 (salvaguarda «No inventes datos», ausencia de verificación y de reflexión sobre compartir `ssn`/`location` con el asistente); como evidencia institucional de un programa ejecutivo no aporta método ni argumento nuevo para anclar una mejora.
+
+## S03.P105.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso de pregrado de 4 unidades, con prerrequisitos de programación y de un curso de ciencia de datos (DATA C100 o equivalente), sobre gestión de datos a escala para análisis y machine learning a lo largo de todo el ciclo de vida, con foco en operacionalización confiable y escalable. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
