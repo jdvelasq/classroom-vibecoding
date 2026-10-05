@@ -9,3 +9,11 @@
 - **Ambigüedades:** umbral 4500 sin origen; las cuatro filas de `daily_operations.csv` serían `low`. La validación admite negativos y booleanos. `tests/test_activity.py` no verifica contenido. Vocabulario «factory risk» recurrente en P430–P452 sin artefacto común.
 - **Superficies / contrato / dependencias:** S01–S05; recibe: ninguna; habilita P426 (lógica copiada).
 - **Auditoría de Analytics:** parcialmente resuelta; mecanismo de la línea sobre una regla arbitraria.
+
+## S03.P425.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SDM (p. 122: «Not checking input») — ya cubierta: P425 H01 contrato con errores explicables.

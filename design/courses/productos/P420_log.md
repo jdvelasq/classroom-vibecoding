@@ -9,3 +9,11 @@
 - **Ambigüedades:** procedencia del dataset no documentada en la actividad. `config.json` omite hiperparámetros. Los modelos de P420 no son consumidos por P421/P424, que usan pickles de origen no declarado. Pruebas de estudiante sólo verifican `index.json`.
 - **Superficies / contrato / dependencias:** S01–S06; recibe de P419 y P406 (prácticas); habilita P422 sólo por dominio compartido, sin artefacto.
 - **Auditoría de Analytics:** parcialmente resuelta; capacidad de trazabilidad de modelos sin usuario ni decisión.
+
+## S03.P420.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ML-General (p. 97: «Explain how to efficiently transition a model into production») — ya cubierta: seguimiento, registro, monitoreo y reversión.

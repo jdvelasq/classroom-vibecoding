@@ -9,3 +9,12 @@
 - **Ambigüedades:** `drivers.csv` contiene `ssn` y `location` sin documentación de procedencia ni de restricciones de uso; el producto publica `name`. La rama `ValueError` no se prueba. Conteos de filas tomados del número de líneas del digest.
 - **Superficies / contrato / dependencias:** S01–S06; evaluación sólo por existencia; recibe la práctica de P400; no habilita una actividad posterior de forma demostrable.
 - **Auditoría de Analytics:** no resuelta. Posible duplicación con P400 (misma estructura, distinto marco de pruebas); se lee como entrenamiento en herramienta.
+
+## S03.P401.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DPSIA/DP (p. 84: «Demonstrate awareness about data sensitiveness when data is processed as an input») frente a `ssn`/`location` en `drivers.csv` con exclusión no declarada (H03) — marginal: una aserción de que la salida no propaga `ssn` sería coherente con probar la transformación, pero la práctica de privacidad tiene su lugar en P453; incrustarla en P401 añadiría una segunda contribución a un taller de `pytest`. Si P401 se rediseña, puede retomarse como precondición declarada.
+  - SDM-Software Testing (pp. 121–122: unit, integration, «Regression/Continuous», system, security; «Use or extract representative data … to test algorithms on a small scale») — ya cubierta: unitarias (P400–P401), datos (P402), modelo (P403), regresión del resultado conocido (P412 H03), integración del flujo (P417 H01).

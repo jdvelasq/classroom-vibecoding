@@ -9,3 +9,11 @@
 - **Ambigüedades:** el linaje no registra la transformación pese al docstring; `created_at` no determinista; `requirements.txt` local no listado como excepción en `structure-audit.md`; quinta repetición del agregado por fábrica; posible solapamiento con el linaje de dbt en P433.
 - **Superficies / contrato / dependencias:** S01–S05; recibe insumo demostrable de P431 (SHA-256 idéntico); habilitación no evidenciada.
 - **Auditoría de Analytics:** resuelta con límite; el linaje sirve a un agregado descriptivo del caso de fábricas.
+
+## S03.P443.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DPSIA/DI-Methods (p. 91: «Role of hash algorithms in integrity preservation»; «Data provenance assurance», p. 91) — ya cubierta al nivel que el documento pide («explain»): P431 H01 identifica la versión por contenido; P443 H02 ancla la salida a la huella del insumo; P448 H02 verifica restauración por bytes. La falta de función de verificación en P431 es un límite S02, no una señal nueva de este documento.

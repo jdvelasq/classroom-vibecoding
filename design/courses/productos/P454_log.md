@@ -9,3 +9,11 @@
 - **Ambigüedades:** la ficha es copia sin transformación; coincidencias con P434/P447/P452 son de texto; C02 débil y C04 (documentación) no mapeada; posible solapamiento con documentación de dbt en P433.
 - **Superficies / contrato / dependencias:** S01–S05; sin dependencias de artefacto.
 - **Auditoría de Analytics:** resuelta con límite; gobierno del dataset de riesgo sin verificación contra el producto.
+
+## S03.P454.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuerpo de conocimiento por competencias (conocimiento + habilidades + disposiciones, niveles T1/T2/E) para pregrados en ciencia de datos. Las competencias operativas (calidad, integridad, privacidad, pruebas, ciclo de vida, automatización auditable) aparecen como principios generales, sin desarrollar MLOps ni operación de productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

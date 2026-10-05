@@ -9,3 +9,11 @@
 - **Ambigüedades:** el «pipeline» es una función de tres pasos; no hay componentes cuya integración pueda fallar. Posible duplicación con `tests/test_report.py` de P413–P414. La prueba del profesor escribe en `submission/` real. Sin `HOW_TO_RUN_ME.txt` ni instrucciones para la plantilla.
 - **Superficies / contrato / dependencias:** S01–S04; recibe de P400/P412–P414; habilita: no evidenciada.
 - **Auditoría de Analytics:** no resuelta; prueba de software genérica.
+
+## S03.P417.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SDM-Software Testing (pp. 121–122: unit, integration, «Regression/Continuous», system, security; «Use or extract representative data … to test algorithms on a small scale») — ya cubierta: unitarias (P400–P401), datos (P402), modelo (P403), regresión del resultado conocido (P412 H03), integración del flujo (P417 H01).
