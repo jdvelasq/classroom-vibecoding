@@ -460,3 +460,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - integración de series externas con frecuencia distinta: indicadores FRED mensuales convertidos a semanales con `PROC EXPAND` (spline cúbica) y unidos a ventas semanales (pp. 108–109: «from a lower frequency (monthly) to a higher frequency (weekly), the EXPAND procedure uses a cubic spline») — fuera de alcance: no hay caso ni datos del curso con frecuencias mixtas; además la desagregación temporal por interpolación es una decisión de modelado (predictiva) y crea valores no observados. El contraste «alinear frecuencias antes de unir» sólo sería material con un caso real; queda como posible insumo si algún día se define uno.
+
+## S03.P511.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «PROC REG does not compute new regressors… you should create a new variable when you prepare the input data» (p. 76). Categoría: ya cubierta. Derivar variables durante la preparación ya se ejerce (P500 H02 deriva fórmulas desde el grano; P511 H03 y P514/P515 transforman antes de responder).

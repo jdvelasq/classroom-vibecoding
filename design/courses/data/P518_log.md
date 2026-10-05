@@ -450,3 +450,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - adquisición por API con llave, lista de identificadores, rango y frecuencia (`APIKEY`, `IDLIST`, `START`, `END`, `FREQ`, `AGG`; p. 107) y la práctica de documentar el significado de cada identificador de serie (p. 107: «I recommend adding a key in a commented section of your code») — marginal: P518 ya ejercita ingestión de API (H01–H03); su vacío real es la falta de pregunta analítica, que este documento no resuelve; documentar identificadores es variante del manifiesto ausente.
+
+## S03.P518.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia del procedimiento de regresión lineal de SAS: sintaxis, estadísticos, diagnósticos y ejemplos. Su contenido de datos se limita a convenciones de entrada: exclusión por faltantes, variables derivadas antes del modelo, conjuntos resumen y exclusión de observaciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

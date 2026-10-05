@@ -462,3 +462,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Colección de artículos de SAS sobre pronóstico de series de tiempo; la parte pertinente al curso es la conversión de datos transaccionales con marca temporal en series de intervalo fijo (acumulación, jerarquías, interpretación de faltantes, integridad del índice temporal) y la integración de series externas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P510.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tratamiento explícito de valores ausentes o inválidos en variables auxiliares: «If the value of the FREQ variable is missing or is less than 1, the observation is not used» (p. 38); «If a weight is negative or missing, it is set to zero, and the observation is excluded» (p. 75). Categoría: marginal. Contrasta con `COALESCE(..., 0)` de P510 (S03), defecto ya descrito por S02; el manual no habla de imputación en agregados ni del caso. Sirve, a lo sumo, como cita de apoyo si otra fuente motiva una tarea sobre la imputación de 0.

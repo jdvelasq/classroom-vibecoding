@@ -709,3 +709,15 @@
   - lectura, orden y fusión distribuidas de series por grupos BY en nube (pp. 14–17) — fuera de alcance: operaciones distribuidas, frontera excluida del curso.
   - ejecución batch del código generado que incluye los pasos de preparación (p. 103) — ya cubierta: todos los talleres se ejecutan como scripts o notebooks reproducibles.
   - el planificador dedica «More than 40 percent» de su tiempo a gestionar información y datos (p. 10) — contexto de pertinencia, no genera propuesta.
+
+## S03.P500.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reporte «Number of Observations Read 322 / Used 263 / with Missing Values 59» (p. 144) y la regla de exclusión por lista: «If any variable needed for any regression is missing, the observation is excluded from all estimates» (p. 76). Categoría: marginal. El vacío de P500 (S03: «faltantes y `Row ID` no verificados»; los 16 faltantes son texto fijo en H04) ya está registrado por S02; el documento sólo muestra la convención de reporte de una herramienta de modelado y no aporta argumento curricular para cambiar el taller (familia professional-learning).
+  - «PROC REG does not compute new regressors… you should create a new variable when you prepare the input data» (p. 76). Categoría: ya cubierta. Derivar variables durante la preparación ya se ejerce (P500 H02 deriva fórmulas desde el grano; P511 H03 y P514/P515 transforman antes de responder).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - procedencia citada del ejemplo («The salaries (Sports Illustrated, April 20, 1987)… performance measures are from 1986», p. 143). Categoría: marginal. Las carencias de procedencia de los datasets del curso ya están registradas en las superficies S01 de casi todos los Pxxx; un ejemplo de manual no añade capacidad.
+  - transformación log10 del salario por heterocedasticidad (p. 144), selección de modelos, colinealidad, diagnósticos de influencia, opción `IMPUTE` del CODE statement (p. 37). Categoría: fuera de alcance. Modelado y predicción; pertenece al curso predictivo y desplazaría la identidad del curso `data`.

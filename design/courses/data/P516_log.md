@@ -464,3 +464,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - exploración de muchas series para detectar atípicos, faltantes, series cortas e intermitentes (p. 88) — marginal/fuera de alcance: P516 ya expresa calidad como reglas nombradas; intermitencia y series cortas importan para elegir métodos de pronóstico (predictiva).
+
+## S03.P516.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exclusión de observaciones sin alterar la fuente: «Observations can also be deleted from the analysis (not from the data set) by changing their weights to zero» (p. 116); `where name^="Rose, Pete"` para omitir una observación influyente (p. 148). Categoría: fuera de alcance. La decisión se basa en diagnósticos de influencia (Cook's D, leverage), que pertenecen al curso predictivo; la idea de decidir sobre los datos sin destruir la fuente ya está en P517 H01 (acción distinta de un rechazo) y H04 (decisiones persistidas).

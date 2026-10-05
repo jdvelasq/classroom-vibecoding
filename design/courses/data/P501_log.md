@@ -464,3 +464,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - distinción entre acumulación temporal y agregación a través de una jerarquía (p. 36: «time series accumulation … distinguish it from … an aggregation across a hierarchical structure»; p. 92: «specifying aggregation and accumulation options») — ya cubierta en sustancia: H01 separa salidas mensual y por categoría con granos documentados en el manifiesto (H02); el vocabulario no cambia lo que el estudiante hace.
+
+## S03.P501.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - conjuntos de entrada TYPE=CORR/COV/SSCP: «statements and options that require the original data values have no effect… since the original observations needed to calculate predicted and residual values are not present» (p. 77). Categoría: ya cubierta. Que una representación agregada pierda lo que exige el grano de observación es la contribución de P501 H01 (representaciones de grano distinto) y H03 (conservar la trazabilidad de línea en el detalle); la motivación de ahorro de CPU (p. 76) es propia de cómputo estadístico.

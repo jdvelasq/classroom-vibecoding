@@ -466,3 +466,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Colección de artículos de SAS sobre pronóstico de series de tiempo; la parte pertinente al curso es la conversión de datos transaccionales con marca temporal en series de intervalo fijo (acumulación, jerarquías, interpretación de faltantes, integridad del índice temporal) y la integración de series externas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P502.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia del procedimiento de regresión lineal de SAS: sintaxis, estadísticos, diagnósticos y ejemplos. Su contenido de datos se limita a convenciones de entrada: exclusión por faltantes, variables derivadas antes del modelo, conjuntos resumen y exclusión de observaciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

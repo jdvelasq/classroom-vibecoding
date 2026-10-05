@@ -468,3 +468,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - `dim_date` sólo con días con órdenes (registrado por S02) frente a la exigencia de intervalos regulares (p. 93) — marginal: el documento habla de series para pronóstico, no de dimensiones de calendario; completar el calendario es un detalle de modelado dimensional que este documento no respalda por sí solo.
+
+## S03.P512.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «PROC REG does not compute new regressors… you should create a new variable when you prepare the input data» (p. 76). Categoría: ya cubierta. Derivar variables durante la preparación ya se ejerce (P500 H02 deriva fórmulas desde el grano; P511 H03 y P514/P515 transforman antes de responder).
