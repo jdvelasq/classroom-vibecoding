@@ -438,3 +438,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - selección secuencial de variables (FORWARD, BACKWARD, STEPWISE, MAXR) y criterios Cp, AIC, BIC y R² ajustado (pp. 5, 91–94 y 160–178), con la advertencia de que tras seleccionar «the p-values for the parameter estimates are not valid» (p. 178): variante del mecanismo que H01–H02 ya enseñan (selección dentro del pipeline con `k` por validación cruzada). Fuente única; se registra como señal.
+
+## S03.P221.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.

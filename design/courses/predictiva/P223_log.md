@@ -439,3 +439,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - diagnósticos de colinealidad (VIF, número de condición; pp. 103–105) y trazas de ridge con VIF (Example 79.5, pp. 190–193): ya cubierta (H01: dependencia entre entradas; H03: trayectoria de contracción).
+
+## S03.P223.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.

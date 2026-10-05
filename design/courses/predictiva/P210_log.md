@@ -439,3 +439,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
+
+## S03.P210.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - pronóstico registrado a un grano más agregado que los hechos («a forecast by month and brand», p. 13) — fuera de alcance: decisión de modelado dimensional, no de estimación.

@@ -443,3 +443,11 @@
 - **Resultado:** refuerza T02 (fuente añadida: límites CLM frente a CLI).
 - **Señales descartadas relevantes:**
   - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): no añade una señal distinta de T01.
+
+## S03.P211.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tabla de hechos consolidada de ventas reales y pronósticos para analizar «actuals versus forecasts» (p. 9) — marginal: P211 ya compara el pronóstico con lo observado (H03) y T01 propone evaluarlo en varios orígenes; la estructura de almacenamiento es BI.

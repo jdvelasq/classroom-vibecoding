@@ -505,3 +505,13 @@
   - estadísticas de influencia (leverage, residuo estudentizado, Cook's D, DFFITS, DFBETAS; pp. 11, 107 y 146–148): señal válida, pero descartada por capacidad de P200; si se aprueba T02, puede reconsiderarse como extensión del diagnóstico.
   - límites de confianza para la media (CLM) y para un valor individual (CLI) (pp. 11–12): se registra como fuente de P211 T02; en P200 sería incremental.
   - pruebas F y t de coeficientes, falta de ajuste y heterocedasticidad (pp. 6, 122–123 y 194): inferencia estadística fuera del producto predictivo de la actividad.
+
+## S03.P200.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - modelo estrella, grano, dimensiones de calendario, dimensiones de cambio lento y dimensiones conformadas (pp. 4–16) — fuera de alcance: BI forma parte de analítica descriptiva, no de predictiva.
