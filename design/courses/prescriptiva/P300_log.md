@@ -226,3 +226,15 @@
   - ODE, Euler, métodos implícitos, PDE, discretización espacial, sistemas lineales y raíces (p. 1) — fuera de alcance: computación científica, sin relación con políticas de decisión.
   - Regresión, regularización, regresión logística, ajuste de modelos (p. 2) y «Probabilistic Forecasting» (p. 2) — fuera de alcance: construcción y validación de estimaciones, propia de Predictiva; en Prescriptiva entran como insumo (P306 H02, P307 H01).
   - Casos Aurora Flight Sciences, Schlumberger y BASF (p. 2) — fuera de alcance: sólo títulos, sin contenido para inferir un caso o una práctica; la familia institutional sólo ilustra posibilidades.
+
+## S03.P300.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un certificado de 6 meses en ingeniería de datos (Python, SQL, ETL/CDC, contenedores, Hadoop/Spark/Airflow, streaming con Kafka/MQTT, nociones de ML, aprendizaje por refuerzo y redes profundas) con proyectos de portafolio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Learn the fundamental concepts of reinforcement learning, including the reward matrix, the quality matrix, the Bellman equation» y proyecto «Build a reinforcement learning model for robot navigation» (pp. 8, 12) — fuera de alcance: aprendizaje por refuerzo como técnica de ML en un certificado de ingeniería de datos; el caso (navegación de robot) no es una decisión operativa gobernada y no hay datos en el curso para enseñarlo como política con autoridad y salvaguardas. La idea de política intertemporal ya se ejerce en P318 con un modelo explícito.
+  - «A Model to Predict Housing Prices» / regresión lineal (pp. 9–10) — fuera de alcance: Predictiva.
+  - ETL, CDC, Spark, Airflow, Kafka, streaming y seguridad web (pp. 8–11) — fuera de alcance: Fundamentos de data / Productos de datos.
