@@ -427,3 +427,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - qué preguntas se responden y qué acciones siguen (p. 1: «What questions will they use it to answer? What actions will they take in response to these answers?») — ya cubierta: derivar requisitos de datos desde la pregunta está en P500 H02 y P517 H02 (data.C01); la acción en respuesta pertenece al producto descriptivo o prescriptivo, no al curso.
+
+## S03.P517.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

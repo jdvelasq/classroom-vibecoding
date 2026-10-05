@@ -668,3 +668,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - frecuencia de actualización de los datos (p. 1: «How often should the data be updated in the dashboard?») — fuera de alcance: requisito de frescura de una capacidad publicada (productos de datos); el curso no opera pipelines productivos.
   - ítems clave, agrupaciones, comparaciones con metas o histórico y umbrales de excepción (p. 1, preguntas 5–8) — fuera de alcance: diseño de dashboards y lectura de desempeño corresponden a Analítica Descriptiva.
+
+## S03.P500.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Are there standard definitions for calculations across the organization?» (p. 14) y «Where to Perform Calculations ... If calculated outside of a single row context ... Perform calculation in DAX as a measure» (p. 42) — ya cubierta: P500 H02 (fórmulas derivadas del grano línea) y H03 (métricas independientes de la herramienta).
+  - «Row Count & Validation Measures — Table row counts are a convenient initial data validation test» (p. 68) — ya cubierta: P511 H02, P514 H02, P510 H03, P525 H03.
+  - «Relationship MUST be on the same data type. watch for: Date <> DateTime» (p. 60); «Change all column data types» (p. 34) — ya cubierta: P500 H01 (convención regional) y P512 H01 (fecha `d/m/yy` con formato explícito).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - CI/CD, deployment pipelines DEV/TEST/PROD, APIs REST de despliegue, separación de PBIX (p. 18, p. 83–89, p. 93–94), DAX Studio y Tabular Editor (p. 72–74, p. 96–97) — fuera de alcance: herramientas y operación de productos de datos/BI.
+  - «Iteration 2 — Change Request ... Currency conversion is based on the most current exchange rate, using real-time source data» (p. 50, p. 52) con hechos de grano distinto (cuota vs. ventas, p. 53) — marginal: unión de fuentes de grano distinto ya en P521 H01 y granos mezclados en P516 H01; tiempo real fuera de alcance.

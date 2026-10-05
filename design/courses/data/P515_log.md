@@ -434,3 +434,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard: frecuencia de actualización, usuarios, preguntas y acciones, ítems de datos y su nivel de detalle, ítems clave, agrupaciones, comparaciones de contexto y umbrales de excepción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P515.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «query folding produces a query, in the native language of the data source ... Perform the most critical steps first: Filtering, Grouping, Remove columns» (p. 47); «Import from tables or views, not using in-line SQL statements» (p. 39) — marginal/fuera de alcance: optimización de herramienta; el contraste de empujar transformación al motor ya está en P515 H01 y su riesgo de identidad no se resuelve con esto.

@@ -440,3 +440,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ítems de datos con su nivel de resumen/detalle y usuarios destinatarios (p. 1: «List all of the data items that should be included on the dashboard. Also indicate the level of summary/detail at which each item should be expressed»; «Who will use the dashboard?») — ya cubierta: P501 H01 (representaciones de grano distinto) y H02 (manifiesto con grano, interfaz, consumidor y propósito). Que los consumidores sean etiquetas sin usuario real es un límite ya registrado por S02; un cuestionario de práctica profesional no aporta caso ni usuario para resolverlo.
+
+## S03.P501.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Taller práctico de BI empresarial: requisitos de negocio → preparación en Power Query → modelo dimensional → medidas DAX → visualización → despliegue y gobierno (pipelines, datasets certificados). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

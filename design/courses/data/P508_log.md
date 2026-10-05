@@ -437,3 +437,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard: frecuencia de actualización, usuarios, preguntas y acciones, ítems de datos y su nivel de detalle, ítems clave, agrupaciones, comparaciones de contexto y umbrales de excepción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P508.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - parámetros `RangeStart`/`RangeEnd` para filtrar hechos por fecha y partición por periodo (p. 41, p. 46, p. 64) — ya cubierta/marginal: parametrización en P508 H02; partición temporal en P525 H01. Incremental refresh y detección de cambios (p. 65) — fuera de alcance: operación de pipelines productivos.

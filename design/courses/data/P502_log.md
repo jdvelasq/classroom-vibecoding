@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard: frecuencia de actualización, usuarios, preguntas y acciones, ítems de datos y su nivel de detalle, ítems clave, agrupaciones, comparaciones de contexto y umbrales de excepción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P502.53
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Object Naming Conventions» (p. 35); «Certified Reports on Certified Datasets», «Data steward owns source data & validates dataset trustworthiness» (p. 20, p. 91) — marginal/fuera de alcance: P502 ya documenta catálogo y linaje; certificación y administración de espacios de trabajo son gobierno organizacional y BI.
