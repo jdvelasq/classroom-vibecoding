@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reglas de negocio combinadas con modelos para decisiones automáticas (p. 12: «las reglas de negocio ayudan a definir las acciones de acuerdo con las condiciones específicas») — ya cubierta: H03 regla operativa por solicitud dependiente del estado y H06 automatización acotada con escalamiento.
+
+## S03.P304.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Intelligent automation» con «Continuous monitoring and automation governance» y la advertencia «People sometimes confuse automation with autonomy» (pp. 161–162) — ya cubierta: automatización acotada con autoridad sobre parámetros (P304 H06) y modo proporcional de C04; el extracto es promocional y no aporta mecanismo.

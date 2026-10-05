@@ -646,3 +646,17 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - traducir la pregunta de negocio en hipótesis analítica con resultado definido (p. 7) — ya cubierta: contrato de política desde P300 H03 y P302 H04.
   - torneos automáticos de modelos, código de calificación, cómputo en memoria y gestión de modelos (p. 8–12) — fuera de alcance: técnica de Predictiva e infraestructura de Productos de datos; es una señal de herramienta.
+
+## S03.P300.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Colección de artículos técnicos sobre construcción y evaluación de pronósticos con software SAS; el uso de pronósticos para decisiones aparece sólo como motivación (pp. 7, 13, 37, 100). **No contiene** secciones sustantivas de inventario, demand planning, FVA ni planeación por escenarios: los white papers de Chase y Gilliland son extractos de 2–3 páginas y sus secciones de FVA (pp. 160, 166) sólo figuran en el índice. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «more accurate forecasting is not an end in itself. Rather, more accurate forecasts provide a means to effect better decisions» (p. 7) — ya cubierta: es la frontera Predictiva/Prescriptiva de `s05` y el encuadre de P300 H01 y P307 H01.
+  - construcción, selección y combinación de modelos de pronóstico, ML vs. series de tiempo, M4, extracción de rasgos, regime switching, variables FRED (pp. 7–9, 37, artículos completos) — fuera de alcance: Predictiva.
+  - escalabilidad en la nube, ejecución en lote, pipelines y nodos personalizados (pp. 8–9) — fuera de alcance: Productos de datos.
+  - FVA y efecto de los ajustes manuales del planificador sobre el pronóstico (p. 130: «The FVA is the added value of the forecast in accuracy, compared to a naïve or baseline forecast»; p. 137: «the goal is to eliminate the small changes that do not add any benefit») — fuera de alcance: evalúa el proceso de pronóstico (Predictiva); el análogo de decisión —tasa de anulación humana como señal— ya está en P308 H07, y la banda de revisión que concentra la atención humana en casos dudosos en P306 H07.
+  - pronóstico «contaminado» por metas de la gerencia y expectativas de precisión inalcanzables (pp. 167–168) — marginal: refuerza la separación evidencia/acción ya presente en P300 H01 y P303 H02.

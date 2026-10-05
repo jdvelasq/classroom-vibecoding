@@ -441,3 +441,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Libro blanco comercial de SAS sobre el ciclo de vida analítico (pregunta, datos, exploración, modelado, implementación, uso de resultados, evaluación) y sus productos de minería de datos y gestión de decisiones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P312.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - análisis de escenarios sobre factores causales controlables (precio, promoción, costo de material) para «determine the best decision (a what-if analysis)» (p. 100; p. 105) — ya cubierta/marginal: la sensibilidad que mueve la decisión y la convierte en gatillo está en P312 H01–H02; P304/P309 la exploran.

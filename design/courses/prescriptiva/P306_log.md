@@ -454,3 +454,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - evaluar el resultado de las acciones y renovar modelos degradados (p. 4: «evaluar el resultado de las acciones que produjo el modelo analítico»; p. 5: «La evaluación constante … identificará la degradación de la precisión») — ya cubierta: P306 H07 y P308 H07 (métricas con gatillo y respuesta, brecha observada–estimada). Ver la candidata de P306 en `informs-cap-pro-blueprint.md` sobre atribución del beneficio.
+
+## S03.P306.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reglas de monitoreo con acción por métrica (p. 154) — ya cubierta en forma declarativa (`monitoring_plan.csv` con bloquear/suspender/recalibrar/escalar en P306 H07 y P308 H07); la ejecución con datos se propone en P321.

@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Libro blanco comercial de SAS sobre el ciclo de vida analítico (pregunta, datos, exploración, modelado, implementación, uso de resultados, evaluación) y sus productos de minería de datos y gestión de decisiones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P313.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuantiles del error para fijar el límite tolerable (p. 144) — marginal frente a la candidata de P307; P313 ya trabaja con P90 como regla de referencia (H05).
