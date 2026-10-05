@@ -251,3 +251,14 @@
   - «Module 16: Fairness and Bias Issues in Data-Driven Predictions» y el caso de análisis facial: «detect, diagnose, and mitigate biases that can arise in model-based, data-driven decision-making» (p. 8, 10) — fuera de alcance: la detección y mitigación de sesgo es parte del método predictivo. El uso responsable en operación (revisión humana, acceso) ya está en P450 y P452.
   - «Module 22: Interpretability and Causality in Models» (p. 9) — fuera de alcance: pertenece a Predictiva.
   - regresión, clustering, filtrado colaborativo, optimización lineal, CART, ensambles, redes neuronales, NLP (p. 7–9) — fuera de alcance: métodos de otras líneas del programa.
+
+## S03.P400.21
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-quantitative-methods-in-systems-engineering.md` (`source_sha256`: 6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa de cuatro semanas sobre decisiones tempranas de diseño en ingeniería de sistemas: método de Pugh y estudios de compromiso (trade studies), modelos de valor, generación y evaluación de espacios de diseño, exploración del tradespace (frente de Pareto, sensibilidad, robustez, incertidumbre) y asignación de tareas entre modelos y personas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Concept Selection Methods», «Overview of Trade Studies», método de Pugh (p. 1); «Developing Value Models», «Operationalizing Value Models» (p. 2); «Generating Design Spaces», «Tradespace Representations» (p. 3); «clusters and the Pareto Front», «Determining Sensitivity and Robustness» (p. 4) — fuera de alcance: decisión multicriterio y exploración de alternativas de diseño corresponden a Prescriptiva (o a Fundamentos en la formulación); Productos no vuelve a prescribir el problema analítico.
+  - pre- y post-evaluación, proyecto semanal y plan de acción (pp. 1–4) — fuera de alcance: rasgos de formato de un programa ejecutivo en línea; la familia institutional ilustra posibilidades, no impone evaluación.
