@@ -260,3 +260,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - construcción y publicación de tableros y reportes con filtros e interactividad (p. 4: «Building dashboards … Sharing your dashboards») — fuera de alcance: inteligencia de negocios descriptiva; el seguimiento de una política se ejerce en P321 mediante registro, indicador, meta y gatillo, no mediante una herramienta de BI.
+
+## S03.P321.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 5. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

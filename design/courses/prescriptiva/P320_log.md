@@ -258,3 +258,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa de curso de bodegas de datos: modelado ER y dimensional (Kimball), dimensiones lentamente cambiantes, tablas de hechos, universos de SAP Business Objects, reportes Web Intelligence y tableros en Tableau. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P320.32
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Sharing: Privacy, Anonymization, Risks… k-anonymity, and differential privacy» (p. 2), y el resultado de aprendizaje «identify privacy risks in releasing information» (p. 3). Fuera de alcance: la privacidad al publicar datos pertenece a los cursos de fundamentos de datos y de productos de datos. P320 audita la equidad de las consecuencias de una política, que es otra salvaguarda.
