@@ -300,3 +300,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Se confunde el éxito del modelo con su máxima precisión» (p. 3) — ya cubierta: P306 H04 muestra que la regla con mejor fracción de efecto positivo (uplift) produce menos valor que la regla de valor causal. Es decir, el criterio de éxito de la política no es la precisión del insumo.
+
+## S03.P306.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

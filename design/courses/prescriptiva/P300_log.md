@@ -439,3 +439,14 @@
   - contraste entre programación tradicional y ML/DA («El testeo se basa en precisión no en ejemplos», «Se usan datos de producción», «Se requiere HPC», p. 4) — fuera de alcance: pertenece a la práctica de ML y a Productos de datos. Las pruebas `pytest` de los Pxxx evalúan participación por diseño (AGENTS.md), así que esta señal no constituye un defecto.
   - datos en silos, formatos no optimizados, mala calidad, errores en los datos, permisos y acceso a recursos, «laptop analytics» (pp. 2, 9) — fuera de alcance: corresponde a Fundamentos de data y Productos de datos.
   - alfabetización de datos, «Mover datos de Excel a Power BI no lleva a mejores decisiones», cultura y liderazgo (pp. 5–7) — marginal o fuera de alcance: es diagnóstico organizacional y descriptivo, sin una capacidad que un taller prescriptivo pueda ejercer de forma distinta a la actual.
+
+## S03.P300.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre estrategia de datos (diagnóstico, brechas, objetivos, iniciativas, gobierno, uso responsable, caso de valor, priorización, hoja de ruta y evaluación), ilustrada con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Los datos no generan valor por sí mismos: el valor aparece cuando modifican una decisión, una acción» (p. 10) y «Comprender antes de decidir. Decidir antes de actuar. Medir para aprender» (p. 6) — ya cubierta: es la identidad del curso (contrato de política desde P300 H03).
+  - diagnóstico, brechas, objetivos estratégicos de datos, gobierno, arquitectura y hoja de ruta (pp. 8–17, 21–22) — fuera de alcance: estrategia organizacional de datos, ajena a una política operativa recurrente.

@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 10. Lectura: completa (pp. 2–9 en texto). Las pp. 1 y 10 tienen poco texto: sólo repiten el título, que funciona como portada y cierre. No se pudieron renderizar porque el PDF no existe en `/mnt/user-data/uploads/classroom-vibecoding/design/benchmarks-pdf/literature-derived/`. Por su posición y su título no parecen tener contenido sustantivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P310.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «VPN, ROI, periodo de recuperación … deben calcularse mediante escenarios y supuestos explícitos, no como estimaciones únicas presentadas como certezas» (p. 19) — ya cubierta: P310 H01 resume una distribución simulada del VPN; el defecto de P310 (simulación no decisiva) no lo aborda este documento.

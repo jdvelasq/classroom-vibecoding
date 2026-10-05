@@ -302,3 +302,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 10. Lectura: completa (pp. 2–9 en texto). Las pp. 1 y 10 tienen poco texto: sólo repiten el título, que funciona como portada y cierre. No se pudieron renderizar porque el PDF no existe en `/mnt/user-data/uploads/classroom-vibecoding/design/benchmarks-pdf/literature-derived/`. Por su posición y su título no parecen tener contenido sustantivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P305.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Priorizar no consiste en seleccionar las iniciativas con mayor puntuación individual, sino en construir un portafolio equilibrado que respete … restricciones» (p. 20) — ya cubierta: P305 H02–H04 contrasta rankings con la cartera óptima bajo capacidad.

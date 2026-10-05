@@ -299,3 +299,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - mito «El modelo es sabio y omnisciente» (pp. 3–6) — ya cubierta: la autoridad humana, el escalamiento y la anulación con motivo están en P303 H01–H02, P308 H06 y P306 H07 (banda de revisión). La tasa de anulación como señal de revisión está en P308 H07.
+
+## S03.P308.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre estrategia de datos (diagnóstico, brechas, objetivos, iniciativas, gobierno, uso responsable, caso de valor, priorización, hoja de ruta y evaluación), ilustrada con un caso de mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
