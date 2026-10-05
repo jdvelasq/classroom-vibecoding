@@ -323,3 +323,16 @@
   - contenidos transversales de igualdad de género y diversidad (p. 77; p. 98: «tenemos formas únicas de evaluar») — fuera de alcance: es un propósito institucional transversal, no una capacidad descriptiva. La sensibilidad de comparar grupos ya está tratada en P125 (H02, H07).
   - objetivos medibles e indicadores para el seguimiento de la armonización (p. 110: «indicadores que permitan un adecuado seguimiento… ausencia de objetivos medibles») — marginal: se refiere a la gestión del programa, no a un KPI que el estudiante construya. La definición de un KPI como contrato ya está en P153 (H01–H03).
   - vínculo con egresados y mercado laboral para actualizar el perfil de egreso (pp. 106–107) — fuera de alcance: es pertinencia institucional del programa, no contenido de taller.
+
+## S03.P100.26
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Circular administrativa de la Dirección Académica de la Sede Manizales que fija la «Ruta de Armonización Curricular» (Acuerdo 02 de 2020 del CESU, resultados de aprendizaje, PEP, planes de mejoramiento) en dimensiones macro/meso/microcurricular y cuatro etapas; no contiene contenidos disciplinares. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - resultados de aprendizaje como «declaraciones expresas de lo que se espera que un estudiante conozca y demuestre» (p. 2) — fuera de alcance: decisión de nivel de programa; el curso ya expresa capacidades C01–C05 en `traceability.yaml`, y S03 no redefine resultados de programa.
+  - dimensión «Microcurricular: compete a las didácticas y procesos de evaluación de los aprendizajes» (p. 2) — marginal: no prescribe método; el formato de taller guiado y la evaluación con `pytest` ya son decisiones vigentes.
+  - etapa 4, «diseñar los mecanismos de monitoreo y evaluación» de los resultados de aprendizaje (p. 3) — fuera de alcance: proceso de gestión curricular, no contenido de un taller.
+  - atender «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento» (p. 3) — marginal: principio general sin señal técnica o pedagógica que ancle a un Pxxx; la familia institutional ilustra, no impone.
