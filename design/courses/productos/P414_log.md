@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Es una colección comercial de artículos de SAS sobre pronóstico. Trata sobre todo de modelado (TSMODEL, ML, RSM), pero incluye tres textos de proceso que importan para operar un pronóstico: el monitoreo automático de modelos con cartas de control sobre los residuos, el análisis de si los ajustes manuales mejoran el pronóstico y el «Forecast Value Added». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P414.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

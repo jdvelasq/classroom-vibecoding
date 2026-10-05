@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ajustes manuales y «Forecast Value Added» («Do demand planners really improve forecast accuracy with their manual overwrites?», p. 127; «small changes to the forecast value usually do not improve forecast quality… the goal is to eliminate the small changes that do not add any benefit», p. 137; «The judgmental correction might also have a political reason», p. 136; FVA, «the added value of the forecast in accuracy, compared to a naïve or baseline forecast», p. 130; el «fiddling» y los sesgos que FVA «can identify», p. 167) — fuera de alcance por falta de caso y datos. Medir si la revisión humana agrega valor sería una contribución distinta de P450 (que autoriza o no una recomendación, H01–H02) y daría a P451 el «mejorar» que hoy no ejerce. Pero exige registros de la recomendación, la decisión final y el resultado observado para muchas decisiones. El curso no tiene ese caso y los datos de Svolba son privados (p. 130). Además, comparar el pronóstico humano con el estadístico es método de evaluación del proceso de pronóstico, más cerca de Predictiva. Habría que reconsiderarlo si el curso adopta un caso de pronóstico con ajustes manuales registrados.
+
+## S03.P451.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

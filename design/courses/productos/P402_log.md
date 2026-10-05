@@ -457,3 +457,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - advertencias del ID temporal, «Gaps were detected in the values of the Time ID variable», «The Time ID variable has duplicate values», y que el producto «will produce forecasts even when the time ID is in bad shape» (p. 93) — ya cubierta: la llave de negocio derivada de la granularidad y su validación (P402 H01–H02) cubren duplicados y huecos. La advertencia de que la herramienta produce un resultado en silencio sólo refuerza el encuadre de P402.
+
+## S03.P402.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

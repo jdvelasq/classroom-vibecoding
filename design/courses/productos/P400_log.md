@@ -656,3 +656,14 @@
   - «more accurate forecasting is not an end in itself… a means to effect better decisions» (p. 7) — ya cubierta: es la pregunta de identidad del curso (`productos.C01`) y no aporta un mecanismo.
   - procesamiento distribuido de millones de series (DFS, ejecución paralela por grupo BY, 1,5 millones de series en 153,5 s; pp. 14–19, 29–31) e integración de Python y R dentro de TSMODEL (pp. 20–28) — fuera de alcance: es arquitectura de Big Data y capacitación en una plataforma, dos cosas que excluye la frontera del curso.
   - análisis de escenarios con factores causales controlables (pp. 100–101), SASEFRED, RSM, redes neuronales, nodo GBM y extracción de características (pp. 35–86, 105–126) — fuera de alcance: son modelado predictivo o prescriptivo, o funciones de un producto comercial.
+
+## S03.P400.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - intervalos CLI/CLM para valores nuevos (p. 98), el truco de puntuar añadiendo filas con respuesta faltante (p. 98), la exclusión de observaciones con valores faltantes (p. 76), la selección de variables y su costo computacional (pp. 5, 94) y los diagnósticos de colinealidad e influencia. Categoría: **fuera de alcance**. Son método predictivo que Productos de datos no vuelve a enseñar.
+  - PROC REG no calcula regresores nuevos; las transformaciones deben estar ya en los datos de entrada (p. 76: «PROC REG does not compute new regressors… you should create a new variable when you prepare the input data»). Categoría: **marginal**. Podría leerse como un riesgo de desalineación entre la preparación del entrenamiento y la de la puntuación, pero el documento no lo plantea; esa lectura sería inferencia mía. P404 H01 ya alinea las entradas con la interfaz declarada del artefacto.

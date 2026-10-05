@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «If any problems occur during the execution of a particular time series (BY group), they are logged into an in-memory table» (p. 17); códigos de salida por serie, «You can verify… that all exit and return codes are 0» (p. 24); `try/except` por serie (p. 30) — ya cubierta o marginal: el registro de una ejecución (P405 H01), la separación de lo que falla con su motivo (P441 H01) y la disponibilidad como proporción de ejecuciones exitosas (P445 H01) ya enseñan el mismo patrón; aislar el fallo por unidad en un lote es una variante.
+
+## S03.P441.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

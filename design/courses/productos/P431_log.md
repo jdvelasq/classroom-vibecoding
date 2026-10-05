@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - variables de ajuste previo y posterior que transforman la serie «without changing the original series» (pp. 94–95); un repositorio de eventos guardado «independently of the time series data» para reutilizarlo y actualizarlo (p. 96) — marginal: la separación entre la capa cruda y la derivada ya está en P431 H02 y P443 H01–H02, y el repositorio de eventos es una práctica de modelado.
+
+## S03.P431.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

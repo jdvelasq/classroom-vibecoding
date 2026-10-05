@@ -454,3 +454,11 @@
   - campeón y retadores, «one of these models is defined as the champion model, and the other models are treated as challenger models for model quality performance monitoring over time» (p. 130) — marginal: la fuente sólo lo nombra, sin criterio de promoción ni comparación; el límite de P421 sin comparación con el modelo previo ya lo atienden otros documentos.
   - «Is it sufficient just to monitor the quality of your forecast models over time?» y el análisis por segmento, horizonte, mes y tipo de modelo con regresión lineal y cuantílica (pp. 127, 138–149) — fuera de alcance: explicar los factores del error es un análisis descriptivo o predictivo del error, no la operación de la capacidad. La degradación de «LONG XT» después de su introducción (p. 135) respalda la candidata de P423 como contexto, sin añadir mecanismo.
   - críticas al MAPE, «For an observed demand of 0, the MAPE formula causes a division by zero» y que se puede minimizar pronosticando 0 (p. 130); recortar los APE extremos (p. 132) — marginal: sólo importaría si la candidata de P423 adopta un caso de pronóstico con MAPE. En ese caso, debe anotarse como precaución de la métrica.
+
+## S03.P423.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

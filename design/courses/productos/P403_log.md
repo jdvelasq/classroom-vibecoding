@@ -452,3 +452,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - elegir el modelo sólo por ajuste histórico, «having perfect fit to history is no guarantee that the model will generate accurate forecasts» (p. 168); simulaciones de origen móvil para evaluar el desempeño ex ante (pp. 99–100); comparación de modelos (pp. 101–102) — fuera de alcance: son evaluación y selección del método predictivo, que corresponden a Predictiva. La compuerta operacional sobre un artefacto congelado ya está en P403 H01–H02.
+
+## S03.P403.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste, selección y diagnóstico de regresión lineal. Para Productos de datos sólo importan los mecanismos que persisten el modelo ajustado y generan código para puntuar datos nuevos (CODE y STORE). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

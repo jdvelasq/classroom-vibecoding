@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Es una colección comercial de artículos de SAS sobre pronóstico. Trata sobre todo de modelado (TSMODEL, ML, RSM), pero incluye tres textos de proceso que importan para operar un pronóstico: el monitoreo automático de modelos con cartas de control sobre los residuos, el análisis de si los ajustes manuales mejoran el pronóstico y el «Forecast Value Added». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P420.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - OUTEST= persiste los parámetros y las estadísticas de cada modelo etiquetados con `_MODEL_` y `_DEPVAR_` (p. 80). Categoría: **marginal**. Es una variante de lo que P420 H02–H03 ya hace: persistir cada corrida como unidad recuperable y compararlas desde un índice.

@@ -451,3 +451,11 @@
 - **Señales descartadas relevantes:**
   - tipos de modelo en el repositorio, por defecto, generados, propios y de «external list… Custom (Read-Only)» (p. 98); estrategias propias versionadas con `metadata.json`, que «guarantees that the version of the modeling strategies matches the current version of Model Studio» (p. 54) — marginal: es un detalle de la plataforma. El registro con identificador estable ya está en P421 H02.
   - campeón y retadores, «one of these models is defined as the champion model, and the other models are treated as challenger models for model quality performance monitoring over time» (p. 130) — marginal: la fuente sólo lo nombra, sin criterio de promoción ni comparación; el límite de P421 sin comparación con el modelo previo ya lo atienden otros documentos.
+
+## S03.P421.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el modelo se guarda como un *item store* binario que no puede modificarse (p. 74: «The resulting item store is a binary file format that cannot be modified»). Categoría: **ya cubierta**. P421 H02 promueve por un identificador estable y P431 identifica versiones por contenido, de modo que la inmutabilidad del artefacto ya tiene un ancla. Los defectos reales de P421 (sobrescribe la etapa, no conserva historial, la métrica se declara a mano) no se derivan de esta señal.

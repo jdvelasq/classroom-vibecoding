@@ -450,3 +450,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Es una colección comercial de artículos de SAS sobre pronóstico. Trata sobre todo de modelado (TSMODEL, ML, RSM), pero incluye tres textos de proceso que importan para operar un pronóstico: el monitoreo automático de modelos con cartas de control sobre los residuos, el análisis de si los ajustes manuales mejoran el pronóstico y el «Forecast Value Added». Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P426.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el modelo se exporta como código de puntuación portable en lugar de un objeto serializado (p. 37: «write SAS DATA step code for computing predicted values of the fitted model… This code can then be included in a DATA step to score new data»). Categoría: **marginal**. El curso ya enseña a separar el artefacto del entorno de entrenamiento y a ponerlo en uso: P403 H01 evalúa un artefacto congelado por su interfaz, P418 y P426 lo empaquetan y lo despliegan, y P425 H01 publica la capacidad con un contrato. Exportar código de puntuación es otra vía técnica para lo mismo. Además es una señal de herramienta (professional-learning) que por sí sola no justifica un tema.
