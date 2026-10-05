@@ -118,3 +118,14 @@
   - Excel avanzado, Power BI/Tableau, «Storytelling con datos», «Presentación de informes» (pp. 96, 102, 176, 218–220). Categoría: fuera de alcance. Visualización y comunicación de hallazgos pertenecen a Descriptiva; herramientas BI no definen identidad (`data.C05`).
   - ML en producción con «data cleaning, normalización», «model drift, data drift», MLOps (p. 176); roles emergentes LLMOps, Knowledge Engineer («ETL, vector DB + knowledge graphs, calidad de datos», p. 160), Synthetic Data Engineer (p. 334). Categoría: fuera de alcance. Productos de datos/IA y construcción de modelos, fronteras explícitas del curso; los datos sintéticos además están restringidos por `AGENTS.md`.
   - cloud, contenedores, CI/CD, IaC, DevSecOps (pp. 175–176); certificaciones Azure/AWS/Databricks/Snowflake (pp. 79–80). Categoría: fuera de alcance. Infraestructura y operación; la familia governmental no prescribe herramientas.
+
+## S03.P500.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - proyecto nacional de bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas y cronograma de cohortes 2024–2026. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - pertinencia laboral del análisis de datos (p. 2 «3. Análisis de Datos» entre las temáticas priorizadas; p. 2 «enfocado en las áreas más demandadas por el mercado: datos, programación, ciberseguridad…»; p. 1 «dominio de áreas como la inteligencia artificial (IA) y el análisis de datos») — ya cubierta: respalda la existencia del curso como optativo, sin definir estándar ni contenidos (familia governmental).
+  - formato bootcamp intensivo (p. 2 «carecen de acreditación por entidades educativas convencionales, no siguen planes de estudio estándar») — fuera de alcance: modalidad de formación no aplicable a un curso de pregrado.

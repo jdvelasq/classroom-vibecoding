@@ -65,3 +65,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - «muestra voluntaria (no probabilística)» como limitación declarada (p. 238). Categoría: marginal. La falta de criterio de muestra (P526 S01) y de pertinencia del corpus (auditoría P503) ya está registrada por S02; aquí sólo se recoge dentro de la candidata de P526.
+
+## S03.P526.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - proyecto nacional de bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas y cronograma de cohortes 2024–2026. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

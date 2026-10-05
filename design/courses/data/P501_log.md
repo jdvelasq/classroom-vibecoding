@@ -80,3 +80,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Estudio de política pública que proyecta oferta y demanda de talento TI en Colombia, cuantifica brechas por rol y habilidad (vacantes, encuestas, grupos focales) y contrasta la oferta curricular formal y no formal; los datos aparecen como demanda laboral (SQL, integración de fuentes, roles de analista/ingeniero/arquitecto de datos), no como contenido curricular especificado. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P501.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - proyecto nacional de bootcamps de 159 horas en habilidades digitales (programación, IA, análisis de datos, blockchain, nube, ciberseguridad) con meta de 94.696 personas formadas y cronograma de cohortes 2024–2026. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
