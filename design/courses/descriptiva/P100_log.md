@@ -680,3 +680,11 @@
   - universos de SAP BusinessObjects, *loops*, *chasm traps* y *fan traps*, IDT y Web Intelligence (pp. 3–4) — fuera de alcance: plataforma concreta; el doble conteo que ilustran las trampas *fan/chasm* se trata como no aditividad en P154 T01.
   - seguridad por fila (p. 4) — fuera de alcance: productos de datos.
   - tablas de fotos (*snapshot*) y hechos sin medidas (p. 3) — fuera de alcance por caso (un solo proceso transaccional).
+
+## S03.P100.55
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, acciones, datos clave, comparaciones y excepciones). Para esta actividad no añade una señal distinta.

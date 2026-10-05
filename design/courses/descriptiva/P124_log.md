@@ -447,3 +447,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dashboards, filtros y acciones en Tableau (p. 4) — la plataforma queda fuera de alcance (la frontera excluye la capacitación en una plataforma BI, no BI como tal); el tablero filtrable ya está en P124 H04.
+
+## S03.P124.55
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - preguntas 1–6 del cuestionario (usuarios, preguntas, acciones, datos clave y agrupaciones) — marginal: es el encuadre que propone P120 T01 aplicado a un tablero; P124 no tiene propuesta propia y la fuente es un formulario de una página.

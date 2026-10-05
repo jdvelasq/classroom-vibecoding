@@ -450,3 +450,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sílabo de un curso de posgrado de data warehousing y BI (modelado ER y dimensional de Kimball, SAP BusinessObjects y Tableau). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P154.55
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.
