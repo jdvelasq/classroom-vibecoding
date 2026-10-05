@@ -158,3 +158,11 @@
 - **Señales descartadas relevantes:**
   - estimación de parámetros por mínimos cuadrados no lineales (módulo 4, p. 2): ya cubierta (H02: `curve_fit` de Bass).
   - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+
+## S03.P210.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.

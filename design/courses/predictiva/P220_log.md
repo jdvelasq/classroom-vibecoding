@@ -156,3 +156,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P220.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.

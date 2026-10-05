@@ -212,3 +212,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - regresión, regularización, regresión logística y evaluación del ajuste (módulo 5, p. 2): ya cubiertas en el curso (P200, P204, P219, P223).
+
+## S03.P200.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelo de predicción de precios de vivienda con regresión lineal (módulos 7–8, p. 11): ya cubierta (H01–H09).
