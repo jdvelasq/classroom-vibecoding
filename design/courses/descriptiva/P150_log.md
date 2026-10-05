@@ -40,3 +40,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - características de un conjunto normalizado y fuentes de datos (CAP-E.3.2.3, 3.2.6, p. 14) — ya cubierta: P150 H01, P151 H01.
+
+## S03.P150.04
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - limpiar, armonizar, transformar, unir y validar (p. 15: Task 3.5) — ya cubierta: P106 H01–H04, P107 H01–H03, P150 H02 (`validate="many_to_one"`), P121 H02 (conciliación).
