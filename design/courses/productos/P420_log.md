@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco de estrategia de datos organizacional (diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, portafolio, hoja de ruta, ejecución y evaluación) ilustrado con mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P420.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Documentar para reproducibilidad y auditoría… parámetros, las versiones, las herramientas» (p. 21) — ya cubierta por H02/H03 de P420 (corrida persistida y comparable).

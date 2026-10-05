@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ciclo de vida con «Archivo y eliminación segura» (p. 5) — ya cubierta por la política de retención de P455.
+
+## S03.P455.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - recorre KDD → CRISP-DM → metodologías de ciclo de vida (TDSP, CRISP-ML(Q), MAISTRO) con un caso de abandono de clientes que avanza de pregunta descriptiva a predicción, decisión, despliegue, monitoreo/degradación y gobierno transversal. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Ficha mínima de cada indicador»: definición, línea base y meta, fuente y método, responsable, frecuencia, «Decisión asociada: la acción que puede desencadenar su resultado» (p. 23) — marginal: la ficha es para indicadores de evaluación estratégica; la ausencia de ventana y de acción en P445 («sin periodo», «sin acción asociada») y P449 ya está registrada como límite en S02 y no se resuelve con evidencia de esta familia; la acción diferenciada por alerta ya tiene una propuesta en P442 desde otro documento.
+
+## S03.P449.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Evaluar costos y beneficios… KPIs y ROI» (p. 26) — fuera de alcance: medir beneficio/ROI no tiene caso ni datos en el curso y desplaza hacia evaluación de valor (Fundamentos).

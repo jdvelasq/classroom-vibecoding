@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco de estrategia de datos organizacional (diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, portafolio, hoja de ruta, ejecución y evaluación) ilustrado con mantenimiento predictivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P423.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Definir métricas y niveles de referencia… baselines y umbrales» y «Detectar… data drift, concept drift» (p. 26) — marginal: P422/P423 ya separan deriva de entradas y degradación observada (H01 de P423); declarar la acción tras la alerta es variante del patrón alerta→procedimiento de P446/P447 y queda absorbida por la propuesta de P424.

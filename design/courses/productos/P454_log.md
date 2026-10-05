@@ -308,3 +308,11 @@
 - **Señales descartadas relevantes:**
   - «Cada iniciativa debe documentar sus usos permitidos, riesgos, controles, responsables y condiciones de suspensión antes de pasar a ejecución» (p. 18) — marginal: la ficha de catálogo (P454) ya reúne responsable, contrato y consumidor; «condiciones de suspensión» sería un campo más sin práctica asociada.
   - «Una iniciativa no se considera completada hasta que la capacidad desarrollada forme parte de la operación y cuente con responsables, recursos y mecanismos para sostenerla» (p. 22) — ya cubierta: responsable en el contrato (P411 H02), dueño en ficha (P454) e incidentes (P447).
+
+## S03.P454.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gestionar acceso, proteger privacidad, documentar origen y propósito de los datos (p. 29) — ya cubierta (política por rol, enmascaramiento, ficha de catálogo).

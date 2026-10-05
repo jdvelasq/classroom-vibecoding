@@ -8,6 +8,7 @@
 - **Tipo:** producto/evidencia + proceso (corrige un defecto)
 - **Fuentes:**
   - `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` p. 176 — la brecha laboral es que los candidatos usaron CI/CD «en escenarios académicos simples sin haber enfrentado complejidades de proyectos reales: gestión de credenciales (secretos), rollback automatizado, despliegues blue-green o canary, integración con herramientas de monitoreo»: la reversión conectada con el monitoreo es la parte que falta en la formación (Claude, 2026-10-05). Fuente *governmental*: respalda la pertinencia, no prescribe el mecanismo (blue-green o canary no se proponen).
+  - `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` pp. 25–26 — entre los disparadores, «Disminuye el desempeño del modelo» y «Se supera uno de los umbrales definidos», seguidos de «¿Recalibramos, reentrenamos, reemplazamos o retiramos la solución?» (p. 25); «Decidir sobre el ciclo de vida. Determinar si la solución debe mantenerse, actualizarse, reentrenarse, reemplazarse o retirarse» (p. 26): la reversión es una respuesta de ciclo de vida a una evidencia concreta (Claude, 2026-10-05). Fuente *literature-derived*: marco metodológico.
 - **Qué gana el estudiante:** entiende la reversión como respuesta operativa
   a una falla observada de la capacidad, no como copia de un archivo. Ejecuta
   la reversión sólo cuando una alerta de desempeño de P423 la justifica,

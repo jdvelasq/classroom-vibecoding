@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - indicadores de adopción y uso: «Usuarios activos, frecuencia de uso, decisiones apoyadas» (p. 23) — marginal/sin datos: P451 captura la valoración ligada a la respuesta (H01); medir adopción exigiría registros de uso reales que el curso no tiene.
+
+## S03.P451.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Monitorear uso, adopción y retroalimentación» (p. 26) — marginal: P451 ya liga la valoración a la respuesta; convertirla en señal agregada de adopción exigiría datos de uso que el curso no tiene (registro simulado).

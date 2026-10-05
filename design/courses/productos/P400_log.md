@@ -452,3 +452,15 @@
   - estrategia, diagnóstico, brechas, objetivos estratégicos, portafolio y hoja de ruta (p. 4–15, 19–21, 24) — fuera de alcance: gestión estratégica de datos a nivel organizacional; el curso excluye arquitectura empresarial y no formula el problema. La brecha «Procesos: ausencia de una operación reproducible del producto de datos» (p. 11) confirma la pertinencia del curso, pero no cambia ningún taller.
   - arquitectura de datos (warehouse, lake, lakehouse, data mesh) (p. 17) — fuera de alcance: arquitectura empresarial de datos, excluida por las fronteras.
   - caso de valor (VPN, ROI, costo total) (p. 19) — fuera de alcance: evaluación económica de iniciativas (Fundamentos/gestión), sin caso en el curso.
+
+## S03.P400.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - recorre KDD → CRISP-DM → metodologías de ciclo de vida (TDSP, CRISP-ML(Q), MAISTRO) con un caso de abandono de clientes que avanza de pregunta descriptiva a predicción, decisión, despliegue, monitoreo/degradación y gobierno transversal. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «El modelo no es la solución. Datos + Modelos + Reglas de decisión + Interfaces → Solución analítica» (p. 19) y «La analítica genera valor cuando cambia una decisión o una acción» (p. 24) — ya cubierta como principio en `s05-diseno-productos.md` (C01, producto terminal); confirma el riesgo de identidad registrado en S02 (indicadores sin usuario ni decisión), pero no aporta un cambio localizable.
+  - framing, problema analítico, entendimiento y preparación de datos, selección de métodos (p. 9–17) — fuera de alcance: responsabilidad de Fundamentos/Descriptiva/Predictiva/Prescriptiva según las fronteras del curso.
+  - «Evaluar sesgos y equidad» e impactos sociales y ambientales (p. 28–29) — fuera de alcance: la evaluación de sesgo de un modelo pertenece a Predictiva y no hay caso con grupos en el curso.

@@ -305,3 +305,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tabla de derechos de decisión («Acceso y uso | ¿Quién puede utilizarlo y para qué propósitos? | Propietario, seguridad y privacidad») (p. 16) — ya cubierta: P452 declara consumidores autorizados por recurso y rechaza roles no declarados; excepciones y conflictos pertenecen al órgano de gobierno, no a un taller.
+
+## S03.P452.38
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gestionar acceso, proteger privacidad, documentar origen y propósito de los datos (p. 29) — ya cubierta (política por rol, enmascaramiento, ficha de catálogo).
