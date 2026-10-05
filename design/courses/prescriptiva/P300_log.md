@@ -347,3 +347,15 @@
   - «effective processes to convert that information into actionable knowledge» (p. 2) — marginal: consigna sin método.
   - temario de minería de datos (clasificación, clustering, reglas de asociación, minería de texto; p. 9) — fuera de alcance: Predictiva / Descriptiva.
   - proyecto por entregables (propuesta, recolección, preparación, informe final, póster; pp. 5–6) — marginal: formato de evaluación de un curso de minería; los talleres Pxxx se evalúan con pytest por contrato del proyecto.
+
+## S03.P300.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: syllabus introductorio de pregrado centrado en bases de datos (Access, modelado ER, normalización, SQL, MongoDB), BI y visualización/dashboards, con proyecto final en equipo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «leverage data to make critical business decisions… use data to make those decisions confidently» (p. 1) — marginal: declaración genérica de toma de decisiones basada en datos sin ningún contenido de decisión, optimización, simulación ni gobierno; el curso ya opera la decisión como política (P300 H03).
+  - temario de modelado relacional, normalización, SQL, NoSQL/MongoDB, data warehouses y BI (pp. 5–6) — fuera de alcance: Fundamentos de data / Descriptiva.
+  - proyecto final «identify a problem to solve, collect the necessary data… use insights to develop solutions» con evaluación por enunciado, informe y evaluación de pares (pp. 2–3) — marginal: formato de evaluación genérico; los talleres Pxxx se evalúan con pytest por contrato del proyecto.
