@@ -273,3 +273,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Passive Data Collection» y «Media Data Collection: Radio, Television, Mobile, etc.» (p. 1) — ya cubierta: datos generados pasivamente se trabajan con la respuesta de API de GitHub (P518 H02) y los eventos de comercio electrónico (P526 H01, H03); la lámina no aporta una práctica distinta.
+
+## S03.P526.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Module 1 (p. 1: «Identify effective methods for collecting data on customer behavior and use it to make better decisions for your business») — ya cubierta / marginal: es la única señal de adquisición de datos del documento y se queda en una frase. Obtener datos de comportamiento y definir una métrica a un grano explícito ya lo hace P526 (H01 tiempo de evento frente a llegada, H03 conversión por sesión), y derivar qué datos sirven a una pregunta lo hacen P516 (aptitud de un extracto para una pregunta) y P517 (contrato mínimo derivado de la pregunta), en `data.C01`. Sin métodos concretos (instrumentos, muestreo, diseño de recolección), la señal no cambia lo que hace el estudiante en ningún taller; el criterio de selección de la muestra de P526, no documentado, ya está registrado en su S02.

@@ -433,3 +433,15 @@
   - «Data Collection Methods — Descriptive Data Collection: Surveys, Net Promoter Score (NPS), and Self-Reports» (p. 1) — fuera de alcance: ningún taller usa datos de encuesta o autorreporte, y una lámina institucional sin contenido no basta para justificar un caso nuevo; además, diseñar instrumentos de encuesta no es habilitar datos existentes (`data.C01`–`C04`). Si en el futuro se incorpora una fuente de encuesta trazable del `catalog/`, sus sesgos de autorreporte entrarían en `data.C03`, pero hoy no hay caso ni datos.
   - «A/B Testing», «Correlation and Causation», «Forecasting» (tendencia, estacionalidad, suavizado exponencial), «Regression Analysis», «Simulation Toolkit» (Analysis ToolPak, Solver), «Optimization Models», «Decision Trees» (p. 1) — fuera de alcance: análisis descriptivo, predictivo y prescriptivo pertenecen a los otros cursos según `s05-diseno-data.md`; además, son herramientas de Excel que no imponen tema (familia institucional).
   - «Data Visualization and Interpretation» (p. 1) — fuera de alcance: la comunicación de hallazgos corresponde a Analítica Descriptiva; en `data` la evidencia visual es un medio de verificación (`AGENTS.md`), no un objetivo.
+
+## S03.P500.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - listado de un módulo de orientación y nueve módulos de un programa ejecutivo de Business Analytics organizado por la secuencia descriptiva → predictiva → prescriptiva → aplicación, cada uno con una frase de resultado; no detalla contenidos, datos, herramientas ni evaluación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Module 9 (p. 1: «create a plan to put data to work in your organization») — marginal: formulación genérica de `data.C01`/`data.C05` (datos al servicio de una finalidad); no aporta producto ni práctica nueva. Un plan organizacional de datos se acerca a estrategia/gobierno de datos empresarial, fuera de la frontera del curso.
+  - Modules 2–8 (p. 1: pronóstico con datos históricos; predicciones; simulación; predicción de desempeño de empleados con «hiring, internal mobility, and attrition»; optimización; árboles de decisión) — fuera de alcance: análisis descriptivo, predictivo y prescriptivo pertenecen a los otros cursos de la línea. El caso de personal (Module 6) traería datos sensibles de empleados sin caso trazable en el repositorio.
+  - ausencia de un módulo de datos en un programa de Business Analytics — fuera de alcance como inferencia: un documento institutional de una página no permite concluir nada sobre el alcance de un curso de fundamentos de datos; sólo ilustra que el programa subordina los datos a las preguntas de cada línea, coherente con la identidad ya fijada en `s05-diseno-data.md`.

@@ -284,3 +284,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - lámina única que enumera los métodos y herramientas del programa: recolección de datos (encuestas, NPS, autorreportes; recolección pasiva; medios), A/B testing, correlación y causalidad, pronóstico, regresión, simulación (Analysis ToolPak, Solver), visualización e interpretación, optimización y árboles de decisión. Es sólo una lista de títulos, sin contenido, nivel ni evidencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P516.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Module 1 (p. 1: «Identify effective methods for collecting data on customer behavior and use it to make better decisions for your business») — ya cubierta / marginal: es la única señal de adquisición de datos del documento y se queda en una frase. Obtener datos de comportamiento y definir una métrica a un grano explícito ya lo hace P526 (H01 tiempo de evento frente a llegada, H03 conversión por sesión), y derivar qué datos sirven a una pregunta lo hacen P516 (aptitud de un extracto para una pregunta) y P517 (contrato mínimo derivado de la pregunta), en `data.C01`. Sin métodos concretos (instrumentos, muestreo, diseño de recolección), la señal no cambia lo que hace el estudiante en ningún taller; el criterio de selección de la muestra de P526, no documentado, ya está registrado en su S02.
