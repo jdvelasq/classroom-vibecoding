@@ -190,3 +190,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Visualization / Dashboarding Fundamentals», «Practical data Visualization using PowerBI/Tableau», «Data Visualisation/ Dashboarding for Enterprise Reporting» (p. 4) — la plataforma concreta queda fuera de alcance (la frontera excluye la capacitación en una plataforma BI, no BI como tal) y ya cubierta en su función analítica: P124 H03–H04 (razones recalculadas por alcance en un tablero filtrable) y P154 H01–H04 (fuente de consumo con grano declarado). Una señal institucional de catálogo no impone herramienta.
+
+## S03.P124.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo mixto (asíncrono + 3,5 días presenciales) sobre estrategia, modelos de negocio, IA generativa y agéntica, pensamiento de futuros y gobernanza de IA, con un *capstone* de iniciativa organizacional; requiere 10+ años de experiencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

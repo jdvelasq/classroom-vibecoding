@@ -280,3 +280,17 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - segmentación con K-Means y clustering jerárquico (p. 13), inferencia, pruebas de hipótesis y A/B testing (p. 6, p. 14), regresión, clasificación, series de tiempo, optimización y simulación (pp. 5–14) — fuera de alcance: predictiva, prescriptiva o contenido de Estadística; el catálogo no aporta caso ni datos para un uso descriptivo.
   - EDA y gráficos estadísticos como primer paso de un proceso de modelado (p. 8) — marginal: el curso ya ejerce exploración al servicio de la descripción (P103, P120–P122, P125); aquí aparece como antesala del modelado.
+
+## S03.P100.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo mixto (asíncrono + 3,5 días presenciales) sobre estrategia, modelos de negocio, IA generativa y agéntica, pensamiento de futuros y gobernanza de IA, con un *capstone* de iniciativa organizacional; requiere 10+ años de experiencia. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Creating a culture of data excellence» (p. 16) y «Data excellence» (p. 5) — marginal: título de sesión sin contenido operativo; la calidad de datos antes de concluir ya está en P120 H02, P121 H02, P122 H01/H05 y P153 H03.
+  - «Evaluate AI opportunities and risks across business functions using structured analytical frameworks» (p. 7) y «Analyze key trade-offs in AI adoption, including considerations of cost, control, speed, and risk» (p. 7) — fuera de alcance: evaluación estratégica de inversiones en IA para alta dirección; no es una pregunta descriptiva ni tiene caso/datos en el documento.
+  - escenarios, prospectiva y «Decision-making under uncertainty» (p. 5; p. 17: «How to lead and make decisions through increasingly uncertain times») — fuera de alcance: pertenece a prescriptiva/estrategia; el curso describe con evidencia observada.
+  - analítica predictiva y ML en flujos de decisión (p. 16: «How leaders create conditions for effective integration of predictive analytics»; «Configuring workflows and decisions for machine learning») — fuera de alcance: predictiva y productos de datos.
+  - *capstone* orientado a implementación de una iniciativa de IA (p. 17) — fuera de alcance: formato ejecutivo de transformación organizacional, sin relación con un producto descriptivo.

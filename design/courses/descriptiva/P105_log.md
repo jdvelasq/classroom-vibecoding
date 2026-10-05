@@ -185,3 +185,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Catálogo comercial de cursos cortos presenciales (3–5 días): Data Science para profesionales (visualización/dashboards con Power BI o Tableau), Data Science para principiantes e intermedios (R/Python, SQL, regresión, ML), programa de analítica avanzada y predictiva, *masterclasses* para directivos y *fast tracks* temáticos (texto, regresión, clasificación, clustering y redes). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P105.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - configuración de flujos de trabajo con IA generativa y agéntica (p. 16: «Configuring workflows for generative AI and agentic AI») — marginal: refuerza que el uso del asistente debe inscribirse en un flujo verificable, defecto ya registrado en P105 (sin respuestas ni verificación); el folleto no aporta método que permita anclar una mejora.

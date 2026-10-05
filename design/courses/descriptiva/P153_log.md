@@ -195,3 +195,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Catálogo comercial de cursos cortos presenciales (3–5 días): Data Science para profesionales (visualización/dashboards con Power BI o Tableau), Data Science para principiantes e intermedios (R/Python, SQL, regresión, ML), programa de analítica avanzada y predictiva, *masterclasses* para directivos y *fast tracks* temáticos (texto, regresión, clasificación, clustering y redes). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P153.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gobernanza y controles empresariales de IA (p. 17: «AI Governance, Enterprise Controls»; p. 8: «AI safety, ethics, trust, governance, and enterprise controls») — fuera de alcance: gobierno de sistemas de IA a nivel organizacional; el gobierno de métricas descriptivas (catálogo, reglas, linaje, compuerta de publicación) ya está en P153 H01–H04.

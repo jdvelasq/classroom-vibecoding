@@ -185,3 +185,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Introduction to SQL», manipulación de datos con SQL (pp. 5–6) — ya cubierta: P104 H01–H04, P151 H04, P152 H01–H04.
+
+## S03.P104.23
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo mixto (asíncrono + 3,5 días presenciales) sobre estrategia, modelos de negocio, IA generativa y agéntica, pensamiento de futuros y gobernanza de IA, con un *capstone* de iniciativa organizacional; requiere 10+ años de experiencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
