@@ -177,3 +177,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Humans, Methods, and Models» y la «task allocation between models and people in the design process» (p. 4) — marginal: la autoridad humana sobre una recomendación ya está en P450 H01–H02; el programa sólo nombra el tema sin contenido operativo que cambie el taller.
+
+## S03.P450.22
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto de un programa de ocho semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo, DFM). Incluye un proyecto final que decide la fabricación y analiza costos de un prototipo. Queda fuera del dominio de Analytics y de productos de datos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

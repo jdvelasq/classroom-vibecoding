@@ -177,3 +177,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa de cuatro semanas sobre decisiones tempranas de diseño en ingeniería de sistemas: método de Pugh y estudios de compromiso (trade studies), modelos de valor, generación y evaluación de espacios de diseño, exploración del tradespace (frente de Pareto, sensibilidad, robustez, incertidumbre) y asignación de tareas entre modelos y personas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P449.22
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Calculate both the nontechnical and technical cost of a rapid prototype» y «Recognize how to optimize the cost value of a rapid prototype» (p. 7) — fuera de alcance: costo de fabricación de un objeto físico, no costo de operación de una capacidad analítica (P449 H01).

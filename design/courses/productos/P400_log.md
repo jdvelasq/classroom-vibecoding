@@ -262,3 +262,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Concept Selection Methods», «Overview of Trade Studies», método de Pugh (p. 1); «Developing Value Models», «Operationalizing Value Models» (p. 2); «Generating Design Spaces», «Tradespace Representations» (p. 3); «clusters and the Pareto Front», «Determining Sensitivity and Robustness» (p. 4) — fuera de alcance: decisión multicriterio y exploración de alternativas de diseño corresponden a Prescriptiva (o a Fundamentos en la formulación); Productos no vuelve a prescribir el problema analítico.
   - pre- y post-evaluación, proyecto semanal y plan de acción (pp. 1–4) — fuera de alcance: rasgos de formato de un programa ejecutivo en línea; la familia institutional ilustra posibilidades, no impone evaluación.
+
+## S03.P400.22
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto de un programa de ocho semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo, DFM). Incluye un proyecto final que decide la fabricación y analiza costos de un prototipo. Queda fuera del dominio de Analytics y de productos de datos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Understand how to map desired product attributes to concept prototype attributes» y «Establish nontechnical and technical goals and requirements for a prototype» (p. 5, 7) — fuera de alcance: requisitos de diseño mecánico. La analogía con el contrato operativo (`productos.C01`) es sólo terminológica.
+  - procesos de fabricación serial y paralela, 3D printing, CNC, moldeo de silicona (p. 6) — fuera de alcance: ingeniería mecánica y manufactura.
