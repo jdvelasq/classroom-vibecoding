@@ -115,3 +115,15 @@
   - metodología «Learning by doing», aula que «simula situaciones reales de trabajo» y «desafíos concretos» (p. 1) — ya cubierta: la convención de talleres presenciales `Pxxx_` guiados por el profesor; la debilidad registrada del curso (indicadores triviales sin usuario) no la resuelve este documento, que no aporta caso ni datos.
   - «metodologías ágiles, la colaboración y el aprendizaje compartido» y papel del mentor (p. 1) — fuera de alcance: rasgos pedagógicos del formato bootcamp; no definen contenido de Productos de datos.
   - meta de 94.696 personas, cohortes y regionalización (pp. 2–4) — fuera de alcance: datos de política pública sin relación con ninguna capacidad `productos.C01`–`C05`.
+
+## S03.P400.09
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo de dos meses sin requisitos técnicos sobre capacidades de IA (ML, redes neuronales, visión, NLP, robótica), estrategia de IA y equipos de IA, con proyecto final de plan de negocio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Implementación responsable de la IA: tolerancia al riesgo, supervisión y gobernanza» (p. 5) — ya cubierta en el nivel de mecanismos (P450, P452, P446–P447); el enfoque estratégico-ejecutivo es fuera de alcance.
+  - «Calidad de datos, representatividad y por qué fallan los modelos» (p. 5) — fuera de alcance: pertenece a Predictiva; la validación operacional de entradas ya está en P404/P422.
+  - módulos de redes neuronales, visión, NLP, robótica, estrategia y equipos de IA (p. 4–6) — fuera de alcance: capacitación ejecutiva en IA, sin relación con operar una capacidad analítica.
