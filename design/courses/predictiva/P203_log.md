@@ -322,3 +322,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre los problemas reales de los proyectos de analítica (objetivos cambiantes, silos, calidad de datos, mitos como «el modelo es sabio y omnisciente»); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P203.36
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre estrategia de datos (objetivos, capacidades, iniciativas, portafolio de casos de valor, fichas de indicadores, gobierno y uso responsable); opera en el nivel organizacional y no contiene contenidos de modelado predictivo que contrastar con esta actividad.
