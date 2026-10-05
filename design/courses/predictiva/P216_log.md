@@ -103,3 +103,13 @@
 - **Señales descartadas relevantes:**
   - flujos de trabajo reproducibles y documentados (p. 47): ya cubierta (H02, H12: funciones reutilizables y evidencia acumulada).
   - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P216 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.
+
+## S03.P216.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Series de tiempo» y «Pronósticos financieros» demandados (Tabla 35, p. 97): ya cubierta (H01–H13).
+  - «Backtesting de modelos» como habilidad demandada (Tabla 35, p. 97): los talleres temporales evalúan con un único corte retenido; la fuente *governmental* sólo nombra la habilidad, sin definir práctica. Señal a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.

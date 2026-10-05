@@ -78,3 +78,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P218.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Monitoreo de modelos», «Validación estadística» y «Manual de riesgo» (Tabla 35, p. 97): confirma como pertinencia laboral la señal de seguimiento del desempeño en el tiempo; según `AGENTS.md` corresponde a la línea de productos de datos.
+  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.

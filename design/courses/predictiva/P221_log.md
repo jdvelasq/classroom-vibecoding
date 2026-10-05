@@ -78,3 +78,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelos que fallan cuando cambian los datos: «Google Flu Trends overpredicted… overreliance on outdated models» (p. 34) y relaciones que «will not necessarily hold in the next set of records» (p. 44): segunda fuente *authoritative* (con ACM) para la señal de representatividad y cambio de distribución; sigue sin método ni caso que permita anclarla a un taller.
+
+## S03.P221.09
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
