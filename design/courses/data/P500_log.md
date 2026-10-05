@@ -728,3 +728,16 @@
 - **Origen:** reevaluación S03 de las señales descartadas como «fuera de alcance» por ser ingeniería de datos, tras la aclaración del profesor: el curso «está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven». Los documentos ya estaban revisados (`S03.P500.*`); esta nota no repite la revisión.
 - **Resultado (curso):** se reevaluaron 66 señales. Cuatro alimentan propuestas nuevas (P522 T01, P523 T01, P525 T02), dos sólo refuerzan P522 T01, una refuerza P514 T01 y 59 se confirman como ya cubiertas, marginales o fuera de alcance por otra razón: operación productiva o MLOps (productos de datos), capacitación en una herramienta o plataforma (Spark, Hadoop, DASK, Kafka, motores NoSQL, CDC), falta de caso o datos en el curso (dimensiones de cambio lento o conformadas, *sketches*) o arquitectura empresarial.
 - **Ambigüedad:** `design/synthesis/s05-diseno-data.md` dice que el curso no es de Data Engineering ni Big Data y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración y queda para decisión del profesor.
+
+## Nota.P500.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Origen:** entrevista con el profesor para resolver la ambigüedad entre la aclaración del curso y `design/synthesis/s05-diseno-data.md`.
+- **Resultado:** se revisó `s05-diseno-data.md` (propósito, `data.C02`, `data.C05`, fronteras y auditoría de identidad); la ambigüedad registrada en las entradas `S02.Pxxx.03`/`.02` y en la nota anterior queda resuelta.
+- **Decisiones del profesor que orientan futuras revisiones S02/S03:**
+  - El curso prepara a quien hará analítica o *data science for business* para intervenir en el origen y la organización de los datos; no forma al ingeniero de datos responsable del rendimiento, la operación y la administración de bases de datos.
+  - BI se trata de forma completa (puede ser la única formación en BI de estos estudiantes de pregrado); el solapamiento con Analítica descriptiva (posgrado) es aceptable. Con ello, la posible duplicación con `descriptiva/P151` anotada en P512 T01 deja de ser objeción.
+  - El bloque MapReduce (P519–P523) es una introducción conceptual en Python que emula operaciones al estilo de Spark, sin Spark ni Hadoop; el curso de Big Data Analytics del posgrado no se alinea con este trabajo.
+  - ETL/ELT y conceptos afines se enseñan de forma práctica, como se hace profesionalmente; Productos de datos trata DataOps/MLOps (reglas de producción) para otra población, y se acepta solapamiento.
+  - En los talleres que calculan sobre datos (p. ej. P513, P518, P522, P523) se puede plantear la pregunta analítica y mostrar cómo la resuelve ese procesamiento; ese es el camino para cerrar el límite «sin pregunta analítica» que registró S02.
+
