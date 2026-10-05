@@ -43,3 +43,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CAP-E.3.5.1 «merging/joining data across sources may require business rules» (p. 15) — ya cubierta por P511 H01 (claves contextuales) y H02.
+
+## S03.P511.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - transformaciones y uniones necesarias (p. 15 «CAP-P.3.5.1 Identify the transformations and merge/joins that may be necessary to solve an analytics problem») — ya cubierta: P511 H01–H03.

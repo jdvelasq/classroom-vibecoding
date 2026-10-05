@@ -64,3 +64,16 @@
   - CAP-E.4.4.1 características del *stack* (bases, nube, *open source*) (p. 18) — ya cubierta por la frontera de herramientas (P500 H03, P508 H01); profundizar sería identidad de herramienta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - CAP-E.3.6.3 visualizaciones comunes (p. 15) y dominios I–II, IV–VII (pp. 7–12, 17–25) — fuera de alcance: encuadre, métodos, modelos, despliegue y ciclo de vida pertenecen a P001 y a los cursos de línea.
+
+## S03.P500.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - derivar necesidades de datos de la pregunta (p. 13 «CAP-P.3.1.1 Identify an appropriate sequencing and prioritization of data needed, including sources»; p. 10 «CAP-P.2.2.1 Identify why analytics element(s) would be classified as an input, output, both, or neither») — ya cubierta: P500 H02, P503 (entidades desde la pregunta), P506 H02, P517 H02 (contrato mínimo derivado de la pregunta).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - gobernanza, plan de gestión de datos, arquitectura de datos y 4V (p. 14 «CAP-P.3.2.4 Identify the appropriate data architecture»; «CAP-P.3.3.1 Identify the consequences of a poor data strategy, poor data governance…»; «CAP-P.3.2.7 … 4 Vs») — fuera de alcance: arquitectura y gobierno empresarial son frontera explícita del curso (`s05-diseno-data.md`).
+  - pila tecnológica y debilidades de la hoja de cálculo (p. 18 «CAP-P.4.4.2 Identify the weaknesses of a spreadsheet analytics model») — marginal: `data.C05` ya trata herramientas como habilitadores (P500 `tool_boundary`).
+  - datos incorrectos en producción, documentación para audiencias (p. 23 «CAP-P.6.6.1 Identify causes of incorrect data in production systems»; p. 25 «CAP-P.7.6.1 Identify the types of documentation needed for various audiences») — fuera de alcance (productos de datos) / ya cubierta (P501 H02: interfaz y consumidor por salida).
+  - dominios I–II y IV–VII (encuadre, métodos, modelos, despliegue, ciclo de vida) — fuera de alcance de `data`.

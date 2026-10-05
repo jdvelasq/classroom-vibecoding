@@ -50,3 +50,11 @@
 - **Señales descartadas relevantes:**
   - CAP-E.3.4.3 «lineage, traceability, and version control of data» (p. 15) — ya cubierta por P502 H03 y P503 H01; versionado de datos como práctica es marginal.
   - CAP-E.3.2.2 roles de gobierno (owner, steward, custodian) (p. 14) — marginal: vocabulario organizacional sin caso; el consumidor «Privado» de P502 es un defecto de S02, no una señal de este documento.
+
+## S03.P502.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - linaje y trazabilidad (p. 15 «CAP-P.3.4.3 Identify the purpose of lineage, traceability, and version control of data») — ya cubierta: P502 H03 (cambio de grano por paso de linaje), P503 H01 (consulta preservada).

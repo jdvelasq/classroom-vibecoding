@@ -43,3 +43,12 @@
 - **Señales descartadas relevantes:**
   - CAP-E.3.6.1 «accuracy, completeness, consistency, timeliness, validity, uniqueness, and outliers» y 3.6.4 métodos de evaluación (p. 15) — ya cubierta por P516 H02; atípicos se integran en la candidata de perfil.
   - CAP-E.3.7.1 y 3.8.1 (p. 16) — ya cubierta por P516 H01 (alcance que cambia la pregunta) y P517 H01; la parte no cubierta va a las candidatas.
+
+## S03.P516.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - limitaciones a partir de atributos, contexto y metadatos (p. 14 «CAP-P.3.2.1 Identify data limitations and constraints based on data attributes, data context, and metadata, and propose appropriate course of actions») — ya cubierta en lo esencial por H01–H03; la verificación de metadatos se propone desde CRISP-DM.
+  - perfilado multivariado (p. 15 «CAP-P.3.6.2 Identify patterns and characteristics of a multivariate dataset from data profiling outputs») — marginal: perfilar las 147 columnas contradice el contrato mínimo derivado de la pregunta (P517 H02); el perfilado exploratorio es de Descriptiva.

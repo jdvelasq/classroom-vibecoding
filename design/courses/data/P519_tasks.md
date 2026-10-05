@@ -8,6 +8,7 @@
 - **Tipo:** caso/datos + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 13 y 15 — «CAP-E.3.1.2 Identify issues related to sensitive data and restricted usage in collecting and using data» y «CAP-E.3.4.2 Identify the risks or ethical implications of acquiring unnecessary or unintended data»: en el nivel inicial, reconocer los datos sensibles y no adquirir datos innecesarios forma parte de la gestión de datos (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general, no un procedimiento.
+  - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` pp. 13 y 15 — «CAP-P.3.4.2 Identify which data is likely to have risks or ethical implications if acquired for the project/program»; el dominio de datos declara que «security, management, and privacy protocols are vital … to ensure compliance, ethical standards, and trust» (Claude, 2026-10-05). Fuente *authoritative*: refuerza CAP-E en el nivel intermedio.
 - **Qué gana el estudiante:** corrige un defecto real de lo que el taller
   distribuye y lo convierte en una decisión visible. Hoy `data/drivers.csv`
   entrega 34 filas con `ssn` y `location` junto con `name`, sin uso,

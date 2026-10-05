@@ -9,6 +9,7 @@
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` p. 76 — en DM-Data Preparation, «Munging data - dealing with errors in data, gaps in data, cleansing data, validating data» y la habilidad «Illustrate the impact and resolution of issues that may arise with datasets»: tratar los vacíos del dato y mostrar el efecto de su resolución (Claude, 2026-10-05). Fuente *authoritative*: expectativa general.
   - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` p. 15 — CAP-E.3.5.2: «Identify common issues in data wrangling, such as missing values, duplicates, redundancy, incorrect/mismatched data types, corrupt data, and default data»: un 0 puesto por `COALESCE` es un dato por defecto que se lee como valoración (Claude, 2026-10-05). Fuente *authoritative* (examen de nivel inicial).
+  - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` p. 15 — CAP-P.3.6.1: «Identify how to recognize issues with the data based on data quality gaps, including missing data» y CAP-P.3.5.2: «Identify how to correct common issues with data»: refuerzo genérico del reconocimiento y la corrección del faltante (Claude, 2026-10-05). Fuente *authoritative*; peso bajo, no aporta un argumento específico.
 - **Qué gana el estudiante:** decidir qué significa la ausencia según la
   medida cuando cambia de grano. En el `LEFT JOIN` calificación → curso (H02),
   un curso sin filas en `rating` tiene `rating_count = 0`, que es un hecho

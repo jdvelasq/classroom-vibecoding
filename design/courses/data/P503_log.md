@@ -50,3 +50,13 @@
 - **Señales descartadas relevantes:**
   - CAP-E.3.2.6 «Identify characteristics of a normalized dataset» (p. 14) — ya cubierta por P503 H02–H04.
   - CAP-E.3.4.3 «lineage, traceability, and version control of data» (p. 15) — ya cubierta por P502 H03 y P503 H01; versionado de datos como práctica es marginal.
+
+## S03.P503.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - derivar necesidades de datos de la pregunta (p. 13 «CAP-P.3.1.1 Identify an appropriate sequencing and prioritization of data needed, including sources»; p. 10 «CAP-P.2.2.1 Identify why analytics element(s) would be classified as an input, output, both, or neither») — ya cubierta: P500 H02, P503 (entidades desde la pregunta), P506 H02, P517 H02 (contrato mínimo derivado de la pregunta).
+  - características de una base relacional (p. 14 «CAP-P.3.2.6 Identify basic characteristics of a relational database») — ya cubierta: P503 H02–H04.
+  - sesgo de la fuente (p. 15 «CAP-P.3.4.1 Identify the techniques appropriate in acquiring the data and identify data source bias») — marginal: la pertinencia del corpus recuperado y la presencia de términos de búsqueda en el ranking ya están escaladas en S02 (P503 auditoría; P507 S01); el documento no aporta caso ni método concreto para enseñarlo.

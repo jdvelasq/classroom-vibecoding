@@ -44,3 +44,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - blueprint del examen CAP-E derivado del INFORMS Analytics Framework: siete dominios (pesos: Data 19 %) con subtareas de nivel inicial; el dominio III cubre necesidades y fuentes de datos, plan de gestión, adquisición, preparación, calidad, documentación y actualización del problema. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P507.04
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sesgo de la fuente (p. 15 «CAP-P.3.4.1 Identify the techniques appropriate in acquiring the data and identify data source bias») — marginal: la pertinencia del corpus recuperado y la presencia de términos de búsqueda en el ranking ya están escaladas en S02 (P503 auditoría; P507 S01); el documento no aporta caso ni método concreto para enseñarlo.
