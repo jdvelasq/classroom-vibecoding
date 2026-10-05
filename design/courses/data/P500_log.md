@@ -398,3 +398,14 @@
   - «Seguridad y privacidad de los datos», «Registro de la toma de decisiones para una mayor transparencia», «Control de acceso e identidad» (p. 13) — fuera de alcance: protección de sistemas agénticos; la privacidad de identificadores en datos del curso ya está registrada por S02 (P519, P526).
   - «Pruebas unitarias», «Métricas de evaluación (precisión, latencia, robustez)», «Fundamentación, validación y veracidad» (p. 13) — fuera de alcance: evaluación de agentes, no de datos.
   - casos de agentes para análisis de datos financieros, salud y documentos legales (p. 14–16) — fuera de alcance: productos de IA, otro curso.
+
+## S03.P500.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - syllabus de posgrado en almacenes de datos: repaso de bases de datos y modelado ER, modelado dimensional Kimball (hechos, dimensiones, SCD, trampas), universos de SAP Business Objects, reportes Web Intelligence y Tableau; explícitamente sin ETL. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - universos BI, seguridad por fila, reportes Web Intelligence y Tableau (p. 3 «What is a Universe»; p. 4 «Row level security», «Data Blending», «Building dashboards») — fuera de alcance: herramientas BI y comunicación de resultados pertenecen a Descriptiva/productos de datos; una señal institucional no impone herramientas.
+  - contraste OLTP/estrella (p. 3 «OLTP vs. Star schema based universes») — marginal: el contraste ER (P503) / dimensional (P512) ya existe en la secuencia.

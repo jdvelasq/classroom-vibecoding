@@ -264,3 +264,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P512.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - hechos y dimensiones, dimensión de tiempo, proceso de cuatro pasos (p. 2 «Dimension and Fact tables», «Time Dimension», «4 Step Design process»; «Classroom Hands-on – Design your first Fact table») — ya cubierta: P512 H01 (dimensión de fecha desde `d/m/yy`), H02 (hecho a grano línea), H03 (mart en estrella).
+  - dimensiones conformadas, de rol, SCD tipos 1–3, hechos sin hechos y de snapshot (p. 2 «Conformed dimensions», «Slowly Changing Dimensions - Type 1, Type 2, and Type 3», «Role Playing Dimensions»; p. 3 «Fact less facts», «Snapshot facts») — fuera de alcance: mantenimiento histórico y arquitectura de bus de un almacén empresarial; el curso no es Data Engineering ni arquitectura empresarial (`s05-diseno-data.md`) y no hay caso con historia de cambios para enseñarlo con rigor. La pérdida de `Ship Date` en el mart (P512 S02) ya está tratada por otra fuente (Kimball).

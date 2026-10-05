@@ -261,3 +261,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P505.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - trampas de abanico y abismo en uniones (p. 3 «Identifying Fan traps / Resolving Fan traps», «Identifying Chasm traps») — ya cubierta: el riesgo que modelan (doble conteo al unir por relaciones uno a muchos) está en P511 H02 (`validate="many_to_one"` + conservación del grano) y P505 H02 (autoría completa sobre muchos a muchos); la formulación como «trampa» es propia de diseño de universos BI.

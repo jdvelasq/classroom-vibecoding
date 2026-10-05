@@ -273,3 +273,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Programa online de 12 semanas, con ruta con o sin código, sobre IA generativa, prompts, RAG, agentes con herramientas y memoria (LangChain, LangGraph, MCP), sistemas multiagente, su evaluación y protección. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P503.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - modelado ER y traducción a diseño físico (p. 2 «Students will learn ER modeling and how ER models are translated into physical database design»; «Assignment # 1 Creating ER model and implementing it using MySQL») — ya cubierta: P503 H02 (multivalor → muchos a muchos), H04 (PK/FK/`NOT NULL` verificables), S03 (esquema reutilizado por P504–P508).
+  - manejo de nulos en dimensiones (p. 2 «Null handling») — ya cubierta: P510 H02 (`COALESCE` a `'unknown'` en lenguajes nulos), P503 H03 («Sin fuente identificada»).
