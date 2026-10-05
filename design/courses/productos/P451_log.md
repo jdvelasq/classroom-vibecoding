@@ -97,3 +97,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «modeling and decision-making life cycle… including its human, social, and ethical implications» (p. 1). Categoría: **ya cubierta**. El curso trata la revisión humana (P450 H01–H02) y la retroalimentación del consumidor (P451 H01–H02). La ficha no aporta un mecanismo operativo concreto que cambie lo que el estudiante hace.
+
+## S03.P451.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo de 11 semanas sin codificación sobre sesgos en decisiones, análisis descriptivo, Big Data, experimentación, ML, analítica prescriptiva y cuestiones ético-jurídicas y organizacionales, con casos (UPS, Netflix, TalkTalk). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

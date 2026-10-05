@@ -97,3 +97,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de catálogo de un curso de pregrado: fundamentos probabilísticos de la inferencia y «ciclo de vida de modelado y toma de decisiones» con sus implicaciones humanas, sociales y éticas. Lista temas (decisión frecuentista y bayesiana, FDR, inferencia causal, Thompson sampling, Q-learning, privacidad diferencial, sistemas de recomendación) sin resultados de aprendizaje ni prácticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P452.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Hacking y amenazas internas» (p. 8) y tarea TalkTalk «¿Cómo debería haber protegido los datos de sus clientes?» (p. 11) — ya cubierta en el nivel de mecanismo (credencial fuera del código en P427, control de acceso por rol en P452); la respuesta organizacional a una brecha es fuera de alcance.

@@ -97,3 +97,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privacidad diferencial como tema (p. 1: «differential privacy»). Categoría: **fuera de alcance**. En la ficha es una técnica de inferencia estadística, sin práctica, caso ni datos que permitan enseñarla con rigor como control de una capacidad en operación. P453 H01–H02 ya ejerce la protección de datos personales en una salida compartida. Al ser evidencia institucional, la ficha ilustra posibilidades pero no impone un tema.
+
+## S03.P453.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 9 «RGPD… Privacidad y anonimización» (p. 8) — ya cubierta: P453 enmascara el identificador personal de la salida (H01, H02); la distinción enmascaramiento/seudonimización/anonimización ya tiene propuesta en P453 desde otro documento; este folleto sólo nombra el tema.

@@ -149,3 +149,15 @@
   - Ficha de catálogo de un curso de pregrado: fundamentos probabilísticos de la inferencia y «ciclo de vida de modelado y toma de decisiones» con sus implicaciones humanas, sociales y éticas. Lista temas (decisión frecuentista y bayesiana, FDR, inferencia causal, Thompson sampling, Q-learning, privacidad diferencial, sistemas de recomendación) sin resultados de aprendizaje ni prácticas. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - diseño experimental, inferencia causal, Thompson sampling, control óptimo y Q-learning (p. 1). Categoría: **fuera de alcance**. Pertenecen a Fundamentos, Predictiva o Prescriptiva. Las pruebas A/B o los bandits como mecanismo de liberación no aparecen en el documento; sólo se nombran las técnicas.
+
+## S03.P400.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo de 11 semanas sin codificación sobre sesgos en decisiones, análisis descriptivo, Big Data, experimentación, ML, analítica prescriptiva y cuestiones ético-jurídicas y organizacionales, con casos (UPS, Netflix, TalkTalk). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Desafíos de implementación. Creación de la infraestructura adecuada. Estrategia de Big Data» (p. 8) — fuera de alcance: estrategia/infraestructura organizacional y Big Data, excluidas por las fronteras.
+  - cita «Los proyectos impulsados por datos no terminarán nunca, pues están en constante evolución e iteración» (p. 2) — ya cubierta como principio por C05 (observar y mejorar); sin práctica concreta.
+  - web scraping, API como fuente, limpieza, estadística descriptiva, experimentación, ML y árboles de decisión (p. 7–8) — fuera de alcance: Fundamentos, Descriptiva, Predictiva y Prescriptiva.
