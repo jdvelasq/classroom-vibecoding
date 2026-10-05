@@ -76,3 +76,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P321.09
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - implementación responsable con tolerancia al riesgo, supervisión y gobernanza (p. 5) y sesgos (p. 5–6) — ya cubierta: guardas, autoridad y gatillos de P320 H01–H03 y registro operativo de P321; el folleto es de nivel directivo y no aporta método.

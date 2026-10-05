@@ -74,3 +74,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - focalización de la inversión en grupos poblacionales (p. 3: «Equidad de la mujer … Grupos Étnicos … Víctimas») — fuera de alcance: describe a quién se dirige el programa público, no un método de auditoría de equidad de políticas; no aporta caso ni datos utilizables.
+
+## S03.P320.09
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - implementación responsable con tolerancia al riesgo, supervisión y gobernanza (p. 5) y sesgos (p. 5–6) — ya cubierta: guardas, autoridad y gatillos de P320 H01–H03 y registro operativo de P321; el folleto es de nivel directivo y no aporta método.

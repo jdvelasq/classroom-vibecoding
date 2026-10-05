@@ -118,3 +118,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - pertinencia laboral de «Análisis de Datos» e «Inteligencia Artificial» como temáticas priorizadas (p. 2: «temáticas priorizadas: … 2. Inteligencia Artificial 3. Análisis de Datos») — marginal: confirma pertinencia general de la analítica, pero no menciona decisión, optimización, simulación ni gobierno de políticas; governmental no define estándar ni herramientas.
   - metodología de bootcamp, *learning by doing* y mentoría (p. 1) — fuera de alcance: modalidad pedagógica de otro tipo de formación; los talleres presenciales ya son guiados y prácticos.
+
+## S03.P300.09
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo en línea de ocho módulos sobre capacidades de IA, aprendizaje automático, NLP, robótica, estrategia, equipos y futuro de la IA, con proyecto final de plan de negocio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «simulaciones para hacer predicciones» y capacidad de IA para «toma de decisiones» (p. 1, 4–5) — marginal: mención de folleto sin contenido operable; la simulación para validar políticas ya está en P310 y P313.
+  - fundamentos de ML, redes neuronales, visión, NLP, robótica, construcción de equipos y estrategia corporativa de IA (p. 5–6) — fuera de alcance: Predictiva u otros programas; institutional ilustra, no impone identidad.
