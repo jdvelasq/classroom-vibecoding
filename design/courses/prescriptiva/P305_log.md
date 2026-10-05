@@ -110,3 +110,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Cambridge Breakthrough Science «cuáles son los dos medicamentos -de entre cuatro- que mejor pueden desarrollarse» (p. 10) — ya cubierta: selección de cartera bajo recurso limitado (P305 H02–H04).
+
+## S03.P305.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un curso online sobre historia de la web y la nube, Node.js, contenedores y llaves, DevOps y sus métricas, casos de migración, serverless, empresa ágil y cloud native. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

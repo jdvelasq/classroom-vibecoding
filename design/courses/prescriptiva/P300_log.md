@@ -160,3 +160,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Módulo 1 «Trampas en decisión» y tarea Carter Racing «si participar o no en una carrera» (pp. 7, 11) — fuera de alcance: decisión única de deliberación sobre sesgo de selección de datos; no es una decisión recurrente.
   - módulos de ML y redes neuronales, incluido «Aprendizaje de refuerzo para empresas» (pp. 7–8) — fuera de alcance: Predictiva; el aprendizaje por refuerzo como mecanismo de política no tiene caso ni datos en el curso y desplazaría la identidad hacia una técnica.
+
+## S03.P300.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un curso online sobre historia de la web y la nube, Node.js, contenedores y llaves, DevOps y sus métricas, casos de migración, serverless, empresa ágil y cloud native. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «The OODA Loop» (Módulos 5 y 7, pp. 14–15) — marginal: el ciclo observar–orientar–decidir–actuar se menciona como consigna de agilidad organizacional sin contenido; el ciclo contexto observable → acción → registro → revisión ya es el contrato de política del curso (P300 H03; arquitectura del curso).
+  - contenedores, Docker, Kubernetes, serverless, PKI (pp. 13–15) — fuera de alcance: infraestructura y despliegue (Productos de datos).
