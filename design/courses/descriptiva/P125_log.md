@@ -428,3 +428,12 @@
   - distribución muy sesgada: media frente a mediana, cuantiles y extremos (p. 133: «the distribution of the forecast error is heavily skewed to the right. The mean is twice as large as the median») — ya cubierta: P125 H03 (mediana, P10, P90 y caja, con la elección del estadístico justificada).
   - efecto de composición al comparar grupos (p. 135: «Model B might look bad compared to Model A, as it is mostly used to forecast complicated articles») — ya cubierta: P125 H02 construye pares comparables precisamente para controlar la composición. En P122 el comentario sobre «cambio de mezcla» que no se implementa es un defecto que ya registró S02, y esta fuente (errores de pronóstico) no aporta caso ni método para corregirlo.
   - acotar extremos para que no dominen gráficos y regresiones (p. 132: «extreme large outliers are shifted to a lower value»), banda de cuartiles por grupo (p. 137) — marginal: son variantes de visualización de una distribución que P125 H03 ya cubre con caja y percentiles.
+
+## S03.P125.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - transformación logarítmica porque la variación de los salarios crece con el nivel (p. 144: «Since the variation in salaries is much greater for higher salaries, it is appropriate to apply a log transformation») — marginal: P125 ya responde a la asimetría salarial con mediana, P10/P90 y diagrama de caja (H03) y con brechas relativas en % (H02, H04). El log sirve aquí para estabilizar la varianza del modelo, no para describir.
+  - variables cualitativas (dummies) con interacción para comparar poblaciones (pp. 185–189), y modelos separados por grupo con BY (p. 179) — fuera de alcance: comparar mediante coeficientes es modelado. P125 ya compara grupos frente a pares definidos por categoría × trayectoria × banda (H02) sin modelo.

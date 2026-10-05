@@ -417,3 +417,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Colección de artículos técnicos y de proceso sobre pronóstico con productos SAS; lo pertinente para descriptiva es la preparación y exploración de series (acumulación, intervalo, jerarquías, diagnóstico del índice temporal, descomposición tendencia–estación) y el análisis descriptivo de una distribución sesgada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P108.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste por mínimos cuadrados, nueve métodos de selección de variables, pruebas de hipótesis, colinealidad, residuos e influencia, y gráficos de diagnóstico de ODS Graphics. Ejemplos: salarios de béisbol, predicción de aptitud aeróbica, peso por estatura y edad, variables cualitativas, ridge y falta de ajuste. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

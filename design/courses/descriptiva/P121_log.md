@@ -430,3 +430,11 @@
   - la longitud de la estación es una decisión, no un supuesto (p. 36: «if a particular business’s seasonal cycle is 14 days long, the seasonality is 14 instead of 7») — marginal: la matriz 7 × 24 (H04) ya fija un ciclo semanal explícito, y este caso no ofrece evidencia de otro ciclo.
   - acumular transacciones a una frecuencia fija y distinguir esa acumulación de la agregación jerárquica (p. 36: «The choice of frequency is an important modeling decision … often called _time series accumulation_ … to distinguish it from … aggregation across a hierarchical structure»; p. 22: `ACCUMULATE = AVG`) — ya cubierta: P121 H01/H03 (sumas aditivas, razón de sumas), P150 H04 (serie mensual desde la tabla de líneas) y P154 H01 (aditividad en el grano de consumo).
   - cambiar la frecuencia de una serie, de mensual a semanal mediante spline (p. 109: «from a lower frequency (monthly) to a higher frequency (weekly), the EXPAND procedure uses a cubic spline») — fuera de alcance: interpolar a una frecuencia mayor fabrica observaciones. Para describir sólo es legítimo acumular hacia una frecuencia menor, cosa que ya se hace.
+
+## S03.P121.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Durbin-Watson y autocorrelación en datos de serie temporal (p. 19: «since the data are essentially time series data, examine the Durbin-Watson statistic») — fuera de alcance: es un diagnóstico de residuos de un modelo temporal y le corresponde a predictiva.

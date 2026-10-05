@@ -421,3 +421,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ajustar la serie por variaciones sistemáticas conocidas (tipo de cambio, días hábiles) y completar faltantes con una serie proxy (pp. 94–95: «Examples of systematic adjustments are currency-unit conversions, exchange rates, trading days») — marginal: P106 H04 ya lleva magnitudes a una unidad común y P122 H05 enseña a no imputar. Rellenar con una proxy introduce imputación sin caso que la justifique.
+
+## S03.P107.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exclusión silenciosa de observaciones con faltantes en cualquier variable del análisis (p. 76: «If any variable needed for any regression is missing, the observation is excluded from all estimates»; p. 144: «59 observations are excluded because they have missing values») — ya cubierta: P107 H01 hace explícita la decisión sobre los nulos, y P122 H05 reporta la cobertura antes de comparar y no imputa. El documento no aporta una práctica nueva para la descripción.

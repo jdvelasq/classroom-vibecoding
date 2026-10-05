@@ -431,3 +431,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - efecto de composición al comparar grupos (p. 135: «Model B might look bad compared to Model A, as it is mostly used to forecast complicated articles») — ya cubierta: P125 H02 construye pares comparables precisamente para controlar la composición. En P122 el comentario sobre «cambio de mezcla» que no se implementa es un defecto que ya registró S02, y esta fuente (errores de pronóstico) no aporta caso ni método para corregirlo.
+
+## S03.P122.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exclusión silenciosa de observaciones con faltantes en cualquier variable del análisis (p. 76: «If any variable needed for any regression is missing, the observation is excluded from all estimates»; p. 144: «59 observations are excluded because they have missing values») — ya cubierta: P107 H01 hace explícita la decisión sobre los nulos, y P122 H05 reporta la cobertura antes de comparar y no imputa. El documento no aporta una práctica nueva para la descripción.

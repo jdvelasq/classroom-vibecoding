@@ -421,3 +421,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ajustar la serie por variaciones sistemáticas conocidas (tipo de cambio, días hábiles) y completar faltantes con una serie proxy (pp. 94–95: «Examples of systematic adjustments are currency-unit conversions, exchange rates, trading days») — marginal: P106 H04 ya lleva magnitudes a una unidad común y P122 H05 enseña a no imputar. Rellenar con una proxy introduce imputación sin caso que la justifique.
+
+## S03.P106.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste por mínimos cuadrados, nueve métodos de selección de variables, pruebas de hipótesis, colinealidad, residuos e influencia, y gráficos de diagnóstico de ODS Graphics. Ejemplos: salarios de béisbol, predicción de aptitud aeróbica, peso por estatura y edad, variables cualitativas, ridge y falta de ajuste. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

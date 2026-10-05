@@ -425,3 +425,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - definir y explorar jerarquías de series, gráficos *envelope* de muchas series y segmentación gráfica (pp. 87–92: «structure the time series data into hierarchical time series at particular frequencies», «Envelope … series distribution over time») — ya cubierta en lo descriptivo: P152 H01/H04 recorre jerarquías con roll-up y drill-down. La exploración de miles de series y la segmentación para elegir estrategias de pronóstico pertenecen a predictiva.
+
+## S03.P152.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Durbin-Watson y autocorrelación en datos de serie temporal (p. 19: «since the data are essentially time series data, examine the Durbin-Watson statistic») — fuera de alcance: es un diagnóstico de residuos de un modelo temporal y le corresponde a predictiva.

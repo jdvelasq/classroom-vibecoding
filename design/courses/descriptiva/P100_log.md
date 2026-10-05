@@ -642,3 +642,19 @@
   - identificar series cortas e intermitentes (p. 88: «short series … intermittent time series (for example, a series that contains a large number of zero values)») — fuera de alcance: su propósito declarado es elegir métodos de pronóstico (predictiva).
   - SSA, descubrimiento de motivos, similitud con DTW y extracción de características (pp. 42–51) — fuera de alcance: técnicas de reducción de dimensión para aprendizaje automático, sin caso descriptivo en el curso.
   - simulaciones *rolling*, comparación de modelos, escenarios *what-if*, control charts del error, FVA, ML y redes neuronales (pp. 99–102, 153–154, 166–168, 77–82) — fuera de alcance: pertenecen a predictiva (evaluación de pronósticos) o a prescriptiva y productos de datos (escenarios y monitoreo).
+
+## S03.P100.52
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de PROC REG: ajuste por mínimos cuadrados, nueve métodos de selección de variables, pruebas de hipótesis, colinealidad, residuos e influencia, y gráficos de diagnóstico de ODS Graphics. Ejemplos: salarios de béisbol, predicción de aptitud aeróbica, peso por estatura y edad, variables cualitativas, ridge y falta de ajuste. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ajuste de regresión lineal y polinómica con lectura de ANOVA, R², valores *p* y ecuación ajustada (pp. 6–7, 10–11, 16–17: «R-square of 0.77 indicates that Height accounts for 77% of the variation in Weight») — fuera de alcance: modelar y explicar varianza le corresponde a predictiva y a Estadística; sería meter capacitación en Estadística dentro de descriptiva.
+  - nueve métodos de selección de variables (FORWARD, BACKWARD, STEPWISE, MAXR, RSQUARE, CP…) con criterios AIC/BIC/Cp (pp. 5, 160–178) — fuera de alcance: construcción de modelos predictivos («The goal is to develop an equation to predict fitness», p. 160).
+  - advertencia de que los estadísticos quedan sesgados tras seleccionar el modelo, y de que hace falta teoría sustantiva (p. 93: «no statistical method can be relied on to identify the "true" model»; p. 178: «the p-values for the parameter estimates are not valid») — fuera de alcance: es un guardrail de inferencia tras la selección. El curso no hace selección de modelos.
+  - residuos estudentizados > 2 como atípicos, leverage > 2p/n y Cook's D como influencia (pp. 11, 107, 146–147: «Studentized residuals … can be used to identify outlying or extreme observations») — fuera de alcance: los atípicos se definen respecto de un modelo ajustado. Para describir atípicos en descriptiva haría falta exploración de distribuciones, no diagnóstico de regresión, y el documento no ofrece esa variante.
+  - paneles de diagnóstico (Q-Q, histograma y box plot de residuos, observado frente a predicho, gráfico RF, residuos frente a regresor con loess) (pp. 9, 13–15, 149, 153) — fuera de alcance: son evidencia visual sobre la adecuación del modelo, no sobre el fenómeno descrito. El principio de «evidencia visual antes de decidir» ya lo exige `AGENTS.md` para todos los notebooks.
+  - una observación muy influyente (Pete Rose) domina el ajuste y se excluye para reajustar (pp. 147–148: «Pete Rose is the highly influential observation. You might obtain a better fit … if you omit his statistics») — fuera de alcance como técnica. Como idea («pocos casos pueden dominar un resumen») ya está cubierta por los umbrales de volumen de P120 H06, P121 H05 y P122 H06, y por el doble criterio de P125 H04.
+  - colinealidad, VIF y regresión ridge (pp. 190–193), y prueba de falta de ajuste con réplicas (pp. 194–195) — fuera de alcance: estimación estadística y diseño experimental.
