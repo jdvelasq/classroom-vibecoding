@@ -234,3 +234,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Curso de posgrado de minería de datos aplicada a datos de salud (EHR), con un proyecto por entregables (propuesta, reporte de recolección de datos, reporte de preparación, informe final) y un survey paper. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P521.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Combining data in SQL ... JOIN and UNION», «INNER, RIGHT, FULL OUTER, EXCEPTION and CROSS JOINs», «COALESCE» (p. 6) — ya cubierta: P510 H02 (`LEFT JOIN` + `COALESCE` conservando cursos sin calificación) y P511 H02 (cardinalidad validada). La pérdida silenciosa de claves en la unión de P521 (H02) es un defecto ya registrado por S02; el listado de tipos de JOIN de USC no aporta evidencia adicional.

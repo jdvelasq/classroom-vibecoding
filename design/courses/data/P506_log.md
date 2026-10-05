@@ -246,3 +246,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Curso de posgrado de minería de datos aplicada a datos de salud (EHR), con un proyecto por entregables (propuesta, reporte de recolección de datos, reporte de preparación, informe final) y un survey paper. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P506.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SELECT/WHERE/GROUP BY/HAVING (p. 6), «Subqueries ... Multi-step aggregation or filtering» (p. 6) — ya cubierta: P504, P505 y P506 H01 (CTE para separar filtro y agregación).

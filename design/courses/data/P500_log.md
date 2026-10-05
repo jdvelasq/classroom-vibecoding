@@ -374,3 +374,14 @@
   - «Data Mining Project Deliverable 1 – Proposal ... describes the dataset, repository from where the dataset will be obtained, define the problem» (p. 6) — ya cubierta en el principio de C01 (pregunta → datos) de P500/P516/P526; sin proyecto integral en el curso por diseño de talleres guiados.
   - desafíos de datos clínicos de historias electrónicas (p. 1: «characteristics and analytic challenges on dealing with clinical data from electronic health records») — fuera de alcance: no hay caso ni datos trazables en `datalabs/`/catálogo que permitan enseñarlo con rigor, y añade sensibilidad de datos de salud.
   - survey paper y simposio (p. 6–7) — fuera de alcance: forma de evaluación ajena a talleres `Pxxx` con `pytest`.
+
+## S03.P500.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de pregrado sin prerrequisitos que combina modelado relacional, normalización, SQL, NoSQL/MongoDB, BI y visualización con Excel/Access/Tableau, más un proyecto final en equipo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - objetivo «Pose questions, collect relevant data, analyze data, interpret data and provide insights» (p. 1) y proyecto «identify a problem to solve, collect the necessary data, prepare, clean and format the data» (p. 2–3) — ya cubierta en el principio de C01 (pregunta → requisitos de datos) que siguen P500, P510, P516–P517 y P526; el proyecto integral de análisis y dashboards pertenece a Descriptiva.
+  - «Use MS Excel, MS Access, SQL, NoSQL, MongoDB and leading industry tools» (p. 1) — fuera de alcance: organización por herramientas contraria a C05.

@@ -244,3 +244,11 @@
 - **Resultado:** refuerza T02.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P516.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de pregrado sin prerrequisitos que combina modelado relacional, normalización, SQL, NoSQL/MongoDB, BI y visualización con Excel/Access/Tableau, más un proyecto final en equipo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

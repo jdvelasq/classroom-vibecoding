@@ -256,3 +256,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Curso de posgrado de minería de datos aplicada a datos de salud (EHR), con un proyecto por entregables (propuesta, reporte de recolección de datos, reporte de preparación, informe final) y un survey paper. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P503.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Relational and entity-relationship modeling», «Keys: primary, foreign, candidate, surrogate, super», «Minimum and maximum cardinality», «Business rules» (p. 5) — ya cubierta: P503 H02 (relaciones muchos a muchos) y H04 (restricciones verificables); P511 H02 valida cardinalidad.
+  - «Anomalies and the need for normalization», «First, second, third normal forms», «Denormalization» (p. 5) — ya cubierta: normalización de campos multivalor en P503 H02 y contraste plano/dimensional P511–P512 H02. Enseñar formas normales como secuencia sería lógica interna de Bases de Datos (riesgo de identidad).
