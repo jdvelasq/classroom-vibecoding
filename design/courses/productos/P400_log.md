@@ -324,3 +324,16 @@
   - «prácticas en el sector productivo», proyectos de extensión y salidas de campo como estrategia (pp. 56–57, 80) — marginal/fuera de alcance: no aporta caso, datos ni práctica operativa concreta; la necesidad de un caso con usuario y decisión en P400–P455 ya está registrada en las auditorías S02 y este documento no ofrece uno.
   - «uso de metadatos para la investigación a través de ejercicios de modelación» y recursos como laboratorios virtuales, simuladores o repositorios de software (pp. 72, 79) — marginal: menciones genéricas de recursos didácticos sin relación con catálogo/linaje (P443, P454) más allá de la palabra.
   - crítica a la «ausencia de objetivos medibles, y metas» en la armonización (p. 110) — fuera de alcance: se refiere al proceso institucional de reforma curricular, no a criterios de éxito de una capacidad analítica (C01).
+
+## S03.P400.27
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Circular institucional que establece una «Ruta de Armonización Curricular» de cuatro etapas (marco normativo, pertinencia y resultados de aprendizaje, organización curricular, implementación y evaluación continua de los resultados de aprendizaje) en las dimensiones macro, meso y microcurricular, en el marco del Acuerdo 02 de 2020 del CESU. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - resultados de aprendizaje como «declaraciones expresas de lo que se espera que un estudiante conozca y demuestre» y eje de mejora curricular (p. 2) — fuera de alcance de S03: es un requisito de diseño de programa y curso (RAA/RAP), ya registrado como pendiente en `s05-diseno-productos.md` («Pendiente: detallar programa-calendario, RAA…»); no cambia lo que el estudiante hace en ningún taller.
+  - etapa 4, «diseñar los mecanismos de monitoreo y evaluación» de los resultados de aprendizaje y «evaluación continua de la gestión curricular» (p. 3) — fuera de alcance: se refiere a la evaluación institucional del currículo, no al monitoreo de capacidades analíticas en operación (P422, P423 y P442 no guardan relación).
+  - dimensión microcurricular: «didácticas y procesos de evaluación de los aprendizajes» (p. 2) — marginal: es un marco general; la evaluación con `pytest` y la prueba de participación (`tests/test_activity.py`) ya están definidas en `AGENTS.md`, y la debilidad de la evaluación por existencia de archivos ya está registrada en S02 para cada Pxxx.
+  - atender «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento, las características de los estudiantes» (p. 3) — marginal: principio de pertinencia sin contenido operable para un taller de productos de datos.
