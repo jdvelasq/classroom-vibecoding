@@ -588,3 +588,20 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Project Scope Definition — traducir objetivos de negocio a formulaciones con «inputs, outputs, constraints, and quantitative evaluation criteria» (p. 14) — ya cubierta en el principio de C01 (P500, P516–P517, P526); los talleres sin pregunta (P513, P518, P519, P522–P525) ya están escalados por S02.
   - Project Design, Model Evaluation, Operation and Maintenance, Continuous Improvement (pp. 17–22) — fuera de alcance: modelado, despliegue y monitoreo pertenecen a otros cursos.
+
+## S03.P500.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - distinción entre almacenamiento y medición («storage is different from Measurement», p. 83) e instanciación de valores (p. 84) — ya cubierta: P500 H01 y P513 H01 declaran el formato en la lectura; el defecto de tipos de P513 se trata con dataops-09, no con esta guía.
+  - conversión de fecha ajustando el formato por defecto («Change the default date format to match the format of the Date field», p. 163) — ya cubierta: P512 H01 (dimensión de fecha desde `d/m/yy`) y P500 H01 (convención regional).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Data Audit como «comprehensive first look»: estadísticos, histogramas y pestaña Quality con faltantes, *outliers* y extremos por campo (pp. 71, 74, 76–77) — marginal: perfilado de herramienta; el curso ya trata faltantes y reglas de calidad derivadas de la pregunta (P503 H03, P516 H02). Señal de herramienta que por sí sola no impone tema.
+  - imputación de faltantes por C&RT o por media (p. 77: «impute or replace missing values … including the C&RT algorithm»; p. 148: «Impute when … Blank and Null values … Fixed As … Mean») y tratamiento de *outliers* «coerce, discard, or nullify» (p. 79) — fuera de alcance: preparación para un modelo (curso predictivo); el documento no aporta criterio para juzgar o documentar la imputación, que es lo que interesaría a `data.C03`/`C04`.
+  - Automated Data Preparation «without needing to have prior knowledge of the statistical concepts involved» (p. 63), justificada por la exactitud del modelo (p. 68) — fuera de alcance y contraria a la identidad: la preparación automática no justificada choca con `data.C02` («de forma justificable»); ilustra el riesgo de que la herramienta organice el curso.
+  - CRISP-DM como organización de proyectos (pp. 7, 20) — fuera de alcance como propuesta: marco metodológico de minería de datos, mencionado sin contenido sobre datos; no cambia un taller.
+  - SQL/in-database modeling, generación de SQL (pp. 7, 18, 21) — fuera de alcance: modelado en el motor.
+  - descarte de registros con objetivo nulo (p. 206: «Cases where the target has a null value are of no use when building the model») y filtrado de campos por importancia predictiva (pp. 147, 213) — fuera de alcance: preparación orientada al modelo.
+  - derivación de atributos sobre series concatenadas y descarte del primer registro de cada serie «to avoid large (incorrect) jumps … at boundaries» (p. 230) — fuera de alcance: ingeniería de atributos para modelado, sobre datos ficticios (p. 227).

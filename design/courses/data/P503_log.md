@@ -402,3 +402,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «detecting missing values, duplicate records, or inconsistencies may prompt additional data acquisition or preprocessing» (p. 15) — ya cubierta: P503 H03 (identidad y faltantes antes de cargar), P500 H04.
+
+## S03.P503.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - registro de canasta en formato ancho con banderas por categoría (pp. 321–322) — marginal: variante de representación; P503 H02 ya contrasta campos multivalor con relaciones normalizadas.

@@ -379,3 +379,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - dimensiones de calidad «completeness, accuracy, timeliness, consistency, and representativeness» (p. 15) — ya cubierta: P516 H02 expresa reglas por dimensión (completeness, validity, uniqueness, scope). Añadir dimensiones sin caso que las exija sería marginal; la representatividad del corpus Scopus (P503–P507) es límite ya registrado por S02.
+
+## S03.P517.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de ejemplos de una herramienta comercial de minería de datos organizada alrededor de CRISP-DM; casi todos los capítulos son de modelado (clasificación, series de tiempo, GLM, supervivencia) sobre archivos de demostración, muchos ficticios; la preparación de datos aparece como paso previo al modelo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

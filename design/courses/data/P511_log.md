@@ -388,3 +388,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - integración «merging datasets, aligning formats, standardizing scales ... mitigates risks of fragmentation and duplication» (p. 16) — ya cubierta: P511 H01–H02.
+
+## S03.P511.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de ejemplos de una herramienta comercial de minería de datos organizada alrededor de CRISP-DM; casi todos los capítulos son de modelado (clasificación, series de tiempo, GLM, supervivencia) sobre archivos de demostración, muchos ficticios; la preparación de datos aparece como paso previo al modelo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

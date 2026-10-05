@@ -377,3 +377,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «anonymizing sensitive attributes» (p. 16); «anonymization of sensitive data» (p. 20) — marginal: defectos de identificadores sensibles ya registrados por S02 (`ssn`, `user_id`); corrección de higiene, no nueva capacidad.
+
+## S03.P526.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Aggregate + Append + Transpose para reorganizar predicciones (pp. 308–310) — marginal: reestructuración al servicio de un gráfico de modelo; sin contribución nueva frente a los cambios de grano existentes.

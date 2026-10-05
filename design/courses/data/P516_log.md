@@ -389,3 +389,12 @@
 - **Resultado:** refuerza T02.
 - **Señales descartadas relevantes:**
   - dimensiones de calidad «completeness, accuracy, timeliness, consistency, and representativeness» (p. 15) — ya cubierta: P516 H02 expresa reglas por dimensión (completeness, validity, uniqueness, scope). Añadir dimensiones sin caso que las exija sería marginal; la representatividad del corpus Scopus (P503–P507) es límite ya registrado por S02.
+
+## S03.P516.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - filtrar campos con porcentaje de calidad bajo un umbral (p. 79: «filter any fields with a quality percentage below a specified threshold») — marginal y contraria al diseño: P516/P517 derivan las reglas de la pregunta (P517 H02, contrato de seis de 147 columnas) en vez de juzgar todas las columnas por completitud.
+  - códigos centinela documentados en el diccionario («Credit_rating … 9=missing values», p. 27) — marginal: el guía sólo los lista para datos de demostración; la falta de diccionario de Vermont ya está registrada en S01 y la señal no aporta caso ni método.

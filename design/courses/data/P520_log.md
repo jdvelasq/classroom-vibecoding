@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Revisión sistemática por expansión de citas de 18 metodologías (CRISP-DM, TDSP, ASUM-DM, DMME, MAISTRO…) que deriva PRODIG8: seis dimensiones de ejecución, gobierno y ética transversal y mejora continua. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P520.47
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Aggregate + Append + Transpose para reorganizar predicciones (pp. 308–310) — marginal: reestructuración al servicio de un gráfico de modelo; sin contribución nueva frente a los cambios de grano existentes.
