@@ -137,3 +137,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «cost metrics and technical requirements of an AI software development plan» (p. 6, semana 1); «Analyze technical and operational requirements to build AI models» (p. 6) — marginal: el seguimiento de costo frente a presupuesto ya está en P449 (H01) y los requisitos operativos del producto en la tarjeta/contrato (P408–P411, P454); el documento trata costos y requisitos como planificación previa al desarrollo, no como operación.
+
+## S03.P449.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea sobre plataformas digitales y mercados de dos lados: efectos de red, precios, arquitectura de plataformas y APIs, estándares, gating de calidad, regulación, antimonopolio y modelado de dinámicas de plataforma. Es estrategia de producto/plataforma, no operación de capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

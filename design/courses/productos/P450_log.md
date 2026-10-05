@@ -137,3 +137,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Learn to define an appropriate level of machine involvement in interactions with humans and computers» (p. 7, semana 5); «Analyze how humans and machines can work together» (p. 7, semana 6) — marginal: P450 ya separa recomendación y acción autorizada y exige aprobación explícita (H01–H02). Declarar qué recomendaciones exigen revisión humana y cuáles pueden ejecutarse automáticamente sería un contraste interesante, pero el documento sólo lo nombra en una línea, sin método, criterio ni evidencia de cómo se opera; como evidencia institucional no basta para modificar el taller.
+
+## S03.P450.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 5 «Gating – Establishing Quality» (p. 15) — fuera de alcance: control de calidad de participantes de una plataforma; la compuerta de calidad de insumos y la autorización humana ya están en P402 H01 y P450 H02.

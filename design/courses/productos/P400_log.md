@@ -205,3 +205,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Implement the Lawler Model for defining an AI problem and identify key steps to build an organization case» (p. 6; p. 7, semana 8); «Identify an operational challenge and propose a technical solution» (p. 6); capstone «plan for an AI-based product or service» (p. 8) — fuera de alcance: formular el problema y el caso organizacional corresponde a Fundamentos; el producto terminal es una propuesta, no una capacidad versionada, comprobable y observable.
   - ML, deep learning, algoritmos bayesianos y de regresión (p. 6–7) — fuera de alcance (Predictiva/IA); diseño de interfaces HCI (p. 7) — fuera de alcance (UX), salvo la dimensión de autoridad humana ya tratada en P450; GANs y medios sintéticos, impacto social y económico (p. 4, p. 7) — fuera de alcance; «superminds» y diseño organizacional (p. 7) — fuera de alcance.
+
+## S03.P400.17
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-digital-platforms.md` (`source_sha256`: 7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea sobre plataformas digitales y mercados de dos lados: efectos de red, precios, arquitectura de plataformas y APIs, estándares, gating de calidad, regulación, antimonopolio y modelado de dinámicas de plataforma. Es estrategia de producto/plataforma, no operación de capacidades analíticas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - efectos de red, precios, kick-starting, antimonopolio, modelado de dinámicas de plataforma (pp. 9, 15) — fuera de alcance: estrategia y economía de plataformas.
