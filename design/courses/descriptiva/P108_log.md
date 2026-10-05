@@ -89,3 +89,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privacidad diferencial (p. 1: «differential privacy») — fuera de alcance: los índices de P108 y P109 registran como límite que no hay garantía formal de privacidad. Pero el documento sólo nombra la técnica, y en un taller descriptivo no hay caso ni datos para enseñarla con rigor sin desplazar la contribución de P108 (ataque de enlace y generalización medida, H02–H05).
+
+## S03.P108.11
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «RGPD», «Privacidad y anonimización» (p. 8) — ya cubierta: P102 H02, P108 H01–H06, P109 H02–H03.

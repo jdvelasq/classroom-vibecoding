@@ -138,3 +138,17 @@
   - algoritmos de clustering (p. 1) — fuera de alcance aquí: el documento sólo nombra la técnica, sin uso descriptivo concreto. La única detección de grupos del curso (Louvain sobre co-ocurrencias en P123 H05) ya cubre la estructura relacional que el curso necesita.
   - diseño experimental básico (p. 1) — fuera de alcance: el curso describe datos observados y no los diseña.
   - implicaciones humanas, sociales y éticas del ciclo de modelado (p. 1) — ya cubierta en lo descriptivo por P102 H02 (minimización), P108 H01–H05 (riesgo de reidentificación) y P125 H07 (no divulgar salarios individuales). El documento no detalla prácticas que añadir.
+
+## S03.P100.11
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo en línea de 11 semanas, sin codificación, organizado en sesgos de decisión, análisis descriptivo, Big Data, experimentación, predictivo (ML, redes neuronales), prescriptivo y cuestiones ético-jurídicas; casos y tareas de negocio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - web scraping, API, «¿Qué datos puedes encontrar?», Amazon y APIs (p. 7) — fuera de alcance: adquisición de datos externos; los casos del curso parten de fuentes trazables provistas.
+  - «Experimentación: el estándar de oro» (p. 7), análisis predictivo y redes neuronales (pp. 7–8), prescriptivo y árboles de decisión (p. 8) — fuera de alcance: inferencia causal experimental, predictiva y prescriptiva pertenecen a otros cursos; P125 H06 ya fija el límite causal de una descripción.
+  - sesgos y trampas en decisiones (p. 7; Módulo 8, p. 8) — marginal: contexto de decisión, sin producto descriptivo nuevo.
+  - Big Data y las cuatro V (p. 7) — marginal/fuera de alcance: P100 ya trata volumen como ejercicio de ingeniería; no cambia el producto descriptivo.
+  - hacking, amenazas internas, caso TalkTalk (pp. 8, 11) — fuera de alcance: seguridad informática.

@@ -98,3 +98,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - intervalos de confianza, pruebas de permutación y *false discovery rate* (p. 1: «permutation testing, false discovery rate, … confidence intervals») — fuera de alcance: los índices de P120–P122 registran como límite que las tasas por segmento no tienen intervalos ni pruebas de diferencia. Convertir ese límite en inferencia formal (por ejemplo, controlar comparaciones múltiples en un top N de segmentos) mete Estadística inferencial en el curso. Además, el documento no da caso ni profundidad para hacerlo con rigor. Los umbrales de volumen (P120 H06, P121 H05, P122 H06) siguen siendo la salvaguarda descriptiva vigente.
+
+## S03.P122.11
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Estadísticas descriptivas», «Distribuciones normales y no normales» (p. 7) — ya cubierta: histograma con referencia en cero (P122 H02), mediana/percentiles y caja (P125 H03).

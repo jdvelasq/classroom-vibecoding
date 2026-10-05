@@ -95,3 +95,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - inferencia causal (p. 1: «causal inference») — ya cubierta en lo que toca a descriptiva: P125 H06 persiste y verifica el límite «no identifica su causa / no prueba que … cause». La estimación causal en sí queda fuera de alcance.
+
+## S03.P125.11
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Estadísticas descriptivas», «Distribuciones normales y no normales» (p. 7) — ya cubierta: histograma con referencia en cero (P122 H02), mediana/percentiles y caja (P125 H03).

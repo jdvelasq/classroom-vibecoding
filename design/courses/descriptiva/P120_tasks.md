@@ -199,3 +199,123 @@ Actividad: implementation/descriptiva/P120_retail_sales/
 7. No modifiques otras actividades (P121–P125 incluidas), traceability.yaml
    ni design/.
 ```
+
+## T03 — Leer el ranking de segmentos contra la tasa base y su incertidumbre antes de priorizar
+
+- **Estado:** pendiente de discusión
+- **Tipo:** método
+- **Fuentes:**
+  - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 6–7 — el módulo «Análisis descriptivo» («Sé capaz de recopilar, limpiar y describir los datos que tienes», p. 6) incluye «Tamaño del efecto e intervalos de confianza» junto a las estadísticas descriptivas (p. 7): la incertidumbre de una medida forma parte de describirla (Claude, 2026-10-04). Fuente *institutional*: ilustra que otra institución sitúa el intervalo dentro de lo descriptivo; no impone el método.
+- **Qué gana el estudiante:** antes de priorizar por tasa, pregunta cuánto
+  se aparta cada segmento de la tasa global y si esa distancia se distingue
+  del ruido con el volumen que tiene. Corrige un defecto: `return_risk.csv`
+  ordena combinaciones categoría–canal por tasa (Home & Garden — Mobile App,
+  0,5758, primero) con un único resguardo de volumen (H06), y la tasa global
+  por órdenes es 0,516 (H04). Las tasas por categoría difieren alrededor de
+  un punto (0,512–0,522 en `category_summary.csv`). Con celdas del orden de
+  50–100 órdenes, el semiancho aproximado de un intervalo al 95 % para una
+  proporción cercana a 0,5 es de unos 0,10–0,14, mayor que la distancia
+  entre el primer segmento y la base (≈ 0,06). El ranking por tasa puede ser
+  ruido, y el taller hoy lo presenta como señal de riesgo. Con la diferencia
+  frente a la base y una banda por segmento, el estudiante declara cuándo
+  el orden no se distingue del ruido, y entiende por qué la prioridad por
+  valor devuelto (H07) es la lectura más defendible del producto. También da
+  un criterio explícito a la pregunta de medios de pago (S05).
+- **Anclas actuales:** H04 (tasa global en `kpi_summary.csv`), H06 (umbral
+  de 50 órdenes y matriz; evidencia «no se evalúa si las diferencias son
+  estables»), H07 (riesgo vs prioridad); superficies S02 («tasas sin
+  incertidumbre»), S03 (segmentación, umbral y priorización), S05 (criterio
+  de medios de pago) y S06 (pruebas); índice externo «Sin intervalos ni
+  pruebas de diferencia».
+- **Alternativas menores descartadas:** declarar en markdown que las tasas
+  son parecidas no permite al estudiante comprobar cuándo dejan de serlo.
+  Subir el umbral de volumen reduce el ruido pero no lo muestra, y con 1.000
+  órdenes dejaría pocas celdas. Una prueba de hipótesis formal por pares o
+  un ajuste por comparaciones múltiples desplazaría el taller hacia
+  Estadística; aquí basta una banda de lectura por segmento frente a una
+  sola referencia.
+- **Contrato de no regresión:** se conservan H01–H08, el umbral de 50
+  órdenes, la matriz categoría × canal, la priorización por valor devuelto
+  y los nueve CSV con su esquema y valores; `return_risk.csv` no cambia, de
+  modo que su prueba de recomputación sigue intacta. Se añade
+  `submission/segment_baseline_comparison.csv`. La única modificación
+  admitida a una prueba existente es ampliar la lista esperada de archivos
+  del test de conjunto exacto (sin quitar ninguno).
+- **Interacciones:** T03 alimenta la evidencia de T02 (criterio de
+  «requiere investigación» y límite de incertidumbre); conviene ejecutarla
+  antes que T02. Refuerza el supuesto del umbral que T01 declara. No
+  compite con ninguna.
+- **Capacidad del taller (las tres propuestas):** P120 tiene ocho
+  highlights y es el primer caso descriptivo completo tras P100–P109. T01,
+  T02 y T03 añaden tres secciones breves (encuadre al inicio, banda de
+  lectura en la segmentación, conclusiones al final), sin cambiar caso,
+  datos ni tablas. Aun así, conviene decidir en la discusión si T03 o la
+  redacción de T02 quedan como sección final que un grupo lento completa en
+  la sesión siguiente. P120 es además la plantilla que P121 y P122 repiten
+  (preguntas, KPI, matriz, top N con umbral). Aprobar estas propuestas no
+  modifica P121 ni P122; su propagación, si se quiere, serían propuestas
+  separadas por actividad, que deberían evaluar el caso propio de cada una
+  (por ejemplo, en P121 los umbrales de 25.000 vuelos hacen el ruido mucho
+  menor).
+- **Criterio de aceptación:** S05 encuentra un highlight nuevo en el que,
+  para cada combinación categoría–canal de `return_risk.csv` y cada medio de
+  pago, se persiste órdenes, tasa de devolución por órdenes, tasa base
+  global, diferencia frente a la base, intervalo aproximado al 95 % y una
+  marca de si el intervalo excluye la base; y una lectura en markdown dice
+  explícitamente si el orden del ranking por tasa se distingue del ruido y
+  qué implica para H07. Debe estar respaldado por notebook,
+  `submission/segment_baseline_comparison.csv` y una prueba que lo
+  recompute desde `data/sales.csv`. H01–H08 siguen presentes.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/descriptiva/P120_retail_sales/
+
+0. Inspecciona primero professor/notebook.ipynb, data/sales.csv,
+   submission/kpi_summary.csv, return_risk.csv, payment_summary.csv,
+   category_summary.csv y tests/. Si la implementación no coincide con
+   design/courses/descriptiva/P120_activity.md o ya reporta intervalos o
+   diferencias frente a la tasa base, detente e informa. Comprueba si la
+   tasa de return_risk.csv es por órdenes (media de IsReturned) o por
+   valor; esta tarea usa la tasa por órdenes. Registra el número de órdenes
+   de las celdas de return_risk.csv; si todas tienen varios cientos de
+   órdenes o más y las diferencias con la base superan claramente sus
+   intervalos, detente e informa: el defecto no estaría presente.
+1. No cambies return_risk.csv, payment_summary.csv, su cálculo, el umbral
+   de 50 órdenes ni priority_segments.csv.
+2. Después de la sección de return_risk, añade «Tasa base e incertidumbre»:
+   a. Toma la tasa base de return_rate_by_orders (kpi_summary).
+   b. Para cada combinación categoría–canal que pasa el umbral y para cada
+      medio de pago, calcula desde data/sales.csv: orders, returned_orders,
+      return_rate, base_rate, diff_vs_base = return_rate − base_rate, y un
+      intervalo de Wilson al 95 % (ci_lower, ci_upper). Usa
+      statsmodels.stats.proportion.proportion_confint(method="wilson") si
+      statsmodels está en el requirements.txt raíz; si no, implementa la
+      fórmula de Wilson con numpy. No añadas dependencias.
+   c. differs_from_base = True si base_rate queda fuera de
+      [ci_lower, ci_upper].
+   d. Grafica, por segmento ordenado por tasa, el punto y su intervalo con
+      una línea vertical en la tasa base (Plotly, como el resto del
+      notebook).
+   e. Explica en markdown, en 4–6 líneas: cuántos segmentos se distinguen
+      de la base; si el primer segmento por tasa se distingue de los
+      siguientes o el orden puede ser ruido; que la banda es una lectura
+      aproximada, no una prueba entre todos los pares; y por qué eso hace
+      más defendible priorizar por valor devuelto (H07).
+3. Persiste submission/segment_baseline_comparison.csv con columnas
+   dimension (category_channel | payment_method), segment, orders,
+   returned_orders, return_rate, base_rate, diff_vs_base, ci_lower,
+   ci_upper, differs_from_base, ordenado por dimension y return_rate
+   descendente.
+4. Añade a tests/ una prueba que recompute el archivo desde data/sales.csv
+   con la misma preparación que ya usan las pruebas existentes, compare con
+   assert_frame_equal (tolerancia numérica), y verifique que
+   ci_lower ≤ return_rate ≤ ci_upper y que todas las celdas tienen al menos
+   50 órdenes. Amplía la lista esperada de archivos del test de conjunto
+   exacto con segment_baseline_comparison.csv sin quitar ninguno, e informa
+   ese cambio. No elimines pruebas existentes.
+5. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
+6. No modifiques otras actividades (P121 y P122 incluidas, aunque repitan la
+   plantilla), traceability.yaml ni design/.
+```
