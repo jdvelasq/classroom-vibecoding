@@ -13,6 +13,7 @@
     Problem» y empieza por «Using Population Averages» antes de filtrado
     colaborativo (Claude, 2026-10-04).
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 96 y 101 — el proceso de ML incluye «evaluating performance (often against a baseline)» (ML-General, T1); para sistemas de recomendación exige «separation of training and test data» y métricas de evaluación propias (ML-Mixed Methods) (Claude, 2026-10-04).
+  - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — Task 2.5: «Identify baseline performance of the current state» como parte del encuadre analítico (Claude, 2026-10-04).
 - **Qué gana el estudiante:** poder juzgar si una recomendación colaborativa
   aporta algo frente a recomendar lo popular, con evidencia sobre
   calificaciones que el método no vio. Hoy P215 produce recomendaciones sin

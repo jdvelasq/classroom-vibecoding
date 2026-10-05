@@ -50,3 +50,11 @@
 - **Señales descartadas relevantes:**
   - elegir el número de componentes de PCA y evaluar por utilidad para otra tarea (T1, p. 100): se añade como fuente de T01.
   - otros métodos de reducción (ICA, NMF; T2–electiva): marginal.
+
+## S03.P224.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver que ya atiende T01; no aporta evidencia a esa mejora concreta.

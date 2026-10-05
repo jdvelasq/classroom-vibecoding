@@ -74,3 +74,11 @@
 - **Señales descartadas relevantes:**
   - calidad del clustering y selección del número de grupos (T1, p. 100; DM-Cluster Analysis): ya cubierta (H03).
   - clustering basado en densidad (DM, T1): marginal; otro algoritmo para la misma segmentación.
+
+## S03.P206.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P206 (producto descriptivo); el documento no aporta criterio para resolverla.

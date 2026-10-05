@@ -75,3 +75,11 @@
 - **Señales descartadas relevantes:**
   - no linealidad en clasificación (T1, pp. 97–98): ningún clasificador del curso es no lineal; se registra en N01.
   - representatividad de los datos («truly representative», PR p. 108; BDS p. 58): fuente *authoritative* que confirma la señal ya registrada; sigue sin una competencia técnica concreta (método, evaluación) que permita anclarla a un taller.
+
+## S03.P204.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - riesgos y sesgo no intencional en el encuadre (Task 2.6, p. 5): ya cubierta como límite de uso no diagnóstico (H01).

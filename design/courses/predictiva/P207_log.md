@@ -69,3 +69,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - importancia de la selección de *features* para clustering e inicialización de k-means (DM-Cluster Analysis, T1): ya cubierta (H01, H04).
+
+## S03.P207.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P207 (producto descriptivo).

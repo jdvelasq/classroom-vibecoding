@@ -45,3 +45,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - transición de un modelo a producción (T2, p. 97): ya cubierta parcialmente (H01–H03); el documento no fija prácticas que añadir.
+
+## S03.P217.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - requisitos de una solución desplegada (Task 6.4, p. 7): ya cubierta parcialmente (H01: contrato de entrada).
+  - seguimiento del desempeño, recalibración y efectos secundarios en el tiempo (Domain VII, p. 7): no cubierta; según `AGENTS.md`, hacer observable y mantenible una capacidad analítica es propio de la línea de productos de datos, por lo que no se propone en Predictiva.

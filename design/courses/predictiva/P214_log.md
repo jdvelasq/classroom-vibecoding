@@ -45,3 +45,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Apriori y reglas de asociación (DM-Pattern Mining, T2): ya cubierta (H02–H04).
+
+## S03.P214.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - validación fuera de la muestra de descubrimiento (Task 5.3): ya cubierta (H04).

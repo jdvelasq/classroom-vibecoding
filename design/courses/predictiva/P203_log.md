@@ -74,3 +74,11 @@
 - **Señales descartadas relevantes:**
   - métricas macro y micro, precision/recall/F1 (T1–T2, pp. 97–98): ya cubierta (H04).
   - Naive Bayes como clasificador probabilístico (DM-Classification, T1): marginal; otro algoritmo para el mismo producto de H02.
+
+## S03.P203.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - encuadre del problema de negocio, *stakeholders* y medida de éxito (Domain I–II, pp. 4–5): S02 registra que esta actividad no tiene usuario ni decisión evidenciados; el hábito se propone en P200 (T01) y extenderlo aquí sería una propuesta por actividad, a decidir después de discutir P200 T01.

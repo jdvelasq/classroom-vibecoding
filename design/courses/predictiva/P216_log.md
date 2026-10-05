@@ -70,3 +70,11 @@
 - **Señales descartadas relevantes:**
   - series de tiempo: estacionariedad, transformación y pronóstico (DM-Time Series, electiva): ya cubierta (H03, H08, H13).
   - RNN y LSTM (ML-Deep Learning, T2): marginal; no son competencia núcleo y P216 ya contrasta MLP con familias clásicas.
+
+## S03.P216.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integración de varios modelos (Task 5.5, p. 6): ya cubierta (H09, H11: apilamiento y combinación).

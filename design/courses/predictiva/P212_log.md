@@ -44,3 +44,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sin competencias específicas de tiempo hasta evento.
+
+## S03.P212.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - frontera entre producto analítico y decisión (Domain II): ya cubierta (H04).

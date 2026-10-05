@@ -44,3 +44,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - automatización del pipeline de ML (electiva, p. 97): marginal; P220 ya integra transformación, búsqueda y modelo (H01–H03).
+
+## S03.P220.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - documentación del modelo para reutilización (Task 5.6): ya cubierta (H03: pipeline persistido).

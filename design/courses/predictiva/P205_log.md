@@ -67,3 +67,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sensibilidad, especificidad y costo de errores (T1, p. 97): ya cubierta (H02).
+
+## S03.P205.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - medidas de éxito ligadas a la decisión e identificación de riesgos (Tasks 2.4, 2.6, pp. 4–5): ya cubierta (H02–H03: costos de error y frontera con política).

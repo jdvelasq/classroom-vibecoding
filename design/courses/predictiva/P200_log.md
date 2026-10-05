@@ -95,3 +95,11 @@
   - sesgo/varianza y curvas de aprendizaje (T2, p. 98): parcialmente cubierta (H08–H09 contrastan capacidad con MSE de prueba); se recoge en el criterio de N01 (sobreajuste con la profundidad).
   - comparación de modelos con bootstrap (T2, p. 97): se propone en P204 (T01), donde las diferencias entre especificaciones son mínimas; en P200 la diferencia MLP–lineal (15.60 frente a 22.03) es grande.
   - representatividad de los datos («truly representative», PR p. 108; BDS p. 58): fuente *authoritative* que confirma la señal ya registrada; sigue sin una competencia técnica concreta (método, evaluación) que permita anclarla a un taller.
+
+## S03.P200.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** propone T01 (encuadre, medida de éxito y línea base ingenua).
+- **Señales descartadas relevantes:**
+  - documentación de supuestos y limitaciones del modelo (Task 5.6, p. 6): ya cubierta parcialmente en los límites declarados; T01 añade el encuadre explícito.

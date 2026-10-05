@@ -48,3 +48,11 @@
 - **Señales descartadas relevantes:**
   - filtrado colaborativo (T2, p. 101): ya cubierta (H02–H03).
   - evaluación contra línea base y separación entrenamiento/prueba en recomendadores (pp. 96, 101): se añade como fuente de T01.
+
+## S03.P215.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - línea base del estado actual (Task 2.5, p. 5): se añade como fuente de T01.

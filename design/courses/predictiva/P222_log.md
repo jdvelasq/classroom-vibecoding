@@ -47,3 +47,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - selección de *features* para clasificación (DM-Classification, T1): ya cubierta (H02–H03).
+
+## S03.P222.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - impulsores (*drivers*) del resultado (Task 2.2, p. 5): ya cubierta (H02–H03).

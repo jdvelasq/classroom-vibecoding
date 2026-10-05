@@ -70,3 +70,11 @@
 - **Señales descartadas relevantes:**
   - extracción y representación de *features* (DM-Data Preparation, T1): ya cubierta para texto (H03–H05).
   - extracción de información (DM, electiva): marginal.
+
+## S03.P202.05
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - evaluación y documentación de la calidad de datos (Tasks 3.5–3.7, p. 5): ya cubierta (H01–H02, H06: reglas de calidad y metadatos persistidos).
