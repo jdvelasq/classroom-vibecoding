@@ -12,11 +12,6 @@
     p. 10 — la recomendación se plantea como «Recommendation Prediction
     Problem» y empieza por «Using Population Averages» antes de filtrado
     colaborativo (Claude, 2026-10-04).
-  - `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md`
-    p. 2 — presenta la personalización de la experiencia del cliente como una
-    aplicación de IA (OpenWork, 2026-10-04). La señal respalda la relevancia
-    contextual de la tarea recomendadora, pero no añade evidencia a la
-    comparación evaluativa nueva de esta T01.
 - **Qué gana el estudiante:** poder juzgar si una recomendación colaborativa
   aporta algo frente a recomendar lo popular, con evidencia sobre
   calificaciones que el método no vio. Hoy P215 produce recomendaciones sin
@@ -39,9 +34,7 @@
   dos vecinos de respaldo, y los artefactos `recommendations.csv`, el CSV de
   vecinos y `coverage_summary.csv` con su esquema actual. Las pruebas
   existentes se mantienen. Nada se sustituye: la evaluación se añade.
-- **Interacciones:** se refuerza con el contexto de personalización de Berkeley
-  (p. 2); no compite con otras propuestas de P215. La personalización es un uso
-  posible, no evidencia de satisfacción o impacto en clientes.
+- **Interacciones:** ninguna; es la única propuesta de P215.
 - **Criterio de aceptación:** S05 encuentra un highlight nuevo (H05) que
   compara, sobre calificaciones retenidas, el error de la línea base de
   promedio por película contra el de la predicción colaborativa, e informa qué

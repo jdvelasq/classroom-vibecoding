@@ -21,8 +21,9 @@
 ## S03.P208.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - simulaciones predictivas y gestión de riesgos (pp. 2, 4–5): ya cubiertas por escenarios SIR y picos (H02–H03); la señal no añade un contraste de aprendizaje material a la comparación existente.
-  - cadena de suministro/capacidad de camas (p. 2): marginal como ejemplo de aplicación, no trasladable al caso colombiano de salud pública sin contexto de decisión y datos de capacidad distintos; no sugiere rediseñar el producto de P208.
+  - optimización de la cadena de suministro (p. 2): marginal; ejemplo genérico de aplicación sin relación con el caso de salud pública de P208.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; «capacidad de camas» no aparece en el documento (proviene de la descripción S02 de P208); se eliminó de la señal.

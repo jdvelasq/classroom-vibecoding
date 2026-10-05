@@ -45,8 +45,9 @@
 ## S03.P216.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - entrenamiento/validación/prueba y simulaciones para predicción (pp. 4–5): ya cubiertas por evaluación cronológica de 24 meses (H01, H13) y comparación de familias (H04–H11); no aporta señal material para el pronóstico de mano de obra de Sutter.
   - estrategia empresarial y transformación organizacional (pp. 5–6): fuera de alcance de la pregunta sobre pronóstico mensual; convertirla en plan de asignación de personal sería otra contribución, sin organización usuaria, objetivo o restricciones evidenciadas.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.

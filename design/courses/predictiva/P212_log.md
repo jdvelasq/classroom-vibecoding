@@ -22,7 +22,8 @@
 ## S03.P212.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - personalización y gestión de riesgos (p. 2): marginal; P212 ya estima permanencia por contrato (H02–H03), pero trasladarlo a una oferta personalizada requeriría datos de intervención/resultado y una pregunta causal que el benchmark no suministra; la propuesta no altera ese límite.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.

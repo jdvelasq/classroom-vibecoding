@@ -24,8 +24,9 @@
 ## S03.P215.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
-- **Resultado:** propone T01; el contexto de personalización del folleto refuerza el encuadre, sin cambiar su contenido ni añadir nueva capacidad a lo ya propuesto.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - personalización de experiencia del cliente (p. 2): aporta contexto, no una propuesta separada; la brecha material de P215 sigue siendo que aún no permite juzgar si sus recomendaciones superan una referencia en calificaciones no vistas (H03–H04, S03), que ya atiende T01.
   - IA generativa y agentes (p. 6): fuera de alcance; P215 predice calificación con preferencias colaborativas y no hay tarea, datos ni criterio de evaluación del folleto para sustituir o añadir otro producto.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado era «propone T01», pero T01 la propuso la revisión del documento de MIT y este documento no le aporta evidencia; se revirtió además la edición de OpenWork en `P215_tasks.md` (fuente de Berkeley y campo «Interacciones»).

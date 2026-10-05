@@ -24,8 +24,9 @@
 ## S03.P223.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - aprendizaje supervisado y validación (p. 5): ya cubiertos por H02–H04; no cambia la capacidad de leer contracción Lasso y seleccionar alpha para el producto MPG.
   - ventaja competitiva y estrategia de IA (p. 5): fuera de alcance de la regresión educativa con mtcars; no existe una oportunidad de flota ni evidencia de negocio para vincular la predicción a un plan.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.

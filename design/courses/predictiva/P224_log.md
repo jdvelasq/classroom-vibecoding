@@ -24,8 +24,10 @@
 ## S03.P224.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
-- **Resultado:** refuerza T01 sólo en su necesidad de conectar representación/modelo con un producto evaluado; la mención general de deep learning no respalda esa mejora concreta.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
+  - analítica descriptiva frente a analítica predictiva (p. 5): señal relevante para la identidad Predictiva que S02 dejó sin resolver en esta actividad, cuyo producto actual es descriptivo; el documento sólo enuncia la distinción, sin caso ni criterio para resolverla. T01 ya atiende esa identidad; el documento no se agrega a sus fuentes porque no aporta evidencia a la mejora concreta.
   - visión artificial, CNN, redes neuronales y capacidades emergentes (pp. 5–6): marginal; la lista técnica no cambia la capacidad pendiente en P224 —contrastar representación con desempeño predictivo— ni justifica añadir otra arquitectura al producto actual. T01 ya propone el menor cambio anclado a H01–H04/S01–S04.
   - proyecto de negocio integrador y caso aplicado a la organización (p. 6): fuera de alcance para anclar un cambio a P224; esa posibilidad implicaría una contribución distinta de curso, con caso/datos definidos y conexión a decisión de negocio, no disponible en la descripción S02 de P224.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado decía «refuerza T01» y a la vez que el documento no la respalda, sin agregarlo a sus fuentes; se dejó «sin cambios» y se añadió la señal descriptiva/predictiva omitida.

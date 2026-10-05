@@ -45,8 +45,9 @@
 ## S03.P202.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - obtención/gestión/calidad de datos para ML y NLP (p. 5): ya cubierta respecto al corpus Scopus (H01–H06); el benchmark no aporta criterio concreto que cambie las reglas auditables de exclusión, limpieza o vectorización.
   - NLP generativo y modelos multimodales (pp. 5–6): fuera de alcance del producto de P202, que prepara abstracts en inglés para análisis posterior; el folleto no aporta corpus, tarea evaluable ni evidencia para reemplazar o extender su representación.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.

@@ -48,9 +48,10 @@
 ## S03.P203.02
 
 - **Fecha / executor:** 2026-10-04 / OpenWork.
-- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: ea86a5d0e15ccad7bb0910f62de882724366b3ca3a01b667ba71df3d2b2b0559).
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - aprendizaje supervisado y entrenamiento/validación/prueba (p. 5): ya cubiertos por H01–H04, incluyendo vocabulario aprendido sólo en entrenamiento y métricas sensibles al desbalance; no cambia materialmente el producto de estimación de sentimiento.
   - sesgo algorítmico (p. 5): marginal para el caso de sentimiento de frases sin decisión financiera; el benchmark no identifica sesgo concreto ni proporciona grupos/etiquetas para una evaluación adicional rigurosa.
   - NLP generativo (pp. 5–6): fuera de alcance de la pregunta clasificatoria actual; no se aporta caso/dataset ni criterio de evaluación para justificar desplazar la clasificación de sentimiento.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
