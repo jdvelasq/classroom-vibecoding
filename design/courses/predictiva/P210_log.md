@@ -382,3 +382,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pronósticos con intervalos de confianza que se abren a lo largo del horizonte (cap. 14, pp. 172–174): segunda fuente (con MIT Modeling & Simulation) para la señal de incertidumbre de pronóstico; pendiente de contrastar con SAS Forecasting.
+
+## S03.P210.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.

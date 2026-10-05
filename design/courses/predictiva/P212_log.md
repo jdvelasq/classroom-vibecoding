@@ -380,3 +380,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - regresión de Cox para modelar el tiempo hasta el abandono con covariables (cap. 26, pp. 291–295): S02 registra como límite que P212 «no produce predicción individual»; Cox lo haría. Fuente única de familia *professional-learning*; se registra como señal.
+
+## S03.P212.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.

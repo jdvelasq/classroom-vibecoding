@@ -442,3 +442,12 @@
 - **Señales descartadas relevantes:**
   - árboles de decisión (C5.0, CHAID, C&RT) en ejemplos aplicados (caps. 8, 9, 19): se añaden como fuente de N01.
   - modelado automático que compara muchas familias a la vez (caps. 4–5): marginal; P200 ya enseña a comparar especificaciones sobre la misma partición (H09).
+
+## S03.P200.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - entendimiento del negocio, solución actual y criterios de éxito acordados antes de modelar (pp. 9–10): se añade como fuente de T01.
+  - diseño de pruebas con partición entrenamiento/prueba (p. 30): ya cubierta (H03).

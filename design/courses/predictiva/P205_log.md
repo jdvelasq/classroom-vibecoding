@@ -404,3 +404,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tablas y gráficos de ganancia (*gains*) y *lift* para comparar modelos de respuesta, y beneficio acumulado de una campaña (pp. 101–102, 130, 211): variante de la lectura de capacidad y costos que H02 ya enseña con el barrido de umbrales; no se propone como cambio material.
+
+## S03.P205.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - gráficos de ganancia y *lift* para comparar modelos (pp. 13, 33): variante de la lectura que H02 ya enseña; no se propone.

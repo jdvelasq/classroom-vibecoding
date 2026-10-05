@@ -379,3 +379,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reentrenar un modelo mes a mes al llegar datos nuevos (cap. 18, p. 213): tercera fuente (con ACM y National Academies) para la señal de degradación de modelos; P209 ya enseña a actualizar un parámetro con evidencia reciente (H02–H03).
+
+## S03.P209.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
