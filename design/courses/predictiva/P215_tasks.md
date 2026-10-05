@@ -15,6 +15,7 @@
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 96 y 101 — el proceso de ML incluye «evaluating performance (often against a baseline)» (ML-General, T1); para sistemas de recomendación exige «separation of training and test data» y métricas de evaluación propias (ML-Mixed Methods) (Claude, 2026-10-04).
   - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — Task 2.5: «Identify baseline performance of the current state» como parte del encuadre analítico (Claude, 2026-10-04).
   - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` p. 11 — Task 2.5 (nivel inicial): medir los valores de línea base del estado actual (Claude, 2026-10-04).
+  - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` p. 11 — CAP-P.2.5.1: relacionar la línea base del estado actual con el desempeño esperado (Claude, 2026-10-04).
 - **Qué gana el estudiante:** poder juzgar si una recomendación colaborativa
   aporta algo frente a recomendar lo popular, con evidencia sobre
   calificaciones que el método no vio. Hoy P215 produce recomendaciones sin

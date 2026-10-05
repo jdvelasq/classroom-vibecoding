@@ -111,3 +111,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - encuadre, medidas de éxito y línea base del estado actual (Tasks 1.1–2.5, pp. 7–11): se añade como fuente de T01.
+
+## S03.P200.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - medidas de éxito, línea base frente a desempeño esperado y explicación no técnica de resultados (CAP-P.2.4.2, 2.5.1, 5.6.1): se añade como fuente de T01.
+  - riesgo de usar datos de entrenamiento sesgados (CAP-P.2.6.2, p. 12): confirma la señal de representatividad ya registrada; sin método ni caso que permita anclarla.

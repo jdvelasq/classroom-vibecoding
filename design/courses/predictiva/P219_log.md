@@ -61,3 +61,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - división en entrenamiento, validación y prueba (Task 5.3, p. 20): ya cubierta (H02).
+
+## S03.P219.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - método apropiado de validación cruzada (CAP-P.5.3.2, p. 20): ya cubierta (H02).

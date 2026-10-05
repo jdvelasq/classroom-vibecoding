@@ -65,3 +65,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad sin resolver (producto descriptivo).
+
+## S03.P225.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.

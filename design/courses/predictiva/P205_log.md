@@ -83,3 +83,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sesgo más probable de un modelo predictivo y causa de resultados sesgados o no éticos (Tasks 2.6, 5.3, pp. 12, 20): ya cubierta en la medida que el caso lo permite (H04: revisión por grupo simulado).
+
+## S03.P205.07
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - causa de resultados sesgados o no éticos de un modelo predictivo (CAP-P.5.3.5, p. 20): ya cubierta en la medida que el caso lo permite (H04).
