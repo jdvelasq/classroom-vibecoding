@@ -159,3 +159,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un certificado de 6 meses en ingeniería de datos: Python/pandas, SQL, ETL, CDC, contenedores, Hadoop/Spark/Airflow, NiFi, Kafka, DASK, seguridad web, ML y aprendizaje por refuerzo; portafolio GitHub. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Analyzing and translating technical results into actionable insights for executives» (p. 7); «communicate results that are clear and meaningful to stakeholders» (p. 11) — ya cubierta en lo que toca a descripción: P120 H07 (prioridad frente a riesgo), P125 H06 (respuesta con límite); el folleto no describe cómo se evalúa esa comunicación, por lo que no aporta un mecanismo concreto (institutional ilustra, no impone).
+  - «Thinking About Risk and Uncertainty Through Probability and Distributions» (Módulo 2, p. 7) — marginal: P125 H03 ya justifica medianas y percentiles frente a un único promedio; probabilidad formal es contenido de Estadística/predictiva.
+  - «Fairness and Bias Issues in Data-Driven Predictions» (Módulo 16, p. 8) y caso de algoritmos de análisis facial (p. 10) — fuera de alcance en su forma (sesgo de modelos predictivos); la comparación justa frente a pares en un tema sensible ya está en P125 H02, H04 y H07.

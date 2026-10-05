@@ -153,3 +153,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Configure a network to ensure data security», cifrado, autenticación, JSON web tokens (p. 8) — fuera de alcance: seguridad informática, no protección de datos en el producto descriptivo (cubierta por P102 H02 y P108).
+
+## S03.P108.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Fairness and Bias Issues in Data-Driven Predictions» (Módulo 16, p. 8) y caso de algoritmos de análisis facial (p. 10) — fuera de alcance en su forma (sesgo de modelos predictivos); la comparación justa frente a pares en un tema sensible ya está en P125 H02, H04 y H07.

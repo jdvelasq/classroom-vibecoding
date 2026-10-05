@@ -233,3 +233,14 @@
   - CDC, Debezium, contenedores, streaming (Kafka, MQTT, ThingsBoard), aplicaciones web en Java/Node (pp. 8–11) — fuera de alcance: ingeniería de datos y productos de datos.
   - regresión lineal, Naïve Bayes, k-means, aprendizaje por refuerzo, redes profundas (pp. 8, 11–12) — fuera de alcance: predictiva.
   - «Learn data visualization», D3 (pp. 8, 11) — marginal: herramienta de visualización alternativa; la visualización ya está cubierta (P103 H04, P120 H05).
+
+## S03.P100.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un certificado en línea de 6 meses (24 módulos en cinco partes: fundamentos de ciencia de datos, optimización, ML, ML avanzado y despliegue) con casos de la facultad de MIT Sloan; orientación dominante a modelado predictivo y prescriptivo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - clustering (Módulo 4, p. 7) — fuera de alcance: segmentación no supervisada como técnica de ML sin caso descriptivo en el documento.
+  - regresión, CART, *ensembles*, redes neuronales, NLP, filtrado colaborativo, optimización lineal, despliegue (pp. 7–9) — fuera de alcance: predictiva, prescriptiva y productos de datos.

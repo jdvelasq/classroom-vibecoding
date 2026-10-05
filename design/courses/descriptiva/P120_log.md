@@ -161,3 +161,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto de un certificado de 6 meses en ingeniería de datos: Python/pandas, SQL, ETL, CDC, contenedores, Hadoop/Spark/Airflow, NiFi, Kafka, DASK, seguridad web, ML y aprendizaje por refuerzo; portafolio GitHub. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P120.19
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Analyzing and translating technical results into actionable insights for executives» (p. 7); «communicate results that are clear and meaningful to stakeholders» (p. 11) — ya cubierta en lo que toca a descripción: P120 H07 (prioridad frente a riesgo), P125 H06 (respuesta con límite); el folleto no describe cómo se evalúa esa comunicación, por lo que no aporta un mecanismo concreto (institutional ilustra, no impone).
+  - «Correlation» (Módulo 3, p. 7) — marginal: técnica aislada sin caso descriptivo asociado en el documento; las relaciones entre dimensiones ya se describen con matrices de segmentos (P120 H06, P121 H04, P122 H06).
