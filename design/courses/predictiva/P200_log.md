@@ -459,3 +459,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.
+
+## S03.P200.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - árboles de decisión y de regresión en la lista de algoritmos (p. 2): mención sin detalle; N01 ya tiene respaldo suficiente y no se añade como fuente.

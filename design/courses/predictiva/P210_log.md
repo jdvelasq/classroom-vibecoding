@@ -398,3 +398,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.
+
+## S03.P210.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - hoja informativa de dos páginas de SQL Server 2005 Data Mining (aplicaciones de negocio y lista de algoritmos); para esta actividad no añade una señal distinta de las ya registradas.
