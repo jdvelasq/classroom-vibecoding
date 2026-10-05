@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Privacy and confidentiality» (p. 50); GDPR y derechos de los titulares de los datos (p. 49) — ya cubierta en mecanismo (P453 H02, P452 H01); el marco legal no se convierte en práctica operable en el curso. Sólo se propone lo de P401 (arriba).
+
+## S03.P452.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - graduados sin capacidad de «implementar autenticación y autorización robustas, ni gestionar datos sensibles de manera segura» (p. 183); «Privacy Engineer (datos de entrenamiento/inferencia, PII)» (p. 332) — ya cubierta en el mecanismo (P452 H01–H02, P453 H02); OWASP y el diseño seguro de software son fuera de alcance.

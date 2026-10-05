@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Google Flu Trends sobreestimó «primarily attributed to overreliance on outdated models» (p. 34) — marginal: ilustra la necesidad del monitoreo de entradas y desempeño (P422 H01, P423 H01) ya enseñado; sería un ejemplo de encuadre, no una capacidad nueva.
+
+## S03.P423.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «monitoreo de modelos (model drift, data drift) y reentrenamiento continuo» (p. 176); «Monitoreo de modelos» (p. 97) — la deriva y el desempeño ya están cubiertos (P422 H01, P423 H01); el reentrenamiento es fuera de alcance porque vuelve a enseñar el método predictivo. La exigencia de «validar modelos rigurosamente y justificar predicciones (explicabilidad)» (p. 176) pertenece a Predictiva.

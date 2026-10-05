@@ -58,3 +58,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Source code (version) control systems», «Collaboration» (p. 47) — ya cubierta: P408 H02, P409 H01, P411 H01.
+
+## S03.P411.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «programación en pareja, revisión de código, integración y entrega continuas se experimentan poco en el contexto académico» (p. 183) — ya cubierta: P411 H01 (revisión mediante pull request) y P415 H01.

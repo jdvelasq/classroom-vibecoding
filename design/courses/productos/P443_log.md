@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data provenance» (p. 45); «Students also need to consider the provenance of the data used» (p. 40) — ya cubierta: P431 H01 (huella por contenido), P443 H02 (salida anclada a la huella del insumo). El defecto de P443 (linaje sin identificador de transformación) ya está registrado en S02 y el documento no aporta un criterio más preciso.
+
+## S03.P443.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el arquitecto de datos responde por «gobernanza, linaje, seguridad y soporte a modelos de IA en producción» (p. 290) — ya cubierta (P443 H02, P454 H01); el diseño de plataformas de datos es fuera de alcance.
