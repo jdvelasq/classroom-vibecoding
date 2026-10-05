@@ -39,3 +39,19 @@
   - Domain VI Deployment, tareas 6.4–6.6 (requisitos de producción, pruebas, flujos de datos de producción; p. 7) — fuera de alcance: frontera con Productos de datos fijada en `s05-diseno-prescriptiva.md`.
   - Task 6.1–6.2 validación de negocio e informe (p. 7) — marginal: los contratos de política con autoridad y aprobación ya cumplen esa función; un informe adicional no cambia lo que el estudiante hace.
   - Task 1.2 y 2.7 identificación de partes interesadas y acuerdo del patrocinador (pp. 4–5) — ya cubierta: autoridades y escalamientos declarados desde P300 H03 y P303 H01.
+
+## S03.P300.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - desagrega cada tarea del INFORMS Analytics Framework en objetivos evaluables del examen CAP-E, con pesos por dominio (despliegue 9 %, ciclo de vida 8 %); incluye subtareas específicas para modelos prescriptivos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - CAP-E.5.2.2 «Identify the appropriate decision variables, constraints, and objective(s)» (p. 20) — ya cubierta: bloques `MODEL`/`DECISION MODEL` en P305, P308, P313–P319.
+  - CAP-E.5.3.4 «Identify the correct verification of the solution of a simple prescriptive analytics model output» (p. 20) — ya cubierta: P305 H03, P308 H04, P316 H06, P317 H05, P318 H04.
+  - CAP-E.5.2.4 «Identify an error from a list of candidate errors for a prescriptive model» (p. 20) — ya cubierta en su forma más material: P318 H02 (regla miope infactible) y P319 H03 (MILP aditivo incorrecto para un objetivo no aditivo).
+  - CAP-E.2.5.1 «Identify how to measure the baseline values of the primary measures of success of the current state» (p. 12) — ya cubierta: líneas base operativas en P304, P305, P313, P316 y P318.
+  - CAP-E.1.5.6 «Identify unintended direct consequences of the potential solution» y CAP-E.6.1.2 «Identify a potential ethical analytics risk» (pp. 8, 22) — ya cubierta: P320 H01–H02, P305 H06 (excepción por restricción legal/equidad) y P308 H06.
+  - CAP-E.2.6.2 y 5.3.5 sesgo de modelos predictivos (pp. 12, 20) — fuera de alcance: pertenece a Predictiva; Prescriptiva recibe la estimación como evidencia.
+  - Domain III (pp. 13–16: gobierno de datos, arquitectura, 4 V, normalización) y CAP-E.4.4 stack tecnológico y hoja de cálculo (p. 18) — fuera de alcance: Fundamentos de data / Productos de datos.

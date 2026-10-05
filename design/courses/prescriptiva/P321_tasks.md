@@ -8,6 +8,7 @@
 - **Tipo:** método + caso/datos + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 7 — el dominio VII exige «ongoing oversight and calibration to ensure the analytics solution continues to perform effectively … over time» y enumera «Task 7.1 Track analytics solution performance», «Task 7.2 Recalibrate and maintain the analytics solution», «Task 7.4 Validate the business case for the analytics solution over time» y «Task 7.5 Analyze the side effects of the analytics solution over time»: el seguimiento con resultados y la recalibración son tareas del ciclo de vida, no una declaración (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general de ejercer el seguimiento, no un procedimiento.
+  - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 24–25 — objetivos verificables de nivel inicial: «CAP-E.7.1.1 Identify the metrics that monitor analytics solution performance» (p. 24), «CAP-E.7.4.1 Identify what has changed over time for the business case» y «CAP-E.7.5.1 Identify the importance of reviewing analytic solutions post deployment for unintended consequences» (p. 25); identificar el cambio exige datos posteriores a la puesta en operación (Claude, 2026-10-05). Fuente *authoritative*.
 - **Qué gana el estudiante:** pasar de declarar un gatillo a operarlo. Hoy
   P321 construye un registro de una fila, en su mayoría texto fijo en
   `main.py`, y no tiene datos de seguimiento: el gatillo

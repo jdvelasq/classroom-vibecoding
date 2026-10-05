@@ -26,3 +26,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco de práctica de INFORMS (base del CAP) con siete dominios y sus tareas, desde el encuadre del problema de negocio hasta el despliegue y la gestión del ciclo de vida de la solución analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P308.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-E.5.4.2 «Identify which data or model issue is the cause of a client concern about the output of a simple prescriptive analytics model» (p. 21) — marginal: P308 H05 explica el óptimo familia por familia ante la autoridad y H07 trata la tasa de anulación como señal de revisión; diagnosticar una objeción del usuario sería una variante de esa explicación.

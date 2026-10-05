@@ -26,3 +26,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Task 7.5 efectos colaterales en el tiempo (p. 7) — marginal para P320: su auditoría de equidad ya convierte una consecuencia distributiva en guarda (H01); el seguimiento temporal se integra en la candidata de P321.
+
+## S03.P320.03
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CAP-E.1.2.2 «Identify stakeholders and bystanders» (p. 7) — marginal: P308 y P320 ya distinguen afectados (familias, grupos) de decisores; no cambia lo que el estudiante hace.
