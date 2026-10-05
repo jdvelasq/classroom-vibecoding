@@ -303,3 +303,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación docente que recorre la evolución KDD → CRISP-DM → … → MAISTRO y las dimensiones de un proyecto de analítica (problema de negocio, problema analítico, datos, preparación, diseño, evaluación, operación, mejora continua, gobernanza) con un caso de abandono de clientes que transita de una pregunta descriptiva a una solución prescriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P124.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - capa de entrega «Archivos, Herramientas BI, Dashboards, Web Apps, APIs» (p. 5, p. 12) — ya cubierta en su función descriptiva: P124 H04–H05, P154 H01–H04; como infraestructura, fuera de alcance (productos de datos).

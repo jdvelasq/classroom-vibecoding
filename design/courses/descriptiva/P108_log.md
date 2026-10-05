@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privacidad, reglas de acceso y compartición, sesgos e impactos sobre grupos (pp. 28–29) — ya cubierta: P108 H01–H06, P109 H02–H03, P125 H07; evaluación de sesgo de modelos: fuera de alcance (predictiva).
+
+## S03.P108.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas docentes que trasladan Lean (Toyota Production System, Lean Software y Lean Product Development) a la analítica vista como sistema de producción y de desarrollo de producto: desperdicios en analytics, *value stream mapping*, entrega rápida, teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato (DataOps). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -306,3 +306,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - evaluar calidad por exactitud, completitud, consistencia, actualidad, validez, relevancia y unicidad (p. 13) — ya cubierta: P120 H02, P121 H02, P122 H01 y H05.
+
+## S03.P120.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - desperdicios «Problema equivocado», características que «No ayudan al usuario a tomar decisiones» (p. 6) y «Preguntas de bajo valor para responder» (p. 10) — marginal aquí: refuerza en lo conceptual la necesidad de conectar preguntas con decisiones, tratada como candidata P120 a partir de `dataops-03-methodologies` e INFORMS; este documento no aporta un mecanismo propio.

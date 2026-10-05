@@ -300,3 +300,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - limpiar duplicados, faltantes, inconsistencias y atípicos; «Validar los datos preparados» (p. 15) — ya cubierta: P106 H01–H05, P107 H01–H03.
+
+## S03.P106.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Los datos no son testeados completamente» y «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines» como causa raíz de ciclos lentos (p. 10) — ya cubierta en lo que toca al curso: P106 H05 y P107 H04 verifican invariantes de dominio del archivo limpio, P153 H03 condiciona la publicación a reglas de calidad. Las brechas de esas pruebas (no cubren importes, proveedores ni fechas válidas) ya están registradas en S02; la señal se refiere a pipelines en producción (productos de datos).

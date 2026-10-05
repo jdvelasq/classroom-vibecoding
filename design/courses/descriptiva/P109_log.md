@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privacidad, reglas de acceso y compartición, sesgos e impactos sobre grupos (pp. 28–29) — ya cubierta: P108 H01–H06, P109 H02–H03, P125 H07; evaluación de sesgo de modelos: fuera de alcance (predictiva).
+
+## S03.P109.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - desperdicio por «Duplicación de datos y transformaciones» (p. 6) — marginal: la duplicación de reglas `CASE` entre la tabla anonimizada y la consulta de ataque en P109 (S02) y la reescritura de reglas de P106 en P107 son límites ya registrados; esta señal, de gestión de flujo de trabajo, no cambia lo que el estudiante aprende.

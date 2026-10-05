@@ -308,3 +308,11 @@
 - **Señales descartadas relevantes:**
   - «Interpretar y comunicar los resultados… supuestos y limitaciones en términos del problema de negocio» (p. 23) — marginal desde este documento: la falta de lectura escrita ya está registrada en S02 de P150–P154 y el patrón existe en P125 H06; la señal aparece en la fase de operación/adopción y no aporta un mecanismo distinto al de la candidata de P120.
   - transparencia y trazabilidad de cómo se obtienen los resultados (p. 29) — ya cubierta: P153 H01, H04.
+
+## S03.P153.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas docentes que trasladan Lean (Toyota Production System, Lean Software y Lean Product Development) a la analítica vista como sistema de producción y de desarrollo de producto: desperdicios en analytics, *value stream mapping*, entrega rápida, teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato (DataOps). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

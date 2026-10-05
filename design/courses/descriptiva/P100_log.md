@@ -462,3 +462,14 @@
   - procedencia y condiciones de uso no documentadas en P120, P121, P122, P124, P150–P154 (p. 13) — ya registrada: es un requisito de `AGENTS.md` («Case and dataset provenance») señalado en cada S02; este documento lo refuerza pero no aporta un argumento distinto por taller. Sólo se propone para P123, donde el defecto toca directamente la pregunta temporal.
   - tipología descriptiva/predictiva/prescriptiva con «¿Qué ocurrió? ¿Quiénes abandonaron?» y métodos EDA, segmentación, visualización, minería de procesos (p. 16) — ya cubierta en identidad del curso; minería de procesos: fuera de alcance (sin caso ni datos de eventos en el curso).
   - diseño de modelos, evaluación con datos no usados, despliegue, adopción, monitoreo de deriva, recalibración (pp. 17–26) — fuera de alcance: predictiva, prescriptiva y productos de datos.
+
+## S03.P100.37
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas docentes que trasladan Lean (Toyota Production System, Lean Software y Lean Product Development) a la analítica vista como sistema de producción y de desarrollo de producto: desperdicios en analytics, *value stream mapping*, entrega rápida, teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato (DataOps). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - análisis de causa raíz con 5 porqués y árbol de realidad actual (p. 10) — fuera de alcance: herramienta de mejora de procesos organizacionales; aplicado a hallazgos descriptivos, empujaría a explicaciones causales que el curso no posee (cf. límite causal de P125 H06).
+  - control estadístico de procesos, colas, teoría de restricciones, *value stream mapping*, versionado, orquestación, cómputo distribuido (pp. 7–9, 12) — fuera de alcance: DataOps, ingeniería de datos y productos de datos.
