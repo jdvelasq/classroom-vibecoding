@@ -288,3 +288,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - memoria del ejercicio piloto de armonización curricular de la UNAL (contextos, dinámicas, prácticas pedagógicas y proyecciones, construidos en talleres con la comunidad académica). Lectura: estructura completa y capítulo de prácticas pedagógicas (pp. 67–94); el documento trata fines formativos, integración docencia–investigación–extensión y participación en el nivel institucional, sin contenidos ni prácticas de analítica predictiva que contrastar con esta actividad.
+
+## S03.P200.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - proyecto por entregas que parte de definir el problema y la propuesta (Deliverable 1, p. 6): coherente con el encuadre de T01, pero es formato de evaluación de curso; no se añade como fuente.

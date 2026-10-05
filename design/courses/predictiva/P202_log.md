@@ -254,3 +254,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - memoria del ejercicio piloto de armonización curricular de la UNAL (contextos, dinámicas, prácticas pedagógicas y proyecciones, construidos en talleres con la comunidad académica). Lectura: estructura completa y capítulo de prácticas pedagógicas (pp. 67–94); el documento trata fines formativos, integración docencia–investigación–extensión y participación en el nivel institucional, sin contenidos ni prácticas de analítica predictiva que contrastar con esta actividad.
+
+## S03.P202.28
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sílabo de posgrado en analítica de datos de salud (calendario, pp. 9–10: preprocesamiento, exploración, probabilidad, regresión, patrones frecuentes, clasificación y predicción, clustering), con evaluación basada en un proyecto de minería de datos por entregas y un artículo de revisión; los temas coinciden con los ya cubiertos y el formato de proyecto integrador es una decisión de curso, no de esta actividad.
