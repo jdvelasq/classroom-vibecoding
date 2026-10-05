@@ -65,3 +65,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «monitoreo de modelos (model drift, data drift) y reentrenamiento continuo» (p. 176); «Monitoreo de modelos» (p. 97) — la deriva y el desempeño ya están cubiertos (P422 H01, P423 H01); el reentrenamiento es fuera de alcance porque vuelve a enseñar el método predictivo. La exigencia de «validar modelos rigurosamente y justificar predicciones (explicabilidad)» (p. 176) pertenece a Predictiva.
+
+## S03.P423.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de un proyecto de inversión pública: bootcamps de 159 horas para formar al menos 94.696 personas en programación, IA, análisis de datos, blockchain, arquitectura en la nube y ciberseguridad, con cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

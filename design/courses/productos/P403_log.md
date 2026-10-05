@@ -66,3 +66,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Riesgo de modelos | Manual de riesgo / Validación estadística», «Backtesting de modelos» (p. 97) — marginal: la validación frente a umbrales de uso ya está en H02 y H03; el manual de riesgo es una práctica sectorial (finanzas) sin caso en el curso.
+
+## S03.P403.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de un proyecto de inversión pública: bootcamps de 159 horas para formar al menos 94.696 personas en programación, IA, análisis de datos, blockchain, arquitectura en la nube y ciberseguridad, con cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

@@ -66,3 +66,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «estrategias de respaldo y recuperación» de bases de datos (p. 175) — ya cubierta (P448 H02, restauración verificada); la administración de bases de datos (replicación, sharding) es fuera de alcance.
+
+## S03.P448.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de un proyecto de inversión pública: bootcamps de 159 horas para formar al menos 94.696 personas en programación, IA, análisis de datos, blockchain, arquitectura en la nube y ciberseguridad, con cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

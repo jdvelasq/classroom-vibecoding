@@ -66,3 +66,11 @@
 - **Señales descartadas relevantes:**
   - pipelines que incluyan testing unitario, de integración y end-to-end, análisis de calidad de código (SonarQube), SAST/DAST y gestión de artefactos (pp. 175–176) — P415/P416/P417 ya cubren la verificación automática previa a la fusión (P415 H01, P416 H01, P417 H01); SAST, DAST y análisis de código son fuera de alcance (ingeniería de software general).
   - «programación en pareja, revisión de código, integración y entrega continuas se experimentan poco en el contexto académico» (p. 183) — ya cubierta: P411 H01 (revisión mediante pull request) y P415 H01.
+
+## S03.P415.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de un proyecto de inversión pública: bootcamps de 159 horas para formar al menos 94.696 personas en programación, IA, análisis de datos, blockchain, arquitectura en la nube y ciberseguridad, con cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

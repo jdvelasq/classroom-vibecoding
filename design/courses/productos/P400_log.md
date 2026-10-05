@@ -102,3 +102,16 @@
   - Kubernetes, service mesh, infraestructura como código, multi-cloud, alta disponibilidad y disaster recovery en la nube, serverless (pp. 173, 175–176) — fuera de alcance: cloud engineering y arquitectura de plataforma, excluidas explícitamente por `s05-diseno-productos.md`.
   - roles emergentes de LLMOps, AI Evaluations Engineer («define gold sets, métricas… red-teaming y reporting continuo») y AI Reliability/Observability (p. 160; pp. 331–336) — fuera de alcance: no hay una capacidad basada en LLM en el curso y el anexo es prospectivo («propuestos por inferencia», p. 336). Sus componentes generales (evaluación continua, deriva, observabilidad) ya están en P403, P422, P423 y P442.
   - habilidades blandas y comunicación con no técnicos (pp. 158, 164–165, 177) — fuera de alcance: transversales y no específicas de Productos de datos.
+
+## S03.P400.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de un proyecto de inversión pública: bootcamps de 159 horas para formar al menos 94.696 personas en programación, IA, análisis de datos, blockchain, arquitectura en la nube y ciberseguridad, con cronograma de cohortes y focalización poblacional. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - temáticas priorizadas «Programación», «Inteligencia Artificial», «Análisis de Datos», «BlockChain», «Arquitectura en la nube», «Ciberseguridad» (p. 2) — fuera de alcance: confirman pertinencia laboral general de datos e IA, pero cloud, ciberseguridad y blockchain están explícitamente fuera de la frontera del curso (no es cloud engineering ni ingeniería de software general); la familia governmental no prescribe temas.
+  - metodología «Learning by doing», aula que «simula situaciones reales de trabajo» y «desafíos concretos» (p. 1) — ya cubierta: la convención de talleres presenciales `Pxxx_` guiados por el profesor; la debilidad registrada del curso (indicadores triviales sin usuario) no la resuelve este documento, que no aporta caso ni datos.
+  - «metodologías ágiles, la colaboración y el aprendizaje compartido» y papel del mentor (p. 1) — fuera de alcance: rasgos pedagógicos del formato bootcamp; no definen contenido de Productos de datos.
+  - meta de 94.696 personas, cohortes y regionalización (pp. 2–4) — fuera de alcance: datos de política pública sin relación con ninguna capacidad `productos.C01`–`C05`.
