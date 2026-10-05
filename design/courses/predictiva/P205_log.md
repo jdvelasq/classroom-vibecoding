@@ -412,3 +412,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gráficos de ganancia y *lift* para comparar modelos (pp. 13, 33): variante de la lectura que H02 ya enseña; no se propone.
+
+## S03.P205.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.

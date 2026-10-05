@@ -451,3 +451,11 @@
 - **Señales descartadas relevantes:**
   - entendimiento del negocio, solución actual y criterios de éxito acordados antes de modelar (pp. 9–10): se añade como fuente de T01.
   - diseño de pruebas con partición entrenamiento/prueba (p. 30): ya cubierta (H03).
+
+## S03.P200.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.

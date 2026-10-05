@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ejemplo de recomendaciones de venta cruzada con criterio de éxito de negocio (+10 % de ventas cruzadas, pp. 9–10): contexto; evaluar el impacto en ventas excede la evaluación retenida de T01, que mide error de predicción.
+
+## S03.P215.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.

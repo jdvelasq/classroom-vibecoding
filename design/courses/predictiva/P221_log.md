@@ -390,3 +390,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P221.48
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio rápido de la interfaz de KNIME (instalación, nodos, flujos, metanodos, vistas); sin contenidos de analítica que contrastar con esta actividad.
