@@ -21,3 +21,11 @@
   - procesamiento de texto (bag-of-words, word-count, TF-IDF, n-gramas, *stop words*, *stemming*; DG-Working with Various Types of Data, p. 71) — marginal: P100 H02 ya fija la unidad textual por reglas de normalización y P123 H02–H03 normaliza vocabularios. Añadir TF-IDF o lematización sería otra técnica para lo mismo.
   - estrategia de búsqueda, «narrowing and broadening», operadores booleanos (DM-Information Retrieval, p. 82); descubrimiento de comunidades (DM-Mining Web Data, p. 81); enmarcar la pregunta y obtener datos (DM-Data Preparation, p. 76) — ya cubierta: P123 H01 (consulta persistida) y H05 (Louvain). Documentar el refinamiento de la cadena sería marginal frente al límite ya registrado (falta de fecha y conteo).
   - calidad del *clustering* (DM-Cluster Analysis, p. 77) — marginal: la falta de modularidad o estabilidad en P123 H05 ya está registrada por S02, y ACM sólo lo enuncia como conocimiento genérico de minería.
+
+## S03.P123.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto que define los siete dominios del INFORMS Analytics Framework (framing de negocio, framing analítico, datos, metodología, desarrollo de modelos, despliegue, gestión del ciclo de vida) con la lista de tareas de cada uno; sin subtareas ni detalle evaluativo (el detalle está en el blueprint CAP-E). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

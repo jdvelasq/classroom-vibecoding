@@ -20,3 +20,11 @@
 - **Señales descartadas relevantes:**
   - series de tiempo (estacionariedad, motivos, pronóstico; DM-Time Series, E, p. 80) — el pronóstico está fuera de alcance (predictiva). «Measuring growth over time» ya está cubierta por P121 H06 y por las series de P120/P122/P150.
   - *scores* y *rankings* con características deseables (DM-Proximity, p. 75) — ya cubierta: umbrales de volumen y separación entre riesgo y prioridad (P120 H06–H07, P121 H05, P122 H04/H06).
+
+## S03.P121.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 3.6 «Assess data quality and identify relationships in the data» (p. 5) — ya cubierta: P120 H02, P121 H02, P122 H01, H05.

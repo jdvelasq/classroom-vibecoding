@@ -18,3 +18,11 @@
 - **Señales descartadas relevantes:**
   - minimización de datos sensibles, regulaciones (GDPR, etc.; DG-Data Privacy and Security, p. 74; PR-Privacy, pp. 106–107) — ya cubierta en lo técnico (H02). El marco legal comparado es fuera de alcance: no hay caso que lo exija.
   - métodos de validación «input validation, data type validation, range and constraint validation, and cross-reference validation» (DPSIA/DI, p. 92) — ya cubierta: P102 H01, P124 H02 y P120 H02 (identidad `Quantity × Price = TotalAmount`).
+
+## S03.P102.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - privacidad y seguridad como protocolos del dominio de datos (p. 5) — ya cubierta: P102 H02, P108, P109.

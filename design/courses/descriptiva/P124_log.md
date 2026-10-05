@@ -20,3 +20,11 @@
 - **Señales descartadas relevantes:**
   - métodos de validación «input validation, data type validation, range and constraint validation, and cross-reference validation» (DPSIA/DI, p. 92) — ya cubierta: P102 H01, P124 H02 y P120 H02 (identidad `Quantity × Price = TotalAmount`).
   - «Dashboards and interactive visualisation» (AP-Visualization, p. 46); «Diagram the life of an interface, dashboard, or visualization including long-term use and maintenance» (AP-User-centred, T2, p. 47) — ya cubierta: tablero filtrable en P124 H04 (en P154 la p. 46 respalda T01, criterio de atención). Su ciclo de vida y mantenimiento es fuera de alcance (productos de datos).
+
+## S03.P124.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto que define los siete dominios del INFORMS Analytics Framework (framing de negocio, framing analítico, datos, metodología, desarrollo de modelos, despliegue, gestión del ciclo de vida) con la lista de tareas de cada uno; sin subtareas ni detalle evaluativo (el detalle está en el blueprint CAP-E). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

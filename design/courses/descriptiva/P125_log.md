@@ -19,3 +19,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tipos de medida nominal/ordinal/intervalo/razón (DM-Proximity, p. 76) — marginal: la elección de mediana y percentiles ya está justificada en P125 H03.
+
+## S03.P125.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 5.6 «Document and communicate model findings, including assumptions, limitations, and constraints» (p. 6) — ya cubierta en su forma descriptiva: P125 H06; extenderlo a otros talleres no se sostiene con esta señal genérica.

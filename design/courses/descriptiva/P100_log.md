@@ -25,3 +25,13 @@
   - sesgo y representatividad de muestras (PR-Ethical, p. 108: «Need for data, including samples of data, to be truly representative»; DM-Data Preparation, p. 76: «concerns around potential bias in data»; cap. 6, p. 39) — marginal: la frontera de población ya está declarada en P123 (H01, cadena de búsqueda) y P124 (datos no operativos). Ningún caso actual tiene un sesgo de muestreo demostrable que enseñar con rigor.
   - *clustering*, clasificación, regresión, reglas de asociación (Apriori), ML, IA (DM pp. 77–80; ML; AI) — fuera de alcance: predictiva u otros cursos. Las reglas de asociación no tienen caso descriptivo ni datos en el curso actual.
   - seguridad, criptografía, protocolos, análisis para seguridad (DPSIA/DS, DPSIA/AS, pp. 86–94) — fuera de alcance.
+
+## S03.P100.02
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto que define los siete dominios del INFORMS Analytics Framework (framing de negocio, framing analítico, datos, metodología, desarrollo de modelos, despliegue, gestión del ciclo de vida) con la lista de tareas de cada uno; sin subtareas ni detalle evaluativo (el detalle está en el blueprint CAP-E). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - caso de negocio, selección de stack, modelos, despliegue y ciclo de vida (Tasks 1.5, 4.3–4.4, dominios V–VII, pp. 4–7) — fuera de alcance: gestión de proyectos, predictiva, prescriptiva y productos de datos.
