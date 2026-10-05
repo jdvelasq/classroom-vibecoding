@@ -402,3 +402,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - nivel de medición y rol por campo; campos 0/1 que deben tratarse como nominales («gender, are more accurately viewed as a nominal field», p. 72); identificador único sin uso analítico («cardid … Typeless», p. 321) — ya cubierta: H02 asigna roles analíticos a las columnas.
+
+## S03.P502.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - informe de recolección y de descripción (p. 18 «write a data collection report»; p. 19 «How large is the database (in numbers of rows and columns)?») — ya cubierta: P502 H01 (inventario con grano, ubicación, consumidor) y P501 H02 (manifiesto de interfaces).

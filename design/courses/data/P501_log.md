@@ -400,3 +400,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Guía de ejemplos de una herramienta comercial de minería de datos organizada alrededor de CRISP-DM; casi todos los capítulos son de modelado (clasificación, series de tiempo, GLM, supervivencia) sobre archivos de demostración, muchos ficticios; la preparación de datos aparece como paso previo al modelo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P501.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - informe de recolección y de descripción (p. 18 «write a data collection report»; p. 19 «How large is the database (in numbers of rows and columns)?») — ya cubierta: P502 H01 (inventario con grano, ubicación, consumidor) y P501 H02 (manifiesto de interfaces).

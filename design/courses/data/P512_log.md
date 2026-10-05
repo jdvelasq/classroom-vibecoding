@@ -401,3 +401,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - conversión de fecha ajustando el formato por defecto («Change the default date format to match the format of the Date field», p. 163) — ya cubierta: P512 H01 (dimensión de fecha desde `d/m/yy`) y P500 H01 (convención regional).
+
+## S03.P512.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de IBM para el proceso CRISP-DM en SPSS Modeler; por cada fase da lista de tareas, ejemplo de e-retail (logs web, compras, productos, clientes) y el informe que debe producirse (recolección, descripción, exploración, calidad, limpieza). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

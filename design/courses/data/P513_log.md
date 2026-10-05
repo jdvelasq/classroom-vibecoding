@@ -395,3 +395,11 @@
 - **Señales descartadas relevantes:**
   - distinción entre almacenamiento y medición («storage is different from Measurement», p. 83) e instanciación de valores (p. 84) — ya cubierta: P500 H01 y P513 H01 declaran el formato en la lectura; el defecto de tipos de P513 se trata con dataops-09, no con esta guía.
   - unión de dos archivos mensuales con Append para evaluar (p. 216: «Add an Append node and attach both the telco_Jan.sav and telco_Feb.sav source nodes») — ya cubierta: H02 recibe una fuente fragmentada por periodo; el guía no verifica esquemas ni conciliación, de modo que no aporta más que lo existente.
+
+## S03.P513.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

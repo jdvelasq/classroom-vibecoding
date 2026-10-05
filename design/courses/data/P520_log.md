@@ -386,3 +386,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Aggregate + Append + Transpose para reorganizar predicciones (pp. 308–310) — marginal: reestructuración al servicio de un gráfico de modelo; sin contribución nueva frente a los cambios de grano existentes.
+
+## S03.P520.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - construir registros por entidad mediante «roll up» (p. 25 «when the event-per-row Web logs are "rolled up" so that each row is a session, new attributes … will be created») — ya cubierta: P520 H02–H03 (tabla por conductor), P526 H03 (grano sesión).

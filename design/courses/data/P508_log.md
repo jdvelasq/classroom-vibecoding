@@ -397,3 +397,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Whether read from a file or a database, the source type doesn't matter as long as the field names and types match» (p. 41) — ya cubierta: H01 separa acceso y motor; el contrato de nombres y tipos está en P517 H02.
+
+## S03.P508.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de IBM para el proceso CRISP-DM en SPSS Modeler; por cada fase da lista de tareas, ejemplo de e-retail (logs web, compras, productos, clientes) y el informe que debe producirse (recolección, descripción, exploración, calidad, limpieza). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

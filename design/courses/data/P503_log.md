@@ -410,3 +410,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - registro de canasta en formato ancho con banderas por categoría (pp. 321–322) — marginal: variante de representación; P503 H02 ya contrasta campos multivalor con relaciones normalizadas.
+
+## S03.P503.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - decidir faltantes e identidad antes de cargar (p. 17 «Have you considered how missing values are handled in each of your data sources?») — ya cubierta: H03.

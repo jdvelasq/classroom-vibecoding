@@ -396,3 +396,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Guía de ejemplos de una herramienta comercial de minería de datos organizada alrededor de CRISP-DM; casi todos los capítulos son de modelado (clasificación, series de tiempo, GLM, supervivencia) sobre archivos de demostración, muchos ficticios; la preparación de datos aparece como paso previo al modelo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P511.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - claves con codificación idéntica para poder unir (pp. 18–19 «These variables must have identical coding schemes from data source to data source; otherwise, it would be impossible to merge») y verificar la unión (p. 26) — ya cubierta: H01 (claves contextuales) y H02 (`validate="many_to_one"` + conservación del grano).

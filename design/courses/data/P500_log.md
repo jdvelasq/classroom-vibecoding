@@ -605,3 +605,16 @@
   - SQL/in-database modeling, generación de SQL (pp. 7, 18, 21) — fuera de alcance: modelado en el motor.
   - descarte de registros con objetivo nulo (p. 206: «Cases where the target has a null value are of no use when building the model») y filtrado de campos por importancia predictiva (pp. 147, 213) — fuera de alcance: preparación orientada al modelo.
   - derivación de atributos sobre series concatenadas y descarte del primer registro de cada serie «to avoid large (incorrect) jumps … at boundaries» (p. 230) — fuera de alcance: ingeniería de atributos para modelado, sobre datos ficticios (p. 227).
+
+## S03.P500.48
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - coding schemes y unidades no estándar (p. 18 «one data set may use _M_ and _F_ … while another may use the numeric values _1_ and _2_»; p. 20 «Coding inconsistencies») — ya cubierta: H01 hace explícita la convención regional (separador, coma decimal).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - fase de formateo para el algoritmo, partición entrenamiento/prueba, normalización (p. 23 «Splitting into training and test data sets»; p. 25 «Do the data need be normalized before modeling?»; pp. 26–27) — fuera de alcance: pertenece a Predictiva.
+  - objetivos de negocio, criterios de éxito, glosario de términos (pp. 9–13; p. 13 «if "churn" for your business has a particular and unique meaning, it is worth explicitly stating that») — ya cubierta: P500 H03 (métricas definidas con independencia de la herramienta), P506 H02 (operacionalización de un concepto), P526 H03.
+  - restricciones legales y de acceso a datos (p. 12 «Have you verified all legal constraints on data usage?») — marginal como señal autónoma: el vacío de manifiestos de procedencia ya está registrado en S02 de casi todas las actividades; se concreta sólo en la candidata P519.
+  - modelado, evaluación, despliegue, monitoreo (caps. 5–7, pp. 29–42) — fuera de alcance.
