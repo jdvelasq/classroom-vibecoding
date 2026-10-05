@@ -433,3 +433,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - hoja informativa de dos páginas de SQL Server 2005 Data Mining (aplicaciones de negocio y lista de algoritmos); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P201.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - detección de anomalías con SVM de una clase (cap. 6): fuera de las actividades actuales; con ACM (T2) son dos menciones sin caso ni producto predictivo definido. Se registra como señal.

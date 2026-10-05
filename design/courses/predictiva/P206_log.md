@@ -435,3 +435,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - hoja informativa de dos páginas de SQL Server 2005 Data Mining (aplicaciones de negocio y lista de algoritmos); para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P206.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - evaluación de un modelo de clustering y clustering jerárquico (cap. 7): ya cubierta en lo esencial (H03).

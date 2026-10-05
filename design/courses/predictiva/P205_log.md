@@ -428,3 +428,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - análisis de campañas para dirigir el gasto a quienes más probablemente respondan, con gráficos de *lift* y beneficio (pp. 1–2): variante de la lectura que H02 ya enseña.
+
+## S03.P205.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - matrices de costo, probabilidades previas y pesos de clase para sesgar un clasificador; tasa de aciertos y de falsas alarmas por umbral (p. 57): ya cubierta (H02: costos y conteos por umbral).

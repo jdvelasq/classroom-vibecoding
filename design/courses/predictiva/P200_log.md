@@ -467,3 +467,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - árboles de decisión y de regresión en la lista de algoritmos (p. 2): mención sin detalle; N01 ya tiene respaldo suficiente y no se añade como fuente.
+
+## S03.P200.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - árboles de decisión con reglas interpretables, confianza y soporte (pp. 27, 83–84): se añade como fuente de N01.
+  - prueba de modelos de regresión con datos separados para construir y probar (p. 47): ya cubierta (H03).
