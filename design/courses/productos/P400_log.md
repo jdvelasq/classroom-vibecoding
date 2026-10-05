@@ -23,3 +23,16 @@
   - BDS-Cloud Computing y Software Support (pp. 60–61: diseño de centros de datos, «Concepts of auto scaling and serverless computing») — fuera de alcance: frontera explícita (no Big Data ni cloud engineering).
   - SDM-Software Design (p. 121: «Execute a basic Data (Science) Lifecycle on a simple data product»; mentalidad de ciclo de vida) y AP-User-centred design (p. 47: «Diagram the life of an interface, dashboard, or visualization including long-term use and maintenance») — ya cubierta a nivel de curso: es la pregunta organizadora de productos (C01–C05); no aporta mecanismo nuevo.
   - DG-Data Acquisition/Integration/Reduction/Transformation (pp. 70–73) — fuera de alcance: pertenecen a Fundamentos de data; el curso no vuelve a preparar datos.
+
+## S03.P400.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** aporta a N01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Dominios I, II, IV y V (p. 4–6: encuadre del problema de negocio y del problema analítico, selección de método, desarrollo del modelo) — fuera de alcance: pertenecen a Fundamentos, Descriptiva, Predictiva y Prescriptiva; el curso no vuelve a formular ni a modelar el problema.
+  - Task 7.3 «Support training activities» (p. 7) — fuera de alcance: capacitación de usuarios; no hay caso ni producto analítico que la haga enseñable con rigor en un taller.
+  - Task 7.5 «Analyze the side effects of the analytics solution over time» (p. 7) — fuera de alcance por ahora: exige una capacidad en operación con historia de efectos (bucles de retroalimentación, efectos no previstos) que ningún caso del curso tiene; podría retomarse si P451 alimentara una mejora real.
+  - Task 4.3/4.4 arquitectura y stack tecnológico (p. 6) — fuera de alcance: arquitectura empresarial y elección de plataforma, que son fronteras explícitas del curso.
