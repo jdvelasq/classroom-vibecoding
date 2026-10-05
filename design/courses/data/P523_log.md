@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «distributed data storage, multicore processing, and parallel computation» (p. 87) — fuera de alcance: frontera explícita del curso (operaciones distribuidas). El documento lo trata como infraestructura del programa, no como resultado de un curso de fundamentos.
+
+## S03.P523.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «escasez de profesionales con experiencia práctica en procesamiento distribuido de datos a escala» con Spark, Hadoop, Kafka (p. 175); Analista Big Data que domina «Hadoop/Spark, bases de datos NoSQL, streaming» (p. 291). Categoría: fuera de alcance. Operaciones distribuidas están excluidas por `s05-diseno-data.md` y `case-selection.md` («No introducen PySpark, RDD, Pig, Hive»); reforzarlo agravaría el riesgo de identidad ya registrado en P522–P523.

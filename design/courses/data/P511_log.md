@@ -67,3 +67,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco autorizado de la NASEM para la formación de pregrado en ciencia de datos. Define la «data acumen» y diez áreas conceptuales (entre ellas gestión y curaduría de datos, flujo de trabajo y reproducibilidad, ética) y pide que la ética atraviese todo el currículo. Respalda expectativas generales, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P511.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «muchos candidatos presentan consultas SQL básicas, pero carecen de la comprensión de modelado de datos avanzado, … normalización vs. desnormalización» (p. 175); «construir modelos lógicos de datos» como pilar crítico para Data Analyst (p. 252). Categoría: ya cubierta. Normalización de multivalor con PK/FK (P503 H02, H04), tabla plana integrada (P511 H01–H03) y hecho–dimensiones que contrasta con la tabla plana (P512 H02) ya ejercen el contraste.
+  - «Integración de fuentes» como habilidad del dominio «Data & features» (p. 96; p. 231: «Integración de fuentes (133)»); «integrar fuentes de datos y permitir políticas basadas en evidencia» (p. 291). Categoría: ya cubierta. Integración por claves contextuales con cardinalidad validada (P511 H01–H02) y conciliación del agregado con la fuente (P510 H03).

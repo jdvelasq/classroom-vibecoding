@@ -72,3 +72,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco autorizado de la NASEM para la formación de pregrado en ciencia de datos. Define la «data acumen» y diez áreas conceptuales (entre ellas gestión y curaduría de datos, flujo de trabajo y reproducibilidad, ética) y pide que la ética atraviese todo el currículo. Respalda expectativas generales, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P501.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Estudio de política pública que proyecta oferta y demanda de talento TI en Colombia, cuantifica brechas por rol y habilidad (vacantes, encuestas, grupos focales) y contrasta la oferta curricular formal y no formal; los datos aparecen como demanda laboral (SQL, integración de fuentes, roles de analista/ingeniero/arquitecto de datos), no como contenido curricular especificado. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

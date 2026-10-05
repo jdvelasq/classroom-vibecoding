@@ -104,3 +104,17 @@
   - ausencia generalizada de manifiestos de procedencia (S01 «sin procedencia» en P500, P501, P510, P516, P519–P526) — marginal como señal de este documento: `AGENTS.md` ya exige preservar procedencia y restricciones. Es un defecto de cumplimiento de implementación más que una contribución nueva de aprendizaje; P502 concentra la parte conceptual.
   - dashboards para monitorear una base que evoluciona (p. 45) — fuera de alcance (Descriptiva y productos de datos).
   - evaluación del aprendizaje en ocho pasos de Jordan (p. 89) — fuera de alcance de S03 (la evaluación es participación con `pytest` por convención).
+
+## S03.P500.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Calidad: aplicación de reglas de limpieza (tiempos mínimos, duplicados), control de completitud, consistencia de escalas» (p. 238); «Trazabilidad y gobernanza: separación clara entre evidencia empírica … y supuestos de negocio» (p. 41). Categoría: ya cubierta. Controles de calidad ejecutables (P500 H04), reglas nombradas con dimensión y conteo (P516 H02), contrato y decisiones persistidas (P517 H02–H04).
+  - «Pensamiento analítico: Formular preguntas correctas, encontrar patrones, interpretar métricas y KPIs» para Analista de Datos (p. 219). Categoría: ya cubierta. Contrato de métrica independiente de la herramienta (P500 H03) y grano derivado de la pregunta (P500 H02).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - proyectos académicos con «requisitos completamente definidos, sin integración con sistemas existentes» (p. 183); «los problemas llegan incompletos, contradictorios» (p. 177). Categoría: marginal. Señal pedagógica general de pertinencia de `data.C01`; la debilidad de C01 en talleres con preguntas dadas (P505, P508, P518) ya está registrada por S02 y el documento no especifica práctica.
+  - Excel avanzado, Power BI/Tableau, «Storytelling con datos», «Presentación de informes» (pp. 96, 102, 176, 218–220). Categoría: fuera de alcance. Visualización y comunicación de hallazgos pertenecen a Descriptiva; herramientas BI no definen identidad (`data.C05`).
+  - ML en producción con «data cleaning, normalización», «model drift, data drift», MLOps (p. 176); roles emergentes LLMOps, Knowledge Engineer («ETL, vector DB + knowledge graphs, calidad de datos», p. 160), Synthetic Data Engineer (p. 334). Categoría: fuera de alcance. Productos de datos/IA y construcción de modelos, fronteras explícitas del curso; los datos sintéticos además están restringidos por `AGENTS.md`.
+  - cloud, contenedores, CI/CD, IaC, DevSecOps (pp. 175–176); certificaciones Azure/AWS/Databricks/Snowflake (pp. 79–80). Categoría: fuera de alcance. Infraestructura y operación; la familia governmental no prescribe herramientas.

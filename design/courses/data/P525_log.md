@@ -58,3 +58,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco autorizado de la NASEM para la formación de pregrado en ciencia de datos. Define la «data acumen» y diez áreas conceptuales (entre ellas gestión y curaduría de datos, flujo de trabajo y reproducibilidad, ética) y pide que la ética atraviese todo el currículo. Respalda expectativas generales, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P525.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - arquitectura del propio estudio «Medallion (bronze–silver–gold)» (p. 129) con «Capa Bronze: ingesta y preservación de datos crudos. Capa Silver: procesos de validación, normalización y verificación de calidad. Capa Gold: … indicadores» (p. 131); BI con «stack claro (ETL, SQL, herramientas de visualización)» (p. 290). Categoría: ya cubierta / fuera de alcance. Raw/curado y ETL/ELT ya existen (P513 H02, P514 H01, P515 H03, P525); su riesgo de identidad (S02) no se resuelve con evidencia de demanda, y añadir capas medallion sería arquitectura de plataforma.
+  - Arquitecto de Datos que define «un data warehouse corporativo, algunos data marts» hasta «lagos de datos, arquitecturas híbridas …, gobernanza, linaje, seguridad» (p. 290); Líder de BD que participa en «arquitectura de datos y gobierno de información» (p. 286). Categoría: ya cubierta / fuera de alcance. Mart mínimo (P512 H02–H03) y linaje con cambio de grano (P502 H03) ya existen; lagos y gobierno corporativo son arquitectura empresarial, excluida.

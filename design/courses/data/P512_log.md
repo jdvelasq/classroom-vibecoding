@@ -70,3 +70,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - las bases de datos modernas, relacionales y no relacionales (p. 45) — ya cubierta: relacional en P503–P510 y P512, JSON anidado en P518. Añadir NoSQL sería variante de herramienta.
+
+## S03.P512.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «muchos candidatos presentan consultas SQL básicas, pero carecen de la comprensión de modelado de datos avanzado, … normalización vs. desnormalización» (p. 175); «construir modelos lógicos de datos» como pilar crítico para Data Analyst (p. 252). Categoría: ya cubierta. Normalización de multivalor con PK/FK (P503 H02, H04), tabla plana integrada (P511 H01–H03) y hecho–dimensiones que contrasta con la tabla plana (P512 H02) ya ejercen el contraste.
+  - Arquitecto de Datos que define «un data warehouse corporativo, algunos data marts» hasta «lagos de datos, arquitecturas híbridas …, gobernanza, linaje, seguridad» (p. 290); Líder de BD que participa en «arquitectura de datos y gobierno de información» (p. 286). Categoría: ya cubierta / fuera de alcance. Mart mínimo (P512 H02–H03) y linaje con cambio de grano (P502 H03) ya existen; lagos y gobierno corporativo son arquitectura empresarial, excluida.

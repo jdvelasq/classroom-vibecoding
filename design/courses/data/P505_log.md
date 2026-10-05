@@ -68,3 +68,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco autorizado de la NASEM para la formación de pregrado en ciencia de datos. Define la «data acumen» y diez áreas conceptuales (entre ellas gestión y curaduría de datos, flujo de trabajo y reproducibilidad, ética) y pide que la ética atraviese todo el currículo. Respalda expectativas generales, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P505.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SQL como segunda tecnología más pedida (p. 79: «Python (12,12 %), SQL (11,11 %) y AWS (10,75 %)»); «SQL avanzado» en el dominio «Data & features» (p. 96) y entre las habilidades emergentes (p. 231: «SQL avanzado (1.296)»); certificación «SQL / Bases de datos» 5,11 % (p. 79). Categoría: ya cubierta. Confirma pertinencia laboral de la secuencia SQL (esquema P503, filtros P504, `JOIN` P505, CTE P506, ventanas P507, parametrización P508, volcado y agregación P510). No aporta argumento para ampliarla; tampoco resuelve el riesgo de leer P504–P507 como progresión de un curso de SQL (auditoría S02), que es de identidad y no de demanda.
+  - «optimización de queries, índices, … transacciones ACID, sharding, replicación ni estrategias de respaldo y recuperación» (p. 175); líder de BD con «clusters, replicación, alta disponibilidad, múltiples motores» (p. 286). Categoría: fuera de alcance. Administración de bases de datos e ingeniería; no sirven a requisitos, calidad o documentación de datos para una pregunta.

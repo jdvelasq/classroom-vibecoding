@@ -69,3 +69,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - número de calificaciones como aproximación a «adopción», un sesgo de selección (p. 44, «nonrandom selection») — marginal: basta declarar el límite en la nota de la candidata P510; no cambia la capacidad ejercitada.
+
+## S03.P510.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SQL como segunda tecnología más pedida (p. 79: «Python (12,12 %), SQL (11,11 %) y AWS (10,75 %)»); «SQL avanzado» en el dominio «Data & features» (p. 96) y entre las habilidades emergentes (p. 231: «SQL avanzado (1.296)»); certificación «SQL / Bases de datos» 5,11 % (p. 79). Categoría: ya cubierta. Confirma pertinencia laboral de la secuencia SQL (esquema P503, filtros P504, `JOIN` P505, CTE P506, ventanas P507, parametrización P508, volcado y agregación P510). No aporta argumento para ampliarla; tampoco resuelve el riesgo de leer P504–P507 como progresión de un curso de SQL (auditoría S02), que es de identidad y no de demanda.
+  - «Integración de fuentes» como habilidad del dominio «Data & features» (p. 96; p. 231: «Integración de fuentes (133)»); «integrar fuentes de datos y permitir políticas basadas en evidencia» (p. 291). Categoría: ya cubierta. Integración por claves contextuales con cardinalidad validada (P511 H01–H02) y conciliación del agregado con la fuente (P510 H03).

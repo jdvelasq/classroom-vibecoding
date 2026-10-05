@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «scraping data from websites, processing text into data» (p. 43) — marginal o fuera de alcance: P518 ya cubre la obtención desde una fuente externa estructurada; el texto como dato pertenece a otros cursos.
+
+## S03.P518.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «se requieren profesionales con conocimientos tanto de bases de datos relacionales … como NoSQL (MongoDB, Cassandra, Redis, DynamoDB)» (p. 175); «Bases de datos NoSQL y Big Data — Alta demanda — Énfasis en Bases de Datos Relacionales tradicionales» (p. 167). Categoría: marginal / fuera de alcance. Lo que tiene de representación semiestructurada ya se ejerce (proyección de JSON anidado a una unidad de análisis en P518 H02; costo de representar un registro ancho en JSON en P524 H02); motores NoSQL concretos son herramienta, y la familia governmental no prescribe herramientas.

@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - marco autorizado de la NASEM para la formación de pregrado en ciencia de datos. Define la «data acumen» y diez áreas conceptuales (entre ellas gestión y curaduría de datos, flujo de trabajo y reproducibilidad, ética) y pide que la ética atraviese todo el currículo. Respalda expectativas generales, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P524.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «se requieren profesionales con conocimientos tanto de bases de datos relacionales … como NoSQL (MongoDB, Cassandra, Redis, DynamoDB)» (p. 175); «Bases de datos NoSQL y Big Data — Alta demanda — Énfasis en Bases de Datos Relacionales tradicionales» (p. 167). Categoría: marginal / fuera de alcance. Lo que tiene de representación semiestructurada ya se ejerce (proyección de JSON anidado a una unidad de análisis en P518 H02; costo de representar un registro ancho en JSON en P524 H02); motores NoSQL concretos son herramienta, y la familia governmental no prescribe herramientas.

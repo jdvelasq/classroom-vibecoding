@@ -76,3 +76,15 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - considerar si los datos disponibles son apropiados para la pregunta (p. 39) y los datos observacionales como «found artifacts» no aleatorios (p. 44), aplicados a la pertinencia del corpus Scopus — ya cubierta en lo esencial (P503 H01 consulta preservada, P504 H03 heterogeneidad documental, P507 H02 palabras clave que condicionan el ranking). Ampliar a la evaluación estadística de selección es fuera de alcance (Estadística o Descriptiva).
+
+## S03.P503.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - SQL como segunda tecnología más pedida (p. 79: «Python (12,12 %), SQL (11,11 %) y AWS (10,75 %)»); «SQL avanzado» en el dominio «Data & features» (p. 96) y entre las habilidades emergentes (p. 231: «SQL avanzado (1.296)»); certificación «SQL / Bases de datos» 5,11 % (p. 79). Categoría: ya cubierta. Confirma pertinencia laboral de la secuencia SQL (esquema P503, filtros P504, `JOIN` P505, CTE P506, ventanas P507, parametrización P508, volcado y agregación P510). No aporta argumento para ampliarla; tampoco resuelve el riesgo de leer P504–P507 como progresión de un curso de SQL (auditoría S02), que es de identidad y no de demanda.
+  - «muchos candidatos presentan consultas SQL básicas, pero carecen de la comprensión de modelado de datos avanzado, … normalización vs. desnormalización» (p. 175); «construir modelos lógicos de datos» como pilar crítico para Data Analyst (p. 252). Categoría: ya cubierta. Normalización de multivalor con PK/FK (P503 H02, H04), tabla plana integrada (P511 H01–H03) y hecho–dimensiones que contrasta con la tabla plana (P512 H02) ya ejercen el contraste.
+  - «optimización de queries, índices, … transacciones ACID, sharding, replicación ni estrategias de respaldo y recuperación» (p. 175); líder de BD con «clusters, replicación, alta disponibilidad, múltiples motores» (p. 286). Categoría: fuera de alcance. Administración de bases de datos e ingeniería; no sirven a requisitos, calidad o documentación de datos para una pregunta.
+  - el estudio homologa títulos y habilidades en «Dominio Canónico» (pp. 80–82, 96; glosario p. 346: «Forma de agrupar muchas habilidades similares en categorías generales»), incluso con mapeos discutibles («Analista Blockchain → Analista de Datos», p. 82). Categoría: marginal. Es una práctica del procesamiento del estudio, no una señal curricular; la falta de unificación de variantes de palabras clave en P503 S02 / P507 S01 ya está registrada por S02 y requiere una fuente que la justifique como contenido, no una ilustración de una agencia.
+  - «muestra voluntaria (no probabilística)» como limitación declarada (p. 238). Categoría: marginal. La falta de criterio de muestra (P526 S01) y de pertinencia del corpus (auditoría P503) ya está registrada por S02; aquí sólo se recoge dentro de la candidata de P526.

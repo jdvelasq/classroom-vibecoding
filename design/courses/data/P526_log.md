@@ -57,3 +57,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - `user_id` y `user_session` copiados a `submission/` desde una muestra privada (privacidad, p. 45) — marginal como señal de este documento: `user_session` es la llave del grano y la restricción de uso es un requisito de cumplimiento de `AGENTS.md`. Se escala como higiene junto con la candidata P519, sin proponer un cambio de aprendizaje.
+
+## S03.P526.07
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - «muestra voluntaria (no probabilística)» como limitación declarada (p. 238). Categoría: marginal. La falta de criterio de muestra (P526 S01) y de pertinencia del corpus (auditoría P503) ya está registrada por S02; aquí sólo se recoge dentro de la candidata de P526.
