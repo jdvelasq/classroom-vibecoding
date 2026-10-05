@@ -248,3 +248,16 @@
   - «Ordinary Differential Equations», «The Forward Euler Method», «Partial Differential Equations», «Linear Systems: Direct and Indirect Methods» (p. 1) — fuera de alcance: modelado y simulación numérica, sin relación con adquisición, estructuración, calidad o documentación de datos.
   - casos «Aurora Flight Sciences», «Schlumberger», «BASF» (p. 2) — fuera de alcance: el calendario no describe ningún trabajo sobre datos que pueda contrastarse con un taller; la familia institucional sólo ilustra posibilidades.
   - el documento no contiene ninguna señal sobre acceso, integración, calidad, procedencia, metadatos, privacidad o formatos de datos; no hay contraste posible con P500–P526.
+
+## S03.P500.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa profesional de 6 meses orientado al empleo como data engineer: Python, SQL, ETL, CDC, contenedores, Hadoop/Spark/Airflow, streaming (Kafka, MQTT), seguridad web y ML/RL; evaluación por portafolio en GitHub. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - propósito del programa (p. 2: «the data must be configured, warehoused, and made accessible, and data engineers are responsible for building the infrastructure»); objetivos de seguridad de red, JWT, Java/Spring, Node.js (p. 8, p. 10) — fuera de alcance: identidad de Data Engineering/software, explícitamente fuera de la frontera del curso (`s05-diseno-data.md`).
+  - CDC con Debezium y bases MongoDB/Cassandra/Redis/Firebase en contenedores (p. 8: «Perform change data capture (CDC)»; p. 10: «perform CDC in different types of databases») — fuera de alcance: operación de sistemas y pipelines productivos.
+  - pipelines con NiFi, Hadoop, Spark y Airflow (p. 11: «create data pipelines for big data processing. You will use PySpark to query big data») — fuera de alcance: Big Data y orquestación; `case-selection.md` excluye PySpark/Hive/Pig como contenido.
+  - módulos de ML, RL y redes profundas (p. 9, p. 11, p. 12) — fuera de alcance: pertenecen a Predictiva/otros cursos.

@@ -153,3 +153,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Calendario de un curso de educación profesional del MIT: ecuaciones diferenciales y métodos numéricos, modelado espacial (EDP), optimización y modelado guiado por datos, de la optimización al ML (regresión, regularización, clasificación), métodos probabilísticos (Monte Carlo, pronóstico probabilístico, eventos raros) y casos industriales. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P518.19
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Transit Data and Application Programming Interfaces» (p. 9) y «clean data from web pages ... create a sensemaking data pipeline» (p. 11) — marginal: variante de obtención desde API/web sin finalidad analítica explícita; no resuelve el vacío de pregunta de P518.
