@@ -582,3 +582,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - informe final por audiencia, presentación final y revisión de proyecto con lecciones aprendidas (pp. 35–36, 41–42) — fuera de alcance: gestión y comunicación de proyectos (Fundamentos); no hace más operable una capacidad. La difusión de «findings» a decisores (p. 39) pertenece a Descriptiva.
   - objetivos de negocio, criterios de éxito objetivos/subjetivos con árbitro, riesgos y contingencias, plan de proyecto (pp. 10–15) — fuera de alcance como formulación (Fundamentos); el componente operativo (criterios de éxito en el contrato) ya está en `productos.C01` del diseño.
+
+## S03.P400.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio de KNIME (versión 2.x): instalación, banco de trabajo, construcción de flujos por nodos y puertos, estados de los nodos, ejecución, consola y log, preferencias, clave maestra, importación y exportación de flujos y metanodos. Es una señal de herramienta, sin contenido de operación de productos. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - interfaz, repositorio de nodos, metanodos, hiliting y vistas (p. 5–25) — fuera de alcance: capacitación en una plataforma.

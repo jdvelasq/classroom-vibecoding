@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - costos de «Results deployment» y «Operating costs» en el análisis costo/beneficio (p. 13) — ya cubierta en su parte operativa (P449 H01); el beneficio es fuera de alcance (sin caso ni datos).
+
+## S03.P449.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio de KNIME (versión 2.x): instalación, banco de trabajo, construcción de flujos por nodos y puertos, estados de los nodos, ejecución, consola y log, preferencias, clave maestra, importación y exportación de flujos y metanodos. Es una señal de herramienta, sin contenido de operación de productos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

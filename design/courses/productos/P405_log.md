@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de ayuda de SPSS Modeler para CRISP-DM con listas de tareas por fase y un caso de minería web de un e-retailer; el capítulo 7 trata el despliegue como plan por modelo/hallazgo, el monitoreo como criterio de «expiración» del modelo y el cierre como informe final y revisión de lecciones aprendidas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P405.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - niveles de log DEBUG/INFO/WARNING/ERROR con criterio de uso («WARNING … Default and recommended level for the console view», p. 14) y log a archivo (p. 13–15) — marginal: P405 H01 ya instrumenta eventos persistentes. Distinguir severidades es un detalle de la misma práctica y no cambia lo que el estudiante explica de una ejecución.

@@ -396,3 +396,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «good documentation becomes critical for assessing the business purpose for each data mining project» (p. 40); glosario de términos de negocio (p. 13) — marginal: la tarjeta de producto (P408 H01) y la ficha de catálogo (P454 H01) ya reúnen consumidor, métrica, responsable y contrato; añadir «propósito» es variante de un campo existente.
+
+## S03.P454.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de inicio de KNIME (versión 2.x): instalación, banco de trabajo, construcción de flujos por nodos y puertos, estados de los nodos, ejecución, consola y log, preferencias, clave maestra, importación y exportación de flujos y metanodos. Es una señal de herramienta, sin contenido de operación de productos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

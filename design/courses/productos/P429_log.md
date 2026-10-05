@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de ayuda de SPSS Modeler para CRISP-DM con listas de tareas por fase y un caso de minería web de un e-retailer; el capítulo 7 trata el despliegue como plan por modelo/hallazgo, el monitoreo como criterio de «expiración» del modelo y el cierre como informe final y revisión de lecciones aprendidas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P429.49
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - flujo como grafo de nodos con dependencias y ejecución de los predecesores («if you execute the last node … all predecessor nodes will be executed», p. 17), estados configurado, ejecutado y reiniciado (p. 3–4, 18) — ya cubierta: tareas con dependencia declarada (P429 H01) y grafo de dependencias reconstruible (P433 H01, H03).
