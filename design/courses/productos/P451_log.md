@@ -417,3 +417,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - proceso iterativo; «a data mining project does not stop when a particular solution is deployed. The results of data mining trigger new business questions» (p. 18). Categoría: marginal. Es un principio general de ciclo de vida que P451 ya ejerce como retroalimentación.
+
+## S03.P451.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

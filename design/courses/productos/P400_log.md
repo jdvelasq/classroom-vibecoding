@@ -613,3 +613,13 @@
   - manual de producto de un motor de minería integrado en la base de datos (Oracle 11g). Cubre funciones y algoritmos de minería, scoring con SQL, privilegios sobre modelos y modelos que llevan embebidas sus propias transformaciones («supermodels»). Su valor para Productos es sólo de práctica operativa. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - preparación automática (ADP), binning, normalización, winsorizing y transparencia de los detalles del modelo (pp. 129–134), y los algoritmos de las partes II y III. Categoría: fuera de alcance. Son método predictivo o descriptivo, no operación de la capacidad.
+
+## S03.P400.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - agrupaciones lógicas, ítems clave y comparaciones con metas o histórico para el diseño visual (p. 1). Categoría: fuera de alcance. Es diseño de dashboards y comunicación descriptiva (Descriptiva o BI), no operación de la capacidad.

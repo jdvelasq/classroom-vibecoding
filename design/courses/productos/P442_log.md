@@ -420,3 +420,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - manual de producto de un motor de minería integrado en la base de datos (Oracle 11g). Cubre funciones y algoritmos de minería, scoring con SQL, privilegios sobre modelos y modelos que llevan embebidas sus propias transformaciones («supermodels»). Su valor para Productos es sólo de práctica operativa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P442.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «what would constitute an exception? Are there specific thresholds … or will users simply be looking for values that represent statistical outliers» (p. 1). Categoría: marginal. Los talleres ya convierten señales en alertas con umbral explícito (P439 H01, P442 H01, P422 H01, P423 H02). La falta de justificación de esos umbrales por el uso es el mismo defecto que trata la candidata de P428; por sí sola, la pregunta no cambia lo que hace el estudiante en cada taller.

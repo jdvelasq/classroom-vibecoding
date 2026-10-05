@@ -417,3 +417,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privilegios para puntuar modelos (p. 21, «Only users with the appropriate privileges can score (apply) mining models»; p. 10, «New system and object privileges control access to mining model objects»). Categoría: ya cubierta o marginal. P452 H01–H02 ya declara consumidores autorizados por recurso y rechaza roles no declarados; pasar del reporte al modelo sería una variante.
+
+## S03.P452.52
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de ocho preguntas para levantar requisitos antes de diseñar un dashboard. Pregunta por la frecuencia de actualización, los usuarios, las preguntas y acciones, los datos y su nivel de detalle, los ítems clave, las agrupaciones, las comparaciones (metas o histórico) y qué constituye una excepción (umbrales u outliers). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
