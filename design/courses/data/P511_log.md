@@ -276,3 +276,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - calidad y limpieza de datos (p. 2: «Problems found in realistic data: errors, missing values, lack of consistency, and techniques for addressing them»; p. 2: «coping with missing and dirty data») — ya cubierta: P500 H04 (controles ejecutables), P510 H03 y P511 H02 (conciliación y cardinalidad), P516 H01–H03 (reglas con dimensión).
+
+## S03.P511.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lámina única que enumera los métodos y herramientas del programa: recolección de datos (encuestas, NPS, autorreportes; recolección pasiva; medios), A/B testing, correlación y causalidad, pronóstico, regresión, simulación (Analysis ToolPak, Solver), visualización e interpretación, optimización y árboles de decisión. Es sólo una lista de títulos, sin contenido, nivel ni evidencia. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

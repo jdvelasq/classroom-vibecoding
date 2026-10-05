@@ -265,3 +265,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P526.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Passive Data Collection» y «Media Data Collection: Radio, Television, Mobile, etc.» (p. 1) — ya cubierta: datos generados pasivamente se trabajan con la respuesta de API de GitHub (P518 H02) y los eventos de comercio electrónico (P526 H01, H03); la lámina no aporta una práctica distinta.

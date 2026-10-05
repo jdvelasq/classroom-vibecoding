@@ -421,3 +421,15 @@
   - herramientas de línea de comandos (sort, count, join) y gnuplot/Perl (p. 2) — marginal: otra herramienta para operaciones ya cubiertas (data.C05).
   - estadística, regresión, SVD/PCA, clustering, clasificación, grafos (p. 2) — fuera de alcance: pertenecen a Descriptiva/Predictiva.
   - proyecto con peso 35 % y examen 50 % (p. 4) — fuera de alcance: la evaluación de `Pxxx_` está fijada por `AGENTS.md` (pytest de participación).
+
+## S03.P500.33
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lámina única que enumera los métodos y herramientas del programa: recolección de datos (encuestas, NPS, autorreportes; recolección pasiva; medios), A/B testing, correlación y causalidad, pronóstico, regresión, simulación (Analysis ToolPak, Solver), visualización e interpretación, optimización y árboles de decisión. Es sólo una lista de títulos, sin contenido, nivel ni evidencia. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data Collection Methods — Descriptive Data Collection: Surveys, Net Promoter Score (NPS), and Self-Reports» (p. 1) — fuera de alcance: ningún taller usa datos de encuesta o autorreporte, y una lámina institucional sin contenido no basta para justificar un caso nuevo; además, diseñar instrumentos de encuesta no es habilitar datos existentes (`data.C01`–`C04`). Si en el futuro se incorpora una fuente de encuesta trazable del `catalog/`, sus sesgos de autorreporte entrarían en `data.C03`, pero hoy no hay caso ni datos.
+  - «A/B Testing», «Correlation and Causation», «Forecasting» (tendencia, estacionalidad, suavizado exponencial), «Regression Analysis», «Simulation Toolkit» (Analysis ToolPak, Solver), «Optimization Models», «Decision Trees» (p. 1) — fuera de alcance: análisis descriptivo, predictivo y prescriptivo pertenecen a los otros cursos según `s05-diseno-data.md`; además, son herramientas de Excel que no imponen tema (familia institucional).
+  - «Data Visualization and Interpretation» (p. 1) — fuera de alcance: la comunicación de hallazgos corresponde a Analítica Descriptiva; en `data` la evidencia visual es un medio de verificación (`AGENTS.md`), no un objetivo.
