@@ -289,3 +289,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ETL «Automatiza la actualización periódica», «Puede ejecutarse por lotes (batch) o en tiempo real (stream)», «Puede iniciarse manualmente, mediante programación o mediante eventos de monitoreo» (p. 12) — marginal: la ejecución programada y orquestada ya está en P428 H01–H02 y P429 H01; disparo por eventos sería variante del mismo mecanismo sin caso que lo exija.
+
+## S03.P429.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Fatiga por procesos manuales», «Heroismo, esperanza y precaución» (p. 2); «Se ignoran los beneficios de la automatización» (p. 8) — ya cubierta: automatización con Make, Nox y CI (P413 H01, P414 H01, P415 H01), agenda (P428 H02) y orquestación (P429 H01).

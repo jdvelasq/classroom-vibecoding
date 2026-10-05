@@ -289,3 +289,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ciclo UPS-ORION «Datos → algoritmo → decisión → operación → nuevos datos → nueva decisión» y «La analítica… Empezó a formar parte de la operación» (p. 45) — marginal: ilustra el límite ya registrado de P451 (la retroalimentación no alimenta ninguna mejora; C05 no ejercido) y de P423 (sin acción tras la alerta), pero como documento histórico no aporta un mecanismo localizable; la acción tras la alerta ya tiene candidata en P423 (`prodig8`) y P424.
+
+## S03.P423.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Presentación de diapositivas, en lista, sobre por qué fracasan los proyectos de analítica: mala calidad de los datos, procesos manuales, mitos sobre la ciencia de datos, objetivos poco claros, falta de soporte organizacional y dificultad para llevar modelos a producción. Sirve como motivación organizacional de DataOps, no como prescripción de prácticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

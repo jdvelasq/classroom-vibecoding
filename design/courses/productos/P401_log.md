@@ -290,3 +290,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación histórica (1970–2026) de cómo las organizaciones pasaron de registrar datos a decidir y actuar con ellos: RDBMS, SQL, DW/ETL, BI, minería de datos, CRISP-DM, ciencia de datos, Big Data, Business Analytics, producto de datos, DataOps, MLOps, modelos fundacionales y agentes. Es contexto y encuadre, no prescripción vigente. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P401.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el contraste entre programación tradicional y ML/DA: «El testeo prueba la lógica contra ejemplos» frente a «El testeo se basa en precisión no en ejemplos»; «Se usan datos de producción» (p. 4) — ya cubierta: la secuencia pasa de pruebas de código con casos construidos (P400 H02, P401 H02) a datos (P402 H01) y a compuertas de desempeño de un modelo (P403 H02). La dicotomía de la diapositiva es además una simplificación, porque P403 H03 combina con razón pruebas por ejemplos (interfaz, comportamiento conocido) con pruebas por métricas. Importarla tal cual sería una regresión.

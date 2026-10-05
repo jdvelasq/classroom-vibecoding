@@ -290,3 +290,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Computación reproducible» como componente de la ciencia de datos (p. 23) — ya cubierta: ambiente declarado con procedencia (P412 H01–H02) y semilla registrada (P419 H01).
+
+## S03.P412.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «El uso de laptop analytics es común» y «Dificultad para llevar los modelos a operativo y fricciones con el equipo de TI» (p. 9) — ya cubierta: ambiente declarado (P412 H01), contenedor (P418 H01) y servicio desplegado (P426 H01).

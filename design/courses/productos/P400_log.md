@@ -427,3 +427,16 @@
   - definición de producto de datos: «aplicación o servicio que integra datos y algoritmos para generar continuamente predicciones, recomendaciones, decisiones o información útil y que, además, produce nuevos datos que pueden ser consumidos por otros productos» (p. 44); DataOps: «Los productos analíticos pasan de ser proyectos con un final definido a convertirse en activos que evolucionan junto con el negocio» (p. 53) — ya cubierta como encuadre: coincide con el propósito y el producto terminal de `s05-diseno-productos.md` (capacidad versionada, comprobable, desplegable y observable). Útil para la presentación del curso; no cambia un taller.
   - modelos de servicio IaaS/PaaS/SaaS/FaaS, serverless, low-code, «Vibe Coding» (p. 27); Hadoop, Spark, Hive, data lake, NoSQL (pp. 28–31, 38–40, 50–51) — fuera de alcance: cloud engineering y Big Data, excluidos por las fronteras del curso.
   - CRISP-DM con fase «Distribución» (p. 21), tipos de analítica (p. 37), casos Netflix/Moneyball/Amazon (pp. 3–4, 33, 35) — fuera de alcance: contexto histórico y de formulación (Fundamentos).
+
+## S03.P400.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el contraste entre programación tradicional y ML/DA: «El testeo prueba la lógica contra ejemplos» frente a «El testeo se basa en precisión no en ejemplos»; «Se usan datos de producción» (p. 4) — ya cubierta: la secuencia pasa de pruebas de código con casos construidos (P400 H02, P401 H02) a datos (P402 H01) y a compuertas de desempeño de un modelo (P403 H02). La dicotomía de la diapositiva es además una simplificación, porque P403 H03 combina con razón pruebas por ejemplos (interfaz, comportamiento conocido) con pruebas por métricas. Importarla tal cual sería una regresión.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Formación de DS focalizada en los algoritmos y no en la creación de un producto de datos operativo» y «Malas prácticas de desarrollo de software y desconocimiento de los requerimientos para ir a productivo» (p. 9); «No se tienen las habilidades para llevar un modelo a producción» (p. 3) — ya cubierta: es la razón de ser del curso (`productos.C01`–`C05`). Es contexto que confirma la identidad, no una práctica nueva.
+  - «Datos, conocimientos, decisiones y acciones no son sinónimos» y «No se deben buscar insights interesantes… sin un objetivo claro» (p. 8) — ya registrada: coincide con el límite que S02 anota en casi todo el bloque P400–P441 (capacidad sin usuario ni decisión). Respalda en lo conceptual `productos.C01`, pero no aporta un mecanismo ni un caso.
+  - «Se sigue CRISP-DM y modelos de cascada» (p. 2); «Se requiere HPC y hardware especializado» (p. 4); cultura, data literacy y apoyo de la gerencia (pp. 6–8) — fuera de alcance: son temas de metodología de proyectos, infraestructura u organización, no de operar una capacidad.
+  - «No hay un producto mínimo viable» (p. 3) — marginal: idea de gestión de producto que la diapositiva no desarrolla. El contrato operativo con criterios de éxito ya es `productos.C01`.

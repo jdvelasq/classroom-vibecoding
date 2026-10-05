@@ -293,3 +293,11 @@
 - **Señales descartadas relevantes:**
   - «La experimentación se separa de la operación para reducir el riesgo»; value pipeline frente a innovation pipeline; «Los tests sobre los datos en cada paso garantizan la calidad de la salida»; «Heroísmo», «Miedo» (p. 54) — ya cubierta: verificación antes de fusionar (P415 H01), misma verificación local y remota (P416 H01), contrato de datos (P402 H01, H04); mismo descarte que `dataops-06` (pp. 15–17).
   - principios MLOps: «Pruebas automáticas de artefactos en ML (validación de datos, pruebas de modelos, pruebas de integración)», «Soporte de modelos y datos… como elementos principales en sistemas CD/CI» (p. 55) — ya cubierta: P402 (datos), P403–P404 (modelo y entradas), P417 (integración), P415–P416 (CI), P420–P421 (corridas y registro).
+
+## S03.P402.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2) — ya cubierta: contrato de datos (P402 H01), frescura (P439 H01), conciliación (P440 H01), cuarentena (P441 H01) y observabilidad integrada (P442 H02).

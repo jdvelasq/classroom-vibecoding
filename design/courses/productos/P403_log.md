@@ -290,3 +290,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - principios MLOps: «Pruebas automáticas de artefactos en ML (validación de datos, pruebas de modelos, pruebas de integración)», «Soporte de modelos y datos… como elementos principales en sistemas CD/CI» (p. 55) — ya cubierta: P402 (datos), P403–P404 (modelo y entradas), P417 (integración), P415–P416 (CI), P420–P421 (corridas y registro).
+
+## S03.P403.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el contraste entre programación tradicional y ML/DA: «El testeo prueba la lógica contra ejemplos» frente a «El testeo se basa en precisión no en ejemplos»; «Se usan datos de producción» (p. 4) — ya cubierta: la secuencia pasa de pruebas de código con casos construidos (P400 H02, P401 H02) a datos (P402 H01) y a compuertas de desempeño de un modelo (P403 H02). La dicotomía de la diapositiva es además una simplificación, porque P403 H03 combina con razón pruebas por ejemplos (interfaz, comportamiento conocido) con pruebas por métricas. Importarla tal cual sería una regresión.
+  - «Se confunde el éxito del modelo con su máxima precisión» (p. 3) — marginal: coincide con el límite que S02 ya registró («umbrales sin justificación», «no relaciona errores con su costo»), pero no aporta un método para derivar umbrales del uso. Si otro documento sostiene esa mejora, puede citarse como apoyo contextual.
