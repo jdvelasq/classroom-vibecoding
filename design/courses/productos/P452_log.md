@@ -105,3 +105,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Hacking y amenazas internas» (p. 8) y tarea TalkTalk «¿Cómo debería haber protegido los datos de sus clientes?» (p. 11) — ya cubierta en el nivel de mecanismo (credencial fuera del código en P427, control de acceso por rol en P452); la respuesta organizacional a una brecha es fuera de alcance.
+
+## S03.P452.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial de un curso en línea de educación continua: historia de la web y la nube, servidor Node.js, contenedores y llaves PKI, DevOps y sus cuatro métricas, casos (Microsoft, Netflix, GE, AWS), serverless, «Agile corporation» y cloud native/Kubernetes. Sin vínculo con capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

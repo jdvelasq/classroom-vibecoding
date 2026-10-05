@@ -161,3 +161,14 @@
   - «Desafíos de implementación. Creación de la infraestructura adecuada. Estrategia de Big Data» (p. 8) — fuera de alcance: estrategia/infraestructura organizacional y Big Data, excluidas por las fronteras.
   - cita «Los proyectos impulsados por datos no terminarán nunca, pues están en constante evolución e iteración» (p. 2) — ya cubierta como principio por C05 (observar y mejorar); sin práctica concreta.
   - web scraping, API como fuente, limpieza, estadística descriptiva, experimentación, ML y árboles de decisión (p. 7–8) — fuera de alcance: Fundamentos, Descriptiva, Predictiva y Prescriptiva.
+
+## S03.P400.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial de un curso en línea de educación continua: historia de la web y la nube, servidor Node.js, contenedores y llaves PKI, DevOps y sus cuatro métricas, casos (Microsoft, Netflix, GE, AWS), serverless, «Agile corporation» y cloud native/Kubernetes. Sin vínculo con capacidades analíticas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Módulos 6 y 8 serverless/FaaS, cloud native, migración a la nube (pp. 14–15); Módulos 5 y 7 transformación organizacional, OODA, «Agile Corporation» (pp. 14–15) — fuera de alcance: cloud engineering y estrategia organizacional, excluidos por las fronteras del curso.
+  - Módulo 2 servidor web Node.js asíncrono (p. 13) — fuera de alcance: ingeniería de software general; la exposición de una capacidad por interfaz ya está en P425 H01.

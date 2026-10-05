@@ -105,3 +105,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Hacking y amenazas internas» (p. 8) y tarea TalkTalk «¿Cómo debería haber protegido los datos de sus clientes?» (p. 11) — ya cubierta en el nivel de mecanismo (credencial fuera del código en P427, control de acceso por rol en P452); la respuesta organizacional a una brecha es fuera de alcance.
+
+## S03.P427.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «we will use keys to communicate with cloud services, for example, GitHub and Docker Hub… Public Key Infrastructure (PKI)» (p. 13) — ya cubierta en lo que importa al curso: credencial fuera del código y de la evidencia (P427 H01–H02) y separación de credenciales del repositorio (P410 H02); PKI como tema es seguridad informática general (fuera de alcance).

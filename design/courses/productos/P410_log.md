@@ -105,3 +105,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - programa ejecutivo de 11 semanas sin codificación sobre sesgos en decisiones, análisis descriptivo, Big Data, experimentación, ML, analítica prescriptiva y cuestiones ético-jurídicas y organizacionales, con casos (UPS, Netflix, TalkTalk). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P410.13
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «we will use keys to communicate with cloud services, for example, GitHub and Docker Hub… Public Key Infrastructure (PKI)» (p. 13) — ya cubierta en lo que importa al curso: credencial fuera del código y de la evidencia (P427 H01–H02) y separación de credenciales del repositorio (P410 H02); PKI como tema es seguridad informática general (fuera de alcance).
+  - «hands-on practice with Git and GitHub, Docker, Node, and NPM» (p. 6) — ya cubierta (cadena de repositorio y CI P408–P416); el documento confirma el riesgo de identidad registrado (capacitación en herramientas) en vez de ayudar a resolverlo.
