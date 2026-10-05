@@ -236,3 +236,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Deliverable 3 exige describir «procedures followed to verify the quality of the data, and clean the data» (p. 6) — ya cubierta: P402 convierte expectativas operativas en un contrato de datos verificable y persiste la decisión de aceptación (H01, H03); el entregable de UNF es descriptivo y orientado a preparar datos para el modelado.
+
+## S03.P402.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Keys: primary, foreign, candidate, surrogate» y normalización (pp. 5–6) — fuera de alcance: modelado de bases de datos; la llave de negocio derivada de la granularidad como regla de contrato ya está en P402 H02.

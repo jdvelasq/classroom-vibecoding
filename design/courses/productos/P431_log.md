@@ -233,3 +233,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Deliverable 2 pide documentar «procedures followed to collect the data [...] data format, dataset size, how the data is stored» (p. 6) — marginal: la ficha operacional (P454 H01) y el manifiesto de identidad de datos (P431 H01) ya cubren procedencia y descripción; el entregable es un informe de proyecto, no un artefacto de operación.
+
+## S03.P431.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus introductorio de pregrado: Excel, Access, modelado entidad-relación, normalización, SQL (consultas, joins, subconsultas), NoSQL/MongoDB y su pipeline de agregación, BI y data warehouses, visualización y dashboards; proyecto final en equipo. Sin contenido de operación, despliegue ni gobierno de capacidades. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

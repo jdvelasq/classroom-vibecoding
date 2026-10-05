@@ -347,3 +347,13 @@
   - Syllabus de un curso de posgrado en línea de minería de datos aplicada a datos de salud: preprocesamiento, probabilidad, regresión, patrones frecuentes, clasificación, clustering y minería de texto, evaluado con un proyecto por entregables (propuesta, recolección, preparación, informe final), póster y un survey paper. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «methods for deploying these techniques using the open source tools» (p. 2) — marginal: una frase del catálogo sin contenido de despliegue en el calendario (p. 9–10), que no incluye ninguna semana sobre operación. Preprocesamiento, regresión, clasificación, clustering, texto y analítica en salud (p. 1–2, p. 9) — fuera de alcance (Descriptiva/Predictiva). Survey paper, póster y foros (p. 6–8) — fuera de alcance (formato de evaluación de otro tipo de curso).
+
+## S03.P400.29
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/usc-introduction-to-data-analytics.md` (`source_sha256`: 6f6328e7a65605f64f761ce7e25f666a786620b4adce460f661ac159574d6962).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus introductorio de pregrado: Excel, Access, modelado entidad-relación, normalización, SQL (consultas, joins, subconsultas), NoSQL/MongoDB y su pipeline de agregación, BI y data warehouses, visualización y dashboards; proyecto final en equipo. Sin contenido de operación, despliegue ni gobierno de capacidades. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - NoSQL, MongoDB «Creating aggregation pipeline» (p. 6), data warehouses y data marts (p. 6), dashboards (p. 7) — fuera de alcance: bases de datos, BI y Descriptiva.
