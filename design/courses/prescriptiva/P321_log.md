@@ -442,3 +442,11 @@
 - **Señales descartadas relevantes:**
   - «Certified & Self-Service Decision Tree» (p. 21) — fuera de alcance: árbol de flujo para decidir qué ruta de reporte/dataset usar en gobierno de BI; no es una decisión operativa con política.
   - iteración 2 con «Scenario Plan» y «Calculated difference between Actual Sales and Budget» (pp. 49–51) — marginal/fuera de alcance: comparación descriptiva real vs. presupuesto en un modelo BI; la comparación de resultado observado contra meta con gatillo y responsable ya es P321 H02, y una señal de herramienta no basta para imponer un tema.
+
+## S03.P321.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Libro blanco comercial de SAS sobre el ciclo de vida analítico (pregunta, datos, exploración, modelado, implementación, uso de resultados, evaluación) y sus productos de minería de datos y gestión de decisiones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

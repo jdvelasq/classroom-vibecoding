@@ -434,3 +434,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: taller práctico de BI empresarial en Power BI: diseño extensible, versionado y DevOps de archivos, gobierno y certificación de datasets, Power Query, modelado dimensional, DAX/medidas, refresco incremental, pipelines de despliegue. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P318.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Libro blanco comercial de SAS sobre el ciclo de vida analítico (pregunta, datos, exploración, modelado, implementación, uso de resultados, evaluación) y sus productos de minería de datos y gestión de decisiones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

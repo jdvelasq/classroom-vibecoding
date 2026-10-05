@@ -436,3 +436,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: taller práctico de BI empresarial en Power BI: diseño extensible, versionado y DevOps de archivos, gobierno y certificación de datasets, Power Query, modelado dimensional, DAX/medidas, refresco incremental, pipelines de despliegue. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P308.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - evaluar el resultado de las acciones y renovar modelos degradados (p. 4: «evaluar el resultado de las acciones que produjo el modelo analítico»; p. 5: «La evaluación constante … identificará la degradación de la precisión») — ya cubierta: P306 H07 y P308 H07 (métricas con gatillo y respuesta, brecha observada–estimada). Ver la candidata de P306 en `informs-cap-pro-blueprint.md` sobre atribución del beneficio.

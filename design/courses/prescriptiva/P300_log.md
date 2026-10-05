@@ -635,3 +635,14 @@
   - «Dataset, Model and App Deployment & Delivery Cycle… Deployment pipelines… DEV TEST PROD» (p. 20) y versionado de archivos (pp. 17–18) — fuera de alcance: despliegue y operación de artefactos analíticos (Productos de datos).
   - «Power BI adoption should blend with the organizational data governance strategy… Data Stewardship… Certification» (p. 22) — fuera de alcance: gobierno de datos/BI, no gobierno de decisiones.
   - Power Query, modelado dimensional, DAX, time intelligence, refresco incremental (resto del documento) — fuera de alcance: BI / Descriptiva / Fundamentos de data.
+
+## S03.P300.54
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Libro blanco comercial de SAS sobre el ciclo de vida analítico (pregunta, datos, exploración, modelado, implementación, uso de resultados, evaluación) y sus productos de minería de datos y gestión de decisiones. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - traducir la pregunta de negocio en hipótesis analítica con resultado definido (p. 7) — ya cubierta: contrato de política desde P300 H03 y P302 H04.
+  - torneos automáticos de modelos, código de calificación, cómputo en memoria y gestión de modelos (p. 8–12) — fuera de alcance: técnica de Predictiva e infraestructura de Productos de datos; es una señal de herramienta.
