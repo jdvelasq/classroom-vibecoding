@@ -268,3 +268,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.
+
+## S03.P212.33
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - predicción del desempeño y la rotación de empleados (módulo 6, p. 1): otro dominio para un producto que P212 ya cubre (permanencia y abandono).
