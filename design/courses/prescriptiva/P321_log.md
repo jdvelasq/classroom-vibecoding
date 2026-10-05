@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - métricas de desempeño aceptable, documentación para distintas audiencias y para reutilizar la solución si cambian las circunstancias (p. 23: CAP-P.6.4.2; p. 24–25: CAP-P.7.1.1, 7.6.1) — ya cubierta: P321 H01–H02 conserva supuesto y alternativa no elegida y vincula indicador, meta, gatillo y responsable.
+
+## S03.P321.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo oficial de técnicas de modelado dimensional (proceso, grano, hechos, dimensiones, dimensiones lentamente cambiantes, esquemas especiales) para data warehouses y BI. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

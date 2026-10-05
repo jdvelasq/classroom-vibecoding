@@ -45,3 +45,11 @@
   - línea base del estado actual (p. 12: CAP-P.2.5.1 «Identify current baseline performance») — ya cubierta: comparación contra reglas ingenuas con igual capacidad (P301 H02, P305 H02, P308 H02–H03, P313 H05, P318 H02).
   - variables de decisión, restricciones y objetivo, errores de un modelo prescriptivo y verificación de su solución (p. 20: CAP-P.5.2.2, 5.2.4, 5.3.4 «Identify the correct verification of the solution of a prescriptive analytics model output») — ya cubierta: verificación cruzada enumeración/HiGHS (P305 H03, P308 H04, P315 H03), validación sin enumeración (P316 H06), forma cerrada y convexidad (P317 H05), balances y duales (P318 H04–H05).
   - explicación no técnica de resultados y preocupación del cliente sobre la salida prescriptiva (p. 21: CAP-P.5.4.2, 5.6.1) — ya cubierta: exclusiones explicadas al supervisor (P305 H04) e intercambio familia por familia (P308 H05).
+
+## S03.P305.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tabla de hechos sin hechos y cobertura para analizar «what didn't happen» (p. 8) aplicada a casos no seleccionados — marginal: P305 H04 y P302 H01 ya explican exclusiones y descartes.

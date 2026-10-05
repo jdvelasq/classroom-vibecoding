@@ -41,3 +41,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Plan de examen de la certificación CAP-Pro, derivado del INFORMS Analytics Framework: siete dominios (encuadre del problema de negocio y del problema analítico, datos, selección de método, desarrollo de modelos, despliegue y gestión del ciclo de vida de la solución) con subtareas evaluables. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P303.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Declaring the grain … becomes a binding contract on the design» (p. 5) aplicado al registro de decisiones por solicitud (H03) — marginal: P303 y P306 H08 ya fijan una fila por decisión con versión y razón; nombrar el grano no cambia lo que el estudiante hace.
+  - dimensiones tipo 2 con fechas de vigencia (p. 15) para historiar versiones de política («una sola versión; sin historial») — fuera de alcance: es diseño de almacenamiento (Productos de datos / Fundamentos de data), no semántica de la política.

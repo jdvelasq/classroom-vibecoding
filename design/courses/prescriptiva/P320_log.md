@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - consecuencias indirectas y efectos adversos a lo largo del tiempo (p. 8: CAP-P.1.5.6; p. 25: CAP-P.7.5.1 «Identify likely adverse consequences of implementing the analytics solution») y temas éticos en el informe de validación (p. 22: CAP-P.6.1.2) — ya cubierta en su núcleo por P320 H01–H03 (guarda de equidad que decide y gobernanza) y, como consecuencias operativas, por P304 H04 y P309 H05; el documento sólo fija una expectativa general, sin método nuevo que enseñar.
+
+## S03.P320.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo oficial de técnicas de modelado dimensional (proceso, grano, hechos, dimensiones, dimensiones lentamente cambiantes, esquemas especiales) para data warehouses y BI. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

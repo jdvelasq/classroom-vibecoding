@@ -42,3 +42,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - variables de decisión, restricciones y objetivo, errores de un modelo prescriptivo y verificación de su solución (p. 20: CAP-P.5.2.2, 5.2.4, 5.3.4 «Identify the correct verification of the solution of a prescriptive analytics model output») — ya cubierta: verificación cruzada enumeración/HiGHS (P305 H03, P308 H04, P315 H03), validación sin enumeración (P316 H06), forma cerrada y convexidad (P317 H05), balances y duales (P318 H04–H05).
+
+## S03.P318.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo oficial de técnicas de modelado dimensional (proceso, grano, hechos, dimensiones, dimensiones lentamente cambiantes, esquemas especiales) para data warehouses y BI. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -66,3 +66,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - sesgo de datos de entrenamiento y causas de resultados no éticos de modelos predictivos (p. 12: CAP-P.2.6.2; p. 20: CAP-P.5.3.5) — fuera de alcance: pertenece a Predictiva; Prescriptiva recibe la estimación como insumo.
   - gestión de datos, arquitectura, *stack* tecnológico, debilidades de hojas de cálculo, pruebas de despliegue y flujos de producción (p. 13–18, 23) — fuera de alcance: Fundamentos de data y Productos de datos.
+
+## S03.P300.05
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo oficial de técnicas de modelado dimensional (proceso, grano, hechos, dimensiones, dimensiones lentamente cambiantes, esquemas especiales) para data warehouses y BI. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Audit Dimensions» y «Error Event Schemas» (pp. 23–24) para trazabilidad — fuera de alcance: control de calidad del ETL, frontera con Productos de datos.
+  - resto del documento (esquemas estrella, OLAP, jerarquías, claves sustitutas) — fuera de alcance: pertenece a Fundamentos de data / BI descriptiva.
