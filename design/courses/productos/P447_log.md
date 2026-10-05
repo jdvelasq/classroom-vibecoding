@@ -321,3 +321,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Análisis raiz causa» (p. 2) y 5 porqués / árbol de realidad actual (p. 10) — fuera de alcance: el ejemplo de la p. 10 diagnostica restricciones organizacionales («los equipos de IT no ven la calidad de los datos como una prioridad», «El ciclo de vida del dato pasa por varios equipos»), no la causa de un incidente de una capacidad; P447 (H01–H02) recibe una alerta escrita a mano sin datos que permitan trazar una causa con rigor.
+
+## S03.P447.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre gestión de proyectos: problemas de waterfall, manifiesto ágil, Scrum, XP, Kanban, escalamiento (Scrum of Scrums, SAFe, Disciplined Agile Delivery), manifiesto y principios DataOps, ciclo de vida analítico (ideación → retiro) y prácticas ágiles de DataOps (epic hypothesis statement, epic owner, MVP). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

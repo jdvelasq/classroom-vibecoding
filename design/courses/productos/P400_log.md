@@ -477,3 +477,13 @@
   - value pipeline «Ingestión Transformación Modelado Visualización Reporte» con entregas «Archivos, Herramientas BI, Dashboards, Web Apps, APIs» e innovation pipeline (p. 5) — ya cubierta como encuadre del curso (integración y entrega: C02; API en P425–P426).
   - value stream mapping, proporción espera/valor agregado, tiempo de ciclo de producción y desarrollo (pp. 7–8) y teoría de restricciones en cinco pasos (p. 9) — fuera de alcance: mejora de procesos organizacionales sin caso ni datos en el curso.
   - capas del ciclo de vida del dato: «Control de versiones, despliegue, monitoreo, herramientas de planificación y orquestación» (p. 12) — ya cubierta (P408–P416, P418, P422–P423, P428–P429); cómputo distribuido, flujos, NoSQL y almacenamiento en la nube son fuera de alcance (Big Data, cloud engineering).
+
+## S03.P400.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - XP «Continuous Integration», «10 Minutes Build», «Test-driven development» (p. 5) — ya cubierta: P415 H01, P416 H01, P400–P401.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Scrum, Kanban, XP, SAFe, Scrum of Scrums y Disciplined Agile Delivery (pp. 3–9), principios «Reduce heroism», «Self-organize», «It’s a team sport» (p. 10) — fuera de alcance: gestión ágil de proyectos y equipos, no operación de una capacidad analítica.

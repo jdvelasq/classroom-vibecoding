@@ -321,3 +321,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Feedback por parte del cliente», «Aprendizaje validado», «Métricas accionables», producto mínimo viable (p. 4) — fuera de alcance: descubrimiento de producto (Lean Startup); P451 ya liga la valoración a la respuesta (H01–H02) y no hay datos de uso para cerrar un ciclo construir-medir-aprender.
+
+## S03.P451.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - columna «Done: Benefit measured versus plan • Stop or persist decision made» (p. 12) y fases «Retiro: Migrar, Remover» / «Monitoring → Decommission» (p. 7; p. 11) — fuera de alcance: decisión de portafolio sin caso ni datos; el retiro de una capacidad no tiene Pxxx, pero una línea de diapositiva no justifica una actividad nueva.

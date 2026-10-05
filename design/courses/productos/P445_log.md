@@ -322,3 +322,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - traslada Lean (Toyota, Lean Software Development, Lean Startup) a la analítica: analítica como sistema de producción («value pipeline») y de desarrollo («innovation pipeline»), desperdicios en analítica, value stream mapping, entrega rápida (colas, ciclo, control estadístico de procesos), teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P445.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - epic hypothesis statement con «Measured by | Metrics» y «And requiring | Non-functional requirements | … achieve 99.99% availability» (p. 13) — marginal: P445 ya compara disponibilidad observada con una meta y P408 fija consumidor y métrica; derivar la meta del uso sería variante. Puede citarse como fuente secundaria si otra revisión propone justificar la meta de P445 desde la necesidad del consumidor.

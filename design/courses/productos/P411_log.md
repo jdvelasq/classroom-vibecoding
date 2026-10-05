@@ -322,3 +322,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Espera por revisión y aprobación» como desperdicio (p. 3) — marginal: contexto de eficiencia; no corrige la revisión de P411 (H01) ni la autorización de P450 (H02), que sirven al uso responsable (C04).
+
+## S03.P411.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - responsabilidades del epic owner: «Crear el panel de monitoreo y medida para los KPIs» (p. 14) — marginal: la autoría responsable ya está en P411 H02 y P454 H01; el panel de KPIs de un proyecto no es una capacidad operada.

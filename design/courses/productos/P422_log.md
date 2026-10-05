@@ -321,3 +321,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Introducción del control estadístico de procesos» y «Detección de cuellos de botella en el proceso» (p. 8) — fuera de alcance: aparecen como tácticas para acortar el ciclo de entrega; aplicarlas exigiría series temporales de métricas operativas que ningún caso del curso tiene (coincide con el descarte del mismo tema en dataops-09).
+
+## S03.P422.40
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Monitor quality and performance», «Quality is paramount» (p. 10) — ya cubierta: P442 H02, P422 H01, P423 H01.
