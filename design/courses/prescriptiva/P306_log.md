@@ -292,3 +292,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - casos Amazon/Netflix/Spotify (recomendación), Uber «Tarifas dinámicas y asignación de conductores», Walmart «Pronóstico de demanda y optimización de inventarios» (p. 33) — marginal: listado de prestigio; asignación, inventario y focalización ya están en P308, P307 y P306; precios dinámicos no tienen caso ni datos en el curso.
+
+## S03.P306.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Se confunde el éxito del modelo con su máxima precisión» (p. 3) — ya cubierta: P306 H04 muestra que la regla con mejor fracción de efecto positivo (uplift) produce menos valor que la regla de valor causal. Es decir, el criterio de éxito de la política no es la precisión del insumo.

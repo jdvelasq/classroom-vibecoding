@@ -291,3 +291,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «2026 — Agentic AI… agentes inteligentes… ejecutan de forma autónoma procesos completos» y la pregunta de cierre «Si una máquina puede analizar, recomendar, decidir y ejecutar… ¿qué queda para nosotros?» (pp. 60, 63) — ya cubierta: la autoridad humana proporcional (automatizar, recomendar con aprobación o escalar) es C04 y se ejerce en P303 H01, P304 H06 y P308 H06; la pregunta motiva el curso pero no añade capacidad.
+
+## S03.P303.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Las decisiones son influenciadas por factores emocionales, situaciones y culturales y siguen siendo basadas en experiencia e intuición» (p. 2); «Se continúan tomando decisiones basadas en hipótesis o criterios» (p. 6) — ya cubierta: la regla explícita con precedencias, razón y versión (P303 H01–H03) y el contrato de política (P300 H03) responden a ese diagnóstico. La fuente no propone ningún mecanismo adicional.
+  - mito «El modelo es sabio y omnisciente» (pp. 3–6) — ya cubierta: la autoridad humana, el escalamiento y la anulación con motivo están en P303 H01–H02, P308 H06 y P306 H07 (banda de revisión). La tasa de anulación como señal de revisión está en P308 H07.

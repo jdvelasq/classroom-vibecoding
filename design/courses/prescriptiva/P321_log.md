@@ -292,3 +292,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DataOps «Los productos analíticos pasan de ser proyectos con un final definido a convertirse en activos que evolucionan» y MLOps «desplegar, monitorear y gestionar el ciclo de vida de los modelos» (pp. 53–55) — fuera de alcance: operación de productos de datos y modelos (Productos de datos); el monitoreo de resultados de la política ya está en P306 H07, P308 H07, P321 H02.
+
+## S03.P321.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 10. Lectura: completa (pp. 2–9 en texto). Las pp. 1 y 10 tienen poco texto: sólo repiten el título, que funciona como portada y cierre. No se pudieron renderizar porque el PDF no existe en `/mnt/user-data/uploads/classroom-vibecoding/design/benchmarks-pdf/literature-derived/`. Por su posición y su título no parecen tener contenido sustantivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

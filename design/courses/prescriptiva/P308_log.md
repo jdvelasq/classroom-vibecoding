@@ -291,3 +291,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Moneyball «¿Y si el mercado está equivocado sobre cuánto vale un jugador?» (p. 35) — marginal: anécdota sobre valoración, sin método ni política recurrente.
+
+## S03.P308.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - mito «El modelo es sabio y omnisciente» (pp. 3–6) — ya cubierta: la autoridad humana, el escalamiento y la anulación con motivo están en P303 H01–H02, P308 H06 y P306 H07 (banda de revisión). La tasa de anulación como señal de revisión está en P308 H07.

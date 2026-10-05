@@ -290,3 +290,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - caso House of Cards «¿Cómo decidir si invertir más de USD 100 millones en una serie sin producir primero un episodio piloto?… Business Analytics no elimina la incertidumbre. La convierte en una decisión informada» (pp. 3–4) — marginal: decisión única de inversión; el curso ya trata la inversión bajo incertidumbre con guardas y escalamiento (P310 H02, P317 H07) y el valor de medir antes (piloto) en P322 H01.
+
+## S03.P317.36
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 10. Lectura: completa (pp. 2–9 en texto). Las pp. 1 y 10 tienen poco texto: sólo repiten el título, que funciona como portada y cierre. No se pudieron renderizar porque el PDF no existe en `/mnt/user-data/uploads/classroom-vibecoding/design/benchmarks-pdf/literature-derived/`. Por su posición y su título no parecen tener contenido sustantivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
