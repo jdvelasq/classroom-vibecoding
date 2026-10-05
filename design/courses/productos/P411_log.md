@@ -50,3 +50,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reunir requisitos del negocio y «data realities» en talleres colaborativos con representantes de gobierno de datos (p. 4) — ya cubierta en lo pertinente al curso: P408 H01 (consumidor, métrica y unidad), P411 H02 (autoridad responsable); el resto es diseño del modelo, de otros cursos.
+
+## S03.P411.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Source code (version) control systems», «Collaboration» (p. 47) — ya cubierta: P408 H02, P409 H01, P411 H01.

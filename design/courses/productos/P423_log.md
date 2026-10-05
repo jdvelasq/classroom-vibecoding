@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P423.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Google Flu Trends sobreestimó «primarily attributed to overreliance on outdated models» (p. 34) — marginal: ilustra la necesidad del monitoreo de entradas y desempeño (P422 H01, P423 H01) ya enseñado; sería un ejemplo de encuadre, no una capacidad nueva.

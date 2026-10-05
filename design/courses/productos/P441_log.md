@@ -49,3 +49,11 @@
 - **Resultado:** propone T01.
 - **Señales descartadas relevantes:**
   - dimensiones tardías con fila provisional «unknown» que luego se sobrescribe con tipo 1 (p. 23: «special dimension rows are created with the unresolved natural keys as attributes … updated with type 1 overwrites») — fuera de alcance: alternativa de diseño físico a la cuarentena que exige un esquema estrella; el contraste «publicar con contexto desconocido frente a retener» sería interesante pero no hay caso ni datos en el curso que lo sostengan con rigor.
+
+## S03.P441.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Missing and conflicting data» y «Data preparation, especially data cleansing» (p. 45); en los roles de almacenamiento, «document data quality problems» (p. 37) — ya cubierta: contrato de datos (P402 H01, H03) y cuarentena con motivo (P441 H01).

@@ -52,3 +52,11 @@
 - **Señales descartadas relevantes:**
   - el grano como «binding contract on the design» y no mezclar granos (p. 5) — ya cubierta: P402 H02 (llave derivada del grano máquina-día) y P443 H01 (cambio de grano que el linaje explica).
   - nulos en claves foráneas sustituidos por fila «unknown» (p. 7) y atributos nulos como «Unknown»/«Not Applicable» (p. 11) — fuera de alcance: reglas de diseño del modelo dimensional; la validación de completitud del insumo ya es P402 H01.
+
+## S03.P402.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Missing and conflicting data» y «Data preparation, especially data cleansing» (p. 45); en los roles de almacenamiento, «document data quality problems» (p. 37) — ya cubierta: contrato de datos (P402 H01, H03) y cuarentena con motivo (P441 H01).

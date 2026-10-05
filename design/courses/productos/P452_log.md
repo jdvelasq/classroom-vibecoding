@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P452.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Privacy and confidentiality» (p. 50); GDPR y derechos de los titulares de los datos (p. 49) — ya cubierta en mecanismo (P453 H02, P452 H01); el marco legal no se convierte en práctica operable en el curso. Sólo se propone lo de P401 (arriba).

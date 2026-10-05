@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - claves sustitutas de hechos para que una carga interrumpida pueda «either back out or resume» (p. 18) — marginal: mecanismo físico de carga; la reejecución segura ya está en P430 H01 y la reanudación en P436 H01.
+
+## S03.P430.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Marco de pregrado que define la «data acumen» (diez áreas conceptuales) y recomienda que la ética y la reproducibilidad atraviesen el currículo; trata el flujo de trabajo y la gestión de datos como competencias generales, no la operación de productos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

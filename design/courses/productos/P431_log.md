@@ -49,3 +49,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Catálogo «oficial» de técnicas de modelado dimensional del Kimball Group (Toolkit, 3.ª ed.): proceso en cuatro pasos, grano, hechos y dimensiones, dimensiones lentamente cambiantes (tipos 0–7), jerarquías, técnicas avanzadas y, como preocupaciones operativas del back room ETL, hechos tardíos, dimensiones tardías, dimensión de auditoría y esquemas de eventos de error. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P431.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data provenance» (p. 45); «Students also need to consider the provenance of the data used» (p. 40) — ya cubierta: P431 H01 (huella por contenido), P443 H02 (salida anclada a la huella del insumo). El defecto de P443 (linaje sin identificador de transformación) ya está registrado en S02 y el documento no aporta un criterio más preciso.

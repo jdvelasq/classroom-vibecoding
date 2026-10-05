@@ -50,3 +50,11 @@
 - **Señales descartadas relevantes:**
   - hechos conformados: misma definición ⇒ mismo nombre; definiciones incompatibles ⇒ nombres distintos (p. 7) — marginal como propuesta de aprendizaje: S02 ya registra el defecto de consistencia (P412 H04: `total_units` frente a `total_units_produced`, «el contrato de salida del mismo indicador no es estable entre actividades»); su corrección es higiene de implementación. Puede citarse como fuente si se propone uniformar el contrato del indicador por fábrica.
   - sellos de tiempo de ejecución y versiones del entorno como metadatos de auditoría (p. 23) — ya cubierta en parte: P405 H01 (ciclo de vida de la ejecución) y P412 H02 (versiones de dependencias); lo que falta (versión de la lógica ligada a la salida) se recoge en la candidata de P443.
+
+## S03.P412.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Reproducible analysis» (p. 47); «Documenting and sharing workflows enable others to understand how data have been used and refined» (pp. 46–47) — ya cubierta: P412 H01–H03 (ambiente y procedencia), P414 H01, P419 H01.

@@ -50,3 +50,11 @@
 - **Señales descartadas relevantes:**
   - hechos tardíos (p. 20: «the relevant dimensions must be searched to find the dimension keys that were effective when the late arriving measurement event occurred») — el principio operativo (asignar el registro según el instante del evento, no el de procesamiento) ya está cubierto por P437 H01; la búsqueda de claves sustitutas vigentes en una dimensión versionada es modelado dimensional, fuera de alcance (el curso no tiene dimensiones versionadas ni debe construirlas).
   - dimensiones tardías con fila provisional «unknown» que luego se sobrescribe con tipo 1 (p. 23: «special dimension rows are created with the unresolved natural keys as attributes … updated with type 1 overwrites») — fuera de alcance: alternativa de diseño físico a la cuarentena que exige un esquema estrella; el contraste «publicar con contexto desconocido frente a retener» sería interesante pero no hay caso ni datos en el curso que lo sostengan con rigor.
+
+## S03.P437.06
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Marco de pregrado que define la «data acumen» (diez áreas conceptuales) y recomienda que la ética y la reproducibilidad atraviesen el currículo; trata el flujo de trabajo y la gestión de datos como competencias generales, no la operación de productos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
