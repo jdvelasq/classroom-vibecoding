@@ -245,3 +245,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sílabo de introducción a la analítica centrado en bases de datos, SQL, NoSQL, BI y visualización (calendario, pp. 5–7); sin contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P208.30
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/ut-austin-agentic-ai-business-applications.md` (`source_sha256`: ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el `.md` sólo contiene encabezados repetidos de la página web impresa; el contenido está en imágenes, por lo que se consultaron directamente las páginas del PDF homónimo (pp. 1–12). Es un programa de 12 semanas sobre IA agéntica: LLM, ingeniería de *prompts*, RAG, agentes con herramientas y memoria (LangChain, MCP), sistemas multiagente y su evaluación. Queda fuera de la línea Predictiva; sin señales para esta actividad.
