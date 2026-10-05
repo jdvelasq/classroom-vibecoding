@@ -172,3 +172,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - Módulos 6 y 8 serverless/FaaS, cloud native, migración a la nube (pp. 14–15); Módulos 5 y 7 transformación organizacional, OODA, «Agile Corporation» (pp. 14–15) — fuera de alcance: cloud engineering y estrategia organizacional, excluidos por las fronteras del curso.
   - Módulo 2 servidor web Node.js asíncrono (p. 13) — fuera de alcance: ingeniería de software general; la exposición de una capacidad por interfaz ya está en P425 H01.
+
+## S03.P400.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto de un curso ejecutivo en línea de 8 semanas sobre liderazgo de datos: historia de datos y nube, plataformas y diseño de bases de datos, «Lean DevOps», marcos organizacionales, gobierno, ciberseguridad y ética; sólo enumera módulos y resultados, sin métodos ni evidencias. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - módulos de IA para líderes, SQL y diseño de bases de datos, «Modern Data Stack», nube, blockchain y diseño de organizaciones (pp. 7, 14–15) — fuera de alcance: liderazgo, arquitectura de datos y cloud, excluidos explícitamente por las fronteras del curso.
+  - «Ethics – AI Bias and Fairness» (p. 15) — fuera de alcance: la evaluación de sesgo de un modelo pertenece a Predictiva y el curso no tiene caso con grupos.

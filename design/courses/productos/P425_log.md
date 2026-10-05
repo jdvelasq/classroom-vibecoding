@@ -114,3 +114,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Folleto comercial de un curso en línea de educación continua: historia de la web y la nube, servidor Node.js, contenedores y llaves PKI, DevOps y sus cuatro métricas, casos (Microsoft, Netflix, GE, AWS), serverless, «Agile corporation» y cloud native/Kubernetes. Sin vínculo con capacidades analíticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P425.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «The API Problem and Apollo Graph» (p. 14, módulo 3) — marginal/fuera de alcance: GraphQL es otra tecnología de interfaz para lo que P425 ya enseña como contrato con errores explicables (H01–H02); su elección es arquitectura de software.

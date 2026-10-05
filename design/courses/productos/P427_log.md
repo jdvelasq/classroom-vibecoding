@@ -113,3 +113,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «we will use keys to communicate with cloud services, for example, GitHub and Docker Hub… Public Key Infrastructure (PKI)» (p. 13) — ya cubierta en lo que importa al curso: credencial fuera del código y de la evidencia (P427 H01–H02) y separación de credenciales del repositorio (P410 H02); PKI como tema es seguridad informática general (fuera de alcance).
+
+## S03.P427.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto de un curso ejecutivo en línea de 8 semanas sobre liderazgo de datos: historia de datos y nube, plataformas y diseño de bases de datos, «Lean DevOps», marcos organizacionales, gobierno, ciberseguridad y ética; sólo enumera módulos y resultados, sin métodos ni evidencias. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

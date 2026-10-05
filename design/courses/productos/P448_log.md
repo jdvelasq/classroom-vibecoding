@@ -114,3 +114,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - caso «Netflix monkeys» y aplicaciones cloud native «fault tolerant» (pp. 14–15) — fuera de alcance: tolerancia a fallas de infraestructura; la recuperación de la capacidad ya está en P424 y P448.
+
+## S03.P448.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto de un curso ejecutivo en línea de 8 semanas sobre liderazgo de datos: historia de datos y nube, plataformas y diseño de bases de datos, «Lean DevOps», marcos organizacionales, gobierno, ciberseguridad y ética; sólo enumera módulos y resultados, sin métodos ni evidencias. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

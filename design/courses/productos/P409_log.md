@@ -113,3 +113,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «hands-on practice with Git and GitHub, Docker, Node, and NPM» (p. 6) — ya cubierta (cadena de repositorio y CI P408–P416); el documento confirma el riesgo de identidad registrado (capacitación en herramientas) en vez de ayudar a resolverlo.
+
+## S03.P409.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Understand how the principles of Lean DevOps can be applied to optimizing data systems» (p. 7, resultado 08); testimonio sobre «data pipelines, low code/no-code, CI/CD, cloud deployment, data compliance» (p. 9) — ya cubierta: versiones, revisión y CI (P408–P416); «cloud deployment» y no-code son fuera de alcance (cloud engineering, capacitación en plataforma).
