@@ -365,3 +365,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el ingeniero DataOps se ocupa de la «Automatización de la calidad» con «Frameworks para tests de datos» (p. 5) — ya cubierta en lo que toca al curso: P153 H03 condiciona la publicación de KPI a reglas verificables. Automatizar y orquestar pipelines es materia de productos de datos (fuera de alcance).
+
+## S03.P153.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - transparencia mediante documentación metodológica y trazabilidad (pp. 19–20) — ya cubierta: P153 H01 (catálogo) y H04 (linaje).

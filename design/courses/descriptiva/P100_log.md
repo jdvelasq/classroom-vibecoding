@@ -544,3 +544,15 @@
   - el rol de analista de datos o BI tiene como responsabilidades «Consulta, Limpieza, Exploración, Interpretación, Visualizaciones, Tablas, Reportes» y como habilidad «Entendimiento y análisis de datos que influencian las decisiones» (p. 5) — ya cubierta: consulta (P104, P151–P152), limpieza (P106–P107), exploración y tablas (P103, P120–P122), visualización (P103 H04, P120 H05) y reporte filtrable (P124). La «interpretación» es la debilidad conocida de varios talleres (sin lectura persistida en P150–P154), pero un perfil de cargo no aporta el método ni el caso para corregirla, y la familia sólo da contexto organizacional.
   - estructuras de equipo por función, por dominio, centralizadas o descentralizadas, sus cuellos de botella y la falta de *ownership* (pp. 2–4, 8) — fuera de alcance: es diseño organizacional, sin capacidad que el estudiante ejerza en un taller descriptivo.
   - perfiles de habilidad (I, T, Pi, M, E) y equipos «altamente productivos» (p. 7) — fuera de alcance: es contexto de gestión de talento, no una capacidad del curso.
+
+## S03.P100.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - transformaciones de texto (tokenización, stemming, lematización, stopwords, p. 16) — marginal: P100 H02 ya fija la unidad textual como decisión; añadir lematización sería otra técnica para el mismo objetivo.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - alcance del proyecto con objetivos traducidos a criterios medibles, interesados y criterios de éxito (p. 13–14: «business objectives must be translated into measurable technical goals»; «defining success criteria») — marginal aquí: refuerza el hallazgo ya registrado en las auditorías S02 (falta usuario/decisión en casi todos los Pxxx), pero el documento no aporta un mecanismo didáctico nuevo frente a `questions.json` (P120 H01) y es literatura de gestión de proyectos, no prescripción curricular.
+  - las ocho dimensiones como ciclo de proyecto (pp. 12–13, Fig. 2) y prácticas ágiles (Sprint 0, retrospectivas, p. 14 y p. 22) — fuera de alcance: gestión de proyectos analíticos; no es el producto descriptivo del curso.
+  - diseño/modelado, evaluación con AUC/F1, operación, monitoreo de deriva, MLOps (§4.4, §4.5, §4.7, §4.8) — fuera de alcance: predictiva y productos de datos.

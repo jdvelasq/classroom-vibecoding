@@ -364,3 +364,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el administrador de la plataforma de datos gestiona «Lagos de datos, Bodegas de datos, Data mars, Diseño de esquemas» (p. 5), y el flujo va de *raw lake* a *refined data* y a visualización (p. 8) — ya cubierta: P151 (mart estrella) y P154 (capa de consumo). Ir más allá, hacia lagos, ETL o Hadoop/Spark, es ingeniería de datos (fuera de alcance).
+
+## S03.P151.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integración de fuentes heterogéneas «merging datasets, aligning formats, standardizing scales» (p. 16) — ya cubierta: P150 H01–H02, P151 H02–H03.

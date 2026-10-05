@@ -361,3 +361,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el *data product owner* aporta «Data storytelling, Visualización» y representa al usuario (p. 6) — marginal: la necesidad de un usuario declarado y de comunicar la respuesta ya está registrada en las auditorías de S02. Esta lámina no añade un contraste ni una forma de evidencia distinta de P125 H06 (respuesta con su límite) o P120 H01 (pregunta enlazada a evidencia).
+
+## S03.P125.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática por expansión de citas (18 metodologías: CRISP-DM, ASUM-DM, TDSP, DMME, MAISTRO, OSEMN, INFORMS, etc.) que propone PRODIG8: seis dimensiones de ejecución (alcance, comprensión de datos, preparación, diseño, evaluación, operación), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación. Es un marco de gestión de proyectos, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

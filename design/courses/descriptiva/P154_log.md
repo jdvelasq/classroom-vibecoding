@@ -362,3 +362,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el administrador de la plataforma de datos gestiona «Lagos de datos, Bodegas de datos, Data mars, Diseño de esquemas» (p. 5), y el flujo va de *raw lake* a *refined data* y a visualización (p. 8) — ya cubierta: P151 (mart estrella) y P154 (capa de consumo). Ir más allá, hacia lagos, ETL o Hadoop/Spark, es ingeniería de datos (fuera de alcance).
+
+## S03.P154.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Revisión sistemática por expansión de citas (18 metodologías: CRISP-DM, ASUM-DM, TDSP, DMME, MAISTRO, OSEMN, INFORMS, etc.) que propone PRODIG8: seis dimensiones de ejecución (alcance, comprensión de datos, preparación, diseño, evaluación, operación), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación. Es un marco de gestión de proyectos, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

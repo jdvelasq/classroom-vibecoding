@@ -362,3 +362,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Láminas sobre cómo organizar equipos de datos: estructuras típicas (equipos pequeños, Big Data Ops, Hybrid, Large Scale), equipos por función o por dominio, roles del grupo central y de soporte con sus responsabilidades, habilidades y herramientas, perfiles en T, Pi y M, y estructuras centralizada y descentralizada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P120.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exploración con «descriptive reports that characterize distributions, anomalies, correlations» y evaluación de calidad por completitud, exactitud, oportunidad, consistencia y representatividad (p. 15) — ya cubierta: P120 H02 (grano y consistencia), P121 H02 (conciliación), P122 H01 (tabla de calidad) y H05 (cobertura de flete).
+  - «criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: se refiere a selección de variables en modelos; los umbrales de volumen sin justificación de P120 H06, P121 H05 y P122 H06 son un límite ya registrado en S02, y esta frase no aporta un método para justificarlos.
