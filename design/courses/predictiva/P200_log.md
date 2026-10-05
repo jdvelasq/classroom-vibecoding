@@ -360,7 +360,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - caso de valor de mantenimiento predictivo y conexión entre objetivos e iniciativas (pp. 2–5): orientado a estrategia organizacional; no se añade como fuente de T01.
+  - caso de valor de mantenimiento predictivo y conexión entre objetivos e iniciativas (pp. 7–9): orientado a estrategia organizacional; no se añade como fuente de T01.
 
 ## S03.P200.37
 
@@ -416,7 +416,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pruebas automáticas que verifican comportamiento y no sólo existencia (p. 3): S02 registra que las pruebas de esta actividad sólo comprueban presencia de artefactos. Es una señal sobre el contrato de evidencia del curso (cómo se verifica la entrega), no sobre lo que el estudiante aprende; se deja para una decisión de curso.
+  - pruebas automáticas que verifican comportamiento y no sólo existencia (p. 2): S02 registra que las pruebas de esta actividad sólo comprueban presencia de artefactos. Es una señal sobre el contrato de evidencia del curso (cómo se verifica la entrega), no sobre lo que el estudiante aprende; se deja para una decisión de curso.
 
 ## S03.P200.44
 

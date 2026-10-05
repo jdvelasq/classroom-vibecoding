@@ -347,7 +347,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-08-data-scientids.md` (`source_sha256`: 37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - introducir la construcción del modelo en *pipelines* para reducir deuda técnica (pp. 8–10): ya cubierta en lo que el curso necesita (H01–H03).
+  - introducir la construcción del modelo en *pipelines* para reducir deuda técnica (p. 4): ya cubierta en lo que el curso necesita (H01–H03).
 
 ## S03.P220.43
 
