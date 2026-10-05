@@ -401,3 +401,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P307.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Forecasting. Forecast sales and inventory amounts» (p. 1). Categoría: fuera de alcance. Construir el pronóstico es Predictiva. P307 H01 ya trata el pronóstico como insumo de una política de pedido.

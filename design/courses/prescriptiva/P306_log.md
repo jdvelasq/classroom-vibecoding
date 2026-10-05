@@ -409,3 +409,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual de inicio de la herramienta KNIME: instalación, nodos y puertos, un flujo de ejemplo con K-Means, vistas del entorno, preferencias, importación/exportación y metanodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Campaign Analysis. Spend marketing dollars more efficiently by targeting the people most likely to respond to a promotion» (p. 1). Categoría: ya cubierta. P306 H04 compara explícitamente la focalización por respuesta tratada (2.724) con la focalización por efecto causal y valor (6.288) con el mismo cupo. Muestra justamente por qué focalizar por probabilidad de respuesta no es la mejor política. La señal del folleto es la línea base que el taller ya supera.
+  - «lift and profit charts are provided so you can compare and contrast the quality of your models before you commit to deployment» (p. 2). Categoría: ya cubierta, y fuera de alcance en lo que toca a la calidad del modelo. El valor incremental por capacidad y los rendimientos decrecientes están en P306 H04 y H06. El *lift* como medida de la calidad de un modelo antes de desplegarlo pertenece a Predictiva.
+  - «Churn Analysis. Create reports showing customers at risk of canceling their service» (p. 1). Categoría: fuera de alcance. Es un producto descriptivo o predictivo (reporte de riesgo). La política que usa el riesgo como insumo ya está en P303 H02 y P306 H02.

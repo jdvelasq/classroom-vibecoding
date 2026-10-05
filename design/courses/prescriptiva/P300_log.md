@@ -588,3 +588,14 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - construcción de flujos visuales por nodos con ejecución en cascada y metanodos reutilizables (p. 3, 9, 21–25) — fuera de alcance: señal de herramienta de minería y orquestación sin contenido de decisión, optimización, simulación ni gobierno; una señal de professional-learning no basta para imponer un tema y el curso usa Python como herramienta canónica.
   - ejemplo de clustering K-Means sobre Iris (p. 5–9) — fuera de alcance: técnica descriptiva/predictiva que pertenece a otros cursos.
+
+## S03.P300.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial previo al lanzamiento de SQL Server 2005 Analysis Services Data Mining. Enumera casos de uso (canasta de mercado, *churn*, segmentación, pronóstico, análisis de campañas, calidad de datos, texto), la integración con SSIS, OLAP y Reporting, el asistente de modelado, gráficos de *lift* y beneficio, la API DMX, los algoritmos y la arquitectura (despliegue, escalabilidad, seguridad). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «A prediction against a data mining model is simply a join in a familiar SQL query», más despliegue, escalabilidad, seguridad por roles y disponibilidad durante actualizaciones (p. 2). Categoría: fuera de alcance. Es infraestructura para desplegar y servir modelos (Productos de datos), y la señal de herramienta de un único proveedor no basta para imponer un tema.
+  - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded» (p. 1). Categoría: fuera de alcance. Corresponde a Fundamentos de datos o a Productos de datos. Las guardas por datos inválidos de las políticas ya existen como excepciones (P304 H06, P305 H06, P308 H06).
