@@ -403,3 +403,15 @@
   - recolección de datos (p. 1: «Descriptive Data Collection: Surveys, Net Promoter Score (NPS), and Self-Reports»; «Passive Data Collection») — fuera de alcance: adquisición de datos (Fundamentos/Descriptiva). La captura de una señal de utilidad del consumidor ya está en P451 H01–H02 y la lista no aporta mecanismo operativo.
   - «Data Visualization and Interpretation» (p. 1) — fuera de alcance: Descriptiva; no hay señal de interfaz operativa ni de mantenimiento.
   - No hay en el documento ninguna señal de despliegue, pruebas, calidad, monitoreo, gobierno, versionado ni operación.
+
+## S03.P400.34
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Lista de módulos de un programa ejecutivo de Business Analytics: orientación, descriptiva (módulos 1–2), predictiva (3–6), prescriptiva (4, 7–8) y aplicación de la analítica en el negocio (9), cada uno con una línea de propósito. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Módulo 9 «Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization» (p. 1) — fuera de alcance/marginal: es un plan organizacional de adopción de analítica (estrategia de negocio), no la operación de una capacidad; lo más cercano en el curso es el contrato operativo de C01 (tarjeta de producto en P408–P411, catálogo P454), que ya define consumidor, responsable y uso con más precisión que esta línea.
+  - módulos descriptivos, predictivos y prescriptivos (1–8) (p. 1) — fuera de alcance: pertenecen a Descriptiva, Predictiva y Prescriptiva; la frontera de Productos prohíbe volver a formular, predecir o prescribir el problema analítico.
+  - el programa no contiene ningún módulo de despliegue, operación, monitoreo, gobierno ni DataOps/MLOps (p. 1) — señal de contexto, no propuesta: confirma que la línea de productos de datos es una contribución diferencial del programa propio frente a este referente ejecutivo, pero no justifica cambios en ningún Pxxx.
