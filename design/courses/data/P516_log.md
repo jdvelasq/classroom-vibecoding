@@ -108,3 +108,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de catálogo de un curso de pregrado de inferencia y decisión en ciencia de datos (frecuentista/bayesiana, diseño experimental, causalidad, bandits, control, privacidad diferencial, ML), con prerrequisitos de probabilidad y Data C100. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P516.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «¿Qué opinas de los datos que encontraste?» y «Limpieza de datos» (p. 7); «Sé capaz de recopilar, limpiar y describir los datos que tienes» (p. 6) — ya cubierta en P516 (aptitud de una fuente para una pregunta); como mucho refuerza la candidata de procedencia de P516 derivada de UNF, sin aportar práctica concreta propia.

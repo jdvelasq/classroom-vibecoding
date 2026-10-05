@@ -98,3 +98,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de catálogo de un curso de pregrado de inferencia y decisión en ciencia de datos (frecuentista/bayesiana, diseño experimental, causalidad, bandits, control, privacidad diferencial, ML), con prerrequisitos de probabilidad y Data C100. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P519.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «RGPD (Reglamento General de Protección de Datos)», «Privacidad y anonimización» (p. 8); caso TalkTalk sobre protección de datos de clientes (p. 11) — marginal: S02 ya registra `ssn` en `drivers.csv` (P519, P521) y `user_id`/`user_session` copiados en `event_replay.csv` (P526) como defectos de distribución/sensibilidad; P521 ya proyecta sólo `name` del maestro. La corrección (retirar o seudonimizar identificadores, documentar restricciones) es higiene de datos que no requiere este benchmark, y un bullet de temario ejecutivo no basta para crear un contenido de privacidad propio.

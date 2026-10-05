@@ -165,3 +165,14 @@
   - «differential privacy» como tópico (p. 1). Categoría: fuera de alcance. Es una técnica de inferencia/publicación con garantías formales que exige base probabilística ausente en un optativo sin prerrequisitos; la ficha no la operacionaliza. La preocupación de privacidad del curso (`ssn` en P519–P521, `user_id`/`user_session` en P526) es de procedencia y minimización, ya escalada por S02 en esos logs, no de privacidad diferencial.
   - «modeling and decision-making life cycle in data science including its human, social, and ethical implications» (p. 1). Categoría: marginal. Enunciado genérico de catálogo, sin práctica ni evidencia concreta; la dimensión responsable ya está en `data.C04` y no cambia lo que el estudiante hace en ningún Pxxx.
   - «basics of experimental design», «causal inference», «permutation testing», «false discovery rate», «Thompson sampling», «Q-learning» (p. 1). Categoría: fuera de alcance. Inferencia, causalidad y decisión secuencial pertenecen a los cursos descriptivo/predictivo/prescriptivo, no a la preparación de datos.
+
+## S03.P500.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa ejecutivo de 11 semanas sin código: sesgos en decisiones, análisis descriptivo, Big Data, experimentación, predictivo, prescriptivo y cuestiones ético-jurídicas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Las cuatro “V” del Big Data: volumen, variedad, velocidad y veracidad» (p. 7) — marginal: marco conceptual; veracidad como calidad ya se ejerce en P516–P517.
+  - experimentación, ML, redes neuronales, prescriptivo y sesgos de decisión (p. 6–8) — fuera de alcance: pertenecen a otros cursos.
