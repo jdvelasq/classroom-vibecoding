@@ -149,3 +149,14 @@
   - Ficha de catálogo de un curso de pregrado: describe los fundamentos probabilísticos de la inferencia y «the modeling and decision-making life cycle … including its human, social, and ethical implications». Sólo lista temas; no hay syllabus, casos, productos ni evaluación. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «differential privacy», «permutation testing, false discovery rate», «Bayesian hierarchical models», «clustering», «recommendation systems», «decision trees, neural networks and ensemble methods» (p. 1) — fuera de alcance: son temas de Estadística, Predictiva o Productos de datos, o de protección de datos, no de diseño ni de gobierno de políticas.
+
+## S03.P300.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un programa ejecutivo online de 11 semanas sin código: sesgos, descriptiva, big data, experimentación, ML, redes neuronales, dos módulos de prescriptiva (árboles de decisión; sesgos de economía del comportamiento) y ética/legal, con casos y tareas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - Módulo 1 «Trampas en decisión» y tarea Carter Racing «si participar o no en una carrera» (pp. 7, 11) — fuera de alcance: decisión única de deliberación sobre sesgo de selección de datos; no es una decisión recurrente.
+  - módulos de ML y redes neuronales, incluido «Aprendizaje de refuerzo para empresas» (pp. 7–8) — fuera de alcance: Predictiva; el aprendizaje por refuerzo como mecanismo de política no tiene caso ni datos en el curso y desplazaría la identidad hacia una técnica.

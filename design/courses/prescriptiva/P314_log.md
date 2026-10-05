@@ -97,3 +97,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de catálogo de un curso de pregrado: describe los fundamentos probabilísticos de la inferencia y «the modeling and decision-making life cycle … including its human, social, and ethical implications». Sólo lista temas; no hay syllabus, casos, productos ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P314.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 8 «Aversión al riesgo. Falacia de costo perdido. Diversificación. Proceso de toma de decisiones y reducción de sesgos» (p. 8) — marginal: la actitud ante el riesgo ya entra como guardas sobre la distribución (P310 H02: probabilidad de pérdida y P10) y criterio robusto (P314 H03); los sesgos conductuales del decisor son contenido de deliberación gerencial, no del diseño de una política computable. La falacia de costo hundido podría ilustrar un gatillo de terminación, pero el documento no aporta método ni caso.

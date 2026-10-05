@@ -8,6 +8,7 @@
 - **Tipo:** producto/evidencia + proceso
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` pp. 24–25 — CAP-P.7.2.1 «Identify potential opportunities for recalibration of the analytics solution» (p. 24); Task 7.4 «Validate the business case for the analytics solution over time» y CAP-P.7.4.1 «Identify which benefit is attributable to the analytics solution over time» (p. 25): una solución en operación debe poder atribuir su beneficio y recalibrarse (Claude, 2026-10-05). Fuente *authoritative*: fija la expectativa de atribución y recalibración; no prescribe el diseño con grupo de control.
+  - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 2, 6–7 — «cómo configurar experimentos… cómo aprender de los datos» y «Estaremos siempre probando, experimentando y modificando cosas» (p. 2); «Diseña experimentos para recopilar datos significativos para tomar decisiones basadas en datos» (p. 6); Módulo 4 «El estándar de oro», «Hacer que la experimentación funcione» (p. 7) (Claude, 2026-10-05). Fuente *institutional* y genérica: respalda la experimentación continua como práctica, no el diseño concreto.
 - **Qué gana el estudiante:** entender que una política que focaliza por
   efecto causal estimado destruye, al operar, la aleatorización que permitió
   estimarlo, y diseñar la forma de evidencia que lo evita. Hoy P306 valida

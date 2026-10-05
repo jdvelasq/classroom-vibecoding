@@ -99,3 +99,11 @@
 - **Señales descartadas relevantes:**
   - «frequentist and Bayesian decision-making» (p. 1) — ya cubierta: P301 actualiza creencias tras un fracaso (H03–H04) y P322 valora una medición por su efecto en la acción (H01–H02). Un tema listado en un catálogo no muestra qué falta en esos talleres.
   - «Thompson sampling» y «basics of experimental design» (p. 1) — fuera de alcance como propuesta: la experimentación adaptativa (explorar frente a explotar) sería una política recurrente legítima y distinta de la medición única de P322. Pero la familia institucional sólo ilustra posibilidades y la ficha no aporta ni caso, ni datos, ni producto que permitan enseñarla con rigor. No basta para una actividad nueva.
+
+## S03.P322.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 7 «Árboles de decisión. Caso SmartService» y tarea «SmartService… árbol de decisión para calcular su oferta para un nuevo contrato» (pp. 8, 11) — ya cubierta/marginal: P322 ya hace la evaluación por valor esperado con dos estados y señal; un árbol de oferta aislado es, según AGENTS, deliberación y no producto terminal.

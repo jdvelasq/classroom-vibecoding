@@ -98,3 +98,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «frequentist and Bayesian decision-making» (p. 1) — ya cubierta: P301 actualiza creencias tras un fracaso (H03–H04) y P322 valora una medición por su efecto en la acción (H01–H02). Un tema listado en un catálogo no muestra qué falta en esos talleres.
+
+## S03.P301.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un programa ejecutivo online de 11 semanas sin código: sesgos, descriptiva, big data, experimentación, ML, redes neuronales, dos módulos de prescriptiva (árboles de decisión; sesgos de economía del comportamiento) y ética/legal, con casos y tareas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -98,3 +98,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «human, social, and ethical implications» (p. 1) — ya cubierta: P320 audita la equidad con una guarda que decide (H01–H03). La ficha no especifica práctica ni criterio que cambie lo que hace el estudiante.
+
+## S03.P320.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Módulo 9 «RGPD… Privacidad y anonimización… Hacking» y tarea TalkTalk (pp. 8, 11) — fuera de alcance: cumplimiento legal y seguridad de datos; no son equidad ni salvaguardas de una política de decisión.

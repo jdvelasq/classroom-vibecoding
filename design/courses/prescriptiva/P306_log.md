@@ -99,3 +99,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «causal inference» (p. 1) — ya cubierta: P306 usa un tratamiento aleatorizado y un T-learner como insumo de la política (H01–H02). La falta de un grupo de control en la operación ya está registrada en el log S02; la ficha no aporta un argumento nuevo.
+
+## S03.P306.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

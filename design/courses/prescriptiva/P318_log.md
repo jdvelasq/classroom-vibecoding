@@ -98,3 +98,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «optimal control, Q-learning» (p. 1) — fuera de alcance: el aprendizaje por refuerzo y el control óptimo desplazarían la identidad hacia IA/IO. P318 ya trata la decisión intertemporal con un LP determinista (H01–H05), y el documento no aporta caso ni datos.
+
+## S03.P318.12
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un programa ejecutivo online de 11 semanas sin código: sesgos, descriptiva, big data, experimentación, ML, redes neuronales, dos módulos de prescriptiva (árboles de decisión; sesgos de economía del comportamiento) y ética/legal, con casos y tareas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
