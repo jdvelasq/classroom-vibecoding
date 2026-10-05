@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - una fila por entidad mediante agregación (p. 7 «Los modelos predictivos o supervisados requieren de un solo registro por entidad para modelarse»; «Esto a menudo requiere gran cantidad de agregación y transformación de datos») — ya cubierta: P520 H02–H03 (tabla por conductor), P521 H01, P526 H03; la tabla base analítica para modelado es de Predictiva.
+
+## S03.P520.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Colección de artículos de SAS sobre pronóstico de series de tiempo; la parte pertinente al curso es la conversión de datos transaccionales con marca temporal en series de intervalo fijo (acumulación, jerarquías, interpretación de faltantes, integridad del índice temporal) y la integración de series externas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

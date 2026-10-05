@@ -454,3 +454,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - determinar si los datos disponibles pueden responder la pregunta y unir fuentes (p. 7 «un analista evalúa los datos que están disponibles y decide si éstos tienen el potencial de responder a la pregunta»; p. 4 «persiste el problema de unir los datos en diferentes formas de diferentes fuentes») — ya cubierta: P516–P517 (aptitud para una pregunta), P511 H01–H02.
+
+## S03.P510.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Colección de artículos de SAS sobre pronóstico de series de tiempo; la parte pertinente al curso es la conversión de datos transaccionales con marca temporal en series de intervalo fijo (acumulación, jerarquías, interpretación de faltantes, integridad del índice temporal) y la integración de series externas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

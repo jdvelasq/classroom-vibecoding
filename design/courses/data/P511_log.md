@@ -452,3 +452,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - determinar si los datos disponibles pueden responder la pregunta y unir fuentes (p. 7 «un analista evalúa los datos que están disponibles y decide si éstos tienen el potencial de responder a la pregunta»; p. 4 «persiste el problema de unir los datos en diferentes formas de diferentes fuentes») — ya cubierta: P516–P517 (aptitud para una pregunta), P511 H01–H02.
+
+## S03.P511.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integración de series externas con frecuencia distinta: indicadores FRED mensuales convertidos a semanales con `PROC EXPAND` (spline cúbica) y unidos a ventas semanales (pp. 108–109: «from a lower frequency (monthly) to a higher frequency (weekly), the EXPAND procedure uses a cubic spline») — fuera de alcance: no hay caso ni datos del curso con frecuencias mixtas; además la desagregación temporal por interpolación es una decisión de modelado (predictiva) y crea valores no observados. El contraste «alinear frecuencias antes de unir» sólo sería material con un caso real; queda como posible insumo si algún día se define uno.

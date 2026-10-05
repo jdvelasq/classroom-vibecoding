@@ -456,3 +456,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - exploración para detectar errores, faltantes y distribuciones a transformar (p. 7 «identificar los problemas de calidad de los datos como los errores, valores faltantes o distribuciones de datos que necesitan transformarse») — ya cubierta en lo esencial (P516 H02); la parte de transformación para modelar es de Predictiva.
+
+## S03.P516.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exploración de muchas series para detectar atípicos, faltantes, series cortas e intermitentes (p. 88) — marginal/fuera de alcance: P516 ya expresa calidad como reglas nombradas; intermitencia y series cortas importan para elegir métodos de pronóstico (predictiva).

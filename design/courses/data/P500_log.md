@@ -693,3 +693,19 @@
   - metadatos que documentan todo el proceso (p. 9 «Todos estos activos son soportados por metadatos para brindar la documentación importante alrededor del proceso completo») — marginal: afirmación comercial sin práctica concreta; documentación ya ejercitada (P501 H02, P502).
   - partición entrenamiento/prueba, torneos de modelos, código de calificación, despliegue y monitoreo (pp. 7–12) — fuera de alcance (Predictiva y productos de datos).
   - analítica distribuida en memoria y Hadoop (p. 10 «Divida sus datos en piezas más pequeñas y distribuya el volumen de los datos») — fuera de alcance: operaciones distribuidas son frontera explícita del curso.
+
+## S03.P500.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - acumulación de transacciones a intervalo fijo con función explícita (`ACCUMULATE=AVG`, `acc = total`; pp. 22, 30; p. 88: «accumulate the data to this interval … default is the sum») — ya cubierta: H02/H03 derivan suma y `nunique` del grano línea y el contrato fija fórmula y grano mensual. Interpretación de meses sin transacciones (p. 68) — marginal aquí: los seis meses del caso están presentes y la regla sería sólo declarativa; el contraste se ejerce mejor en la serie diaria de P525.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - variables de ajuste que transforman sin alterar la serie original (conversión de moneda; sustituir faltantes con una serie proxy usando `Max`; pp. 94–95) — fuera de alcance: ajuste previo al modelo; la imputación por proxy con `Max` es un recurso de herramienta, no una práctica justificable para enseñar.
+  - repositorio de eventos de calendario guardado aparte de los datos (p. 96) — fuera de alcance: especificación de intervenciones para modelado.
+  - propagación de faltantes al generar rezagos y pérdida de historia (pp. 78–79, tabla 3); limpieza de sensores defectuosos y deriva (p. 77) — fuera de alcance: ingeniería de variables para modelos predictivos; la limpieza se declara fuera del artículo.
+  - data mart de error de pronóstico con claves (ID, CREATE_MONTH, TARGET_MONTH), plazo derivado con `INTCK` y recorte de APE a 300 (pp. 131–132) — fuera de alcance: evaluación de pronósticos (predictiva); la doble temporalidad creación/objetivo se asemeja a tiempo de evento/llegada, que P526 ya cubre (H01).
+  - lectura, orden y fusión distribuidas de series por grupos BY en nube (pp. 14–17) — fuera de alcance: operaciones distribuidas, frontera excluida del curso.
+  - ejecución batch del código generado que incluye los pasos de preparación (p. 103) — ya cubierta: todos los talleres se ejecutan como scripts o notebooks reproducibles.
+  - el planificador dedica «More than 40 percent» de su tiempo a gestionar información y datos (p. 10) — contexto de pertinencia, no genera propuesta.

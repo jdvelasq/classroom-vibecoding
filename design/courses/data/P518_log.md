@@ -442,3 +442,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - white paper comercial de SAS sobre el ciclo de vida analítico (pregunta → preparar → explorar → modelar → implementar → evaluar) con énfasis en minería de datos, Enterprise Miner, Factory Miner y despliegue de modelos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P518.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - adquisición por API con llave, lista de identificadores, rango y frecuencia (`APIKEY`, `IDLIST`, `START`, `END`, `FREQ`, `AGG`; p. 107) y la práctica de documentar el significado de cada identificador de serie (p. 107: «I recommend adding a key in a commented section of your code») — marginal: P518 ya ejercita ingestión de API (H01–H03); su vacío real es la falta de pregunta analítica, que este documento no resuelve; documentar identificadores es variante del manifiesto ausente.

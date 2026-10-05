@@ -444,3 +444,11 @@
   - convertir un concepto de negocio en definición operativa (p. 7 «probablemente el abandono es definido de manera distinta en diferentes organizaciones. ¿Se refiere a alguien que cancela activamente un contrato o a alguien que no tiene ninguna actividad?») — ya cubierta: P506 H02 («producción sostenida» como años activos), P526 H03 (conversión al grano sesión), P500 H03.
   - una fila por entidad mediante agregación (p. 7 «Los modelos predictivos o supervisados requieren de un solo registro por entidad para modelarse»; «Esto a menudo requiere gran cantidad de agregación y transformación de datos») — ya cubierta: P520 H02–H03 (tabla por conductor), P521 H01, P526 H03; la tabla base analítica para modelado es de Predictiva.
   - representatividad de la muestra (p. 7 «la muestra debe ser representativa y lo suficientemente grande para contener la información importante») — marginal: el criterio de selección de las 16 sesiones ya está escalado en S02.P526.01 y la tasa no se usa para inferir una población; la señal se formula para entrenar modelos.
+
+## S03.P526.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Colección de artículos de SAS sobre pronóstico de series de tiempo; la parte pertinente al curso es la conversión de datos transaccionales con marca temporal en series de intervalo fijo (acumulación, jerarquías, interpretación de faltantes, integridad del índice temporal) y la integración de series externas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
