@@ -438,3 +438,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Durbin-Watson y autocorrelación en datos de serie temporal (p. 19: «since the data are essentially time series data, examine the Durbin-Watson statistic») — fuera de alcance: es un diagnóstico de residuos de un modelo temporal y le corresponde a predictiva.
+
+## S03.P121.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas oficiales de modelado dimensional de Kimball (hechos, dimensiones de calendario, dimensiones de cambio lento, dimensiones conformadas, jerarquías). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

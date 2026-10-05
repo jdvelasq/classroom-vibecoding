@@ -437,3 +437,11 @@
 - **Señales descartadas relevantes:**
   - transformación logarítmica porque la variación de los salarios crece con el nivel (p. 144: «Since the variation in salaries is much greater for higher salaries, it is appropriate to apply a log transformation») — marginal: P125 ya responde a la asimetría salarial con mediana, P10/P90 y diagrama de caja (H03) y con brechas relativas en % (H02, H04). El log sirve aquí para estabilizar la varianza del modelo, no para describir.
   - variables cualitativas (dummies) con interacción para comparar poblaciones (pp. 185–189), y modelos separados por grupo con BY (p. 179) — fuera de alcance: comparar mediante coeficientes es modelado. P125 ya compara grupos frente a pares definidos por categoría × trayectoria × banda (H02) sin modelo.
+
+## S03.P125.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - *dynamic value banding* (p. 22) — ya cubierta: bandas de experiencia en P125 H02.

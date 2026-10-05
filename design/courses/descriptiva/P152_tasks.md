@@ -109,3 +109,87 @@ Actividad: implementation/descriptiva/P152_ventas_olap/
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 7. No modifiques otras actividades, traceability.yaml ni design/.
 ```
+
+## T02 — Comparar períodos en la navegación OLAP: mes anterior, mismo mes del año anterior y acumulado del año
+
+- **Estado:** pendiente de discusión
+- **Tipo:** método + producto/evidencia
+- **Fuentes:**
+  - `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` p. 19 — «Business users often request year-to-date (YTD) values… A more reliable, extensible way to handle these assorted requests is to calculate the YTD metrics in the BI applications or OLAP cube rather than storing YTD facts in the fact table» (Claude, 2026-10-04). Fuente *authoritative*: ubica las comparaciones temporales en la capa de consulta, que es la de P152.
+- **Qué gana el estudiante:** responder la pregunta más frecuente de un
+  usuario de BI, «¿cómo vamos frente al período anterior?», sobre el mismo
+  hecho que ya navega. Hoy P152 sube a año–mes–región (H02), corta en Norte
+  (H03) y baja a productos (H04), pero ninguna consulta compara un período
+  con otro: no hay variación frente al mes anterior, frente al mismo mes del
+  año anterior ni acumulado del año. Con el cambio, el estudiante construye
+  esas comparaciones en la capa de consulta (funciones de ventana o
+  desplazamientos sobre una serie mensual completa), entiende por qué el
+  acumulado se calcula al consultar y no se guarda en el hecho, y aprende que
+  una variación porcentual sobre una base pequeña o ausente debe tratarse
+  explícitamente.
+- **Anclas actuales:** H01 (jerarquía año→mes de `dim_date`), H02 (*roll-up*
+  reconciliado contra el total del hecho); superficies S02 (consultas OLAP),
+  S03 (producto y preguntas) y S04 (pruebas que reejecutan consultas sobre
+  `data/sales_mart.db`).
+- **Alternativas menores descartadas:** describir en markdown qué es una
+  comparación interanual no hace que el estudiante la calcule ni que trate
+  meses ausentes o bases cero.
+- **Contrato de no regresión:** se conservan H01–H04, las tres consultas, sus
+  CSV, el gráfico, la reconciliación y las pruebas actuales. La comparación
+  se añade como cuarta consulta con su propio artefacto. Si un período no
+  tiene ventas, la serie lo muestra en cero (no lo omite).
+- **Interacciones:** con T01 (lectura persistida): la lectura de T01 puede
+  incorporar la comparación de períodos; ambas deben ejecutarse juntas para
+  no reescribir la misma celda dos veces. Con P151 T01 (fuera de este
+  archivo): P152 lee `data/sales_mart.db`, cuyo `dim_date` sólo tiene días con
+  ventas; esta T02 construye su propia serie mensual completa a partir del
+  rango del hecho y no depende de que P151 T01 cambie el mart de referencia.
+  Con P150 T01: mientras el calendario sintético sea uniforme, toda variación
+  entre meses es ruido del generador; la lectura debe decirlo, y la
+  comparación cobra sentido descriptivo sólo si se aprueba la alternativa
+  del generador. Capacidad: P152 queda con dos propuestas; T02 puede ser la
+  sección final que un grupo lento complete en la sesión siguiente.
+- **Criterio de aceptación:** S05 encuentra un highlight nuevo con ventas
+  netas mensuales por región acompañadas de variación frente al mes
+  anterior, frente al mismo mes del año anterior (si el rango cubre más de un
+  año; si no, se declara) y acumulado del año, con meses sin ventas en cero y
+  bases cero tratadas explícitamente, respaldado por notebook, un CSV en
+  `submission/` y una prueba que recalcule el acumulado.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/descriptiva/P152_ventas_olap/
+
+0. Inspecciona primero professor/notebook.ipynb, data/sales_mart.db,
+   submission/ y tests/. Si la implementación no coincide con
+   design/courses/descriptiva/P152_activity.md, o si ya calcula
+   comparaciones entre períodos, detente e informa. Comprueba el rango de
+   fechas del hecho: si cubre menos de 13 meses, omite la comparación
+   interanual y decláralo.
+1. No cambies las tres consultas existentes, sus CSV, el gráfico ni las
+   pruebas actuales.
+2. Añade «Comparación de períodos» después del roll-up:
+   a. Construye la serie mensual por región con todos los meses del rango
+      del hecho (meses sin ventas en 0).
+   b. Calcula con SQL de ventana (LAG, SUM OVER PARTITION BY año) o con
+      pandas: ventas del mes anterior, variación absoluta y porcentual
+      frente al mes anterior, variación frente al mismo mes del año anterior
+      y acumulado del año.
+   c. Cuando la base sea 0, deja la variación porcentual vacía y explica por
+      qué.
+   d. Grafica el acumulado del año por región.
+   e. Explica en markdown, en 3–5 líneas, por qué el acumulado se calcula al
+      consultar y no se guarda en el hecho, y qué limita leer variaciones
+      sobre este calendario sintético.
+3. Persiste submission/period_comparison.csv con columnas year, month,
+   region, net_sales, prev_month_net_sales, mom_change, mom_pct,
+   yoy_change, ytd_net_sales.
+4. Actualiza tests/: amplía la lista de archivos esperados con
+   period_comparison.csv (sin quitar ninguno) y añade una prueba que
+   reconstruya ytd_net_sales desde data/sales_mart.db y verifique que la
+   suma de net_sales coincide con el total del hecho. No elimines pruebas
+   existentes.
+5. Ejecuta el notebook completo y las pruebas sin errores.
+6. No modifiques otras actividades, traceability.yaml ni design/.
+```

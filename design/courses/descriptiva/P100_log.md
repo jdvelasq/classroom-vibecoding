@@ -658,3 +658,13 @@
   - paneles de diagnóstico (Q-Q, histograma y box plot de residuos, observado frente a predicho, gráfico RF, residuos frente a regresor con loess) (pp. 9, 13–15, 149, 153) — fuera de alcance: son evidencia visual sobre la adecuación del modelo, no sobre el fenómeno descrito. El principio de «evidencia visual antes de decidir» ya lo exige `AGENTS.md` para todos los notebooks.
   - una observación muy influyente (Pete Rose) domina el ajuste y se excluye para reajustar (pp. 147–148: «Pete Rose is the highly influential observation. You might obtain a better fit … if you omit his statistics») — fuera de alcance como técnica. Como idea («pocos casos pueden dominar un resumen») ya está cubierta por los umbrales de volumen de P120 H06, P121 H05 y P122 H06, y por el doble criterio de P125 H04.
   - colinealidad, VIF y regresión ridge (pp. 190–193), y prueba de falta de ajuste con réplicas (pp. 194–195) — fuera de alcance: estimación estadística y diseño experimental.
+
+## S03.P100.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - técnicas oficiales de modelado dimensional de Kimball (hechos, dimensiones de calendario, dimensiones de cambio lento, dimensiones conformadas, jerarquías). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - tablas de fotos periódicas y medidas semiaditivas (pp. 7–8), tablas de hechos sin medidas (p. 8), dimensiones conformadas, matriz de bus y *drill-across* (pp. 13–14), tablas puente (p. 21) — fuera de alcance por caso: el curso tiene un solo proceso transaccional (ventas); la no aditividad sí entra en P154 T01.

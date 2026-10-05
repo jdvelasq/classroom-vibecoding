@@ -439,3 +439,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - exclusión silenciosa de observaciones con faltantes en cualquier variable del análisis (p. 76: «If any variable needed for any regression is missing, the observation is excluded from all estimates»; p. 144: «59 observations are excluded because they have missing values») — ya cubierta: P107 H01 hace explícita la decisión sobre los nulos, y P122 H05 reporta la cobertura antes de comparar y no imputa. El documento no aporta una práctica nueva para la descripción.
+
+## S03.P122.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - *accumulating snapshot* y hechos de duración entre hitos (pp. 8 y 18) — ya cubierta en su función: P122 deriva el retraso entre fecha prometida y fecha real de entrega.
