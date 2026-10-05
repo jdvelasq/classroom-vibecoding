@@ -163,3 +163,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: folleto de un certificado de 6 meses en ingeniería de datos (Python, SQL, ETL/CDC, contenedores, Hadoop/Spark/Airflow, streaming con Kafka/MQTT, nociones de ML, aprendizaje por refuerzo y redes profundas) con proyectos de portafolio. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Module 22: Interpretability and Causality in Models» (p. 9) — ya cubierta: P306 H02 separa efecto causal de riesgo.

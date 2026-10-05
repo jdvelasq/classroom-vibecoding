@@ -163,3 +163,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Resumen del documento en 1–2 líneas: folleto de un certificado de 6 meses en ingeniería de datos (Python, SQL, ETL/CDC, contenedores, Hadoop/Spark/Airflow, streaming con Kafka/MQTT, nociones de ML, aprendizaje por refuerzo y redes profundas) con proyectos de portafolio. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P316.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Learn how to construct a linear optimization model and interpret the results» (p. 8, Parte 2, cinco módulos de optimización) — ya cubierta: P316 H05–H06 (LP de transporte y validación) y P318 H04–H05 (LP intertemporal y precio sombra validado).
+  - caso Filatoi Riuniti, «developing a model and making recommendations on how this Italian yarn manufacturer should outsource production» (p. 10) — ya cubierta: P316 decide compra y distribución con capacidad escasa y valora la capacidad (H04).

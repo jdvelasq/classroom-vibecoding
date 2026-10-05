@@ -238,3 +238,14 @@
   - «Learn the fundamental concepts of reinforcement learning, including the reward matrix, the quality matrix, the Bellman equation» y proyecto «Build a reinforcement learning model for robot navigation» (pp. 8, 12) — fuera de alcance: aprendizaje por refuerzo como técnica de ML en un certificado de ingeniería de datos; el caso (navegación de robot) no es una decisión operativa gobernada y no hay datos en el curso para enseñarlo como política con autoridad y salvaguardas. La idea de política intertemporal ya se ejerce en P318 con un modelo explícito.
   - «A Model to Predict Housing Prices» / regresión lineal (pp. 9–10) — fuera de alcance: Predictiva.
   - ETL, CDC, Spark, Airflow, Kafka, streaming y seguridad web (pp. 8–11) — fuera de alcance: Fundamentos de data / Productos de datos.
+
+## S03.P300.20
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - certificado en línea de seis meses con cinco partes (fundamentos, optimización, ML, ML avanzado, despliegue), casos de estudio y capstone de portafolio. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Module 23: Data, Models, and Decisions» (p. 9) — marginal: título sin contenido verificable; la conexión modelo–decisión es la identidad del curso.
+  - regresión, clustering, CART, redes neuronales, NLP (pp. 7–9) — fuera de alcance: Predictiva / Descriptiva.
