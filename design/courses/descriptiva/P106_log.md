@@ -413,3 +413,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - la exploración ayuda a identificar «errores, valores faltantes o distribuciones de datos que necesitan transformarse» (p. 7) — ya cubierta: P122 H01 (tabla de faltantes/distintos) y H05, P106 H01–H05.
+
+## S03.P106.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - ajustar la serie por variaciones sistemáticas conocidas (tipo de cambio, días hábiles) y completar faltantes con una serie proxy (pp. 94–95: «Examples of systematic adjustments are currency-unit conversions, exchange rates, trading days») — marginal: P106 H04 ya lleva magnitudes a una unidad común y P122 H05 enseña a no imputar. Rellenar con una proxy introduce imputación sin caso que la justifique.

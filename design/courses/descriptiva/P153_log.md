@@ -421,3 +421,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - convertir la pregunta de negocio en una definición operativa precisa del resultado (p. 7: «el abandono es definido de manera distinta en diferentes organizaciones… ¿Cuánto tiempo tiene que permanecer inactivo un cliente…?») — ya cubierta: P153 H01 (KPI como contrato con fórmula, grano y período) y P122 H02 (cumplimiento derivado de dos fechas con regla explícita «tardío = más de 0 días»). La señal es además de práctica (professional-learning) orientada a definir etiquetas de modelos predictivos.
+
+## S03.P153.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dejar visible la definición y el signo de cada variable derivada junto al resultado (p. 136: «it is a best practice to show and repeat the definition of the derived variables in the comments or in the results file») — ya cubierta: P153 H01 (KPI como contrato) y P125 H06 (límite escrito junto a la respuesta).

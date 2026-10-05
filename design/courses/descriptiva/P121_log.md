@@ -419,3 +419,14 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P121.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - verificación de huecos y duplicados del índice temporal con histogramas de desfase (p. 93: «Gaps were detected in the values of the Time ID variable», «The Time ID variable has duplicate values») — marginal: P121 H02 ya concilia los dos agregados por año–mes–aerolínea y P123 H06 completa períodos vacíos. Revisar que cada aerolínea tenga todos sus meses cabe, como mucho, como paso de la candidata anterior.
+  - la longitud de la estación es una decisión, no un supuesto (p. 36: «if a particular business’s seasonal cycle is 14 days long, the seasonality is 14 instead of 7») — marginal: la matriz 7 × 24 (H04) ya fija un ciclo semanal explícito, y este caso no ofrece evidencia de otro ciclo.
+  - acumular transacciones a una frecuencia fija y distinguir esa acumulación de la agregación jerárquica (p. 36: «The choice of frequency is an important modeling decision … often called _time series accumulation_ … to distinguish it from … aggregation across a hierarchical structure»; p. 22: `ACCUMULATE = AVG`) — ya cubierta: P121 H01/H03 (sumas aditivas, razón de sumas), P150 H04 (serie mensual desde la tabla de líneas) y P154 H01 (aditividad en el grano de consumo).
+  - cambiar la frecuencia de una serie, de mensual a semanal mediante spline (p. 109: «from a lower frequency (monthly) to a higher frequency (weekly), the EXPAND procedure uses a cubic spline») — fuera de alcance: interpolar a una frecuencia mayor fabrica observaciones. Para describir sólo es legítimo acumular hacia una frecuencia menor, cosa que ya se hace.

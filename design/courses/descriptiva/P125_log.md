@@ -418,3 +418,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P125.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - distribución muy sesgada: media frente a mediana, cuantiles y extremos (p. 133: «the distribution of the forecast error is heavily skewed to the right. The mean is twice as large as the median») — ya cubierta: P125 H03 (mediana, P10, P90 y caja, con la elección del estadístico justificada).
+  - efecto de composición al comparar grupos (p. 135: «Model B might look bad compared to Model A, as it is mostly used to forecast complicated articles») — ya cubierta: P125 H02 construye pares comparables precisamente para controlar la composición. En P122 el comentario sobre «cambio de mezcla» que no se implementa es un defecto que ya registró S02, y esta fuente (errores de pronóstico) no aporta caso ni método para corregirlo.
+  - acotar extremos para que no dominen gráficos y regresiones (p. 132: «extreme large outliers are shifted to a lower value»), banda de cuartiles por grupo (p. 137) — marginal: son variantes de visualización de una distribución que P125 H03 ya cubre con caja y percentiles.

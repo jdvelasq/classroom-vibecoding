@@ -630,3 +630,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - segmentación por clustering, reglas de asociación (canasta de mercado), analítica de texto como insumo de modelos (p. 5, p. 7) — fuera de alcance: técnicas de modelado no supervisado/predictivo presentadas como herramientas; el documento no aporta un caso descriptivo ni datos, y una señal professional-learning no basta para imponer el tema.
   - muestreo representativo y partición entrenamiento/prueba, sobreajuste, torneos de modelos, código de calificación, implementación y monitoreo (pp. 7–12) — fuera de alcance: predictiva y productos de datos.
+
+## S03.P100.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el orden temporal se pierde en un sistema de archivos distribuido y hay que reordenar antes de analizar (p. 14: «sorting on a particular file system is not possible. This is particularly problematic for time series analysis») — marginal: P100 H01 ya hace visible el ordenamiento como *shuffle*. La infraestructura distribuida no es materia del curso.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - identificar series cortas e intermitentes (p. 88: «short series … intermittent time series (for example, a series that contains a large number of zero values)») — fuera de alcance: su propósito declarado es elegir métodos de pronóstico (predictiva).
+  - SSA, descubrimiento de motivos, similitud con DTW y extracción de características (pp. 42–51) — fuera de alcance: técnicas de reducción de dimensión para aprendizaje automático, sin caso descriptivo en el curso.
+  - simulaciones *rolling*, comparación de modelos, escenarios *what-if*, control charts del error, FVA, ML y redes neuronales (pp. 99–102, 153–154, 166–168, 77–82) — fuera de alcance: pertenecen a predictiva (evaluación de pronósticos) o a prescriptiva y productos de datos (escenarios y monitoreo).

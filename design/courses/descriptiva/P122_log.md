@@ -423,3 +423,11 @@
 - **Señales descartadas relevantes:**
   - convertir la pregunta de negocio en una definición operativa precisa del resultado (p. 7: «el abandono es definido de manera distinta en diferentes organizaciones… ¿Cuánto tiempo tiene que permanecer inactivo un cliente…?») — ya cubierta: P153 H01 (KPI como contrato con fórmula, grano y período) y P122 H02 (cumplimiento derivado de dos fechas con regla explícita «tardío = más de 0 días»). La señal es además de práctica (professional-learning) orientada a definir etiquetas de modelos predictivos.
   - la exploración ayuda a identificar «errores, valores faltantes o distribuciones de datos que necesitan transformarse» (p. 7) — ya cubierta: P122 H01 (tabla de faltantes/distintos) y H05, P106 H01–H05.
+
+## S03.P122.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - efecto de composición al comparar grupos (p. 135: «Model B might look bad compared to Model A, as it is mostly used to forecast complicated articles») — ya cubierta: P125 H02 construye pares comparables precisamente para controlar la composición. En P122 el comentario sobre «cambio de mezcla» que no se implementa es un defecto que ya registró S02, y esta fuente (errores de pronóstico) no aporta caso ni método para corregirlo.

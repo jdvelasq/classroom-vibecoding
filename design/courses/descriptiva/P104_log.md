@@ -409,3 +409,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P104.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Colección de artículos técnicos y de proceso sobre pronóstico con productos SAS; lo pertinente para descriptiva es la preparación y exploración de series (acumulación, intervalo, jerarquías, diagnóstico del índice temporal, descomposición tendencia–estación) y el análisis descriptivo de una distribución sesgada. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

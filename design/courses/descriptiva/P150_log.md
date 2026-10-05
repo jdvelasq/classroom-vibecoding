@@ -421,3 +421,13 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - tabla base analítica con «un solo registro por entidad», que exige agregación y transformación (p. 7) — ya cubierta: P103 H01 (reconciliar granularidades antes de unir) y P150 H01–H02 (tabla construida desde fuentes y grano protegido).
+
+## S03.P150.51
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - acumular transacciones a una frecuencia fija y distinguir esa acumulación de la agregación jerárquica (p. 36: «The choice of frequency is an important modeling decision … often called _time series accumulation_ … to distinguish it from … aggregation across a hierarchical structure»; p. 22: `ACCUMULATE = AVG`) — ya cubierta: P121 H01/H03 (sumas aditivas, razón de sumas), P150 H04 (serie mensual desde la tabla de líneas) y P154 H01 (aditividad en el grano de consumo).
+  - descomponer la serie mensual por categoría — fuera de alcance: el calendario del generador es uniforme por construcción (P150, límite de H04). Una descomposición produciría una «estacionalidad» que es sólo ruido del sorteo.
+  - cambiar la frecuencia de una serie, de mensual a semanal mediante spline (p. 109: «from a lower frequency (monthly) to a higher frequency (weekly), the EXPAND procedure uses a cubic spline») — fuera de alcance: interpolar a una frecuencia mayor fabrica observaciones. Para describir sólo es legítimo acumular hacia una frecuencia menor, cosa que ya se hace.
