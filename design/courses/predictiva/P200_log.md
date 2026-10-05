@@ -515,3 +515,13 @@
   - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - modelo estrella, grano, dimensiones de calendario, dimensiones de cambio lento y dimensiones conformadas (pp. 4–16) — fuera de alcance: BI forma parte de analítica descriptiva, no de predictiva.
+
+## S03.P200.55
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sílabo de un curso de posgrado de data warehousing y BI (modelado ER y dimensional, SAP BusinessObjects, Tableau). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - data warehousing, modelado dimensional, universos de BusinessObjects y dashboards en Tableau (pp. 1–4) — fuera de alcance: BI y plataformas; no contiene contenidos de estimación.
