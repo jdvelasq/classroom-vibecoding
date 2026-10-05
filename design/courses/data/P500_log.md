@@ -287,3 +287,14 @@
   - generación y evaluación de espacios de diseño, tradespace, frente de Pareto, sensibilidad y robustez (pp. 3–4) — fuera de alcance: pertenecen a la línea prescriptiva.
   - pre-evaluación y post-evaluación para medir la línea base del estudiante (pp. 1, 4) — fuera de alcance de S03 por Pxxx: es diseño de evaluación del curso, no refuerzo de un taller; la evaluación de los Pxxx está fijada en `pytest` por `AGENTS.md`.
   - reparto de tareas entre modelos y personas (p. 4: «task allocation between models and people») — fuera de alcance: autoridad humana en decisiones, tema de prescriptiva.
+
+## S03.P500.22
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso en línea de 8 semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo), mapeo de atributos de prototipo y producto, decisiones de fabricación y análisis de costo-valor. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Assess data gathered from concept prototypes to make smart decisions» (p. 5); «Part B: Participants will assess the data results for the different processes used» (p. 8) — fuera de alcance: evaluación de resultados de pruebas de fabricación, sin relación con preparación, calidad o documentación de datos para Analytics.
+  - procesos de fabricación serial/paralela, DFM, costo de prototipos (pp. 6–7) — fuera de alcance (ingeniería de manufactura). La coincidencia léxica «serial y paralelo» no tiene relación con P522.
