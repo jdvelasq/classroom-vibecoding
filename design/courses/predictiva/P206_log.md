@@ -283,3 +283,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el `.md` sólo contiene encabezados repetidos de la página web impresa; el contenido está en imágenes, por lo que se consultaron directamente las páginas del PDF homónimo (pp. 1–12). Es un programa de 12 semanas sobre IA agéntica: LLM, ingeniería de *prompts*, RAG, agentes con herramientas y memoria (LangChain, MCP), sistemas multiagente y su evaluación. Queda fuera de la línea Predictiva; sin señales para esta actividad.
+
+## S03.P206.31
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - clustering jerárquico, k-means y k-center, y elección de métricas de distancia (p. 1): ya cubierta en lo esencial (H01–H03); otros algoritmos serían variaciones.

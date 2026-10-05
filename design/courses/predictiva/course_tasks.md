@@ -12,6 +12,7 @@
   - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 7–8 — módulo «Análisis predictivo I»: «Modelo sobreajustado», «Árboles de decisión y bosques aleatorios», «Optimización de hiperparámetros», «Métodos de conjunto» e «Interpretar un análisis» (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` pp. 8–9 — «Foundations of Machine Learning»: «Nonlinear Models for Regression and Classification: Classification and Regression Trees» y «…: Ensemble Learning» (realizar e interpretar un análisis CART), y «Interpretability and Causality in Models» en la parte avanzada (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` pp. 6 y 8 — «Random Forest, SVM, clustering» en el curso intermedio y «Tree-based methods» y «Resampling methods and model selection» en el programa avanzado de analítica predictiva (Claude, 2026-10-04).
+  - `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` p. 1 — módulo de posgrado: «Classification: Trees, NB, Support Vector Machines, Kernel Trick» (árboles de decisión para clasificar instancias nuevas) (Claude, 2026-10-04).
 - **Contribución distinta:** ninguna de P200–P225 usa árboles de decisión ni
   ensambles. Las familias actuales son lineales y logísticas (con términos
   derivados y regularización), MLP, modelos temporales, Markov, reglas y
