@@ -316,3 +316,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Diapositivas docentes que trasladan Lean (Toyota Production System, Lean Software y Lean Product Development) a la analítica vista como sistema de producción y de desarrollo de producto: desperdicios en analytics, *value stream mapping*, entrega rápida, teoría de restricciones, análisis de causa raíz (5 porqués, árbol de realidad actual) y capas del ciclo de vida del dato (DataOps). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P153.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - el *epic owner* debe «Crear el panel de monitoreo y medida para los KPIs» (p. 14) — fuera de alcance: monitoreo de KPI de una iniciativa de producto; la definición y publicación de KPI descriptivos ya está en P153 H01–H04 y P154 H03.

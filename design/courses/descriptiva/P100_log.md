@@ -473,3 +473,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - análisis de causa raíz con 5 porqués y árbol de realidad actual (p. 10) — fuera de alcance: herramienta de mejora de procesos organizacionales; aplicado a hallazgos descriptivos, empujaría a explicaciones causales que el curso no posee (cf. límite causal de P125 H06).
   - control estadístico de procesos, colas, teoría de restricciones, *value stream mapping*, versionado, orquestación, cómputo distribuido (pp. 7–9, 12) — fuera de alcance: DataOps, ingeniería de datos y productos de datos.
+
+## S03.P100.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre gestión de proyectos: cascada frente a Agile (manifiesto, Scrum, XP, Kanban), escalamiento (Scrum of Scrums, SAFe, DAD), manifiesto y principios DataOps, ciclo de vida analítico y prácticas ágiles para épicas de productos de datos. Perspectiva organizacional/metodológica. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - principios DataOps «Make it reproducible», «Analytics is code», «Quality is paramount», «Reuse» (p. 10) — ya cubierta en lo que toca al curso: pruebas que recomputan los productos desde `data/` (P103 H03, P120 H08, P121 H07), funciones reutilizables (P101 H02, P123 H07) y compuerta de calidad (P153 H03). El resto (orquestación, ambientes desechables, *cycle times*) es productos de datos.
+  - ciclo de vida analítico con *business understanding*, adquisición, exploración y preparación de datos (p. 11) — ya cubierta/fuera de alcance: exploración y preparación están en P106–P107, P120–P122; *feature engineering*, entrenamiento, despliegue y monitoreo pertenecen a predictiva y productos de datos.
+  - Scrum, XP, Kanban, SAFe, Scrum of Scrums, *epic hypothesis statement*, MVP (pp. 2–9, 12–14) — fuera de alcance: gestión ágil de proyectos/productos; no cambia lo que el estudiante aprende en ningún taller descriptivo ni tiene caso para enseñarse con rigor en el curso.

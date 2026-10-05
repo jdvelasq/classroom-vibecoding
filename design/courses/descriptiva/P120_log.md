@@ -314,3 +314,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - desperdicios «Problema equivocado», características que «No ayudan al usuario a tomar decisiones» (p. 6) y «Preguntas de bajo valor para responder» (p. 10) — marginal aquí: refuerza en lo conceptual la necesidad de conectar preguntas con decisiones, tratada como candidata P120 a partir de `dataops-03-methodologies` e INFORMS; este documento no aporta un mecanismo propio.
+
+## S03.P120.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Working analytics over comprehensive documentation» y «Continually satisfy your consumer» (p. 10) — marginal: principios de equipo, sin método aplicable a un taller descriptivo; la orientación al usuario se trata en la candidata P120 de `informs-cap-pro-blueprint`.

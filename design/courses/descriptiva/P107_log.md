@@ -308,3 +308,11 @@
 - **Señales descartadas relevantes:**
   - «Los datos no son testeados completamente» y «no hay suficientes pruebas que garanticen que los datos defectuosos no entren en las pipelines» como causa raíz de ciclos lentos (p. 10) — ya cubierta en lo que toca al curso: P106 H05 y P107 H04 verifican invariantes de dominio del archivo limpio, P153 H03 condiciona la publicación a reglas de calidad. Las brechas de esas pruebas (no cubren importes, proveedores ni fechas válidas) ya están registradas en S02; la señal se refiere a pipelines en producción (productos de datos).
   - desperdicio por «Duplicación de datos y transformaciones» (p. 6) — marginal: la duplicación de reglas `CASE` entre la tabla anonimizada y la consulta de ataque en P109 (S02) y la reescritura de reglas de P106 en P107 son límites ya registrados; esta señal, de gestión de flujo de trabajo, no cambia lo que el estudiante aprende.
+
+## S03.P107.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre gestión de proyectos: cascada frente a Agile (manifiesto, Scrum, XP, Kanban), escalamiento (Scrum of Scrums, SAFe, DAD), manifiesto y principios DataOps, ciclo de vida analítico y prácticas ágiles para épicas de productos de datos. Perspectiva organizacional/metodológica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -312,3 +312,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - capa de entrega «Archivos, Herramientas BI, Dashboards, Web Apps, APIs» (p. 5, p. 12) — ya cubierta en su función descriptiva: P124 H04–H05, P154 H01–H04; como infraestructura, fuera de alcance (productos de datos).
+
+## S03.P154.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-05-agile.md` (`source_sha256`: fd106f0ecff624968d4036c4d8a924f1b69aadfca988c0e0f63ee53117400cec).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Diapositivas sobre gestión de proyectos: cascada frente a Agile (manifiesto, Scrum, XP, Kanban), escalamiento (Scrum of Scrums, SAFe, DAD), manifiesto y principios DataOps, ciclo de vida analítico y prácticas ágiles para épicas de productos de datos. Perspectiva organizacional/metodológica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
