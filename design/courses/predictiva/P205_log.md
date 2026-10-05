@@ -332,3 +332,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el modelo no es la solución: datos + modelos + reglas de decisión + interfaces (p. 19): ya cubierta como frontera entre umbral y política (H03).
+
+## S03.P205.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre pensamiento lean (Toyota, eliminación de desperdicios, mejora continua) aplicado a analítica; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.

@@ -311,3 +311,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - requisitos de producción, despliegue, adopción y operación (pp. 22–23): según `AGENTS.md` corresponde a productos de datos; H03 delimita el alcance actual.
+
+## S03.P217.38
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-04-lean-thinking.md` (`source_sha256`: 51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre pensamiento lean (Toyota, eliminación de desperdicios, mejora continua) aplicado a analítica; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
