@@ -211,3 +211,15 @@
   - Python, NumPy, pandas y visualización como fundamentos (p. 6 «Python for Data Science / Numpy / Pandas / Data Visualization») — ya cubierta como habilitador (pandas en P500, P511, P516); `data.C05` impide que la herramienta sea identidad.
   - preprocesamiento y representación de datos para modelos (p. 7 «Beyond K-means: Data and pre-processing»; p. 5 «Choose how to represent your data when making predictions») — fuera de alcance: representación para predicción es de Predictiva; la elección de representación para almacenamiento ya está en P524.
   - estadística descriptiva e inferencial, clustering, regresión, clasificación, deep learning, recomendación, redes (pp. 6–11) — fuera de alcance de `data`.
+
+## S03.P500.16
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso en línea de 8 semanas sobre el proceso de diseño de productos de IA (cuatro etapas, modelo de Lawler), fundamentos de ML y deep learning, HCI, «superminds» y *capstone* de propuesta de producto de IA. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Analyze technical and operational requirements to build AI models» (p. 6); costos y requisitos técnicos de un plan de desarrollo de IA (p. 6) — fuera de alcance: requisitos de productos de IA (curso de productos de datos/IA), no requisitos de datos para una pregunta.
+  - ML, deep learning, HCI, GANs, GPT-3 (pp. 4, 6–7) — fuera de alcance.
+  - ejercicios en Jupyter Notebook (p. 8) — marginal: práctica de herramienta ya presente en el curso.
