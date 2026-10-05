@@ -378,3 +378,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Guía de la metodología CRISP-DM en la herramienta SPSS Modeler: tareas, preguntas de control y reportes por fase, ilustrados con un caso de *web mining* de un e-retailer. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P101.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - organización de un flujo en pasos encadenados y subflujos reutilizables (p. 21: «Meta nodes are nodes that contain subworkflows»; p. 17: «if you execute the last node … all predecessor nodes will be executed») — ya cubierta: P123 H07 (pipeline `s01`–`s20` con funciones reutilizadas) y P101 H01–H02 (funciones y motor parametrizado).
+  - documentar cada paso con nombre y descripción (p. 19: «change this name to better describe what the node is actually doing, e.g. "filter values > 10"») — marginal: equivale a funciones con nombre de responsabilidad (P101 H01, P106 H01); no aporta capacidad nueva.

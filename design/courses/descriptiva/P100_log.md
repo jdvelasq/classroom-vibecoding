@@ -583,3 +583,14 @@
   - formular y revisar hipótesis en la exploración (p. 20); «What additional questions have your results raised?» (p. 35); reporte final según audiencia y plan de difusión de hallazgos (pp. 39, 41) — marginal desde este documento: la falta de lectura persistida ya está registrada en auditorías (P152 H03, P154 S04) y no se sostiene por una guía de herramienta.
   - introducción: proyectos donde «your work will focus on data exploration and visualization» y modelado es menos relevante (p. 7) — contexto que respalda la identidad descriptiva; sin propuesta.
   - plan de proyecto, inventario de recursos, riesgos, costo/beneficio (pp. 11–15), modelado y diseño de pruebas (pp. 29–33), evaluación de modelos (pp. 35–37), despliegue y monitoreo (pp. 39–42) — fuera de alcance: gestión de proyectos, predictiva y productos de datos.
+
+## S03.P100.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - flujo visual de nodos configurables y ejecutables (p. 3: «A workflow is built by dragging nodes from the Node Repository onto the Workflow Editor and connecting them») — fuera de alcance: herramienta low-code alternativa; cambiar de herramienta no cambia lo que el estudiante aprende y el curso no es capacitación en plataformas. Una señal professional-learning no basta para imponer un tema.
+  - ejemplo con K-Means sobre Iris (p. 5: «we read in data from an ASCII file, assign color to it, cluster the data») — fuera de alcance: modelado de agrupamiento sin pregunta descriptiva ni caso; pertenece a otro curso y el dataset es didáctico genérico.

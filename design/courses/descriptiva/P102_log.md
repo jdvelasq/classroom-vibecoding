@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - filtrar atributos sensibles («customer name, address, phone number, and credit card numbers», p. 23); «constraints on using particular fields such as _gender_ or _race_» (p. 24) — ya cubierta: P102 H02, P108 H01–H03.
+
+## S03.P102.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - exportar flujos excluyendo los datos por defecto (p. 21: «The option to exclude data from being exported is activated by default») y cifrado de contraseñas con clave maestra (p. 17) — marginal: práctica de herramienta; la minimización y la protección de datos ya están en P102 H02 y P108 H03/H06 (la clave HMAC en código está registrada como límite de P108/P109, pero el documento no aporta un argumento descriptivo para corregirlo).

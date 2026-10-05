@@ -381,3 +381,11 @@
 - **Señales descartadas relevantes:**
   - faltantes codificados como no respuesta («_$null$_, _?_, or _999_», p. 20) — ya cubierta: P107 H01 (`dtype=str`, `keep_default_na=False`, nulos decididos por función).
   - inconsistencias de codificación y unidades («the use of both _M_ and _male_», p. 20; «Decide upon a single coding scheme, then convert and replace values», p. 24) — ya cubierta: P106 H01–H04, P107 H03.
+
+## S03.P107.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

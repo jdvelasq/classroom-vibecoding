@@ -389,3 +389,11 @@
 - **Señales descartadas relevantes:**
   - integrar fuentes y verificar la unión («the merged file replicates customer and product information every time…», «make sure that the data merge was performed correctly», p. 26; «Are you merging various data sources? If so, are there areas that might pose a problem», p. 17) — ya cubierta: P150 H01–H02 (grano protegido, `validate="many_to_one"`, conservación de filas).
   - construir atributos por *roll-up* de eventos a sesión y a cliente (p. 25) — ya cubierta: agregar antes de unir (P103 H01), medidas derivadas (P150 H03).
+
+## S03.P150.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -389,3 +389,11 @@
 - **Señales descartadas relevantes:**
   - «Bad metadata… mismatches between the apparent meaning of a field and the meaning stated» (p. 20); explorar desviaciones como «"noise" or phenomena worth analyzing» (p. 21) — ya cubierta: flete textual no convertido en cero (P122 H05), razones de origen no promediadas (P124 H01); la serie mensual de P122 sin mínimo ya está registrada como límite (H06).
   - «Is there enough data to draw generalizable conclusions…?» (p. 17) — ya cubierta: umbrales de volumen (P120 H06, P121 H05, P122 H06).
+
+## S03.P122.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - inspeccionar resultados intermedios en cada salida (p. 18: «Open Out-port View … you can inspect the data») y vistas enlazadas con hiliting (p. 10: «The propagation of the hilite status works for all views») — marginal: la inspección visual de evidencia intermedia ya es norma del curso (AGENTS.md, celdas de evidencia visual) y P124 H04 ofrece una vista filtrable; la selección enlazada es una prestación de herramienta.

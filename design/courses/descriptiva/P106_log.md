@@ -381,3 +381,11 @@
 - **Señales descartadas relevantes:**
   - inconsistencias de codificación y unidades («the use of both _M_ and _male_», p. 20; «Decide upon a single coding scheme, then convert and replace values», p. 24) — ya cubierta: P106 H01–H04, P107 H03.
   - chequeo de plausibilidad y errores de digitación («"119-inch" (instead of "19-inch") monitor», p. 19; «Have you conducted a plausibility check for values?», p. 21) — marginal: P106 H05 ya verifica invariantes de dominio (descuentos en [0, 1], pesos no negativos) y la consistencia entre campos ya se ejerce en P120 H02 (`Quantity × Price = TotalAmount`); un rango adicional sería variante.
+
+## S03.P106.47
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/knime-quickstart-guide.md` (`source_sha256`: 2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de inicio de la herramienta KNIME (versión 2.x): instalación, nodos, puertos, configuración/ejecución, vistas, hiliting, preferencias, importación/exportación y meta nodos; incluye un flujo de ejemplo (lector de archivos → K-Means → color → tabla y dispersión sobre Iris). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
