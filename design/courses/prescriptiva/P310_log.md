@@ -17,3 +17,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Random Number Generators», «Use random number generators … to allow reproducibility», «Monte Carlo Simulation» (PDA-Numerical, pp. 117–118). Categoría: ya cubierta por la semilla fija (P310 H01) y por CRN, IC95 % y convergencia (P313 H02–H04). Que P310 no reporte error de Monte Carlo es marginal frente a su defecto real (H03), que este documento no aborda.
+
+## S03.P310.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - marco de práctica de INFORMS (base del CAP) con siete dominios y sus tareas, desde el encuadre del problema de negocio hasta el despliegue y la gestión del ciclo de vida de la solución analítica. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

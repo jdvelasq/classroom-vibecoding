@@ -18,3 +18,11 @@
 - **Resultado:** propone T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P320.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 7.5 efectos colaterales en el tiempo (p. 7) — marginal para P320: su auditoría de equidad ya convierte una consecuencia distributiva en guarda (H01); el seguimiento temporal se integra en la candidata de P321.
