@@ -410,3 +410,11 @@
 - **Señales descartadas relevantes:**
   - discretización con límites de dominio frente a equi-ancho o cuantiles, y sensibilidad del equi-ancho a atípicos (p. 105: «quantile binning is a better solution»; p. 132: «separate them into groups of interest») — marginal: P108 H03 (intervalos decenales para generalización) y P125 H02 (bandas de experiencia) ya fijan bandas con criterio de dominio.
   - media frente a mediana con valores extremos (p. 62: «median household income of $70,000 and a mean household income of $80,000») y transformación logarítmica de rangos amplios (p. 129) — ya cubierta / marginal: P125 H03 justifica mediana y percentiles; P122 H03 muestra que el promedio oculta incumplimiento.
+
+## S03.P125.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

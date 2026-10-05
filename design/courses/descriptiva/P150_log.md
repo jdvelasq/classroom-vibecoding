@@ -413,3 +413,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - construir una tabla de casos con un registro por caso y agregar datos transaccionales al nivel del caso (p. 17: «single-record case data presentation»; p. 127: «it must be aggregated to the case level») — ya cubierta: P103 H01, P120 H02, P150 H01–H02.
+
+## S03.P150.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tabla base analítica con «un solo registro por entidad», que exige agregación y transformación (p. 7) — ya cubierta: P103 H01 (reconciliar granularidades antes de unir) y P150 H01–H02 (tabla construida desde fuentes y grano protegido).

@@ -405,3 +405,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - distinguir faltante al azar de ausencia conocida (dato disperso) (p. 11: «Data is sparse when a high percentage of the cells are empty but all the values are assumed to be known»; p. 100) — ya cubierta en lo esencial: P107 H01 (nulos decididos por función) y P122 H05 (no convertir texto en costo cero). La imputación por media/moda que hacen los algoritmos (p. 94, p. 100) es preparación para modelos y contradice la regla de no imputación de P122: fuera de alcance.
+
+## S03.P107.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -405,3 +405,11 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - tipificar códigos numéricos como categóricos (código postal con ceros a la izquierda) y convertir fechas (p. 128) — marginal: variante de la conversión de tipos de P102 H03 y P106 H03.
+
+## S03.P106.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - la exploración ayuda a identificar «errores, valores faltantes o distribuciones de datos que necesitan transformarse» (p. 7) — ya cubierta: P122 H01 (tabla de faltantes/distintos) y H05, P106 H01–H05.

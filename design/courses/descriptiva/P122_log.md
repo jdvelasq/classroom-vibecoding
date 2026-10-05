@@ -414,3 +414,12 @@
 - **Señales descartadas relevantes:**
   - distinguir faltante al azar de ausencia conocida (dato disperso) (p. 11: «Data is sparse when a high percentage of the cells are empty but all the values are assumed to be known»; p. 100) — ya cubierta en lo esencial: P107 H01 (nulos decididos por función) y P122 H05 (no convertir texto en costo cero). La imputación por media/moda que hacen los algoritmos (p. 94, p. 100) es preparación para modelos y contradice la regla de no imputación de P122: fuera de alcance.
   - media frente a mediana con valores extremos (p. 62: «median household income of $70,000 and a mean household income of $80,000») y transformación logarítmica de rangos amplios (p. 129) — ya cubierta / marginal: P125 H03 justifica mediana y percentiles; P122 H03 muestra que el promedio oculta incumplimiento.
+
+## S03.P122.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - convertir la pregunta de negocio en una definición operativa precisa del resultado (p. 7: «el abandono es definido de manera distinta en diferentes organizaciones… ¿Cuánto tiempo tiene que permanecer inactivo un cliente…?») — ya cubierta: P153 H01 (KPI como contrato con fórmula, grano y período) y P122 H02 (cumplimiento derivado de dos fechas con regla explícita «tardío = más de 0 días»). La señal es además de práctica (professional-learning) orientada a definir etiquetas de modelos predictivos.
+  - la exploración ayuda a identificar «errores, valores faltantes o distribuciones de datos que necesitan transformarse» (p. 7) — ya cubierta: P122 H01 (tabla de faltantes/distintos) y H05, P106 H01–H05.

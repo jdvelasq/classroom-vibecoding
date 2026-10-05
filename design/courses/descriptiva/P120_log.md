@@ -416,3 +416,11 @@
 - **Señales descartadas relevantes:**
   - construir una tabla de casos con un registro por caso y agregar datos transaccionales al nivel del caso (p. 17: «single-record case data presentation»; p. 127: «it must be aggregated to the case level») — ya cubierta: P103 H01, P120 H02, P150 H01–H02.
   - formular bien la pregunta antes de analizar (p. 18: «you must learn how to ask the right questions») y comprender la fase de exploración y calidad (p. 19: «identify data quality problems and to scan for patterns») — ya cubierta: P120 H01 (`questions.json`), P122 H01, P106.
+
+## S03.P120.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - White paper comercial de SAS (2015) que presenta el ciclo de vida analítico (pregunta → preparación → exploración → modelado → implementación → evaluación) como marco para vender Enterprise Miner, Factory Miner y Decision Manager; foco declarado en minería de datos predictiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

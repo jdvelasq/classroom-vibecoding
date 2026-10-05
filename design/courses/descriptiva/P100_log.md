@@ -619,3 +619,14 @@
   - detección de anomalías por clasificación de una clase (pp. 61–62) e importancia de atributos/EXPLAIN y PROFILE (pp. 38–43, 69–70) — fuera de alcance: modelos supervisados o de puntuación (predictiva).
   - clasificación, regresión, matriz de confusión, lift de clasificación, ROC, costos, división entrenamiento/prueba, puntuación y despliegue (pp. 20, 23, 41–43, Part II–III) — fuera de alcance: predictiva y productos de datos.
   - normalización min-max/z-score, binning automático, winsorización y recorte como preparación embebida en modelos (pp. 127–133) — fuera de alcance: preparación al servicio de algoritmos; la parte descriptiva (juicio de dominio sobre atípicos) se recoge en la candidata P106.
+
+## S03.P100.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - procesamiento distribuido en memoria y Hadoop (pp. 10–11) — marginal: promoción de infraestructura; P100 ya enseña el patrón MapReduce y sus límites (H01, H03).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - segmentación por clustering, reglas de asociación (canasta de mercado), analítica de texto como insumo de modelos (p. 5, p. 7) — fuera de alcance: técnicas de modelado no supervisado/predictivo presentadas como herramientas; el documento no aporta un caso descriptivo ni datos, y una señal professional-learning no basta para imponer el tema.
+  - muestreo representativo y partición entrenamiento/prueba, sobreajuste, torneos de modelos, código de calificación, implementación y monitoreo (pp. 7–12) — fuera de alcance: predictiva y productos de datos.

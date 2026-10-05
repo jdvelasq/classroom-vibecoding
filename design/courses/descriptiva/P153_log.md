@@ -413,3 +413,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual conceptual de la opción de minería de datos de Oracle Database: funciones supervisadas/no supervisadas, algoritmos, preparación de datos para modelos (binning, normalización, atípicos, faltantes) y minería de texto; orientado a construir y aplicar modelos dentro de la base. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P153.50
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - convertir la pregunta de negocio en una definición operativa precisa del resultado (p. 7: «el abandono es definido de manera distinta en diferentes organizaciones… ¿Cuánto tiempo tiene que permanecer inactivo un cliente…?») — ya cubierta: P153 H01 (KPI como contrato con fórmula, grano y período) y P122 H02 (cumplimiento derivado de dos fechas con regla explícita «tardío = más de 0 días»). La señal es además de práctica (professional-learning) orientada a definir etiquetas de modelos predictivos.
