@@ -187,3 +187,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso en línea de ocho semanas sobre prototipado rápido en fabricación (procesos seriales y paralelos, mapeo de atributos de prototipo, costo–valor) con capstone de decisiones de fabricación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P306.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Predictions, Prescriptions, and the Problem of Causality» y «The Power of Experimentation … Experimentation in Practice» (p. 11) — ya cubierta: P306 H01–H02 usa un tratamiento aleatorizado para separar riesgo de efecto causal. Como institucional sólo ilustra; coincide con la candidata de P306 de `dataops-02-data-strategy` (grupo de comparación en la operación) sin aportar un argumento propio.
+  - «How to Prescribe Without True Experiments» (p. 11) — fuera de alcance: inferencia causal observacional pertenece a Predictiva; Prescriptiva consume la estimación.

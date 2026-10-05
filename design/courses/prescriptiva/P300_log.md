@@ -271,3 +271,15 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «Participants will conduct a cost analysis to determine the most efficient process to use to build the prototype» (p. 8) — fuera de alcance: decisión de ingeniería de producto, única y no recurrente; no aporta una política gobernada.
   - procesos de fabricación, DFM y prototipos conceptuales (pp. 5–7) — fuera de alcance: ingeniería mecánica, ajena a Analytics.
+
+## S03.P300.23
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - catálogo de cursos cortos presenciales de PwC Nigeria (ciencia de datos, analítica predictiva, ML, IA) con una clase magistral de «Decision Analytics» que introduce optimización, simulación y análisis de decisiones para analítica prescriptiva. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «How To Tell Good Prescriptions from Bad Prescriptions» (p. 11) — ya cubierta: comparación con líneas base bajo el mismo criterio (P305 H02, P313 H05, P316 H03) y contrato de política.
+  - «introducing participants to the most commonly used applied optimization, simulation and decision analysis techniques for prescriptive analytics» (p. 10) — ya cubierta y, como lista de técnicas, no impone identidad: el curso usa estas técnicas como evidencia de políticas (P305, P310, P313, P316–P319, P322).
+  - módulos de estadística, regresión, ML, series de tiempo, texto y visualización (pp. 4–9, 12–14) — fuera de alcance: Descriptiva y Predictiva.
