@@ -257,3 +257,15 @@
   - generación combinatoria y muestreo de espacios de diseño, y evaluación por valor, costo y desempeño (p. 3: «design decisions are combinatorially paired and sampled to generate a design space») — fuera de alcance: no hay caso ni datos observados que describir; el objeto es un espacio de alternativas construido.
   - sensibilidad, robustez y representación de la incertidumbre de un diseño (p. 4: «define what sensitivity means for a design … how uncertainty can be captured and represented») — fuera de alcance: es robustez de una decisión (prescriptiva). La incertidumbre de una descripción no aparece en este documento como señal.
   - pre-evaluación y post-evaluación para medir la línea base del estudiante (p. 1: «take a Pre-Assessment to get a baseline of your understanding»; p. 4: «Post-Assessment») — fuera de alcance: es una práctica institucional de evaluación del programa. La evaluación de los talleres está fijada por el contrato con `pytest` de `AGENTS.md`, y esta señal no cambia lo que el estudiante hace en ningún Pxxx.
+
+## S03.P100.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea de 8 semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo, termoformado), mapeo de atributos prototipo–producto, decisiones de fabricación y análisis de costo-valor, con un proyecto final sobre una careta facial o un giróscopo satelital. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Assess data gathered from concept prototypes to make smart decisions on developing your desired product» (p. 5) y «Participants will assess the data results for the different processes used» (p. 8) — fuera de alcance: evaluación de pruebas de ingeniería de fabricación; el documento no contiene datos, preguntas ni métodos de descripción analítica.
+  - desarrollar una hipótesis para un producto deseado y probar un prototipo virtual (Módulo 6, p. 7); análisis de costo y valor (Módulo 7, p. 7) — fuera de alcance: diseño de producto físico y decisión económica; no corresponde a descriptiva ni a otro curso de la línea de Analytics más allá de una analogía genérica con prototipos.
+  - procesos de fabricación seriales y paralelos, DFM, cálculo de masa y momento de inercia (pp. 6–7) — fuera de alcance: ingeniería mecánica; sin relación con el curso.

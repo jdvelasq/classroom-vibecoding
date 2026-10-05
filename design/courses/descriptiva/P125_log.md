@@ -177,3 +177,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelos de valor con atributos organizados en jerarquías «for evaluation and summation» (p. 2) — fuera de alcance: agregar atributos ponderados en una función de valor convierte la priorización descriptiva en una regla de decisión (prescriptiva). Además está ya cubierta en su forma descriptiva: P120 H07 separa el criterio de riesgo del de prioridad y P125 H04 exige un doble criterio con umbrales explícitos sin fundirlos en un puntaje.
+
+## S03.P125.21
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-rapid-prototyping-methodologies.md` (`source_sha256`: 842362a7d12ef4fcb716b15b734a97d4b3b133bf916bc5d3814910fd1bad9e35).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un curso en línea de 8 semanas sobre prototipado rápido de productos físicos (impresión 3D, corte láser, CNC, moldeo, termoformado), mapeo de atributos prototipo–producto, decisiones de fabricación y análisis de costo-valor, con un proyecto final sobre una careta facial o un giróscopo satelital. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
