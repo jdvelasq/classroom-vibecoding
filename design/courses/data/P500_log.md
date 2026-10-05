@@ -632,3 +632,15 @@
   - exportar el flujo sin datos (p. 21 «The option to exclude data from being exported is activated by default») y contraseñas cifradas con clave maestra (p. 17 «KNIME does not store any passwords … in plain text») — marginal: prácticas de herramienta sin efecto sobre lo que el estudiante aprende de los datos.
   - metadatos de rango y valores nominales propagados entre nodos (p. 8 «all nominal values and ranges of all attributes are known: this meta information is propagated») — marginal: detalle interno de la herramienta.
   - adoptar una herramienta visual de flujos (todo el documento) — fuera de alcance: una señal professional-learning de herramienta no basta para imponer un tema; `data.C05` mantiene las herramientas como habilitadores; el ejemplo central (K-Means) es de otro curso.
+
+## S03.P500.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - folleto comercial de antes del lanzamiento de SQL Server 2005 Analysis Services Data Mining. Enumera casos de uso (canasta de mercado, churn, segmentación, pronóstico, calidad de datos, texto), la integración con Integration, OLAP y Reporting Services, asistentes, el lenguaje DMX, los algoritmos y la arquitectura empresarial. Es una señal de herramienta de 2005, no curricular. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - casos de uso de minería (Market Basket, Churn, Forecasting, Campaign, Text Analysis; p. 1) y algoritmos (árboles, series de tiempo, clustering, reglas de asociación, Naïve Bayes, redes neuronales; p. 2) — fuera de alcance: análisis descriptivo, predictivo o prescriptivo de otros cursos.
+  - arquitectura cliente-servidor, escalabilidad paralela, gestión y seguridad por roles (p. 2) — fuera de alcance: arquitectura empresarial y operación, frontera explícita del curso.
+  - asistentes de «only a few mouse clicks» y gráficos de lift y profit (p. 2) — fuera de alcance: evaluación de modelos y herramientas de vendor.

@@ -414,3 +414,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de inicio de una versión antigua (2.x) de KNIME: construir un flujo de nodos (File Reader → K-Means → Color Manager → tabla y dispersión), estados de nodo, puertos, preferencias, exportación de flujos y meta nodos. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P510.50
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/microsoft-sql-server-data-mining.md` (`source_sha256`: f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Integration Services para «flag outliers, separate data, and fill in missing values based on the predictive analytics of the data mining algorithms» (p. 1) — fuera de alcance: imputación predictiva dentro de un pipeline productivo (frontera con Predictiva y con productos de datos). El tratamiento de faltantes del curso se aborda desde la documentación y la decisión (ver la candidata P510 de NASEM).
