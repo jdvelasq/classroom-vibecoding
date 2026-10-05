@@ -193,3 +193,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - catálogo de cursos cortos presenciales de PwC Nigeria (ciencia de datos, analítica predictiva, ML, IA) con una clase magistral de «Decision Analytics» que introduce optimización, simulación y análisis de decisiones para analítica prescriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P309.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - decisión bajo incertidumbre y planeación de escenarios (p. 5: «Scenario planning • Horizon scanning • Decision-making under uncertainty»; p. 17) — fuera de alcance en su forma (prospectiva estratégica cualitativa para la alta dirección, no política operativa recurrente); la decisión cuantitativa por escenarios ya está en P309 H02–H06 y P314 H01–H05.

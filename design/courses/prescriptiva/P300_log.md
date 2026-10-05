@@ -283,3 +283,13 @@
   - «How To Tell Good Prescriptions from Bad Prescriptions» (p. 11) — ya cubierta: comparación con líneas base bajo el mismo criterio (P305 H02, P313 H05, P316 H03) y contrato de política.
   - «introducing participants to the most commonly used applied optimization, simulation and decision analysis techniques for prescriptive analytics» (p. 10) — ya cubierta y, como lista de técnicas, no impone identidad: el curso usa estas técnicas como evidencia de políticas (P305, P310, P313, P316–P319, P322).
   - módulos de estadística, regresión, ML, series de tiempo, texto y visualización (pp. 4–9, 12–14) — fuera de alcance: Descriptiva y Predictiva.
+
+## S03.P300.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo mixto en cinco fases: panorama y modelos de negocio de IA, liderazgo con analítica predictiva e IA generativa/agéntica, innovación, pensamiento de futuros para la decisión estratégica y gobernanza y controles de IA. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - modelos de negocio, transformación organizacional, capital de riesgo corporativo e IA agéntica (p. 5, 16, 19) — fuera de alcance: estrategia y gestión, no analítica prescriptiva.

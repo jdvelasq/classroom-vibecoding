@@ -196,3 +196,11 @@
 - **Señales descartadas relevantes:**
   - «Predictions, Prescriptions, and the Problem of Causality» y «The Power of Experimentation … Experimentation in Practice» (p. 11) — ya cubierta: P306 H01–H02 usa un tratamiento aleatorizado para separar riesgo de efecto causal. Como institucional sólo ilustra; coincide con la candidata de P306 de `dataops-02-data-strategy` (grupo de comparación en la operación) sin aportar un argumento propio.
   - «How to Prescribe Without True Experiments» (p. 11) — fuera de alcance: inferencia causal observacional pertenece a Predictiva; Prescriptiva consume la estimación.
+
+## S03.P306.24
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/stanford-ai-strategy-governance.md` (`source_sha256`: 6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto de un programa ejecutivo mixto en cinco fases: panorama y modelos de negocio de IA, liderazgo con analítica predictiva e IA generativa/agéntica, innovación, pensamiento de futuros para la decisión estratégica y gobernanza y controles de IA. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
