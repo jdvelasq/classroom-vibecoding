@@ -171,3 +171,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «The OODA Loop» (Módulos 5 y 7, pp. 14–15) — marginal: el ciclo observar–orientar–decidir–actuar se menciona como consigna de agilidad organizacional sin contenido; el ciclo contexto observable → acción → registro → revisión ya es el contrato de política del curso (P300 H03; arquitectura del curso).
   - contenedores, Docker, Kubernetes, serverless, PKI (pp. 13–15) — fuera de alcance: infraestructura y despliegue (Productos de datos).
+
+## S03.P300.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: folleto de un curso ejecutivo de 8 semanas sobre estrategia y ecosistema de datos (IA para líderes, plataformas y diseño de bases de datos, modern data stack, nube, Lean DevOps, ética/gobierno de datos). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Effective business decisions depend on precise forecasting» y «Envision and practice precise decision making based on data» (pp. 6–7) — marginal: declaración genérica; el curso ya separa explícitamente la estimación (Predictiva) de la política que la usa (P303 H02, P306 H02, P307 H01).
+  - Módulo 2 «Decision-Making Frameworks», «Axiomatic Design», «Design of Organizations» (p. 14) — marginal/fuera de alcance: marcos organizacionales de diseño y decisión sin contenido operativo enseñable; la autoridad y el modo de ejecución de cada política ya están en P303 H01, P304 H06, P308 H06.
+  - Módulo 1 «Reinforcement Learning» (p. 14) — fuera de alcance: técnica de IA mencionada sin caso; no hay datos ni secuencia para enseñarla como mecanismo de política con rigor.
+  - Lean DevOps, data platforms, modern data stack, nube (pp. 7, 14–15) — fuera de alcance: Productos de datos / Fundamentos de data.
