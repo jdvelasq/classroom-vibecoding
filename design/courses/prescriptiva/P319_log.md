@@ -410,3 +410,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Market Basket Analysis … create an online recommendation system, or to determine how combinations of products contribute to profits» (p. 1). Categoría: marginal. El valor de un producto según el conjunto ofrecido ya está en P319 H01–H03 (canibalización con logit multinomial y objetivo no aditivo). Las reglas de asociación son una técnica de minería (Predictiva) y no aportan una política gobernada distinta.
+
+## S03.P319.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Páginas: 158. Lectura: índice + secciones. Recorrí el índice completo (pp. 3–12). Leí completos: novedades 11g sobre decisiones sensibles al costo (p. 11); cap. 1, «What Is Data Mining?», que incluye información accionable, límites, proceso y despliegue (pp. 15–20); transparencia de modelos y operadores SQL de scoring (pp. 27–29); combinación de scoring y reglas de negocio en SQL (pp. 33–34); PREDICT y umbral (p. 42); cap. 5, evaluación y sesgo de clasificación: matriz de confusión, lift, ROC, costos y priors (pp. 54–60). Revisé con grep el resto (algoritmos, preparación de datos, minería de texto y glosario), buscando costo, umbral, despliegue, monitoreo, simulación, optimización, equidad y recomendación: sólo aparecen la matriz de costo del árbol de decisión (p. 86) y la definición de cost matrix del glosario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

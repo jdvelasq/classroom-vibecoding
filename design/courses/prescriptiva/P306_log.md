@@ -419,3 +419,14 @@
   - «Campaign Analysis. Spend marketing dollars more efficiently by targeting the people most likely to respond to a promotion» (p. 1). Categoría: ya cubierta. P306 H04 compara explícitamente la focalización por respuesta tratada (2.724) con la focalización por efecto causal y valor (6.288) con el mismo cupo. Muestra justamente por qué focalizar por probabilidad de respuesta no es la mejor política. La señal del folleto es la línea base que el taller ya supera.
   - «lift and profit charts are provided so you can compare and contrast the quality of your models before you commit to deployment» (p. 2). Categoría: ya cubierta, y fuera de alcance en lo que toca a la calidad del modelo. El valor incremental por capacidad y los rendimientos decrecientes están en P306 H04 y H06. El *lift* como medida de la calidad de un modelo antes de desplegarlo pertenece a Predictiva.
   - «Churn Analysis. Create reports showing customers at risk of canceling their service» (p. 1). Categoría: fuera de alcance. Es un producto descriptivo o predictivo (reporte de riesgo). La política que usa el riesgo como insumo ya está en P303 H02 y P306 H02.
+
+## S03.P306.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - regla de negocio que combina propensión y valor del cliente: «PREDICTION_PROBABILITY(tree_model, 'attrite'…) > 0.8 AND A.cust_value > 90» (p. 34). Ya cubierta y superada: P306 (H02–H04) actúa sobre efecto causal × valor − costo con cupo y muestra que focalizar por riesgo rinde menos.
+  - «the predictive relationships discovered through data mining are not causal relationships» (p. 17). Ya cubierta: P306 (H02) separa riesgo de efecto causal estimado.
+  - lift por cuantiles y ganancia acumulada para campañas: «Lift reveals how much of the population must be solicited» (p. 55). Fuera de alcance: es una métrica de evaluación predictiva. P306 (H04) ya fija como criterio el valor incremental de la política, no la precisión del modelo.
+  - PREDICT elige el umbral que maximiza la exactitud promedio por clase (p. 42), y la exactitud engaña con clases desbalanceadas y priors (p. 59). Fuera de alcance: son calibración y evaluación del clasificador (Predictiva). El umbral por exactitud es justo el criterio que la candidata de P303 reemplaza por costos.

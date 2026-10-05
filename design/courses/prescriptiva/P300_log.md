@@ -599,3 +599,16 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «A prediction against a data mining model is simply a join in a familiar SQL query», más despliegue, escalabilidad, seguridad por roles y disponibilidad durante actualizaciones (p. 2). Categoría: fuera de alcance. Es infraestructura para desplegar y servir modelos (Productos de datos), y la señal de herramienta de un único proveedor no basta para imponer un tema.
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded» (p. 1). Categoría: fuera de alcance. Corresponde a Fundamentos de datos o a Productos de datos. Las guardas por datos inválidos de las políticas ya existen como excepciones (P304 H06, P305 H06, P308 H06).
+
+## S03.P300.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Should costs associated with false positives or false negatives be incorporated into the model?» (p. 20). Fuera de alcance aquí: P300 decide entre alternativas agregadas sin clientes ni umbrales de puntaje, y el mismo aprendizaje cabe mejor en P303 (candidata).
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - decisiones sensibles al costo como novedad de producto: «Enhanced Support for Cost-Sensitive Decision Making» (p. 11). Marginal: es una característica de herramienta; su contenido conceptual se aprovecha en la candidata de P303.
+  - proceso iterativo: «a data mining project does not stop when a particular solution is deployed. The results of data mining trigger new business questions» (p. 18). Ya cubierta: los gatillos de revisión y el monitoreo de P306 (H07), P308 (H07) y P321 (H02) ya lo concretan con más exigencia.
+  - «data mining… cannot tell you the value of the information to your organization» (p. 17). Ya cubierta: P322 (H01) calcula el valor de medir antes de actuar.
+  - desarrollar varios modelos y elegir «the best of those for deployment» (p. 60); detección de anomalías para fraude (p. 61); confiabilidad de clusters «for business decision making» (p. 64). Fuera de alcance: selección y construcción de modelos (Predictiva o Descriptiva).

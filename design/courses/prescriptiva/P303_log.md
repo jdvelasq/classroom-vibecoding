@@ -413,3 +413,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Churn Analysis. Create reports showing customers at risk of canceling their service» (p. 1). Categoría: fuera de alcance. Es un producto descriptivo o predictivo (reporte de riesgo). La política que usa el riesgo como insumo ya está en P303 H02 y P306 H02.
+
+## S03.P303.51
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - scoring en tiempo real dentro de una transacción: «a sales representative could run a model that predicts the likelihood of fraud within the context of an online sales transaction» (p. 20); operadores SQL `PREDICTION_PROBABILITY` para desplegar modelos (pp. 29, 34). Fuera de alcance: desplegar e integrar en aplicaciones es tarea de Productos de datos. Lo prescriptivo, la automatización acotada por latencia con autoridad humana sobre parámetros, ya está en P304 (H06).
+  - PREDICT elige el umbral que maximiza la exactitud promedio por clase (p. 42), y la exactitud engaña con clases desbalanceadas y priors (p. 59). Fuera de alcance: son calibración y evaluación del clasificador (Predictiva). El umbral por exactitud es justo el criterio que la candidata de P303 reemplaza por costos.
