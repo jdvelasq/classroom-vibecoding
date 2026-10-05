@@ -215,3 +215,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelos persistentes desplegados como API o para puntuación por lotes (curso 2, p. 4): ya cubierta para web y API (P217 H01–H02, P218 H01–H03); la puntuación por lotes es otra forma de uso sin una capacidad predictiva distinta.
+
+## S03.P217.26
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-lineamientos-armonizacion-curricular.md` (`source_sha256`: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - circular de la Dirección Académica (Sede Manizales) sobre la ruta de armonización curricular: acreditación por logros (Acuerdo 02 de 2020 del CESU), resultados de aprendizaje, PEP y planes de mejoramiento (pp. 1–4); opera en el nivel de programa y de proceso, sin contenidos que contrastar con esta actividad. La noción de resultados de aprendizaje es pertinente para la trazabilidad del curso (`traceability.yaml`), no para un cambio de taller.
