@@ -372,3 +372,11 @@
 - **Señales descartadas relevantes:**
   - exploración con «descriptive reports that characterize distributions, anomalies, correlations» y evaluación de calidad por completitud, exactitud, oportunidad, consistencia y representatividad (p. 15) — ya cubierta: P120 H02 (grano y consistencia), P121 H02 (conciliación), P122 H01 (tabla de calidad) y H05 (cobertura de flete).
   - «criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: se refiere a selección de variables en modelos; los umbrales de volumen sin justificación de P120 H06, P121 H05 y P122 H06 son un límite ya registrado en S02, y esta frase no aporta un método para justificarlos.
+
+## S03.P122.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - imputar faltantes por la media para no alterar la media global (p. 148: «Selecting Mean ensures that the imputed values do not adversely affect the mean») e imputación con C&RT (pp. 77–79) — fuera de alcance: preparación para modelado; en descripción, imputar ocultaría la cobertura que P122 H05 hace explícita.

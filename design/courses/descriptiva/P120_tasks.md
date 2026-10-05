@@ -207,6 +207,7 @@ Actividad: implementation/descriptiva/P120_retail_sales/
 - **Tipo:** método
 - **Fuentes:**
   - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 6–7 — el módulo «Análisis descriptivo» («Sé capaz de recopilar, limpiar y describir los datos que tienes», p. 6) incluye «Tamaño del efecto e intervalos de confianza» junto a las estadísticas descriptivas (p. 7): la incertidumbre de una medida forma parte de describirla (Claude, 2026-10-04). Fuente *institutional*: ilustra que otra institución sitúa el intervalo dentro de lo descriptivo; no impone el método.
+  - `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` pp. 117, 120 y 124 — la tasa global es la referencia: «overall hit rate of 14.45%» (p. 117); un segmento con 16.19 % «is not that different than the baseline rate of 14.45%, so it doesn't add enough information to justify keeping it» (p. 124); y un segmento de tasa alta puede cubrir «only a small portion of the overall sample» (p. 120) (Claude, 2026-10-04). Fuente *professional-learning*: práctica de herramienta de segmentación; no aporta incertidumbre formal.
 - **Qué gana el estudiante:** antes de priorizar por tasa, pregunta cuánto
   se aparta cada segmento de la tasa global y si esa distancia se distingue
   del ruido con el volumen que tiene. Corrige un defecto: `return_risk.csv`

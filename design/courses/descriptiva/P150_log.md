@@ -371,3 +371,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - integración de fuentes heterogéneas «merging datasets, aligning formats, standardizing scales» (p. 16) — ya cubierta: P150 H01–H02, P151 H02–H03.
+
+## S03.P150.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - derivar una medida (razón Na/K, p. 89; incremento porcentual de ingreso, p. 224) antes de explorar — ya cubierta: P120 H03 (bruto/devuelto/neto) y P150 H03 derivan medidas antes de agregar.
+  - nodos Aggregate, Append y Transpose para reorganizar tablas (pp. 305–309) — ya cubierta: agregación y cambio de grano en P103, P150 H04 y P154 H01; operaciones de la herramienta sin contenido analítico nuevo.

@@ -371,3 +371,14 @@
 - **Señales descartadas relevantes:**
   - exploración con «descriptive reports that characterize distributions, anomalies, correlations» y evaluación de calidad por completitud, exactitud, oportunidad, consistencia y representatividad (p. 15) — ya cubierta: P120 H02 (grano y consistencia), P121 H02 (conciliación), P122 H01 (tabla de calidad) y H05 (cobertura de flete).
   - «criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: se refiere a selección de variables en modelos; los umbrales de volumen sin justificación de P120 H06, P121 H05 y P122 H06 son un límite ya registrado en S02, y esta frase no aporta un método para justificarlos.
+
+## S03.P120.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** refuerza T03.
+- **Señales descartadas relevantes:**
+  - distribución de una variable con superposición de una segunda variable y diagrama de dispersión con color por categoría (pp. 85–87) — ya cubierta: P120 H05 codifica magnitud y tasa en un mismo gráfico; P103 H04 ranking visual.
+  - gráfico de red (*web graph*) de asociaciones entre categorías (pp. 87–88) — marginal: la matriz categoría × canal de P120 H06 ya representa el cruce de dos variables categóricas.
+  - derivar una medida (razón Na/K, p. 89; incremento porcentual de ingreso, p. 224) antes de explorar — ya cubierta: P120 H03 (bruto/devuelto/neto) y P150 H03 derivan medidas antes de agregar.
+  - tamaño mínimo de segmento (p. 122: «Increase the minimum segment size to 1,000»; p. 125: 500) — ya cubierta: umbrales de volumen en P120 H06, P121 H05 y P122 H06.

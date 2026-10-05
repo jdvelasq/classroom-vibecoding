@@ -556,3 +556,18 @@
   - alcance del proyecto con objetivos traducidos a criterios medibles, interesados y criterios de éxito (p. 13–14: «business objectives must be translated into measurable technical goals»; «defining success criteria») — marginal aquí: refuerza el hallazgo ya registrado en las auditorías S02 (falta usuario/decisión en casi todos los Pxxx), pero el documento no aporta un mecanismo didáctico nuevo frente a `questions.json` (P120 H01) y es literatura de gestión de proyectos, no prescripción curricular.
   - las ocho dimensiones como ciclo de proyecto (pp. 12–13, Fig. 2) y prácticas ágiles (Sprint 0, retrospectivas, p. 14 y p. 22) — fuera de alcance: gestión de proyectos analíticos; no es el producto descriptivo del curso.
   - diseño/modelado, evaluación con AUC/F1, operación, monitoreo de deriva, MLOps (§4.4, §4.5, §4.7, §4.8) — fuera de alcance: predictiva y productos de datos.
+
+## S03.P100.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de ejemplos de una herramienta de minería de datos orientada a modelos predictivos (CRISP-DM); los capítulos de auditoría de datos, gráficos exploratorios, listas de decisión por segmentos y canasta de mercado son los únicos con contenido descriptivo. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - metodología CRISP-DM para organizar proyectos (p. 20: «organize projects according to the Cross-Industry Standard Process for Data Mining») — fuera de alcance: marco de minería orientado a modelado; el curso se organiza por pregunta descriptiva y producto.
+  - preparación automática de datos ADP (p. 63: «make your data ready for data mining quickly and easily, without needing to have prior knowledge of the statistical concepts involved»; p. 68: precisión de 10,6 % a 78,8 %) — fuera de alcance: preparación al servicio de la precisión predictiva y opaca para el estudiante, lo contrario de las decisiones explícitas de P106/P107.
+  - pronóstico de series con intervalos de confianza, suavizamiento exponencial y ARIMA (pp. 165–168, 184) — fuera de alcance: pertenece a predictiva.
+  - modelado causal temporal de KPI y análisis de causa raíz de atípicos (pp. 339–346) — fuera de alcance: inferencia causal y predicción; contradice el límite asociación/causalidad que sostiene P125 H06.
+  - perfilamiento de grupos con reglas C5.0, árboles y modelos de respuesta (pp. 94, 325–326, 111–129) — fuera de alcance: modelos predictivos/clasificación.
+  - medidas de utilidad de campaña con costos fijos y variables (p. 130: «Profit Margin = Frequency * Revenue per respondent - Cover * Variable cost») — fuera de alcance: evaluación económica de acciones (prescriptiva).

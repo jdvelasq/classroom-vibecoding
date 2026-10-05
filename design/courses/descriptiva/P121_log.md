@@ -369,3 +369,13 @@
 - **Señales descartadas relevantes:**
   - exploración con «descriptive reports that characterize distributions, anomalies, correlations» y evaluación de calidad por completitud, exactitud, oportunidad, consistencia y representatividad (p. 15) — ya cubierta: P120 H02 (grano y consistencia), P121 H02 (conciliación), P122 H01 (tabla de calidad) y H05 (cobertura de flete).
   - «criteria that avoid arbitrary thresholds in variable selection» (p. 20) — marginal: se refiere a selección de variables en modelos; los umbrales de volumen sin justificación de P120 H06, P121 H05 y P122 H06 son un límite ya registrado en S02, y esta frase no aporta un método para justificarlos.
+
+## S03.P121.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tamaño mínimo de segmento (p. 122: «Increase the minimum segment size to 1,000»; p. 125: 500) — ya cubierta: umbrales de volumen en P120 H06, P121 H05 y P122 H06.
+  - inspección visual de tendencia y estacionalidad, y advertencia de que el total puede ocultar series individuales (p. 161: «you should inspect each of the series before ruling out seasonal models»; p. 181: «Does the series show seasonality?») — ya cubierta: P121 H06 contrasta serie nacional y patrón por mes del año para las cinco aerolíneas principales. Que la estacionalidad sea multiplicativa (p. 184) es marginal y orientado a elegir el modelo de pronóstico.
+  - diferencias, medias móviles y descarte del primer registro de cada serie en los límites (p. 230: «Discards the first record of each time series to avoid large (incorrect) jumps») — fuera de alcance: ingeniería de atributos para un clasificador; el curso no trabaja series por entidad con esa estructura.

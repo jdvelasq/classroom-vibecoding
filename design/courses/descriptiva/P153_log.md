@@ -373,3 +373,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - transparencia mediante documentación metodológica y trazabilidad (pp. 19–20) — ya cubierta: P153 H01 (catálogo) y H04 (linaje).
+
+## S03.P153.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de ejemplos de una herramienta de minería de datos orientada a modelos predictivos (CRISP-DM); los capítulos de auditoría de datos, gráficos exploratorios, listas de decisión por segmentos y canasta de mercado son los únicos con contenido descriptivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

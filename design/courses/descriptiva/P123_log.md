@@ -370,3 +370,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Revisión sistemática por expansión de citas (18 metodologías: CRISP-DM, ASUM-DM, TDSP, DMME, MAISTRO, OSEMN, INFORMS, etc.) que propone PRODIG8: seis dimensiones de ejecución (alcance, comprensión de datos, preparación, diseño, evaluación, operación), Gobierno y Ética como control transversal y Mejora Continua como retroalimentación. Es un marco de gestión de proyectos, no un temario. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P123.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - afinidades entre categorías de producto en canastas mediante reglas de asociación y red de enlaces (pp. 322–325) — marginal: variante de la co-ocurrencia por documento y la red de P123 H04–H05 en otro dominio; datos ficticios; una señal de herramienta no basta para imponer el tema.
