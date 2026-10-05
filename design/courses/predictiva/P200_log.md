@@ -525,3 +525,13 @@
   - sílabo de un curso de posgrado de data warehousing y BI (modelado ER y dimensional, SAP BusinessObjects, Tableau). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - data warehousing, modelado dimensional, universos de BusinessObjects y dashboards en Tableau (pp. 1–4) — fuera de alcance: BI y plataformas; no contiene contenidos de estimación.
+
+## S03.P200.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, comparaciones y excepciones). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - excepciones definidas por umbrales o por valores que son «statistical outliers» (p. 1) — marginal: refuerza la señal de detección de anomalías registrada antes para el curso, sin método ni caso; el diseño de dashboards es de descriptiva.

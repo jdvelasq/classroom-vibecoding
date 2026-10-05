@@ -483,3 +483,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - sílabo de un curso de posgrado de data warehousing y BI (modelado ER y dimensional, SAP BusinessObjects, Tableau). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.
+
+## S03.P206.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` (`source_sha256`: b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, comparaciones y excepciones). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.
