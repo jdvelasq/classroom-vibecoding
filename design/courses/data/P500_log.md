@@ -142,3 +142,14 @@
   - obtención y gestión de datos para ML (p. 5 «Obtención y gestión de datos para machine learning») — marginal: enunciado de temario sin práctica; adquisición y estructuración ya ejercitadas (P503, P510, P518).
   - privacidad y sesgos (p. 6, Módulo 8 «Consideraciones de política y riesgo: sesgos, propiedad intelectual, privacidad y alucinaciones») — marginal: la minimización de atributos sensibles se propone desde CRISP-DM (P519); aquí es un tema ejecutivo de IA generativa.
   - gobernanza y estrategia de IA, equipos, robótica, visión, PLN (pp. 5–6) — fuera de alcance de `data`.
+
+## S03.P500.10
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c101-data-engineering.md` (`source_sha256`: b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «the entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration» (p. 1). Categoría: ya cubierta / fuera de alcance. La preparación (lectura con formato declarado, integración validada, estructuración, calidad, contratos, linaje) ya se ejerce en P500–P517; exploración, visualización, análisis y ML pertenecen a los otros cursos de la línea.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «principles and practices of managing data at scale» y «a focus on ensuring reliable, scalable operationalization» (p. 1). Categoría: fuera de alcance. Escala y operacionalización confiable son la frontera excluida (operaciones distribuidas, pipelines productivos, MLOps; pertenecen a productos de datos). El curso de Berkeley es explícitamente de Data Engineering y su posición —después de un curso de ciencia de datos y con prerrequisitos de programación— contrasta con un optativo de pregrado sin prerrequisitos subordinado a Analytics (`s05-diseno-data.md`); la ficha institutional ilustra otra operacionalización, no impone identidad.
+  - «collaboration» como etapa del ciclo de vida (p. 1). Categoría: marginal. Mención sin práctica concreta; la documentación reproducible ya está en `data.C04` (manifiestos P501/P511, linaje P502, contrato P517).
