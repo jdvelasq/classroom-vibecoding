@@ -565,3 +565,15 @@
   - *Statistical process control* / *time balance tests*, monitoreo continuo de patrones anómalos (p. 5) — fuera de alcance: monitoreo en producción (curso de productos de datos); sin caso con flujo continuo.
   - notificación automática y análisis de impacto de cambios entre equipos (pp. 2, 5) — fuera de alcance: gobierno operativo.
   - «Cada vez que algo falla se agrega una nueva prueba» (p. 2) — marginal: práctica de proceso, no cambia una capacidad de taller.
+
+## S03.P500.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - rol DataOps con «Automatización de la calidad» y «Frameworks para tests de datos» (p. 5) — ya cubierta: P500 H04 condiciona la salida a aserciones ejecutables y P517 H02–H04 declara y ejercita un contrato de datos; automatizar en orquestación es pipeline productivo, fuera de la frontera.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - responsabilidades del analista de datos «Consulta, Limpieza, Exploración, Interpretación» (p. 5) — ya cubierta: consulta (P503–P508), limpieza y calidad (P500, P516) a lo largo de la secuencia; no indica una capacidad ausente.
+  - estructuras de equipo, roles (product owner de datos, arquitecto, plataforma) y perfiles de habilidades (pp. 2–8) — fuera de alcance: organización de equipos de datos (productos de datos / gestión), sin contenido enseñable en un taller de preparación de datos; la familia literature-derived aporta contexto organizacional, no prescripción curricular.
+  - herramientas listadas por rol (SQL, Talend, Hadoop, Hive, Spark, Tableau…; p. 5) — fuera de alcance: lista de herramientas; Hadoop/Hive/Spark contradicen la frontera fijada en `case-selection.md`.

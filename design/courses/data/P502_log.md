@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Láminas de clase sobre DataOps: pruebas automatizadas en cada etapa del pipeline (acceso, transformación, modelado, visualización), tipos de prueba de datos (entradas, lógica de negocio, salidas; *balance tests* de ubicación, históricos y control estadístico de procesos) y una tabla de severidad → acción. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P502.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - problemas «Artifactos no reproducibles», «El código y la data crecen independientemente» y «Falta de trazabilidad para el entrenamiento y monitoreo de modelos» (p. 2) — ya cubierta en lo que toca al curso: catálogo y linaje (P502 H01–H03), contrato persistido (P500 H03) y consulta preservada (P503 H01); trazabilidad de modelos es MLOps, excluido.

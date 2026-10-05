@@ -363,3 +363,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - *Historical balance* «Se comparan los datos actuales con datos previos o valores esperados» (p. 5) y severidad → acción (p. 4) — ya cubierta: H03 compara cada lote con el extracto de referencia y clasifica `BREAKING`/`SCOPE`/`COMPATIBLE` con acción `REJECT`/`FILTER_ZIPCODE_0`/`ACCEPT`. El incremento porcentual de registros entre versiones (p. 4) sería una variante sin entregas reales que lo sustenten (S03: lotes simulados).
+
+## S03.P517.45
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - rol DataOps con «Automatización de la calidad» y «Frameworks para tests de datos» (p. 5) — ya cubierta: P500 H04 condiciona la salida a aserciones ejecutables y P517 H02–H04 declara y ejercita un contrato de datos; automatizar en orquestación es pipeline productivo, fuera de la frontera.
