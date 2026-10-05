@@ -249,3 +249,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Pruebas y Evaluación de Sistemas Agentivos… Métricas de evaluación (precisión, latencia, robustez)» (p. 13) — fuera de alcance: prueba de software agéntico (Productos de datos); la validación de una política frente a líneas base y escenarios ya está en P311/P313.
+
+## S03.P313.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa de curso de bodegas de datos: modelado ER y dimensional (Kimball), dimensiones lentamente cambiantes, tablas de hechos, universos de SAP Business Objects, reportes Web Intelligence y tableros en Tableau. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

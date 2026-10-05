@@ -250,3 +250,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «sistemas que actúen de manera autónoma, razonen por sí mismos y ejecuten tareas complejas con una supervisión mínima» (p. 3) y agentes «programados para tomar decisiones informadas y resolver problemas complejos de manera autónoma» (p. 12) — ya cubierta/fuera de alcance: el curso ya enseña el modo proporcional de ejecución (automatización acotada con escalamiento en P304 H06; aprobación obligatoria en P308 H06; enrutamiento a autoridad en P303 H01); la autonomía agéntica como tecnología pertenece a otro curso y desplazaría la identidad hacia la herramienta.
+
+## S03.P304.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa de curso de bodegas de datos: modelado ER y dimensional (Kimball), dimensiones lentamente cambiantes, tablas de hechos, universos de SAP Business Objects, reportes Web Intelligence y tableros en Tableau. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -370,3 +370,13 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - caso «Agente de análisis de investigación financiera… mejorando la toma de decisiones de inversión» (p. 14) y «Aplicación para startup de salud… programación de citas» (p. 15) — fuera de alcance: automatización de flujos con LLM, sin objetivo, restricciones ni política de decisión evaluable; no hay caso/datos para el curso.
   - prompts, RAG, LangChain/LangGraph, MCP, multiagente, multimodal (pp. 9–14, 18) — fuera de alcance: herramientas de IA generativa; no pertenecen a Prescriptiva.
+
+## S03.P300.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Programa de curso de bodegas de datos: modelado ER y dimensional (Kimball), dimensiones lentamente cambiantes, tablas de hechos, universos de SAP Business Objects, reportes Web Intelligence y tableros en Tableau. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - modelado dimensional, SCD, *chasm/fan traps*, seguridad por fila (p. 1–4) — fuera de alcance: Fundamentos de data / bases de datos; no hay señal de decisión, optimización ni gobierno de políticas.

@@ -252,3 +252,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - módulo 03 «Registro de la toma de decisiones para una mayor transparencia», «Evaluación con intervención humana» (p. 13) — ya cubierta: el registro versionado por decisión y la autoridad humana están en P303 H03–H04, P306 H07–H08 y P321 H01–H03; el folleto no aporta método ni forma de evidencia distinta.
+
+## S03.P321.31
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - construcción y publicación de tableros y reportes con filtros e interactividad (p. 4: «Building dashboards … Sharing your dashboards») — fuera de alcance: inteligencia de negocios descriptiva; el seguimiento de una política se ejerce en P321 mediante registro, indicador, meta y gatillo, no mediante una herramienta de BI.
