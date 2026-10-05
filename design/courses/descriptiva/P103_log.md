@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - distribución de una variable con superposición de una segunda variable y diagrama de dispersión con color por categoría (pp. 85–87) — ya cubierta: P120 H05 codifica magnitud y tasa en un mismo gráfico; P103 H04 ranking visual.
+
+## S03.P103.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - construir atributos por *roll-up* de eventos a sesión y a cliente (p. 25) — ya cubierta: agregar antes de unir (P103 H01), medidas derivadas (P150 H03).

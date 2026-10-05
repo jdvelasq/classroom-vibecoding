@@ -378,3 +378,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - afinidades entre categorías de producto en canastas mediante reglas de asociación y red de enlaces (pp. 322–325) — marginal: variante de la co-ocurrencia por documento y la red de P123 H04–H05 en otro dominio; datos ficticios; una señal de herramienta no basta para imponer el tema.
+
+## S03.P123.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - Guía de la metodología CRISP-DM en la herramienta SPSS Modeler: tareas, preguntas de control y reportes por fase, ilustrados con un caso de *web mining* de un e-retailer. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

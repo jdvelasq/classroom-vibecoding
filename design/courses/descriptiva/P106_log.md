@@ -372,3 +372,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - recodificar valores de texto largos en categorías cortas con Reclassify (pp. 105–108) — ya cubierta: canonización con diccionarios de P106 H02 y P107 H03; en la guía, la motivación es una restricción del algoritmo.
+
+## S03.P106.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - inconsistencias de codificación y unidades («the use of both _M_ and _male_», p. 20; «Decide upon a single coding scheme, then convert and replace values», p. 24) — ya cubierta: P106 H01–H04, P107 H03.
+  - chequeo de plausibilidad y errores de digitación («"119-inch" (instead of "19-inch") monitor», p. 19; «Have you conducted a plausibility check for values?», p. 21) — marginal: P106 H05 ya verifica invariantes de dominio (descuentos en [0, 1], pesos no negativos) y la consistencia entre campos ya se ejerce en P120 H02 (`Quantity × Price = TotalAmount`); un rango adicional sería variante.

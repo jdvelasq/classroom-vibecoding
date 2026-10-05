@@ -380,3 +380,12 @@
 - **Señales descartadas relevantes:**
   - derivar una medida (razón Na/K, p. 89; incremento porcentual de ingreso, p. 224) antes de explorar — ya cubierta: P120 H03 (bruto/devuelto/neto) y P150 H03 derivan medidas antes de agregar.
   - nodos Aggregate, Append y Transpose para reorganizar tablas (pp. 305–309) — ya cubierta: agregación y cambio de grano en P103, P150 H04 y P154 H01; operaciones de la herramienta sin contenido analítico nuevo.
+
+## S03.P150.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - integrar fuentes y verificar la unión («the merged file replicates customer and product information every time…», «make sure that the data merge was performed correctly», p. 26; «Are you merging various data sources? If so, are there areas that might pose a problem», p. 17) — ya cubierta: P150 H01–H02 (grano protegido, `validate="many_to_one"`, conservación de filas).
+  - construir atributos por *roll-up* de eventos a sesión y a cliente (p. 25) — ya cubierta: agregar antes de unir (P103 H01), medidas derivadas (P150 H03).

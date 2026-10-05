@@ -380,3 +380,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - imputar faltantes por la media para no alterar la media global (p. 148: «Selecting Mean ensures that the imputed values do not adversely affect the mean») e imputación con C&RT (pp. 77–79) — fuera de alcance: preparación para modelado; en descripción, imputar ocultaría la cobertura que P122 H05 hace explícita.
+
+## S03.P122.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Bad metadata… mismatches between the apparent meaning of a field and the meaning stated» (p. 20); explorar desviaciones como «"noise" or phenomena worth analyzing» (p. 21) — ya cubierta: flete textual no convertido en cero (P122 H05), razones de origen no promediadas (P124 H01); la serie mensual de P122 sin mínimo ya está registrada como límite (H06).
+  - «Is there enough data to draw generalizable conclusions…?» (p. 17) — ya cubierta: umbrales de volumen (P120 H06, P121 H05, P122 H06).

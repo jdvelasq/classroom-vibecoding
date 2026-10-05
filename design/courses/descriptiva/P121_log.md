@@ -379,3 +379,11 @@
   - tamaño mínimo de segmento (p. 122: «Increase the minimum segment size to 1,000»; p. 125: 500) — ya cubierta: umbrales de volumen en P120 H06, P121 H05 y P122 H06.
   - inspección visual de tendencia y estacionalidad, y advertencia de que el total puede ocultar series individuales (p. 161: «you should inspect each of the series before ruling out seasonal models»; p. 181: «Does the series show seasonality?») — ya cubierta: P121 H06 contrasta serie nacional y patrón por mes del año para las cinco aerolíneas principales. Que la estacionalidad sea multiplicativa (p. 184) es marginal y orientado a elegir el modelo de pronóstico.
   - diferencias, medias móviles y descarte del primer registro de cada serie en los límites (p. 230: «Discards the first record of each time series to avoid large (incorrect) jumps») — fuera de alcance: ingeniería de atributos para un clasificador; el curso no trabaja series por entidad con esa estructura.
+
+## S03.P121.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Is there enough data to draw generalizable conclusions…?» (p. 17) — ya cubierta: umbrales de volumen (P120 H06, P121 H05, P122 H06).

@@ -571,3 +571,15 @@
   - modelado causal temporal de KPI y análisis de causa raíz de atípicos (pp. 339–346) — fuera de alcance: inferencia causal y predicción; contradice el límite asociación/causalidad que sostiene P125 H06.
   - perfilamiento de grupos con reglas C5.0, árboles y modelos de respuesta (pp. 94, 325–326, 111–129) — fuera de alcance: modelos predictivos/clasificación.
   - medidas de utilidad de campaña con costos fijos y variables (p. 130: «Profit Margin = Frequency * Revenue per respondent - Cover * Variable cost») — fuera de alcance: evaluación económica de acciones (prescriptiva).
+
+## S03.P100.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Guía de la metodología CRISP-DM en la herramienta SPSS Modeler: tareas, preguntas de control y reportes por fase, ilustrados con un caso de *web mining* de un e-retailer. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - formular y revisar hipótesis en la exploración (p. 20); «What additional questions have your results raised?» (p. 35); reporte final según audiencia y plan de difusión de hallazgos (pp. 39, 41) — marginal desde este documento: la falta de lectura persistida ya está registrada en auditorías (P152 H03, P154 S04) y no se sostiene por una guía de herramienta.
+  - introducción: proyectos donde «your work will focus on data exploration and visualization» y modelado es menos relevante (p. 7) — contexto que respalda la identidad descriptiva; sin propuesta.
+  - plan de proyecto, inventario de recursos, riesgos, costo/beneficio (pp. 11–15), modelado y diseño de pruebas (pp. 29–33), evaluación de modelos (pp. 35–37), despliegue y monitoreo (pp. 39–42) — fuera de alcance: gestión de proyectos, predictiva y productos de datos.

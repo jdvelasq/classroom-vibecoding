@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - privacidad o anonimización — sin señales: grep sin coincidencias.
+
+## S03.P108.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - filtrar atributos sensibles («customer name, address, phone number, and credit card numbers», p. 23); «constraints on using particular fields such as _gender_ or _race_» (p. 24) — ya cubierta: P102 H02, P108 H01–H03.

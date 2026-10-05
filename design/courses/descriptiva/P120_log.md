@@ -382,3 +382,12 @@
   - gráfico de red (*web graph*) de asociaciones entre categorías (pp. 87–88) — marginal: la matriz categoría × canal de P120 H06 ya representa el cruce de dos variables categóricas.
   - derivar una medida (razón Na/K, p. 89; incremento porcentual de ingreso, p. 224) antes de explorar — ya cubierta: P120 H03 (bruto/devuelto/neto) y P150 H03 derivan medidas antes de agregar.
   - tamaño mínimo de segmento (p. 122: «Increase the minimum segment size to 1,000»; p. 125: 500) — ya cubierta: umbrales de volumen en P120 H06, P121 H05 y P122 H06.
+
+## S03.P120.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - objetivos de negocio, criterios de éxito y supuestos («Specify all business questions as precisely as possible», p. 10; «Are there data quality assumptions?», «How does the project sponsor… expect to view the results?», p. 12) — marginal desde este documento: refuerza la candidata de framing de P120 de `informs-cap-essentials-blueprint`; como guía de herramienta no aporta un argumento distinto.
+  - «Is there enough data to draw generalizable conclusions…?» (p. 17) — ya cubierta: umbrales de volumen (P120 H06, P121 H05, P122 H06).

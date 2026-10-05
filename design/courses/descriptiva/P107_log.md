@@ -372,3 +372,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - códigos centinela de faltante (p. 27: «9=missing values») y distinción entre almacenamiento y nivel de medición (p. 83: «storage is different from Measurement»; p. 72: un 0/1 como el género es «a nominal field with two values») — marginal: P107 H01 ya decide explícitamente qué valores son nulos y controla la conversión de tipos; el nivel de medición es vocabulario de la herramienta.
+
+## S03.P107.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - faltantes codificados como no respuesta («_$null$_, _?_, or _999_», p. 20) — ya cubierta: P107 H01 (`dtype=str`, `keep_default_na=False`, nulos decididos por función).
+  - inconsistencias de codificación y unidades («the use of both _M_ and _male_», p. 20; «Decide upon a single coding scheme, then convert and replace values», p. 24) — ya cubierta: P106 H01–H04, P107 H03.

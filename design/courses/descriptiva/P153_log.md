@@ -381,3 +381,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - guía de ejemplos de una herramienta de minería de datos orientada a modelos predictivos (CRISP-DM); los capítulos de auditoría de datos, gráficos exploratorios, listas de decisión por segmentos y canasta de mercado son los únicos con contenido descriptivo. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P153.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - glosario de términos («if "churn" for your business has a particular and unique meaning, it is worth explicitly stating that», p. 13) — ya cubierta: P153 H01 (KPI como contrato con definición explícita).
