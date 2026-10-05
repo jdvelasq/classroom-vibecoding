@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** no evidenciados.
 - **Producto terminal:** un conjunto Parquet particionado por año y mes (en `temp/`, no persistido) y un resumen de una fila.
 - **Uso y límite:** deja la serie organizada para leer un periodo por directorio. La recuperación de un periodo sin leer todo, que es el objetivo declarado, no se ejercita: no hay lectura filtrada, poda de particiones ni medición. Las 23 particiones son meses distintos presentes; no se verifica que sean consecutivos.
-- **Disciplinas contribuyentes:** almacenamiento particionado (diseño de data lake) y pandas/pyarrow.
+- **Disciplinas contribuyentes:** almacenamiento particionado (diseño de data lake) y pandas/pyarrow; según la aclaración del profesor (2026-10-05), formatos y particionamiento pertenecen al curso como puente hacia la analítica.
 
 ### Highlights de contribución
 
@@ -73,4 +73,4 @@ Nuevo dato (serie diaria) y nueva exigencia sobre Parquet: de elegir formato (P5
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P525 → `data.C02`, `data.C03`, `data.C05`. `data.C03` se apoya sólo en la conservación de filas. Auditoría (pregunta 5): el propósito analítico (recuperar periodos) está declarado pero no se demuestra, y la ruta `lake/curated` lo acerca a diseño de almacenamiento de data lake, frontera con arquitectura de datos; riesgo de identidad moderado a alto, auditoría no resuelta.
+Entrada revisada: P525 → `data.C02`, `data.C03`, `data.C05`. `data.C03` se apoya sólo en la conservación de filas. Auditoría (pregunta 5): la ruta `lake/curated` lo acerca a diseño de almacenamiento de data lake; tras la aclaración del profesor (2026-10-05), formatos y particionamiento pertenecen al curso como puente y el taller declara una finalidad analítica simple (recuperar periodos), de modo que ese carácter ya no deja por sí solo la auditoría sin resolver. Se conserva como límite de evidencia que el propósito está declarado pero no se demuestra (no hay lectura filtrada, poda de particiones ni medición) y que el conjunto particionado no se persiste. Riesgo de identidad bajo a moderado (antes moderado a alto).

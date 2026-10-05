@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** pregunta persistida en `questions.json`; usuario y decisión no evidenciados.
 - **Producto terminal:** detalle integrado, respuesta segmento × región, reporte de etapas y `questions.json`.
 - **Uso y límite:** la respuesta es una agregación más gruesa de la de P511 (sin categoría). Staging y curated son copias idénticas: no hay transformación entre ellas, por lo que las etapas son nombres de directorio, no cambios observables. El estado `SUCCESS` es constante.
-- **Disciplinas contribuyentes:** organización de un proceso ETL (ingeniería de datos) al servicio de la misma respuesta descriptiva de P511.
+- **Disciplinas contribuyentes:** organización de un proceso ETL (ingeniería de datos) al servicio de la misma respuesta descriptiva de P511; según la aclaración del profesor (2026-10-05), ETL pertenece al curso como puente hacia la analítica.
 
 ### Highlights de contribución
 
@@ -70,4 +70,4 @@ Misma técnica de integración y mismos datos que P511, con nueva forma de organ
 
 ## Trazabilidad y auditoría
 
-P514 está mapeada a `data.C01`–`data.C05`. C02 se evidencia (integración y publicación); C01 en la pregunta; C03 en las aserciones heredadas de P511; C04 en el reporte de etapas, con la limitación de granos mezclados; C05 en el vocabulario de etapas. Auditoría 5: el contenido nuevo es la organización ETL; el producto analítico no cambia respecto de P511 y la respuesta es más gruesa. La actividad puede describirse como ejercicio de ETL sobre un producto ya obtenido; la auditoría queda no resuelta hasta que la etapa añada una evidencia o decisión analítica distinta.
+P514 está mapeada a `data.C01`–`data.C05`. C02 se evidencia (integración y publicación); C01 en la pregunta; C03 en las aserciones heredadas de P511; C04 en el reporte de etapas, con la limitación de granos mezclados; C05 en el vocabulario de etapas. Auditoría 5: el contenido nuevo es la organización ETL; el producto analítico no cambia respecto de P511 y la respuesta es más gruesa. Tras la aclaración del profesor (2026-10-05), ETL pertenece al curso como puente y aquí sirve a una pregunta persistida, de modo que describirse como ejercicio de ETL ya no deja por sí solo la auditoría sin resolver. Se conservan como límites, a decidir en el curso: la duplicación con P511 (mismo producto, respuesta más gruesa, sin evidencia o decisión analítica distinta), las etapas staging y curated sin transformación observable entre ellas y el estado `SUCCESS` constante.

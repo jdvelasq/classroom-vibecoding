@@ -15,7 +15,7 @@ Misma pregunta que P514 y mismas cuatro tablas derivadas con el mismo manifiesto
 - **Pregunta, usuario o decisión:** pregunta persistida en `questions.json`; usuario y decisión no evidenciados.
 - **Producto terminal:** `submission/superstore_elt.db` (capas raw y curada), `sales_by_segment_region.csv`, `elt_report.csv` y `questions.json`.
 - **Uso y límite:** la base permite auditar la respuesta desde las tablas raw dentro del mismo archivo. Las uniones internas en SQL no validan cardinalidad: una clave ausente eliminaría líneas y una duplicada las multiplicaría sin error; la conservación del grano sólo se observa en el número 1952 del reporte, sin aserción. El estado es constante.
-- **Disciplinas contribuyentes:** SQL y ubicación de la transformación (ELT) al servicio de la misma respuesta descriptiva de P514.
+- **Disciplinas contribuyentes:** SQL y ubicación de la transformación (ELT) al servicio de la misma respuesta descriptiva de P514; según la aclaración del profesor (2026-10-05), ETL/ELT pertenece al curso como puente hacia la analítica.
 
 ### Highlights de contribución
 
@@ -74,4 +74,4 @@ Misma pregunta y datos que P514 con nueva ubicación de la transformación; la r
 
 ## Trazabilidad y auditoría
 
-`implementation/data/traceability.yaml` no contiene entrada para P515 (salta de P514 a P516); la descripción previa le atribuía `data.C01`–`data.C05` sin respaldo. Se escala la ausencia sin inferir un mapeo. Por evidencia, la actividad ejercita estructuración y transformación (cercana a C02) y SQLite como habilitador (C05), pero no se asigna. Auditoría 5: con pregunta, datos y respuesta idénticos a P514, la única contribución es el contraste ETL/ELT, un tema propio de Data Engineering; la actividad puede describirse como taller de ubicación de transformaciones sin producto analítico nuevo. Auditoría no resuelta.
+`implementation/data/traceability.yaml` no contiene entrada para P515 (salta de P514 a P516); la descripción previa le atribuía `data.C01`–`data.C05` sin respaldo. Se escala la ausencia sin inferir un mapeo. Por evidencia, la actividad ejercita estructuración y transformación (cercana a C02) y SQLite como habilitador (C05), pero no se asigna. Auditoría 5: con pregunta, datos y respuesta idénticos a P514, la única contribución es el contraste ETL/ELT, un tema propio de Data Engineering. Tras la aclaración del profesor (2026-10-05), ese contraste pertenece al curso como puente y la base permite auditar la respuesta desde las tablas raw, de modo que su origen disciplinar ya no deja por sí solo la auditoría sin resolver. Se conservan como límites: ningún producto analítico nuevo y duplicación con P514 (decisión de curso), uniones internas sin validación de cardinalidad, estado constante y ausencia de entrada en `traceability.yaml`.

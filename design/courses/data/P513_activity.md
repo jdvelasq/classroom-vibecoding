@@ -15,7 +15,7 @@ Los datos son dos lotes derivados del extracto `datalabs/commerce/superstore-ord
 - **Pregunta, usuario o decisión:** no evidenciados.
 - **Producto terminal:** zona raw en `temp/raw/*.parquet` (no persistida en `submission/`) y `submission/ingestion_report.csv` (2 filas, ambas `SUCCESS`).
 - **Uso y límite:** el reporte permite saber qué lotes se leyeron y cuántas filas tenía cada uno. No permite afirmar que la ingestión conservó los tipos: con `decimal=","` sobre valores con punto decimal, pandas lee `Discount`, `Unit Price`, `Shipping Cost`, `Profit`, `Sales` y similares como texto (comportamiento comprobado de `read_csv`), y así quedarían en Parquet. `status` es una constante `"SUCCESS"`: no hay rama de error, validación de esquema ni conciliación entre lotes y total.
-- **Disciplinas contribuyentes:** prácticas de ingeniería de datos (lotes, zona raw, Parquet) sin un producto analítico declarado al que sirvan.
+- **Disciplinas contribuyentes:** prácticas de ingeniería de datos (lotes, zona raw, Parquet), que según la aclaración del profesor (2026-10-05) pertenecen al curso como puente hacia la analítica; aquí no hay un producto analítico declarado al que sirvan.
 
 ### Highlights de contribución
 
@@ -73,4 +73,4 @@ Mismo caso y mismas filas que P500, con nueva forma de entrega (dos lotes) y sin
 
 ## Trazabilidad y auditoría
 
-P513 está mapeada a `data.C02`–`data.C05`; la ausencia de C01 es coherente con la falta de pregunta. C02 se evidencia (lectura y aterrizaje); C03 queda débil y contradicha por el defecto de tipos no detectado; C04 en manifiesto y reporte; C05 en el uso de Parquet como medio. Auditoría 5: es la actividad del rango P510–P517 que más claramente puede describirse como práctica de ingeniería de datos (ingestión batch a zona raw) sin producto analítico; la auditoría queda no resuelta hasta que se declare qué análisis habilita la ingestión. Se conserva la escalación de S01.
+P513 está mapeada a `data.C02`–`data.C05`; la ausencia de C01 es coherente con la falta de pregunta. C02 se evidencia (lectura y aterrizaje); C03 queda débil y contradicha por el defecto de tipos no detectado; C04 en manifiesto y reporte; C05 en el uso de Parquet como medio. Auditoría 5: es la actividad del rango P510–P517 que más claramente puede describirse como práctica de ingeniería de datos (ingestión batch a zona raw). Tras la aclaración del profesor (2026-10-05), la ingesta por lotes pertenece al curso como puente y ese carácter ya no deja, por sí solo, la auditoría sin resolver. Sigue sin resolverse por el límite que la aclaración conserva: no hay finalidad analítica declarada (ni pregunta ni consumidor, coherente con la ausencia de C01), y el defecto de tipos no detectado impide afirmar que la ingestión deja datos confiables. La auditoría queda no resuelta hasta que se declare qué análisis habilita la ingestión. Se conserva la escalación de S01.

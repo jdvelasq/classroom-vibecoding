@@ -458,3 +458,14 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Manual de referencia del procedimiento de regresión lineal de SAS: sintaxis, estadísticos, diagnósticos y ejemplos. Su contenido de datos se limita a convenciones de entrada: exclusión por faltantes, variables derivadas antes del modelo, conjuntos resumen y exclusión de observaciones. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S02.P520.02
+
+- **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
+- **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P520_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Cambios realizados:** sólo «Trazabilidad y auditoría» de `P520_activity.md` reencuadrada según la aclaración («Disciplinas contribuyentes» ya era compatible); sin otros cambios de texto.
+- **Cambio en la auditoría de Analytics:** bajo (porque todo es local) → bajo porque la pregunta es explícita; la ejecución local deja de ser la razón. Se conserva que la respuesta no se interpreta. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
+- **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.
+- **Trazabilidad:** sin cambios en el mapeo revisado ni en sus vacíos escalados.
+- **Highlights, superficies y dependencias:** sin cambios (IDs, filas de evidencia, superficies, contrato y dependencias intactos).

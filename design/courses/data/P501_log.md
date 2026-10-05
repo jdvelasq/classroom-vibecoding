@@ -472,3 +472,14 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - conjuntos de entrada TYPE=CORR/COV/SSCP: «statements and options that require the original data values have no effect… since the original observations needed to calculate predicted and residual values are not present» (p. 77). Categoría: ya cubierta. Que una representación agregada pierda lo que exige el grano de observación es la contribución de P501 H01 (representaciones de grano distinto) y H03 (conservar la trazabilidad de línea en el detalle); la motivación de ahorro de CPU (p. 76) es propia de cómputo estadístico.
+
+## S02.P501.03
+
+- **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
+- **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P501_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P501_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
+- **Cambio en la auditoría de Analytics:** moderado → bajo. Las prácticas de *serving* (detalle y agregados publicados en SQLite con manifiesto) se reencuadran como puente del curso; se conservan como límites los consumidores sólo nominales, la ausencia de control de calidad (vacío C03), la falta de reconciliación agregados–detalle y el texto mal decodificado (H03). Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
+- **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.
+- **Trazabilidad:** sin cambios en el mapeo revisado ni en sus vacíos escalados.
+- **Highlights, superficies y dependencias:** sin cambios (IDs, filas de evidencia, superficies, contrato y dependencias intactos).

@@ -467,3 +467,14 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «PROC REG does not compute new regressors… you should create a new variable when you prepare the input data» (p. 76). Categoría: ya cubierta. Derivar variables durante la preparación ya se ejerce (P500 H02 deriva fórmulas desde el grano; P511 H03 y P514/P515 transforman antes de responder).
+
+## S02.P513.03
+
+- **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
+- **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P513_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P513_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
+- **Cambio en la auditoría de Analytics:** no resuelta (por ingestión batch de ingeniería de datos sin producto) → no resuelta sólo por los límites que la aclaración conserva: ninguna finalidad analítica declarada (sin pregunta ni consumidor; sin C01) y defecto de tipos que impide afirmar datos confiables. La ingesta por lotes deja de ser el problema. Se conserva la escalación de S01. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
+- **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.
+- **Trazabilidad:** sin cambios en el mapeo revisado ni en sus vacíos escalados.
+- **Highlights, superficies y dependencias:** sin cambios (IDs, filas de evidencia, superficies, contrato y dependencias intactos).

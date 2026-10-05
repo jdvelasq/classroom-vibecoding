@@ -7,6 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia
 - **Fuentes:**
+  - `design/benchmarks-md/literature-derived/dataops-06-definition.md` pp. 9 y 15 — «Paso 1 — Adicione pruebas de lógica y de datos» sobre las etapas «Ingestión Transformación Modelado Visualización Reporte», con «Hay al menos un test en cada paso» y la pregunta «Las salidas son consistentes?» (p. 9); «Los tests sobre los datos en cada paso garantizan la calidad de la salida» (p. 15) (Claude, 2026-10-05). Fuente *literature-derived*: perspectiva metodológica; refuerza la de `dataops-09` sin cambiar el contenido de la propuesta.
   - `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` pp. 4–5 — «Location Balance tests | Las propiedades de los datos se mantienen en cada etapa. La cantidad de datos o sus dimensiones se mantienen» (p. 5); «Los tests deben incluirse en cada etapa del pipeline», «Se debe identificar los problemas tan pronto como se posible [sic]» y severidad «Error | Detención del pipeline» (p. 4) (Claude, 2026-10-05). Fuente *literature-derived*: perspectiva metodológica; la materialidad la sostiene el defecto de granos mezclados que registró S02.
 - **Qué gana el estudiante:** comprobar que un proceso por etapas conserva
   el grano y los totales de la fuente hasta la respuesta, y saber que una

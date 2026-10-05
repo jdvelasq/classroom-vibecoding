@@ -15,7 +15,7 @@ El notebook lee `data/flights.csv.gz` (319006 bytes) y escribe, en la misma carp
 - **Pregunta, usuario o decisión:** no evidenciados; la decisión es técnica (qué formato usar), sin uso analítico declarado.
 - **Producto terminal:** tabla de comparación de formatos con un tamaño medido y propiedades declaradas.
 - **Uso y límite:** documenta una elección de formato para lectura analítica. Sólo el tamaño se mide; `schema_preserved`, `human_readable` y `column_selection` se escriben como constantes. No se miden tiempos de lectura ni lectura selectiva de columnas. CSV y JSON se escriben sin compresión y Parquet con la configuración por omisión, y el `flights.csv.gz` de entrada (319006 bytes) no entra en la tabla, de modo que la diferencia de tamaño mezcla formato y compresión.
-- **Disciplinas contribuyentes:** formatos de almacenamiento y pandas/pyarrow.
+- **Disciplinas contribuyentes:** formatos de almacenamiento y pandas/pyarrow; según la aclaración del profesor (2026-10-05), los formatos pertenecen al curso como puente hacia la analítica.
 
 ### Highlights de contribución
 
@@ -72,4 +72,4 @@ Nuevo método (comparación de formatos) sobre el dominio de vuelos que P522 us�
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P524 → `data.C02`–`data.C05`. `data.C04` se apoya en la tabla de decisión; `data.C03` sólo en la verificación de filas, sin evaluación de calidad, a revisar. Auditoría (pregunta 5): taller de formatos de almacenamiento sin pregunta analítica; la vinculación con la estructura de los vuelos (registro ancho, nulos, tipos) es lo que lo aleja de una lección genérica de herramientas. Riesgo de identidad moderado.
+Entrada revisada: P524 → `data.C02`–`data.C05`. `data.C04` se apoya en la tabla de decisión; `data.C03` sólo en la verificación de filas, sin evaluación de calidad, a revisar. Auditoría (pregunta 5): taller de formatos de almacenamiento sin pregunta analítica; la vinculación con la estructura de los vuelos (registro ancho, nulos, tipos) es lo que lo aleja de una lección genérica de herramientas. Tras la aclaración del profesor (2026-10-05), los formatos pertenecen al curso como puente y la elección se declara para lectura analítica (finalidad simple), de modo que el tema ya no constituye por sí solo un riesgo de identidad. Se conservan como límites: no hay pregunta ni consumidor que concrete esa lectura, sólo el tamaño se mide (las demás propiedades son constantes) y la diferencia de tamaño mezcla formato y compresión. Riesgo de identidad bajo (antes moderado).

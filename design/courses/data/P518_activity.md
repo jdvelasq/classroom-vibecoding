@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** no evidenciados.
 - **Producto terminal:** tabla Parquet de una fila por objeto de la página (`issue_id`, `issue_number`, `title`, `state`, `created_at`, `closed_at`, `comment_count`, `is_pull_request`) y un reporte de ingestión de una fila.
 - **Uso y límite:** deja una tabla tabular y tipable a partir de una respuesta anidada, con rastro de reintentos. No permite inferir nada sobre el repositorio: es una sola página congelada de 20 registros, sin paginación ni criterio de muestreo documentado. El contenido del Parquet no es inspeccionable en el resumen disponible, por lo que no se reporta cuántos registros son pull requests.
-- **Disciplinas contribuyentes:** consumo de APIs y manejo de fallas (ingeniería de datos) y pandas/Parquet; no se conectan con un uso analítico declarado.
+- **Disciplinas contribuyentes:** consumo de APIs y manejo de fallas (ingeniería de datos) y pandas/Parquet; según la aclaración del profesor (2026-10-05), la ingesta por APIs pertenece al curso como puente hacia la analítica, pero aquí no se conecta con un uso analítico declarado.
 
 ### Highlights de contribución
 
@@ -75,4 +75,4 @@ Nuevo origen de datos (API JSON) con la misma forma de evidencia que P513 (repor
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P518 → `data.C01`–`data.C05`. `data.C01` (requisitos desde una pregunta) no se sostiene: no hay pregunta y la selección de campos no se justifica por un uso; vacío a escalar. `data.C03` se apoya sólo en unicidad y en la marca de pull requests; `data.C04` en el reporte. Auditoría (pregunta 5): el taller se lee como entrenamiento en ingestión de APIs con reintentos, una práctica de Data Engineering, porque falta la finalidad analítica que daría sentido a la tabla resultante; auditoría no resuelta. La marca `is_pull_request` es el único elemento que conecta la ingestión con una unidad de análisis.
+Entrada revisada: P518 → `data.C01`–`data.C05`. `data.C01` (requisitos desde una pregunta) no se sostiene: no hay pregunta y la selección de campos no se justifica por un uso; vacío a escalar. `data.C03` se apoya sólo en unicidad y en la marca de pull requests; `data.C04` en el reporte. Auditoría (pregunta 5): la ingestión de APIs con reintentos es una práctica de Data Engineering que, tras la aclaración del profesor (2026-10-05), pertenece al curso como puente; ese carácter ya no deja por sí solo la auditoría sin resolver. Sigue sin resolverse por el límite que la aclaración conserva: falta la finalidad analítica que daría sentido a la tabla resultante (sin pregunta ni consumidor; vacío C01), de modo que no se muestra a qué análisis sirve hacer accesible la página. La marca `is_pull_request` es el único elemento que conecta la ingestión con una unidad de análisis.

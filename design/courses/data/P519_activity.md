@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** no evidenciados (taller técnico declarado).
 - **Producto terminal:** traza persistida de una agregación y una unión por clave sobre cuatro registros.
 - **Uso y límite:** permite seguir a mano cómo pares clave–valor se agrupan, reducen y unen. No responde nada sobre la operación de transporte; dos conductores y dos semanas no describen a la flota.
-- **Disciplinas contribuyentes:** modelo de cómputo MapReduce y programación funcional en Python puro, como preparación de P520–P521.
+- **Disciplinas contribuyentes:** modelo de cómputo MapReduce y programación funcional en Python puro, como preparación de P520–P521; según la aclaración del profesor (2026-10-05), el procesamiento clave–valor introductorio pertenece al curso como puente hacia la analítica.
 
 ### Highlights de contribución
 
@@ -75,4 +75,4 @@ Nuevo método (modelo clave–valor) sin pregunta propia; los datos de conductor
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P519 → `data.C02`, `data.C05`; coherente con un taller técnico de preparación. Auditoría (pregunta 5): aislado, es una lección de modelo de cómputo sin producto analítico; su justificación depende de que P520–P521 lo usen para responder preguntas, lo que sí ocurre. La presencia de `ssn` en un dataset distribuido al estudiante requiere revisión de procedencia y sensibilidad.
+Entrada revisada: P519 → `data.C02`, `data.C05`; coherente con un taller técnico de preparación. Auditoría (pregunta 5): aislado, es una lección de modelo de cómputo sin producto analítico. Tras la aclaración del profesor (2026-10-05), el procesamiento clave–valor introductorio pertenece al curso como puente, de modo que ese carácter no es por sí solo un problema de identidad; se conserva como límite que el taller no tiene producto propio y que su finalidad analítica depende de que P520–P521 lo usen para responder preguntas, lo que sí ocurre. La presencia de `ssn` en un dataset distribuido al estudiante requiere revisión de procedencia y sensibilidad.

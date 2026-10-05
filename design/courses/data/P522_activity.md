@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** no evidenciados.
 - **Producto terminal:** conteo de vuelos operados por origen y una medición de aceleración.
 - **Uso y límite:** muestra que una reducción asociativa puede repartirse entre procesos sin cambiar el resultado. La medición es una corrida única, depende del equipo (14 procesos en el archivo persistido) e incluye el arranque del pool; no permite generalizar sobre rendimiento. El conteo por origen no se interpreta y su periodo es desconocido.
-- **Disciplinas contribuyentes:** computación paralela y modelo MapReduce; no subordinados a un producto analítico declarado.
+- **Disciplinas contribuyentes:** computación paralela y modelo MapReduce, que según la aclaración del profesor (2026-10-05) pertenecen al curso a nivel introductorio como puente hacia la analítica; aquí no se subordinan a un producto analítico declarado.
 
 ### Highlights de contribución
 
@@ -78,4 +78,4 @@ Mismos operadores que P519–P521 con nuevo dato (vuelos) y nueva exigencia (eje
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P522 → `data.C02`, `data.C05`. El filtro de cancelados es una decisión de calidad de la medida (`data.C03`) no mapeada. `data.C05` («herramientas como habilitadores») queda tensionado: aquí la herramienta y su rendimiento son el producto. Auditoría (pregunta 5): el taller se lee como introducción a computación paralela tipo Big Data, dentro de la frontera excluida («operaciones distribuidas»), sin pregunta ni uso analítico del conteo; auditoría no resuelta.
+Entrada revisada: P522 → `data.C02`, `data.C05`. El filtro de cancelados es una decisión de calidad de la medida (`data.C03`) no mapeada. `data.C05` («herramientas como habilitadores») queda tensionado: aquí la herramienta y su rendimiento son el producto. Auditoría (pregunta 5): el taller se lee como introducción a computación paralela tipo Big Data. `s05-diseno-data.md` excluye «operaciones distribuidas», pero la aclaración del profesor (2026-10-05) incluye el procesamiento paralelo o distribuido introductorio como puente; la contradicción se registra como ambigüedad y ese carácter ya no deja por sí solo la auditoría sin resolver. Sigue sin resolverse por los límites que se conservan: no hay pregunta ni uso analítico del conteo, y la herramienta y su rendimiento (una medición de una corrida, dependiente del equipo) son el producto, en tensión con `data.C05`.

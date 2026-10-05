@@ -721,3 +721,10 @@
 - **Señales de alcance de curso** (registradas sólo en este log):
   - procedencia citada del ejemplo («The salaries (Sports Illustrated, April 20, 1987)… performance measures are from 1986», p. 143). Categoría: marginal. Las carencias de procedencia de los datasets del curso ya están registradas en las superficies S01 de casi todos los Pxxx; un ejemplo de manual no añade capacidad.
   - transformación log10 del salario por heterocedasticidad (p. 144), selección de modelos, colinealidad, diagnósticos de influencia, opción `IMPUTE` del CODE statement (p. 37). Categoría: fuera de alcance. Modelado y predicción; pertenece al curso predictivo y desplazaría la identidad del curso `data`.
+
+## Nota.P500.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Origen:** reevaluación S03 de las señales descartadas como «fuera de alcance» por ser ingeniería de datos, tras la aclaración del profesor: el curso «está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven». Los documentos ya estaban revisados (`S03.P500.*`); esta nota no repite la revisión.
+- **Resultado (curso):** se reevaluaron 66 señales. Cuatro alimentan propuestas nuevas (P522 T01, P523 T01, P525 T02), dos sólo refuerzan P522 T01, una refuerza P514 T01 y 59 se confirman como ya cubiertas, marginales o fuera de alcance por otra razón: operación productiva o MLOps (productos de datos), capacitación en una herramienta o plataforma (Spark, Hadoop, DASK, Kafka, motores NoSQL, CDC), falta de caso o datos en el curso (dimensiones de cambio lento o conformadas, *sketches*) o arquitectura empresarial.
+- **Ambigüedad:** `design/synthesis/s05-diseno-data.md` dice que el curso no es de Data Engineering ni Big Data y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración y queda para decisión del profesor.

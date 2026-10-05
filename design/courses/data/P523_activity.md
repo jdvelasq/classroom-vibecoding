@@ -15,7 +15,7 @@
 - **Pregunta, usuario o decisión:** no evidenciados.
 - **Producto terminal:** evidencia de carga por partición para dos claves y conteo de pares antes y después de agregar.
 - **Uso y límite:** muestra que agrupar estos eventos por `eventType` concentra casi todo en una partición. No dice nada sobre la operación de los camiones; no se reporta qué tipo de evento domina ni cuántos tipos hay, salvo lo deducible de los cinco pares finales.
-- **Disciplinas contribuyentes:** internos de MapReduce (particionador, shuffle, combiner); no sirven a un producto analítico declarado.
+- **Disciplinas contribuyentes:** internos de MapReduce (particionador, shuffle, combiner), parte del procesamiento distribuido que la aclaración del profesor (2026-10-05) incluye en el curso a nivel introductorio como puente hacia la analítica; aquí no sirven a un producto analítico declarado.
 
 ### Highlights de contribución
 
@@ -74,4 +74,4 @@ Nuevo dato y nueva exigencia sobre el mismo modelo: P522 particionaba por posici
 
 ## Trazabilidad y auditoría
 
-Entrada revisada: P523 → `data.C02`, `data.C03`, `data.C05`. `data.C03` («calidad, procedencia… y sesgos que afectan la evidencia») no se sostiene: el sesgo aquí es de carga computacional, no de evidencia; mapeo a escalar. Auditoría (pregunta 5): el taller se lee como lección de internos de procesamiento distribuido (shuffle, particionador, combiner), fuera de la frontera del curso y sin producto analítico; auditoría no resuelta.
+Entrada revisada: P523 → `data.C02`, `data.C03`, `data.C05`. `data.C03` («calidad, procedencia… y sesgos que afectan la evidencia») no se sostiene: el sesgo aquí es de carga computacional, no de evidencia; mapeo a escalar. Auditoría (pregunta 5): el taller se lee como lección de internos de procesamiento distribuido (shuffle, particionador, combiner). Según `s05-diseno-data.md` esto queda fuera de la frontera («operaciones distribuidas»); según la aclaración del profesor (2026-10-05), el procesamiento distribuido introductorio pertenece al curso como puente. La contradicción se registra como ambigüedad y el carácter distribuido ya no deja por sí solo la auditoría sin resolver. Sigue sin resolverse por el límite que se conserva: no hay pregunta ni producto analítico; el sesgo que se muestra es de carga computacional y el taller no informa sobre la operación de los camiones.
