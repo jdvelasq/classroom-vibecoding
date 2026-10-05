@@ -225,3 +225,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Circular institucional que establece una «Ruta de Armonización Curricular» de cuatro etapas (marco normativo, pertinencia y resultados de aprendizaje, organización curricular, implementación y evaluación continua de los resultados de aprendizaje) en las dimensiones macro, meso y microcurricular, en el marco del Acuerdo 02 de 2020 del CESU. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P424.28
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de un curso de posgrado en línea de minería de datos aplicada a datos de salud: preprocesamiento, probabilidad, regresión, patrones frecuentes, clasificación, clustering y minería de texto, evaluado con un proyecto por entregables (propuesta, recolección, preparación, informe final), póster y un survey paper. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.

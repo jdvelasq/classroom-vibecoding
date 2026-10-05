@@ -227,3 +227,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Circular institucional que establece una «Ruta de Armonización Curricular» de cuatro etapas (marco normativo, pertinencia y resultados de aprendizaje, organización curricular, implementación y evaluación continua de los resultados de aprendizaje) en las dimensiones macro, meso y microcurricular, en el marco del Acuerdo 02 de 2020 del CESU. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P454.28
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Deliverable 2 pide documentar «procedures followed to collect the data [...] data format, dataset size, how the data is stored» (p. 6) — marginal: la ficha operacional (P454 H01) y el manifiesto de identidad de datos (P431 H01) ya cubren procedencia y descripción; el entregable es un informe de proyecto, no un artefacto de operación.

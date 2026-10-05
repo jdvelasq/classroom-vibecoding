@@ -337,3 +337,13 @@
   - etapa 4, «diseñar los mecanismos de monitoreo y evaluación» de los resultados de aprendizaje y «evaluación continua de la gestión curricular» (p. 3) — fuera de alcance: se refiere a la evaluación institucional del currículo, no al monitoreo de capacidades analíticas en operación (P422, P423 y P442 no guardan relación).
   - dimensión microcurricular: «didácticas y procesos de evaluación de los aprendizajes» (p. 2) — marginal: es un marco general; la evaluación con `pytest` y la prueba de participación (`tests/test_activity.py`) ya están definidas en `AGENTS.md`, y la debilidad de la evaluación por existencia de archivos ya está registrada en S02 para cada Pxxx.
   - atender «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento, las características de los estudiantes» (p. 3) — marginal: principio de pertinencia sin contenido operable para un taller de productos de datos.
+
+## S03.P400.28
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Syllabus de un curso de posgrado en línea de minería de datos aplicada a datos de salud: preprocesamiento, probabilidad, regresión, patrones frecuentes, clasificación, clustering y minería de texto, evaluado con un proyecto por entregables (propuesta, recolección, preparación, informe final), póster y un survey paper. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «methods for deploying these techniques using the open source tools» (p. 2) — marginal: una frase del catálogo sin contenido de despliegue en el calendario (p. 9–10), que no incluye ninguna semana sobre operación. Preprocesamiento, regresión, clasificación, clustering, texto y analítica en salud (p. 1–2, p. 9) — fuera de alcance (Descriptiva/Predictiva). Survey paper, póster y foros (p. 6–8) — fuera de alcance (formato de evaluación de otro tipo de curso).
