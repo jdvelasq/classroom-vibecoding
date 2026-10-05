@@ -385,3 +385,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - pruebas automáticas que verifican comportamiento y no sólo existencia (p. 3): S02 registra que las pruebas de esta actividad sólo comprueban presencia de artefactos. Es una señal sobre el contrato de evidencia del curso (cómo se verifica la entrega), no sobre lo que el estudiante aprende; se deja para una decisión de curso.
+
+## S03.P201.44
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-10-organization.md` (`source_sha256`: b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre estructuras organizacionales de equipos DataOps; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
