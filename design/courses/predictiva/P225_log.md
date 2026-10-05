@@ -369,3 +369,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - presentación sobre estructuras organizacionales de equipos DataOps; el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P225.45
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - artículo que consolida 18 metodologías de proyectos de analítica en el modelo PRODIG8 (ocho dimensiones: alcance, entendimiento y preparación de datos, diseño, evaluación, gobierno y ética, operación y mejora continua); opera en el nivel de proyecto. Para esta actividad no añade una señal distinta de las ya registradas.
