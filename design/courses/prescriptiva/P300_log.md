@@ -333,3 +333,17 @@
   - los resultados de aprendizaje, entendidos como «las declaraciones expresas de lo que se espera que un estudiante conozca y demuestre en el momento de completar su programa académico» (p. 2). Categoría: fuera de alcance para S03. Es un requisito de gobierno curricular del programa. En el curso corresponde a las capacidades `prescriptiva.C01`–`C05` y a la RAA, que `s05-diseno-prescriptiva.md` deja como pendiente. No cambia lo que un taller enseña.
   - el nivel microcurricular, que «compete a las didácticas y procesos de evaluación de los aprendizajes» (p. 2), y la necesidad de «diseñar los mecanismos de monitoreo y evaluación» de los resultados de aprendizaje (p. 3). Categoría: fuera de alcance. Afecta a la trazabilidad (`traceability.yaml`) y a la evaluación del programa, no al producto de ningún Pxxx. Por contrato de `AGENTS.md`, las pruebas `pytest` de los talleres verifican participación y no logro de resultados de aprendizaje. Usarlas para eso contradiría ese contrato.
   - tener en cuenta «las exigencias y necesidades del medio, la actualidad de las áreas de conocimiento, las características de los estudiantes» (p. 3) y los «estándares internacionales» (p. 2). Categoría: fuera de alcance. Es un criterio general de pertinencia que justifica el propio proceso S03 de contraste con benchmarks. No aporta una señal técnica ni pedagógica concreta sobre políticas prescriptivas.
+
+## S03.P300.28
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Resumen del documento en 1–2 líneas: syllabus de posgrado centrado en el proceso de minería de datos aplicado a datos de salud (preprocesamiento, probabilidad e incertidumbre, regresión, patrones frecuentes, clasificación, clustering, minería de texto) con proyecto por entregables y survey paper. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Data mining represents a variety of (descriptive, predictive, and prescriptive) models… use varying levels of human input or rules to arrive at a decision» (p. 5) — marginal: mención genérica; el gradiente de intervención humana y reglas ya es el núcleo de C04 (P303 H01, P304 H06, P308 H06) y el syllabus no aporta contenido prescriptivo ejercido.
+  - texto guía «Business Analytics: Data Analysis & Decision Making» (Albright y Winston) usado sólo en capítulos 1–6 y 10–12 (descriptiva, probabilidad, regresión; pp. 2, 9) — marginal: no se cubren los capítulos de decisión, optimización ni simulación; no hay señal prescriptiva.
+  - «effective processes to convert that information into actionable knowledge» (p. 2) — marginal: consigna sin método.
+  - temario de minería de datos (clasificación, clustering, reglas de asociación, minería de texto; p. 9) — fuera de alcance: Predictiva / Descriptiva.
+  - proyecto por entregables (propuesta, recolección, preparación, informe final, póster; pp. 5–6) — marginal: formato de evaluación de un curso de minería; los talleres Pxxx se evalúan con pytest por contrato del proyecto.
