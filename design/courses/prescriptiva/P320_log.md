@@ -66,3 +66,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - rol «AI Safety & Governance Lead: políticas de IA responsable, privacidad, cumplimiento, gestión de riesgo de modelo» (pp. 160, 332); «evals, observabilidad, gobierno y seguridad como “primeras clases”» (p. 333) — fuera de alcance: es gobierno de plataformas de IA y LLM (cumplimiento, privacidad, red-teaming), propio de Productos de datos o de un curso de IA. Prescriptiva gobierna la política (autoridad, salvaguardas, gatillos), lo que ya hacen P303, P308, P320 y P321.
+
+## S03.P320.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - focalización de la inversión en grupos poblacionales (p. 3: «Equidad de la mujer … Grupos Étnicos … Víctimas») — fuera de alcance: describe a quién se dirige el programa público, no un método de auditoría de equidad de políticas; no aporta caso ni datos utilizables.

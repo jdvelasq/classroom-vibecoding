@@ -65,3 +65,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el modelo de proyección trata los parámetros de IA «como supuestos de escenario… y reportar análisis de sensibilidad para mostrar los cambios en los resultados bajo cada configuración»; «Gobierno del modelo: revisiones anuales; actualización de (K,r,m) si cambian señales del mercado» (pp. 43–44) — marginal: es práctica de un modelo de pronóstico (Predictiva) y equivale a lo que P312 H01–H02 ya convierte en umbral y gatillo de revisión de una política.
+
+## S03.P312.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

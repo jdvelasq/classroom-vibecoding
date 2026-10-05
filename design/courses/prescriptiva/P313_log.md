@@ -65,3 +65,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Simulación como QA: SIL/HIL y gemelos digitales para probar autonomía antes de pasar a hardware» (p. 334); rol «Digital Twin Engineer (gemelos digitales para prueba/simulación)» (p. 331) — fuera de alcance: es simulación para validar sistemas autónomos y robótica. La idea de «probar antes de operar» ya organiza P310–P311 y P313 H06. El defecto de nombre y método de P311 ya consta en su log S02.
+
+## S03.P313.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

@@ -107,3 +107,14 @@
   - «los analistas Big Data y especialistas BI migrarán de un rol descriptivo (reportes) a uno predictivo y prescriptivo explicando qué va a pasar y qué debemos hacer» (p. 291) — ya cubierta: es pertinencia laboral de la línea, no de un taller. La frontera entre predecir y decidir ya organiza el curso (s05; P300 H01, P306 H02, P307 H01).
   - «Los Científicos de Datos y Desarrolladores de IA/ML serán responsables de sistemas que asignan créditos, detectan fraudes, recomiendan tratamientos médicos, organizan el tráfico o priorizan casos en la justicia. La discusión sobre sesgos, ética y transparencia algorítmica…» (p. 291) — ya cubierta: hay asignación de crédito con autoridad humana (P303 H01–H04), priorización de inspecciones bajo supervisión (P305 H06), asignación sensible con anulación y retención (P308 H06–H07) y auditoría de equidad (P320 H01–H03). El documento no especifica cómo auditar ni qué métrica usar. Los defectos conocidos de P320 (no hay corrección, una sola métrica) ya están en su log S02 y no los respalda esta fuente.
   - recomendaciones de política pública (observatorio de talento, actualización curricular cada dos años, articulación academia–industria, certificaciones; pp. 122–123, 158–159, 196–197, 313–314) — fuera de alcance: se dirigen al diseño del programa y del sistema educativo, no al contenido de un taller prescriptivo.
+
+## S03.P300.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - pertinencia laboral de «Análisis de Datos» e «Inteligencia Artificial» como temáticas priorizadas (p. 2: «temáticas priorizadas: … 2. Inteligencia Artificial 3. Análisis de Datos») — marginal: confirma pertinencia general de la analítica, pero no menciona decisión, optimización, simulación ni gobierno de políticas; governmental no define estándar ni herramientas.
+  - metodología de bootcamp, *learning by doing* y mentoría (p. 1) — fuera de alcance: modalidad pedagógica de otro tipo de formación; los talleres presenciales ya son guiados y prácticos.

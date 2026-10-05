@@ -66,3 +66,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Necesitamos personas que… entiendan el problema de negocio, que puedan traducir preguntas estratégicas en modelos analíticos y que comuniquen resultados de manera efectiva a stakeholders no técnicos» (p. 173); «evaluar trade-offs y tomar decisiones informadas» (p. 177) — ya cubierta: el contrato de política (P300 H03, P302 H04) y las razones de descarte (P302 H01) responden a esa traducción. El intercambio explícito aparece en P307 H02, P309 H04 y P317 H02.
+
+## S03.P303.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

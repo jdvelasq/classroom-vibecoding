@@ -68,3 +68,11 @@
   - «Capacidad de explicar conceptos técnicos complejos a audiencias no técnicas» (p. 158); «comunicación efectiva» (pp. 177, 196) — marginal: la competencia comunicativa genérica no cambia el producto de P321 (registro operativo con indicador, meta, gatillo y responsable, H01–H02). Los límites de P321 (recomendación dada, sin datos de seguimiento) ya están en S02 y esta fuente no los toca.
   - monitoreo de modelos («model drift, data drift») y reentrenamiento; «justificar predicciones (explicabilidad/interpretabilidad de modelos)» (p. 176) — fuera de alcance: son monitoreo y explicabilidad del modelo predictivo, que pertenecen a Predictiva y Productos de datos. El monitoreo de la política (resultados, gatillos y respuesta) ya está cubierto en P306 H07, P308 H07 y P319 H06.
   - rol «AI Safety & Governance Lead: políticas de IA responsable, privacidad, cumplimiento, gestión de riesgo de modelo» (pp. 160, 332); «evals, observabilidad, gobierno y seguridad como “primeras clases”» (p. 333) — fuera de alcance: es gobierno de plataformas de IA y LLM (cumplimiento, privacidad, red-teaming), propio de Productos de datos o de un curso de IA. Prescriptiva gobierna la política (autoridad, salvaguardas, gatillos), lo que ya hacen P303, P308, P320 y P321.
+
+## S03.P321.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

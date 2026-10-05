@@ -65,3 +65,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «El estudio, en sí mismo, genera una perturbación en la proyección, dado que su implementación podría conducir a la “corrección de curso”» (p. 120); «que los pronósticos sirvan como una advertencia y no como una trayectoria inevitable» (p. 110) — marginal: la observación de que el pronóstico cambia la acción que lo invalida es conceptualmente interesante, pero aquí es un comentario de política pública sin caso ni datos que permitan enseñarla con rigor. La relación entre trayectorias y acción ya está en P309 H02 y H06.
+
+## S03.P309.08
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/governmental/mintic-talento-tech-2024-2026.md` (`source_sha256`: 333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de proyecto de inversión del MinTIC: bootcamps de 159 horas en programación, IA, análisis de datos, blockchain, nube y ciberseguridad para formar al menos 94.696 personas entre 2024 y 2026, con focalización poblacional, cronograma por cohortes y fuentes de financiación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
