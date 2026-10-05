@@ -400,3 +400,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «adding data mining dimensions that slice your data by the hidden patterns within» (p. 1) — fuera de alcance: dimensiones derivadas de modelos; P152 ya enseña *slice* sobre jerarquías declaradas.
+
+## S03.P152.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - OLAP como resumen multidimensional con jerarquías, complementario a la minería (pp. 16–17: «OLAP systems provide a multidimensional view of the data, including full support for hierarchies») — ya cubierta: P152 H01–H04.
+  - reglas de asociación y canasta de mercado sobre ventas (pp. 67–68, 75–81; los datos pueden venir de un esquema estrella, p. 76) — fuera de alcance como actividad nueva: el mart del curso es sintético con pedidos generados al azar (P150, P151 H01), sin asociaciones reales que describir; P120 tiene un producto por orden. Sin caso no puede enseñarse con rigor.

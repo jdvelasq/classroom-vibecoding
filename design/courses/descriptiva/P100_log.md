@@ -606,3 +606,16 @@
   - «Churn Analysis», «Forecasting», «Campaign Analysis. … targeting the people most likely to respond» (p. 1), lift y profit charts «to compare and contrast the quality of your models» (p. 2), DMX «A prediction against a data mining model is simply a join» (p. 2), algoritmos (árboles, Naïve Bayes, redes neuronales; p. 2) — fuera de alcance: predictiva.
   - «Market Basket Analysis. Determine items sold together» y «Market Analysis. Define market segments by automatically grouping like customers» (p. 1) — fuera de alcance: minería no supervisada sin caso preparado; señal de herramienta que por sí sola no impone tema.
   - «fine-grained role-based security» (p. 2) — marginal: rasgo de plataforma sin capacidad descriptiva asociada.
+
+## S03.P100.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - extracción de términos y asociaciones entre palabras en texto (pp. 140–141) — ya cubierta: P100 H02 (unidad textual) y P123 H02–H04 (palabras clave y co-ocurrencia); la normalización se recoge en la candidata P123.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - clustering como segmentación exploratoria y su evaluación por centroides y reglas (pp. 63–64, 99–100: «How do you know if the clusters can reliably be used for business decision making?») — fuera de alcance: segmentación por modelos no supervisados trae la lógica de ML y no hay caso descriptivo en el documento; las comunidades de P123 H05 ya cubren agrupamiento descriptivo en su contexto.
+  - detección de anomalías por clasificación de una clase (pp. 61–62) e importancia de atributos/EXPLAIN y PROFILE (pp. 38–43, 69–70) — fuera de alcance: modelos supervisados o de puntuación (predictiva).
+  - clasificación, regresión, matriz de confusión, lift de clasificación, ROC, costos, división entrenamiento/prueba, puntuación y despliegue (pp. 20, 23, 41–43, Part II–III) — fuera de alcance: predictiva y productos de datos.
+  - normalización min-max/z-score, binning automático, winsorización y recorte como preparación embebida en modelos (pp. 127–133) — fuera de alcance: preparación al servicio de algoritmos; la parte descriptiva (juicio de dominio sobre atípicos) se recoge en la candidata P106.

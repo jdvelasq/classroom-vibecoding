@@ -397,3 +397,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta (P106 H05, P107 H01, P122 H05, P153 H03); la detección de anomalías por algoritmos de minería queda fuera de alcance.
+
+## S03.P107.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - distinguir faltante al azar de ausencia conocida (dato disperso) (p. 11: «Data is sparse when a high percentage of the cells are empty but all the values are assumed to be known»; p. 100) — ya cubierta en lo esencial: P107 H01 (nulos decididos por función) y P122 H05 (no convertir texto en costo cero). La imputación por media/moda que hacen los algoritmos (p. 94, p. 100) es preparación para modelos y contradice la regla de no imputación de P122: fuera de alcance.

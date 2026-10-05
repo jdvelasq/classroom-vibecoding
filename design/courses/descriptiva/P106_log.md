@@ -397,3 +397,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta (P106 H05, P107 H01, P122 H05, P153 H03); la detección de anomalías por algoritmos de minería queda fuera de alcance.
+
+## S03.P106.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - tipificar códigos numéricos como categóricos (código postal con ceros a la izquierda) y convertir fechas (p. 128) — marginal: variante de la conversión de tipos de P102 H03 y P106 H03.

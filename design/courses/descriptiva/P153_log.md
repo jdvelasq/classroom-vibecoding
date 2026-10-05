@@ -405,3 +405,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Quality. Determine missing values and anomalies in your data as it is entered or loaded into your data warehouse» (p. 1) — ya cubierta (P106 H05, P107 H01, P122 H05, P153 H03); la detección de anomalías por algoritmos de minería queda fuera de alcance.
+
+## S03.P153.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual conceptual de la opción de minería de datos de Oracle Database: funciones supervisadas/no supervisadas, algoritmos, preparación de datos para modelos (binning, normalización, atípicos, faltantes) y minería de texto; orientado a construir y aplicar modelos dentro de la base. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

@@ -403,3 +403,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Text Analysis. Analyze feedback to find common themes and trends» (p. 1) — ya cubierta en su versión descriptiva (P123 H04–H05 co-ocurrencia y comunidades; P100 H02 tokenización).
+
+## S03.P123.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** propone T02.
+- **Señales descartadas relevantes:**
+  - extracción de términos y asociaciones entre palabras en texto (pp. 140–141) — ya cubierta: P100 H02 (unidad textual) y P123 H02–H04 (palabras clave y co-ocurrencia); la normalización se recoge en la candidata P123.

@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Hoja comercial de SQL Server 2005 Analysis Services Data Mining: casos de uso (cesta de mercado, abandono, segmentación, pronóstico, exploración, calidad de datos, texto), integración con SSIS/OLAP/Reporting, algoritmos, DMX y arquitectura. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P103.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - construir una tabla de casos con un registro por caso y agregar datos transaccionales al nivel del caso (p. 17: «single-record case data presentation»; p. 127: «it must be aggregated to the case level») — ya cubierta: P103 H01, P120 H02, P150 H01–H02.

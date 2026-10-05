@@ -401,3 +401,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Exploration. … Compare the differences between high profit and low profit customers» (p. 1) — ya cubierta (comparación por segmentos en P120 H06–H07; cola alta en P125 H05).
+
+## S03.P125.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - discretización con límites de dominio frente a equi-ancho o cuantiles, y sensibilidad del equi-ancho a atípicos (p. 105: «quantile binning is a better solution»; p. 132: «separate them into groups of interest») — marginal: P108 H03 (intervalos decenales para generalización) y P125 H02 (bandas de experiencia) ya fijan bandas con criterio de dominio.
+  - media frente a mediana con valores extremos (p. 62: «median household income of $70,000 and a mean household income of $80,000») y transformación logarítmica de rangos amplios (p. 129) — ya cubierta / marginal: P125 H03 justifica mediana y percentiles; P122 H03 muestra que el promedio oculta incumplimiento.

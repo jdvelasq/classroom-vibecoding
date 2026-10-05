@@ -104,3 +104,119 @@ Actividad: implementation/descriptiva/P123_scopus/
    errores.
 8. No modifiques otras actividades, traceability.yaml ni design/.
 ```
+
+## T02 — Normalizar la co-ocurrencia de palabras clave por la esperada por azar (fuerza de asociación / lift) antes de filtrar y detectar comunidades
+
+- **Estado:** pendiente de discusión
+- **Tipo:** método
+- **Fuentes:**
+  - `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` pp. 80–81 y 140 — soporte y confianza pueden ser altos «and yet still produce a rule that is not useful»; «Lift indicates the strength of a rule over the random co-occurrence of the antecedent and the consequent, given their individual support» (p. 80); «Any rule with an improvement of less than 1 does not indicate a real cross-selling opportunity» (p. 81); las asociaciones entre palabras de una colección de documentos «provide context for account in the document collection» (p. 140): una co-ocurrencia frecuente no implica asociación mayor que la esperada por azar (Claude, 2026-10-04). Fuente *professional-learning*, única y de reglas de canasta: se usa sólo como argumento de la normalización por frecuencias marginales; la materialidad viene del límite que H05 ya declara (las comunidades «dependen de normalización, filtro y semilla»).
+- **Qué gana el estudiante:** distinguir co-ocurrir mucho de estar asociado
+  más de lo esperado. Hoy la matriz de palabras clave usa conteos brutos de
+  documentos compartidos (H04) y filtra términos con diagonal ≥ 10, de modo
+  que los pares entre términos muy frecuentes dominan la red y las
+  comunidades Louvain (H05) por pura frecuencia marginal. Al calcular, para
+  los mismos términos filtrados, lift = c_ij · N / (c_ii · c_jj)
+  (proporcional a la fuerza de asociación usada en análisis de co-word),
+  contrastar el top de pares por conteo con el top por lift y detectar
+  comunidades sobre ambas matrices, el estudiante ve qué parte de la
+  estructura temática es frecuencia y qué parte es asociación, y obtiene un
+  criterio para leer el mapa del campo. Ningún taller del curso normaliza
+  co-ocurrencias.
+- **Anclas actuales:** H04 (matriz ítem × ítem; diagonal = documentos con el
+  ítem; filtro por diagonal ≥ 10, 32 términos), H05 (Louvain `seed=0`;
+  `keywords_clusters.txt` con seis grupos), H07 (funciones reutilizadas en
+  pasos persistentes), H08 (pruebas); superficies S04 (co-ocurrencia,
+  filtro y comunidades: `s17_*`, `s18_*`, `s19_*`), S06 (orquestación en
+  `main.py`) y S07 (pruebas, conjunto exacto de archivos).
+- **Alternativas menores descartadas:** declarar en el texto que los
+  conteos brutos favorecen términos frecuentes ya está implícito en el
+  límite de H05 y no permite verificarlo. Sustituir la matriz bruta por la
+  normalizada borraría la evidencia del contraste y cambiaría productos
+  que las pruebas exigen; la propuesta conserva ambas. Aplicarlo también a
+  países ampliaría el cambio sin aportar un contraste distinto.
+- **Contrato de no regresión:** se conservan H01–H08, el corpus, la
+  normalización de palabras clave, el filtro por diagonal ≥ 10,
+  `keywords_cooc_matrix.csv` y `keywords_clusters.txt` con su contenido
+  actual, las redes HTML y todo el análisis de países. La variante
+  normalizada se añade en un paso nuevo, sobre los mismos términos y con la
+  misma semilla. La única prueba existente que cambia es la del conjunto
+  exacto de archivos, que se amplía sin quitar ninguno.
+- **Interacciones:** independiente de T01; el N de documentos que T01 deja
+  verificado es el denominador de este lift. Ambas amplían la misma prueba
+  del conjunto de archivos: ejecutar después de T01. Capacidad: P123 ya
+  recorre países, fuentes, autores y palabras clave en veinte pasos sin
+  notebook que haga visibles las decisiones; T02 añade un paso y una
+  comparación conceptual. Si el tiempo de taller no alcanza, conviene
+  decidir en la discusión que T02 sea la sección final, que un grupo lento
+  puede omitir sin perder los productos actuales. Como no hay notebook, la
+  lectura del contraste se persiste en un archivo de texto en
+  `submission/`; crear un notebook queda fuera de esta propuesta.
+- **Criterio de aceptación:** S05 encuentra un highlight nuevo en el que (1)
+  el lift de cada par de los términos filtrados se calcula desde
+  `keywords_cooc_matrix.csv` y N declarado; (2) una tabla contrasta el
+  ranking de pares por conteo y por lift, con el conteo junto a cada lift;
+  (3) las comunidades se detectan sobre la matriz normalizada con la misma
+  semilla y se comparan término a término con las de conteo bruto; y (4)
+  una lectura de 4–6 líneas dice qué cambia en la estructura temática y
+  advierte que lift con pocos documentos compartidos es inestable. Debe
+  estar respaldado por `keywords_pairs_association.csv`,
+  `keywords_clusters_normalized.txt`, `keywords_clusters_comparison.csv`,
+  la lectura en `submission/` y pruebas que recomputan el lift. H04 y H05
+  siguen presentes con sus productos sin cambios.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/descriptiva/P123_scopus/
+
+0. Inspecciona primero professor/main.py, professor/s14_*.py a
+   professor/s20_*.py, submission/keywords_cooc_matrix.csv,
+   submission/keywords_clusters.txt y tests/test_activity.py. Verifica que
+   la matriz es simétrica, que su diagonal es el número de documentos con
+   cada término y que fuera de la diagonal hay documentos compartidos. Si
+   la implementación no coincide con
+   design/courses/descriptiva/P123_activity.md, si la matriz ya está
+   normalizada o si no es simétrica, detente e informa sin modificar nada.
+1. No cambies s01–s20 ni sus productos (en particular
+   keywords_cooc_matrix.csv, keywords_clusters.txt y las redes HTML), ni el
+   análisis de países.
+2. Crea un paso nuevo (por ejemplo, s21_keywords_association.py) invocado
+   desde main.py después del último paso de palabras clave, sin renumerar
+   los existentes, que reutilice las funciones de comunidades de H05/H07:
+   a. Define N = documentos del corpus con al menos una palabra clave
+      después de la limpieza de s15 (decláralo en el código y en la
+      lectura). Si T01 está implementada, verifica que N no supera
+      records_loaded de corpus_boundary.json.
+   b. Para cada par i < j de términos de la matriz filtrada, con c_ij > 0:
+      lift = c_ij * N / (c_ii * c_jj).
+   c. Ordena los pares por c_ij y por lift y registra ambos rankings.
+   d. Construye el grafo con pesos = lift sólo para pares con lift > 1
+      (asociación mayor que la esperada por azar), detecta comunidades con
+      Louvain y seed=0, y compáralas término a término con
+      keywords_clusters.txt. Si sklearn está en el requirements.txt raíz,
+      reporta sklearn.metrics.adjusted_rand_score entre ambas particiones;
+      no añadas dependencias.
+3. Persiste en submission/:
+   - keywords_pairs_association.csv con columnas keyword_a, keyword_b,
+     cooccurrences, docs_a, docs_b, n_documents, lift, rank_by_count,
+     rank_by_lift;
+   - keywords_clusters_normalized.txt con el mismo formato que
+     keywords_clusters.txt;
+   - keywords_clusters_comparison.csv con columnas keyword, cluster_raw,
+     cluster_normalized;
+   - keywords_association_notes.md con 4–6 líneas: qué pares suben o
+     bajan al normalizar, qué comunidades se conservan o se separan, que
+     lift con pocos documentos compartidos es inestable (cita los pares de
+     lift alto con cooccurrences ≤ 2) y que la co-ocurrencia describe
+     asociación en el corpus, no causalidad ni madurez tecnológica.
+4. En tests/test_activity.py amplía la prueba del conjunto exacto de
+   archivos con los cuatro archivos nuevos (sin quitar los actuales) y
+   añade pruebas que: recompongan lift desde keywords_cooc_matrix.csv y
+   n_documents; verifiquen que todos los términos de
+   keywords_clusters.txt aparecen en keywords_clusters_comparison.csv; y
+   comprueben que keywords_cooc_matrix.csv sigue siendo simétrica. No
+   elimines pruebas existentes.
+5. Ejecuta professor/main.py completo y las pruebas sin errores.
+6. No modifiques otras actividades, traceability.yaml ni design/.
+```

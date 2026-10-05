@@ -393,3 +393,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Hoja comercial de SQL Server 2005 Analysis Services Data Mining: casos de uso (cesta de mercado, abandono, segmentación, pronóstico, exploración, calidad de datos, texto), integración con SSIS/OLAP/Reporting, algoritmos, DMX y arquitectura. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P108.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - discretización con límites de dominio frente a equi-ancho o cuantiles, y sensibilidad del equi-ancho a atípicos (p. 105: «quantile binning is a better solution»; p. 132: «separate them into groups of interest») — marginal: P108 H03 (intervalos decenales para generalización) y P125 H02 (bandas de experiencia) ya fijan bandas con criterio de dominio.

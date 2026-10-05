@@ -402,3 +402,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Reporting Services para «present the right information to large audiences» (p. 1) — ya cubierta (capa de serving con consumidor declarado, P154 H03).
+
+## S03.P154.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - reglas de asociación y canasta de mercado sobre ventas (pp. 67–68, 75–81; los datos pueden venir de un esquema estrella, p. 76) — fuera de alcance como actividad nueva: el mart del curso es sintético con pedidos generados al azar (P150, P151 H01), sin asociaciones reales que describir; P120 tiene un producto por orden. Sin caso no puede enseñarse con rigor.

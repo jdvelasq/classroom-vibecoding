@@ -407,3 +407,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Data Exploration. … Compare the differences between high profit and low profit customers» (p. 1) — ya cubierta (comparación por segmentos en P120 H06–H07; cola alta en P125 H05).
+
+## S03.P120.49
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
+- **Resultado:** refuerza T02.
+- **Señales descartadas relevantes:**
+  - construir una tabla de casos con un registro por caso y agregar datos transaccionales al nivel del caso (p. 17: «single-record case data presentation»; p. 127: «it must be aggregated to the case level») — ya cubierta: P103 H01, P120 H02, P150 H01–H02.
+  - formular bien la pregunta antes de analizar (p. 18: «you must learn how to ask the right questions») y comprender la fase de exploración y calidad (p. 19: «identify data quality problems and to scan for patterns») — ya cubierta: P120 H01 (`questions.json`), P122 H01, P106.
