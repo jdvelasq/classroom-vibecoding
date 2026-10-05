@@ -433,3 +433,12 @@
 - **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
   - criterios de éxito técnicos y de negocio definidos desde el alcance y comparación sistemática contra referencias en la evaluación (pp. 13–14, 18–19): se añade como fuente de T01.
+
+## S03.P200.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - árboles de decisión (C5.0, CHAID, C&RT) en ejemplos aplicados (caps. 8, 9, 19): se añaden como fuente de N01.
+  - modelado automático que compara muchas familias a la vez (caps. 4–5): marginal; P200 ya enseña a comparar especificaciones sobre la misma partición (H09).

@@ -403,3 +403,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - artículo que consolida 18 metodologías de proyectos de analítica en el modelo PRODIG8 (ocho dimensiones: alcance, entendimiento y preparación de datos, diseño, evaluación, gobierno y ética, operación y mejora continua); opera en el nivel de proyecto. Para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P204.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - clasificación con árboles y KNN (caps. 8, 28): árboles se registran en N01; KNN es marginal.

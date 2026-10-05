@@ -396,3 +396,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - gobierno y ética como dimensión transversal (p. 13): ya cubierta como límite de uso (H03–H04).
+
+## S03.P205.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - tablas y gráficos de ganancia (*gains*) y *lift* para comparar modelos de respuesta, y beneficio acumulado de una campaña (pp. 101–102, 130, 211): variante de la lectura de capacidad y costos que H02 ya enseña con el barrido de umbrales; no se propone como cambio material.

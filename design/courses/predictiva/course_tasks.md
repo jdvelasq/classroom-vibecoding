@@ -14,6 +14,7 @@
   - `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` pp. 6 y 8 — «Random Forest, SVM, clustering» en el curso intermedio y «Tree-based methods» y «Resampling methods and model selection» en el programa avanzado de analítica predictiva (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` p. 1 — módulo de posgrado: «Classification: Trees, NB, Support Vector Machines, Kernel Trick» (árboles de decisión para clasificar instancias nuevas) (Claude, 2026-10-04).
   - `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` pp. 9, 25 y 52 — perspectiva histórica: CART (1984) como reglas de decisión aprendidas de los datos para clasificación y regresión; aprendizaje por ensambles (Random Forest, gradient boosting, 2001); y «el gradient boosting se convierte en una de las familias más competitivas para datos tabulares» (2014–2016) (Claude, 2026-10-04).
+  - `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` pp. 3–5 y 101–102 — ejemplos aplicados con árboles (C5.0, CHAID, C&RT y reglas inducidas) para clasificación y respuesta de clientes, comparados mediante tablas de ganancia y *lift* (Claude, 2026-10-04).
 - **Contribución distinta:** ninguna de P200–P225 usa árboles de decisión ni
   ensambles. Las familias actuales son lineales y logísticas (con términos
   derivados y regularización), MLP, modelos temporales, Markov, reglas y

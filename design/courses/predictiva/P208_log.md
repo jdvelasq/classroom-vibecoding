@@ -373,3 +373,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - artículo que consolida 18 metodologías de proyectos de analítica en el modelo PRODIG8 (ocho dimensiones: alcance, entendimiento y preparación de datos, diseño, evaluación, gobierno y ética, operación y mejora continua); opera en el nivel de proyecto. Para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P208.46
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
