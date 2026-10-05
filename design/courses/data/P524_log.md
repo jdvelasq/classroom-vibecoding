@@ -298,3 +298,11 @@
 - **Señales descartadas relevantes:**
   - «Los formatos de los datos no optimizados para analytics» (p. 2). Categoría: ya cubierta. Comparación de formatos sobre las mismas filas y decisión persistida (P524 H01–H03); partición por la dimensión temporal (P525 H01).
   - «No se deben buscar insights interesantes o responder preguntas interesantes sin un objetivo claro» y «Datos, conocimientos, decisiones y acciones no son sinónimos» (p. 8). Categoría: marginal. Refuerza `data.C01`, pero la ausencia de pregunta analítica en esos talleres ya está registrada por S02 (auditorías no resueltas); la presentación no aporta un argumento ni una práctica distinta para resolverla.
+
+## S03.P524.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - material de clase sobre estrategia de datos organizacional: diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, priorización, hoja de ruta, ejecución y evaluación (caso de mantenimiento predictivo). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

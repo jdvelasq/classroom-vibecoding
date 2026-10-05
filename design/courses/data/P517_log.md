@@ -299,3 +299,11 @@
 - **Señales descartadas relevantes:**
   - «La poca calidad de los datos sigue siendo un desafío serio», «Existencia de errores en los datos», «Malos datos arruinan buenos reportes», «Falta de confianza en los datos» (p. 2). Categoría: ya cubierta. Controles ejecutables que condicionan la salida (P500 H04), diagnóstico de aptitud con reglas nombradas (P516 H01–H03) y contrato que clasifica cambios por su efecto en el análisis (P517 H02–H04). Es diagnóstico organizacional, sin práctica nueva.
   - en ML/DA «La lógica y los datos son críticos», «El testeo se basa en precisión no en ejemplos», «Se usan datos de producción» (p. 4). Categoría: fuera de alcance / ya cubierta. El contraste con la programación tradicional apunta a pruebas de modelos y a producción (otros cursos/productos de datos); las pruebas sobre datos ya existen como aserciones de calidad (P500 H04, P516 H02).
+
+## S03.P517.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Calidad y disponibilidad. Evaluar la adecuación al uso» (p. 8); brecha de datos «identificadores incompatibles y registros incompletos» (p. 11) — ya cubierta por P516 (aptitud para una pregunta) y P511 H01 (claves que no identifican).

@@ -308,3 +308,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Los datos viven en silos» (p. 2). Categoría: ya cubierta. Integración validada de tablas separadas (P511 H01–H02) y conciliación con la fuente (P510 H03).
+
+## S03.P511.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - material de clase sobre estrategia de datos organizacional: diagnóstico, mecanismos de valor, brechas, objetivos, iniciativas, gobierno, arquitectura, uso responsable, caso de valor, priorización, hoja de ruta, ejecución y evaluación (caso de mantenimiento predictivo). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

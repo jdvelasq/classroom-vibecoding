@@ -297,3 +297,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Presentación organizacional que enumera problemas de Data Analytics/Data Science (objetivos cambiantes, silos, formatos no optimizados, mala calidad y desconfianza en los datos, trabajo manual), mitos y brechas de conocimiento (DA ≠ desarrollo de software, data literacy, el modelo «omnisciente») y falta de soporte (objetivos poco claros, acceso a fuentes y permisos, paso a producción). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P526.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

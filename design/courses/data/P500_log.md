@@ -468,3 +468,15 @@
   - «Data Literacy es la habilidad de leer tablas y grafos, entenderlos para concluir correctamente y saber cuando se está potencialmente desinformado» (p. 6). Categoría: marginal / fuera de alcance. Leer y concluir pertenece a Descriptiva; «saber cuando se está desinformado» es la intuición de `data.C03`, ya ejercida en P516 (granos mezclados que confunden agregados) y P526 (tiempo de evento frente a orden de llegada).
   - «No se tienen las habilidades para llevar un modelo a producción», «laptop analytics», «fricciones con el equipo de TI», «Formación de DS focalizada en los algoritmos y no en la creación de un producto de datos operativo» (pp. 3, 9). Categoría: fuera de alcance. Pipelines productivos y operación son frontera excluida del curso (pertenecen a productos de datos).
   - CRISP-DM y cascada, decisiones por intuición, liderazgo y cultura, «Se debe buscar la gente correcta no educarla» (pp. 2, 5, 7). Categoría: fuera de alcance. Perspectiva de gestión organizacional, sin contenido de preparación de datos para un estudiante de pregrado.
+
+## S03.P500.37
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-02-data-strategy.md` (`source_sha256`: e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Ficha mínima de cada indicador» con definición, línea base y meta, fuente y método, responsable, frecuencia y decisión asociada (p. 23) — ya cubierta en lo que corresponde al curso por P500 H03 (contrato con fórmula y grano); responsable, meta, frecuencia y decisión son gestión de indicadores organizacionales, fuera de alcance.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - ciclo de vida completo del dato (captura→eliminación segura, p. 5) — marginal/fuera: el curso cubre adquisición–preparación–documentación; archivo y eliminación son gestión organizacional.
+  - gobierno de datos (derechos de decisión, modelos centralizado/federado, p. 16), arquitectura (warehouse, lake, lakehouse, mesh «patrones posibles, no etapas obligatorias», p. 17) — fuera de alcance (arquitectura empresarial); la advertencia de p. 17 sólo confirma la frontera ya fijada para P512/P525.
+  - caso de valor, VPN/ROI, priorización de portafolio, hoja de ruta, ejecución y evaluación de la estrategia (pp. 19–23) — fuera de alcance: gestión estratégica, no preparación de datos para una pregunta.
