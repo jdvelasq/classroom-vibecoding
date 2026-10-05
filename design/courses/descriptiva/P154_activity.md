@@ -15,7 +15,7 @@ Desde el mart de referencia `data/sales_mart.db`, publica una tabla agregada a g
 - **Pregunta, usuario o decisión:** el consumidor declarado es un dashboard; usuario humano y decisión no evidenciados.
 - **Producto terminal:** `dashboard_sales.csv`, `bi_serving.db`, `serving_manifest.csv` y `priority_region_category.csv` con gráfico de barras apiladas.
 - **Uso y límite:** entrega una fuente de consumo con grano declarado y reconciliada con el mart. «Deben recibir atención» se responde con un ranking de volumen, sin criterio de atención (variación, brecha, meta) ni lectura; no hay interfaz de dashboard.
-- **Disciplinas contribuyentes:** diseño de capa de serving BI y SQL sirven a una fuente de consumo; organizan la actividad.
+- **Disciplinas contribuyentes:** diseño de una capa de consumo BI y SQL sirven a la fuente que alimenta la descripción.
 
 ### Highlights de contribución
 
@@ -77,4 +77,4 @@ Mismo caso, nuevo producto (fuente de consumo) con misma pregunta efectiva que P
 
 ## Trazabilidad y auditoría
 
-P154 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01 y describe «dashboard, OLAP y serving BI» como evidencia de C03). C05 está evidenciada por el manifiesto; C03 por un gráfico de barras; C01 por una pregunta cuyo criterio de atención no se define. El producto es una capacidad de consumo BI, no una descripción interpretada; según la frontera del curso («no es capacitación en una plataforma BI»), la pregunta de auditoría 5 queda no resuelta para esta actividad.
+P154 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01 y describe «dashboard, OLAP y serving BI» como evidencia de C03). C05 está evidenciada por el manifiesto; C03 por un gráfico de barras; C01 por una pregunta cuyo criterio de atención no se define. El producto es una fuente de consumo BI con grano declarado; BI forma parte de la analítica descriptiva del curso y la frontera excluye la capacitación en una plataforma, no BI como tal. El límite observable es que la pregunta de atención no tiene criterio (variación, brecha o meta), no hay interfaz de dashboard y no se persiste una lectura.

@@ -15,7 +15,7 @@ Sobre el mart de referencia `data/sales_mart.db`, define un catálogo de tres KP
 - **Pregunta, usuario o decisión:** la decisión es publicar o no el catálogo; el catálogo declara «Gerencia comercial» como propietario y la pregunta menciona «la gerencia». No hay evidencia de un usuario más allá de esa etiqueta.
 - **Producto terminal:** catálogo, reporte de calidad, linaje y decisión de publicación, más un gráfico de estado de controles.
 - **Uso y límite:** hace auditable qué se mediría y bajo qué controles. No describe lo que ocurre en las ventas; las reglas verifican integridad del hecho, no problemas de definición, y sobre datos sintéticos íntegros la rama `BLOQUEADO` nunca se ejercita.
-- **Disciplinas contribuyentes:** gobierno de métricas y calidad de datos (prácticas de BI/ingeniería de datos) sirven a la confiabilidad de futuras descripciones.
+- **Disciplinas contribuyentes:** gobierno de métricas y calidad de datos, prácticas de BI que forman parte de la analítica descriptiva, sirven a la confiabilidad de las descripciones.
 
 ### Highlights de contribución
 
@@ -77,4 +77,4 @@ Nuevo producto sobre el mismo caso: P150–P152 producen respuestas; P153 produc
 
 ## Trazabilidad y auditoría
 
-P153 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C01 (métricas para un contexto de decisión) y C05 (documentación responsable) son las mejor evidenciadas; C02 sólo como calidad de datos; C03 es débil (gráfico de booleanos). El producto es gobierno de métricas, no una descripción de lo que ocurre; se lee como práctica de BI/gobierno de datos y no responde por sí solo la pregunta descriptiva del curso.
+P153 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C01 (métricas para un contexto de decisión) y C05 (documentación responsable) son las mejor evidenciadas; C02 sólo como calidad de datos; C03 es débil (gráfico de booleanos). El producto es gobierno de métricas (BI): sostiene descripciones confiables, aunque por sí solo no describe lo que ocurre en las ventas, y sus reglas no ejercitan la decisión de bloqueo.

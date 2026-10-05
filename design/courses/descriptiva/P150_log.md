@@ -9,3 +9,10 @@
 - **Ambigüedades:** datos sintéticos (`generate_data.py`, semilla fija, «para los talleres de BI») sin declaración de procedencia al estudiante; el calendario es determinista (una fecha por pedido, casi 20 pedidos por mes, verificado reproduciendo el generador), por lo que la serie mensual no admite lectura estacional; `data/sales_mart.db` presente pero no usado; notebook de estudiante vacío y sin `DESCRIPTION.md`; sin celdas markdown ni conclusión.
 - **Superficies, contrato y dependencias:** S01–S06 declaradas; pruebas recalculan la transformación completa; P151 no consume `sales_analytics.csv` (dependencia de artefacto no evidenciada).
 - **Auditoría de Analytics:** producto = tabla descriptiva integrada; la integración contribuye, pero sin usuario, decisión ni lectura la actividad se acerca a preparación de datos. Pregunta 5 no resuelta para el bloque P150–P154.
+
+## S02.P150.02
+
+- **Fecha / curso / executor:** 2026-10-04 / `descriptiva` / Claude; **estado:** incremental.
+- **Origen:** aclaración del profesor: *business intelligence* es un predecesor que, por su importancia, está contenido en la analítica descriptiva (como la minería de datos en la predictiva).
+- **Cambio en la auditoría de Analytics:** la auditoría trataba la integración del bloque P150–P154 como preparación de datos y dejaba la pregunta 5 no resuelta para el bloque. Se corrige: BI forma parte de la analítica descriptiva; el límite que se conserva es la falta de usuario y de lectura persistida.
+- **Highlights, superficies y dependencias:** sin cambios; no se renumeran IDs.

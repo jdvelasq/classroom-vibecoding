@@ -78,4 +78,4 @@ Mismo caso y mismo esquema que P151, con nuevo método al servicio de la descrip
 
 ## Trazabilidad y auditoría
 
-P152 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). Es la actividad del bloque más cercana a la pregunta descriptiva (qué, dónde, cuándo): tres preguntas encadenadas, serie temporal y descomposición. Faltan «para quién» y la lectura de evidencia; las operaciones OLAP sirven a la descripción, pero sin interpretación persistida el producto puede leerse como ejercicio de consultas BI.
+P152 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). Es la actividad del bloque más cercana a la pregunta descriptiva (qué, dónde, cuándo): tres preguntas encadenadas, serie temporal y descomposición. Faltan «para quién» y la lectura de evidencia; la navegación OLAP es BI al servicio de la descripción; lo que falta es la interpretación persistida de lo que muestran las respuestas.

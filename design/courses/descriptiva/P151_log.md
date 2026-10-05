@@ -9,3 +9,10 @@
 - **Ambigüedades:** `data/sales_mart.db`, accesible al estudiante, equivale al mart que la actividad pide construir; fórmula de `net_sales` algebraicamente distinta de P150; generador idéntico (mismo hash) en P150–P154; notebook de estudiante vacío; respuesta sin lectura.
 - **Superficies, contrato y dependencias:** S01–S05 declaradas; P152–P154 leen `data/sales_mart.db`, no `submission/sales_mart.db`: la dependencia es de esquema/lógica, no de artefacto.
 - **Auditoría de Analytics:** el producto observable es una capacidad de datos (mart); el modelado dimensional organiza la actividad. Tensión con la frontera del curso («no posee ingeniería de datos»); no resuelta.
+
+## S02.P151.02
+
+- **Fecha / curso / executor:** 2026-10-04 / `descriptiva` / Claude; **estado:** incremental.
+- **Origen:** aclaración del profesor: *business intelligence* es un predecesor que, por su importancia, está contenido en la analítica descriptiva (como la minería de datos en la predictiva).
+- **Cambio en la auditoría de Analytics:** la auditoría oponía el mart a la frontera «no posee ingeniería de datos». Se corrige: el modelado dimensional es práctica de BI, parte de la analítica descriptiva; se conservan como límites la respuesta sin interpretar y el peso de la construcción en el notebook.
+- **Highlights, superficies y dependencias:** sin cambios; no se renumeran IDs.
