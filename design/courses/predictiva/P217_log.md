@@ -287,3 +287,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - MLOps: desplegar, monitorear y gestionar el ciclo de vida de los modelos (p. 55): según `AGENTS.md` corresponde a productos de datos; H03 ya delimita monitoreo y linaje fuera del taller.
+
+## S03.P217.35
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/literature-derived/dataops-01-the-problem.md` (`source_sha256`: 3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - presentación sobre los problemas reales de los proyectos de analítica (objetivos cambiantes, silos, calidad de datos, mitos como «el modelo es sabio y omnisciente»); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
