@@ -17,3 +17,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CCF-File Systems (p. 66: «Compare and contrast different approaches to file organization») y DG-Data Reduction and Compression (p. 72: «Select data compression techniques according to the computation, communication and storage requirements», T2) — ya cubierta: tabla de decisión de formato (H03) sobre las mismas filas (H01).
+
+## S03.P524.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - definición del marco INFORMS en siete dominios con sus tareas (sin subtareas); el dominio III describe identificar datos requeridos y disponibles, hacerlos utilizables (limpiar, armonizar, transformar, unir, validar, evaluar calidad), privacidad y seguridad, gobierno, inventario y documentación para procesos repetibles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

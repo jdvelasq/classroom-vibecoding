@@ -17,3 +17,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DG-Data Cleaning (p. 74: «Write rules for data cleaning according to the requirement of applications and data semantics») — ya cubierta: contrato mínimo derivado de la pregunta (H02, H03).
+
+## S03.P517.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - Task 3.1 «Identify and prioritize data needs» (p. 5) — ya cubierta (P500 H02, P517 H02).

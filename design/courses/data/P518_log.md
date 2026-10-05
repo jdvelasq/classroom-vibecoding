@@ -17,3 +17,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - CCF-The Web (p. 67: «Data are frequently obtained via web applications»), PDA (p. 114: «Utility of APIs; when to look for one») y DG-Data Acquisition (p. 70: «Pull-based and push-based approaches») — ya cubierta en lo técnico (H01–H03); el vacío de pregunta analítica no se resuelve con este documento. DM-Mining Web Data (p. 81: scraping, T2) — fuera de alcance.
+
+## S03.P518.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «ensuring proper data transport across systems» (p. 5) — fuera de alcance/marginal: transporte entre sistemas es práctica de ingeniería; P513 y P518 ya tienen la auditoría de identidad no resuelta.

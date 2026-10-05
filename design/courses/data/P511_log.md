@@ -27,3 +27,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DG-Data Integration (pp. 71–72: «schema mapping», «data mapping», «challenges brought by heterogeneous data sources») — ya cubierta: claves contextuales y validación de cardinalidad (H01, H02).
+
+## S03.P511.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Task 3.5 (merge/join, transform) (p. 5) — ya cubierta por P511 H01–H03; P514/P515 repiten la técnica (duplicación ya registrada por S02).

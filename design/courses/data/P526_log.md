@@ -17,3 +17,11 @@
 - **Resultado:** propone T01.
 - **Señales descartadas relevantes:**
   - PDA-Numerical Computing (p. 119: «Allow reproducibility in data analysis with non-deterministic algorithms») — ya cubierta: simulación determinista y declarada (H02). DM-Time Series Data (p. 80, E) — fuera de alcance.
+
+## S03.P526.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

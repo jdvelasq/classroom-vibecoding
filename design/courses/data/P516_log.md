@@ -26,3 +26,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DG-Data Cleaning (pp. 73–74: «The dimensions of data quality»; «Various forms for data quality rules such as functional dependencies (FD)…»; «suitable for its intended use») — ya cubierta: reglas nombradas por dimensión (H02), clave compuesta y dominio (H03), aptitud para la pregunta (H01). La falta de diccionario y procedencia (S01) es marginal desde este documento (CCF p. 66: «Files: data, metadata» es genérico).
+
+## S03.P516.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** propone T02.
+- **Señales descartadas relevantes:**
+  - Task 3.6 «Assess data quality and identify relationships in the data» (p. 5) — ya cubierta por P516 H02–H03.

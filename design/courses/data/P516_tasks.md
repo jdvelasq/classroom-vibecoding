@@ -1,0 +1,152 @@
+# P516 — Propuestas de mejora
+
+**Línea base:** `P516_activity.md` (entrada S02 más reciente: `S02.P516.02`).
+
+## T02 — Ficha de procedencia y diccionario del extracto: fuente verificada, significado de `zipcode = 0` y de las variables usadas (incluido el perfil de la variable de ingreso), con la evidencia del diagnóstico de aptitud
+
+- **Estado:** pendiente de discusión
+- **Tipo:** producto/evidencia + caso/datos
+- **Fuentes:**
+  - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — Task 3.2 «Identify and analyze data sources, including data structures» y Task 3.7 «Document and report data findings»; «Understanding the use of data inventory and documentation is incorporated in this Domain to ensure repeatable processes» (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general de documentar la fuente junto con los hallazgos.
+- **Qué gana el estudiante:** apoyar el diagnóstico de aptitud en la
+  documentación de la fuente y no en un comentario. Hoy la decisión central
+  del taller (excluir `zipcode = 0` porque es el total estatal) «sólo lo
+  afirma un comentario» (límite de H01), el extracto no tiene procedencia,
+  año ni diccionario (S01), y la pregunta es sobre «ingresos» sin que se
+  sepa qué miden `N1` ni `A00100` ni se examine la variable de ingreso
+  (ninguna de las cinco reglas toca `A00100`; S02.P516.02: «no perfila el
+  extracto»). Con una ficha de procedencia verificada, un diccionario breve
+  de las variables que la pregunta usa (`zipcode`, `agi_stub`, `N1`,
+  `A00100`, más `STATE`/`STATEFIPS` si se citan) y un perfil univariado de
+  `N1` y `A00100` por `agi_stub`, el estudiante (1) distingue una regla
+  respaldada por la definición de la fuente de una supuesta, (2) contrasta
+  el significado documentado de `zipcode = 0` con evidencia interna del
+  propio archivo y (3) sabe qué limita la conclusión sobre ingresos. Ningún
+  taller del curso construye ni usa la procedencia externa de una fuente
+  para justificar una regla (P503 H01 conserva una consulta de export;
+  P501/P511 reciben manifiestos provistos).
+- **Anclas actuales:** H01 (regla de alcance, cuyo fundamento pasa a ser la
+  definición documentada), H02 (reporte por regla, al que se suman los
+  hallazgos del perfil que afecten la pregunta), H03 (clave y unidad de
+  análisis, que el diccionario hace explícita); superficies S01
+  (`data/vermont.csv`, «sin procedencia, año ni diccionario»), S02, S03
+  (`submission/`) y S04; dependencia «Habilita para P517».
+- **Condición de caso (bloqueante):** el origen real del extracto no está
+  documentado en la actividad. Es plausible que provenga de las estadísticas
+  por código postal del programa Statistics of Income del IRS, pero eso no
+  está verificado y no debe afirmarse. El profesor debe confirmar la fuente,
+  el publicador, el año fiscal, la documentación oficial que define
+  `zipcode = 0`, `agi_stub`, `N1` y `A00100` (incluida la unidad monetaria)
+  y las condiciones de uso y redistribución en clase, y registrarlo en
+  `P516_log.md` antes de S04. Sin esa verificación, las instrucciones se
+  detienen. Si la fuente no es verificable, la alternativa reducida
+  (declarar en el reporte la interpretación de `zipcode = 0` como supuesto
+  no verificado, con la evidencia interna del paso 4) requiere una
+  aprobación explícita y distinta del profesor.
+- **Alternativas menores descartadas:** aclarar en markdown que
+  `zipcode = 0` «probablemente» es el total estatal no cambia lo que el
+  estudiante hace antes de decidir. Un diccionario sin fuente verificada
+  reproduciría el problema (significados afirmados, no documentados).
+  Perfilar las 147 columnas contradice el contrato mínimo derivado de la
+  pregunta (P517 H02) y es propio de Descriptiva; por eso el perfil se
+  limita a las dos medidas que la pregunta necesita.
+- **Contrato de no regresión:** se conservan la pregunta, las cinco reglas
+  (con T01, sus severidades), la clave (`zipcode`, `agi_stub`), el
+  diagnóstico sin filtrado, `data/vermont.csv` sin modificar y
+  `quality_report.csv` con su esquema (más `severity` si T01 se ejecuta).
+  H01–H03 siguen presentes; H01 se refuerza citando la definición
+  documentada. La ficha y el diccionario son evidencia del diagnóstico, no
+  un inventario de datos de la organización ni un plan de gestión de datos.
+  Las pruebas existentes se conservan.
+- **Interacciones:** con T01, se refuerzan; si el perfil revela un hallazgo
+  que afecta la pregunta (por ejemplo, valores negativos o faltantes en
+  `A00100`), se añade como regla con severidad declarada según T01, y no se
+  añaden reglas por catálogo; ejecutar T01 primero. Hacia P517 (dependencia
+  P516 → P517): P517 reutiliza `vermont.csv` y no tiene procedencia (P517
+  S01); la ficha y el diccionario de P516 son la referencia que P517 T01
+  cita para justificar la exclusión de `zipcode = 0` en su registro de
+  limpieza, y el diccionario debe declarar el tipo y la forma de `zipcode`
+  de modo coherente con P517 T02. Si la fuente verificada indica un año
+  distinto del `source_release="2017"` inventado en P517, se registra la
+  discrepancia; esta T02 no modifica P517. Capacidad: es la propuesta más
+  pesada de P516; para no exceder el taller, la verificación documental la
+  hace el profesor antes de clase (material en `professor/` o enlace
+  citado) y el tiempo de taller se dedica a contrastar la definición con el
+  archivo y a leer el perfil de ingreso. Con T01 y T02, P516 pasa de 3 a 5
+  highlights; conviene decidir en la discusión si el perfil queda como
+  sección final que un grupo lento completa en la sesión siguiente.
+- **Criterio de aceptación:** S05 encuentra (1) un highlight nuevo de
+  procedencia y significado: `submission/source_card.json` con la fuente,
+  publicador, año fiscal, granularidad, definición documental de
+  `zipcode = 0` y de `agi_stub`, condiciones de uso y referencia de
+  verificación del profesor, todos tomados de `P516_log.md` y no inventados;
+  `submission/data_dictionary.csv` con las variables usadas; y una celda que
+  contrasta la definición de `zipcode = 0` con evidencia interna (suma por
+  código postal frente a la fila estatal, por `agi_stub`), reportando la
+  diferencia sin forzarla a cero; (2) un highlight nuevo con
+  `submission/income_profile.csv` (perfil de `N1` y `A00100` por
+  `agi_stub`) y 2–4 líneas que digan qué hallazgos limitan la conclusión
+  sobre ingresos; (3) la regla de alcance citando la definición documentada;
+  (4) pruebas que verifiquen la existencia y las columnas o claves de los
+  tres artefactos. H01–H03 siguen presentes.
+
+### Instrucciones de ejecución
+
+```text
+Actividad: implementation/data/P516_vermont_calidad/
+
+0. Inspecciona primero professor/notebook.ipynb, data/vermont.csv (cabecera,
+   tipos, valores de zipcode y agi_stub, presencia de N1 y A00100),
+   submission/ y tests/. Si la implementación no coincide con
+   design/courses/data/P516_activity.md, detente e informa sin modificar
+   nada. Si ya existen ficha de procedencia o diccionario, detente e
+   informa.
+1. PROCEDENCIA: no inventes ni infieras la fuente. Usa sólo lo que el
+   profesor haya verificado y registrado en P516_log.md en la discusión de
+   esta T02: fuente, publicador, año fiscal, documento oficial que define
+   zipcode = 0, agi_stub, N1 y A00100 (con unidad), condiciones de uso y
+   redistribución. Si ese registro no existe o está incompleto, detente y
+   pídelo. No escribas "IRS", "SOI" ni ningún año a partir de suposiciones.
+   Si el profesor aprobó explícitamente la alternativa reducida (supuesto no
+   verificado), aplica todos los pasos, pero escribe "unverified" en los
+   campos de source_card.json y en meaning/unit/source_reference del
+   diccionario que no tengan respaldo documental, con verified: false, y
+   declara el supuesto como tal en el notebook.
+2. Persiste submission/source_card.json con las claves: source, publisher,
+   tax_year, granularity, zipcode_0_meaning, agi_stub_definition,
+   terms_of_use, verified (true/false), verification_reference. Si el
+   material documental del profesor debe acompañar la actividad y no puede
+   distribuirse, colócalo en professor/ y cita sólo su referencia.
+3. Persiste submission/data_dictionary.csv con columnas: variable, meaning,
+   unit, dtype_in_notebook, role_in_question, source_reference. Incluye
+   zipcode (declara su tipo y forma tal como se leen: texto o número, con o
+   sin cero inicial, y el centinela 0), agi_stub, N1 y A00100, y STATE o
+   STATEFIPS sólo si el notebook los usa.
+4. EVIDENCIA INTERNA: añade una celda que, para cada agi_stub, compare el N1
+   y el A00100 de la fila zipcode = 0 con la suma sobre los códigos postales
+   y muestre la diferencia absoluta y relativa en una tabla pequeña. No
+   ajustes la regla para que la diferencia sea cero; explica en 2–4 líneas
+   qué implica el resultado para la interpretación documentada (una
+   diferencia puede deberse a cómo la fuente agrega o suprime códigos
+   postales pequeños; sólo afírmalo si la documentación verificada lo dice).
+5. PERFIL DE INGRESO: calcula por agi_stub, para N1 y A00100 y sólo sobre
+   filas con zipcode distinto de 0: count, missing, zeros, negatives, min,
+   median, max. Persiste submission/income_profile.csv con columnas:
+   variable, agi_stub, count, missing, zeros, negatives, min, median, max.
+   Muestra la tabla y escribe 2–4 líneas sobre qué hallazgos limitan la
+   conclusión sobre ingresos.
+6. Si el perfil revela un hallazgo que afecta la pregunta, añade a lo sumo
+   una regla nueva al reporte (con severidad declarada si T01 está
+   implementada). No añadas reglas por catálogo ni cambies las cinco
+   existentes. En la regla de alcance, cita en markdown la definición
+   documentada de zipcode = 0 (o el supuesto declarado si se aplicó la
+   alternativa reducida).
+7. Añade a tests/ pruebas que verifiquen: source_card.json existe con las
+   claves del paso 2; data_dictionary.csv tiene las columnas del paso 3 e
+   incluye zipcode, agi_stub, N1 y A00100; income_profile.csv tiene las
+   columnas del paso 5 y filas para N1 y A00100. No elimines pruebas
+   existentes.
+8. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
+9. No modifiques data/vermont.csv, otras actividades (en particular P517),
+   traceability.yaml ni design/.
+```

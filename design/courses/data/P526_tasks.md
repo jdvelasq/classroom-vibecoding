@@ -8,6 +8,7 @@
 - **Tipo:** producto/evidencia + caso/datos
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 41, 84 y 108 — competencia T1 de responsabilidad social: «Demonstrate awareness about data sensitiveness when data is processed as an input» y «Apply techniques to provide data privacy during raw data processing, such as provide ranges or salting techniques» (p. 84); «Ways of maintaining the confidentiality of data» (p. 108); «The privacy and confidentiality of information is a vital matter» (p. 41) (Claude, 2026-10-05). Fuente *authoritative*: respalda tratar identificadores al procesar datos crudos, no un contenido de privacidad formal.
+  - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` p. 5 — el dominio de datos «includes the effective utilization of data, maintaining its privacy and security» y «security, management, and privacy protocols are vital … to ensure compliance, ethical standards, and trust» (Claude, 2026-10-05). Fuente *authoritative*: marco general que CAP-E concreta.
 - **Qué gana el estudiante:** decidir qué identificadores de personas
   necesita la métrica y cuáles no deben salir en el producto. Hoy
   `event_replay.csv` copia `user_id` y `user_session` de 112 eventos de una

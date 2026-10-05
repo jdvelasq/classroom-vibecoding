@@ -33,3 +33,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DPSIA/DI-Logical integrity (p. 90: «Entity integrity, referential integrity, domain integrity, user-defined integrity») — ya cubierta por H04 (PK, FK, `NOT NULL`, `UNIQUE`, `PRAGMA foreign_keys`). DM-Information Retrieval (p. 82: «The concept of a search strategy; the related role of narrowing and broadening»; «Create and use a relational database structure using SQL») — ya cubierta por H01 (consulta preservada) y H02–H05; el vacío de pertinencia del corpus (desde 1969) no se apoya en este documento, que trata la recuperación por eficiencia y no la validación de un corpus. DPSIA/DI-Security threats (p. 91: «Data provenance assurance») — marginal: el export sin fecha ni condiciones (S01) es un defecto de manifiesto ya registrado, no un cambio de aprendizaje.
+
+## S03.P503.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - definición del marco INFORMS en siete dominios con sus tareas (sin subtareas); el dominio III describe identificar datos requeridos y disponibles, hacerlos utilizables (limpiar, armonizar, transformar, unir, validar, evaluar calidad), privacidad y seguridad, gobierno, inventario y documentación para procesos repetibles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.

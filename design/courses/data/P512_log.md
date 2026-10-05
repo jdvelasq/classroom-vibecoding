@@ -26,3 +26,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - DG-Data Integration (p. 71: «data warehouse») y DPSIA/DI-Logical integrity (p. 90) — marginal: declarar restricciones en el mart (S03) repite lo aprendido en P503 H04 y acentúa la lectura como taller de modelado dimensional.
+
+## S03.P512.02
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - definición del marco INFORMS en siete dominios con sus tareas (sin subtareas); el dominio III describe identificar datos requeridos y disponibles, hacerlos utilizables (limpiar, armonizar, transformar, unir, validar, evaluar calidad), privacidad y seguridad, gobierno, inventario y documentación para procesos repetibles. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
