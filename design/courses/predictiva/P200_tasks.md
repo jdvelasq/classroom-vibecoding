@@ -16,6 +16,7 @@
     2026-10-04).
   - `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` pp. 7–11 — objetivos de examen de nivel inicial: identificar *stakeholders*, la parte poco clara de un enunciado de negocio, las medidas primarias de éxito y «how to measure the baseline values of the primary measures of success of the current state» (Task 2.5) (Claude, 2026-10-04).
   - `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` pp. 7–11 — nivel intermedio: CAP-P.2.4.2 (verificar si se cumplen las medidas de éxito), CAP-P.2.5.1 («Identify current baseline performance and how it relates to expected performance as measured by the primary measures of success») y CAP-P.5.6.1 (explicación no técnica de los resultados) (Claude, 2026-10-04).
+  - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 40 y 48 — el flujo de trabajo empieza por «formulating good questions» y la comunicación exige «Ability to understand client needs» (Claude, 2026-10-04).
 - **Qué gana el estudiante:** desde el primer producto predictivo del curso,
   aprende a decir para qué decisión sirve la predicción, con qué medida se
   juzga el éxito y contra qué referencia trivial debe compararse. Hoy P200

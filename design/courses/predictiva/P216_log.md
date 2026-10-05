@@ -94,3 +94,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
+
+## S03.P216.08
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - flujos de trabajo reproducibles y documentados (p. 47): ya cubierta (H02, H12: funciones reutilizables y evidencia acumulada).
+  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P216 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.

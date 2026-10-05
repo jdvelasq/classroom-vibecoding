@@ -120,3 +120,13 @@
 - **Señales descartadas relevantes:**
   - medidas de éxito, línea base frente a desempeño esperado y explicación no técnica de resultados (CAP-P.2.4.2, 2.5.1, 5.6.1): se añade como fuente de T01.
   - riesgo de usar datos de entrenamiento sesgados (CAP-P.2.6.2, p. 12): confirma la señal de representatividad ya registrada; sin método ni caso que permita anclarla.
+
+## S03.P200.08
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** refuerza T01.
+- **Señales descartadas relevantes:**
+  - formular buenas preguntas y entender las necesidades del cliente (pp. 40, 48): se añade como fuente de T01.
+  - modelos que fallan cuando cambian los datos: «Google Flu Trends overpredicted… overreliance on outdated models» (p. 34) y relaciones que «will not necessarily hold in the next set of records» (p. 44): segunda fuente *authoritative* (con ACM) para la señal de representatividad y cambio de distribución; sigue sin método ni caso que permita anclarla a un taller.
+  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P216 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.

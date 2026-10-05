@@ -68,3 +68,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
+
+## S03.P220.08
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - flujos de trabajo y reproducibilidad (p. 47): ya cubierta (H01, H03).
