@@ -264,3 +264,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «Trends and Seasonality», «Strand or Seasonal Variation» (p. 1) — ya cubierta: P121 H06 contrasta la serie mensual con el patrón por mes del año. Descomponer tendencia y estacionalidad sería marginal, porque la fuente no aporta método ni caso.
+
+## S03.P121.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de un módulo de orientación y nueve módulos con una línea de descripción cada uno, organizados por la tríada descriptiva (M1–M2), predictiva (M3–M6) y prescriptiva (M4, M7–M8), más aplicación en el negocio (M9). No incluye contenidos detallados, datos, evaluación ni resultados de aprendizaje. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.

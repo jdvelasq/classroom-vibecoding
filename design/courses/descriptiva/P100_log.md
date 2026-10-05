@@ -400,3 +400,17 @@
   - «A/B Testing» (p. 1) — fuera de alcance: es inferencia experimental o causal, no descripción, y no hay caso ni datos.
   - «Forecasting» (objetivo/subjetivo, «Exponential Smoothing», «New Product») y «Regression Analysis» (p. 1) — fuera de alcance: pertenecen a analítica predictiva.
   - «Simulation Toolkit: Analysis ToolPak, Solver Optimization Tool», «Optimization Models», «Decision Trees» (p. 1) — fuera de alcance: son analítica prescriptiva o predictiva y herramientas de hoja de cálculo. Una señal de herramienta institucional no basta para imponer un tema.
+
+## S03.P100.32
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - lista de un módulo de orientación y nueve módulos con una línea de descripción cada uno, organizados por la tríada descriptiva (M1–M2), predictiva (M3–M6) y prescriptiva (M4, M7–M8), más aplicación en el negocio (M9). No incluye contenidos detallados, datos, evaluación ni resultados de aprendizaje. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Module 1: Descriptive Analytics: Gathering Insights — Identify effective methods for collecting data on customer behavior and use it to make better decisions for your business» (p. 1) — fuera de alcance: diseñar la recolección de datos (instrumentos, encuestas, experimentos) no tiene caso ni datos en el curso, y AGENTS.md privilegia datasets existentes y trazables. La señal es una sola línea de una fuente institucional, insuficiente para imponer un tema. La parte de «usar los datos para decidir» ya la cubren las preguntas de priorización de P120–P122 y P125 (P120 H01/H07, P125 H04).
+  - «Module 2: Descriptive Analytics: Describing and Forecasting Future Events — use historical data such as trends and consumption patterns to estimate forecasts for the future» (p. 1) — fuera de alcance en su parte de pronóstico: pertenece a predictiva según AGENTS.md («qué resultado futuro… con qué incertidumbre»). Wharton traza la frontera de otro modo, y como evidencia institucional eso no impone identidad. La descripción de tendencias y patrones históricos ya está cubierta: series mensuales en P120 H05, P121 H06 (serie nacional frente a patrón por mes del año), P150 H04 y P152 H02.
+  - «Module 5: … Interpret and visualize the results of simulation models to evaluate complex business decisions in uncertain settings» (p. 1) — fuera de alcance: visualizar resultados de simulación para evaluar decisiones bajo incertidumbre corresponde a predictiva o prescriptiva.
+  - módulos 3, 4, 6, 7 y 8 (predicción del desempeño de empleados, optimización, árboles de decisión, «prescriptions») (p. 1) — fuera de alcance: son de predictiva y prescriptiva.
+  - «Module 9: Application of Analytics for Business — Explain important components of different use cases of analytics in business and create a plan to put data to work in your organization» (p. 1) — marginal: un plan organizacional de adopción de analítica no es un producto descriptivo. La conexión de la pregunta con un contexto de uso ya está en el contrato `questions.json` (P120 H01) y en la pregunta de publicación de P153.
