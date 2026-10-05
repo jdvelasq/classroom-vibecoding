@@ -449,3 +449,11 @@
 - **Resultado:** propone T01.
 - **Señales descartadas relevantes:**
   - ninguna adicional.
+
+## S03.P307.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - autocorrelación en series de tiempo (Durbin-Watson, índice p. 4) — fuera de alcance: validación del pronóstico (Predictiva). P307 y P309 reciben los escenarios como insumo dado.

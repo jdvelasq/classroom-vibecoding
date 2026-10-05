@@ -660,3 +660,16 @@
   - escalabilidad en la nube, ejecución en lote, pipelines y nodos personalizados (pp. 8–9) — fuera de alcance: Productos de datos.
   - FVA y efecto de los ajustes manuales del planificador sobre el pronóstico (p. 130: «The FVA is the added value of the forecast in accuracy, compared to a naïve or baseline forecast»; p. 137: «the goal is to eliminate the small changes that do not add any benefit») — fuera de alcance: evalúa el proceso de pronóstico (Predictiva); el análogo de decisión —tasa de anulación humana como señal— ya está en P308 H07, y la banda de revisión que concentra la atención humana en casos dudosos en P306 H07.
   - pronóstico «contaminado» por metas de la gerencia y expectativas de precisión inalcanzables (pp. 167–168) — marginal: refuerza la separación evidencia/acción ya presente en P300 H01 y P303 H02.
+
+## S03.P300.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de la sintaxis y los detalles de PROC REG: regresión lineal por mínimos cuadrados, nueve métodos de selección de modelos, diagnósticos de colinealidad, influencia y heterocedasticidad, pruebas lineales y de falta de ajuste, ridge y puntuación de datos nuevos. Es estimación estadística y predictiva; no trata decisiones, acciones ni políticas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - selección de modelos (FORWARD/BACKWARD/STEPWISE/RSQUARE/Cp) con la advertencia de sesgo tras la selección (p. 93: «all regression statistics computed for that model under the assumption that the model is given a priori … are biased»; p. 178: «the statistics are biased and the _p_-values for the parameter estimates are not valid») — fuera de alcance: construir y validar estimaciones pertenece a Predictiva. Prescriptiva recibe la estimación como insumo (P303, P305, P308).
+  - diagnósticos de influencia, residuos, colinealidad y falta de ajuste (pp. 143–158, Ejemplo 79.1, p. 145: «Before you accept a regression model, it is important to examine influence and fit diagnostics») — fuera de alcance: calidad del modelo predictivo, no de la política.
+  - distinción entre un modelo para estimar parámetros y uno para predecir (p. 178: «a six-variable model is a reasonable choice for doing parameter estimation, while a five-variable model might be suitable for doing prediction») — fuera de alcance: es una frontera interna de Predictiva/Estadística, no la frontera entre evidencia y decisión que enseñan P300 (H01) y P303 (H02).
+  - sentencia CODE para puntuar datos nuevos (p. 37: «This code can then be included in a DATA step to score new data») — fuera de alcance: despliegue y puntuación pertenecen a Productos de datos. Es además una señal de herramienta, que por sí sola no impone un tema.

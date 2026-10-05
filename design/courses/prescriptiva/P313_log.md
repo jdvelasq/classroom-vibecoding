@@ -450,3 +450,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - cuantiles del error para fijar el límite tolerable (p. 144) — marginal frente a la candidata de P307; P313 ya trabaja con P90 como regla de referencia (H05).
+
+## S03.P313.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de la sintaxis y los detalles de PROC REG: regresión lineal por mínimos cuadrados, nueve métodos de selección de modelos, diagnósticos de colinealidad, influencia y heterocedasticidad, pruebas lineales y de falta de ajuste, ridge y puntuación de datos nuevos. Es estimación estadística y predictiva; no trata decisiones, acciones ni políticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.

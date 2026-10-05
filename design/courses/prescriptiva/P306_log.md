@@ -462,3 +462,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - reglas de monitoreo con acción por métrica (p. 154) — ya cubierta en forma declarativa (`monitoring_plan.csv` con bloquear/suspender/recalibrar/escalar en P306 H07 y P308 H07); la ejecución con datos se propone en P321.
+
+## S03.P306.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ejemplo 79.1, sesgo sistemático de la predicción en un segmento (p. 153: «the model tends to overpredict the salaries of several players near the lower end of the salary range») — fuera de alcance: es la calibración del insumo predictivo; su efecto sobre la política (P306 H05, P308 límite de calibración) ya se registra como límite y la estimación pertenece a Predictiva.

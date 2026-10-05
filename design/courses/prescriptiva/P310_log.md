@@ -449,3 +449,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Colección de artículos técnicos sobre construcción y evaluación de pronósticos con software SAS; el uso de pronósticos para decisiones aparece sólo como motivación (pp. 7, 13, 37, 100). **No contiene** secciones sustantivas de inventario, demand planning, FVA ni planeación por escenarios: los white papers de Chase y Gilliland son extractos de 2–3 páginas y sus secciones de FVA (pp. 160, 166) sólo figuran en el índice. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P310.56
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Manual de referencia de la sintaxis y los detalles de PROC REG: regresión lineal por mínimos cuadrados, nueve métodos de selección de modelos, diagnósticos de colinealidad, influencia y heterocedasticidad, pruebas lineales y de falta de ajuste, ridge y puntuación de datos nuevos. Es estimación estadística y predictiva; no trata decisiones, acciones ni políticas. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
