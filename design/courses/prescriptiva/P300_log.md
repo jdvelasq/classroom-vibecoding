@@ -139,3 +139,13 @@
   - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - «principles and practices of managing data at scale… entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration» (p. 1) — fuera de alcance: gestionar datos a escala y su ciclo de vida corresponde a Fundamentos de data y a Productos de datos, no a Prescriptiva (s05: Prescriptiva «no necesita convertirse en arquitectura o despliegue de software»).
+
+## S03.P300.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado: describe los fundamentos probabilísticos de la inferencia y «the modeling and decision-making life cycle … including its human, social, and ethical implications». Sólo lista temas; no hay syllabus, casos, productos ni evaluación. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «differential privacy», «permutation testing, false discovery rate», «Bayesian hierarchical models», «clustering», «recommendation systems», «decision trees, neural networks and ensemble methods» (p. 1) — fuera de alcance: son temas de Estadística, Predictiva o Productos de datos, o de protección de datos, no de diseño ni de gobierno de políticas.

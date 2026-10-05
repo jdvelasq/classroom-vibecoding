@@ -90,3 +90,12 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Páginas: 1. Lectura: completa. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
+
+## S03.P322.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «frequentist and Bayesian decision-making» (p. 1) — ya cubierta: P301 actualiza creencias tras un fracaso (H03–H04) y P322 valora una medición por su efecto en la acción (H01–H02). Un tema listado en un catálogo no muestra qué falta en esos talleres.
+  - «Thompson sampling» y «basics of experimental design» (p. 1) — fuera de alcance como propuesta: la experimentación adaptativa (explorar frente a explotar) sería una política recurrente legítima y distinta de la medición única de P322. Pero la familia institucional sólo ilustra posibilidades y la ficha no aporta ni caso, ni datos, ni producto que permitan enseñarla con rigor. No basta para una actividad nueva.

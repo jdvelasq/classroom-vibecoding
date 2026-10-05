@@ -92,3 +92,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «a focus on ensuring reliable, scalable operationalization» (p. 1) — fuera de alcance: operacionalizar con confiabilidad y escala es infraestructura (frontera con Productos de datos en s05). La operación de la política que sí toca a Prescriptiva ya está en el registro, los gatillos y el monitoreo (P303 H03, P306 H07, P321 H01–H02). Además, la ficha no describe prácticas concretas que puedan contrastarse.
+
+## S03.P321.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado: describe los fundamentos probabilísticos de la inferencia y «the modeling and decision-making life cycle … including its human, social, and ethical implications». Sólo lista temas; no hay syllabus, casos, productos ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P300_log.md`.
