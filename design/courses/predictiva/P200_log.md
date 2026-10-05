@@ -535,3 +535,14 @@
   - cuestionario de requisitos para diseñar un dashboard (usuarios, preguntas, comparaciones y excepciones). Para esta actividad no añade una señal distinta.
 - **Señales de alcance de curso** (registradas sólo en este log):
   - excepciones definidas por umbrales o por valores que son «statistical outliers» (p. 1) — marginal: refuerza la señal de detección de anomalías registrada antes para el curso, sin método ni caso; el diseño de dashboards es de descriptiva.
+
+## S03.P200.57
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` (`source_sha256`: 5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - taller de soluciones empresariales con Power BI (modelo estrella, medidas, inteligencia de tiempo, gobierno y despliegue). Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - inteligencia de tiempo (MoM, YoY, YTD) y comparación real–presupuesto (pp. 30, 74 y 76) — fuera de alcance: comparaciones descriptivas de BI, no estimación.
+  - despliegue, actualización incremental, Git y *workspaces* (pp. 15–22 y 64–66) — fuera de alcance: plataforma concreta y productos de datos.
