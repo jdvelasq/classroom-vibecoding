@@ -125,3 +125,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de computación en la nube y DevOps (temario, pp. 12–14: web, Node.js, contenedores, PKI, métricas DevOps, casos de migración); sin contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P219.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso ejecutivo de liderazgo de datos (temario, pp. 13–14: IA para líderes, marcos de innovación, SQL y arquitectura, plataformas de datos, nube, ética y gobierno); sin contenidos de modelado predictivo que contrastar con esta actividad.

@@ -127,3 +127,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - contenedores, métricas DevOps y operación en la nube (pp. 12–14): fuera de la línea Predictiva; hacer operable una capacidad corresponde a productos de datos según `AGENTS.md`. H01–H04 delimitan el despliegue local actual.
+
+## S03.P217.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - curso ejecutivo de liderazgo de datos (temario, pp. 13–14: IA para líderes, marcos de innovación, SQL y arquitectura, plataformas de datos, nube, ética y gobierno); sin contenidos de modelado predictivo que contrastar con esta actividad.

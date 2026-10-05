@@ -148,3 +148,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de computación en la nube y DevOps (temario, pp. 12–14: web, Node.js, contenedores, PKI, métricas DevOps, casos de migración); sin contenidos de modelado predictivo que contrastar con esta actividad.
+
+## S03.P205.15
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - sesgo y equidad en IA (módulo 8, p. 14): ya cubierta en la medida que el caso lo permite (H04); el folleto sólo nombra el tema.
