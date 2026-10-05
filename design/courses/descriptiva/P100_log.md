@@ -102,3 +102,15 @@
   - metodologías ágiles, colaboración y mentoría (p. 1: «La implementación de metodologías ágiles, la colaboración y el aprendizaje compartido también son elementos esenciales») — fuera de alcance: rasgo del formato bootcamp, sin relación con un producto descriptivo.
   - focalización regional y poblacional (p. 2: «distribución regional que permita adaptar las iniciativas … a las particularidades y demandas específicas de cada área geográfica»; p. 3: lista de grupos focalizados) — fuera de alcance: describe el diseño de la política, no una señal curricular; no hay datos del programa en el documento que permitan construir un caso descriptivo.
   - temáticas de IA, blockchain, nube y ciberseguridad (p. 2) — fuera de alcance: no pertenecen a descriptiva.
+
+## S03.P100.08
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Folleto comercial de un programa ejecutivo en línea de dos meses sobre IA para negocios: ocho módulos (fundamentos de ML, redes neuronales, visión y PLN, robótica, estrategia, equipos, futuro de la IA) y un proyecto final de plan de negocio; dirigido a líderes y gerentes. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Analítica descriptiva, analítica predictiva y sesgos algorítmicos» (p. 5) — marginal: mención de tema en un temario ejecutivo, sin contenido; la frontera descripción/predicción ya organiza el curso y el sesgo algorítmico pertenece a predictiva.
+  - proyecto final integrador «un caso y un plan de negocios que utiliza la IA» (p. 6) y estudios de caso empresariales (pp. 8–9) — fuera de alcance: formato de programa ejecutivo centrado en estrategia de IA; el curso ya trabaja con casos (P120–P125) y no posee productos de IA.
+  - ML supervisado/no supervisado, entrenamiento/validación/prueba, redes neuronales, visión artificial, PLN, robótica (pp. 4–5) — fuera de alcance: predictiva y productos de datos.
