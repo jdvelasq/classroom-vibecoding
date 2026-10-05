@@ -139,3 +139,13 @@
   - «the entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration, with a focus on ensuring reliable, scalable operationalization» (p. 1) — ya cubierta: el énfasis en una operacionalización confiable coincide con `productos.C02`/`C05`. Preparación, exploración, visualización y ML corresponden a Fundamentos, Descriptiva y Predictiva, a los que el curso no vuelve.
   - «managing data at scale» (p. 1) — fuera de alcance: escala y Big Data son una frontera explícita del curso. Además, la ficha no dice cómo se operacionaliza, así que no hay mecanismo que contrastar.
   - prerrequisitos de programación (COMPSCI 61B o equivalente) y de ciencia de datos de nivel superior (DATA C100 o equivalente) (p. 1) — fuera de alcance: es una decisión de otra institución. El programa admite cohortes heterogéneas y declara que no hay prerrequisitos entre cursos (`s05-diseno-productos.md`).
+
+## S03.P400.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Ficha de catálogo de un curso de pregrado: fundamentos probabilísticos de la inferencia y «ciclo de vida de modelado y toma de decisiones» con sus implicaciones humanas, sociales y éticas. Lista temas (decisión frecuentista y bayesiana, FDR, inferencia causal, Thompson sampling, Q-learning, privacidad diferencial, sistemas de recomendación) sin resultados de aprendizaje ni prácticas. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - diseño experimental, inferencia causal, Thompson sampling, control óptimo y Q-learning (p. 1). Categoría: **fuera de alcance**. Pertenecen a Fundamentos, Predictiva o Prescriptiva. Las pruebas A/B o los bandits como mecanismo de liberación no aparecen en el documento; sólo se nombran las técnicas.

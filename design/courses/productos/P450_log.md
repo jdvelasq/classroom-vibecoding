@@ -89,3 +89,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Ficha de catálogo de un curso de pregrado de 4 unidades (cruzado con COMPSCI C187) sobre gestión de datos a escala para análisis y ML, con énfasis en una operacionalización confiable. Sólo incluye la descripción, los prerrequisitos y datos administrativos; no trae temario, prácticas ni evaluación. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P400_log.md`.
+
+## S03.P450.11
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «modeling and decision-making life cycle… including its human, social, and ethical implications» (p. 1). Categoría: **ya cubierta**. El curso trata la revisión humana (P450 H01–H02) y la retroalimentación del consumidor (P451 H01–H02). La ficha no aporta un mecanismo operativo concreto que cambie lo que el estudiante hace.
