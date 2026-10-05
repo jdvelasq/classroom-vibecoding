@@ -98,6 +98,7 @@ Actividad: implementation/predictiva/P211_pronostico_congestion_servicio/
     largo del horizonte (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md`
     p. 2 — unidad de «Probabilistic Forecasting» (Claude, 2026-10-04).
+  - `design/benchmarks-md/professional-learning/sas-stat.md` pp. 11–12 — distingue los límites de confianza para el valor esperado (CLM) de los límites para un valor individual (CLI), más anchos: la incertidumbre de una predicción individual no es la de la media estimada (Claude, 2026-10-04).
 - **Qué gana el estudiante:** entregar un pronóstico que diga cuánto puede
   desviarse, no sólo su valor central. Para anticipar presión de servicio,
   lo relevante suele ser cuán alta puede llegar la espera (un cuantil

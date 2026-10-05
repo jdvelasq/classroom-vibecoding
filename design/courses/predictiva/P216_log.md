@@ -459,3 +459,11 @@
   - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P211 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P211.
   - híbridos de redes neuronales y modelos clásicos de series (p. 8): ya cubierta en lo esencial (H06–H11: MLP, AR, apilamiento y combinación).
   - extracción de *features* de series y gradient boosting para pronóstico (p. 8): marginal; otra familia para el mismo producto.
+
+## S03.P216.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): ya cubierta (inspección ACF/PACF).

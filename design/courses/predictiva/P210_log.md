@@ -431,3 +431,11 @@
 - **Señales descartadas relevantes:**
   - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P211 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P211.
   - pronóstico de nuevos productos y difusión: no se trata en el documento.
+
+## S03.P210.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.

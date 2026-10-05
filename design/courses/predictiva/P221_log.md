@@ -430,3 +430,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
+
+## S03.P221.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - selección secuencial de variables (FORWARD, BACKWARD, STEPWISE, MAXR) y criterios Cp, AIC, BIC y R² ajustado (pp. 5, 91–94 y 160–178), con la advertencia de que tras seleccionar «the p-values for the parameter estimates are not valid» (p. 178): variante del mecanismo que H01–H02 ya enseñan (selección dentro del pipeline con `k` por validación cruzada). Fuente única; se registra como señal.

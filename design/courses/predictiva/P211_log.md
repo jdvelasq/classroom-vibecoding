@@ -435,3 +435,11 @@
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Origen:** revisión de técnicas de scikit-learn pedida por el profesor (no es una revisión S03 de un benchmark).
 - **Cambio:** T01 admite `TimeSeriesSplit(n_splits=12, test_size=1)` como forma de generar los orígenes móviles; el criterio de aceptación no cambia.
+
+## S03.P211.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** refuerza T02 (fuente añadida: límites CLM frente a CLI).
+- **Señales descartadas relevantes:**
+  - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): no añade una señal distinta de T01.

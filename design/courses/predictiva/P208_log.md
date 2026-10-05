@@ -429,3 +429,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - intervalos de predicción (pp. 7, 143): S02 registra «sin incertidumbre»; la propuesta se ubica en P211 (T02) y podría extenderse a los escenarios SIR después de discutirla.
+
+## S03.P208.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.

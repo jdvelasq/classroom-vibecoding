@@ -494,3 +494,14 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - regresión cuantílica para modelar cuantiles condicionales (p. 143): se usa como alternativa en P211 T02; no aporta a P200.
+
+## S03.P200.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** propone T02 (diagnóstico con residuos y transformación de la respuesta).
+- **Señales descartadas relevantes:**
+  - interacción entre una variable cualitativa y una cuantitativa para permitir pendientes distintas por grupo (Example 79.4, pp. 185–189): variante de H05 y H07.
+  - estadísticas de influencia (leverage, residuo estudentizado, Cook's D, DFFITS, DFBETAS; pp. 11, 107 y 146–148): señal válida, pero descartada por capacidad de P200; si se aprueba T02, puede reconsiderarse como extensión del diagnóstico.
+  - límites de confianza para la media (CLM) y para un valor individual (CLI) (pp. 11–12): se registra como fuente de P211 T02; en P200 sería incremental.
+  - pruebas F y t de coeficientes, falta de ajuste y heterocedasticidad (pp. 6, 122–123 y 194): inferencia estadística fuera del producto predictivo de la actividad.

@@ -459,3 +459,11 @@
 - **Origen:** revisión de técnicas de scikit-learn pedida por el profesor (no es una revisión S03 de un benchmark).
 - **Resultado:** sin cambios.
 - **Señal descartada:** `TunedThresholdClassifierCV` (scikit-learn 1.5) para elegir el umbral con validación cruzada. No aplica: P205 no entrena un clasificador, recibe probabilidades simuladas ya generadas, y H02 enseña el barrido manual como mecanismo. Llevarlo a P204 duplicaría el propósito de P205.
+
+## S03.P205.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.

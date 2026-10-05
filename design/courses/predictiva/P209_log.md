@@ -427,3 +427,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - modelos con cambio de régimen para capturar cambios estructurales (p. 9): marginal; P209 ya contrasta un supuesto fijo con una tasa que se adapta a la evidencia (H02–H03).
+
+## S03.P209.53
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
