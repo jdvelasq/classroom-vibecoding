@@ -151,3 +151,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de estrategia de plataformas digitales y mercados de dos lados (temario, pp. 13–15: efectos de red, precios, arquitectura, gobierno de calidad); sin contenidos de modelado predictivo.
+
+## S03.P217.18
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.

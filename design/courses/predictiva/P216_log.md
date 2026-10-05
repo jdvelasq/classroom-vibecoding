@@ -177,3 +177,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - curso de estrategia de plataformas digitales y mercados de dos lados (temario, pp. 13–15: efectos de red, precios, arquitectura, gobierno de calidad); sin contenidos de modelado predictivo.
+
+## S03.P216.18
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
