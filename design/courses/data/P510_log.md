@@ -21,3 +21,11 @@
 - **Ambigüedades:** procedencia, fecha y escala de `rating` no documentadas; no visible si hay cursos sin calificaciones.
 - **Superficies / contrato / dependencias:** S01–S06; recibe práctica de P503–P507; no habilita actividades posteriores de forma evidenciada.
 - **Auditoría de Analytics:** producto tabular para una decisión declarada de priorización; SQL contribuyente. Riesgo moderado de lectura como ejercicio de SQL por falta de regla de priorización.
+
+## S03.P510.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - ninguna adicional.

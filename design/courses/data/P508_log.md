@@ -20,3 +20,11 @@
 - **Ambigüedades:** consumidor «otra aplicación» no identificado; portabilidad del engine declarada, no demostrada; pregunta solapada con P505 y patrón de base de entrega solapado con P501.
 - **Superficies / contrato / dependencias:** S01–S05; recibe de P503–P505; no habilita una actividad posterior de forma demostrable.
 - **Auditoría de Analytics:** riesgo alto de lectura como entrenamiento en herramienta (SQLAlchemy).
+
+## S03.P508.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - CCF-The Web (p. 67: «Awareness of web application vulnerabilities and security attacks (e.g., SQL injection…)») — marginal: H02 ya usa parámetros nombrados (`:first_year`, `params=`); como mucho, una aclaración verbal.

@@ -9,3 +9,11 @@
 - **Ambigüedades:** objetivo de recuperar periodos sin leer todo no ejercitado; conjunto particionado sólo en `temp/`; unidad de análisis, columnas y procedencia del dataset no documentadas; vocabulario `lake/curated` no explicado.
 - **Superficies / contrato / dependencias:** S01–S05; recibe práctica de P524; habilita: no evidenciada.
 - **Auditoría de Analytics:** no resuelta; diseño de almacenamiento sin uso analítico demostrado.
+
+## S03.P525.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - BDS-Distributed Data Storage (p. 58, T2/E: «Approaches to storing vast quantities of data… Retrieval issues») — fuera de alcance como ampliación: diseño de almacenamiento particionado es frontera con arquitectura de datos.

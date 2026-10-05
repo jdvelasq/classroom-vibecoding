@@ -20,3 +20,11 @@
 - **Ambigüedades:** duplicación de producto con P503 (decisión de curso pendiente); interpretación del conteo completo no declarada; empates en `LIMIT 20`.
 - **Superficies / contrato / dependencias:** S01–S06 (S04 registra la duplicación); recibe de P503–P504; habilita P506 y P508.
 - **Auditoría de Analytics:** sin producto nuevo; riesgo alto de lectura como lección de SQL intermedio.
+
+## S03.P505.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - PDA (p. 112: «Write appropriate database queries») y DM-IR (p. 82) — ya cubierta: secuencia SQL sobre el corpus. La desambiguación de autores (DG-Data Cleaning, p. 73: «entity resolution») es marginal para P506: identidad por ID Scopus ya decidida en P503 H03.

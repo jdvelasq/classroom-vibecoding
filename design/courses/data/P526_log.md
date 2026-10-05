@@ -9,3 +9,11 @@
 - **Ambigüedades:** tardanza construida (28 = 14 bloques × 2); métricas por sesión invariantes al orden, por lo que no se muestra la confusión que la pregunta menciona; tasa 0.5 sobre 16 sesiones sin criterio de muestra; `revenue > 0` como conversión; identificadores de usuario copiados a `submission/` sin restricción documentada; procedencia sólo en `case-selection.md`; sin notebook de profesor.
 - **Superficies / contrato / dependencias:** S01–S06; recibe práctica de P519–P520 y P522; habilita: no evidenciada.
 - **Auditoría de Analytics:** producto analítico claro (métrica de conversión); procesamiento de eventos como habilitador; la amenaza analítica no se demuestra.
+
+## S03.P526.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** propone T01.
+- **Señales descartadas relevantes:**
+  - PDA-Numerical Computing (p. 119: «Allow reproducibility in data analysis with non-deterministic algorithms») — ya cubierta: simulación determinista y declarada (H02). DM-Time Series Data (p. 80, E) — fuera de alcance.

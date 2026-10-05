@@ -19,3 +19,11 @@
 - **Ambigüedades:** el generador de las tablas derivadas no está en la actividad; las claves contextuales impiden contar clientes o productos únicos.
 - **Superficies / contrato / dependencias:** S01–S06; recibe caso de P500–P502; habilita datos y práctica para P512, P514, P515.
 - **Auditoría de Analytics:** integración al servicio de una descripción trazable; sin riesgo de identidad relevante.
+
+## S03.P511.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DG-Data Integration (pp. 71–72: «schema mapping», «data mapping», «challenges brought by heterogeneous data sources») — ya cubierta: claves contextuales y validación de cardinalidad (H01, H02).

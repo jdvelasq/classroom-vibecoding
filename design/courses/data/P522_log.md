@@ -9,3 +9,11 @@
 - **Ambigüedades:** sin pregunta analítica; procedencia y periodo de vuelos no documentados; `temp/` no aparece en la implementación y `TEMP_DIR / "input"` se crea con `mkdir()` sin `parents` (posible fallo de ejecución); benchmark de una corrida dependiente del equipo; sin notebook de profesor; P522 no figura en el diseño del bloque MapReduce de `case-selection.md`, que llega sólo a P521.
 - **Superficies / contrato / dependencias:** S01–S07; recibe operadores de P519; habilita: no evidenciada.
 - **Auditoría de Analytics:** no resuelta; lectura de computación paralela/Big Data sin producto analítico.
+
+## S03.P522.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - BDS-Problems of Scale (p. 56: «Execute a computational task at multiple scale-levels»), BDS-Big Data Computing Architectures (pp. 56–57, E), BDS-Parallel Programming (p. 59: «load balancing issues»; «Evaluate a parallel algorithm’s load-balance») y BDS-Techniques (pp. 59–60: hashing, sampling, «Be attentive of pitfalls such as bias in performing sampling and filtering») — fuera de alcance: medición de aceleración, particionamiento, sesgo de carga y combiner son contenido T2/E de Big Data Systems, área que `s05-diseno-data.md` excluye; el documento refuerza las auditorías no resueltas de S02 y no justifica ampliar ese bloque.

@@ -24,3 +24,11 @@
 - **Ambigüedades:** `sales_detail.csv` publica texto mal decodificado (`Accentâ¢`) por la lectura `latin1` de un archivo con BOM UTF-8; `data.C03` mapeada sin evidencia; sin procedencia del CSV; `src/main.py` sin instrucciones.
 - **Superficies / contrato / dependencias:** S01–S06; recibe de P500; habilita nombres y granos que P502 cataloga.
 - **Auditoría de Analytics:** capacidad de datos para preguntas descriptivas; riesgo moderado de lectura como *serving* de ingeniería de datos.
+
+## S03.P501.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - PR-Communication (p. 106: «Produce a technical document for colleagues to guide technical development») — ya cubierta: manifiesto de interfaces (H02). El texto mal decodificado (H03) se resuelve por la candidata P500.

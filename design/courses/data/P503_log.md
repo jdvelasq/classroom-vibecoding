@@ -25,3 +25,11 @@
 - **Ambigüedades:** sin fecha de export ni condiciones de uso de Scopus; `documents_by_year.csv` empieza en 1969, lo que sugiere documentos poco pertinentes que no se examinan; corte `LIMIT 20` con empates; tabla `keywords` sin uso en P503 (la usa P507).
 - **Superficies / contrato / dependencias:** S01–S07; habilita P504–P508.
 - **Auditoría de Analytics:** representación consultable del corpus al servicio de preguntas descriptivas; riesgo moderado de lectura como taller de bases de datos.
+
+## S03.P503.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DPSIA/DI-Logical integrity (p. 90: «Entity integrity, referential integrity, domain integrity, user-defined integrity») — ya cubierta por H04 (PK, FK, `NOT NULL`, `UNIQUE`, `PRAGMA foreign_keys`). DM-Information Retrieval (p. 82: «The concept of a search strategy; the related role of narrowing and broadening»; «Create and use a relational database structure using SQL») — ya cubierta por H01 (consulta preservada) y H02–H05; el vacío de pertinencia del corpus (desde 1969) no se apoya en este documento, que trata la recuperación por eficiencia y no la validación de un corpus. DPSIA/DI-Security threats (p. 91: «Data provenance assurance») — marginal: el export sin fecha ni condiciones (S01) es un defecto de manifiesto ya registrado, no un cambio de aprendizaje.

@@ -18,3 +18,11 @@
 - **Ambigüedades:** si la omisión de `orders` en el mart es deliberada.
 - **Superficies / contrato / dependencias:** S01–S05; recibe de P511 y P505–P507; no habilita dependencias evidenciadas.
 - **Auditoría de Analytics:** capacidad de datos descriptiva; riesgo de lectura como taller de modelado dimensional por pregunta de organización y consulta no entregada.
+
+## S03.P512.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DG-Data Integration (p. 71: «data warehouse») y DPSIA/DI-Logical integrity (p. 90) — marginal: declarar restricciones en el mart (S03) repite lo aprendido en P503 H04 y acentúa la lectura como taller de modelado dimensional.

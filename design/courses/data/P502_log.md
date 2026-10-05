@@ -25,3 +25,11 @@
 - **Ambigüedades:** `data/superstore_orders.csv` presente sin uso; ubicación `submission` remite a P501; consumidor «Privado» sin explicación (¿restricción de uso?); catálogo de columnas parcial; linaje no verificable contra el código.
 - **Superficies / contrato / dependencias:** S01–S06; recibe de P501 nombres y granos; no habilita una actividad posterior de forma demostrable.
 - **Auditoría de Analytics:** documentación que sirve a la auditabilidad de métricas; riesgo de documentación formal desconectada de los datos.
+
+## S03.P502.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DPSIA/DI-Methods (p. 91: «Understand how to use the integrity models in multiple data ownership domains to ensure provenance») — ya cubierta en lo pertinente: linaje con cambio de grano (H03); el resto es seguridad.

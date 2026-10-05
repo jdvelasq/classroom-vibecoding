@@ -10,3 +10,11 @@
 - **Contraste con `case-selection.md`:** conforme en pregunta, datos y SQL acotado; añade `mean_hours`.
 - **Superficies / contrato / dependencias:** S01–S05; recibe de P519; P521 repite la agregación sin consumir el archivo.
 - **Auditoría de Analytics:** producto descriptivo por entidad con pregunta explícita; MapReduce como habilitador; sin interpretación de resultados.
+
+## S03.P520.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - BDS-Parallel Programming (p. 59: «Typical parallel programming paradigm such as MapReduce», T2) — ya cubierta en el alcance decidido por `case-selection.md` (modelo de cómputo local al servicio de agregación y unión). La presencia de `ssn` y `location` en `drivers.csv` (S01) frente a DPSIA/DP p. 84 — marginal como cambio de aprendizaje (la pregunta no usa esas columnas); corresponde corregir el dataset distribuido, sin crear contenido.

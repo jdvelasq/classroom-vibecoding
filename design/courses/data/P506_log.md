@@ -21,3 +21,11 @@
 - **Ambigüedades:** umbral de 3 años y corte 2020 sin justificación; 2026 posiblemente incompleto; `data.C03` mapeada sin evidencia.
 - **Superficies / contrato / dependencias:** S01–S05; recibe de P503–P505; habilita P507 (CTE y periodo).
 - **Auditoría de Analytics:** operacionalización con propósito analítico; riesgo moderado por encuadre de temario SQL.
+
+## S03.P506.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - PDA (p. 112: «Write appropriate database queries») y DM-IR (p. 82) — ya cubierta: secuencia SQL sobre el corpus. La desambiguación de autores (DG-Data Cleaning, p. 73: «entity resolution») es marginal para P506: identidad por ID Scopus ya decidida en P503 H03.

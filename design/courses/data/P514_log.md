@@ -18,3 +18,11 @@
 - **Ambigüedades:** duplicación de producto con P511 y de pregunta con P515, pendiente de decisión de curso.
 - **Superficies / contrato / dependencias:** S01–S05; recibe de P511; habilita la forma de reporte y la pregunta para P515.
 - **Auditoría de Analytics:** no resuelta; lo nuevo es la organización ETL y el producto no cambia respecto de P511.
+
+## S03.P514.01
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - DG-Data Transformation (p. 73: «Data Transformation pipeline») y SDM (p. 120: «Data lifecycle») — sin respaldo para el contraste ETL/ELT: el documento no lo trata; no aporta argumento a la auditoría pendiente.
