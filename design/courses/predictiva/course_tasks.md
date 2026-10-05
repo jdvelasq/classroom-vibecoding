@@ -9,6 +9,7 @@
     *institutional*: ilustra una práctica; la corrobora ACM (siguiente fuente).
   - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 97–98 y DM-Classification — fuente *authoritative*: exige como T1 «at least one linear and one non-linear algorithm» para clasificación y regresión (con árboles de decisión como ejemplo), y «Apply at least two extensions (e.g., ensemble methods)» (bagged, boosted, random forests); T2 añade diagnosticar sesgo/varianza con «learning curves». Hoy predictiva no tiene ningún clasificador no lineal: P201, P203, P204 y P222 usan regresión logística (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` p. 1 — curso de Berkeley que introduce «machine learning tools including decision trees, neural networks and ensemble methods» (Claude, 2026-10-04).
+  - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 7–8 — módulo «Análisis predictivo I»: «Modelo sobreajustado», «Árboles de decisión y bosques aleatorios», «Optimización de hiperparámetros», «Métodos de conjunto» e «Interpretar un análisis» (Claude, 2026-10-04).
 - **Contribución distinta:** ninguna de P200–P225 usa árboles de decisión ni
   ensambles. Las familias actuales son lineales y logísticas (con términos
   derivados y regularización), MLP, modelos temporales, Markov, reglas y

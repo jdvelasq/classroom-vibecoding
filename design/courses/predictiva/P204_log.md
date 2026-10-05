@@ -139,3 +139,11 @@
 - **Resultado:** refuerza T01; aporta a N01.
 - **Señales descartadas relevantes:**
   - pruebas de permutación e intervalos de confianza (p. 1): se añade como fuente de T01.
+
+## S03.P204.13
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - máquinas de soporte vectorial (p. 8): marginal; otro clasificador para el mismo producto.

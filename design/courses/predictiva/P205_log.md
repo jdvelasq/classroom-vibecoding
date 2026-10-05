@@ -132,3 +132,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - decisión frecuentista y bayesiana, tasa de falsos descubrimientos (p. 1): marginal; el documento sólo enumera los temas, y P205 ya conecta probabilidad, umbral y consecuencias (H02).
+
+## S03.P205.13
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Conectar el análisis predictivo con un objetivo empresarial» (módulo prescriptivo, p. 8): ya cubierta como frontera entre umbral y política (H02–H03); el resto del módulo es prescriptivo.

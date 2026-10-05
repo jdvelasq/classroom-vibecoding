@@ -108,3 +108,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - ficha de catálogo (p. 1) con temas de inferencia y decisión; para esta actividad no añade una señal distinta de las ya registradas.
+
+## S03.P212.13
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - programa ejecutivo sin código (p. 2); para esta actividad no añade una señal distinta de las ya registradas.

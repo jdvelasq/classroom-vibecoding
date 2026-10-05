@@ -163,3 +163,12 @@
 - **Resultado:** sin cambios; aporta a N01.
 - **Señales descartadas relevantes:**
   - árboles de decisión y métodos de ensamble (p. 1): se añade como fuente de N01.
+
+## S03.P200.13
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
+- **Resultado:** sin cambios; aporta a N01.
+- **Señales descartadas relevantes:**
+  - sobreajuste, árboles, bosques aleatorios, ensambles e interpretación (pp. 7–8): se añade como fuente de N01.
+  - redes neuronales: cómo predicen y cómo elegir arquitectura (p. 8): ya cubierta en lo que el curso necesita (H08–H09).
