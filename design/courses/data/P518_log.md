@@ -113,3 +113,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - «develop a web server ... send data at your request. This data can be found in files or generated from machines or devices (eg. sensors)» (p. 13) — fuera de alcance: construir servidores de datos no es obtención de datos para una pregunta analítica.
+
+## S03.P518.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Data Platforms: Data Ingestion», «The Modern Data Stack», «Modern Data Stack Patterns» (p. 15); «Data Pipeline Automation» (p. 14) — fuera de alcance: arquitectura de plataformas y pipelines productivos.

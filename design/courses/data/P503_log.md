@@ -136,3 +136,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - Curso ejecutivo-técnico sobre historia de la web y la nube, contenedores, PKI, DevOps, serverless y cloud native, con casos (Microsoft, GE, Netflix, AWS). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P500_log.md`.
+
+## S03.P503.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - «Have the option to build a simple database using the SQLite database engine» (p. 7); «Structured Query Language (SQL) and Database Architecture», «Database Design», «SQL for Leaders» (p. 14) — ya cubierta: P503 (esquema relacional en SQLite) y P504–P508; el documento no aporta práctica más específica.

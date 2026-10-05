@@ -188,3 +188,14 @@
   - «Containers and Keys ... container orchestration ... Public Key Infrastructure» (p. 13); «Serverless», «Cloud Native ... Kubernetes» (p. 14–15) — fuera de alcance: infraestructura y arquitectura, excluidas por la frontera del curso.
   - métricas DevOps «Wait Time, Deployment Frequency, Service Restoration Time, and Failure Rate» (p. 14) — fuera de alcance: operación de software/productos de datos.
   - «Mobile and IoT: Everyone Generating Data» (p. 13) — marginal: contexto histórico sin práctica ni caso asociado.
+
+## S03.P500.14
+
+- **Fecha / executor:** 2026-10-05 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/mit-data-leadership.md` (`source_sha256`: 235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - Curso ejecutivo de 8 semanas sobre ecosistema de datos para líderes: IA, plataformas de datos, SQL y diseño de bases para líderes, nube, gobierno, ética y organización. Para esta actividad no añade una señal distinta.
+- **Señales de alcance de curso** (registradas sólo en este log):
+  - «Apply best practices in data governance and cybersecurity» (p. 7); «Data Governance and Compliance», «Ethics – AI Bias and Fairness» (p. 15) — marginal: enunciados sin práctica; la documentación responsable del curso (C04) ya se ejerce en P500 H03, P502 y P517; sesgo de modelos de IA es de otros cursos.
+  - «Leverage existing company data for success and derive value from dormant data» (p. 7); «Artisan vs. Factory» (p. 14) — fuera de alcance: estrategia organizacional sin caso ni datos.
