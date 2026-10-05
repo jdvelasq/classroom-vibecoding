@@ -246,3 +246,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - circular de la Dirección Académica (Sede Manizales) sobre la ruta de armonización curricular: acreditación por logros (Acuerdo 02 de 2020 del CESU), resultados de aprendizaje, PEP y planes de mejoramiento (pp. 1–4); opera en el nivel de programa y de proceso, sin contenidos que contrastar con esta actividad. La noción de resultados de aprendizaje es pertinente para la trazabilidad del curso (`traceability.yaml`), no para un cambio de taller.
+
+## S03.P202.27
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/unal-armonizacion-ejercicio-piloto.md` (`source_sha256`: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - memoria del ejercicio piloto de armonización curricular de la UNAL (contextos, dinámicas, prácticas pedagógicas y proyecciones, construidos en talleres con la comunidad académica). Lectura: estructura completa y capítulo de prácticas pedagógicas (pp. 67–94); el documento trata fines formativos, integración docencia–investigación–extensión y participación en el nivel institucional, sin contenidos ni prácticas de analítica predictiva que contrastar con esta actividad.
