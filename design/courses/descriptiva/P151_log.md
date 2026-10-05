@@ -446,3 +446,11 @@
   - dimensiones de cambio lento tipos 0–7 (pp. 15–16) — actividad nueva: N01 en `course_tasks.md`, no se incrusta en P151.
   - proceso de diseño en cuatro pasos y requisitos con el negocio (p. 4) — marginal: P151 ya separa hecho y grano (H01); el encuadre con el negocio es el de P120 T01.
   - dimensiones desnormalizadas frente a *snowflake* (p. 12) — ya cubierta: el mart es una estrella con dimensiones planas (H01).
+
+## S03.P151.54
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** refuerza T01; aporta a N01.
+- **Señales descartadas relevantes:**
+  - dimensiones de cambio lento tipo 1, 2 y 3 con ejercicio de diseño tipo 2 (p. 2) — registrada como fuente de N01 en `course_tasks.md`.

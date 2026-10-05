@@ -439,3 +439,11 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - técnicas oficiales de modelado dimensional de Kimball (hechos, dimensiones de calendario, dimensiones de cambio lento, dimensiones conformadas, jerarquías). Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P100_log.md`.
+
+## S03.P124.54
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Documento:** `design/benchmarks-md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` (`source_sha256`: 72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891).
+- **Resultado:** sin cambios.
+- **Señales descartadas relevantes:**
+  - dashboards, filtros y acciones en Tableau (p. 4) — la plataforma queda fuera de alcance (la frontera excluye la capacitación en una plataforma BI, no BI como tal); el tablero filtrable ya está en P124 H04.
