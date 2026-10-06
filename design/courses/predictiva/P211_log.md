@@ -10,6 +10,45 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites del caso temporal; no se modificó implementación.
 
+## S01.P211.03
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporaron T01 y T02 (`P211_tasks.md`).
+  - T01: evaluación *walk-forward* con 24 orígenes mensuales consecutivos (12
+    antes del bloque final y los 12 que lo componen, ventana expansiva). Sobre
+    el bloque final, Ridge gana en 10 de los 12 orígenes (83.3 %) con el mismo
+    MAE que H03 (126.5 s frente a 624.8 s), y mantiene el margen en los
+    orígenes anteriores: la ventaja de H03 no depende del corte único.
+  - T02: intervalo de predicción del 80 % por mes, construido con el percentil
+    80 del error absoluto de los orígenes móviles de T01 anteriores a cada
+    mes (margen simétrico alrededor del pronóstico, no cuantiles 10/90 del
+    error con signo — ver ajuste abajo). Cobertura empírica: 83.3 % (10/12
+    meses).
+- **Ajuste de diseño durante la ejecución:** T02 pedía cuantiles 10 %/90 % del
+  error (asimétrico), pero eso no garantiza `lower_80 <= forecast <= upper_80`
+  si el modelo tiene sesgo sistemático, y esa desigualdad es parte del
+  criterio de aceptación de T02. Se usó en su lugar un margen simétrico
+  (percentil 80 del error absoluto), que la garantiza por construcción y es
+  igualmente un método empírico estándar. `P211_tasks.md` se actualizó para
+  reflejar este ajuste antes de incorporarse.
+- **Cambios en la descripción S02:** se añadieron H05 (estabilidad temporal
+  con orígenes móviles) y H06 (intervalo de predicción), con sus filas en el
+  índice externo, la evidencia de highlights, S03 y el contrato de evidencia
+  actual; se actualizaron «Producto terminal» y «Uso y límite» para reflejar
+  que el pronóstico ya no es puramente puntual ni evaluado en un único corte.
+- **Implementación:**
+  `implementation/predictiva/P211_pronostico_congestion_servicio/` — notebook
+  del profesor (orígenes móviles, intervalo, gráficas y comentarios con la
+  lectura), `submission/rolling_origin_errors.csv`,
+  `submission/forecast_intervals.csv` y `.png`, y `tests/test_activity.py`
+  (`test_02`, `test_03`). H01–H04 y los cuatro artefactos previos se
+  conservan sin cambio de esquema; notebook y pruebas se ejecutaron sin
+  errores.
+- **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
+  evidencia de P211; H05 y H06 fortalecen C04 (evaluación) sin requerir una
+  capacidad nueva. Sin cambios en `implementation/predictiva/traceability.yaml`.
+- **`P211_tasks.md`:** eliminado tras incorporar sus dos propuestas (T01, T02).
+
 ## S03.P211.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
