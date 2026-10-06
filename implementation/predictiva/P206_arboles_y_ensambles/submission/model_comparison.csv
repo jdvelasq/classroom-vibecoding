@@ -1,0 +1,6 @@
+model,test_mse
+gradient_boosting,5.254938688296291
+random_forest,5.710429797468348
+linear_model,10.022424640636538
+decision_tree_depth_7,15.3917466343904
+naive_mean_baseline,62.18813462951534

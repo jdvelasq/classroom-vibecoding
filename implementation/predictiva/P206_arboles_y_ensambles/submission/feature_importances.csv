@@ -1,0 +1,17 @@
+feature,importance,method
+numeric__Weight,0.3521735571703992,impureza
+numeric__Cylinders,0.2077739683051216,impureza
+numeric__Displacement,0.14784907349295207,impureza
+numeric__Horsepower,0.14447175463952883,impureza
+numeric__Model Year,0.11046255004017708,impureza
+numeric__Acceleration,0.031846659249116796,impureza
+origin__Origin_3,0.0020930230564721645,impureza
+origin__Origin_2,0.0017149394931374367,impureza
+origin__Origin_1,0.0016144745530948695,impureza
+Model Year,0.2452184364383849,permutacion
+Weight,0.2386024420709738,permutacion
+Horsepower,0.07356533414735564,permutacion
+Displacement,0.034445235425307086,permutacion
+Cylinders,0.03310897627136769,permutacion
+Acceleration,0.01633481246130334,permutacion
+Origin,0.005204035326381617,permutacion
