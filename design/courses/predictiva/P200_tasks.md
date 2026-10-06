@@ -5,7 +5,7 @@
 
 ## T01 — Encuadrar el primer producto predictivo: decisión, medida de éxito y línea base ingenua
 
-- **Estado:** pendiente de discusión
+- **Estado:** incoporado
 - **Tipo:** encuadre + producto/evidencia
 - **Fuentes:**
   - `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md`
@@ -89,7 +89,7 @@ Actividad: implementation/predictiva/P200_regresion_basica/
 
 ## T02 — Diagnosticar la especificación lineal con residuos y transformar la respuesta
 
-- **Estado:** pendiente de discusión
+- **Estado:** incorporado
 - **Tipo:** método/diagnóstico
 - **Fuentes:**
   - `design/benchmarks-md/professional-learning/sas-stat.md` p. 9 — en el
