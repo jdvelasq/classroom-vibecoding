@@ -36,6 +36,28 @@
 - **Decisión:** se añadió índice externo y vínculo H01–H05 con superficies actuales; se mantuvo el límite de no diagnóstico y no se alteró implementación.
 - **Auditoría de Analytics:** clasificación y evaluación sirven a una estimación binaria pedagógicamente limitada.
 
+## S01.P204.06
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporó T01 (`P204_tasks.md`): bootstrap pareado (B=2000,
+  semilla fija) sobre la muestra de prueba para la diferencia flexible − base de
+  AUC y exactitud. Ambos intervalos del 95 % incluyen cero (AUC: -0.001 a 0.024;
+  exactitud: -0.026 a 0.000); ninguna diferencia de H04 es distinguible del
+  ruido de muestreo de esta partición.
+- **Cambios en la descripción S02:** se precisó H04 (ya no afirma una «mejora»
+  no sostenida por el intervalo) y se añadió H06 (incertidumbre de la
+  comparación), con su fila en el índice externo, en la evidencia de highlights,
+  en S03 y en el contrato de evidencia actual.
+- **Implementación:** `implementation/predictiva/P204_clasificacion_basica_numerica/`
+  — notebook del profesor (bootstrap, gráfica de errorbar y comentario con la
+  lectura), `submission/difference_bootstrap.csv` y `tests/test_activity.py`
+  (`test_02`). H01–H05 y los cuatro artefactos previos se conservan sin cambio
+  de esquema; notebook y pruebas se ejecutaron sin errores.
+- **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
+  evidencia de P204; H06 fortalece C04 (evaluación) sin requerir una capacidad
+  nueva. Sin cambios en `implementation/predictiva/traceability.yaml`.
+- **`P204_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
+
 ## S03.P204.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.

@@ -40,13 +40,21 @@ especificaciones; el notebook prohíbe inferir diagnóstico clínico.
   sin este hito, la comparación se reduciría a escoger un algoritmo en vez de
   discutir una representación alternativa de las mismas mediciones.
 - **H04 — Evalúa ordenamiento y decisión como propiedades diferentes:** reporta AUC y
-  exactitud sobre una muestra estratificada reservada. La versión flexible mejora
-  AUC de 0.842 a 0.852, aunque baja exactitud de 0.754 a 0.746; sin este hito,
+  exactitud sobre una muestra estratificada reservada. La versión flexible cambia
+  el AUC de 0.842 a 0.852 y la exactitud de 0.754 a 0.746; sin este hito,
   una métrica única ocultaría la tensión entre clasificación por umbral y orden
-  probabilístico.
+  probabilístico. H06 cuantifica si estas diferencias puntuales superan el ruido
+  de muestreo.
 - **H05 — Conserva dos especificaciones comparables:** persiste estimadores base y
   flexible, comparación y metadatos de entradas. Sin estos artefactos, no se
   podría revisar qué variables y transformaciones corresponden a cada AUC.
+- **H06 — Cuantifica si la diferencia entre especificaciones supera el ruido de
+  muestreo:** genera un intervalo bootstrap pareado (B = 2000, mismos índices de
+  prueba remuestreados para ambos modelos) sobre la diferencia flexible − base de
+  AUC y exactitud. Los dos intervalos del 95 % incluyen cero (AUC: -0.001 a
+  0.024; exactitud: -0.026 a 0.000): ninguna de las diferencias de H04 es
+  distinguible del ruido de muestreo de esta partición de prueba. Sin este hito,
+  H04 se leería como una mejora sostenida que el intervalo no sostiene.
 
 ### Inventario técnico de implementación
 
@@ -57,6 +65,9 @@ especificaciones; el notebook prohíbe inferir diagnóstico clínico.
 - **Extiende:** ingeniería de características de P200 con cuadrado e interacción
   para una logística flexible.
 - **Reutiliza:** persistencia y añade comparación trazable de especificaciones.
+- **Introduce:** intervalo bootstrap pareado sobre la muestra de prueba para
+  cuantificar si una diferencia entre especificaciones supera el ruido de
+  muestreo.
 
 ### Índice de comparación externa
 
@@ -65,6 +76,7 @@ especificaciones; el notebook prohíbe inferir diagnóstico clínico.
 | Caso binario educativo | H01, H02 | Etiqueta histórica M y dos mediciones numéricas; probabilidad sin uso diagnóstico | Notebook del profesor; no hay validación clínica. |
 | Especificaciones comparables | H03, H05 | Logística base frente a cuadrado e interacción; estimadores y comparación persistidos | Notebook, `submission/`; no mide calibración ni utilidad. |
 | Evaluación de ordenamiento | H04 | AUC y exactitud de partición estratificada | `metrics.json`, `model_comparison.csv`; no evalúa equidad. |
+| Incertidumbre de la comparación | H06 | Intervalo bootstrap pareado de la diferencia AUC/exactitud entre especificaciones | `submission/difference_bootstrap.csv`; no evalúa variación de la partición ni del ajuste. |
 
 ### Relación técnica con actividades anteriores
 
@@ -83,6 +95,7 @@ una probabilidad, pero P204 todavía no fija umbral ni política.
 | H03 — Especificación flexible | S02 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: `texture_mean_squared`, interacción y `flexible_estimator` | La forma funcional se prueba sólo en este conjunto. |
 | H04 — AUC frente a exactitud | S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/model_comparison.csv`; `metrics.json`; notebook de profesor | AUC y exactitud no evalúan calibración, utilidad clínica ni equidad. |
 | H05 — Persistencia de comparación | S02, S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/`; `implementation/predictiva/P204_clasificacion_basica_numerica/tests/test_activity.py` | Las pruebas sólo verifican que existan los cuatro artefactos. |
+| H06 — Incertidumbre de la comparación | S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: bootstrap pareado y gráfica de intervalos; `implementation/predictiva/P204_clasificacion_basica_numerica/submission/difference_bootstrap.csv` | El intervalo sólo refleja variación de la muestra de prueba; no evalúa variación de la partición ni del ajuste de los coeficientes. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -90,15 +103,19 @@ una probabilidad, pero P204 todavía no fija umbral ni política.
 | --- | --- | --- | --- |
 | S01 | Caso clínico educativo y datos | `data/wisc_bc_data.csv`; notebook | No puede pasar a diagnóstico ni uso clínico por analogía. |
 | S02 | Variables y especificaciones | Notebook; estimadores `.pkl`; comparación | Dos variables base y dos derivadas determinan la comparación actual. |
-| S03 | Evaluación y producto | `metrics.json`; `model_comparison.csv`; pruebas | AUC y exactitud no prueban calibración, utilidad ni equidad. |
+| S03 | Evaluación y producto | `metrics.json`; `model_comparison.csv`; `difference_bootstrap.csv`; pruebas | AUC y exactitud no prueban calibración, utilidad ni equidad; el intervalo bootstrap no prueba variación de partición ni del ajuste. |
 
 ### Contrato de evidencia actual
 
-- **Notebook o código:** define clase M, separa, ajusta dos pipelines y compara
-  AUC y exactitud.
-- **`submission/`:** conserva ambos estimadores, comparación y metadatos.
-- **Pruebas:** exigen cuatro artefactos, sin validar sus métricas.
-- **Trazabilidad:** P204 mapea `predictiva.C01`–`C04`.
+- **Notebook o código:** define clase M, separa, ajusta dos pipelines, compara
+  AUC y exactitud, y cuantifica con un bootstrap pareado si esa diferencia
+  supera el ruido de muestreo.
+- **`submission/`:** conserva ambos estimadores, comparación, metadatos y el
+  intervalo bootstrap de la diferencia (`difference_bootstrap.csv`).
+- **Pruebas:** exigen cuatro artefactos sin validar sus métricas, y el archivo
+  del intervalo bootstrap con sus columnas y `ci_low <= ci_high` por métrica.
+- **Trazabilidad:** P204 mapea `predictiva.C01`–`C04`; H06 fortalece la
+  evidencia de C04 (evaluación) sin requerir una capacidad nueva.
 
 ### Dependencias en la secuencia
 
