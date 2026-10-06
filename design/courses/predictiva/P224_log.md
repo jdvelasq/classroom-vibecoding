@@ -13,6 +13,48 @@
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y tensión de identidad no resuelta; no se modificó implementación.
 
+## S01.P224.03
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporó T01 (`P224_tasks.md`), ampliada a solicitud del
+  profesor para cubrir también UMAP, no sólo PCA.
+  - PCA: `Pipeline(StandardScaler, PCA(k), LogisticRegression)` ajustado sólo
+    con entrenamiento, para k en [2, 5, 10, 20, 30, 40, 64], sobre la misma
+    partición y tipo de clasificador que P201 (test_size=0.5, random_state=0,
+    estratificada). El k=2 de H01 captura 22.0 % de varianza y clasifica el
+    54.4 % de los casos; la exactitud sube a 93.5 % (k=20) y 94.2 % (k=30),
+    con ganancias marginales después (96.3 % en k=64).
+  - UMAP (extensión pedida en la discusión, no estaba en el criterio de
+    aceptación original de T01): como UMAP sí admite `.transform()` sobre
+    datos nuevos, se replicó la misma evaluación fuera de muestra. Con k=2
+    alcanza 89.0 % y con k=5, 94.0 %, estabilizándose en 95.1 %-95.7 % desde
+    k≈20 — mucho más información predictiva que PCA con pocas componentes.
+  - t-SNE: se decidió explícitamente (pregunta al profesor) NO incluirlo en
+    la evaluación cuantitativa, porque no tiene transformación aplicable a
+    datos nuevos y cualquier número habría mezclado información de prueba en
+    el ajuste del embedding. Se mantiene sólo la explicación textual de esa
+    limitación.
+- **Cambios en la descripción S02:** H04 se reescribió (sustitución, no
+  adición) de «no genera estimador…» a la evaluación de PCA/UMAP; se
+  actualizaron «Producto analítico y límite de identidad», el índice externo,
+  la evidencia de highlights, S02–S04 y el contrato de evidencia actual. La
+  auditoría de identidad de la línea Predictiva, antes «sin resolver», queda
+  resuelta.
+- **Implementación:**
+  `implementation/predictiva/P224_reduccion_dimensionalidad/` — notebook del
+  profesor (curvas de PCA y UMAP, gráfico comparativo, comentarios con la
+  lectura) y `submission/pca_components_accuracy.csv/.png`,
+  `umap_components_accuracy.csv`, `components_accuracy_comparison.png`, y
+  `tests/test_activity.py` (`test_02`, `test_03`). H01–H03 y los tres PNG
+  originales se conservan sin cambio; notebook y pruebas se ejecutaron sin
+  errores.
+- **Trazabilidad:** sigue sin existir entrada P224 en
+  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a T01
+  y queda fuera de su alcance (ya registrada en S01.P224.01 como pendiente de
+  escalación). Resolver la identidad Predictiva no crea por sí sola esa
+  entrada.
+- **`P224_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
+
 ## S03.P224.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
