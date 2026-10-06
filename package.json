@@ -1,0 +1,16 @@
+{
+  "name": "vibecoding-project",
+  "version": "1.0.0",
+  "description": "A vibes-focused coding project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "vibes",
+    "coding",
+    "fun"
+  ],
+  "author": "",
+  "license": "MIT"
+}
