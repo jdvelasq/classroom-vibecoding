@@ -7,7 +7,7 @@
     p. 8 — «Regression Trees, Random Forest, Boosted Trees» dentro de «Modern
     Regression with High-Dimensional Data» (Claude, 2026-10-04). Fuente
     *institutional*: ilustra una práctica; la corrobora ACM (siguiente fuente).
-  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 97–98 y DM-Classification — fuente *authoritative*: exige como T1 «at least one linear and one non-linear algorithm» para clasificación y regresión (con árboles de decisión como ejemplo), y «Apply at least two extensions (e.g., ensemble methods)» (bagged, boosted, random forests); T2 añade diagnosticar sesgo/varianza con «learning curves». Hoy predictiva no tiene ningún clasificador no lineal: P201, P203, P204 y P222 usan regresión logística (Claude, 2026-10-04).
+  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 97–98 y DM-Classification — fuente *authoritative*: exige como T1 «at least one linear and one non-linear algorithm» para clasificación y regresión (con árboles de decisión como ejemplo), y «Apply at least two extensions (e.g., ensemble methods)» (bagged, boosted, random forests); T2 añade diagnosticar sesgo/varianza con «learning curves». Hoy predictiva no tiene ningún clasificador no lineal: P201, P203, P204 y P223 usan regresión logística (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` p. 1 — curso de Berkeley que introduce «machine learning tools including decision trees, neural networks and ensemble methods» (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/cambridge-business-analytics.md` pp. 7–8 — módulo «Análisis predictivo I»: «Modelo sobreajustado», «Árboles de decisión y bosques aleatorios», «Optimización de hiperparámetros», «Métodos de conjunto» e «Interpretar un análisis» (Claude, 2026-10-04).
   - `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` pp. 8–9 — «Foundations of Machine Learning»: «Nonlinear Models for Regression and Classification: Classification and Regression Trees» y «…: Ensemble Learning» (realizar e interpretar un análisis CART), y «Interpretability and Causality in Models» en la parte avanzada (Claude, 2026-10-04).
@@ -17,7 +17,7 @@
   - `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` pp. 3–5 y 101–102 — ejemplos aplicados con árboles (C5.0, CHAID, C&RT y reglas inducidas) para clasificación y respuesta de clientes, comparados mediante tablas de ganancia y *lift* (Claude, 2026-10-04).
   - `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` pp. 27 y 83–84 — los árboles de decisión producen reglas que expresan la lógica del modelo («model transparency»), con confianza y soporte por regla (Claude, 2026-10-04).
   - `design/benchmarks-md/professional-learning/sas-data-mining.md` p. 8 — entre las técnicas de modelado figuran árboles de decisión y bosques aleatorios, con el contraste de transparencia frente a modelos de caja negra (Claude, 2026-10-04).
-- **Contribución distinta:** ninguna de P200–P225 usa árboles de decisión ni
+- **Contribución distinta:** ninguna de P200–P226 usa árboles de decisión ni
   ensambles. Las familias actuales son lineales y logísticas (con términos
   derivados y regularización), MLP, modelos temporales, Markov, reglas y
   vecinos. Un árbol introduce un mecanismo distinto: partir el espacio de
@@ -27,18 +27,26 @@
   la importancia de variables con sus limitaciones. Incrustarlo en P200
   añadiría otra fila de MSE a un taller que ya tiene diez highlights y es la
   puerta de entrada del curso, sin enseñar el mecanismo.
-- **Posición propuesta:** después de P205, al cierre del bloque supervisado
-  básico (P200–P205). Recibe de P200 y P204 el contrato de partición,
-  preprocesamiento, comparación sobre la misma partición y métricas (MSE;
-  AUC/exactitud). Habilita para P219 (búsqueda de hiperparámetros, como
-  profundidad o número de árboles) y para P221–P223 (contraste entre
-  importancia de variables, selección explícita y contracción de
-  coeficientes). Alternativa: ubicarla en el bloque P219–P223, que no
-  desplaza el núcleo pero la deja fuera del alcance de grupos lentos.
-- **Efecto en la secuencia:** insertarla después de P205 desplaza una
-  posición todas las actividades siguientes. Un grupo que hoy llega hasta
-  la última actividad dejaría de ver P225. P224 y P225 son justamente las dos
-  actividades cuya identidad Predictiva está sin resolver en S02.
+- **Posición aprobada:** después de P205, al cierre del bloque supervisado
+  básico (P200–P205), en el hueco **P206** ya reservado para esta actividad
+  (ver «Estado de la posición» más abajo). Recibe de P200 y P204 el contrato
+  de partición, preprocesamiento, comparación sobre la misma partición y
+  métricas (MSE; AUC/exactitud). Habilita para P220 (búsqueda de
+  hiperparámetros, como profundidad o número de árboles) y para P222–P224
+  (contraste entre importancia de variables, selección explícita y
+  contracción de coeficientes).
+- **Estado de la posición (2026-10-06):** el profesor aprobó esta ubicación
+  por su rol estructural (ver discusión registrada) y ya se ejecutó el
+  corrimiento mecánico: `P206`–`P225` pasaron a `P207`–`P226` en
+  `implementation/predictiva/`, `design/courses/predictiva/` y
+  `traceability.yaml`, dejando el número **P206 libre** para N01. Un grupo
+  que hoy llega hasta la última actividad ve `P226` (antes `P225`) en vez de
+  quedarse sin verla. De las dos actividades que antes tenían la identidad
+  Predictiva sin resolver, sólo **P226** (antes P225, estructura de mercado)
+  sigue sin resolver; **P225** (antes P224, reducción de dimensionalidad) se
+  resolvió aparte el mismo día. Falta escribir el contenido de N01
+  (`P206_activity.md`, implementación, pruebas, `traceability.yaml`) para
+  cerrar esta propuesta; esta entrada permanece hasta entonces.
 - **Caso y datos:** requiere definición. Opción de menor riesgo: reutilizar
   un caso ya conocido (Auto MPG de P200 para regresión, o el caso binario
   educativo de P204) para comparar los árboles con resultados que el
@@ -72,4 +80,4 @@
   base previa del mismo caso; persiste métricas e importancias en
   `submission/`; incluye pruebas y entrada en `traceability.yaml`; y su
   `Pxxx_activity.md` (S02) evidencia highlights propios, no duplicados de
-  P200, P204 ni P219.
+  P200, P204 ni P220.

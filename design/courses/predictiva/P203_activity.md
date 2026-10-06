@@ -105,7 +105,7 @@ indebidamente con texto reservado.
 
 - **Recibe de P202:** representación documento–término y decisiones auditables
   de preparación de texto.
-- **Habilita para P220:** clasificación de texto con vectorizador y estimador
+- **Habilita para P221:** clasificación de texto con vectorizador y estimador
   separados que luego se encapsulan en un pipeline.
 
 ## Mejoras aceptadas pendientes de implementación

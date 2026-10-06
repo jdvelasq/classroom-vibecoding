@@ -2,16 +2,14 @@
 
 ## S01.P222.01
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** inicial.
-- **Rutas inspeccionadas:** datos, notebook de profesor, `submission/`, pruebas y `traceability.yaml` de P222.
-- **Decisión:** se documentó selección de entradas, regularización y CV como contribuciones distintas; se registró que el caso clínico no evidencia uso diagnóstico.
-- **Trazabilidad:** no existe entrada P222; se escaló como vacío, sin inventar capacidades.
-- **Auditoría Analytics:** producto predictivo educativo preservado; identidad clínica/ML especializada no inferida.
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
+- **Decisión:** se clasificó como extensión técnica de P200, no como repetición:
+  añade selección de variables dentro de la evaluación reproducible.
 
 ## S01.P222.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y límite de no diagnóstico; no se modificó implementación.
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y ausencia de trazabilidad; no se modificó implementación.
 
 ## S03.P222.01
 
@@ -19,7 +17,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - precision/recall/F1 (p. 9): marginal para P222; la capacidad ya está en P203 y P205, y P222 se centra en la selección integrada.
+  - predicción con datos de alta dimensión y validación cruzada (p. 8): ya cubierta (H01–H02).
 
 ## S03.P222.02
 
@@ -27,9 +25,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - representatividad, calidad de datos y sesgo algorítmico (p. 5): H06 ya registra que faltan procedencia y población; Berkeley no proporciona evidencia para remediar esa limitación ni corrige un defecto específico del flujo de selección.
-  - supervisión humano–IA en contextos de alto riesgo (p. 5): no se añade como producto; P222 declara no diagnóstico y no hay usuario clínico, contexto asistencial ni datos autorizados para enseñar supervisión en práctica.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+  - calidad de datos, representatividad y por qué fallan los modelos (p. 5): no cubierta como capacidad en esta actividad ni en el curso (ningún taller trata representatividad o cambio de distribución entre entrenamiento y uso); no sustentada como propuesta por este documento, que sólo la enuncia en un programa ejecutivo. Señal a contrastar con fuentes *authoritative*.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; la selección integrada (H01–H02) no trata representatividad; se reformuló como señal no cubierta y no sustentada.
 
 ## S03.P222.03
 
@@ -37,7 +34,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sesgos algorítmicos y supervisión en contextos de alto riesgo (p. 5): ya cubierta como límite (H06: caso clínico educativo sin uso diagnóstico); sin grupos ni procedencia que permitan más.
+  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H02: búsqueda de k por validación cruzada).
+  - calidad de datos, representatividad y «por qué fallan los modelos» (p. 5): no cubierta; ningún taller del curso trata representatividad ni cambio de distribución entre entrenamiento y uso. No sustentada como propuesta por este documento (un enunciado en un programa ejecutivo sin método ni caso); señal a contrastar con fuentes *authoritative*.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P222.04
@@ -46,7 +44,8 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - selección de *features* para clasificación (DM-Classification, T1): ya cubierta (H02–H03).
+  - razones y métodos para reducir *features* (T2, p. 98): ya cubierta (H01–H02).
+  - representatividad de los datos («truly representative», PR p. 108; BDS p. 58): fuente *authoritative* que confirma la señal ya registrada; sigue sin una competencia técnica concreta (método, evaluación) que permita anclarla a un taller.
 
 ## S03.P222.05
 
@@ -54,7 +53,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - impulsores (*drivers*) del resultado (Task 2.2, p. 5): ya cubierta (H02–H03).
+  - impulsores (*drivers*) del resultado y su relación con la salida (Task 2.2, p. 5): ya cubierta (H01–H02: selección integrada).
 
 ## S03.P222.06
 
@@ -78,7 +77,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
+  - modelos que fallan cuando cambian los datos: «Google Flu Trends overpredicted… overreliance on outdated models» (p. 34) y relaciones que «will not necessarily hold in the next set of records» (p. 44): segunda fuente *authoritative* (con ACM) para la señal de representatividad y cambio de distribución; sigue sin método ni caso que permita anclarla a un taller.
 
 ## S03.P222.09
 
@@ -166,7 +165,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
+  - modelo predictivo con selección de *features* para regresión lineal (p. 12): ya cubierta (H01–H02).
 
 ## S03.P222.20
 
@@ -382,7 +381,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
+  - selección de predictores (*feature selection*) comparando modelos con todos y con los diez mejores predictores (cap. 9): ya cubierta (H01–H03).
 
 ## S03.P222.47
 
@@ -414,7 +413,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
+  - selección de *features* e importancia de atributos (cap. 9): ya cubierta (H01–H02).
 
 ## S03.P222.51
 
@@ -438,7 +437,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
+  - selección secuencial de variables (FORWARD, BACKWARD, STEPWISE, MAXR) y criterios Cp, AIC, BIC y R² ajustado (pp. 5, 91–94 y 160–178), con la advertencia de que tras seleccionar «the p-values for the parameter estimates are not valid» (p. 178): variante del mecanismo que H01–H02 ya enseñan (selección dentro del pipeline con `k` por validación cruzada). Fuente única; se registra como señal.
 
 ## S03.P222.54
 

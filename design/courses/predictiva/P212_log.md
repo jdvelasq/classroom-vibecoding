@@ -3,13 +3,51 @@
 ## S01.P212.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se registró Kaplan–Meier por contrato, incluida la censura, como
-  producto predictivo de tiempo hasta abandono y no como política de retención.
+- **Decisión:** se confirmó pronóstico aplicado a congestión como extensión de P211.
 
 ## S01.P212.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites de uso; no se modificó implementación.
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites del caso temporal; no se modificó implementación.
+
+## S01.P212.03
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporaron T01 y T02 (`P211_tasks.md`).
+  - T01: evaluación *walk-forward* con 24 orígenes mensuales consecutivos (12
+    antes del bloque final y los 12 que lo componen, ventana expansiva). Sobre
+    el bloque final, Ridge gana en 10 de los 12 orígenes (83.3 %) con el mismo
+    MAE que H03 (126.5 s frente a 624.8 s), y mantiene el margen en los
+    orígenes anteriores: la ventaja de H03 no depende del corte único.
+  - T02: intervalo de predicción del 80 % por mes, construido con el percentil
+    80 del error absoluto de los orígenes móviles de T01 anteriores a cada
+    mes (margen simétrico alrededor del pronóstico, no cuantiles 10/90 del
+    error con signo — ver ajuste abajo). Cobertura empírica: 83.3 % (10/12
+    meses).
+- **Ajuste de diseño durante la ejecución:** T02 pedía cuantiles 10 %/90 % del
+  error (asimétrico), pero eso no garantiza `lower_80 <= forecast <= upper_80`
+  si el modelo tiene sesgo sistemático, y esa desigualdad es parte del
+  criterio de aceptación de T02. Se usó en su lugar un margen simétrico
+  (percentil 80 del error absoluto), que la garantiza por construcción y es
+  igualmente un método empírico estándar. `P211_tasks.md` se actualizó para
+  reflejar este ajuste antes de incorporarse.
+- **Cambios en la descripción S02:** se añadieron H05 (estabilidad temporal
+  con orígenes móviles) y H06 (intervalo de predicción), con sus filas en el
+  índice externo, la evidencia de highlights, S03 y el contrato de evidencia
+  actual; se actualizaron «Producto terminal» y «Uso y límite» para reflejar
+  que el pronóstico ya no es puramente puntual ni evaluado en un único corte.
+- **Implementación:**
+  `implementation/predictiva/P211_pronostico_congestion_servicio/` — notebook
+  del profesor (orígenes móviles, intervalo, gráficas y comentarios con la
+  lectura), `submission/rolling_origin_errors.csv`,
+  `submission/forecast_intervals.csv` y `.png`, y `tests/test_activity.py`
+  (`test_02`, `test_03`). H01–H04 y los cuatro artefactos previos se
+  conservan sin cambio de esquema; notebook y pruebas se ejecutaron sin
+  errores.
+- **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
+  evidencia de P212; H05 y H06 fortalecen C04 (evaluación) sin requerir una
+  capacidad nueva. Sin cambios en `implementation/predictiva/traceability.yaml`.
+- **`P211_tasks.md`:** eliminado tras incorporar sus dos propuestas (T01, T02).
 
 ## S03.P212.01
 
@@ -17,7 +55,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el folleto no trata tiempo hasta evento; sin señales relevantes.
+  - el folleto no trata pronóstico temporal; Ridge (p. 8) ya cubierto en H03.
 
 ## S03.P212.02
 
@@ -25,7 +63,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización y gestión de riesgos (p. 2): marginal; P212 ya estima permanencia por contrato (H02–H03), pero trasladarlo a una oferta personalizada requeriría datos de intervención/resultado y una pregunta causal que el benchmark no suministra; la propuesta no altera ese límite.
+  - optimización de operaciones/cadena de suministro (p. 2): fuera de alcance para el producto predictivo de P212; convertir el pronóstico de congestión en recomendación de capacidad sería una segunda contribución prescriptiva, sin objetivo, restricciones ni autoridad definidos en los artefactos S02.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P212.03
@@ -34,7 +72,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización y gestión de riesgos (p. 2): fuera de alcance; elegir una oferta de retención está fuera del producto (H04).
+  - optimización de la cadena de suministro (p. 2): fuera de alcance; decidir capacidad sería un producto prescriptivo.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P212.04
@@ -43,7 +81,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sin competencias específicas de tiempo hasta evento.
+  - pronóstico con dependencias temporales (ML-Mixed Methods): ya cubierta (H02–H03).
 
 ## S03.P212.05
 
@@ -51,7 +89,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - frontera entre producto analítico y decisión (Domain II): ya cubierta (H04).
+  - línea base del estado actual (Task 2.5, p. 5): ya cubierta (H03: línea base estacional).
 
 ## S03.P212.06
 
@@ -83,7 +121,8 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
+  - «Backtesting de modelos» como habilidad demandada (Tabla 35, p. 97): los talleres temporales evalúan con un único corte retenido; la fuente *governmental* sólo nombra la habilidad, sin definir práctica. Señal a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P212.10
 
@@ -155,7 +194,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.
+  - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
 
 ## S03.P212.19
 
@@ -195,7 +234,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - análisis de supervivencia dentro de modelos lineales generalizados (p. 8): ya cubierta (H01–H03 con Kaplan–Meier).
+  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P212.24
 
@@ -275,7 +314,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - predicción del desempeño y la rotación de empleados (módulo 6, p. 1): otro dominio para un producto que P212 ya cubre (permanencia y abandono).
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
 
 ## S03.P212.34
 
@@ -307,7 +346,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Saber quién se irá todavía no nos dice qué debemos hacer» (caso de abandono, pp. 16, 18): ya cubierta (H04: elegir una intervención queda fuera del producto predictivo).
+  - presentación sobre metodologías para soluciones analíticas (KDD, CRISP-DM y sus evoluciones, dimensiones del proyecto); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P212.38
 
@@ -379,7 +418,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - regresión de Cox para modelar el tiempo hasta el abandono con covariables (cap. 26, pp. 291–295): S02 registra como límite que P212 «no produce predicción individual»; Cox lo haría. Fuente única de familia *professional-learning*; se registra como señal.
+  - pronósticos con intervalos de confianza que se abren a lo largo del horizonte (cap. 14, pp. 172–174): segunda fuente (con MIT Modeling & Simulation) para la señal de incertidumbre de pronóstico; pendiente de contrastar con SAS Forecasting.
 
 ## S03.P212.47
 
@@ -425,17 +464,24 @@
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
-- **Resultado:** sin cambios.
+- **Resultado:** propone T01 (evaluación con orígenes móviles) y T02 (intervalo de predicción).
 - **Señales descartadas relevantes:**
-  - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
+  - *Forecast Value Added* frente a un pronóstico ingenuo (p. 130): ya cubierta (H03: línea base estacional).
+  - monitoreo de errores de pronóstico con cartas de control (p. 10): según `AGENTS.md` corresponde a productos de datos.
+
+## Nota.P212.01
+
+- **Fecha / executor:** 2026-10-04 / Claude.
+- **Origen:** revisión de técnicas de scikit-learn pedida por el profesor (no es una revisión S03 de un benchmark).
+- **Cambio:** T01 admite `TimeSeriesSplit(n_splits=12, test_size=1)` como forma de generar los orígenes móviles; el criterio de aceptación no cambia.
 
 ## S03.P212.53
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
-- **Resultado:** sin cambios.
+- **Resultado:** refuerza T02 (fuente añadida: límites CLM frente a CLI).
 - **Señales descartadas relevantes:**
-  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
+  - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): no añade una señal distinta de T01.
 
 ## S03.P212.54
 
@@ -443,7 +489,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.
+  - tabla de hechos consolidada de ventas reales y pronósticos para analizar «actuals versus forecasts» (p. 9) — marginal: P212 ya compara el pronóstico con lo observado (H03) y T01 propone evaluarlo en varios orígenes; la estructura de almacenamiento es BI.
 
 ## S03.P212.55
 

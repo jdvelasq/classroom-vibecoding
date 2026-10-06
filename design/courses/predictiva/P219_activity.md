@@ -1,81 +1,84 @@
-# P219 — Hiperparámetros
+# P219 — Despliegue mediante API
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P219_hiperparametros/`.
+**Implementación:** `implementation/predictiva/P218_deployment_api/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Qué combinación de `alpha` y `l1_ratio` de ElasticNet ofrece mejor evidencia predictiva para calidad de vino?
-- ¿Cómo se contrasta una exploración manual con `GridSearchCV` sin usar los datos de prueba para escoger el modelo?
+- ¿Cómo puede otro proceso solicitar una predicción de precio de vivienda mediante HTTP?
+- ¿Qué contrato y validaciones debe cumplir la solicitud antes de usar el modelo?
 
-Entrena y compara modelos ElasticNet sobre calidad de vino; conserva el mejor
-estimador serializado.
+Expone un predictor serializado mediante FastAPI, con endpoint de salud,
+contrato Pydantic y un cliente que consume `/predict`.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** estima calidad de vino y compara configuraciones; no hay usuario o decisión de calidad evidenciados.
-- **Producto terminal:** ElasticNet persistido seleccionado por exploración y CV.
-- **Uso y límite:** separa ajuste/test; no documenta procedencia, incertidumbre ni uso operativo del dataset.
-- **Disciplinas contribuyentes:** regularización y búsqueda de parámetros sirven a evidencia predictiva.
+- **Pregunta, usuario o decisión:** permite a otro proceso obtener una estimación de precio mediante HTTP; no evidencia quién usa la respuesta ni con qué decisión.
+- **Producto terminal:** API con `/health`, `/predict`, validación Pydantic y cliente JSON.
+- **Uso y límite:** valida dominios básicos de entrada; no monitorea servicio, modelo, latencia, deriva ni autorización.
+- **Disciplinas contribuyentes:** APIs y validación sirven a una capacidad analítica interoperable.
 
 ### Highlights de contribución
 
-- **H01 — Hace visible el efecto de `alpha` y `l1_ratio`:** compara manualmente combinaciones antes de automatizar la búsqueda.
-- **H02 — Separa selección y evaluación:** usa `GridSearchCV` en entrenamiento y calcula MSE, MAE y R² sobre prueba.
-- **H03 — Conserva el estimador elegido:** recarga el objeto para comprobar su desempeño frente al modelo comparado.
-
-### Índice de comparación externa
-
-| Ancla actual | Hitos relacionados | Mecanismo observable | Límite |
-| --- | --- | --- | --- |
-| Exploración manual | H01 | ElasticNet con pares alpha/l1_ratio | No persiste tabla de comparaciones. |
-| CV/test | H02 | GridSearchCV, MSE/MAE/R² | Sin procedencia/incertidumbre. |
-| Artefacto | H03 | `estimator.pkl` | Test sólo presencia. |
+- **H01 — Formaliza la entrada como contrato interoperable:** `HouseFeatures` fija siete campos y restricciones de dominio antes de crear el `DataFrame`.
+- **H02 — Separa disponibilidad y predicción:** `/health` responde estado y `/predict` transforma una solicitud válida en JSON serializable.
+- **H03 — Hace verificable el consumidor:** `client.py` envía un ejemplo, exige éxito HTTP y devuelve JSON.
+- **H04 — Delimita el servicio:** modelo, linaje, autenticación, observabilidad y despliegue real no se evidencian.
 
 ### Inventario técnico de implementación
 
-- **Introduce:** partición entrenamiento/prueba, ElasticNet y métricas MSE, MAE
-  y R².
-- **Introduce:** exploración manual de `alpha` y `l1_ratio`, y búsqueda
-  sistemática con `GridSearchCV`.
-- **Verifica y comunica:** carga el estimador persistido y comprueba que la
-  elección por validación no es inferior en MAE al estimador comparado.
+- **Introduce:** FastAPI, endpoints GET/POST, serialización JSON y consumidor
+  HTTP con `requests`.
+- **Introduce:** `BaseModel` de Pydantic y restricciones de dominio para las
+  siete características de vivienda.
+- **Reutiliza:** modelo de precio y la transformación a `DataFrame` de P218,
+  pero sustituye interfaz manual por un contrato interoperable.
+
+### Índice de comparación externa
+
+| Ancla actual | Hitos relacionados | Mecanismo, dato o producto observable | Límite |
+| --- | --- | --- | --- |
+| Esquema de entrada | H01 | Pydantic/`Field` y orden de columnas | No valida distribución ni procedencia. |
+| Servicio HTTP | H02 | GET health y POST predict | No hay test de ejecución. |
+| Cliente | H03 | `requests.post`, timeout y JSON | URL local fija. |
+| Límite operativo | H04 | Código/ausencia de artefactos | Sin seguridad/observabilidad. |
 
 ### Relación técnica con actividades anteriores
 
-Extiende P200 y P221 desde entrenar un modelo a seleccionar sus parámetros con
-evidencia. Sin P219 se pierde la práctica de separar ajuste de hiperparámetros y
-evaluación final.
+Extiende P218 para que una capacidad predictiva pueda ser invocada por software
+en lugar de una persona. Sin P219 se pierde el contrato verificable entre un
+modelo y un consumidor programático.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: búsquedas manuales | Resultados no persistidos. |
-| H02 | S02 | Notebook: GridSearchCV/métricas | Partición fija. |
-| H03 | S03, S04 | Estimador y pruebas | No verifica valor ni reproducibilidad. |
+| H01 | S01 | `professor/server.py`: `HouseFeatures` | No hay validación de modelo. |
+| H02 | S02 | `health`, `predict`, `predict_price` | No se arranca servidor en pruebas. |
+| H03 | S03 | `professor/client.py` | Sólo ejemplo local. |
+| H04 | S04 | Código y pruebas | Ausencia no sustituye prueba de operación. |
 
 ### Superficies de cambio para revisión posterior
 
-| ID | Componente actual | Rutas afectadas | Restricción |
+| ID | Componente actual | Rutas afectadas | Restricción observable |
 | --- | --- | --- | --- |
-| S01 | Caso/calidad | Datos; notebook | Procedencia no documentada. |
-| S02 | ElasticNet/búsqueda | Notebook; `.pkl` | Test no participa en CV. |
-| S03 | Métricas/artefacto | Notebook; tests | Sin tabla persistida. |
-| S04 | Trazabilidad | YAML | Falta P219. |
+| S01 | Esquema/modelo | `server.py`; `.pkl` | Siete campos y orden fijo. |
+| S02 | Endpoints | `server.py` | Health no prueba modelo. |
+| S03 | Cliente | `client.py` | URL localhost fija. |
+| S04 | Prueba/trazabilidad | tests; YAML | Falta P219; tests sólo archivos. |
 
 ### Contrato de evidencia actual
 
-- **Código:** particiona, ajusta ElasticNet, busca parámetros y recarga modelo.
-- **`submission/`:** conserva estimador.
-- **Pruebas:** verifican sólo presencia.
+- **Código:** valida solicitud, carga modelo y devuelve predicción JSON.
+- **`submission/`:** no hay entrega separada; servidor/cliente son evidencia.
+- **Pruebas:** exigen archivos no vacíos, no una llamada HTTP.
 - **Trazabilidad:** falta P219.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P200/P221:** regresión, partición y selección.
-- **Habilita para P223:** contraste con Lasso, sin dependencia de código.
+- **Recibe de P218:** contrato de vivienda y modelo externo.
+- **Habilita para Pyyy:** no hay consumidor posterior demostrable.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -83,6 +86,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P219 en `implementation/predictiva/traceability.yaml`.
-La actividad conserva un estimador, pero necesita revisar su relación explícita
-con la pregunta de calidad antes de ser aprobada curricularmente.
+Es un producto de datos con disponibilidad y validación de entrada. No existe
+entrada P219 en `implementation/predictiva/traceability.yaml`; debe revisarse
+antes de aprobar la actividad.

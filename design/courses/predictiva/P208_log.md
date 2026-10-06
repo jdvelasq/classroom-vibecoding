@@ -3,12 +3,34 @@
 ## S01.P208.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Escalación:** falta entrada P208 en la trazabilidad del curso.
+- **Escalación:** falta entrada P208 en `traceability.yaml`.
 
 ## S01.P208.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites de simulación; no se modificó implementación.
+- **Rutas inspeccionadas:** `implementation/predictiva/P207_clustering_mercadeo/`
+  (notebook de profesor, entradas, perfiles, visualizaciones y pruebas). No hay
+  entrada P208 correspondiente en `implementation/predictiva/traceability.yaml`.
+- **Decisión:** se añadieron highlights para separar intereses de atributos
+  personales, limpiar edad, ponderar intereses con TF–IDF, seleccionar clusters,
+  justificar perfiles y persistir resultados.
+- **Límite y escalación:** se preserva la ausencia de trazabilidad; excluir
+  atributos personales de la entrada no elimina posibles proxies ni autoriza uso
+  automático de los segmentos para mercadeo.
+
+## S01.P208.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se asignaron H01–H07 y se documentaron superficies de datos,
+  representación, interpretación y trazabilidad, junto con dependencia
+  comprobada de P207. Se mantuvo como no demostrable cualquier dependencia con
+  P226.
+
+## S01.P208.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H07 con superficies existentes. Se preservaron la ausencia de trazabilidad y los límites sobre proxies y uso de segmentos.
+- **Auditoría de Analytics:** TF–IDF y clustering sirven a una explicación segmentada, no a una decisión automatizada de mercadeo.
 
 ## S03.P208.01
 
@@ -16,7 +38,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - modelos estocásticos de contagio en redes (p. 11): marginal; P208 ya modela contagio compartimental y el caso no tiene estructura de red.
+  - agrupación de textos por temas (p. 7): ya cubierta conceptualmente (H03: TF–IDF antes de KMeans).
 
 ## S03.P208.02
 
@@ -24,9 +46,10 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - simulaciones predictivas y gestión de riesgos (pp. 2, 4–5): ya cubiertas por escenarios SIR y picos (H02–H03); la señal no añade un contraste de aprendizaje material a la comparación existente.
-  - optimización de la cadena de suministro (p. 2): marginal; ejemplo genérico de aplicación sin relación con el caso de salud pública de P208.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; «capacidad de camas» no aparece en el documento (proviene de la descripción S02 de P208); se eliminó de la señal.
+  - analítica descriptiva frente a analítica predictiva (p. 5): señal relevante para la identidad Predictiva que S02 dejó sin resolver en esta actividad, cuyo producto actual es descriptivo; el documento sólo enuncia la distinción, sin caso ni criterio para resolverla. Queda como insumo para la decisión de curso, no como propuesta.
+  - personalización de experiencia del cliente/marketing (p. 2): fuera de alcance para la actividad tal como está anclada; P208 usa perfiles estudiantiles para describir intereses, no datos de clientes ni resultados futuros. Adaptar segmentos a targeting o acción exigiría otra pregunta, producto y evidencia de intervención, y no puede afirmarse sin caso apropiado.
+  - sesgo algorítmico, tolerancia al riesgo y gobernanza (pp. 5–6): marginal como temas generales; H01–H02 y los límites de uso ya reconocen riesgo de proxies, pero el folleto no define un criterio/evidencia de equidad operacional para este dataset.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se añadió la señal «analítica descriptiva frente a predictiva» (p. 5), omitida en la entrada original.
 
 ## S03.P208.03
 
@@ -34,7 +57,9 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - simulaciones predictivas (p. 4): ya cubierta (H02–H03: escenarios SIR con supuestos explícitos).
+  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una segmentación descriptiva de intereses (H05–H06). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
+  - personalización de la experiencia del cliente (p. 2): fuera de alcance; P208 no tiene datos de intervención ni de clientes y la segmentación no autoriza acción de mercadeo.
+  - sesgos algorítmicos (p. 5): ya cubierta como límite (H01: atributos personales excluidos de la segmentación; riesgo de proxies declarado).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P208.04
@@ -43,7 +68,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sin competencias específicas; modelos causales y procesos de decisión de Markov (AI, T1–T2) quedan fuera del producto predictivo.
+  - importancia de la selección de *features* para clustering e inicialización de k-means (DM-Cluster Analysis, T1): ya cubierta (H01, H04).
 
 ## S03.P208.05
 
@@ -51,7 +76,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - supuestos del problema analítico (Task 2.3, p. 5): ya cubierta (H04: supuestos persistidos).
+  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P208 (producto descriptivo).
 
 ## S03.P208.06
 
@@ -59,7 +84,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
+  - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad sin resolver (producto descriptivo).
 
 ## S03.P208.07
 
@@ -75,7 +100,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - evaluación de modelos y análisis de sensibilidad (p. 46): ya cubierta parcialmente (H02: escenarios con distintos supuestos de transmisión).
+  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P208.09
 
@@ -83,7 +108,8 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
+  - «Segmentación de datos» y «Perfiles y arquetipos» demandadas (Tabla 35, p. 97): respaldo de pertinencia laboral; no resuelve su identidad Predictiva.
+  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P208.10
 
@@ -155,8 +181,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - ecuaciones diferenciales ordinarias y método de Euler (módulo 2, p. 1): ya cubierta en lo que el caso necesita (H02: simulación SIR).
-  - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+  - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P208.19
 
@@ -276,7 +301,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - interpretar y visualizar resultados de simulación para evaluar decisiones bajo incertidumbre (módulo 5, p. 1): ya cubierta como escenarios (H02–H03); la evaluación de decisiones es prescriptiva.
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
 
 ## S03.P208.34
 
@@ -284,7 +309,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre el origen y la evolución de Business Analytics (1970–2026: bases de datos, BI, minería de datos, KDD, CRISP-DM, ciencia de datos, Big Data, DataOps, MLOps, modelos fundacionales, IA agéntica); su valor es de contexto histórico y conceptual. Para esta actividad no añade una señal distinta.
+  - tipos de analítica (p. 37): toca la identidad sin resolver de P208.
 
 ## S03.P208.35
 
@@ -308,7 +333,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre metodologías para soluciones analíticas (KDD, CRISP-DM y sus evoluciones, dimensiones del proyecto); para esta actividad no añade una señal distinta de las ya registradas.
+  - la segmentación aparece como método de la analítica descriptiva (p. 16): toca la identidad sin resolver de P208.
 
 ## S03.P208.38
 
@@ -428,7 +453,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - intervalos de predicción (pp. 7, 143): S02 registra «sin incertidumbre»; la propuesta se ubica en P211 (T02) y podría extenderse a los escenarios SIR después de discutirla.
+  - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P208.53
 

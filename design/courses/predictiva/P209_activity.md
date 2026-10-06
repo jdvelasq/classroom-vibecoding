@@ -1,77 +1,77 @@
-# P209 — SIR adaptativo
+# P209 — SIR básico
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P209_sir_adaptativo/`.
+**Implementación:** `implementation/predictiva/P208_sir_basico/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Cómo cambia el pronóstico epidemiológico cuando la tasa de infección se adapta a la evidencia temporal?
+- ¿Cómo representa un modelo SIR la evolución observada y escenarios de casos diarios en Colombia?
 
-Extiende el caso de casos diarios con evolución adaptativa, pronósticos, tasa de
-infección pronosticada, supuestos y picos de escenario.
+Usa casos diarios, compara ajuste, produce pronósticos, supuestos, evolución y
+picos de escenarios.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** pronostica casos activos proxy tras el inicio de vacunación; no demuestra efecto causal de la vacunación.
-- **Producto terminal:** contraste de pronósticos SIR estático y adaptativo con historial de tasas.
-- **Uso y límite:** actualiza la tasa después de observar cada día; no autoriza una intervención sanitaria.
-- **Disciplinas contribuyentes:** suavizamiento temporal y SIR sirven al producto predictivo de Analytics.
+- **Pregunta, usuario o decisión:** estima evolución de casos activos proxy y capacidad de camas; no hay autoridad sanitaria ni decisión evidenciadas.
+- **Producto terminal:** pronósticos y picos de escenarios SIR con supuestos persistidos.
+- **Uso y límite:** los diagnósticos y la ventana móvil de 14 días son proxys didácticos; no identifican infecciones reales ni autorizan políticas.
+- **Disciplinas contribuyentes:** modelado compartimental sirve al pronóstico de Analytics, no a una formación epidemiológica autónoma.
 
 ### Highlights de contribución
 
-- **H01 — Separa el corte antes de la vacunación:** reserva el tramo posterior para comparar pronósticos y evita que la tasa fija conozca observaciones futuras.
-- **H02 — Aprende una tasa que privilegia evidencia reciente:** aplica suavizamiento exponencial a la tasa inferida desde el proxy de activos.
-- **H03 — Contrasta actualización contra persistencia:** ejecuta SIR con tasa estática y con tasa adaptativa disponible al inicio de cada día.
-- **H04 — Persiste tasas, pronósticos, picos, visualización y supuestos:** deja auditable el vínculo entre aprendizaje y resultado.
+- **H01 — Construye un proxy temporal auditable:** convierte casos diarios colombianos en casos activos mediante ventana móvil de 14 días; sin ello, la variable SIR no tendría correspondencia explícita con el dato observado.
+- **H02 — Contrasta supuestos de transmisión:** ajusta una tasa constante sobre el tramo observado y compara escenarios sin seleccionar una política óptima.
+- **H03 — Traduce curvas a una señal de capacidad:** deriva día y necesidad de camas en el pico frente a una capacidad ilustrativa; no confunde ese resultado con una política sanitaria.
+- **H04 — Conserva la evidencia del escenario:** persiste pronósticos, comparación de ajuste, picos, gráfico y supuestos.
 
 ### Inventario técnico de implementación
 
-- **Extiende:** SIR básico con tasa de infección adaptativa.
-- **Introduce:** comparación entre parámetros fijos y evolución temporal del parámetro.
+- **Introduce:** modelo compartimental SIR, ajuste y comparación de evolución observada/esperada.
+- **Introduce:** escenarios y comunicación de supuestos de modelo.
 
 ### Índice de comparación externa
 
 | Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
 | --- | --- | --- | --- |
-| Corte temporal | H01 | Inicio de vacunación y evaluación posterior | No identifica efecto de vacunación. |
-| Tasa adaptativa | H02–H03 | Suavizamiento y pronósticos SIR comparados | Proxy y tasa no son transmisión real. |
-| Evidencia persistida | H04 | CSV, PNG y supuestos | Tests sólo comprueban archivos. |
+| Proxy y corte temporal | H01 | Casos diarios, frecuencia diaria y ventana móvil de 14 días | Casos reportados no son infecciones reales. |
+| Escenarios SIR | H02–H03 | Tasa constante, curvas y picos/camas | No hay incertidumbre ni política factible. |
+| Evidencia persistida | H04 | CSV, PNG y supuestos | Pruebas verifican archivos, no cálculos. |
 
 ### Relación técnica con actividades anteriores
 
-Extiende P208; sin P209 se pierde la revisión de un supuesto fijo frente a
-evidencia cambiante.
+Introduce simulación dinámica con datos temporales. Sin P209 se pierde el
+vínculo entre supuestos estructurales y pronóstico de escenarios.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: `vaccination_start`, training/evaluation | Corte no prueba causalidad. |
-| H02 | S02 | Notebook: `SimpleExpSmoothing` | Tasa proviene de un proxy. |
-| H03 | S02, S03 | Notebook; `forecasts.csv`; `scenario_peaks.csv` | No hay incertidumbre ni política. |
-| H04 | S04 | `submission/`; pruebas | Tests sólo verifican presencia. |
+| H01 | S01 | `professor/notebook.ipynb`; `data/colombia_daily_cases.csv.gz` | Ventana de 14 días es aproximación didáctica. |
+| H02 | S02 | Notebook: ajuste de tasa y escenarios | No identifica causalidad. |
+| H03 | S03 | Notebook; `submission/scenario_peaks.csv` | Camas/capacidad son ilustrativas. |
+| H04 | S04 | `submission/`; `tests/test_activity.py` | Tests sólo comprueban presencia. |
 
 ### Superficies de cambio para revisión posterior
 
 | ID | Componente actual | Rutas afectadas | Restricción observable |
 | --- | --- | --- | --- |
-| S01 | Corte y proxy temporal | Datos; notebook | Casos activos son aproximación. |
-| S02 | Suavizamiento y SIR | Notebook; `infection_rate_forecast.csv` | No infiere efecto de vacunación. |
-| S03 | Pronósticos comparados | `forecasts.csv`; `scenario_peaks.csv` | No es política. |
-| S04 | Entregas y pruebas | `submission/`; pruebas | Sólo se prueba existencia. |
+| S01 | Casos y proxy | Datos; notebook | No representan infecciones reales. |
+| S02 | SIR y escenarios | Notebook; `forecasts.csv` | No produce política sanitaria. |
+| S03 | Pico/capacidad | `scenario_peaks.csv`; supuestos | Capacidad es ilustrativa. |
+| S04 | Evidencia/pruebas | `submission/`; pruebas | Sólo se prueba existencia. |
 
 ### Contrato de evidencia actual
 
-- **Código:** infiere tasa, separa temporalmente, suaviza y simula dos pronósticos.
-- **`submission/`:** conserva tasas, pronósticos, picos, gráfico y supuestos.
-- **Pruebas:** verifican nombres de artefactos.
+- **Código:** construye proxy, ajusta tasa, simula y compara escenarios.
+- **`submission/`:** conserva curvas, picos, ajuste, gráfico y supuestos.
+- **Pruebas:** exigen los cinco artefactos, no su validez.
 - **Trazabilidad:** falta entrada P209.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P208:** proxy, modelo SIR y escenarios.
-- **Habilita para P210–P211:** comparación temporal con actualización y línea base, sin dependencia de código demostrable.
+- **Recibe de Pxxx:** no hay dependencia demostrable.
+- **Habilita para P210:** caso, estructura SIR y contraste entre supuestos fijos y actualizados.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -79,5 +79,5 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-Datos, notebooks, artefactos y pruebas sustentan el mapa. P209 no figura en
-`traceability.yaml`; se escala la omisión.
+Datos, notebooks, pronósticos, supuestos, pruebas sustentan el mapa. P209 no
+figura en `traceability.yaml`, por lo que se escala esa omisión.

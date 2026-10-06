@@ -1,117 +1,127 @@
-# P225 — Estructura de mercado
+# P225 — Reducción de dimensionalidad
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P225_estructura_mercado/`.
+**Implementación:** `implementation/predictiva/P224_reduccion_dimensionalidad/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Qué estructura de dependencia parcial aparece entre variaciones diarias de
-  acciones cargadas desde archivos de precios de apertura y cierre?
-- ¿Qué comunidades de acciones y qué disposición bidimensional permiten hacer
-  visible esa estructura?
+- ¿Cómo cambian las proyecciones bidimensionales de imágenes de dígitos cuando
+  se usan PCA, t-SNE y UMAP?
 
-Carga cotizaciones de numerosas acciones, calcula `close - open` por día,
-estima una precisión dispersa y entrega una red gráfica. Los archivos empiezan
-en 2003, pero no documentan fuente, cierre temporal, calidad de cotizaciones o
-uso permitido.
+Parte de `sklearn.datasets.load_digits`, proyecta las 64 intensidades de cada
+dígito y guarda tres gráficos. No entrena ni evalúa un predictor, ni declara
+usuario, decisión o producto predictivo.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** describe dependencias de mercado en un
-  conjunto histórico; no hay usuario, decisión de inversión o horizonte futuro
-  evidenciados.
-- **Producto terminal:** visualización de red de correlaciones parciales y
-  comunidades de acciones.
-- **Uso y límite:** permite explorar co-movimientos condicionados; no predice
-  precios, rendimientos o riesgo, ni autoriza inversión o recomendación.
-- **Disciplinas contribuyentes:** covarianza gráfica, clustering y embedding
-  sirven a una explicación estructural. El producto actual no es predictivo;
-  su identidad dentro de Predictiva queda sin resolver.
+- **Pregunta, usuario o decisión:** ¿cuántas componentes de una reducción de
+  dimensionalidad conservan suficiente información para clasificar el dígito?
+  No hay usuario ni decisión organizacional evidenciados; es un caso educativo.
+- **Producto terminal:** tres proyecciones visuales (PCA, t-SNE, UMAP) y una
+  curva de exactitud de prueba frente al número de componentes para PCA y
+  UMAP, con la varianza explicada acumulada de PCA.
+- **Uso y límite:** la curva evalúa, sobre una partición fija de este dataset
+  educativo, cuánta información retiene cada representación para clasificar;
+  no mide calibración, tiempo de cómputo ni estabilidad entre ejecuciones, y no
+  generaliza a otro conjunto de imágenes. t-SNE no admite transformación a
+  datos nuevos, por lo que no se evalúa fuera de muestra.
+- **Disciplinas contribuyentes:** reducción de dimensionalidad (lineal y no
+  lineal) sirve ahora a una estimación evaluada por exactitud retenida, no
+  sólo a exploración visual. La auditoría de identidad de la línea Predictiva
+  queda resuelta: PCA y UMAP son técnicas contribuyentes al servicio de un
+  producto predictivo.
 
 ### Highlights de contribución
 
-- **H01 — Convierte cotizaciones diarias en una matriz comparable:** apila
-  precios de apertura y cierre por símbolo y calcula `close - open`; al
-  transponer, las filas pasan a ser días y las columnas acciones. Esta
-  orientación permite modelar dependencia entre acciones, no entre días.
-- **H02 — Estima relaciones condicionales en vez de correlaciones brutas:** usa
-  `GraphicalLassoCV` sobre variaciones estandarizadas y deriva correlaciones
-  parciales desde la matriz de precisión. Sin este hito, una arista se leería
-  erróneamente como simple co-movimiento marginal.
-- **H03 — Agrupa acciones por estructura de dependencia:** aplica
-  `affinity_propagation` a la covarianza estimada y asigna comunidades. Sin
-  este paso, la red quedaría como conjunto de nodos sin una lectura de grupos.
-- **H04 — Hace visible la red con una disposición bidimensional:** calcula
-  `LocallyLinearEmbedding`, dibuja nodos, aristas parciales por encima de 0.02
-  y etiquetas, y persiste `stocks.png`. Sin ello, la estructura numérica no se
-  vuelve inspeccionable para una discusión.
-- **H05 — Delimita el producto financiero:** las variaciones intradía y sus
-  dependencias históricas describen estructura; no construyen pronóstico,
-  estrategia, backtest, incertidumbre ni recomendación de inversión.
-- **H06 — Reconoce el límite de procedencia y tiempo:** los múltiples CSV.gz
-  contienen fechas y precios, pero no manifiesto de fuente ni actualización.
-  Por tanto, la red no puede interpretarse como representación actual del
-  mercado.
+- **H01 — Contrasta tres formas de comprimir una imagen:** proyecta las 64
+  intensidades de `load_digits` a dos dimensiones con PCA, t-SNE y UMAP. Sin
+  este hito, las diferencias entre representación lineal y no lineal no quedan
+  visibles sobre la misma entrada.
+- **H02 — Conserva una evidencia visual por método:** guarda `digits_pca.png`,
+  `digits_tsne.png` y `digits_umap.png`, de modo que la comparación sobrevive
+  al notebook. Sin ello, la actividad no tendría artefactos revisables.
+- **H03 — Usa una entrada cuya forma importa:** cada observación representa una
+  imagen educativa de dígito con 64 intensidades, no un vector sin contexto; la
+  proyección permite observar proximidades entre clases, pero no prueba que las
+  etiquetas se preserven ni que una imagen sea clasificable.
+- **H04 — Evalúa cuánta información retienen PCA y UMAP para clasificar, no
+  sólo para verse bien en un gráfico:** entrena un clasificador logístico
+  sobre k componentes de PCA (con escalamiento previo) y, por separado, sobre
+  k componentes de UMAP ajustado sólo con entrenamiento y transformado a
+  prueba, para k en [2, 5, 10, 20, 30, 40, 64], sobre la misma partición y
+  tipo de clasificador que P201. El PCA de dos componentes que ilustra H01
+  captura sólo 22.0 % de la varianza y clasifica apenas el 54.4 % de los
+  casos; UMAP con las mismas dos componentes alcanza 89.0 %, y ambos se
+  acercan a su techo (96.3 % y 95.1 %-95.7 %, respectivamente) a partir de
+  k≈20-30. t-SNE no tiene una transformación aplicable a datos nuevos, por lo
+  que no se evalúa fuera de muestra. Sin este hito, P225 seguiría siendo
+  indistinguible de una demostración de reducción de dimensionalidad sin
+  producto predictivo.
 
 ### Inventario técnico de implementación
 
-- **Introduce:** carga múltiple de series, matriz días×acciones, estandarización,
-  `GraphicalLassoCV`, correlación parcial, affinity propagation y LLE.
-- **Verifica y comunica:** genera una red PNG con comunidades y aristas.
-- **No evidencia:** partición temporal, pronóstico, backtest, criterio de
-  inversión, incertidumbre o usuario de decisión.
+- **Introduce:** PCA, t-SNE y UMAP bidimensionales sobre `load_digits`.
+- **Verifica y comunica:** genera y persiste una visualización por método.
+- **Introduce:** evaluación predictiva retenida (exactitud de prueba y
+  varianza explicada) de PCA y UMAP en función del número de componentes,
+  sobre la misma partición y tipo de clasificador que P201.
 
 ### Índice de comparación externa
 
 | Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
 | --- | --- | --- | --- |
-| Matriz de mercado | H01 | Filas=días, columnas=acciones, variación close-open | Notebook; alineación de fechas no se valida explícitamente. |
-| Dependencia condicional | H02 | `GraphicalLassoCV` y precisión | Notebook; no prueba causalidad ni estabilidad temporal. |
-| Comunidades y red | H03–H04 | Affinity propagation, LLE y `stocks.png` | PNG; prueba sólo existencia. |
-| Límite predictivo/financiero | H05–H06 | Ausencia de pronóstico y de procedencia | Datos/notebook; no autoriza inversión. |
+| Proyección comparativa | H01 | PCA, t-SNE y UMAP a dos dimensiones | Notebook; parámetros y comparabilidad metodológica limitados. |
+| Evidencia visual persistida | H02 | Tres PNG en `submission/` | Pruebas sólo verifican su presencia. |
+| Imagen como dato | H03 | Dígitos 8×8 de `load_digits` | Evaluada por H04 para clasificación; no prueba que las etiquetas se preserven en la proyección visual. |
+| Representación evaluada | H04 | Exactitud de prueba y varianza explicada de PCA y UMAP frente a k | `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`; t-SNE no se evalúa (sin transformación a datos nuevos). |
 
 ### Relación técnica con actividades anteriores
 
-P225 cambia el pronóstico o clasificación de talleres previos por descripción
-de una red de dependencias entre activos. Puede aportar lectura de estructura a
-un caso financiero, pero no hay producto predictivo demostrable ni dependencia
-de código con otra actividad. Su ubicación en Predictiva requiere decisión
-posterior, no una inferencia de S01.
+P225 reutiliza el dataset de imágenes y el tipo de clasificador de P201, y
+ahora también su misma partición (test_size=0.5, random_state=0,
+estratificada). Extiende la exploración visual de representaciones con una
+pregunta propia: cuántas componentes de una reducción de dimensionalidad
+bastan para clasificar, no sólo para visualizarse. Su dependencia de P201
+pasa de conceptual a demostrable.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | `professor/notebook.ipynb`: `close_prices`, `open_prices`, `variation`, transposición | No documenta cómo se resuelven fechas faltantes entre símbolos. |
-| H02 | S02 | Notebook: `GraphicalLassoCV`, `precision_`, correlaciones parciales | Relación parcial no prueba causalidad ni predicción. |
-| H03 | S02 | Notebook: `affinity_propagation(edge_model.covariance_)` | No evalúa estabilidad de las comunidades. |
-| H04 | S03 | Notebook: LLE, `LineCollection`, `savefig`; `submission/stocks.png`; pruebas | Los tests no inspeccionan red, etiquetas ni umbral. |
-| H05 | S04 | Notebook y `submission/` | Ausencia de pronóstico no decide por sí sola su valor curricular. |
-| H06 | S01, S04 | `data/*.csv.gz`; notebook | No hay manifiesto de fuente o actualización. |
+| H01 | S01 | `professor/notebook.ipynb`: PCA, `TSNE`, `umap.UMAP` | No compara parámetros, tiempos ni fidelidad de cada proyección. |
+| H02 | S03 | Notebook: `savefig`; tres PNG en `submission/`; pruebas | Los tests no inspeccionan contenido visual. |
+| H03 | S01 | Notebook: `sklearn.datasets.load_digits` | Conjunto educativo sin caso organizacional. |
+| H04 | S02, S03, S04 | Notebook: `Pipeline(StandardScaler, PCA, LogisticRegression)`, `umap.UMAP(...).transform`; `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`, `components_accuracy_comparison.png`; pruebas | Resultado específico de este dataset y partición; no mide tiempo de cómputo, estabilidad entre ejecuciones ni calibración; t-SNE queda fuera por no admitir transformación a datos nuevos. |
 
 ### Superficies de cambio para revisión posterior
 
 | ID | Componente actual | Rutas afectadas | Restricción observable |
 | --- | --- | --- | --- |
-| S01 | Cotizaciones y matriz días×acciones | `data/*.csv.gz`; notebook | Fuente, cobertura y calidad no documentadas. |
-| S02 | Estructura gráfica y comunidades | Notebook | Modela dependencia parcial histórica, no pronóstico. |
-| S03 | Visualización de red | `submission/stocks.png`; pruebas | Umbral 0.02 y disposición 2D condicionan la lectura. |
-| S04 | Producto e identidad | Notebook; trazabilidad | No hay producto Predictivo ni entrada P225. |
+| S01 | Dataset y proyección | Notebook; `load_digits` | Las observaciones son imágenes educativas de 64 intensidades. |
+| S02 | Producto analítico | Notebook; `submission/` | Incluye evaluación predictiva retenida (PCA, UMAP) además de las tres visualizaciones; t-SNE sigue sin evaluación fuera de muestra. |
+| S03 | Evidencia y pruebas | Tres PNG; `pca_components_accuracy.csv/.png`; `umap_components_accuracy.csv`; `components_accuracy_comparison.png`; `tests/test_activity.py` | Las pruebas comprueban existencia y columnas, no significado visual ni estabilidad entre ejecuciones. |
+| S04 | Trazabilidad y secuencia | `traceability.yaml`; mapas P201/P225 | Identidad Predictiva resuelta por H04; sigue sin existir entrada P225 en `traceability.yaml` (brecha anterior, no creada por este cambio). |
 
 ### Contrato de evidencia actual
 
-- **Notebook o código:** carga series, deriva variaciones, estima dependencia,
-  agrupa y grafica una red.
-- **`submission/`:** conserva `stocks.png`.
-- **Pruebas:** verifican sólo que existe la imagen.
-- **Trazabilidad:** falta entrada P225 y requiere escalación.
+- **Notebook o código:** calcula tres proyecciones visuales y, por separado,
+  evalúa PCA y UMAP como representaciones predictivas (exactitud de prueba y
+  varianza explicada) en función del número de componentes, sobre la misma
+  partición y tipo de clasificador que P201.
+- **`submission/`:** conserva las tres proyecciones visuales, la tabla y
+  gráfico de PCA, y la tabla y gráfico comparativo de UMAP.
+- **Pruebas:** comprueban los tres PNG originales y la presencia/columnas de
+  los dos CSV y los dos PNG nuevos.
+- **Trazabilidad:** sigue sin existir entrada P225 en `traceability.yaml`;
+  esa brecha es anterior a H04 y queda fuera de su alcance.
 
 ### Dependencias en la secuencia
 
-- **Recibe de Pxxx:** no hay dependencia de código, dato o contrato demostrable.
-- **Habilita para Pyyy:** no hay actividad posterior implementada que reutilice
-  esta red.
+- **Recibe de P201:** dataset de dígitos, tipo de clasificador y partición
+  (test_size=0.5, random_state=0, estratificada); la dependencia pasa de
+  conceptual a demostrable.
+- **Habilita para Pyyy:** no hay dependencia predictiva demostrable.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -119,7 +129,8 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe entrada P225 en `implementation/predictiva/traceability.yaml`. El
-producto es una explicación gráfica de estructura de mercado; estadística,
-clustering y visualización lo sirven, pero no lo convierten en predicción ni en
-asesoría financiera.
+No existe entrada P225 en `implementation/predictiva/traceability.yaml`
+(brecha pendiente de escalación, anterior a este cambio). Con H04, el
+producto aporta una representación evaluada por exactitud predictiva
+retenida, no sólo exploración visual: la auditoría de identidad de la línea
+Predictiva queda resuelta.

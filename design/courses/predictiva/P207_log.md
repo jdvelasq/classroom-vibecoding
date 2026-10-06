@@ -3,34 +3,39 @@
 ## S01.P207.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Escalación:** falta entrada P207 en `traceability.yaml`.
+- **Decisión:** se registró clustering de demanda como rama no supervisada.
 
 ## S01.P207.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P207_clustering_mercadeo/`
-  (notebook de profesor, entradas, perfiles, visualizaciones y pruebas). No hay
-  entrada P207 correspondiente en `implementation/predictiva/traceability.yaml`.
-- **Decisión:** se añadieron highlights para separar intereses de atributos
-  personales, limpiar edad, ponderar intereses con TF–IDF, seleccionar clusters,
-  justificar perfiles y persistir resultados.
-- **Límite y escalación:** se preserva la ausencia de trazabilidad; excluir
-  atributos personales de la entrada no elimina posibles proxies ni autoriza uso
-  automático de los segmentos para mercadeo.
+- **Rutas inspeccionadas:** `implementation/predictiva/P206_clustering_demanda/`
+  (notebook de profesor, selección, perfiles, asignación y pruebas) y P207 en
+  `implementation/predictiva/traceability.yaml`.
+- **Decisión:** se añadieron highlights para el caso de demanda horaria: separar
+  forma y nivel, definir el día como perfil, elegir clusters con silueta,
+  interpretar centroides sin causalidad y asignar un perfil persistido.
+- **Límite:** la normalización elimina nivel absoluto; la actividad no pronostica
+  demanda ni define capacidad operativa.
 
 ## S01.P207.03
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se asignaron H01–H07 y se documentaron superficies de datos,
-  representación, interpretación y trazabilidad, junto con dependencia
-  comprobada de P206. Se mantuvo como no demostrable cualquier dependencia con
-  P225.
+- **Decisión:** se fijaron H01–H05 y se declararon superficies de serie,
+  clustering y producto, con contrato de evidencia y dependencia comprobada
+  hacia P208.
 
 ## S01.P207.04
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se añadió producto, índice externo y vínculo H01–H07 con superficies existentes. Se preservaron la ausencia de trazabilidad y los límites sobre proxies y uso de segmentos.
-- **Auditoría de Analytics:** TF–IDF y clustering sirven a una explicación segmentada, no a una decisión automatizada de mercadeo.
+- **Corrección:** H02 declara ahora la orientación filas=días, columnas=horas y
+  su consecuencia interpretativa: cada cluster es un arquetipo de forma diaria,
+  no una agrupación de horas individuales ni un pronóstico.
+
+## S01.P207.05
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadió producto, índice externo y vínculo H01–H05 con superficies actuales; se mantuvo que el clustering describe patrones, no pronostica demanda.
+- **Auditoría de Analytics:** normalización y clustering sirven al producto descriptivo limitado del taller.
 
 ## S03.P207.01
 
@@ -38,7 +43,8 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - agrupación de textos por temas (p. 7): ya cubierta conceptualmente (H03: TF–IDF antes de KMeans).
+  - K-means, evaluación de clustering, otras distancias y preprocesamiento (p. 7): ya cubiertas (H01–H03).
+  - clustering espectral y de modularidad (p. 7): marginal; otro algoritmo para la misma segmentación.
 
 ## S03.P207.02
 
@@ -47,8 +53,7 @@
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
   - analítica descriptiva frente a analítica predictiva (p. 5): señal relevante para la identidad Predictiva que S02 dejó sin resolver en esta actividad, cuyo producto actual es descriptivo; el documento sólo enuncia la distinción, sin caso ni criterio para resolverla. Queda como insumo para la decisión de curso, no como propuesta.
-  - personalización de experiencia del cliente/marketing (p. 2): fuera de alcance para la actividad tal como está anclada; P207 usa perfiles estudiantiles para describir intereses, no datos de clientes ni resultados futuros. Adaptar segmentos a targeting o acción exigiría otra pregunta, producto y evidencia de intervención, y no puede afirmarse sin caso apropiado.
-  - sesgo algorítmico, tolerancia al riesgo y gobernanza (pp. 5–6): marginal como temas generales; H01–H02 y los límites de uso ya reconocen riesgo de proxies, pero el folleto no define un criterio/evidencia de equidad operacional para este dataset.
+  - optimización de cadena de suministro y robótica (pp. 2, 5): fuera de alcance; P207 produce una descripción de perfiles diarios, no estimación futura ni política. Reorientarlo exigiría un producto distinto y datos/decisión de operación no presentes en el S02.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se añadió la señal «analítica descriptiva frente a predictiva» (p. 5), omitida en la entrada original.
 
 ## S03.P207.03
@@ -57,9 +62,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una segmentación descriptiva de intereses (H05–H06). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
-  - personalización de la experiencia del cliente (p. 2): fuera de alcance; P207 no tiene datos de intervención ni de clientes y la segmentación no autoriza acción de mercadeo.
-  - sesgos algorítmicos (p. 5): ya cubierta como límite (H01: atributos personales excluidos de la segmentación; riesgo de proxies declarado).
+  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es una segmentación descriptiva de perfiles de demanda (H04). El documento sólo enuncia la distinción, sin caso ni criterio; queda como insumo para la decisión de curso.
+  - aprendizaje no supervisado (p. 5): ya cubierta (H01–H05).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P207.04
@@ -68,7 +72,8 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - importancia de la selección de *features* para clustering e inicialización de k-means (DM-Cluster Analysis, T1): ya cubierta (H01, H04).
+  - calidad del clustering y selección del número de grupos (T1, p. 100; DM-Cluster Analysis): ya cubierta (H03).
+  - clustering basado en densidad (DM, T1): marginal; otro algoritmo para la misma segmentación.
 
 ## S03.P207.05
 
@@ -76,7 +81,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P207 (producto descriptivo).
+  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver de P207 (producto descriptivo); el documento no aporta criterio para resolverla.
 
 ## S03.P207.06
 
@@ -84,7 +89,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad sin resolver (producto descriptivo).
+  - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad sin resolver (producto descriptivo); sin criterio para resolverla.
 
 ## S03.P207.07
 
@@ -108,7 +113,7 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Segmentación de datos» y «Perfiles y arquetipos» demandadas (Tabla 35, p. 97): respaldo de pertinencia laboral; no resuelve su identidad Predictiva.
+  - «Segmentación de datos» y «Perfiles y arquetipos» aparecen como habilidades demandadas de «Modelado y analítica» (Tabla 35, p. 97): respaldo de pertinencia laboral para la segmentación descriptiva (H04: arquetipos diarios); no resuelve su identidad Predictiva.
   - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P207.10
@@ -133,7 +138,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - ficha de catálogo (p. 1) con temas de inferencia y decisión; para esta actividad no añade una señal distinta de las ya registradas.
+  - algoritmos de clustering (p. 1): ya cubierta (H03).
 
 ## S03.P207.13
 
@@ -189,7 +194,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
+  - k-means con scikit-learn (p. 10): ya cubierta (H03).
 
 ## S03.P207.20
 
@@ -285,7 +290,7 @@
 - **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - ficha de módulo de posgrado (temario indicativo, pp. 1–2); para esta actividad no añade una señal distinta de las ya registradas.
+  - clustering jerárquico, k-means y k-center, y elección de métricas de distancia (p. 1): ya cubierta en lo esencial (H01–H03); otros algoritmos serían variaciones.
 
 ## S03.P207.32
 
@@ -309,7 +314,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - tipos de analítica (p. 37): toca la identidad sin resolver de P207.
+  - tipos de analítica (descriptiva, predictiva, prescriptiva; p. 37): toca la identidad sin resolver de P207; sin criterio para resolverla.
 
 ## S03.P207.35
 
@@ -333,7 +338,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - la segmentación aparece como método de la analítica descriptiva (p. 16): toca la identidad sin resolver de P207.
+  - la segmentación aparece como método de la analítica descriptiva («¿Qué ocurrió?», p. 16): toca la identidad sin resolver de P207 (producto descriptivo).
 
 ## S03.P207.38
 
@@ -437,7 +442,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
+  - evaluación de un modelo de clustering y clustering jerárquico (cap. 7): ya cubierta en lo esencial (H03).
 
 ## S03.P207.51
 

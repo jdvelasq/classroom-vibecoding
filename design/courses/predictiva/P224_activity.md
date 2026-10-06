@@ -1,127 +1,112 @@
-# P224 — Reducción de dimensionalidad
+# P224 — Regularización Lasso
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P224_reduccion_dimensionalidad/`.
+**Implementación:** `implementation/predictiva/P223_lasso/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Cómo cambian las proyecciones bidimensionales de imágenes de dígitos cuando
-  se usan PCA, t-SNE y UMAP?
+- ¿Cómo cambia la predicción de MPG cuando una regresión penaliza coeficientes?
+- ¿Cómo se selecciona `alpha` sin usar la muestra de prueba para ajustar el
+  modelo?
 
-Parte de `sklearn.datasets.load_digits`, proyecta las 64 intensidades de cada
-dígito y guarda tres gráficos. No entrena ni evalúa un predictor, ni declara
-usuario, decisión o producto predictivo.
+Usa las 32 observaciones de `mtcars.csv`; estima MPG desde especificaciones del
+vehículo y persiste el `GridSearchCV` resultante. El conjunto es pequeño y no
+trae procedencia, periodo ni contexto operativo documentados.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** ¿cuántas componentes de una reducción de
-  dimensionalidad conservan suficiente información para clasificar el dígito?
-  No hay usuario ni decisión organizacional evidenciados; es un caso educativo.
-- **Producto terminal:** tres proyecciones visuales (PCA, t-SNE, UMAP) y una
-  curva de exactitud de prueba frente al número de componentes para PCA y
-  UMAP, con la varianza explicada acumulada de PCA.
-- **Uso y límite:** la curva evalúa, sobre una partición fija de este dataset
-  educativo, cuánta información retiene cada representación para clasificar;
-  no mide calibración, tiempo de cómputo ni estabilidad entre ejecuciones, y no
-  generaliza a otro conjunto de imágenes. t-SNE no admite transformación a
-  datos nuevos, por lo que no se evalúa fuera de muestra.
-- **Disciplinas contribuyentes:** reducción de dimensionalidad (lineal y no
-  lineal) sirve ahora a una estimación evaluada por exactitud retenida, no
-  sólo a exploración visual. La auditoría de identidad de la línea Predictiva
-  queda resuelta: PCA y UMAP son técnicas contribuyentes al servicio de un
-  producto predictivo.
+- **Pregunta, usuario o decisión:** predice MPG en el caso didáctico; no hay
+  usuario, decisión de flota ni uso organizacional evidenciados.
+- **Producto terminal:** regresión Lasso escalada, con `alpha` buscado por CV.
+- **Uso y límite:** permite contrastar penalización, coeficientes y desempeño
+  en train/test; no prueba causalidad ni rendimiento fuera de este conjunto.
+- **Disciplinas contribuyentes:** regularización, validación y regresión sirven
+  al producto predictivo de Analytics; no vuelven el taller un curso autónomo
+  de inferencia o de optimización.
 
 ### Highlights de contribución
 
-- **H01 — Contrasta tres formas de comprimir una imagen:** proyecta las 64
-  intensidades de `load_digits` a dos dimensiones con PCA, t-SNE y UMAP. Sin
-  este hito, las diferencias entre representación lineal y no lineal no quedan
-  visibles sobre la misma entrada.
-- **H02 — Conserva una evidencia visual por método:** guarda `digits_pca.png`,
-  `digits_tsne.png` y `digits_umap.png`, de modo que la comparación sobrevive
-  al notebook. Sin ello, la actividad no tendría artefactos revisables.
-- **H03 — Usa una entrada cuya forma importa:** cada observación representa una
-  imagen educativa de dígito con 64 intensidades, no un vector sin contexto; la
-  proyección permite observar proximidades entre clases, pero no prueba que las
-  etiquetas se preserven ni que una imagen sea clasificable.
-- **H04 — Evalúa cuánta información retienen PCA y UMAP para clasificar, no
-  sólo para verse bien en un gráfico:** entrena un clasificador logístico
-  sobre k componentes de PCA (con escalamiento previo) y, por separado, sobre
-  k componentes de UMAP ajustado sólo con entrenamiento y transformado a
-  prueba, para k en [2, 5, 10, 20, 30, 40, 64], sobre la misma partición y
-  tipo de clasificador que P201. El PCA de dos componentes que ilustra H01
-  captura sólo 22.0 % de la varianza y clasifica apenas el 54.4 % de los
-  casos; UMAP con las mismas dos componentes alcanza 89.0 %, y ambos se
-  acercan a su techo (96.3 % y 95.1 %-95.7 %, respectivamente) a partir de
-  k≈20-30. t-SNE no tiene una transformación aplicable a datos nuevos, por lo
-  que no se evalúa fuera de muestra. Sin este hito, P224 seguiría siendo
-  indistinguible de una demostración de reducción de dimensionalidad sin
-  producto predictivo.
+- **H01 — Hace visible la dependencia entre entradas del caso:** calcula y
+  grafica la matriz de correlación de especificaciones de 32 vehículos antes de
+  penalizar. Sin este hito, el uso de Lasso parecería una receta sin relación
+  con las variables que compiten por explicar MPG.
+- **H02 — Penaliza coeficientes sobre entradas comparables:** combina
+  `StandardScaler` y `Lasso(max_iter=10000)` en `Pipeline`, evitando que la
+  escala de cilindrada, potencia o peso determine artificialmente la penalidad.
+- **H03 — Muestra la trayectoria de contracción:** recorre valores de `alpha` y
+  grafica coeficientes por variable. Extiende la selección explícita de P222:
+  aquí la inclusión se controla al contraer coeficientes, no al elegir sólo k
+  columnas.
+- **H04 — Selecciona `alpha` con entrenamiento y validación cruzada:** busca
+  100 valores entre 0.01 y 2.0 por CV y sólo después reporta R² y MSE de prueba.
+  Sin este hito, la muestra de prueba podría convertirse en mecanismo de ajuste.
+- **H05 — Persiste el modelo regularizado elegido:** serializa el `GridSearchCV`
+  con escalamiento y Lasso. Sin este artefacto, la elección de `alpha` no podría
+  reutilizarse con su transformación asociada.
+- **H06 — Vincula la elección de modelo a la escala del dataset:** `mtcars` tiene
+  32 filas y diez entradas técnicas para MPG; esa relación pequeña exige leer
+  con prudencia cualquier comparación y prohíbe generalizar rendimiento.
 
 ### Inventario técnico de implementación
 
-- **Introduce:** PCA, t-SNE y UMAP bidimensionales sobre `load_digits`.
-- **Verifica y comunica:** genera y persiste una visualización por método.
-- **Introduce:** evaluación predictiva retenida (exactitud de prueba y
-  varianza explicada) de PCA y UMAP en función del número de componentes,
-  sobre la misma partición y tipo de clasificador que P201.
+- **Introduce:** inspección de correlación, Lasso, trayectorias de coeficientes
+  y selección de `alpha` por CV.
+- **Reutiliza:** partición, escalamiento, pipeline y métricas R²/MSE de P200 y
+  P220.
+- **Verifica y comunica:** guarda el estimador; las pruebas no validan su
+  desempeño ni los coeficientes.
 
 ### Índice de comparación externa
 
 | Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
 | --- | --- | --- | --- |
-| Proyección comparativa | H01 | PCA, t-SNE y UMAP a dos dimensiones | Notebook; parámetros y comparabilidad metodológica limitados. |
-| Evidencia visual persistida | H02 | Tres PNG en `submission/` | Pruebas sólo verifican su presencia. |
-| Imagen como dato | H03 | Dígitos 8×8 de `load_digits` | Evaluada por H04 para clasificación; no prueba que las etiquetas se preserven en la proyección visual. |
-| Representación evaluada | H04 | Exactitud de prueba y varianza explicada de PCA y UMAP frente a k | `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`; t-SNE no se evalúa (sin transformación a datos nuevos). |
+| Regularización escalada | H02–H04 | `StandardScaler` + Lasso, grilla de alpha y CV | Notebook; la grilla es fija y no se persisten resultados. |
+| Lectura de coeficientes | H01, H03 | Correlación y trayectoria por `alpha` | Notebook; no documenta criterio para seleccionar variables. |
+| Modelo reutilizable | H05 | `estimator.pkl` | Test de existencia solamente. |
+| Caso pequeño | H06 | 32 autos, MPG y 10 atributos | CSV; sin procedencia o contexto de uso. |
 
 ### Relación técnica con actividades anteriores
 
-P224 reutiliza el dataset de imágenes y el tipo de clasificador de P201, y
-ahora también su misma partición (test_size=0.5, random_state=0,
-estratificada). Extiende la exploración visual de representaciones con una
-pregunta propia: cuántas componentes de una reducción de dimensionalidad
-bastan para clasificar, no sólo para visualizarse. Su dependencia de P201
-pasa de conceptual a demostrable.
+P224 profundiza P220 y P222: P220 busca hiperparámetros para ElasticNet y P222
+selecciona k entradas; P224 visualiza cómo Lasso contrae coeficientes en el
+caso de MPG. No demuestra que Lasso sea preferible a los modelos de P200.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | `professor/notebook.ipynb`: PCA, `TSNE`, `umap.UMAP` | No compara parámetros, tiempos ni fidelidad de cada proyección. |
-| H02 | S03 | Notebook: `savefig`; tres PNG en `submission/`; pruebas | Los tests no inspeccionan contenido visual. |
-| H03 | S01 | Notebook: `sklearn.datasets.load_digits` | Conjunto educativo sin caso organizacional. |
-| H04 | S02, S03, S04 | Notebook: `Pipeline(StandardScaler, PCA, LogisticRegression)`, `umap.UMAP(...).transform`; `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`, `components_accuracy_comparison.png`; pruebas | Resultado específico de este dataset y partición; no mide tiempo de cómputo, estabilidad entre ejecuciones ni calibración; t-SNE queda fuera por no admitir transformación a datos nuevos. |
+| H01 | S01 | `professor/notebook.ipynb`: `df.corr()` y mapa de calor | Correlación no identifica causalidad. |
+| H02 | S02 | Notebook: `Pipeline(StandardScaler, Lasso)` | No se documentan variables categóricas ni transformaciones alternativas. |
+| H03 | S02 | Notebook: recorrido `alphas`, `coef_` y gráfica | La figura no se conserva en `submission/`. |
+| H04 | S02, S03 | Notebook: `GridSearchCV` y R²/MSE train/test | No se persisten métricas ni resultados de CV. |
+| H05 | S04 | Notebook: `pickle.dump`; `submission/estimator.pkl`; pruebas | La prueba sólo exige presencia. |
+| H06 | S01, S03 | `data/mtcars.csv`; notebook | Procedencia y representatividad no documentadas. |
 
 ### Superficies de cambio para revisión posterior
 
 | ID | Componente actual | Rutas afectadas | Restricción observable |
 | --- | --- | --- | --- |
-| S01 | Dataset y proyección | Notebook; `load_digits` | Las observaciones son imágenes educativas de 64 intensidades. |
-| S02 | Producto analítico | Notebook; `submission/` | Incluye evaluación predictiva retenida (PCA, UMAP) además de las tres visualizaciones; t-SNE sigue sin evaluación fuera de muestra. |
-| S03 | Evidencia y pruebas | Tres PNG; `pca_components_accuracy.csv/.png`; `umap_components_accuracy.csv`; `components_accuracy_comparison.png`; `tests/test_activity.py` | Las pruebas comprueban existencia y columnas, no significado visual ni estabilidad entre ejecuciones. |
-| S04 | Trazabilidad y secuencia | `traceability.yaml`; mapas P201/P224 | Identidad Predictiva resuelta por H04; sigue sin existir entrada P224 en `traceability.yaml` (brecha anterior, no creada por este cambio). |
+| S01 | Caso `mtcars` | `data/mtcars.csv`; notebook | Conjunto de 32 autos sin procedencia documentada. |
+| S02 | Escalamiento, Lasso y alpha | Notebook; `estimator.pkl` | La penalidad debe aplicarse a entradas escaladas. |
+| S03 | Comparación y visualización | Notebook | R²/MSE y trayectoria no se persisten. |
+| S04 | Entrega y prueba | `submission/estimator.pkl`; pruebas | Sólo se prueba existencia del archivo. |
+| S05 | Trazabilidad | `traceability.yaml` | No existe entrada P224. |
 
 ### Contrato de evidencia actual
 
-- **Notebook o código:** calcula tres proyecciones visuales y, por separado,
-  evalúa PCA y UMAP como representaciones predictivas (exactitud de prueba y
-  varianza explicada) en función del número de componentes, sobre la misma
-  partición y tipo de clasificador que P201.
-- **`submission/`:** conserva las tres proyecciones visuales, la tabla y
-  gráfico de PCA, y la tabla y gráfico comparativo de UMAP.
-- **Pruebas:** comprueban los tres PNG originales y la presencia/columnas de
-  los dos CSV y los dos PNG nuevos.
-- **Trazabilidad:** sigue sin existir entrada P224 en `traceability.yaml`;
-  esa brecha es anterior a H04 y queda fuera de su alcance.
+- **Notebook o código:** inspecciona correlación, particiona, escala, ajusta,
+  recorre alphas, busca por CV y serializa.
+- **`submission/`:** conserva `estimator.pkl`.
+- **Pruebas:** verifican sólo que existe el estimador.
+- **Trazabilidad:** falta entrada P224 y requiere escalación.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P201:** dataset de dígitos, tipo de clasificador y partición
-  (test_size=0.5, random_state=0, estratificada); la dependencia pasa de
-  conceptual a demostrable.
-- **Habilita para Pyyy:** no hay dependencia predictiva demostrable.
+- **Recibe de P200, P220 y P222:** regresión de MPG, pipeline, validación y
+  selección de entradas.
+- **Habilita para Pyyy:** no hay actividad posterior con dependencia técnica
+  demostrable; deja el contraste entre selección y contracción de coeficientes.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -129,8 +114,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe entrada P224 en `implementation/predictiva/traceability.yaml`
-(brecha pendiente de escalación, anterior a este cambio). Con H04, el
-producto aporta una representación evaluada por exactitud predictiva
-retenida, no sólo exploración visual: la auditoría de identidad de la línea
-Predictiva queda resuelta.
+No existe una entrada P224 en `implementation/predictiva/traceability.yaml`.
+El producto sigue siendo una predicción de MPG; Lasso es una contribución al
+modelo y no la lógica curricular autónoma.

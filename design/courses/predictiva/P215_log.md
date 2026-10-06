@@ -3,54 +3,22 @@
 ## S01.P215.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se documentó el cambio de asociación Apriori a vecinos de
-  usuarios y se registró como pendiente la ausencia de trazabilidad formal.
+- **Decisión:** se preservó la validación retenida y el límite causal de reglas
+  de asociación en la descripción de la actividad.
 
 ## S01.P215.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
-- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se dejó visible que faltantes no son malas calificaciones y que no hay evaluación retenida de ranking.
-- **Trazabilidad:** continúa ausente la entrada P215; no se infirieron capacidades aprobadas.
-
-## S01.P215.03
-
-- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
-- **Decisión:** se incorporó T01 (`P215_tasks.md`): evaluación retenida que
-  reserva el 15 % de las calificaciones de usuarios con al menos diez
-  calificaciones (semilla fija), recalcula medias/similitud/vecinos sólo con
-  entrenamiento y generaliza la regla de vecinos de H02–H03 a cada usuario
-  retenido, no sólo al 272. Sobre 5,005 calificaciones retenidas, el
-  filtrado colaborativo tiene menor error que el promedio de película (MAE
-  0.591 frente a 0.694; RMSE 0.775 frente a 0.881) en las retenidas que
-  ambos métodos pueden predecir, con 86.1 % de cobertura frente al 100 %
-  trivial de la línea base (que siempre tiene un respaldo en la media
-  global).
-- **Cambios en la descripción S02:** se añadió H05 (evaluación retenida),
-  con su fila en el índice externo, la evidencia de highlights, S03 y el
-  contrato de evidencia actual; se actualizó el límite de H03 (ya no
-  declara ausencia de evaluación retenida) y «Producto terminal».
-- **Implementación:**
-  `implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
-  profesor (holdout, recálculo con entrenamiento, predicción generalizada
-  por usuario, cobertura/MAE/RMSE, comentario con la lectura) y
-  `submission/holdout_evaluation.csv`, y `tests/test_activity.py`
-  (`test_02`). H01–H04 y los tres artefactos previos se conservan sin
-  cambio de esquema; notebook y pruebas se ejecutaron sin errores (el
-  notebook tarda ~4 minutos por el bucle sobre los usuarios retenidos).
-- **Trazabilidad:** sigue sin existir entrada P215 en
-  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a
-  T01 y queda fuera de su alcance (ya registrada en S02 como pendiente de
-  revisión).
-- **`P215_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
+- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia para permitir contraste posterior sin reabrir implementación.
+- **Auditoría Analytics:** se preservó asociación como producto predictivo condicional y se excluyó causalidad comercial.
 
 ## S03.P215.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
-- **Resultado:** propone T01 (contraste con línea base en calificaciones retenidas).
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - filtrado colaborativo ítem–ítem (p. 10): marginal; variante del mismo método.
-  - side-information, active learning y retos de sistema (p. 10): fuera de alcance; sin caso ni datos que los sustenten.
+  - el folleto no trata reglas de asociación; la recomendación se revisó en P216.
 
 ## S03.P215.02
 
@@ -58,9 +26,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización de experiencia del cliente (p. 2): aporta contexto, no una propuesta separada; la brecha material de P215 sigue siendo que aún no permite juzgar si sus recomendaciones superan una referencia en calificaciones no vistas (H03–H04, S03), que ya atiende T01.
-  - IA generativa y agentes (p. 6): fuera de alcance; P215 predice calificación con preferencias colaborativas y no hay tarea, datos ni criterio de evaluación del folleto para sustituir o añadir otro producto.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado era «propone T01», pero T01 la propuso la revisión del documento de MIT y este documento no le aporta evidencia; se revirtió además la edición de OpenWork en `P215_tasks.md` (fuente de Berkeley y campo «Interacciones»).
+  - personalización de experiencia del cliente (p. 2): ya cubierta como forma general de uso por la recomendación condicional de ítems (H03–H04); reemplazar la canasta didáctica por otra aplicación no suma una capacidad distinta ni mejora su validación retenida.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P215.03
 
@@ -68,41 +35,40 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización de la experiencia del cliente (p. 2): contexto genérico de recomendación; no aporta evidencia a T01 (propuesta por la revisión del documento de MIT), por lo que no se añade a sus fuentes.
+  - personalización de la experiencia del cliente (p. 2): contexto genérico de recomendación; no aporta método ni evaluación a H02–H04.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P215.04
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
-- **Resultado:** refuerza T01.
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - filtrado colaborativo (T2, p. 101): ya cubierta (H02–H03).
-  - evaluación contra línea base y separación entrenamiento/prueba en recomendadores (pp. 96, 101): se añade como fuente de T01.
+  - Apriori y reglas de asociación (DM-Pattern Mining, T2): ya cubierta (H02–H04).
 
 ## S03.P215.05
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
-- **Resultado:** refuerza T01.
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - línea base del estado actual (Task 2.5, p. 5): se añade como fuente de T01.
+  - validación fuera de la muestra de descubrimiento (Task 5.3): ya cubierta (H04).
 
 ## S03.P215.06
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
-- **Resultado:** refuerza T01.
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - línea base del estado actual (Task 2.5, p. 11): se añade como fuente de T01.
+  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
 
 ## S03.P215.07
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
-- **Resultado:** refuerza T01.
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - línea base del estado actual (CAP-P.2.5.1, p. 11): se añade como fuente de T01.
+  - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
 
 ## S03.P215.08
 
@@ -118,7 +84,7 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Modelos recomendación» demandados (Tabla 35, p. 97): ya cubierta; no aporta evidencia a T01.
+  - «Modelos recomendación» demandados (Tabla 35, p. 97): ya cubierta (H03).
   - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P215.10
@@ -143,7 +109,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sistemas de recomendación (p. 1): ya cubierta; no aporta evidencia a T01.
+  - sistemas de recomendación (p. 1): ya cubierta (H03).
 
 ## S03.P215.13
 
@@ -151,7 +117,7 @@
 - **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - caso Netflix: competencia para mejorar algoritmos de recomendación (p. 9): contexto; el folleto no describe cómo se evaluó, por lo que no se añade como fuente de T01.
+  - programa ejecutivo sin código (p. 2); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P215.14
 
@@ -207,7 +173,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - modelos de filtrado colaborativo y su diseño (módulo 8, p. 8): ya cubierta (H02–H03); el folleto no describe evaluación, por lo que no se añade a T01.
+  - certificado de ciencia de datos y analítica (currículo, pp. 7–9); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P215.21
 
@@ -271,7 +237,7 @@
 - **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sílabo de posgrado en analítica de datos de salud (calendario, pp. 9–10: preprocesamiento, exploración, probabilidad, regresión, patrones frecuentes, clasificación y predicción, clustering), con evaluación basada en un proyecto de minería de datos por entregas y un artículo de revisión; los temas coinciden con los ya cubiertos y el formato de proyecto integrador es una decisión de curso, no de esta actividad.
+  - patrones frecuentes, asociaciones y correlaciones (semana 10, p. 9): ya cubierta (H01–H04).
 
 ## S03.P215.29
 
@@ -415,7 +381,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
+  - análisis de canasta con inducción de reglas (cap. 27): ya cubierta (H02–H04).
 
 ## S03.P215.47
 
@@ -423,7 +389,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - ejemplo de recomendaciones de venta cruzada con criterio de éxito de negocio (+10 % de ventas cruzadas, pp. 9–10): contexto; evaluar el impacto en ventas excede la evaluación retenida de T01, que mide error de predicción.
+  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P215.48
 
@@ -447,7 +413,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
+  - Apriori: itemsets frecuentes, reglas y su evaluación (cap. 8): ya cubierta (H02–H04).
 
 ## S03.P215.51
 

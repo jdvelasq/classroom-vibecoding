@@ -28,7 +28,7 @@
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Decisión:** se fijaron H01–H05, superficies de caso/vectorización/evaluación,
-  contrato de evidencia y dependencias demostrables con P202 y P220.
+  contrato de evidencia y dependencias demostrables con P202 y P221.
 
 ## S01.P203.05
 

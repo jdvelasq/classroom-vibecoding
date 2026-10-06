@@ -3,7 +3,7 @@
 ## S01.P209.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Escalación:** trazabilidad ausente para P209.
+- **Escalación:** falta entrada P209 en la trazabilidad del curso.
 
 ## S01.P209.02
 
@@ -16,7 +16,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - filtro de Kalman (p. 11): marginal; formaliza la actualización adaptativa que H02 ya enseña con suavizamiento exponencial.
+  - modelos estocásticos de contagio en redes (p. 11): marginal; P209 ya modela contagio compartimental y el caso no tiene estructura de red.
 
 ## S03.P209.02
 
@@ -24,8 +24,9 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - simulaciones para predicción y gestión de riesgos (pp. 2, 4): ya cubiertas por el contraste de tasa estática/adaptativa y los supuestos persistidos (H02–H04); no añade evidencia de validación o incertidumbre que altere el pronóstico.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se eliminó la señal «menciones a vacunación (pp. 6, 9)»: el documento no menciona vacunación.
+  - simulaciones predictivas y gestión de riesgos (pp. 2, 4–5): ya cubiertas por escenarios SIR y picos (H02–H03); la señal no añade un contraste de aprendizaje material a la comparación existente.
+  - optimización de la cadena de suministro (p. 2): marginal; ejemplo genérico de aplicación sin relación con el caso de salud pública de P209.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; «capacidad de camas» no aparece en el documento (proviene de la descripción S02 de P209); se eliminó de la señal.
 
 ## S03.P209.03
 
@@ -33,7 +34,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - simulaciones predictivas (p. 4): ya cubierta (H03: contraste de pronósticos con tasa fija y adaptativa).
+  - simulaciones predictivas (p. 4): ya cubierta (H02–H03: escenarios SIR con supuestos explícitos).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P209.04
@@ -42,7 +43,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sin competencias específicas para el pronóstico adaptativo.
+  - sin competencias específicas; modelos causales y procesos de decisión de Markov (AI, T1–T2) quedan fuera del producto predictivo.
 
 ## S03.P209.05
 
@@ -50,7 +51,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - supuestos y calibración del modelo (Tasks 2.3, 5.4): ya cubierta (H02–H04).
+  - supuestos del problema analítico (Task 2.3, p. 5): ya cubierta (H04: supuestos persistidos).
 
 ## S03.P209.06
 
@@ -74,7 +75,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
+  - evaluación de modelos y análisis de sensibilidad (p. 46): ya cubierta parcialmente (H02: escenarios con distintos supuestos de transmisión).
 
 ## S03.P209.09
 
@@ -154,6 +155,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
+  - ecuaciones diferenciales ordinarias y método de Euler (módulo 2, p. 1): ya cubierta en lo que el caso necesita (H02: simulación SIR).
   - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
 
 ## S03.P209.19
@@ -274,7 +276,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
+  - interpretar y visualizar resultados de simulación para evaluar decisiones bajo incertidumbre (módulo 5, p. 1): ya cubierta como escenarios (H02–H03); la evaluación de decisiones es prescriptiva.
 
 ## S03.P209.34
 
@@ -378,7 +380,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - reentrenar un modelo mes a mes al llegar datos nuevos (cap. 18, p. 213): tercera fuente (con ACM y National Academies) para la señal de degradación de modelos; P209 ya enseña a actualizar un parámetro con evidencia reciente (H02–H03).
+  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P209.47
 
@@ -426,7 +428,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - modelos con cambio de régimen para capturar cambios estructurales (p. 9): marginal; P209 ya contrasta un supuesto fijo con una tasa que se adapta a la evidencia (H02–H03).
+  - intervalos de predicción (pp. 7, 143): S02 registra «sin incertidumbre»; la propuesta se ubica en P212 (T02) y podría extenderse a los escenarios SIR después de discutirla.
 
 ## S03.P209.53
 

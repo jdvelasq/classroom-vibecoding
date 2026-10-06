@@ -1,79 +1,82 @@
-# P221 — Selección de variables para regresión
+# P221 — Pipelines
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P221_selection_inputs_regresion/`.
+**Implementación:** `implementation/predictiva/P220_pipelines/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Qué subconjunto de características mejora la predicción de MPG de un automóvil?
-- ¿Cómo se selecciona el número de entradas sin separar esa selección del modelo?
+- ¿Cómo se conserva el procesamiento de texto junto con un clasificador de frases?
+- ¿Cómo se busca una configuración reproducible sin separar vectorización, transformación TF–IDF y modelo?
 
-Parte de Auto MPG y entrena una regresión lineal con `SelectKBest` y
-`f_regression` dentro de un pipeline evaluado.
+Empaqueta clasificación de frases en un `Pipeline` de `CountVectorizer`,
+`TfidfTransformer` y regresión logística, con búsqueda de parámetros y
+estimador persistido.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** predice MPG seleccionando entradas; no hay decisión de flota evidenciada.
-- **Producto terminal:** pipeline lineal persistido con número de entradas seleccionado por CV.
-- **Uso y límite:** conserva selección dentro del ajuste; no prueba causalidad ni procedencia del caso.
-- **Disciplinas contribuyentes:** selección estadística y CV sirven a predicción de MPG.
+- **Pregunta, usuario o decisión:** clasifica frases; no hay usuario o decisión financiera evidenciados.
+- **Producto terminal:** pipeline persistido que transporta vocabulario, TF–IDF y clasificador.
+- **Uso y límite:** protege consistencia de transformación/predicción; no evalúa calibración ni operación.
+- **Disciplinas contribuyentes:** ingeniería de pipeline y texto sirven al producto de clasificación.
 
 ### Highlights de contribución
 
-- **H01 — Selecciona entradas dentro del pipeline:** `SelectKBest(f_regression)` evita elegir columnas fuera del flujo evaluado.
-- **H02 — Busca `k` por validación cruzada:** separa número de entradas de evaluación final.
-- **H03 — Conserva modelo y selección conjuntamente:** el estimador persistido incluye el contrato de entrada.
-
-### Inventario técnico de implementación
-
-- **Introduce:** `SelectKBest`, prueba `f_regression` y búsqueda de cantidad de
-  variables en `GridSearchCV`.
-- **Reutiliza:** manejo de categoría de origen, partición y regresión de P200.
-- **Verifica y comunica:** compara MSE, MAE y R²; preserva el estimador elegido
-  como artefacto de entrega.
+- **H01 — Une representación y estimador:** `CountVectorizer`, TF–IDF y logística viajan en el mismo `Pipeline`.
+- **H02 — Busca configuración sin filtrar texto de prueba:** `GridSearchCV` selecciona parámetros con exactitud balanceada.
+- **H03 — Reutiliza un objeto completo:** persiste y recarga el pipeline para predecir desde texto crudo.
 
 ### Índice de comparación externa
 
-| Ancla | Hitos | Mecanismo | Límite |
+| Ancla actual | Hitos | Mecanismo | Límite |
 | --- | --- | --- | --- |
-| Selección integrada | H01–H02 | SelectKBest, f_regression, GridSearchCV | No persiste nombres/resultado de selección. |
+| Pipeline de texto | H01 | Vectorización/TF–IDF/logística | No explica vocabulario/resultados. |
+| Selección | H02 | CV y exactitud balanceada | Sin calibración. |
 | Reuso | H03 | `estimator.pkl` | Test sólo presencia. |
+
+### Inventario técnico de implementación
+
+- **Introduce:** `Pipeline` de transformación y estimador, persistencia con
+  `pickle` y predicción desde el objeto recuperado.
+- **Extiende:** clasificación textual de P203 mediante TF–IDF y
+  `GridSearchCV` con `balanced_accuracy`.
+- **Verifica y comunica:** contrasta precisión y exactitud balanceada de
+  entrenamiento/prueba y evita guardar un estimador peor que el actual.
 
 ### Relación técnica con actividades anteriores
 
-Profundiza P200 al tratar explícitamente qué información entra al modelo, y
-P220 al encapsular la transformación junto con el estimador. Sin P221 se pierde
-la competencia de justificar una regresión con selección reproducible de inputs.
+Reutiliza texto y clasificación de P202–P203, pero concentra el aprendizaje en
+la reproducibilidad del flujo completo. Sin P221 se pierde la garantía de que
+transformación y modelo viajan juntos al usarlo después.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: pipeline y `SelectKBest` | No persiste entradas. |
-| H02 | S02 | Notebook: grilla CV | Sin resultados CV persistidos. |
-| H03 | S03, S04 | Estimador y prueba | Test sólo archivo. |
+| H01 | S01 | `professor/notebook.ipynb` | Sin inspección persistida de vocabulario. |
+| H02 | S02 | Notebook: `GridSearchCV` | No persiste resultados CV. |
+| H03 | S03, S04 | `.pkl`; pruebas | Tests sólo existencia. |
 
 ### Superficies de cambio para revisión posterior
 
 | ID | Componente | Rutas | Restricción |
 | --- | --- | --- | --- |
-| S01 | Auto MPG/representación | Datos; notebook | `Origin` debe conservar codificación correcta. |
-| S02 | Selección y CV | Notebook; `.pkl` | Selección dentro de ajuste. |
-| S03 | Evidencia | Métricas/pruebas | Sin tabla de selección. |
+| S01 | Texto/pipeline | Notebook; `.pkl` | Transformación y modelo deben viajar juntos. |
+| S02 | CV/métrica | Notebook | Test fuera de búsqueda. |
+| S03 | Entrega/pruebas | submission/tests | Sólo presencia. |
 | S04 | Trazabilidad | YAML | Falta P221. |
 
 ### Contrato de evidencia actual
 
-- **Código:** particiona, selecciona, busca y serializa.
+- **Código:** ajusta, busca y serializa pipeline.
 - **`submission/`:** estimador.
 - **Pruebas:** presencia de archivo.
 - **Trazabilidad:** falta P221.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P200/P220:** Auto MPG, pipeline y contrato de transformación.
-- **Habilita para P222–P223:** contraste entre selección de columnas y regularización.
+- **Recibe de P202–P203:** texto, vectorización y clasificación.
+- **Habilita para P222:** pipeline como contrato, sin código común demostrado.
 
 ## Mejoras aceptadas pendientes de implementación
 

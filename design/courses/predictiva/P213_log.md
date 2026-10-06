@@ -3,8 +3,8 @@
 ## S01.P213.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se distinguió explícitamente la matriz de Markov predictiva de
-  una política prescriptiva de contacto o retención.
+- **Decisión:** se registró Kaplan–Meier por contrato, incluida la censura, como
+  producto predictivo de tiempo hasta abandono y no como política de retención.
 
 ## S01.P213.02
 
@@ -17,7 +17,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - Hidden Markov Models (p. 10–11): marginal; extiende la cadena de Markov de H03 con estados ocultos sin una capacidad predictiva distinguible para este caso.
+  - el folleto no trata tiempo hasta evento; sin señales relevantes.
 
 ## S03.P213.02
 
@@ -25,7 +25,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización del cliente y toma de decisiones con IA (pp. 2, 5): fuera de alcance para la pregunta de transición de estado siguiente; pasar de estimar estado a elegir contacto/retención sería otra contribución, sin evidencia de intervención ni regla de decisión en P213.
+  - personalización y gestión de riesgos (p. 2): marginal; P213 ya estima permanencia por contrato (H02–H03), pero trasladarlo a una oferta personalizada requeriría datos de intervención/resultado y una pregunta causal que el benchmark no suministra; la propuesta no altera ese límite.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P213.03
@@ -34,7 +34,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sin señales relevantes; el documento no trata transiciones de estado ni modelos de Markov.
+  - personalización y gestión de riesgos (p. 2): fuera de alcance; elegir una oferta de retención está fuera del producto (H04).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P213.04
@@ -43,7 +43,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - Hidden Markov Models para predicción de secuencias (T2, p. 101): marginal; P213 ya usa cadenas de Markov observables (H03).
+  - sin competencias específicas de tiempo hasta evento.
 
 ## S03.P213.05
 
@@ -51,7 +51,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - línea base del estado actual (Task 2.5, p. 5): ya cubierta (H03: persistencia del estado).
+  - frontera entre producto analítico y decisión (Domain II): ya cubierta (H04).
 
 ## S03.P213.06
 
@@ -195,7 +195,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
+  - análisis de supervivencia dentro de modelos lineales generalizados (p. 8): ya cubierta (H01–H03 con Kaplan–Meier).
 
 ## S03.P213.24
 
@@ -275,7 +275,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-program-modules.md` (`source_sha256`: 60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: módulos de analítica descriptiva, predictiva y prescriptiva de un programa ejecutivo. Para esta actividad no añade señales.
+  - predicción del desempeño y la rotación de empleados (módulo 6, p. 1): otro dominio para un producto que P213 ya cubre (permanencia y abandono).
 
 ## S03.P213.34
 
@@ -307,7 +307,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre metodologías para soluciones analíticas (KDD, CRISP-DM y sus evoluciones, dimensiones del proyecto); para esta actividad no añade una señal distinta de las ya registradas.
+  - «Saber quién se irá todavía no nos dice qué debemos hacer» (caso de abandono, pp. 16, 18): ya cubierta (H04: elegir una intervención queda fuera del producto predictivo).
 
 ## S03.P213.38
 
@@ -379,7 +379,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - redes bayesianas para predecir incumplimiento (cap. 17): marginal; otro modelo probabilístico sin relación con las transiciones de estado de H03.
+  - regresión de Cox para modelar el tiempo hasta el abandono con covariables (cap. 26, pp. 291–295): S02 registra como límite que P213 «no produce predicción individual»; Cox lo haría. Fuente única de familia *professional-learning*; se registra como señal.
 
 ## S03.P213.47
 
@@ -419,7 +419,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - definir el resultado del modelo (¿abandono es cancelar o inactividad?, ¿cuánto tiempo inactivo?) (p. 7): ya cubierta (H01: estados activo, latente e inactivo definidos de forma auditable).
+  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P213.52
 

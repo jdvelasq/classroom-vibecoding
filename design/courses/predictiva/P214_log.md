@@ -3,14 +3,13 @@
 ## S01.P214.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se preservó la validación retenida y el límite causal de reglas
-  de asociación en la descripción de la actividad.
+- **Decisión:** se distinguió explícitamente la matriz de Markov predictiva de
+  una política prescriptiva de contacto o retención.
 
 ## S01.P214.02
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
-- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia para permitir contraste posterior sin reabrir implementación.
-- **Auditoría Analytics:** se preservó asociación como producto predictivo condicional y se excluyó causalidad comercial.
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites de uso; no se modificó implementación.
 
 ## S03.P214.01
 
@@ -18,7 +17,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el folleto no trata reglas de asociación; la recomendación se revisó en P215.
+  - Hidden Markov Models (p. 10–11): marginal; extiende la cadena de Markov de H03 con estados ocultos sin una capacidad predictiva distinguible para este caso.
 
 ## S03.P214.02
 
@@ -26,7 +25,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización de experiencia del cliente (p. 2): ya cubierta como forma general de uso por la recomendación condicional de ítems (H03–H04); reemplazar la canasta didáctica por otra aplicación no suma una capacidad distinta ni mejora su validación retenida.
+  - personalización del cliente y toma de decisiones con IA (pp. 2, 5): fuera de alcance para la pregunta de transición de estado siguiente; pasar de estimar estado a elegir contacto/retención sería otra contribución, sin evidencia de intervención ni regla de decisión en P214.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P214.03
@@ -35,7 +34,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - personalización de la experiencia del cliente (p. 2): contexto genérico de recomendación; no aporta método ni evaluación a H02–H04.
+  - sin señales relevantes; el documento no trata transiciones de estado ni modelos de Markov.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P214.04
@@ -44,7 +43,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - Apriori y reglas de asociación (DM-Pattern Mining, T2): ya cubierta (H02–H04).
+  - Hidden Markov Models para predicción de secuencias (T2, p. 101): marginal; P214 ya usa cadenas de Markov observables (H03).
 
 ## S03.P214.05
 
@@ -52,7 +51,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - validación fuera de la muestra de descubrimiento (Task 5.3): ya cubierta (H04).
+  - línea base del estado actual (Task 2.5, p. 5): ya cubierta (H03: persistencia del estado).
 
 ## S03.P214.06
 
@@ -84,8 +83,7 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Modelos recomendación» demandados (Tabla 35, p. 97): ya cubierta (H03).
-  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
+  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P214.10
 
@@ -109,7 +107,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sistemas de recomendación (p. 1): ya cubierta (H03).
+  - ficha de catálogo (p. 1) con temas de inferencia y decisión; para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P214.13
 
@@ -237,7 +235,7 @@
 - **Documento:** `design/benchmarks-md/institutional/unf-cap-6768-data-analytics-syllabus.md` (`source_sha256`: cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - patrones frecuentes, asociaciones y correlaciones (semana 10, p. 9): ya cubierta (H01–H04).
+  - sílabo de posgrado en analítica de datos de salud (calendario, pp. 9–10: preprocesamiento, exploración, probabilidad, regresión, patrones frecuentes, clasificación y predicción, clustering), con evaluación basada en un proyecto de minería de datos por entregas y un artículo de revisión; los temas coinciden con los ya cubiertos y el formato de proyecto integrador es una decisión de curso, no de esta actividad.
 
 ## S03.P214.29
 
@@ -381,7 +379,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - análisis de canasta con inducción de reglas (cap. 27): ya cubierta (H02–H04).
+  - redes bayesianas para predecir incumplimiento (cap. 17): marginal; otro modelo probabilístico sin relación con las transiciones de estado de H03.
 
 ## S03.P214.47
 
@@ -413,7 +411,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - Apriori: itemsets frecuentes, reglas y su evaluación (cap. 8): ya cubierta (H02–H04).
+  - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P214.51
 
@@ -421,7 +419,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
+  - definir el resultado del modelo (¿abandono es cancelar o inactividad?, ¿cuánto tiempo inactivo?) (p. 7): ya cubierta (H01: estados activo, latente e inactivo definidos de forma auditable).
 
 ## S03.P214.52
 

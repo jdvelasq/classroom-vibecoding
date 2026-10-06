@@ -1,81 +1,83 @@
-# P214 — Recomendación mediante Apriori
+# P214 — Transición de estados de cliente
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P214_recomendacion_apriori/`.
+**Implementación:** `implementation/predictiva/P213_transicion_estados_cliente/`.
 
 ### Preguntas analíticas actuales
 
-- Dada una canasta parcial con fruta tropical y yogur, ¿qué producto es probable que complete esa misma canasta?
-- ¿La confianza de la regla se sostiene en transacciones no usadas para encontrarla?
+- ¿Cuál es la probabilidad de que un cliente cambie de estado de compra el próximo mes?
+- ¿Qué estado siguiente resulta más probable para cada estado observado?
 
-Usa canastas de compras para generar itemsets frecuentes, reglas de asociación,
-recomendaciones y validación sobre un segmento retenido.
+Construye y evalúa una matriz de transición de Markov con observaciones
+cliente-mes, pronósticos de estado, métricas, gráfico y supuestos.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** estima qué ítem puede completar una canasta parcial; no hay decisión comercial ni usuario operativo definidos.
-- **Producto terminal:** reglas, recomendaciones y confianza evaluada en canastas retenidas.
-- **Uso y límite:** asociación condicional no demuestra que recomendar produzca una compra adicional.
-- **Disciplinas contribuyentes:** minería de reglas sirve a una predicción condicional de Analytics.
+- **Pregunta, usuario o decisión:** estima el estado de compra siguiente; no establece acción de retención.
+- **Producto terminal:** matriz de transición, pronósticos por cliente-mes y comparación contra persistencia.
+- **Uso y límite:** estados se derivan de compras observadas; la matriz no prueba causas ni autoriza campañas.
+- **Disciplinas contribuyentes:** cadenas de Markov y evaluación temporal sirven al producto predictivo.
 
 ### Highlights de contribución
 
-- **H01 — Conserva la unidad transaccional:** cada fila se recupera como canasta completa de longitud variable; así soporte y coocurrencia no se reducen a columnas fijas.
-- **H02 — Separa descubrimiento y comprobación:** reserva el 20% de canastas antes de construir itemsets y reglas.
-- **H03 — Distingue frecuencia de señal condicional:** usa soporte, confianza y lift para recomendar consecuentes de `{tropical fruit, yogurt}`.
-- **H04 — Verifica la misma confianza fuera del entrenamiento y persiste reglas, recomendaciones y métricas.**
+- **H01 — Hace auditable el estado de cliente:** define activo, latente e inactivo desde compras consecutivas antes de estimar transiciones.
+- **H02 — Reserva transiciones completas:** aparta los últimos tres meses y estima la matriz sólo con historial previo.
+- **H03 — Lee una matriz como pronóstico probabilístico:** filas=estado actual, columnas=estado siguiente; compara la clase más probable con persistencia.
+- **H04 — Persiste matriz, muestra de pronósticos, métricas, gráfico y supuestos:** separa predicción de una intervención comercial.
 
 ### Inventario técnico de implementación
 
-- **Introduce:** Apriori, itemsets de pares y ternas, soporte, confianza y lift.
-- **Introduce:** evaluación de confianza en canastas retenidas y métricas de la
-  brecha de confianza.
-- **Verifica y comunica:** exporta distribución de canasta, reglas, itemsets,
-  recomendaciones, métricas y supuestos.
+- **Introduce:** definición auditable de estados activo, latente e inactivo;
+  tabulación cruzada y normalización de matriz de transición.
+- **Introduce:** modelo de Markov de primer orden, línea base que conserva el
+  estado y pronóstico por máxima probabilidad.
+- **Verifica y comunica:** contrasta pronósticos con observaciones y persiste
+  matriz, muestra evaluada, métricas y supuestos.
 
 ### Índice de comparación externa
 
 | Ancla actual | Hitos relacionados | Mecanismo, dato o producto ya observable | Evidencia y límite |
 | --- | --- | --- | --- |
-| Canastas variables | H01 | CSV gzip y recuperación de transacciones | No hay contexto comercial documentado. |
-| Regla retenida | H02–H04 | Apriori, soporte/confianza/lift y held-out confidence | Asociación no es efecto comercial. |
+| Estados cliente-mes | H01 | Definición observable de tres estados | No demuestra intención del cliente. |
+| Matriz temporal | H02–H03 | Markov de primer orden y baseline persistente | Sólo tres transiciones retenidas. |
+| Evidencia persistida | H04 | Matriz, pronósticos, métricas, PNG, supuestos | Tests sólo presencia. |
 
 ### Relación técnica con actividades anteriores
 
-P214 cambia el pronóstico por cliente o período por una predicción condicional
-dentro de una transacción. Sin P214 se pierde la relación entre patrón de
-coocurrencia, evidencia retenida y recomendación de ítem.
+Complementa P213: cambia la duración hasta un evento por transiciones
+mensuales entre estados. Sin P214 se pierde una representación probabilística
+recurrente de la evolución de clientes.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `groceries_baskets.csv.gz` | Procedencia no documentada. |
-| H02 | S02 | Notebook: split 80/20 | Segmento retenido no es aleatorio explícitamente. |
-| H03 | S02 | Notebook; reglas/recomendaciones CSV | Lift no prueba causalidad. |
-| H04 | S03, S04 | Métricas/entregas; pruebas | Tests sólo comprueban archivos. |
+| H01 | S01 | Notebook; `customer_month_states.csv.gz` | Estados son definición didáctica. |
+| H02 | S02 | Notebook: últimos tres meses | Horizonte pequeño. |
+| H03 | S02, S03 | Notebook; transición/forecast/metrics CSV | No causalidad ni política. |
+| H04 | S04 | `submission/`; pruebas | Tests no validan cálculos. |
 
 ### Superficies de cambio para revisión posterior
 
 | ID | Componente actual | Rutas afectadas | Restricción observable |
 | --- | --- | --- | --- |
-| S01 | Canastas/dataset | Datos; notebook | Unidad es transacción completa. |
-| S02 | Apriori/reglas | Notebook; reglas | No convertir asociación en intervención. |
-| S03 | Validación/producto | Métricas/recomendaciones | Confianza retenida, no uplift. |
-| S04 | Entregas/pruebas | `submission/`; tests | Presencia de archivos. |
+| S01 | Estados y tiempo | Datos; notebook | Diciembre parcial se excluye. |
+| S02 | Matriz/selección | Notebook; matriz CSV | Filas deben sumar uno. |
+| S03 | Baseline/evaluación | Métricas y pronósticos | Sin incertidumbre. |
+| S04 | Entrega/límite | Supuestos; pruebas | No hay política de retención. |
 
 ### Contrato de evidencia actual
 
-- **Código:** explora canastas, divide, descubre reglas y contrasta confianza retenida.
-- **`submission/`:** conserva itemsets, reglas, recomendaciones, métricas y figuras.
-- **Pruebas:** verifican artefactos, no cálculos.
+- **Código:** deriva matriz de Markov, evalúa contra persistencia y grafica.
+- **`submission/`:** conserva matriz, pronósticos, métricas, PNG y supuestos.
+- **Pruebas:** exigen archivos, no valores.
 - **Trazabilidad:** P214 mapea `predictiva.C01`–`C04`.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P213:** predicción condicionada y evaluación retenida, sin código común.
-- **Habilita para P215:** contraste entre coocurrencia de ítems y afinidad colaborativa.
+- **Recibe de P213:** temporalidad de cliente y límite entre predicción/intervención.
+- **Habilita para P215–P216:** comparación de productos de recomendación, sin dependencia de código demostrable.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -83,5 +85,5 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-Una asociación no demuestra que recomendar cause una compra adicional. La
+El producto estima transiciones, no causas ni intervenciones de retención. La
 entrada P214 de `traceability.yaml` mapea `predictiva.C01`–`C04`.

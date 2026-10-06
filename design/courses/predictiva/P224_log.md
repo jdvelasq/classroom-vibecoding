@@ -3,65 +3,23 @@
 ## S01.P224.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** inicial.
-- **Rutas inspeccionadas:** notebook de profesor, PNG de `submission/`, pruebas y trazabilidad de P224.
-- **Decisión:** se registró PCA/t-SNE/UMAP como comparación visual y no como producto predictivo.
+- **Rutas inspeccionadas:** datos, notebook de profesor, estimador persistido, pruebas y trazabilidad de P224.
+- **Decisión:** se separaron correlación, escalamiento, trayectoria Lasso y búsqueda de alpha para no reducir la actividad a «usa Lasso».
 - **Trazabilidad:** no existe entrada P224; se registró el vacío.
-- **Auditoría Analytics:** identidad Predictiva no resuelta; S01 no propone corregirla ni reubicarla.
+- **Auditoría Analytics:** producto MPG predictivo, sin afirmar decisión de flota ni causalidad.
 
 ## S01.P224.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y tensión de identidad no resuelta; no se modificó implementación.
-
-## S01.P224.03
-
-- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
-- **Decisión:** se incorporó T01 (`P224_tasks.md`), ampliada a solicitud del
-  profesor para cubrir también UMAP, no sólo PCA.
-  - PCA: `Pipeline(StandardScaler, PCA(k), LogisticRegression)` ajustado sólo
-    con entrenamiento, para k en [2, 5, 10, 20, 30, 40, 64], sobre la misma
-    partición y tipo de clasificador que P201 (test_size=0.5, random_state=0,
-    estratificada). El k=2 de H01 captura 22.0 % de varianza y clasifica el
-    54.4 % de los casos; la exactitud sube a 93.5 % (k=20) y 94.2 % (k=30),
-    con ganancias marginales después (96.3 % en k=64).
-  - UMAP (extensión pedida en la discusión, no estaba en el criterio de
-    aceptación original de T01): como UMAP sí admite `.transform()` sobre
-    datos nuevos, se replicó la misma evaluación fuera de muestra. Con k=2
-    alcanza 89.0 % y con k=5, 94.0 %, estabilizándose en 95.1 %-95.7 % desde
-    k≈20 — mucho más información predictiva que PCA con pocas componentes.
-  - t-SNE: se decidió explícitamente (pregunta al profesor) NO incluirlo en
-    la evaluación cuantitativa, porque no tiene transformación aplicable a
-    datos nuevos y cualquier número habría mezclado información de prueba en
-    el ajuste del embedding. Se mantiene sólo la explicación textual de esa
-    limitación.
-- **Cambios en la descripción S02:** H04 se reescribió (sustitución, no
-  adición) de «no genera estimador…» a la evaluación de PCA/UMAP; se
-  actualizaron «Producto analítico y límite de identidad», el índice externo,
-  la evidencia de highlights, S02–S04 y el contrato de evidencia actual. La
-  auditoría de identidad de la línea Predictiva, antes «sin resolver», queda
-  resuelta.
-- **Implementación:**
-  `implementation/predictiva/P224_reduccion_dimensionalidad/` — notebook del
-  profesor (curvas de PCA y UMAP, gráfico comparativo, comentarios con la
-  lectura) y `submission/pca_components_accuracy.csv/.png`,
-  `umap_components_accuracy.csv`, `components_accuracy_comparison.png`, y
-  `tests/test_activity.py` (`test_02`, `test_03`). H01–H03 y los tres PNG
-  originales se conservan sin cambio; notebook y pruebas se ejecutaron sin
-  errores.
-- **Trazabilidad:** sigue sin existir entrada P224 en
-  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a T01
-  y queda fuera de su alcance (ya registrada en S01.P224.01 como pendiente de
-  escalación). Resolver la identidad Predictiva no crea por sí sola esa
-  entrada.
-- **`P224_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y límites del caso `mtcars`; no se modificó implementación.
 
 ## S03.P224.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
-- **Resultado:** propone T01 (evaluar información predictiva de los componentes principales).
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - clustering espectral y embeddings de grafos (p. 7): marginal; más proyecciones sin producto predictivo.
+  - Lasso, Ridge y variantes (p. 8): ya cubierta (H02–H04; Ridge en P212, ElasticNet en P220).
 
 ## S03.P224.02
 
@@ -69,10 +27,9 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - analítica descriptiva frente a analítica predictiva (p. 5): señal relevante para la identidad Predictiva que S02 dejó sin resolver en esta actividad, cuyo producto actual es descriptivo; el documento sólo enuncia la distinción, sin caso ni criterio para resolverla. T01 ya atiende esa identidad; el documento no se agrega a sus fuentes porque no aporta evidencia a la mejora concreta.
-  - visión artificial, CNN, redes neuronales y capacidades emergentes (pp. 5–6): marginal; la lista técnica no cambia la capacidad pendiente en P224 —contrastar representación con desempeño predictivo— ni justifica añadir otra arquitectura al producto actual. T01 ya propone el menor cambio anclado a H01–H04/S01–S04.
-  - proyecto de negocio integrador y caso aplicado a la organización (p. 6): fuera de alcance para anclar un cambio a P224; esa posibilidad implicaría una contribución distinta de curso, con caso/datos definidos y conexión a decisión de negocio, no disponible en la descripción S02 de P224.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado decía «refuerza T01» y a la vez que el documento no la respalda, sin agregarlo a sus fuentes; se dejó «sin cambios» y se añadió la señal descriptiva/predictiva omitida.
+  - aprendizaje supervisado y validación (p. 5): ya cubiertos por H02–H04; no cambia la capacidad de leer contracción Lasso y seleccionar alpha para el producto MPG.
+  - ventaja competitiva y estrategia de IA (p. 5): fuera de alcance de la regresión educativa con mtcars; no existe una oportunidad de flota ni evidencia de negocio para vincular la predicción a un plan.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P224.03
 
@@ -80,18 +37,16 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - analítica descriptiva frente a analítica predictiva (p. 5): toca la identidad Predictiva que S02 dejó sin resolver; el producto actual es tres proyecciones visuales sin estimador (H04). El documento sólo enuncia la distinción, sin caso ni criterio; T01 (revisión del documento de MIT) ya atiende esa identidad; este documento no le aporta evidencia y no se añade a sus fuentes.
-  - visión artificial y redes convolucionales (p. 5): fuera de alcance; no cambia la capacidad pendiente que atiende T01.
+  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H04: alpha seleccionado por CV antes de la prueba).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P224.04
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
-- **Resultado:** refuerza T01.
+- **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - elegir el número de componentes de PCA y evaluar por utilidad para otra tarea (T1, p. 100): se añade como fuente de T01.
-  - otros métodos de reducción (ICA, NMF; T2–electiva): marginal.
+  - regularización (ML-General, T1): ya cubierta (H02–H04).
 
 ## S03.P224.05
 
@@ -99,7 +54,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - reformular el problema como descriptivo, predictivo o prescriptivo (Domain II, p. 4): toca la identidad sin resolver que ya atiende T01; no aporta evidencia a esa mejora concreta.
+  - encuadre del problema de negocio, *stakeholders* y medida de éxito (Domain I–II, pp. 4–5): S02 registra que esta actividad no tiene usuario ni decisión evidenciados; el hábito se propone en P200 (T01) y extenderlo aquí sería una propuesta por actividad, a decidir después de discutir P200 T01.
 
 ## S03.P224.06
 
@@ -107,7 +62,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - características de los métodos descriptivos frente a predictivos (Task 4.1, p. 17): toca la identidad que ya atiende T01; no aporta evidencia a esa mejora.
+  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
 
 ## S03.P224.07
 
@@ -123,7 +78,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - reducción de dimensionalidad y aprendizaje no supervisado (p. 46): ya considerada en T01; el documento sólo la enumera y no se añade como fuente.
+  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P224.09
 
@@ -243,7 +198,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - análisis de componentes principales (pp. 6, 8): sólo se enumera; no aporta evidencia a T01.
+  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P224.24
 
@@ -259,7 +214,7 @@
 - **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - reducción de dimensiones dentro de una evaluación de principio a fin (curso 3, p. 4): sólo se enumera; no aporta evidencia a T01.
+  - certificado profesional de ciencia de datos para negocios (estructura de contenidos, pp. 4–5); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P224.26
 
@@ -307,7 +262,7 @@
 - **Documento:** `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` (`source_sha256`: 6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - SVD y PCA aplicados al premio Netflix (p. 1): sólo se enumeran; no aportan evidencia a T01.
+  - ficha de módulo de posgrado (temario indicativo, pp. 1–2); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P224.32
 
@@ -459,7 +414,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` (`source_sha256`: 992a830c9173ff435cacf89e961713aeb8488d80ae74c5bd3ca267e1e5460b88).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - extracción de *features* (cap. 9): sólo se enumera; no aporta evidencia a T01.
+  - manual de conceptos de Oracle Data Mining 11g (funciones de minería, algoritmos y preparación). Lectura: índice completo y los capítulos de funciones (regresión, clasificación, anomalías, clustering, asociación, selección de atributos) y de árboles de decisión; los capítulos de API y del núcleo de base de datos no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P224.51
 
@@ -483,7 +438,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
+  - diagnósticos de colinealidad (VIF, número de condición; pp. 103–105) y trazas de ridge con VIF (Example 79.5, pp. 190–193): ya cubierta (H01: dependencia entre entradas; H03: trayectoria de contracción).
 
 ## S03.P224.54
 

@@ -1,82 +1,81 @@
-# P220 — Pipelines
+# P220 — Hiperparámetros
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P220_pipelines/`.
+**Implementación:** `implementation/predictiva/P219_hiperparametros/`.
 
 ### Preguntas analíticas actuales
 
-- ¿Cómo se conserva el procesamiento de texto junto con un clasificador de frases?
-- ¿Cómo se busca una configuración reproducible sin separar vectorización, transformación TF–IDF y modelo?
+- ¿Qué combinación de `alpha` y `l1_ratio` de ElasticNet ofrece mejor evidencia predictiva para calidad de vino?
+- ¿Cómo se contrasta una exploración manual con `GridSearchCV` sin usar los datos de prueba para escoger el modelo?
 
-Empaqueta clasificación de frases en un `Pipeline` de `CountVectorizer`,
-`TfidfTransformer` y regresión logística, con búsqueda de parámetros y
-estimador persistido.
+Entrena y compara modelos ElasticNet sobre calidad de vino; conserva el mejor
+estimador serializado.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** clasifica frases; no hay usuario o decisión financiera evidenciados.
-- **Producto terminal:** pipeline persistido que transporta vocabulario, TF–IDF y clasificador.
-- **Uso y límite:** protege consistencia de transformación/predicción; no evalúa calibración ni operación.
-- **Disciplinas contribuyentes:** ingeniería de pipeline y texto sirven al producto de clasificación.
+- **Pregunta, usuario o decisión:** estima calidad de vino y compara configuraciones; no hay usuario o decisión de calidad evidenciados.
+- **Producto terminal:** ElasticNet persistido seleccionado por exploración y CV.
+- **Uso y límite:** separa ajuste/test; no documenta procedencia, incertidumbre ni uso operativo del dataset.
+- **Disciplinas contribuyentes:** regularización y búsqueda de parámetros sirven a evidencia predictiva.
 
 ### Highlights de contribución
 
-- **H01 — Une representación y estimador:** `CountVectorizer`, TF–IDF y logística viajan en el mismo `Pipeline`.
-- **H02 — Busca configuración sin filtrar texto de prueba:** `GridSearchCV` selecciona parámetros con exactitud balanceada.
-- **H03 — Reutiliza un objeto completo:** persiste y recarga el pipeline para predecir desde texto crudo.
+- **H01 — Hace visible el efecto de `alpha` y `l1_ratio`:** compara manualmente combinaciones antes de automatizar la búsqueda.
+- **H02 — Separa selección y evaluación:** usa `GridSearchCV` en entrenamiento y calcula MSE, MAE y R² sobre prueba.
+- **H03 — Conserva el estimador elegido:** recarga el objeto para comprobar su desempeño frente al modelo comparado.
 
 ### Índice de comparación externa
 
-| Ancla actual | Hitos | Mecanismo | Límite |
+| Ancla actual | Hitos relacionados | Mecanismo observable | Límite |
 | --- | --- | --- | --- |
-| Pipeline de texto | H01 | Vectorización/TF–IDF/logística | No explica vocabulario/resultados. |
-| Selección | H02 | CV y exactitud balanceada | Sin calibración. |
-| Reuso | H03 | `estimator.pkl` | Test sólo presencia. |
+| Exploración manual | H01 | ElasticNet con pares alpha/l1_ratio | No persiste tabla de comparaciones. |
+| CV/test | H02 | GridSearchCV, MSE/MAE/R² | Sin procedencia/incertidumbre. |
+| Artefacto | H03 | `estimator.pkl` | Test sólo presencia. |
 
 ### Inventario técnico de implementación
 
-- **Introduce:** `Pipeline` de transformación y estimador, persistencia con
-  `pickle` y predicción desde el objeto recuperado.
-- **Extiende:** clasificación textual de P203 mediante TF–IDF y
-  `GridSearchCV` con `balanced_accuracy`.
-- **Verifica y comunica:** contrasta precisión y exactitud balanceada de
-  entrenamiento/prueba y evita guardar un estimador peor que el actual.
+- **Introduce:** partición entrenamiento/prueba, ElasticNet y métricas MSE, MAE
+  y R².
+- **Introduce:** exploración manual de `alpha` y `l1_ratio`, y búsqueda
+  sistemática con `GridSearchCV`.
+- **Verifica y comunica:** carga el estimador persistido y comprueba que la
+  elección por validación no es inferior en MAE al estimador comparado.
 
 ### Relación técnica con actividades anteriores
 
-Reutiliza texto y clasificación de P202–P203, pero concentra el aprendizaje en
-la reproducibilidad del flujo completo. Sin P220 se pierde la garantía de que
-transformación y modelo viajan juntos al usarlo después.
+Extiende P200 y P222 desde entrenar un modelo a seleccionar sus parámetros con
+evidencia. Sin P220 se pierde la práctica de separar ajuste de hiperparámetros y
+evaluación final.
 
 ### Evidencia de los highlights
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
 | --- | --- | --- | --- |
-| H01 | S01 | `professor/notebook.ipynb` | Sin inspección persistida de vocabulario. |
-| H02 | S02 | Notebook: `GridSearchCV` | No persiste resultados CV. |
-| H03 | S03, S04 | `.pkl`; pruebas | Tests sólo existencia. |
+| H01 | S01 | Notebook: búsquedas manuales | Resultados no persistidos. |
+| H02 | S02 | Notebook: GridSearchCV/métricas | Partición fija. |
+| H03 | S03, S04 | Estimador y pruebas | No verifica valor ni reproducibilidad. |
 
 ### Superficies de cambio para revisión posterior
 
-| ID | Componente | Rutas | Restricción |
+| ID | Componente actual | Rutas afectadas | Restricción |
 | --- | --- | --- | --- |
-| S01 | Texto/pipeline | Notebook; `.pkl` | Transformación y modelo deben viajar juntos. |
-| S02 | CV/métrica | Notebook | Test fuera de búsqueda. |
-| S03 | Entrega/pruebas | submission/tests | Sólo presencia. |
+| S01 | Caso/calidad | Datos; notebook | Procedencia no documentada. |
+| S02 | ElasticNet/búsqueda | Notebook; `.pkl` | Test no participa en CV. |
+| S03 | Métricas/artefacto | Notebook; tests | Sin tabla persistida. |
 | S04 | Trazabilidad | YAML | Falta P220. |
 
 ### Contrato de evidencia actual
 
-- **Código:** ajusta, busca y serializa pipeline.
-- **`submission/`:** estimador.
-- **Pruebas:** presencia de archivo.
+- **Código:** particiona, ajusta ElasticNet, busca parámetros y recarga modelo.
+- **`submission/`:** conserva estimador.
+- **Pruebas:** verifican sólo presencia.
 - **Trazabilidad:** falta P220.
 
 ### Dependencias en la secuencia
 
-- **Recibe de P202–P203:** texto, vectorización y clasificación.
-- **Habilita para P221:** pipeline como contrato, sin código común demostrado.
+- **Recibe de P200/P222:** regresión, partición y selección.
+- **Habilita para P224:** contraste con Lasso, sin dependencia de código.
 
 ## Mejoras aceptadas pendientes de implementación
 
@@ -85,4 +84,5 @@ No hay mejoras aceptadas pendientes.
 ## Trazabilidad y auditoría
 
 No existe una entrada P220 en `implementation/predictiva/traceability.yaml`.
-Debe revisarse antes de aprobar la actividad.
+La actividad conserva un estimador, pero necesita revisar su relación explícita
+con la pregunta de calidad antes de ser aprobada curricularmente.

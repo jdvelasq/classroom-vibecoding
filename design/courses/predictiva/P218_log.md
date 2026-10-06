@@ -3,13 +3,13 @@
 ## S01.P218.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se registró el contrato HTTP como extensión de P217 y se dejó
-  explícita la ausencia de trazabilidad formal.
+- **Decisión:** se identificó como producto de datos orientado a uso, no como
+  una nueva actividad de entrenamiento; se registró la trazabilidad ausente.
 
 ## S01.P218.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
-- **Decisión:** se añadieron highlights, anclas, superficies y contrato de evidencia; se registró que pruebas no ejecutan una llamada HTTP.
+- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se registró que la prueba sólo exige código no vacío.
 - **Trazabilidad:** continúa ausente la entrada P218.
 
 ## S03.P218.01
@@ -26,7 +26,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - supervisión humana, privacidad y gobernanza (pp. 5–6): ya presentes como límites pendientes del servicio (H04), pero el folleto no establece requisito de servicio, amenaza, usuario o política concreta; no justifica una modificación material al endpoint/cliente técnico.
+  - interacción humano–IA, supervisión y responsabilidad (p. 5): ya parcialmente cubierta por la entrega a una persona y manejo de errores (H01–H03), pero el folleto no concreta qué persona decide ni cuál es el uso autorizado del precio; no permite completar esos vacíos con rigor ni añade una mejora ejecutable al contrato de interfaz existente.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P218.03
@@ -35,7 +35,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - privacidad y gobernanza (pp. 5–6): no sustentada; sin requisito concreto de seguridad u observabilidad que añadir a H04.
+  - supervisión humana, privacidad y gobernanza (pp. 5–6): no sustentada; el documento no fija requisito de servicio, y H03 ya delimita monitoreo y procedencia como fuera del taller.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P218.04
@@ -44,7 +44,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - transición de un modelo a producción (T2, p. 97): ya cubierta parcialmente (H01–H04).
+  - transición de un modelo a producción (T2, p. 97): ya cubierta parcialmente (H01–H03); el documento no fija prácticas que añadir.
 
 ## S03.P218.05
 
@@ -52,7 +52,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - validación y verificación del despliegue (Tasks 6.5–6.6, p. 7): ya cubierta parcialmente (H01–H03).
+  - requisitos de una solución desplegada (Task 6.4, p. 7): ya cubierta parcialmente (H01: contrato de entrada).
   - seguimiento del desempeño, recalibración y efectos secundarios en el tiempo (Domain VII, p. 7): no cubierta; según `AGENTS.md`, hacer observable y mantenible una capacidad analítica es propio de la línea de productos de datos, por lo que no se propone en Predictiva.
 
 ## S03.P218.06
@@ -142,7 +142,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - programa de diseño de productos de IA (módulos, pp. 4–5: proceso de diseño, panorama de algoritmos de ML y deep learning, interacción humano–máquina, organizaciones «superminds», GANs); no detalla prácticas de modelado o evaluación que contrastar con esta actividad.
+  - diseño de interacción humano–máquina inteligente (Week 5, p. 5): marginal para la interfaz web de P218 (H02); el folleto no define requisitos concretos.
 
 ## S03.P218.17
 
@@ -166,7 +166,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
+  - aplicaciones con Flask (módulos 9–11, p. 11): ya cubierta (H02).
 
 ## S03.P218.20
 
@@ -214,7 +214,7 @@
 - **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - despliegue como API (curso 2, p. 4): ya cubierta (H01–H03).
+  - modelos persistentes desplegados como API o para puntuación por lotes (curso 2, p. 4): ya cubierta para web y API (P218 H01–H02, P219 H01–H03); la puntuación por lotes es otra forma de uso sin una capacidad predictiva distinta.
 
 ## S03.P218.26
 
@@ -286,7 +286,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - MLOps y pruebas automáticas de artefactos de ML (p. 55): fuera de la línea Predictiva por la misma razón.
+  - MLOps: desplegar, monitorear y gestionar el ciclo de vida de los modelos (p. 55): según `AGENTS.md` corresponde a productos de datos; H03 ya delimita monitoreo y linaje fuera del taller.
 
 ## S03.P218.35
 
@@ -310,7 +310,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre metodologías para soluciones analíticas (KDD, CRISP-DM y sus evoluciones, dimensiones del proyecto); para esta actividad no añade una señal distinta de las ya registradas.
+  - requisitos de producción, despliegue, adopción y operación (pp. 22–23): según `AGENTS.md` corresponde a productos de datos; H03 delimita el alcance actual.
 
 ## S03.P218.38
 
@@ -374,7 +374,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - artículo que consolida 18 metodologías de proyectos de analítica en el modelo PRODIG8 (ocho dimensiones: alcance, entendimiento y preparación de datos, diseño, evaluación, gobierno y ética, operación y mejora continua); opera en el nivel de proyecto. Para esta actividad no añade una señal distinta de las ya registradas.
+  - operación, mantenimiento y monitoreo integrados al diseño (p. 18): según `AGENTS.md` corresponde a productos de datos.
 
 ## S03.P218.46
 
@@ -390,7 +390,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
+  - planear el monitoreo y mantenimiento del modelo desplegado (pp. 39–40): según `AGENTS.md` corresponde a productos de datos.
 
 ## S03.P218.48
 
@@ -422,7 +422,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
+  - «Debido a que los datos están creciendo y cambiando continuamente, las relaciones… también cambian con el tiempo… identificará la degradación de la precisión de los modelos» (pp. 4–5): cuarta fuente para la señal de degradación de modelos; el documento la ubica en la fase de implementación y monitoreo, propia de productos de datos según `AGENTS.md`.
 
 ## S03.P218.52
 

@@ -3,15 +3,15 @@
 ## S01.P223.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** inicial.
-- **Rutas inspeccionadas:** datos, notebook de profesor, estimador persistido, pruebas y trazabilidad de P223.
-- **Decisión:** se separaron correlación, escalamiento, trayectoria Lasso y búsqueda de alpha para no reducir la actividad a «usa Lasso».
-- **Trazabilidad:** no existe entrada P223; se registró el vacío.
-- **Auditoría Analytics:** producto MPG predictivo, sin afirmar decisión de flota ni causalidad.
+- **Rutas inspeccionadas:** datos, notebook de profesor, `submission/`, pruebas y `traceability.yaml` de P223.
+- **Decisión:** se documentó selección de entradas, regularización y CV como contribuciones distintas; se registró que el caso clínico no evidencia uso diagnóstico.
+- **Trazabilidad:** no existe entrada P223; se escaló como vacío, sin inventar capacidades.
+- **Auditoría Analytics:** producto predictivo educativo preservado; identidad clínica/ML especializada no inferida.
 
 ## S01.P223.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y límites del caso `mtcars`; no se modificó implementación.
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y límite de no diagnóstico; no se modificó implementación.
 
 ## S03.P223.01
 
@@ -19,7 +19,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - Lasso, Ridge y variantes (p. 8): ya cubierta (H02–H04; Ridge en P211, ElasticNet en P219).
+  - precision/recall/F1 (p. 9): marginal para P223; la capacidad ya está en P203 y P205, y P223 se centra en la selección integrada.
 
 ## S03.P223.02
 
@@ -27,8 +27,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - aprendizaje supervisado y validación (p. 5): ya cubiertos por H02–H04; no cambia la capacidad de leer contracción Lasso y seleccionar alpha para el producto MPG.
-  - ventaja competitiva y estrategia de IA (p. 5): fuera de alcance de la regresión educativa con mtcars; no existe una oportunidad de flota ni evidencia de negocio para vincular la predicción a un plan.
+  - representatividad, calidad de datos y sesgo algorítmico (p. 5): H06 ya registra que faltan procedencia y población; Berkeley no proporciona evidencia para remediar esa limitación ni corrige un defecto específico del flujo de selección.
+  - supervisión humano–IA en contextos de alto riesgo (p. 5): no se añade como producto; P223 declara no diagnóstico y no hay usuario clínico, contexto asistencial ni datos autorizados para enseñar supervisión en práctica.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P223.03
@@ -37,7 +37,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H04: alpha seleccionado por CV antes de la prueba).
+  - sesgos algorítmicos y supervisión en contextos de alto riesgo (p. 5): ya cubierta como límite (H06: caso clínico educativo sin uso diagnóstico); sin grupos ni procedencia que permitan más.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P223.04
@@ -46,7 +46,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - regularización (ML-General, T1): ya cubierta (H02–H04).
+  - selección de *features* para clasificación (DM-Classification, T1): ya cubierta (H02–H03).
 
 ## S03.P223.05
 
@@ -54,7 +54,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - encuadre del problema de negocio, *stakeholders* y medida de éxito (Domain I–II, pp. 4–5): S02 registra que esta actividad no tiene usuario ni decisión evidenciados; el hábito se propone en P200 (T01) y extenderlo aquí sería una propuesta por actividad, a decidir después de discutir P200 T01.
+  - impulsores (*drivers*) del resultado (Task 2.2, p. 5): ya cubierta (H02–H03).
 
 ## S03.P223.06
 
@@ -438,7 +438,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - diagnósticos de colinealidad (VIF, número de condición; pp. 103–105) y trazas de ridge con VIF (Example 79.5, pp. 190–193): ya cubierta (H01: dependencia entre entradas; H03: trayectoria de contracción).
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
 
 ## S03.P223.54
 

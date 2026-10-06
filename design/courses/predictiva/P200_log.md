@@ -167,7 +167,7 @@
 - **Señales descartadas relevantes:**
   - formular buenas preguntas y entender las necesidades del cliente (pp. 40, 48): se añade como fuente de T01.
   - modelos que fallan cuando cambian los datos: «Google Flu Trends overpredicted… overreliance on outdated models» (p. 34) y relaciones que «will not necessarily hold in the next set of records» (p. 44): segunda fuente *authoritative* (con ACM) para la señal de representatividad y cambio de distribución; sigue sin método ni caso que permita anclarla a un taller.
-  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P216 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.
+  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P217 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.
 
 ## S03.P200.09
 
@@ -249,7 +249,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - regresión, regularización, regresión logística y evaluación del ajuste (módulo 5, p. 2): ya cubiertas en el curso (P200, P204, P219, P223).
+  - regresión, regularización, regresión logística y evaluación del ajuste (módulo 5, p. 2): ya cubiertas en el curso (P200, P204, P220, P224).
 
 ## S03.P200.19
 
@@ -531,7 +531,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - regresión cuantílica para modelar cuantiles condicionales (p. 143): se usa como alternativa en P211 T02; no aporta a P200.
+  - regresión cuantílica para modelar cuantiles condicionales (p. 143): se usa como alternativa en P212 T02; no aporta a P200.
 
 ## S03.P200.53
 
@@ -541,7 +541,7 @@
 - **Señales descartadas relevantes:**
   - interacción entre una variable cualitativa y una cuantitativa para permitir pendientes distintas por grupo (Example 79.4, pp. 185–189): variante de H05 y H07.
   - estadísticas de influencia (leverage, residuo estudentizado, Cook's D, DFFITS, DFBETAS; pp. 11, 107 y 146–148): señal válida, pero descartada por capacidad de P200; si se aprueba T02, puede reconsiderarse como extensión del diagnóstico.
-  - límites de confianza para la media (CLM) y para un valor individual (CLI) (pp. 11–12): se registra como fuente de P211 T02; en P200 sería incremental.
+  - límites de confianza para la media (CLM) y para un valor individual (CLI) (pp. 11–12): se registra como fuente de P212 T02; en P200 sería incremental.
   - pruebas F y t de coeficientes, falta de ajuste y heterocedasticidad (pp. 6, 122–123 y 194): inferencia estadística fuera del producto predictivo de la actividad.
 
 ## S03.P200.54

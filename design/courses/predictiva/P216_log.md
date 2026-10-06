@@ -3,44 +3,54 @@
 ## S01.P216.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se documentó la secuencia de nueve notebooks como una comparación
-  explícita de familias temporales y se registró la ausencia de trazabilidad P216.
+- **Decisión:** se documentó el cambio de asociación Apriori a vecinos de
+  usuarios y se registró como pendiente la ausencia de trazabilidad formal.
 
 ## S01.P216.02
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se añadieron hitos de aprendizaje para hacer auditable la
-  progresión desde inspección temporal hasta evaluación fuera del período de
-  especificación; no se añadieron técnicas ni cambios a la implementación.
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
+- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se dejó visible que faltantes no son malas calificaciones y que no hay evaluación retenida de ranking.
+- **Trazabilidad:** continúa ausente la entrada P216; no se infirieron capacidades aprobadas.
 
 ## S01.P216.03
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se sustituyeron los hitos generales por los once aspectos
-  verificables de la secuencia implementada, incluida la importación de
-  funciones, ACF/PACF, escalamiento, reconstrucción de diferencias, *stacking*,
-  combinación y persistencia acumulativa de pronósticos y métricas.
-
-## S01.P216.04
-
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se fijaron H01–H13, incluyendo la particularidad temporal del
-  dataset, y se añadieron superficies de cambio, contrato de evidencia y
-  dependencias comprobadas/no comprobadas para análisis posterior de benchmarks.
-
-## S01.P216.05
-
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se declaró producto, índice externo y vínculo H01–H13 con superficies actuales. Se preservaron la implementación y la ausencia de trazabilidad P216.
-- **Auditoría de Analytics:** regresión, MLP y análisis temporal sirven a pronósticos comparables; no justifican asignación operativa de mano de obra.
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporó T01 (`P215_tasks.md`): evaluación retenida que
+  reserva el 15 % de las calificaciones de usuarios con al menos diez
+  calificaciones (semilla fija), recalcula medias/similitud/vecinos sólo con
+  entrenamiento y generaliza la regla de vecinos de H02–H03 a cada usuario
+  retenido, no sólo al 272. Sobre 5,005 calificaciones retenidas, el
+  filtrado colaborativo tiene menor error que el promedio de película (MAE
+  0.591 frente a 0.694; RMSE 0.775 frente a 0.881) en las retenidas que
+  ambos métodos pueden predecir, con 86.1 % de cobertura frente al 100 %
+  trivial de la línea base (que siempre tiene un respaldo en la media
+  global).
+- **Cambios en la descripción S02:** se añadió H05 (evaluación retenida),
+  con su fila en el índice externo, la evidencia de highlights, S03 y el
+  contrato de evidencia actual; se actualizó el límite de H03 (ya no
+  declara ausencia de evaluación retenida) y «Producto terminal».
+- **Implementación:**
+  `implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
+  profesor (holdout, recálculo con entrenamiento, predicción generalizada
+  por usuario, cobertura/MAE/RMSE, comentario con la lectura) y
+  `submission/holdout_evaluation.csv`, y `tests/test_activity.py`
+  (`test_02`). H01–H04 y los tres artefactos previos se conservan sin
+  cambio de esquema; notebook y pruebas se ejecutaron sin errores (el
+  notebook tarda ~4 minutos por el bucle sobre los usuarios retenidos).
+- **Trazabilidad:** sigue sin existir entrada P216 en
+  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a
+  T01 y queda fuera de su alcance (ya registrada en S02 como pendiente de
+  revisión).
+- **`P215_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
 
 ## S03.P216.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
-- **Resultado:** sin cambios.
+- **Resultado:** propone T01 (contraste con línea base en calificaciones retenidas).
 - **Señales descartadas relevantes:**
-  - el folleto no trata series de tiempo; sin señales relevantes.
+  - filtrado colaborativo ítem–ítem (p. 10): marginal; variante del mismo método.
+  - side-information, active learning y retos de sistema (p. 10): fuera de alcance; sin caso ni datos que los sustenten.
 
 ## S03.P216.02
 
@@ -48,9 +58,9 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - entrenamiento/validación/prueba y simulaciones para predicción (pp. 4–5): ya cubiertas por evaluación cronológica de 24 meses (H01, H13) y comparación de familias (H04–H11); no aporta señal material para el pronóstico de mano de obra de Sutter.
-  - estrategia empresarial y transformación organizacional (pp. 5–6): fuera de alcance de la pregunta sobre pronóstico mensual; convertirla en plan de asignación de personal sería otra contribución, sin organización usuaria, objetivo o restricciones evidenciadas.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+  - personalización de experiencia del cliente (p. 2): aporta contexto, no una propuesta separada; la brecha material de P216 sigue siendo que aún no permite juzgar si sus recomendaciones superan una referencia en calificaciones no vistas (H03–H04, S03), que ya atiende T01.
+  - IA generativa y agentes (p. 6): fuera de alcance; P216 predice calificación con preferencias colaborativas y no hay tarea, datos ni criterio de evaluación del folleto para sustituir o añadir otro producto.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; el resultado era «propone T01», pero T01 la propuso la revisión del documento de MIT y este documento no le aporta evidencia; se revirtió además la edición de OpenWork en `P215_tasks.md` (fuente de Berkeley y campo «Interacciones»).
 
 ## S03.P216.03
 
@@ -58,42 +68,41 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - redes neuronales recurrentes (RNNs) (p. 5): marginal; enunciado sin detalle, y P216 ya contrasta MLP sobre rezagos con familias clásicas (H06–H11).
-  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H01, H13: evaluación cronológica de 24 meses).
+  - personalización de la experiencia del cliente (p. 2): contexto genérico de recomendación; no aporta evidencia a T01 (propuesta por la revisión del documento de MIT), por lo que no se añade a sus fuentes.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P216.04
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
-- **Resultado:** sin cambios.
+- **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
-  - series de tiempo: estacionariedad, transformación y pronóstico (DM-Time Series, electiva): ya cubierta (H03, H08, H13).
-  - RNN y LSTM (ML-Deep Learning, T2): marginal; no son competencia núcleo y P216 ya contrasta MLP con familias clásicas.
+  - filtrado colaborativo (T2, p. 101): ya cubierta (H02–H03).
+  - evaluación contra línea base y separación entrenamiento/prueba en recomendadores (pp. 96, 101): se añade como fuente de T01.
 
 ## S03.P216.05
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
-- **Resultado:** sin cambios.
+- **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
-  - integración de varios modelos (Task 5.5, p. 6): ya cubierta (H09, H11: apilamiento y combinación).
+  - línea base del estado actual (Task 2.5, p. 5): se añade como fuente de T01.
 
 ## S03.P216.06
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
-- **Resultado:** sin cambios.
+- **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
-  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
+  - línea base del estado actual (Task 2.5, p. 11): se añade como fuente de T01.
 
 ## S03.P216.07
 
 - **Fecha / executor:** 2026-10-04 / Claude.
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
-- **Resultado:** sin cambios.
+- **Resultado:** refuerza T01.
 - **Señales descartadas relevantes:**
-  - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
+  - línea base del estado actual (CAP-P.2.5.1, p. 11): se añade como fuente de T01.
 
 ## S03.P216.08
 
@@ -101,8 +110,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - flujos de trabajo reproducibles y documentados (p. 47): ya cubierta (H02, H12: funciones reutilizables y evidencia acumulada).
-  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P216 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.
+  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P216.09
 
@@ -110,8 +118,7 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Series de tiempo» y «Pronósticos financieros» demandados (Tabla 35, p. 97): ya cubierta (H01–H13).
-  - «Backtesting de modelos» como habilidad demandada (Tabla 35, p. 97): los talleres temporales evalúan con un único corte retenido; la fuente *governmental* sólo nombra la habilidad, sin definir práctica. Señal a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+  - «Modelos recomendación» demandados (Tabla 35, p. 97): ya cubierta; no aporta evidencia a T01.
   - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P216.10
@@ -136,7 +143,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-data-c102-data-inference-and-decisions.md` (`source_sha256`: 2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - ficha de catálogo (p. 1) con temas de inferencia y decisión; para esta actividad no añade una señal distinta de las ya registradas.
+  - sistemas de recomendación (p. 1): ya cubierta; no aporta evidencia a T01.
 
 ## S03.P216.13
 
@@ -144,7 +151,7 @@
 - **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - redes neuronales recurrentes (p. 8): marginal; P216 ya contrasta MLP con familias clásicas.
+  - caso Netflix: competencia para mejorar algoritmos de recomendación (p. 9): contexto; el folleto no describe cómo se evaluó, por lo que no se añade como fuente de T01.
 
 ## S03.P216.14
 
@@ -184,7 +191,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
+  - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P216.19
 
@@ -200,7 +207,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Interpretability and Causality in Models» (módulo 22, p. 9): segunda fuente para la señal de interpretación de modelos (con National Academies); N01 recoge la lectura de importancia de variables de árboles y ensambles.
+  - modelos de filtrado colaborativo y su diseño (módulo 8, p. 8): ya cubierta (H02–H03); el folleto no describe evaluación, por lo que no se añade a T01.
 
 ## S03.P216.21
 
@@ -224,7 +231,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - suavizamiento exponencial, ACF/PACF, ARIMA y metodología Box–Jenkins (p. 8): ya cubierta en lo esencial (H03, H10: ACF/PACF y AR con regresión); ARIMA como llamada especializada sería otra implementación del mismo contraste.
+  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P216.24
 
@@ -296,7 +303,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - suavizamiento exponencial, tendencia y estacionalidad (p. 1): ya cubierta en lo esencial (H03–H05).
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.
 
 ## S03.P216.33
 
@@ -360,7 +367,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - principios de manejo del código fuente: modularidad y funciones dedicadas a una sola tarea (p. 22): ya cubierta (H02: funciones reutilizables).
+  - presentación sobre la definición de DataOps (DevOps, lean, cadena de suministro de datos, ciclo de vida de ciencia de datos, implementación de MLOps); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
 
 ## S03.P216.41
 
@@ -408,7 +415,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pronósticos con intervalos de confianza que se abren a lo largo del horizonte (cap. 14, pp. 172–174): segunda fuente (con MIT Modeling & Simulation) para la señal de incertidumbre de pronóstico; pendiente de contrastar con SAS Forecasting.
+  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P216.47
 
@@ -416,7 +423,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
+  - ejemplo de recomendaciones de venta cruzada con criterio de éxito de negocio (+10 % de ventas cruzadas, pp. 9–10): contexto; evaluar el impacto en ventas excede la evaluación retenida de T01, que mide error de predicción.
 
 ## S03.P216.48
 
@@ -456,9 +463,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P211 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P211.
-  - híbridos de redes neuronales y modelos clásicos de series (p. 8): ya cubierta en lo esencial (H06–H11: MLP, AR, apilamiento y combinación).
-  - extracción de *features* de series y gradient boosting para pronóstico (p. 8): marginal; otra familia para el mismo producto.
+  - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
 
 ## S03.P216.53
 
@@ -466,7 +471,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): ya cubierta (inspección ACF/PACF).
+  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
 
 ## S03.P216.54
 

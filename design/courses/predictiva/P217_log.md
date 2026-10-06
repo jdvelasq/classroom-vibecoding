@@ -3,14 +3,36 @@
 ## S01.P217.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se identificó como producto de datos orientado a uso, no como
-  una nueva actividad de entrenamiento; se registró la trazabilidad ausente.
+- **Decisión:** se documentó la secuencia de nueve notebooks como una comparación
+  explícita de familias temporales y se registró la ausencia de trazabilidad P217.
 
 ## S01.P217.02
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
-- **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se registró que la prueba sólo exige código no vacío.
-- **Trazabilidad:** continúa ausente la entrada P217.
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se añadieron hitos de aprendizaje para hacer auditable la
+  progresión desde inspección temporal hasta evaluación fuera del período de
+  especificación; no se añadieron técnicas ni cambios a la implementación.
+
+## S01.P217.03
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se sustituyeron los hitos generales por los once aspectos
+  verificables de la secuencia implementada, incluida la importación de
+  funciones, ACF/PACF, escalamiento, reconstrucción de diferencias, *stacking*,
+  combinación y persistencia acumulativa de pronósticos y métricas.
+
+## S01.P217.04
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se fijaron H01–H13, incluyendo la particularidad temporal del
+  dataset, y se añadieron superficies de cambio, contrato de evidencia y
+  dependencias comprobadas/no comprobadas para análisis posterior de benchmarks.
+
+## S01.P217.05
+
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
+- **Decisión:** se declaró producto, índice externo y vínculo H01–H13 con superficies actuales. Se preservaron la implementación y la ausencia de trazabilidad P217.
+- **Auditoría de Analytics:** regresión, MLP y análisis temporal sirven a pronósticos comparables; no justifican asignación operativa de mano de obra.
 
 ## S03.P217.01
 
@@ -18,7 +40,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el folleto no trata despliegue; sin señales relevantes.
+  - el folleto no trata series de tiempo; sin señales relevantes.
 
 ## S03.P217.02
 
@@ -26,7 +48,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - interacción humano–IA, supervisión y responsabilidad (p. 5): ya parcialmente cubierta por la entrega a una persona y manejo de errores (H01–H03), pero el folleto no concreta qué persona decide ni cuál es el uso autorizado del precio; no permite completar esos vacíos con rigor ni añade una mejora ejecutable al contrato de interfaz existente.
+  - entrenamiento/validación/prueba y simulaciones para predicción (pp. 4–5): ya cubiertas por evaluación cronológica de 24 meses (H01, H13) y comparación de familias (H04–H11); no aporta señal material para el pronóstico de mano de obra de Sutter.
+  - estrategia empresarial y transformación organizacional (pp. 5–6): fuera de alcance de la pregunta sobre pronóstico mensual; convertirla en plan de asignación de personal sería otra contribución, sin organización usuaria, objetivo o restricciones evidenciadas.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P217.03
@@ -35,7 +58,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - supervisión humana, privacidad y gobernanza (pp. 5–6): no sustentada; el documento no fija requisito de servicio, y H03 ya delimita monitoreo y procedencia como fuera del taller.
+  - redes neuronales recurrentes (RNNs) (p. 5): marginal; enunciado sin detalle, y P217 ya contrasta MLP sobre rezagos con familias clásicas (H06–H11).
+  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H01, H13: evaluación cronológica de 24 meses).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P217.04
@@ -44,7 +68,8 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - transición de un modelo a producción (T2, p. 97): ya cubierta parcialmente (H01–H03); el documento no fija prácticas que añadir.
+  - series de tiempo: estacionariedad, transformación y pronóstico (DM-Time Series, electiva): ya cubierta (H03, H08, H13).
+  - RNN y LSTM (ML-Deep Learning, T2): marginal; no son competencia núcleo y P217 ya contrasta MLP con familias clásicas.
 
 ## S03.P217.05
 
@@ -52,8 +77,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - requisitos de una solución desplegada (Task 6.4, p. 7): ya cubierta parcialmente (H01: contrato de entrada).
-  - seguimiento del desempeño, recalibración y efectos secundarios en el tiempo (Domain VII, p. 7): no cubierta; según `AGENTS.md`, hacer observable y mantenible una capacidad analítica es propio de la línea de productos de datos, por lo que no se propone en Predictiva.
+  - integración de varios modelos (Task 5.5, p. 6): ya cubierta (H09, H11: apilamiento y combinación).
 
 ## S03.P217.06
 
@@ -77,7 +101,8 @@
 - **Documento:** `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` (`source_sha256`: 4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el informe define áreas de conocimiento a nivel de programa (fundamentos, datos, modelado, flujo de trabajo, comunicación, ética); para esta actividad no añade una señal distinta de las ya registradas.
+  - flujos de trabajo reproducibles y documentados (p. 47): ya cubierta (H02, H12: funciones reutilizables y evidencia acumulada).
+  - «Model interpretation (particularly for black box models)» (p. 46): ningún taller interpreta modelos de caja negra (las MLP de P200 y P217 sólo se evalúan por error); el documento enuncia el concepto sin método ni caso. Se registra como señal de curso.
 
 ## S03.P217.09
 
@@ -85,7 +110,8 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Monitoreo de modelos», «Validación estadística» y «Manual de riesgo» (Tabla 35, p. 97): confirma como pertinencia laboral la señal de seguimiento del desempeño en el tiempo; según `AGENTS.md` corresponde a la línea de productos de datos.
+  - «Series de tiempo» y «Pronósticos financieros» demandados (Tabla 35, p. 97): ya cubierta (H01–H13).
+  - «Backtesting de modelos» como habilidad demandada (Tabla 35, p. 97): los talleres temporales evalúan con un único corte retenido; la fuente *governmental* sólo nombra la habilidad, sin definir práctica. Señal a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
   - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P217.10
@@ -118,7 +144,7 @@
 - **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - programa ejecutivo sin código (p. 2); para esta actividad no añade una señal distinta de las ya registradas.
+  - redes neuronales recurrentes (p. 8): marginal; P217 ya contrasta MLP con familias clásicas.
 
 ## S03.P217.14
 
@@ -126,7 +152,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - contenedores, métricas DevOps y operación en la nube (pp. 12–14): fuera de la línea Predictiva; hacer operable una capacidad corresponde a productos de datos según `AGENTS.md`. H01–H04 delimitan el despliegue local actual.
+  - curso de computación en la nube y DevOps (temario, pp. 12–14: web, Node.js, contenedores, PKI, métricas DevOps, casos de migración); sin contenidos de modelado predictivo que contrastar con esta actividad.
 
 ## S03.P217.15
 
@@ -142,7 +168,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-designing-and-building-ai-products-and-services.md` (`source_sha256`: 7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - diseño de interacción humano–máquina inteligente (Week 5, p. 5): marginal para la interfaz web de P217 (H02); el folleto no define requisitos concretos.
+  - programa de diseño de productos de IA (módulos, pp. 4–5: proceso de diseño, panorama de algoritmos de ML y deep learning, interacción humano–máquina, organizaciones «superminds», GANs); no detalla prácticas de modelado o evaluación que contrastar con esta actividad.
 
 ## S03.P217.17
 
@@ -158,7 +184,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - programa de modelado y simulación (ODE, PDE, optimización); para esta actividad no añade una señal distinta de las ya registradas.
+  - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
 
 ## S03.P217.19
 
@@ -166,7 +192,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-engineering.md` (`source_sha256`: 25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - aplicaciones con Flask (módulos 9–11, p. 11): ya cubierta (H02).
+  - certificado de ingeniería de datos (módulos, pp. 10–11: Python, SQL, contenedores, CDC, almacenes de datos, procesamiento distribuido); para esta actividad no añade señales.
 
 ## S03.P217.20
 
@@ -174,7 +200,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-professional-certificate-data-science-and-analytics.md` (`source_sha256`: 4479888772ec5aa0a0019963427debfe459a378a742332ed677c0bf147ee18ec).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - certificado de ciencia de datos y analítica (currículo, pp. 7–9); para esta actividad no añade una señal distinta de las ya registradas.
+  - «Interpretability and Causality in Models» (módulo 22, p. 9): segunda fuente para la señal de interpretación de modelos (con National Academies); N01 recoge la lectura de importancia de variables de árboles y ensambles.
 
 ## S03.P217.21
 
@@ -198,7 +224,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
+  - suavizamiento exponencial, ACF/PACF, ARIMA y metodología Box–Jenkins (p. 8): ya cubierta en lo esencial (H03, H10: ACF/PACF y AR con regresión); ARIMA como llamada especializada sería otra implementación del mismo contraste.
 
 ## S03.P217.24
 
@@ -214,7 +240,7 @@
 - **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - modelos persistentes desplegados como API o para puntuación por lotes (curso 2, p. 4): ya cubierta para web y API (P217 H01–H02, P218 H01–H03); la puntuación por lotes es otra forma de uso sin una capacidad predictiva distinta.
+  - certificado profesional de ciencia de datos para negocios (estructura de contenidos, pp. 4–5); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P217.26
 
@@ -270,7 +296,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.
+  - suavizamiento exponencial, tendencia y estacionalidad (p. 1): ya cubierta en lo esencial (H03–H05).
 
 ## S03.P217.33
 
@@ -286,7 +312,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - MLOps: desplegar, monitorear y gestionar el ciclo de vida de los modelos (p. 55): según `AGENTS.md` corresponde a productos de datos; H03 ya delimita monitoreo y linaje fuera del taller.
+  - presentación sobre el origen y la evolución de Business Analytics (1970–2026: bases de datos, BI, minería de datos, KDD, CRISP-DM, ciencia de datos, Big Data, DataOps, MLOps, modelos fundacionales, IA agéntica); su valor es de contexto histórico y conceptual. Para esta actividad no añade una señal distinta.
 
 ## S03.P217.35
 
@@ -310,7 +336,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-03-methodologies.md` (`source_sha256`: bce80eb1dc39c20fedbd6bc579395cec5b808e3bfa84772a72a57669d1600d3c).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - requisitos de producción, despliegue, adopción y operación (pp. 22–23): según `AGENTS.md` corresponde a productos de datos; H03 delimita el alcance actual.
+  - presentación sobre metodologías para soluciones analíticas (KDD, CRISP-DM y sus evoluciones, dimensiones del proyecto); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P217.38
 
@@ -334,7 +360,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-06-definition.md` (`source_sha256`: a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre la definición de DataOps (DevOps, lean, cadena de suministro de datos, ciclo de vida de ciencia de datos, implementación de MLOps); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
+  - principios de manejo del código fuente: modularidad y funciones dedicadas a una sola tarea (p. 22): ya cubierta (H02: funciones reutilizables).
 
 ## S03.P217.41
 
@@ -374,7 +400,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/prodig8-strategies-executing-analytics-projects.md` (`source_sha256`: 74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - operación, mantenimiento y monitoreo integrados al diseño (p. 18): según `AGENTS.md` corresponde a productos de datos.
+  - artículo que consolida 18 metodologías de proyectos de analítica en el modelo PRODIG8 (ocho dimensiones: alcance, entendimiento y preparación de datos, diseño, evaluación, gobierno y ética, operación y mejora continua); opera en el nivel de proyecto. Para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P217.46
 
@@ -382,7 +408,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - guía de aplicaciones de IBM SPSS Modeler (29 ejemplos guiados por la herramienta; índice pp. 3–5). Lectura: índice completo y los capítulos con señales para el curso (árboles y ganancias, series de tiempo, reentrenamiento, supervivencia con Cox); las instrucciones de interfaz de la herramienta no aportan señales. Para esta actividad no añade una señal distinta.
+  - pronósticos con intervalos de confianza que se abren a lo largo del horizonte (cap. 14, pp. 172–174): segunda fuente (con MIT Modeling & Simulation) para la señal de incertidumbre de pronóstico; pendiente de contrastar con SAS Forecasting.
 
 ## S03.P217.47
 
@@ -390,7 +416,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md` (`source_sha256`: 809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - planear el monitoreo y mantenimiento del modelo desplegado (pp. 39–40): según `AGENTS.md` corresponde a productos de datos.
+  - guía de CRISP-DM en IBM SPSS Modeler (fases: negocio, datos, preparación, modelado, evaluación y despliegue, con un ejemplo de comercio electrónico); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P217.48
 
@@ -422,7 +448,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Debido a que los datos están creciendo y cambiando continuamente, las relaciones… también cambian con el tiempo… identificará la degradación de la precisión de los modelos» (pp. 4–5): cuarta fuente para la señal de degradación de modelos; el documento la ubica en la fase de implementación y monitoreo, propia de productos de datos según `AGENTS.md`.
+  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P217.52
 
@@ -430,7 +456,9 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - colección de artículos de SAS sobre pronóstico (172 págs.: análisis de series a escala, extracción de *features* temporales, gradient boosting y redes neuronales para pronóstico, funciones de SAS Forecast Server, cambios de régimen, regresión cuantílica de errores, monitoreo con cartas de control, planeación de demanda, FVA). Lectura: prólogo con los resúmenes de todos los artículos (pp. 7–10) y las secciones con señales para el curso; los pasos de interfaz de las herramientas no aportan señales. Para esta actividad no añade una señal distinta.
+  - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P212 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P212.
+  - híbridos de redes neuronales y modelos clásicos de series (p. 8): ya cubierta en lo esencial (H06–H11: MLP, AR, apilamiento y combinación).
+  - extracción de *features* de series y gradient boosting para pronóstico (p. 8): marginal; otra familia para el mismo producto.
 
 ## S03.P217.53
 
@@ -438,7 +466,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-stat.md` (`source_sha256`: 2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - capítulo PROC REG de SAS/STAT 12.1 (regresión lineal por mínimos cuadrados: diagnósticos de ajuste e influencia, selección de modelos, colinealidad, pruebas de hipótesis); para esta actividad no añade una señal distinta.
+  - autocorrelación de residuos en series de tiempo (Durbin–Watson, p. 128): ya cubierta (inspección ACF/PACF).
 
 ## S03.P217.54
 

@@ -3,13 +3,14 @@
 ## S01.P219.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se registró el ajuste de ElasticNet como competencia técnica al
-  servicio de una predicción de calidad y se señaló su trazabilidad ausente.
+- **Decisión:** se registró el contrato HTTP como extensión de P218 y se dejó
+  explícita la ausencia de trazabilidad formal.
 
 ## S01.P219.02
 
-- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies y ausencia de trazabilidad; no se modificó implementación.
+- **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `Codex`; **estado:** incremental.
+- **Decisión:** se añadieron highlights, anclas, superficies y contrato de evidencia; se registró que pruebas no ejecutan una llamada HTTP.
+- **Trazabilidad:** continúa ausente la entrada P219.
 
 ## S03.P219.01
 
@@ -17,7 +18,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - sobreajuste, validación y validación cruzada (p. 8): ya cubierta (H02).
+  - el folleto no trata despliegue; sin señales relevantes.
 
 ## S03.P219.02
 
@@ -25,8 +26,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - entrenamiento, validación y prueba (p. 5): ya cubiertos por H02; otra explicación del mismo ciclo no cambia la habilidad de seleccionar ElasticNet sin contaminar la prueba.
-  - creación de valor/ventaja competitiva de IA (p. 5): marginal para estimar calidad de vino sin usuario o decisión organizacional definida; no hay evidencia de que el artefacto actual responda a una oportunidad empresarial concreta.
+  - supervisión humana, privacidad y gobernanza (pp. 5–6): ya presentes como límites pendientes del servicio (H04), pero el folleto no establece requisito de servicio, amenaza, usuario o política concreta; no justifica una modificación material al endpoint/cliente técnico.
 - **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
 
 ## S03.P219.03
@@ -35,7 +35,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - aprendizaje supervisado; entrenamiento, validación y prueba (p. 5): ya cubierta (H02: GridSearchCV en entrenamiento y métricas de prueba).
+  - privacidad y gobernanza (pp. 5–6): no sustentada; sin requisito concreto de seguridad u observabilidad que añadir a H04.
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P219.04
@@ -44,7 +44,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - validación cruzada para ajustar hiperparámetros y medir desempeño (T1, p. 97): ya cubierta (H02).
+  - transición de un modelo a producción (T2, p. 97): ya cubierta parcialmente (H01–H04).
 
 ## S03.P219.05
 
@@ -52,7 +52,8 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - encuadre del problema de negocio, *stakeholders* y medida de éxito (Domain I–II, pp. 4–5): S02 registra que esta actividad no tiene usuario ni decisión evidenciados; el hábito se propone en P200 (T01) y extenderlo aquí sería una propuesta por actividad, a decidir después de discutir P200 T01.
+  - validación y verificación del despliegue (Tasks 6.5–6.6, p. 7): ya cubierta parcialmente (H01–H03).
+  - seguimiento del desempeño, recalibración y efectos secundarios en el tiempo (Domain VII, p. 7): no cubierta; según `AGENTS.md`, hacer observable y mantenible una capacidad analítica es propio de la línea de productos de datos, por lo que no se propone en Predictiva.
 
 ## S03.P219.06
 
@@ -60,7 +61,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-essentials-blueprint.md` (`source_sha256`: af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - división en entrenamiento, validación y prueba (Task 5.3, p. 20): ya cubierta (H02).
+  - el blueprint de nivel inicial detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
 
 ## S03.P219.07
 
@@ -68,7 +69,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-cap-pro-blueprint.md` (`source_sha256`: 2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - método apropiado de validación cruzada (CAP-P.5.3.2, p. 20): ya cubierta (H02).
+  - el blueprint de nivel intermedio detalla las mismas tareas del INFORMS Analytics Framework ya revisado; para esta actividad no añade señales distintas.
 
 ## S03.P219.08
 
@@ -84,7 +85,8 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
+  - «Monitoreo de modelos», «Validación estadística» y «Manual de riesgo» (Tabla 35, p. 97): confirma como pertinencia laboral la señal de seguimiento del desempeño en el tiempo; según `AGENTS.md` corresponde a la línea de productos de datos.
+  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P219.10
 
@@ -116,7 +118,7 @@
 - **Documento:** `design/benchmarks-md/institutional/cambridge-business-analytics.md` (`source_sha256`: b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - optimización de hiperparámetros (p. 8): ya cubierta (H01–H02).
+  - programa ejecutivo sin código (p. 2); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P219.14
 
@@ -124,7 +126,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-cloud-and-devops.md` (`source_sha256`: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - curso de computación en la nube y DevOps (temario, pp. 12–14: web, Node.js, contenedores, PKI, métricas DevOps, casos de migración); sin contenidos de modelado predictivo que contrastar con esta actividad.
+  - contenedores, métricas DevOps y operación en la nube (pp. 12–14): fuera de la línea Predictiva; hacer operable una capacidad corresponde a productos de datos según `AGENTS.md`. H01–H04 delimitan el despliegue local actual.
 
 ## S03.P219.15
 
@@ -196,7 +198,7 @@
 - **Documento:** `design/benchmarks-md/institutional/pwc-data-and-analytics-academy.md` (`source_sha256`: 7ea6edc72e56ac52fe8e9d400e862a4f8364403ab96014337267bbb15e9fd9cc).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - remuestreo y selección de modelos (p. 8): ya cubierta (H02).
+  - currículo de una academia corporativa de analítica (pp. 4–8); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P219.24
 
@@ -212,7 +214,7 @@
 - **Documento:** `design/benchmarks-md/institutional/uchicago-data-science-business.md` (`source_sha256`: 1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - certificado profesional de ciencia de datos para negocios (estructura de contenidos, pp. 4–5); para esta actividad no añade una señal distinta de las ya registradas.
+  - despliegue como API (curso 2, p. 4): ya cubierta (H01–H03).
 
 ## S03.P219.26
 
@@ -284,7 +286,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md` (`source_sha256`: 1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - presentación sobre el origen y la evolución de Business Analytics (1970–2026: bases de datos, BI, minería de datos, KDD, CRISP-DM, ciencia de datos, Big Data, DataOps, MLOps, modelos fundacionales, IA agéntica); su valor es de contexto histórico y conceptual. Para esta actividad no añade una señal distinta.
+  - MLOps y pruebas automáticas de artefactos de ML (p. 55): fuera de la línea Predictiva por la misma razón.
 
 ## S03.P219.35
 
@@ -356,7 +358,7 @@
 - **Documento:** `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` (`source_sha256`: fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pruebas automáticas que verifican comportamiento y no sólo existencia (p. 2): S02 registra que las pruebas de esta actividad sólo comprueban presencia de artefactos. Es una señal sobre el contrato de evidencia del curso (cómo se verifica la entrega), no sobre lo que el estudiante aprende; se deja para una decisión de curso.
+  - presentación sobre calidad y pruebas automáticas en DataOps (pruebas unitarias, de integración, funcionales y de regresión; análisis de impacto); el documento trata la organización y el proceso de los equipos de analítica (DataOps); no contiene contenidos de modelado predictivo que contrastar con esta actividad.
 
 ## S03.P219.44
 
@@ -420,7 +422,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-data-mining.md` (`source_sha256`: 6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - torneos automáticos de algoritmos con un modelo campeón (p. 4): marginal; P219 ya enseña a seleccionar configuraciones sin contaminar la prueba (H02).
+  - white paper de SAS sobre minería de datos y el ciclo de vida analítico (pp. 1–11); para esta actividad no añade una señal distinta de las ya registradas.
 
 ## S03.P219.52
 

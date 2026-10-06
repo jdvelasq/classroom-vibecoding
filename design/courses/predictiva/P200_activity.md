@@ -25,7 +25,7 @@ flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
 
 - **H01 — Formula el primer producto predictivo del curso:** transforma la pregunta
   sobre MPG en una predicción cuantitativa contrastable contra consumo observado;
-  es la primera actividad P200–P225 y, por tanto, establece el contrato de
+  es la primera actividad P200–P226 y, por tanto, establece el contrato de
   entrenamiento, predicción y evaluación que las posteriores extienden.
 - **H02 — Hace explícita la semántica del dato antes de modelar:** detecta y elimina
   nulos, e identifica `Origin` como categoría sin orden; deja visible que una
@@ -149,8 +149,8 @@ posteriores reutilizan o especializan.
 
 ### Dependencias en la secuencia
 
-- **Recibe de Pxxx:** ninguna; es la primera actividad P200–P225.
-- **Habilita para P201, P203, P204, P219, P221 y P223:** patrón de partición,
+- **Recibe de Pxxx:** ninguna; es la primera actividad P200–P226.
+- **Habilita para P201, P203, P204, P220, P222 y P224:** patrón de partición,
   preprocesamiento, comparación y persistencia de estimadores.
 
 ## Mejoras aceptadas pendientes de implementación

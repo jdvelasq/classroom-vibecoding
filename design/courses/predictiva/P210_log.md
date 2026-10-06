@@ -3,12 +3,12 @@
 ## S01.P210.01
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** inicial.
-- **Decisión:** se registró pronóstico de adopción como producto temporal con fuente explícita.
+- **Escalación:** trazabilidad ausente para P210.
 
 ## S01.P210.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites del caso temporal; no se modificó implementación.
+- **Decisión:** se confirmó producto, índice externo, highlights vinculados a superficies, contrato y límites de simulación; no se modificó implementación.
 
 ## S03.P210.01
 
@@ -16,7 +16,7 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-data-science-and-machine-learning.md` (`source_sha256`: 64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - el folleto no trata pronóstico temporal; sin señales relevantes.
+  - filtro de Kalman (p. 11): marginal; formaliza la actualización adaptativa que H02 ya enseña con suavizamiento exponencial.
 
 ## S03.P210.02
 
@@ -24,9 +24,8 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - simulaciones para predicción (pp. 1, 4): ya cubierta por pronóstico Bass frente a persistencia y evaluación de seis meses (H02–H03); no se aporta nueva comparación o forma de incertidumbre.
-  - estrategia/creación de valor de IA (p. 5): fuera de alcance para el pronóstico de matrículas EV; integrarla requeriría otra pregunta analítica y caso organizacional distinto, no una mejora local al producto predictivo terminal.
-- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera.
+  - simulaciones para predicción y gestión de riesgos (pp. 2, 4): ya cubiertas por el contraste de tasa estática/adaptativa y los supuestos persistidos (H02–H04); no añade evidencia de validación o incertidumbre que altere el pronóstico.
+- **Corrección (2026-10-04 / Claude):** hash corregido: se había registrado el hash del archivo `.md` en lugar del `source_sha256` de su cabecera; se eliminó la señal «menciones a vacunación (pp. 6, 9)»: el documento no menciona vacunación.
 
 ## S03.P210.03
 
@@ -34,7 +33,7 @@
 - **Documento:** `design/benchmarks-md/institutional/berkeley-ai-business-strategy-applications.md` (`source_sha256`: 8a008ed5eeb167fdb5a0127c583dab9d82c2c8682d4aade665bfaebb64384fbb).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - IA generativa y simulaciones «para hacer predicciones» (pp. 1, 3, 4): no sustentada; el documento no indica método, dato ni evaluación.
+  - simulaciones predictivas (p. 4): ya cubierta (H03: contraste de pronósticos con tasa fija y adaptativa).
 - **Nota:** Repetición independiente solicitada por el profesor; se omitió la precondición de documento ya revisado (entrada `.02` de OpenWork, corregida). Ningún hallazgo genera propuesta: el documento es un programa ejecutivo para líderes no técnicos con temas enunciados sin método, caso ni evaluación.
 
 ## S03.P210.04
@@ -43,7 +42,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` (`source_sha256`: eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pronóstico de series de tiempo (DM-Time Series, electiva; ML-Mixed Methods): ya cubierta (H02–H03).
+  - sin competencias específicas para el pronóstico adaptativo.
 
 ## S03.P210.05
 
@@ -51,7 +50,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/informs-analytics-framework-2024.md` (`source_sha256`: c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - línea base del estado actual (Task 2.5, p. 5): ya cubierta (H03: Bass frente a persistencia).
+  - supuestos y calibración del modelo (Tasks 2.3, 5.4): ya cubierta (H02–H04).
 
 ## S03.P210.06
 
@@ -83,8 +82,7 @@
 - **Documento:** `design/benchmarks-md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` (`source_sha256`: 2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - «Backtesting de modelos» como habilidad demandada (Tabla 35, p. 97): los talleres temporales evalúan con un único corte retenido; la fuente *governmental* sólo nombra la habilidad, sin definir práctica. Señal a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
-  - Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
+  - la demanda laboral (Tabla 35, p. 97) no lista una habilidad específica de esta actividad distinta de las ya cubiertas. Lectura: índice completo (371 págs.), brecha cualitativa (cap. 1 §5, pp. 95–105), percepciones de pertinencia curricular (cap. 2 §2.1.2, pp. 135–138), oferta en IA y ciencia de datos (pp. 204–206) y búsqueda de términos de analítica, ML y predicción en todo el texto; las tablas estadísticas regionales y salariales no se leyeron en detalle porque no contienen señales curriculares.
 
 ## S03.P210.10
 
@@ -156,7 +154,6 @@
 - **Documento:** `design/benchmarks-md/institutional/mit-machine-learning-modeling-and-simulation-principles.md` (`source_sha256`: 79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - estimación de parámetros por mínimos cuadrados no lineales (módulo 4, p. 2): ya cubierta (H02: `curve_fit` de Bass).
   - «Probabilistic Forecasting», «Sensitivity Forecasting» y simulación Monte Carlo (módulo 6, p. 2): los pronósticos del curso son puntuales y S02 registra «sin intervalos» o «sin incertidumbre» como límite; el temario sólo nombra las unidades. Señal de curso a contrastar con fuentes de pronóstico (pendiente: SAS Forecasting).
 
 ## S03.P210.19
@@ -269,7 +266,7 @@
 - **Documento:** `design/benchmarks-md/institutional/wharton-business-analytics-methods-tools.md` (`source_sha256`: b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pronóstico de nuevos productos, tendencia y estacionalidad (p. 1): ya cubierta (H01–H03: difusión Bass frente a persistencia).
+  - el `.md` está vacío (PDF de una página en imagen); se consultó la página del PDF homónimo: lista de métodos y herramientas (recolección de datos, A/B testing, correlación y causalidad, pronóstico, regresión, simulación, visualización, optimización, árboles de decisión). Para esta actividad no añade señales.
 
 ## S03.P210.33
 
@@ -381,7 +378,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/ibm-spss-modeler-applications-guide.md` (`source_sha256`: 8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pronósticos con intervalos de confianza que se abren a lo largo del horizonte (cap. 14, pp. 172–174): segunda fuente (con MIT Modeling & Simulation) para la señal de incertidumbre de pronóstico; pendiente de contrastar con SAS Forecasting.
+  - reentrenar un modelo mes a mes al llegar datos nuevos (cap. 18, p. 213): tercera fuente (con ACM y National Academies) para la señal de degradación de modelos; P210 ya enseña a actualizar un parámetro con evidencia reciente (H02–H03).
 
 ## S03.P210.47
 
@@ -429,8 +426,7 @@
 - **Documento:** `design/benchmarks-md/professional-learning/sas-forecasting.md` (`source_sha256`: 7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - evaluación con orígenes móviles (pp. 99–100) e intervalos de predicción (pp. 7, 143): se proponen en P211 (T01, T02), que permite enseñarlos con un cambio local; extenderlos a esta actividad sería una propuesta aparte, después de discutir P211.
-  - pronóstico de nuevos productos y difusión: no se trata en el documento.
+  - modelos con cambio de régimen para capturar cambios estructurales (p. 9): marginal; P210 ya contrasta un supuesto fijo con una tasa que se adapta a la evidencia (H02–H03).
 
 ## S03.P210.53
 
@@ -446,7 +442,7 @@
 - **Documento:** `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` (`source_sha256`: b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936).
 - **Resultado:** sin cambios.
 - **Señales descartadas relevantes:**
-  - pronóstico registrado a un grano más agregado que los hechos («a forecast by month and brand», p. 13) — fuera de alcance: decisión de modelado dimensional, no de estimación.
+  - técnicas oficiales de modelado dimensional (hechos, dimensiones, dimensiones de cambio lento, dimensiones conformadas); materia de BI, que pertenece a descriptiva. Para esta actividad no añade una señal distinta. Las señales de alcance de curso de este documento se registran en `P200_log.md`.
 
 ## S03.P210.55
 
