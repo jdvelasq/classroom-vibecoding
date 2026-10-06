@@ -1,0 +1,3 @@
+method,n_predicted,coverage,mae,rmse
+Línea base (promedio de película),5005,1.0,0.694,0.881
+Filtrado colaborativo,4308,0.861,0.591,0.775

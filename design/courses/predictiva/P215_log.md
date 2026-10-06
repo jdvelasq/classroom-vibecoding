@@ -12,6 +12,37 @@
 - **Decisión:** se añadieron producto, highlights, anclas, superficies y contrato de evidencia; se dejó visible que faltantes no son malas calificaciones y que no hay evaluación retenida de ranking.
 - **Trazabilidad:** continúa ausente la entrada P215; no se infirieron capacidades aprobadas.
 
+## S01.P215.03
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporó T01 (`P215_tasks.md`): evaluación retenida que
+  reserva el 15 % de las calificaciones de usuarios con al menos diez
+  calificaciones (semilla fija), recalcula medias/similitud/vecinos sólo con
+  entrenamiento y generaliza la regla de vecinos de H02–H03 a cada usuario
+  retenido, no sólo al 272. Sobre 5,005 calificaciones retenidas, el
+  filtrado colaborativo tiene menor error que el promedio de película (MAE
+  0.591 frente a 0.694; RMSE 0.775 frente a 0.881) en las retenidas que
+  ambos métodos pueden predecir, con 86.1 % de cobertura frente al 100 %
+  trivial de la línea base (que siempre tiene un respaldo en la media
+  global).
+- **Cambios en la descripción S02:** se añadió H05 (evaluación retenida),
+  con su fila en el índice externo, la evidencia de highlights, S03 y el
+  contrato de evidencia actual; se actualizó el límite de H03 (ya no
+  declara ausencia de evaluación retenida) y «Producto terminal».
+- **Implementación:**
+  `implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
+  profesor (holdout, recálculo con entrenamiento, predicción generalizada
+  por usuario, cobertura/MAE/RMSE, comentario con la lectura) y
+  `submission/holdout_evaluation.csv`, y `tests/test_activity.py`
+  (`test_02`). H01–H04 y los tres artefactos previos se conservan sin
+  cambio de esquema; notebook y pruebas se ejecutaron sin errores (el
+  notebook tarda ~4 minutos por el bucle sobre los usuarios retenidos).
+- **Trazabilidad:** sigue sin existir entrada P215 en
+  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a
+  T01 y queda fuera de su alcance (ya registrada en S02 como pendiente de
+  revisión).
+- **`P215_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
+
 ## S03.P215.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
