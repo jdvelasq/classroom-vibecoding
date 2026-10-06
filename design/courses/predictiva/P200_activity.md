@@ -14,7 +14,9 @@ flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
 
 ### Producto analítico actual y límite de identidad
 
-- **Pregunta, usuario o decisión:** estima MPG desde características técnicas; no hay decisión de flota evidenciada.
+- **Pregunta, usuario o decisión:** estima MPG desde características técnicas para
+  decidir si el equipo continúa con proyectos predictivos posteriores sobre datos
+  similares (caso de viabilidad); no hay decisión operativa de flota evidenciada.
 - **Producto terminal:** predictores comparados, preprocesadores y tabla MSE reutilizables.
 - **Uso y límite:** compara especificaciones en una partición; no prueba causalidad ni procedencia del dataset.
 - **Disciplinas contribuyentes:** regresión, MLP y preprocesamiento sirven al primer producto predictivo.
@@ -63,11 +65,30 @@ flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
   mismo preprocesador para predecir nuevamente. Sin este hito, las actividades
   posteriores de pipeline, despliegue y evaluación no tendrían una base concreta
   de contrato modelo–transformación–entrada.
+- **H11 — Encuadra el producto como un caso de viabilidad y fija un umbral de
+  fracaso:** antes de modelar, plantea la decisión que justifica el taller
+  (continuar o no con proyectos predictivos posteriores sobre datos similares)
+  y fija el error que haría inútil el producto: ningún modelo es evidencia de
+  valor si no mejora la predicción ingenua del MPG promedio de entrenamiento
+  (`naive_mean_baseline`, MSE de prueba 62.19). Persiste esa fila en
+  `model_comparison.csv` y verifica que el mejor modelo la supere. Sin este
+  hito, H04–H09 se leerían como una comparación de MSE sin una referencia que
+  diga si alguno aporta algo.
+- **H12 — Diagnostica con residuos antes de flexibilizar y transforma la
+  respuesta cuando la varianza no es constante:** grafica los residuos de
+  `horsepower_model` contra el valor predicho y contra `Horsepower`
+  (`residual_diagnostics.png`), y ajusta una alternativa con log-transformación
+  de la respuesta (`TransformedTargetRegressor` con `log1p`/`expm1`), que
+  reduce el MSE de prueba de 22.03 a 19.00 frente a la misma entrada (69.4 %
+  de la brecha con la línea base ingenua). Motiva con evidencia por qué H07
+  añade términos no lineales, en vez de presentarlos sin justificación.
 
 ### Inventario técnico de implementación
 
 - **Introduce:** partición train/test, escalamiento, codificación categórica y regresión lineal.
 - **Introduce:** MSE, visualización de predicción y comparación de modelos.
+- **Introduce:** encuadre de viabilidad con línea base ingenua y diagnóstico de
+  residuos con transformación de la respuesta.
 
 ### Índice de comparación externa
 
@@ -76,6 +97,7 @@ flexibilidad y guarda modelos, preprocesadores y comparación de desempeño.
 | Representación segura | H02–H06 | Nulos, `Origin`, split, OHE y ColumnTransformer | Sin procedencia de Auto MPG. |
 | Flexibilidad comparada | H04, H07–H09 | Línea base, términos y MLP | MSE específico del caso. |
 | Reuso | H10 | Modelos/preprocesadores persistidos | Tests sólo archivos. |
+| Viabilidad y diagnóstico | H11–H12 | Línea base ingenua, residuos y log-transformación | `model_comparison.csv`; `residual_diagnostics.png`; umbral específico del caso. |
 
 ### Relación técnica con actividades anteriores
 
@@ -98,6 +120,8 @@ posteriores reutilizan o especializan.
 | H08 — MLP de una variable frente a línea base | S03 | `implementation/predictiva/P200_regresion_basica/submission/model_comparison.csv`; `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb` | La ventaja 15.60 frente a 22.03 es específica de esta partición y métrica MSE. |
 | H09 — Comparación de capacidad con todas las entradas | S03 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `mlp`, `linear_model`, `linear_flexible_model` y comparación de MSE | No establece que una MLP sea preferible fuera del caso ni evalúa costos de operación. |
 | H10 — Persistencia y reutilización | S04 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: `pickle.dump`, recarga y predicción; `implementation/predictiva/P200_regresion_basica/submission/`; `implementation/predictiva/P200_regresion_basica/tests/test_activity.py` | Las pruebas verifican existencia de archivos, no la compatibilidad semántica completa entre artefactos. |
+| H11 — Encuadre de viabilidad y línea base ingenua | S03, S04 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: celda de encuadre, `naive_mean_model`, verificación `best_regressor_mse <= naive_mse`; `submission/model_comparison.csv`; `tests/test_activity.py` | El umbral de viabilidad (MSE ingenuo) es específico de esta partición y este caso educativo. |
+| H12 — Residuos y log-transformación | S03 | `implementation/predictiva/P200_regresion_basica/professor/notebook.ipynb`: gráfica de residuos, `log_horsepower_model` (`TransformedTargetRegressor`); `submission/residual_diagnostics.png`; `tests/test_activity.py` | El diagnóstico se hizo sólo sobre `horsepower_model`; no se repitió sobre `linear_model` ni `linear_flexible_model`. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -105,17 +129,23 @@ posteriores reutilizan o especializan.
 | --- | --- | --- | --- |
 | S01 | Caso y dataset Auto MPG | `data/auto_mpg.csv`; notebook | No hay procedencia documentada en la actividad. |
 | S02 | Representación y preprocesamiento | Notebook; `features_preprocessor.pkl` | `Origin` debe conservarse como nominal y el ajuste debe ocurrir sólo en entrenamiento. |
-| S03 | Familias y especificaciones de modelo | Notebook; modelos `.pkl`; `model_comparison.csv` | Deben mantenerse comparables sobre la misma partición y MSE. |
-| S04 | Producto y verificación | `submission/`; `tests/test_activity.py`; `traceability.yaml` | Las pruebas actuales sólo verifican existencia de artefactos. |
+| S03 | Familias y especificaciones de modelo | Notebook; modelos `.pkl`; `model_comparison.csv`; `residual_diagnostics.png` | Deben mantenerse comparables sobre la misma partición y MSE; el diagnóstico de residuos no se repitió para todas las especificaciones. |
+| S04 | Producto y verificación | `submission/`; `tests/test_activity.py`; `traceability.yaml` | Las pruebas ahora validan la línea base ingenua y la fila de `log_horsepower_model`, además de la existencia de artefactos. |
 
 ### Contrato de evidencia actual
 
-- **Notebook o código:** limpia, separa, preprocesa, ajusta regresiones y MLP,
-  compara MSE y recarga artefactos.
-- **`submission/`:** conserva preprocesadores, modelos y comparación de MSE.
-- **Pruebas:** exigen los cinco archivos, sin validar partición, métricas ni
-  compatibilidad modelo–preprocesador.
-- **Trazabilidad:** P200 mapea `predictiva.C01`–`C04`.
+- **Notebook o código:** encuadra el caso de viabilidad, limpia, separa,
+  preprocesa, ajusta una línea base ingenua, diagnostica residuos, ajusta
+  regresiones (incluida una con log-transformación) y MLP, compara MSE y
+  recarga artefactos.
+- **`submission/`:** conserva preprocesadores, modelos, comparación de MSE
+  (con la línea base ingenua y el modelo log-transformado) y el gráfico de
+  diagnóstico de residuos.
+- **Pruebas:** exigen los cinco archivos originales, que la línea base
+  ingenua tenga el MSE más alto, y que `log_horsepower_model` y
+  `residual_diagnostics.png` existan con un MSE finito y positivo.
+- **Trazabilidad:** P200 mapea `predictiva.C01`–`C04`; H11–H12 fortalecen la
+  evidencia de C01–C04 sin requerir una capacidad nueva.
 
 ### Dependencias en la secuencia
 

@@ -52,6 +52,44 @@
 - **Decisión:** se declaró el producto predictivo, se añadió el índice externo y se vinculó H01–H10 con superficies existentes; se preservaron implementación y mejoras pendientes.
 - **Auditoría de Analytics:** regresión, MLP y preprocesamiento sirven a estimar MPG verificablemente.
 
+## S01.P200.07
+
+- **Fecha:** 2026-10-06; **curso / executor:** `predictiva` / `Claude`; **estado:** incremental.
+- **Decisión:** se incorporaron T01 y T02 (`P200_tasks.md`). El profesor había
+  marcado ambas como "incorporado" el 2026-10-05 (commit `1b20d929`), pero
+  sólo se había hecho en el notebook la parte de modelado; faltaban el
+  encuadre de T01, la persistencia del gráfico de residuos de T02 y las
+  pruebas de ambas. Esta entrada completa ese trabajo.
+  - **T01 — encuadre:** el profesor definió el caso como uno de viabilidad:
+    la pregunta de negocio es si puede pronosticarse el MPG con suficiente
+    precisión para decidir si el equipo continúa con proyectos predictivos
+    posteriores sobre datos similares. No hay usuario operativo de flota. El
+    umbral de fracaso es no superar la línea base ingenua (MSE 62.19).
+  - **T01 — línea base ingenua:** ya estaba en el notebook
+    (`naive_mean_baseline`, MSE 62.19) y en `model_comparison.csv`; se
+    agregó la prueba que faltaba (`test_02`).
+  - **T02 — residuos y log-transformación:** ya estaban en el notebook
+    (gráfica de residuos de `horsepower_model`; `log_horsepower_model` con
+    `TransformedTargetRegressor`, MSE 22.03 → 19.00); faltaba persistir el
+    gráfico (`residual_diagnostics.png`, agregado) y la prueba
+    correspondiente (`test_03`, agregada).
+- **Cambios en la descripción S02:** se añadieron H11 (encuadre de viabilidad
+  y línea base ingenua) y H12 (residuos y log-transformación), con sus filas
+  en el índice externo, la evidencia de highlights, S03–S04 y el contrato de
+  evidencia actual; se actualizó «Producto analítico y límite de identidad».
+  H01–H10 se conservan sin cambio de sentido.
+- **Implementación:** `implementation/predictiva/P200_regresion_basica/` —
+  notebook del profesor (celda de encuadre, `fig.savefig` del diagnóstico de
+  residuos) y `submission/residual_diagnostics.png`, y
+  `tests/test_activity.py` (`test_02`, `test_03`). Los cinco artefactos
+  previos y `model_comparison.csv` se conservan con los mismos valores;
+  notebook y pruebas se ejecutaron sin errores.
+- **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
+  evidencia de P200; H11–H12 fortalecen esa evidencia sin requerir una
+  capacidad nueva. Sin cambios en
+  `implementation/predictiva/traceability.yaml`.
+- **`P200_tasks.md`:** eliminado tras incorporar sus dos propuestas (T01, T02).
+
 ## S03.P200.01
 
 - **Fecha / executor:** 2026-10-04 / Claude.
