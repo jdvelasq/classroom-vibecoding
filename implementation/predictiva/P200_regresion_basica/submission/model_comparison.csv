@@ -1,6 +1,7 @@
 model,test_mse
 naive_mean_baseline,62.18813462951534
 horsepower_model,22.026387306979775
+log_horsepower_model,18.9985822186173
 linear_model,10.022424640636538
 linear_flexible_model,7.441403568662472
 mlp_horsepower,15.599044801744158
