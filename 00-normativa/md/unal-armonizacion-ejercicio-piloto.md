@@ -1,5 +1,5 @@
 ---
-source: "design/benchmarks-pdf/institutional/unal-armonizacion-ejercicio-piloto.pdf"
+source: "00-normativa/pdf/unal-armonizacion-ejercicio-piloto.pdf"
 source_sha256: 1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5
 family: institutional
 pages: 118

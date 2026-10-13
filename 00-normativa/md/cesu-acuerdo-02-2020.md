@@ -1,5 +1,5 @@
 ---
-source: "design/benchmarks-pdf/governmental/cesu-acuerdo-02-2020.pdf"
+source: "00-normativa/pdf/cesu-acuerdo-02-2020.pdf"
 source_sha256: 6e16c058b984581e89159a3260a2cc0c7b0164e7f20ae0ad82a5c4376dee5370
 family: governmental
 pages: 63

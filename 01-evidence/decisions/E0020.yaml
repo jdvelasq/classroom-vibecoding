@@ -1,0 +1,26 @@
+id: "E0020"
+sha256: "51589d340c528ac102f01d9b5405b50121d52fbda3586fb8653ebf88048a0b36"
+file: "01-evidence/pdf/literature-derived/dataops-04-lean-thinking.pdf"
+md: "01-evidence/md/literature-derived/dataops-04-lean-thinking.md"
+title: "Lean Thinking"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Trata el Toyota Production System como fundamento general de manufactura esbelta; su pertinencia depende de que domain.md definition de DataOps lo adopte explicitamente como insumo metodologico de la ingenieria de datos para la analitica (ver dataops-06-definition), por lo que aislado es parcialmente pertinente."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Principios de manufactura esbelta (Toyota) adoptados por DataOps para mejorar flujos y calidad de datos; sirve de insumo metodologico a la ingenieria de datos para la analitica de domain.md, aunque por si mismo trata un campo ajeno (manufactura)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

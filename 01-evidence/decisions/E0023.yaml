@@ -1,0 +1,26 @@
+id: "E0023"
+sha256: "e77e412071365bc5f5d503cf5a6e39981d255e2010411e5659a765bcd98bdb0e"
+file: "01-evidence/pdf/literature-derived/dataops-07-cdo.pdf"
+md: "01-evidence/md/literature-derived/dataops-07-cdo.md"
+title: "DataOps para el Chief Data/Analytics/Information Officer"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Trata la organizacion de equipos (Data Engineering, Data Science, Data Visualization, Data Governance) y herramientas bajo DataOps desde la perspectiva del CDO; corresponde a productos de datos y a la ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

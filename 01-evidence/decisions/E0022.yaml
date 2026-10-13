@@ -1,0 +1,26 @@
+id: "E0022"
+sha256: "a5f328f1469d348347e5b6b3d94d20ecc3520b821518c8c1f7d95cbccfd1a4e2"
+file: "01-evidence/pdf/literature-derived/dataops-06-definition.pdf"
+md: "01-evidence/md/literature-derived/dataops-06-definition.md"
+title: "Que es DataOps?"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido; parece sintetizar literatura de practica industrial (DevOps, Lean, Agile aplicados a datos)."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Define DataOps como la combinacion de practicas agiles, lean y DevOps para asegurar la calidad del dato en cualquier producto de datos; corresponde directamente a los subcampos ingenieria de datos para la analitica y productos de datos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -41,7 +41,8 @@ def outdated(layout: Layout) -> dict[str, object]:
     rejected, accepted = [], []
     for path in sorted(layout.decisions.glob("E*.yaml")):
         record = read_decision(path)
-        if record.get("domain_version") == current:
+        # Normative documents were excluded by david's decision, not by the domain.
+        if record.get("domain_version") == current or record.get("excluded_as"):
             continue
         pertinencia = re.search(r"^  pertinencia: (\S+)$", path.read_text(encoding="utf-8"), re.M)
         entry = {

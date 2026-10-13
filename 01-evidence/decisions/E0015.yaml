@@ -1,0 +1,26 @@
+id: "E0015"
+sha256: "1be064b6db147951e8a9e437b4cd5c3e78906ff9a7c3eaf2dbe38151d3d79131"
+file: "01-evidence/pdf/literature-derived/conf-origen-y-evolucion-business-analytics.pdf"
+md: "01-evidence/md/literature-derived/conf-origen-y-evolucion-business-analytics.md"
+title: "Origen y Evolucion de Business Analytics"
+issuer: "Sintesis academica de la historia de Business Analytics (emisor exacto no declarado en el texto extraido)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifico un autor o institucion explicitos en las paginas con texto extraible; domain.md ya cita este documento como fuente literature-derived (design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md), lo cual respalda su categoria."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Documento central sobre el origen y la evolucion de Business Analytics, citado por domain.md como fuente de la convergencia entre analitica de grandes datos y aprendizaje automatico (2010-2015); trata el campo mismo y sus precursores (inteligencia de negocios, mineria de datos)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

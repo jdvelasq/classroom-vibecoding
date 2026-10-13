@@ -1,5 +1,5 @@
 ---
-source: "design/benchmarks-pdf/institutional/unal-csu-acuerdo-033-2007.pdf"
+source: "00-normativa/pdf/unal-csu-acuerdo-033-2007.pdf"
 source_sha256: 720b40416d8293ddc355dead212ae56ebd88c498a935cb9c8c3539b19bf9da94
 family: institutional
 pages: 12

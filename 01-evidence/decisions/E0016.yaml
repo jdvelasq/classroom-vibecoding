@@ -1,0 +1,26 @@
+id: "E0016"
+sha256: "2ccb97d2257ec837b85eb1057c322edaa755b2a9b06d6b528afb98105d6ed406"
+file: "01-evidence/pdf/professional-learning/coursera-machine-learning-modeling-pipelines-production.pdf"
+md: "01-evidence/md/professional-learning/coursera-machine-learning-modeling-pipelines-production.md"
+title: "Machine Learning Modeling Pipelines in Production"
+issuer: "DeepLearning.AI (Coursera)"
+year: 2021
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de MLOps centrado en analisis de desempeno de modelos, equidad, explicabilidad y monitoreo continuo en produccion, que corresponde al subcampo productos de datos (despliegue y monitoreo) de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
