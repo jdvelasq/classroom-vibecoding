@@ -189,3 +189,11 @@ def test_regulation_copy_is_reported_not_judged(layout):
     assert manifest["pending"] == [] and manifest["duplicates"] == []
     assert manifest["regulations"][0]["regulation"] == "00-regulations/pdf/cesu.pdf"
     assert not (layout.ingest / "cesu-copy.pdf").exists()
+
+
+def test_identical_copies_in_the_same_batch_are_judged_once(layout):
+    add_doc(layout, "report", content=b"same")
+    add_doc(layout, "report copy", content=b"same")
+    manifest = intake.intake(layout)
+    assert [Path(p["pdf"]).name for p in manifest["pending"]] == ["report copy.pdf"]
+    assert manifest["duplicates"][0]["duplicate_of_pending"] == "01-evidence/ingest/report copy.pdf"

@@ -37,6 +37,7 @@ def intake(layout: Layout) -> dict[str, list[dict]]:
     # Regulations frame the design process itself; they are never evidence.
     regulations = {sha256(p): p for p in layout.regulations.rglob("*.pdf")} if layout.regulations.exists() else {}
     pending, duplicates, regulatory = [], [], []
+    seen_in_batch: dict[str, str] = {}
     for pdf in sorted(layout.ingest.rglob("*.pdf")):
         if any(part.startswith(".") for part in pdf.relative_to(layout.ingest).parts):
             continue
@@ -57,6 +58,11 @@ def intake(layout: Layout) -> dict[str, list[dict]]:
                 }
             )
             continue
+        if digest in seen_in_batch:
+            moved = move_duplicate(layout, pdf)
+            duplicates.append({"file": layout.shown(moved), "duplicate_of_pending": seen_in_batch[digest]})
+            continue
+        seen_in_batch[digest] = layout.shown(pdf)
         md = pdf.with_suffix(".md")
         header = md_header(md) if md.exists() else {}
         pending.append(
