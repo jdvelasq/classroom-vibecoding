@@ -1,6 +1,6 @@
 # Dominio: analítica
 
-Versión 0.4 (borrador)
+Versión 0.5 (borrador)
 
 Este archivo define el campo al que se aplican los criterios de
 `criteria.md`.
@@ -17,6 +17,7 @@ Analítica.
 - Analítica prescriptiva.
 - Analítica de grandes datos (*Big Data Analytics*).
 - Productos de datos.
+- Ingeniería de datos para la analítica.
 
 Los cuatro primeros subcampos se distinguen por la pregunta que responden.
 La analítica de grandes datos se distingue de otra manera: sus pasos
@@ -43,6 +44,14 @@ versiones, diseño para el usuario final y monitoreo. El monitoreo forma parte
 del subcampo y cubre el desempeño y la deriva de los modelos, la calidad de
 los datos y el uso del producto.
 
+La ingeniería de datos para la analítica también se distingue por
+competencias: obtener, integrar y preparar los datos que una pregunta
+analítica necesita. Comprende la adquisición y la integración de fuentes, SQL
+y el modelado de datos para el análisis, los *pipelines* que alimentan
+análisis, modelos y productos de datos, y la calidad de los datos. Sin esa
+base no hay producto analítico confiable, por eso forma parte del campo y no
+solo de un vecino.
+
 ## Precursores
 
 - **Inteligencia de negocios**.
@@ -55,7 +64,8 @@ registran con rol `precursor`.
 ## Vecinos
 
 - Inteligencia artificial y aprendizaje automático.
-- Ingeniería de datos.
+- Ingeniería de datos como disciplina autónoma: plataformas e
+  infraestructura de datos tratadas como fin en sí mismas.
 - Grandes datos por sí solos, incluida su infraestructura (almacenamiento y
   plataformas de procesamiento distribuido).
 - Estadística.
@@ -85,3 +95,7 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
 - 0.4 (2026-10-13): se agregan los productos de datos como subcampo,
   diferenciado por competencias e incluido el monitoreo; la ingeniería de
   software queda como vecino.
+- 0.5 (2026-10-13): se agrega la ingeniería de datos para la analítica como
+  subcampo, diferenciado por competencias (adquisición e integración, SQL y
+  modelado, *pipelines*, calidad); la ingeniería de datos como disciplina
+  autónoma sigue como vecino.
