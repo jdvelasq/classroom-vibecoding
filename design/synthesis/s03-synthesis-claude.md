@@ -59,7 +59,7 @@ I20 and I21 are institutional **curriculum-governance** documents, not course of
 | ID | Document | Nature |
 |---|---|---|
 | P1 | `01-evidence/syntheses/datacamp.md` | Task-generated reconstruction of DataCamp analyst and data-scientist tracks and certifications. Claims are labelled provider-stated [P], structural [S] or inference [I]. |
-| P2 | `design/synthesis/s02-pluralsight.md` | Task-generated reconstruction of Pluralsight analytics and data-science paths, with the same labelling. |
+| P2 | `01-evidence/syntheses/pluralsight.md` | Task-generated reconstruction of Pluralsight analytics and data-science paths, with the same labelling. |
 
 **Literature-derived (12 documents)**
 

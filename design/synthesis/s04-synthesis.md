@@ -5,7 +5,7 @@
 This consolidation integrates:
 
 - `01-evidence/syntheses/datacamp.md`;
-- `design/synthesis/s02-pluralsight.md`;
+- `01-evidence/syntheses/pluralsight.md`;
 - `design/synthesis/s03-synthesis-chatgpt.md`;
 - `design/synthesis/s03-synthesis-claude.md`; and
 - `design/synthesis/s03-synthesis-gemini.md`.
