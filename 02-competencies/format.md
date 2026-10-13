@@ -1,6 +1,6 @@
 # Formato de las competencias del mapa
 
-Versión 0.1 (borrador)
+Versión 0.2 (aprobada)
 
 ## Propósito
 
@@ -42,7 +42,7 @@ consenso:
   explicitos: 1               # de ellos, con respaldo explícito
   inferidos: 1                # de ellos, solo con respaldo inferido
   actual: 1                   # de ellos, con rol actual
-format_version: "0.1"
+format_version: "0.2"
 domain_version: "0.7"
 fecha: "2026-10-13"
 ```
@@ -202,7 +202,7 @@ consenso:
   explicitos: 2
   inferidos: 0
   actual: 1
-format_version: "0.1"
+format_version: "0.2"
 domain_version: "0.7"
 fecha: "2026-10-13"
 ---
@@ -315,6 +315,19 @@ Qué muestra el ejemplo:
   (validación de negocio) no entran: pertenecen a desempeños posteriores,
   con otra evidencia.
 
+## Calibración
+
+Primera aplicación a mano del formato, con cuatro emisores: INFORMS
+(`E0001`), MIT (`E0003`), SAS (`E0004`) y la síntesis de DataCamp
+(`E0143`), más IBM (`E0028`) del ejemplo. Produjo `map/C001.md` a
+`map/C009.md`: ocho competencias incluidas y una candidata (`C009`,
+analítica prescriptiva, solo con respaldo de un precursor).
+
 ## Versión y cambios
 
 - 0.1 (2026-10-13): borrador inicial.
+- 0.2 (2026-10-13): david aprueba los valores por defecto de 0.1: la
+  regla de consenso (dos o más emisores, al menos uno explícito y
+  `actual`), el conteo por emisor, los precursores que cuentan pero no
+  bastan, los verbos sin nivel y la omisión de disposiciones y actitudes.
+  Se agrega la calibración.
