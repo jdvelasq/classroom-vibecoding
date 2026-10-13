@@ -1,0 +1,26 @@
+id: "E0078"
+sha256: "d85c123759c5e04506894f56667d67055dd1d2b8de13046ef530747c93857093"
+file: "01-evidence/rejected/mit-professional-certificate-cybersecurity.pdf"
+md: "01-evidence/rejected/mit-professional-certificate-cybersecurity.md"
+title: "Professional Certificate in Cybersecurity"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado de ciberseguridad; campo ajeno a la analitica segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

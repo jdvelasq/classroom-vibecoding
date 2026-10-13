@@ -1,0 +1,26 @@
+id: "E0102"
+sha256: "6804f61aea9b63a25cd8d0ecfbaceb1ef72c6cc55808a2f9a0195e97eec46e9a"
+file: "01-evidence/pdf/professional-learning/stanford-ai-strategy-governance.pdf"
+md: "01-evidence/md/professional-learning/stanford-ai-strategy-governance.md"
+title: "AI for Senior Executives: Lead AI Transformation to Drive Business Value"
+issuer: "Stanford (programa ejecutivo en linea)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa ejecutivo que pone la IA al servicio de la estrategia y el valor de negocio; vecino inteligencia artificial puesto al servicio del trabajo analitico/estrategico segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

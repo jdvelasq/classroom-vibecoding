@@ -1,0 +1,26 @@
+id: "E0128"
+sha256: "9f424a1aa8aeed33e5422addb4a147868bd0c7d2cb701e1d7b3b53bc4b273ee0"
+file: "01-evidence/rejected/mit-professional-certificate-coding.pdf"
+md: "01-evidence/rejected/mit-professional-certificate-coding.md"
+title: "Professional Certificate in Coding: Full Time"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0076"
+rationale: "Certificado de desarrollo web; ingenieria de software como disciplina autonoma, no pertinente segun domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0063"
+sha256: "2d003046f88cb7578ec4c410b98b0778ff0e68646acecd05d7461180f0501f61"
+file: "01-evidence/rejected/mit-forecasting-technology-innovation__benchmarks-pdf.pdf"
+md: "01-evidence/rejected/mit-forecasting-technology-innovation__benchmarks-pdf.md"
+title: "Forecasting Technology Innovation: Using Data for Strategic Advantage"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Mismo folleto que mit-forecasting-technology-innovation.pdf de este mismo lote (distinto SHA-256, misma portada y contenido); se espera que la regla de duplicados/edicion lo rechace al coincidir titulo, emisor y año."
+previous_edition: null
+duplicate_of: "E0062"
+reevaluates: null
+rationale: "Copia funcionalmente identica del folleto de pronostico de innovacion tecnologica procesado en este mismo lote."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

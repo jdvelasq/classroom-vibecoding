@@ -1,0 +1,26 @@
+id: "E0040"
+sha256: "59aa7180addac62ec68ac14adab68fce27fa67180a150101be7126b9d6607d94"
+file: "01-evidence/pdf/professional-learning/mit-applied-agentic-ai-for-organizational-transformation.pdf"
+md: "01-evidence/md/professional-learning/mit-applied-agentic-ai-for-organizational-transformation.md"
+title: "Applied Agentic AI for Organizational Transformation"
+issuer: "MIT Professional Education"
+year: 2025
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso sobre agentes de IA generativa y agentica para la transformacion organizacional; corresponde directamente a la tendencia emergente de IA generativa y agentica al servicio del trabajo analitico agregada en domain.md v0.6."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

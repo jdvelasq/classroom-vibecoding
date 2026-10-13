@@ -1,0 +1,26 @@
+id: "E0083"
+sha256: "bcddfbe9eecf8b3d9245a708aa38c8042733e09c91488429e4c209b1df214300"
+file: "01-evidence/pdf/professional-learning/mit-professional-certificate-machine-learning-ai.pdf"
+md: "01-evidence/md/professional-learning/mit-professional-certificate-machine-learning-ai.md"
+title: "Professional Certificate Program in Machine Learning & Artificial Intelligence"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Documento marco del certificado que agrupa los cursos individuales de ML/IA de MIT Professional Education ya revisados en este lote (algunos pertinentes, otros autonomos); el documento marco en si no se centra en una pregunta analitica."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Vision general del certificado de Machine Learning e IA de MIT; agrupa cursos de pertinencia mixta (vecino IA tratado a veces autonomamente, a veces al servicio de la analitica), de ahi la pertinencia parcial."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

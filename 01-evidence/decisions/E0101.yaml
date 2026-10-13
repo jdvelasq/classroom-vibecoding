@@ -1,0 +1,26 @@
+id: "E0101"
+sha256: "2977c390790a2e7206c4e754753b180908bbc6165dba6d6b29031a0c9e190ca7"
+file: "01-evidence/pdf/professional-learning/sas-stat.pdf"
+md: "01-evidence/md/professional-learning/sas-stat.md"
+title: "SAS/STAT 12.1 User's Guide: The REG Procedure"
+issuer: "SAS Institute"
+year: 2012
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Documentacion tecnica del procedimiento de regresion de SAS/STAT; el vecino estadistica puesto al servicio del modelado predictivo mediante software, segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0116"
+sha256: "b1a7e1792ffe99353bb4b6f278489f4595ea4bd612dca9453bcf91efaebd9d45"
+file: "01-evidence/pdf/professional-learning/wharton-business-analytics-methods-tools.pdf"
+md: "01-evidence/md/professional-learning/wharton-business-analytics-methods-tools.md"
+title: "Wharton Business Analytics: Methods and Tools"
+issuer: "Wharton School, University of Pennsylvania (programa ejecutivo)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: null
+  vigencia: null
+  acceso: 0
+material_warnings: true
+doubts: "Sin texto extraible (pagina basada en imagen); el juicio se basa unicamente en el titulo, que indica directamente un programa de Business Analytics de una escuela de negocios reconocida."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Por titulo, programa ejecutivo de Business Analytics (metodos y herramientas) de Wharton; nucleo del campo analitica de domain.md, similar a cambridge-business-analytics (E0009)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0059"
+sha256: "54177abca040b34e66bbe95da0b4b3296f00a6017d5a488591b6c59a76fabc1c"
+file: "01-evidence/rejected/mit-designing-product-families.pdf"
+md: "01-evidence/rejected/mit-designing-product-families.md"
+title: "Designing Product Families: From Strategy to Implementation"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de estrategia e implementacion de familias de productos y plataformas de manufactura; no trata la analitica, sus subcampos, precursores ni vecinos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

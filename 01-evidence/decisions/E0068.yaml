@@ -1,0 +1,26 @@
+id: "E0068"
+sha256: "f7b8e4be139ee2bb22dc7148851a5db151bd0b1d07e071ede67057680036df97"
+file: "01-evidence/pdf/professional-learning/mit-machine-learning-big-data-text-processing-advanced.pdf"
+md: "01-evidence/md/professional-learning/mit-machine-learning-big-data-text-processing-advanced.md"
+title: "Machine Learning for Big Data and Text Processing: Advanced"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso explicitamente centrado en 'modern and predictive analysis' y analitica predictiva aplicada a datos no estructurados; nucleo de la analitica predictiva y de grandes datos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

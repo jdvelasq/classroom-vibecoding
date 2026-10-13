@@ -1,0 +1,26 @@
+id: "E0054"
+sha256: "5b9a56ce16e36ef1528f6992bfc01a3c685932ceab0050cfa0245a2c0fbb8db4"
+file: "01-evidence/rejected/mit-deep-learning-ai-computer-vision.pdf"
+md: "01-evidence/rejected/mit-deep-learning-ai-computer-vision.md"
+title: "Deep Learning for AI and Computer Vision"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: "El curso trata el diseno y entrenamiento de redes neuronales convolucionales para percepcion visual (deteccion de objetos, comprension de escenas 3D) sin ningun marco de pregunta analitica o decision de negocio; es IA como disciplina autonoma, vecino no pertinente segun domain.md."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Diseno, entrenamiento y teoria de modelos de vision por computador como disciplina autonoma de IA; domain.md excluye explicitamente a la IA autonoma cuando no se pone al servicio de una pregunta o producto analitico."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

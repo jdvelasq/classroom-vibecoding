@@ -9,9 +9,11 @@
 
 Ejecución (desde la raíz del repositorio):
 
-    uv run design/tasks/s01-convert-benchmarks.py            # incremental
+    uv run design/tasks/s01-convert-benchmarks.py            # 01-evidence/ingest/
     uv run design/tasks/s01-convert-benchmarks.py --force    # reconvierte todo
     uv run design/tasks/s01-convert-benchmarks.py RUTA.pdf   # sólo esos PDFs
+    uv run design/tasks/s01-convert-benchmarks.py \
+        --input design/benchmarks-pdf --output design/benchmarks-md  # benchmarks
 
 Sin uv: `pip install pymupdf4llm==0.0.27 pymupdf==1.26.5` y ejecutar con
 `python`. Versiones elegidas por compatibilidad con Python 3.9 y con el
@@ -19,8 +21,9 @@ Sin uv: `pip install pymupdf4llm==0.0.27 pymupdf==1.26.5` y ejecutar con
 
 Contrato:
 
-- Lee `design/benchmarks-pdf/**.pdf` y escribe `design/benchmarks-md/**.md`
-  con la misma estructura de carpetas y el mismo nombre de archivo.
+- Lee `--input/**.pdf` y escribe `--output/**.md` con la misma estructura de
+  carpetas y el mismo nombre de archivo. Ambas carpetas son por defecto
+  `01-evidence/ingest/`, de modo que cada `.md` queda junto a su PDF.
 - Es determinista y no usa LLM. Prioriza fidelidad conceptual: texto completo,
   orden de lectura, títulos, listas, tablas y marcas de página citables.
 - No aplica OCR. Las páginas con poco texto extraíble se marcan para revisión
@@ -47,8 +50,7 @@ import pymupdf
 import pymupdf4llm
 
 ROOT = Path(__file__).resolve().parents[2]
-PDF_DIR = ROOT / "design" / "benchmarks-pdf"
-MD_DIR = ROOT / "design" / "benchmarks-md"
+INGEST_DIR = ROOT / "01-evidence" / "ingest"
 
 TOOL = (
     f"pymupdf4llm {pymupdf4llm.__version__} + pymupdf {pymupdf.__version__} "
@@ -169,13 +171,20 @@ def convert(pdf: Path) -> tuple[str, dict]:
     return body, meta
 
 
-def build_header(pdf: Path, digest: str, meta: dict) -> str:
-    rel = pdf.relative_to(ROOT).as_posix()
+def shown(path: Path) -> Path:
+    return path.relative_to(ROOT) if ROOT in path.parents else path
+
+
+def build_header(pdf: Path, pdf_dir: Path, digest: str, meta: dict) -> str:
+    folders = pdf.relative_to(pdf_dir).parts[:-1]
     lines = [
         "---",
-        f'source: "{rel}"',
+        f'source: "{shown(pdf).as_posix()}"',
         f"source_sha256: {digest}",
-        f"family: {pdf.relative_to(PDF_DIR).parts[0]}",
+    ]
+    if folders:
+        lines.append(f"family: {folders[0]}")
+    lines += [
         f"pages: {meta['pages']}",
         f"min_text_coverage: {meta['min_coverage']}",
         f"pages_without_graphics: {meta['redone']}",
@@ -193,22 +202,25 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("pdfs", nargs="*", type=Path, help="PDFs específicos")
     ap.add_argument("--force", action="store_true", help="reconvierte todo")
+    ap.add_argument("--input", type=Path, default=INGEST_DIR, help="carpeta de PDFs")
+    ap.add_argument("--output", type=Path, default=INGEST_DIR, help="carpeta de .md")
     args = ap.parse_args()
+    pdf_dir, md_dir = args.input.resolve(), args.output.resolve()
 
     pdfs = (
         [p.resolve() for p in args.pdfs]
         if args.pdfs
-        else sorted(PDF_DIR.rglob("*.pdf"))
+        else sorted(pdf_dir.rglob("*.pdf"))
     )
     converted, skipped, warned, failed = [], [], [], []
 
     for pdf in pdfs:
-        if PDF_DIR not in pdf.parents:
-            print(f"✗ fuera de {PDF_DIR.relative_to(ROOT)}: {pdf}")
+        if pdf_dir not in pdf.parents:
+            print(f"✗ fuera de {shown(pdf_dir)}: {pdf}")
             failed.append(pdf)
             continue
-        rel = pdf.relative_to(PDF_DIR)
-        md = (MD_DIR / rel).with_suffix(".md")
+        rel = pdf.relative_to(pdf_dir)
+        md = (md_dir / rel).with_suffix(".md")
         digest = sha256(pdf)
         old = read_header(md)
         if (
@@ -225,7 +237,9 @@ def main() -> int:
             failed.append(rel)
             continue
         md.parent.mkdir(parents=True, exist_ok=True)
-        md.write_text(build_header(pdf, digest, meta) + body, encoding="utf-8")
+        md.write_text(
+            build_header(pdf, pdf_dir, digest, meta) + body, encoding="utf-8"
+        )
         converted.append(rel)
         status = "⚠" if meta["warnings"] else "✓"
         print(f"{status} {rel} ({meta['pages']} págs)")
@@ -236,11 +250,11 @@ def main() -> int:
 
     orphans = (
         [
-            md.relative_to(MD_DIR)
-            for md in sorted(MD_DIR.rglob("*.md"))
-            if not (PDF_DIR / md.relative_to(MD_DIR)).with_suffix(".pdf").exists()
+            md.relative_to(md_dir)
+            for md in sorted(md_dir.rglob("*.md"))
+            if not (pdf_dir / md.relative_to(md_dir)).with_suffix(".pdf").exists()
         ]
-        if MD_DIR.exists()
+        if md_dir.exists()
         else []
     )
 

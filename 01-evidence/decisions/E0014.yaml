@@ -1,0 +1,26 @@
+id: "E0014"
+sha256: "55d1cb0c136966aa4e06b080e2fc22da81b8090fb965b66a8fd79a651c15e7fe"
+file: "01-evidence/pdf/professional-learning/codigo-facilito-mlops-bootcamp-2024.pdf"
+md: "01-evidence/md/professional-learning/codigo-facilito-mlops-bootcamp-2024.md"
+title: "Bootcamp de MLOps 2024"
+issuer: "Codigo Facilito"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 0
+material_warnings: true
+doubts: "Las 27 paginas son imagenes sin texto extraible; el juicio se basa unicamente en el titulo y el nombre del archivo (bootcamp de MLOps), consistente con el subcampo productos de datos (despliegue y monitoreo de modelos), pero no se pudo verificar contenido ni competencias especificas citables."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Bootcamp comercial de MLOps que, por su titulo, trata el subcampo productos de datos (despliegue, mantenimiento y monitoreo de modelos) definido en domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

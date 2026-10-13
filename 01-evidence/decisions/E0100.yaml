@@ -1,0 +1,26 @@
+id: "E0100"
+sha256: "7cabe87e23ff9469d7b4b9e17582dd694b8ac329ed0975bf9a26e3dcb26b5569"
+file: "01-evidence/pdf/professional-learning/sas-forecasting.pdf"
+md: "01-evidence/md/professional-learning/sas-forecasting.md"
+title: "Forecasting with SAS: Special Collection"
+issuer: "SAS Institute"
+year: 2020
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Coleccion tecnica de metodos de pronostico de un proveedor reconocido; nucleo de la analitica predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

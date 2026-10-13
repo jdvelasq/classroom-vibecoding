@@ -1,0 +1,22 @@
+id: "E0003"
+sha256: "2deb7623c75d393d83249d3b54fd8ce29e807f6a73fc4b9d50d3bf73ab657357"
+file: "01-evidence/pdf/professional-learning/mit-data-science-big-data.pdf"
+md: "01-evidence/md/professional-learning/mit-data-science-big-data.md"
+title: "Data Science y Big Data: decisiones basadas en datos"
+issuer: "MIT IDSS"
+year: 2022
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Course announcement on using big data for business decisions; market signal of weak specificity for big data analytics and predictive analytics."
+criteria_version: "0.2"
+date: "2026-10-13"

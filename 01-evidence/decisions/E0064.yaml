@@ -1,0 +1,26 @@
+id: "E0064"
+sha256: "05653fbf803c9b0593269760d1fcc47dfd66d98664f60a4b31972a266148f689"
+file: "01-evidence/pdf/professional-learning/mit-generative-and-agentic-ai.pdf"
+md: "01-evidence/md/professional-learning/mit-generative-and-agentic-ai.md"
+title: "Applied AI Bundle: Generative and Agentic AI - Two AI Courses for Modern Business Transformation"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Paquete comercial que combina los dos cursos ya aceptados de IA generativa y agentica (E0040, E0042); mismo contenido tematico, empaquetado como oferta conjunta."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Paquete de dos cursos de IA generativa y agentica para la transformacion de negocio; corresponde a la tendencia emergente de domain.md v0.6, igual que los cursos individuales ya aceptados."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

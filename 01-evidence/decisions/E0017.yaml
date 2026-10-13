@@ -1,0 +1,26 @@
+id: "E0017"
+sha256: "3341453c6f3c8e2d976ffb2749c4232bd0cb2002519356bf5631787d718c3f17"
+file: "01-evidence/pdf/literature-derived/dataops-01-the-problem.pdf"
+md: "01-evidence/md/literature-derived/dataops-01-the-problem.md"
+title: "Problemas y Desafios con Data Analytics & Data Science"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido; se trata como parte de una serie coherente sobre DataOps aplicada a la analitica."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Describe los problemas reales de calidad de datos, silos y decisiones basadas en intuicion que motivan la ingenieria de datos para la analitica y los productos de datos definidos en domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

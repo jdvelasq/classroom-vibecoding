@@ -1,0 +1,46 @@
+CÓMO PROCESAR LA EVIDENCIA
+
+Los criterios están en criteria.md y el campo en domain.md. Este archivo
+solo explica el proceso.
+
+1. Poner los PDFs en el buzón
+
+   01-evidence/ingest/          documentos que aporta david
+   01-evidence/ingest/agent/    documentos que encontró un agente
+
+   La carpeta decide el origen, y el origen decide qué criterios se aplican.
+
+2. Conversión a Markdown (automática)
+
+   La skill convierte los PDFs sola en su primer paso; no hace falta hacer
+   nada. Correr el conversor a mano es opcional, por ejemplo para revisar
+   la conversión antes de pedir la selección (desde la raíz del repositorio):
+
+   uv run design/tasks/s01-convert-benchmarks.py
+
+   El conversor salta los archivos que ya están al día. Si no encuentra uv,
+   agrega esta línea a ~/.zshrc y abre una terminal nueva:
+
+   export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
+3. Pedir la selección a Claude
+
+   /selecting-evidence      o simplemente: "procesa la evidencia"
+
+4. Dónde queda cada resultado
+
+   pdf/<categoría>/     PDFs aceptados
+   md/<categoría>/      su texto en Markdown
+   rejected/            rechazados (se versiona para auditoría)
+   rejected/duplicates/ copias exactas de documentos ya indexados (no se
+                        versiona: el original ya está en git)
+   decisions/<id>.yaml  puntajes, decisión y justificación de cada documento
+   index.csv            un registro por documento decidido
+
+5. Nada queda pendiente
+
+   La skill siempre acepta o rechaza; ingest/ queda vacío. Las advertencias
+   de conversión y las dudas quedan en decisions/<id>.yaml y en el informe
+   de Claude. Un rechazo se puede revertir porque rejected/ es un borrado
+   suave. Si domain.md cambia de versión, la skill re-evalúa sola lo que
+   corresponda según criteria.md.

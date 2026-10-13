@@ -1,0 +1,26 @@
+id: "E0035"
+sha256: "2c827d965818257f0506a7d1c8bc9b13599a1fc0b7fe0943340f7b4dc85123c7"
+file: "01-evidence/pdf/governmental/mintic-fedesoft-talento-digital-2025-2030.pdf"
+md: "01-evidence/md/governmental/mintic-fedesoft-talento-digital-2025-2030.md"
+title: "Estudio de Oferta y Demanda de Talento Digital en Colombia 2025-2030"
+issuer: "MinTIC / Fedesoft, Colombia"
+year: 2025
+source: "david"
+decision: "accept"
+category: "governmental"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El estudio cubre todo el talento digital colombiano (programacion, ciberseguridad, nube, blockchain, analitica), no solo analitica; la pertinencia se basa en secciones especificas dedicadas a ciencia de datos/IA y en tablas de competencias de modelado y comunicacion analitica, no en el documento completo."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Estudio oficial de oferta y demanda de talento digital con una seccion dedicada a programas de IA y ciencia de datos y tablas de competencias de Modelado y analitica (analitica avanzada, machine learning, pronosticos, series de tiempo) y Comunicacion analitica (storytelling con datos); evidencia de mercado valida segun domain.md para la analitica predictiva y descriptiva."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0097"
+sha256: "319a19bfd117f4f703f781655919b15ea932374af4edb574699a78e27fccde38"
+file: "01-evidence/rejected/python-institute-pcep-exam-syllabus.pdf"
+md: "01-evidence/rejected/python-institute-pcep-exam-syllabus.md"
+title: "PCEP - Certified Entry-Level Python Programmer - Exam Syllabus"
+issuer: "Python Institute"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificacion de programacion basica en Python; no trata la analitica segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0137"
+sha256: "14084f4c693d25961f2d1c83d171033dc0a75521eb281673ef955c16255f8489"
+file: "01-evidence/rejected/python-institute-pcpp2-exam-syllabus.pdf"
+md: "01-evidence/rejected/python-institute-pcpp2-exam-syllabus.md"
+title: "PCPP2 - Certified Professional in Python Programming 2"
+issuer: "Python Institute"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0099"
+rationale: "Certificacion de empaquetado, patrones de diseno, comunicacion entre procesos y redes en Python; ingenieria de software autonoma, no pertinente segun domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

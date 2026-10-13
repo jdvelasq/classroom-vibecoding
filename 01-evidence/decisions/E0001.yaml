@@ -1,0 +1,22 @@
+id: "E0001"
+sha256: "c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117"
+file: "01-evidence/pdf/authoritative/informs-analytics-framework-2024.pdf"
+md: "01-evidence/md/authoritative/informs-analytics-framework-2024.md"
+title: "INFORMS Analytics Framework"
+issuer: "INFORMS"
+year: 2024
+source: "david"
+decision: "accept"
+category: "authoritative"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Professional body framework of seven analytics domains with tasks across the full analytics lifecycle; covers descriptive, predictive and prescriptive analytics and deployment."
+criteria_version: "0.2"
+date: "2026-10-13"

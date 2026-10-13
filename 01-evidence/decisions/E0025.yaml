@@ -1,0 +1,26 @@
+id: "E0025"
+sha256: "fc3daa339da95c56a1938b4e1ed26694603a8f3a8742a1d245866418112eba1b"
+file: "01-evidence/pdf/literature-derived/dataops-09-data-quality.pdf"
+md: "01-evidence/md/literature-derived/dataops-09-data-quality.md"
+title: "DataOps para Calidad de Datos"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido; misma serie de dataops ya aceptada."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Trata el analisis de impacto y las pruebas automatizadas para asegurar la calidad del dato en pipelines de produccion, nucleo de la ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

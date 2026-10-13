@@ -1,0 +1,26 @@
+id: "E0056"
+sha256: "71dcbf6674a96a79afb5bebb3d2579aa88cd9e82400cb919f394482060afde55"
+file: "01-evidence/pdf/literature-derived/Tendencias de talento, inteligencia artificial y regulación laboral en LATAM.pdf"
+md: "01-evidence/md/literature-derived/Tendencias de talento, inteligencia artificial y regulación laboral en LATAM.md"
+title: "Gestion Humana 2026: Tendencias de Talento, Inteligencia Artificial y Regulacion Laboral en LATAM"
+issuer: "Reporte ejecutivo de gestion humana (emisor exacto no declarado; sintetiza literatura academica citada en su bibliografia)"
+year: 2026
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica la organizacion emisora del reporte ejecutivo; cita literatura academica (OIT, revistas) para respaldar sus tendencias."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Reporte sobre analitica de talento y toma de decisiones informadas por datos en RH; corresponde a la aplicacion de analitica descriptiva y predictiva al dominio de negocio de personas, como en cambridge-people-analytics (E0010)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0046"
+sha256: "926008c1765f5c4dd7b621d857f0d0bcb3b783c2995fbfeb74fa1fda444c4582"
+file: "01-evidence/pdf/professional-learning/mit-chief-digital-officer.pdf"
+md: "01-evidence/md/professional-learning/mit-chief-digital-officer.md"
+title: "Blended Professional Certificate in Chief Digital Officer"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El certificado incluye un componente de liderazgo de datos ('hacer accesibles los datos a los tomadores de decision') pero el programa completo es de estrategia y transformacion digital general, no centrado en analitica."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado de liderazgo digital general que incluye un modulo de liderazgo de datos para decisiones; pertinencia parcial via ese componente, relacionado con productos de datos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

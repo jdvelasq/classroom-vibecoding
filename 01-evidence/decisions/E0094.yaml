@@ -1,0 +1,26 @@
+id: "E0094"
+sha256: "74f7fec85a90b098b365b0973449130a20a396b33adf06ec85e63e9c88250dcf"
+file: "01-evidence/pdf/literature-derived/prodig8-strategies-executing-analytics-projects.pdf"
+md: "01-evidence/md/literature-derived/prodig8-strategies-executing-analytics-projects.md"
+title: "Strategies for Executing Analytics Projects: Toward a Unified Framework of Methodologies (PRODIG8)"
+issuer: "Juan D. Velasquez, Lili J. Gallego, Lorena Cadavid - Universidad Nacional de Colombia"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Cita estudios de 2025, por lo que el articulo es muy reciente, aunque no se encontro una fecha de publicacion explicita en las paginas revisadas."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Estudio academico que sistematiza 18 metodologias de proyectos de analitica en un framework unificado (PRODIG8); nucleo metodologico directo del campo analitica definido en domain.md, con maxima especificidad y autoridad academica."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

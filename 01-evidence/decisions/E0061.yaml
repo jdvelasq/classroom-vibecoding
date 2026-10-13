@@ -1,0 +1,26 @@
+id: "E0061"
+sha256: "d0b389dd1d32d1e09ed559a19e81055a41247cf529a455f96ddec7d519893444"
+file: "01-evidence/pdf/professional-learning/mit-digital-transformation.pdf"
+md: "01-evidence/md/professional-learning/mit-digital-transformation.md"
+title: "Digital Transformation: From AI and IoT to Cloud, Blockchain, and Cybersecurity"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso cubre cinco tecnologias distintas (IA, IoT, nube, blockchain, ciberseguridad) como panorama general; la IA/analitica es solo una de cinco partes."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Panorama de cinco tecnologias digitales donde la IA es solo un componente; pertinencia parcial via el vecino inteligencia artificial, el resto trata vecinos no pertinentes de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

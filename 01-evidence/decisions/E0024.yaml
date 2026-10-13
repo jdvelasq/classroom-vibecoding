@@ -1,0 +1,26 @@
+id: "E0024"
+sha256: "37a435fa50be7809f94174a1bebcbbee3257df5ecb0376eb4e7a4e997fcfead0"
+file: "01-evidence/pdf/literature-derived/dataops-08-data-scientids.pdf"
+md: "01-evidence/md/literature-derived/dataops-08-data-scientids.md"
+title: "DataOps para el Data Engineer y el Data Scientist"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido; continua la misma serie de dataops-01 a dataops-07 ya aceptada."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Compara el desarrollo de software tradicional con el desarrollo de modelos de machine learning desde la perspectiva de roles de Data Engineer y Data Scientist; corresponde a la ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

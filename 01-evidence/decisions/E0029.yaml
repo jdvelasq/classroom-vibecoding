@@ -1,0 +1,26 @@
+id: "E0029"
+sha256: "af729216b134cb7dcbe8d2c0b64670b7f762408c5b2ff0d2fb0b9f959b77da70"
+file: "01-evidence/pdf/authoritative/informs-cap-essentials-blueprint.pdf"
+md: "01-evidence/md/authoritative/informs-cap-essentials-blueprint.md"
+title: "CAP-Essentials (CAP-E) Exam Blueprint"
+issuer: "INFORMS - Analytics Certification Board"
+year: null
+source: "david"
+decision: "accept"
+category: "authoritative"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Blueprint oficial de un cuerpo profesional del campo (INFORMS) que enumera tareas citables por dominio (planteamiento del problema de negocio y analitico, datos, metodologia, despliegue); cubre el ciclo completo de la analitica definido en domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

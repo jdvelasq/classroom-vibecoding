@@ -5,6 +5,11 @@
 **/L[0-9][0-9][0-9]_*/temp/*
 !**/L[0-9][0-9][0-9]_*/temp/.gitkeep
 
+01-evidence/ingest/*
+!01-evidence/ingest/.gitkeep
+# Exact copies of documents that are already versioned elsewhere.
+01-evidence/rejected/duplicates/
+
 temp/
 
 # Byte-compiled / optimized / DLL files

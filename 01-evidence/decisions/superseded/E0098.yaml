@@ -1,0 +1,26 @@
+id: "E0098"
+sha256: "4acafd64c19406395a9140e0b5193ec17f2173709c6df5cf226dc252d10af8ba"
+file: "01-evidence/rejected/python-institute-pcpp1-exam-syllabus.pdf"
+md: "01-evidence/rejected/python-institute-pcpp1-exam-syllabus.md"
+title: "PCPP1 - Certified Professional in Python Programming 1 - Exam Syllabus"
+issuer: "Python Institute"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificacion avanzada de programacion en Python (OOP, pruebas); ingenieria de software autonoma, no pertinente segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

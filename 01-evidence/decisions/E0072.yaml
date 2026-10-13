@@ -1,0 +1,26 @@
+id: "E0072"
+sha256: "1ae3db508911862774a65b5afd7b6ca321472414388d0c3f116e988a94df14f2"
+file: "01-evidence/pdf/professional-learning/mit-no-code-and-agentic-ai.pdf"
+md: "01-evidence/md/professional-learning/mit-no-code-and-agentic-ai.md"
+title: "No Code and Agentic AI"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa con modulos explicitos de IA generativa, responsable y agentica sin codigo; corresponde a la tendencia emergente de IA generativa y agentica al servicio del trabajo analitico de domain.md v0.6."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

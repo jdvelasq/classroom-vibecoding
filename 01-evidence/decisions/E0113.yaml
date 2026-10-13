@@ -1,0 +1,26 @@
+id: "E0113"
+sha256: "ab39264039fbf3a76b5310aa59491c73d31b41adf2e8674a661261eb184ff484"
+file: "01-evidence/pdf/professional-learning/ut-austin-agentic-ai-business-applications.pdf"
+md: "01-evidence/md/professional-learning/ut-austin-agentic-ai-business-applications.md"
+title: "Postgraduate Program in Agentic AI for Business Applications"
+issuer: "UT Austin (via Great Learning)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "El PDF es una captura rota de una pagina web de carga/marketing, repetida en sus 22 paginas ('Descubre un adelanto exclusivo del programa', 'APPLICATIONS CLOSE IN 4 DAYS'); no contiene contenido real del temario. El juicio se basa en el titulo, que coincide directamente con la tendencia emergente de IA agentica para negocios de domain.md v0.6."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de posgrado en IA agentica para aplicaciones de negocio (UT Austin); por titulo, corresponde a la tendencia emergente de domain.md v0.6, aunque el contenido extraido no permite verificar competencias especificas."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

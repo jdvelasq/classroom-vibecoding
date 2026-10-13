@@ -1,0 +1,26 @@
+id: "E0088"
+sha256: "7f22a1dff46ac7659f2abcd3f413fe15a8b31f26f1f1b0a26bc8daafb8c6ad20"
+file: "01-evidence/pdf/professional-learning/mit-reinforcement-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-reinforcement-learning.md"
+title: "Reinforcement Learning"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Mismo patron que mit-advanced-reinforcement-learning (E0038): RL como disciplina de ML autonoma aplicable a muchas industrias, solo tangencialmente mencionando analistas de negocio como audiencia."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Bootcamp de aprendizaje por refuerzo (RL) para la organizacion; mismo tratamiento parcial que E0038, vecino IA/ML autonomo con conexion tangencial a la analitica prescriptiva."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0066"
+sha256: "a6fb8d5510f20f9f457557e931fff8e312dff5e9197ec3cfacc2dd5cb41e2627"
+file: "01-evidence/pdf/professional-learning/mit-industrial-internet-things.pdf"
+md: "01-evidence/md/professional-learning/mit-industrial-internet-things.md"
+title: "Industrial Internet of Things: From Theory to Application"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso se centra en la teoria y aplicacion de sensado, computo y comunicacion de IoT industrial; a diferencia de mit-advanced-data-analytics-iiot-smart-manufacturing (E0037), no enfatiza modelado predictivo ni dashboards de analitica en lo revisado."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de IoT industrial centrado en infraestructura de sensado/computo/comunicacion; vecino grandes datos/infraestructura tratado mayormente como fin en si mismo segun domain.md, con pertinencia parcial."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

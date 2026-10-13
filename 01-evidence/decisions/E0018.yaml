@@ -1,0 +1,26 @@
+id: "E0018"
+sha256: "e13a6b75b08f67349d770566a9bd1323925b4ddbed28854b902339f7510d6c42"
+file: "01-evidence/pdf/literature-derived/dataops-02-data-strategy.pdf"
+md: "01-evidence/md/literature-derived/dataops-02-data-strategy.md"
+title: "Estrategia de Datos: conectar objetivos, capacidades e iniciativas para generar valor"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Conecta objetivos organizacionales, gobierno de datos y metodologias de proyectos analiticos con la generacion de valor; corresponde a la ingenieria de datos para la analitica y a productos de datos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

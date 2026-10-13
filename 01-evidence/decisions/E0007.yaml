@@ -1,0 +1,22 @@
+id: "E0007"
+sha256: "b64f52095176ee5a0f8d29e8b325f57bf095c51caef4a36305f009d193fa1623"
+file: "01-evidence/pdf/institutional/berkeley-data-c101-data-engineering.pdf"
+md: "01-evidence/md/institutional/berkeley-data-c101-data-engineering.md"
+title: "DATA C101 - Data Engineering (course catalog entry)"
+issuer: "UC Berkeley, Data Science Undergraduate Studies"
+year: null
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Curso universitario de ingenieria de datos que cubre el ciclo de vida de los datos hasta la operacionalizacion escalable, vinculado al vecino ingenieria de datos y al subcampo productos de datos (despliegue y mantenimiento)."
+criteria_version: "0.2"
+date: "2026-10-13"

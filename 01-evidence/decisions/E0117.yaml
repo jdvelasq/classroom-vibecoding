@@ -1,0 +1,26 @@
+id: "E0117"
+sha256: "60bdb1bc81fa186446b82e893dd9058e3bfb02774b7dc7319bbd137d7d38f315"
+file: "01-evidence/pdf/professional-learning/wharton-business-analytics-program-modules.pdf"
+md: "01-evidence/md/professional-learning/wharton-business-analytics-program-modules.md"
+title: "Wharton Business Analytics: Program Modules"
+issuer: "Wharton School, University of Pennsylvania (programa ejecutivo)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: null
+  vigencia: null
+  acceso: 0
+material_warnings: true
+doubts: "Sin texto extraible (pagina basada en imagen); el juicio se basa unicamente en el titulo. Es el desglose de modulos del mismo programa que wharton-business-analytics-methods-tools.pdf, de este mismo lote."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Por titulo, desglose de modulos del programa de Business Analytics de Wharton; mismo programa y pertinencia que el archivo companero de este lote."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0105"
+sha256: "1cb81bb95eb1f98571222705505c67810c28fe4e8f8f5acb78fd300f295b4330"
+file: "01-evidence/pdf/professional-learning/uchicago-data-science-business.pdf"
+md: "01-evidence/md/professional-learning/uchicago-data-science-business.md"
+title: "Certificado Profesional en Data Science para Negocios"
+issuer: "University of Chicago (programa ejecutivo en linea)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado centrado explicitamente en analizar datos para tomar decisiones de negocio mas inteligentes; nucleo de la analitica predictiva y descriptiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

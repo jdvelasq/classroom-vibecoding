@@ -1,0 +1,26 @@
+id: "E0106"
+sha256: "88059f3dbc529dd747e89c5ae8d94759ad584b3eb1f33472fe7049fb26556a6f"
+file: "01-evidence/rejected/uchicago-devops.pdf"
+md: "01-evidence/rejected/uchicago-devops.md"
+title: "DevOps"
+issuer: "University of Chicago (programa ejecutivo en linea)"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de ciclo de vida de desarrollo de software y DevOps; ingenieria de software autonoma, no pertinente segun domain.md (sin mencion de productos de datos en lo revisado)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

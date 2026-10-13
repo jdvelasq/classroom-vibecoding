@@ -1,0 +1,26 @@
+id: "E0043"
+sha256: "da282eba9a5bd669b1b4bc40a8088acb51a0ed2302d07dfa8b9e74a2f18caf4b"
+file: "01-evidence/pdf/professional-learning/mit-applying-machine-learning-engineering-science.pdf"
+md: "01-evidence/md/professional-learning/mit-applying-machine-learning-engineering-science.md"
+title: "Applying Machine Learning to Engineering and Science"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: 2020
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: "Varios casos (prediccion de produccion de petroleo y gas con minimizacion de riesgo de decision, cuantificacion de riesgo en sistemas complejos) encajan en la analitica predictiva con marco de decision explicito; otros casos (imagenologia computacional, aprendizaje geometrico, ciencia de materiales) son tecnica de ML autonoma en ciencia/ingenieria sin ese marco, por lo que la pertinencia es parcial."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de casos de aplicacion de machine learning a ingenieria y ciencia; algunos casos (prediccion de produccion, cuantificacion de riesgo) corresponden a la analitica predictiva de domain.md, el resto trata el ML como tecnica autonoma aplicada a dominios cientificos."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

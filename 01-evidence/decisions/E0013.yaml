@@ -1,0 +1,28 @@
+id: "E0013"
+sha256: "6e16c058b984581e89159a3260a2cc0c7b0164e7f20ae0ad82a5c4376dee5370"
+file: "00-regulations/pdf/cesu-acuerdo-02-2020.pdf"
+md: "00-regulations/md/cesu-acuerdo-02-2020.md"
+title: "Acuerdo 02 de 2020 - Modelo de Acreditacion en Alta Calidad"
+issuer: "Consejo Nacional de Acreditacion (CNA) / CESU, Colombia"
+year: 2020
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: true
+doubts: "Documento de politica general de acreditacion de alta calidad para programas e instituciones de educacion superior en Colombia; no trata la analitica, sus subcampos, precursores ni vecinos segun domain.md en ningun pasaje identificado (ni en la revision de las primeras paginas ni en el titulo)."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Marco de acreditacion institucional/curricular generico (CNA/CESU), ajeno al campo de la analitica definido en domain.md; no describe competencias, metodos ni practicas de ningun subcampo, precursor o vecino."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
+excluded_as: "normative"
+note: "Rejected as regulatory framework, not for lack of value. It sets the framework for defining competencies, skills and learning outcomes and will be used by the competency map. It belongs to the normative folder (proposed 00-regulations/, pending david's confirmation) with its own cycle outside this selection. The rejected/ copy was removed because it is byte-identical to the versioned copy."

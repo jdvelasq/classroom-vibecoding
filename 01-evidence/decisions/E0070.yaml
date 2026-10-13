@@ -1,0 +1,26 @@
+id: "E0070"
+sha256: "79b1abc97cbce8aa37117c6fb9022e96fe2a7afea71e9407286566f162bd5f9f"
+file: "01-evidence/pdf/professional-learning/mit-machine-learning-modeling-simulation-principles.pdf"
+md: "01-evidence/md/professional-learning/mit-machine-learning-modeling-simulation-principles.md"
+title: "Machine Learning, Modeling, and Simulation Principles"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: "Programa centrado en fundamentos de modelado y simulacion (ecuaciones diferenciales, el nuevo paradigma computacional) como tecnica cientifica general; no se observa un marco explicito de decision de negocio en las primeras paginas revisadas."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Principios de modelado y simulacion con machine learning; pertinencia parcial, pues trata tecnicas de ML/simulacion aplicables a la analitica predictiva pero sin un marco explicito de decision analitica."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

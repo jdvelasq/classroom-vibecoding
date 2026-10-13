@@ -1,0 +1,22 @@
+id: "E0002"
+sha256: "c41987f5f8e878f5850201aa26236f2dbc172fb10735aca736d2b4c84cdf2d2f"
+file: "01-evidence/rejected/mit-blockchain-disruptive-technology.pdf"
+md: "01-evidence/rejected/mit-blockchain-disruptive-technology.md"
+title: "Blockchain: Disruptive Technology"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 1
+material_warnings: true
+previous_edition: null
+rationale: "Course brochure on blockchain technology; outside the field, its subfields, precursors and neighbours of domain.md."
+criteria_version: "0.2"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0065"
+sha256: "c8dc0524f69eddd3c66fb7a37f33ecb6e449156f055dc3d88212ac96126c864d"
+file: "01-evidence/pdf/professional-learning/mit-graph-algorithms-machine-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-graph-algorithms-machine-learning.md"
+title: "Graph Algorithms and Machine Learning"
+issuer: "MIT Professional Education"
+year: 2023
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Analitica de grafos sobre grandes conjuntos de datos para extraer insights e informar decisiones de negocio, detectar fraude y mejorar servicios; corresponde a la analitica de grandes datos y predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
