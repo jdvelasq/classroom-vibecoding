@@ -4,9 +4,10 @@ Usage (from the repository root):
 
     python3 .agents/skills/selecting-evidence/scripts/intake.py
 
-Prints a JSON manifest. Exact duplicates of an indexed document (same
-SHA-256) leave the inbox for 01-evidence/rejected/duplicates/ and are reported
-under "duplicates"; they are not indexed again.
+Prints a JSON manifest. Exact copies (same SHA-256) of a document in
+00-regulations/ or of an indexed document leave the inbox for
+01-evidence/rejected/duplicates/ and are reported under "regulations" or
+"duplicates"; they are not judged or indexed again.
 """
 
 from __future__ import annotations
@@ -33,11 +34,17 @@ def move_duplicate(layout: Layout, pdf: Path) -> Path:
 
 def intake(layout: Layout) -> dict[str, list[dict]]:
     by_sha = {row["sha256"]: row for row in read_index(layout)}
-    pending, duplicates = [], []
+    # Regulations frame the design process itself; they are never evidence.
+    regulations = {sha256(p): p for p in layout.regulations.rglob("*.pdf")} if layout.regulations.exists() else {}
+    pending, duplicates, regulatory = [], [], []
     for pdf in sorted(layout.ingest.rglob("*.pdf")):
         if any(part.startswith(".") for part in pdf.relative_to(layout.ingest).parts):
             continue
         digest = sha256(pdf)
+        if digest in regulations:
+            moved = move_duplicate(layout, pdf)
+            regulatory.append({"file": layout.shown(moved), "regulation": layout.shown(regulations[digest])})
+            continue
         if digest in by_sha:
             original = by_sha[digest]
             moved = move_duplicate(layout, pdf)
@@ -63,7 +70,7 @@ def intake(layout: Layout) -> dict[str, list[dict]]:
                 "conversion_warnings": header.get("warnings", []),
             }
         )
-    return {"pending": pending, "duplicates": duplicates}
+    return {"pending": pending, "duplicates": duplicates, "regulations": regulatory}
 
 
 def main() -> int:

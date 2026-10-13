@@ -1,0 +1,26 @@
+id: "E0090"
+sha256: "4fff2348bb62166f370f38d964157c160c2a88abebcfae2177b81133d779825c"
+file: "01-evidence/pdf/institutional/national-academies-data-science-for-undergraduates-2018.pdf"
+md: "01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md"
+title: "Data Science for Undergraduates: Opportunities and Options"
+issuer: "National Academies of Sciences, Engineering, and Medicine"
+year: 2018
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Informe de consenso de la National Academies sobre ciencia de datos de pregrado, elaborado con el Board on Mathematical Sciences and Analytics; comparandum institucional para distinguir la identidad de Analitica de la ciencia de datos como disciplina contribuyente, similar a E0005."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0111"
+sha256: "cd9a1e72271e37452be9a425519dc29793017dc7885d3762186f609799cd4a72"
+file: "01-evidence/pdf/institutional/unf-cap-6768-data-analytics-syllabus.pdf"
+md: "01-evidence/md/institutional/unf-cap-6768-data-analytics-syllabus.md"
+title: "CAP 6768 - Data Analytics (Course Syllabus)"
+issuer: "University of North Florida, School of Computing"
+year: null
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de curso de posgrado en Data Analytics con proyecto de mineria de datos; nucleo del campo analitica de domain.md, con el precursor mineria de datos explicito en sus entregables."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

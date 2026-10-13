@@ -1,0 +1,26 @@
+id: "E0079"
+sha256: "25a5f3fc44350ec6a04b328ea85fcbc347805ed3ed9311582307cecb053d9245"
+file: "01-evidence/pdf/professional-learning/mit-professional-certificate-data-engineering.pdf"
+md: "01-evidence/md/professional-learning/mit-professional-certificate-data-engineering.md"
+title: "Professional Certificate in Data Engineering"
+issuer: "MIT xPRO"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado centrado en configurar, almacenar y hacer accesibles los datos para que los cientificos de datos obtengan informacion util; corresponde directamente al subcampo ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

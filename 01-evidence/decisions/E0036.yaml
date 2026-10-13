@@ -1,0 +1,26 @@
+id: "E0036"
+sha256: "333d1b4607a362a98c821c8d2a1f47246cddab2330c6e0d48d762b23b2f050e4"
+file: "01-evidence/pdf/governmental/mintic-talento-tech-2024-2026.pdf"
+md: "01-evidence/md/governmental/mintic-talento-tech-2024-2026.md"
+title: "Talento Tech: Ficha de Proyecto (bootcamps de habilidades digitales) 2024-2026"
+issuer: "MinTIC (Ministerio de Tecnologias de la Informacion y las Comunicaciones), Colombia"
+year: 2024
+source: "david"
+decision: "accept"
+category: "governmental"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Ficha administrativa de un programa de bootcamps con seis tematicas priorizadas (programacion, IA, analisis de datos, blockchain, nube, ciberseguridad); 'Analisis de Datos' se nombra como una de las seis tematicas pero sin describir competencias especificas, por lo que la pertinencia es parcial."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Ficha de proyecto gubernamental de formacion en habilidades digitales que incluye Analisis de Datos como una de seis tematicas priorizadas a nivel nacional; senal de mercado debil (sin detalle de competencias) pero pertinente como evidencia de demanda para la analitica segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

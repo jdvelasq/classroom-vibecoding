@@ -1,0 +1,26 @@
+id: "E0045"
+sha256: "486b943e13ee57ce45323d137d39109e6b2ed11eb0028000483f76e17f63149d"
+file: "01-evidence/rejected/mit-bringing-predictive-analytics-to-aagentic-era copy.pdf"
+md: "01-evidence/rejected/mit-bringing-predictive-analytics-to-aagentic-era copy.md"
+title: "Bringing Predictive Analytics to the Agentic AI Era"
+issuer: "MIT Technology Review Insights"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Copia local idéntica (mismo SHA-256) al archivo mit-bringing-predictive-analytics-to-aagentic-era.pdf procesado en este mismo lote; se espera que la regla de edicion/duplicado la rechace automaticamente al coincidir titulo, emisor y año."
+previous_edition: null
+duplicate_of: "E0044"
+reevaluates: null
+rationale: "Copia duplicada del mismo informe sobre analitica predictiva y agentes de IA; mismo contenido y pertinencia que el archivo original de este lote."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

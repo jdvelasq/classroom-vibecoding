@@ -1,0 +1,28 @@
+id: "E0108"
+sha256: "1f567c2f6e310549350ac1cc4b882d8cad05f44f23a2c1eaf0a0ec597dc0b6f5"
+file: "00-regulations/pdf/unal-armonizacion-ejercicio-piloto.pdf"
+md: "00-regulations/md/unal-armonizacion-ejercicio-piloto.md"
+title: "Ejercicio Piloto UNAL para la Armonizacion Curricular"
+issuer: "Universidad Nacional de Colombia - Direccion Nacional de Programas Curriculares de Pregrado"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Documento institucional sobre armonizacion curricular general de la Universidad Nacional de Colombia (metodologia aplicable a cualquier programa); no trata la analitica ni sus subcampos, precursores o vecinos de domain.md, igual que cesu-acuerdo-02-2020 (E0013)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
+excluded_as: "normative"
+note: "Rejected as regulatory framework, not for lack of value. It is an input for structuring the curriculum and lives in 00-regulations/, with its own cycle outside this selection. The rejected/ copy was removed because it is byte-identical to the versioned 00-regulations/ copy."

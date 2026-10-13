@@ -1,0 +1,26 @@
+id: "E0028"
+sha256: "809c02dec1cb9a61cff3fd52c4082bda09f6baa912367759af7f026e7b409571"
+file: "01-evidence/pdf/professional-learning/ibm-spss-modeler-crisp-dm-guide.pdf"
+md: "01-evidence/md/professional-learning/ibm-spss-modeler-crisp-dm-guide.md"
+title: "IBM SPSS Modeler CRISP-DM Guide"
+issuer: "IBM"
+year: 2016
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "precursor"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Guia detallada de CRISP-DM (comprension de negocio, datos, preparacion, modelado, evaluacion, despliegue) aplicada a una herramienta de mineria de datos; documenta el precursor mineria de datos de domain.md con la misma metodologia referenciada en dataops-03-methodologies."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

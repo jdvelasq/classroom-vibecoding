@@ -1,0 +1,28 @@
+id: "E0110"
+sha256: "0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e"
+file: "00-regulations/pdf/unal-lineamientos-armonizacion-curricular.pdf"
+md: "00-regulations/md/unal-lineamientos-armonizacion-curricular.md"
+title: "Circular No. 01 de 2023 - Lineamientos para el Proceso de Armonizacion Curricular, Sede Manizales"
+issuer: "Direccion Academica, Sede Manizales, Universidad Nacional de Colombia"
+year: 2023
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Circular institucional sobre el proceso general de armonizacion curricular de la sede Manizales; no trata la analitica segun domain.md, igual que los otros documentos unal/CESU de este lote."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
+excluded_as: "normative"
+note: "Rejected as regulatory framework, not for lack of value. It is an input for structuring the curriculum and lives in 00-regulations/, with its own cycle outside this selection. The rejected/ copy was removed because it is byte-identical to the versioned 00-regulations/ copy."

@@ -1,0 +1,26 @@
+id: "E0034"
+sha256: "f4f47fd27416eaa5ac320918e941dbc61d0001ba6fa691e1ac56ea49db47e6b1"
+file: "01-evidence/pdf/professional-learning/microsoft-sql-server-data-mining.pdf"
+md: "01-evidence/md/professional-learning/microsoft-sql-server-data-mining.md"
+title: "SQL Server Data Mining: The Platform for Intelligent Applications"
+issuer: "Microsoft Corporation"
+year: 2005
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "precursor"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Material comercial sobre mineria de datos (canastas de mercado, churn, pronostico, clustering, reglas de asociacion) integrada a Business Intelligence; documenta el precursor mineria de datos de domain.md, con vigencia limitada por su antiguedad (SQL Server 2005)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

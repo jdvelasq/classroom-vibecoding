@@ -1,0 +1,26 @@
+id: "E0033"
+sha256: "2f768a51f41938c9f7946a47c9d5230647e92cb0462378f49816c09f67613833"
+file: "01-evidence/pdf/professional-learning/knime-quickstart-guide.pdf"
+md: "01-evidence/md/professional-learning/knime-quickstart-guide.md"
+title: "KNIME Quickstart Guide"
+issuer: "KNIME GmbH"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Guia de inicio rapido de una plataforma de flujos de trabajo para analitica/mineria de datos, usada hoy para construir soluciones analiticas; relevante a productos de datos y a la analitica predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

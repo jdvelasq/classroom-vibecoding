@@ -1,0 +1,26 @@
+id: "E0092"
+sha256: "b2fda9a2366e49604d91b330424c4fdf5d9ee294068f4c8b998f1a188fb30a6c"
+file: "01-evidence/pdf/literature-derived/perceptual-edge-dashboard-design-requirements-questionnaire.pdf"
+md: "01-evidence/md/literature-derived/perceptual-edge-dashboard-design-requirements-questionnaire.md"
+title: "Dashboard Design Requirements Questionnaire"
+issuer: "Perceptual Edge (Stephen Few)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Cuestionario canonico de Stephen Few (referencia ampliamente citada en diseno de dashboards) para levantar requisitos de un tablero: quien lo usa, que preguntas responde, que acciones genera; corresponde al subcampo productos de datos y a la analitica descriptiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

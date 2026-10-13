@@ -1,0 +1,26 @@
+id: "E0051"
+sha256: "7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192"
+file: "01-evidence/pdf/professional-learning/mit-cloud-devops.pdf"
+md: "01-evidence/md/professional-learning/mit-cloud-devops.md"
+title: "Cloud & DevOps: Continuous Transformation"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso trata principalmente infraestructura en la nube y practicas DevOps (computo serverless, arquitectura web); las menciones a analitica y ciencia de datos aparecen solo en la biografia del instructor, no en el contenido central del curso."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de infraestructura en la nube y DevOps, vecino ingenieria de software/infraestructura tratado como disciplina autonoma segun domain.md, con mencion tangencial de trabajo previo en analitica y ciencia de datos."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

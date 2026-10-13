@@ -1,0 +1,26 @@
+id: "E0050"
+sha256: "b052e371a4ce0668c5e1ddd4baf5521c72a918c1eb132585a6361b5235731f38"
+file: "01-evidence/pdf/professional-learning/mit-clean-energy-solutions.pdf"
+md: "01-evidence/md/professional-learning/mit-clean-energy-solutions.md"
+title: "Clean Energy Solutions: Technological Change to Meet Emissions Reduction Targets"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de modelado predictivo 'data-informed' (Ley de Moore, Ley de Wright, modelos de portafolio tecnologico) aplicado a decisiones estrategicas de innovacion energetica; metodologia de analitica predictiva aplicada a un dominio, segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

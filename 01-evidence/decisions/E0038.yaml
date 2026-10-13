@@ -1,0 +1,26 @@
+id: "E0038"
+sha256: "6ebcfb440057d46cc497fece9797ce0ccf87b76b11353870f8cd23a51ae4f871"
+file: "01-evidence/pdf/professional-learning/mit-advanced-reinforcement-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-advanced-reinforcement-learning.md"
+title: "Advanced Reinforcement Learning"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso ensena aprendizaje por refuerzo como una disciplina de IA/ML autonoma aplicable a muchas industrias (robotica, juegos, autos autonomos); solo tangencialmente se menciona a analistas de negocio como audiencia, sin organizar el curso alrededor de una decision o producto analitico especifico."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Tecnicas de aprendizaje por refuerzo (RL fuera de linea, bandits, RL jerarquico) relevantes como insumo de la analitica prescriptiva (decisiones secuenciales), pero tratadas como disciplina autonoma de IA/ML (vecino) segun domain.md, no centradas en una pregunta analitica."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

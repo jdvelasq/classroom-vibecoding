@@ -55,6 +55,10 @@ class Layout:
         return self.evidence / "ingest"
 
     @property
+    def regulations(self) -> Path:
+        return self.root / "00-regulations" / "pdf"
+
+    @property
     def index(self) -> Path:
         return self.evidence / "index.csv"
 

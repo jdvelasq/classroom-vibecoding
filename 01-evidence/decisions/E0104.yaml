@@ -1,0 +1,26 @@
+id: "E0104"
+sha256: "f3a8c9342b32e627c986c92ebaac8cb33fce60f414dc8d3294c28c9a022e9b9c"
+file: "01-evidence/pdf/professional-learning/uchicago-ai-data-science-leaders.pdf"
+md: "01-evidence/md/professional-learning/uchicago-ai-data-science-leaders.md"
+title: "Inteligencia Artificial y Data Science para Lideres"
+issuer: "University of Chicago (programa ejecutivo en linea)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa ejecutivo centrado en inferencia estadistica y aprendizaje automatico para dar forma a la estrategia organizacional; nucleo de la analitica predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

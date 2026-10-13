@@ -1,0 +1,26 @@
+id: "E0055"
+sha256: "6cc81435df90775e7c3a4320191c113611e66adcbd15af2f90225db89e9fbd8e"
+file: "01-evidence/pdf/professional-learning/mit-deep-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-deep-learning.md"
+title: "Deep Learning: Mastering Neural Networks"
+issuer: "MIT Professional Education"
+year: 2022
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "El curso enmarca explicitamente el deep learning como herramienta para que las organizaciones 'make data-informed predictions' a partir de grandes datos; vecino IA puesto al servicio de la analitica predictiva segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

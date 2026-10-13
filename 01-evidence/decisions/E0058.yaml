@@ -1,0 +1,26 @@
+id: "E0058"
+sha256: "b3314e9a902f23bfeccc5821150d8d919d5b7b27864012420c0442b1046272de"
+file: "01-evidence/rejected/mit-designing-efficient-deep-learning-systems.pdf"
+md: "01-evidence/rejected/mit-designing-efficient-deep-learning-systems.md"
+title: "Designing Efficient Deep Learning Systems"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de diseno de hardware y arquitecturas eficientes para deep learning; ingenieria de sistemas/hardware de IA como disciplina autonoma, sin marco de pregunta analitica, vecino no pertinente segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

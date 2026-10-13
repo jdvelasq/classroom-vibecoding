@@ -1,0 +1,26 @@
+id: "E0053"
+sha256: "64a07fe95cbf5c9c31aef4843b358ca9a478663579119d36db7dc95540f2a1e3"
+file: "01-evidence/pdf/professional-learning/mit-data-science-machine-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-data-science-machine-learning.md"
+title: "Data Science and Machine Learning: Making Data-Driven Decisions"
+issuer: "MIT Institute for Data, Systems, and Society (IDSS) / MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de MIT IDSS sobre metodos analiticos para la toma de decisiones basada en datos en finanzas, sistemas de energia, salud y redes sociales; nucleo de la analitica predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

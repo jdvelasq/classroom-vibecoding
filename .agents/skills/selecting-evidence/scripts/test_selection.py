@@ -179,3 +179,13 @@ def test_domain_change_restores_and_reevaluates(layout):
     assert decision["reevaluates"] == "E0002"
     assert decision["domain_version"] == "0.5"
     assert (layout.decisions / "superseded" / "E0002.yaml").exists()
+
+
+def test_regulation_copy_is_reported_not_judged(layout):
+    layout.regulations.mkdir(parents=True)
+    (layout.regulations / "cesu.pdf").write_bytes(b"norm")
+    add_doc(layout, "cesu-copy", content=b"norm")
+    manifest = intake.intake(layout)
+    assert manifest["pending"] == [] and manifest["duplicates"] == []
+    assert manifest["regulations"][0]["regulation"] == "00-regulations/pdf/cesu.pdf"
+    assert not (layout.ingest / "cesu-copy.pdf").exists()

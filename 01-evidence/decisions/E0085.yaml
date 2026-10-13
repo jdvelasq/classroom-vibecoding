@@ -1,0 +1,26 @@
+id: "E0085"
+sha256: "6f42b0cf5be3ac717cded9a3cdf6aa391b812103fa356ef39928b589232a13c7"
+file: "01-evidence/pdf/professional-learning/mit-quantitative-methods-systems-engineering.pdf"
+md: "01-evidence/md/professional-learning/mit-quantitative-methods-systems-engineering.md"
+title: "Quantitative Methods in Systems Engineering"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso trata decisiones de tradeoff tempranas en ingenieria de sistemas con metodos cuantitativos; se relaciona con la analitica prescriptiva pero esta enmarcado como ingenieria de sistemas, no como analitica de negocio."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Metodos cuantitativos para decisiones de tradeoff en ingenieria de sistemas; pertinencia parcial con la analitica prescriptiva de domain.md via la logica de decision bajo restricciones."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

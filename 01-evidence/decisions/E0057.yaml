@@ -1,0 +1,26 @@
+id: "E0057"
+sha256: "7f03ea5bc4d7561d0a019afb448d1229fb61642a39a8f385048c5381580ff57d"
+file: "01-evidence/pdf/professional-learning/mit-designing-building-ai-products-services.pdf"
+md: "01-evidence/md/professional-learning/mit-designing-building-ai-products-services.md"
+title: "Designing and Building AI Products and Services"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso trata el diseno de producto de IA en general (estrategia, gestion, optimizacion de productos de IA); solo parcialmente se enmarca como producto de datos segun domain.md."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de gestion de productos de IA; pertinencia parcial con el subcampo productos de datos de domain.md, en la medida en que trata el despliegue y gestion de soluciones de IA como producto."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

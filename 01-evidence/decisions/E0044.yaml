@@ -1,0 +1,26 @@
+id: "E0044"
+sha256: "486b943e13ee57ce45323d137d39109e6b2ed11eb0028000483f76e17f63149d"
+file: "01-evidence/pdf/literature-derived/mit-bringing-predictive-analytics-to-aagentic-era.pdf"
+md: "01-evidence/md/literature-derived/mit-bringing-predictive-analytics-to-aagentic-era.md"
+title: "Bringing Predictive Analytics to the Agentic AI Era"
+issuer: "MIT Technology Review Insights"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Informe de investigacion sobre analitica predictiva y agentes de IA que actuan sobre predicciones (cobranza, siniestros, fraude, pronostico de demanda en salud); nucleo de la analitica predictiva y de la tendencia emergente de IA agentica de domain.md v0.6."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

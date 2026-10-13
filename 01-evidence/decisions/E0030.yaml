@@ -1,0 +1,26 @@
+id: "E0030"
+sha256: "2bcd076439f1a714f08239345cd0870b6ac04fdd565c90958c03a217b8be8eb0"
+file: "01-evidence/pdf/authoritative/informs-cap-pro-blueprint.pdf"
+md: "01-evidence/md/authoritative/informs-cap-pro-blueprint.md"
+title: "CAP-Pro (CAP-P) Exam Blueprint"
+issuer: "INFORMS - Analytics Certification Board"
+year: null
+source: "david"
+decision: "accept"
+category: "authoritative"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Blueprint oficial de un cuerpo profesional del campo (INFORMS), version profesional del CAP, con tareas citables por dominio que cubren el ciclo completo de la analitica definido en domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

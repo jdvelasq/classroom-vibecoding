@@ -1,0 +1,26 @@
+id: "E0052"
+sha256: "235857392770856bcd7abd1476039c10eae9928b8dadbb3243d1fb302364cb06"
+file: "01-evidence/pdf/professional-learning/mit-data-leadership.pdf"
+md: "01-evidence/md/professional-learning/mit-data-leadership.md"
+title: "Data Leadership: Transforming the Corporation's Operations, Management, and Mindset to Leverage Data, AI, and Cloud Computing"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso centrado en hacer accesibles los datos a los tomadores de decision en toda la organizacion; corresponde a productos de datos y a la analitica descriptiva como soporte de decisiones segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

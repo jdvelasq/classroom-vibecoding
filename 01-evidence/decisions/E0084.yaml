@@ -1,0 +1,26 @@
+id: "E0084"
+sha256: "cc3e454db2347ed9c1ee838d30e3eb6b67064ff973ab104c1d4aebeb9f8ad984"
+file: "01-evidence/pdf/professional-learning/mit-professional-education-machine-learning.pdf"
+md: "01-evidence/md/professional-learning/mit-professional-education-machine-learning.md"
+title: "Machine Learning: Tecnologia en la toma de decisiones"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa titulado explicitamente 'Machine Learning: Tecnologia en la toma de decisiones'; nucleo de la analitica predictiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

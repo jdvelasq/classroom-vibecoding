@@ -1,0 +1,26 @@
+id: "E0081"
+sha256: "524e992c4c49c8c76c700c4f5e4dc372d76dbe57923bf08bca41b09b93c0b5c7"
+file: "01-evidence/pdf/professional-learning/mit-professional-certificate-digital-transformation.pdf"
+md: "01-evidence/md/professional-learning/mit-professional-certificate-digital-transformation.md"
+title: "Professional Certificate Program in Digital Transformation"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Certificado que agrupa varios cursos de tecnologias digitales complementarias (nube, plataformas, IoT, transformacion digital); la analitica es solo una parte del conjunto."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado-paquete de transformacion digital con multiples tecnologias complementarias; pertinencia parcial, similar a mit-digital-transformation (mismo lote)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

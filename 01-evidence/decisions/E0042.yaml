@@ -1,0 +1,26 @@
+id: "E0042"
+sha256: "ec2bcf65096277102697fb45948f8251c5512e147b3fb2a22e61c90ff73fff3b"
+file: "01-evidence/pdf/professional-learning/mit-applied-generative-ai-digital-transformation.pdf"
+md: "01-evidence/md/professional-learning/mit-applied-generative-ai-digital-transformation.md"
+title: "Applied Generative AI for Digital Transformation"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "El temario incluye explicitamente los modulos 'Analytics using generative AI' y 'Conversational data insights', que corresponden directamente a la tendencia emergente de IA generativa al servicio del trabajo analitico de domain.md v0.6."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

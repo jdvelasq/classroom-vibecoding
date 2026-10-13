@@ -1,0 +1,26 @@
+id: "E0049"
+sha256: "03f41c7219700012673c0f4d7b97aaa3aa015cd053a44dd69494f90bed686564"
+file: "01-evidence/pdf/professional-learning/mit-chief-technology-officer.pdf"
+md: "01-evidence/md/professional-learning/mit-chief-technology-officer.md"
+title: "Blended Professional Certificate in Chief Technology Officer"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El certificado incluye resultados de aprendizaje explicitos sobre los 4 pasos para implementar machine learning y herramientas estadisticas para aclarar datos, pero el programa completo es de liderazgo tecnologico general, no centrado en analitica."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado de liderazgo tecnologico general que incluye un componente explicito de implementacion de machine learning y analisis estadistico de datos para la toma de decisiones; pertinencia parcial via ese componente."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

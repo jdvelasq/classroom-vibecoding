@@ -1,0 +1,26 @@
+id: "E0062"
+sha256: "7564e02c6f2c98e129072cfff1a5219071e1bf9f83e13999919cdfdfff32d1a8"
+file: "01-evidence/pdf/professional-learning/mit-forecasting-technology-innovation.pdf"
+md: "01-evidence/md/professional-learning/mit-forecasting-technology-innovation.md"
+title: "Forecasting Technology Innovation: Using Data for Strategic Advantage"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de la Prof. Jessika Trancik (misma autora que mit-clean-energy-solutions, E0050) sobre pronostico de innovacion tecnologica usando datos para ventaja estrategica; nucleo de la analitica predictiva de domain.md aplicada al dominio tecnologico."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

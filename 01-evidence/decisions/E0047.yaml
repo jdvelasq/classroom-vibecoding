@@ -1,0 +1,26 @@
+id: "E0047"
+sha256: "f1eab6fd51441ddb44e22d94f8253e33501ab9507be79da3d25e534513bd8e2e"
+file: "01-evidence/rejected/mit-chief-product-officer.pdf"
+md: null
+title: "Blended Professional Certificate in Chief Product Officer"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 0
+material_warnings: true
+doubts: "La conversion del PDF fallo por completo (sin fuente incrustada legible) y no se obtuvo texto; el juicio se basa unicamente en el titulo, que no indica un enfoque analitico especifico (gestion de producto en general), a diferencia de los certificados de CDO/CTO donde el propio texto confirmo un componente de datos/ML."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Sin texto disponible y sin indicio en el titulo de que trate la analitica, sus subcampos, precursores o vecinos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

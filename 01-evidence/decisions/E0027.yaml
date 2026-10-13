@@ -1,0 +1,26 @@
+id: "E0027"
+sha256: "8f6bf519db1df06d80482cb26bfe9a642fa60ac8e2f40a283b70c00c418e01fd"
+file: "01-evidence/pdf/professional-learning/ibm-spss-modeler-applications-guide.pdf"
+md: "01-evidence/md/professional-learning/ibm-spss-modeler-applications-guide.md"
+title: "IBM SPSS Modeler 18.0 Applications Guide"
+issuer: "IBM"
+year: 2016
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "precursor"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Guia de aplicaciones de una herramienta clasica de mineria de datos/modelado predictivo (construir, evaluar y calificar modelos); corresponde al precursor mineria de datos de domain.md, en linea con el rol asignado a sas-data-mining.pdf en el conjunto de calibracion."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

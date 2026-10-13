@@ -1,0 +1,26 @@
+id: "E0115"
+sha256: "6614428fdf3c7486e7f09a9e7f2f5fb98bb359b024197bb84fd7ad19021057b2"
+file: "01-evidence/pdf/institutional/warwick-foundations-data-analytics.pdf"
+md: "01-evidence/md/institutional/warwick-foundations-data-analytics.md"
+title: "CS910-15 Foundations of Data Analytics"
+issuer: "University of Warwick, Department of Computer Science"
+year: 2022
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Modulo de posgrado centrado directamente en los fundamentos de la analitica de datos; nucleo del campo analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

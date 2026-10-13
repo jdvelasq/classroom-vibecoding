@@ -1,0 +1,26 @@
+id: "E0039"
+sha256: "ced0b1d66201bd372e875d0bda157e11ccc740c72ee3fa953d74c8dd4e3ee9b2"
+file: "01-evidence/pdf/professional-learning/mit-ai-ml-leading-business-growth.pdf"
+md: "01-evidence/md/professional-learning/mit-ai-ml-leading-business-growth.md"
+title: "AI and ML: Leading Business Growth"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa de liderazgo que pone la IA/ML al servicio del crecimiento y la estrategia de negocio; corresponde al vecino inteligencia artificial y aprendizaje automatico puesto al servicio del trabajo analitico segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0089"
+sha256: "b76fd58700f38b88dcdaac7b279ef2e21891e39f66abb3dec5d1d7c9e99445c3"
+file: "01-evidence/pdf/professional-learning/mit-smart-manufacturing.pdf"
+md: "01-evidence/md/professional-learning/mit-smart-manufacturing.md"
+title: "Smart Manufacturing: Moving From Static to Dynamic Manufacturing Operations"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso que trata la fabrica como centro de datos, usando datos para mejorar calidad, costos y produccion; corresponde a la analitica de grandes datos y predictiva de domain.md, similar a E0037."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0103"
+sha256: "807e7d104927456c61f2ebc50b680fee185a0c33467fe730935518249d67e0fa"
+file: "01-evidence/pdf/professional-learning/tensorflow-developer-certificate-candidate-handbook.pdf"
+md: "01-evidence/md/professional-learning/tensorflow-developer-certificate-candidate-handbook.md"
+title: "TensorFlow Developer Certificate: Candidate Handbook"
+issuer: "Google / TensorFlow"
+year: 2021
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: "La certificacion evalua habilidades de construccion de modelos con TensorFlow (incluyendo series de tiempo/pronostico) como habilidad de ingenieria de ML autonoma, no como un producto analitico centrado en una decision de negocio."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificacion de habilidades de construccion de modelos de ML/DL con TensorFlow; pertinencia parcial pues incluye pronostico de series de tiempo (analitica predictiva) pero se enmarca como habilidad tecnica autonoma de IA segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0041"
+sha256: "15dde45fcf4a96b3e59b0e55cc0a8dcc9d445caa7531c962e2462f2bdf58e7cf"
+file: "01-evidence/pdf/professional-learning/mit-applied-data-science.pdf"
+md: "01-evidence/md/professional-learning/mit-applied-data-science.md"
+title: "Applied Data Science Program: Leveraging AI for Effective Decision-Making"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa centrado explicitamente en convertirse en 'data-driven decision maker'; nucleo de la analitica descriptiva y predictiva de domain.md, ahora con modulos de IA generativa."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

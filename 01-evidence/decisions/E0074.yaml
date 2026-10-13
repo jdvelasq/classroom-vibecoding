@@ -1,0 +1,26 @@
+id: "E0074"
+sha256: "ea2a58ddb2a5d548c7d825333a5075787851ba4e50d2fed4cc2667c98064f049"
+file: "01-evidence/rejected/mit-practical-realities-quantum-computation.pdf"
+md: "01-evidence/rejected/mit-practical-realities-quantum-computation.md"
+title: "Practical Realities of Quantum Computation and Quantum Communication"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de computacion y comunicacion cuanticas; campo ajeno a la analitica segun domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

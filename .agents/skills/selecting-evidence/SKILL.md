@@ -57,7 +57,9 @@ python3 .agents/skills/selecting-evidence/scripts/intake.py
 It creates `01-evidence/index.csv` if missing, moves exact duplicates (same
 SHA-256 as an indexed document) to `01-evidence/rejected/duplicates/`, and
 prints a JSON manifest of pending documents with their source and conversion
-warnings. Report the duplicates; do not judge them.
+warnings. Copies of documents in `00-regulations/` and of indexed documents
+leave the inbox; report them as regulations or duplicates and do not judge
+them.
 
 ## 3. Judge (your part)
 

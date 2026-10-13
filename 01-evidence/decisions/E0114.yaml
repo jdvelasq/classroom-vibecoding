@@ -1,0 +1,26 @@
+id: "E0114"
+sha256: "72dc78abd90b10b2b9a299bb856c79f05470804368732ad6f516b77dfc3d2891"
+file: "01-evidence/pdf/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.pdf"
+md: "01-evidence/md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md"
+title: "MIS 6309: Business Data Warehousing (Course Syllabus)"
+issuer: "University of Texas at Dallas"
+year: 2018
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso universitario de almacenamiento de datos de negocio; corresponde al subcampo ingenieria de datos para la analitica (modelado de datos para el analisis) de domain.md, en linea con kimball-dimensional-modeling-techniques (E0032)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

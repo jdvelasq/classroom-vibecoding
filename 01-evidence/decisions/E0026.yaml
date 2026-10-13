@@ -1,0 +1,26 @@
+id: "E0026"
+sha256: "b44d1ac8df33474a143431a3bdab8cad82a2dd9ec7ea1c1de65a2e396bcf7946"
+file: "01-evidence/pdf/literature-derived/dataops-10-organization.pdf"
+md: "01-evidence/md/literature-derived/dataops-10-organization.md"
+title: "Organizacion para DataOps"
+issuer: "Serie DataOps (material academico; emisor exacto no declarado en el texto)"
+year: null
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "No se identifica un autor o editor explicito en el texto extraido; misma serie de dataops ya aceptada."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Describe estructuras de equipo (cientificos de datos, ingenieros de datos, DevOps) para operaciones de Big Data y MLOps a distinta escala, relevante a productos de datos y a la ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

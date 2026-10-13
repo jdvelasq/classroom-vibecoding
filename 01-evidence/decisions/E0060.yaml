@@ -1,0 +1,26 @@
+id: "E0060"
+sha256: "7fc18c63d4b4afa1629c58320f509a5b9f7c442f9e6149231b755327952fc28b"
+file: "01-evidence/pdf/professional-learning/mit-digital-platforms.pdf"
+md: "01-evidence/md/professional-learning/mit-digital-platforms.md"
+title: "Digital Platforms: Designing Two-Sided Markets from APIs to Feature Roadmaps"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "El curso trata principalmente el diseno de modelos de negocio de plataformas digitales; incluye un modulo de 'Decision Making' que ofrece una conexion tangencial con la analitica."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de diseno de plataformas y mercados de dos lados; pertinencia parcial via su modulo de toma de decisiones, el resto trata el diseno de negocio como disciplina autonoma."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

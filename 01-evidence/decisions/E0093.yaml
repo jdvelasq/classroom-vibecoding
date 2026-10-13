@@ -1,0 +1,26 @@
+id: "E0093"
+sha256: "5d936194154a3c8774fd7df35e28c7a427fb9d4348130b86ae9c6ec58946548f"
+file: "01-evidence/pdf/professional-learning/power-bi-enterprise-solutions-workshop-2024.pdf"
+md: "01-evidence/md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md"
+title: "Power BI for Enterprise Solutions Workshop"
+issuer: "Paul Turley, 3Cloud Solutions (Microsoft Power BI)"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Taller tecnico de una herramienta de BI empresarial (Power BI) impartido por un consultor reconocido; corresponde al subcampo productos de datos (tableros) y a la analitica descriptiva de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

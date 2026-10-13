@@ -1,0 +1,26 @@
+id: "E0032"
+sha256: "b2eb680e173ceee7cfeaba06abf06986fa09ff154010f7052ac90741d2603936"
+file: "01-evidence/pdf/literature-derived/kimball-dimensional-modeling-techniques-2013.pdf"
+md: "01-evidence/md/literature-derived/kimball-dimensional-modeling-techniques-2013.md"
+title: "Kimball Dimensional Modeling Techniques"
+issuer: "Kimball Group (Ralph Kimball y Margy Ross)"
+year: 2013
+source: "david"
+decision: "accept"
+category: "literature-derived"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Referencia canonica de modelado dimensional (esquemas estrella, tablas de hechos y dimensiones, dimensiones conformadas) que corresponde directamente al modelado de datos para el analisis dentro de la ingenieria de datos para la analitica de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

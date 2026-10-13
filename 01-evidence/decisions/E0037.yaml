@@ -1,0 +1,26 @@
+id: "E0037"
+sha256: "26cdbe75ae872c35822c99f8802910c54276787d64b30a579a0df3a40882838e"
+file: "01-evidence/pdf/professional-learning/mit-advanced-data-analytics-iiot-smart-manufacturing.pdf"
+md: "01-evidence/md/professional-learning/mit-advanced-data-analytics-iiot-smart-manufacturing.md"
+title: "Advanced Data Analytics for IIoT and Smart Manufacturing"
+issuer: "MIT Professional Education"
+year: 2024
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Curso de analitica predictiva y de grandes datos aplicada a manufactura inteligente (modelado predictivo de produccion, dashboards de analitica, gemelos digitales); corresponde a los subcampos analitica predictiva y analitica de grandes datos de domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

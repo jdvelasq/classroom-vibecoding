@@ -1,0 +1,26 @@
+id: "E0069"
+sha256: "83469dc78117f5d06f1a92dab8d77ede7b0613325f98c6d896a9c14d7b921bf6"
+file: "01-evidence/pdf/professional-learning/mit-machine-learning-big-data-text-processing-foundations.pdf"
+md: "01-evidence/md/professional-learning/mit-machine-learning-big-data-text-processing-foundations.md"
+title: "Machine Learning for Big Data and Text Processing: Foundations"
+issuer: "MIT Professional Education"
+year: 2023
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Version introductoria del curso de ML para grandes datos y procesamiento de texto, orientada a 'driving value in your organization'; mismo subcampo que la version avanzada (E0037-like, analitica predictiva y de grandes datos)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

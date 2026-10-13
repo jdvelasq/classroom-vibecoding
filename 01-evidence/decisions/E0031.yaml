@@ -1,0 +1,26 @@
+id: "E0031"
+sha256: "3fd2e3318150f9817dbcbec2fdddf33cefa948d5cd58b4586b790a7f31ae2a09"
+file: "01-evidence/pdf/authoritative/informs-certified-analytics-professional-study-guide.pdf"
+md: "01-evidence/md/authoritative/informs-certified-analytics-professional-study-guide.md"
+title: "Certified Analytics Professional (CAP) and Associate Certified Analytics Professional (aCAP) Examination Study Guide"
+issuer: "INFORMS - Analytics Certification Board"
+year: null
+source: "david"
+decision: "accept"
+category: "authoritative"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Guia de estudio oficial de INFORMS para la certificacion CAP/aCAP, con conceptos centrales de la practica analitica profesional; refuerza y detalla el marco de competencias del campo definido en domain.md."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"
