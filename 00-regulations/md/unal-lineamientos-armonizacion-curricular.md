@@ -1,5 +1,5 @@
 ---
-source: "00-normativa/pdf/unal-lineamientos-armonizacion-curricular.pdf"
+source: "00-regulations/pdf/unal-lineamientos-armonizacion-curricular.pdf"
 source_sha256: 0a5ef2b6b086003d2c8fabd9c68ed20f4cc44045f4fff0ef43467836b884d17e
 family: institutional
 pages: 4

@@ -8,5 +8,5 @@ propio ciclo, fuera de `01-evidence/` y de la skill `selecting-evidence`.
 Los documentos se agregan a mano: el PDF en `pdf/` y su conversión en `md/`.
 
 ```bash
-uv run design/tasks/s01-convert-benchmarks.py --input 00-normativa/pdf --output 00-normativa/md
+uv run design/tasks/s01-convert-benchmarks.py --input 00-regulations/pdf --output 00-regulations/md
 ```
