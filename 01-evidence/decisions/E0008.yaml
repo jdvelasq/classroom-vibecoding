@@ -1,0 +1,22 @@
+id: "E0008"
+sha256: "2f5c3a7016507b31af6506ae03143ec5ead25c5130bbbfaf5c285bf9f4e6e345"
+file: "01-evidence/pdf/institutional/berkeley-data-c102-data-inference-and-decisions.pdf"
+md: "01-evidence/md/institutional/berkeley-data-c102-data-inference-and-decisions.md"
+title: "DATA C102 - Data, Inference, and Decisions (course catalog entry)"
+issuer: "UC Berkeley, Data Science Undergraduate Studies"
+year: null
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Curso de inferencia y decisiones basado en datos (frecuentista/bayesiano, causal, aprendizaje por refuerzo) que corresponde al nucleo de la analitica predictiva y prescriptiva, con el vecino estadistica puesto al servicio de la decision."
+criteria_version: "0.2"
+date: "2026-10-13"

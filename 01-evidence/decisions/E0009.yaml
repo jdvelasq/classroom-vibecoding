@@ -1,0 +1,22 @@
+id: "E0009"
+sha256: "b401576ede0eec3a72a79e913adb4e63676fb30b9f4c59056a575672372d46b0"
+file: "01-evidence/pdf/professional-learning/cambridge-business-analytics.pdf"
+md: "01-evidence/md/professional-learning/cambridge-business-analytics.md"
+title: "Business Analytics: Tomar Decisiones a Partir de los Datos"
+issuer: "Cambridge Judge Business School Executive Education"
+year: 2021
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Programa ejecutivo de Business Analytics que ensena explicitamente metodologias descriptivas, predictivas y prescriptivas para decisiones organizacionales, central a los subcampos homonimos de domain.md."
+criteria_version: "0.2"
+date: "2026-10-13"

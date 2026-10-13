@@ -1,0 +1,22 @@
+id: "E0005"
+sha256: "eaa9929c6b74446c34ff054292d1c7423b7807fd5c059132fb33edfe45570483"
+file: "01-evidence/pdf/institutional/acm-computing-competencies-undergraduate-data-science-2021.pdf"
+md: "01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md"
+title: "Computing Competencies for Undergraduate Data Science Curricula"
+issuer: "ACM Data Science Task Force (ACM Education Board)"
+year: 2021
+source: "david"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Marco de competencias de ciencia de datos que cubre Big Data Systems (subcampo de analitica de grandes datos), Mineria de Datos (precursor) e IA (vecino); util como comparandum para distinguir la identidad de Analitica de la ciencia de datos como disciplina contribuyente."
+criteria_version: "0.2"
+date: "2026-10-13"

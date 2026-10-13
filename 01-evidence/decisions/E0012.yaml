@@ -1,0 +1,26 @@
+id: "E0012"
+sha256: "c41987f5f8e878f5850201aa26236f2dbc172fb10735aca736d2b4c84cdf2d2f"
+file: "01-evidence/rejected/mit-blockchain-disruptive-technology.pdf"
+md: "01-evidence/rejected/mit-blockchain-disruptive-technology.md"
+title: "Blockchain: Disruptive Technology"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 1
+material_warnings: true
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0002"
+rationale: "Re-evaluated under domain 0.6: blockchain technology is not data engineering for analytics nor AI in service of analytical work; still outside the field, its subfields, precursors and neighbours."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

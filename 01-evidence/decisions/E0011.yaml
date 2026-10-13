@@ -1,0 +1,26 @@
+id: "E0011"
+sha256: "b3e017909f71c49a2614af9028e70331f26e204216a59ffbeb6312fcffc34823"
+file: "01-evidence/pdf/professional-learning/analytics-vidhya-generative-ai-pinnacle.pdf"
+md: "01-evidence/md/professional-learning/analytics-vidhya-generative-ai-pinnacle.md"
+title: "GenAI Pinnacle Program: Skills for Success"
+issuer: "Analytics Vidhya"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 1
+  autoridad: 1
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: "Most of the program treats generative AI as an autonomous discipline (training LLMs, image generation), which domain.md keeps as a neighbour; only part of it serves analytical work. No publication year in the text (file dated 2024)."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Commercial program curriculum on generative AI (LLMs, RAG, agents, fine-tuning, Stable Diffusion) with modules on data-driven decision making and business problem solving; market signal for the emerging trend of generative and agentic AI in analytics (domain 0.6)."
+criteria_version: "0.3"
+domain_version: "0.6"
+date: "2026-10-13"

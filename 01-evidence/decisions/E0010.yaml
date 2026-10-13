@@ -1,0 +1,22 @@
+id: "E0010"
+sha256: "fda4ff9362b50cb6fea264f7e0cbec0e70aebdbd8c7f25eaa73d81b54f6bfcad"
+file: "01-evidence/pdf/professional-learning/cambridge-people-analytics.pdf"
+md: "01-evidence/md/professional-learning/cambridge-people-analytics.md"
+title: "People Analytics: Transformar la Estrategia de RH con Ciencia de Datos"
+issuer: "The Psychometrics Centre, Cambridge Judge Business School"
+year: null
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Programa ejecutivo que aplica ciencia de datos y modelos predictivos a decisiones de recursos humanos (de la descripcion a la prediccion), vinculando el negocio con los subcampos de analitica descriptiva y predictiva."
+criteria_version: "0.2"
+date: "2026-10-13"
