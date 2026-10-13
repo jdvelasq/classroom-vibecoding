@@ -1,6 +1,6 @@
 # Criterios de selección de documentos de evidencia
 
-Versión 0.1 (borrador)
+Versión 0.2 (borrador)
 
 ## Propósito
 
@@ -12,6 +12,13 @@ nacionales e internacionales.
 Este método solo decide qué documentos entran como evidencia. La asignación
 de niveles (por ejemplo, pregrado, especialización o maestría) es una
 decisión posterior y separada.
+
+## Origen de los documentos
+
+- **Aportados por david**: se presumen curados. La pertinencia y el acceso
+  se aplican siempre; autoridad, especificidad y vigencia se califican y se
+  registran, pero no deciden.
+- **Encontrados por el agente**: se aplican los cinco criterios completos.
 
 ## Criterios
 
@@ -26,6 +33,10 @@ define `domain.md`?
 - Entra (2): un marco de competencias para profesionales del campo.
 - No entra (0): un documento sobre un campo ajeno que solo menciona el campo
   de paso.
+
+La pertinencia se aplica a todo documento, incluidos los aportados por
+david. Si el texto no puede convertirse, se juzga por el título, el nombre
+del archivo y los metadatos.
 
 ### 2. Autoridad
 
@@ -55,6 +66,10 @@ que puedan citarse con número de página?
 - No entra (0): un texto de opinión que habla del campo en términos
   generales.
 
+Los anuncios de cursos y programas cuentan como señales de mercado de
+especificidad débil (1): indican qué se ofrece y se demanda, pero no
+describen competencias con detalle.
+
 ### 4. Vigencia
 
 ¿El documento es reciente, o es fundacional para un campo precursor?
@@ -81,19 +96,63 @@ Cada decisión registra el rol del documento:
 
 ## Regla de decisión
 
-Propuesta inicial, pendiente de calibrar:
+Se aplica en este orden; la primera condición que se cumple decide.
 
-- **Aceptar**: ningún criterio en 0 y suma de 8 o más.
-- **Rechazar**: pertinencia en 0, acceso en 0, o suma de 5 o menos.
-- **Revisar**: cualquier otro caso; se decide en conversación.
+1. **Rechazar** si la pertinencia es 0. El documento pasa automáticamente a
+   `rejected/`. La falta de pertinencia prevalece sobre las advertencias de
+   conversión: un documento ajeno al campo no se queda en `ingest/` aunque
+   su conversión haya fallado.
+2. **Revisar** si el documento es pertinente y tiene advertencias de
+   conversión (o acceso en 0). Se queda en `ingest/` para que david decida.
+3. **Documentos aportados por david**: **aceptar** si la pertinencia es 2;
+   **revisar** si es 1.
+4. **Documentos encontrados por el agente**:
+   - **Aceptar**: ningún criterio en 0 y suma de 8 o más.
+   - **Rechazar**: suma de 5 o menos, o algún criterio en 0. Pasa a
+     `rejected/`.
+   - **Revisar**: cualquier otro caso. Se queda en `ingest/`.
+
+Solo los documentos pertinentes con advertencias de conversión o con
+decisión "revisar" permanecen en `ingest/` a la espera de david.
 
 ## Calibración
 
-Antes de aplicar los criterios al conjunto completo, probarlos con unos cinco
-documentos conocidos, incluido el marco de INFORMS. Si la regla clasifica mal
-alguno de ellos, ajustar los umbrales o las definiciones y registrar el
-cambio.
+Antes de aplicar los criterios al conjunto completo, se prueban con
+documentos conocidos. Si la regla clasifica mal alguno, se ajustan los
+umbrales o las definiciones y se registra el cambio.
+
+## Conjunto de calibración
+
+Resultados esperados según el veredicto experto de david. Toda versión
+nueva de la regla debe reproducirlos.
+
+| Documento | Origen | P | Au | E | V | Ac | Veredicto esperado | Rol |
+|---|---|---|---|---|---|---|---|---|
+| `informs-analytics-framework-2024.pdf` | david | 2 | 2 | 2 | 2 | 2 | Aceptar | `actual` |
+| `sas-data-mining.pdf` | david | 2 | 1 | 1 | 1 | 2 | Aceptar | `precursor` |
+| `mit-data-science-big-data.pdf` | david | 2 | 2 | 1 | 2 | 2 | Aceptar | `actual` |
+| `mit-blockchain-disruptive-technology.pdf` | david | 0 | – | – | – | 0 | Rechazar (fuera del dominio) | – |
+
+Notas:
+
+- SAS es un *white paper* comercial de 2016 sobre minería de datos.
+  Con la regla 0.1 sumaba 7 y quedaba en "revisar"; david lo acepta como
+  precursor. Por eso los documentos aportados por david no dependen de
+  autoridad, especificidad ni vigencia.
+- El PDF del MIT no tiene texto extraíble (22 páginas sin capa de texto).
+  Se rechaza por pertinencia, juzgada por el título; la advertencia de
+  conversión no lo retiene en `ingest/`.
+- Los dos documentos del MIT comparten emisor y reciben veredictos
+  opuestos: la regla juzga el contenido, no el emisor. El de *Data Science
+  y Big Data* (2022) es un anuncio de curso: especificidad débil (1), pero
+  pertinente para la analítica de grandes datos y la predictiva.
 
 ## Versión y cambios
 
 - 0.1 (2026-10-13): borrador inicial.
+- 0.2 (2026-10-13): calibración con cuatro documentos de david. La pertinencia
+  se aplica a todos; los documentos fuera del dominio pasan a `rejected/` y
+  la falta de pertinencia prevalece sobre las advertencias de conversión;
+  autoridad, especificidad y vigencia deciden solo para documentos
+  encontrados por el agente; los anuncios de cursos son señales de mercado
+  de especificidad débil; se agrega el conjunto de calibración.
