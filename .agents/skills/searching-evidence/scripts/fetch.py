@@ -4,11 +4,11 @@ The candidates file is a JSON list, one object per page:
 
     [
       {
-        "source": "platforms",          # or "universities"
-        "target": "DataCamp",           # a platform or university of sources.md
-        "query": "data analyst career track",
-        "url": "https://www.datacamp.com/tracks/data-analyst-with-python",
-        "title": "Data Analyst with Python"
+        "source": "universities",
+        "target": "Carnegie Mellon University",   # a university of sources.md
+        "query": "MS Business Analytics curriculum",
+        "url": "https://www.cmu.edu/tepper/programs/master-business-analytics/curriculum",
+        "title": "MSBA curriculum"
       }
     ]
 
@@ -31,7 +31,6 @@ import requests
 
 from search_lib import (
     FETCHED,
-    PLATFORMS,
     ROOT,
     UNIVERSITIES,
     Layout,
@@ -86,18 +85,12 @@ def fetch_url(url: str, out: Path) -> None:
 
 def limit_reason(plan: Plan, candidate: dict[str, str], run: Counter) -> str | None:
     source, target = candidate["source"], candidate["target"]
-    if source == PLATFORMS:
-        if target not in plan.platforms:
-            return f"{target} is not an agent platform in sources.md"
-        if run[target] >= plan.per_platform_limit:
-            return "over-limit"
-    elif source == UNIVERSITIES:
-        if not any(target in group for group in plan.universities.values()):
-            return f"{target} is not a university in sources.md"
-        if run[target] >= plan.per_university_limit or run[UNIVERSITIES] >= plan.universities_run_limit:
-            return "over-limit"
-    else:
-        return f"unknown source {source}"
+    if source != UNIVERSITIES:
+        return f"{source} is not a searched source in sources.md"
+    if not any(target in group for group in plan.universities.values()):
+        return f"{target} is not a university in sources.md"
+    if run[target] >= plan.per_university_limit or run[UNIVERSITIES] >= plan.universities_run_limit:
+        return "over-limit"
     return None
 
 
@@ -158,8 +151,7 @@ def fetch(layout: Layout, candidates: list[dict[str, str]], fetcher: Fetcher = f
         known_hashes.add(digest)
         fetched_urls.add(candidate["url"])
         run[candidate["target"]] += 1
-        if candidate["source"] == UNIVERSITIES:
-            run[UNIVERSITIES] += 1
+        run[UNIVERSITIES] += 1
         rows.append({**row, "file": layout.shown(out), "sha256": digest, "status": FETCHED})
 
     append_log(layout, rows)

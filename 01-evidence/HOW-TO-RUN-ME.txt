@@ -34,6 +34,8 @@ solo explica el proceso.
    rejected/            rechazados (se versiona para auditoría)
    rejected/duplicates/ copias exactas de documentos ya indexados (no se
                         versiona: el original ya está en git)
+   syntheses/           síntesis propias (por ejemplo, de plataformas de
+                        aprendizaje); entran sin pasar por la selección
    decisions/<id>.yaml  puntajes, decisión y justificación de cada documento
    index.csv            un registro por documento decidido
 

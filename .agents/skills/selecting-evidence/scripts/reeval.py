@@ -41,8 +41,9 @@ def outdated(layout: Layout) -> dict[str, object]:
     rejected, accepted = [], []
     for path in sorted(layout.decisions.glob("E*.yaml")):
         record = read_decision(path)
-        # Normative documents were excluded by david's decision, not by the domain.
-        if record.get("domain_version") == current or record.get("excluded_as"):
+        # Normative documents were excluded by david's decision, and own
+        # syntheses were admitted without selection; neither depends on the domain.
+        if record.get("domain_version") == current or record.get("excluded_as") or record.get("admitted_as"):
             continue
         pertinencia = re.search(r"^  pertinencia: (\S+)$", path.read_text(encoding="utf-8"), re.M)
         entry = {

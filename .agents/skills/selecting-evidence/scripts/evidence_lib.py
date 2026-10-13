@@ -36,7 +36,7 @@ ROLES = {"actual", "precursor"}
 CRITERIA = ["pertinencia", "autoridad", "especificidad", "vigencia", "acceso"]
 # The decision rule in `decide` implements exactly this version of
 # criteria.md; a new version must be reviewed here before it can be applied.
-SUPPORTED_CRITERIA_VERSION = "0.3"
+SUPPORTED_CRITERIA_VERSION = "0.4"
 # Documents placed in this inbox subfolder were found by the agent; every
 # other document in the inbox is presumed contributed by david.
 AGENT_INBOX = "agent"
@@ -186,7 +186,7 @@ def source_of(layout: Layout, pdf: Path) -> str:
 
 
 def decide(source: str, scores: dict[str, int | None]) -> str:
-    """Decision rule of criteria.md 0.3: always accept or reject, never pending."""
+    """Decision rule of criteria.md 0.4: always accept or reject, never pending."""
     if scores["pertinencia"] == 0:
         return "reject"
     if source == "david":

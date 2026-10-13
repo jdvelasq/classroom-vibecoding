@@ -1,6 +1,6 @@
 # Fuentes de búsqueda de evidencia
 
-Versión 0.3 (aprobada)
+Versión 0.4 (aprobada)
 
 ## Propósito
 
@@ -21,8 +21,6 @@ archivo solo decide dónde buscar. Si un documento entra o no lo decide
 - Cada página consultada se registra en `searches.csv` con su fuente,
   destino, consulta, URL, fecha, archivo, SHA-256 y resultado. Una URL ya
   traída no se vuelve a traer.
-- Los PDF de Pluralsight los guarda david en `ingest/` y cuentan como
-  aportados por david.
 
 ## Términos de búsqueda
 
@@ -38,29 +36,16 @@ documento propio de cada fuente.
   for analytics*, *LLM for data analysis*; IA generativa para analítica.
 - **Precursores**: *business intelligence*, *data mining*.
 
-## Fuente 1: plataformas de aprendizaje
+## Plataformas de aprendizaje: no se buscan
 
-**Qué buscar**: rutas por rol, no cursos sueltos. Una ruta por rol muestra
-qué conjunto de competencias espera el mercado para un cargo (por ejemplo,
-*data analyst*, *analytics engineer*, *machine learning engineer* aplicado
-a la analítica).
+Las plataformas de aprendizaje se cubren con síntesis propias en
+`syntheses/` (por ejemplo, `datacamp.md` y `pluralsight.md`), que
+reconstruyen el catálogo de rutas por rol de cada proveedor. Una página
+impresa por ruta describe peor la plataforma que esas síntesis, así que la
+búsqueda no las incluye. Los PDF de Pluralsight que guarda david siguen
+entrando como aportados por david.
 
-| Plataforma | Tipo de ruta | Acceso |
-|---|---|---|
-| Coursera | *Professional Certificates*, *Specializations* | Agente |
-| DataCamp | *Career Tracks*, *Skill Tracks* | Agente |
-| edX | *Professional Certificates*, *MicroMasters* | Agente |
-| Udemy | *Learning paths* públicos, si existen | Agente |
-| Pluralsight | *Skill Paths*, *Paths* por rol | Manual: david guarda los PDF con su cuenta |
-
-**Qué registrar**: la página pública de la ruta con su lista de cursos o
-módulos y las competencias declaradas.
-
-**Límite**: hasta 3 rutas por plataforma y por corrida.
-
-**Categoría de destino**: `professional-learning`.
-
-## Fuente 2: syllabus y planes de estudio universitarios
+## Fuente: syllabus y planes de estudio universitarios
 
 **Qué buscar**: planes de estudio y syllabus publicados de programas de
 analítica (maestría, especialización o pregrado), con resultados de
@@ -120,3 +105,6 @@ Fuera de alcance por ahora:
 - 0.3 (2026-10-13): se quitan las universidades de Latinoamérica y Colombia;
   quedan solo los referentes internacionales. La comparación regional pasa a
   fuentes futuras, como posicionamiento.
+- 0.4 (2026-10-13): la búsqueda se limita a universidades. Las plataformas
+  de aprendizaje quedan cubiertas por las síntesis propias de
+  `syntheses/` (criteria.md 0.4).

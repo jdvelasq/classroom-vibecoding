@@ -18,7 +18,7 @@ FULL = {"pertinencia": 2, "autoridad": 2, "especificidad": 2, "vigencia": 2, "ac
 def layout(tmp_path):
     layout = lib.Layout(tmp_path)
     layout.ingest.mkdir(parents=True)
-    layout.criteria.write_text("# Criterios\n\nVersión 0.3 (borrador)\n", encoding="utf-8")
+    layout.criteria.write_text("# Criterios\n\nVersión 0.4 (borrador)\n", encoding="utf-8")
     layout.domain.write_text("# Dominio\n\nVersión 0.4 (borrador)\n", encoding="utf-8")
     return layout
 
@@ -107,7 +107,7 @@ def test_accept_and_reject_are_filed_and_warnings_do_not_block(layout):
     with layout.index.open(encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     assert [(r["id"], r["decision"]) for r in rows] == [("E0001", "accept"), ("E0002", "reject"), ("E0003", "accept")]
-    assert "criteria_version: \"0.3\"" in (layout.decisions / "E0001.yaml").read_text(encoding="utf-8")
+    assert "criteria_version: \"0.4\"" in (layout.decisions / "E0001.yaml").read_text(encoding="utf-8")
 
 
 def test_exact_duplicate_leaves_inbox(layout):
@@ -197,3 +197,20 @@ def test_identical_copies_in_the_same_batch_are_judged_once(layout):
     manifest = intake.intake(layout)
     assert [Path(p["pdf"]).name for p in manifest["pending"]] == ["report copy.pdf"]
     assert manifest["duplicates"][0]["duplicate_of_pending"] == "01-evidence/ingest/report copy.pdf"
+
+
+def test_own_syntheses_are_not_reevaluated_after_a_domain_change(layout):
+    layout.decisions.mkdir(parents=True)
+    (layout.decisions / "E0001.yaml").write_text(
+        "\n".join([
+            'id: "E0001"',
+            'file: "01-evidence/syntheses/datacamp.md"',
+            'title: "DataCamp Professional Benchmark"',
+            'decision: "accept"',
+            'admitted_as: "own-synthesis"',
+            'domain_version: "0.4"',
+        ]) + "\n",
+        encoding="utf-8",
+    )
+    layout.domain.write_text("Versión 0.5\n", encoding="utf-8")
+    assert reeval.outdated(layout)["accepted"] == []

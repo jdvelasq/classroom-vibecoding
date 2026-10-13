@@ -1,6 +1,6 @@
 ---
 name: searching-evidence
-description: Searches the public web for new evidence documents for the Analytics curriculum, following 01-evidence/sources.md (learning-platform role paths and international university syllabi), prints or downloads each chosen page to PDF with its URL, date and query, and leaves it in 01-evidence/ingest/agent/ for the selecting-evidence skill. Use when david asks to search, look for, find or gather new evidence, syllabi, curricula, career tracks or certificates.
+description: Searches the public web for new evidence documents for the Analytics curriculum, following 01-evidence/sources.md (international university curricula and syllabi), prints or downloads each chosen page to PDF with its URL, date and query, and leaves it in 01-evidence/ingest/agent/ for the selecting-evidence skill. Use when david asks to search, look for, find or gather new evidence, syllabi or curricula. Learning platforms are not searched: they are covered by the syntheses in 01-evidence/syntheses/.
 ---
 
 # Searching evidence
@@ -33,15 +33,14 @@ the queries already run and the titles already indexed.
 
 ## 2. Search and choose (your part)
 
-Use WebSearch and WebFetch. For each agent platform and each university in
-the plan, combine the search terms of sources.md with that source's document
+Use WebSearch and WebFetch. For each university in the plan, combine the search terms of sources.md with that source's document
 type. Skip queries already run and URLs already fetched; prefer targets with
 fewer fetched documents.
 
-Choose a page only when it is public, matches what sources.md asks for that
-source (a role path, not a single course; a programme curriculum or a core
-course syllabus), and is plausibly pertinent to domain.md. Never sign in,
-pay, or fetch Pluralsight: david adds those PDFs to the inbox.
+Choose a page only when it is public, matches what sources.md asks for (a
+programme curriculum or a core course syllabus), and is plausibly pertinent
+to domain.md. Never sign in or pay. Learning platforms are not searched:
+`01-evidence/syntheses/` covers them.
 
 Write the chosen pages, best first, as a JSON list to
 `01-evidence/ingest/agent/.candidates.json`; the expected shape is in the
@@ -71,7 +70,7 @@ Delete `01-evidence/ingest/agent/.candidates.json` after the run.
 
 ## 4. Report and hand over
 
-Give david a short report: documents fetched per source and target, and
+Give david a short report: documents fetched per university, and
 duplicates, limits or failures worth knowing. Then offer to run the
 selecting-evidence skill on them; do not judge them here.
 

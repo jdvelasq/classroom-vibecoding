@@ -14,9 +14,8 @@ ROOT = Path(__file__).resolve().parents[4]
 
 # fetch.py and the log format implement exactly this version of sources.md;
 # a new version must be reviewed here before a search can run.
-SUPPORTED_SOURCES_VERSION = "0.3"
+SUPPORTED_SOURCES_VERSION = "0.4"
 
-PLATFORMS = "platforms"
 UNIVERSITIES = "universities"
 
 LOG_COLUMNS = ["date", "source", "target", "query", "url", "file", "sha256", "status"]
@@ -38,10 +37,6 @@ def agent_inbox(layout: Layout) -> Path:
 @dataclass
 class Plan:
     version: str
-    platforms: list[str]
-    manual_platforms: list[str]
-    per_platform_limit: int
-    platform_category: str
     universities: dict[str, list[str]]
     per_university_limit: int
     universities_run_limit: int
@@ -79,15 +74,7 @@ def read_plan(layout: Layout) -> Plan:
             f"sources.md is version {version}; the scripts implement {SUPPORTED_SOURCES_VERSION}."
         )
 
-    platforms_text = section(text, "Fuente 1")
-    platforms, manual = [], []
-    for row in re.findall(r"^\| ([^|]+?) \|[^|]+\| ([^|]+?) \|$", platforms_text, re.M):
-        name, access = row
-        if name in {"Plataforma"} or set(name) <= {"-"}:
-            continue
-        (platforms if access == "Agente" else manual).append(name)
-
-    universities_text = section(text, "Fuente 2")
+    universities_text = section(text, "Fuente: syllabus")
     universities: dict[str, list[str]] = {}
     group = None
     for line in universities_text.splitlines():
@@ -101,10 +88,6 @@ def read_plan(layout: Layout) -> Plan:
     terms = dict(re.findall(r"^- \*\*([^*]+)\*\*: (.+?)(?=^- |\Z)", section(text, "Términos de búsqueda"), re.M | re.S))
     return Plan(
         version=version,
-        platforms=platforms,
-        manual_platforms=manual,
-        per_platform_limit=first_int(r"hasta (\d+) rutas por plataforma", platforms_text),
-        platform_category=category(platforms_text),
         universities=universities,
         per_university_limit=first_int(r"hasta (\d+) documentos por universidad", universities_text),
         universities_run_limit=first_int(r"por universidad y (\d+) por corrida", universities_text),

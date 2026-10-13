@@ -1,6 +1,6 @@
 # Criterios de selección de documentos de evidencia
 
-Versión 0.3 (borrador)
+Versión 0.4 (borrador)
 
 ## Propósito
 
@@ -19,6 +19,13 @@ decisión posterior y separada.
   se aplican siempre; autoridad, especificidad y vigencia se califican y se
   registran, pero no deciden.
 - **Encontrados por el agente**: se aplican los cinco criterios completos.
+- **Síntesis propias**: reconstrucciones del proyecto sobre las fuentes
+  públicas de un proveedor, con fecha, método, límites y fuentes citadas
+  (por ejemplo, `syntheses/datacamp.md`). Entran sin pasar por la
+  selección: se guardan en `syntheses/`, se registran en `index.csv` con
+  emisor y origen `propio`, y su decisión lista las fuentes que citan. No
+  se re-evalúan por cambios del dominio; si el dominio cambia, se revisa
+  la síntesis.
 
 ## Criterios
 
@@ -175,3 +182,6 @@ Notas:
   conversión y las dudas se registran sin bloquear. Los documentos de david
   con pertinencia 1 se aceptan; los del agente se aceptan con suma de 7 o
   más sin ceros. Los duplicados de título, emisor y año se rechazan.
+- 0.4 (2026-10-13): se agregan las síntesis propias como origen que entra
+  sin pasar por la selección. Las síntesis de DataCamp y Pluralsight
+  (antes `design/synthesis/s01a-*` y `s01b-*`) pasan a `syntheses/`.
