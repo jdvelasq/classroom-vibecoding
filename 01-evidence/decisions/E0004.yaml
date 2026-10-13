@@ -1,0 +1,22 @@
+id: "E0004"
+sha256: "6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9"
+file: "01-evidence/pdf/professional-learning/sas-data-mining.pdf"
+md: "01-evidence/md/professional-learning/sas-data-mining.md"
+title: "La minería de datos de la A a la Z"
+issuer: "SAS"
+year: 2016
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "precursor"
+scores:
+  pertinencia: 2
+  autoridad: 1
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+previous_edition: null
+rationale: "Vendor white paper on the data mining process from business question to deployment; data mining is a precursor of predictive analytics. Only the cover page lacks text."
+criteria_version: "0.2"
+date: "2026-10-13"

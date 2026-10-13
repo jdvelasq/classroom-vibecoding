@@ -1,0 +1,5 @@
+id,sha256,file,title,issuer,year,source,decision,category,role,criteria_version,date
+E0001,c68ebf677366244eb2d1e673108e6cd923b37fd2990ca29b92abf885c2670117,01-evidence/pdf/authoritative/informs-analytics-framework-2024.pdf,INFORMS Analytics Framework,INFORMS,2024,david,accept,authoritative,actual,0.2,2026-10-13
+E0002,c41987f5f8e878f5850201aa26236f2dbc172fb10735aca736d2b4c84cdf2d2f,01-evidence/rejected/mit-blockchain-disruptive-technology.pdf,Blockchain: Disruptive Technology,MIT Professional Education,,david,reject,,,0.2,2026-10-13
+E0003,2deb7623c75d393d83249d3b54fd8ce29e807f6a73fc4b9d50d3bf73ab657357,01-evidence/pdf/professional-learning/mit-data-science-big-data.pdf,Data Science y Big Data: decisiones basadas en datos,MIT IDSS,2022,david,accept,professional-learning,actual,0.2,2026-10-13
+E0004,6396a7c9e3efce998f0bbb9907cacb228244737c80bdebcdae17ce913b7f6ce9,01-evidence/pdf/professional-learning/sas-data-mining.pdf,La minería de datos de la A a la Z,SAS,2016,david,accept,professional-learning,precursor,0.2,2026-10-13
