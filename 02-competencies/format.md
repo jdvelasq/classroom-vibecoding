@@ -1,6 +1,6 @@
 # Formato de las competencias del mapa
 
-Versión 0.2 (aprobada)
+Versión 0.3 (aprobada)
 
 ## Propósito
 
@@ -28,7 +28,16 @@ evidencia de desempeño con la que podría evaluarse.
 Cada competencia vive en `map/<id>.md`. El `id` es `C` seguido de tres
 dígitos (`C001`, `C002`, …), se asigna en orden y no se reutiliza.
 
-El archivo tiene un encabezado YAML y cinco secciones, en este orden.
+El archivo tiene un encabezado YAML y cinco secciones, en este orden. El
+bloque `consenso` y el `estado` no se escriben a mano: los calcula
+`validate.py --fix` de la skill `mapping-competencies` a partir de la
+tabla de fuentes.
+
+En el archivo, las secciones son títulos de nivel 2 con estos nombres
+exactos: `## Enunciado`, `## Subcampos`, `## Conocimientos`,
+`## Habilidades`, `## Fuentes` y `## Evidencia de desempeño`. Las cadenas
+de inferencia van en `### Cadenas de inferencia`, dentro de Fuentes. Al
+final se admiten `## Notas de calibración` y `## Pendientes`.
 
 ### Encabezado
 
@@ -38,11 +47,11 @@ enunciado: "…"
 subcampos: ["analítica predictiva", "…"]
 estado: "incluida"            # incluida | candidata | retirada
 consenso:
-  emisores: 2                 # emisores distintos que respaldan el enunciado
+  emisores: 2                 # emisores distintos que respaldan la competencia
   explicitos: 1               # de ellos, con respaldo explícito
-  inferidos: 1                # de ellos, solo con respaldo inferido
+  inferidos: 1                # de ellos, sin respaldo explícito
   actual: 1                   # de ellos, con rol actual
-format_version: "0.2"
+format_version: "0.3"
 domain_version: "0.7"
 fecha: "2026-10-13"
 ```
@@ -72,7 +81,17 @@ describir), porque esa profundidad la fija el resultado de aprendizaje.
 
 ### 2. Subcampos
 
-Uno o varios subcampos de `domain.md`, con sus nombres exactos. Si la
+Uno o varios subcampos de `domain.md`, con sus nombres exactos, uno por
+viñeta y con su justificación:
+
+- `explícita`, con la cita de la fuente que nombra el subcampo o su
+  pregunta: `- analítica predictiva: explícita [E0001 p. 4].`
+- `por domain.md`, cuando ninguna fuente lo nombra y la asignación sigue la
+  definición de `domain.md`, con una frase que diga por qué:
+  `- analítica diagnóstica: por domain.md; la pregunta es por qué ocurre un
+  resultado.`
+
+Si la
 competencia aplica por igual a las cuatro analíticas que se distinguen por
 la pregunta (descriptiva, diagnóstica, predictiva y prescriptiva), se
 escriben las cuatro. Si la competencia pertenece a la tendencia de IA
@@ -100,10 +119,10 @@ Una tabla con una fila por documento:
 | Columna | Contenido |
 |---|---|
 | `id` | El `id` de `index.csv`. Solo documentos con decisión `accept`. |
-| Emisor | El emisor de `index.csv`; para una síntesis propia, el proveedor sintetizado (DataCamp, Pluralsight), no `propio`. |
+| Emisor | La organización emisora, con un nombre que esté contenido en el emisor de `index.csv` (`INFORMS` para «INFORMS - Analytics Certification Board»), para que los documentos de una misma organización cuenten una vez; para una síntesis propia, el proveedor sintetizado (DataCamp, Pluralsight), no `propio`. |
 | Rol | `actual` o `precursor`, como en `index.csv`. |
 | Ubicación | Página del PDF y sección o tarea. |
-| Respaldo | `explícito` o `inferido` (con el número de su cadena). |
+| Respaldo | `explícito`, `inferido (I1)` con el número de su cadena, o `solo conocimientos`. |
 
 La página es la del PDF, tal como la marca `<!-- fin de página N -->` en el
 `md` del documento, no la numeración impresa. Si el documento no tiene
@@ -111,6 +130,17 @@ páginas (una síntesis o una página web), se cita la sección.
 
 **Respaldo explícito**: el documento enuncia el desempeño, el conocimiento o
 la habilidad con palabras equivalentes.
+
+**Solo conocimientos**: el documento respalda conocimientos de la
+competencia, pero no el desempeño. Es el caso típico de los anuncios de
+cursos y de los listados de asignaturas, que nombran técnicas o materias
+(*Optimization*, *Deep learning*) sin decir qué hace con ellas la persona.
+Para el consenso cuenta como inferido.
+
+**Afirmaciones inferidas de una síntesis**: cuando una síntesis propia
+marca una afirmación como inferencia (`[I]` en las síntesis de
+`01-evidence/syntheses/`), la fila que la cita es `inferido`, aunque la
+cadena tenga un solo paso: la propia síntesis.
 
 **Respaldo inferido**: el documento no lo enuncia, pero se deduce en uno o
 dos pasos. Cada paso cita un texto del documento, otro documento aceptado o
@@ -129,8 +159,10 @@ I1. E0028 p. 13: «Describe the type of data mining problem, such as
 ### 5. Evidencia de desempeño
 
 Ejemplos de productos o actuaciones con los que se demuestra la
-competencia, **tomados de las fuentes**, con su cita. No se inventan: si
-ninguna fuente muestra un producto, la sección lo dice. Estos ejemplos
+competencia, **tomados de las fuentes**, con su cita. No se inventan. Si
+ninguna fuente muestra un producto, la sección tiene una sola viñeta que
+empieza por «Ninguna fuente» y dice qué falta; la competencia sigue siendo
+válida y la falta queda a la vista para buscar evidencia. Estos ejemplos
 alimentan después la evaluación de los resultados de aprendizaje.
 
 Las herramientas que las fuentes nombran se registran aquí, como ejemplos de
@@ -140,15 +172,17 @@ cómo se produce la evidencia, nunca como competencia.
 
 El consenso cuenta **emisores distintos**, no documentos: varios documentos
 del mismo emisor (por ejemplo, el marco, las guías y los exámenes de
-INFORMS) cuentan una vez.
+INFORMS) cuentan una vez. Un emisor es explícito si alguna de sus filas es
+`explícito`; en otro caso es inferido. Es `actual` si alguna de sus filas
+tiene rol `actual`.
 
 Toda decisión es **incluida**, **candidata** o **retirada**. Se aplica en
 este orden; la primera condición que se cumple decide.
 
 1. **Retirada** si no tiene subcampo en `domain.md` o si todo su respaldo
    viene de documentos que dejaron de estar aceptados.
-2. **Incluida** si la respaldan dos o más emisores, al menos uno de forma
-   explícita y con rol `actual`.
+2. **Incluida** si la respaldan dos o más emisores, y al menos una fila es
+   a la vez `explícito` y de rol `actual`.
 3. **Candidata** en cualquier otro caso: un solo emisor, solo respaldo
    inferido, o solo precursores.
 
@@ -222,11 +256,11 @@ una decisión acordada con los interesados.
 
 ## Subcampos
 
-Las cuatro analíticas que se distinguen por la pregunta. INFORMS ubica la
-reformulación antes de elegir entre analítica descriptiva, predictiva o
-prescriptiva [E0001 p. 4]. La diagnóstica no aparece en las fuentes; se
-incluye porque `domain.md` la define también por su pregunta (véase
-Pendientes).
+- analítica descriptiva: explícita [E0001 p. 4].
+- analítica diagnóstica: por domain.md; también se distingue por su
+  pregunta, y toda pregunta debe formularse antes de responderse.
+- analítica predictiva: explícita [E0001 p. 4].
+- analítica prescriptiva: explícita [E0001 p. 4].
 
 ## Conocimientos
 
@@ -317,11 +351,27 @@ Qué muestra el ejemplo:
 
 ## Calibración
 
-Primera aplicación a mano del formato, con cuatro emisores: INFORMS
+Primera aplicación a mano del formato (0.2), con cuatro emisores: INFORMS
 (`E0001`), MIT (`E0003`), SAS (`E0004`) y la síntesis de DataCamp
 (`E0143`), más IBM (`E0028`) del ejemplo. Produjo `map/C001.md` a
 `map/C009.md`: ocho competencias incluidas y una candidata (`C009`,
 analítica prescriptiva, solo con respaldo de un precursor).
+
+Con 0.3 se agregó una fuente fuerte en prescriptiva, la guía de estudio
+del CAP de INFORMS (`E0031`), y el MSBA de Carnegie Mellon (`E0149`) como
+listado de asignaturas. `C009` se reformuló como política de decisión y
+pasó a incluida.
+
+Lo que la calibración mostró:
+
+- La prueba de «misma evidencia» funciona: los dominios IV y V de INFORMS
+  se unieron en `C004`.
+- La regla de herramientas funciona: SAS Enterprise Miner, scikit-learn y
+  Power BI quedaron como ejemplos.
+- Los anuncios de cursos aportan sobre todo técnicas; por eso existe
+  `solo conocimientos`.
+- Algunas asignaciones de subcampo no tienen fuente (la diagnóstica en
+  `C005`); por eso cada subcampo lleva su justificación.
 
 ## Versión y cambios
 
@@ -331,3 +381,10 @@ analítica prescriptiva, solo con respaldo de un precursor).
   `actual`), el conteo por emisor, los precursores que cuentan pero no
   bastan, los verbos sin nivel y la omisión de disposiciones y actitudes.
   Se agrega la calibración.
+- 0.3 (2026-10-13): cada subcampo lleva su justificación (`explícita` o
+  `por domain.md`); se agrega el respaldo `solo conocimientos`, que cuenta
+  como inferido; las afirmaciones `[I]` de las síntesis son respaldo
+  inferido; la evidencia de desempeño puede quedar sin productos con una
+  viñeta «Ninguna fuente»; el consenso y el estado los calcula la skill
+  `mapping-competencies`; se precisa que la regla 2 exige una fila
+  explícita y actual; la calibración agrega una fuente prescriptiva.

@@ -20,6 +20,12 @@ de aprendizaje.
   granularidad. Es la norma de este directorio; versiónalo como
   `criteria.md`.
 - `map/<id>.md`: una competencia por archivo, con el formato vigente.
+- `mapped.csv`: documentos ya mapeados, con las versiones de `format.md` y
+  `domain.md` usadas. Lo escribe la skill.
+
+El mapa se construye con la skill `mapping-competencies`
+(`.agents/skills/mapping-competencies/`). Sus scripts calculan el consenso y
+el estado; no se escriben a mano.
 
 ## Reglas
 
