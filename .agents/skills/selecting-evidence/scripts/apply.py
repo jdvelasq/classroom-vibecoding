@@ -10,7 +10,7 @@ JUDGMENTS.json is a list with one object per document in 01-evidence/ingest/:
      "year": 2024, "scores": {"pertinencia": 2, "autoridad": 2,
      "especificidad": 2, "vigencia": 2, "acceso": 2},
      "material_warnings": false, "category": "authoritative",
-     "role": "actual", "rationale": "..."}
+     "role": "actual", "rationale": "...", "doubts": null}
 
 The model supplies only judgments. Source, hash, decision, identifiers and
 file moves are computed here, so the same judgments always produce the same
@@ -36,8 +36,10 @@ from evidence_lib import (
     append_index,
     criteria_version,
     decide,
+    domain_version,
     next_id,
     normalize,
+    read_decision,
     read_index,
     sha256,
     source_of,
@@ -143,19 +145,29 @@ def apply(layout: Layout, judgments: list[dict], dry_run: bool = False) -> list[
     if problems:
         raise SystemExit("Invalid judgments:\n" + json.dumps(problems, indent=2, ensure_ascii=False))
 
+    domain = domain_version(layout)
     rows = read_index(layout)
+    superseded = {
+        str(read_decision(p)["sha256"]): p.stem
+        for p in sorted((layout.decisions / "superseded").glob("E*.yaml"))
+    }
     outcomes = []
     for judgment in judgments:
         pdf = layout.root / judgment["pdf"]
         source = source_of(layout, pdf)
         scores = {c: judgment["scores"].get(c) for c in CRITERIA}
-        decision = decide(source, scores, judgment["material_warnings"])
+        decision = decide(source, scores)
         notes = []
-        previous_edition = None
+        if judgment["material_warnings"]:
+            notes.append("conversion warnings limit the reading")
+        if judgment.get("doubts"):
+            notes.append(f"doubts: {judgment['doubts']}")
+        previous_edition = duplicate_of = None
         match = edition_match(judgment, rows)
         if match and match[0] == "same_edition":
-            decision = "review"
-            notes.append(f"same title, issuer and year as {match[1]['id']}; possible duplicate")
+            decision = "reject"
+            duplicate_of = match[1]["id"]
+            notes.append(f"same title, issuer and year as {duplicate_of}; rejected as duplicate")
         elif match:
             previous_edition = match[1]["id"]
             notes.append(f"new edition of {previous_edition} ({match[1]['year']})")
@@ -170,10 +182,10 @@ def apply(layout: Layout, judgments: list[dict], dry_run: bool = False) -> list[
             "notes": notes,
         }
         outcomes.append(outcome)
-        if decision == "review" or dry_run:
+        if dry_run:
             continue
 
-        doc_id = next_id(rows)
+        doc_id = next_id(layout, rows)
         digest = sha256(pdf)
         if decision == "accept":
             category = judgment["category"]
@@ -196,9 +208,13 @@ def apply(layout: Layout, judgments: list[dict], dry_run: bool = False) -> list[
             "role": outcome["role"],
             "scores": scores,
             "material_warnings": judgment["material_warnings"],
+            "doubts": judgment.get("doubts"),
             "previous_edition": previous_edition,
+            "duplicate_of": duplicate_of,
+            "reevaluates": superseded.get(digest),
             "rationale": judgment["rationale"],
             "criteria_version": version,
+            "domain_version": domain,
             "date": today(),
         }
         write_decision(layout.decisions / f"{doc_id}.yaml", record)
@@ -213,9 +229,9 @@ def apply(layout: Layout, judgments: list[dict], dry_run: bool = False) -> list[
 
 
 def report(outcomes: list[dict], dry_run: bool) -> str:
-    labels = {"accept": "Accepted", "reject": "Rejected", "review": "Left in ingest/ for david"}
+    labels = {"accept": "Accepted", "reject": "Rejected"}
     lines = ["Dry run: nothing was moved." if dry_run else "Selection applied."]
-    for decision in ("accept", "reject", "review"):
+    for decision in ("accept", "reject"):
         group = [o for o in outcomes if o["decision"] == decision]
         if not group:
             continue

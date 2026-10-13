@@ -20,6 +20,26 @@ the source from that location.
 
 Run every command from the repository root.
 
+## 0. Re-evaluate after a domain change
+
+```bash
+python3 .agents/skills/selecting-evidence/scripts/reeval.py
+```
+
+It lists decisions made under an earlier `domain.md` version. If the list is
+empty, go on. Otherwise read the change log of `domain.md` since those
+versions and apply the re-evaluation rule of criteria.md: decide whether the
+domain widened, narrowed or both, and restore only the group that rule
+names:
+
+```bash
+python3 .agents/skills/selecting-evidence/scripts/reeval.py --restore E0002 E0007
+```
+
+Restored documents return to the inbox and go through the steps below like
+any other document. `rejected/` is not versioned, so a rejected document can
+only be restored on the machine that holds it; report any that are missing.
+
 ## 1. Convert
 
 ```bash
@@ -51,9 +71,12 @@ criteria.md allows.
 Score the five criteria of criteria.md (0, 1, 2). For a document whose
 pertinencia is 0, the other scores may be `null`. Also decide:
 
-- `material_warnings`: `true` only when the conversion warnings prevent you
-  from judging or later citing the content (for example, most pages without
-  text). A cover page with little text is not material.
+- `material_warnings`: `true` when the conversion warnings limit what you
+  could read or later cite (for example, most pages without text). A cover
+  page with little text is not material. It never blocks the decision; it
+  is recorded and reported.
+- `doubts`: optional, one sentence on anything uncertain in your judgment.
+  Recorded and reported, never a reason to leave a document pending.
 - `category`: the authority category of criteria.md, written as the folder
   name: `authoritative`, `governmental`, `institutional`,
   `literature-derived` or `professional-learning`.
@@ -80,18 +103,19 @@ new rule and its tests first. It then:
   `01-evidence/md/<category>/`;
 - moves rejected documents (PDF and `.md`) to `01-evidence/rejected/`, which is
   gitignored;
-- leaves documents to review in `01-evidence/ingest/` for david;
-- flags a title and issuer that are already indexed: the same year is held
-  for review as a possible duplicate; a different year is processed as a new
-  edition and linked through `previous_edition`;
+- always decides: nothing is left pending in `01-evidence/ingest/`;
+- checks titles and issuers already indexed: the same year is rejected as a
+  duplicate (`duplicate_of`); a different year is decided as a new edition
+  and linked through `previous_edition`;
 - writes `01-evidence/decisions/<id>.yaml` and appends to `01-evidence/index.csv`.
 
 Delete `01-evidence/ingest/.judgments.json` after a successful run.
 
 ## 5. Report
 
-Give david a short report: accepted (category and role), rejected, left in
-`ingest/` with the reason, duplicates and new editions. Do not repeat the
+Give david a short report: accepted (category and role), rejected,
+duplicates, new editions, re-evaluated documents, and any conversion
+warnings or doubts. Do not repeat the
 scores; they are in `01-evidence/decisions/`.
 
 TODO: once a competency map exists, also report what each accepted document

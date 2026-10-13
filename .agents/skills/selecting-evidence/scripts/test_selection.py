@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import apply as apply_  # noqa: E402
 import evidence_lib as lib  # noqa: E402
 import intake  # noqa: E402
+import reeval  # noqa: E402
 
 FULL = {"pertinencia": 2, "autoridad": 2, "especificidad": 2, "vigencia": 2, "acceso": 2}
 
@@ -17,7 +18,8 @@ FULL = {"pertinencia": 2, "autoridad": 2, "especificidad": 2, "vigencia": 2, "ac
 def layout(tmp_path):
     layout = lib.Layout(tmp_path)
     layout.ingest.mkdir(parents=True)
-    layout.criteria.write_text("# Criterios\n\nVersión 0.2 (borrador)\n", encoding="utf-8")
+    layout.criteria.write_text("# Criterios\n\nVersión 0.3 (borrador)\n", encoding="utf-8")
+    layout.domain.write_text("# Dominio\n\nVersión 0.4 (borrador)\n", encoding="utf-8")
     return layout
 
 
@@ -50,20 +52,18 @@ def judgment(layout, pdf, **overrides):
 
 
 @pytest.mark.parametrize(
-    "source, scores, material, expected",
+    "source, scores, expected",
     [
-        ("david", {"pertinencia": 0, "autoridad": None, "especificidad": None, "vigencia": None, "acceso": 0}, True, "reject"),
-        ("david", dict(FULL, autoridad=1, especificidad=1, vigencia=1), False, "accept"),
-        ("david", dict(FULL), True, "review"),
-        ("david", dict(FULL, pertinencia=1), False, "review"),
-        ("agent", dict(FULL, vigencia=1, autoridad=1), False, "accept"),
-        ("agent", dict(FULL, especificidad=0), False, "reject"),
-        ("agent", dict(FULL, autoridad=1, especificidad=1, vigencia=1), False, "review"),
-        ("agent", {"pertinencia": 1, "autoridad": 1, "especificidad": 1, "vigencia": 1, "acceso": 1}, False, "reject"),
+        ("david", {"pertinencia": 0, "autoridad": None, "especificidad": None, "vigencia": None, "acceso": 0}, "reject"),
+        ("david", dict(FULL, autoridad=1, especificidad=1, vigencia=1), "accept"),
+        ("david", dict(FULL, pertinencia=1, acceso=0), "accept"),
+        ("agent", dict(FULL, autoridad=1, especificidad=1, vigencia=1), "accept"),
+        ("agent", dict(FULL, autoridad=1, especificidad=1, vigencia=1, acceso=1), "reject"),
+        ("agent", dict(FULL, especificidad=0), "reject"),
     ],
 )
-def test_decision_rule(source, scores, material, expected):
-    assert lib.decide(source, scores, material) == expected
+def test_decision_rule_always_decides(source, scores, expected):
+    assert lib.decide(source, scores) == expected
 
 
 def test_intake_creates_index_and_lists_pending(layout):
@@ -77,28 +77,29 @@ def test_intake_creates_index_and_lists_pending(layout):
     assert by_name["b.pdf"]["source"] == "agent"
 
 
-def test_accept_reject_and_review_are_filed(layout):
+def test_accept_and_reject_are_filed_and_warnings_do_not_block(layout):
     accepted = add_doc(layout, "accepted", content=b"1")
     rejected = add_doc(layout, "rejected", content=b"2")
-    reviewed = add_doc(layout, "reviewed", content=b"3")
+    warned = add_doc(layout, "warned", content=b"3")
     outcomes = apply_.apply(
         layout,
         [
             judgment(layout, accepted),
             judgment(layout, rejected, scores=dict(FULL, pertinencia=0), category=None, role=None),
-            judgment(layout, reviewed, material_warnings=True),
+            judgment(layout, warned, material_warnings=True, doubts="scanned pages"),
         ],
     )
-    assert [o["decision"] for o in outcomes] == ["accept", "reject", "review"]
+    assert [o["decision"] for o in outcomes] == ["accept", "reject", "accept"]
     assert (layout.evidence / "pdf/authoritative/accepted.pdf").exists()
     moved_md = layout.evidence / "md/authoritative/accepted.md"
     assert 'source: "01-evidence/pdf/authoritative/accepted.pdf"' in moved_md.read_text(encoding="utf-8")
     assert (layout.rejected / "rejected.pdf").exists() and (layout.rejected / "rejected.md").exists()
-    assert reviewed.exists()
+    assert list(layout.ingest.glob("*.pdf")) == []
+    assert 'doubts: "scanned pages"' in (layout.decisions / "E0003.yaml").read_text(encoding="utf-8")
     with layout.index.open(encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    assert [(r["id"], r["decision"]) for r in rows] == [("E0001", "accept"), ("E0002", "reject")]
-    assert "criteria_version: \"0.2\"" in (layout.decisions / "E0001.yaml").read_text(encoding="utf-8")
+    assert [(r["id"], r["decision"]) for r in rows] == [("E0001", "accept"), ("E0002", "reject"), ("E0003", "accept")]
+    assert "criteria_version: \"0.3\"" in (layout.decisions / "E0001.yaml").read_text(encoding="utf-8")
 
 
 def test_exact_duplicate_leaves_inbox(layout):
@@ -125,11 +126,12 @@ def test_title_and_issuer_match(layout):
     )
     assert outcomes[0]["decision"] == "accept"
     assert "previous_edition: \"E0001\"" in (layout.decisions / "E0002.yaml").read_text(encoding="utf-8")
-    assert outcomes[1]["decision"] == "review"
+    assert outcomes[1]["decision"] == "reject"
+    assert 'duplicate_of: "E0001"' in (layout.decisions / "E0003.yaml").read_text(encoding="utf-8")
 
 
 def test_unsupported_criteria_version_stops(layout):
-    layout.criteria.write_text("Versión 0.3\n", encoding="utf-8")
+    layout.criteria.write_text("Versión 9.9\n", encoding="utf-8")
     with pytest.raises(SystemExit):
         apply_.apply(layout, [])
 
@@ -139,3 +141,33 @@ def test_dry_run_moves_nothing(layout):
     apply_.apply(layout, [judgment(layout, pdf)], dry_run=True)
     assert pdf.exists()
     assert lib.read_index(layout) == []
+
+
+def test_domain_change_restores_and_reevaluates(layout):
+    kept = add_doc(layout, "kept", content=b"kept")
+    dropped = add_doc(layout, "dropped", content=b"dropped")
+    apply_.apply(
+        layout,
+        [
+            judgment(layout, kept),
+            judgment(layout, dropped, scores=dict(FULL, pertinencia=0), category=None, role=None),
+        ],
+    )
+    assert reeval.outdated(layout)["rejected_for_pertinence"] == []
+
+    layout.domain.write_text("Versión 0.5\n", encoding="utf-8")
+    pending = reeval.outdated(layout)
+    assert [e["id"] for e in pending["rejected_for_pertinence"]] == ["E0002"]
+    assert [e["id"] for e in pending["accepted"]] == ["E0001"]
+
+    restored = reeval.restore(layout, "E0002")
+    assert restored == layout.ingest / "dropped.pdf"
+    assert 'source: "01-evidence/ingest/dropped.pdf"' in restored.with_suffix(".md").read_text(encoding="utf-8")
+    assert [r["id"] for r in lib.read_index(layout)] == ["E0001"]
+    assert intake.intake(layout)["duplicates"] == []
+
+    apply_.apply(layout, [judgment(layout, restored)])
+    decision = lib.read_decision(layout.decisions / "E0003.yaml")
+    assert decision["reevaluates"] == "E0002"
+    assert decision["domain_version"] == "0.5"
+    assert (layout.decisions / "superseded" / "E0002.yaml").exists()

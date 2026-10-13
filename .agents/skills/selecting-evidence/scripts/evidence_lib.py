@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import datetime as dt
 import hashlib
 import re
@@ -35,7 +36,7 @@ ROLES = {"actual", "precursor"}
 CRITERIA = ["pertinencia", "autoridad", "especificidad", "vigencia", "acceso"]
 # The decision rule in `decide` implements exactly this version of
 # criteria.md; a new version must be reviewed here before it can be applied.
-SUPPORTED_CRITERIA_VERSION = "0.2"
+SUPPORTED_CRITERIA_VERSION = "0.3"
 # Documents placed in this inbox subfolder were found by the agent; every
 # other document in the inbox is presumed contributed by david.
 AGENT_INBOX = "agent"
@@ -60,6 +61,10 @@ class Layout:
     @property
     def criteria(self) -> Path:
         return self.evidence / "criteria.md"
+
+    @property
+    def domain(self) -> Path:
+        return self.evidence / "domain.md"
 
     @property
     def decisions(self) -> Path:
@@ -87,11 +92,19 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def criteria_version(layout: Layout) -> str:
-    match = re.search(r"^Versión\s+(\S+)", layout.criteria.read_text(encoding="utf-8"), re.M)
+def document_version(layout: Layout, path: Path) -> str:
+    match = re.search(r"^Versión\s+(\S+)", path.read_text(encoding="utf-8"), re.M)
     if not match:
-        raise SystemExit(f"No version line found in {layout.shown(layout.criteria)}")
+        raise SystemExit(f"No version line found in {layout.shown(path)}")
     return match.group(1)
+
+
+def criteria_version(layout: Layout) -> str:
+    return document_version(layout, layout.criteria)
+
+
+def domain_version(layout: Layout) -> str:
+    return document_version(layout, layout.domain)
 
 
 def ensure_index(layout: Layout) -> None:
@@ -113,9 +126,30 @@ def append_index(layout: Layout, row: dict[str, str]) -> None:
         csv.DictWriter(f, fieldnames=INDEX_COLUMNS).writerow(row)
 
 
-def next_id(rows: list[dict[str, str]]) -> str:
-    numbers = [int(r["id"][1:]) for r in rows if re.fullmatch(r"E\d+", r["id"])]
+def write_index(layout: Layout, rows: list[dict[str, str]]) -> None:
+    with layout.index.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=INDEX_COLUMNS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def next_id(layout: Layout, rows: list[dict[str, str]]) -> str:
+    # Superseded decisions keep their identifiers, so they are never reused.
+    used = [r["id"] for r in rows] + [p.stem for p in layout.decisions.rglob("E*.yaml")]
+    numbers = [int(i[1:]) for i in used if re.fullmatch(r"E\d+", i)]
     return f"E{max(numbers, default=0) + 1:04d}"
+
+
+def read_decision(path: Path) -> dict[str, object]:
+    """Reads the top-level scalar fields of a decision file written by apply.py."""
+    record: dict[str, object] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith(" ") or ":" not in line:
+            continue
+        key, _, value = line.partition(":")
+        value = value.strip()
+        record[key] = json.loads(value) if value else None
+    return record
 
 
 def normalize(text: str) -> str:
@@ -147,23 +181,16 @@ def source_of(layout: Layout, pdf: Path) -> str:
     return "agent" if rel.parts[0] == AGENT_INBOX else "david"
 
 
-def decide(source: str, scores: dict[str, int | None], material_warnings: bool) -> str:
-    """Decision rule of criteria.md 0.2, applied in order; first match wins."""
+def decide(source: str, scores: dict[str, int | None]) -> str:
+    """Decision rule of criteria.md 0.3: always accept or reject, never pending."""
     if scores["pertinencia"] == 0:
         return "reject"
-    if material_warnings or scores["acceso"] == 0:
-        return "review"
     if source == "david":
-        return "accept" if scores["pertinencia"] == 2 else "review"
+        return "accept"
     values = [scores[c] for c in CRITERIA]
     if any(v is None for v in values):
         raise ValueError("agent-found documents need all five scores")
-    total = sum(values)
-    if 0 not in values and total >= 8:
-        return "accept"
-    if total <= 5 or 0 in values:
-        return "reject"
-    return "review"
+    return "accept" if 0 not in values and sum(values) >= 7 else "reject"
 
 
 def today() -> str:

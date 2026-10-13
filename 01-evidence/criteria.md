@@ -1,6 +1,6 @@
 # Criterios de selección de documentos de evidencia
 
-Versión 0.2 (borrador)
+Versión 0.3 (borrador)
 
 ## Propósito
 
@@ -96,24 +96,37 @@ Cada decisión registra el rol del documento:
 
 ## Regla de decisión
 
-Se aplica en este orden; la primera condición que se cumple decide.
+Toda decisión es **aceptar** o **rechazar**: el proceso nunca deja
+documentos pendientes para david. Se aplica en este orden; la primera
+condición que se cumple decide.
 
-1. **Rechazar** si la pertinencia es 0. El documento pasa automáticamente a
-   `rejected/`. La falta de pertinencia prevalece sobre las advertencias de
-   conversión: un documento ajeno al campo no se queda en `ingest/` aunque
-   su conversión haya fallado.
-2. **Revisar** si el documento es pertinente y tiene advertencias de
-   conversión (o acceso en 0). Se queda en `ingest/` para que david decida.
-3. **Documentos aportados por david**: **aceptar** si la pertinencia es 2;
-   **revisar** si es 1.
-4. **Documentos encontrados por el agente**:
-   - **Aceptar**: ningún criterio en 0 y suma de 8 o más.
-   - **Rechazar**: suma de 5 o menos, o algún criterio en 0. Pasa a
-     `rejected/`.
-   - **Revisar**: cualquier otro caso. Se queda en `ingest/`.
+1. **Rechazar** si la pertinencia es 0. El documento pasa a `rejected/`.
+2. **Documentos aportados por david**: **aceptar** si la pertinencia es 1
+   o 2.
+3. **Documentos encontrados por el agente**: **aceptar** si ningún
+   criterio está en 0 y la suma es 7 o más; si no, **rechazar**.
+4. Un documento con el mismo título, emisor y año que uno ya indexado se
+   **rechaza** como duplicado y referencia al indexado. Si el año es
+   distinto, es una edición nueva: se decide con las reglas anteriores y
+   se enlaza con la edición previa.
 
-Solo los documentos pertinentes con advertencias de conversión o con
-decisión "revisar" permanecen en `ingest/` a la espera de david.
+Las advertencias de conversión y las dudas del juicio no bloquean la
+decisión: se registran en la decisión del documento y se informan a david.
+Como `rejected/` es un borrado suave, un rechazo se puede revertir.
+
+## Re-evaluación por cambios del dominio
+
+Cada decisión registra la versión de `domain.md` con que se tomó. Cuando
+`domain.md` cambia de versión, antes de procesar documentos nuevos:
+
+- Si el dominio **se amplía**, se re-evalúan los documentos rechazados por
+  pertinencia en versiones anteriores.
+- Si el dominio **se restringe**, se re-evalúan los documentos aceptados.
+- Si hace las dos cosas, se re-evalúan ambos grupos.
+
+`rejected/` es un borrado suave precisamente para esto: un documento
+rechazado vuelve a `ingest/` y se juzga de nuevo con la regla vigente. La
+decisión anterior se conserva como reemplazada, y la nueva la referencia.
 
 ## Calibración
 
@@ -156,3 +169,9 @@ Notas:
   autoridad, especificidad y vigencia deciden solo para documentos
   encontrados por el agente; los anuncios de cursos son señales de mercado
   de especificidad débil; se agrega el conjunto de calibración.
+- 0.3 (2026-10-13): se agrega la re-evaluación por cambios del dominio; cada
+  decisión registra la versión de `domain.md`. Se elimina el resultado
+  "revisar": toda decisión es aceptar o rechazar. Las advertencias de
+  conversión y las dudas se registran sin bloquear. Los documentos de david
+  con pertinencia 1 se aceptan; los del agente se aceptan con suma de 7 o
+  más sin ceros. Los duplicados de título, emisor y año se rechazan.

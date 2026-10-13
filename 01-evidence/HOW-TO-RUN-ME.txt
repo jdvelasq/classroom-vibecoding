@@ -36,9 +36,10 @@ solo explica el proceso.
    decisions/<id>.yaml  puntajes, decisión y justificación de cada documento
    index.csv            un registro por documento decidido
 
-5. Qué queda para revisar
+5. Nada queda pendiente
 
-   Lo que sigue en ingest/ espera tu decisión. Son documentos pertinentes
-   con advertencias de conversión que impiden juzgarlos, o con decisión
-   "revisar", o con el mismo título, emisor y año que uno ya indexado.
-   El informe final de Claude dice el motivo de cada uno.
+   La skill siempre acepta o rechaza; ingest/ queda vacío. Las advertencias
+   de conversión y las dudas quedan en decisions/<id>.yaml y en el informe
+   de Claude. Un rechazo se puede revertir porque rejected/ es un borrado
+   suave. Si domain.md cambia de versión, la skill re-evalúa sola lo que
+   corresponda según criteria.md.
