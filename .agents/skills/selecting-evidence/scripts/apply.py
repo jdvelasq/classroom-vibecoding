@@ -4,9 +4,9 @@ Usage (from the repository root):
 
     python3 .agents/skills/selecting-evidence/scripts/apply.py JUDGMENTS.json [--dry-run]
 
-JUDGMENTS.json is a list with one object per document in evidence/ingest/:
+JUDGMENTS.json is a list with one object per document in 01-evidence/ingest/:
 
-    {"pdf": "evidence/ingest/x.pdf", "title": "...", "issuer": "...",
+    {"pdf": "01-evidence/ingest/x.pdf", "title": "...", "issuer": "...",
      "year": 2024, "scores": {"pertinencia": 2, "autoridad": 2,
      "especificidad": 2, "vigencia": 2, "acceso": 2},
      "material_warnings": false, "category": "authoritative",

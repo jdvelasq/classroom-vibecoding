@@ -1,6 +1,6 @@
 ---
 name: selecting-evidence
-description: Selects the documents waiting in evidence/ingest/ as evidence for the Analytics curriculum, applying evidence/criteria.md against evidence/domain.md, then files, indexes and reports each one. Use when david adds PDFs to evidence/ingest/, asks to process, select, classify or triage evidence documents, or when the agent has placed documents it found in evidence/ingest/agent/.
+description: Selects the documents waiting in 01-evidence/ingest/ as evidence for the Analytics curriculum, applying 01-evidence/criteria.md against 01-evidence/domain.md, then files, indexes and reports each one. Use when david adds PDFs to 01-evidence/ingest/, asks to process, select, classify or triage evidence documents, or when the agent has placed documents it found in 01-evidence/ingest/agent/.
 ---
 
 # Selecting evidence
@@ -11,11 +11,11 @@ index. You contribute only judgment: reading each document and scoring it.
 
 Sources of truth, read them before judging; never restate them here:
 
-- `evidence/criteria.md`: criteria, scales, decision rule, calibration set.
-- `evidence/domain.md`: field, subfields, precursors and neighbours.
+- `01-evidence/criteria.md`: criteria, scales, decision rule, calibration set.
+- `01-evidence/domain.md`: field, subfields, precursors and neighbours.
 
-Documents in `evidence/ingest/agent/` were found by the agent; every other
-document in `evidence/ingest/` was contributed by david. The scripts derive
+Documents in `01-evidence/ingest/agent/` were found by the agent; every other
+document in `01-evidence/ingest/` was contributed by david. The scripts derive
 the source from that location.
 
 Run every command from the repository root.
@@ -35,8 +35,8 @@ skips files that are already up to date.
 python3 .agents/skills/selecting-evidence/scripts/intake.py
 ```
 
-It creates `evidence/index.csv` if missing, moves exact duplicates (same
-SHA-256 as an indexed document) to `evidence/rejected/duplicates/`, and
+It creates `01-evidence/index.csv` if missing, moves exact duplicates (same
+SHA-256 as an indexed document) to `01-evidence/rejected/duplicates/`, and
 prints a JSON manifest of pending documents with their source and conversion
 warnings. Report the duplicates; do not judge them.
 
@@ -61,38 +61,38 @@ pertinencia is 0, the other scores may be `null`. Also decide:
 - `title`, `issuer`, `year`, and a one- or two-sentence `rationale` that
   names the subfield, precursor or neighbour of domain.md it relates to.
 
-Write the judgments as a JSON list to `evidence/ingest/.judgments.json`
+Write the judgments as a JSON list to `01-evidence/ingest/.judgments.json`
 (the inbox is gitignored); the expected shape is in the docstring of
 `scripts/apply.py`.
 
 ## 4. Apply
 
 ```bash
-python3 .agents/skills/selecting-evidence/scripts/apply.py evidence/ingest/.judgments.json --dry-run
-python3 .agents/skills/selecting-evidence/scripts/apply.py evidence/ingest/.judgments.json
+python3 .agents/skills/selecting-evidence/scripts/apply.py 01-evidence/ingest/.judgments.json --dry-run
+python3 .agents/skills/selecting-evidence/scripts/apply.py 01-evidence/ingest/.judgments.json
 ```
 
 The script refuses to run if criteria.md is not the version its rule
 implements; in that case update `decide` in `scripts/evidence_lib.py` to the
 new rule and its tests first. It then:
 
-- moves accepted documents to `evidence/pdf/<category>/` and
-  `evidence/md/<category>/`;
-- moves rejected documents (PDF and `.md`) to `evidence/rejected/`, which is
+- moves accepted documents to `01-evidence/pdf/<category>/` and
+  `01-evidence/md/<category>/`;
+- moves rejected documents (PDF and `.md`) to `01-evidence/rejected/`, which is
   gitignored;
-- leaves documents to review in `evidence/ingest/` for david;
+- leaves documents to review in `01-evidence/ingest/` for david;
 - flags a title and issuer that are already indexed: the same year is held
   for review as a possible duplicate; a different year is processed as a new
   edition and linked through `previous_edition`;
-- writes `evidence/decisions/<id>.yaml` and appends to `evidence/index.csv`.
+- writes `01-evidence/decisions/<id>.yaml` and appends to `01-evidence/index.csv`.
 
-Delete `evidence/ingest/.judgments.json` after a successful run.
+Delete `01-evidence/ingest/.judgments.json` after a successful run.
 
 ## 5. Report
 
 Give david a short report: accepted (category and role), rejected, left in
 `ingest/` with the reason, duplicates and new editions. Do not repeat the
-scores; they are in `evidence/decisions/`.
+scores; they are in `01-evidence/decisions/`.
 
 TODO: once a competency map exists, also report what each accepted document
 adds to it.

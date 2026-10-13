@@ -92,7 +92,7 @@ def test_accept_reject_and_review_are_filed(layout):
     assert [o["decision"] for o in outcomes] == ["accept", "reject", "review"]
     assert (layout.evidence / "pdf/authoritative/accepted.pdf").exists()
     moved_md = layout.evidence / "md/authoritative/accepted.md"
-    assert 'source: "evidence/pdf/authoritative/accepted.pdf"' in moved_md.read_text(encoding="utf-8")
+    assert 'source: "01-evidence/pdf/authoritative/accepted.pdf"' in moved_md.read_text(encoding="utf-8")
     assert (layout.rejected / "rejected.pdf").exists() and (layout.rejected / "rejected.md").exists()
     assert reviewed.exists()
     with layout.index.open(encoding="utf-8") as f:

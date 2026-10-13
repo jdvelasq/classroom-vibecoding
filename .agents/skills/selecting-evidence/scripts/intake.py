@@ -1,11 +1,11 @@
-"""Lists the documents in evidence/ingest/ that still need a selection decision.
+"""Lists the documents in 01-evidence/ingest/ that still need a selection decision.
 
 Usage (from the repository root):
 
     python3 .agents/skills/selecting-evidence/scripts/intake.py
 
 Prints a JSON manifest. Exact duplicates of an indexed document (same
-SHA-256) leave the inbox for evidence/rejected/duplicates/ and are reported
+SHA-256) leave the inbox for 01-evidence/rejected/duplicates/ and are reported
 under "duplicates"; they are not indexed again.
 """
 

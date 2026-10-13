@@ -9,7 +9,7 @@
 
 Ejecución (desde la raíz del repositorio):
 
-    uv run design/tasks/s01-convert-benchmarks.py            # evidence/ingest/
+    uv run design/tasks/s01-convert-benchmarks.py            # 01-evidence/ingest/
     uv run design/tasks/s01-convert-benchmarks.py --force    # reconvierte todo
     uv run design/tasks/s01-convert-benchmarks.py RUTA.pdf   # sólo esos PDFs
     uv run design/tasks/s01-convert-benchmarks.py \
@@ -23,7 +23,7 @@ Contrato:
 
 - Lee `--input/**.pdf` y escribe `--output/**.md` con la misma estructura de
   carpetas y el mismo nombre de archivo. Ambas carpetas son por defecto
-  `evidence/ingest/`, de modo que cada `.md` queda junto a su PDF.
+  `01-evidence/ingest/`, de modo que cada `.md` queda junto a su PDF.
 - Es determinista y no usa LLM. Prioriza fidelidad conceptual: texto completo,
   orden de lectura, títulos, listas, tablas y marcas de página citables.
 - No aplica OCR. Las páginas con poco texto extraíble se marcan para revisión
@@ -50,7 +50,7 @@ import pymupdf
 import pymupdf4llm
 
 ROOT = Path(__file__).resolve().parents[2]
-INGEST_DIR = ROOT / "evidence" / "ingest"
+INGEST_DIR = ROOT / "01-evidence" / "ingest"
 
 TOOL = (
     f"pymupdf4llm {pymupdf4llm.__version__} + pymupdf {pymupdf.__version__} "
