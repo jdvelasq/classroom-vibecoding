@@ -77,6 +77,14 @@ def test_intake_creates_index_and_lists_pending(layout):
     assert by_name["b.pdf"]["source"] == "agent"
 
 
+def test_intake_ignores_hidden_and_non_pdf_files(layout):
+    (layout.ingest / ".gitkeep").write_text("", encoding="utf-8")
+    (layout.ingest / ".DS_Store").write_bytes(b"x")
+    (layout.ingest / ".hidden.pdf").write_bytes(b"x")
+    (layout.ingest / "notes.txt").write_text("x", encoding="utf-8")
+    assert intake.intake(layout)["pending"] == []
+
+
 def test_accept_and_reject_are_filed_and_warnings_do_not_block(layout):
     accepted = add_doc(layout, "accepted", content=b"1")
     rejected = add_doc(layout, "rejected", content=b"2")

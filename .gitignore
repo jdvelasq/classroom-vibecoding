@@ -6,6 +6,7 @@
 !**/L[0-9][0-9][0-9]_*/temp/.gitkeep
 
 01-evidence/ingest/*
+!01-evidence/ingest/.gitkeep
 01-evidence/rejected/
 
 temp/

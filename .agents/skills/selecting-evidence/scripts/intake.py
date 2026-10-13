@@ -35,6 +35,8 @@ def intake(layout: Layout) -> dict[str, list[dict]]:
     by_sha = {row["sha256"]: row for row in read_index(layout)}
     pending, duplicates = [], []
     for pdf in sorted(layout.ingest.rglob("*.pdf")):
+        if any(part.startswith(".") for part in pdf.relative_to(layout.ingest).parts):
+            continue
         digest = sha256(pdf)
         if digest in by_sha:
             original = by_sha[digest]
