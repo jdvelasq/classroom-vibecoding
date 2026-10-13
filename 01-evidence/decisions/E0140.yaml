@@ -1,0 +1,26 @@
+id: "E0140"
+sha256: "9ff0d63809458d256170915ac8c2d2f722b8c4d5c41c00bcfc5973d111f26dbc"
+file: "01-evidence/pdf/professional-learning/pluralsight-data-science.pdf"
+md: "01-evidence/md/professional-learning/pluralsight-data-science.md"
+title: "Data Science Foundations (Skills Path)"
+issuer: "Pluralsight"
+year: 2026
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "Solo las páginas 1-3 del PDF tienen contenido sustantivo; las páginas 4-15 no contienen texto citable (captura incompleta de la página web), lo que no afecta el juicio de pertinencia pero limita qué puede citarse más adelante."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Ruta de cursos de un proveedor de formación profesional sobre el ciclo de la ciencia de datos aplicada (recolección, limpieza, EDA, construcción y evaluación de modelos, despliegue, comunicación de resultados); es señal de mercado de especificidad débil para el subcampo predictivo de la analítica, análogo a E0003."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

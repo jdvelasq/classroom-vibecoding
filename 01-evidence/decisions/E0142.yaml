@@ -1,0 +1,26 @@
+id: "E0142"
+sha256: "54fea0293ab1d7751e6fc17037b2b9ada80f90b68c9986bd65e59f6c392f8de6"
+file: "01-evidence/pdf/professional-learning/pluralsight-business-analytics.pdf"
+md: "01-evidence/md/professional-learning/pluralsight-business-analytics.md"
+title: "Business Analytics and Intelligence (Skills Path)"
+issuer: "Pluralsight"
+year: 2026
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "Solo las páginas 1-2 del PDF tienen contenido sustantivo; las páginas 3-9 no contienen texto citable (captura incompleta de la página web), lo que no afecta el juicio de pertinencia pero limita qué puede citarse más adelante."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Ruta de cursos de un proveedor de formación profesional sobre el campo central de la analítica de negocios: fundamentos de business analytics, evaluación de calidad de datos, modelado/consulta/reporte para BI, ética en analítica avanzada y análisis de desempeño. Señal de mercado de especificidad débil, análoga a E0009."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0141"
+sha256: "3aab8fc1cc897a246d29ded42e5cabf28a8b145f33d94470a6aca676f30f568b"
+file: "01-evidence/pdf/professional-learning/pluralsight-generative-ai-for-data-science.pdf"
+md: "01-evidence/md/professional-learning/pluralsight-generative-ai-for-data-science.md"
+title: "Generative AI for Data Science (Skills Path)"
+issuer: "Pluralsight"
+year: 2026
+source: "david"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Ruta de cursos sobre el uso de IA generativa en cada etapa del trabajo de ciencia de datos (preparación de datos, análisis, ingeniería de características, visualización, evaluación de modelos, automatización de reportes); corresponde directamente a la tendencia emergente de domain.md v0.6-0.7 sobre IA generativa y agéntica al servicio del trabajo analítico."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"
