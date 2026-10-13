@@ -1,6 +1,6 @@
 # Dominio: analítica
 
-Versión 0.3 (borrador)
+Versión 0.4 (borrador)
 
 Este archivo define el campo al que se aplican los criterios de
 `criteria.md`.
@@ -16,6 +16,7 @@ Analítica.
 - Analítica predictiva.
 - Analítica prescriptiva.
 - Analítica de grandes datos (*Big Data Analytics*).
+- Productos de datos.
 
 Los cuatro primeros subcampos se distinguen por la pregunta que responden.
 La analítica de grandes datos se distingue de otra manera: sus pasos
@@ -35,6 +36,11 @@ plataformas distribuidas, y converge con el aprendizaje automático en la
 analítica moderna de 2010 a 2015 (véase
 `design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md`).
 
+Los productos de datos también se distinguen por competencias: convierten un
+análisis en un producto usable y mantenido (tableros, aplicaciones de datos,
+API, modelos desplegados). Exigen competencias como despliegue, control de
+versiones, monitoreo y diseño para el usuario final.
+
 ## Precursores
 
 - **Inteligencia de negocios**.
@@ -51,6 +57,8 @@ registran con rol `precursor`.
 - Grandes datos por sí solos, incluida su infraestructura (almacenamiento y
   plataformas de procesamiento distribuido).
 - Estadística.
+- Ingeniería de software, salvo cuando se trata como parte de la entrega de
+  un producto analítico.
 
 Un documento de un campo vecino se incluye solo cuando trata ese campo como
 parte del trabajo analítico. Un documento que lo trata como disciplina
@@ -72,3 +80,6 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
 - 0.3 (2026-10-13): la analítica de grandes datos pasa a ser un subcampo,
   diferenciado por competencias y herramientas, no por la pregunta que
   responde.
+- 0.4 (2026-10-13): se agregan los productos de datos como subcampo,
+  diferenciado por competencias; la ingeniería de software queda como
+  vecino.
