@@ -1,6 +1,6 @@
 # Dominio: analítica
 
-Versión 0.5 (borrador)
+Versión 0.6 (borrador)
 
 Este archivo define el campo al que se aplican los criterios de
 `criteria.md`.
@@ -52,6 +52,21 @@ análisis, modelos y productos de datos, y la calidad de los datos. Sin esa
 base no hay producto analítico confiable, por eso forma parte del campo y no
 solo de un vecino.
 
+## Tendencia emergente: IA generativa y agéntica en la analítica
+
+El uso de modelos fundacionales, IA generativa e IA agéntica como
+herramientas del trabajo analítico forma parte del campo. Es una dimensión
+transversal a todos los subcampos, no un subcampo nuevo. Incluye, por
+ejemplo, asistentes que ayudan a formular, explorar y explicar análisis;
+agentes que obtienen y preparan datos, ejecutan modelos o generan reportes;
+y modelos de lenguaje integrados en productos de datos. Exige competencias
+propias, como especificar tareas para un modelo, verificar y auditar sus
+resultados, y gobernar su uso.
+
+La IA como disciplina autónoma (diseño, entrenamiento y teoría de los
+modelos) sigue siendo vecino. Un documento entra por esta tendencia cuando
+pone la IA al servicio de una pregunta o un producto analítico.
+
 ## Precursores
 
 - **Inteligencia de negocios**.
@@ -99,3 +114,6 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
   subcampo, diferenciado por competencias (adquisición e integración, SQL y
   modelado, *pipelines*, calidad); la ingeniería de datos como disciplina
   autónoma sigue como vecino.
+- 0.6 (2026-10-13): se agrega la IA generativa y agéntica al servicio del
+  trabajo analítico como tendencia emergente y transversal; la IA como
+  disciplina autónoma sigue como vecino.
