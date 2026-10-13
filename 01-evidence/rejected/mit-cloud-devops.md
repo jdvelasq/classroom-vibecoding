@@ -1,5 +1,5 @@
 ---
-source: "01-evidence/pdf/professional-learning/mit-cloud-devops.pdf"
+source: "01-evidence/rejected/mit-cloud-devops.pdf"
 source_sha256: 7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192
 pages: 22
 min_text_coverage: 0.697

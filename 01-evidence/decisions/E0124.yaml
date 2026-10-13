@@ -1,0 +1,26 @@
+id: "E0124"
+sha256: "a90b7011bafd09f80d93c12b4c1ead30d2dfc4881159e170646bf1765486b176"
+file: "01-evidence/rejected/mit-introduction-quantum-computing.pdf"
+md: "01-evidence/rejected/mit-introduction-quantum-computing.md"
+title: "Introduction to Quantum Computing"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0067"
+rationale: "Curso de teoria y algoritmos de computacion cuantica; campo ajeno a la analitica, sus subcampos, precursores y vecinos de domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

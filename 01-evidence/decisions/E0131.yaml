@@ -1,0 +1,26 @@
+id: "E0131"
+sha256: "216268a0d2b09bd819734a0e47bddce813740248355a031f3750007a53922f23"
+file: "01-evidence/rejected/mit-professional-certificate-game-design.pdf"
+md: "01-evidence/rejected/mit-professional-certificate-game-design.md"
+title: "Professional Certificate in Game Design"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0082"
+rationale: "Certificado de diseno de videojuegos; campo ajeno a la analitica segun domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

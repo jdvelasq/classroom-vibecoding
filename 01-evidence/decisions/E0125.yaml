@@ -1,0 +1,26 @@
+id: "E0125"
+sha256: "2b4bfdeb228f297a56a964008c79ca581292ea40e522dc619ffa8f657a03afeb"
+file: "01-evidence/rejected/mit-persuasive-communication.pdf"
+md: "01-evidence/rejected/mit-persuasive-communication.md"
+title: "Persuasive Communication: Critical Thinking to Enhance Your Message"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0073"
+rationale: "Curso de comunicacion persuasiva y pensamiento critico; campo ajeno a la analitica, sus subcampos, precursores y vecinos de domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

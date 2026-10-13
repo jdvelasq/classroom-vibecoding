@@ -1,6 +1,6 @@
 # Dominio: analítica
 
-Versión 0.6 (borrador)
+Versión 0.7 (borrador)
 
 Este archivo define el campo al que se aplican los criterios de
 `criteria.md`.
@@ -42,7 +42,9 @@ análisis en un producto usable y mantenido (tableros, aplicaciones de datos,
 API, modelos desplegados). Exigen competencias como despliegue, control de
 versiones, diseño para el usuario final y monitoreo. El monitoreo forma parte
 del subcampo y cubre el desempeño y la deriva de los modelos, la calidad de
-los datos y el uso del producto.
+los datos y el uso del producto. Las prácticas operativas aplicadas a datos y
+modelos (MLOps, DataOps, integración y despliegue continuos de modelos y
+*pipelines*) también forman parte del subcampo.
 
 La ingeniería de datos para la analítica también se distingue por
 competencias: obtener, integrar y preparar los datos que una pregunta
@@ -84,8 +86,9 @@ registran con rol `precursor`.
 - Grandes datos por sí solos, incluida su infraestructura (almacenamiento y
   plataformas de procesamiento distribuido).
 - Estadística.
-- Ingeniería de software, salvo cuando se trata como parte de la entrega de
-  un producto analítico.
+- Ingeniería de software, incluidos DevOps genérico y la infraestructura en
+  la nube, salvo cuando se trata como parte de la entrega de un producto
+  analítico.
 
 Un documento de un campo vecino se incluye solo cuando trata ese campo como
 parte del trabajo analítico. Un documento que lo trata como disciplina
@@ -117,3 +120,8 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
 - 0.6 (2026-10-13): se agrega la IA generativa y agéntica al servicio del
   trabajo analítico como tendencia emergente y transversal; la IA como
   disciplina autónoma sigue como vecino.
+- 0.7 (2026-10-13): se explicita que MLOps, DataOps y la integración y el
+  despliegue continuos de modelos y *pipelines* forman parte de los productos
+  de datos (ampliación). DevOps genérico y la infraestructura en la nube se
+  nombran dentro del vecino ingeniería de software, donde ya estaban; esto
+  aclara y no restringe el dominio.

@@ -1,0 +1,26 @@
+id: "E0120"
+sha256: "bd62c2f9db4bdc093414a6daa03af2bbf21d606c896737dc9eb10919eb324913"
+file: "01-evidence/rejected/mit-chief-sustainability-officer.pdf"
+md: "01-evidence/rejected/mit-chief-sustainability-officer.md"
+title: "Blended Professional Certificate in Chief Sustainability Officer"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0048"
+rationale: "Certificado sobre estrategia de sostenibilidad corporativa (cumplimiento, ventaja competitiva ambiental); no trata la analitica, sus subcampos, precursores ni vecinos segun domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

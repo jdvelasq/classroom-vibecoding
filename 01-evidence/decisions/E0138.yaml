@@ -1,0 +1,26 @@
+id: "E0138"
+sha256: "88059f3dbc529dd747e89c5ae8d94759ad584b3eb1f33472fe7049fb26556a6f"
+file: "01-evidence/rejected/uchicago-devops.pdf"
+md: "01-evidence/rejected/uchicago-devops.md"
+title: "DevOps"
+issuer: "University of Chicago (programa ejecutivo en linea)"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0106"
+rationale: "Generic software DevOps course (SDLC, Docker, Jenkins, Kubernetes, application monitoring); domain 0.7 keeps generic DevOps within the software engineering neighbour, and the course does not apply it to data or models. Re-evaluated under domain 0.7: unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

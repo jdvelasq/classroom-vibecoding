@@ -1,0 +1,26 @@
+id: "E0134"
+sha256: "ed5653f1cc1875064d3a32ce1792edb458f56a746d54b6608cc9fe3e088f1e06"
+file: "01-evidence/rejected/python-institute-pcap-exam-syllabus.pdf"
+md: "01-evidence/rejected/python-institute-pcap-exam-syllabus.md"
+title: "PCAP - Certified Associate in Python Programming - Exam Syllabus"
+issuer: "Python Institute"
+year: 2022
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0096"
+rationale: "Certificacion de programacion general en Python (sintaxis, estructuras, funciones); no trata la analitica ni sus subcampos, precursores o vecinos de domain.md. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

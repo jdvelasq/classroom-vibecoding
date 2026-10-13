@@ -1,0 +1,26 @@
+id: "E0132"
+sha256: "a0ff1c2c49cefcd8701bbed11d5244f52e24d4dc5605402bb2026372716393e0"
+file: "01-evidence/rejected/mit-quantum-algorithms.pdf"
+md: "01-evidence/rejected/mit-quantum-algorithms.md"
+title: "Quantum Algorithms for Cybersecurity, Chemistry, and Optimization"
+issuer: "MIT (MIT xPRO / Open Learning)"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0086"
+rationale: "Curso de algoritmos cuanticos para ciberseguridad, quimica y optimizacion; campo ajeno a la analitica segun domain.md, incluida la optimizacion cuantica como tema de computacion cuantica, no de analitica prescriptiva de negocio. Re-evaluated under domain 0.7 (MLOps and DataOps made explicit in data products): unchanged."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0139"
+sha256: "7d00048d4be79c14cf76a35a041d0bc0885881653cfb874bbea898ecf0107192"
+file: "01-evidence/rejected/mit-cloud-devops.pdf"
+md: "01-evidence/rejected/mit-cloud-devops.md"
+title: "Cloud & DevOps: Continuous Transformation"
+issuer: "MIT Professional Education"
+year: null
+source: "david"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 0
+  autoridad: null
+  especificidad: null
+  vigencia: null
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: "E0051"
+rationale: "Correction of E0051 under domain 0.7: cloud infrastructure and generic DevOps course (serverless computing, web architecture); domain.md places generic DevOps and cloud infrastructure in the software engineering neighbour. Analytics and data science appear only in the instructor biography, not in the course content."
+criteria_version: "0.3"
+domain_version: "0.7"
+date: "2026-10-13"
