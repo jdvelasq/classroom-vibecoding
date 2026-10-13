@@ -1,6 +1,6 @@
 # Fuentes de búsqueda de evidencia
 
-Versión 0.1 (borrador)
+Versión 0.3 (aprobada)
 
 ## Propósito
 
@@ -18,6 +18,11 @@ archivo solo decide dónde buscar. Si un documento entra o no lo decide
   juzgan con los cinco criterios completos.
 - Los términos de búsqueda se usan en inglés y en español.
 - Un documento ya indexado no se vuelve a traer.
+- Cada página consultada se registra en `searches.csv` con su fuente,
+  destino, consulta, URL, fecha, archivo, SHA-256 y resultado. Una URL ya
+  traída no se vuelve a traer.
+- Los PDF de Pluralsight los guarda david en `ingest/` y cuentan como
+  aportados por david.
 
 ## Términos de búsqueda
 
@@ -70,10 +75,13 @@ programático.
 
 **Categoría de destino**: `institutional`.
 
-### Universidades propuestas
+### Universidades
 
-> Lista propuesta, pendiente de ajuste por david. El programa concreto de
-> cada universidad se identifica en la búsqueda.
+Solo referentes internacionales. El programa de especialización de david
+(primera cohorte en 2015) es el referente en Colombia y la región, así que
+los programas latinoamericanos y colombianos no se buscan como evidencia de
+competencias. El programa concreto de cada universidad se identifica en la
+búsqueda.
 
 **Referentes internacionales**
 
@@ -87,24 +95,6 @@ programático.
 - University of Warwick.
 - National University of Singapore.
 
-**Latinoamérica**
-
-- Tecnológico de Monterrey (México).
-- Instituto Tecnológico Autónomo de México (ITAM).
-- Pontificia Universidad Católica de Chile.
-- Universidad de Chile.
-- Fundação Getulio Vargas (Brasil).
-- Universidade de São Paulo (Brasil).
-
-**Colombia**
-
-- Universidad Nacional de Colombia.
-- Universidad de los Andes.
-- Pontificia Universidad Javeriana.
-- Universidad EAFIT.
-- Universidad Icesi.
-- Universidad del Rosario.
-
 ## Fuentes futuras
 
 Fuera de alcance por ahora:
@@ -114,9 +104,19 @@ Fuera de alcance por ahora:
 - **Marcos profesionales**: INFORMS *Certified Analytics Professional*
   (CAP) y SFIA (*Skills Framework for the Information Age*), con categoría
   `authoritative`.
+- **Programas de Latinoamérica y Colombia**: sirven para el posicionamiento
+  del programa frente a la oferta regional, no como evidencia de
+  competencias.
 
 ## Versión y cambios
 
 - 0.1 (2026-10-13): borrador inicial con dos fuentes (plataformas de
   aprendizaje y syllabus universitarios), términos alineados con
   `domain.md` 0.7, límites por corrida y lista propuesta de universidades.
+- 0.2 (2026-10-13): aprobada por david con los límites, la lista de
+  universidades y Udemy tal como estaban. Los PDF de Pluralsight cuentan
+  como aportados por david. Se agrega el registro de búsquedas
+  `searches.csv`.
+- 0.3 (2026-10-13): se quitan las universidades de Latinoamérica y Colombia;
+  quedan solo los referentes internacionales. La comparación regional pasa a
+  fuentes futuras, como posicionamiento.
