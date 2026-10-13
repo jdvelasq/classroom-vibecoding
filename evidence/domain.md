@@ -39,7 +39,9 @@ analítica moderna de 2010 a 2015 (véase
 Los productos de datos también se distinguen por competencias: convierten un
 análisis en un producto usable y mantenido (tableros, aplicaciones de datos,
 API, modelos desplegados). Exigen competencias como despliegue, control de
-versiones, monitoreo y diseño para el usuario final.
+versiones, diseño para el usuario final y monitoreo. El monitoreo forma parte
+del subcampo y cubre el desempeño y la deriva de los modelos, la calidad de
+los datos y el uso del producto.
 
 ## Precursores
 
@@ -81,5 +83,5 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
   diferenciado por competencias y herramientas, no por la pregunta que
   responde.
 - 0.4 (2026-10-13): se agregan los productos de datos como subcampo,
-  diferenciado por competencias; la ingeniería de software queda como
-  vecino.
+  diferenciado por competencias e incluido el monitoreo; la ingeniería de
+  software queda como vecino.
