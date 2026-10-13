@@ -21,8 +21,12 @@ Analítica.
 La analítica de grandes datos (*Big Data Analytics*) no es un quinto tipo de
 analítica. Los cuatro subcampos se distinguen por la pregunta que responden;
 los grandes datos cambian la escala del problema (volumen, velocidad y
-variedad) y pueden presentarse en cualquiera de los cuatro. Un documento que
-trata la analítica de grandes datos es pertinente como parte del campo.
+variedad) y pueden presentarse en cualquiera de los cuatro.
+
+Los grandes datos por sí solos no son necesariamente analítica. Solo la
+analítica de grandes datos está dentro del campo; un documento sobre grandes
+datos que no los pone al servicio de una pregunta analítica se trata como
+vecino.
 
 En la historia del campo, la analítica de grandes datos aparece hacia 2011,
 cuando los métodos analíticos tradicionales empiezan a ejecutarse sobre
@@ -42,8 +46,9 @@ registran con rol `precursor`.
 ## Vecinos
 
 - Inteligencia artificial y aprendizaje automático.
-- Ingeniería de datos, incluida la infraestructura de grandes datos
-  (almacenamiento y plataformas de procesamiento distribuido).
+- Ingeniería de datos.
+- Grandes datos por sí solos, incluida su infraestructura (almacenamiento y
+  plataformas de procesamiento distribuido).
 - Estadística.
 
 Un documento de un campo vecino se incluye solo cuando trata ese campo como
@@ -61,5 +66,5 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
 
 - 0.1 (2026-10-13): borrador inicial.
 - 0.2 (2026-10-13): se agrega la analítica de grandes datos como dimensión
-  transversal; la infraestructura de grandes datos queda como vecino dentro
-  de ingeniería de datos.
+  transversal; los grandes datos por sí solos y su infraestructura quedan
+  como vecino.
