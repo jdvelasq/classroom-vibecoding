@@ -1,6 +1,6 @@
 # Dominio: analítica
 
-Versión 0.2 (borrador)
+Versión 0.3 (borrador)
 
 Este archivo define el campo al que se aplican los criterios de
 `criteria.md`.
@@ -15,18 +15,19 @@ Analítica.
 - Analítica diagnóstica.
 - Analítica predictiva.
 - Analítica prescriptiva.
+- Analítica de grandes datos (*Big Data Analytics*).
 
-## Dimensión transversal: analítica de grandes datos
+Los cuatro primeros subcampos se distinguen por la pregunta que responden.
+La analítica de grandes datos se distingue de otra manera: sus pasos
+analíticos son los mismos (limpieza, modelos, evaluación), pero exige
+competencias propias (por ejemplo, Linux y computación distribuida) y
+herramientas propias (por ejemplo, Spark). Como este método selecciona
+evidencia sobre competencias, esa diferencia justifica tratarla como
+subcampo.
 
-La analítica de grandes datos (*Big Data Analytics*) no es un quinto tipo de
-analítica. Los cuatro subcampos se distinguen por la pregunta que responden;
-los grandes datos cambian la escala del problema (volumen, velocidad y
-variedad) y pueden presentarse en cualquiera de los cuatro.
-
-Los grandes datos por sí solos no son necesariamente analítica. Solo la
-analítica de grandes datos está dentro del campo; un documento sobre grandes
-datos que no los pone al servicio de una pregunta analítica se trata como
-vecino.
+Los grandes datos por sí solos no son necesariamente analítica. Un documento
+sobre grandes datos que no los pone al servicio de una pregunta analítica se
+trata como vecino.
 
 En la historia del campo, la analítica de grandes datos aparece hacia 2011,
 cuando los métodos analíticos tradicionales empiezan a ejecutarse sobre
@@ -68,3 +69,6 @@ práctica profesional, siempre que cumplan los criterios de `criteria.md`.
 - 0.2 (2026-10-13): se agrega la analítica de grandes datos como dimensión
   transversal; los grandes datos por sí solos y su infraestructura quedan
   como vecino.
+- 0.3 (2026-10-13): la analítica de grandes datos pasa a ser un subcampo,
+  diferenciado por competencias y herramientas, no por la pregunta que
+  responde.
