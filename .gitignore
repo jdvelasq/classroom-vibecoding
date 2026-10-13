@@ -7,7 +7,8 @@
 
 01-evidence/ingest/*
 !01-evidence/ingest/.gitkeep
-01-evidence/rejected/
+# Exact copies of documents that are already versioned elsewhere.
+01-evidence/rejected/duplicates/
 
 temp/
 

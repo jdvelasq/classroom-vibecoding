@@ -37,8 +37,7 @@ python3 .agents/skills/selecting-evidence/scripts/reeval.py --restore E0002 E000
 ```
 
 Restored documents return to the inbox and go through the steps below like
-any other document. `rejected/` is not versioned, so a rejected document can
-only be restored on the machine that holds it; report any that are missing.
+any other document. Report any document whose file is missing.
 
 ## 1. Convert
 
@@ -101,8 +100,8 @@ new rule and its tests first. It then:
 
 - moves accepted documents to `01-evidence/pdf/<category>/` and
   `01-evidence/md/<category>/`;
-- moves rejected documents (PDF and `.md`) to `01-evidence/rejected/`, which is
-  gitignored;
+- moves rejected documents (PDF and `.md`) to `01-evidence/rejected/`, which
+  is versioned for audit;
 - always decides: nothing is left pending in `01-evidence/ingest/`;
 - checks titles and issuers already indexed: the same year is rejected as a
   duplicate (`duplicate_of`); a different year is decided as a new edition

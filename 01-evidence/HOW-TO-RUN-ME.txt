@@ -31,8 +31,9 @@ solo explica el proceso.
 
    pdf/<categoría>/     PDFs aceptados
    md/<categoría>/      su texto en Markdown
-   rejected/            rechazados (no se versiona en git)
-   rejected/duplicates/ copias exactas de documentos ya indexados
+   rejected/            rechazados (se versiona para auditoría)
+   rejected/duplicates/ copias exactas de documentos ya indexados (no se
+                        versiona: el original ya está en git)
    decisions/<id>.yaml  puntajes, decisión y justificación de cada documento
    index.csv            un registro por documento decidido
 

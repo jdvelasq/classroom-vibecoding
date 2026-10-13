@@ -71,7 +71,7 @@ def restore(layout: Layout, doc_id: str) -> Path:
     record = read_decision(decision_file)
     pdf = layout.root / str(record["file"])
     if not pdf.exists():
-        raise SystemExit(f"{doc_id}: {record['file']} is not on this machine; rejected/ is not versioned")
+        raise SystemExit(f"{doc_id}: {record['file']} not found")
     inbox = layout.ingest / AGENT_INBOX if record["source"] == "agent" else layout.ingest
     inbox.mkdir(parents=True, exist_ok=True)
     target_pdf = inbox / pdf.name
