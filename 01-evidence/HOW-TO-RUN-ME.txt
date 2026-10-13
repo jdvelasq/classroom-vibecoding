@@ -10,13 +10,16 @@ solo explica el proceso.
 
    La carpeta decide el origen, y el origen decide qué criterios se aplican.
 
-2. Convertir los PDFs a Markdown (desde la raíz del repositorio)
+2. Conversión a Markdown (automática)
+
+   La skill convierte los PDFs sola en su primer paso; no hace falta hacer
+   nada. Correr el conversor a mano es opcional, por ejemplo para revisar
+   la conversión antes de pedir la selección (desde la raíz del repositorio):
 
    uv run design/tasks/s01-convert-benchmarks.py
 
-   La skill también lo corre. El conversor salta los archivos que ya están
-   al día. Si no encuentra uv, agrega esta línea a ~/.zshrc y abre una
-   terminal nueva:
+   El conversor salta los archivos que ya están al día. Si no encuentra uv,
+   agrega esta línea a ~/.zshrc y abre una terminal nueva:
 
    export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
