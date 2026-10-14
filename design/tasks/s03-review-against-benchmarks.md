@@ -41,8 +41,8 @@ Lee y cumple `AGENTS.md`. Lee sustantivamente:
   consulta sólo esa página del PDF homónimo en `design/benchmarks-pdf/`;
 - para cada Pxxx del curso: `Pxxx_activity.md`, `Pxxx_log.md` y
   `Pxxx_tasks.md` si existe;
-- `design/courses/<curso>/course_tasks.md` si existe; y
-- `design/courses/<curso>/course_log.md` sólo si existe, para contexto.
+- `05-implementation/<curso>/tasks/course_tasks.md` si existe; y
+- `05-implementation/<curso>/course_log.md` sólo si existe, para contexto.
 
 No lees `05-implementation/`: S02 es la lectura auditable de la implementación.
 Tampoco lees otros documentos de benchmarks, `benchmark_reviews/` históricos,
@@ -150,7 +150,8 @@ argumento distinto; en ese caso, cita el rechazo anterior y explica qué cambia.
 
 ## Salidas
 
-S03 crea o actualiza sólo estos archivos de `design/courses/<curso>/`.
+S03 crea o actualiza sólo estos archivos: `Pxxx_tasks.md` y `course_tasks.md`
+en `05-implementation/<curso>/tasks/`, y `log.md` en `05-implementation/<curso>/Pxxx_*/`.
 
 ### `Pxxx_tasks.md` — propuestas vigentes de una actividad
 

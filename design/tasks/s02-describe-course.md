@@ -6,7 +6,7 @@
 execute design/tasks/s02-describe-course.md course=<curso> executor=<LLM>
 ```
 
-`course` identifica `05-implementation/<curso>/` y `design/courses/<curso>/`.
+`course` identifica `05-implementation/<curso>/`.
 `executor` identifica la lectura independiente que realizó el trabajo; no cambia
 el contrato de la tarea ni autoriza a inventar consenso entre modelos.
 
@@ -15,9 +15,9 @@ el contrato de la tarea ni autoriza a inventar consenso entre modelos.
 Para cada directorio `05-implementation/<curso>/Pxxx_*/`, en orden numérico,
 mantiene estos dos archivos:
 
-- `design/courses/<curso>/Pxxx_activity.md`: descripción vigente, basada sólo
+- `05-implementation/<curso>/Pxxx_*/activity.md` (`Pxxx_activity.md`): descripción vigente, basada sólo
   en implementación observable; y
-- `design/courses/<curso>/Pxxx_log.md`: registro acumulativo de la inspección y
+- `05-implementation/<curso>/Pxxx_*/log.md` (`Pxxx_log.md`): registro acumulativo de la inspección y
   sus decisiones de descripción.
 
 La actividad implementada es la línea base. S02 **describe y audita**; no
@@ -55,7 +55,7 @@ Lee y cumple `AGENTS.md`. Para cada Pxxx, inspecciona contenido sustantivo de:
 - pruebas; y
 - su `Pxxx_activity.md` y `Pxxx_log.md` previos, si existen.
 
-Lee `design/courses/<curso>/course_log.md` sólo si existe y sólo para contexto.
+Lee `05-implementation/<curso>/course_log.md` sólo si existe y sólo para contexto.
 No lo modifiques. No inspecciones ni modifiques otros cursos.
 
 ## Cómo trabajar
@@ -299,7 +299,7 @@ Confirma que:
 - se revisó la entrada de `traceability.yaml` o se registró su ausencia;
 - no se inventaron caso, procedencia, técnica, competencia, producto ni logro;
 - no se crearon ni modificaron propuestas de mejora (corresponden a S03); y
-- sólo cambiaron los pares Pxxx de `design/courses/<curso>/` y, si faltaba, el
+- sólo cambiaron los pares Pxxx de `05-implementation/<curso>/Pxxx_*/` y, si faltaba, el
   directorio del curso.
 
 ## Condición de finalización
