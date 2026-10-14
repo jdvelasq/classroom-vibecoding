@@ -1,0 +1,26 @@
+id: "E0160"
+sha256: "2039216c652a39af4c5c560f23b3915c34555f00840b12b01cc312b8b2ac2baf"
+file: "01-evidence/pdf/institutional/massachusetts-institute-of-tec-mban-curriculum.pdf"
+md: "01-evidence/md/institutional/massachusetts-institute-of-tec-mban-curriculum.md"
+title: "MBAn Curriculum"
+issuer: "MIT Sloan School of Management"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Descripción del plan de estudios del Master of Business Analytics del MIT Sloan (machine learning, optimización, analítica, capstone con organizaciones patrocinadoras); evidencia institucional del campo central."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

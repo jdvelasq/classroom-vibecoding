@@ -1,0 +1,26 @@
+id: "E0165"
+sha256: "8818a6ab027a7c27ab60f18aa703d535ff5270e56e04b55fc69f16ed460aa6e7"
+file: "01-evidence/pdf/institutional/university-of-texas-at-austin-ut-austin-2025-26-catalog-bax-business-analytics-courses.pdf"
+md: "01-evidence/md/institutional/university-of-texas-at-austin-ut-austin-2025-26-catalog-bax-business-analytics-courses.md"
+title: "BAX - Business Analytics Course Catalog"
+issuer: "University of Texas at Austin"
+year: 2025
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Catálogo de cursos BAX de UT Austin con descripciones detalladas y prerrequisitos (programación, gestión de datos, analítica predictiva, optimización y toma de decisiones, auditoría); evidencia institucional de alta especificidad para los subcampos predictivo, prescriptivo y de ingeniería de datos."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

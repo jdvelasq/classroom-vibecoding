@@ -1,0 +1,26 @@
+id: "E0154"
+sha256: "8efdce3a1260882319ebf8b712ae08b895c3fc28a10899b9d8c2537f7827549f"
+file: "01-evidence/pdf/professional-learning/coursera-mlops-machine-learning-operations-specialization-duke-univer.pdf"
+md: "01-evidence/md/professional-learning/coursera-mlops-machine-learning-operations-specialization-duke-univer.md"
+title: "MLOps | Machine Learning Operations Specialization"
+issuer: "Duke University"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Programa especializado en MLOps (despliegue de modelos, pipelines, LLMs, herramientas en la nube); corresponde al subcampo de productos de datos / MLOps explicitado en domain.md v0.7."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0167"
+sha256: "73d1957eb1a52c710237c081675db45df3ec52bb1062ba32fe610f08cab498c3"
+file: "01-evidence/pdf/institutional/university-of-warwick-warwick-business-school-msc-business-analytics-and-ai-course.pdf"
+md: "01-evidence/md/institutional/university-of-warwick-warwick-business-school-msc-business-analytics-and-ai-course.md"
+title: "MSc Business Analytics & Artificial Intelligence: Programme Structure"
+issuer: "Warwick Business School"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "La página impresa no expande los acordeones de 'CORE MODULES', 'SPECIALISMS', etc.; solo se capturan los títulos de sección y el texto introductorio (rutas, certificación ACAP, idiomas de programación), no la descripción de cada módulo central."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Página de estructura del programa de Warwick Business School: cuatro módulos núcleo más especializaciones (IA; analítica predictiva y prescriptiva; analítica de gestión; analítica de marketing y tecnología), rutas de evaluación, certificación ACAP de INFORMS y lenguajes de programación (Python, SQL, R); evidencia institucional complementaria a la página general del curso."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0162"
+sha256: "4eb211827b4cdd14ee08ce52a9c68cad141726e93e782bd3b0974f1417606f0a"
+file: "01-evidence/pdf/institutional/national-university-of-singapo-nus-msba-programme-brochure.pdf"
+md: "01-evidence/md/institutional/national-university-of-singapo-nus-msba-programme-brochure.md"
+title: "NUS MSBA Programme Brochure"
+issuer: "National University of Singapore"
+year: 2021
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: "El folleto cita rankings de alrededor de 2021 (QS 2021, Times Higher Education 2021) y puede estar desactualizado frente al programa actual, aunque la estructura general coincide con la página viva del programa (NUS MSBA Programme)."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Folleto institucional del programa MSBA de NUS (alianza NUS Business School/Computing, módulo capstone, red de más de 100 organizaciones industriales); refuerza la evidencia institucional ya cubierta por la página viva del programa."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

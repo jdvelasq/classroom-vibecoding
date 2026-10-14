@@ -1,0 +1,26 @@
+id: "E0152"
+sha256: "f918c2e39025345a10d5dec8add95f3c3a62861ad0bede29b64f38380edfb845"
+file: "01-evidence/pdf/professional-learning/coursera-ibm-data-engineering-professional-certificate.pdf"
+md: "01-evidence/md/professional-learning/coursera-ibm-data-engineering-professional-certificate.md"
+title: "IBM Data Engineering Professional Certificate"
+issuer: "IBM"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional de ingeniería de datos (ETL, pipelines, almacenes de datos, NoSQL/Big Data); corresponde al subcampo de ingeniería de datos para la analítica de domain.md."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

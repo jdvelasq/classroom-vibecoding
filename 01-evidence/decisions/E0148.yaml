@@ -1,0 +1,26 @@
+id: "E0148"
+sha256: "5bd9df0c2ba9f51d1f4c8e8be55c0da754a61312d486bc7e28e55297a9cbf877"
+file: "01-evidence/pdf/institutional/north-carolina-state-universit-ms-analytics-catalog.pdf"
+md: "01-evidence/md/institutional/north-carolina-state-universit-ms-analytics-catalog.md"
+title: "Analytics (Master of Science in Analytics Program)"
+issuer: "North Carolina State University"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: "E0147"
+duplicate_of: null
+reevaluates: null
+rationale: "Misma entrada de catálogo del MSA de NC State, edición 2026-2027 (códigos de curso AA500-AA505); se espera que se vincule como nueva edición de la versión 2025-2026 del mismo título y emisor."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

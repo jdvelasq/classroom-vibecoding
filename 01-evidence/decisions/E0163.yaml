@@ -1,0 +1,26 @@
+id: "E0163"
+sha256: "635934e0bec8f3f257f8d0166868c63b5f98c9a2f473743f0fe5b90e6a3aef60"
+file: "01-evidence/pdf/institutional/northwestern-university-msia-brochure-2020-21.pdf"
+md: "01-evidence/md/institutional/northwestern-university-msia-brochure-2020-21.md"
+title: "Master of Science in Analytics (MSiA) Program Brochure"
+issuer: "Northwestern University"
+year: 2020
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 1
+  acceso: 2
+material_warnings: false
+doubts: "Folleto fechado 2020-21; puede no reflejar cambios curriculares posteriores, aunque el programa MSiA sigue activo."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Folleto del programa MSiA de Northwestern: requisitos de grado explícitos (práctica de 8 meses, pasantía de 10 semanas, capstone de 10 semanas) y currículo núcleo nombrado (analítica predictiva, deep learning, visualización, analítica de grandes datos, almacenamiento de datos, liderazgo analítico); evidencia institucional del campo central."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

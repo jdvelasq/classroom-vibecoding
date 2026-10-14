@@ -1,0 +1,26 @@
+id: "E0146"
+sha256: "dd2b810e709bce5ad4329f0af5bcbac5f49e210d188c5e0843587998f52f202f"
+file: "01-evidence/rejected/coursera-generative-ai-for-data-analysts-specialization-ibm.pdf"
+md: "01-evidence/rejected/coursera-generative-ai-for-data-analysts-specialization-ibm.md"
+title: "Generative AI for Data Analysts"
+issuer: "IBM"
+year: 2026
+source: "agent"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: "E0145"
+reevaluates: null
+rationale: "Mismo programa de IBM sobre IA generativa para analistas de datos, listado también en Coursera; se espera que la regla de edición/duplicado lo vincule con la versión de edX del mismo título, emisor y año."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

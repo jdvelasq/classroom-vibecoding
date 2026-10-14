@@ -1,0 +1,26 @@
+id: "E0161"
+sha256: "38f656bcba4138e2d57ec3ae9ec7fd78c770b15fa627d31473f2e8528343e545"
+file: "01-evidence/pdf/institutional/national-university-of-singapo-msba-programme.pdf"
+md: "01-evidence/md/institutional/national-university-of-singapo-msba-programme.md"
+title: "NUS MSBA Programme"
+issuer: "National University of Singapore"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Descripción del programa de maestría en Business Analytics de NUS, con 5 cursos esenciales nombrados (gestión de datos, economía gerencial, investigación de operaciones, fundamentos de analítica de negocios, analítica avanzada y machine learning) y electivas por vertical; evidencia institucional del campo central."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

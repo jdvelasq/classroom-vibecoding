@@ -1,0 +1,26 @@
+id: "E0156"
+sha256: "d9f11333c3f03a3160a7817b22763d0ee0abbf9f6f556e7f73a1d289c9cb10bc"
+file: "01-evidence/pdf/professional-learning/edx-business-data-insights-and-analytics-micromasters.pdf"
+md: "01-evidence/md/professional-learning/edx-business-data-insights-and-analytics-micromasters.md"
+title: "Business: Data, Insights and Analytics MicroMasters"
+issuer: "University of Wisconsin-Madison"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "MicroMasters sobre estadística con Python, SQL y visualización/computación en la nube para analistas de negocio; cubre el campo central con orientación de BI."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

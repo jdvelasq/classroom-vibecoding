@@ -1,0 +1,26 @@
+id: "E0164"
+sha256: "16437a81927dc8007d1cff7cebcf50fc8544155a28dbf8e49b2fc8c62f514d83"
+file: "01-evidence/rejected/university-of-texas-at-austin-business-analytics-catalog-2025-26.pdf"
+md: "01-evidence/rejected/university-of-texas-at-austin-business-analytics-catalog-2025-26.md"
+title: "Business Analytics (Graduate Program Information)"
+issuer: "University of Texas at Austin"
+year: 2025
+source: "agent"
+decision: "reject"
+category: null
+role: null
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 0
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Página administrativa del catálogo de posgrado de UT Austin (datos de contacto, comité de estudios de posgrado); no enuncia competencias, resultados de aprendizaje ni contenidos citables del programa."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

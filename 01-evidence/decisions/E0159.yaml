@@ -1,0 +1,26 @@
+id: "E0159"
+sha256: "0aabaf9fa6695bbe0bcb97959aafac28b52cbbdab399baa89ff4a7f87c1c6373"
+file: "01-evidence/pdf/institutional/georgia-institute-of-technolog-oms-analytics-curriculum.pdf"
+md: "01-evidence/md/institutional/georgia-institute-of-technolog-oms-analytics-curriculum.md"
+title: "Online Master of Science in Analytics: Curriculum"
+issuer: "Georgia Institute of Technology"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Descripción del plan de estudios de la versión en línea del MS en Analítica de Georgia Tech (núcleo de 15 horas en analítica de grandes datos, visual, computación, estadística e investigación de operaciones, más 15 horas de electivas); evidencia institucional análoga a la versión presencial del programa."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

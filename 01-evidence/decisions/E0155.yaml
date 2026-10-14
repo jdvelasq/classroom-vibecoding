@@ -1,0 +1,26 @@
+id: "E0155"
+sha256: "b2d6c1ced27d6f41943f5db90904590e2bbb2111c7d6a68d9d9e6a922f5950c4"
+file: "01-evidence/pdf/professional-learning/edx-analytics-essential-tools-and-methods-micromasters.pdf"
+md: null
+title: "Analytics: Essential Tools and Methods MicroMasters"
+issuer: "Georgia Institute of Technology"
+year: null
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 1
+  acceso: 2
+material_warnings: true
+doubts: "La conversión a Markdown falló (pymupdf4llm: 'no font file for digest'); el texto se verificó manualmente con pymupdf. El programa fue nominado al 2020 edX Prize, lo que sugiere contenido base de varios años de antigüedad aunque sigue activo e inscribiendo estudiantes."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "MicroMasters de Georgia Tech sobre herramientas y métodos esenciales de analítica (R, Python, SQL, machine learning, visualización; cursos Computing for Data Analysis, Introduction to Analytics Modeling, Data Analytics for Business); cubre el campo central de la analítica tal como lo practica la industria."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

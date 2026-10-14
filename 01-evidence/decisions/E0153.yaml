@@ -1,0 +1,26 @@
+id: "E0153"
+sha256: "425353528f2d1ae951529b996458539d8ad532825d3e72cf2315168ac5f63a53"
+file: "01-evidence/pdf/professional-learning/coursera-microsoft-generative-ai-for-data-analysis.pdf"
+md: null
+title: "Microsoft Generative AI for Data Analysis Professional Certificate"
+issuer: "Microsoft"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "La conversión a Markdown falló (pymupdf4llm: 'no font file for digest'); el texto se verificó manualmente con pymupdf (extracción directa de texto), por lo que no existe aún un .md paginado para citar este documento."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional sobre el uso de IA generativa en todo el ciclo de análisis de datos (limpieza, modelado predictivo, visualización, automatización); corresponde a la tendencia emergente de IA generativa al servicio de la analítica."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

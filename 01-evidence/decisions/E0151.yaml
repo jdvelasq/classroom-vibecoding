@@ -1,0 +1,26 @@
+id: "E0151"
+sha256: "1134eead0eff88073ec9cef0df0cb4a06064a184e38ac0eb1a76ddc58bf27d16"
+file: "01-evidence/pdf/professional-learning/coursera-ibm-data-analyst.pdf"
+md: "01-evidence/md/professional-learning/coursera-ibm-data-analyst.md"
+title: "IBM Data Analyst Professional Certificate"
+issuer: "IBM"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional de analista de datos (Python, Excel, herramientas de BI, visualización); señal de mercado para las competencias descriptivas y de BI de la analítica."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

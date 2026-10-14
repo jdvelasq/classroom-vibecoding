@@ -1,0 +1,26 @@
+id: "E0145"
+sha256: "f72833f903ba719b5e3920af56dc84195cbf1dbc39b030c8da31959e7ef380c5"
+file: "01-evidence/pdf/professional-learning/edx-generative-ai-for-data-analysts-professional-certificate-ibm.pdf"
+md: "01-evidence/md/professional-learning/edx-generative-ai-for-data-analysts-professional-certificate-ibm.md"
+title: "Generative AI for Data Analysts"
+issuer: "IBM"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional sobre IA generativa aplicada al análisis de datos (prompt engineering, herramientas genAI); corresponde a la tendencia emergente de domain.md (IA generativa y agéntica al servicio del trabajo analítico)."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

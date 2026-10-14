@@ -1,0 +1,26 @@
+id: "E0150"
+sha256: "6f5322e20ac190a3eeaaacf6707d5f3056b25b74f8b1e2b144a102c84e7dd75b"
+file: "01-evidence/pdf/professional-learning/coursera-deeplearning-ai-data-analytics.pdf"
+md: "01-evidence/md/professional-learning/coursera-deeplearning-ai-data-analytics.md"
+title: "DeepLearning.AI Data Analytics Professional Certificate"
+issuer: "DeepLearning.AI"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional sobre estadística aplicada, IA generativa y visualización para analistas de datos; señal de mercado para el subcampo descriptivo/predictivo de la analítica."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

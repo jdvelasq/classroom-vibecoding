@@ -1,0 +1,26 @@
+id: "E0166"
+sha256: "c3b51daa5e7fcc47ef53c38b0380f3f8e77d9179b0b38ea003ad1367deda8128"
+file: "01-evidence/pdf/institutional/university-of-warwick-msc-business-analytics-and-ai-2026.pdf"
+md: null
+title: "Business Analytics & Artificial Intelligence (MSc): Course Overview"
+issuer: "University of Warwick"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "La conversión a Markdown falló (pymupdf4llm: 'no font file for digest'); el texto se verificó manualmente con pymupdf. La página impresa solo expone la introducción y las pestañas de navegación (Modules, Entry requirements, etc.) sin expandir el contenido de módulos."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Página central del curso de maestría de Warwick en Business Analytics & AI (visualización en Tableau, machine learning, estadística, optimización); evidencia institucional del campo central, con descripción general sin listado expandido de módulos."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0149"
+sha256: "36cd4d1b958ca8b85e4a4a123163208536fc4747bf5c3aab404f0bd8d7f0dae9"
+file: "01-evidence/pdf/institutional/carnegie-mellon-university-msba-curriculum.pdf"
+md: "01-evidence/md/institutional/carnegie-mellon-university-msba-curriculum.md"
+title: "MS in Business Analytics: Curriculum"
+issuer: "Carnegie Mellon University"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 2
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Currículo institucional del MSBA de Carnegie Mellon: lista de cursos (46-880 a 46-991) y cinco resultados de aprendizaje explícitos en métodos cuantitativos, gestión de datos, machine learning y comunicación de negocios; cubre los subcampos predictivo/prescriptivo y de ingeniería de datos para la analítica."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

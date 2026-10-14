@@ -1,0 +1,26 @@
+id: "E0158"
+sha256: "b6fdcfec268d41af2c2a198c65ffba503218aa1ebeb5e06f5586c6d27815123f"
+file: "01-evidence/pdf/institutional/georgia-institute-of-technolog-georgia-tech-ms-analytics-courses.pdf"
+md: "01-evidence/md/institutional/georgia-institute-of-technolog-georgia-tech-ms-analytics-courses.md"
+title: "MS Analytics: Courses"
+issuer: "Georgia Institute of Technology"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "institutional"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: false
+doubts: null
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Lista de más de 80 cursos del programa de Analítica de Georgia Tech, organizados por área (computación, negocios, estadística, investigación de operaciones, aplicaciones); evidencia institucional de las competencias de un programa de maestría en analítica."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"

@@ -1,0 +1,26 @@
+id: "E0157"
+sha256: "407b683dd573e1d08350497f36057f4380eef6d7cfadda0f6f81699dff6dfc2e"
+file: "01-evidence/pdf/professional-learning/edx-from-database-to-dashboard-using-sql-and-power-bi-profession.pdf"
+md: null
+title: "From Database to Dashboard using SQL and Power BI Professional Certificate"
+issuer: "Davidson College"
+year: 2026
+source: "agent"
+decision: "accept"
+category: "professional-learning"
+role: "actual"
+scores:
+  pertinencia: 2
+  autoridad: 2
+  especificidad: 1
+  vigencia: 2
+  acceso: 2
+material_warnings: true
+doubts: "La conversión a Markdown falló (pymupdf4llm: 'no font file for digest'); el texto se verificó manualmente con pymupdf (extracción directa), por lo que no existe aún un .md paginado para citar este documento."
+previous_edition: null
+duplicate_of: null
+reevaluates: null
+rationale: "Certificado profesional sobre SQL y Power BI para analítica de negocio (dos cursos: Introduction to SQL, Analyzing and Visualizing Data with Power BI); corresponde al subcampo de ingeniería de datos para la analítica (SQL) y a BI."
+criteria_version: "0.4"
+domain_version: "0.7"
+date: "2026-10-13"
