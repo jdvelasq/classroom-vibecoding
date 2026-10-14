@@ -1,85 +1,111 @@
+format_version: "0.1"
 P001:
   - S04.F08
 P100:
-  - descriptiva.C02
+  resultados: [descriptiva/RC01, descriptiva/RC04]
+  competencias: [C001, C002]
+  decision: igual
+  auditoria: AUD.P100.01
 P101:
-  - descriptiva.C05
+  resultados: []
+  competencias: []
+  decision: curso
+  auditoria: AUD.P101.01
 P102:
-  - descriptiva.C02
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: igual
+  auditoria: AUD.P102.01
 P103:
-  - descriptiva.C02
-  - descriptiva.C03
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: puntual
+  auditoria: AUD.P103.01
 P104:
-  - descriptiva.C02
-  - descriptiva.C03
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: igual
+  auditoria: AUD.P104.01
 P105:
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: puntual
+  auditoria: AUD.P105.01
 P106:
-  - descriptiva.C02
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: puntual
+  auditoria: AUD.P106.01
 P107:
-  - descriptiva.C02
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: igual
+  auditoria: AUD.P107.01
 P108:
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: puntual
+  auditoria: AUD.P108.01
 P109:
-  - descriptiva.C05
+  resultados: [descriptiva/RC04]
+  competencias: [C002]
+  decision: igual
+  auditoria: AUD.P109.01
 P120:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
+  resultados: [descriptiva/RC01, descriptiva/RC02, descriptiva/RC04]
+  competencias: [C001, C002, C003, C006]
+  decision: puntual
+  auditoria: AUD.P120.01
 P121:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: puntual
+  auditoria: AUD.P121.01
 P122:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
+  resultados: [descriptiva/RC01, descriptiva/RC02, descriptiva/RC04]
+  competencias: [C001, C002, C003]
+  decision: puntual
+  auditoria: AUD.P122.01
 P123:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: puntual
+  auditoria: AUD.P123.01
 P124:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: igual
+  auditoria: AUD.P124.01
 P125:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C04
-  - descriptiva.C05
+  resultados: [descriptiva/RC01, descriptiva/RC02, descriptiva/RC03, descriptiva/RC04]
+  competencias: [C002, C003, C005, C006]
+  decision: puntual
+  auditoria: AUD.P125.01
 P150:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC01, descriptiva/RC02, descriptiva/RC04]
+  competencias: [C001, C002, C003]
+  decision: puntual
+  auditoria: AUD.P150.01
 P151:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC01, descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003, C006]
+  decision: puntual
+  auditoria: AUD.P151.01
 P152:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC02, descriptiva/RC04]
+  competencias: [C002, C003]
+  decision: puntual
+  auditoria: AUD.P152.01
 P153:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC01, descriptiva/RC02]
+  competencias: [C001, C003, C006]
+  decision: puntual
+  auditoria: AUD.P153.01
 P154:
-  - descriptiva.C01
-  - descriptiva.C02
-  - descriptiva.C03
-  - descriptiva.C05
+  resultados: [descriptiva/RC01, descriptiva/RC02]
+  competencias: [C003, C006]
+  decision: puntual
+  auditoria: AUD.P154.01
 L101:
   - descriptiva.C02
 L102:

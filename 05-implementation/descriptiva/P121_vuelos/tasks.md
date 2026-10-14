@@ -8,6 +8,7 @@
 - **Tipo:** método
 - **Fuentes:**
   - `01-evidence/md/professional-learning/sas-forecasting.md` pp. 36–37 y 89 — «Associated with each time series is a seasonal cycle […] The typical seasonality assumption might not always hold» (p. 36); una serie se descompone en tendencia, ciclo, componente estacional e irregular, y «Businesses such as retailers need to distinguish short-term seasonal effects from long-term trends»; la descomposición clásica «uses a series of moving averages» (p. 37); Time Series Studio ofrece «standard graphs and tables for autocorrelation and seasonal decomposition analysis» (p. 89): separar estación y tendencia es práctica habitual antes de afirmar un patrón estacional (Claude, 2026-10-04). Fuente *professional-learning*, única: sólo atestigua que la práctica es habitual; la materialidad viene del límite que P121 ya declara en H06 y S03.
+  - Auditoría `AUD.P121.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** responder con evidencia la segunda pregunta
   del taller («¿la evolución de las aerolíneas de mayor volumen revela un
   patrón estacional?»). Hoy H06 junta los tres años en una tasa por mes del
@@ -39,8 +40,8 @@
   conciliación (`assert_frame_equal` y su prueba), `add_rates`, el umbral de
   25.000 vuelos y los seis CSV actuales con su esquema y contenido,
   incluidos `monthly_national_kpis.csv` y `seasonality.csv`. Ninguna tasa se
-  obtiene promediando tasas de celdas. Se añaden un CSV, una figura y una
-  lectura en markdown; la única prueba existente que cambia es la que exige
+  obtiene promediando tasas de celdas. Se añaden un CSV y una figura; la
+  única prueba existente que cambia es la que exige
   el conjunto exacto de CSV, que se amplía con el archivo nuevo sin quitar
   ninguno.
 - **Interacciones:** ninguna dentro de P121 (única propuesta). Capacidad:
@@ -86,7 +87,7 @@ Actividad: 05-implementation/descriptiva/P121_vuelos/
       ámbito (índice multiplicativo: > 1 significa mes peor que su año).
    d. Grafica, para la serie nacional y para cada aerolínea (facetas), el
       índice contra el mes del año con una línea por año.
-   e. Explica en markdown, en 3–6 líneas: qué meses quedan por encima de 1
+   e. El profesor explica en la sesión: qué meses quedan por encima de 1
       en los tres años, cuáles sólo en uno, si el patrón de H06 se sostiene
       año a año, y el límite: tres ciclos son poca evidencia de
       recurrencia; el índice describe, no explica causas.

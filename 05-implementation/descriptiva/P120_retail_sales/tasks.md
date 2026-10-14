@@ -11,6 +11,7 @@
   - `01-evidence/md/authoritative/informs-cap-essentials-blueprint.md` pp. 7, 8, 10 y 11 — en el nivel de entrada: CAP-E.1.2.2 «Identify stakeholders and bystanders» (p. 7), CAP-E.1.4.1 «Identify the part of a business statement that is unclear» (p. 8), CAP-E.2.1.2 «Identify if the statement is a business problem, analytics problem, both, or neither» (p. 10) y CAP-E.2.3.1–2.3.3 (supuestos explícitos, «aspects of the business problem that have been simplified», «the constraints that should be documented in an analytics problem statement», p. 11): un analista principiante separa problema de negocio y problema analítico y declara supuestos y simplificaciones (Claude, 2026-10-04). Fuente *authoritative*.
   - `01-evidence/md/authoritative/informs-cap-pro-blueprint.md` pp. 7, 9 y 10 — CAP-P.1.2.1 «Identify the primary and secondary stakeholders» (p. 7), CAP-P.1.6.1 «identify the proposed elements that are in or out of scope of the business problem (question) statement» (p. 9) y CAP-P.2.1.1 «Identify the aspect of a business problem that makes it an analytics problem» (p. 10): destinatario y alcance forman parte del enunciado (Claude, 2026-10-04). Fuente *authoritative*.
   - `01-evidence/md/literature-derived/dataops-03-methodologies.md` pp. 9 y 11 — evitar el *drive-by analytics* («preguntas puntuales, sin contexto, sin seguimiento ni conexión clara con una decisión») y refinar con «Who, What, When, Where, Why» (p. 9); «Formular el objetivo analítico. Definir métrica + acción + resultado esperado» y «Delimitar restricciones y expectativas. Aclarar los límites del análisis y qué conclusiones son válidas» (p. 11) (Claude, 2026-10-04). Fuente *literature-derived*: material metodológico del curso; respalda la práctica de encuadre, no el formato.
+  - Auditoría `AUD.P120.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** en el primer caso descriptivo completo, antes
   de cargar datos, aprende a decir para quién es cada pregunta, qué decisión
   apoya su respuesta, qué supuestos del caso condicionan la lectura y qué
@@ -53,8 +54,8 @@
   texto que aprobó el profesor (registrado en `P120_log.md`), no inventados
   por la herramienta; (2) `supuestos` y `alcance` no vacíos, que mencionen
   al menos la devolución total por orden, el umbral de volumen, el período
-  observado y que el producto no identifica causas; (3) una celda markdown
-  inicial que presente ese encuadre; y (4) una prueba nueva que verifique la
+  observado y que el producto no identifica causas; y (3) una prueba nueva
+  que verifique la
   estructura de `questions.json` y que cada `archivo_respuesta` exista en
   `submission/`. H01 queda modificado o se añade un highlight de encuadre;
   H02–H08 y las pruebas existentes siguen presentes.
@@ -86,8 +87,9 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
    - alcance: lista de textos con lo que la respuesta cubre y lo que no:
      señala dónde investigar; no identifica causas de devolución; no prueba
      que un canal o medio de pago provoque devoluciones; no fija acciones.
-3. Añade al inicio del notebook una celda markdown que presente, para cada
-   pregunta, destinatario, decisión, supuestos y alcance en 4–8 líneas.
+3. El profesor presenta en la sesión, para cada pregunta, destinatario,
+   decisión, supuestos y alcance desde questions.json; el notebook no lleva
+   celdas de texto.
 4. Añade a tests/ una prueba que lea submission/questions.json y verifique:
    que es una lista con las dos preguntas actuales; que cada entrada tiene
    las claves pregunta, archivo_respuesta, destinatario, decision, supuestos
@@ -109,6 +111,7 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
   - `01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 39, 44 y 105 — el graduado debe «explain and interpret the numerical conclusions in the client’s terminology, and deliver text and graphics ready to be digested by non-technical personnel» (p. 39); «Importance of effectively presenting data, models, and inferences to clients in oral, written, and graphical formats» (p. 44); la comunicación incluye «the ability to have a discussion about limitations» (p. 105) (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa de comunicar resultados interpretados con su límite, no el formato.
   - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 39, 44 y 47 — un flujo de trabajo eficaz incluye «drawing appropriate conclusions, and communicating results» (p. 39); «it is important for students to study confounding and causal inference early to make sense of the data around them» (p. 44); los estudiantes deben «construct effective visual displays and compelling written summaries» (p. 47): el límite causal se aprende pronto, no al final (Claude, 2026-10-04). Fuente *authoritative*.
   - `01-evidence/md/professional-learning/oracle-data-mining-concepts-11g.md` pp. 17–18 — «the predictive relationships discovered through data mining are not _causal_ relationships» (p. 17) y no debe suponerse que la población identificada actúa así «_because_ they belong to this population» (p. 18): la concentración de un resultado en un segmento no prueba que el segmento lo cause (Claude, 2026-10-04). Fuente *professional-learning*: ilustra la práctica; no aporta estándar curricular.
+  - Auditoría `AUD.P120.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC02, C003.HAB06, C006.HAB03, C006.HAB06.
 - **Qué gana el estudiante:** cerrar cada pregunta con una respuesta escrita
   para su destinatario, la evidencia persistida que la sostiene y lo que esa
   evidencia no permite afirmar. Hoy P120 entrega nueve CSV que las pruebas
@@ -188,8 +191,8 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
      corresponda (devolución total por orden; sin incertidumbre si T03 no
      existe).
    Muestra la tabla y persístela en submission/analysis_conclusions.csv.
-4. Añade una celda markdown de 2–4 líneas que explique por qué concentrar
-   devoluciones no es provocarlas.
+4. El profesor explica en la sesión por qué concentrar devoluciones no es
+   provocarlas; la tabla persistida ya lo declara.
 5. Pruebas: añade a tests/ una prueba que verifique que el archivo existe,
    tiene exactamente esas columnas, una fila por pregunta de questions.json
    con el mismo texto, que cada evidencia nombra al menos un archivo
@@ -209,6 +212,7 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
 - **Fuentes:**
   - `01-evidence/md/professional-learning/cambridge-business-analytics.md` pp. 6–7 — el módulo «Análisis descriptivo» («Sé capaz de recopilar, limpiar y describir los datos que tienes», p. 6) incluye «Tamaño del efecto e intervalos de confianza» junto a las estadísticas descriptivas (p. 7): la incertidumbre de una medida forma parte de describirla (Claude, 2026-10-04). Fuente *institutional*: ilustra que otra institución sitúa el intervalo dentro de lo descriptivo; no impone el método.
   - `01-evidence/md/professional-learning/ibm-spss-modeler-applications-guide.md` pp. 117, 120 y 124 — la tasa global es la referencia: «overall hit rate of 14.45%» (p. 117); un segmento con 16.19 % «is not that different than the baseline rate of 14.45%, so it doesn't add enough information to justify keeping it» (p. 124); y un segmento de tasa alta puede cubrir «only a small portion of the overall sample» (p. 120) (Claude, 2026-10-04). Fuente *professional-learning*: práctica de herramienta de segmentación; no aporta incertidumbre formal.
+  - Auditoría `AUD.P120.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales C001.CON05.
 - **Qué gana el estudiante:** antes de priorizar por tasa, pregunta cuánto
   se aparta cada segmento de la tasa global y si esa distancia se distingue
   del ruido con el volumen que tiene. Corrige un defecto: `return_risk.csv`
@@ -264,9 +268,9 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
   para cada combinación categoría–canal de `return_risk.csv` y cada medio de
   pago, se persiste órdenes, tasa de devolución por órdenes, tasa base
   global, diferencia frente a la base, intervalo aproximado al 95 % y una
-  marca de si el intervalo excluye la base; y una lectura en markdown dice
-  explícitamente si el orden del ranking por tasa se distingue del ruido y
-  qué implica para H07. Debe estar respaldado por notebook,
+  marca de si el intervalo excluye la base; y el profesor explica en la
+  sesión si el orden del ranking por tasa se distingue del ruido y qué
+  implica para H07. Debe estar respaldado por notebook,
   `submission/segment_baseline_comparison.csv` y una prueba que lo
   recompute desde `data/sales.csv`. H01–H08 siguen presentes.
 
@@ -301,7 +305,7 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
    d. Grafica, por segmento ordenado por tasa, el punto y su intervalo con
       una línea vertical en la tasa base (Plotly, como el resto del
       notebook).
-   e. Explica en markdown, en 4–6 líneas: cuántos segmentos se distinguen
+   e. El profesor explica en la sesión: cuántos segmentos se distinguen
       de la base; si el primer segmento por tasa se distingue de los
       siguientes o el orden puede ser ruido; que la banda es una lectura
       aproximada, no una prueba entre todos los pares; y por qué eso hace

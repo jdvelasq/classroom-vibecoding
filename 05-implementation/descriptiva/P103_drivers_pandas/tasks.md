@@ -8,6 +8,7 @@
 - **Tipo:** método/evidencia
 - **Fuentes:**
   - `01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 75–76 y 80 — DM-Proximity incluye «Use of scores and rankings; desirable characteristics of scores and ranking regimes» y «Normalization of data to support comparison» (p. 75); DM-Data Preparation pide «profiling data» y las habilidades «Use summary statistics and visualizations in exploratory data analysis to make inferences» e «Illustrate the impact and resolution of issues that may arise with datasets» (p. 76); DM-Outlier Detection añade que hay que conocer el dominio para decidir «whether there are (legitimate) exceptional cases» (p. 80): un ranking sólo compara lo comparable y se apoya en el perfil previo de los datos (Claude, 2026-10-04). Fuente *authoritative*: respalda una expectativa general de exploración antes de rankear, no un procedimiento concreto.
+  - Auditoría `AUD.P103.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** en el primer taller tabular del curso aprende
   que un ranking de totales supone una exposición igual y que ese supuesto
   se comprueba antes de publicar el ranking. Hoy P103 suma horas y millas
@@ -50,8 +51,8 @@
   antes del ranking, (1) se cuentan las semanas registradas por conductor y
   se declara si la exposición es igual; (2) se muestra la distribución
   semanal de horas y millas con una vista mínima (histograma o caja) y se
-  comentan las semanas atípicas; y (3) se concluye en markdown si el top 10
-  de totales es comparable o debe leerse por semana. Debe estar respaldado
+  comentan las semanas atípicas; y (3) el profesor concluye en la sesión si
+  el top 10 de totales es comparable o debe leerse por semana. Debe estar respaldado
   por el notebook, `submission/driver_exposure.csv` y una prueba que lo
   recalcule desde `data/`. H01–H04 siguen presentes y `test_02` pasa sin
   cambios.
@@ -80,10 +81,10 @@ Actividad: 05-implementation/descriptiva/P103_drivers_pandas/
       variable) e identifica en una tabla breve las semanas extremas
       (p. ej., cero horas o los valores más altos), sin eliminarlas.
    c. Calcula millas y horas por semana trabajada por conductor.
-   d. En markdown (3–5 líneas): si todos los conductores tienen el mismo
-      número de semanas, declara que el ranking por totales es comparable y
-      por qué; si no, explica cuánto cambia el ranking al normalizar por
-      semana. No inventes causas de las semanas atípicas: descríbelas.
+   d. El profesor explica en la sesión, sin celda de texto en el notebook:
+      si todos los conductores tienen el mismo número de semanas, el
+      ranking por totales es comparable; si no, cuánto cambia al normalizar
+      por semana. No se inventan causas de las semanas atípicas.
 3. Si la exposición difiere entre conductores, añade junto al gráfico
    existente un segundo ranking por millas por semana; no reemplaces
    top10_drivers.png.

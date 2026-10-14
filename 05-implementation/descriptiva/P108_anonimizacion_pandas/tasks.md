@@ -8,6 +8,7 @@
 - **Tipo:** método/evidencia
 - **Fuentes:**
   - `01-evidence/md/institutional/warwick-foundations-data-analytics.md` pp. 2–3 — el módulo fundacional incluye «Data Sharing: Privacy, Anonymization, Risks» con «Technologies for anonymizing data: k-anonymity, and differential privacy» (p. 2), y su resultado de aprendizaje pide «identify privacy risks in releasing information, and design techniques to mediate these risks» (p. 3): el riesgo de publicar un conjunto se mide como propiedad del conjunto publicado (Claude, 2026-10-04). Fuente *institutional* y **fuente única**: ilustra que *k*-anonimato forma parte de un curso fundacional de Analytics; no prescribe técnica, umbral ni profundidad. La privacidad diferencial, también citada en p. 2, queda fuera.
+  - Auditoría `AUD.P108.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** distingue un riesgo medido contra un
   atacante concreto de un riesgo medido sobre el conjunto que se publica.
   Hoy P108 cuenta, tras cada paso de generalización, los nombres que la
@@ -46,8 +47,8 @@
   tras cada paso de generalización, se calculan el *k* mínimo, el número de
   clases y el número de registros en clases de tamaño 1 sobre los
   cuasi-identificadores vigentes, junto al conteo de reidentificaciones del
-  ataque de enlace existente, y se interpreta en markdown la diferencia
-  entre ambas medidas y su relación con la utilidad de H05. Debe estar
+  ataque de enlace existente, y el profesor interpreta en la sesión la
+  diferencia entre ambas medidas y su relación con la utilidad de H05. Debe estar
   respaldado por el notebook, `submission/risk_by_step.csv` y una prueba
   que recalcule el *k* final desde `anonymized.csv`. H01–H06 siguen
   presentes.
@@ -77,7 +78,7 @@ Actividad: 05-implementation/descriptiva/P108_anonimizacion_pandas/
    notebook ya calcula.
 4. Muestra una tabla por paso con ambas medidas y, si ayuda, la
    distribución de tamaños de clase del último paso (tabla o gráfico de
-   barras mínimo). Explica en markdown (3–5 líneas): por qué cero
+   barras mínimo). El profesor explica en la sesión: por qué cero
    reidentificaciones frente a 20 perfiles no implica clases grandes; qué
    significa el k final; y cómo se relaciona con la pérdida de
    cardinalidad de H05. Declara dos límites sin resolverlos: k no protege

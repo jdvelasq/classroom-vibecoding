@@ -9,6 +9,7 @@
 - **Fuentes:**
   - `01-evidence/md/authoritative/informs-cap-pro-blueprint.md` p. 15 — CAP-P.3.6.1 «Identify how to recognize issues with the data based on data quality gaps, including missing data, accuracy, completeness, consistency, timeliness, validity, uniqueness, and outliers» y CAP-P.3.6.2 «Identify patterns and characteristics of a multivariate dataset from data profiling outputs»: los atípicos son una dimensión de calidad que el analista debe reconocer al evaluar los datos (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general, no un procedimiento.
   - `01-evidence/md/professional-learning/ibm-spss-modeler-applications-guide.md` pp. 71, 76 y 79 — el nodo Data Audit da «a comprehensive first look at the data» con estadísticos e histogramas por campo y permite «specify treatments for missing values, outliers, and extreme values» (p. 71); «The Quality tab in the audit report displays information about outliers, extremes, and missing values» (p. 76); los atípicos se tratan con «either coerce, discard, or nullify» (p. 79): auditar la distribución y los extremos de cada campo es un paso estándar antes de analizar (Claude, 2026-10-04). Fuente *professional-learning*: sólo se toma la práctica de auditar; el tratamiento automático (coerce/discard/nullify, imputación C&RT) queda fuera porque contradice la regla de no imputación de H05.
+  - Auditoría `AUD.P122.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** decidir, con evidencia de la cola, si un
   promedio de días resume bien el cumplimiento. Hoy la tabla de calidad de
   H01 sólo tabula faltantes y valores distintos, H02 muestra un histograma
@@ -79,9 +80,9 @@ Actividad: 05-implementation/descriptiva/P122_supply_chain/
    cumplimiento»:
    a. Por Shipment Mode (con dropna=False, como en H06) y para el total:
       n, media, mediana, p05, p25, p75, p95, mínimo, máximo, conteo fuera
-      de las cercas de 1,5·IQR (atípicos) y de 3·IQR (extremos). Declara en
-      markdown que las cercas son una convención de Tukey elegida para
-      describir, no una regla de error.
+      de las cercas de 1,5·IQR (atípicos) y de 3·IQR (extremos). El profesor
+      aclara en la sesión que las cercas son una convención de Tukey elegida
+      para describir, no una regla de error.
    b. Diagrama de caja de DeliveryDaysVsSchedule por modo, con la
       referencia en cero de H02.
    c. Lista los 20 envíos con mayor |DeliveryDaysVsSchedule| (ambos
@@ -90,7 +91,7 @@ Actividad: 05-implementation/descriptiva/P122_supply_chain/
    d. Como sensibilidad, calcula la media por modo sin los envíos fuera de
       3·IQR y muéstrala junto a la media con todos; no la uses en ningún
       KPI ni CSV existente.
-   e. Explica en markdown, en 4–6 líneas: qué modos tienen colas largas y
+   e. El profesor explica en la sesión: qué modos tienen colas largas y
       de qué signo, si los extremos explican la divergencia de H03 entre
       promedio y proporción a tiempo, y la decisión: se conservan todos
       los registros, no se imputan ni recortan, porque sin documentación

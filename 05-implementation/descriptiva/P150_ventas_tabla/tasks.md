@@ -8,6 +8,7 @@
 - **Tipo:** caso/datos (corrige defecto)
 - **Fuentes:**
   - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 38 y 46 — «It is insufficient for them to be handed a “canned” data set and be told to analyze it» y los graduados conocen «the pitfalls of misrepresenting data and results» (p. 38); las representaciones de datos ayudan a evitar que datos mal codificados «lead to misleading conclusions» (p. 46): una serie cuya variación es artefacto del generador no debe presentarse como evolución de las ventas (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de no representar mal los datos, no un procedimiento.
+  - Auditoría `AUD.P150.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** reconocer cuándo una serie temporal no admite
   lectura temporal y reformular la pregunta hacia lo que los datos sí
   sostienen. Hoy la única pregunta de P150 es «¿Cómo cambian las ventas
@@ -56,7 +57,7 @@
   generador, debe decidirse para todo el bloque P150–P154 antes de ejecutar
   P152 T01 y P154 T01.
 - **Criterio de aceptación:** S05 encuentra (1) una celda de evidencia
-  visual con el número de pedidos por mes y una celda markdown que declara
+  visual con el número de pedidos por mes, con la que el profesor explica
   que el calendario es sintético y uniforme y que la variación mensual no
   admite lectura estacional ni comercial; (2) la pregunta reformulada hacia
   composición por categoría en `questions.json`, respondida por un artefacto
@@ -84,7 +85,7 @@ Actividad: 05-implementation/descriptiva/P150_ventas_tabla/
    serie mensual?»:
    a. Celda de evidencia visual: tabla pequeña con pedidos distintos por mes
       (desde la tabla integrada).
-   b. Markdown de 3–5 líneas: el calendario es sintético y uniforme por
+   b. El profesor explica en la sesión: el calendario es sintético y uniforme por
       construcción; la variación mensual de las ventas netas refleja sorteos
       del generador, no estacionalidad ni comportamiento comercial; por eso
       la serie no responde una pregunta de evolución.

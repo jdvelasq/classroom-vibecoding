@@ -10,6 +10,7 @@
   - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 38, 41 y 46 — no basta con «a “canned” data set» (p. 38); *data acumen* exige «real-world data and problems that can reinforce the limitations of tools» (p. 41, Finding 2.3); «Data consistency checking» figura entre las habilidades clave de descripción de datos (p. 46): una compuerta que sólo se evalúa sobre datos íntegros por construcción no muestra lo que detecta (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general, no el mecanismo.
   - `01-evidence/md/literature-derived/dataops-06-definition.md` pp. 4 y 9 — pruebas por etapa: entradas («Conteo», «Conformidad», «Balance», «Consistencia temporal»), salidas («Completitud», «Verificación de rango») y «Tests para verificar los datos (lógica de negocio, tipo de dato, outliers, tendencias, consistencia, …)» (p. 4); «Los tests también puede alertar situaciones extrañas» (p. 9) (Claude, 2026-10-04). Fuente *literature-derived*: respaldo metodológico de pruebas por etapa, no prescripción de DataOps.
   - `01-evidence/md/literature-derived/dataops-09-data-quality.md` p. 4 — tabla de pruebas: entradas («Fechas en un rango válido», «Validación del rango de valores de un campo»), lógica del negocio («Campos diferentes de vacio») y salida («Precios positivos», «Rangos esperados de los datos»); tabla de severidad: «Error → Detención del pipeline», «Alerta → Investigación de la falla», «Informativa → Ser consciente de la información» (Claude, 2026-10-04). Fuente *literature-derived*: se adopta la clasificación por severidad; automatización, notificación y monitoreo quedan fuera (productos de datos).
+  - Auditoría `AUD.P153.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** ver que una compuerta de publicación discrimina
   y distinguir un problema de integridad de uno de definición. Hoy P153
   pregunta «¿Podemos publicar estos KPI para la gerencia sin ocultar
@@ -94,7 +95,7 @@ Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
    pídela.
 4. Decisión derivada por código: BLOQUEADO si falla alguna regla error;
    APROBADO CON ADVERTENCIA si sólo fallan reglas alerta; APROBADO en otro
-   caso. Explica en markdown, en 3–4 líneas, por qué una advertencia visible
+   caso. El profesor explica en la sesión por qué una advertencia visible
    responde a «sin ocultar problemas».
 5. Copia con defectos controlados:
    a. Crea professor/make_controlled_defects.py que lee data/sales_mart.db,
@@ -141,6 +142,7 @@ Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
 - **Tipo:** producto/evidencia
 - **Fuentes:**
   - `01-evidence/md/literature-derived/dataops-02-data-strategy.md` p. 23 — «Ficha mínima de cada indicador»: «Definición y propósito: qué representa y por qué es relevante», «Línea base y meta: situación inicial y resultado esperado», «Fuente y método», «Responsable: quien produce, valida e interpreta la medición», «Frecuencia: cuándo se actualiza y se revisa», «Decisión asociada: la acción que puede desencadenar su resultado» (Claude, 2026-10-04). Fuente *literature-derived* y única: la ficha procede de la evaluación de una estrategia de datos (nivel organizacional); se adopta como práctica de definición de indicadores, no como prescripción de gestión estratégica.
+  - Auditoría `AUD.P153.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC02, C003.HAB06, C006.HAB03, C006.HAB06.
 - **Qué gana el estudiante:** conectar el contrato de un KPI con su uso
   descriptivo: para qué decisión se mira, cada cuánto se revisa y qué valor
   se toma como punto de partida. Hoy el catálogo (H01) declara fórmula,

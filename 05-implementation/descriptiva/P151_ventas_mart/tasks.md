@@ -10,6 +10,7 @@
   - `01-evidence/md/literature-derived/kimball-dimensional-modeling-techniques-2013.md` p. 11 — «Calendar date dimensions are attached to virtually every fact table to allow navigation of the fact table through familiar dates, months, fiscal periods, and special days on the calendar»; la dimensión lleva atributos como semana, nombre del mes, período fiscal e indicador de festivo, y una fila especial para fechas desconocidas (Claude, 2026-10-04). Fuente *authoritative*: técnica estándar del modelado dimensional.
   - `01-evidence/md/institutional/utdallas-mis-6309-business-data-warehousing-syllabus.md` p. 2 — la unidad de modelado dimensional incluye «Time Dimension» y el ejercicio «Classroom Hands-on: Design your Time and Conformed Dimensions» (Claude, 2026-10-04). Fuente *institutional*: ilustra la práctica en un curso de posgrado de data warehousing.
   - `01-evidence/md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` pp. 43–44 y 58 — «Generating a Date dimension table» a partir de un rango de inicio y fin, «Adding Date Part Columns to the Dim Date Table» y «Mark table as Date table… Create date part hierarchies» (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica; no se prescribe la plataforma.
+  - Auditoría `AUD.P151.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** entender que la dimensión de fecha es un
   calendario, no la lista de fechas en que hubo hechos, y ver qué se pierde
   cuando se deriva del hecho. Hoy `dim_date` se construye sólo con las fechas
@@ -70,13 +71,13 @@ Actividad: 05-implementation/descriptiva/P151_ventas_mart/
    - conserva la clave y las columnas actuales de dim_date;
    - añade trimestre, semana ISO, día de la semana y un indicador de fin de
      semana (no inventes festivos: si el profesor no aporta un calendario
-     de festivos, omite esa columna y dilo en markdown);
+     de festivos, omite esa columna y el profesor lo dice en la sesión);
    - añade una fila para fecha desconocida sólo si el hecho la necesita.
    Verifica con assert que toda clave de fecha del hecho existe en dim_date.
 3. Añade una celda de evidencia visual: tabla de días por mes con y sin
    ventas, y una comparación de ventas netas promedio por día calendario
    frente a por día con ventas, por mes.
-4. Explica en markdown, en 3–5 líneas, por qué una dimensión derivada del
+4. El profesor explica en la sesión por qué una dimensión derivada del
    hecho oculta los días sin actividad y qué medidas sesga.
 5. Persiste submission/calendar_coverage.csv con columnas year, month,
    calendar_days, days_with_sales, net_sales, net_sales_per_calendar_day,

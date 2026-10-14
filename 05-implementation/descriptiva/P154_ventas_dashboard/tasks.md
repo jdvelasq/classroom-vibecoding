@@ -13,6 +13,7 @@
   - `01-evidence/md/literature-derived/kimball-dimensional-modeling-techniques-2013.md` pp. 7 y 9 — «Semi-additive measures can be summed across some dimensions, but not all… some measures are completely non-additive», con la recomendación de guardar los componentes aditivos y calcular la medida al final (p. 7); y «sales actuals can be consolidated with sales forecasts in a single fact table to make the task of analyzing actuals versus forecasts simple and fast» (p. 9) (Claude, 2026-10-04). Fuente *authoritative*: respalda la declaración de no aditividad y la opción de brecha frente a una meta.
   - `01-evidence/md/literature-derived/perceptual-edge-dashboard-design-requirements-questionnaire.md` p. 1 — «What are the useful comparisons that will allow the dashboard’s users to see the data items listed above in context?… do you have targets or historical data that could also be displayed» y «what would constitute an exception? Are there specific thresholds…?» (Claude, 2026-10-04). Fuente *professional-learning*: el criterio de atención es una comparación con contexto y un umbral de excepción.
   - `01-evidence/md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` p. 76 — el reporte se amplía con «Actual Sales Amount and Budget Sales Amount» y la diferencia calculada entre ventas reales y presupuesto (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica; no se prescribe la plataforma.
+  - Auditoría `AUD.P154.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** definir y aplicar un criterio de atención que
   sólo la capa de consumo permite calcular, y reconocer qué métricas de esa
   capa no se pueden sumar. Hoy «¿Qué región y categoría deben recibir
@@ -102,8 +103,8 @@ Actividad: 05-implementation/descriptiva/P154_ventas_dashboard/
    criterio usa la línea base de P153 T02, recalcúlala aquí con la misma
    definición sobre dashboard_sales.
 5. Grafica la brecha por región–categoría desde el artefacto (barras
-   ordenadas, marcando las celdas señaladas) y escribe en markdown, en 3–5
-   líneas, qué celdas reciben atención y por qué, en qué se diferencia del
+   ordenadas, marcando las celdas señaladas); el profesor explica en la
+   sesión qué celdas reciben atención y por qué, en qué se diferencia del
    ranking de volumen y el límite: con el calendario sintético actual la
    variación mensual refleja el generador, no señales comerciales.
 6. Persiste:

@@ -9,6 +9,7 @@
 - **Fuentes:**
   - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 22 y 138 — entre las consideraciones éticas centrales están «validating the data’s accuracy» y «safeguarding the privacy of individuals referenced in the data» (p. 22), y el juramento propuesto incluye «I will respect the privacy of my data subjects» (p. 138): compartir datos de personas exige minimizarlos y lo producido debe validarse (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de privacidad y validación, no un procedimiento con asistentes.
   - `01-evidence/md/professional-learning/ut-austin-agentic-ai-business-applications.md` pp. 11–13 — el programa incluye «Riesgos de la IA Generativa» (Módulo 01, p. 11), «Fundamentación y validación» (Módulo 02, p. 12) y, en el Módulo 03 (p. 13), «Fundamentación, validación y veracidad», «Evaluación con intervención humana» y «Seguridad y privacidad de los datos»: validar la salida y proteger los datos forman parte del uso profesional de IA generativa (Claude, 2026-10-04). Fuente *institutional*: el `.md` sólo contiene la cabecera web repetida; las páginas se leyeron como imágenes (`img/ut/p11.png`–`p13.png`). Ilustra la práctica; no impone el tema, que P105 ya tiene.
+  - Auditoría `AUD.P105.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** pasa de redactar *prompts* a usar un
   asistente con dos salvaguardas que hoy faltan. Primero, decide qué datos
   pueden salir hacia un servicio externo: P105 modela compartir
@@ -75,8 +76,8 @@ Actividad: 05-implementation/descriptiva/P105_drivers_chatgpt/
 2. MINIMIZACIÓN: antes del primer prompt, añade una celda que construya lo
    que se comparte con el asistente: sólo driverId y name de drivers, y las
    columnas de timesheet que el análisis usa (o sólo el esquema y una
-   muestra de pocas filas sin identificadores sensibles). Explica en
-   markdown (2–4 líneas) por qué ssn y location no salen hacia el
+   muestra de pocas filas sin identificadores sensibles). El profesor
+   explica en la sesión por qué ssn y location no salen hacia el
    asistente, en continuidad con P102. Añade esa regla al texto del primer
    prompt, junto a «No inventes datos ni modifiques las tablas», y ajusta
    los prompts que mencionen la tabla completa. No cambies data/.
@@ -85,14 +86,14 @@ Actividad: 05-implementation/descriptiva/P105_drivers_chatgpt/
    compartidas).
 4. VERIFICACIÓN: después de los prompts existentes, añade una sección
    «Verificar la respuesta»:
-   a. Muestra la respuesta registrada del asistente en markdown y su código
-      en una celda ejecutable, sin corregirlo a mano antes de ejecutarlo.
+   a. Copia el código de la respuesta registrada del asistente en una celda
+      ejecutable, sin corregirlo a mano antes de ejecutarlo.
    b. Ejecuta ese código sobre data/ y guarda submission/summary.csv con
       las columnas de P103 (driverId, hours-logged, miles-logged, name).
    c. Recalcula el resumen de P103 desde data/ (groupby, sum, merge) y
       compáralo con pd.testing.assert_frame_equal o una tabla de
       diferencias visible.
-   d. Explica en markdown (3–5 líneas) si la respuesta reproduce el
+   d. El profesor explica en la sesión si la respuesta reproduce el
       resultado y, si no, qué paso falló y cómo se corrigió. Si hubo
       corrección, conserva visibles la versión original y la corregida.
 5. Añade a tests/test_activity.py pruebas que verifiquen: que

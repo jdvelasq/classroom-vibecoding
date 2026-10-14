@@ -10,6 +10,7 @@
   - `01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md` pp. 39, 46 y 75 — al presentar resultados, el graduado debe «explain and interpret the numerical conclusions in the client’s terminology» (p. 39); AP-Visualization incluye «Inference based on visualization» e «Implement an effective visualization, given a set of data that has to be used for a particular purpose» (p. 46); DM-Proximity, «Use of scores and rankings; desirable characteristics of scores and ranking regimes» (p. 75): un ranking depende de la medida que lo ordena y su lectura debe hacerse explícita (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa de interpretar, no un formato.
   - `01-evidence/md/authoritative/informs-cap-pro-blueprint.md` pp. 20–21 — CAP-P.5.3.1 «Identify the correct interpretation of a descriptive/diagnostic analytics model output» (p. 20); Task 5.6 «Document and communicate model findings, including assumptions, limitations, and constraints» y CAP-P.5.6.1 «the most appropriate non-technical explanation of the results» (p. 21) (Claude, 2026-10-04). Fuente *authoritative*.
   - `01-evidence/md/governmental/mintic-fedesoft-talento-digital-2025-2030.md` pp. 96 y 219 — la competencia de pensamiento analítico del analista de datos/BI es «Formular preguntas correctas, encontrar patrones, interpretar métricas y KPIs» (p. 219), y «Storytelling con datos» y «Presentación de informes» figuran como habilidades de «Comunicación analítica» (p. 96) (Claude, 2026-10-04). Fuente *governmental*: aporta sólo pertinencia laboral; la materialidad descansa en el defecto observado.
+  - Auditoría `AUD.P152.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC01, C001.CON01, C001.CON06, C001.HAB01, C001.HAB02, C001.HAB04, C002.HAB04.
 - **Qué gana el estudiante:** entender que «liderar» depende de la medida que
   ordena el ranking, declarar cuál guía la navegación y escribir qué
   significa cada respuesta y qué no significa. Hoy el *slice* de Norte
@@ -76,7 +77,7 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
 2. Entre el slice y el drill-down, añade «¿Qué categoría lidera?»:
    a. Celda de evidencia: el slice ordenado por net_sales y por units (dos
       tablas pequeñas o una con ambos rangos).
-   b. Markdown de 3–5 líneas: el líder depende de la medida; el drill-down
+   b. El profesor explica en la sesión: el líder depende de la medida; el drill-down
       sigue ventas netas porque <razón>; con unidades bajaría a <categoría
       líder por unidades>. Toma ambas categorías del artefacto, no las
       escribas a mano en el código.
@@ -117,6 +118,7 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
 - **Fuentes:**
   - `01-evidence/md/literature-derived/kimball-dimensional-modeling-techniques-2013.md` p. 19 — «Business users often request year-to-date (YTD) values… A more reliable, extensible way to handle these assorted requests is to calculate the YTD metrics in the BI applications or OLAP cube rather than storing YTD facts in the fact table» (Claude, 2026-10-04). Fuente *authoritative*: ubica las comparaciones temporales en la capa de consulta, que es la de P152.
   - `01-evidence/md/professional-learning/power-bi-enterprise-solutions-workshop-2024.md` pp. 30, 74 y 76 — requisito de reporte: una serie que permita elegir «Month Over Month, Month Over Month % Change, Month To Date, Prior Month, Year To Date» a lo largo de años, meses o días; grupo de cálculo de *time intelligence* con «Current», «MoM %» y «YoY %» (Claude, 2026-10-04). Fuente *professional-learning*: señal de práctica; el mecanismo se enseña en SQL/pandas, no en la plataforma.
+  - Auditoría `AUD.P152.01` (Claude, 2026-10-14) del curso `descriptiva`: refuerza con las señales descriptiva/RC02, C003.HAB06, C006.HAB03, C006.HAB06.
 - **Qué gana el estudiante:** responder la pregunta más frecuente de un
   usuario de BI, «¿cómo vamos frente al período anterior?», sobre el mismo
   hecho que ya navega. Hoy P152 sube a año–mes–región (H02), corta en Norte
@@ -180,7 +182,7 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
    c. Cuando la base sea 0, deja la variación porcentual vacía y explica por
       qué.
    d. Grafica el acumulado del año por región.
-   e. Explica en markdown, en 3–5 líneas, por qué el acumulado se calcula al
+   e. El profesor explica en la sesión por qué el acumulado se calcula al
       consultar y no se guarda en el hecho, y qué limita leer variaciones
       sobre este calendario sintético.
 3. Persiste submission/period_comparison.csv con columnas year, month,

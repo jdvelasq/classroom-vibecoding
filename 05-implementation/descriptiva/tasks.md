@@ -50,3 +50,21 @@
   conservación del total de ventas en ambas vistas) y entrada en
   `traceability.yaml`; y su `Pxxx_activity.md` (S02) evidencia highlights
   propios, no duplicados de P151–P154.
+
+## N02 — ⚠️ PENDIENTE DE DECISIÓN — Reconsiderar el lugar de P101 en la secuencia: no ancla ningún resultado del curso
+
+- **Estado:** pendiente de discusión
+- **Tipo:** reorganización
+- **Fuentes:**
+  - Auditoría del curso `descriptiva` (Claude, 2026-10-14): decisión de P101.
+- **Contribución distinta:** P101 enseña refactorización de software (funciones con responsabilidad nombrada, separar motor de lógica del problema, hacer explícita una precondición, usar el corpus fijo como oráculo de regresión) sobre el mismo conteo de palabras de P100, sin ejercitar ningún ítem de datos o analítica de las competencias que el curso debe. No es una contribución distinta de Analytics que falte: es una práctica de ingeniería de software presupuesta como conocimiento requerido.
+- **Posición propuesta:** Se mantiene hoy entre P100 y P102 como puente técnico. La propuesta no cambia su posición; abre la discusión de si debe conservarse así, fusionarse con P100 como una sección de refactorización dentro de esa misma actividad, o retirarse de la secuencia evaluada como actividad de analítica.
+- **Desplaza o fusiona:** Ninguna actividad; sólo decide el estatus de P101 misma.
+- **Efecto en la secuencia:** Si se conserva igual, ningún grupo pierde nada. Si se fusiona con P100 o se retira de la secuencia evaluada, un grupo que avanza menos gana una sesión para P102 en adelante.
+- **Caso y datos:** No aplica: es una reorganización, no una actividad nueva con caso propio.
+- **Producto de Analytics:** No aplica.
+- **Justificación metodológica:** Una actividad presencial del curso debe anclar al menos un resultado del curso o una competencia vigente para que su evaluación en traceability.yaml sea significativa; P101 no lo hace hoy.
+- **Justificación técnica:** La refactorización que P101 enseña es una práctica general de ingeniería de software, parte del conocimiento requerido de programación básica que la ficha del curso presupone, no un ítem propio de las competencias C001–C006.
+- **Justificación pedagógica:** Mantenerla sin anclaje analítico diluye la identidad del curso en Analytics con una sesión de buenas prácticas de código que no se distingue de una sesión de un curso de programación.
+- **Identidad del curso:** Resolver su estatus libera o confirma el tiempo de sesión dedicado a la pregunta analítica, sin perder la exigencia de software correctamente estructurado que P102 en adelante seguirá requiriendo de los estudiantes.
+- **Criterio de aceptación de una primera versión:** David decide entre (a) conservar P101 igual, documentando en su traceability.yaml que sostiene conocimiento requerido sin ítem propio; (b) fusionarla con P100 como una sección de refactorización dentro de esa actividad; o (c) retirarla de la secuencia evaluada. La decisión se registra en el log de P101 como DEC.
