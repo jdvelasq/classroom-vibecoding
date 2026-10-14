@@ -5,14 +5,14 @@
 #   "pymupdf==1.26.5",
 # ]
 # ///
-"""S01 — Convertir los benchmarks PDF a Markdown.
+"""Convertir los PDF de evidencia a Markdown.
 
 Ejecución (desde la raíz del repositorio):
 
-    uv run design/tasks/s01-convert-benchmarks.py            # 01-evidence/ingest/
-    uv run design/tasks/s01-convert-benchmarks.py --force    # reconvierte todo
-    uv run design/tasks/s01-convert-benchmarks.py RUTA.pdf   # sólo esos PDFs
-    uv run design/tasks/s01-convert-benchmarks.py \
+    uv run .agents/skills/selecting-evidence/scripts/convert.py            # 01-evidence/ingest/
+    uv run .agents/skills/selecting-evidence/scripts/convert.py --force    # reconvierte todo
+    uv run .agents/skills/selecting-evidence/scripts/convert.py RUTA.pdf   # sólo esos PDFs
+    uv run .agents/skills/selecting-evidence/scripts/convert.py \
         --input design/benchmarks-pdf --output design/benchmarks-md  # benchmarks
 
 Sin uv: `pip install pymupdf4llm==0.0.27 pymupdf==1.26.5` y ejecutar con
@@ -49,7 +49,7 @@ from pathlib import Path
 import pymupdf
 import pymupdf4llm
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 INGEST_DIR = ROOT / "01-evidence" / "ingest"
 
 TOOL = (
@@ -145,7 +145,7 @@ def convert(pdf: Path) -> tuple[str, dict]:
                 redone.append(n)
         covs.append(cov)
         note = (
-            f"> ⚠️ S01: página {n} con poco texto extraíble; "
+            f"> ⚠️ Conversor: página {n} con poco texto extraíble; "
             "puede tener contenido en imagen no convertido.\n\n"
             if n in flagged
             else ""

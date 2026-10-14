@@ -42,7 +42,7 @@ any other document. Report any document whose file is missing.
 ## 1. Convert
 
 ```bash
-uv run design/tasks/s01-convert-benchmarks.py
+uv run .agents/skills/selecting-evidence/scripts/convert.py
 ```
 
 If `uv` is not on the PATH, try `~/Library/Python/3.9/bin/uv`. The converter

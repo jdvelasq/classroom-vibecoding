@@ -16,7 +16,7 @@ solo explica el proceso.
    nada. Correr el conversor a mano es opcional, por ejemplo para revisar
    la conversión antes de pedir la selección (desde la raíz del repositorio):
 
-   uv run design/tasks/s01-convert-benchmarks.py
+   uv run .agents/skills/selecting-evidence/scripts/convert.py
 
    El conversor salta los archivos que ya están al día. Si no encuentra uv,
    agrega esta línea a ~/.zshrc y abre una terminal nueva:
