@@ -55,10 +55,22 @@ ingeniería de datos y la analítica.
 
 ## Alcance
 
-- La administración de bases de datos y de plataformas queda fuera: es
-  ingeniería de datos como disciplina autónoma.
-- La modelación predictiva y prescriptiva queda fuera del curso.
-- El procesamiento de datos a gran escala (computación distribuida,
-  plataformas como Spark) es un subcampo propio con su curso de
-  posgrado; aquí solo se reconoce que la escala es un factor de la
-  calidad y la operacionalización de los datos, sin profundizar en él.
+- El curso enseña a intervenir en el origen y la organización de los
+  datos para analizar: de dónde vienen, qué significan, con qué calidad
+  llegan, y cómo se integran y agregan para alimentar el análisis y la
+  inteligencia de negocios (ingesta, ETL/ELT, modelado y agregación para
+  BI, formatos y particionamiento).
+- Para buena parte de sus estudiantes puede ser la única formación en
+  inteligencia de negocios, por eso la trata de forma completa aunque se
+  solape con cursos de posgrado de otra población.
+- La administración, la operación y el rendimiento de bases de datos y de
+  plataformas quedan fuera: es ingeniería de datos como disciplina
+  autónoma.
+- El procesamiento distribuido se introduce de forma conceptual,
+  emulando sus operaciones en Python; las plataformas como Spark son
+  profundidad del curso de posgrado de grandes datos.
+- La operación productiva según DataOps y MLOps (orquestación, pruebas
+  como reglas de producción, despliegue y monitoreo) es profundidad del
+  curso de posgrado de productos de datos.
+- La modelación predictiva y prescriptiva y la arquitectura empresarial
+  de datos quedan fuera del curso.
