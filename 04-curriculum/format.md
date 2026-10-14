@@ -1,13 +1,15 @@
 # Formato del plan de cursos y de la matriz de resultados
 
-Versión 0.1 (borrador)
+Versión 0.2 (borrador)
 
 ## Propósito
 
 Definir cómo se registran los cursos (`courses.md`), la matriz que reparte
 los resultados de aprendizaje del programa de posgrado entre sus cursos
-(`matrix.csv`) y los resultados propios de los cursos de pregrado
-(`undergraduate/<carpeta>.md`), y qué reglas debe cumplir el conjunto.
+(`matrix.csv`), la ficha de cada curso de posgrado
+(`postgraduate/<carpeta>.md`), los resultados propios de los cursos de
+pregrado (`undergraduate/<carpeta>.md`) y qué reglas debe cumplir el
+conjunto.
 
 Es el tercer eslabón del puente entre lo que el egresado debe saber y lo
 que los cursos enseñan: los resultados de aprendizaje de
@@ -78,6 +80,34 @@ Un curso puede dominar un resultado sin que otro lo haya introducido
 antes: en ese caso el propio curso lo introduce y lo lleva hasta el
 dominio, y la fila dice `domina`.
 
+## Cursos de posgrado: `postgraduate/<carpeta>.md`
+
+Cada curso de posgrado tiene su ficha. Es la vista por curso de la matriz:
+lo que el syllabus de `05-syllabus/<carpeta>/` toma como punto de partida.
+
+El archivo tiene un encabezado YAML y cuatro secciones, en este orden:
+`## Propósito`, `## Condición de entrada`, `## Resultados de aprendizaje`
+y `## Alcance`.
+
+```yaml
+curso: "prescriptiva"
+nivel: "posgrado"
+format_version: "0.2"
+fecha: "2026-10-14"
+```
+
+1. **Propósito**: un párrafo coherente con el propósito de `courses.md`:
+   qué pregunta analítica responde el curso y qué producto terminal
+   entrega el estudiante.
+2. **Condición de entrada**: lo que el curso supone del estudiante. Como
+   el curso es autocontenido, no supone ningún curso de pregrado; si
+   supone otro curso de posgrado, lo nombra y dice qué toma de él.
+3. **Resultados de aprendizaje**: una viñeta por fila de `matrix.csv` con
+   ese curso, en orden de `id`: `- RA02, domina: aporte.` El nivel y el
+   aporte son los de la matriz.
+4. **Alcance**: las fronteras con los demás cursos (qué le corresponde a
+   cada uno cuando un tema los toca a ambos) y lo que queda fuera.
+
 ## Cursos de pregrado: `undergraduate/<carpeta>.md`
 
 Los cursos de pregrado no derivan de los resultados de aprendizaje del
@@ -92,7 +122,7 @@ El archivo tiene un encabezado YAML y tres secciones, en este orden:
 ```yaml
 curso: "data"
 nivel: "pregrado"
-format_version: "0.1"
+format_version: "0.2"
 fecha: "2026-10-14"
 ```
 
@@ -141,12 +171,15 @@ propósito del curso en `courses.md` (Python, en `fundamentos`).
    resultado cuyas competencias lo incluyan.
 8. Los cursos de pregrado no citan resultados de aprendizaje del programa
    (`RA01`, …).
-9. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
+9. Todo curso de posgrado tiene su ficha, y sus resultados de aprendizaje
+   coinciden con las filas de `matrix.csv` para ese curso, con el mismo
+   nivel. La ficha no cita cursos de pregrado.
+10. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
    versión abreviada de una disciplina contribuyente. El curso de
    prescriptiva domina resultados que terminan en una política de
    decisión, no en un modelo.
 
-Las reglas 1 a 8 las comprueba la skill `mapping-curriculum`. La regla 9 la
+Las reglas 1 a 9 las comprueba la skill `mapping-curriculum`. La regla 10 la
 juzga quien propone la matriz y se informa a david.
 
 ## Ejemplo trabajado
@@ -172,13 +205,55 @@ Qué muestra:
 - `RA02` sigue en `productos` como `desarrolla` después de dominarse: no es
   retroceso, porque el curso posterior lo usa en un producto.
 
+La ficha de `prescriptiva` que corresponde a esas filas:
+
+````markdown
+---
+curso: "prescriptiva"
+nivel: "posgrado"
+format_version: "0.2"
+fecha: "2026-10-14"
+---
+
+# Analítica prescriptiva
+
+## Propósito
+
+Diseñar, validar y gobernar políticas de decisión para decisiones
+recurrentes de una organización: el producto terminal es una política que
+va del contexto observado a una acción factible, con salvaguardas,
+autoridad humana y seguimiento.
+
+## Condición de entrada
+
+El curso es autocontenido. Supone formación cuantitativa de pregrado y
+toma de `predictiva` la idea de una estimación con incertidumbre, que aquí
+se usa como insumo de la política.
+
+## Resultados de aprendizaje
+
+- RA01, domina: Formula y sustenta ante un panel el problema de decisión
+  completo que da origen a la política.
+- RA02, domina: Diseña la política de decisión con salvaguardas, autoridad
+  humana, cadencia y seguimiento.
+
+## Alcance
+
+- Con `predictiva`: predictiva construye y valida la estimación;
+  prescriptiva la usa para decidir.
+- Con `productos`: productos despliega y observa la política; prescriptiva
+  define su semántica, sus restricciones y su validación.
+- La investigación de operaciones como disciplina queda fuera: la
+  optimización y la simulación entran como soporte de la política.
+````
+
 Resultados de un curso de pregrado:
 
 ````markdown
 ---
 curso: "data"
 nivel: "pregrado"
-format_version: "0.1"
+format_version: "0.2"
 fecha: "2026-10-14"
 ---
 
@@ -227,6 +302,9 @@ los datos de una pregunta analítica.
 
 ## Versión y cambios
 
+- 0.2 (2026-10-14): se agrega la ficha de cada curso de posgrado,
+  `postgraduate/<carpeta>.md`, porque la matriz sola no deja un producto
+  por curso. Sus resultados deben coincidir con `matrix.csv`.
 - 0.1 (2026-10-14): borrador inicial. Valores por defecto que david debe
   aprobar: los cursos de posgrado se cursan en el orden de `courses.md`;
   los tres niveles y su definición; la autocontención como «la primera

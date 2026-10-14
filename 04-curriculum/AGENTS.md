@@ -13,7 +13,7 @@ cursos introductorios de pregrado.
 
 ## Archivos
 
-- `format.md`: formato de los tres archivos siguientes, reglas y un
+- `format.md`: formato de los archivos siguientes, reglas y un
   ejemplo trabajado. Es la norma de este directorio; versiónalo como
   `03-learning-outcomes/format.md`.
 - `courses.md`: los ocho cursos (uno de ellos propuesto), su nivel, su
@@ -21,10 +21,12 @@ cursos introductorios de pregrado.
   de analítica y los fija david; no se reescribe sin su decisión.
 - `matrix.csv`: resultados de aprendizaje × cursos de posgrado, con nivel
   `introduce`, `desarrolla` o `domina`.
+- `postgraduate/<carpeta>.md`: la ficha de cada curso de posgrado, con
+  sus resultados de aprendizaje según la matriz.
 - `undergraduate/<carpeta>.md`: los resultados de curso de `data` y
   `fundamentos`.
 
-`matrix.csv` y `undergraduate/` se escriben con la skill
+`matrix.csv`, `postgraduate/` y `undergraduate/` se escriben con la skill
 `mapping-curriculum` (`.agents/skills/mapping-curriculum/`). Sus scripts
 leen los resultados y el mapa y comprueban las reglas; el modelo solo
 propone la matriz y redacta los resultados de pregrado.

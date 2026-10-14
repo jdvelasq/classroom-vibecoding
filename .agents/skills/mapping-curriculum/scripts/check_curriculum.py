@@ -1,4 +1,4 @@
-"""Validates courses.md, matrix.csv and the undergraduate courses against format.md.
+"""Validates courses.md, matrix.csv and the course files against format.md.
 
 Usage (from the repository root):
 
@@ -6,9 +6,9 @@ Usage (from the repository root):
 
 With no option it checks everything and prints the matrix as a table of
 learning outcomes × postgraduate courses. `--matrix` checks only the
-courses and the matrix; `--undergraduate` checks only the courses and the
-undergraduate files, which is useful while drafting one part. It never
-rewrites a file.
+courses, the matrix and the postgraduate course files; `--undergraduate`
+checks only the courses and the undergraduate files, which is useful while
+drafting one part. It never rewrites a file.
 """
 
 from __future__ import annotations
@@ -23,13 +23,16 @@ from curriculum_lib import (
     load_competencies,
     load_courses,
     load_outcomes,
+    load_postgraduate,
     load_undergraduate,
     matrix_view,
+    postgraduate,
     read_matrix,
     require_supported_format,
     undergraduate,
     validate_courses,
     validate_matrix,
+    validate_postgraduate,
     validate_undergraduate,
 )
 
@@ -55,6 +58,12 @@ def run(layout: Layout, matrix: bool = True, undergrad: bool = True) -> int:
             warnings += warned
             for line in matrix_view(rows, courses, outcomes):
                 print(line)
+        files = load_postgraduate(layout)
+        for course in postgraduate(courses):
+            if course.folder not in files:
+                errors.append(f"postgraduate/{course.folder}.md is missing")
+        for document in files.values():
+            errors += validate_postgraduate(document, courses, rows, format_version)
 
     if undergrad:
         written = load_undergraduate(layout)

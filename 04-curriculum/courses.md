@@ -1,5 +1,5 @@
 ---
-format_version: "0.1"
+format_version: "0.2"
 domain_version: "0.7"
 fecha: "2026-10-14"
 ---

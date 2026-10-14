@@ -1,7 +1,7 @@
 ---
 curso: "fundamentos"
 nivel: "pregrado"
-format_version: "0.1"
+format_version: "0.2"
 fecha: "2026-10-13"
 ---
 

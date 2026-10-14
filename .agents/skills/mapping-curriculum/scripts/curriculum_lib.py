@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[4]
 
 # The checks below implement exactly this version of 04-curriculum/format.md;
 # a new version must be reviewed here first.
-SUPPORTED_FORMAT_VERSION = "0.1"
+SUPPORTED_FORMAT_VERSION = "0.2"
 
 POSTGRADUATE = "posgrado"
 UNDERGRADUATE = "pregrado"
@@ -41,13 +41,15 @@ MAX_COMPETENCIES_PER_COURSE_OUTCOME = 3
 COURSE_COLUMNS = ["Carpeta", "Curso", "Nivel", "Estado", "Subcampos"]
 COURSES_SECTIONS = ["Lista de cursos", "Propósito", "Continuidad"]
 MATRIX_COLUMNS = ["ra", "curso", "nivel", "aporte", "fecha"]
-UNDERGRADUATE_KEYS = ["curso", "nivel", "format_version", "fecha"]
+COURSE_FILE_KEYS = ["curso", "nivel", "format_version", "fecha"]
+POSTGRADUATE_SECTIONS = ["Propósito", "Condición de entrada", "Resultados de aprendizaje", "Alcance"]
 UNDERGRADUATE_SECTIONS = ["Propósito", "Resultados del curso", "Alcance"]
 COURSE_OUTCOME_LABELS = ["Enunciado", "Competencias", "Evaluación"]
 
 FOLDER = re.compile(r"^[a-z][a-z0-9-]*$")
 COURSE_OUTCOME_ID = re.compile(r"^RC\d{2}$")
 COMPETENCY_REF = re.compile(r"\bC\d{3}\b")
+OUTCOME_BULLET = re.compile(r"^(RA\d{2}), (\S+?): (.+)$")
 
 
 @dataclass(frozen=True)
@@ -73,6 +75,10 @@ class Layout:
     @property
     def undergraduate(self) -> Path:
         return self.home / "undergraduate"
+
+    @property
+    def postgraduate(self) -> Path:
+        return self.home / "postgraduate"
 
     @property
     def outcomes(self) -> Path:
@@ -297,6 +303,63 @@ def matrix_view(rows: list[MatrixRow], courses: list[Course], outcomes: dict[str
     return lines
 
 
+def load_postgraduate(layout: Layout) -> dict[str, Document]:
+    return {p.stem: parse(p) for p in sorted(layout.postgraduate.glob("*.md"))}
+
+
+def validate_postgraduate(document: Document, courses: list[Course], rows: list[MatrixRow],
+                          format_version: str) -> list[str]:
+    errors: list[str] = []
+    name = f"postgraduate/{document.path.name}"
+    header = document.header
+
+    def error(message: str) -> None:
+        errors.append(f"{name}: {message}")
+
+    missing = [k for k in COURSE_FILE_KEYS if k not in header]
+    if missing:
+        error(f"header lacks {', '.join(missing)}")
+        return errors
+    course = next((c for c in postgraduate(courses) if c.folder == header["curso"]), None)
+    if course is None:
+        error(f"curso '{header['curso']}' is not a postgraduate course in courses.md")
+        return errors
+    if document.path.stem != course.folder:
+        error(f"the file must be named {course.folder}.md")
+    if header["nivel"] != POSTGRADUATE:
+        error(f"nivel must be '{POSTGRADUATE}'")
+    if header["format_version"] != format_version:
+        error(f"format_version is {header['format_version']}, format.md is {format_version}")
+    required = [s for s in document.section_order if s in POSTGRADUATE_SECTIONS]
+    if required != POSTGRADUATE_SECTIONS:
+        error(f"sections must be, in order: {', '.join(POSTGRADUATE_SECTIONS)}")
+    for other in undergraduate(courses):
+        if re.search(rf"`{re.escape(other.folder)}`|{re.escape(other.name)}", document.body):
+            error(f"a postgraduate course is self-contained and does not cite the undergraduate course {other.folder}")
+
+    listed: dict[str, str] = {}
+    for bullet in document.bullets("Resultados de aprendizaje"):
+        match = OUTCOME_BULLET.match(bullet)
+        if not match:
+            error(f"'{bullet[:60]}' must read '- RA00, nivel: aporte.'")
+            continue
+        ra, level, _ = match.groups()
+        if ra in listed:
+            error(f"{ra} is listed more than once")
+        listed[ra] = level
+    if list(listed) != sorted(listed):
+        error("Resultados de aprendizaje must be in id order")
+    expected = {r.ra: r.nivel for r in rows if r.curso == course.folder}
+    for ra in sorted(set(expected) - set(listed)):
+        error(f"matrix.csv puts {ra} in {course.folder} as '{expected[ra]}', but the file does not list it")
+    for ra in sorted(set(listed) - set(expected)):
+        error(f"{ra} is listed but matrix.csv has no row {ra} × {course.folder}")
+    for ra in sorted(set(listed) & set(expected)):
+        if listed[ra] != expected[ra]:
+            error(f"{ra} is '{listed[ra]}' here but '{expected[ra]}' in matrix.csv")
+    return errors
+
+
 def labelled(block: str) -> list[tuple[str, str]]:
     items: list[str] = []
     for line in block.splitlines():
@@ -347,7 +410,7 @@ def validate_undergraduate(document: Document, courses: list[Course], competenci
     def error(message: str) -> None:
         errors.append(f"{name}: {message}")
 
-    missing = [k for k in UNDERGRADUATE_KEYS if k not in header]
+    missing = [k for k in COURSE_FILE_KEYS if k not in header]
     if missing:
         error(f"header lacks {', '.join(missing)}")
         return errors, warnings

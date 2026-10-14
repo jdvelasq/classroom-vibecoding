@@ -1,15 +1,16 @@
 ---
 name: mapping-curriculum
-description: Proposes and maintains the curriculum map of the Analytics programs in 04-curriculum/, following 04-curriculum/format.md - the matrix of postgraduate learning outcomes × courses (introduce, develop, master) and the course outcomes of the two undergraduate courses, drawn from the competency map. Use when david asks to map the learning outcomes to courses, build or review the RA × courses matrix, write the undergraduate course outcomes, check the curriculum coverage, or after the learning outcomes or the course list have changed.
+description: Proposes and maintains the curriculum map of the Analytics programs in 04-curriculum/, following 04-curriculum/format.md - the matrix of postgraduate learning outcomes × courses (introduce, develop, master), one file per postgraduate course, and the course outcomes of the two undergraduate courses, drawn from the competency map. Use when david asks to map the learning outcomes to courses, build or review the RA × courses matrix, write the undergraduate course outcomes, check the curriculum coverage, or after the learning outcomes or the course list have changed.
 ---
 
 # Mapping the curriculum
 
 Deterministic Python scripts do everything mechanical: reading the course
 list, the learning outcomes and the competency map, and checking the
-matrix, the coverage and the undergraduate files. You contribute only
-judgment: proposing in which course each learning outcome is introduced,
-developed and mastered, and writing the undergraduate course outcomes.
+matrix, the coverage and the course files. You contribute only judgment:
+proposing in which course each learning outcome is introduced, developed
+and mastered, writing the file of each postgraduate course, and writing
+the undergraduate course outcomes.
 
 Sources of truth, read them before proposing; never restate them here:
 
@@ -32,7 +33,9 @@ Run every command from the repository root.
 python3 .agents/skills/mapping-curriculum/scripts/curriculum_status.py
 ```
 
-It prints JSON with the format version, the courses in order, every
+It prints JSON starting with `pending`: every file still to write. A run
+is not finished while `pending` lists anything you can write. Then come
+the format version, the courses in order, every
 learning outcome with the subfields of its competencies and its current
 cells, the outcomes not yet mastered, the postgraduate courses without
 outcomes, the included competencies and the undergraduate outcomes already
@@ -40,9 +43,10 @@ written. The scripts refuse to run if `format.md` is not the version they
 implement; in that case update `scripts/curriculum_lib.py` and its tests
 first.
 
-If there are no learning outcomes yet, stop and tell david to run
-`writing-learning-outcomes` first; the undergraduate part can still be
-done.
+If there are no learning outcomes yet, the matrix and the postgraduate
+files cannot be written: do the undergraduate part, then tell david
+plainly that the postgraduate courses are still missing and that he must
+run `writing-learning-outcomes` first.
 
 ## 2. Propose (your part)
 
@@ -52,7 +56,12 @@ done.
    subfields of its competencies; a course outside them needs a reason in
    `aporte`. Every postgraduate course is self-contained: its students
    have not taken the undergraduate courses.
-2. **Undergraduate courses.** For each undergraduate course, write
+2. **Postgraduate courses.** For each postgraduate course, write
+   `04-curriculum/postgraduate/<folder>.md`: its purpose, its entry
+   condition (never an undergraduate course), its learning outcomes
+   copied from its rows of the matrix with the same level and `aporte`,
+   and its boundaries with the other courses.
+3. **Undergraduate courses.** For each undergraduate course, write
    `04-curriculum/undergraduate/<folder>.md`. Draw its course outcomes
    directly from the included competencies whose subfields the course
    covers, at an introductory level, as `courses.md` describes the
@@ -69,7 +78,8 @@ outcome that belongs to it, report it to david.
 python3 .agents/skills/mapping-curriculum/scripts/check_curriculum.py
 ```
 
-It prints the matrix as a table, then warnings and errors. Use `--matrix`
+It prints the matrix as a table, then warnings and errors. A missing
+postgraduate file is an error. Use `--matrix`
 or `--undergraduate` to check one part while drafting. Correct every error
 and repeat until there are none. Warnings name learning outcomes changed
 after a row was set, rows whose course shares no subfield with the
@@ -81,6 +91,7 @@ Give david a short report:
 
 - the matrix table printed by the check, and which course masters each
   outcome;
+- the postgraduate course files written or changed;
 - the undergraduate course outcomes written or changed, with their
   competencies;
 - warnings left and anything that fits no course;

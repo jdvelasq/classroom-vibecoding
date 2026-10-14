@@ -4,8 +4,9 @@ Usage (from the repository root):
 
     python3 .agents/skills/mapping-curriculum/scripts/curriculum_status.py
 
-It reports the format version and limits, the courses of courses.md, every
-learning outcome with the subfields of its competencies and the cells it
+It reports first what is still pending, then the format version and
+limits, the courses of courses.md, which postgraduate course files exist,
+every learning outcome with the subfields of its competencies and the cells it
 already has in the matrix, the outcomes that never reach mastery, the
 postgraduate courses without outcomes, the included competencies available
 to the undergraduate courses, and the undergraduate outcomes already
@@ -28,6 +29,7 @@ from curriculum_lib import (
     load_competencies,
     load_courses,
     load_outcomes,
+    load_postgraduate,
     load_undergraduate,
     parse_course_outcomes,
     postgraduate,
@@ -46,7 +48,16 @@ def status(layout: Layout) -> dict[str, object]:
     rows, matrix_errors = read_matrix(layout)
     written = load_undergraduate(layout)
     graduate = [c.folder for c in postgraduate(courses)]
+    graduate_files = load_postgraduate(layout)
+    pending = []
+    if not outcomes:
+        pending.append("03-learning-outcomes has no learning outcomes: run writing-learning-outcomes first")
+    if not layout.matrix.exists():
+        pending.append("matrix.csv")
+    pending += [f"postgraduate/{f}.md" for f in graduate if f not in graduate_files]
+    pending += [f"undergraduate/{c.folder}.md" for c in undergraduate(courses) if c.folder not in written]
     return {
+        "pending": pending,
         "format_version": format_version,
         "levels": list(LEVELS),
         "undergraduate_outcomes_allowed": [MIN_COURSE_OUTCOMES, MAX_COURSE_OUTCOMES],
@@ -57,6 +68,7 @@ def status(layout: Layout) -> dict[str, object]:
         ],
         "postgraduate_order": graduate,
         "matrix_exists": layout.matrix.exists(),
+        "postgraduate_files": {f: f in graduate_files for f in graduate},
         "matrix_errors": matrix_errors,
         "outcomes": [
             {

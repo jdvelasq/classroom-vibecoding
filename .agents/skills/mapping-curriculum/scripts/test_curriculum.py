@@ -39,7 +39,7 @@ def layout(tmp_path):
     layout = lib.Layout(tmp_path)
     for folder in (layout.home, layout.undergraduate, layout.outcomes, layout.map, layout.domain.parent):
         folder.mkdir(parents=True, exist_ok=True)
-    layout.format.write_text("# Formato\n\nVersión 0.1 (borrador)\n", encoding="utf-8")
+    layout.format.write_text("# Formato\n\nVersión 0.2 (borrador)\n", encoding="utf-8")
     layout.domain.write_text(DOMAIN, encoding="utf-8")
     write_courses(layout)
     write_competency(layout, "C001", ["analítica descriptiva", "analítica prescriptiva", "ingeniería de datos para la analítica"])
@@ -51,7 +51,7 @@ def layout(tmp_path):
     return layout
 
 
-def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.1"):
+def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.2"):
     folders = purposes if purposes is not None else [r.split("|")[1].strip() for r in rows]
     text = f"""---
 format_version: "{version}"
@@ -139,7 +139,7 @@ def write_undergraduate(layout, outcomes=GOOD_OUTCOMES, curso="data", body_extra
     text = f"""---
 curso: "{curso}"
 nivel: "{nivel}"
-format_version: "0.1"
+format_version: "0.2"
 fecha: "2026-10-14"
 ---
 
@@ -161,9 +161,60 @@ Presentar la ingeniería de datos para la analítica.{body_extra}
     return path
 
 
+def write_postgraduate(layout, curso, outcomes, entry="Autocontenido.", nivel="posgrado"):
+    bullets = "\n".join(f"- {ra}, {level}: Aporte del curso." for ra, level in outcomes)
+    text = f"""---
+curso: "{curso}"
+nivel: "{nivel}"
+format_version: "0.2"
+fecha: "2026-10-14"
+---
+
+# Curso {curso}
+
+## Propósito
+
+Responder una pregunta analítica con un producto terminal.
+
+## Condición de entrada
+
+{entry}
+
+## Resultados de aprendizaje
+
+{bullets}
+
+## Alcance
+
+- Fronteras con los demás cursos.
+"""
+    path = layout.postgraduate / f"{curso}.md"
+    path.parent.mkdir(exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+GOOD_POSTGRADUATE = {
+    "descriptiva": [("RA01", "introduce")],
+    "prescriptiva": [("RA01", "domina"), ("RA02", "domina")],
+    "generativa": [("RA02", "desarrolla")],
+}
+
+
+def write_all_postgraduate(layout):
+    for curso, outcomes in GOOD_POSTGRADUATE.items():
+        write_postgraduate(layout, curso, outcomes)
+
+
+def postgraduate_errors(layout, curso):
+    rows, _ = lib.read_matrix(layout)
+    _, courses = lib.load_courses(layout)
+    return lib.validate_postgraduate(lib.parse(layout.postgraduate / f"{curso}.md"), courses, rows, "0.2")
+
+
 def courses_errors(layout):
     document, courses = lib.load_courses(layout)
-    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.1")
+    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.2")
 
 
 def matrix_check(layout):
@@ -176,7 +227,7 @@ def matrix_check(layout):
 def undergraduate_check(layout, curso="data"):
     _, courses = lib.load_courses(layout)
     document = lib.parse(layout.undergraduate / f"{curso}.md")
-    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.1")
+    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.2")
 
 
 # courses.md
@@ -366,10 +417,68 @@ def test_a_competency_changed_after_the_course_is_a_warning(layout):
     assert any("C001 changed after data/RC01" in w for w in warnings), warnings
 
 
+# postgraduate/<folder>.md
+
+def test_good_postgraduate_files_validate(layout):
+    write_matrix(layout)
+    write_all_postgraduate(layout)
+    for curso in GOOD_POSTGRADUATE:
+        assert postgraduate_errors(layout, curso) == []
+
+
+@pytest.mark.parametrize(
+    "outcomes, message",
+    [
+        ([("RA01", "domina")], "matrix.csv puts RA02 in prescriptiva as 'domina', but the file does not list it"),
+        ([("RA01", "domina"), ("RA02", "domina"), ("RA03", "introduce")], "RA03 is listed but matrix.csv has no row"),
+        ([("RA01", "desarrolla"), ("RA02", "domina")], "RA01 is 'desarrolla' here but 'domina' in matrix.csv"),
+        ([("RA02", "domina"), ("RA01", "domina")], "must be in id order"),
+    ],
+)
+def test_postgraduate_outcomes_match_the_matrix(layout, outcomes, message):
+    write_matrix(layout)
+    write_postgraduate(layout, "prescriptiva", outcomes)
+    errors = postgraduate_errors(layout, "prescriptiva")
+    assert any(message in e for e in errors), errors
+
+
+def test_a_postgraduate_course_does_not_presuppose_an_undergraduate_one(layout):
+    write_matrix(layout)
+    write_postgraduate(layout, "prescriptiva", GOOD_POSTGRADUATE["prescriptiva"], entry="Supone el curso `data`.")
+    errors = postgraduate_errors(layout, "prescriptiva")
+    assert any("does not cite the undergraduate course data" in e for e in errors), errors
+
+
+def test_an_undergraduate_course_cannot_have_a_postgraduate_file(layout):
+    write_matrix(layout)
+    write_postgraduate(layout, "data", [])
+    assert postgraduate_errors(layout, "data") == [
+        "postgraduate/data.md: curso 'data' is not a postgraduate course in courses.md"
+    ]
+
+
+def test_a_malformed_outcome_bullet_is_an_error(layout):
+    write_matrix(layout)
+    path = write_postgraduate(layout, "descriptiva", GOOD_POSTGRADUATE["descriptiva"])
+    path.write_text(path.read_text(encoding="utf-8").replace("- RA01, introduce:", "- RA01 introduce"), encoding="utf-8")
+    errors = postgraduate_errors(layout, "descriptiva")
+    assert any("must read '- RA00, nivel: aporte.'" in e for e in errors), errors
+
+
 # The whole run and the status report
+
+def test_a_matrix_without_postgraduate_files_does_not_pass(layout, capsys):
+    write_matrix(layout)
+    write_undergraduate(layout)
+    assert check_curriculum.run(layout) == 1
+    out = capsys.readouterr().out
+    for curso in GOOD_POSTGRADUATE:
+        assert f"postgraduate/{curso}.md is missing" in out
+
 
 def test_full_curriculum_passes(layout, capsys):
     write_matrix(layout)
+    write_all_postgraduate(layout)
     write_undergraduate(layout)
     assert check_curriculum.run(layout) == 0
     assert "0 errors" in capsys.readouterr().out
@@ -391,8 +500,17 @@ def test_undergraduate_part_can_be_checked_before_any_outcome_exists(layout, cap
     assert "no learning outcomes yet" in capsys.readouterr().out
 
 
+def test_status_says_the_postgraduate_part_waits_for_the_learning_outcomes(layout):
+    for path in layout.outcomes.glob("*.md"):
+        path.unlink()
+    report = curriculum_status.status(layout)
+    assert report["pending"][:2] == [
+        "03-learning-outcomes has no learning outcomes: run writing-learning-outcomes first", "matrix.csv",
+    ]
+
+
 def test_scripts_refuse_another_format_version(layout):
-    layout.format.write_text("# Formato\n\nVersión 0.2 (borrador)\n", encoding="utf-8")
+    layout.format.write_text("# Formato\n\nVersión 0.1 (borrador)\n", encoding="utf-8")
     with pytest.raises(SystemExit, match="Update curriculum_lib.py"):
         curriculum_status.status(layout)
 
@@ -401,6 +519,9 @@ def test_status_lists_what_must_be_mapped(layout):
     write_matrix(layout, rows=GOOD_MATRIX[:1])
     report = curriculum_status.status(layout)
     json.dumps(report, ensure_ascii=False)
+    assert report["pending"] == [
+        "postgraduate/descriptiva.md", "postgraduate/prescriptiva.md", "postgraduate/generativa.md", "undergraduate/data.md",
+    ]
     assert report["postgraduate_order"] == ["descriptiva", "prescriptiva", "generativa"]
     assert report["not_mastered"] == ["RA01", "RA02"]
     assert report["courses_without_outcomes"] == ["prescriptiva", "generativa"]
@@ -426,8 +547,11 @@ def test_the_worked_examples_of_format_md_validate_against_the_real_repository(t
     graduate = {c.folder for c in lib.postgraduate(courses)}
     assert all(r.curso in graduate and r.nivel in lib.LEVELS and r.aporte for r in rows)
 
-    example = re.search(r"^````markdown\n(.*?)^````$", text, re.M | re.S).group(1)
+    graduate_example, undergraduate_example = re.findall(r"^````markdown\n(.*?)^````$", text, re.M | re.S)
+    path = tmp_path / "prescriptiva.md"
+    path.write_text(graduate_example, encoding="utf-8")
+    assert lib.validate_postgraduate(lib.parse(path), courses, rows, "0.2") == []
     path = tmp_path / "data.md"
-    path.write_text(example, encoding="utf-8")
-    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.1")
+    path.write_text(undergraduate_example, encoding="utf-8")
+    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.2")
     assert errors == []
