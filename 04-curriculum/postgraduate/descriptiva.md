@@ -1,7 +1,7 @@
 ---
 curso: "descriptiva"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -17,14 +17,13 @@ diagnóstico interpretado para una decisión, con sus métricas, sus
 visualizaciones, su incertidumbre y sus límites, comunicado de forma
 responsable a usuarios y decisores.
 
-## Condición de entrada
+## Conocimientos requeridos
 
-El curso es autocontenido. Supone una formación profesional cuantitativa
-(ingeniería, matemáticas, estadística, economía, administración,
-computación y afines) o una preparación equivalente en análisis
-cuantitativo o manejo de información. No supone ningún otro curso del
-programa ni una cohorte homogénea; la nivelación que defina el programa es
-acompañamiento institucional, no un prerrequisito.
+El curso los presupone y no los enseña.
+
+- Programación básica en Python: variables, estructuras de datos,
+  funciones y lectura de archivos.
+- Matemáticas de pregrado: álgebra, funciones y proporciones.
 
 ## Resultados de aprendizaje
 

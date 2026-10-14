@@ -1,6 +1,6 @@
 # Formato del plan de cursos y de la matriz de resultados
 
-Versión 0.2 (borrador)
+Versión 0.3 (borrador)
 
 ## Propósito
 
@@ -86,22 +86,25 @@ Cada curso de posgrado tiene su ficha. Es la vista por curso de la matriz:
 lo que el syllabus de `05-syllabus/<carpeta>/` toma como punto de partida.
 
 El archivo tiene un encabezado YAML y cuatro secciones, en este orden:
-`## Propósito`, `## Condición de entrada`, `## Resultados de aprendizaje`
-y `## Alcance`.
+`## Propósito`, `## Conocimientos requeridos`,
+`## Resultados de aprendizaje` y `## Alcance`.
 
 ```yaml
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ```
 
 1. **Propósito**: un párrafo coherente con el propósito de `courses.md`:
    qué pregunta analítica responde el curso y qué producto terminal
    entrega el estudiante.
-2. **Condición de entrada**: lo que el curso supone del estudiante. Como
-   el curso es autocontenido, no supone ningún curso de pregrado; si
-   supone otro curso de posgrado, lo nombra y dice qué toma de él.
+2. **Conocimientos requeridos**: una viñeta por conocimiento que el
+   curso presupone y no enseña, por ejemplo la programación básica en
+   Python en `predictiva`. El curso es autocontenido: presupone
+   conocimientos, nunca cursos, así que esta sección no nombra ningún
+   curso de `courses.md`. Lo que se presupone aquí no se enseña en el
+   curso.
 3. **Resultados de aprendizaje**: una viñeta por fila de `matrix.csv` con
    ese curso, en orden de `id`: `- RA02, domina: aporte.` El nivel y el
    aporte son los de la matriz.
@@ -122,7 +125,7 @@ El archivo tiene un encabezado YAML y tres secciones, en este orden:
 ```yaml
 curso: "data"
 nivel: "pregrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ```
 
@@ -154,8 +157,9 @@ propósito del curso en `courses.md` (Python, en `fundamentos`).
 2. Todo resultado de aprendizaje del programa llega a `domina` en algún
    curso de posgrado.
 3. Ningún curso de posgrado queda sin resultados de aprendizaje.
-4. Autocontención del posgrado: los estudiantes de posgrado no han visto
-   los cursos de pregrado. Ningún curso de posgrado presupone un curso de
+4. Autocontención del posgrado: un curso de posgrado presupone
+   conocimientos, declarados en su ficha, y no cursos. Los estudiantes de
+   posgrado no han visto los cursos de pregrado. Ningún curso de posgrado presupone un curso de
    pregrado (la matriz solo admite cursos de posgrado), y la primera vez
    que un resultado aparece en el orden de `courses.md` su nivel es
    `introduce` o `domina`, nunca `desarrolla`, porque desarrollar
@@ -173,7 +177,9 @@ propósito del curso en `courses.md` (Python, en `fundamentos`).
    (`RA01`, …).
 9. Todo curso de posgrado tiene su ficha, y sus resultados de aprendizaje
    coinciden con las filas de `matrix.csv` para ese curso, con el mismo
-   nivel. La ficha no cita cursos de pregrado.
+   nivel. La ficha declara al menos un conocimiento requerido, sus
+   conocimientos requeridos no nombran cursos, y la ficha no cita cursos
+   de pregrado.
 10. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
    versión abreviada de una disciplina contribuyente. El curso de
    prescriptiva domina resultados que terminan en una política de
@@ -211,7 +217,7 @@ La ficha de `prescriptiva` que corresponde a esas filas:
 ---
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -224,11 +230,11 @@ recurrentes de una organización: el producto terminal es una política que
 va del contexto observado a una acción factible, con salvaguardas,
 autoridad humana y seguimiento.
 
-## Condición de entrada
+## Conocimientos requeridos
 
-El curso es autocontenido. Supone formación cuantitativa de pregrado y
-toma de `predictiva` la idea de una estimación con incertidumbre, que aquí
-se usa como insumo de la política.
+- Programación básica en Python: estructuras de datos, funciones y
+  manejo de tablas de datos.
+- Álgebra lineal y probabilidad básicas.
 
 ## Resultados de aprendizaje
 
@@ -253,7 +259,7 @@ Resultados de un curso de pregrado:
 ---
 curso: "data"
 nivel: "pregrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -302,6 +308,9 @@ los datos de una pregunta analítica.
 
 ## Versión y cambios
 
+- 0.3 (2026-10-14): la condición de entrada de la ficha de posgrado pasa a
+  ser `Conocimientos requeridos`: el curso es autocontenido, presupone
+  conocimientos que no enseña y nunca cursos.
 - 0.2 (2026-10-14): se agrega la ficha de cada curso de posgrado,
   `postgraduate/<carpeta>.md`, porque la matriz sola no deja un producto
   por curso. Sus resultados deben coincidir con `matrix.csv`.

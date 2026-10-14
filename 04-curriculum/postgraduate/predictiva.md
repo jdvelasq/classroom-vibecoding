@@ -1,7 +1,7 @@
 ---
 curso: "predictiva"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -19,14 +19,15 @@ aportan metodologías y problemas anteriores a la analítica y aún vigentes;
 el aprendizaje automático y el aprendizaje profundo aportan modelos cuando
 son adecuados para la tarea.
 
-## Condición de entrada
+## Conocimientos requeridos
 
-El curso es autocontenido. Supone una formación profesional cuantitativa
-(ingeniería, matemáticas, estadística, economía, administración,
-computación y afines) o una preparación equivalente en análisis
-cuantitativo o manejo de información. No supone ningún otro curso del
-programa ni una cohorte homogénea; la nivelación que defina el programa es
-acompañamiento institucional, no un prerrequisito.
+El curso los presupone y no los enseña.
+
+- Programación básica en Python: estructuras de datos, funciones y
+  manejo de tablas de datos.
+- Probabilidad y estadística básicas: distribuciones, valor esperado y
+  varianza.
+- Álgebra lineal básica: vectores, matrices y sus operaciones.
 
 ## Resultados de aprendizaje
 

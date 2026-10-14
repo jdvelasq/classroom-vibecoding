@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[4]
 
 # The checks below implement exactly this version of 04-curriculum/format.md;
 # a new version must be reviewed here first.
-SUPPORTED_FORMAT_VERSION = "0.2"
+SUPPORTED_FORMAT_VERSION = "0.3"
 
 POSTGRADUATE = "posgrado"
 UNDERGRADUATE = "pregrado"
@@ -42,7 +42,8 @@ COURSE_COLUMNS = ["Carpeta", "Curso", "Nivel", "Estado", "Subcampos"]
 COURSES_SECTIONS = ["Lista de cursos", "Propósito", "Continuidad"]
 MATRIX_COLUMNS = ["ra", "curso", "nivel", "aporte", "fecha"]
 COURSE_FILE_KEYS = ["curso", "nivel", "format_version", "fecha"]
-POSTGRADUATE_SECTIONS = ["Propósito", "Condición de entrada", "Resultados de aprendizaje", "Alcance"]
+REQUIRED_KNOWLEDGE = "Conocimientos requeridos"
+POSTGRADUATE_SECTIONS = ["Propósito", REQUIRED_KNOWLEDGE, "Resultados de aprendizaje", "Alcance"]
 UNDERGRADUATE_SECTIONS = ["Propósito", "Resultados del curso", "Alcance"]
 COURSE_OUTCOME_LABELS = ["Enunciado", "Competencias", "Evaluación"]
 
@@ -307,6 +308,10 @@ def load_postgraduate(layout: Layout) -> dict[str, Document]:
     return {p.stem: parse(p) for p in sorted(layout.postgraduate.glob("*.md"))}
 
 
+def mentions(text: str, course: Course) -> bool:
+    return bool(re.search(rf"`{re.escape(course.folder)}`|{re.escape(course.name)}", text))
+
+
 def validate_postgraduate(document: Document, courses: list[Course], rows: list[MatrixRow],
                           format_version: str) -> list[str]:
     errors: list[str] = []
@@ -334,8 +339,14 @@ def validate_postgraduate(document: Document, courses: list[Course], rows: list[
     if required != POSTGRADUATE_SECTIONS:
         error(f"sections must be, in order: {', '.join(POSTGRADUATE_SECTIONS)}")
     for other in undergraduate(courses):
-        if re.search(rf"`{re.escape(other.folder)}`|{re.escape(other.name)}", document.body):
+        if mentions(document.body, other):
             error(f"a postgraduate course is self-contained and does not cite the undergraduate course {other.folder}")
+    knowledge = document.bullets(REQUIRED_KNOWLEDGE)
+    if not knowledge:
+        error(f"{REQUIRED_KNOWLEDGE} must list, one bullet each, what the course presupposes and does not teach")
+    for other in courses:
+        if any(mentions(item, other) for item in knowledge):
+            error(f"{REQUIRED_KNOWLEDGE} presupposes knowledge, not courses; it cites {other.folder}")
 
     listed: dict[str, str] = {}
     for bullet in document.bullets("Resultados de aprendizaje"):

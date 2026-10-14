@@ -33,8 +33,9 @@ propone la matriz y redacta los resultados de pregrado.
 
 ## Reglas
 
-- Los cursos de posgrado son autocontenidos: sus estudiantes no han visto
-  los cursos de pregrado.
+- Los cursos de posgrado son autocontenidos: presuponen conocimientos
+  (por ejemplo, Python básico en predictiva), que declaran y no enseñan,
+  nunca cursos. Sus estudiantes no han visto los cursos de pregrado.
 - Los cursos de pregrado no derivan de los resultados del posgrado: salen
   de las competencias incluidas del mapa, a nivel introductorio.
 - `01-evidence/`, `02-competencies/` y `03-learning-outcomes/` son de solo

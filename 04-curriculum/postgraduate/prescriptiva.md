@@ -1,7 +1,7 @@
 ---
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -21,14 +21,14 @@ es obligatoria: una política puede ejecutar una acción de bajo riesgo o
 producir una recomendación que requiere aprobación humana, y en ambos
 casos declara su cadencia y su necesidad de respuesta.
 
-## Condición de entrada
+## Conocimientos requeridos
 
-El curso es autocontenido. Supone una formación profesional cuantitativa
-(ingeniería, matemáticas, estadística, economía, administración,
-computación y afines) o una preparación equivalente en análisis
-cuantitativo o manejo de información. No supone ningún otro curso del
-programa ni una cohorte homogénea; la nivelación que defina el programa es
-acompañamiento institucional, no un prerrequisito.
+El curso los presupone y no los enseña.
+
+- Programación básica en Python: estructuras de datos, funciones y
+  manejo de tablas de datos.
+- Álgebra lineal y cálculo básicos.
+- Probabilidad básica: distribuciones y valor esperado.
 
 ## Resultados de aprendizaje
 

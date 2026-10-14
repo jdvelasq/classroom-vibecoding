@@ -57,8 +57,8 @@ run `writing-learning-outcomes` first.
    `aporte`. Every postgraduate course is self-contained: its students
    have not taken the undergraduate courses.
 2. **Postgraduate courses.** For each postgraduate course, write
-   `04-curriculum/postgraduate/<folder>.md`: its purpose, its entry
-   condition (never an undergraduate course), its learning outcomes
+   `04-curriculum/postgraduate/<folder>.md`: its purpose, its required
+   knowledge (what it presupposes and does not teach, never a course), its learning outcomes
    copied from its rows of the matrix with the same level and `aporte`,
    and its boundaries with the other courses.
 3. **Undergraduate courses.** For each undergraduate course, write

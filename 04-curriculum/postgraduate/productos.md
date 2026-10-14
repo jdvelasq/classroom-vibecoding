@@ -1,7 +1,7 @@
 ---
 curso: "productos"
 nivel: "posgrado"
-format_version: "0.2"
+format_version: "0.3"
 fecha: "2026-10-14"
 ---
 
@@ -19,16 +19,14 @@ de servicio y criterios de éxito), desplegada y monitoreada en su
 desempeño, la calidad de sus datos y su uso. Las prácticas de DataOps y
 MLOps entran cuando hacen operable una capacidad analítica concreta.
 
-## Condición de entrada
+## Conocimientos requeridos
 
-El curso es autocontenido. Supone una formación profesional cuantitativa
-(ingeniería, matemáticas, estadística, economía, administración,
-computación y afines) o una preparación equivalente en análisis
-cuantitativo o manejo de información. No supone ningún otro curso del
-programa ni una cohorte homogénea: parte de una capacidad analítica dada
-por el caso, sin exigir que el estudiante la haya construido en otro
-curso. La nivelación que defina el programa es acompañamiento
-institucional, no un prerrequisito.
+El curso los presupone y no los enseña.
+
+- Programación básica en Python: funciones, módulos y paquetes.
+- Uso básico de la línea de comandos.
+- Lectura de un análisis o de un modelo ya construido: el curso parte de
+  una capacidad analítica dada por el caso.
 
 ## Resultados de aprendizaje
 
