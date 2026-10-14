@@ -1,7 +1,7 @@
 ---
 curso: "data"
 nivel: "pregrado"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-13"
 ---
 

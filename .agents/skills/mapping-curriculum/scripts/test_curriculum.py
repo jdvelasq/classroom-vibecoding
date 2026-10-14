@@ -39,7 +39,7 @@ def layout(tmp_path):
     layout = lib.Layout(tmp_path)
     for folder in (layout.home, layout.undergraduate, layout.outcomes, layout.map, layout.domain.parent):
         folder.mkdir(parents=True, exist_ok=True)
-    layout.format.write_text("# Formato\n\nVersión 0.4 (borrador)\n", encoding="utf-8")
+    layout.format.write_text("# Formato\n\nVersión 0.5 (borrador)\n", encoding="utf-8")
     layout.domain.write_text(DOMAIN, encoding="utf-8")
     write_courses(layout)
     write_competency(layout, "C001", ["analítica descriptiva", "analítica prescriptiva", "ingeniería de datos para la analítica"])
@@ -51,7 +51,7 @@ def layout(tmp_path):
     return layout
 
 
-def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.4"):
+def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.5"):
     folders = purposes if purposes is not None else [r.split("|")[1].strip() for r in rows]
     text = f"""---
 format_version: "{version}"
@@ -139,7 +139,7 @@ def write_undergraduate(layout, outcomes=GOOD_OUTCOMES, curso="data", body_extra
     text = f"""---
 curso: "{curso}"
 nivel: "{nivel}"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ---
 
@@ -178,14 +178,20 @@ def default_course_outcomes(outcomes):
     ]
 
 
+IDENTITY = """- Pregunta: qué ocurre.
+- Producto terminal: una descripción interpretada.
+- Disciplinas contribuyentes: la estadística aporta medidas.
+- Riesgo: parecer un curso de estadística."""
+
+
 def write_postgraduate(layout, curso, outcomes, entry="- Programación básica en Python.", nivel="posgrado",
-                       course_outcomes=None):
+                       course_outcomes=None, identity=IDENTITY):
     course_outcomes = course_outcomes if course_outcomes is not None else default_course_outcomes(outcomes)
     bullets = "\n".join(f"- {ra}, {level}: Aporte del curso." for ra, level in outcomes)
     text = f"""---
 curso: "{curso}"
 nivel: "{nivel}"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ---
 
@@ -194,6 +200,10 @@ fecha: "2026-10-14"
 ## Propósito
 
 Responder una pregunta analítica con un producto terminal.
+
+## Identidad
+
+{identity}
 
 ## Conocimientos requeridos
 
@@ -231,12 +241,12 @@ def write_all_postgraduate(layout):
 def postgraduate_errors(layout, curso):
     rows, _ = lib.read_matrix(layout)
     _, courses = lib.load_courses(layout)
-    return lib.validate_postgraduate(lib.parse(layout.postgraduate / f"{curso}.md"), courses, rows, "0.4")
+    return lib.validate_postgraduate(lib.parse(layout.postgraduate / f"{curso}.md"), courses, rows, "0.5")
 
 
 def courses_errors(layout):
     document, courses = lib.load_courses(layout)
-    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.4")
+    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.5")
 
 
 def matrix_check(layout):
@@ -249,7 +259,7 @@ def matrix_check(layout):
 def undergraduate_check(layout, curso="data"):
     _, courses = lib.load_courses(layout)
     document = lib.parse(layout.undergraduate / f"{curso}.md")
-    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.4")
+    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.5")
 
 
 # courses.md
@@ -350,10 +360,15 @@ def test_matrix_row_rules(layout, row, message):
 
 
 def test_a_course_outside_the_outcome_subfields_is_a_warning(layout):
-    write_matrix(layout, rows=GOOD_MATRIX + ["RA01,generativa,desarrolla,Usa un asistente.,2026-10-14"])
+    write_matrix(layout, rows=GOOD_MATRIX + ["RA02,descriptiva,introduce,Presenta la política.,2026-10-14"])
     errors, warnings = matrix_check(layout)
     assert errors == []
-    assert any("generativa shares no subfield with the competencies of RA01" in w for w in warnings), warnings
+    assert any("descriptiva shares no subfield with the competencies of RA02" in w for w in warnings), warnings
+
+
+def test_the_transversal_course_may_work_on_any_outcome(layout):
+    write_matrix(layout, rows=GOOD_MATRIX + ["RA01,generativa,desarrolla,Usa un asistente.,2026-10-14"])
+    assert matrix_check(layout) == ([], [])
 
 
 def test_an_outcome_changed_after_its_row_is_a_warning(layout):
@@ -538,6 +553,20 @@ def test_the_number_of_course_outcomes_is_bounded(layout):
     assert any("it needs 3 to 6" in e for e in errors), errors
 
 
+@pytest.mark.parametrize(
+    "identity, message",
+    [
+        (IDENTITY.rsplit("\n", 1)[0], "must have the bullets Pregunta, Producto terminal, Disciplinas contribuyentes, Riesgo"),
+        (IDENTITY.replace("una descripción interpretada.", ""), "'Producto terminal' is empty"),
+    ],
+)
+def test_the_identity_audit_is_required(layout, identity, message):
+    write_matrix(layout)
+    write_postgraduate(layout, "descriptiva", GOOD_POSTGRADUATE["descriptiva"], identity=identity)
+    errors = postgraduate_errors(layout, "descriptiva")
+    assert any(message in e for e in errors), errors
+
+
 def test_an_undergraduate_course_cannot_have_a_postgraduate_file(layout):
     write_matrix(layout)
     write_postgraduate(layout, "data", [])
@@ -639,8 +668,8 @@ def test_the_worked_examples_of_format_md_validate_against_the_real_repository(t
     graduate_example, undergraduate_example = re.findall(r"^````markdown\n(.*?)^````$", text, re.M | re.S)
     path = tmp_path / "prescriptiva.md"
     path.write_text(graduate_example, encoding="utf-8")
-    assert lib.validate_postgraduate(lib.parse(path), courses, rows, "0.4") == []
+    assert lib.validate_postgraduate(lib.parse(path), courses, rows, "0.5") == []
     path = tmp_path / "data.md"
     path.write_text(undergraduate_example, encoding="utf-8")
-    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.4")
+    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.5")
     assert errors == []

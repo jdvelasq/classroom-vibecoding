@@ -1,8 +1,8 @@
 ---
 curso: "productos"
 nivel: "posgrado"
-format_version: "0.4"
-fecha: "2026-10-14"
+format_version: "0.5"
+fecha: "2026-10-13"
 ---
 
 # Productos de datos
@@ -19,6 +19,20 @@ de servicio y criterios de éxito), desplegada y monitoreada en su
 desempeño, la calidad de sus datos y su uso. Las prácticas de DataOps y
 MLOps entran cuando hacen operable una capacidad analítica concreta.
 
+## Identidad
+
+- Pregunta: cómo se opera de forma responsable una capacidad analítica
+  para que sus usuarios la usen con confianza.
+- Producto terminal: una capacidad analítica versionada, comprobable,
+  desplegada y observable; no un modelo, una política o una arquitectura
+  aislados.
+- Disciplinas contribuyentes: DataOps, MLOps, ingeniería de software,
+  ingeniería de datos, seguridad y gobierno aportan prácticas de
+  operación al servicio de una capacidad con propósito y usuarios.
+- Riesgo: confundirse con formación genérica en nube, herramientas o
+  arquitectura empresarial; se evita exigiendo que cada actividad opere
+  una capacidad analítica concreta.
+
 ## Conocimientos requeridos
 
 El curso los presupone y no los enseña.
@@ -30,12 +44,53 @@ El curso los presupone y no los enseña.
 
 ## Resultados de aprendizaje
 
-Se completa con las filas de `matrix.csv` para este curso.
+- RA02, desarrolla: Lleva la política a un producto que la ejecuta y
+  registra sus resultados para revisarla.
+- RA03, desarrolla: Valida con contratos y pruebas de calidad los datos
+  que alimentan el producto en operación.
+- RA07, domina: Despliega la solución analítica validada en el proceso
+  de la organización y monitorea su desempeño en producción.
 
 ## Resultados del curso
 
-Se derivan de los resultados de aprendizaje anteriores cuando exista
-`matrix.csv`.
+### RC01. Llevar una política de decisión a un producto
+
+- Enunciado: Llevar una política de decisión ya diseñada a un producto
+  que la ejecute en un proceso de la organización y registre sus
+  resultados para que pueda revisarse.
+- Resultados de aprendizaje: RA02.
+- Evaluación: Producto que ejecuta la política sobre casos del proceso,
+  con el registro de resultados que permite revisarla [RA02].
+
+### RC02. Desplegar la capacidad analítica como producto versionado
+
+- Enunciado: Desplegar una capacidad analítica validada como un producto
+  versionado, con su contrato operativo, en un proceso de la
+  organización.
+- Resultados de aprendizaje: RA07.
+- Evaluación: Producto desplegado con su contrato operativo (usuarios,
+  decisión que apoya, entradas, salidas, límites, nivel de servicio y
+  criterios de éxito) y evidencia de su verificación en producción
+  [RA07].
+
+### RC03. Monitorear y decidir sobre el producto en producción
+
+- Enunciado: Monitorear el desempeño, la calidad de los datos y el uso
+  de un producto analítico en producción, y decidir, con indicadores
+  propios, cuándo recalibrarlo o renovarlo.
+- Resultados de aprendizaje: RA07.
+- Evaluación: Tablero o informe de monitoreo con indicadores de
+  desempeño, calidad de datos y uso, y la decisión tomada frente a ellos
+  [RA07].
+
+### RC04. Validar los datos que alimentan el producto
+
+- Enunciado: Validar los datos que alimentan un producto analítico en
+  operación mediante contratos de datos y pruebas de calidad
+  automatizadas, frente al uso operativo previsto.
+- Resultados de aprendizaje: RA03.
+- Evaluación: Contratos y pruebas de calidad integrados al producto, con
+  la evidencia de que detienen datos que incumplen el contrato [RA03].
 
 ## Alcance
 

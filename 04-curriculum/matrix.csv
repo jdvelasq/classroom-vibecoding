@@ -1,0 +1,17 @@
+ra,curso,nivel,aporte,fecha
+RA01,descriptiva,introduce,Plantea la pregunta descriptiva de un caso y sus medidas de éxito antes de explorar los datos.,2026-10-13
+RA01,predictiva,desarrolla,"Formula el problema predictivo con horizonte, línea base y costo de los errores y lo sustenta ante el profesor.",2026-10-13
+RA01,prescriptiva,domina,Formula y sustenta ante un panel el problema de decisión completo que da origen a la política.,2026-10-13
+RA02,prescriptiva,domina,"Diseña la política de decisión con salvaguardas, autoridad humana, cadencia y seguimiento.",2026-10-13
+RA02,productos,desarrolla,Lleva la política a un producto que la ejecuta y registra sus resultados para revisarla.,2026-10-13
+RA03,descriptiva,introduce,"Evalúa la calidad de los datos del caso (faltantes, atípicos, consistencia) antes de describirlos, porque la descripción depende de ella.",2026-10-14
+RA03,predictiva,desarrolla,"Prepara los datos del caso para predecir, evitando la fuga de información y documentando sus sesgos y límites.",2026-10-14
+RA03,big-data,domina,"Construye el conjunto de datos analítico a un volumen, variedad o velocidad que exige cómputo distribuido, con sus decisiones de partición, costo y tiempo de respuesta justificadas.",2026-10-13
+RA03,productos,desarrolla,Valida con contratos y pruebas de calidad los datos que alimentan el producto en operación.,2026-10-14
+RA04,descriptiva,domina,Construye el reporte o tablero descriptivo que responde la pregunta del caso con métricas y visualizaciones.,2026-10-13
+RA04,generativa,desarrolla,"Usa un asistente de IA generativa para explorar y explicar más a fondo una descripción analítica ya construida, verificando sus hallazgos frente a los datos.",2026-10-13
+RA05,descriptiva,domina,Estima el efecto de un factor sobre un resultado del caso y discute los límites de causalidad de su diseño.,2026-10-13
+RA06,predictiva,domina,"Construye y valida el modelo predictivo del caso, justificado frente a alternativas.",2026-10-13
+RA06,generativa,desarrolla,"Usa un agente de IA generativa para preparar datos y ejecutar o extender un modelo predictivo ya construido, verificando y auditando lo que produce.",2026-10-13
+RA07,predictiva,introduce,Documenta el modelo y especifica los indicadores con los que se monitorearía su desempeño y se decidiría revisarlo.,2026-10-14
+RA07,productos,domina,Despliega la solución analítica validada en el proceso de la organización y monitorea su desempeño en producción.,2026-10-13

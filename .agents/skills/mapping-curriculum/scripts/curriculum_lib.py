@@ -13,6 +13,7 @@ SKILLS = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(SKILLS / "mapping-competencies" / "scripts"))
 sys.path.insert(0, str(SKILLS / "writing-learning-outcomes" / "scripts"))
 from competency_lib import (  # noqa: E402
+    TRANSVERSAL,
     Competency as Document,
     collapse,
     document_version,
@@ -26,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[4]
 
 # The checks below implement exactly this version of 04-curriculum/format.md;
 # a new version must be reviewed here first.
-SUPPORTED_FORMAT_VERSION = "0.4"
+SUPPORTED_FORMAT_VERSION = "0.5"
 
 POSTGRADUATE = "posgrado"
 UNDERGRADUATE = "pregrado"
@@ -44,7 +45,9 @@ MATRIX_COLUMNS = ["ra", "curso", "nivel", "aporte", "fecha"]
 COURSE_FILE_KEYS = ["curso", "nivel", "format_version", "fecha"]
 REQUIRED_KNOWLEDGE = "Conocimientos requeridos"
 COURSE_OUTCOMES = "Resultados del curso"
-POSTGRADUATE_SECTIONS = ["Propósito", REQUIRED_KNOWLEDGE, "Resultados de aprendizaje", COURSE_OUTCOMES, "Alcance"]
+IDENTITY = "Identidad"
+IDENTITY_LABELS = ["Pregunta", "Producto terminal", "Disciplinas contribuyentes", "Riesgo"]
+POSTGRADUATE_SECTIONS = ["Propósito", IDENTITY, REQUIRED_KNOWLEDGE, "Resultados de aprendizaje", COURSE_OUTCOMES, "Alcance"]
 POSTGRADUATE_OUTCOME_LABELS = ["Enunciado", "Resultados de aprendizaje", "Evaluación"]
 UNDERGRADUATE_SECTIONS = ["Propósito", "Resultados del curso", "Alcance"]
 COURSE_OUTCOME_LABELS = ["Enunciado", "Competencias", "Evaluación"]
@@ -273,8 +276,9 @@ def validate_matrix(rows: list[MatrixRow], courses: list[Course], outcomes: dict
         outcome = outcomes[row.ra]
         if str(outcome.header.get("fecha", "")) > row.fecha:
             warnings.append(f"{where}: {row.ra} changed after this row was set; review it")
-        shared = set(by_folder[row.curso].subfields) & subfields_of(outcome, competencies)
-        if not shared:
+        taught_here = set(by_folder[row.curso].subfields)
+        shared = taught_here & subfields_of(outcome, competencies)
+        if not shared and TRANSVERSAL not in taught_here:
             warnings.append(f"{where}: {row.curso} shares no subfield with the competencies of {row.ra}; justify it in aporte")
 
     for ra in outcomes:
@@ -344,6 +348,12 @@ def validate_postgraduate(document: Document, courses: list[Course], rows: list[
     for other in undergraduate(courses):
         if mentions(document.body, other):
             error(f"a postgraduate course is self-contained and does not cite the undergraduate course {other.folder}")
+    identity = labelled(document.sections.get(IDENTITY, ""))
+    if [label for label, _ in identity] != IDENTITY_LABELS:
+        error(f"{IDENTITY} must have the bullets {', '.join(IDENTITY_LABELS)}, in order")
+    for label, text in identity:
+        if label in IDENTITY_LABELS and not text:
+            error(f"{IDENTITY}: '{label}' is empty")
     knowledge = document.bullets(REQUIRED_KNOWLEDGE)
     if not knowledge:
         error(f"{REQUIRED_KNOWLEDGE} must list, one bullet each, what the course presupposes and does not teach")

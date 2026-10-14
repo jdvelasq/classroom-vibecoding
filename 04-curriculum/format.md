@@ -1,6 +1,6 @@
 # Formato del plan de cursos y de la matriz de resultados
 
-Versión 0.4 (borrador)
+Versión 0.5 (borrador)
 
 ## Propósito
 
@@ -85,30 +85,39 @@ dominio, y la fila dice `domina`.
 Cada curso de posgrado tiene su ficha. Es la vista por curso de la matriz:
 lo que el syllabus de `05-syllabus/<carpeta>/` toma como punto de partida.
 
-El archivo tiene un encabezado YAML y cinco secciones, en este orden:
-`## Propósito`, `## Conocimientos requeridos`,
+El archivo tiene un encabezado YAML y seis secciones, en este orden:
+`## Propósito`, `## Identidad`, `## Conocimientos requeridos`,
 `## Resultados de aprendizaje`, `## Resultados del curso` y `## Alcance`.
 
 ```yaml
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ```
 
 1. **Propósito**: un párrafo coherente con el propósito de `courses.md`:
    qué pregunta analítica responde el curso y qué producto terminal
    entrega el estudiante.
-2. **Conocimientos requeridos**: una viñeta por conocimiento que el
+2. **Identidad**: la auditoría de identidad de `AGENTS.md` aplicada al
+   curso, en cuatro viñetas, en este orden:
+   - `- Pregunta: …` La pregunta analítica que responde el curso.
+   - `- Producto terminal: …` Lo que entrega el estudiante al terminar, y
+     lo que no basta como producto (un modelo aislado, una plataforma).
+   - `- Disciplinas contribuyentes: …` Qué aportan y por qué no organizan
+     el curso.
+   - `- Riesgo: …` La versión abreviada de una disciplina contribuyente
+     con la que el curso podría confundirse, y cómo se evita.
+3. **Conocimientos requeridos**: una viñeta por conocimiento que el
    curso presupone y no enseña, por ejemplo la programación básica en
    Python en `predictiva`. El curso es autocontenido: presupone
    conocimientos, nunca cursos, así que esta sección no nombra ningún
    curso de `courses.md`. Lo que se presupone aquí no se enseña en el
    curso.
-3. **Resultados de aprendizaje**: una viñeta por fila de `matrix.csv` con
+4. **Resultados de aprendizaje**: una viñeta por fila de `matrix.csv` con
    ese curso, en orden de `id`: `- RA02, domina: aporte.` El nivel y el
    aporte son los de la matriz.
-4. **Resultados del curso**: lo que el estudiante demuestra al terminar
+5. **Resultados del curso**: lo que el estudiante demuestra al terminar
    este curso, derivado de los resultados de aprendizaje que la matriz le
    asigna. Una subsección por resultado, `### RC01. Título`, con tres
    viñetas en este orden:
@@ -128,7 +137,7 @@ fecha: "2026-10-14"
    matriz asigna al curso tiene al menos un resultado del curso que deriva
    de él. Los resultados del programa no se reescriben desde aquí. Fuera
    del archivo se citan con la carpeta: `prescriptiva/RC01`.
-5. **Alcance**: las fronteras con los demás cursos (qué le corresponde a
+6. **Alcance**: las fronteras con los demás cursos (qué le corresponde a
    cada uno cuando un tema los toca a ambos) y lo que queda fuera.
 
 ## Cursos de pregrado: `undergraduate/<carpeta>.md`
@@ -145,7 +154,7 @@ El archivo tiene un encabezado YAML y tres secciones, en este orden:
 ```yaml
 curso: "data"
 nivel: "pregrado"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ```
 
@@ -189,25 +198,31 @@ propósito del curso en `courses.md` (Python, en `fundamentos`).
 6. Un curso trabaja resultados de su propio campo: si los subcampos del
    curso no comparten ninguno con los de las competencias del resultado,
    se informa como advertencia para que el modelo lo justifique en el
-   `aporte`.
-7. Cada curso de pregrado tiene entre 3 y 6 resultados de curso, y cada
+   `aporte`. Un curso de la tendencia transversal (IA generativa y
+   agéntica) puede trabajar resultados de cualquier subcampo.
+7. Autocontención y productos completos: como ningún curso presupone
+   otro, un resultado del que depende el producto terminal de un curso
+   (por ejemplo, preparar los datos que el curso analiza) aparece en ese
+   curso al menos como `introduce`. Lo juzga quien propone la matriz.
+8. Cada curso de pregrado tiene entre 3 y 6 resultados de curso, y cada
    subcampo que `courses.md` le asigna queda cubierto por al menos un
    resultado cuyas competencias lo incluyan.
-8. Los cursos de pregrado no citan resultados de aprendizaje del programa
+9. Los cursos de pregrado no citan resultados de aprendizaje del programa
    (`RA01`, …).
-9. Todo curso de posgrado tiene su ficha, y sus resultados de aprendizaje
+10. Todo curso de posgrado tiene su ficha, y sus resultados de aprendizaje
    coinciden con las filas de `matrix.csv` para ese curso, con el mismo
-   nivel. La ficha declara al menos un conocimiento requerido, sus
-   conocimientos requeridos no nombran cursos, la ficha no cita cursos de
-   pregrado, y sus resultados del curso cubren todos sus resultados de
-   aprendizaje.
-10. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
+    nivel. La ficha tiene las cuatro viñetas de identidad, declara al
+    menos un conocimiento requerido, sus conocimientos requeridos no
+    nombran cursos, no cita cursos de pregrado, y sus resultados del curso
+    cubren todos sus resultados de aprendizaje.
+11. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
    versión abreviada de una disciplina contribuyente. El curso de
    prescriptiva domina resultados que terminan en una política de
    decisión, no en un modelo.
 
-Las reglas 1 a 9 las comprueba la skill `mapping-curriculum`. La regla 10 la
-juzga quien propone la matriz y se informa a david.
+Las reglas 1 a 6 y 8 a 10 las comprueba la skill `mapping-curriculum`.
+Las reglas 7 y 11 las juzga quien propone la matriz y se informan a
+david.
 
 ## Ejemplo trabajado
 
@@ -238,7 +253,7 @@ La ficha de `prescriptiva` que corresponde a esas filas:
 ---
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ---
 
@@ -250,6 +265,18 @@ Diseñar, validar y gobernar políticas de decisión para decisiones
 recurrentes de una organización: el producto terminal es una política que
 va del contexto observado a una acción factible, con salvaguardas,
 autoridad humana y seguimiento.
+
+## Identidad
+
+- Pregunta: qué acción recurrente debe tomarse bajo cuáles objetivos,
+  restricciones, salvaguardas, excepciones y mecanismo de revisión.
+- Producto terminal: una política operable y gobernada; un modelo, una
+  frontera de Pareto o una simulación aislados no bastan.
+- Disciplinas contribuyentes: la optimización, la simulación y los
+  modelos predictivos aportan factibilidad y evidencia a la política.
+- Riesgo: confundirse con un curso abreviado de investigación de
+  operaciones; se evita exigiendo que cada actividad termine en una
+  política.
 
 ## Conocimientos requeridos
 
@@ -310,7 +337,7 @@ Resultados de un curso de pregrado:
 ---
 curso: "data"
 nivel: "pregrado"
-format_version: "0.4"
+format_version: "0.5"
 fecha: "2026-10-14"
 ---
 
@@ -359,6 +386,10 @@ los datos de una pregunta analítica.
 
 ## Versión y cambios
 
+- 0.5 (2026-10-14): la ficha de posgrado agrega `Identidad` y la regla 7
+  (productos completos), tomadas del diseño anterior de los cursos
+  (`design/synthesis/s05-diseno-*.md`); un curso de la tendencia
+  transversal puede trabajar resultados de cualquier subcampo.
 - 0.4 (2026-10-14): la ficha de posgrado agrega `Resultados del curso`,
   derivados de los resultados de aprendizaje que la matriz asigna al
   curso.

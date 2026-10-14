@@ -54,10 +54,18 @@ run `writing-learning-outcomes` first.
    outcome, choose the postgraduate courses that work on it and the level
    in each, following the course order of `courses.md`. Start from the
    subfields of its competencies; a course outside them needs a reason in
-   `aporte`. Every postgraduate course is self-contained: its students
-   have not taken the undergraduate courses.
+   `aporte`. Every postgraduate course is self-contained: it presupposes
+   knowledge, never another course. So check each course the other way
+   round too: list what its terminal product depends on (formulating the
+   problem, preparing and assessing its data, communicating, monitoring
+   what it delivers) and give each of those outcomes at least an
+   `introduce` row in that course. A later course that uses a method does
+   not teach it again: its row says what it adds.
 2. **Postgraduate courses.** For each postgraduate course, write
-   `04-curriculum/postgraduate/<folder>.md`: its purpose, its required
+   `04-curriculum/postgraduate/<folder>.md`: its purpose; its identity
+   (the analytical question, the terminal product and what alone is not
+   enough, what the contributing disciplines add, and the abbreviated
+   discipline course it could be mistaken for); its required
    knowledge (what it presupposes and does not teach, never a course), its learning outcomes
    copied from its rows of the matrix with the same level and `aporte`,
    its own course outcomes derived from those learning outcomes at the
