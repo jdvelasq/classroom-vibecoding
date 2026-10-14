@@ -39,7 +39,7 @@ def layout(tmp_path):
     layout = lib.Layout(tmp_path)
     for folder in (layout.home, layout.undergraduate, layout.outcomes, layout.map, layout.domain.parent):
         folder.mkdir(parents=True, exist_ok=True)
-    layout.format.write_text("# Formato\n\nVersión 0.3 (borrador)\n", encoding="utf-8")
+    layout.format.write_text("# Formato\n\nVersión 0.4 (borrador)\n", encoding="utf-8")
     layout.domain.write_text(DOMAIN, encoding="utf-8")
     write_courses(layout)
     write_competency(layout, "C001", ["analítica descriptiva", "analítica prescriptiva", "ingeniería de datos para la analítica"])
@@ -51,7 +51,7 @@ def layout(tmp_path):
     return layout
 
 
-def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.3"):
+def write_courses(layout, rows=COURSE_ROWS, purposes=None, version="0.4"):
     folders = purposes if purposes is not None else [r.split("|")[1].strip() for r in rows]
     text = f"""---
 format_version: "{version}"
@@ -139,7 +139,7 @@ def write_undergraduate(layout, outcomes=GOOD_OUTCOMES, curso="data", body_extra
     text = f"""---
 curso: "{curso}"
 nivel: "{nivel}"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ---
 
@@ -161,12 +161,31 @@ Presentar la ingeniería de datos para la analítica.{body_extra}
     return path
 
 
-def write_postgraduate(layout, curso, outcomes, entry="- Programación básica en Python.", nivel="posgrado"):
+def course_outcome_blocks(course_outcomes):
+    return "\n".join(
+        f"### {rid}. Título\n\n- Enunciado: {statement}\n- Resultados de aprendizaje: {ras}.\n- Evaluación: {assessment}\n"
+        for rid, statement, ras, assessment in course_outcomes
+    )
+
+
+def default_course_outcomes(outcomes):
+    ras = ", ".join(ra for ra, _ in outcomes)
+    cited = "; ".join(ra for ra, _ in outcomes)
+    return [
+        ("RC01", "Formular el problema del curso.", ras, f"Planteamiento [{cited}]."),
+        ("RC02", "Construir el producto del curso.", ras, f"Producto [{cited}]."),
+        ("RC03", "Evaluar el producto frente a alternativas.", ras, f"Evaluación [{cited}]."),
+    ]
+
+
+def write_postgraduate(layout, curso, outcomes, entry="- Programación básica en Python.", nivel="posgrado",
+                       course_outcomes=None):
+    course_outcomes = course_outcomes if course_outcomes is not None else default_course_outcomes(outcomes)
     bullets = "\n".join(f"- {ra}, {level}: Aporte del curso." for ra, level in outcomes)
     text = f"""---
 curso: "{curso}"
 nivel: "{nivel}"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ---
 
@@ -184,6 +203,9 @@ Responder una pregunta analítica con un producto terminal.
 
 {bullets}
 
+## Resultados del curso
+
+{course_outcome_blocks(course_outcomes)}
 ## Alcance
 
 - Fronteras con los demás cursos.
@@ -209,12 +231,12 @@ def write_all_postgraduate(layout):
 def postgraduate_errors(layout, curso):
     rows, _ = lib.read_matrix(layout)
     _, courses = lib.load_courses(layout)
-    return lib.validate_postgraduate(lib.parse(layout.postgraduate / f"{curso}.md"), courses, rows, "0.3")
+    return lib.validate_postgraduate(lib.parse(layout.postgraduate / f"{curso}.md"), courses, rows, "0.4")
 
 
 def courses_errors(layout):
     document, courses = lib.load_courses(layout)
-    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.3")
+    return lib.validate_courses(document, courses, lib.course_subfields(layout), "0.4")
 
 
 def matrix_check(layout):
@@ -227,7 +249,7 @@ def matrix_check(layout):
 def undergraduate_check(layout, curso="data"):
     _, courses = lib.load_courses(layout)
     document = lib.parse(layout.undergraduate / f"{curso}.md")
-    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.3")
+    return lib.validate_undergraduate(document, courses, lib.load_competencies(layout), "0.4")
 
 
 # courses.md
@@ -464,6 +486,58 @@ def test_required_knowledge_is_knowledge_not_courses(layout, entry, message):
     assert any(message in e for e in errors), errors
 
 
+def test_course_outcomes_derive_from_the_course_learning_outcomes(layout):
+    write_matrix(layout)
+    write_postgraduate(layout, "prescriptiva", GOOD_POSTGRADUATE["prescriptiva"], course_outcomes=[
+        ("RC01", "Formular el problema.", "RA01", "Planteamiento [RA01]."),
+        ("RC02", "Diseñar una política.", "RA01", "Política [RA01]."),
+        ("RC03", "Validar una política.", "RA01", "Validación [RA01]."),
+    ])
+    errors = postgraduate_errors(layout, "prescriptiva")
+    assert errors == [
+        "postgraduate/prescriptiva.md: no course outcome derives from RA02, which matrix.csv assigns to prescriptiva"
+    ]
+
+
+@pytest.mark.parametrize(
+    "outcome, message",
+    [
+        (("RC03", "Diseñar una política.", "RA03", "Política [RA03]."), "RA03, which matrix.csv does not assign"),
+        (("RC03", "Diseñar una política.", "", "Política."), "must derive from at least one learning outcome"),
+        (("RC03", "Diseñar una política.", "RA02", "Política [RA01]."), "cites undeclared RA01"),
+        (("RC03", "Diseñar una política.", "RA02", "Política sin corchete."), "lacks its learning outcomes"),
+        (("RC03", "Comprender una política.", "RA02", "Política [RA02]."), "'comprender' is not observable"),
+        (("RC03", "Describir una política.", "RA02", "Política [RA02]."), "below postgraduate level"),
+        (("RC03", "Diseñar una política. Luego otra.", "RA02", "Política [RA02]."), "single sentence"),
+        (("RC04", "Diseñar una política.", "RA02", "Política [RA02]."), "must be RC01, RC02, RC03, in order"),
+    ],
+)
+def test_course_outcome_rules(layout, outcome, message):
+    write_matrix(layout)
+    base = default_course_outcomes(GOOD_POSTGRADUATE["prescriptiva"])[:2]
+    write_postgraduate(layout, "prescriptiva", GOOD_POSTGRADUATE["prescriptiva"], course_outcomes=base + [outcome])
+    errors = postgraduate_errors(layout, "prescriptiva")
+    assert any(message in e for e in errors), errors
+
+
+def test_below_level_verbs_are_allowed_when_the_course_only_introduces(layout):
+    write_matrix(layout)
+    write_postgraduate(layout, "descriptiva", GOOD_POSTGRADUATE["descriptiva"], course_outcomes=[
+        ("RC01", "Describir la pregunta de un caso.", "RA01", "Planteamiento [RA01]."),
+        ("RC02", "Identificar las medidas de éxito.", "RA01", "Medidas [RA01]."),
+        ("RC03", "Formular el problema descriptivo.", "RA01", "Problema [RA01]."),
+    ])
+    assert postgraduate_errors(layout, "descriptiva") == []
+
+
+def test_the_number_of_course_outcomes_is_bounded(layout):
+    write_matrix(layout)
+    write_postgraduate(layout, "prescriptiva", GOOD_POSTGRADUATE["prescriptiva"],
+                       course_outcomes=default_course_outcomes(GOOD_POSTGRADUATE["prescriptiva"])[:2])
+    errors = postgraduate_errors(layout, "prescriptiva")
+    assert any("it needs 3 to 6" in e for e in errors), errors
+
+
 def test_an_undergraduate_course_cannot_have_a_postgraduate_file(layout):
     write_matrix(layout)
     write_postgraduate(layout, "data", [])
@@ -565,8 +639,8 @@ def test_the_worked_examples_of_format_md_validate_against_the_real_repository(t
     graduate_example, undergraduate_example = re.findall(r"^````markdown\n(.*?)^````$", text, re.M | re.S)
     path = tmp_path / "prescriptiva.md"
     path.write_text(graduate_example, encoding="utf-8")
-    assert lib.validate_postgraduate(lib.parse(path), courses, rows, "0.3") == []
+    assert lib.validate_postgraduate(lib.parse(path), courses, rows, "0.4") == []
     path = tmp_path / "data.md"
     path.write_text(undergraduate_example, encoding="utf-8")
-    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.3")
+    errors, _ = lib.validate_undergraduate(lib.parse(path), courses, lib.load_competencies(real), "0.4")
     assert errors == []

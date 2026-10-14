@@ -22,7 +22,8 @@ cursos introductorios de pregrado.
 - `matrix.csv`: resultados de aprendizaje × cursos de posgrado, con nivel
   `introduce`, `desarrolla` o `domina`.
 - `postgraduate/<carpeta>.md`: la ficha de cada curso de posgrado, con
-  sus resultados de aprendizaje según la matriz.
+  sus resultados de aprendizaje según la matriz y los resultados del
+  curso que derivan de ellos.
 - `undergraduate/<carpeta>.md`: los resultados de curso de `data` y
   `fundamentos`.
 

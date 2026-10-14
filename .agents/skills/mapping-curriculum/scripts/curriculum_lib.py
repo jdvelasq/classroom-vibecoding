@@ -20,13 +20,13 @@ from competency_lib import (  # noqa: E402
     normalize,
     parse,
 )
-from outcomes_lib import NON_OBSERVABLE_VERBS, OUTCOME_ID, OUTCOME_REF  # noqa: E402
+from outcomes_lib import BELOW_LEVEL_VERBS, NON_OBSERVABLE_VERBS, OUTCOME_ID, OUTCOME_REF  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[4]
 
 # The checks below implement exactly this version of 04-curriculum/format.md;
 # a new version must be reviewed here first.
-SUPPORTED_FORMAT_VERSION = "0.3"
+SUPPORTED_FORMAT_VERSION = "0.4"
 
 POSTGRADUATE = "posgrado"
 UNDERGRADUATE = "pregrado"
@@ -43,7 +43,9 @@ COURSES_SECTIONS = ["Lista de cursos", "Propósito", "Continuidad"]
 MATRIX_COLUMNS = ["ra", "curso", "nivel", "aporte", "fecha"]
 COURSE_FILE_KEYS = ["curso", "nivel", "format_version", "fecha"]
 REQUIRED_KNOWLEDGE = "Conocimientos requeridos"
-POSTGRADUATE_SECTIONS = ["Propósito", REQUIRED_KNOWLEDGE, "Resultados de aprendizaje", "Alcance"]
+COURSE_OUTCOMES = "Resultados del curso"
+POSTGRADUATE_SECTIONS = ["Propósito", REQUIRED_KNOWLEDGE, "Resultados de aprendizaje", COURSE_OUTCOMES, "Alcance"]
+POSTGRADUATE_OUTCOME_LABELS = ["Enunciado", "Resultados de aprendizaje", "Evaluación"]
 UNDERGRADUATE_SECTIONS = ["Propósito", "Resultados del curso", "Alcance"]
 COURSE_OUTCOME_LABELS = ["Enunciado", "Competencias", "Evaluación"]
 
@@ -118,6 +120,7 @@ class CourseOutcome:
     title: str
     statement: str
     competencies: tuple[str, ...]
+    program_outcomes: tuple[str, ...]
     assessment: str
     labels: tuple[str, ...]
 
@@ -368,6 +371,54 @@ def validate_postgraduate(document: Document, courses: list[Course], rows: list[
     for ra in sorted(set(listed) & set(expected)):
         if listed[ra] != expected[ra]:
             error(f"{ra} is '{listed[ra]}' here but '{expected[ra]}' in matrix.csv")
+    errors += validate_postgraduate_outcomes(document, course, expected)
+    return errors
+
+
+def validate_postgraduate_outcomes(document: Document, course: Course, expected: dict[str, str]) -> list[str]:
+    errors: list[str] = []
+    name = f"postgraduate/{document.path.name}"
+
+    def error(message: str) -> None:
+        errors.append(f"{name}: {message}")
+
+    outcomes = parse_course_outcomes(document)
+    if not MIN_COURSE_OUTCOMES <= len(outcomes) <= MAX_COURSE_OUTCOMES:
+        error(f"the course has {len(outcomes)} course outcomes; it needs {MIN_COURSE_OUTCOMES} to {MAX_COURSE_OUTCOMES}")
+    numbered = [f"RC{i:02d}" for i in range(1, len(outcomes) + 1)]
+    if [o.id for o in outcomes] != numbered:
+        error(f"course outcome ids must be {', '.join(numbered) or 'RC01, …'}, in order")
+    derived: set[str] = set()
+    for outcome in outcomes:
+        label = f"{course.folder}/{outcome.id}"
+        if list(outcome.labels) != POSTGRADUATE_OUTCOME_LABELS:
+            error(f"{label} must have the bullets {', '.join(POSTGRADUATE_OUTCOME_LABELS)}, in order")
+        statement = outcome.statement
+        if not statement.endswith(".") or re.search(r"\.\s+\S", statement):
+            error(f"{label}: the Enunciado must be a single sentence ending in a period")
+        cited = list(outcome.program_outcomes)
+        if not cited:
+            error(f"{label} must derive from at least one learning outcome of the course")
+        for ra in cited:
+            if ra not in expected:
+                error(f"{label} derives from {ra}, which matrix.csv does not assign to {course.folder}")
+        derived.update(cited)
+        verb = first_word(statement)
+        only_introduced = bool(cited) and all(expected.get(ra) == INTRODUCE for ra in cited)
+        if verb in NON_OBSERVABLE_VERBS:
+            error(f"{label}: verb '{verb}' is not observable")
+        elif verb in BELOW_LEVEL_VERBS and not only_introduced:
+            error(f"{label}: verb '{verb}' is below postgraduate level for an outcome the course develops or masters")
+        elif verb and not re.search(r"(ar|er|ir)$", verb):
+            error(f"{label}: '{verb}' is not an infinitive")
+        bracket = re.search(r"\[([^\]]*)\]\.?$", outcome.assessment)
+        refs = set(OUTCOME_REF.findall(bracket.group(1))) if bracket else set()
+        if not refs:
+            error(f"{label}: Evaluación lacks its learning outcomes in a final bracket")
+        elif refs - set(cited):
+            error(f"{label}: Evaluación cites undeclared {', '.join(sorted(refs - set(cited)))}")
+    for ra in sorted(set(expected) - derived):
+        error(f"no course outcome derives from {ra}, which matrix.csv assigns to {course.folder}")
     return errors
 
 
@@ -386,7 +437,7 @@ def labelled(block: str) -> list[tuple[str, str]]:
 
 
 def parse_course_outcomes(document: Document) -> list[CourseOutcome]:
-    text = document.sections.get("Resultados del curso", "")
+    text = document.sections.get(COURSE_OUTCOMES, "")
     found = []
     for match in re.finditer(r"^### (\S+?)\.\s*(.*?)\n(.*?)(?=^### |\Z)", text, re.M | re.S):
         pairs = labelled(match.group(3))
@@ -396,6 +447,7 @@ def parse_course_outcomes(document: Document) -> list[CourseOutcome]:
             title=match.group(2).strip(),
             statement=values.get("Enunciado", ""),
             competencies=tuple(COMPETENCY_REF.findall(values.get("Competencias", ""))),
+            program_outcomes=tuple(OUTCOME_REF.findall(values.get("Resultados de aprendizaje", ""))),
             assessment=values.get("Evaluación", ""),
             labels=tuple(label for label, _ in pairs),
         ))

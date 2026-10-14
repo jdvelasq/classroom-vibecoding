@@ -60,7 +60,9 @@ run `writing-learning-outcomes` first.
    `04-curriculum/postgraduate/<folder>.md`: its purpose, its required
    knowledge (what it presupposes and does not teach, never a course), its learning outcomes
    copied from its rows of the matrix with the same level and `aporte`,
-   and its boundaries with the other courses.
+   its own course outcomes derived from those learning outcomes at the
+   level the matrix gives them in this course, and its boundaries with
+   the other courses. Never rewrite the program's learning outcomes.
 3. **Undergraduate courses.** For each undergraduate course, write
    `04-curriculum/undergraduate/<folder>.md`. Draw its course outcomes
    directly from the included competencies whose subfields the course
@@ -91,7 +93,7 @@ Give david a short report:
 
 - the matrix table printed by the check, and which course masters each
   outcome;
-- the postgraduate course files written or changed;
+- the postgraduate course files written or changed, with their course outcomes;
 - the undergraduate course outcomes written or changed, with their
   competencies;
 - warnings left and anything that fits no course;

@@ -1,7 +1,7 @@
 ---
 curso: "descriptiva"
 nivel: "posgrado"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ---
 
@@ -28,6 +28,11 @@ El curso los presupone y no los enseña.
 ## Resultados de aprendizaje
 
 Se completa con las filas de `matrix.csv` para este curso.
+
+## Resultados del curso
+
+Se derivan de los resultados de aprendizaje anteriores cuando exista
+`matrix.csv`.
 
 ## Alcance
 

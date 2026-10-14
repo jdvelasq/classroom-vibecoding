@@ -1,6 +1,6 @@
 # Formato del plan de cursos y de la matriz de resultados
 
-Versión 0.3 (borrador)
+Versión 0.4 (borrador)
 
 ## Propósito
 
@@ -85,14 +85,14 @@ dominio, y la fila dice `domina`.
 Cada curso de posgrado tiene su ficha. Es la vista por curso de la matriz:
 lo que el syllabus de `05-syllabus/<carpeta>/` toma como punto de partida.
 
-El archivo tiene un encabezado YAML y cuatro secciones, en este orden:
+El archivo tiene un encabezado YAML y cinco secciones, en este orden:
 `## Propósito`, `## Conocimientos requeridos`,
-`## Resultados de aprendizaje` y `## Alcance`.
+`## Resultados de aprendizaje`, `## Resultados del curso` y `## Alcance`.
 
 ```yaml
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ```
 
@@ -108,7 +108,27 @@ fecha: "2026-10-14"
 3. **Resultados de aprendizaje**: una viñeta por fila de `matrix.csv` con
    ese curso, en orden de `id`: `- RA02, domina: aporte.` El nivel y el
    aporte son los de la matriz.
-4. **Alcance**: las fronteras con los demás cursos (qué le corresponde a
+4. **Resultados del curso**: lo que el estudiante demuestra al terminar
+   este curso, derivado de los resultados de aprendizaje que la matriz le
+   asigna. Una subsección por resultado, `### RC01. Título`, con tres
+   viñetas en este orden:
+   - `- Enunciado: …` Una oración evaluable que empieza con un verbo
+     observable en infinitivo y fija el nivel del curso: completo si el
+     curso domina el resultado del programa, parcial si lo introduce o lo
+     desarrolla. Los verbos de nivel inferior al posgrado (describir,
+     identificar…) solo se admiten cuando todos los resultados de los que
+     deriva se introducen en este curso.
+   - `- Resultados de aprendizaje: RA01, RA02.` Los resultados del
+     programa de los que deriva; solo los que la matriz asigna al curso.
+   - `- Evaluación: …` Qué produce el estudiante y qué se revisa,
+     terminado con los resultados del programa que evalúa entre
+     corchetes: `[RA01]` o `[RA01; RA02]`.
+
+   Entre 3 y 6 resultados por curso. Todo resultado de aprendizaje que la
+   matriz asigna al curso tiene al menos un resultado del curso que deriva
+   de él. Los resultados del programa no se reescriben desde aquí. Fuera
+   del archivo se citan con la carpeta: `prescriptiva/RC01`.
+5. **Alcance**: las fronteras con los demás cursos (qué le corresponde a
    cada uno cuando un tema los toca a ambos) y lo que queda fuera.
 
 ## Cursos de pregrado: `undergraduate/<carpeta>.md`
@@ -125,7 +145,7 @@ El archivo tiene un encabezado YAML y tres secciones, en este orden:
 ```yaml
 curso: "data"
 nivel: "pregrado"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ```
 
@@ -178,8 +198,9 @@ propósito del curso en `courses.md` (Python, en `fundamentos`).
 9. Todo curso de posgrado tiene su ficha, y sus resultados de aprendizaje
    coinciden con las filas de `matrix.csv` para ese curso, con el mismo
    nivel. La ficha declara al menos un conocimiento requerido, sus
-   conocimientos requeridos no nombran cursos, y la ficha no cita cursos
-   de pregrado.
+   conocimientos requeridos no nombran cursos, la ficha no cita cursos de
+   pregrado, y sus resultados del curso cubren todos sus resultados de
+   aprendizaje.
 10. Identidad (`AGENTS.md` en la raíz): ningún curso se reduce a una
    versión abreviada de una disciplina contribuyente. El curso de
    prescriptiva domina resultados que terminan en una política de
@@ -217,7 +238,7 @@ La ficha de `prescriptiva` que corresponde a esas filas:
 ---
 curso: "prescriptiva"
 nivel: "posgrado"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ---
 
@@ -243,6 +264,36 @@ autoridad humana y seguimiento.
 - RA02, domina: Diseña la política de decisión con salvaguardas, autoridad
   humana, cadencia y seguimiento.
 
+## Resultados del curso
+
+### RC01. Formular el contrato de la política
+
+- Enunciado: Formular una decisión operativa recurrente como el contrato
+  de una política, con su contexto observable, su responsable, su
+  cadencia, sus acciones, sus objetivos y sus restricciones, y
+  sustentarlo ante los interesados.
+- Resultados de aprendizaje: RA01, RA02.
+- Evaluación: Contrato de política sustentado ante un panel, con el
+  registro de los acuerdos [RA01; RA02].
+
+### RC02. Diseñar y validar la política
+
+- Enunciado: Diseñar una política que lleve el contexto observado a una
+  acción factible y validarla frente a la práctica actual, escenarios y
+  análisis de sensibilidad antes de operarla.
+- Resultados de aprendizaje: RA02.
+- Evaluación: Política con su modelo de soporte y su validación sobre
+  escenarios históricos o simulados [RA02].
+
+### RC03. Gobernar la política en operación
+
+- Enunciado: Establecer la autoridad humana, las salvaguardas, las
+  excepciones y los indicadores de seguimiento de una política, con los
+  umbrales que obligan a revisarla o suspenderla.
+- Resultados de aprendizaje: RA02.
+- Evaluación: Plan de gobierno de la política, con qué decide una
+  persona, qué se automatiza y cuándo se revisa [RA02].
+
 ## Alcance
 
 - Con `predictiva`: predictiva construye y valida la estimación;
@@ -259,7 +310,7 @@ Resultados de un curso de pregrado:
 ---
 curso: "data"
 nivel: "pregrado"
-format_version: "0.3"
+format_version: "0.4"
 fecha: "2026-10-14"
 ---
 
@@ -308,6 +359,9 @@ los datos de una pregunta analítica.
 
 ## Versión y cambios
 
+- 0.4 (2026-10-14): la ficha de posgrado agrega `Resultados del curso`,
+  derivados de los resultados de aprendizaje que la matriz asigna al
+  curso.
 - 0.3 (2026-10-14): la condición de entrada de la ficha de posgrado pasa a
   ser `Conocimientos requeridos`: el curso es autocontenido, presupone
   conocimientos que no enseña y nunca cursos.
