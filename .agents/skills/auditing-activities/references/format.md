@@ -389,7 +389,10 @@ sin **Estado** se lee como pendiente.
 ### `audit.md` — cobertura vigente
 
 Lo reescribe `apply_audit.py` en cada auditoría: fecha, executor, huella,
-entrada (ficha del curso y fecha de cada competencia), decisión por
+entrada (ficha del curso con su huella y fecha de cada competencia),
+estado del curso (`listo`, `listo con condiciones` o `no listo`), lo que
+quedó sin verificar, los defectos de `04-curriculum/` que se informan a
+david sin corregirlos, decisión por
 actividad, la tabla de señales con su nivel debido, su categoría y sus
 anclas con nivel, su propuesta o su razón, y la tabla de hitos fuera de lo
 que el curso debe enseñar.

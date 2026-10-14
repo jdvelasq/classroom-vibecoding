@@ -174,7 +174,11 @@ def add_source(text: str, task_id: str, source: str) -> str:
     return text[:match.end()] + "\n".join(lines) + text[end:]
 
 
-def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str]) -> str:
+def bullets(items: object, empty: str) -> str:
+    return "\n".join(f"- {item}" for item in as_list(items)) or empty
+
+
+def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str], source_digest: str) -> str:
     texts = {t.id: f"{t.statement} (nivel: {t.level})" for t in reqs.targets} | {i.id: i.text for i in reqs.items}
     outside = [f"| {e['actividad']} | {o['hito']} | {o['accion']} | {ids.get(str(o.get('propuesta')), o.get('propuesta') or '—')} "
                f"| {o['razon']} |"
@@ -207,7 +211,18 @@ def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str]) -> str:
 
 - **Fecha / executor:** {audit['fecha']} / {audit['executor']}.
 - **Huella de la auditoría:** `sha256:{digest}`.
-- **Entrada:** `{reqs.source}`; competencias {dates}.
+- **Entrada:** `{reqs.source}` (`sha256:{source_digest}`); competencias {dates}.
+- **Estado del curso:** {audit['estado']}.
+
+## Sin verificar
+
+{bullets(audit.get('sin_verificar'), 'Nada quedó sin verificar.')}
+
+## Defectos del curso en `04-curriculum/`
+
+Se informan a david; la auditoría no los corrige.
+
+{bullets(audit.get('defectos_del_curso'), 'Ninguno.')}
 
 ## Decisiones por actividad
 
@@ -338,7 +353,7 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
             "auditoria": audit_ids[ref],
         }
     edits.write(trace_path, render_traceability(trace))
-    edits.write(layout.audit(course), coverage_report(audit, reqs, digest, ids))
+    edits.write(layout.audit(course), coverage_report(audit, reqs, digest, ids, fingerprint(layout.root / reqs.source)))
     return edits
 
 

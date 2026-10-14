@@ -218,6 +218,9 @@ Spanish.
   "curso": "predictiva",
   "executor": "Claude",
   "fecha": "2026-10-14",
+  "estado": "listo con condiciones",
+  "sin_verificar": ["…"],
+  "defectos_del_curso": ["…"],
   "senales": [
     {"id": "predictiva/RC02", "categoria": "cubierta",
      "anclas": [{"hito": "P200:H02", "nivel": "introduce"}, {"hito": "P206:H03", "nivel": "domina"}]},
@@ -271,6 +274,23 @@ Spanish.
   activity, `N01` of the course).
 - An activity of another course is cited with its path, `descriptiva/P103`,
   and its anchors as `descriptiva/P103:H01`.
+
+## State of the course
+
+The audit closes with a state of the course and what it leaves aside:
+
+- `estado`: `listo` when every course outcome is reached at the level the
+  course owes it and nothing blocks; `listo con condiciones` when the gaps
+  are covered by pending proposals; `no listo` otherwise.
+- `sin_verificar`: what the audit could not verify, for example the
+  student copy in `06-distribution/`, which `building-distribution`
+  checks, or an activity whose description could not be confirmed.
+- `defectos_del_curso`: defects of the course file or of the curriculum in
+  `04-curriculum/`, kept apart from the defects of the activities. They are
+  reported to david; the audit never repairs them.
+
+A `pytest` pass is technical evidence of participation, never evidence that
+a course outcome was achieved.
 
 ## Discussion and decisions (outside this skill)
 

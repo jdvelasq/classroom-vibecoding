@@ -221,6 +221,9 @@ def good_audit():
         "curso": COURSE,
         "executor": "Claude",
         "fecha": "2026-10-14",
+        "estado": "listo con condiciones",
+        "sin_verificar": ["La copia del estudiante en 06-distribution/."],
+        "defectos_del_curso": [],
         "senales": [
             {"id": "demo/RC01", "categoria": "cubierta", "anclas": [{"hito": "P100:H01", "nivel": "introduce"}]},
             {"id": "demo/RC02", "categoria": "actividad nueva", "propuesta": "n1",
@@ -293,6 +296,8 @@ def mutate(change):
 
 @pytest.mark.parametrize("change, message", [
     (lambda a: a["senales"].pop(), "C002.HAB01 has no category"),
+    (lambda a: a.update(estado="casi"), "estado must be one of"),
+    (lambda a: a.update(sin_verificar=[""]), "sin_verificar must be a list"),
     (lambda a: a["senales"].append({"id": "C009.CON01", "categoria": "marginal", "razon": "x"}), "C009.CON01"),
     (lambda a: a["senales"][0].update(anclas=[anchor("P100:H07")]), "H07 is not a highlight of P100"),
     (lambda a: a["senales"][0].update(anclas=[anchor("P999:H01")]), "is not Pxxx:HNN of an activity"),
@@ -439,6 +444,9 @@ def test_apply_writes_proposals_log_traceability_and_coverage(layout):
     assert trace.entries["L101"] == ["demo.C01"]
 
     coverage = layout.audit(COURSE).read_text(encoding="utf-8")
+    assert "- **Estado del curso:** listo con condiciones." in coverage
+    assert "## Sin verificar\n\n- La copia del estudiante en 06-distribution/." in coverage
+    assert "se informan a david" in coverage.lower()
     assert "| C001.CON02 | Exposición y normalización. | mejora | P100: T01 |" in coverage
     assert "| demo/RC02 | Construir la explicación completa del caso. (nivel: domina) | actividad nueva | N01; parcial en P100:H02 (introduce) |" in coverage
     assert "| P100 | puntual | demo/RC01 | C001 | T01 |" in coverage
@@ -481,6 +489,7 @@ def test_an_undergraduate_course_audits_borrowed_activities_in_their_owner(layou
         "curso": "data",
         "executor": "Claude",
         "fecha": "2026-10-14",
+        "estado": "listo",
         "senales": [
             {"id": "data/RC01", "categoria": "cubierta", "anclas": [anchor("demo/P100:H01")]},
             {"id": "C001.CON01", "categoria": "cubierta", "anclas": [anchor("demo/P100:H01")]},

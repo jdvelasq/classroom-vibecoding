@@ -113,6 +113,8 @@ Give david a short report:
 - the proposals created or reinforced, with their ids;
 - warnings left (legacy traceability entries, activities with many open
   proposals); and
+- the state of the course, what was not verified, and the defects of the
+  course file in `04-curriculum/`, which are reported, never repaired;
 - an identity check against the course file: whether the course still
   ends in its terminal product, and whether any activity reads as the
   abbreviated course its file names as the risk.

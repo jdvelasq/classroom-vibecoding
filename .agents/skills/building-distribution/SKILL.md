@@ -5,7 +5,7 @@ description: Regenerates 06-distribution/, the student-facing copy of each cours
 
 # Building the distribution
 
-This skill has no judgment point: one deterministic script does all the
+This skill has no judgment point: deterministic scripts do all the
 work. Do not edit `06-distribution/` by hand; it is rebuilt from scratch on
 every run.
 
@@ -38,10 +38,20 @@ missing activities, report them to david; do not guess replacements.
 ## 2. Check
 
 ```bash
+python3 .agents/skills/building-distribution/scripts/check_distribution.py --collect
 git status --short 06-distribution | head
 ```
 
-Report to david which courses changed. If nothing changed, say so.
+The check confirms that each copy holds only student-facing material: no
+`activity.md`, `log.md` or `tasks.md`, empty `professor/`, `submission/`
+and `temp/`, no local artifacts, an activity `requirements.txt` only with
+packages of the root one, and a pytest discovery that does not fail in
+any course. It reports as not verified what the repository cannot show
+yet, such as a GitHub Actions grading workflow per course: that is a gap
+of the delivery phase, not a defect of the course design.
+
+Report to david the errors, what is not verified, and which courses
+changed. If nothing changed, say so.
 
 ## 3. Commit
 

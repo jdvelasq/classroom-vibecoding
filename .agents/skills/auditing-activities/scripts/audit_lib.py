@@ -50,7 +50,9 @@ TASK_FIELDS = ["titulo", "tipo", "que_gana", "anclas", "alternativas", "no_regre
                "interacciones", *JUSTIFICATION_FIELDS, "aceptacion", "instrucciones"]
 COURSE_TASK_FIELDS = ["titulo", "tipo", "contribucion", "posicion", "desplaza", "efecto", "caso", "producto",
                       *JUSTIFICATION_FIELDS, "aceptacion"]
-AUDIT_KEYS = ["curso", "executor", "fecha", "senales", "actividades", "nuevas", "refuerza"]
+AUDIT_KEYS = ["curso", "executor", "fecha", "estado", "sin_verificar", "defectos_del_curso",
+              "senales", "actividades", "nuevas", "refuerza"]
+COURSE_STATES = ("listo", "listo con condiciones", "no listo")
 
 ACTIVITY_REF = re.compile(r"^(?:([a-z][a-z0-9-]*)/)?(P\d{3})$")
 ANCHOR = re.compile(r"^((?:[a-z][a-z0-9-]*/)?P\d{3}):(H\d{2})$")
@@ -357,6 +359,11 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
         errors.append("executor is empty")
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(audit.get("fecha", ""))):
         errors.append("fecha must be YYYY-MM-DD")
+    if audit.get("estado") not in COURSE_STATES:
+        errors.append(f"estado must be one of {', '.join(COURSE_STATES)}")
+    for name in ("sin_verificar", "defectos_del_curso"):
+        if not isinstance(audit.get(name, []), list) or not all(str(x).strip() for x in audit.get(name, [])):
+            errors.append(f"{name} must be a list of non-empty texts")
 
     reqs = requirements(layout, course)
     activities = {a.ref: a for a in course_activities(layout, course)}
