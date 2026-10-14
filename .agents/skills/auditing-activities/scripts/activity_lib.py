@@ -70,6 +70,9 @@ class Layout:
     def course_tasks(self, course: str) -> Path:
         return self.at(paths.COURSE_TASKS, course=course)
 
+    def course_log(self, course: str) -> Path:
+        return self.at(paths.COURSE_LOG, course=course)
+
     def audit(self, course: str) -> Path:
         return self.at(paths.AUDIT, course=course)
 

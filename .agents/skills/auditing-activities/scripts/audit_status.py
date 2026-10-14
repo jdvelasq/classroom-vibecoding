@@ -30,6 +30,7 @@ from audit_lib import (
     TASK_TYPES,
     activity_tasks,
     course_activities,
+    course_decisions,
     course_tasks,
     describe_problems,
     load_description,
@@ -87,6 +88,8 @@ def status(layout: Layout, course: str) -> dict[str, object]:
             {"id": e.id, "title": e.title, "estado": e.state}
             for e in course_tasks(layout, course)
         ],
+        "course_decisions": course_decisions(layout, course),
+        "course_log": layout.shown(layout.course_log(course)),
         "blocked": blocked,
         "categories": list(CATEGORIES),
         "decisions": list(DECISIONS),

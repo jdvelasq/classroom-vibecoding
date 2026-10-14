@@ -35,6 +35,7 @@ Las rutas se fijan en un solo lugar, `scripts/paths.py`. Hoy son:
 | `05-implementation/<curso>/Pxxx_<nombre>/log.md` | Registro acumulativo, opcional: entradas `S02`, `AUD`, `DEC` y notas. |
 | `05-implementation/<curso>/Pxxx_<nombre>/tasks.md` | Cambios puntuales propuestos para la actividad (`T01`, …), con lo que hay que cambiar exactamente. |
 | `05-implementation/<curso>/tasks.md` | Actividades nuevas y reorganizaciones propuestas para el curso (`N01`, …), descritas en detalle. |
+| `05-implementation/<curso>/log.md` | Decisiones de david sobre las propuestas del curso (`DEC.<curso>.NN`). |
 | `05-implementation/<curso>/audit.md` | Cobertura vigente del curso, reescrita en cada auditoría. |
 | `05-implementation/<curso>/traceability.yaml` | Qué resultados del curso y competencias sirve cada actividad. |
 
@@ -209,9 +210,11 @@ Cada prefijo numera sus entradas en orden, desde `01`:
   auditoría, entrada, decisión con su razón, resultados y competencias,
   propuestas creadas o reforzadas, señales ancladas a la actividad con su
   nivel, e hitos fuera de lo que el curso debe enseñar.
-- **`DEC`**: una decisión de david sobre una propuesta `Tnn`:
-  aprobada o rechazada, con la razón. Las auditorías posteriores la tratan
-  como rechazo previo.
+- **`DEC`**: una decisión de david sobre una propuesta `Tnn`, aprobada o
+  rechazada, con la razón y el texto completo de la propuesta. La escribe
+  la skill `reviewing-tasks`. Las auditorías posteriores no vuelven a
+  proponer lo ya decidido. Las decisiones sobre propuestas del curso
+  (`Nnn`) van al `log.md` del curso como `DEC.<curso>.NN`.
 
 El log documenta; no resuelve orden, capacidades compartidas ni rediseño.
 Nunca se editan entradas anteriores.
@@ -298,9 +301,11 @@ avisa cuando una actividad acumula más de tres propuestas abiertas.
 ### `Pxxx_<nombre>/tasks.md` — cambios puntuales de una actividad
 
 Dice exactamente qué cambiar en la actividad y por qué. Estado actual, no
-historial. Una propuesta decidida conserva su entrada con
-su estado hasta ejecutarse; una rechazada sale del archivo y queda en el
-log como `DEC`, de modo que su ID no se reutiliza y las auditorías la ven.
+historial: sólo hay propuestas pendientes de discusión. Una propuesta
+discutida, aprobada o rechazada, sale del archivo y queda en el log como
+`DEC` (skill `reviewing-tasks`), de modo que su ID no se reutiliza y las
+auditorías no la vuelven a proponer. El archivo se elimina cuando queda
+sin propuestas.
 
 ````markdown
 # Pxxx — Propuestas de mejora
@@ -374,8 +379,8 @@ de la secuencia.
 ````
 
 Una `reorganización` decide sobre actividades existentes: conservar,
-combinar, mover o reemplazar. Una decisión de curso rechazada se conserva
-con estado `rechazada` y su razón, porque no hay log de curso. Una entrada
+combinar, mover o reemplazar. Una propuesta del curso discutida sale del
+archivo y queda en el `log.md` del curso como `DEC.<curso>.NN`. Una entrada
 sin **Estado** se lee como pendiente.
 
 ### `audit.md` — cobertura vigente
@@ -425,7 +430,7 @@ L101:
   marcador `(caso y datos)`; los IDs de ítem `CON`/`HAB`; las decisiones
   `igual`, `puntual` y `curso`; una sola propuesta nueva por actividad y
   auditoría; el aviso con más de tres propuestas abiertas; que las
-  decisiones de curso rechazadas queden en el `tasks.md` del curso;
+  decisiones sobre propuestas del curso en el `log.md` del curso;
   `audit.md`; la prohibición de proponer celdas markdown; las pruebas como existencia
   de los artefactos concretos de `submission/`; el nivel debido de un resultado del curso como el mayor de
   sus `RA` en la matriz; el esquema de `traceability.yaml`; que `P001` y `Lxxx` queden fuera de la auditoría.

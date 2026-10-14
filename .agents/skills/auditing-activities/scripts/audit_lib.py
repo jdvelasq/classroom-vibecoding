@@ -282,7 +282,19 @@ def used_task_numbers(layout: Layout, activity: CourseActivity) -> set[int]:
 
 
 def used_course_task_numbers(layout: Layout, course: str) -> set[int]:
-    return {int(e.id[1:]) for e in course_tasks(layout, course)}
+    """Decided course proposals leave the tasks file; their ids live on in the course log."""
+    numbers = {int(e.id[1:]) for e in course_tasks(layout, course)}
+    log = layout.course_log(course)
+    if log.exists():
+        numbers |= {int(n) for n in re.findall(r"\bN(\d{2})\b", log.read_text(encoding="utf-8"))}
+    return numbers
+
+
+def course_decisions(layout: Layout, course: str) -> list[str]:
+    log = layout.course_log(course)
+    if not log.exists():
+        return []
+    return re.findall(rf"^## (DEC\.{re.escape(course)}\.\d{{2}})\s*$", log.read_text(encoding="utf-8"), re.M)
 
 
 def fingerprint(path: Path) -> str:

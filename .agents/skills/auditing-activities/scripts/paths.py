@@ -10,6 +10,7 @@ ACTIVITY = "05-implementation/{course}/{folder}/activity.md"
 LOG = "05-implementation/{course}/{folder}/log.md"
 TASKS = "05-implementation/{course}/{folder}/tasks.md"
 COURSE_TASKS = "05-implementation/{course}/tasks.md"
+COURSE_LOG = "05-implementation/{course}/log.md"
 AUDIT = "05-implementation/{course}/audit.md"
 TRACEABILITY = "05-implementation/{course}/traceability.yaml"
 

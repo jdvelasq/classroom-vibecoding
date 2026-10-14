@@ -32,7 +32,7 @@ principles, and to the identity of the course.
 
 The audit only **proposes**. It does not modify the implementation or the
 `activity.md` of any activity. Its proposals wait for david's discussion and
-nothing is executed without his explicit approval. "No proposal" is a valid
+nothing is executed without david's explicit approval. "No proposal" is a valid
 and frequent result.
 
 ## Input
@@ -164,8 +164,8 @@ and what a slower group would lose.
 
 ### 5. Previous rejections
 
-Before proposing, look in the logs for `DEC` entries and in the tasks files
-for rejected proposals. Do not propose an equivalent one again unless the
+Before proposing, look in the activity logs and the course log for `DEC`
+entries, approved or rejected. Do not propose an equivalent one again unless the
 course file gives a different argument; then cite the rejection and say
 what changed.
 
@@ -266,19 +266,14 @@ Spanish.
 - An activity of another course is cited with its path, `descriptiva/P103`,
   and its anchors as `descriptiva/P103:H01`.
 
-## Discussion and decisions (outside the skill)
+## Discussion and decisions (outside this skill)
 
-David discusses **all** the proposals of an activity together, because they
-interact. When he decides:
-
-- **approved:** the entry stays in the activity's `tasks.md` with state
-  «aprobada» until it is executed;
-- **rejected:** the entry leaves the activity's `tasks.md` and is recorded
-  in its `log.md` as `DEC.Pxxx.NN` with the proposal, its sources and the
-  reason. A rejected course proposal stays in the course `tasks.md` with
-  state «rechazada» and its reason.
-
-Later audits treat both as previous rejections.
+The skill `reviewing-tasks` discusses the proposals with david, one at a
+time, per activity or for the course. A discussed proposal, approved or
+rejected, leaves `tasks.md` and is recorded as a `DEC` entry, with its
+reason and full text, in the activity's `log.md` or in the course
+`log.md`. Later audits read those entries and never propose a decided
+proposal again, unless the course file gives a different argument.
 
 ## Before applying
 
