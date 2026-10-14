@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P211_pronostico_congestion_servicio/`.
+**Implementación:** `05-implementation/predictiva/P212_pronostico_congestion_servicio/`.
 
 ### Preguntas analíticas actuales
 
@@ -53,12 +53,12 @@ Sin P212 se pierde la conexión entre pronóstico y una señal operativa.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; CSV SSA | Calidad/faltantes de fuente no se validan. |
-| H02 | S02 | Notebook: corte y rezagos | Sin intervalos. |
-| H03 | S02, S03 | Notebook; `submission/model_metrics.csv` | No prueba causalidad o acción. |
+| H01 | S01 | `05-implementation/predictiva/P212_pronostico_congestion_servicio/professor/notebook.ipynb`; CSV SSA | Calidad/faltantes de fuente no se validan. |
+| H02 | S02 | `05-implementation/predictiva/P212_pronostico_congestion_servicio/professor/notebook.ipynb`: corte y rezagos | Sin intervalos. |
+| H03 | S02, S03 | `05-implementation/predictiva/P212_pronostico_congestion_servicio/professor/notebook.ipynb`; `submission/model_metrics.csv` | No prueba causalidad o acción. |
 | H04 | S04 | `submission/`; pruebas | Tests sólo presencia. |
-| H05 | S03 | Notebook: `TimeSeriesSplit`, reajuste por origen; `submission/rolling_origin_errors.csv` | No prueba causalidad o acción; evalúa estabilidad, no mejora la especificación. |
-| H06 | S03 | Notebook: percentil de error absoluto, cobertura; `submission/forecast_intervals.csv`, `.png` | Cobertura observada sobre 12 meses; no garantiza 80 % exacto ni evalúa calibración formal. |
+| H05 | S03 | `05-implementation/predictiva/P212_pronostico_congestion_servicio/professor/notebook.ipynb`: `TimeSeriesSplit`, reajuste por origen; `submission/rolling_origin_errors.csv` | No prueba causalidad o acción; evalúa estabilidad, no mejora la especificación. |
+| H06 | S03 | `05-implementation/predictiva/P212_pronostico_congestion_servicio/professor/notebook.ipynb`: percentil de error absoluto, cobertura; `submission/forecast_intervals.csv`, `.png` | Cobertura observada sobre 12 meses; no garantiza 80 % exacto ni evalúa calibración formal. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -66,7 +66,7 @@ Sin P212 se pierde la conexión entre pronóstico y una señal operativa.
 | --- | --- | --- | --- |
 | S01 | Fuentes y calendario | Datos; notebook | Año fiscal no debe desplazarse. |
 | S02 | Features y Ridge | Notebook; pronóstico | Sólo estado conocido al cierre previo. |
-| S03 | Baseline/evaluación | Métricas/gráfico; `rolling_origin_errors.csv`; `forecast_intervals.csv/.png` | Incluye un intervalo de predicción empírico (80 %) y una evaluación con 24 orígenes móviles; no evalúa calibración formal ni fija política de capacidad. |
+| S03 | Baseline/evaluación | Métricas/gráfico; `rolling_origin_errors.csv`; `forecast_intervals.csv`; `forecast_intervals.png` | Incluye un intervalo de predicción empírico (80 %) y una evaluación con 24 orígenes móviles; no evalúa calibración formal ni fija política de capacidad. |
 | S04 | Entrega/pruebas | `submission/`; tests | Sólo presencia de archivos; `test_02`/`test_03` validan columnas, consistencia entre artefactos y `lower_80 <= forecast <= upper_80`. |
 
 ### Contrato de evidencia actual

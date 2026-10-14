@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P220_pipelines/`.
+**Implementación:** `05-implementation/predictiva/P221_pipelines/`.
 
 ### Preguntas analíticas actuales
 

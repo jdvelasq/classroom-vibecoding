@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P222_selection_inputs_clasificacion/`.
+**Implementación:** `05-implementation/predictiva/P223_selection_inputs_clasificacion/`.
 
 ### Preguntas analíticas actuales
 
@@ -91,7 +91,7 @@ evidencia y no debe inferirse.
 | H02 | S02 | `professor/notebook.ipynb`: `SelectKBest(f_classif)` dentro de `Pipeline` | No persiste la lista de entradas elegidas. |
 | H03 | S02 | `professor/notebook.ipynb`: grilla de `k`, `penalty`, `C` y CV=5 | No se conserva el resultado de cada combinación. |
 | H04 | S03 | `professor/notebook.ipynb`: `accuracy_score`, `balanced_accuracy_score` | No hay matriz de confusión, calibración ni métricas en `submission/`. |
-| H05 | S04 | Notebook: `pickle.dump/load`; `submission/estimator.pkl`; `tests/test_activity.py` | La prueba sólo exige el archivo. |
+| H05 | S04 | `05-implementation/predictiva/P223_selection_inputs_clasificacion/professor/notebook.ipynb`: `pickle.dump/load`; `submission/estimator.pkl`; `tests/test_activity.py` | La prueba sólo exige el archivo. |
 | H06 | S01, S05 | `data/heart_disease.csv`; codebook del notebook | Procedencia, población y uso permitido no están documentados. |
 
 ### Superficies de cambio para revisión posterior

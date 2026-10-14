@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P221_selection_inputs_regresion/`.
+**Implementación:** `05-implementation/predictiva/P222_selection_inputs_regresion/`.
 
 ### Preguntas analíticas actuales
 
@@ -50,8 +50,8 @@ la competencia de justificar una regresión con selección reproducible de input
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: pipeline y `SelectKBest` | No persiste entradas. |
-| H02 | S02 | Notebook: grilla CV | Sin resultados CV persistidos. |
+| H01 | S01 | `05-implementation/predictiva/P222_selection_inputs_regresion/professor/notebook.ipynb`: pipeline y `SelectKBest` | No persiste entradas. |
+| H02 | S02 | `05-implementation/predictiva/P222_selection_inputs_regresion/professor/notebook.ipynb`: grilla CV | Sin resultados CV persistidos. |
 | H03 | S03, S04 | Estimador y prueba | Test sólo archivo. |
 
 ### Superficies de cambio para revisión posterior

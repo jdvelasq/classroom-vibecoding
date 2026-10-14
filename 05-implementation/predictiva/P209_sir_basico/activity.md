@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P208_sir_basico/`.
+**Implementación:** `05-implementation/predictiva/P209_sir_basico/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,8 +48,8 @@ vínculo entre supuestos estructurales y pronóstico de escenarios.
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 | S01 | `professor/notebook.ipynb`; `data/colombia_daily_cases.csv.gz` | Ventana de 14 días es aproximación didáctica. |
-| H02 | S02 | Notebook: ajuste de tasa y escenarios | No identifica causalidad. |
-| H03 | S03 | Notebook; `submission/scenario_peaks.csv` | Camas/capacidad son ilustrativas. |
+| H02 | S02 | `05-implementation/predictiva/P209_sir_basico/professor/notebook.ipynb`: ajuste de tasa y escenarios | No identifica causalidad. |
+| H03 | S03 | `05-implementation/predictiva/P209_sir_basico/professor/notebook.ipynb`; `submission/scenario_peaks.csv` | Camas/capacidad son ilustrativas. |
 | H04 | S04 | `submission/`; `tests/test_activity.py` | Tests sólo comprueban presencia. |
 
 ### Superficies de cambio para revisión posterior

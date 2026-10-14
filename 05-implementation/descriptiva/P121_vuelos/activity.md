@@ -54,10 +54,10 @@ P121 aplica la plantilla de P120 (preguntas, KPI global, serie mensual, resumen 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 — Agregados aditivos | S01, S02 | `05-implementation/descriptiva/P121_vuelos/professor/notebook.ipynb`: `metric_columns`, carga de los dos `.csv.gz` | Estructura inferida de columnas usadas; la documentación de la fuente no existe en la actividad. |
-| H02 — Conciliación | S01, S06 | notebook: celda `recomputed` / `assert_frame_equal`; `05-implementation/descriptiva/P121_vuelos/tests/test_activity.py`: `test_02` | Verifica coherencia entre archivos, no frente a la fuente original. |
-| H03 — Denominadores | S02 | notebook: `add_rates`; `05-implementation/descriptiva/P121_vuelos/submission/overall_kpis.csv` | Demora definida como salida con ≥15 minutos; no hay otra definición contrastada. |
-| H04 — Matriz día × hora | S03 | notebook: `calendar_hour`, `pivot`, `px.imshow`; `05-implementation/descriptiva/P121_vuelos/submission/day_hour_delay.csv` | Celdas con volumen muy desigual se colorean igual. |
-| H05 — Segmentos con umbral | S04 | notebook: `minimum_operated_flights = 25_000`; `05-implementation/descriptiva/P121_vuelos/submission/priority_segments.csv` | Umbral fijo sin justificación persistida; no hay incertidumbre. |
+| H02 — Conciliación | S01, S06 | `05-implementation/descriptiva/P121_vuelos/professor/notebook.ipynb`: celda `recomputed` / `assert_frame_equal`; `05-implementation/descriptiva/P121_vuelos/tests/test_activity.py`: `test_02` | Verifica coherencia entre archivos, no frente a la fuente original. |
+| H03 — Denominadores | S02 | `05-implementation/descriptiva/P121_vuelos/professor/notebook.ipynb`: `add_rates`; `05-implementation/descriptiva/P121_vuelos/submission/overall_kpis.csv` | Demora definida como salida con ≥15 minutos; no hay otra definición contrastada. |
+| H04 — Matriz día × hora | S03 | `05-implementation/descriptiva/P121_vuelos/professor/notebook.ipynb`: `calendar_hour`, `pivot`, `px.imshow`; `05-implementation/descriptiva/P121_vuelos/submission/day_hour_delay.csv` | Celdas con volumen muy desigual se colorean igual. |
+| H05 — Segmentos con umbral | S04 | `05-implementation/descriptiva/P121_vuelos/professor/notebook.ipynb`: `minimum_operated_flights = 25_000`; `05-implementation/descriptiva/P121_vuelos/submission/priority_segments.csv` | Umbral fijo sin justificación persistida; no hay incertidumbre. |
 | H06 — Serie y estacionalidad | S03 | `05-implementation/descriptiva/P121_vuelos/submission/monthly_national_kpis.csv`; `05-implementation/descriptiva/P121_vuelos/submission/seasonality.csv` | No descompone tendencia/estacionalidad ni separa años. |
 | H07 — Persistencia verificada | S05, S06 | `05-implementation/descriptiva/P121_vuelos/tests/test_activity.py`: `test_01`–`test_06` | No verifica `questions.json`, figuras ni interpretación. |
 

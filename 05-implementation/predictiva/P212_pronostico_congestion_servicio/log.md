@@ -37,7 +37,7 @@
   actual; se actualizaron «Producto terminal» y «Uso y límite» para reflejar
   que el pronóstico ya no es puramente puntual ni evaluado en un único corte.
 - **Implementación:**
-  `05-implementation/predictiva/P211_pronostico_congestion_servicio/` — notebook
+  `05-implementation/predictiva/P212_pronostico_congestion_servicio/` — notebook
   del profesor (orígenes móviles, intervalo, gráficas y comentarios con la
   lectura), `submission/rolling_origin_errors.csv`,
   `submission/forecast_intervals.csv` y `.png`, y `tests/test_activity.py`

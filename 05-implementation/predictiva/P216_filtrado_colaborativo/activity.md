@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P215_filtrado_colaborativo/`.
+**Implementación:** `05-implementation/predictiva/P216_filtrado_colaborativo/`.
 
 ### Preguntas analíticas actuales
 
@@ -57,11 +57,11 @@ por afinidad colaborativa, además de la consideración explícita de cobertura.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `data/filmtrust_ratings.csv` | Datos/usuario sin contexto operativo. |
-| H02 | S02 | Notebook: ratings comunes y similitud | Umbrales fijos. |
-| H03 | S02 | Notebook; `submission/recommendations.csv` | Evaluación retenida en H05; no mide ranking ni satisfacción. |
+| H01 | S01 | `05-implementation/predictiva/P216_filtrado_colaborativo/professor/notebook.ipynb`; `data/filmtrust_ratings.csv` | Datos/usuario sin contexto operativo. |
+| H02 | S02 | `05-implementation/predictiva/P216_filtrado_colaborativo/professor/notebook.ipynb`: ratings comunes y similitud | Umbrales fijos. |
+| H03 | S02 | `05-implementation/predictiva/P216_filtrado_colaborativo/professor/notebook.ipynb`; `submission/recommendations.csv` | Evaluación retenida en H05; no mide ranking ni satisfacción. |
 | H04 | S03, S04 | CSV de entrega; pruebas | Tests sólo presencia. |
-| H05 | S03 | Notebook: recálculo con entrenamiento, regla de vecinos generalizada; `submission/holdout_evaluation.csv` | No mide satisfacción, ranking retenido ni impacto; la línea base siempre tiene respaldo (media global). |
+| H05 | S03 | `05-implementation/predictiva/P216_filtrado_colaborativo/professor/notebook.ipynb`: recálculo con entrenamiento, regla de vecinos generalizada; `submission/holdout_evaluation.csv` | No mide satisfacción, ranking retenido ni impacto; la línea base siempre tiene respaldo (media global). |
 
 ### Superficies de cambio para revisión posterior
 

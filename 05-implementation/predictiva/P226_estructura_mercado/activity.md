@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P225_estructura_mercado/`.
+**Implementación:** `05-implementation/predictiva/P226_estructura_mercado/`.
 
 ### Preguntas analíticas actuales
 
@@ -84,9 +84,9 @@ posterior, no una inferencia de S01.
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 | S01 | `professor/notebook.ipynb`: `close_prices`, `open_prices`, `variation`, transposición | No documenta cómo se resuelven fechas faltantes entre símbolos. |
-| H02 | S02 | Notebook: `GraphicalLassoCV`, `precision_`, correlaciones parciales | Relación parcial no prueba causalidad ni predicción. |
-| H03 | S02 | Notebook: `affinity_propagation(edge_model.covariance_)` | No evalúa estabilidad de las comunidades. |
-| H04 | S03 | Notebook: LLE, `LineCollection`, `savefig`; `submission/stocks.png`; pruebas | Los tests no inspeccionan red, etiquetas ni umbral. |
+| H02 | S02 | `05-implementation/predictiva/P226_estructura_mercado/professor/notebook.ipynb`: `GraphicalLassoCV`, `precision_`, correlaciones parciales | Relación parcial no prueba causalidad ni predicción. |
+| H03 | S02 | `05-implementation/predictiva/P226_estructura_mercado/professor/notebook.ipynb`: `affinity_propagation(edge_model.covariance_)` | No evalúa estabilidad de las comunidades. |
+| H04 | S03 | `05-implementation/predictiva/P226_estructura_mercado/professor/notebook.ipynb`: LLE, `LineCollection`, `savefig`; `submission/stocks.png`; pruebas | Los tests no inspeccionan red, etiquetas ni umbral. |
 | H05 | S04 | Notebook y `submission/` | Ausencia de pronóstico no decide por sí sola su valor curricular. |
 | H06 | S01, S04 | `data/*.csv.gz`; notebook | No hay manifiesto de fuente o actualización. |
 

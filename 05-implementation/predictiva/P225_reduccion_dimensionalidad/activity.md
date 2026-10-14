@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P224_reduccion_dimensionalidad/`.
+**Implementación:** `05-implementation/predictiva/P225_reduccion_dimensionalidad/`.
 
 ### Preguntas analíticas actuales
 
@@ -90,9 +90,9 @@ pasa de conceptual a demostrable.
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 | S01 | `professor/notebook.ipynb`: PCA, `TSNE`, `umap.UMAP` | No compara parámetros, tiempos ni fidelidad de cada proyección. |
-| H02 | S03 | Notebook: `savefig`; tres PNG en `submission/`; pruebas | Los tests no inspeccionan contenido visual. |
-| H03 | S01 | Notebook: `sklearn.datasets.load_digits` | Conjunto educativo sin caso organizacional. |
-| H04 | S02, S03, S04 | Notebook: `Pipeline(StandardScaler, PCA, LogisticRegression)`, `umap.UMAP(...).transform`; `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`, `components_accuracy_comparison.png`; pruebas | Resultado específico de este dataset y partición; no mide tiempo de cómputo, estabilidad entre ejecuciones ni calibración; t-SNE queda fuera por no admitir transformación a datos nuevos. |
+| H02 | S03 | `05-implementation/predictiva/P225_reduccion_dimensionalidad/professor/notebook.ipynb`: `savefig`; tres PNG en `submission/`; pruebas | Los tests no inspeccionan contenido visual. |
+| H03 | S01 | `05-implementation/predictiva/P225_reduccion_dimensionalidad/professor/notebook.ipynb`: `sklearn.datasets.load_digits` | Conjunto educativo sin caso organizacional. |
+| H04 | S02, S03, S04 | `05-implementation/predictiva/P225_reduccion_dimensionalidad/professor/notebook.ipynb`: `Pipeline(StandardScaler, PCA, LogisticRegression)`, `umap.UMAP(...).transform`; `submission/pca_components_accuracy.csv`, `umap_components_accuracy.csv`, `components_accuracy_comparison.png`; pruebas | Resultado específico de este dataset y partición; no mide tiempo de cómputo, estabilidad entre ejecuciones ni calibración; t-SNE queda fuera por no admitir transformación a datos nuevos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -100,7 +100,7 @@ pasa de conceptual a demostrable.
 | --- | --- | --- | --- |
 | S01 | Dataset y proyección | Notebook; `load_digits` | Las observaciones son imágenes educativas de 64 intensidades. |
 | S02 | Producto analítico | Notebook; `submission/` | Incluye evaluación predictiva retenida (PCA, UMAP) además de las tres visualizaciones; t-SNE sigue sin evaluación fuera de muestra. |
-| S03 | Evidencia y pruebas | Tres PNG; `pca_components_accuracy.csv/.png`; `umap_components_accuracy.csv`; `components_accuracy_comparison.png`; `tests/test_activity.py` | Las pruebas comprueban existencia y columnas, no significado visual ni estabilidad entre ejecuciones. |
+| S03 | Evidencia y pruebas | Tres PNG; `pca_components_accuracy.csv`; `pca_components_accuracy.png`; `umap_components_accuracy.csv`; `components_accuracy_comparison.png`; `tests/test_activity.py` | Las pruebas comprueban existencia y columnas, no significado visual ni estabilidad entre ejecuciones. |
 | S04 | Trazabilidad y secuencia | `traceability.yaml`; mapas P201/P225 | Identidad Predictiva resuelta por H04; sigue sin existir entrada P225 en `traceability.yaml` (brecha anterior, no creada por este cambio). |
 
 ### Contrato de evidencia actual

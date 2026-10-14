@@ -41,7 +41,7 @@
   auditoría de identidad de la línea Predictiva, antes «sin resolver», queda
   resuelta.
 - **Implementación:**
-  `05-implementation/predictiva/P224_reduccion_dimensionalidad/` — notebook del
+  `05-implementation/predictiva/P225_reduccion_dimensionalidad/` — notebook del
   profesor (curvas de PCA y UMAP, gráfico comparativo, comentarios con la
   lectura) y `submission/pca_components_accuracy.csv/.png`,
   `umap_components_accuracy.csv`, `components_accuracy_comparison.png`, y

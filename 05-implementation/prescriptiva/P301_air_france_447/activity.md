@@ -53,9 +53,9 @@ Frente a P300 cambia la naturaleza de la decisión (excepcional y secuencial fre
 | --- | --- | --- | --- |
 | H01 — Frontera de decisión | S04, S06 | `05-implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: celda «Frontera curricular» y `decision_boundary`; `05-implementation/prescriptiva/P301_air_france_447/submission/decision_boundary.csv` | Autoridad y gatillo son texto; no se ejecuta un escalamiento. |
 | H02 — Cobertura vs éxito | S01, S02 | `05-implementation/prescriptiva/P301_air_france_447/data/search_cells.csv`; notebook: `success_probability`, `comparison1`; `05-implementation/prescriptiva/P301_air_france_447/submission/plan_comparison.csv` | Escenario sintético; no evalúa una búsqueda real. |
-| H03 — Actualización tras fracaso | S03 | notebook: `remaining_weight`, `updated_probability`, aserción `remaining_total == 1 − first_success` | Depende de detección constante y de un único resultado de ronda. |
-| H04 — Repetir vs reasignar | S03, S04 | notebook: `comparison2`, conjuntos «entran/salen/permanecen»; `plan_comparison.csv` | Éxitos condicionales a no haber encontrado; la ronda 2 no se ejecuta. |
-| H05 — Verificación interna | S05 | notebook: celda de aserciones previa a la exportación | Las aserciones fijan IDs esperados del caso; no generalizan. |
+| H03 — Actualización tras fracaso | S03 | `05-implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: `remaining_weight`, `updated_probability`, aserción `remaining_total == 1 − first_success` | Depende de detección constante y de un único resultado de ronda. |
+| H04 — Repetir vs reasignar | S03, S04 | `05-implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: `comparison2`, conjuntos «entran/salen/permanecen»; `plan_comparison.csv` | Éxitos condicionales a no haber encontrado; la ronda 2 no se ejecuta. |
+| H05 — Verificación interna | S05 | `05-implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: celda de aserciones previa a la exportación | Las aserciones fijan IDs esperados del caso; no generalizan. |
 | H06 — Persistencia del protocolo | S04, S05 | `05-implementation/prescriptiva/P301_air_france_447/submission/search_plan.csv`; `plan_comparison.csv`; `search_planning_map.png`; `05-implementation/prescriptiva/P301_air_france_447/tests/test_activity.py` | La prueba verifica nombres de archivos, no contenido. |
 
 ### Superficies de cambio para revisión posterior

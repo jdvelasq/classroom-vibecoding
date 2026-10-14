@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P214_recomendacion_apriori/`.
+**Implementación:** `05-implementation/predictiva/P215_recomendacion_apriori/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,9 +51,9 @@ coocurrencia, evidencia retenida y recomendación de ítem.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `groceries_baskets.csv.gz` | Procedencia no documentada. |
-| H02 | S02 | Notebook: split 80/20 | Segmento retenido no es aleatorio explícitamente. |
-| H03 | S02 | Notebook; reglas/recomendaciones CSV | Lift no prueba causalidad. |
+| H01 | S01 | `05-implementation/predictiva/P215_recomendacion_apriori/professor/notebook.ipynb`; `groceries_baskets.csv.gz` | Procedencia no documentada. |
+| H02 | S02 | `05-implementation/predictiva/P215_recomendacion_apriori/professor/notebook.ipynb`: split 80/20 | Segmento retenido no es aleatorio explícitamente. |
+| H03 | S02 | `05-implementation/predictiva/P215_recomendacion_apriori/professor/notebook.ipynb`; reglas/recomendaciones CSV | Lift no prueba causalidad. |
 | H04 | S03, S04 | Métricas/entregas; pruebas | Tests sólo comprueban archivos. |
 
 ### Superficies de cambio para revisión posterior

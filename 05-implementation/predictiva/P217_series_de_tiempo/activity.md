@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P216_series_de_tiempo/`.
+**Implementación:** `05-implementation/predictiva/P217_series_de_tiempo/`.
 
 ### Preguntas analíticas actuales
 
@@ -98,8 +98,8 @@ variable ordinaria.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Partición temporal | S01 | `05-implementation/predictiva/P216_series_de_tiempo/professor/notebook_1.ipynb`; `data/sutter.csv` | No se documenta la procedencia ni uso operativo de la serie de mano de obra. |
-| H02 — Funciones reutilizables | S02 | `05-implementation/predictiva/P216_series_de_tiempo/professor/functions.ipynb`; notebooks 1–9 | `nbimporter` es un contrato de notebook, no un paquete Python distribuido. |
+| H01 — Partición temporal | S01 | `05-implementation/predictiva/P217_series_de_tiempo/professor/notebook_1.ipynb`; `data/sutter.csv` | No se documenta la procedencia ni uso operativo de la serie de mano de obra. |
+| H02 — Funciones reutilizables | S02 | `05-implementation/predictiva/P217_series_de_tiempo/professor/functions.ipynb`; notebooks 1–9 | `nbimporter` es un contrato de notebook, no un paquete Python distribuido. |
 | H03 — ACF, PACF y diferencias | S02 | `professor/functions.ipynb`: `acf_pacf_plots`; `professor/notebook_1.ipynb` | La actividad no formaliza pruebas de estacionariedad. |
 | H04 — Tendencia y dummies | S03 | `professor/notebook_2.ipynb` | La línea base no establece utilidad operativa de sus predicciones. |
 | H05 — Fourier | S03 | `professor/notebook_3.ipynb` | Los términos elegidos no se seleccionan mediante validación explícita. |

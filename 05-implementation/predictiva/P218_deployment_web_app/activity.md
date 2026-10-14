@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P217_deployment_web_app/`.
+**Implementación:** `05-implementation/predictiva/P218_deployment_web_app/`.
 
 ### Preguntas analíticas actuales
 

@@ -8,7 +8,7 @@
 ## S01.P208.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `05-implementation/predictiva/P207_clustering_mercadeo/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P208_clustering_mercadeo/`
   (notebook de profesor, entradas, perfiles, visualizaciones y pruebas). No hay
   entrada P208 correspondiente en `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se añadieron highlights para separar intereses de atributos

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P213_transicion_estados_cliente/`.
+**Implementación:** `05-implementation/predictiva/P214_transicion_estados_cliente/`.
 
 ### Preguntas analíticas actuales
 
@@ -53,9 +53,9 @@ recurrente de la evolución de clientes.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `customer_month_states.csv.gz` | Estados son definición didáctica. |
-| H02 | S02 | Notebook: últimos tres meses | Horizonte pequeño. |
-| H03 | S02, S03 | Notebook; transición/forecast/metrics CSV | No causalidad ni política. |
+| H01 | S01 | `05-implementation/predictiva/P214_transicion_estados_cliente/professor/notebook.ipynb`; `customer_month_states.csv.gz` | Estados son definición didáctica. |
+| H02 | S02 | `05-implementation/predictiva/P214_transicion_estados_cliente/professor/notebook.ipynb`: últimos tres meses | Horizonte pequeño. |
+| H03 | S02, S03 | `05-implementation/predictiva/P214_transicion_estados_cliente/professor/notebook.ipynb`; transición/forecast/metrics CSV | No causalidad ni política. |
 | H04 | S04 | `submission/`; pruebas | Tests no validan cálculos. |
 
 ### Superficies de cambio para revisión posterior

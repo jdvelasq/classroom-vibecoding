@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P219_hiperparametros/`.
+**Implementación:** `05-implementation/predictiva/P220_hiperparametros/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,8 +52,8 @@ evaluación final.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: búsquedas manuales | Resultados no persistidos. |
-| H02 | S02 | Notebook: GridSearchCV/métricas | Partición fija. |
+| H01 | S01 | `05-implementation/predictiva/P220_hiperparametros/professor/notebook.ipynb`: búsquedas manuales | Resultados no persistidos. |
+| H02 | S02 | `05-implementation/predictiva/P220_hiperparametros/professor/notebook.ipynb`: GridSearchCV/métricas | Partición fija. |
 | H03 | S03, S04 | Estimador y pruebas | No verifica valor ni reproducibilidad. |
 
 ### Superficies de cambio para revisión posterior

@@ -117,10 +117,10 @@ coeficientes).
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 | S01, S02 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `naive_mean_model`, `linear_model`, `decision_tree`, `random_forest`, `gradient_boosting`; `submission/model_comparison.csv` | MSE específico de esta partición y este caso. |
-| H02 | S02 | Notebook: `full_tree`, `validation_curve`; `submission/validation_curve.png` | No explora otros hiperparámetros del árbol. |
-| H03 | S02 | Notebook: `RandomForestRegressor`, `HistGradientBoostingRegressor` | No compara costo computacional ni tiempo de ajuste. |
-| H04 | S03 | Notebook: `feature_importances_`, `permutation_importance`; `submission/feature_importances.csv` | No prueba causalidad; la impureza puede sobreestimar variables con muchos puntos de corte. |
-| H05 | S03 | Notebook: `PartialDependenceDisplay`; `submission/partial_dependence.png` | No es un experimento. |
+| H02 | S02 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `full_tree`, `validation_curve`; `submission/validation_curve.png` | No explora otros hiperparámetros del árbol. |
+| H03 | S02 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `RandomForestRegressor`, `HistGradientBoostingRegressor` | No compara costo computacional ni tiempo de ajuste. |
+| H04 | S03 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `feature_importances_`, `permutation_importance`; `submission/feature_importances.csv` | No prueba causalidad; la impureza puede sobreestimar variables con muchos puntos de corte. |
+| H05 | S03 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `PartialDependenceDisplay`; `submission/partial_dependence.png` | No es un experimento. |
 | H06 | S04 | `submission/decision_tree.pkl`, `random_forest.pkl`, `gradient_boosting.pkl`, `model_comparison.csv`, `feature_importances.csv`; `tests/test_activity.py` | Pruebas no inspeccionan contenido visual ni estabilidad entre ejecuciones. |
 
 ### Superficies de cambio para revisión posterior

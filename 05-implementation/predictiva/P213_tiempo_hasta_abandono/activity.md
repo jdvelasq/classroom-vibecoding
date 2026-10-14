@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P212_tiempo_hasta_abandono/`.
+**Implementación:** `05-implementation/predictiva/P213_tiempo_hasta_abandono/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,8 +52,8 @@ y estimar permanencia durante un horizonte.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `telco_customer_churn.csv.gz` | Fuente IBM/ficticia. |
-| H02 | S02 | Notebook; `survival_curves.csv`; `retention_by_contract.csv` | No produce predicción individual. |
+| H01 | S01 | `05-implementation/predictiva/P213_tiempo_hasta_abandono/professor/notebook.ipynb`; `telco_customer_churn.csv.gz` | Fuente IBM/ficticia. |
+| H02 | S02 | `05-implementation/predictiva/P213_tiempo_hasta_abandono/professor/notebook.ipynb`; `survival_curves.csv`; `retention_by_contract.csv` | No produce predicción individual. |
 | H03 | S03 | PNG y CSV de `submission/` | Contrato no es causa. |
 | H04 | S04 | `model_assumptions.json`; pruebas | No implementa una política. |
 

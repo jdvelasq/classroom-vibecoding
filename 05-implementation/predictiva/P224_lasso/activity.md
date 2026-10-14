@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P223_lasso/`.
+**Implementación:** `05-implementation/predictiva/P224_lasso/`.
 
 ### Preguntas analíticas actuales
 
@@ -77,10 +77,10 @@ caso de MPG. No demuestra que Lasso sea preferible a los modelos de P200.
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 | S01 | `professor/notebook.ipynb`: `df.corr()` y mapa de calor | Correlación no identifica causalidad. |
-| H02 | S02 | Notebook: `Pipeline(StandardScaler, Lasso)` | No se documentan variables categóricas ni transformaciones alternativas. |
-| H03 | S02 | Notebook: recorrido `alphas`, `coef_` y gráfica | La figura no se conserva en `submission/`. |
-| H04 | S02, S03 | Notebook: `GridSearchCV` y R²/MSE train/test | No se persisten métricas ni resultados de CV. |
-| H05 | S04 | Notebook: `pickle.dump`; `submission/estimator.pkl`; pruebas | La prueba sólo exige presencia. |
+| H02 | S02 | `05-implementation/predictiva/P224_lasso/professor/notebook.ipynb`: `Pipeline(StandardScaler, Lasso)` | No se documentan variables categóricas ni transformaciones alternativas. |
+| H03 | S02 | `05-implementation/predictiva/P224_lasso/professor/notebook.ipynb`: recorrido `alphas`, `coef_` y gráfica | La figura no se conserva en `submission/`. |
+| H04 | S02, S03 | `05-implementation/predictiva/P224_lasso/professor/notebook.ipynb`: `GridSearchCV` y R²/MSE train/test | No se persisten métricas ni resultados de CV. |
+| H05 | S04 | `05-implementation/predictiva/P224_lasso/professor/notebook.ipynb`: `pickle.dump`; `submission/estimator.pkl`; pruebas | La prueba sólo exige presencia. |
 | H06 | S01, S03 | `data/mtcars.csv`; notebook | Procedencia y representatividad no documentadas. |
 
 ### Superficies de cambio para revisión posterior

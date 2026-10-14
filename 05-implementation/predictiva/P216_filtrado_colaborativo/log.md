@@ -30,7 +30,7 @@
   contrato de evidencia actual; se actualizó el límite de H03 (ya no
   declara ausencia de evaluación retenida) y «Producto terminal».
 - **Implementación:**
-  `05-implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
+  `05-implementation/predictiva/P216_filtrado_colaborativo/` — notebook del
   profesor (holdout, recálculo con entrenamiento, predicción generalizada
   por usuario, cobertura/MAE/RMSE, comentario con la lectura) y
   `submission/holdout_evaluation.csv`, y `tests/test_activity.py`

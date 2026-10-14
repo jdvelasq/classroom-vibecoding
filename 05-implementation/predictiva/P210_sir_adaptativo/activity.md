@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P209_sir_adaptativo/`.
+**Implementación:** `05-implementation/predictiva/P210_sir_adaptativo/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,9 +47,9 @@ evidencia cambiante.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook: `vaccination_start`, training/evaluation | Corte no prueba causalidad. |
-| H02 | S02 | Notebook: `SimpleExpSmoothing` | Tasa proviene de un proxy. |
-| H03 | S02, S03 | Notebook; `forecasts.csv`; `scenario_peaks.csv` | No hay incertidumbre ni política. |
+| H01 | S01 | `05-implementation/predictiva/P210_sir_adaptativo/professor/notebook.ipynb`: `vaccination_start`, training/evaluation | Corte no prueba causalidad. |
+| H02 | S02 | `05-implementation/predictiva/P210_sir_adaptativo/professor/notebook.ipynb`: `SimpleExpSmoothing` | Tasa proviene de un proxy. |
+| H03 | S02, S03 | `05-implementation/predictiva/P210_sir_adaptativo/professor/notebook.ipynb`; `forecasts.csv`; `scenario_peaks.csv` | No hay incertidumbre ni política. |
 | H04 | S04 | `submission/`; pruebas | Tests sólo verifican presencia. |
 
 ### Superficies de cambio para revisión posterior

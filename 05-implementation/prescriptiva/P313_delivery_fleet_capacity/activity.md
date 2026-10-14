@@ -52,9 +52,9 @@ Nuevo método al servicio del mismo producto: P309 decide capacidad con escenari
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
 | H01 — Demanda y capacidad inciertas | S01, S02 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/data/simulation_parameters.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/professor/notebook.ipynb`: celdas Gamma-Poisson, capacidad recortada, verificación muestral | Sin procedencia ni calibración; capacidad continua sin ruteo. |
-| H02 — Futuros comunes | S02 | notebook: conjunto maestro, `cumulative_capacity`, `assert` de anidamiento | Sólo verificado en notebook. |
+| H02 — Futuros comunes | S02 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/professor/notebook.ipynb`: conjunto maestro, `cumulative_capacity`, `assert` de anidamiento | Sólo verificado en notebook. |
 | H03 — IC del objetivo | S02, S03 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_evaluation.csv` | IC por flota, no simultáneos. |
-| H04 — Pareadas y convergencia | S03 | notebook: `paired_difference`, `convergence_table` | No persistidas en `submission/`. |
+| H04 — Pareadas y convergencia | S03 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/professor/notebook.ipynb`: `paired_difference`, `convergence_table` | No persistidas en `submission/`. |
 | H05 — Referencias y sensibilidad | S03 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/reference_policies.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/outsourcing_cost_sensitivity.csv` | Referencias calculadas sobre la misma muestra. |
 | H06 — Política validada | S04, S05 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy_validation.csv`; `delivery_fleet_capacity_planner.png` | El planeador se construye antes de la política y no la muestra; pronóstico = demanda + ruido. |
 

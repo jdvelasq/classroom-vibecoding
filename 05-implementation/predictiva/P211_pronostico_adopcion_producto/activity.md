@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `05-implementation/predictiva/P210_pronostico_adopcion_producto/`.
+**Implementación:** `05-implementation/predictiva/P211_pronostico_adopcion_producto/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,9 +47,9 @@ pierde una aplicación temporal de producto con fuente documentada.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01 | Notebook; `data/us_ev_registrations_monthly.csv` | Matrículas son proxy. |
-| H02 | S02 | Notebook: training/evaluation y `curve_fit` | No presenta incertidumbre. |
-| H03 | S02, S03 | Notebook; `submission/model_metrics.csv` | Línea base sólo es última observación. |
+| H01 | S01 | `05-implementation/predictiva/P211_pronostico_adopcion_producto/professor/notebook.ipynb`; `data/us_ev_registrations_monthly.csv` | Matrículas son proxy. |
+| H02 | S02 | `05-implementation/predictiva/P211_pronostico_adopcion_producto/professor/notebook.ipynb`: training/evaluation y `curve_fit` | No presenta incertidumbre. |
+| H03 | S02, S03 | `05-implementation/predictiva/P211_pronostico_adopcion_producto/professor/notebook.ipynb`; `submission/model_metrics.csv` | Línea base sólo es última observación. |
 | H04 | S04 | `data/source.json`; `submission/`; pruebas | Tests no validan métricas. |
 
 ### Superficies de cambio para revisión posterior
