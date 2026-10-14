@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/literature-derived/dataops-09-data-quality.md` p. 4 — tabla «Severidad | Acción requerida»: «Error | Detención del pipeline», «Alerta | Investigación de la falla», «Informativa | Ser consciente de la información»; cada falla de una prueba de datos tiene una consecuencia operativa distinta según su severidad, no un veredicto binario único (Claude, 2026-10-05). Fuente *literature-derived* (material de clase de seis páginas): aporta la perspectiva metodológica de la clasificación severidad→acción, no un estándar ni una herramienta; su peso es bajo.
+  - `01-evidence/md/literature-derived/dataops-09-data-quality.md` p. 4 — tabla «Severidad | Acción requerida»: «Error | Detención del pipeline», «Alerta | Investigación de la falla», «Informativa | Ser consciente de la información»; cada falla de una prueba de datos tiene una consecuencia operativa distinta según su severidad, no un veredicto binario único (Claude, 2026-10-05). Fuente *literature-derived* (material de clase de seis páginas): aporta la perspectiva metodológica de la clasificación severidad→acción, no un estándar ni una herramienta; su peso es bajo.
 - **Qué gana el estudiante:** convertir un veredicto de observabilidad en una
   decisión operativa sobre el producto que protege. Hoy
   `healthy = all(checks.values())` (H02) trata igual una caída de volumen y

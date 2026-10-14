@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** caso/datos + producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/authoritative/kimball-dimensional-modeling-techniques-2013.md` pp. 15 y 23 — al sobrescribir un atributo (tipo 1) «you must be careful that aggregate fact tables and OLAP cubes affected by this change are recomputed» (p. 15); ante cambios retroactivos que llegan tarde, «a new row needs to be inserted in the dimension table, and then the associated fact rows must be restated» (p. 23): una corrección histórica obliga a reexpresar lo derivado de ella (Claude, 2026-10-05). Fuente *authoritative*: respalda el principio (corrección retroactiva ⇒ reexpresión de agregados), no el mecanismo ni un esquema dimensional; no se propone construir dimensiones.
+  - `01-evidence/md/literature-derived/kimball-dimensional-modeling-techniques-2013.md` pp. 15 y 23 — al sobrescribir un atributo (tipo 1) «you must be careful that aggregate fact tables and OLAP cubes affected by this change are recomputed» (p. 15); ante cambios retroactivos que llegan tarde, «a new row needs to be inserted in the dimension table, and then the associated fact rows must be restated» (p. 23): una corrección histórica obliga a reexpresar lo derivado de ella (Claude, 2026-10-05). Fuente *authoritative*: respalda el principio (corrección retroactiva ⇒ reexpresión de agregados), no el mecanismo ni un esquema dimensional; no se propone construir dimensiones.
 - **Qué gana el estudiante:** ejercer el backfill sobre un indicador real y
   ver su consecuencia para el consumidor. Hoy P438 sólo selecciona
   identificadores en un rango: S02 registra que «no se reprocesa nada: no

@@ -71,6 +71,6 @@ de la secuencia.
   `design/synthesis/s05-diseno-descriptiva.md`,
   `implementation/descriptiva/traceability.yaml`,
   `implementation/descriptiva/audit-against-design.md` y el corpus de
-  `design/benchmarks/`.
+  `01-evidence/`.
 - Evidencia pública contextual: el sitio de Analítica Descriptiva y
   Visualización de Datos, consultado el 2026-09-29.

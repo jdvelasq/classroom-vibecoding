@@ -35,7 +35,7 @@ En la historia del campo, la analítica de grandes datos aparece hacia 2011,
 cuando los métodos analíticos tradicionales empiezan a ejecutarse sobre
 plataformas distribuidas, y converge con el aprendizaje automático en la
 analítica moderna de 2010 a 2015 (véase
-`design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md`).
+`01-evidence/md/literature-derived/conf-origen-y-evolucion-business-analytics.md`).
 
 Los productos de datos también se distinguen por competencias: convierten un
 análisis en un producto usable y mantenido (tableros, aplicaciones de datos,

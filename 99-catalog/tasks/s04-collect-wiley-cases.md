@@ -112,7 +112,7 @@ Each record must identify:
 - the named case, original data source, access route, and license or terms;
 - the relationship between the data and the case;
 - a concise analytical problem, limitations, and possible analytical questions;
-- any substantive connection to `design/benchmarks/`.
+- any substantive connection to `01-evidence/`.
 
 Use one YAML per case, never separate `datasets/` and `problems/` records.
 
@@ -194,7 +194,7 @@ Record original dataset provenance separately in `datasets` and `sources`.
 9. Remove each migrated legacy entry from `catalog/case-inventory.yaml`; if one
    canonical record consolidates multiple legacy entries, remove every covered
    entry and retain their names as aliases.
-10. Search `design/benchmarks/` for substantive case connections without
+10. Search `01-evidence/` for substantive case connections without
    editing benchmark files.
 11. Validate all YAML files created or updated.
 

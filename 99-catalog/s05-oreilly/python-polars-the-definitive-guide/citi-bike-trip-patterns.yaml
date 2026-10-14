@@ -67,7 +67,7 @@ curricular_signal:
     - Do not characterize correlations in trip patterns as causes without an appropriate design.
     - Direct learners to retrieve data from Citi Bike rather than redistribute the companion subset.
 benchmark_connections:
-  - benchmark: design/benchmarks/professional/datacamp.md
+  - benchmark: 01-evidence/professional/datacamp.md
     connection: Supports a reproducible, real-data workflow with explicit source and use conditions.
 benchmark_connection_notes: Connection is at the level of real-data, reproducible analytics practice; no benchmark prescribes this dataset.
 verification:

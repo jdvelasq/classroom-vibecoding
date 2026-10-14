@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` p. 84 — en «DPSIA/DP-Social Responsibility», habilidades T1 «Demonstrate awareness about data sensitiveness when data is processed as an input» y «Apply techniques to provide data privacy during raw data processing, such as provide ranges or salting techniques»: proteger los datos sensibles durante su procesamiento con técnicas como la sal (Claude, 2026-10-05). Fuente *authoritative*: respalda aplicar una técnica de privacidad con sal o clave sobre el identificador; la distinción entre enmascarar, seudonimizar y anonimizar no aparece en el documento y es contenido conceptual de esta propuesta, no de la fuente.
+  - `01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md` p. 84 — en «DPSIA/DP-Social Responsibility», habilidades T1 «Demonstrate awareness about data sensitiveness when data is processed as an input» y «Apply techniques to provide data privacy during raw data processing, such as provide ranges or salting techniques»: proteger los datos sensibles durante su procesamiento con técnicas como la sal (Claude, 2026-10-05). Fuente *authoritative*: respalda aplicar una técnica de privacidad con sal o clave sobre el identificador; la distinción entre enmascarar, seudonimizar y anonimizar no aparece en el documento y es contenido conceptual de esta propuesta, no de la fuente.
 - **Qué gana el estudiante:** reemplazar el identificador directo por un
   seudónimo estable derivado con una clave secreta que no está en el código
   (HMAC-SHA-256), de modo que el consumidor pueda seguir reconociendo los

@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** caso/datos (corrige defecto)
 - **Fuentes:**
-  - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 38 y 46 — «It is insufficient for them to be handed a “canned” data set and be told to analyze it» y los graduados conocen «the pitfalls of misrepresenting data and results» (p. 38); las representaciones de datos ayudan a evitar que datos mal codificados «lead to misleading conclusions» (p. 46): una serie cuya variación es artefacto del generador no debe presentarse como evolución de las ventas (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de no representar mal los datos, no un procedimiento.
+  - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 38 y 46 — «It is insufficient for them to be handed a “canned” data set and be told to analyze it» y los graduados conocen «the pitfalls of misrepresenting data and results» (p. 38); las representaciones de datos ayudan a evitar que datos mal codificados «lead to misleading conclusions» (p. 46): una serie cuya variación es artefacto del generador no debe presentarse como evolución de las ventas (Claude, 2026-10-04). Fuente *authoritative*: respalda la expectativa general de no representar mal los datos, no un procedimiento.
 - **Qué gana el estudiante:** reconocer cuándo una serie temporal no admite
   lectura temporal y reformular la pregunta hacia lo que los datos sí
   sostienen. Hoy la única pregunta de P150 es «¿Cómo cambian las ventas

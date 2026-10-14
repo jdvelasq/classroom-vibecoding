@@ -61,7 +61,7 @@ sources:
       Identifies public package access and GPL-2 | GPL-3 license terms.
 
 benchmark_connections:
-  - path: design/benchmarks/institutional/mit-data-science-and-machine-learning.pdf
+  - path: 01-evidence/institutional/mit-data-science-and-machine-learning.pdf
     locator: 'Week 8, "Case Study 1: Logistic Regression: The Challenger Disaster"'
     notes: Substantive named-case connection in the institutional benchmark.
 

@@ -101,7 +101,7 @@ Use the case-record structure defined by
   the record;
 - record the version or access date used when the documentation exposes it;
 - do not overwrite a stronger primary or institutional source with HistData;
-- search `design/benchmarks/` for the canonical name and meaningful aliases;
+- search `01-evidence/` for the canonical name and meaningful aliases;
   record substantive connections or explicitly preserve `not_found`.
 
 Do not create a file for the HistData package itself, its companion book, or

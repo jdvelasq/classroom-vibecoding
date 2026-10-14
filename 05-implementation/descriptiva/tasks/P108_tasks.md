@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** método/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/institutional/warwick-foundations-of-data-analytics.md` pp. 2–3 — el módulo fundacional incluye «Data Sharing: Privacy, Anonymization, Risks» con «Technologies for anonymizing data: k-anonymity, and differential privacy» (p. 2), y su resultado de aprendizaje pide «identify privacy risks in releasing information, and design techniques to mediate these risks» (p. 3): el riesgo de publicar un conjunto se mide como propiedad del conjunto publicado (Claude, 2026-10-04). Fuente *institutional* y **fuente única**: ilustra que *k*-anonimato forma parte de un curso fundacional de Analytics; no prescribe técnica, umbral ni profundidad. La privacidad diferencial, también citada en p. 2, queda fuera.
+  - `01-evidence/md/institutional/warwick-foundations-data-analytics.md` pp. 2–3 — el módulo fundacional incluye «Data Sharing: Privacy, Anonymization, Risks» con «Technologies for anonymizing data: k-anonymity, and differential privacy» (p. 2), y su resultado de aprendizaje pide «identify privacy risks in releasing information, and design techniques to mediate these risks» (p. 3): el riesgo de publicar un conjunto se mide como propiedad del conjunto publicado (Claude, 2026-10-04). Fuente *institutional* y **fuente única**: ilustra que *k*-anonimato forma parte de un curso fundacional de Analytics; no prescribe técnica, umbral ni profundidad. La privacidad diferencial, también citada en p. 2, queda fuera.
 - **Qué gana el estudiante:** distingue un riesgo medido contra un
   atacante concreto de un riesgo medido sobre el conjunto que se publica.
   Hoy P108 cuenta, tras cada paso de generalización, los nombres que la

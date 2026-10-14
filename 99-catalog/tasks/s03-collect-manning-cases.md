@@ -224,7 +224,7 @@ Each record must identify:
 - the dataset name, data source, access route, contents, and license or terms;
 - every named case or analytical setting associated with that dataset;
 - concise analytical problems, limitations, and possible analytical questions;
-- any substantive connection to `design/benchmarks/`.
+- any substantive connection to `01-evidence/`.
 
 Use one YAML per dataset, never separate dataset and problem records.
 
@@ -328,7 +328,7 @@ identifies and supports that provenance.
 6. Verify dataset provenance, access, terms, contents, associated cases, and
    limitations from the strongest available sources.
 7. Create one YAML for every qualifying dataset, or `.gitkeep` if none qualify.
-8. Search `design/benchmarks/` for substantive dataset-case connections without
+8. Search `01-evidence/` for substantive dataset-case connections without
    editing benchmark files.
 9. Validate all YAML files created or updated.
 

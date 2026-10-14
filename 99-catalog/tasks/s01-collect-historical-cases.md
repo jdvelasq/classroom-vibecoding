@@ -103,7 +103,7 @@ the final response.
 ## Relationship to local benchmarks
 
 After identifying a case from Internet research, search
-`design/benchmarks/` for its canonical name and meaningful aliases.
+`01-evidence/` for its canonical name and meaningful aliases.
 
 This lookup documents the relationship between the historical case and the
 project's existing benchmark corpus. It does not determine eligibility.

@@ -13,7 +13,7 @@ Ejecución (desde la raíz del repositorio):
     uv run .agents/skills/selecting-evidence/scripts/convert.py --force    # reconvierte todo
     uv run .agents/skills/selecting-evidence/scripts/convert.py RUTA.pdf   # sólo esos PDFs
     uv run .agents/skills/selecting-evidence/scripts/convert.py \
-        --input design/benchmarks-pdf --output design/benchmarks-md  # benchmarks
+        --input 00-regulations/pdf --output 00-regulations/md  # normativa
 
 Sin uv: `pip install pymupdf4llm==0.0.27 pymupdf==1.26.5` y ejecutar con
 `python`. Versiones elegidas por compatibilidad con Python 3.9 y con el

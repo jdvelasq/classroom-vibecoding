@@ -16,7 +16,7 @@ scores:
   vigencia: 2
   acceso: 2
 material_warnings: false
-doubts: "No se identifico un autor o institucion explicitos en las paginas con texto extraible; domain.md ya cita este documento como fuente literature-derived (design/benchmarks-md/literature-derived/conf-origen-y-evolucion-business-analytics.md), lo cual respalda su categoria."
+doubts: "No se identifico un autor o institucion explicitos en las paginas con texto extraible; domain.md ya cita este documento como fuente literature-derived (01-evidence/md/literature-derived/conf-origen-y-evolucion-business-analytics.md), lo cual respalda su categoria."
 previous_edition: null
 duplicate_of: null
 reevaluates: null

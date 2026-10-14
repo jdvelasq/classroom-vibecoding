@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** encuadre + producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/professional-learning/perceptual-edge-dashboard-design-requirements-questionnaire.md` p. 1 — el levantamiento de requisitos empieza por «How often should the data be updated in the dashboard?» y sigue con «Who will use the dashboard?» y «What actions will they take in response to these answers?»: la frecuencia de actualización es un requisito que se pregunta al usuario junto con su uso, no un parámetro técnico (Claude, 2026-10-05). Fuente *professional-learning* (consultoría de visualización): aporta la forma de la pregunta de levantamiento, no un estándar; la propuesta se sostiene sobre todo en el defecto que registra `S02.P428.01`.
+  - `01-evidence/md/literature-derived/perceptual-edge-dashboard-design-requirements-questionnaire.md` p. 1 — el levantamiento de requisitos empieza por «How often should the data be updated in the dashboard?» y sigue con «Who will use the dashboard?» y «What actions will they take in response to these answers?»: la frecuencia de actualización es un requisito que se pregunta al usuario junto con su uso, no un parámetro técnico (Claude, 2026-10-05). Fuente *professional-learning* (consultoría de visualización): aporta la forma de la pregunta de levantamiento, no un estándar; la propuesta se sostiene sobre todo en el defecto que registra `S02.P428.01`.
 - **Qué gana el estudiante:** entender que la cadencia de una ejecución
   programada es una cláusula del contrato operativo (`productos.C01`), no un
   parámetro de la biblioteca. Hoy la agenda corre `every(10).seconds` sobre

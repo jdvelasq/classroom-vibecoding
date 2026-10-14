@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia (corrige un defecto)
 - **Fuentes:**
-  - `design/benchmarks-md/professional-learning/oracle-data-mining-concepts-11g.md` pp. 10, 27 y 132 — «Data for build, test, and apply must undergo the exact same transformations» (p. 10); con preparación embebida, «The transformation instructions are embedded in the model and reused whenever the model is applied» (p. 27); sin ella, «You must take care to apply the same transformations to each data set» (p. 132): la unidad que se despliega y se recupera es preparación más modelo, no el estimador solo (Claude, 2026-10-05). Fuente *professional-learning*: respalda la práctica de artefacto; el defecto que justifica el cambio es el registrado por S02.
+  - `01-evidence/md/professional-learning/oracle-data-mining-concepts-11g.md` pp. 10, 27 y 132 — «Data for build, test, and apply must undergo the exact same transformations» (p. 10); con preparación embebida, «The transformation instructions are embedded in the model and reused whenever the model is applied» (p. 27); sin ella, «You must take care to apply the same transformations to each data set» (p. 132): la unidad que se despliega y se recupera es preparación más modelo, no el estimador solo (Claude, 2026-10-05). Fuente *professional-learning*: respalda la práctica de artefacto; el defecto que justifica el cambio es el registrado por S02.
 - **Qué gana el estudiante:** entiende que una corrida es recuperable sólo si
   el artefacto guardado contiene todo lo que se aplicó a los datos antes de
   puntuar, y lo comprueba: carga `model.pkl` desde la carpeta de la corrida y

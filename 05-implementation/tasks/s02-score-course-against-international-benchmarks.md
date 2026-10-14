@@ -17,7 +17,7 @@ external institution's endorsement.
 - `implementation/descriptiva/audit-against-design.md`;
 - the common and course-specific P activities referenced by the traceability
   file;
-- the institutional and authoritative PDFs under `design/benchmarks/`; and
+- the institutional and authoritative PDFs under `01-evidence/`; and
 - the published course site, only as evidence of the shared flipped-classroom
   layer.
 

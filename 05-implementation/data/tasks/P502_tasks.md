@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/authoritative/national-academies-data-science-for-undergraduates-2018.md` pp. 22, 40 y 45 — entre las consideraciones éticas, «obtaining permissions to use data, crediting the sources of data properly»; «Students also need to consider the provenance of the data used»; y «Data provenance» y «Record retention policies» entre los conceptos clave de gestión y curaduría de datos, junto con «providing others a very clear understanding of the details of the data that went into a project»: la procedencia de la fuente, sus permisos y su crédito son contenido que todo estudiante debe ejercer (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general, no un formato de catálogo.
+  - `01-evidence/md/institutional/national-academies-data-science-for-undergraduates-2018.md` pp. 22, 40 y 45 — entre las consideraciones éticas, «obtaining permissions to use data, crediting the sources of data properly»; «Students also need to consider the provenance of the data used»; y «Data provenance» y «Record retention policies» entre los conceptos clave de gestión y curaduría de datos, junto con «providing others a very clear understanding of the details of the data that went into a project»: la procedencia de la fuente, sus permisos y su crédito son contenido que todo estudiante debe ejercer (Claude, 2026-10-05). Fuente *authoritative*: respalda la expectativa general, no un formato de catálogo.
 - **Qué gana el estudiante:** distinguir dos preguntas que hoy el catálogo
   mezcla o deja sin responder: de dónde viene la fuente y en qué condiciones
   puede usarse (procedencia externa: productor, versión o fecha de obtención,

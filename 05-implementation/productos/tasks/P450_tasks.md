@@ -7,7 +7,7 @@
 - **Estado:** pendiente de discusión
 - **Tipo:** producto/evidencia
 - **Fuentes:**
-  - `design/benchmarks-md/authoritative/acm-computing-competencies-undergraduate-data-science-2021.md` p. 111 — en «PR-On Automation», conocimiento «Transparency and accountability in algorithms» y habilidad «Identify steps needed to ensure that a decision-making system is auditable»: un sistema que decide o recomienda acciones debe permitir reconstruir después quién decidió y sobre qué (Claude, 2026-10-05). Fuente *authoritative*, pero el área está marcada «– E» (electiva) en el documento: respalda la expectativa general de auditabilidad, no un formato de registro.
+  - `01-evidence/md/institutional/acm-computing-competencies-undergraduate-data-science-2021.md` p. 111 — en «PR-On Automation», conocimiento «Transparency and accountability in algorithms» y habilidad «Identify steps needed to ensure that a decision-making system is auditable»: un sistema que decide o recomienda acciones debe permitir reconstruir después quién decidió y sobre qué (Claude, 2026-10-05). Fuente *authoritative*, pero el área está marcada «– E» (electiva) en el documento: respalda la expectativa general de auditabilidad, no un formato de registro.
 - **Qué gana el estudiante:** distinguir entre *condicionar* una acción a una
   aprobación (H02, que se conserva) y dejar una decisión *auditable*: un
   tercero puede reconstruir quién revisó, en qué instante UTC, con qué
