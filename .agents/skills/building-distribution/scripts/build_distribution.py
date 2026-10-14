@@ -237,6 +237,9 @@ TEST_ISOLATION_FILE = ROOT / "conftest.py"
 EMPTY_DIRECTORIES = ("professor", "submission", "temp")
 LOCAL_DIRECTORY_NAMES = ("__pycache__", ".pytest_cache", ".ipynb_checkpoints")
 LOCAL_FILE_NAMES = (".DS_Store",)
+# Written by the auditing-activities skill at the root of each activity for
+# the instructor; students never receive them.
+INSTRUCTOR_FILE_NAMES = ("activity.md", "log.md", "tasks.md")
 
 
 def prepare_course_directories():
@@ -307,10 +310,16 @@ def remove_local_artifacts(activity_dir):
             path.unlink()
 
 
+def remove_instructor_files(activity_dir):
+    for file_name in INSTRUCTOR_FILE_NAMES:
+        (activity_dir / file_name).unlink(missing_ok=True)
+
+
 def clean_activity(activity_dir):
     for directory_name in EMPTY_DIRECTORIES:
         empty_directory(activity_dir / directory_name)
 
+    remove_instructor_files(activity_dir)
     remove_local_artifacts(activity_dir)
 
 

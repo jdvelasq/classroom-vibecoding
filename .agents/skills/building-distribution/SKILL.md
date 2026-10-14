@@ -26,8 +26,9 @@ For each course in `COURSE_ACTIVITIES` (inside the script) it:
 3. copies each listed activity `05-implementation/<path>` into
    `06-distribution/<course>/<activity>/`;
 4. empties `professor/`, `submission/` and `temp/` in each copy, leaving a
-   `.gitkeep`, and removes local artifacts (`__pycache__`,
-   `.pytest_cache`, `.ipynb_checkpoints`, `.DS_Store`).
+   `.gitkeep`, removes the instructor files at the activity root
+   (`activity.md`, `log.md`, `tasks.md`) and removes local artifacts
+   (`__pycache__`, `.pytest_cache`, `.ipynb_checkpoints`, `.DS_Store`).
 
 Which activities go into each course, and in which order, is set by
 `COURSE_ACTIVITIES`. When an activity is added, renamed or retired in
