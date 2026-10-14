@@ -13,13 +13,12 @@ from activity_lib import (
     Layout,
     activity_dirs,
     parse_activity,
-    parse_log,
     parse_traceability,
     validate_activity,
     validate_log,
 )
 
-# The course outcomes, the matrix and the competencies are owned by the
+# The course files, the matrix and the competencies are owned by the
 # mapping-curriculum skill and the skills it builds on; their parsers are
 # reused so that every link of the chain reads those files the same way.
 SKILLS = Path(__file__).resolve().parents[2]
@@ -29,8 +28,12 @@ import curriculum_lib as curriculum  # noqa: E402
 CATEGORIES = ("cubierta", "marginal", "rechazada previamente", "fuera de alcance", "mejora", "actividad nueva")
 COVERED, MARGINAL, REJECTED, OUT_OF_SCOPE, IMPROVEMENT, NEW_ACTIVITY = CATEGORIES
 NEEDS_REASON = (MARGINAL, REJECTED, OUT_OF_SCOPE)
+LEVELS = curriculum.LEVELS
+UNDERGRADUATE_LEVEL = curriculum.INTRODUCE
 DECISIONS = ("igual", "puntual", "curso")
 SAME, POINT_CHANGE, COURSE_DECISION = DECISIONS
+OUTSIDE_ACTIONS = ("conservar", "recortar")
+KEEP, TRIM = OUTSIDE_ACTIONS
 TASK_TYPES = ("encuadre", "producto/evidencia", "método", "caso/datos", "proceso", "pedagogía")
 COURSE_TASK_TYPES = ("actividad nueva", "reorganización")
 REJECTED_STATE = "rechazada"
@@ -42,9 +45,11 @@ PENDING_STATE = "pendiente de discusión"
 MAX_NEW_TASKS_PER_ACTIVITY = 1
 MAX_OPEN_TASKS_PER_ACTIVITY = 3
 
+JUSTIFICATION_FIELDS = ["metodologico", "tecnico", "pedagogico", "identidad"]
 TASK_FIELDS = ["titulo", "tipo", "que_gana", "anclas", "alternativas", "no_regresion", "limite",
-               "interacciones", "aceptacion", "instrucciones"]
-COURSE_TASK_FIELDS = ["titulo", "tipo", "contribucion", "posicion", "efecto", "caso", "producto", "aceptacion"]
+               "interacciones", *JUSTIFICATION_FIELDS, "aceptacion", "instrucciones"]
+COURSE_TASK_FIELDS = ["titulo", "tipo", "contribucion", "posicion", "desplaza", "efecto", "caso", "producto",
+                      *JUSTIFICATION_FIELDS, "aceptacion"]
 AUDIT_KEYS = ["curso", "executor", "fecha", "senales", "actividades", "nuevas", "refuerza"]
 
 ACTIVITY_REF = re.compile(r"^(?:([a-z][a-z0-9-]*)/)?(P\d{3})$")
@@ -52,12 +57,11 @@ ANCHOR = re.compile(r"^((?:[a-z][a-z0-9-]*/)?P\d{3}):(H\d{2})$")
 TASK_REF = re.compile(r"^T(\d{2})$")
 COURSE_TASK_REF = re.compile(r"^N(\d{2})$")
 TASK_HEADING = re.compile(r"^## ([TN]\d{2}) — (.+?)\s*$", re.M)
-ITEM_ID = re.compile(r"^(C\d{3})\.(CON|HAB)(\d{2})$")
 LEGACY_CAPABILITY = re.compile(r"^[a-z][a-z0-9-]*\.C\d{2}$")
 COMPETENCY_ID = re.compile(r"^C\d{3}$")
 SOURCES = re.compile(r"\s*\[[^\]]*\]\s*\.?\s*$")
-SUPPORTED_TRACE_VERSION = SUPPORTED_FORMAT_VERSION
 TRACE_FIELDS = ["resultados", "competencias", "decision", "auditoria"]
+SUPPORTED_TRACE_VERSION = SUPPORTED_FORMAT_VERSION
 
 
 @dataclass(frozen=True)
@@ -65,8 +69,9 @@ class Target:
     id: str
     statement: str
     level: str
-    contribution: str
+    assessment: str
     competencies: tuple[str, ...]
+    program_outcomes: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -84,9 +89,6 @@ class CourseActivity:
     id: str
     folder: Path
 
-    def anchor(self, highlight: str) -> str:
-        return f"{self.ref}:{highlight}"
-
 
 @dataclass
 class TaskEntry:
@@ -103,6 +105,9 @@ class Requirements:
     source: str
     targets: list[Target]
     items: list[Item]
+    identity: dict[str, str] = field(default_factory=dict)
+    required_knowledge: list[str] = field(default_factory=list)
+    scope: list[str] = field(default_factory=list)
     competency_dates: dict[str, str] = field(default_factory=dict)
 
     @property
@@ -127,37 +132,55 @@ def clean(text: str) -> str:
     return stripped if stripped.endswith(".") else stripped + "."
 
 
+def level_rank(level: str) -> int:
+    return LEVELS.index(level) if level in LEVELS else -1
+
+
+def collapse_bullet(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def requirements(layout: Layout, course: str) -> Requirements:
+    """What the course must teach: its course outcomes, at the level it owes them, and their competency items."""
     cl = curriculum_layout(layout)
     info = find_course(layout, course)
     competencies = curriculum.load_competencies(cl)
+    if info.level == curriculum.POSTGRADUATE:
+        files = curriculum.load_postgraduate(cl)
+        folder = cl.postgraduate
+    else:
+        files = curriculum.load_undergraduate(cl)
+        folder = cl.undergraduate
+    if course not in files:
+        raise SystemExit(f"{(folder / (course + '.md')).relative_to(layout.root)} does not exist; "
+                         f"run mapping-curriculum first")
+    document = files[course]
+    outcomes = curriculum.parse_course_outcomes(document)
+    if not outcomes:
+        raise SystemExit(f"the course file of {course} has no course outcomes; run mapping-curriculum first")
+
     targets: list[Target] = []
     if info.level == curriculum.POSTGRADUATE:
         rows, problems = curriculum.read_matrix(cl)
         if problems:
             raise SystemExit("; ".join(problems))
-        rows = [r for r in rows if r.curso == course]
-        if not rows:
-            raise SystemExit(
-                f"{curriculum_layout(layout).matrix.relative_to(layout.root)} assigns no learning outcome to "
-                f"{course}; run mapping-curriculum first"
-            )
-        outcomes = curriculum.load_outcomes(cl)
-        for row in rows:
-            outcome = outcomes.get(row.ra)
-            if outcome is None:
-                raise SystemExit(f"matrix.csv cites {row.ra}, which is not a learning outcome")
-            targets.append(Target(row.ra, str(outcome.header.get("enunciado", "")), row.nivel, row.aporte,
-                                  tuple(outcome.header.get("competencias", []))))
-        source = cl.matrix.relative_to(layout.root).as_posix()
+        levels = {r.ra: r.nivel for r in rows if r.curso == course}
+        program = curriculum.load_outcomes(cl)
+        for outcome in outcomes:
+            missing = [ra for ra in outcome.program_outcomes if ra not in levels or ra not in program]
+            if missing:
+                raise SystemExit(f"{course}/{outcome.id} derives from {', '.join(missing)}, which the matrix does "
+                                 f"not assign to {course}; run mapping-curriculum first")
+            cids = tuple(dict.fromkeys(c for ra in outcome.program_outcomes
+                                       for c in program[ra].header.get("competencias", [])))
+            level = max((levels[ra] for ra in outcome.program_outcomes), key=level_rank)
+            targets.append(Target(f"{course}/{outcome.id}", outcome.statement, level, outcome.assessment,
+                                  cids, outcome.program_outcomes))
     else:
-        written = curriculum.load_undergraduate(cl)
-        if course not in written:
-            raise SystemExit(f"04-curriculum/undergraduate/{course}.md does not exist; run mapping-curriculum first")
-        for outcome in curriculum.parse_course_outcomes(written[course]):
-            targets.append(Target(f"{course}/{outcome.id}", outcome.statement, "introductorio",
-                                  outcome.title, outcome.competencies))
-        source = (cl.undergraduate / f"{course}.md").relative_to(layout.root).as_posix()
+        for outcome in outcomes:
+            targets.append(Target(f"{course}/{outcome.id}", outcome.statement, UNDERGRADUATE_LEVEL,
+                                  outcome.assessment, outcome.competencies))
+
     items: list[Item] = []
     dates: dict[str, str] = {}
     for cid in sorted({c for t in targets for c in t.competencies}):
@@ -168,7 +191,18 @@ def requirements(layout: Layout, course: str) -> Requirements:
         for kind, section in (("CON", "Conocimientos"), ("HAB", "Habilidades")):
             for number, text in enumerate(competency.bullets(section), start=1):
                 items.append(Item(f"{cid}.{kind}{number:02d}", cid, kind, clean(text)))
-    return Requirements(course, info.level, source, targets, items, dates)
+    identity = dict(curriculum.labelled(document.sections.get(curriculum.IDENTITY, "")))
+    return Requirements(
+        course=course,
+        level=info.level,
+        source=(folder / f"{course}.md").relative_to(layout.root).as_posix(),
+        targets=targets,
+        items=items,
+        identity=identity,
+        required_knowledge=[collapse_bullet(b) for b in document.bullets(curriculum.REQUIRED_KNOWLEDGE)],
+        scope=[collapse_bullet(b) for b in document.bullets("Alcance")],
+        competency_dates=dates,
+    )
 
 
 def course_activities(layout: Layout, course: str) -> list[CourseActivity]:
@@ -217,7 +251,7 @@ def parse_tasks(path: Path) -> list[TaskEntry]:
 
 
 def activity_tasks(layout: Layout, activity: CourseActivity) -> list[TaskEntry]:
-    return [e for e in parse_tasks(layout.tasks(activity.owner, activity.id)) if TASK_REF.match(e.id)]
+    return [e for e in parse_tasks(layout.tasks(activity.owner, activity.folder.name)) if TASK_REF.match(e.id)]
 
 
 def open_tasks(entries: list[TaskEntry]) -> list[TaskEntry]:
@@ -256,8 +290,27 @@ def as_list(value: object) -> list:
     return value if isinstance(value, list) else []
 
 
+def anchor_parts(anchor: object) -> tuple[str, str]:
+    """An anchor is {"hito": "P103:H01", "nivel": "introduce"}."""
+    if isinstance(anchor, dict):
+        return str(anchor.get("hito", "")), str(anchor.get("nivel", ""))
+    return str(anchor), ""
+
+
+def validate_proposal(proposal: dict, fields: list[str], where: str) -> list[str]:
+    errors = []
+    for name in fields:
+        value = proposal.get(name)
+        if name == "anclas":
+            if not as_list(value):
+                errors.append(f"{where}: anclas is empty")
+        elif not str(value or "").strip():
+            errors.append(f"{where}: {name} is empty")
+    return errors
+
+
 def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str], list[str]]:
-    """Checks the model's audit against the course requirements and descriptions."""
+    """Checks the model's audit against what the course must teach and what its activities achieve."""
     errors: list[str] = []
     warnings: list[str] = []
     unknown_keys = sorted(set(audit) - set(AUDIT_KEYS))
@@ -280,27 +333,25 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
     targets = {t.id: t for t in reqs.targets}
     open_course = {e.id for e in open_tasks(course_tasks(layout, course))}
 
-    new_course = {}
+    new_course: dict[str, dict] = {}
     for proposal in as_list(audit.get("nuevas")):
         key = proposal.get("clave") if isinstance(proposal, dict) else None
         if not key or key in new_course:
             errors.append("every entry of nuevas needs a unique clave")
             continue
         new_course[key] = proposal
-        for name in COURSE_TASK_FIELDS:
-            if not str(proposal.get(name, "")).strip():
-                errors.append(f"nuevas {key}: {name} is empty")
+        errors += validate_proposal(proposal, COURSE_TASK_FIELDS, f"nuevas {key}")
         if proposal.get("tipo") not in COURSE_TASK_TYPES:
             errors.append(f"nuevas {key}: tipo must be one of {', '.join(COURSE_TASK_TYPES)}")
     for ref in as_list(audit.get("refuerza")):
         if ref not in open_course:
-            errors.append(f"refuerza cites {ref}, which is not a course proposal of {course}")
+            errors.append(f"refuerza cites {ref}, which is not an open course proposal of {course}")
 
     def course_reference(ref: object, where: str) -> None:
         if ref not in new_course and ref not in open_course:
-            errors.append(f"{where} cites the course proposal '{ref}', which is neither in nuevas nor in tasks")
+            errors.append(f"{where} cites the course proposal '{ref}', which is neither in nuevas nor open")
 
-    entries = {}
+    entries: dict[str, dict] = {}
     for entry in as_list(audit.get("actividades")):
         ref = entry.get("actividad") if isinstance(entry, dict) else None
         if ref not in activities:
@@ -314,6 +365,7 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
             errors.append(f"{ref} has no decision in actividades")
 
     point_proposals: dict[str, dict[str, dict]] = {}
+    open_by_activity: dict[str, set[str]] = {}
     for ref, entry in entries.items():
         activity = activities[ref]
         description = descriptions[ref]
@@ -322,95 +374,101 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
         competencies = as_list(entry.get("competencias"))
         proposals = as_list(entry.get("propuestas"))
         reinforced = as_list(entry.get("refuerza"))
-        where = f"{ref}"
         if decision not in DECISIONS:
-            errors.append(f"{where}: decision must be one of {', '.join(DECISIONS)}")
+            errors.append(f"{ref}: decision must be one of {', '.join(DECISIONS)}")
         if not str(entry.get("razon", "")).strip():
-            errors.append(f"{where}: razon is empty")
+            errors.append(f"{ref}: razon is empty")
         for rid in results:
             if rid not in targets:
-                errors.append(f"{where}: {rid} is not an outcome {course} must cover")
+                errors.append(f"{ref}: {rid} is not a course outcome of {course}")
         allowed = {c for rid in results if rid in targets for c in targets[rid].competencies}
         for cid in competencies:
             if LEGACY_CAPABILITY.match(str(cid)) or not COMPETENCY_ID.match(str(cid)):
-                errors.append(f"{where}: '{cid}' is not a competency id Cnnn")
+                errors.append(f"{ref}: '{cid}' is not a competency id Cnnn")
             elif cid not in allowed:
-                errors.append(f"{where}: {cid} is not a competency of its resultados")
+                errors.append(f"{ref}: {cid} is not a competency of its resultados")
         if results and not competencies:
-            errors.append(f"{where}: resultados need at least one of their competencias")
+            errors.append(f"{ref}: resultados need at least one of their competencias")
         if not results and decision != COURSE_DECISION:
-            errors.append(f"{where}: an activity that serves no outcome of {course} only admits decision '{COURSE_DECISION}'")
+            errors.append(f"{ref}: an activity that serves no course outcome only admits decision '{COURSE_DECISION}'")
 
         open_ids = {e.id for e in open_tasks(activity_tasks(layout, activity))}
+        open_by_activity[ref] = open_ids
         for task in reinforced:
             if task not in open_ids:
-                errors.append(f"{where}: refuerza cites {task}, which is not an open proposal of {activity.id}")
+                errors.append(f"{ref}: refuerza cites {task}, which is not an open proposal of {activity.id}")
         keys: dict[str, dict] = {}
         for proposal in proposals:
             key = proposal.get("clave") if isinstance(proposal, dict) else None
             if not key or key in keys or key in new_course:
-                errors.append(f"{where}: every proposal needs a clave unique in the audit")
+                errors.append(f"{ref}: every proposal needs a clave unique in the audit")
                 continue
             keys[key] = proposal
-            for name in TASK_FIELDS:
-                value = proposal.get(name)
-                if name == "anclas":
-                    if not as_list(value):
-                        errors.append(f"{where} {key}: anclas is empty")
-                elif not str(value or "").strip():
-                    errors.append(f"{where} {key}: {name} is empty")
+            errors += validate_proposal(proposal, TASK_FIELDS, f"{ref} {key}")
             if proposal.get("tipo") not in TASK_TYPES:
-                errors.append(f"{where} {key}: tipo must be one of {', '.join(TASK_TYPES)}")
+                errors.append(f"{ref} {key}: tipo must be one of {', '.join(TASK_TYPES)}")
             for anchor in as_list(proposal.get("anclas")):
                 if anchor not in description.highlight_ids() and anchor not in description.surface_ids():
-                    errors.append(f"{where} {key}: ancla {anchor} is not a highlight or surface of {activity.id}")
+                    errors.append(f"{ref} {key}: ancla {anchor} is not a highlight or surface of {activity.id}")
         point_proposals[ref] = keys
 
         if decision == SAME and (proposals or reinforced or entry.get("curso")):
-            errors.append(f"{where}: decision '{SAME}' takes no proposal")
+            errors.append(f"{ref}: decision '{SAME}' takes no proposal")
         if decision == POINT_CHANGE:
             if len(proposals) > MAX_NEW_TASKS_PER_ACTIVITY:
                 errors.append(
-                    f"{where}: a point change is one bounded change; {len(proposals)} new proposals lengthen "
+                    f"{ref}: a point change is one bounded change; {len(proposals)} new proposals lengthen "
                     f"the activity, so the rest belongs to a course decision"
                 )
             if not proposals and not reinforced:
-                errors.append(f"{where}: decision '{POINT_CHANGE}' needs a new proposal or an open one to reinforce")
+                errors.append(f"{ref}: decision '{POINT_CHANGE}' needs a new proposal or an open one to reinforce")
             if entry.get("curso"):
-                errors.append(f"{where}: decision '{POINT_CHANGE}' takes no course proposal")
+                errors.append(f"{ref}: decision '{POINT_CHANGE}' takes no course proposal")
             if len(open_ids) + len(proposals) > MAX_OPEN_TASKS_PER_ACTIVITY:
                 warnings.append(
-                    f"{where}: {len(open_ids) + len(proposals)} open proposals; check that the activity stays a short, "
+                    f"{ref}: {len(open_ids) + len(proposals)} open proposals; check that the activity stays a short, "
                     f"well-defined problem"
                 )
         if decision == COURSE_DECISION:
             if proposals or reinforced:
-                errors.append(f"{where}: decision '{COURSE_DECISION}' takes no activity proposal")
-            course_reference(entry.get("curso"), where)
+                errors.append(f"{ref}: decision '{COURSE_DECISION}' takes no activity proposal")
+            course_reference(entry.get("curso"), ref)
 
+    anchored: dict[str, set[str]] = {ref: set() for ref in activities}
     seen: set[str] = set()
     used_keys: set[str] = set()
     for signal in as_list(audit.get("senales")):
         sid = signal.get("id") if isinstance(signal, dict) else None
         if sid not in reqs.signal_ids:
-            errors.append(f"senales cites '{sid}', which is not an outcome or item of {course}")
+            errors.append(f"senales cites '{sid}', which is not a course outcome or item of {course}")
             continue
         if sid in seen:
             errors.append(f"{sid} appears more than once in senales")
         seen.add(sid)
         category = signal.get("categoria")
+        reached = -1
+        for anchor in as_list(signal.get("anclas")):
+            hito, level = anchor_parts(anchor)
+            match = ANCHOR.match(hito)
+            if not match or match.group(1) not in activities:
+                errors.append(f"{sid}: ancla '{hito}' is not Pxxx:HNN of an activity of {course}")
+            elif match.group(2) not in descriptions[match.group(1)].highlight_ids():
+                errors.append(f"{sid}: {match.group(2)} is not a highlight of {match.group(1)}")
+            else:
+                anchored[match.group(1)].add(match.group(2))
+            if level not in LEVELS:
+                errors.append(f"{sid}: ancla '{hito}' needs a nivel among {', '.join(LEVELS)}")
+            reached = max(reached, level_rank(level))
         if category not in CATEGORIES:
             errors.append(f"{sid}: categoria must be one of {', '.join(CATEGORIES)}")
         elif category == COVERED:
-            anchors = as_list(signal.get("anclas"))
-            if not anchors:
-                errors.append(f"{sid}: a covered signal needs anclas Pxxx:HNN")
-            for anchor in anchors:
-                match = ANCHOR.match(str(anchor))
-                if not match or match.group(1) not in activities:
-                    errors.append(f"{sid}: ancla '{anchor}' is not Pxxx:HNN of an activity of {course}")
-                elif match.group(2) not in descriptions[match.group(1)].highlight_ids():
-                    errors.append(f"{sid}: {match.group(2)} is not a highlight of {match.group(1)}")
+            if not as_list(signal.get("anclas")):
+                errors.append(f"{sid}: a covered signal needs anclas")
+            elif sid in targets and reached < level_rank(targets[sid].level):
+                errors.append(
+                    f"{sid}: the course owes it at '{targets[sid].level}', but its anclas reach less; "
+                    f"classify it as {IMPROVEMENT} or {NEW_ACTIVITY}"
+                )
         elif category in NEEDS_REASON:
             if not str(signal.get("razon", "")).strip():
                 errors.append(f"{sid}: a {category} signal needs a razon")
@@ -430,18 +488,46 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
     for sid in reqs.signal_ids:
         if sid not in seen:
             errors.append(f"{sid} has no category in senales")
+
+    for ref, entry in entries.items():
+        outside: dict[str, dict] = {}
+        for item in as_list(entry.get("fuera")):
+            hid = item.get("hito") if isinstance(item, dict) else None
+            where = f"{ref} {hid}"
+            if hid not in descriptions[ref].highlight_ids():
+                errors.append(f"{ref}: fuera cites '{hid}', which is not a highlight of {activities[ref].id}")
+                continue
+            outside[hid] = item
+            if hid in anchored[ref]:
+                errors.append(f"{where} is anchored by a signal and listed in fuera at once")
+            if item.get("accion") not in OUTSIDE_ACTIONS:
+                errors.append(f"{where}: accion must be one of {', '.join(OUTSIDE_ACTIONS)}")
+            if not str(item.get("razon", "")).strip():
+                errors.append(f"{where}: razon is empty")
+            if item.get("accion") == TRIM:
+                target = item.get("propuesta")
+                known = (set(point_proposals.get(ref, {})) | set(as_list(entry.get("refuerza")))
+                         | set(new_course) | open_course)
+                if target not in known:
+                    errors.append(f"{where}: recortar needs a propuesta of {ref} or a course proposal")
+                used_keys.add(str(target))
+        for hid in descriptions[ref].highlight_ids():
+            if hid not in anchored[ref] and hid not in outside:
+                errors.append(f"{ref} {hid} serves no signal; anchor it or list it in fuera")
+
     for ref, keys in point_proposals.items():
         for key in keys:
             if key not in used_keys:
-                errors.append(f"{ref} {key}: no signal motivates this proposal")
+                errors.append(f"{ref} {key}: no signal or highlight motivates this proposal")
     referenced = used_keys | {str(e.get("curso")) for e in entries.values()}
     for key in new_course:
         if key not in referenced:
-            errors.append(f"nuevas {key}: no signal or activity motivates this course proposal")
+            errors.append(f"nuevas {key}: no signal, activity or highlight motivates this course proposal")
     return errors, warnings
 
 
-def validate_traceability(layout: Layout, course: str, targets: dict[str, Target] | None = None) -> tuple[list[str], list[str]]:
+def validate_traceability(layout: Layout, course: str,
+                          targets: dict[str, Target] | None = None) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
     name = layout.shown(layout.traceability(course))
@@ -461,7 +547,7 @@ def validate_traceability(layout: Layout, course: str, targets: dict[str, Target
                     errors.append(f"{name}: {key} cites '{cid}' among competencias; use Cnnn")
             for rid in as_list(value.get("resultados")):
                 if targets is not None and rid not in targets:
-                    errors.append(f"{name}: {key} cites {rid}, which is not an outcome of {course}")
+                    errors.append(f"{name}: {key} cites {rid}, which is not a course outcome of {course}")
         else:
             legacy.append(key)
             for ref in value or []:

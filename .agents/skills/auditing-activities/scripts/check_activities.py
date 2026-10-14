@@ -4,11 +4,11 @@ Usage (from the repository root):
 
     python3 .agents/skills/auditing-activities/scripts/check_activities.py <curso> [Pxxx ...]
 
-It checks that every Pxxx_ folder has its description and log, that each
+It checks that every Pxxx_ folder has its description, that each
 description follows the format, that every highlight is backed by paths that
-exist and linked to an existing surface, and that log entries are numbered in
-order. It prints warnings and errors and exits with status 1 when there is an
-error. It never rewrites a file.
+exist and linked to an existing surface, and that the entries of a log, when
+there is one, are numbered in order. It prints warnings and errors and
+exits with status 1 when there is an error. It never rewrites a file.
 """
 
 from __future__ import annotations

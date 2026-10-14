@@ -4,9 +4,10 @@ Usage (from the repository root):
 
     python3 .agents/skills/auditing-activities/scripts/audit_status.py <curso>
 
-It reports what the course must cover (its learning outcomes from the matrix,
-or its course outcomes if it is an undergraduate course, and the knowledge
-and skill items of their competencies, each with a stable id), the activities
+It reports what the course must teach: its course outcomes, each with the
+level the course owes it and its assessment, and the knowledge and skill items
+of their competencies, each with a stable id. It also reports the identity,
+required knowledge and scope of the course file, the activities
 of the course with their highlights, surfaces, current traceability entry,
 open proposals and previous decisions, the course proposals, and the
 activities whose description must be fixed before auditing. It reads only.
@@ -23,7 +24,9 @@ from audit_lib import (
     COURSE_TASK_TYPES,
     DECISIONS,
     MAX_NEW_TASKS_PER_ACTIVITY,
+    LEVELS,
     MAX_OPEN_TASKS_PER_ACTIVITY,
+    OUTSIDE_ACTIONS,
     TASK_TYPES,
     activity_tasks,
     course_activities,
@@ -70,9 +73,12 @@ def status(layout: Layout, course: str) -> dict[str, object]:
         "level": reqs.level,
         "source": reqs.source,
         "competency_dates": reqs.competency_dates,
+        "identity": reqs.identity,
+        "required_knowledge": reqs.required_knowledge,
+        "scope": reqs.scope,
         "targets": [
-            {"id": t.id, "enunciado": t.statement, "nivel": t.level, "aporte": t.contribution,
-             "competencias": list(t.competencies)}
+            {"id": t.id, "enunciado": t.statement, "nivel": t.level, "evaluacion": t.assessment,
+             "resultados_de_aprendizaje": list(t.program_outcomes), "competencias": list(t.competencies)}
             for t in reqs.targets
         ],
         "items": [{"id": i.id, "texto": i.text} for i in reqs.items],
@@ -84,6 +90,8 @@ def status(layout: Layout, course: str) -> dict[str, object]:
         "blocked": blocked,
         "categories": list(CATEGORIES),
         "decisions": list(DECISIONS),
+        "levels": list(LEVELS),
+        "outside_actions": list(OUTSIDE_ACTIONS),
         "task_types": list(TASK_TYPES),
         "course_task_types": list(COURSE_TASK_TYPES),
         "max_new_proposals_per_activity": MAX_NEW_TASKS_PER_ACTIVITY,

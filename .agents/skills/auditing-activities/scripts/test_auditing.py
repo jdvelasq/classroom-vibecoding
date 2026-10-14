@@ -68,6 +68,54 @@ Prueba.
 - Nada más.
 """
 
+POSTGRADUATE = """---
+curso: "demo"
+nivel: "posgrado"
+format_version: "0.5"
+fecha: "2026-10-14"
+---
+
+# Analítica de prueba
+
+## Propósito
+
+Prueba.
+
+## Identidad
+
+- Pregunta: qué ocurre y para quién.
+- Producto terminal: una explicación con evidencia.
+- Disciplinas contribuyentes: estadística y visualización.
+- Riesgo: confundirse con un curso de visualización.
+
+## Conocimientos requeridos
+
+- Python básico.
+
+## Resultados de aprendizaje
+
+- RA01, introduce: Plantea la pregunta.
+- RA02, domina: Produce el producto completo.
+
+## Resultados del curso
+
+### RC01. Plantear la pregunta
+
+- Enunciado: Formular la pregunta descriptiva del caso.
+- Resultados de aprendizaje: RA01.
+- Evaluación: Pregunta formulada [RA01].
+
+### RC02. Producir la explicación
+
+- Enunciado: Construir la explicación completa del caso.
+- Resultados de aprendizaje: RA02.
+- Evaluación: Explicación con evidencia [RA02].
+
+## Alcance
+
+- La predicción queda fuera.
+"""
+
 TASK = {
     "clave": "t1",
     "titulo": "Verificar la exposición antes del ranking",
@@ -78,6 +126,10 @@ TASK = {
     "no_regresion": "Se conservan H01 y H02.",
     "limite": "Agrega una celda y una tabla.",
     "interacciones": "Ninguna.",
+    "metodologico": "Un ranking supone exposición igual.",
+    "tecnico": "Cuenta semanas por conductor con groupby.",
+    "pedagogico": "El estudiante comprueba antes de concluir.",
+    "identidad": "Refuerza la pregunta descriptiva, no agrega técnica.",
     "aceptacion": "Un highlight nuevo con la tabla de semanas.",
     "instrucciones": "Inspecciona professor/notebook.ipynb y agrega la verificación.",
 }
@@ -88,7 +140,12 @@ COURSE_TASK = {
     "titulo": "Domina el producto descriptivo completo",
     "contribucion": "Un producto completo evaluado.",
     "posicion": "Después de P100.",
-    "efecto": "No desplaza actividades.",
+    "desplaza": "Ninguna; ocupa la sesión de cierre.",
+    "efecto": "Un grupo lento no la ve y conserva lo demás.",
+    "metodologico": "El producto completo se evalúa entero.",
+    "tecnico": "Integra lo construido en P100.",
+    "pedagogico": "Cierra la secuencia con autonomía.",
+    "identidad": "Termina en una explicación descriptiva, no en una herramienta.",
     "caso": "Requiere definición.",
     "producto": "Explicación descriptiva con límites.",
     "aceptacion": "Notebook, pruebas y entrada de trazabilidad.",
@@ -148,6 +205,8 @@ def layout(tmp_path):
         encoding="utf-8",
     )
     (tmp_path / "04-curriculum" / "undergraduate" / "data.md").write_text(UNDERGRADUATE, encoding="utf-8")
+    (tmp_path / "04-curriculum" / "postgraduate").mkdir()
+    (tmp_path / "04-curriculum" / "postgraduate" / "demo.md").write_text(POSTGRADUATE, encoding="utf-8")
     write_competency(tmp_path, "C001", ["Granularidad de los datos", "Exposición y normalización"], ["Agregar datos"])
     write_competency(tmp_path, "C002", ["Comunicación de límites"], ["Presentar a interesados"])
     write_outcome(tmp_path, "RA01", ["C001"])
@@ -163,9 +222,10 @@ def good_audit():
         "executor": "Claude",
         "fecha": "2026-10-14",
         "senales": [
-            {"id": "RA01", "categoria": "cubierta", "anclas": ["P100:H01"]},
-            {"id": "RA02", "categoria": "actividad nueva", "propuesta": "n1"},
-            {"id": "C001.CON01", "categoria": "cubierta", "anclas": ["P100:H01"]},
+            {"id": "demo/RC01", "categoria": "cubierta", "anclas": [{"hito": "P100:H01", "nivel": "introduce"}]},
+            {"id": "demo/RC02", "categoria": "actividad nueva", "propuesta": "n1",
+             "anclas": [{"hito": "P100:H02", "nivel": "introduce"}]},
+            {"id": "C001.CON01", "categoria": "cubierta", "anclas": [{"hito": "P100:H01", "nivel": "introduce"}]},
             {"id": "C001.CON02", "categoria": "mejora", "actividad": "P100", "propuesta": "t1"},
             {"id": "C001.HAB01", "categoria": "marginal", "razon": "Ya agrega por conductor.", "actividad": "P100"},
             {"id": "C002.CON01", "categoria": "fuera de alcance", "razon": "Corresponde al producto completo."},
@@ -175,7 +235,7 @@ def good_audit():
             {
                 "actividad": "P100",
                 "decision": "puntual",
-                "resultados": ["RA01"],
+                "resultados": ["demo/RC01"],
                 "competencias": ["C001"],
                 "razon": "Refuerza la agregación con una verificación corta.",
                 "propuestas": [copy.deepcopy(TASK)],
@@ -195,17 +255,26 @@ def check(layout, audit):
     return check_audit.check(layout, save(layout.root, audit))
 
 
-def test_items_have_stable_ids_without_sources(layout):
+def anchor(hito, nivel="introduce"):
+    return {"hito": hito, "nivel": nivel}
+
+
+def test_targets_are_course_outcomes_with_the_level_the_course_owes(layout):
     reqs = audit_lib.requirements(layout, COURSE)
-    assert [t.id for t in reqs.targets] == ["RA01", "RA02"]
+    assert [(t.id, t.level, t.program_outcomes) for t in reqs.targets] == [
+        ("demo/RC01", "introduce", ("RA01",)), ("demo/RC02", "domina", ("RA02",))]
     assert [i.id for i in reqs.items] == ["C001.CON01", "C001.CON02", "C001.HAB01", "C002.CON01", "C002.HAB01"]
     assert reqs.items[0].text == "Granularidad de los datos."
+    assert reqs.identity["Riesgo"] == "confundirse con un curso de visualización."
+    assert reqs.required_knowledge == ["Python básico."]
 
 
-def test_status_reports_targets_items_and_activities(layout):
+def test_status_reports_identity_targets_and_activities(layout):
     report = audit_status.status(layout, COURSE)
     assert report["level"] == "posgrado"
     assert report["blocked"] == []
+    assert report["identity"]["Producto terminal"] == "una explicación con evidencia."
+    assert report["targets"][1]["nivel"] == "domina"
     assert report["activities"][0]["highlights"][0].startswith("H01 — ")
     assert report["activities"][0]["traceability"] == ["demo.C02"]
 
@@ -225,22 +294,52 @@ def mutate(change):
 @pytest.mark.parametrize("change, message", [
     (lambda a: a["senales"].pop(), "C002.HAB01 has no category"),
     (lambda a: a["senales"].append({"id": "C009.CON01", "categoria": "marginal", "razon": "x"}), "C009.CON01"),
-    (lambda a: a["senales"][0].update(anclas=["P100:H07"]), "H07 is not a highlight of P100"),
-    (lambda a: a["senales"][0].update(anclas=["P999:H01"]), "is not Pxxx:HNN of an activity"),
+    (lambda a: a["senales"][0].update(anclas=[anchor("P100:H07")]), "H07 is not a highlight of P100"),
+    (lambda a: a["senales"][0].update(anclas=[anchor("P999:H01")]), "is not Pxxx:HNN of an activity"),
+    (lambda a: a["senales"][0].update(anclas=["P100:H01"]), "needs a nivel"),
+    (lambda a: a["senales"][1].update(categoria="cubierta"), "the course owes it at 'domina'"),
     (lambda a: a["senales"][4].pop("razon"), "needs a razon"),
     (lambda a: a["actividades"][0].update(decision="igual"), "decision 'igual' takes no proposal"),
     (lambda a: a["actividades"][0]["propuestas"].append(dict(TASK, clave="t2")), "one bounded change"),
+    (lambda a: a["actividades"][0].update(resultados=["RA01"]), "RA01 is not a course outcome"),
     (lambda a: a["actividades"][0].update(competencias=["C002"]), "C002 is not a competency of its resultados"),
     (lambda a: a["actividades"][0].update(competencias=["demo.C02"]), "'demo.C02' is not a competency id"),
     (lambda a: a["actividades"][0]["propuestas"][0].update(anclas=["H09"]), "ancla H09 is not a highlight or surface"),
     (lambda a: a["actividades"][0]["propuestas"][0].update(limite=""), "limite is empty"),
+    (lambda a: a["actividades"][0]["propuestas"][0].update(pedagogico=""), "pedagogico is empty"),
+    (lambda a: a["nuevas"][0].update(desplaza=""), "desplaza is empty"),
+    (lambda a: a["nuevas"][0].update(identidad=""), "identidad is empty"),
     (lambda a: a["actividades"].clear(), "P100 has no decision"),
-    (lambda a: a["senales"][3].update(categoria="marginal", razon="x"), "no signal motivates this proposal"),
+    (lambda a: a["senales"][3].update(categoria="marginal", razon="x"), "no signal or highlight motivates"),
     (lambda a: a["nuevas"][0].update(tipo="otra"), "tipo must be one of"),
+    (lambda a: a["senales"][1].pop("anclas"), "P100 H02 serves no signal"),
 ])
 def test_audit_errors(layout, change, message):
     errors, _ = check(layout, mutate(change))
     assert any(message in e for e in errors), errors
+
+
+def test_a_highlight_outside_the_course_is_kept_or_trimmed(layout):
+    def keep(audit):
+        audit["senales"][1].pop("anclas")
+        audit["actividades"][0]["fuera"] = [{"hito": "H02", "accion": "conservar", "razon": "Sostiene el resumen."}]
+    assert check(layout, mutate(keep))[0] == []
+
+    def trim_without_proposal(audit):
+        keep(audit)
+        audit["actividades"][0]["fuera"][0].update(accion="recortar")
+    errors, _ = check(layout, mutate(trim_without_proposal))
+    assert any("recortar needs a propuesta" in e for e in errors)
+
+    def trim(audit):
+        trim_without_proposal(audit)
+        audit["actividades"][0]["fuera"][0]["propuesta"] = "t1"
+    assert check(layout, mutate(trim))[0] == []
+
+    def both(audit):
+        audit["actividades"][0]["fuera"] = [{"hito": "H02", "accion": "conservar", "razon": "x"}]
+    errors, _ = check(layout, mutate(both))
+    assert any("anchored by a signal and listed in fuera" in e for e in errors)
 
 
 def test_an_activity_without_outcomes_goes_to_the_course(layout):
@@ -254,7 +353,8 @@ def test_an_activity_without_outcomes_goes_to_the_course(layout):
     def to_course(audit):
         change(audit)
         audit["actividades"][0].update(decision="curso", curso="n1")
-        audit["senales"][0] = {"id": "RA01", "categoria": "actividad nueva", "propuesta": "n1"}
+        audit["senales"][0] = {"id": "demo/RC01", "categoria": "actividad nueva", "propuesta": "n1",
+                               "anclas": [anchor("P100:H01")]}
         audit["senales"][2] = {"id": "C001.CON01", "categoria": "actividad nueva", "propuesta": "n1"}
     errors, _ = check(layout, mutate(to_course))
     assert errors == []
@@ -267,52 +367,68 @@ def test_an_undescribed_activity_blocks_the_audit(layout):
     assert audit_status.status(layout, COURSE)["blocked"][0]["actividad"] == "P100"
 
 
-def test_a_course_without_matrix_rows_asks_for_the_curriculum(layout):
-    (layout.root / "04-curriculum" / "matrix.csv").write_text("ra,curso,nivel,aporte,fecha\n", encoding="utf-8")
+def test_a_course_without_its_course_file_asks_for_the_curriculum(layout):
+    (layout.root / "04-curriculum" / "postgraduate" / "demo.md").unlink()
     with pytest.raises(SystemExit, match="run mapping-curriculum first"):
         audit_lib.requirements(layout, COURSE)
 
 
-def test_apply_writes_proposals_log_traceability_and_coverage(layout):
-    path = save(layout.root, good_audit())
-    edits = apply_audit.plan(layout, path)
+def test_a_course_outcome_from_an_unassigned_outcome_is_refused(layout):
+    (layout.root / "04-curriculum" / "matrix.csv").write_text(
+        "ra,curso,nivel,aporte,fecha\nRA01,demo,introduce,Plantea.,2026-10-14\n", encoding="utf-8")
+    with pytest.raises(SystemExit, match="RA02, which the matrix does not assign"):
+        audit_lib.requirements(layout, COURSE)
+
+
+def write_all(edits):
     for target, text in edits.texts.items():
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
 
-    tasks = layout.tasks(COURSE, "P100").read_text(encoding="utf-8")
-    assert tasks.startswith("# P100 — Propuestas de mejora\n\n**Línea base:** `activity.md` (entrada S02 más reciente: `S02.P100.01`).")
+
+def test_apply_writes_proposals_log_traceability_and_coverage(layout):
+    layout.log(COURSE, FOLDER).unlink()
+    path = save(layout.root, good_audit())
+    write_all(apply_audit.plan(layout, path))
+
+    tasks = layout.tasks(COURSE, FOLDER).read_text(encoding="utf-8")
+    assert tasks.startswith("# P100 — Propuestas de mejora\n\n**Línea base:** `activity.md`.")
     assert "## T01 — Verificar la exposición antes del ranking" in tasks
     assert "Auditoría `AUD.P100.01` (Claude, 2026-10-14) del curso `demo`: señales C001.CON02." in tasks
     assert "- **Límite de la actividad:** Agrega una celda y una tabla." in tasks
+    assert "- **Justificación pedagógica:** El estudiante comprueba antes de concluir." in tasks
+    assert "- **Identidad del curso:** Refuerza la pregunta descriptiva" in tasks
 
     course_tasks = layout.course_tasks(COURSE).read_text(encoding="utf-8")
+    assert layout.course_tasks(COURSE) == layout.implementation(COURSE) / "tasks.md"
     assert "## N01 — ⚠️ PENDIENTE DE DECISIÓN — Domina el producto descriptivo completo" in course_tasks
-    assert "Auditoría del curso `demo` (Claude, 2026-10-14): señales RA02, C002.HAB01." in course_tasks
+    assert "Auditoría del curso `demo` (Claude, 2026-10-14): señales demo/RC02, C002.HAB01." in course_tasks
+    assert "- **Desplaza o fusiona:** Ninguna; ocupa la sesión de cierre." in course_tasks
 
     log = layout.log(COURSE, FOLDER).read_text(encoding="utf-8")
-    assert "## AUD.P100.01" in log
+    assert log.startswith("# Log — P100\n\n## AUD.P100.01")
     assert audit_lib.fingerprint(path) in log
     assert "- **Resultado:** propone T01." in log
+    assert "demo/RC01 (cubierta: H01 introduce)" in log
     assert "C001.HAB01 (marginal: Ya agrega por conductor.)" in log
 
     trace = lib.parse_traceability(layout.traceability(COURSE))
     assert trace.version == "0.1"
-    assert trace.entries["P100"] == {"resultados": ["RA01"], "competencias": ["C001"],
+    assert trace.entries["P100"] == {"resultados": ["demo/RC01"], "competencias": ["C001"],
                                      "decision": "puntual", "auditoria": "AUD.P100.01"}
     assert trace.entries["L101"] == ["demo.C01"]
 
     coverage = layout.audit(COURSE).read_text(encoding="utf-8")
     assert "| C001.CON02 | Exposición y normalización. | mejora | P100: T01 |" in coverage
-    assert "| P100 | puntual | RA01 | C001 | T01 |" in coverage
+    assert "| demo/RC02 | Construir la explicación completa del caso. (nivel: domina) | actividad nueva | N01; parcial en P100:H02 (introduce) |" in coverage
+    assert "| P100 | puntual | demo/RC01 | C001 | T01 |" in coverage
 
     with pytest.raises(SystemExit, match="already applied"):
         apply_audit.plan(layout, path)
 
 
 def test_new_ids_skip_those_used_in_tasks_and_log(layout):
-    tasks = layout.tasks(COURSE, "P100")
-    tasks.parent.mkdir(parents=True)
+    tasks = layout.tasks(COURSE, FOLDER)
     tasks.write_text("# P100 — Propuestas de mejora\n\n## T01 — Algo\n\n- **Estado:** pendiente de discusión\n"
                      "- **Fuentes:** un benchmark.\n- **Tipo:** método\n", encoding="utf-8")
     log = layout.log(COURSE, FOLDER)
@@ -333,10 +449,9 @@ def test_new_ids_skip_those_used_in_tasks_and_log(layout):
 
 
 def test_too_many_open_proposals_is_a_warning(layout):
-    tasks = layout.tasks(COURSE, "P100")
-    tasks.parent.mkdir(parents=True)
-    tasks.write_text("# P100\n\n" + "".join(f"## T0{n} — Algo\n\n- **Estado:** aprobada\n\n" for n in (1, 2, 3)),
-                     encoding="utf-8")
+    layout.tasks(COURSE, FOLDER).write_text(
+        "# P100\n\n" + "".join(f"## T0{n} — Algo\n\n- **Estado:** aprobada\n\n" for n in (1, 2, 3)),
+        encoding="utf-8")
     _, warnings = check(layout, good_audit())
     assert any("4 open proposals" in w for w in warnings)
 
@@ -347,10 +462,10 @@ def test_an_undergraduate_course_audits_borrowed_activities_in_their_owner(layou
         "executor": "Claude",
         "fecha": "2026-10-14",
         "senales": [
-            {"id": "data/RC01", "categoria": "cubierta", "anclas": ["demo/P100:H01"]},
-            {"id": "C001.CON01", "categoria": "cubierta", "anclas": ["demo/P100:H01"]},
+            {"id": "data/RC01", "categoria": "cubierta", "anclas": [anchor("demo/P100:H01")]},
+            {"id": "C001.CON01", "categoria": "cubierta", "anclas": [anchor("demo/P100:H01")]},
             {"id": "C001.CON02", "categoria": "mejora", "actividad": "demo/P100", "propuesta": "t1"},
-            {"id": "C001.HAB01", "categoria": "cubierta", "anclas": ["demo/P100:H02"]},
+            {"id": "C001.HAB01", "categoria": "cubierta", "anclas": [anchor("demo/P100:H02")]},
         ],
         "actividades": [{
             "actividad": "demo/P100", "decision": "puntual", "resultados": ["data/RC01"],
@@ -360,15 +475,13 @@ def test_an_undergraduate_course_audits_borrowed_activities_in_their_owner(layou
     errors, _ = check(layout, audit)
     assert errors == []
     edits = apply_audit.plan(layout, save(layout.root, audit))
-    assert "del curso `data`" in edits.texts[layout.tasks(COURSE, "P100")]
-    trace = lib.render_traceability(lib.parse_traceability(layout.traceability("data")))
-    assert "demo/P100" in trace
+    assert "del curso `data`" in edits.texts[layout.tasks(COURSE, FOLDER)]
     assert "resultados: [data/RC01]" in edits.texts[layout.traceability("data")]
 
 
 def test_traceability_never_mixes_legacy_capabilities_and_competencies(layout):
     layout.traceability(COURSE).write_text(
-        'format_version: "0.1"\nP100:\n  resultados: [RA01]\n  competencias: [demo.C02]\n  decision: igual\n'
+        'format_version: "0.1"\nP100:\n  resultados: [demo/RC01]\n  competencias: [demo.C02]\n  decision: igual\n'
         "  auditoria: AUD.P100.01\nL101:\n  - C001\n",
         encoding="utf-8",
     )

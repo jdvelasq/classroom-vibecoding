@@ -32,14 +32,14 @@ Las rutas se fijan en un solo lugar, `scripts/paths.py`. Hoy son:
 | Archivo | Contenido |
 |---|---|
 | `05-implementation/<curso>/Pxxx_<nombre>/activity.md` | Descripción vigente de la actividad. |
-| `05-implementation/<curso>/Pxxx_<nombre>/log.md` | Registro acumulativo: entradas `S02`, `S03`, `AUD`, `DEC` y notas. |
-| `05-implementation/<curso>/tasks/Pxxx_tasks.md` | Propuestas vigentes de cambio puntual de una actividad (`T01`, …). |
-| `05-implementation/<curso>/tasks/course_tasks.md` | Decisiones de curso pendientes (`N01`, …). |
-| `05-implementation/<curso>/tasks/course_audit.md` | Cobertura vigente del curso, reescrita en cada auditoría. |
-| `05-implementation/<curso>/traceability.yaml` | Qué resultados y competencias sirve cada actividad. |
+| `05-implementation/<curso>/Pxxx_<nombre>/log.md` | Registro acumulativo, opcional: entradas `S02`, `AUD`, `DEC` y notas. |
+| `05-implementation/<curso>/Pxxx_<nombre>/tasks.md` | Cambios puntuales propuestos para la actividad (`T01`, …), con lo que hay que cambiar exactamente. |
+| `05-implementation/<curso>/tasks.md` | Actividades nuevas y reorganizaciones propuestas para el curso (`N01`, …), descritas en detalle. |
+| `05-implementation/<curso>/audit.md` | Cobertura vigente del curso, reescrita en cada auditoría. |
+| `05-implementation/<curso>/traceability.yaml` | Qué resultados del curso y competencias sirve cada actividad. |
 
-`activity.md` y `log.md` acompañan a la implementación pero no son material
-del estudiante: la distribución del curso no debe copiarlos.
+`activity.md`, `log.md` y `tasks.md` acompañan a la implementación pero no
+son material del estudiante: la distribución del curso no debe copiarlos.
 
 Una descripción existente no se regenera. Sólo se describen las
 actividades sin `activity.md`; volver a describir una actividad requiere
@@ -163,6 +163,9 @@ de disciplinas contribuyentes.
 
 ## Registro: `log.md`
 
+El log es opcional: una actividad sin log se audita igual, y el primer
+`AUD` lo crea.
+
 ```markdown
 # Log — Pxxx
 
@@ -181,12 +184,11 @@ Cada prefijo numera sus entradas en orden, desde `01`:
   highlights confirmados, añadidos, corregidos o no inferibles, cambios,
   ambigüedades, cambios de IDs, superficies, contrato y dependencias
   revisados, y resultado de la auditoría de Analytics.
-- **`S03`**: entradas históricas de la revisión contra benchmarks. Se
-  conservan; ya no se agregan.
 - **`AUD`**: una auditoría frente a la cadena 02–04. La escribe
   `apply_audit.py`: fecha, executor, curso auditado, huella de la
   auditoría, entrada, decisión con su razón, resultados y competencias,
-  propuestas creadas o reforzadas y señales ancladas a la actividad.
+  propuestas creadas o reforzadas, señales ancladas a la actividad con su
+  nivel, e hitos fuera de lo que el curso debe enseñar.
 - **`DEC`**: una decisión de david sobre una propuesta `Tnn`:
   aprobada o rechazada, con la razón. Las auditorías posteriores la tratan
   como rechazo previo.
@@ -196,20 +198,30 @@ Nunca se editan entradas anteriores.
 
 ## Auditoría
 
-### Lo que el curso debe cubrir
+### Lo que el curso debe enseñar
 
-- **Curso de posgrado:** las filas de `04-curriculum/matrix.csv` del curso,
-  cada una con su resultado `RAnn`, su nivel y su aporte.
-- **Curso de pregrado (`data`, `fundamentos`):** los resultados de curso de
-  `04-curriculum/undergraduate/<curso>.md`, citados `<curso>/RCnn`.
-- En ambos casos, los conocimientos y habilidades de las competencias de
-  esos resultados en `02-competencies/map/`. Cada uno es un ítem con ID
-  `C002.CON03` (tercer conocimiento de `C002`) o `C002.HAB02` (segunda
-  habilidad), en el orden del archivo de la competencia. La auditoría
-  registra la fecha de cada competencia, porque esos números cambian si la
-  competencia cambia.
+La ficha del curso en `04-curriculum/` (`postgraduate/<curso>.md` o
+`undergraduate/<curso>.md`) dice qué debe aprender el estudiante. De ella
+salen:
 
-Los resultados y los ítems son las **señales** de la auditoría.
+- **Resultados del curso** `<curso>/RCnn`, con su enunciado y su
+  **Evaluación**. En posgrado, cada uno deriva de resultados del programa
+  `RAnn`, y el nivel que el curso le debe es el mayor nivel que
+  `matrix.csv` asigna al curso para esos `RA` (`introduce`, `desarrolla` o
+  `domina`). En pregrado el nivel es `introduce`.
+- **Ítems**: los conocimientos y habilidades de las competencias de esos
+  resultados en `02-competencies/map/` (en posgrado, las competencias de
+  sus `RA`). Cada uno tiene un ID `C002.CON03` (tercer conocimiento de
+  `C002`) o `C002.HAB02` (segunda habilidad), en el orden del archivo de la
+  competencia. La auditoría registra la fecha de cada competencia, porque
+  esos números cambian si la competencia cambia.
+- **Identidad**, **Conocimientos requeridos** y **Alcance** de la ficha: la
+  identidad es la auditoría de `AGENTS.md` ya aplicada al curso (pregunta,
+  producto terminal, disciplinas contribuyentes y riesgo); lo requerido se
+  presupone y no se enseña; el alcance fija las fronteras con los demás
+  cursos.
+
+Los resultados del curso y los ítems son las **señales** de la auditoría.
 
 ### Actividades del curso
 
@@ -228,12 +240,29 @@ Cada señal recibe una sola categoría:
 
 | Categoría | Requiere |
 |---|---|
-| `cubierta` | anclas `Pxxx:HNN` de highlights existentes |
+| `cubierta` | anclas a highlights existentes que alcanzan el nivel que el curso debe |
 | `marginal` | razón: no pasa el criterio de materialidad |
 | `rechazada previamente` | razón con la entrada `DEC` o la propuesta rechazada |
 | `fuera de alcance` | razón: desplaza la identidad de Analytics, corresponde a otro curso o carece de caso y datos |
 | `mejora` | actividad y propuesta puntual nueva o abierta |
 | `actividad nueva` | decisión de curso nueva o abierta |
+
+Un ancla es un highlight con el nivel al que trabaja la señal:
+`{"hito": "P103:H01", "nivel": "introduce"}`. Una señal de cualquier
+categoría puede llevar anclas para registrar una cobertura parcial; una
+`cubierta` las exige, y si es un resultado del curso, alguna debe llegar al
+nivel que el curso le debe.
+
+### Hitos fuera de lo que el curso debe enseñar
+
+Todo highlight de una actividad del curso queda anclado por alguna señal o
+se declara **fuera**: no sirve a ningún resultado ni ítem del curso, por
+ejemplo una profundidad de la disciplina contribuyente que el curso no
+necesita, o un conocimiento requerido que se vuelve a enseñar. Se
+**conserva** si sostiene técnicamente el producto, con su razón, o se
+**recorta** con una propuesta puntual o de curso. Es aquí donde se protege
+la identidad: lo que sobra es lo que acerca el curso a la versión abreviada
+de una disciplina que su ficha nombra como riesgo.
 
 ### Decisión por actividad
 
@@ -246,23 +275,24 @@ Cada señal recibe una sola categoría:
 Una actividad sin resultados del curso sólo admite la decisión `curso`. Se
 avisa cuando una actividad acumula más de tres propuestas abiertas.
 
-### `tasks/Pxxx_tasks.md` — propuestas vigentes de una actividad
+### `Pxxx_<nombre>/tasks.md` — cambios puntuales de una actividad
 
-Estado actual, no historial. Una propuesta decidida conserva su entrada con
+Dice exactamente qué cambiar en la actividad y por qué. Estado actual, no
+historial. Una propuesta decidida conserva su entrada con
 su estado hasta ejecutarse; una rechazada sale del archivo y queda en el
 log como `DEC`, de modo que su ID no se reutiliza y las auditorías la ven.
 
 ````markdown
 # Pxxx — Propuestas de mejora
 
-**Línea base:** `activity.md` (entrada S02 más reciente: `S02.Pxxx.NN`).
+**Línea base:** `activity.md` (entrada S02 más reciente: `S02.Pxxx.NN`, si hay log).
 
 ## T01 — Título preciso del cambio
 
 - **Estado:** pendiente de discusión | aprobada | rechazada
 - **Tipo:** encuadre | producto/evidencia | método | caso/datos | proceso | pedagogía
 - **Fuentes:**
-  - Auditoría `AUD.Pxxx.NN` (executor, fecha) del curso `descriptiva`: señales `RA02`, `C002.HAB03`.
+  - Auditoría `AUD.Pxxx.NN` (executor, fecha) del curso `descriptiva`: señales `descriptiva/RC02`, `C002.HAB03`.
 - **Qué gana el estudiante:** la capacidad o comprensión nueva, o el defecto
   que se corrige.
 - **Anclas actuales:** `HNN`, `SNN` afectados.
@@ -271,6 +301,14 @@ log como `DEC`, de modo que su ID no se reutiliza y las auditorías la ven.
 - **Límite de la actividad:** por qué sigue siendo un problema corto y bien
   definido después del cambio.
 - **Interacciones:** con otras `Txx` de este archivo.
+- **Justificación metodológica:** qué principio del método analítico
+  exige el cambio.
+- **Justificación técnica:** qué práctica técnica corrige o agrega, y por
+  qué es la adecuada.
+- **Justificación pedagógica:** cómo mejora lo que el estudiante aprende en
+  la secuencia.
+- **Identidad del curso:** cómo el cambio sirve al producto terminal de la
+  ficha y evita el riesgo que la ficha nombra.
 - **Criterio de aceptación:** lo que debe verificarse después.
 
 ### Instrucciones de ejecución
@@ -285,7 +323,10 @@ Los IDs `T01`, `T02`… son estables dentro del archivo y no se reutilizan.
 Las entradas anteriores a esta versión citan benchmarks en **Fuentes** y no
 tienen **Límite de la actividad**; se conservan.
 
-### `tasks/course_tasks.md` — decisiones de curso por tomar
+### `tasks.md` del curso — actividades nuevas y reorganizaciones
+
+Describe en detalle cada actividad que hay que crear y cada reorganización
+de la secuencia.
 
 ````markdown
 # <curso> — Actividades nuevas por decidir
@@ -295,14 +336,20 @@ tienen **Límite de la actividad**; se conservan.
 - **Estado:** pendiente de discusión | aprobada | rechazada
 - **Tipo:** actividad nueva | reorganización
 - **Fuentes:**
-  - Auditoría del curso `descriptiva` (executor, fecha): señales `RA05`, `C004.HAB01`; decisión de `P121`.
+  - Auditoría del curso `descriptiva` (executor, fecha): señales `descriptiva/RC04`, `C004.HAB01`; decisión de `P121`.
 - **Contribución distinta:** qué enseñaría o resolvería que ninguna Pxxx
   resuelve, y por qué no cabe en una existente sin alargarla.
 - **Posición propuesta:** después de Pxxx; qué recibe y qué habilita.
-- **Efecto en la secuencia:** qué desplaza y qué perdería un grupo que
-  avanza menos.
+- **Desplaza o fusiona:** qué actividad se desplaza, se fusiona o se
+  recorta para hacerle lugar en las sesiones del curso, o «ninguna» y por
+  qué cabe.
+- **Efecto en la secuencia:** qué perdería un grupo que avanza menos.
 - **Caso y datos:** condición concreta que exige, o «requiere definición».
 - **Producto de Analytics:** pregunta, producto terminal y límite.
+- **Justificación metodológica:** …
+- **Justificación técnica:** …
+- **Justificación pedagógica:** …
+- **Identidad del curso:** …
 - **Criterio de aceptación de una primera versión:** …
 ````
 
@@ -311,19 +358,20 @@ combinar, mover o reemplazar. Una decisión de curso rechazada se conserva
 con estado `rechazada` y su razón, porque no hay log de curso. Una entrada
 sin **Estado** se lee como pendiente.
 
-### `tasks/course_audit.md` — cobertura vigente
+### `audit.md` — cobertura vigente
 
 Lo reescribe `apply_audit.py` en cada auditoría: fecha, executor, huella,
-entrada (matriz o archivo de pregrado y fecha de cada competencia),
-decisión por actividad y la tabla de señales con su categoría y sus
-anclas, su propuesta o su razón.
+entrada (ficha del curso y fecha de cada competencia), decisión por
+actividad, la tabla de señales con su nivel debido, su categoría y sus
+anclas con nivel, su propuesta o su razón, y la tabla de hitos fuera de lo
+que el curso debe enseñar.
 
 ### `traceability.yaml`
 
 ```yaml
 format_version: "0.1"
 P103:
-  resultados: [RA02]
+  resultados: [descriptiva/RC02]
   competencias: [C002, C003]
   decision: puntual
   auditoria: AUD.P103.01
@@ -337,7 +385,8 @@ L101:
 ```
 
 - Las entradas auditadas tienen los cuatro campos, en ese orden. Los
-  resultados de posgrado se citan `RAnn`; los de pregrado, `<curso>/RCnn`.
+  resultados se citan como resultados del curso, `<curso>/RCnn`, en
+  posgrado y en pregrado.
   Las competencias se citan `Cnnn`, siempre con tres dígitos y sin curso.
 - Las capacidades anteriores `<curso>.Cnn` (dos dígitos, con curso) nunca
   se mezclan con las competencias: sólo aparecen en entradas heredadas, en
@@ -351,11 +400,11 @@ L101:
 - 0.1 (2026-10-14): borrador inicial. Une el contrato de la tarea S02
   (describir un curso) y las salidas de la tarea S03 (revisar contra
   benchmarks), con la entrada de la
-  auditoría cambiada de benchmarks a la cadena 02–04 y los archivos junto a
-  la implementación. Valores por defecto que david debe aprobar: el
+  auditoría cambiada de benchmarks a las fichas de `04-curriculum/` y los
+  archivos junto a la implementación. Valores por defecto que david debe aprobar: el
   marcador `(caso y datos)`; los IDs de ítem `CON`/`HAB`; las decisiones
   `igual`, `puntual` y `curso`; una sola propuesta nueva por actividad y
   auditoría; el aviso con más de tres propuestas abiertas; que las
-  decisiones de curso rechazadas queden en `course_tasks.md`;
-  `course_audit.md`; el esquema de
-  `traceability.yaml`; que `P001` y `Lxxx` queden fuera de la auditoría.
+  decisiones de curso rechazadas queden en el `tasks.md` del curso;
+  `audit.md`; el nivel debido de un resultado del curso como el mayor de
+  sus `RA` en la matriz; el esquema de `traceability.yaml`; que `P001` y `Lxxx` queden fuera de la auditoría.

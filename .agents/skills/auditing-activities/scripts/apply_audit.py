@@ -30,6 +30,7 @@ from activity_lib import (
 )
 from audit_lib import (
     COURSE_DECISION,
+    COURSE_TASK_REF,
     COVERED,
     IMPROVEMENT,
     NEW_ACTIVITY,
@@ -37,6 +38,7 @@ from audit_lib import (
     SUPPORTED_TRACE_VERSION,
     TASK_HEADING,
     CourseActivity,
+    anchor_parts,
     as_list,
     course_activities,
     fingerprint,
@@ -82,13 +84,21 @@ def signals_of_activity(audit: dict, ref: str) -> list[str]:
     lines = []
     for signal in as_list(audit.get("senales")):
         category = signal.get("categoria")
-        anchors = [a.split(":", 1)[1] for a in as_list(signal.get("anclas")) if a.split(":", 1)[0] == ref]
-        if category == COVERED and anchors:
-            lines.append(f"{signal['id']} (cubierta: {', '.join(anchors)})")
+        anchors = [f"{hito.split(':', 1)[1]} {level}" for hito, level in map(anchor_parts, as_list(signal.get("anclas")))
+                   if hito.split(":", 1)[0] == ref]
+        if anchors:
+            lines.append(f"{signal['id']} ({category}: {', '.join(anchors)})")
         elif signal.get("actividad") == ref:
             detail = signal.get("propuesta") or signal.get("razon", "")
             lines.append(f"{signal['id']} ({category}: {detail})")
     return lines
+
+
+def justification(proposal: dict) -> str:
+    return f"""- **Justificación metodológica:** {proposal['metodologico']}
+- **Justificación técnica:** {proposal['tecnico']}
+- **Justificación pedagógica:** {proposal['pedagogico']}
+- **Identidad del curso:** {proposal['identidad']}"""
 
 
 def task_block(task_id: str, proposal: dict, source: str) -> str:
@@ -105,6 +115,7 @@ def task_block(task_id: str, proposal: dict, source: str) -> str:
 - **Contrato de no regresión:** {proposal['no_regresion']}
 - **Límite de la actividad:** {proposal['limite']}
 - **Interacciones:** {proposal['interacciones']}
+{justification(proposal)}
 - **Criterio de aceptación:** {proposal['aceptacion']}
 
 ### Instrucciones de ejecución
@@ -122,9 +133,11 @@ def course_task_block(task_id: str, proposal: dict, source: str) -> str:
   - {source}
 - **Contribución distinta:** {proposal['contribucion']}
 - **Posición propuesta:** {proposal['posicion']}
+- **Desplaza o fusiona:** {proposal['desplaza']}
 - **Efecto en la secuencia:** {proposal['efecto']}
 - **Caso y datos:** {proposal['caso']}
 - **Producto de Analytics:** {proposal['producto']}
+{justification(proposal)}
 - **Criterio de aceptación de una primera versión:** {proposal['aceptacion']}
 """
 
@@ -148,7 +161,10 @@ def add_source(text: str, task_id: str, source: str) -> str:
 
 
 def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str]) -> str:
-    texts = {t.id: t.statement for t in reqs.targets} | {i.id: i.text for i in reqs.items}
+    texts = {t.id: f"{t.statement} (nivel: {t.level})" for t in reqs.targets} | {i.id: i.text for i in reqs.items}
+    outside = [f"| {e['actividad']} | {o['hito']} | {o['accion']} | {ids.get(str(o.get('propuesta')), o.get('propuesta') or '—')} "
+               f"| {o['razon']} |"
+               for e in as_list(audit.get("actividades")) for o in as_list(e.get("fuera"))]
     dates = ", ".join(f"{cid} ({date})" for cid, date in reqs.competency_dates.items())
     rows = []
     for entry in as_list(audit.get("actividades")):
@@ -162,13 +178,16 @@ def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str]) -> str:
         )
     signals = []
     for signal in as_list(audit.get("senales")):
+        anchors = ", ".join(f"{hito} ({level})" for hito, level in map(anchor_parts, as_list(signal.get("anclas"))))
         if signal.get("categoria") == COVERED:
-            detail = ", ".join(as_list(signal.get("anclas")))
+            detail = anchors
         elif signal.get("propuesta"):
             proposal = ids.get(signal["propuesta"], signal["propuesta"])
             detail = f"{signal.get('actividad')}: {proposal}" if signal.get("actividad") else proposal
         else:
             detail = signal.get("razon", "")
+        if anchors and signal.get("categoria") != COVERED:
+            detail = f"{detail}; parcial en {anchors}"
         signals.append(f"| {signal['id']} | {texts[signal['id']]} | {signal['categoria']} | {detail} |")
     return f"""# {audit['curso']} — Auditoría de actividades
 
@@ -187,6 +206,12 @@ def coverage_report(audit: dict, reqs, digest: str, ids: dict[str, str]) -> str:
 | Señal | Texto | Categoría | Anclas, propuesta o razón |
 | --- | --- | --- | --- |
 {chr(10).join(signals)}
+
+## Hitos fuera de lo que el curso debe enseñar
+
+| Actividad | Hito | Acción | Propuesta | Razón |
+| --- | --- | --- | --- | --- |
+{chr(10).join(outside) or "| — | — | — | — | — |"}
 """
 
 
@@ -228,12 +253,12 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
 
     def tasks_header(activity: CourseActivity, audit_id: str) -> str:
         baseline = latest_entry(parse_log(layout.log(activity.owner, activity.folder.name)), "S02")
-        return (f"# {activity.id} — Propuestas de mejora\n\n"
-                f"**Línea base:** `activity.md` (entrada S02 más reciente: `{baseline}`).\n")
+        since = f" (entrada S02 más reciente: `{baseline}`)" if baseline else ""
+        return f"# {activity.id} — Propuestas de mejora\n\n**Línea base:** `activity.md`{since}.\n"
 
     for entry in audit["actividades"]:
         activity = activities[entry["actividad"]]
-        tasks = layout.tasks(activity.owner, activity.id)
+        tasks = layout.tasks(activity.owner, activity.folder.name)
         source = f"Auditoría `{audit_ids[activity.ref]}` {who} del curso `{course}`"
         for proposal in as_list(entry.get("propuestas")):
             signals = signals_for(audit, proposal["clave"])
@@ -253,6 +278,8 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
     referenced = as_list(audit.get("refuerza"))
     referenced += [e["curso"] for e in audit["actividades"] if e.get("curso")]
     referenced += [s["propuesta"] for s in audit["senales"] if s.get("categoria") == NEW_ACTIVITY]
+    referenced += [o["propuesta"] for e in audit["actividades"] for o in as_list(e.get("fuera"))
+                   if COURSE_TASK_REF.match(str(o.get("propuesta", "")))]
     for task_id in dict.fromkeys(r for r in referenced if r not in ids):
         line = f"{course_source}: refuerza con {course_motivation(audit, task_id)}."
         edits.write(course_tasks, add_source(edits.read(course_tasks), task_id, line))
@@ -270,7 +297,10 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
         if entry["decision"] == COURSE_DECISION:
             outcome.append(f"aporta a {ids.get(entry['curso'], entry['curso'])}")
         anchored = signals_of_activity(audit, ref)
-        description_entry = latest_entry(parse_log(log_path), "S02") or "sin entrada S02"
+        description_entry = latest_entry(parse_log(log_path), "S02") or "activity.md"
+        outside = [f"{o['hito']} ({o['accion']}"
+                   + (f": {ids.get(str(o.get('propuesta')), o.get('propuesta'))}" if o.get("propuesta") else "")
+                   + f"; {o['razon']})" for o in as_list(entry.get("fuera"))]
         block = f"""## {audit_ids[ref]}
 
 - **Fecha / executor:** {audit['fecha']} / {audit['executor']}.
@@ -280,6 +310,7 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
 - **Resultados y competencias:** {', '.join(as_list(entry.get('resultados'))) or 'ninguno'}; {', '.join(as_list(entry.get('competencias'))) or 'ninguna'}.
 - **Resultado:** {'; '.join(outcome) or 'sin cambios'}.
 - **Señales:** {'; '.join(anchored) or 'ninguna anclada a esta actividad'}.
+- **Hitos fuera de lo que el curso debe enseñar:** {'; '.join(outside) or 'ninguno'}.
 """
         edits.append(log_path, block, f"# Log — {activity.id}\n")
         trace.entries[ref] = {

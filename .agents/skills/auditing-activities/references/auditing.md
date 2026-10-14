@@ -2,18 +2,33 @@
 
 The method for the audit phase of `auditing-activities`. It keeps the
 method of the former S03 task (propose improvements to a course from a
-benchmark) and changes only its input: instead of one benchmark document,
-the audit reads what the course must cover according to the design chain
-02 → 03 → 04. The file contract is in `format.md`.
+benchmark) and changes its input: instead of a benchmark document, the
+audit reads what the student must learn in the course, from its course
+file in `04-curriculum/`. The file contract is in `format.md`.
 
 ## Purpose
 
-For one course, the audit answers:
+The audit maps, in detail, what the student must learn in the course
+against how the course achieves it through its activities, as their
+highlights in `activity.md` describe them. For one course it answers:
 
-> ¿Lo que el curso debe cubrir justifica cambiar algo que mejore **de forma
-> material** lo que el estudiante aprende en algún taller, sin regresión de
-> lo que ya funciona y sin que el taller deje de ser un problema corto y
-> bien definido?
+> ¿Qué debe aprender el estudiante en este curso que hoy no logra ninguna
+> actividad, o no al nivel que el curso le debe; qué logran las
+> actividades que el curso no necesita; y qué cambio, puntual o de curso,
+> lo corrige sin regresión, sin alargar los talleres y sin desdibujar la
+> identidad del curso en analítica?
+
+Two kinds of change come out of it:
+
+- **point changes** to an activity, in its own `tasks.md`, saying exactly
+  what to change; for example, adding the framing of the business problem
+  to a workshop that starts from a dataset; and
+- **course changes**, in the course `tasks.md`: new activities for larger
+  aspects that no existing activity can hold, described in detail, and
+  reorganizations (merge, move, replace, remove).
+
+Every proposal answers to methodological, technical and pedagogical
+principles, and to the identity of the course.
 
 The audit only **proposes**. It does not modify the implementation or the
 `activity.md` of any activity. Its proposals wait for david's discussion and
@@ -24,31 +39,29 @@ and frequent result.
 
 `audit_status.py <curso>` prints everything the audit needs:
 
-- the **targets**: the learning outcomes the matrix assigns to the course,
-  with their level and contribution, or the course outcomes of an
-  undergraduate course;
-- the **items**: the knowledge and skills of the targets' competencies, each
-  with a stable id (`C002.HAB03`);
+- the **course outcomes** `<curso>/RCnn`, each with its statement, its
+  assessment, the program outcomes it derives from and the **level** the
+  course owes it;
+- the **items**: the knowledge and skills of their competencies, each with
+  a stable id (`C002.HAB03`), the detail of what the student must learn;
+- the **identity**, **required knowledge** and **scope** of the course file;
 - the activities of the course, with their highlights, surfaces,
   traceability entry, proposals and previous decisions; and
 - the open course proposals.
 
-Read also, for each target, its source file: the learning outcome in
-`03-learning-outcomes/outcomes/RAnn.md` or the course outcome in
-`04-curriculum/undergraduate/<curso>.md`. Its **Evaluación** says what the
-student must produce. The level fixes what the course owes:
+Read the course file itself, `04-curriculum/postgraduate/<curso>.md` or
+`04-curriculum/undergraduate/<curso>.md`, and the levels of
+`04-curriculum/format.md`:
 
 - **introduce**: the course presents the performance and the student
   practices it, guided, on parts of the product;
 - **desarrolla**: the student produces the product with partial autonomy on
   a case prepared by the professor and gets feedback;
 - **domina**: the course evaluates the complete product of the outcome under
-  the conditions its statement sets. A `domina` target usually calls for a
-  course decision when no activity ends in that product, because one short
-  activity rarely holds a complete product.
+  the conditions its statement sets.
 
-For each activity, read its `activity.md`, its `log.md` and its
-`tasks/Pxxx_tasks.md`; read `tasks/course_tasks.md`. Do not read the
+For each activity, read its `activity.md`, its `log.md` if there is one,
+and its `tasks.md`; read the course `tasks.md`. Do not read the
 implementation: `activity.md` is the auditable reading of it. Do not read
 benchmarks or the web.
 
@@ -56,8 +69,26 @@ benchmarks or the web.
 
 - Every activity of the course must have a valid description. If
   `audit_status.py` lists blocked activities, describe or fix them first.
-- If the course has no targets, `audit_status.py` stops: the curriculum must
-  be mapped first with `mapping-curriculum`.
+- If the course file or its outcomes are missing, `audit_status.py` stops:
+  the curriculum must be mapped first with `mapping-curriculum`.
+
+## Identity
+
+The identity of the course is already decided. It comes from `AGENTS.md`
+(the curriculum identity and the course-identity audit questions) and from
+the **Identidad** section of the course file, which applies those questions
+to the course: its question, its terminal product, the role of the
+contributing disciplines and the **risk**, the abbreviated course of a
+contributing discipline it could be mistaken for. The audit applies these;
+it does not add criteria of its own.
+
+The course must show its identity by itself: a specialist in the
+contributing discipline, predictive ML for example, should recognize the
+methods and also see that they serve the course's analytical product.
+Identity is lost both by what is missing (the activities never reach the
+terminal product) and by what is left over (highlights that teach the
+contributing discipline for its own sake). Every proposal states how it
+serves the terminal product and avoids the risk.
 
 ## Decision criteria
 
@@ -98,43 +129,56 @@ typical, clear and well-defined problem solved in a short session; a long
 activity loses its purpose. A proposal that **reinforces** that
 contribution without lengthening it is a point change (b). A proposal that
 **adds a second, different contribution**, or that lengthens the activity,
-is not embedded: it becomes a course decision (c). A workshop cannot grow
-without limit; state in every point change why it stays short.
+is not embedded: it becomes a course change (c). State in every point change
+why the activity stays short.
 
-### 4. Sequence
+### 4. Sequence and sessions
 
 Groups advance at different paces and some do not reach the last
-workshops. A new activity or a change of order states which activities it
-displaces and what a slower group would lose.
+workshops, and every new activity competes for the course's sessions. A new
+activity or a change of order states what it displaces, merges or trims,
+and what a slower group would lose.
 
 ### 5. Previous rejections
 
 Before proposing, look in the logs for `DEC` entries and in the tasks files
 for rejected proposals. Do not propose an equivalent one again unless the
-course outcomes give a different argument; then cite the rejection and say
+course file gives a different argument; then cite the rejection and say
 what changed.
 
 ## Method
 
-1. **Read the signals**: every target and every item.
+1. **Read the signals**: every course outcome and every item.
 2. **Contrast each signal** with the descriptions: first with the external
    comparison index, then with `HNN` and `SNN`. Never with the workshop's
    title.
-3. **Classify each signal** in one category of `format.md`: covered (with
-   its anchors `Pxxx:HNN`), marginal, previously rejected, out of scope
-   (it displaces the Analytics identity, belongs to another course, or lacks
-   a case and data to teach it rigorously), improvement of an existing
-   activity, or new activity.
-4. **Decide each activity**: `igual` (a), `puntual` (b) or `curso` (c). An
-   activity that serves no target of the course is a course decision.
-   Record which targets and competencies it serves: they become its
+3. **Map with levels**: anchor each signal to the highlights that work on
+   it, each with the level at which it does (`introduce`, `desarrolla`,
+   `domina`). A course outcome is covered only when some anchor reaches the
+   level the course owes it.
+4. **Classify each signal** in one category of `format.md`: covered,
+   marginal, previously rejected, out of scope (it displaces the Analytics
+   identity, belongs to another course by the scope of the course file, or
+   lacks a case and data to teach it rigorously), improvement of an
+   existing activity, or new activity. A partly covered signal keeps its
+   anchors and takes the category of what is missing.
+5. **Account for every highlight**: a highlight that no signal anchors is
+   outside what the course must teach. Keep it, with the reason it
+   technically sustains the product, or trim it with a proposal. Look here
+   for the excess that pulls the course toward the risk its file names, and
+   for required knowledge taught again.
+6. **Decide each activity**: `igual` (a), `puntual` (b) or `curso` (c). An
+   activity that serves no course outcome is a course decision. Record
+   which course outcomes and competencies it serves: they become its
    traceability entry.
-5. **Integrate** with existing proposals: if an open proposal is
+7. **Justify each proposal** on its methodological, technical and
+   pedagogical principles and on the identity of the course.
+8. **Integrate** with existing proposals: if an open proposal is
    equivalent, reinforce it (`refuerza`) instead of duplicating it.
-6. **Review interactions**: the proposals of one activity are discussed and
+9. **Review interactions**: the proposals of one activity are discussed and
    executed together; state which depend on, compete with or reinforce each
    other.
-7. **Write the audit** as JSON (below), check it and apply it.
+10. **Write the audit** as JSON (below), check it and apply it.
 
 ## The audit file
 
@@ -143,49 +187,59 @@ Spanish.
 
 ```json
 {
-  "curso": "descriptiva",
+  "curso": "predictiva",
   "executor": "Claude",
   "fecha": "2026-10-14",
   "senales": [
-    {"id": "RA02", "categoria": "cubierta", "anclas": ["P103:H03"]},
-    {"id": "C002.CON04", "categoria": "fuera de alcance", "razon": "…"},
-    {"id": "C002.HAB01", "categoria": "marginal", "razon": "…", "actividad": "P103"},
-    {"id": "C002.HAB03", "categoria": "mejora", "actividad": "P103", "propuesta": "exposicion"},
-    {"id": "C003.HAB02", "categoria": "actividad nueva", "propuesta": "producto-completo"}
+    {"id": "predictiva/RC02", "categoria": "cubierta",
+     "anclas": [{"hito": "P200:H02", "nivel": "introduce"}, {"hito": "P206:H03", "nivel": "domina"}]},
+    {"id": "predictiva/RC01", "categoria": "mejora", "actividad": "P200", "propuesta": "encuadre",
+     "anclas": [{"hito": "P205:H01", "nivel": "introduce"}]},
+    {"id": "C001.CON04", "categoria": "fuera de alcance", "razon": "…"},
+    {"id": "C001.HAB02", "categoria": "marginal", "razon": "…", "actividad": "P200"},
+    {"id": "C006.HAB01", "categoria": "actividad nueva", "propuesta": "seguimiento"}
   ],
   "actividades": [
     {
-      "actividad": "P103",
+      "actividad": "P200",
       "decision": "puntual",
-      "resultados": ["RA02"],
-      "competencias": ["C002"],
+      "resultados": ["predictiva/RC01", "predictiva/RC02"],
+      "competencias": ["C001", "C004"],
       "razon": "Una oración: por qué esta decisión.",
       "propuestas": [{
-        "clave": "exposicion",
-        "titulo": "…", "tipo": "método", "que_gana": "…",
+        "clave": "encuadre",
+        "titulo": "…", "tipo": "encuadre", "que_gana": "…",
         "anclas": ["H01", "S02"], "alternativas": "…", "no_regresion": "…",
-        "limite": "…", "interacciones": "…", "aceptacion": "…",
-        "instrucciones": "…"
+        "limite": "…", "interacciones": "…",
+        "metodologico": "…", "tecnico": "…", "pedagogico": "…", "identidad": "…",
+        "aceptacion": "…", "instrucciones": "…"
       }],
-      "refuerza": ["T01"]
+      "refuerza": ["T01"],
+      "fuera": [
+        {"hito": "H04", "accion": "recortar", "propuesta": "encuadre", "razon": "…"},
+        {"hito": "H05", "accion": "conservar", "razon": "…"}
+      ]
     },
-    {"actividad": "P121", "decision": "curso", "resultados": [], "competencias": [],
-     "razon": "…", "curso": "producto-completo"}
+    {"actividad": "P220", "decision": "curso", "resultados": [], "competencias": [],
+     "razon": "…", "curso": "seguimiento"}
   ],
   "nuevas": [{
-    "clave": "producto-completo", "tipo": "actividad nueva", "titulo": "…",
-    "contribucion": "…", "posicion": "…", "efecto": "…", "caso": "…",
-    "producto": "…", "aceptacion": "…"
+    "clave": "seguimiento", "tipo": "actividad nueva", "titulo": "…",
+    "contribucion": "…", "posicion": "…", "desplaza": "…", "efecto": "…",
+    "caso": "…", "producto": "…",
+    "metodologico": "…", "tecnico": "…", "pedagogico": "…", "identidad": "…",
+    "aceptacion": "…"
   }],
   "refuerza": ["N01"]
 }
 ```
 
-- `senales` holds every target and item, once each. `actividad` is
+- `senales` holds every course outcome and item, once each. `actividad` is
   optional on a discarded signal; it attributes the signal to that
   activity's log.
-- `propuesta` and `curso` cite the `clave` of a new proposal, or the id of
-  an open one (`T01` of that activity, `N01` of the course).
+- `propuesta`, `curso` and a trimmed highlight's `propuesta` cite the
+  `clave` of a new proposal, or the id of an open one (`T01` of that
+  activity, `N01` of the course).
 - An activity of another course is cited with its path, `descriptiva/P103`,
   and its anchors as `descriptiva/P103:H01`.
 
@@ -194,11 +248,11 @@ Spanish.
 David discusses **all** the proposals of an activity together, because they
 interact. When he decides:
 
-- **approved:** the entry stays in `Pxxx_tasks.md` with state «aprobada»
-  until it is executed;
-- **rejected:** the entry leaves `Pxxx_tasks.md` and is recorded in the
-  activity's `log.md` as `DEC.Pxxx.NN` with the proposal, its sources and
-  the reason. A rejected course decision stays in `course_tasks.md` with
+- **approved:** the entry stays in the activity's `tasks.md` with state
+  «aprobada» until it is executed;
+- **rejected:** the entry leaves the activity's `tasks.md` and is recorded
+  in its `log.md` as `DEC.Pxxx.NN` with the proposal, its sources and the
+  reason. A rejected course proposal stays in the course `tasks.md` with
   state «rechazada» and its reason.
 
 Later audits treat both as previous rejections.
@@ -208,14 +262,16 @@ Later audits treat both as previous rejections.
 After `check_audit.py` reports no errors, confirm what it cannot check:
 
 - every proposal passes materiality and says what the student gains;
-- every point change keeps the activity a short, well-defined problem;
+- every point change says exactly what to change and keeps the activity a
+  short, well-defined problem;
+- every course change says what it displaces, merges or trims;
+- every justification names a real methodological, technical and
+  pedagogical principle, not a restatement of the change;
 - every proposal is anchored to existing `HNN`/`SNN`, or, if it is a course
-  decision, states position, distinct contribution and effect on the
+  change, states position, distinct contribution and effect on the
   sequence;
-- existing proposals were reinforced, not duplicated;
-- previous rejections were consulted;
-- every proposal has a no-regression contract, an acceptance criterion and
-  execution instructions; and
-- the Analytics identity of `AGENTS.md` is preserved: no activity, and no
-  proposed activity, reads as an abbreviated course in one contributing
-  discipline.
+- existing proposals were reinforced, not duplicated, and previous
+  rejections were consulted; and
+- the course as a whole still answers the question and ends in the
+  terminal product of its file, and no activity reads as the abbreviated
+  course its file names as the risk.

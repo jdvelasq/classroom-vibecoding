@@ -168,12 +168,12 @@ def test_missing_case_and_data_marker_is_a_warning(layout):
     assert any("(caso y datos)" in w for w in warnings)
 
 
-def test_missing_description_and_log_are_errors(layout):
-    layout.activity(COURSE, FOLDER).unlink()
+def test_a_missing_description_is_an_error_and_a_missing_log_is_not(layout):
     layout.log(COURSE, FOLDER).unlink()
+    assert errors_of(layout) == ([], [])
+    layout.activity(COURSE, FOLDER).unlink()
     errors, _ = errors_of(layout)
     assert any("the description does not exist" in e for e in errors)
-    assert any("the log does not exist" in e for e in errors)
 
 
 def test_log_numbering_is_checked(layout):

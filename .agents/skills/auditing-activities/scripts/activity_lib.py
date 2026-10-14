@@ -64,8 +64,8 @@ class Layout:
     def traceability(self, course: str) -> Path:
         return self.at(paths.TRACEABILITY, course=course)
 
-    def tasks(self, course: str, activity: str) -> Path:
-        return self.at(paths.TASKS, course=course, activity=activity)
+    def tasks(self, course: str, folder: str) -> Path:
+        return self.at(paths.TASKS, course=course, folder=folder)
 
     def course_tasks(self, course: str) -> Path:
         return self.at(paths.COURSE_TASKS, course=course)
@@ -83,7 +83,7 @@ class Layout:
         return path.relative_to(self.root).as_posix()
 
     def own_files(self, course: str, folder: str) -> set[Path]:
-        return {self.activity(course, folder), self.log(course, folder)}
+        return {self.activity(course, folder), self.log(course, folder), self.tasks(course, folder)}
 
 
 def document_version(path: Path) -> str:
@@ -338,7 +338,7 @@ def validate_log(path: Path, layout: Layout, activity: str) -> tuple[list[str], 
     warnings: list[str] = []
     name = layout.shown(path)
     if not path.exists():
-        return [f"{name}: the log does not exist"], warnings
+        return errors, warnings
     entries = parse_log(path)
     if not path.read_text(encoding="utf-8").startswith(f"# Log — {activity}"):
         errors.append(f"{name}: the first line must be '# Log — {activity}'")
@@ -346,7 +346,7 @@ def validate_log(path: Path, layout: Layout, activity: str) -> tuple[list[str], 
         if entry.activity != activity:
             errors.append(f"{name}: entry {entry.id} belongs to another activity")
     if not any(e.prefix == DESCRIPTION_LOG for e in entries):
-        errors.append(f"{name}: there is no {DESCRIPTION_LOG} entry")
+        warnings.append(f"{name}: there is no {DESCRIPTION_LOG} entry")
     by_prefix: dict[str, list[int]] = {}
     for entry in entries:
         by_prefix.setdefault(entry.prefix, []).append(entry.number)
