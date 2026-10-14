@@ -62,6 +62,10 @@ COMPETENCY_ID = re.compile(r"^C\d{3}$")
 SOURCES = re.compile(r"\s*\[[^\]]*\]\s*\.?\s*$")
 TRACE_FIELDS = ["resultados", "competencias", "decision", "auditoria"]
 SUPPORTED_TRACE_VERSION = SUPPORTED_FORMAT_VERSION
+# Activity notebooks have no markdown cells by definition; a proposal may
+# only mention markdown to discard it as an alternative.
+MARKDOWN = re.compile(r"\bmarkdown\b", re.I)
+MARKDOWN_ALLOWED_FIELDS = {"alternativas"}
 
 
 @dataclass(frozen=True)
@@ -299,6 +303,9 @@ def anchor_parts(anchor: object) -> tuple[str, str]:
 
 def validate_proposal(proposal: dict, fields: list[str], where: str) -> list[str]:
     errors = []
+    for name in fields:
+        if name not in MARKDOWN_ALLOWED_FIELDS and MARKDOWN.search(str(proposal.get(name, ""))):
+            errors.append(f"{where}: {name} mentions markdown; activity notebooks have no markdown cells")
     for name in fields:
         value = proposal.get(name)
         if name == "anclas":

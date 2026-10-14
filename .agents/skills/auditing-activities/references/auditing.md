@@ -90,6 +90,17 @@ terminal product) and by what is left over (highlights that teach the
 contributing discipline for its own sake). Every proposal states how it
 serves the terminal product and avoids the risk.
 
+## Notebooks have no markdown cells
+
+By definition, the notebooks of an activity have no markdown cells: they
+are class-activity notebooks, not material for the student to read. No
+proposal adds a markdown cell or explanatory text to a notebook. What must
+be explained, the professor explains in the session. When it must leave
+evidence, it is persisted as an artifact in `submission/`, or as the
+first-line comment of a code cell that `AGENTS.md` allows; otherwise it is
+dropped. `check_audit.py` rejects a proposal that mentions markdown
+anywhere but in its discarded alternatives.
+
 ## Decision criteria
 
 ### 1. Materiality
@@ -263,7 +274,7 @@ After `check_audit.py` reports no errors, confirm what it cannot check:
 
 - every proposal passes materiality and says what the student gains;
 - every point change says exactly what to change and keeps the activity a
-  short, well-defined problem;
+  short, well-defined problem, with no markdown cell in any notebook;
 - every course change says what it displaces, merges or trims;
 - every justification names a real methodological, technical and
   pedagogical principle, not a restatement of the change;

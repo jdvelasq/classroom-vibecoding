@@ -45,6 +45,16 @@ Una descripción existente no se regenera. Sólo se describen las
 actividades sin `activity.md`; volver a describir una actividad requiere
 que david lo pida.
 
+## Notebooks sin celdas markdown
+
+Los notebooks de una actividad no tienen celdas markdown, por definición:
+son notebooks de actividad de clase, no material para que el estudiante lea.
+Ninguna propuesta agrega una celda markdown ni texto explicativo al
+notebook. Lo que hay que explicar lo explica el profesor en la sesión.
+Cuando debe quedar evidencia, se persiste como un artefacto en
+`submission/`, o como el comentario de primera línea de una celda de
+código que `AGENTS.md` admite; si no, se descarta.
+
 ## Límite pedagógico de una actividad
 
 Una actividad es un problema típico, claro y bien definido, que se resuelve
@@ -406,5 +416,5 @@ L101:
   `igual`, `puntual` y `curso`; una sola propuesta nueva por actividad y
   auditoría; el aviso con más de tres propuestas abiertas; que las
   decisiones de curso rechazadas queden en el `tasks.md` del curso;
-  `audit.md`; el nivel debido de un resultado del curso como el mayor de
+  `audit.md`; la prohibición de proponer celdas markdown; el nivel debido de un resultado del curso como el mayor de
   sus `RA` en la matriz; el esquema de `traceability.yaml`; que `P001` y `Lxxx` queden fuera de la auditoría.

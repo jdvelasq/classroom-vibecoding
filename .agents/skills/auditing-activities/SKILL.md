@@ -80,7 +80,8 @@ activities, go back to step 1.
 
 Follow `references/auditing.md`: anchor every signal to highlights with
 their level, account for every highlight, decide every activity, justify
-every proposal and write the audit JSON in the scratchpad.
+every proposal and write the audit JSON in the scratchpad. Activity notebooks
+have no markdown cells: never propose one.
 
 ## 3. Check and apply
 

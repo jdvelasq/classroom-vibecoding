@@ -308,6 +308,9 @@ def mutate(change):
     (lambda a: a["actividades"][0]["propuestas"][0].update(limite=""), "limite is empty"),
     (lambda a: a["actividades"][0]["propuestas"][0].update(pedagogico=""), "pedagogico is empty"),
     (lambda a: a["nuevas"][0].update(desplaza=""), "desplaza is empty"),
+    (lambda a: a["actividades"][0]["propuestas"][0].update(instrucciones="Añade una celda Markdown."),
+     "instrucciones mentions markdown"),
+    (lambda a: a["nuevas"][0].update(aceptacion="Un notebook con markdown."), "aceptacion mentions markdown"),
     (lambda a: a["nuevas"][0].update(identidad=""), "identidad is empty"),
     (lambda a: a["actividades"].clear(), "P100 has no decision"),
     (lambda a: a["senales"][3].update(categoria="marginal", razon="x"), "no signal or highlight motivates"),
@@ -317,6 +320,12 @@ def mutate(change):
 def test_audit_errors(layout, change, message):
     errors, _ = check(layout, mutate(change))
     assert any(message in e for e in errors), errors
+
+
+def test_markdown_may_only_be_discarded_as_an_alternative(layout):
+    def discard(audit):
+        audit["actividades"][0]["propuestas"][0]["alternativas"] = "Declararlo en markdown no deja evidencia."
+    assert check(layout, mutate(discard))[0] == []
 
 
 def test_a_highlight_outside_the_course_is_kept_or_trimmed(layout):
