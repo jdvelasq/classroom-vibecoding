@@ -68,7 +68,9 @@ MARKDOWN = re.compile(r"\bmarkdown\b", re.I)
 MARKDOWN_ALLOWED_FIELDS = {"alternativas"}
 # Activity tests show participation in class: they check that the artifacts
 # a session generates exist in submission/, never recompute their content.
-STRICT_TEST = re.compile(r"recalcul\w*|recomput\w*|assert_frame_equal|assert_allclose", re.I)
+STRICT_TEST = re.compile(
+    r"(prueba|test)[^.;]*(recalcul|recomput|recompon|reconstru|assert_frame_equal|assert_allclose)"
+    r"|(recalcul|recomput|recompon|reconstru)[^.;]*(prueba|test)", re.I)
 STRICT_TEST_FIELDS = {"aceptacion", "instrucciones"}
 
 

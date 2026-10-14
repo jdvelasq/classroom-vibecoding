@@ -313,7 +313,7 @@ def mutate(change):
     (lambda a: a["nuevas"][0].update(aceptacion="Un notebook con markdown."), "aceptacion mentions markdown"),
     (lambda a: a["actividades"][0]["propuestas"][0].update(aceptacion="Una prueba que lo recalcule desde data/."),
      "aceptacion asks to recompute"),
-    (lambda a: a["actividades"][0]["propuestas"][0].update(instrucciones="Compara con assert_frame_equal."),
+    (lambda a: a["actividades"][0]["propuestas"][0].update(instrucciones="Añade una prueba con assert_frame_equal."),
      "instrucciones asks to recompute"),
     (lambda a: a["nuevas"][0].update(identidad=""), "identidad is empty"),
     (lambda a: a["actividades"].clear(), "P100 has no decision"),
@@ -324,6 +324,13 @@ def mutate(change):
 def test_audit_errors(layout, change, message):
     errors, _ = check(layout, mutate(change))
     assert any(message in e for e in errors), errors
+
+
+def test_a_notebook_step_may_recompute_but_a_test_may_not(layout):
+    def notebook(audit):
+        audit["actividades"][0]["propuestas"][0]["instrucciones"] = (
+            "Recalcula el resumen en el notebook. Añade una prueba que verifique que el archivo existe.")
+    assert check(layout, mutate(notebook))[0] == []
 
 
 def test_markdown_may_only_be_discarded_as_an_alternative(layout):
