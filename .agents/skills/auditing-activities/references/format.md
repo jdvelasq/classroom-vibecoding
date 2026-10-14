@@ -301,7 +301,10 @@ avisa cuando una actividad acumula más de tres propuestas abiertas.
 ### `Pxxx_<nombre>/tasks.md` — cambios puntuales de una actividad
 
 Dice exactamente qué cambiar en la actividad y por qué. Estado actual, no
-historial: sólo hay propuestas pendientes de discusión. Una propuesta
+historial: sólo hay propuestas pendientes de discusión, que pueden esperar
+meses. Una re-auditoría no las borra ni las reescribe: las refuerza, o
+marca como `obsoleta` la que ya no aplica a la actividad vigente, con su
+razón, para que se discuta. Una propuesta
 discutida, aprobada o rechazada, sale del archivo y queda en el log como
 `DEC` (skill `reviewing-tasks`), de modo que su ID no se reutiliza y las
 auditorías no la vuelven a proponer. El archivo se elimina cuando queda
@@ -314,7 +317,7 @@ sin propuestas.
 
 ## T01 — Título preciso del cambio
 
-- **Estado:** pendiente de discusión | aprobada | rechazada
+- **Estado:** pendiente de discusión | obsoleta según `AUD.Pxxx.NN` (executor, fecha): razón
 - **Tipo:** encuadre | producto/evidencia | método | caso/datos | proceso | pedagogía
 - **Fuentes:**
   - Auditoría `AUD.Pxxx.NN` (executor, fecha) del curso `descriptiva`: señales `descriptiva/RC02`, `C002.HAB03`.

@@ -242,6 +242,13 @@ def load_description(layout: Layout, activity: CourseActivity) -> Activity:
     return parse_activity(layout.activity(activity.owner, activity.folder.name))
 
 
+def missing_anchors(entry: TaskEntry, description: Activity) -> list[str]:
+    """Anchors a pending proposal names that the current description no longer has."""
+    anchors = re.findall(r"\b[HS]\d{2}\b", labelled_value(entry.text, "Anclas actuales"))
+    present = set(description.highlight_ids()) | set(description.surface_ids())
+    return [a for a in dict.fromkeys(anchors) if a not in present]
+
+
 def labelled_value(text: str, label: str) -> str:
     match = re.search(rf"^- \*\*{re.escape(label)}:\*\*\s*(.*)$", text, re.M)
     return match.group(1).strip() if match else ""
@@ -425,6 +432,21 @@ def validate_audit(layout: Layout, audit: dict, course: str) -> tuple[list[str],
         for task in reinforced:
             if task not in open_ids:
                 errors.append(f"{ref}: refuerza cites {task}, which is not an open proposal of {activity.id}")
+        obsolete = {}
+        for item in as_list(entry.get("obsoletas")):
+            task = item.get("propuesta") if isinstance(item, dict) else None
+            if task not in open_ids:
+                errors.append(f"{ref}: obsoletas cites '{task}', which is not an open proposal of {activity.id}")
+            elif not str(item.get("razon", "")).strip():
+                errors.append(f"{ref}: obsoleta {task} needs a razon")
+            if task in reinforced:
+                errors.append(f"{ref}: {task} cannot be reinforced and marked obsolete at once")
+            obsolete[task] = item
+        for task_entry in open_tasks(activity_tasks(layout, activity)):
+            gone = missing_anchors(task_entry, description)
+            if gone and task_entry.id not in obsolete:
+                warnings.append(f"{ref} {task_entry.id}: its anchors {', '.join(gone)} no longer exist; "
+                                f"mark it in obsoletas if it no longer applies")
         keys: dict[str, dict] = {}
         for proposal in proposals:
             key = proposal.get("clave") if isinstance(proposal, dict) else None

@@ -142,6 +142,20 @@ def course_task_block(task_id: str, proposal: dict, source: str) -> str:
 """
 
 
+def set_state(text: str, task_id: str, state: str) -> str:
+    """Rewrites the Estado bullet of one pending proposal, keeping everything else."""
+    headings = list(TASK_HEADING.finditer(text))
+    match = next(m for m in headings if m.group(1) == task_id)
+    following = [m.start() for m in headings if m.start() > match.start()]
+    end = following[0] if following else len(text)
+    body = text[match.end():end]
+    if re.search(r"^- \*\*Estado:\*\*.*$", body, re.M):
+        body = re.sub(r"^- \*\*Estado:\*\*.*$", f"- **Estado:** {state}", body, count=1, flags=re.M)
+    else:
+        body = re.sub(r"^(- \*\*)", f"- **Estado:** {state}\n\\1", body, count=1, flags=re.M)
+    return text[:match.end()] + body + text[end:]
+
+
 def add_source(text: str, task_id: str, source: str) -> str:
     """Adds one source line to the Fuentes bullet of an existing proposal."""
     headings = list(TASK_HEADING.finditer(text))
@@ -268,6 +282,9 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
             signals = signals_for(audit, task_id)
             line = f"{source}: refuerza con las señales {', '.join(signals) or 'de la decisión'}."
             edits.write(tasks, add_source(edits.read(tasks), task_id, line))
+        for item in as_list(entry.get("obsoletas")):
+            state = f"obsoleta según `{audit_ids[activity.ref]}` {who}: {item['razon'].strip()}"
+            edits.write(tasks, set_state(edits.read(tasks), item["propuesta"], state))
 
     course_tasks = layout.course_tasks(course)
     course_source = f"Auditoría del curso `{course}` {who}"
@@ -294,6 +311,7 @@ def plan(layout: Layout, audit_path: Path) -> Edits:
         outcome = []
         outcome += [f"propone {ids[p['clave']]}" for p in as_list(entry.get("propuestas"))]
         outcome += [f"refuerza {t}" for t in as_list(entry.get("refuerza"))]
+        outcome += [f"marca obsoleta {o['propuesta']}" for o in as_list(entry.get("obsoletas"))]
         if entry["decision"] == COURSE_DECISION:
             outcome.append(f"aporta a {ids.get(entry['curso'], entry['curso'])}")
         anchored = signals_of_activity(audit, ref)

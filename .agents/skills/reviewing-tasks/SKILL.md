@@ -8,7 +8,8 @@ description: Reviews with david, one at a time, the pending improvement proposal
 David's procedure: for each activity with pending improvements in its
 `tasks.md`, one improvement at a time is analyzed and discussed with david.
 Once discussed, approved or rejected, it leaves `tasks.md` and a note goes
-to the log, so it is not proposed again in later iterations.
+to the log, so it is not proposed again in later iterations. A postponed
+proposal stays in `tasks.md`, as long as needed.
 
 Deterministic Python scripts do the mechanical part: listing the proposals
 in order, removing a decided one from its `tasks.md` and writing its note
@@ -54,7 +55,13 @@ Present only that proposal, in a few lines david can answer:
 Read the activity's `activity.md`, and its implementation only when the
 discussion needs it. Answer david's questions. Do not decide for david:
 wait for an explicit «aprobada» or «rechazada» and its reason. If david
-changes the proposal, record the approved version in the reason.
+changes the proposal, record the approved version in the reason. A
+proposal marked `obsoleta` by a later audit is discussed like any other;
+its state says why it may no longer apply.
+
+David may also **postpone** a proposal: proposals can wait months, because
+the courses keep changing. Then record nothing, leave it in `tasks.md` as
+it is, and move on to the next one in the queue.
 
 ## 3. Record the decision
 
@@ -76,7 +83,7 @@ Then go back to step 1 for the next proposal, unless david stops.
 ## 4. Report
 
 When the review ends, give david a short summary: the proposals approved,
-those rejected, and those still open.
+those rejected, those postponed, and those still open.
 
 ## Testing the scripts
 

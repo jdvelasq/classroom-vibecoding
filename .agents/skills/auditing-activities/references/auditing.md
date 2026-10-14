@@ -196,8 +196,13 @@ what changed.
    traceability entry.
 7. **Justify each proposal** on its methodological, technical and
    pedagogical principles and on the identity of the course.
-8. **Integrate** with existing proposals: if an open proposal is
-   equivalent, reinforce it (`refuerza`) instead of duplicating it.
+8. **Integrate** with existing proposals. Pending proposals may wait
+   months for discussion, and the audit never removes or rewrites them: if
+   an open proposal is equivalent, reinforce it (`refuerza`) instead of
+   duplicating it; if it no longer applies to the current activity (its
+   anchors are gone, or the activity already does what it asked), mark it
+   in `obsoletas` with the reason. `audit_status.py` lists, for each
+   pending proposal, the anchors its description no longer has.
 9. **Review interactions**: the proposals of one activity are discussed and
    executed together; state which depend on, compete with or reinforce each
    other.
@@ -238,6 +243,7 @@ Spanish.
         "aceptacion": "…", "instrucciones": "…"
       }],
       "refuerza": ["T01"],
+      "obsoletas": [{"propuesta": "T02", "razon": "…"}],
       "fuera": [
         {"hito": "H04", "accion": "recortar", "propuesta": "encuadre", "razon": "…"},
         {"hito": "H05", "accion": "conservar", "razon": "…"}

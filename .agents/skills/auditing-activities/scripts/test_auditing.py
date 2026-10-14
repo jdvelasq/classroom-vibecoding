@@ -517,3 +517,30 @@ def test_courses_status_summarizes_without_auditing(layout):
     assert by_course["demo"]["to_describe"] == []
     assert by_course["data"]["activities"] == 1
     assert by_course["big-data"]["implementation"] is False
+
+
+def test_a_reaudit_marks_a_pending_proposal_obsolete_without_removing_it(layout):
+    tasks = layout.tasks(COURSE, FOLDER)
+    tasks.write_text("# P100 — Propuestas de mejora\n\n## T01 — Algo viejo\n\n"
+                     "- **Estado:** pendiente de discusión\n- **Anclas actuales:** H01, H07.\n", encoding="utf-8")
+    assert audit_status.status(layout, COURSE)["activities"][0]["proposals"][0]["missing_anchors"] == ["H07"]
+    _, warnings = check(layout, good_audit())
+    assert any("T01: its anchors H07 no longer exist" in w for w in warnings)
+
+    def obsolete(audit):
+        audit["actividades"][0]["obsoletas"] = [{"propuesta": "T01", "razon": "H07 ya no existe."}]
+    audit = mutate(obsolete)
+    errors, warnings = check(layout, audit)
+    assert errors == [] and not any("no longer exist" in w for w in warnings)
+    edits = apply_audit.plan(layout, save(layout.root, audit))
+    text = edits.texts[tasks]
+    assert "## T01 — Algo viejo\n\n- **Estado:** obsoleta según `AUD.P100.01` (Claude, 2026-10-14): H07 ya no existe." in text
+    assert "## T02 — Verificar" in text
+    assert "marca obsoleta T01" in edits.texts[layout.log(COURSE, FOLDER)]
+
+
+def test_an_obsolete_mark_needs_an_open_proposal_and_a_reason(layout):
+    def bad(audit):
+        audit["actividades"][0]["obsoletas"] = [{"propuesta": "T05", "razon": ""}]
+    errors, _ = check(layout, mutate(bad))
+    assert any("obsoletas cites 'T05'" in e for e in errors)

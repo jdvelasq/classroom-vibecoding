@@ -34,6 +34,7 @@ from audit_lib import (
     course_tasks,
     describe_problems,
     load_description,
+    missing_anchors,
     requirements,
 )
 
@@ -62,7 +63,8 @@ def status(layout: Layout, course: str) -> dict[str, object]:
             "surfaces": description.surface_ids(),
             "traceability": trace.entries.get(activity.ref),
             "proposals": [
-                {"id": e.id, "title": e.title, "estado": e.state}
+                {"id": e.id, "title": e.title, "estado": e.state,
+                 "missing_anchors": missing_anchors(e, description)}
                 for e in activity_tasks(layout, activity)
             ],
             "decisions": [e.id for e in log if e.prefix == "DEC"],
