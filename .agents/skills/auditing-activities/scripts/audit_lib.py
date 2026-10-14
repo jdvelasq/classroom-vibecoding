@@ -66,6 +66,10 @@ SUPPORTED_TRACE_VERSION = SUPPORTED_FORMAT_VERSION
 # only mention markdown to discard it as an alternative.
 MARKDOWN = re.compile(r"\bmarkdown\b", re.I)
 MARKDOWN_ALLOWED_FIELDS = {"alternativas"}
+# Activity tests show participation in class: they check that the artifacts
+# a session generates exist in submission/, never recompute their content.
+STRICT_TEST = re.compile(r"recalcul\w*|recomput\w*|assert_frame_equal|assert_allclose", re.I)
+STRICT_TEST_FIELDS = {"aceptacion", "instrucciones"}
 
 
 @dataclass(frozen=True)
@@ -306,6 +310,9 @@ def validate_proposal(proposal: dict, fields: list[str], where: str) -> list[str
     for name in fields:
         if name not in MARKDOWN_ALLOWED_FIELDS and MARKDOWN.search(str(proposal.get(name, ""))):
             errors.append(f"{where}: {name} mentions markdown; activity notebooks have no markdown cells")
+        if name in STRICT_TEST_FIELDS and STRICT_TEST.search(str(proposal.get(name, ""))):
+            errors.append(f"{where}: {name} asks to recompute an artifact; activity tests only check that "
+                          f"the artifacts of submission/ exist")
     for name in fields:
         value = proposal.get(name)
         if name == "anclas":

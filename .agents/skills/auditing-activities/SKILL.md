@@ -81,7 +81,8 @@ activities, go back to step 1.
 Follow `references/auditing.md`: anchor every signal to highlights with
 their level, account for every highlight, decide every activity, justify
 every proposal and write the audit JSON in the scratchpad. Activity notebooks
-have no markdown cells: never propose one.
+have no markdown cells: never propose one. Activity tests only check that
+the concrete artifacts of `submission/` exist.
 
 ## 3. Check and apply
 

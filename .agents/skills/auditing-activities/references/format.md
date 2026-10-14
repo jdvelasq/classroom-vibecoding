@@ -55,6 +55,16 @@ Cuando debe quedar evidencia, se persiste como un artefacto en
 `submission/`, o como el comentario de primera línea de una celda de
 código que `AGENTS.md` admite; si no, se descarta.
 
+## Pruebas de una actividad
+
+Las pruebas de una actividad `Pxxx` evidencian que el estudiante participó
+en la clase; no son pruebas de software como en DataOps o MLOps. Una
+propuesta sólo pide pruebas que verifiquen que existen en `submission/` los
+artefactos concretos que la actividad genera (por ejemplo, el archivo limpio
+de una limpieza), sin recalcular su contenido ni fijar su esquema o sus
+valores. Una prueba genérica, como «hay algún archivo en `submission/`», no
+basta. Las pruebas existentes no se eliminan.
+
 ## Límite pedagógico de una actividad
 
 Una actividad es un problema típico, claro y bien definido, que se resuelve
@@ -416,5 +426,6 @@ L101:
   `igual`, `puntual` y `curso`; una sola propuesta nueva por actividad y
   auditoría; el aviso con más de tres propuestas abiertas; que las
   decisiones de curso rechazadas queden en el `tasks.md` del curso;
-  `audit.md`; la prohibición de proponer celdas markdown; el nivel debido de un resultado del curso como el mayor de
+  `audit.md`; la prohibición de proponer celdas markdown; las pruebas como existencia
+  de los artefactos concretos de `submission/`; el nivel debido de un resultado del curso como el mayor de
   sus `RA` en la matriz; el esquema de `traceability.yaml`; que `P001` y `Lxxx` queden fuera de la auditoría.

@@ -101,6 +101,18 @@ first-line comment of a code cell that `AGENTS.md` allows; otherwise it is
 dropped. `check_audit.py` rejects a proposal that mentions markdown
 anywhere but in its discarded alternatives.
 
+## Activity tests are evidence of participation
+
+The tests of a `Pxxx` activity show that the student took part in the
+class; they are not software tests as in DataOps or MLOps. A proposal only
+asks for tests that check that the concrete artifacts the activity
+generates exist in `submission/` (for example, the cleaned file of a
+cleaning activity), without recomputing their content or fixing their
+schema or values. A generic test, such as "some file exists in
+`submission/`", is not enough. Existing tests are not removed.
+`check_audit.py` rejects acceptance criteria and instructions that ask to
+recompute or compare an artifact.
+
 ## Decision criteria
 
 ### 1. Materiality
@@ -274,7 +286,8 @@ After `check_audit.py` reports no errors, confirm what it cannot check:
 
 - every proposal passes materiality and says what the student gains;
 - every point change says exactly what to change and keeps the activity a
-  short, well-defined problem, with no markdown cell in any notebook;
+  short, well-defined problem, with no markdown cell in any notebook and
+  tests that only check its concrete artifacts exist in `submission/`;
 - every course change says what it displaces, merges or trims;
 - every justification names a real methodological, technical and
   pedagogical principle, not a restatement of the change;
