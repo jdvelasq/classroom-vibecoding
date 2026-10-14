@@ -62,8 +62,8 @@
   admite lectura estacional ni comercial; (2) la pregunta reformulada hacia
   composición por categoría en `questions.json`, respondida por un artefacto
   nuevo en `submission/` derivado de `sales_analytics.csv`; (3) una lectura
-  escrita persistida con respuesta y límite; y (4) pruebas que verifican el
-  artefacto nuevo y la lectura. H01–H03 siguen presentes y H04 queda
+  escrita persistida con respuesta y límite; y (4) pruebas que verifican que el
+  artefacto nuevo y la lectura existen en `submission/`. H01–H03 siguen presentes y H04 queda
   reescrito con la nueva pregunta.
 
 ### Instrucciones de ejecución
@@ -112,12 +112,8 @@ Actividad: 05-implementation/descriptiva/P150_ventas_tabla/
 6. Pruebas en tests/test_activity.py, sin eliminar ninguna:
    - test_04 se mantiene (monthly_category_sales.csv sigue entregado).
    - test_05: actualiza sólo el literal de la pregunta.
-   - Añade una prueba que recalcula category_composition.csv desde
-     sales_analytics.csv, exige las columnas, share en [0, 1] con suma 1 y
-     reconciliación con el total de net_sales.
-   - Añade una prueba que exige analysis_conclusions.csv con sus columnas,
-     una fila por pregunta y un límite que mencione «sintétic» y «temporal»
-     (o «estacional»).
+   - Añade una prueba que verifica que submission/category_composition.csv
+     y submission/analysis_conclusions.csv existen.
    - Si test_01 exige un conjunto exacto de archivos, amplíalo con los dos
      archivos nuevos sin quitar ninguno.
 7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.

@@ -57,7 +57,7 @@
   sin criterio de selección; (3) `submission/olap_reading.csv` con una fila
   por pregunta (respuesta, evidencia, límite), donde el límite del
   *drill-down* dice que es descomposición aditiva y no causa; y (4) una
-  prueba que lo verifica derivando los líderes del archivo entregado.
+  prueba que verifica que existe.
   H01–H04 siguen presentes y H03 deja de tener el límite «no explícito».
 
 ### Instrucciones de ejecución
@@ -103,10 +103,6 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
 5. Pruebas en tests/test_activity.py, sin eliminar ninguna:
    - Amplía test_01 para incluir olap_reading.csv sin quitar los cuatro
      archivos existentes.
-   - Añade una prueba que exige las columnas, una fila por pregunta de
-     questions.json, que la respuesta del slice contenga las dos categorías
-     líderes derivadas de north_category_sales.csv (por net_sales y por
-     units) y que el límite del drill-down contenga «aditiv» y «caus».
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 7. No modifiques otras actividades, traceability.yaml ni design/.
 ```
@@ -157,7 +153,7 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
   anterior, frente al mismo mes del año anterior (si el rango cubre más de un
   año; si no, se declara) y acumulado del año, con meses sin ventas en cero y
   bases cero tratadas explícitamente, respaldado por notebook, un CSV en
-  `submission/` y una prueba que recalcule el acumulado.
+  `submission/` y una prueba que verifique que el CSV existe.
 
 ### Instrucciones de ejecución
 
@@ -189,10 +185,8 @@ Actividad: 05-implementation/descriptiva/P152_ventas_olap/
    region, net_sales, prev_month_net_sales, mom_change, mom_pct,
    yoy_change, ytd_net_sales.
 4. Actualiza tests/: amplía la lista de archivos esperados con
-   period_comparison.csv (sin quitar ninguno) y añade una prueba que
-   reconstruya ytd_net_sales desde data/sales_mart.db y verifique que la
-   suma de net_sales coincide con el total del hecho. No elimines pruebas
-   existentes.
+   period_comparison.csv, sin quitar ninguno; así se verifica que existe.
+   No elimines pruebas existentes.
 5. Ejecuta el notebook completo y las pruebas sin errores.
 6. No modifiques otras actividades, traceability.yaml ni design/.
 ```

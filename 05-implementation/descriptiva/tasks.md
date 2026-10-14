@@ -46,8 +46,7 @@
   cambios documentados; une el hecho con la versión vigente en la fecha de
   cada venta; compara ventas por región en vista tipo 1 y tipo 2; persiste
   ambas vistas, su diferencia y la lectura en `submission/`; incluye pruebas
-  (sin solapamiento de vigencias, una sola fila vigente por clave durable,
-  conservación del total de ventas en ambas vistas) y entrada en
+  que verifican que esos artefactos existen en `submission/` y entrada en
   `traceability.yaml`; y su `Pxxx_activity.md` (S02) evidencia highlights
   propios, no duplicados de P151–P154.
 

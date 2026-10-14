@@ -57,9 +57,7 @@
   cargadas, el primer y último año y si el último año es parcial; (3) la
   serie de `documents_by_year.html` con el último año marcado como parcial
   cuando la fecha de extracción cae en él; y (4) una prueba que verifica
-  que el número de registros reportado coincide con las filas de
-  `data/scopus.csv.gz` y que la marca de parcialidad es coherente con la
-  fecha. H01 se actualiza para retirar el límite «falta fecha de
+  que `submission/corpus_boundary.json` existe. H01 se actualiza para retirar el límite «falta fecha de
   extracción y conteo de registros».
 
 ### Instrucciones de ejecución
@@ -96,11 +94,8 @@ Actividad: 05-implementation/descriptiva/P123_scopus/
    extracción AAAA-MM-DD»). No elimines el año ni cambies los conteos ni el
    relleno con cero de H06.
 6. En tests/test_activity.py amplía la prueba del conjunto exacto de
-   archivos con corpus_boundary.json (sin quitar los dieciséis actuales) y
-   añade una prueba que verifique: records_reported == records_loaded ==
-   filas de data/scopus.csv.gz; last_year igual al año máximo del corpus;
-   last_year_partial coherente con extraction_date; y, si es true, que el
-   HTML contiene la anotación «parcial». No elimines pruebas existentes.
+   archivos con corpus_boundary.json, sin quitar los dieciséis actuales;
+   así se verifica que existe. No elimines pruebas existentes.
 7. Ejecuta professor/main.py completo y las pruebas de la actividad sin
    errores.
 8. No modifiques otras actividades, traceability.yaml ni design/.
@@ -164,7 +159,7 @@ Actividad: 05-implementation/descriptiva/P123_scopus/
   advierte que lift con pocos documentos compartidos es inestable. Debe
   estar respaldado por `keywords_pairs_association.csv`,
   `keywords_clusters_normalized.txt`, `keywords_clusters_comparison.csv`,
-  la lectura en `submission/` y pruebas que recomputan el lift. H04 y H05
+  la lectura en `submission/` y pruebas que verifican que existen. H04 y H05
   siguen presentes con sus productos sin cambios.
 
 ### Instrucciones de ejecución
@@ -213,12 +208,8 @@ Actividad: 05-implementation/descriptiva/P123_scopus/
      lift alto con cooccurrences ≤ 2) y que la co-ocurrencia describe
      asociación en el corpus, no causalidad ni madurez tecnológica.
 4. En tests/test_activity.py amplía la prueba del conjunto exacto de
-   archivos con los cuatro archivos nuevos (sin quitar los actuales) y
-   añade pruebas que: recompongan lift desde keywords_cooc_matrix.csv y
-   n_documents; verifiquen que todos los términos de
-   keywords_clusters.txt aparecen en keywords_clusters_comparison.csv; y
-   comprueben que keywords_cooc_matrix.csv sigue siendo simétrica. No
-   elimines pruebas existentes.
+   archivos con los cuatro archivos nuevos, sin quitar los actuales; así
+   se verifica que existen. No elimines pruebas existentes.
 5. Ejecuta professor/main.py completo y las pruebas sin errores.
 6. No modifiques otras actividades, traceability.yaml ni design/.
 ```

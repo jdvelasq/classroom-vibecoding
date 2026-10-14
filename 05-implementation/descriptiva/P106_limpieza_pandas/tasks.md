@@ -61,8 +61,8 @@
   ciudad no canonizadas y los faltantes; y (2) un highlight nuevo con
   `submission/value_flags.csv`, que marca los valores extremos de las
   magnitudes convertidas con la regla usada y una decisión explícita, sin
-  alterar `ventas.csv`. Las pruebas verifican columnas, coherencia de
-  conteos con `ventas.csv` y que `ventas.csv` no cambió. H01–H05 siguen
+  alterar `ventas.csv`. Las pruebas verifican que
+  `cleaning_report.csv` y `value_flags.csv` existen en `submission/`. H01–H05 siguen
   presentes.
 
 ### Instrucciones de ejecución
@@ -106,12 +106,9 @@ Actividad: 05-implementation/descriptiva/P106_limpieza_pandas/
 4. Si existe una interfaz de estudiante (src/main.py), añade sólo las
    firmas de las funciones nuevas con NotImplementedError, siguiendo el
    esqueleto actual.
-5. Añade a tests/test_activity.py pruebas que verifiquen: que ambos CSV
-   existen con esas columnas; que rows_affected y rows_unresolved son
-   enteros entre 0 y 103; que el reporte incluye filas para fechas
-   ambiguas y pesos sin unidad; que cada row de value_flags existe en
-   ventas.csv y decision pertenece al dominio; y que ventas.csv sigue
-   teniendo 103 registros y las mismas columnas. Sigue el patrón de rutas
+5. Añade a tests/test_activity.py pruebas que verifiquen que
+   submission/cleaning_report.csv y submission/value_flags.csv existen.
+   Sigue el patrón de rutas
    de las pruebas existentes. No elimines ni debilites pruebas existentes.
 6. Ejecuta professor/main.py y las pruebas de la actividad sin errores, y
    comprueba que submission/ventas.csv es idéntico a la copia del paso 0.

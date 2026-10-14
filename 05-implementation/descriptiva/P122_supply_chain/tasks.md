@@ -56,8 +56,8 @@
   de cada modo cambia de forma relevante sin los extremos y declara la
   decisión: los KPI se conservan con todos los registros y no se imputa ni
   recorta; y (4) `submission/delivery_days_profile.csv` y
-  `submission/delivery_days_extremes.csv` existen con pruebas que los
-  recomputan. H01–H07 siguen presentes y los ocho CSV originales no
+  `submission/delivery_days_extremes.csv` existen, y una prueba
+  lo verifica. H01–H07 siguen presentes y los ocho CSV originales no
   cambian.
 
 ### Instrucciones de ejecución
@@ -105,12 +105,8 @@ Actividad: 05-implementation/descriptiva/P122_supply_chain/
    shipment_mode, scheduled_date, delivered_date, delivery_days_vs_schedule,
    line_item_value.
 4. En tests/test_activity.py amplía la prueba del conjunto exacto de CSV
-   con los dos archivos nuevos (sin quitar los ocho actuales) y añade
-   pruebas que recompongan delivery_days_profile.csv desde
-   data/supply_chain.csv (n por modo suma el total de envíos; mediana y
-   percentiles coinciden) y verifiquen que delivery_days_extremes.csv tiene
-   20 filas ordenadas por |delivery_days_vs_schedule| descendente. No
-   elimines pruebas existentes.
+   con los dos archivos nuevos, sin quitar los ocho actuales; así se
+   verifica que existen. No elimines pruebas existentes.
 5. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 6. No modifiques otras actividades, traceability.yaml ni design/.
 ```

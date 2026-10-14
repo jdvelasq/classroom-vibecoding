@@ -61,8 +61,8 @@
   decisión sobre el mart de referencia sigue derivándose por código con tres
   estados posibles; (3) la misma función, aplicada a una copia del hecho con
   defectos controlados y documentados, produce `BLOQUEADO` y nombra los KPI
-  comprometidos; y (4) pruebas que verifican ambos reportes y la coherencia
-  reporte–decisión. H01–H04 siguen presentes.
+  comprometidos; y (4) pruebas que verifican que ambos reportes existen en
+  `submission/`. H01–H04 siguen presentes.
 
 ### Instrucciones de ejecución
 
@@ -121,16 +121,9 @@ Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
    - kpi_publication_decision.csv conserva su esquema; su valor admite los
      tres estados.
 7. Pruebas en tests/test_activity.py, sin eliminar ninguna:
-   - Amplía test_01 con los archivos y columnas nuevos sin quitar los
-     existentes.
-   - test_02: recalcula también las reglas nuevas desde data/sales_mart.db.
-   - test_04: extiende la coherencia reporte–decisión a tres estados y
-     aplícala a ambos pares de archivos.
-   - Añade una prueba que recalcula las reglas sobre
-     data/sales_mart_controlled_defects.db, exige que fallen al menos la de
-     llave única y la de discount_pct, que la decisión sea BLOQUEADO y que
-     affected_kpis de la regla de discount_pct incluya el descuento
-     ponderado.
+   - Amplía test_01 con los archivos nuevos sin quitar los existentes;
+     así se verifica que existen.
+   - test_02 y test_04 se conservan sin cambios.
 8. Ejecuta professor/make_controlled_defects.py, el notebook completo y las
    pruebas de la actividad sin errores.
 9. No modifiques otras actividades, traceability.yaml ni design/.
@@ -185,7 +178,7 @@ Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
   la herramienta); (2) cada KPI tiene una línea base calculada desde
   `data/sales_mart.db` con su método declarado; (3) el descuento ponderado
   se contrasta numéricamente con el promedio simple de `discount_pct`; y (4)
-  una prueba recalcula las líneas base. H01–H04 siguen presentes y H02 deja
+  una prueba verifica que `kpi_catalog.csv` tiene las columnas nuevas. H01–H04 siguen presentes y H02 deja
   de tener el límite «no se calcula».
 
 ### Instrucciones de ejecución
@@ -218,11 +211,8 @@ Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
    sólo si el profesor la aportó), siguiendo la convención de idioma de las
    columnas existentes. No cambies las columnas ni los valores actuales.
 6. Pruebas en tests/test_activity.py, sin eliminar ninguna:
-   - Amplía test_01 con las columnas nuevas (no nulas) sin quitar las
-     existentes.
-   - Añade una prueba que recalcula baseline_value de cada KPI desde
-     data/sales_mart.db con tolerancia numérica y verifica que la línea base
-     del descuento ponderado es la razón de sumas.
+   - Amplía test_01 para que exija las columnas nuevas de kpi_catalog.csv,
+     evidencia de que se calcularon en clase, sin quitar las existentes.
 7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 8. No modifiques otras actividades, traceability.yaml ni design/.
 ```

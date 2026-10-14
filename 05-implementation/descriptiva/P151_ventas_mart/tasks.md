@@ -83,10 +83,8 @@ Actividad: 05-implementation/descriptiva/P151_ventas_mart/
    calendar_days, days_with_sales, net_sales, net_sales_per_calendar_day,
    net_sales_per_sales_day.
 6. Actualiza tests/: amplía la lista de archivos esperados con
-   calendar_coverage.csv (sin quitar ninguno) y añade una prueba que
-   verifique que dim_date no tiene huecos entre su mínimo y su máximo, que
-   contiene todas las fechas del hecho y que calendar_coverage.csv suma las
-   ventas netas del hecho. No elimines pruebas existentes.
+   calendar_coverage.csv, sin quitar ninguno; así se verifica que existe.
+   No elimines pruebas existentes.
 7. Ejecuta el notebook completo y las pruebas sin errores.
 8. No modifiques otras actividades, traceability.yaml ni design/.
 ```

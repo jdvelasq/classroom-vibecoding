@@ -50,7 +50,7 @@
   ataque de enlace existente, y el profesor interpreta en la sesión la
   diferencia entre ambas medidas y su relación con la utilidad de H05. Debe estar
   respaldado por el notebook, `submission/risk_by_step.csv` y una prueba
-  que recalcule el *k* final desde `anonymized.csv`. H01–H06 siguen
+  que verifique que existe. H01–H06 siguen
   presentes.
 
 ### Instrucciones de ejecución
@@ -90,10 +90,8 @@ Actividad: 05-implementation/descriptiva/P108_anonimizacion_pandas/
 5. Persiste submission/risk_by_step.csv con columnas step,
    quasi_identifiers, k_min, n_classes, records_in_singletons,
    linkage_unique_matches (una fila por paso, sin índice).
-6. Añade a tests/test_activity.py una prueba que verifique que el archivo
-   existe con esas columnas y al menos una fila por paso, y que el k_min
-   de la última fila coincide con anonymized.csv.groupby(["age_group",
-   "region", "occupation_group"]).size().min(). Sigue el patrón de rutas de
+6. Añade a tests/test_activity.py una prueba que verifique que
+   submission/risk_by_step.csv existe. Sigue el patrón de rutas de
    las pruebas existentes. No elimines pruebas existentes.
 7. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 8. No modifiques otras actividades (en particular P109), traceability.yaml

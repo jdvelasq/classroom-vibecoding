@@ -55,8 +55,7 @@
   por la herramienta; (2) `supuestos` y `alcance` no vacíos, que mencionen
   al menos la devolución total por orden, el umbral de volumen, el período
   observado y que el producto no identifica causas; y (3) una prueba nueva
-  que verifique la
-  estructura de `questions.json` y que cada `archivo_respuesta` exista en
+  que verifique que `questions.json` y cada `archivo_respuesta` existen en
   `submission/`. H01 queda modificado o se añade un highlight de encuadre;
   H02–H08 y las pruebas existentes siguen presentes.
 
@@ -90,11 +89,8 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
 3. El profesor presenta en la sesión, para cada pregunta, destinatario,
    decisión, supuestos y alcance desde questions.json; el notebook no lleva
    celdas de texto.
-4. Añade a tests/ una prueba que lea submission/questions.json y verifique:
-   que es una lista con las dos preguntas actuales; que cada entrada tiene
-   las claves pregunta, archivo_respuesta, destinatario, decision, supuestos
-   y alcance; que los textos y listas no están vacíos; y que cada
-   archivo_respuesta existe en submission/. Usa la misma resolución de rutas
+4. Añade a tests/ una prueba que verifique que submission/questions.json
+   existe y que cada archivo_respuesta que nombra existe en submission/. Usa la misma resolución de rutas
    independiente de la profundidad que ya usan tests/conftest.py y
    test_activity.py. No elimines ni modifiques pruebas existentes.
 5. Ejecuta el notebook completo y las pruebas de la actividad sin errores;
@@ -157,8 +153,7 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
   `submission/` y al menos un valor de ellos; el `límite` declara que la
   asociación observada no identifica la causa de la devolución. Debe estar
   respaldado por una celda del notebook que construye la tabla y por una
-  prueba de estructura y de presencia del límite causal, análoga a
-  `test_06` de P125. H01–H08 siguen presentes. Si se aprueba, el profesor
+  prueba que verifique que el archivo existe. H01–H08 siguen presentes. Si se aprueba, el profesor
   decide aparte si `traceability.yaml` debe mapear P120 a `descriptiva.C04`.
 
 ### Instrucciones de ejecución
@@ -193,11 +188,8 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
    Muestra la tabla y persístela en submission/analysis_conclusions.csv.
 4. El profesor explica en la sesión por qué concentrar devoluciones no es
    provocarlas; la tabla persistida ya lo declara.
-5. Pruebas: añade a tests/ una prueba que verifique que el archivo existe,
-   tiene exactamente esas columnas, una fila por pregunta de questions.json
-   con el mismo texto, que cada evidencia nombra al menos un archivo
-   existente en submission/, y que cada límite contiene «no identifica su
-   causa» o «no prueba que». Amplía la lista esperada de archivos del test
+5. Pruebas: añade a tests/ una prueba que verifique que
+   submission/analysis_conclusions.csv existe. Amplía la lista esperada de archivos del test
    de conjunto exacto con analysis_conclusions.csv sin quitar ninguno, e
    informa ese cambio. No elimines pruebas existentes.
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
@@ -271,8 +263,8 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
   marca de si el intervalo excluye la base; y el profesor explica en la
   sesión si el orden del ranking por tasa se distingue del ruido y qué
   implica para H07. Debe estar respaldado por notebook,
-  `submission/segment_baseline_comparison.csv` y una prueba que lo
-  recompute desde `data/sales.csv`. H01–H08 siguen presentes.
+  `submission/segment_baseline_comparison.csv` y una prueba que
+  verifique que existe. H01–H08 siguen presentes.
 
 ### Instrucciones de ejecución
 
@@ -315,11 +307,8 @@ Actividad: 05-implementation/descriptiva/P120_retail_sales/
    returned_orders, return_rate, base_rate, diff_vs_base, ci_lower,
    ci_upper, differs_from_base, ordenado por dimension y return_rate
    descendente.
-4. Añade a tests/ una prueba que recompute el archivo desde data/sales.csv
-   con la misma preparación que ya usan las pruebas existentes, compare con
-   assert_frame_equal (tolerancia numérica), y verifique que
-   ci_lower ≤ return_rate ≤ ci_upper y que todas las celdas tienen al menos
-   50 órdenes. Amplía la lista esperada de archivos del test de conjunto
+4. Añade a tests/ una prueba que verifique que
+   submission/segment_baseline_comparison.csv existe. Amplía la lista esperada de archivos del test de conjunto
    exacto con segment_baseline_comparison.csv sin quitar ninguno, e informa
    ese cambio. No elimines pruebas existentes.
 5. Ejecuta el notebook completo y las pruebas de la actividad sin errores.

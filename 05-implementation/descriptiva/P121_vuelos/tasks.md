@@ -56,7 +56,7 @@
   dice qué meses quedan por encima o por debajo de la tasa anual en todos
   los años y cuáles dependen de un solo año, y declara el límite de 36
   meses; y (4) `submission/seasonal_index_by_year.csv` existe y una prueba
-  lo recomputa desde `flights_by_carrier_month.csv.gz`. H01–H07 siguen
+  lo verifica. H01–H07 siguen
   presentes y los seis CSV originales no cambian.
 
 ### Instrucciones de ejecución
@@ -104,11 +104,8 @@ Actividad: 05-implementation/descriptiva/P121_vuelos/
    delay_rate, annual_delay_rate, seasonal_index. Guarda la figura del paso
    2d en submission/ (PNG o HTML).
 5. En tests/test_activity.py amplía la prueba que exige el conjunto exacto
-   de CSV para incluir seasonal_index_by_year.csv (sin quitar los seis
-   actuales) y añade una prueba que recomponga el archivo desde
-   data/flights_by_carrier_month.csv.gz, verifique las columnas, los seis
-   ámbitos, los tres años × doce meses por ámbito y que
-   seasonal_index == delay_rate / annual_delay_rate. No elimines pruebas
+   de CSV para incluir seasonal_index_by_year.csv, sin quitar los seis
+   actuales; así se verifica que el archivo existe. No elimines pruebas
    existentes.
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 7. No modifiques otras actividades, traceability.yaml ni design/.

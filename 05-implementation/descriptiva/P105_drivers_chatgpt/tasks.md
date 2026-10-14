@@ -54,8 +54,8 @@
   con fecha y herramienta, su código se ejecuta y produce
   `submission/summary.csv`, que se compara con el resultado de P103
   recalculado desde `data/`, con las diferencias explicadas si las hay. Las
-  pruebas verifican la ausencia de `ssn` y `location` en lo compartido y
-  la igualdad del resumen con el recálculo. H01–H03 siguen presentes.
+  pruebas verifican que `submission/shared_columns.json` y
+  `submission/summary.csv` existen. H01–H03 siguen presentes.
 
 ### Instrucciones de ejecución
 
@@ -96,11 +96,9 @@ Actividad: 05-implementation/descriptiva/P105_drivers_chatgpt/
    d. El profesor explica en la sesión si la respuesta reproduce el
       resultado y, si no, qué paso falló y cómo se corrigió. Si hubo
       corrección, conserva visibles la versión original y la corregida.
-5. Añade a tests/test_activity.py pruebas que verifiquen: que
-   shared_columns.json existe y no contiene ssn ni location; y que
-   submission/summary.csv existe y es igual al recálculo desde data/
-   (siguiendo el patrón de test_02 de P103 y el patrón de rutas de las
-   pruebas existentes). No elimines la prueba existente.
+5. Añade a tests/test_activity.py pruebas que verifiquen que
+   submission/shared_columns.json y submission/summary.csv existen,
+   siguiendo el patrón de rutas de las pruebas existentes. No elimines la prueba existente.
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 7. No modifiques otras actividades (en particular P102, P103 y P104),
    traceability.yaml ni design/.

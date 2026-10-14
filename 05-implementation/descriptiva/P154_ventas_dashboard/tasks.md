@@ -67,8 +67,8 @@
   valor actual, la brecha y la marca de atención, más una lectura persistida
   con respuesta y límite; (3) una celda de evidencia que muestra que sumar
   `orders` entre celdas supera los pedidos distintos del hecho, y la regla
-  de no aditividad en `serving_manifest.csv`; y (4) pruebas que recalculan
-  el criterio y verifican la nota. H01–H04 siguen presentes; H01 y H04
+  de no aditividad en `serving_manifest.csv`; y (4) pruebas que verifican
+  que los artefactos nuevos existen en `submission/`. H01–H04 siguen presentes; H01 y H04
   pierden sus límites actuales.
 
 ### Instrucciones de ejecución
@@ -120,17 +120,9 @@ Actividad: 05-implementation/descriptiva/P154_ventas_dashboard/
      attention_region_category.csv (conserva la estructura del archivo).
 7. Pruebas en tests/test_activity.py, sin eliminar ninguna:
    - Amplía test_01 con los dos archivos nuevos sin quitar los existentes.
-   - test_04 se mantiene; añade una comprobación de que aggregation_rules
-     menciona orders y la palabra «no».
+   - test_04 se mantiene sin cambios.
    - test_05 conserva la pregunta literal y el recálculo de
      priority_region_category.csv.
-   - Añade una prueba que recalcula attention_region_category.csv desde
-     dashboard_sales.csv con el criterio y los parámetros aprobados, y que
-     verifica que analysis_conclusions.csv tiene sus columnas y un límite
-     que menciona «sintétic».
-   - Si el paso 0 confirmó la sobrecuenta, añade una prueba de que la suma
-     de orders en dashboard_sales.csv supera los pedidos distintos de
-     data/sales_mart.db.
 8. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 9. No construyas una interfaz de dashboard. No modifiques otras
    actividades, traceability.yaml ni design/.

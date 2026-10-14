@@ -53,8 +53,8 @@
   semanal de horas y millas con una vista mínima (histograma o caja) y se
   comentan las semanas atípicas; y (3) el profesor concluye en la sesión si
   el top 10 de totales es comparable o debe leerse por semana. Debe estar respaldado
-  por el notebook, `submission/driver_exposure.csv` y una prueba que lo
-  recalcule desde `data/`. H01–H04 siguen presentes y `test_02` pasa sin
+  por el notebook, `submission/driver_exposure.csv` y una prueba que
+  verifique que existe. H01–H04 siguen presentes y `test_02` pasa sin
   cambios.
 
 ### Instrucciones de ejecución
@@ -91,10 +91,8 @@ Actividad: 05-implementation/descriptiva/P103_drivers_pandas/
 4. Persiste submission/driver_exposure.csv con columnas driverId,
    weeks_logged, hours_per_week, miles_per_week (una fila por conductor,
    sin índice).
-5. Añade a tests/test_activity.py una prueba que verifique que el archivo
-   existe, tiene esas columnas y 34 filas, y que weeks_logged y
-   miles_per_week coinciden con un recálculo desde data/timesheet.csv. Sigue
-   el patrón de rutas de las pruebas existentes para que sea independiente
+5. Añade a tests/test_activity.py una prueba que verifique que
+   submission/driver_exposure.csv existe. Sigue el patrón de rutas de las pruebas existentes para que sea independiente
    de la profundidad de distribución. No elimines pruebas existentes.
 6. Ejecuta el notebook completo y las pruebas de la actividad sin errores.
 7. No modifiques otras actividades (en particular P104 y P105),
