@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P521_mapreduce_avanzado/`.
+**Implementación:** `05-implementation/data/P521_mapreduce_avanzado/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma pregunta de dominio que P520 con nuevo paso (unión y orden). La agregaci�
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Grano antes de unir | S01, S02 | `implementation/data/P521_mapreduce_avanzado/data/timesheet.csv`; `implementation/data/P521_mapreduce_avanzado/data/drivers.csv`; `implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: celdas de reducción | Unicidad de `driverId` en el maestro no verificada. |
-| H02 — Unión explícita | S02, S03 | `implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: `map_driver_record`, `combine_driver_activity`, `inner_join_by_key`; `implementation/data/P521_mapreduce_avanzado/submission/driver_activity.csv` | 34 filas en ambos lados; no se ejercita una ausencia. |
-| H03 — Ranking | S02, S03 | `implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: última celda; `implementation/data/P521_mapreduce_avanzado/submission/driver_activity.csv`; `implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Ranking por una sola medida. |
+| H01 — Grano antes de unir | S01, S02 | `05-implementation/data/P521_mapreduce_avanzado/data/timesheet.csv`; `05-implementation/data/P521_mapreduce_avanzado/data/drivers.csv`; `05-implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: celdas de reducción | Unicidad de `driverId` en el maestro no verificada. |
+| H02 — Unión explícita | S02, S03 | `05-implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: `map_driver_record`, `combine_driver_activity`, `inner_join_by_key`; `05-implementation/data/P521_mapreduce_avanzado/submission/driver_activity.csv` | 34 filas en ambos lados; no se ejercita una ausencia. |
+| H03 — Ranking | S02, S03 | `05-implementation/data/P521_mapreduce_avanzado/professor/notebook.ipynb`: última celda; `05-implementation/data/P521_mapreduce_avanzado/submission/driver_activity.csv`; `05-implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Ranking por una sola medida. |
 
 ### Superficies de cambio para revisión posterior
 

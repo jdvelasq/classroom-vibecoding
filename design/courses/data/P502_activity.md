@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P502_superstore_linaje/`.
+**Implementación:** `05-implementation/data/P502_superstore_linaje/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma fuente y mismas interfaces de P501 con nueva exigencia de evidencia: docum
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Catálogo de datasets | S02, S04 | `implementation/data/P502_superstore_linaje/professor/main.py`: `build_data_catalog`; `implementation/data/P502_superstore_linaje/submission/data_catalog.csv` | Literal; no comprueba existencia de los datasets. |
-| H02 — Roles de columnas | S02, S04 | `implementation/data/P502_superstore_linaje/professor/main.py`: `build_column_catalog`; `implementation/data/P502_superstore_linaje/submission/column_catalog.csv` | Cobertura parcial de columnas. |
-| H03 — Cambio de grano en el linaje (caso y datos) | S01, S03, S04 | `implementation/data/P502_superstore_linaje/professor/main.py`: `build_lineage`; `implementation/data/P502_superstore_linaje/submission/lineage.csv`; `implementation/data/P502_superstore_linaje/submission/data_catalog.csv` | No vinculado con el código de P501. |
+| H01 — Catálogo de datasets | S02, S04 | `05-implementation/data/P502_superstore_linaje/professor/main.py`: `build_data_catalog`; `05-implementation/data/P502_superstore_linaje/submission/data_catalog.csv` | Literal; no comprueba existencia de los datasets. |
+| H02 — Roles de columnas | S02, S04 | `05-implementation/data/P502_superstore_linaje/professor/main.py`: `build_column_catalog`; `05-implementation/data/P502_superstore_linaje/submission/column_catalog.csv` | Cobertura parcial de columnas. |
+| H03 — Cambio de grano en el linaje (caso y datos) | S01, S03, S04 | `05-implementation/data/P502_superstore_linaje/professor/main.py`: `build_lineage`; `05-implementation/data/P502_superstore_linaje/submission/lineage.csv`; `05-implementation/data/P502_superstore_linaje/submission/data_catalog.csv` | No vinculado con el código de P501. |
 
 ### Superficies de cambio para revisión posterior
 

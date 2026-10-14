@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P108_anonimizacion_pandas/`.
+**Implementación:** `05-implementation/descriptiva/P108_anonimizacion_pandas/`.
 
 ### Preguntas analíticas actuales
 
@@ -54,12 +54,12 @@ Nuevo dato y nueva exigencia: P102 eliminaba columnas sensibles; P108 muestra qu
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Roles de riesgo | S01 | `implementation/descriptiva/P108_anonimizacion_pandas/data/raw.csv`; `implementation/descriptiva/P108_anonimizacion_pandas/data/auxiliary.csv`; `implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: celda de carga comentada | Procedencia no documentada. |
-| H02 — Insuficiencia de la supresión | S01, S03 | `implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: «Anonimización ingenua» y `reidentified` | Salidas no visibles en el digest. |
-| H03 — Técnicas diferenciadas | S02, S04 | `implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: pasos 1–4; `implementation/descriptiva/P108_anonimizacion_pandas/submission/anonymized.csv` | Clave secreta en el notebook; tarjeta con sufijo único en filas visibles. |
-| H04 — Riesgo residual por paso | S02, S03 | `implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: celdas «Verificación» y pasos 5–7 | No se citan conteos: no están persistidos. |
-| H05 — Costo en utilidad | S03 | `implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: paso 9, `utility_comparison` | Sólo cardinalidad; sin artefacto. |
-| H06 — Contrato del conjunto compartible | S04, S05 | `implementation/descriptiva/P108_anonimizacion_pandas/submission/anonymized.csv`; `implementation/descriptiva/P108_anonimizacion_pandas/tests/test_activity.py` | Las pruebas no evalúan riesgo. |
+| H01 — Roles de riesgo | S01 | `05-implementation/descriptiva/P108_anonimizacion_pandas/data/raw.csv`; `05-implementation/descriptiva/P108_anonimizacion_pandas/data/auxiliary.csv`; `05-implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: celda de carga comentada | Procedencia no documentada. |
+| H02 — Insuficiencia de la supresión | S01, S03 | `05-implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: «Anonimización ingenua» y `reidentified` | Salidas no visibles en el digest. |
+| H03 — Técnicas diferenciadas | S02, S04 | `05-implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: pasos 1–4; `05-implementation/descriptiva/P108_anonimizacion_pandas/submission/anonymized.csv` | Clave secreta en el notebook; tarjeta con sufijo único en filas visibles. |
+| H04 — Riesgo residual por paso | S02, S03 | `05-implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: celdas «Verificación» y pasos 5–7 | No se citan conteos: no están persistidos. |
+| H05 — Costo en utilidad | S03 | `05-implementation/descriptiva/P108_anonimizacion_pandas/professor/notebook.ipynb`: paso 9, `utility_comparison` | Sólo cardinalidad; sin artefacto. |
+| H06 — Contrato del conjunto compartible | S04, S05 | `05-implementation/descriptiva/P108_anonimizacion_pandas/submission/anonymized.csv`; `05-implementation/descriptiva/P108_anonimizacion_pandas/tests/test_activity.py` | Las pruebas no evalúan riesgo. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -86,4 +86,4 @@ Nuevo dato y nueva exigencia: P102 eliminaba columnas sensibles; P108 muestra qu
 
 ## Trazabilidad y auditoría
 
-P108 está mapeada a `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. La evidencia sostiene la dimensión «responsable» de C05 —preparar datos para compartir con riesgo medido y utilidad declarada—, aunque no hay comunicación a usuarios o decisores. El producto es una capacidad de datos que condiciona qué descripciones serán posibles (por grupo, no por individuo), y H05 hace visible esa relación. La actividad está dominada por una disciplina contribuyente (privacidad de datos); su vínculo con el producto descriptivo es explícito sólo en la comparación de utilidad.
+P108 está mapeada a `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. La evidencia sostiene la dimensión «responsable» de C05 —preparar datos para compartir con riesgo medido y utilidad declarada—, aunque no hay comunicación a usuarios o decisores. El producto es una capacidad de datos que condiciona qué descripciones serán posibles (por grupo, no por individuo), y H05 hace visible esa relación. La actividad está dominada por una disciplina contribuyente (privacidad de datos); su vínculo con el producto descriptivo es explícito sólo en la comparación de utilidad.

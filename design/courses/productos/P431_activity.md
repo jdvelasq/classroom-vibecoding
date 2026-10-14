@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P431_data_versioning/`.
+**Implementación:** `05-implementation/productos/P431_data_versioning/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva exigencia de evidencia sobre el mismo dato: P412 registraba versiones de P
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Identidad por contenido | S02, S04 | `implementation/productos/P431_data_versioning/professor/main.py`: `describe_data`; `implementation/productos/P431_data_versioning/professor/test_main.py` | No hay verificación posterior. |
-| H02 — Capa cruda y manifiesto | S01, S03 | `implementation/productos/P431_data_versioning/data/raw/daily_operations.csv`; `implementation/productos/P431_data_versioning/submission/data_manifest.json` | Una versión; sin cambio demostrado. |
+| H01 — Identidad por contenido | S02, S04 | `05-implementation/productos/P431_data_versioning/professor/main.py`: `describe_data`; `05-implementation/productos/P431_data_versioning/professor/test_main.py` | No hay verificación posterior. |
+| H02 — Capa cruda y manifiesto | S01, S03 | `05-implementation/productos/P431_data_versioning/data/raw/daily_operations.csv`; `05-implementation/productos/P431_data_versioning/submission/data_manifest.json` | Una versión; sin cambio demostrado. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P405_logs/`.
+**Implementación:** `05-implementation/productos/P405_logs/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Nueva práctica (registro de eventos) sobre el esquema de P402. No reutiliza la 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Ciclo de vida | S02, S03 | `implementation/productos/P405_logs/professor/main.py`: `main`; `implementation/productos/P405_logs/submission/pipeline.log` | Contenido del log no visible en el digest. |
-| H02 — Insumo sin particularidad | S01, S02 | `implementation/productos/P405_logs/data/machine_throughput_export.csv` | Tres filas; procedencia no documentada. |
+| H01 — Ciclo de vida | S02, S03 | `05-implementation/productos/P405_logs/professor/main.py`: `main`; `05-implementation/productos/P405_logs/submission/pipeline.log` | Contenido del log no visible en el digest. |
+| H02 — Insumo sin particularidad | S01, S02 | `05-implementation/productos/P405_logs/data/machine_throughput_export.csv` | Tres filas; procedencia no documentada. |
 
 ### Superficies de cambio para revisión posterior
 

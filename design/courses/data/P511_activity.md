@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P511_superstore_integracion/`.
+**Implementación:** `05-implementation/data/P511_superstore_integracion/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Mismo caso que P500–P502 con nueva representación de entrada: tablas normaliz
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Claves contextuales | S01, S02 | `implementation/data/P511_superstore_integracion/data/source_manifest.json`; `implementation/data/P511_superstore_integracion/data/orders.csv` (Order ID 86838 repetido); `implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celda 2 | El código que generó las tablas derivadas no está en la actividad. |
-| H02 — Uniones validadas | S02, S04 | `implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celdas 3 y 5; `implementation/data/P511_superstore_integracion/submission/superstore_enriched_sales.csv` | No se ejercita un caso que falle la validación. |
-| H03 — Agregado tras integrar | S03, S04 | `implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celda 4; `implementation/data/P511_superstore_integracion/submission/sales_by_segment_region_category.csv` | La utilidad negativa visible no se discute. |
+| H01 — Claves contextuales | S01, S02 | `05-implementation/data/P511_superstore_integracion/data/source_manifest.json`; `05-implementation/data/P511_superstore_integracion/data/orders.csv` (Order ID 86838 repetido); `05-implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celda 2 | El código que generó las tablas derivadas no está en la actividad. |
+| H02 — Uniones validadas | S02, S04 | `05-implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celdas 3 y 5; `05-implementation/data/P511_superstore_integracion/submission/superstore_enriched_sales.csv` | No se ejercita un caso que falle la validación. |
+| H03 — Agregado tras integrar | S03, S04 | `05-implementation/data/P511_superstore_integracion/professor/notebook.ipynb`: celda 4; `05-implementation/data/P511_superstore_integracion/submission/sales_by_segment_region_category.csv` | La utilidad negativa visible no se discute. |
 
 ### Superficies de cambio para revisión posterior
 

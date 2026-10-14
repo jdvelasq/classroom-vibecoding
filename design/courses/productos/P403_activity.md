@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P403_model_testing_pytest/`.
+**Implementación:** `05-implementation/productos/P403_model_testing_pytest/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,10 +46,10 @@ Cambia el objeto verificado: de código (P400–P401) y datos (P402) a un modelo
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Artefacto congelado | S01, S02 | `implementation/productos/P403_model_testing_pytest/ESTIMATOR.pkl`; `implementation/productos/P403_model_testing_pytest/professor/main.py`: `load_model_and_test_set` | Binario no inspeccionable en el digest. |
-| H02 — Compuerta | S02, S05, S04 | `implementation/productos/P403_model_testing_pytest/professor/test_main.py`: `test_01_model_satisfies_its_operational_thresholds`; `implementation/productos/P403_model_testing_pytest/submission/model_test_report.json` | La evaluación del estudiante no la ejecuta. |
-| H03 — Familias de pruebas | S03 | `implementation/productos/P403_model_testing_pytest/professor/notebook.ipynb`: `test_prediction_interface`, `test_known_behavior`, `test_holdout_performance`, `test_reproducible_scoring` | No son pruebas `pytest`. |
-| H04 — Clase y semántica | S01, S03, S04 | `implementation/productos/P403_model_testing_pytest/data/model_test_set.csv`; `implementation/productos/P403_model_testing_pytest/submission/model_test_report.json` | El desbalance no se cuantifica. |
+| H01 — Artefacto congelado | S01, S02 | `05-implementation/productos/P403_model_testing_pytest/ESTIMATOR.pkl`; `05-implementation/productos/P403_model_testing_pytest/professor/main.py`: `load_model_and_test_set` | Binario no inspeccionable en el digest. |
+| H02 — Compuerta | S02, S05, S04 | `05-implementation/productos/P403_model_testing_pytest/professor/test_main.py`: `test_01_model_satisfies_its_operational_thresholds`; `05-implementation/productos/P403_model_testing_pytest/submission/model_test_report.json` | La evaluación del estudiante no la ejecuta. |
+| H03 — Familias de pruebas | S03 | `05-implementation/productos/P403_model_testing_pytest/professor/notebook.ipynb`: `test_prediction_interface`, `test_known_behavior`, `test_holdout_performance`, `test_reproducible_scoring` | No son pruebas `pytest`. |
+| H04 — Clase y semántica | S01, S03, S04 | `05-implementation/productos/P403_model_testing_pytest/data/model_test_set.csv`; `05-implementation/productos/P403_model_testing_pytest/submission/model_test_report.json` | El desbalance no se cuantifica. |
 
 ### Superficies de cambio para revisión posterior
 

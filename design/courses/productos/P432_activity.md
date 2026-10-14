@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P432_duckdb_transformation/`.
+**Implementación:** `05-implementation/productos/P432_duckdb_transformation/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma pregunta, mismo dato y mismo resultado que P400, P412, P413, P417, P418, P
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — SQL parametrizado | S02, S04 | `implementation/productos/P432_duckdb_transformation/professor/main.py`: `build_factory_totals`; `implementation/productos/P432_duckdb_transformation/professor/test_main.py` | Prueba sobre datos propios. |
-| H02 — Caso como límite | S01, S03 | `implementation/productos/P432_duckdb_transformation/data/daily_operations.csv`; `implementation/productos/P432_duckdb_transformation/submission/factory_totals.json` | Ausencia de particularidad. |
+| H01 — SQL parametrizado | S02, S04 | `05-implementation/productos/P432_duckdb_transformation/professor/main.py`: `build_factory_totals`; `05-implementation/productos/P432_duckdb_transformation/professor/test_main.py` | Prueba sobre datos propios. |
+| H02 — Caso como límite | S01, S03 | `05-implementation/productos/P432_duckdb_transformation/data/daily_operations.csv`; `05-implementation/productos/P432_duckdb_transformation/submission/factory_totals.json` | Ausencia de particularidad. |
 
 ### Superficies de cambio para revisión posterior
 

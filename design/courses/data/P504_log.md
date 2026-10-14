@@ -14,7 +14,7 @@
 ## S02.P504.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P504_scopus_sql_basico/` (`data/scopus_proptech.db` —binario, tamaño—, `data/search_string.txt`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`).
+- **Rutas inspeccionadas:** `05-implementation/data/P504_scopus_sql_basico/` (`data/scopus_proptech.db` —binario, tamaño—, `data/search_string.txt`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`).
 - **Trazabilidad revisada:** P504 → `data.C02`, `data.C05`; con evidencia. H03 evidencia también `data.C03`, no mapeada.
 - **Preservado:** dos preguntas, entregables, reutilización de base y búsqueda de P503.
 - **Completado / corregido:** se documentó la secuencia de consultas pendiente (esquema, muestra, filtro, agrupación). Se corrigió que las pruebas «hacen observable el resultado»: sólo comprueban existencia. Notebook del estudiante sin celdas.

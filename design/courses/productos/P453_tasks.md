@@ -80,11 +80,11 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P453_data_masking/
+Actividad: 05-implementation/productos/P453_data_masking/
 
 0. Inspecciona primero data/customers.csv, professor/main.py,
    professor/test_main.py, src/main.py, submission/ y tests/, y como
-   referencia de práctica implementation/productos/P427_secret_config/
+   referencia de práctica 05-implementation/productos/P427_secret_config/
    (professor/main.py y HOW_TO_RUN_ME.txt). Si P453 no coincide con
    design/courses/productos/P453_activity.md (una fila, mask_email,
    customer_id y risk sin cambios), o si P427 no lee su secreto con

@@ -15,7 +15,7 @@
 ## S02.P501.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P501_superstore_serving/` (`data/superstore_orders.csv`, `professor/main.py`, `src/main.py`, `submission/sales_detail.csv`, `submission/serving_manifest.csv`, `submission/questions.json`, `submission/sales_serving.db` —binario, descrito desde el código—, `tests/test_activity.py`).
+- **Rutas inspeccionadas:** `05-implementation/data/P501_superstore_serving/` (`data/superstore_orders.csv`, `professor/main.py`, `src/main.py`, `submission/sales_detail.csv`, `submission/serving_manifest.csv`, `submission/questions.json`, `submission/sales_serving.db` —binario, descrito desde el código—, `tests/test_activity.py`).
 - **Trazabilidad revisada:** P501 → `data.C02`–`data.C05`; `data.C03` sin evidencia.
 - **Preservado:** pregunta, tres representaciones, manifiesto con grano/consumidor/propósito, relación de extensión con P500.
 - **Corregido / añadido:** se registró que P501 no ejecuta validaciones (P500 sí), que la agregación mensual está duplicada en código y que los consumidores del manifiesto no existen en la implementación; las pruebas sólo comprueban existencia.
@@ -477,7 +477,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P501_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P501_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P501_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** moderado → bajo. Las prácticas de *serving* (detalle y agregados publicados en SQLite con manifiesto) se reencuadran como puente del curso; se conservan como límites los consumidores sólo nominales, la ausencia de control de calidad (vacío C03), la falta de reconciliación agregados–detalle y el texto mal decodificado (H03). Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P154_ventas_dashboard/`.
+**Implementación:** `05-implementation/descriptiva/P154_ventas_dashboard/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Mismo caso, nuevo producto (fuente de consumo) con misma pregunta efectiva que P
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Grano y aditividad | S01, S02, S05 | `implementation/descriptiva/P154_ventas_dashboard/professor/notebook.ipynb`: `serving_query` y `assert`; `implementation/descriptiva/P154_ventas_dashboard/submission/dashboard_sales.csv`; `implementation/descriptiva/P154_ventas_dashboard/professor/generate_data.py`: pedidos de varias líneas con productos aleatorios; `implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_02` | La no aditividad de `orders` se infiere del código; la implementación no la trata. |
-| H02 — Dos formatos consistentes | S03, S05 | `implementation/descriptiva/P154_ventas_dashboard/submission/bi_serving.db`; `implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_03` | No se prueba consumo real por una herramienta BI. |
-| H03 — Contrato de consumo | S03, S05 | `implementation/descriptiva/P154_ventas_dashboard/submission/serving_manifest.csv`; `implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_04` | Manifiesto de una fila; no gobierna frescura ni aditividad. |
-| H04 — Respuesta desde serving | S04, S06 | `implementation/descriptiva/P154_ventas_dashboard/professor/notebook.ipynb`: `priority_view` y gráfico; `implementation/descriptiva/P154_ventas_dashboard/submission/priority_region_category.csv`; `implementation/descriptiva/P154_ventas_dashboard/submission/questions.json`; `implementation/descriptiva/P151_ventas_mart/submission/region_category_sales.csv` | «Atención» equivale a mayor volumen; no hay criterio ni lectura. |
+| H01 — Grano y aditividad | S01, S02, S05 | `05-implementation/descriptiva/P154_ventas_dashboard/professor/notebook.ipynb`: `serving_query` y `assert`; `05-implementation/descriptiva/P154_ventas_dashboard/submission/dashboard_sales.csv`; `05-implementation/descriptiva/P154_ventas_dashboard/professor/generate_data.py`: pedidos de varias líneas con productos aleatorios; `05-implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_02` | La no aditividad de `orders` se infiere del código; la implementación no la trata. |
+| H02 — Dos formatos consistentes | S03, S05 | `05-implementation/descriptiva/P154_ventas_dashboard/submission/bi_serving.db`; `05-implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_03` | No se prueba consumo real por una herramienta BI. |
+| H03 — Contrato de consumo | S03, S05 | `05-implementation/descriptiva/P154_ventas_dashboard/submission/serving_manifest.csv`; `05-implementation/descriptiva/P154_ventas_dashboard/tests/test_activity.py`: `test_04` | Manifiesto de una fila; no gobierna frescura ni aditividad. |
+| H04 — Respuesta desde serving | S04, S06 | `05-implementation/descriptiva/P154_ventas_dashboard/professor/notebook.ipynb`: `priority_view` y gráfico; `05-implementation/descriptiva/P154_ventas_dashboard/submission/priority_region_category.csv`; `05-implementation/descriptiva/P154_ventas_dashboard/submission/questions.json`; `05-implementation/descriptiva/P151_ventas_mart/submission/region_category_sales.csv` | «Atención» equivale a mayor volumen; no hay criterio ni lectura. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -77,4 +77,4 @@ Mismo caso, nuevo producto (fuente de consumo) con misma pregunta efectiva que P
 
 ## Trazabilidad y auditoría
 
-P154 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01 y describe «dashboard, OLAP y serving BI» como evidencia de C03). C05 está evidenciada por el manifiesto; C03 por un gráfico de barras; C01 por una pregunta cuyo criterio de atención no se define. El producto es una fuente de consumo BI con grano declarado; BI forma parte de la analítica descriptiva del curso y la frontera excluye la capacitación en una plataforma, no BI como tal. El límite observable es que la pregunta de atención no tiene criterio (variación, brecha o meta), no hay interfaz de dashboard y no se persiste una lectura.
+P154 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `05-implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01 y describe «dashboard, OLAP y serving BI» como evidencia de C03). C05 está evidenciada por el manifiesto; C03 por un gráfico de barras; C01 por una pregunta cuyo criterio de atención no se define. El producto es una fuente de consumo BI con grano declarado; BI forma parte de la analítica descriptiva del curso y la frontera excluye la capacitación en una plataforma, no BI como tal. El límite observable es que la pregunta de atención no tiene criterio (variación, brecha o meta), no hay interfaz de dashboard y no se persiste una lectura.

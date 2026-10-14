@@ -68,7 +68,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P150_ventas_tabla/
+Actividad: 05-implementation/descriptiva/P150_ventas_tabla/
 
 0. Inspecciona primero professor/generate_data.py, professor/notebook.ipynb,
    data/, submission/ (en especial questions.json) y tests/. Reproduce el

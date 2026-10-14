@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P219_hiperparametros/`.
+**Implementación:** `05-implementation/predictiva/P219_hiperparametros/`.
 
 ### Preguntas analíticas actuales
 
@@ -83,6 +83,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P220 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P220 en `05-implementation/predictiva/traceability.yaml`.
 La actividad conserva un estimador, pero necesita revisar su relación explícita
 con la pregunta de calidad antes de ser aprobada curricularmente.

@@ -8,8 +8,8 @@
 ## S02.P515.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P515_superstore_elt/` (`data/`, `professor/main.py`, `src/main.py`, `submission/`, `tests/test_activity.py`); P511, P512 y P514 para relaciones.
-- **Trazabilidad revisada:** no existe entrada P515 en `implementation/data/traceability.yaml`; escalada.
+- **Rutas inspeccionadas:** `05-implementation/data/P515_superstore_elt/` (`data/`, `professor/main.py`, `src/main.py`, `submission/`, `tests/test_activity.py`); P511, P512 y P514 para relaciones.
+- **Trazabilidad revisada:** no existe entrada P515 en `05-implementation/data/traceability.yaml`; escalada.
 - **Highlights:** añadidos H01 (transformación en el motor tras cargar raw), H02 (uniones SQL por claves contextuales homónimas sin validación de cardinalidad; caso y datos), H03 (capas raw y curada en un mismo artefacto).
 - **Preservado:** pregunta común con P514, carga raw, CTAS en SQLite, reporte de filas y contraste ETL/ELT.
 - **Corregido:** la descripción previa afirmaba trazabilidad `data.C01`–`data.C05`; la entrada no existe. Se precisa que la tabla curada selecciona sólo cuatro columnas de contexto.
@@ -471,7 +471,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P515_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P515_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P515_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** no resuelta (contraste ETL/ELT propio de Data Engineering) → el contraste pertenece al curso; la identidad deja de quedar no resuelta por ese motivo. Se conservan la ausencia de producto nuevo y duplicación con P514, las uniones sin validación de cardinalidad, el estado constante y la falta de entrada en `traceability.yaml`. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

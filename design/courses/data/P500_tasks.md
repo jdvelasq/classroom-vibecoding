@@ -70,7 +70,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P500_superstore_metricas/
+Actividad: 05-implementation/data/P500_superstore_metricas/
 
 0. Inspecciona primero professor/main.py (load_sales, build_contract, main),
    data/superstore_orders.csv, submission/ y tests/test_activity.py. Comprueba

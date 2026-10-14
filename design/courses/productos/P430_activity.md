@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P430_idempotency/`.
+**Implementación:** `05-implementation/productos/P430_idempotency/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nuevo mecanismo al servicio de la confiabilidad de ejecución: P428 sobrescribe 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Reejecución idempotente | S02, S04 | `implementation/productos/P430_idempotency/professor/main.py`: `generate_daily_report`; `implementation/productos/P430_idempotency/professor/test_main.py` | No usa `report_date` como clave. |
-| H02 — Caso como límite | S01, S03 | `implementation/productos/P430_idempotency/professor/main.py` (literal); `implementation/productos/P430_idempotency/submission/daily_report.json` | Riesgo no derivado de datos. |
+| H01 — Reejecución idempotente | S02, S04 | `05-implementation/productos/P430_idempotency/professor/main.py`: `generate_daily_report`; `05-implementation/productos/P430_idempotency/professor/test_main.py` | No usa `report_date` como clave. |
+| H02 — Caso como límite | S01, S03 | `05-implementation/productos/P430_idempotency/professor/main.py` (literal); `05-implementation/productos/P430_idempotency/submission/daily_report.json` | Riesgo no derivado de datos. |
 
 ### Superficies de cambio para revisión posterior
 

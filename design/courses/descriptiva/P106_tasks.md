@@ -67,7 +67,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P106_limpieza_pandas/
+Actividad: 05-implementation/descriptiva/P106_limpieza_pandas/
 
 0. Inspecciona primero data/ventas.csv, professor/main.py,
    professor/diagnostics.py, src/main.py, submission/ventas.csv y

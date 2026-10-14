@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P449_cost_monitoring/`.
+**Implementación:** `05-implementation/productos/P449_cost_monitoring/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Misma técnica de umbral que P439, P442 y P445, con nuevo objeto (costo) y una n
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Acumulado vs. presupuesto | S01, S02, S03 | `implementation/productos/P449_cost_monitoring/data/costs.json`; `implementation/productos/P449_cost_monitoring/submission/cost_report.json` | No se sabe qué capacidad ni qué periodo. |
-| H02 — Suma decimal | S02, S04 | `implementation/productos/P449_cost_monitoring/professor/main.py`: `monitor_cost`; `implementation/productos/P449_cost_monitoring/professor/test_main.py` | La prueba del estudiante no verifica valores. |
+| H01 — Acumulado vs. presupuesto | S01, S02, S03 | `05-implementation/productos/P449_cost_monitoring/data/costs.json`; `05-implementation/productos/P449_cost_monitoring/submission/cost_report.json` | No se sabe qué capacidad ni qué periodo. |
+| H02 — Suma decimal | S02, S04 | `05-implementation/productos/P449_cost_monitoring/professor/main.py`: `monitor_cost`; `05-implementation/productos/P449_cost_monitoring/professor/test_main.py` | La prueba del estudiante no verifica valores. |
 
 ### Superficies de cambio para revisión posterior
 

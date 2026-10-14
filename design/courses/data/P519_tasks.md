@@ -71,7 +71,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P519_mapreduce_operators/
+Actividad: 05-implementation/data/P519_mapreduce_operators/
 
 0. Inspecciona primero data/drivers.csv, data/timesheet.csv,
    professor/notebook.ipynb, notebooks/notebook.ipynb,

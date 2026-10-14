@@ -73,7 +73,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P154_ventas_dashboard/
+Actividad: 05-implementation/descriptiva/P154_ventas_dashboard/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales_mart.db,
    submission/ (cinco archivos, en especial serving_manifest.csv y

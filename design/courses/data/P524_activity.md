@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P524_seleccion_formato_datos/`.
+**Implementación:** `05-implementation/data/P524_seleccion_formato_datos/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,9 +44,9 @@ Nuevo método (comparación de formatos) sobre el dominio de vuelos que P522 us�
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Mismas filas | S02 | `implementation/data/P524_seleccion_formato_datos/professor/notebook.ipynb`: celdas de escritura y `assert` | El notebook sobrescribe archivos de `data/`. |
-| H02 — Costo de representación | S01, S02, S03 | `implementation/data/P524_seleccion_formato_datos/data/flights.csv`; `implementation/data/P524_seleccion_formato_datos/data/flights.json`; `implementation/data/P524_seleccion_formato_datos/submission/format_comparison.csv` | Pérdida de tipos sólo visible en `frame.dtypes.head()`, no persistida. |
-| H03 — Tabla de decisión | S03 | `implementation/data/P524_seleccion_formato_datos/submission/format_comparison.csv` | Propiedades constantes. |
+| H01 — Mismas filas | S02 | `05-implementation/data/P524_seleccion_formato_datos/professor/notebook.ipynb`: celdas de escritura y `assert` | El notebook sobrescribe archivos de `data/`. |
+| H02 — Costo de representación | S01, S02, S03 | `05-implementation/data/P524_seleccion_formato_datos/data/flights.csv`; `05-implementation/data/P524_seleccion_formato_datos/data/flights.json`; `05-implementation/data/P524_seleccion_formato_datos/submission/format_comparison.csv` | Pérdida de tipos sólo visible en `frame.dtypes.head()`, no persistida. |
+| H03 — Tabla de decisión | S03 | `05-implementation/data/P524_seleccion_formato_datos/submission/format_comparison.csv` | Propiedades constantes. |
 
 ### Superficies de cambio para revisión posterior
 

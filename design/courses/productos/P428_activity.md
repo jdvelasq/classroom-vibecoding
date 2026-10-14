@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P428_schedule/`.
+**Implementación:** `05-implementation/productos/P428_schedule/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma pregunta y mismo dato que P400, P412, P413, P417 y P418 (totales 9303 y 93
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Cálculo separado de la agenda | S02, S04 | `implementation/productos/P428_schedule/professor/main.py`: `build_report`; `implementation/productos/P428_schedule/professor/test_main.py` | La prueba usa datos propios, no el CSV. |
-| H02 — Agenda local y su límite | S01, S02 | `implementation/productos/P428_schedule/professor/main.py`: `main`; `implementation/productos/P428_schedule/HOW_TO_RUN_ME.txt`; `implementation/productos/P428_schedule/data/daily_operations.csv` | La agenda no se prueba; cadencia arbitraria. |
-| H03 — Marca de ejecución | S03 | `implementation/productos/P428_schedule/submission/scheduled_report.json` | Una sola marca; sin historial. |
+| H01 — Cálculo separado de la agenda | S02, S04 | `05-implementation/productos/P428_schedule/professor/main.py`: `build_report`; `05-implementation/productos/P428_schedule/professor/test_main.py` | La prueba usa datos propios, no el CSV. |
+| H02 — Agenda local y su límite | S01, S02 | `05-implementation/productos/P428_schedule/professor/main.py`: `main`; `05-implementation/productos/P428_schedule/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P428_schedule/data/daily_operations.csv` | La agenda no se prueba; cadencia arbitraria. |
+| H03 — Marca de ejecución | S03 | `05-implementation/productos/P428_schedule/submission/scheduled_report.json` | Una sola marca; sin historial. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -73,4 +73,4 @@ Misma pregunta y mismo dato que P400, P412, P413, P417 y P418 (totales 9303 y 93
 
 ## Trazabilidad y auditoría
 
-P428 está mapeada a `productos.C02` y `productos.C05` en `implementation/productos/traceability.yaml`. C02 (automatización de una capacidad reproducible) se sostiene en la agenda y en la separación cálculo/agenda. C05 se apoya sólo en la marca `executed_at`; no hay monitoreo, recuperación ni historial. Auditoría de identidad (pregunta 5): la capacidad analítica operada es una suma por fábrica sin usuario ni decisión, y la cadencia no se deriva de ninguna necesidad del uso; el taller puede leerse como entrenamiento en una biblioteca de agendamiento. Riesgo de identidad registrado.
+P428 está mapeada a `productos.C02` y `productos.C05` en `05-implementation/productos/traceability.yaml`. C02 (automatización de una capacidad reproducible) se sostiene en la agenda y en la separación cálculo/agenda. C05 se apoya sólo en la marca `executed_at`; no hay monitoreo, recuperación ni historial. Auditoría de identidad (pregunta 5): la capacidad analítica operada es una suma por fábrica sin usuario ni decisión, y la cadencia no se deriva de ninguna necesidad del uso; el taller puede leerse como entrenamiento en una biblioteca de agendamiento. Riesgo de identidad registrado.

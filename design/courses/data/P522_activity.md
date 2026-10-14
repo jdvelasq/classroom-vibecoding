@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P522_mapreduce_multiprocessing/`.
+**Implementación:** `05-implementation/data/P522_mapreduce_multiprocessing/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Mismos operadores que P519–P521 con nuevo dato (vuelos) y nueva exigencia (eje
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Filtro de cancelados | S01, S03 | `implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `map_flight`; `implementation/data/P522_mapreduce_multiprocessing/data/flights.csv.gz` | Contenido del archivo no inspeccionable aquí. |
-| H02 — Reducción en dos niveles | S02, S03 | `implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `prepare_partitions`, `map_partition`, `run_mapreduce` | `temp/` debe existir: `mkdir()` sin `parents`. |
-| H03 — Equivalencia | S04, S05 | `implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `main`; `implementation/data/P522_mapreduce_multiprocessing/submission/origin_flights.csv` | No probado en `tests/`. |
-| H04 — Aceleración | S04, S05 | `implementation/data/P522_mapreduce_multiprocessing/submission/benchmark.csv` | Valores no reproducibles entre equipos. |
+| H01 — Filtro de cancelados | S01, S03 | `05-implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `map_flight`; `05-implementation/data/P522_mapreduce_multiprocessing/data/flights.csv.gz` | Contenido del archivo no inspeccionable aquí. |
+| H02 — Reducción en dos niveles | S02, S03 | `05-implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `prepare_partitions`, `map_partition`, `run_mapreduce` | `temp/` debe existir: `mkdir()` sin `parents`. |
+| H03 — Equivalencia | S04, S05 | `05-implementation/data/P522_mapreduce_multiprocessing/professor/main.py`: `main`; `05-implementation/data/P522_mapreduce_multiprocessing/submission/origin_flights.csv` | No probado en `tests/`. |
+| H04 — Aceleración | S04, S05 | `05-implementation/data/P522_mapreduce_multiprocessing/submission/benchmark.csv` | Valores no reproducibles entre equipos. |
 
 ### Superficies de cambio para revisión posterior
 

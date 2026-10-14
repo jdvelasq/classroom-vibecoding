@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P427_secret_config/`.
+**Implementación:** `05-implementation/productos/P427_secret_config/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma técnica (configuración externa) que P406–P407 con nueva exigencia: no 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Credencial separada | S01, S02 | `implementation/productos/P427_secret_config/professor/main.py`: `get_api_key`, `main`; `implementation/productos/P427_secret_config/submission/secret_config_report.json`; `implementation/productos/P427_secret_config/HOW_TO_RUN_ME.txt` | No se verifica que el valor no aparezca en el reporte. |
-| H02 — Falla explicable | S01, S03 | `implementation/productos/P427_secret_config/professor/test_main.py` | Sin capacidad que proteger. |
+| H01 — Credencial separada | S01, S02 | `05-implementation/productos/P427_secret_config/professor/main.py`: `get_api_key`, `main`; `05-implementation/productos/P427_secret_config/submission/secret_config_report.json`; `05-implementation/productos/P427_secret_config/HOW_TO_RUN_ME.txt` | No se verifica que el valor no aparezca en el reporte. |
+| H02 — Falla explicable | S01, S03 | `05-implementation/productos/P427_secret_config/professor/test_main.py` | Sin capacidad que proteger. |
 
 ### Superficies de cambio para revisión posterior
 

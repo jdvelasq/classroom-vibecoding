@@ -68,7 +68,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P514_superstore_etl/
+Actividad: 05-implementation/data/P514_superstore_etl/
 
 0. Inspecciona primero professor/main.py, src/main.py, data/*.csv,
    data/source_manifest.json, submission/ y tests/. Si la implementación no

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P206_arboles_y_ensambles/`.
+**Implementación:** `05-implementation/predictiva/P206_arboles_y_ensambles/`.
 
 ### Preguntas analíticas actuales
 
@@ -116,7 +116,7 @@ coeficientes).
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 | S01, S02 | `implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `naive_mean_model`, `linear_model`, `decision_tree`, `random_forest`, `gradient_boosting`; `submission/model_comparison.csv` | MSE específico de esta partición y este caso. |
+| H01 | S01, S02 | `05-implementation/predictiva/P206_arboles_y_ensambles/professor/notebook.ipynb`: `naive_mean_model`, `linear_model`, `decision_tree`, `random_forest`, `gradient_boosting`; `submission/model_comparison.csv` | MSE específico de esta partición y este caso. |
 | H02 | S02 | Notebook: `full_tree`, `validation_curve`; `submission/validation_curve.png` | No explora otros hiperparámetros del árbol. |
 | H03 | S02 | Notebook: `RandomForestRegressor`, `HistGradientBoostingRegressor` | No compara costo computacional ni tiempo de ajuste. |
 | H04 | S03 | Notebook: `feature_importances_`, `permutation_importance`; `submission/feature_importances.csv` | No prueba causalidad; la impureza puede sobreestimar variables con muchos puntos de corte. |
@@ -166,7 +166,7 @@ No hay mejoras aceptadas pendientes.
 ## Trazabilidad y auditoría
 
 P206 mapea `predictiva.C01`–`C04` en
-`implementation/predictiva/traceability.yaml`. El producto de Analytics es
+`05-implementation/predictiva/traceability.yaml`. El producto de Analytics es
 una comparación predictiva evaluada entre árboles/ensambles y las
 especificaciones ya establecidas de P200, no un recorrido por algoritmos de
 machine learning: árboles, bagging y boosting son disciplinas contribuyentes

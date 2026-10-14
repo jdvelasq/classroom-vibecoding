@@ -9,7 +9,7 @@
 ## S02.P511.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P511_superstore_integracion/` (`data/*.csv`, `data/source_manifest.json`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/`, `tests/test_activity.py`); P500–P503 para relaciones.
+- **Rutas inspeccionadas:** `05-implementation/data/P511_superstore_integracion/` (`data/*.csv`, `data/source_manifest.json`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/`, `tests/test_activity.py`); P500–P503 para relaciones.
 - **Trazabilidad revisada:** P511 → `data.C01`–`data.C05`; C05 mínima.
 - **Highlights:** añadidos H01 (claves contextuales porque `Order ID` no es clave; caso y datos), H02 (uniones `many_to_one` validadas y conservación del grano), H03 (agregación posterior a la integración con detalle y respuesta persistidos).
 - **Preservado:** pregunta, cuatro fuentes, claves sustitutas, validación many-to-one, preservación del grano y doble entrega.

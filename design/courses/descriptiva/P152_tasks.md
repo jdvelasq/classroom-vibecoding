@@ -62,7 +62,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P152_ventas_olap/
+Actividad: 05-implementation/descriptiva/P152_ventas_olap/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales_mart.db,
    submission/ (cuatro archivos) y tests/. Verifica en
@@ -160,7 +160,7 @@ Actividad: implementation/descriptiva/P152_ventas_olap/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P152_ventas_olap/
+Actividad: 05-implementation/descriptiva/P152_ventas_olap/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales_mart.db,
    submission/ y tests/. Si la implementación no coincide con

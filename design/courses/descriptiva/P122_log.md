@@ -3,7 +3,7 @@
 ## S02.P122.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P122_supply_chain/` (`data/supply_chain.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con `questions.json` y ocho CSV, `tests/`); P106, P120 y P121 como comparación.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P122_supply_chain/` (`data/supply_chain.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con `questions.json` y ocho CSV, `tests/`); P106, P120 y P121 como comparación.
 - **Trazabilidad revisada:** P122 → `descriptiva.C01`, `C02`, `C03`; coherente. La declaración de cobertura de flete roza C05, no mapeada.
 - **Highlights añadidos:** H01–H07 (grano y calidad, KPI desde fechas, proporción vs promedio, valor expuesto, cobertura de flete, umbrales por nivel, persistencia y pruebas). Highlights obligatorios de caso y datos: H02 y H05.
 - **Cambios realizados:** creación de `P122_activity.md`; sin cambios en implementación ni propuestas.

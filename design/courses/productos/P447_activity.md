@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P447_incident_response/`.
+**Implementación:** `05-implementation/productos/P447_incident_response/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Nueva aplicación del monitoreo de P422: de detectar a responder. Frente a P446 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Alerta del caso de vinos | S01 | `implementation/productos/P447_incident_response/data/monitoring_alert.json`; `implementation/productos/P422_model_monitoring/submission/monitoring_report.json` | Relación por nombre de variable, no por artefacto. |
-| H02 — Prioridad por severidad | S02, S03, S04 | `implementation/productos/P447_incident_response/professor/main.py`: `build_incident`; `implementation/productos/P447_incident_response/professor/test_main.py`; `implementation/productos/P447_incident_response/submission/incident.json` | Dueño y acción fijos en el código. |
+| H01 — Alerta del caso de vinos | S01 | `05-implementation/productos/P447_incident_response/data/monitoring_alert.json`; `05-implementation/productos/P422_model_monitoring/submission/monitoring_report.json` | Relación por nombre de variable, no por artefacto. |
+| H02 — Prioridad por severidad | S02, S03, S04 | `05-implementation/productos/P447_incident_response/professor/main.py`: `build_incident`; `05-implementation/productos/P447_incident_response/professor/test_main.py`; `05-implementation/productos/P447_incident_response/submission/incident.json` | Dueño y acción fijos en el código. |
 
 ### Superficies de cambio para revisión posterior
 

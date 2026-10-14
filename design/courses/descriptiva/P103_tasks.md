@@ -59,7 +59,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P103_drivers_pandas/
+Actividad: 05-implementation/descriptiva/P103_drivers_pandas/
 
 0. Inspecciona primero professor/notebook.ipynb, data/drivers.csv,
    data/timesheet.csv, submission/ y tests/test_activity.py. Si la

@@ -75,7 +75,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/
+Actividad: 05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/
 
 0. Inspecciona primero data/policy_impacts.csv, professor/main.py,
    professor/notebook.ipynb, submission/ y tests/. Si los datos no tienen

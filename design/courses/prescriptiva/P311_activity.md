@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/`.
+**Implementación:** `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Misma técnica con nueva exigencia de evidencia respecto de P307: P307 elige la 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Tres guardas | S02, S03 | `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/professor/main.py`: `evaluate`; `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/submission/capacity_policy_comparison.csv` | Límites fijos (0.20, 900) sin justificación. |
-| H02 — Promedio vs. escenario | S01, S02 | `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/data/demand_scenarios.csv`; notebook: `scenario_effects` | Cuatro escenarios; sin incertidumbre sobre probabilidades. |
-| H03 — Selección y autoridad | S04 | `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/professor/main.py`: `choose_policy`, `policy_record`; `implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/submission/capacity_policy_decision.json` | No se registra ejecución ni escalamiento real. |
+| H01 — Tres guardas | S02, S03 | `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/professor/main.py`: `evaluate`; `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/submission/capacity_policy_comparison.csv` | Límites fijos (0.20, 900) sin justificación. |
+| H02 — Promedio vs. escenario | S01, S02 | `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/data/demand_scenarios.csv`; notebook: `scenario_effects` | Cuatro escenarios; sin incertidumbre sobre probabilidades. |
+| H03 — Selección y autoridad | S04 | `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/professor/main.py`: `choose_policy`, `policy_record`; `05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/submission/capacity_policy_decision.json` | No se registra ejecución ni escalamiento real. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -74,4 +74,4 @@ Misma técnica con nueva exigencia de evidencia respecto de P307: P307 elige la 
 
 ## Trazabilidad y auditoría
 
-P311 está mapeada a `prescriptiva.C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C04 se sostiene (autoridad rutinaria vs. excepción, escalamiento); C05 por métricas y gatillos declarados; C03 sólo parcialmente: hay evaluación bajo escenarios con riesgo de incumplimiento, pero no simulación, sensibilidad ni prueba frente a demoras o consecuencias no deseadas. El producto de Analytics es una regla diaria de capacidad con tres guardas y autoridad explícita; el cálculo de esperanzas contribuye. Límite: el taller no aporta un método de validación distinto de P307, y su nombre anuncia una simulación inexistente.
+P311 está mapeada a `prescriptiva.C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C04 se sostiene (autoridad rutinaria vs. excepción, escalamiento); C05 por métricas y gatillos declarados; C03 sólo parcialmente: hay evaluación bajo escenarios con riesgo de incumplimiento, pero no simulación, sensibilidad ni prueba frente a demoras o consecuencias no deseadas. El producto de Analytics es una regla diaria de capacidad con tres guardas y autoridad explícita; el cálculo de esperanzas contribuye. Límite: el taller no aporta un método de validación distinto de P307, y su nombre anuncia una simulación inexistente.

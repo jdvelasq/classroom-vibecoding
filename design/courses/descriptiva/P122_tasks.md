@@ -62,7 +62,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P122_supply_chain/
+Actividad: 05-implementation/descriptiva/P122_supply_chain/
 
 0. Inspecciona primero professor/notebook.ipynb, data/supply_chain.csv,
    submission/ y tests/test_activity.py. Si la implementación no coincide

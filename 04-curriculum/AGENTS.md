@@ -3,7 +3,7 @@
 Cuarto eslabón de la cadena de diseño:
 
 ```
-01-evidence → 02-competencies → 03-learning-outcomes → 04-curriculum → 05-syllabus
+01-evidence → 02-competencies → 03-learning-outcomes → 04-curriculum → 05-implementation
 (documentos)  (mapa sin nivel)  (perfil y RA)          (RA × cursos)   (un syllabus por curso)
 ```
 

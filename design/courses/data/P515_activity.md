@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P515_superstore_elt/`.
+**Implementación:** `05-implementation/data/P515_superstore_elt/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma pregunta y datos que P514 con nueva ubicación de la transformación; la r
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Transformación en el motor | S02, S03 | `implementation/data/P515_superstore_elt/professor/main.py` (`load_sources`, `transform_in_database`); `implementation/data/P515_superstore_elt/submission/superstore_elt.db` | No se discute cuándo conviene una u otra ubicación. |
-| H02 — Uniones por claves homónimas | S01, S02, S03 | `implementation/data/P515_superstore_elt/data/source_manifest.json`; `implementation/data/P515_superstore_elt/professor/main.py`; `implementation/data/P515_superstore_elt/submission/elt_report.csv`; `implementation/data/P514_superstore_etl/submission/sales_by_segment_region.csv` | Equivalencia con P514 verificada sólo en las filas visibles. |
-| H03 — Capas en un artefacto | S03, S04 | `implementation/data/P515_superstore_elt/submission/superstore_elt.db`; `implementation/data/P515_superstore_elt/tests/test_activity.py` | Las pruebas no abren la base. |
+| H01 — Transformación en el motor | S02, S03 | `05-implementation/data/P515_superstore_elt/professor/main.py` (`load_sources`, `transform_in_database`); `05-implementation/data/P515_superstore_elt/submission/superstore_elt.db` | No se discute cuándo conviene una u otra ubicación. |
+| H02 — Uniones por claves homónimas | S01, S02, S03 | `05-implementation/data/P515_superstore_elt/data/source_manifest.json`; `05-implementation/data/P515_superstore_elt/professor/main.py`; `05-implementation/data/P515_superstore_elt/submission/elt_report.csv`; `05-implementation/data/P514_superstore_etl/submission/sales_by_segment_region.csv` | Equivalencia con P514 verificada sólo en las filas visibles. |
+| H03 — Capas en un artefacto | S03, S04 | `05-implementation/data/P515_superstore_elt/submission/superstore_elt.db`; `05-implementation/data/P515_superstore_elt/tests/test_activity.py` | Las pruebas no abren la base. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -58,7 +58,7 @@ Misma pregunta y datos que P514 con nueva ubicación de la transformación; la r
 | S03 | Producto: base, respuesta y reporte | `submission/superstore_elt.db`; `submission/sales_by_segment_region.csv`; `submission/elt_report.csv`; `submission/questions.json` | Respuesta igual a P514. |
 | S04 | Pruebas | `tests/test_activity.py` | Sólo existencia de cuatro archivos. |
 | S05 | Interfaz del estudiante | `src/main.py` | Stub sin enunciado; sin notebook. |
-| S06 | Trazabilidad | `implementation/data/traceability.yaml` | P515 sin entrada. |
+| S06 | Trazabilidad | `05-implementation/data/traceability.yaml` | P515 sin entrada. |
 
 ### Contrato de evidencia actual
 
@@ -74,4 +74,4 @@ Misma pregunta y datos que P514 con nueva ubicación de la transformación; la r
 
 ## Trazabilidad y auditoría
 
-`implementation/data/traceability.yaml` no contiene entrada para P515 (salta de P514 a P516); la descripción previa le atribuía `data.C01`–`data.C05` sin respaldo. Se escala la ausencia sin inferir un mapeo. Por evidencia, la actividad ejercita estructuración y transformación (cercana a C02) y SQLite como habilitador (C05), pero no se asigna. Auditoría 5: con pregunta, datos y respuesta idénticos a P514, la única contribución es el contraste ETL/ELT, un tema propio de Data Engineering. Tras la aclaración del profesor (2026-10-05), ese contraste pertenece al curso como puente y la base permite auditar la respuesta desde las tablas raw, de modo que su origen disciplinar ya no deja por sí solo la auditoría sin resolver. Se conservan como límites: ningún producto analítico nuevo y duplicación con P514 (decisión de curso), uniones internas sin validación de cardinalidad, estado constante y ausencia de entrada en `traceability.yaml`.
+`05-implementation/data/traceability.yaml` no contiene entrada para P515 (salta de P514 a P516); la descripción previa le atribuía `data.C01`–`data.C05` sin respaldo. Se escala la ausencia sin inferir un mapeo. Por evidencia, la actividad ejercita estructuración y transformación (cercana a C02) y SQLite como habilitador (C05), pero no se asigna. Auditoría 5: con pregunta, datos y respuesta idénticos a P514, la única contribución es el contraste ETL/ELT, un tema propio de Data Engineering. Tras la aclaración del profesor (2026-10-05), ese contraste pertenece al curso como puente y la base permite auditar la respuesta desde las tablas raw, de modo que su origen disciplinar ya no deja por sí solo la auditoría sin resolver. Se conservan como límites: ningún producto analítico nuevo y duplicación con P514 (decisión de curso), uniones internas sin validación de cardinalidad, estado constante y ausencia de entrada en `traceability.yaml`.

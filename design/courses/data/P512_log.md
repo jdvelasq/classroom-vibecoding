@@ -8,7 +8,7 @@
 ## S02.P512.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P512_superstore_warehouse/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/superstore_mart.db`, `tests/test_activity.py`); P500, P501, P503, P505–P507 y P511 para relaciones.
+- **Rutas inspeccionadas:** `05-implementation/data/P512_superstore_warehouse/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/superstore_mart.db`, `tests/test_activity.py`); P500, P501, P503, P505–P507 y P511 para relaciones.
 - **Trazabilidad revisada:** P512 → `data.C01`–`data.C05`; C01 limitada a una pregunta de organización.
 - **Highlights:** añadidos H01 (dimensión de fecha desde texto `d/m/yy`; caso y datos), H02 (hecho a grano línea separado de dimensiones), H03 (mart persistido y consulta en estrella).
 - **Preservado:** pregunta, modelo dimensional en SQLite, preservación del grano, consulta temporal por categoría, relación de extensión con P511.
@@ -481,7 +481,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P512_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P512_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** sólo «Trazabilidad y auditoría» de `P512_activity.md` reencuadrada según la aclaración («Disciplinas contribuyentes» ya era compatible); sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** lectura como «taller de modelado dimensional» → ya no es problema de identidad por sí sola: los marts pertenecen al curso y el mart sirve a agregaciones descriptivas. Se conservan como límites la consulta no persistida y la pérdida del contexto de orden (`order_count` no reconstruible, envíos fuera del mart). Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

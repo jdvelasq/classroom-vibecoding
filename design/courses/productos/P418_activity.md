@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P418_container/`.
+**Implementación:** `05-implementation/productos/P418_container/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma pregunta y dato que P412–P417; nueva forma de ejecución. Extiende P412 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Imagen ejecutable | S02, S03 | `implementation/productos/P418_container/Dockerfile`; `implementation/productos/P418_container/requirements.txt`; `implementation/productos/P418_container/HOW_TO_RUN_ME.txt` | No hay evidencia persistida de una construcción o ejecución. |
-| H02 — Salida fuera del contenedor | S01, S03, S04 | `implementation/productos/P418_container/.dockerignore`; `implementation/productos/P418_container/HOW_TO_RUN_ME.txt` (paso 2); `implementation/productos/P418_container/submission/factory_report.json` | El reporte persistido pudo generarse fuera del contenedor; no registra cómo se produjo. |
+| H01 — Imagen ejecutable | S02, S03 | `05-implementation/productos/P418_container/Dockerfile`; `05-implementation/productos/P418_container/requirements.txt`; `05-implementation/productos/P418_container/HOW_TO_RUN_ME.txt` | No hay evidencia persistida de una construcción o ejecución. |
+| H02 — Salida fuera del contenedor | S01, S03, S04 | `05-implementation/productos/P418_container/.dockerignore`; `05-implementation/productos/P418_container/HOW_TO_RUN_ME.txt` (paso 2); `05-implementation/productos/P418_container/submission/factory_report.json` | El reporte persistido pudo generarse fuera del contenedor; no registra cómo se produjo. |
 
 ### Superficies de cambio para revisión posterior
 

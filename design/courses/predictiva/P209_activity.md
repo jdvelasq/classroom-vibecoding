@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P208_sir_basico/`.
+**Implementación:** `05-implementation/predictiva/P208_sir_basico/`.
 
 ### Preguntas analíticas actuales
 

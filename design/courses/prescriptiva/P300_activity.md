@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/`.
+**Implementación:** `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,10 +45,10 @@ Primera actividad del curso: no hay Pxxx previa en `prescriptiva`. La conversió
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Factibilidad antes que objetivo | S02 | `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/main.py`: `evaluate_policies`, `make_decision_brief`; `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/notebook.ipynb`: celda de `evaluated` | La tabla evaluada no se persiste; sólo se conserva la alternativa elegida. |
-| H02 — Restricciones que cambian la acción | S01, S02 | `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/data/policy_options.csv`; `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/submission/decision_brief.csv` | Procedencia no documentada; «probabilidad alta/media» no definidas; valores de P1 y P3 no persistidos. |
-| H03 — Contrato de política | S03 | `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/main.py`: `make_policy_contract`; `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/submission/policy_contract.csv` | Campos fijos en código; no se demuestra su operación ni el gatillo con datos observados. |
-| H04 — Prueba del contrato | S04 | `implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/tests/test_activity.py`: `test_01`, `test_02` | Verifica existencia y columnas, no valores ni la elección. |
+| H01 — Factibilidad antes que objetivo | S02 | `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/main.py`: `evaluate_policies`, `make_decision_brief`; `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/notebook.ipynb`: celda de `evaluated` | La tabla evaluada no se persiste; sólo se conserva la alternativa elegida. |
+| H02 — Restricciones que cambian la acción | S01, S02 | `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/data/policy_options.csv`; `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/submission/decision_brief.csv` | Procedencia no documentada; «probabilidad alta/media» no definidas; valores de P1 y P3 no persistidos. |
+| H03 — Contrato de política | S03 | `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/professor/main.py`: `make_policy_contract`; `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/submission/policy_contract.csv` | Campos fijos en código; no se demuestra su operación ni el gatillo con datos observados. |
+| H04 — Prueba del contrato | S04 | `05-implementation/prescriptiva/P300_encuadre_analitico_de_decisiones/tests/test_activity.py`: `test_01`, `test_02` | Verifica existencia y columnas, no valores ni la elección. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -74,4 +74,4 @@ Primera actividad del curso: no hay Pxxx previa en `prescriptiva`. La conversió
 
 ## Trazabilidad y auditoría
 
-P300 está mapeada a `prescriptiva.C01` y `prescriptiva.C04` en `implementation/prescriptiva/traceability.yaml`; la evidencia sostiene C01 (contrato con contexto, responsable, cadencia, acción, objetivo, restricción, salvaguarda, excepción y revisión) y C04 (modo «recomendación con aprobación humana» y escalamiento). Coincide con el producto previsto en `activity-architecture.md` («política de contacto con valor, capacidad y gatillo de revisión»). El producto de Analytics es una recomendación gobernada entre alternativas; no es una regla que transforme el contexto observable de cada cliente en acción, ni demuestra monitoreo ejecutado. La aritmética de valor esperado contribuye al contrato y no organiza el taller.
+P300 está mapeada a `prescriptiva.C01` y `prescriptiva.C04` en `05-implementation/prescriptiva/traceability.yaml`; la evidencia sostiene C01 (contrato con contexto, responsable, cadencia, acción, objetivo, restricción, salvaguarda, excepción y revisión) y C04 (modo «recomendación con aprobación humana» y escalamiento). Coincide con el producto previsto en `activity-architecture.md` («política de contacto con valor, capacidad y gatillo de revisión»). El producto de Analytics es una recomendación gobernada entre alternativas; no es una regla que transforme el contexto observable de cada cliente en acción, ni demuestra monitoreo ejecutado. La aritmética de valor esperado contribuye al contrato y no organiza el taller.

@@ -72,11 +72,11 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P518_github_api/
+Actividad: 05-implementation/data/P518_github_api/
 
 0. Inspecciona primero professor/main.py, src/main.py,
    data/github_issues_page_1.json, submission/ y tests/, y (sólo lectura)
-   implementation/data/P500_superstore_metricas/submission/questions.json
+   05-implementation/data/P500_superstore_metricas/submission/questions.json
    para tomar su estructura de claves. Si la implementación no coincide con
    design/courses/data/P518_activity.md, detente e informa sin modificar
    nada. Confirma que design/courses/data/P500_log.md contiene Nota.P500.02;

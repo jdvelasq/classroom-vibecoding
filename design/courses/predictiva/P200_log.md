@@ -8,9 +8,9 @@
 ## S01.P200.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P200_regresion_basica/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P200_regresion_basica/`
   (notebook de profesor, datos, `submission/` y pruebas) y la entrada P200 de
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se añadieron highlights que separan contribuciones observables:
   tipado y tratamiento de entradas, aislamiento entrenamiento/prueba,
   especificaciones lineales, MLP, comparación fuera de muestra y persistencia
@@ -28,9 +28,9 @@
 ## S01.P200.04
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P200_regresion_basica/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P200_regresion_basica/`
   (notebook de profesor, `submission/model_comparison.csv` y pruebas) y P200
-  en `implementation/predictiva/traceability.yaml`.
+  en `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se aplicó el contrato reescrito de S01: cada highlight quedó
   contrastado contra una ruta y con su límite de inferencia. Se confirmó la
   granularidad de semántica categórica, preprocesamiento sin filtración,
@@ -78,7 +78,7 @@
   en el índice externo, la evidencia de highlights, S03–S04 y el contrato de
   evidencia actual; se actualizó «Producto analítico y límite de identidad».
   H01–H10 se conservan sin cambio de sentido.
-- **Implementación:** `implementation/predictiva/P200_regresion_basica/` —
+- **Implementación:** `05-implementation/predictiva/P200_regresion_basica/` —
   notebook del profesor (celda de encuadre, `fig.savefig` del diagnóstico de
   residuos) y `submission/residual_diagnostics.png`, y
   `tests/test_activity.py` (`test_02`, `test_03`). Los cinco artefactos
@@ -87,7 +87,7 @@
 - **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
   evidencia de P200; H11–H12 fortalecen esa evidencia sin requerir una
   capacidad nueva. Sin cambios en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **`P200_tasks.md`:** eliminado tras incorporar sus dos propuestas (T01, T02).
 
 ## S03.P200.01

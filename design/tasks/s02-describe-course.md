@@ -6,13 +6,13 @@
 execute design/tasks/s02-describe-course.md course=<curso> executor=<LLM>
 ```
 
-`course` identifica `implementation/<curso>/` y `design/courses/<curso>/`.
+`course` identifica `05-implementation/<curso>/` y `design/courses/<curso>/`.
 `executor` identifica la lectura independiente que realizó el trabajo; no cambia
 el contrato de la tarea ni autoriza a inventar consenso entre modelos.
 
 ## Resultado que debe producir
 
-Para cada directorio `implementation/<curso>/Pxxx_*/`, en orden numérico,
+Para cada directorio `05-implementation/<curso>/Pxxx_*/`, en orden numérico,
 mantiene estos dos archivos:
 
 - `design/courses/<curso>/Pxxx_activity.md`: descripción vigente, basada sólo
@@ -22,7 +22,7 @@ mantiene estos dos archivos:
 
 La actividad implementada es la línea base. S02 **describe y audita**; no
 rediseña, no acepta mejoras curriculares, no hace investigación web y no
-modifica `implementation/`. Las propuestas de mejora viven en
+modifica `05-implementation/`. Las propuestas de mejora viven en
 `Pxxx_tasks.md` (S03); S02 no las crea, modifica ni usa como evidencia. Si un
 `Pxxx_activity.md` previo conserva la sección heredada «Mejoras aceptadas
 pendientes de implementación», la elimina cuando declara que no hay mejoras
@@ -48,7 +48,7 @@ técnicas.
 
 Lee y cumple `AGENTS.md`. Para cada Pxxx, inspecciona contenido sustantivo de:
 
-- `implementation/<curso>/traceability.yaml`;
+- `05-implementation/<curso>/traceability.yaml`;
 - datos, manifiestos y documentación de procedencia disponibles;
 - instrucciones, notebooks, código y material de profesor;
 - `submission/`, contratos, visualizaciones y otros entregables persistentes;

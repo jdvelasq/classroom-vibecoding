@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P501_superstore_serving/`.
+**Implementación:** `05-implementation/data/P501_superstore_serving/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Misma fuente y misma métrica mensual de P500 con nuevo producto: la exigencia p
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Representaciones de grano distinto | S02, S03 | `implementation/data/P501_superstore_serving/professor/main.py`: `main`, `build_monthly_sales`, `build_category_sales`; `implementation/data/P501_superstore_serving/submission/sales_serving.db` | El contenido de la base no es legible en el volcado; se describe desde el código. |
-| H02 — Manifiesto de interfaces | S04 | `implementation/data/P501_superstore_serving/professor/main.py`: `build_manifest`; `implementation/data/P501_superstore_serving/submission/serving_manifest.csv` | Consumidores declarados, no implementados. |
-| H03 — Trazabilidad de línea (caso y datos) | S01, S02, S03 | `implementation/data/P501_superstore_serving/submission/sales_detail.csv`; `implementation/data/P501_superstore_serving/professor/main.py`: `load_sales`, `detail_columns` | El defecto de codificación se observa en la cabecera del CSV publicado. |
+| H01 — Representaciones de grano distinto | S02, S03 | `05-implementation/data/P501_superstore_serving/professor/main.py`: `main`, `build_monthly_sales`, `build_category_sales`; `05-implementation/data/P501_superstore_serving/submission/sales_serving.db` | El contenido de la base no es legible en el volcado; se describe desde el código. |
+| H02 — Manifiesto de interfaces | S04 | `05-implementation/data/P501_superstore_serving/professor/main.py`: `build_manifest`; `05-implementation/data/P501_superstore_serving/submission/serving_manifest.csv` | Consumidores declarados, no implementados. |
+| H03 — Trazabilidad de línea (caso y datos) | S01, S02, S03 | `05-implementation/data/P501_superstore_serving/submission/sales_detail.csv`; `05-implementation/data/P501_superstore_serving/professor/main.py`: `load_sales`, `detail_columns` | El defecto de codificación se observa en la cabecera del CSV publicado. |
 
 ### Superficies de cambio para revisión posterior
 

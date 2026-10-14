@@ -3,7 +3,7 @@
 ## S02.P302.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `prescriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/` (`data/policy_options.csv`, `data/source.json`, `professor/main.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` sin celdas, `src/` vacío, tres artefactos de `submission/`, `tests/test_activity.py`); relación con P300.
+- **Rutas inspeccionadas:** `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/` (`data/policy_options.csv`, `data/source.json`, `professor/main.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` sin celdas, `src/` vacío, tres artefactos de `submission/`, `tests/test_activity.py`); relación con P300.
 - **Trazabilidad revisada:** P302 → `prescriptiva.C01`, `C02`, `C04`; C02 débil (menú de tres repartos fijos).
 - **Highlights:** añadidos H01–H05 (razón de descarte; piso activo sin cambiar la elección; procedencia en el producto; contrato JSON; excepción sin factibles).
 - **Ambigüedades:** (1) las tres alternativas son factibles: la razón «no cumple capacidad o mínimo» y el `ValueError` nunca se ejercitan; (2) la alternativa ganadora, «solo_mayor_beneficio», está en el piso, mientras «prioridad_con_piso» se descarta por valor, lo que puede confundir la intención del producto previsto («asignación con garantía mínima»); (3) el gatillo usa asistencia por grado, ausente del caso; (4) la capacidad exige igualdad, no límite superior; (5) mecanismo de decisión casi idéntico al de P300: posible duplicación técnica.

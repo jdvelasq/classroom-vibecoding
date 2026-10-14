@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P410_github_remote/`.
+**Implementación:** `05-implementation/productos/P410_github_remote/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,9 +44,9 @@ Misma tarjeta que P408–P409 con nueva práctica (remoto). Restituye el consumi
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Remoto | S02 | `implementation/productos/P410_github_remote/HOW_TO_RUN_ME.txt` | No hay evidencia persistida del push. |
-| H02 — Credenciales | S02 | `implementation/productos/P410_github_remote/HOW_TO_RUN_ME.txt` | No se verifica. |
-| H03 — Tarjeta y evidencia local | S01, S03, S04 | `implementation/productos/P410_github_remote/data/repository_template/product_card.md`; `implementation/productos/P410_github_remote/submission/git_log.txt`; `implementation/productos/P410_github_remote/tests/test_activity.py` | La línea de log no distingue local de remoto. |
+| H01 — Remoto | S02 | `05-implementation/productos/P410_github_remote/HOW_TO_RUN_ME.txt` | No hay evidencia persistida del push. |
+| H02 — Credenciales | S02 | `05-implementation/productos/P410_github_remote/HOW_TO_RUN_ME.txt` | No se verifica. |
+| H03 — Tarjeta y evidencia local | S01, S03, S04 | `05-implementation/productos/P410_github_remote/data/repository_template/product_card.md`; `05-implementation/productos/P410_github_remote/submission/git_log.txt`; `05-implementation/productos/P410_github_remote/tests/test_activity.py` | La línea de log no distingue local de remoto. |
 
 ### Superficies de cambio para revisión posterior
 

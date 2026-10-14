@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P413_makefile/`.
+**Implementación:** `05-implementation/productos/P413_makefile/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Mismo dato y misma prueba de valor conocido que P412 con nueva práctica (objeti
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Objetivos | S02, S03, S05 | `implementation/productos/P413_makefile/Makefile`; `implementation/productos/P413_makefile/HOW_TO_RUN_ME.txt`; `implementation/productos/P413_makefile/run.bat`; `implementation/productos/P413_makefile/tests/test_report.py` | `run.bat` binario en el digest. |
-| H02 — Forma del indicador | S01, S04, S05 | `implementation/productos/P413_makefile/professor/main.py`; `implementation/productos/P413_makefile/submission/report.json`; `implementation/productos/P413_makefile/tests/test_report.py`: `test_factory_totals` | Sin particularidad de datos. |
+| H01 — Objetivos | S02, S03, S05 | `05-implementation/productos/P413_makefile/Makefile`; `05-implementation/productos/P413_makefile/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P413_makefile/run.bat`; `05-implementation/productos/P413_makefile/tests/test_report.py` | `run.bat` binario en el digest. |
+| H02 — Forma del indicador | S01, S04, S05 | `05-implementation/productos/P413_makefile/professor/main.py`; `05-implementation/productos/P413_makefile/submission/report.json`; `05-implementation/productos/P413_makefile/tests/test_report.py`: `test_factory_totals` | Sin particularidad de datos. |
 
 ### Superficies de cambio para revisión posterior
 

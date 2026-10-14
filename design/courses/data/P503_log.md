@@ -16,7 +16,7 @@
 ## S02.P503.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P503_scopus_relacional/` (`data/scopus.csv.gz` —binario—, `data/search_string.txt`, `professor/notebook.ipynb` celda a celda, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); tamaños de `data/scopus_proptech.db` en P504–P508.
+- **Rutas inspeccionadas:** `05-implementation/data/P503_scopus_relacional/` (`data/scopus.csv.gz` —binario—, `data/search_string.txt`, `professor/notebook.ipynb` celda a celda, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); tamaños de `data/scopus_proptech.db` en P504–P508.
 - **Trazabilidad revisada:** P503 → `data.C01`–`data.C05`; todas con evidencia.
 - **Preservado:** tres preguntas, base `scopus_proptech.db`, tres respuestas agregadas, papel de puente hacia P504–P508 (ahora sustentado por tamaño de archivo idéntico).
 - **Completado / corregido:** se realizó la lectura granular pendiente del notebook: normalización multivalor, decisiones de identidad y faltantes, DDL con integridad referencial y vistas. Se registró que el notebook del estudiante no tiene celdas y que las pruebas sólo comprueban existencia.

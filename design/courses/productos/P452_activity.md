@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P452_access_control/`.
+**Implementación:** `05-implementation/productos/P452_access_control/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Extiende P427 (credencial fuera del código) de configuración a autorización d
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Política por recurso | S01, S02 | `implementation/productos/P452_access_control/data/access_policy.json`; `implementation/productos/P452_access_control/professor/main.py`: `can_access` | Reporte fijo en el código. |
-| H02 — Rechazo explícito | S02, S03, S04 | `implementation/productos/P452_access_control/professor/main.py`: `get_factory_risk_report`; `implementation/productos/P452_access_control/professor/test_main.py`; `implementation/productos/P452_access_control/submission/factory_risk_report.json` | Sólo se persiste el caso autorizado. |
+| H01 — Política por recurso | S01, S02 | `05-implementation/productos/P452_access_control/data/access_policy.json`; `05-implementation/productos/P452_access_control/professor/main.py`: `can_access` | Reporte fijo en el código. |
+| H02 — Rechazo explícito | S02, S03, S04 | `05-implementation/productos/P452_access_control/professor/main.py`: `get_factory_risk_report`; `05-implementation/productos/P452_access_control/professor/test_main.py`; `05-implementation/productos/P452_access_control/submission/factory_risk_report.json` | Sólo se persiste el caso autorizado. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/`.
+**Implementación:** `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,13 +52,13 @@ Misma técnica con nuevo caso y nueva exigencia de producto respecto de P305: P3
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Incompatibilidad estructural | S01, S02 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/data/predicted_outcomes.csv`; `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: celdas `compatible`, `assert` sobre `NaN` y F08, matriz enmascarada | Un solo tipo de servicio (`service_A`); no hay otros criterios de elegibilidad. |
-| H02 — Individual inviable | S02, S03 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/location_utilization.csv`; `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/assignment_comparison.csv` | La suma 6.69 es número esperado de familias, no probabilidad de grupo. |
-| H03 — Efecto del orden | S03 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: celdas `capacity_history`, orden inverso; `assignment_comparison.csv` | La tabla de orden inverso no se persiste; un caso no generaliza el método voraz. |
-| H04 — Modelo de asignación | S02 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: bloque `MODEL`, enumeración compatible, PuLP/HiGHS y `assert` de coincidencia | El número de asignaciones factibles y la unicidad se verifican en el notebook, no en `submission/`. |
-| H05 — Intercambio explicado | S03, S04 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/placement_decisions.csv`; consola `refugee_placement_console.png` | El encabezado del digest muestra F01–F05; F08 se sustenta en `assert` del notebook. |
-| H06 — Recomendación con aprobación | S04 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/policy_contract.json`; `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/decision_queue.csv` | `exception_status` es constante (`none_detected_in_training_case`); no se ejercita una retención. |
-| H07 — Monitoreo por cohorte | S04, S05 | `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/monitoring_plan.csv`; `implementation/prescriptiva/P308_annie_moore_refugee_resettlement/tests/test_activity.py` | Umbrales «desviación material sostenida» no cuantificados; sin datos de resultado. |
+| H01 — Incompatibilidad estructural | S01, S02 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/data/predicted_outcomes.csv`; `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: celdas `compatible`, `assert` sobre `NaN` y F08, matriz enmascarada | Un solo tipo de servicio (`service_A`); no hay otros criterios de elegibilidad. |
+| H02 — Individual inviable | S02, S03 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/location_utilization.csv`; `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/assignment_comparison.csv` | La suma 6.69 es número esperado de familias, no probabilidad de grupo. |
+| H03 — Efecto del orden | S03 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: celdas `capacity_history`, orden inverso; `assignment_comparison.csv` | La tabla de orden inverso no se persiste; un caso no generaliza el método voraz. |
+| H04 — Modelo de asignación | S02 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/professor/notebook.ipynb`: bloque `MODEL`, enumeración compatible, PuLP/HiGHS y `assert` de coincidencia | El número de asignaciones factibles y la unicidad se verifican en el notebook, no en `submission/`. |
+| H05 — Intercambio explicado | S03, S04 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/placement_decisions.csv`; consola `refugee_placement_console.png` | El encabezado del digest muestra F01–F05; F08 se sustenta en `assert` del notebook. |
+| H06 — Recomendación con aprobación | S04 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/policy_contract.json`; `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/decision_queue.csv` | `exception_status` es constante (`none_detected_in_training_case`); no se ejercita una retención. |
+| H07 — Monitoreo por cohorte | S04, S05 | `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/submission/monitoring_plan.csv`; `05-implementation/prescriptiva/P308_annie_moore_refugee_resettlement/tests/test_activity.py` | Umbrales «desviación material sostenida» no cuantificados; sin datos de resultado. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -84,4 +84,4 @@ Misma técnica con nuevo caso y nueva exigencia de producto respecto de P305: P3
 
 ## Trazabilidad y auditoría
 
-P308 está mapeada a `prescriptiva.C01`, `prescriptiva.C02` y `prescriptiva.C04` en `implementation/prescriptiva/traceability.yaml`; la evidencia las sostiene (contrato por cohorte; acción factible desde probabilidades dadas; aprobación obligatoria, anulación y retención). El plan de monitoreo con brecha observada–estimada y tasa de anulación también aportaría evidencia a `C05`, que no está mapeada; se registra sin proponer cambio. Coincide con el producto previsto en `activity-architecture.md` («asignación con utilización y restricciones»). El producto de Analytics es una política de recomendación gobernada; la optimización contribuye a la factibilidad. Límite: no se observa ejecución de la cola ni resultados, y la calidad de las probabilidades queda fuera del alcance.
+P308 está mapeada a `prescriptiva.C01`, `prescriptiva.C02` y `prescriptiva.C04` en `05-implementation/prescriptiva/traceability.yaml`; la evidencia las sostiene (contrato por cohorte; acción factible desde probabilidades dadas; aprobación obligatoria, anulación y retención). El plan de monitoreo con brecha observada–estimada y tasa de anulación también aportaría evidencia a `C05`, que no está mapeada; se registra sin proponer cambio. Coincide con el producto previsto en `activity-architecture.md` («asignación con utilización y restricciones»). El producto de Analytics es una política de recomendación gobernada; la optimización contribuye a la factibilidad. Límite: no se observa ejecución de la cola ni resultados, y la calidad de las probabilidades queda fuera del alcance.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P408_version_control/`.
+**Implementación:** `05-implementation/productos/P408_version_control/`.
 
 ### Preguntas analíticas actuales
 
@@ -41,8 +41,8 @@ Cambia de objeto: de código y artefactos (P400–P407) a la definición documen
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Definición versionada | S01 | `implementation/productos/P408_version_control/data/repository_template/product_card.md` | Vínculo con P400 por nombre del producto. |
-| H02 — Ciclo de commit | S02, S03, S04 | `implementation/productos/P408_version_control/HOW_TO_RUN_ME.txt`; `implementation/productos/P408_version_control/submission/git_log.txt` | La línea de log no prueba el contenido del cambio. |
+| H01 — Definición versionada | S01 | `05-implementation/productos/P408_version_control/data/repository_template/product_card.md` | Vínculo con P400 por nombre del producto. |
+| H02 — Ciclo de commit | S02, S03, S04 | `05-implementation/productos/P408_version_control/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P408_version_control/submission/git_log.txt` | La línea de log no prueba el contenido del cambio. |
 
 ### Superficies de cambio para revisión posterior
 

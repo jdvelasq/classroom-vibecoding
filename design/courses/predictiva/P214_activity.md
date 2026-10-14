@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P213_transicion_estados_cliente/`.
+**Implementación:** `05-implementation/predictiva/P213_transicion_estados_cliente/`.
 
 ### Preguntas analíticas actuales
 

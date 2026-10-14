@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P218_deployment_api/`.
+**Implementación:** `05-implementation/predictiva/P218_deployment_api/`.
 
 ### Preguntas analíticas actuales
 
@@ -87,5 +87,5 @@ No hay mejoras aceptadas pendientes.
 ## Trazabilidad y auditoría
 
 Es un producto de datos con disponibilidad y validación de entrada. No existe
-entrada P219 en `implementation/predictiva/traceability.yaml`; debe revisarse
+entrada P219 en `05-implementation/predictiva/traceability.yaml`; debe revisarse
 antes de aprobar la actividad.

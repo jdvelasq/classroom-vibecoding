@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P523_mapreduce_particionamiento/`.
+**Implementación:** `05-implementation/data/P523_mapreduce_particionamiento/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo dato y nueva exigencia sobre el mismo modelo: P522 particionaba por posici
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Sesgo de clave | S01, S02, S04 | `implementation/data/P523_mapreduce_particionamiento/data/truck_events.csv.gz`; `implementation/data/P523_mapreduce_particionamiento/submission/partition_loads.csv` | Procedencia «real» afirmada, no documentada. |
-| H02 — Particionador determinista | S02 | `implementation/data/P523_mapreduce_particionamiento/professor/notebook.ipynb`: `partition` | Razón de MD5 no explicada. |
-| H03 — Agregación local | S03, S04 | `implementation/data/P523_mapreduce_particionamiento/professor/notebook.ipynb`: celda del combiner y escritura; `implementation/data/P523_mapreduce_particionamiento/submission/shuffle_comparison.csv` | Defecto de modelado descrito. |
+| H01 — Sesgo de clave | S01, S02, S04 | `05-implementation/data/P523_mapreduce_particionamiento/data/truck_events.csv.gz`; `05-implementation/data/P523_mapreduce_particionamiento/submission/partition_loads.csv` | Procedencia «real» afirmada, no documentada. |
+| H02 — Particionador determinista | S02 | `05-implementation/data/P523_mapreduce_particionamiento/professor/notebook.ipynb`: `partition` | Razón de MD5 no explicada. |
+| H03 — Agregación local | S03, S04 | `05-implementation/data/P523_mapreduce_particionamiento/professor/notebook.ipynb`: celda del combiner y escritura; `05-implementation/data/P523_mapreduce_particionamiento/submission/shuffle_comparison.csv` | Defecto de modelado descrito. |
 
 ### Superficies de cambio para revisión posterior
 

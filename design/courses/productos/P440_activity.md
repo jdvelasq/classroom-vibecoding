@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P440_data_reconciliation/`.
+**Implementación:** `05-implementation/productos/P440_data_reconciliation/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva exigencia de evidencia frente a P402 (validación de un archivo) y P417 (p
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Total de control | S01, S02 | `implementation/productos/P440_data_reconciliation/data/source.json`; `implementation/productos/P440_data_reconciliation/data/target.json`; `implementation/productos/P440_data_reconciliation/professor/main.py`: `reconcile` | Totales declarados. |
-| H02 — Veredicto | S02, S03, S04 | `implementation/productos/P440_data_reconciliation/professor/test_main.py`; `implementation/productos/P440_data_reconciliation/submission/reconciliation.json` | Sin efecto sobre una publicación. |
+| H01 — Total de control | S01, S02 | `05-implementation/productos/P440_data_reconciliation/data/source.json`; `05-implementation/productos/P440_data_reconciliation/data/target.json`; `05-implementation/productos/P440_data_reconciliation/professor/main.py`: `reconcile` | Totales declarados. |
+| H02 — Veredicto | S02, S03, S04 | `05-implementation/productos/P440_data_reconciliation/professor/test_main.py`; `05-implementation/productos/P440_data_reconciliation/submission/reconciliation.json` | Sin efecto sobre una publicación. |
 
 ### Superficies de cambio para revisión posterior
 

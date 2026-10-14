@@ -66,7 +66,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P507_scopus_sql_analitico/
+Actividad: 05-implementation/data/P507_scopus_sql_analitico/
 
 0. Inspecciona primero professor/notebook.ipynb, data/scopus_proptech.db
    (tablas document_keywords, keywords, documents), data/search_string.txt,

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P506_scopus_sql_avanzado/`.
+**Implementación:** `05-implementation/data/P506_scopus_sql_avanzado/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Mismo corpus y misma entidad (autor) que P505, con nuevo método (CTE) y nueva e
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — CTE encadenadas | S02 | `implementation/data/P506_scopus_sql_avanzado/professor/notebook.ipynb` (consulta `sustained_authors`) | Sin consulta intermedia persistida. |
-| H02 — Continuidad como años activos (caso y datos) | S01, S02, S03 | `implementation/data/P506_scopus_sql_avanzado/professor/notebook.ipynb`; `implementation/data/P506_scopus_sql_avanzado/submission/sustained_authors.csv`; contraste: `implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv` | Contraste por lectura de ambos CSV, no persistido como comparación. |
+| H01 — CTE encadenadas | S02 | `05-implementation/data/P506_scopus_sql_avanzado/professor/notebook.ipynb` (consulta `sustained_authors`) | Sin consulta intermedia persistida. |
+| H02 — Continuidad como años activos (caso y datos) | S01, S02, S03 | `05-implementation/data/P506_scopus_sql_avanzado/professor/notebook.ipynb`; `05-implementation/data/P506_scopus_sql_avanzado/submission/sustained_authors.csv`; contraste: `05-implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv` | Contraste por lectura de ambos CSV, no persistido como comparación. |
 
 ### Superficies de cambio para revisión posterior
 

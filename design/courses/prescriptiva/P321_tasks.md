@@ -78,7 +78,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/
+Actividad: 05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/
 
 0. Inspecciona primero data/recommendation.csv, professor/main.py,
    professor/notebook.ipynb, notebooks/notebook.ipynb, submission/ y
@@ -90,7 +90,7 @@ Actividad: implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas
 1. PROCEDENCIA DE LA SERIE. No inventes procedencia ni la presentes como
    observación real.
    a. Inspecciona, sólo para lectura,
-      implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/
+      05-implementation/prescriptiva/P311_evaluacion_politicas_por_simulacion/
       data/capacity_policies.csv, data/demand_scenarios.csv y
       submission/capacity_policy_decision.json. Usa la derivación desde P311
       sólo si se cumplen las tres condiciones: la política elegida en P311

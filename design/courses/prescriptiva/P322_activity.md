@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/`.
+**Implementación:** `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ P322 cierra la etapa «gobernar y aprender» de la arquitectura. Usa escenarios 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Valor de medir | S01, S02 | `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/data/decision_scenarios.csv`; `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/professor/main.py`: `evaluate_actions`; `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/information_value.csv` | La razón persistida de «lanzar ahora» habla de «pérdida esperada» aunque su valor esperado es +10.000; las decisiones están escritas en el código. |
-| H02 — Regla condicionada | S03 | `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/policy_contract.json`: `action_policy` | — |
-| H03 — Guardas de la medición | S03 | `policy_contract.json`: `guardrails`, `monitoring`, `review_triggers`; `implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/policy_monitoring.csv` | La prueba sólo verifica presencia de archivos. |
+| H01 — Valor de medir | S01, S02 | `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/data/decision_scenarios.csv`; `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/professor/main.py`: `evaluate_actions`; `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/information_value.csv` | La razón persistida de «lanzar ahora» habla de «pérdida esperada» aunque su valor esperado es +10.000; las decisiones están escritas en el código. |
+| H02 — Regla condicionada | S03 | `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/policy_contract.json`: `action_policy` | — |
+| H03 — Guardas de la medición | S03 | `policy_contract.json`: `guardrails`, `monitoring`, `review_triggers`; `05-implementation/prescriptiva/P322_valor_informacion_y_experimentacion/submission/policy_monitoring.csv` | La prueba sólo verifica presencia de archivos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -73,4 +73,4 @@ P322 cierra la etapa «gobernar y aprender» de la arquitectura. Usa escenarios 
 
 ## Trazabilidad y auditoría
 
-P322 está mapeada a `prescriptiva.C01`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C01 se sostiene en el encuadre de la decisión de medir; C03 en la comparación de valor esperado, sin sensibilidad; C04 en autoridad y escalamiento; C05 en monitoreo y gatillos. Frente a la arquitectura («política para medir antes de actuar») el producto existe. El producto de Analytics es una política de medición gobernada; el valor de la información es evidencia. Límites de implementación: el notebook presencial no muestra el razonamiento, y la razón persistida para descartar «lanzar ahora» es incorrecta frente a su propio valor esperado positivo.
+P322 está mapeada a `prescriptiva.C01`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C01 se sostiene en el encuadre de la decisión de medir; C03 en la comparación de valor esperado, sin sensibilidad; C04 en autoridad y escalamiento; C05 en monitoreo y gatillos. Frente a la arquitectura («política para medir antes de actuar») el producto existe. El producto de Analytics es una política de medición gobernada; el valor de la información es evidencia. Límites de implementación: el notebook presencial no muestra el razonamiento, y la razón persistida para descartar «lanzar ahora» es incorrecta frente a su propio valor esperado positivo.

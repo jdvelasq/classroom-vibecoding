@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P401_code_testing_pytest/`.
+**Implementación:** `05-implementation/productos/P401_code_testing_pytest/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Misma técnica que P400 (regla aislada probada) con nuevo marco (`pytest`), nuev
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Precondición | S02 | `implementation/productos/P401_code_testing_pytest/professor/main.py`: `DRIVER_COLUMNS`, `TIMESHEET_COLUMNS`, `build_certified_driver_totals` | No probada. |
-| H02 — Prueba `pytest` | S03, S05 | `implementation/productos/P401_code_testing_pytest/professor/test_main.py`: `test_01_aggregates_only_certified_drivers` | No evalúa al estudiante. |
-| H03 — Granularidades y sensibilidad | S01, S02, S04 | `implementation/productos/P401_code_testing_pytest/data/drivers.csv`; `implementation/productos/P401_code_testing_pytest/data/timesheet.csv`; `implementation/productos/P401_code_testing_pytest/submission/certified_driver_totals.csv` | La implementación no discute privacidad ni procedencia. |
+| H01 — Precondición | S02 | `05-implementation/productos/P401_code_testing_pytest/professor/main.py`: `DRIVER_COLUMNS`, `TIMESHEET_COLUMNS`, `build_certified_driver_totals` | No probada. |
+| H02 — Prueba `pytest` | S03, S05 | `05-implementation/productos/P401_code_testing_pytest/professor/test_main.py`: `test_01_aggregates_only_certified_drivers` | No evalúa al estudiante. |
+| H03 — Granularidades y sensibilidad | S01, S02, S04 | `05-implementation/productos/P401_code_testing_pytest/data/drivers.csv`; `05-implementation/productos/P401_code_testing_pytest/data/timesheet.csv`; `05-implementation/productos/P401_code_testing_pytest/submission/certified_driver_totals.csv` | La implementación no discute privacidad ni procedencia. |
 
 ### Superficies de cambio para revisión posterior
 

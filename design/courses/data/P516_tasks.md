@@ -62,7 +62,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P516_vermont_calidad/
+Actividad: 05-implementation/data/P516_vermont_calidad/
 
 0. Inspecciona primero professor/notebook.ipynb (celdas 2 y 3),
    data/vermont.csv, submission/quality_report.csv y tests/test_activity.py.
@@ -196,7 +196,7 @@ Actividad: implementation/data/P516_vermont_calidad/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P516_vermont_calidad/
+Actividad: 05-implementation/data/P516_vermont_calidad/
 
 0. Inspecciona primero professor/notebook.ipynb, data/vermont.csv (cabecera,
    tipos, valores de zipcode y agi_stub, presencia de N1 y A00100),

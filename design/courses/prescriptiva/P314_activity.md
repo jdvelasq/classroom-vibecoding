@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P314_storm_response_crews/`.
+**Implementación:** `05-implementation/prescriptiva/P314_storm_response_crews/`.
 
 ### Preguntas analíticas actuales
 
@@ -50,12 +50,12 @@ Nuevo método al servicio del mismo producto: P309, P311 y P313 deciden capacida
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Regla de recurso | S02 | `implementation/prescriptiva/P314_storm_response_crews/professor/notebook.ipynb`: `recourse_actions`, bloque `DECISION MODEL`, `assert` de orden de costos | Regla válida sólo para ese orden de costos y sin plazos internos. |
-| H02 — Valor de flexibilidad | S02, S03 | `implementation/prescriptiva/P314_storm_response_crews/submission/reserve_evaluation.csv`; notebook: `policy_summary`, ahorro | El ahorro y la tabla `policy_summary` no se persisten como tales. |
-| H03 — Criterio robusto | S01, S03 | `implementation/prescriptiva/P314_storm_response_crews/data/storm_scenarios.csv`; notebook: meseta x=15/16 | La prima de robustez se calcula en notebook, no en `submission/`. |
-| H04 — Acciones por escenario | S04 | `implementation/prescriptiva/P314_storm_response_crews/submission/scenario_actions.csv`; `implementation/prescriptiva/P314_storm_response_crews/submission/storm_response_policy_actions.csv` | Acciones para escenarios modelados, no para cargas intermedias. |
-| H05 — Sensibilidad comparada | S03 | `implementation/prescriptiva/P314_storm_response_crews/submission/extreme_probability_sensitivity.csv` | Sólo varía la probabilidad extrema. |
-| H06 — Autoridad por etapa | S04, S05 | `implementation/prescriptiva/P314_storm_response_crews/submission/storm_response_policy_contract.json`; `implementation/prescriptiva/P314_storm_response_crews/tests/test_activity.py` | No se justifica en el producto por qué se adopta el criterio robusto sobre el esperado. |
+| H01 — Regla de recurso | S02 | `05-implementation/prescriptiva/P314_storm_response_crews/professor/notebook.ipynb`: `recourse_actions`, bloque `DECISION MODEL`, `assert` de orden de costos | Regla válida sólo para ese orden de costos y sin plazos internos. |
+| H02 — Valor de flexibilidad | S02, S03 | `05-implementation/prescriptiva/P314_storm_response_crews/submission/reserve_evaluation.csv`; notebook: `policy_summary`, ahorro | El ahorro y la tabla `policy_summary` no se persisten como tales. |
+| H03 — Criterio robusto | S01, S03 | `05-implementation/prescriptiva/P314_storm_response_crews/data/storm_scenarios.csv`; notebook: meseta x=15/16 | La prima de robustez se calcula en notebook, no en `submission/`. |
+| H04 — Acciones por escenario | S04 | `05-implementation/prescriptiva/P314_storm_response_crews/submission/scenario_actions.csv`; `05-implementation/prescriptiva/P314_storm_response_crews/submission/storm_response_policy_actions.csv` | Acciones para escenarios modelados, no para cargas intermedias. |
+| H05 — Sensibilidad comparada | S03 | `05-implementation/prescriptiva/P314_storm_response_crews/submission/extreme_probability_sensitivity.csv` | Sólo varía la probabilidad extrema. |
+| H06 — Autoridad por etapa | S04, S05 | `05-implementation/prescriptiva/P314_storm_response_crews/submission/storm_response_policy_contract.json`; `05-implementation/prescriptiva/P314_storm_response_crews/tests/test_activity.py` | No se justifica en el producto por qué se adopta el criterio robusto sobre el esperado. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -82,4 +82,4 @@ Nuevo método al servicio del mismo producto: P309, P311 y P313 deciden capacida
 
 ## Trazabilidad y auditoría
 
-P314 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C02 (acción por escenario desde datos observables), C03 (comparación de criterios, sensibilidad) y C04 (autoridad pre y post evento, excepción) se sostienen; C05 por gatillo de revisión y métricas declaradas. Coincide con «política de reserva y despliegue por escenario». El producto de Analytics es una política de dos etapas con guarda de servicio y escalamiento; la formulación estocástica contribuye. Límites: robustez sólo frente a cuatro escenarios, clasificación supuesta y prueba que no verifica el producto.
+P314 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C02 (acción por escenario desde datos observables), C03 (comparación de criterios, sensibilidad) y C04 (autoridad pre y post evento, excepción) se sostienen; C05 por gatillo de revisión y métricas declaradas. Coincide con «política de reserva y despliegue por escenario». El producto de Analytics es una política de dos etapas con guarda de servicio y escalamiento; la formulación estocástica contribuye. Límites: robustez sólo frente a cuatro escenarios, clasificación supuesta y prueba que no verifica el producto.

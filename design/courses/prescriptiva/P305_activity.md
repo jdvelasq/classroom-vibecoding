@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P305_tax_inspections/`.
+**Implementación:** `05-implementation/prescriptiva/P305_tax_inspections/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,12 +51,12 @@ Misma estructura de producto que P304 (comparación con alternativas, sensibilid
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Valor por acción indivisible | S01, S02 | `implementation/prescriptiva/P305_tax_inspections/data/taxpayers.csv`; `implementation/prescriptiva/P305_tax_inspections/professor/notebook.ipynb`: `expected_recovery`, `expected_recovery_per_day`, gráfico; `implementation/prescriptiva/P305_tax_inspections/submission/inspection_decisions.csv` | Probabilidad tomada como dada; sin incertidumbre. |
-| H02 — Reglas con igual capacidad | S02 | notebook: `risk_order`, `value_order`, `efficiency_order`; `implementation/prescriptiva/P305_tax_inspections/submission/portfolio_comparison.csv` | Regla «si cabe» específica; no agota las heurísticas posibles. |
-| H03 — Cartera exacta verificada | S03 | notebook: enumeración, `pulp.LpProblem`, `pulp.HiGHS`, aserciones; `implementation/prescriptiva/P305_tax_inspections/submission/inspection_policy.json` | Óptimo para estos datos y 14 jornadas. |
-| H04 — Explicación de exclusiones | S03, S05 | notebook: `exchange`, `best_with_t04`; `submission/portfolio_comparison.csv`; `implementation/prescriptiva/P305_tax_inspections/submission/tax_inspection_planner.png` | El texto explicativo de la figura está escrito a mano en el notebook. |
-| H05 — Composición no anidada | S04 | notebook: `capacity_sensitivity`, tabla de entradas/salidas; `implementation/prescriptiva/P305_tax_inspections/submission/capacity_sensitivity.csv` | Tres niveles; no define cuándo cambiar la capacidad. |
-| H06 — Recomendación supervisada | S05 | notebook: `policy_contract`, `decision_register`; `submission/inspection_policy.json`; `implementation/prescriptiva/P305_tax_inspections/submission/inspection_recommendations.csv` | Declarativo; no registra decisión del supervisor ni resultado observado. |
+| H01 — Valor por acción indivisible | S01, S02 | `05-implementation/prescriptiva/P305_tax_inspections/data/taxpayers.csv`; `05-implementation/prescriptiva/P305_tax_inspections/professor/notebook.ipynb`: `expected_recovery`, `expected_recovery_per_day`, gráfico; `05-implementation/prescriptiva/P305_tax_inspections/submission/inspection_decisions.csv` | Probabilidad tomada como dada; sin incertidumbre. |
+| H02 — Reglas con igual capacidad | S02 | notebook: `risk_order`, `value_order`, `efficiency_order`; `05-implementation/prescriptiva/P305_tax_inspections/submission/portfolio_comparison.csv` | Regla «si cabe» específica; no agota las heurísticas posibles. |
+| H03 — Cartera exacta verificada | S03 | notebook: enumeración, `pulp.LpProblem`, `pulp.HiGHS`, aserciones; `05-implementation/prescriptiva/P305_tax_inspections/submission/inspection_policy.json` | Óptimo para estos datos y 14 jornadas. |
+| H04 — Explicación de exclusiones | S03, S05 | notebook: `exchange`, `best_with_t04`; `submission/portfolio_comparison.csv`; `05-implementation/prescriptiva/P305_tax_inspections/submission/tax_inspection_planner.png` | El texto explicativo de la figura está escrito a mano en el notebook. |
+| H05 — Composición no anidada | S04 | notebook: `capacity_sensitivity`, tabla de entradas/salidas; `05-implementation/prescriptiva/P305_tax_inspections/submission/capacity_sensitivity.csv` | Tres niveles; no define cuándo cambiar la capacidad. |
+| H06 — Recomendación supervisada | S05 | notebook: `policy_contract`, `decision_register`; `submission/inspection_policy.json`; `05-implementation/prescriptiva/P305_tax_inspections/submission/inspection_recommendations.csv` | Declarativo; no registra decisión del supervisor ni resultado observado. |
 
 ### Superficies de cambio para revisión posterior
 

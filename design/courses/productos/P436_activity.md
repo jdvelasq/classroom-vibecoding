@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P436_watermark/`.
+**Implementación:** `05-implementation/productos/P436_watermark/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nuevo mecanismo de ejecución frente a la recomputación completa de P428–P433
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Incremental con marca | S02, S04 | `implementation/productos/P436_watermark/professor/main.py`: `process_new_events`; `implementation/productos/P436_watermark/professor/test_main.py`; `implementation/productos/P436_watermark/submission/watermark_result.json` | Marca no persistida en la fuente. |
-| H02 — Tiempo como estado | S01, S03 | `implementation/productos/P436_watermark/data/events.json`; `implementation/productos/P436_watermark/data/watermark.json` | Eventos sin contenido. |
+| H01 — Incremental con marca | S02, S04 | `05-implementation/productos/P436_watermark/professor/main.py`: `process_new_events`; `05-implementation/productos/P436_watermark/professor/test_main.py`; `05-implementation/productos/P436_watermark/submission/watermark_result.json` | Marca no persistida en la fuente. |
+| H02 — Tiempo como estado | S01, S03 | `05-implementation/productos/P436_watermark/data/events.json`; `05-implementation/productos/P436_watermark/data/watermark.json` | Eventos sin contenido. |
 
 ### Superficies de cambio para revisión posterior
 

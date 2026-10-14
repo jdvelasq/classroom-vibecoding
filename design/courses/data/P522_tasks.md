@@ -73,7 +73,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P522_mapreduce_multiprocessing/
+Actividad: 05-implementation/data/P522_mapreduce_multiprocessing/
 
 0. Inspecciona primero professor/main.py, src/main.py, data/flights.csv.gz,
    submission/ y tests/. Si la implementación no coincide con
@@ -221,11 +221,11 @@ Actividad: implementation/data/P522_mapreduce_multiprocessing/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P522_mapreduce_multiprocessing/
+Actividad: 05-implementation/data/P522_mapreduce_multiprocessing/
 
 0. Inspecciona primero professor/main.py, src/main.py, data/flights.csv.gz,
    submission/ y tests/, y (sólo lectura)
-   implementation/data/P500_superstore_metricas/submission/questions.json
+   05-implementation/data/P500_superstore_metricas/submission/questions.json
    para tomar su estructura de claves. Si la implementación no coincide con
    design/courses/data/P522_activity.md, detente e informa sin modificar
    nada. Confirma que design/courses/data/P500_log.md contiene Nota.P500.02;

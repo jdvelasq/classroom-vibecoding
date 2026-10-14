@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P519_mapreduce_operators/`.
+**Implementación:** `05-implementation/data/P519_mapreduce_operators/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,10 +46,10 @@ Nuevo método (modelo clave–valor) sin pregunta propia; los datos de conductor
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Operador y regla | S02 | `implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: celdas de `map_pairs`, `group_by_key`, `reduce_by_key` | Sin salida persistida de pasos intermedios. |
-| H02 — Extracto y llave compartida | S01, S02 | `implementation/data/P519_mapreduce_operators/data/timesheet.csv`; `implementation/data/P519_mapreduce_operators/data/drivers.csv`; primera celda del notebook | `drivers.csv` incluye `ssn` y `location`, no usados ni documentados. |
-| H03 — Unión por clave | S02, S03 | `implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: `inner_join_by_key`, `combine_driver_hours`; `implementation/data/P519_mapreduce_operators/submission/operator_walkthrough.csv` | No se ejercita una clave ausente o duplicada. |
-| H04 — Operadores complementarios | S02 | `implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: celda de operadores complementarios | Resultado no persistido. |
+| H01 — Operador y regla | S02 | `05-implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: celdas de `map_pairs`, `group_by_key`, `reduce_by_key` | Sin salida persistida de pasos intermedios. |
+| H02 — Extracto y llave compartida | S01, S02 | `05-implementation/data/P519_mapreduce_operators/data/timesheet.csv`; `05-implementation/data/P519_mapreduce_operators/data/drivers.csv`; primera celda del notebook | `drivers.csv` incluye `ssn` y `location`, no usados ni documentados. |
+| H03 — Unión por clave | S02, S03 | `05-implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: `inner_join_by_key`, `combine_driver_hours`; `05-implementation/data/P519_mapreduce_operators/submission/operator_walkthrough.csv` | No se ejercita una clave ausente o duplicada. |
+| H04 — Operadores complementarios | S02 | `05-implementation/data/P519_mapreduce_operators/professor/notebook.ipynb`: celda de operadores complementarios | Resultado no persistido. |
 
 ### Superficies de cambio para revisión posterior
 

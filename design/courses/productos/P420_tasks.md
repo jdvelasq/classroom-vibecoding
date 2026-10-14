@@ -77,7 +77,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P420_experiment_tracking/
+Actividad: 05-implementation/productos/P420_experiment_tracking/
 
 0. Inspecciona primero professor/main.py (prepare_data, build_model,
    save_run, update_index), professor/test_main.py, src/main.py,

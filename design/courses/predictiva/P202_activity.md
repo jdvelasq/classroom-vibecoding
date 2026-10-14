@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P202_tokenizacion/`.
+**Implementación:** `05-implementation/predictiva/P202_tokenizacion/`.
 
 ### Preguntas analíticas actuales
 
@@ -80,12 +80,12 @@ apta para modelar.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Regla de calidad para ausencias y textos breves | S01 | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `minimum_abstract_words`, marcadores y filtros; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json` | El umbral de 20 palabras es una decisión del taller; no se justifica como universal. |
-| H02 — Limpieza de avisos basada en evidencia | S01, S02 | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `print_aligned_text_tails`, `copyright_pattern` y reemplazo | El patrón puede no cubrir todas las licencias ni todos los formatos editoriales. |
-| H03 — Preservación de conectores y remoción de retórica | S02 | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `selected_connectors`, `rhetorical_scaffolding` y marcadores con `_` | La distinción es curada para este corpus y requiere revisión si cambia el dominio. |
-| H04 — Tokenización y lematización auditables | S02 | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `word_tokenize`, filtro alfabético, `ENGLISH_STOP_WORDS` y `WordNetLemmatizer` | El proceso está diseñado para inglés; no valida calidad lingüística en otros idiomas. |
-| H05 — Matriz documento–término declarada | S02 | `implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `CountVectorizer(min_df=2)`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv` | Frecuencia documental no expresa por sí sola relevancia temática ni semántica. |
-| H06 — Persistencia de representación y decisiones | S03 | `implementation/predictiva/P202_tokenizacion/submission/tokenized_abstracts.csv`; `implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json`; `implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv`; `implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `implementation/predictiva/P202_tokenizacion/tests/test_activity.py` | Las pruebas verifican existencia, no consistencia dimensional ni semántica de los artefactos. |
+| H01 — Regla de calidad para ausencias y textos breves | S01 | `05-implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `minimum_abstract_words`, marcadores y filtros; `05-implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json` | El umbral de 20 palabras es una decisión del taller; no se justifica como universal. |
+| H02 — Limpieza de avisos basada en evidencia | S01, S02 | `05-implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `print_aligned_text_tails`, `copyright_pattern` y reemplazo | El patrón puede no cubrir todas las licencias ni todos los formatos editoriales. |
+| H03 — Preservación de conectores y remoción de retórica | S02 | `05-implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `selected_connectors`, `rhetorical_scaffolding` y marcadores con `_` | La distinción es curada para este corpus y requiere revisión si cambia el dominio. |
+| H04 — Tokenización y lematización auditables | S02 | `05-implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `word_tokenize`, filtro alfabético, `ENGLISH_STOP_WORDS` y `WordNetLemmatizer` | El proceso está diseñado para inglés; no valida calidad lingüística en otros idiomas. |
+| H05 — Matriz documento–término declarada | S02 | `05-implementation/predictiva/P202_tokenizacion/professor/notebook.ipynb`: `CountVectorizer(min_df=2)`; `05-implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `05-implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv` | Frecuencia documental no expresa por sí sola relevancia temática ni semántica. |
+| H06 — Persistencia de representación y decisiones | S03 | `05-implementation/predictiva/P202_tokenizacion/submission/tokenized_abstracts.csv`; `05-implementation/predictiva/P202_tokenizacion/submission/matrix_metadata.json`; `05-implementation/predictiva/P202_tokenizacion/submission/vocabulary.csv`; `05-implementation/predictiva/P202_tokenizacion/submission/document_term_matrix.npz`; `05-implementation/predictiva/P202_tokenizacion/tests/test_activity.py` | Las pruebas verifican existencia, no consistencia dimensional ni semántica de los artefactos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -115,7 +115,7 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-La entrada P202 de `implementation/predictiva/traceability.yaml` mapea
+La entrada P202 de `05-implementation/predictiva/traceability.yaml` mapea
 `predictiva.C02`. El producto es una representación textual trazable para una
 pregunta analítica posterior; procesamiento de lenguaje, regex y vectorización
 sirven a ese producto de Analytics. No se debe inferir que esta actividad

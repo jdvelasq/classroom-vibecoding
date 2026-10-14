@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P120_retail_sales/`.
+**Implementación:** `05-implementation/descriptiva/P120_retail_sales/`.
 
 ### Preguntas analíticas actuales
 
@@ -54,14 +54,14 @@ P120 es el primer caso descriptivo completo tras los fundamentos P100–P109. Re
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Preguntas enlazadas | S05, S06 | `implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: celda de `questions`; `implementation/descriptiva/P120_retail_sales/submission/questions.json` | Las pruebas sólo enumeran `*.csv`; no comprueban preguntas. |
-| H02 — Grano y consistencia | S01 | `implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: celda de `assert` sobre faltantes, `OrderID` y `TotalAmount` | Verifica el archivo entregado, no su procedencia. |
-| H03 — Devolución binaria a valor neto | S01, S02 | `implementation/descriptiva/P120_retail_sales/data/sales.csv`: `IsReturned`; notebook: `ReturnedAmount`, `NetAmount` | Supone devolución total; la tasa cercana a 0,5 no se discute en el notebook. |
-| H04 — Dos tasas de devolución | S02 | `implementation/descriptiva/P120_retail_sales/submission/kpi_summary.csv` | Valores del período observado; sin incertidumbre. |
-| H05 — Magnitud y tasa en un gráfico | S04 | `implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: `px.bar(... color="return_rate")`, `melt` y `px.line` | Las figuras no se guardan en `submission/`. |
-| H06 — Umbral de volumen y matriz | S03, S04 | notebook: `minimum_orders = 50`, `pivot`, `px.imshow`; `implementation/descriptiva/P120_retail_sales/submission/return_risk.csv` | Las tasas por categoría difieren en torno a un punto (0,512–0,522 en `category_summary.csv`); no se evalúa si las diferencias son estables. |
-| H07 — Riesgo vs prioridad | S03, S05 | `implementation/descriptiva/P120_retail_sales/submission/return_risk.csv`; `implementation/descriptiva/P120_retail_sales/submission/priority_segments.csv` | Señala dónde investigar; no identifica causas ni acciones. |
-| H08 — Persistencia verificada | S05, S06 | `implementation/descriptiva/P120_retail_sales/tests/test_activity.py`: `test_01`–`test_06` | Las pruebas reproducen la solución; no evalúan lectura ni gráficos. |
+| H01 — Preguntas enlazadas | S05, S06 | `05-implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: celda de `questions`; `05-implementation/descriptiva/P120_retail_sales/submission/questions.json` | Las pruebas sólo enumeran `*.csv`; no comprueban preguntas. |
+| H02 — Grano y consistencia | S01 | `05-implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: celda de `assert` sobre faltantes, `OrderID` y `TotalAmount` | Verifica el archivo entregado, no su procedencia. |
+| H03 — Devolución binaria a valor neto | S01, S02 | `05-implementation/descriptiva/P120_retail_sales/data/sales.csv`: `IsReturned`; notebook: `ReturnedAmount`, `NetAmount` | Supone devolución total; la tasa cercana a 0,5 no se discute en el notebook. |
+| H04 — Dos tasas de devolución | S02 | `05-implementation/descriptiva/P120_retail_sales/submission/kpi_summary.csv` | Valores del período observado; sin incertidumbre. |
+| H05 — Magnitud y tasa en un gráfico | S04 | `05-implementation/descriptiva/P120_retail_sales/professor/notebook.ipynb`: `px.bar(... color="return_rate")`, `melt` y `px.line` | Las figuras no se guardan en `submission/`. |
+| H06 — Umbral de volumen y matriz | S03, S04 | notebook: `minimum_orders = 50`, `pivot`, `px.imshow`; `05-implementation/descriptiva/P120_retail_sales/submission/return_risk.csv` | Las tasas por categoría difieren en torno a un punto (0,512–0,522 en `category_summary.csv`); no se evalúa si las diferencias son estables. |
+| H07 — Riesgo vs prioridad | S03, S05 | `05-implementation/descriptiva/P120_retail_sales/submission/return_risk.csv`; `05-implementation/descriptiva/P120_retail_sales/submission/priority_segments.csv` | Señala dónde investigar; no identifica causas ni acciones. |
+| H08 — Persistencia verificada | S05, S06 | `05-implementation/descriptiva/P120_retail_sales/tests/test_activity.py`: `test_01`–`test_06` | Las pruebas reproducen la solución; no evalúan lectura ni gráficos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -88,4 +88,4 @@ P120 es el primer caso descriptivo completo tras los fundamentos P100–P109. Re
 
 ## Trazabilidad y auditoría
 
-P120 está mapeada a `descriptiva.C01`, `descriptiva.C02` y `descriptiva.C03` en `implementation/descriptiva/traceability.yaml`; la evidencia sostiene las tres (preguntas con archivo de respuesta, verificación y exploración por segmentos, visualizaciones). No mapea C04 ni C05, y el notebook no declara un límite asociación/causalidad aunque formula preguntas de priorización. El producto de Analytics es un diagnóstico descriptivo de dónde se concentran las devoluciones; pandas, Plotly y `pytest` contribuyen a él. Responde qué ocurre, en qué segmentos y cuándo; el «para quién» y la decisión concreta no están evidenciados.
+P120 está mapeada a `descriptiva.C01`, `descriptiva.C02` y `descriptiva.C03` en `05-implementation/descriptiva/traceability.yaml`; la evidencia sostiene las tres (preguntas con archivo de respuesta, verificación y exploración por segmentos, visualizaciones). No mapea C04 ni C05, y el notebook no declara un límite asociación/causalidad aunque formula preguntas de priorización. El producto de Analytics es un diagnóstico descriptivo de dónde se concentran las devoluciones; pandas, Plotly y `pytest` contribuyen a él. Responde qué ocurre, en qué segmentos y cuándo; el «para quién» y la decisión concreta no están evidenciados.

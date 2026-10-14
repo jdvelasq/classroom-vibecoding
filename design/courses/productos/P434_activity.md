@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P434_contract_versioning/`.
+**Implementación:** `05-implementation/productos/P434_contract_versioning/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva exigencia sobre el contrato de P425: de «qué recibe y responde» a «qu�
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Compatibilidad declarada | S02, S04 | `implementation/productos/P434_contract_versioning/professor/main.py`: `is_compatible`; `implementation/productos/P434_contract_versioning/professor/test_main.py`; `implementation/productos/P434_contract_versioning/submission/compatibility.json` | Lista fija; versiones consumidoras literales. |
-| H02 — Caso como límite | S01 | `implementation/productos/P434_contract_versioning/data/contract.json` | `required_fields` sin uso. |
+| H01 — Compatibilidad declarada | S02, S04 | `05-implementation/productos/P434_contract_versioning/professor/main.py`: `is_compatible`; `05-implementation/productos/P434_contract_versioning/professor/test_main.py`; `05-implementation/productos/P434_contract_versioning/submission/compatibility.json` | Lista fija; versiones consumidoras literales. |
+| H02 — Caso como límite | S01 | `05-implementation/productos/P434_contract_versioning/data/contract.json` | `required_fields` sin uso. |
 
 ### Superficies de cambio para revisión posterior
 

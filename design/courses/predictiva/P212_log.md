@@ -37,7 +37,7 @@
   actual; se actualizaron «Producto terminal» y «Uso y límite» para reflejar
   que el pronóstico ya no es puramente puntual ni evaluado en un único corte.
 - **Implementación:**
-  `implementation/predictiva/P211_pronostico_congestion_servicio/` — notebook
+  `05-implementation/predictiva/P211_pronostico_congestion_servicio/` — notebook
   del profesor (orígenes móviles, intervalo, gráficas y comentarios con la
   lectura), `submission/rolling_origin_errors.csv`,
   `submission/forecast_intervals.csv` y `.png`, y `tests/test_activity.py`
@@ -46,7 +46,7 @@
   errores.
 - **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
   evidencia de P212; H05 y H06 fortalecen C04 (evaluación) sin requerir una
-  capacidad nueva. Sin cambios en `implementation/predictiva/traceability.yaml`.
+  capacidad nueva. Sin cambios en `05-implementation/predictiva/traceability.yaml`.
 - **`P211_tasks.md`:** eliminado tras incorporar sus dos propuestas (T01, T02).
 
 ## S03.P212.01

@@ -101,13 +101,13 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P423_model_performance_monitoring/
+Actividad: 05-implementation/productos/P423_model_performance_monitoring/
 
 0. Inspecciona primero data/production_outcomes.csv, professor/main.py
    (evaluate_performance y escritura del reporte), professor/test_main.py,
    src/main.py, submission/performance_report.json y tests/test_activity.py.
    Inspecciona también, sólo para leer,
-   implementation/productos/P403_model_testing_pytest/professor/main.py
+   05-implementation/productos/P403_model_testing_pytest/professor/main.py
    (constantes MIN_*) y submission/model_test_report.json. Si alguna
    implementación no coincide con design/courses/productos/P423_activity.md
    o P403_activity.md, detente e informa sin modificar nada.
@@ -247,7 +247,7 @@ Actividad: implementation/productos/P423_model_performance_monitoring/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P423_model_performance_monitoring/
+Actividad: 05-implementation/productos/P423_model_performance_monitoring/
 
 0. Inspecciona primero el estado de la actividad. Si T01 no está ejecutada
    (no existen data/acceptance_criterion.json ni resultados con periodo del

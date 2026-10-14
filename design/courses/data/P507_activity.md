@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P507_scopus_sql_analitico/`.
+**Implementación:** `05-implementation/data/P507_scopus_sql_analitico/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,8 +44,8 @@ Mismo corpus con nueva entidad (palabra clave) y nuevo método (función de vent
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Ventana por año | S02, S03 | `implementation/data/P507_scopus_sql_analitico/professor/notebook.ipynb` (consulta `keyword_rankings`); `implementation/data/P507_scopus_sql_analitico/submission/top_keywords_by_year.csv` | Sólo se ven las primeras filas en el volcado. |
-| H02 — Palabras clave de autor y empates (caso y datos) | S01, S02, S03 | `implementation/data/P507_scopus_sql_analitico/submission/top_keywords_by_year.csv`; `implementation/data/P503_scopus_relacional/professor/notebook.ipynb` (normalización de `keyword`); `implementation/data/P507_scopus_sql_analitico/data/search_string.txt` | Empates observados en 2020; otros años no visibles. |
+| H01 — Ventana por año | S02, S03 | `05-implementation/data/P507_scopus_sql_analitico/professor/notebook.ipynb` (consulta `keyword_rankings`); `05-implementation/data/P507_scopus_sql_analitico/submission/top_keywords_by_year.csv` | Sólo se ven las primeras filas en el volcado. |
+| H02 — Palabras clave de autor y empates (caso y datos) | S01, S02, S03 | `05-implementation/data/P507_scopus_sql_analitico/submission/top_keywords_by_year.csv`; `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb` (normalización de `keyword`); `05-implementation/data/P507_scopus_sql_analitico/data/search_string.txt` | Empates observados en 2020; otros años no visibles. |
 
 ### Superficies de cambio para revisión posterior
 

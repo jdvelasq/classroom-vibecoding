@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P209_sir_adaptativo/`.
+**Implementación:** `05-implementation/predictiva/P209_sir_adaptativo/`.
 
 ### Preguntas analíticas actuales
 

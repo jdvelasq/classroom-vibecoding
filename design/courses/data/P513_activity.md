@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P513_superstore_batch/`.
+**Implementación:** `05-implementation/data/P513_superstore_batch/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Mismo caso y mismas filas que P500, con nueva forma de entrega (dos lotes) y sin
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Formato en la lectura | S01, S02 | `implementation/data/P513_superstore_batch/data/superstore_orders_2015_q1.csv`; `implementation/data/P513_superstore_batch/professor/main.py`; `implementation/data/P500_superstore_metricas/professor/main.py`; `implementation/data/P501_superstore_serving/submission/sales_detail.csv` | Los Parquet no están persistidos; el efecto sobre tipos se infiere del comportamiento de `read_csv`, no de un archivo. |
-| H02 — Lotes a Parquet | S02, S03 | `implementation/data/P513_superstore_batch/professor/main.py`; `implementation/data/P513_superstore_batch/data/source_manifest.json` | Sólo dos lotes; ningún caso de lote faltante o malformado. |
-| H03 — Reporte por lote | S03, S04 | `implementation/data/P513_superstore_batch/submission/ingestion_report.csv`; `implementation/data/P513_superstore_batch/tests/test_activity.py` | `SUCCESS` no se deriva de ninguna verificación. |
+| H01 — Formato en la lectura | S01, S02 | `05-implementation/data/P513_superstore_batch/data/superstore_orders_2015_q1.csv`; `05-implementation/data/P513_superstore_batch/professor/main.py`; `05-implementation/data/P500_superstore_metricas/professor/main.py`; `05-implementation/data/P501_superstore_serving/submission/sales_detail.csv` | Los Parquet no están persistidos; el efecto sobre tipos se infiere del comportamiento de `read_csv`, no de un archivo. |
+| H02 — Lotes a Parquet | S02, S03 | `05-implementation/data/P513_superstore_batch/professor/main.py`; `05-implementation/data/P513_superstore_batch/data/source_manifest.json` | Sólo dos lotes; ningún caso de lote faltante o malformado. |
+| H03 — Reporte por lote | S03, S04 | `05-implementation/data/P513_superstore_batch/submission/ingestion_report.csv`; `05-implementation/data/P513_superstore_batch/tests/test_activity.py` | `SUCCESS` no se deriva de ninguna verificación. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P505_scopus_sql_intermedio/`.
+**Implementación:** `05-implementation/data/P505_scopus_sql_intermedio/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,8 +44,8 @@ Misma pregunta y misma respuesta que P503: las vistas `v_authors_by_documents` y
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Unión por tabla puente | S02 | `implementation/data/P505_scopus_sql_intermedio/professor/notebook.ipynb` (diagrama y dos consultas) | El diagrama es un comentario, no se verifica. |
-| H02 — Conteo completo (caso y datos) | S01, S02, S03 | `implementation/data/P505_scopus_sql_intermedio/professor/notebook.ipynb`; `implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv` | La suma total no se calcula ni se persiste. |
+| H01 — Unión por tabla puente | S02 | `05-implementation/data/P505_scopus_sql_intermedio/professor/notebook.ipynb` (diagrama y dos consultas) | El diagrama es un comentario, no se verifica. |
+| H02 — Conteo completo (caso y datos) | S01, S02, S03 | `05-implementation/data/P505_scopus_sql_intermedio/professor/notebook.ipynb`; `05-implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv` | La suma total no se calcula ni se persiste. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -54,7 +54,7 @@ Misma pregunta y misma respuesta que P503: las vistas `v_authors_by_documents` y
 | S01 | Dataset | `data/scopus_proptech.db`; `data/search_string.txt` | Copia de la base de P503. |
 | S02 | Consultas | `professor/notebook.ipynb` | Dos `JOIN`; todo el periodo; `LIMIT 20`. |
 | S03 | Producto | `submission/authors_by_documents.csv`; `submission/sources_by_documents.csv`; `submission/questions.json` | Coincide con salidas de P503. |
-| S04 | Secuencia | relación con `implementation/data/P503_scopus_relacional/submission/` | Duplicación de respuestas. |
+| S04 | Secuencia | relación con `05-implementation/data/P503_scopus_relacional/submission/` | Duplicación de respuestas. |
 | S05 | Pruebas | `tests/test_activity.py` | Sólo existencia de tres archivos. |
 | S06 | Interfaz del estudiante | `notebooks/notebook.ipynb` | Notebook sin celdas. |
 

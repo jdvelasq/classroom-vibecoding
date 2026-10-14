@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P426_api_container/`.
+**Implementación:** `05-implementation/productos/P426_api_container/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,8 +44,8 @@ Composición de P418 (contenedor) y P425 (API) con el mismo contrato. Duplica la
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Servicio en contenedor | S02, S03, S05 | `implementation/productos/P426_api_container/Dockerfile`; `implementation/productos/P426_api_container/HOW_TO_RUN_ME.txt`; `implementation/productos/P426_api_container/submission/score_response.json` | La respuesta persistida no registra si provino del contenedor. |
-| H02 — Borde y tipo | S01, S04 | `implementation/productos/P426_api_container/professor/main.py`: `score`; `implementation/productos/P426_api_container/professor/test_main.py` | Las pruebas no ejecutan Docker. |
+| H01 — Servicio en contenedor | S02, S03, S05 | `05-implementation/productos/P426_api_container/Dockerfile`; `05-implementation/productos/P426_api_container/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P426_api_container/submission/score_response.json` | La respuesta persistida no registra si provino del contenedor. |
+| H02 — Borde y tipo | S01, S04 | `05-implementation/productos/P426_api_container/professor/main.py`: `score`; `05-implementation/productos/P426_api_container/professor/test_main.py` | Las pruebas no ejecutan Docker. |
 
 ### Superficies de cambio para revisión posterior
 

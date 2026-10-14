@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P224_reduccion_dimensionalidad/`.
+**Implementación:** `05-implementation/predictiva/P224_reduccion_dimensionalidad/`.
 
 ### Preguntas analíticas actuales
 
@@ -129,7 +129,7 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe entrada P225 en `implementation/predictiva/traceability.yaml`
+No existe entrada P225 en `05-implementation/predictiva/traceability.yaml`
 (brecha pendiente de escalación, anterior a este cambio). Con H04, el
 producto aporta una representación evaluada por exactitud predictiva
 retenida, no sólo exploración visual: la auditoría de identidad de la línea

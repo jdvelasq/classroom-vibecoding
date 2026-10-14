@@ -14,7 +14,7 @@ ocurrió. La IA generativa y agéntica es una tendencia emergente transversal
 a todos los subcampos (`domain.md`): tiene un curso propio, propuesto, y
 además puede aparecer en los demás cursos.
 
-El syllabus de cada curso vivirá en `05-syllabus/<carpeta>/`.
+El syllabus de cada curso vivirá en `05-implementation/<carpeta>/`.
 
 ## Lista de cursos
 

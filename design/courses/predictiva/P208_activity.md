@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P207_clustering_mercadeo/`.
+**Implementación:** `05-implementation/predictiva/P207_clustering_mercadeo/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,13 +52,13 @@ P208 reutiliza la lógica no supervisada de P207, pero cambia el significado de 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Intereses separados de atributos personales | S01 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `interest_columns` y `profile_columns` | Excluir atributos de la entrada no garantiza que los intereses no funcionen como proxies de atributos personales. |
-| H02 — Edad limpiada e imputada | S01 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `age_clean`, medianas por `gradyear` y `age_imputed` | La mediana por cohorte es una regla de taller y puede ocultar variación individual. |
-| H03 — TF–IDF sobre intereses | S02 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `TfidfTransformer` e `interest_matrix` | TF–IDF no valida que los intereses reflejen afinidad real ni intención de compra. |
-| H04 — Silueta, KMeans y reproducibilidad | S02 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: bucle 2–8, `silhouette_score`, `random_state=42` y `n_init` | La tabla de selección no se persiste en `submission/`; no hay evidencia archivada de la comparación tras ejecutar. |
-| H05 — Términos principales, heatmap y UMAP | S03 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `top_interests`, heatmap, UMAP y nombres; `implementation/predictiva/P207_clustering_mercadeo/submission/top_interests.csv`; `interests-heatmap.png`; `cluster-scatter.png` | UMAP es una proyección de inspección, no una prueba formal de separación ni de validez de etiquetas. |
-| H06 — Perfiles posteriores a la asignación | S03 | `implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `cluster_profiles`, `gender_profiles` y `gradyear_profiles` | Caracterizar después no elimina proxies ni prueba que los segmentos sean apropiados para una intervención. |
-| H07 — Persistencia de segmentación e interpretación | S03 | `implementation/predictiva/P207_clustering_mercadeo/submission/segmented.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_sizes.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/cluster_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gender_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/submission/gradyear_profiles.csv`; `implementation/predictiva/P207_clustering_mercadeo/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no validez de segmentos ni uso ético de perfiles. |
+| H01 — Intereses separados de atributos personales | S01 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `interest_columns` y `profile_columns` | Excluir atributos de la entrada no garantiza que los intereses no funcionen como proxies de atributos personales. |
+| H02 — Edad limpiada e imputada | S01 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `age_clean`, medianas por `gradyear` y `age_imputed` | La mediana por cohorte es una regla de taller y puede ocultar variación individual. |
+| H03 — TF–IDF sobre intereses | S02 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `TfidfTransformer` e `interest_matrix` | TF–IDF no valida que los intereses reflejen afinidad real ni intención de compra. |
+| H04 — Silueta, KMeans y reproducibilidad | S02 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: bucle 2–8, `silhouette_score`, `random_state=42` y `n_init` | La tabla de selección no se persiste en `submission/`; no hay evidencia archivada de la comparación tras ejecutar. |
+| H05 — Términos principales, heatmap y UMAP | S03 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `top_interests`, heatmap, UMAP y nombres; `05-implementation/predictiva/P207_clustering_mercadeo/submission/top_interests.csv`; `interests-heatmap.png`; `cluster-scatter.png` | UMAP es una proyección de inspección, no una prueba formal de separación ni de validez de etiquetas. |
+| H06 — Perfiles posteriores a la asignación | S03 | `05-implementation/predictiva/P207_clustering_mercadeo/professor/notebook.ipynb`: `cluster_profiles`, `gender_profiles` y `gradyear_profiles` | Caracterizar después no elimina proxies ni prueba que los segmentos sean apropiados para una intervención. |
+| H07 — Persistencia de segmentación e interpretación | S03 | `05-implementation/predictiva/P207_clustering_mercadeo/submission/segmented.csv`; `05-implementation/predictiva/P207_clustering_mercadeo/submission/cluster_sizes.csv`; `05-implementation/predictiva/P207_clustering_mercadeo/submission/cluster_profiles.csv`; `05-implementation/predictiva/P207_clustering_mercadeo/submission/gender_profiles.csv`; `05-implementation/predictiva/P207_clustering_mercadeo/submission/gradyear_profiles.csv`; `05-implementation/predictiva/P207_clustering_mercadeo/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no validez de segmentos ni uso ético de perfiles. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -90,4 +90,4 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe entrada P208 en `implementation/predictiva/traceability.yaml`; es una inconsistencia que debe resolverse antes de aprobar su mapeo de capacidades. El producto de Analytics es segmentación descriptiva e interpretación de perfiles; TF–IDF, clustering y UMAP contribuyen a él sin convertir el taller en una política de segmentación o una decisión de mercadeo automatizada.
+No existe entrada P208 en `05-implementation/predictiva/traceability.yaml`; es una inconsistencia que debe resolverse antes de aprobar su mapeo de capacidades. El producto de Analytics es segmentación descriptiva e interpretación de perfiles; TF–IDF, clustering y UMAP contribuyen a él sin convertir el taller en una política de segmentación o una decisión de mercadeo automatizada.

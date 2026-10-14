@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P504_scopus_sql_basico/`.
+**Implementación:** `05-implementation/data/P504_scopus_sql_basico/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Mismo corpus y base de P503 con nuevo método de acceso: consulta SQL directa de
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Inspección del esquema | S02 | `implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda de `sqlite_master`) | El resultado no se persiste. |
-| H02 — Filtro de periodo | S02, S03 | `implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda `documents_recent`); `implementation/data/P504_scopus_sql_basico/submission/documents_recent.csv` | Lista, no tendencia. |
-| H03 — Heterogeneidad documental (caso y datos) | S01, S03 | `implementation/data/P504_scopus_sql_basico/submission/documents_by_type.csv`; `implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda `documents_by_type`) | Sólo se ven cinco de los diez tipos en el volcado. |
+| H01 — Inspección del esquema | S02 | `05-implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda de `sqlite_master`) | El resultado no se persiste. |
+| H02 — Filtro de periodo | S02, S03 | `05-implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda `documents_recent`); `05-implementation/data/P504_scopus_sql_basico/submission/documents_recent.csv` | Lista, no tendencia. |
+| H03 — Heterogeneidad documental (caso y datos) | S01, S03 | `05-implementation/data/P504_scopus_sql_basico/submission/documents_by_type.csv`; `05-implementation/data/P504_scopus_sql_basico/professor/notebook.ipynb` (celda `documents_by_type`) | Sólo se ven cinco de los diez tipos en el volcado. |
 
 ### Superficies de cambio para revisión posterior
 

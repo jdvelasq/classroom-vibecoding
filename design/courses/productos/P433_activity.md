@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P433_dbt_duckdb/`.
+**Implementación:** `05-implementation/productos/P433_dbt_duckdb/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,10 +48,10 @@ Misma pregunta y dato que P432, con nueva exigencia de evidencia (pruebas de dat
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Modelo con dependencia | S02 | `implementation/productos/P433_dbt_duckdb/models/factory_totals.sql`; `implementation/productos/P433_dbt_duckdb/target/graph_summary.json` | Grafo de un modelo. |
-| H02 — Pruebas declarativas | S03, S05 | `implementation/productos/P433_dbt_duckdb/models/schema.yml`; `implementation/productos/P433_dbt_duckdb/target/run_results.json` | Integridad, no valores. |
-| H03 — Reconstrucción con registro | S04, S06 | `implementation/productos/P433_dbt_duckdb/HOW_TO_RUN_ME.txt`; `implementation/productos/P433_dbt_duckdb/profiles/profiles.yml`; `implementation/productos/P433_dbt_duckdb/submission/pre54.duckdb`; `implementation/productos/P433_dbt_duckdb/target/run_results.json` | Artefactos residuales de `pre54_dbt_duckdb`. |
-| H04 — Caso como límite | S01, S03 | `implementation/productos/P433_dbt_duckdb/seeds/daily_operations.csv`; `implementation/productos/P433_dbt_duckdb/models/schema.yml` | «Diario» no respaldado. |
+| H01 — Modelo con dependencia | S02 | `05-implementation/productos/P433_dbt_duckdb/models/factory_totals.sql`; `05-implementation/productos/P433_dbt_duckdb/target/graph_summary.json` | Grafo de un modelo. |
+| H02 — Pruebas declarativas | S03, S05 | `05-implementation/productos/P433_dbt_duckdb/models/schema.yml`; `05-implementation/productos/P433_dbt_duckdb/target/run_results.json` | Integridad, no valores. |
+| H03 — Reconstrucción con registro | S04, S06 | `05-implementation/productos/P433_dbt_duckdb/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P433_dbt_duckdb/profiles/profiles.yml`; `05-implementation/productos/P433_dbt_duckdb/submission/pre54.duckdb`; `05-implementation/productos/P433_dbt_duckdb/target/run_results.json` | Artefactos residuales de `pre54_dbt_duckdb`. |
+| H04 — Caso como límite | S01, S03 | `05-implementation/productos/P433_dbt_duckdb/seeds/daily_operations.csv`; `05-implementation/productos/P433_dbt_duckdb/models/schema.yml` | «Diario» no respaldado. |
 
 ### Superficies de cambio para revisión posterior
 

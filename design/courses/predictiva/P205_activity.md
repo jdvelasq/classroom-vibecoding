@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P205_priorizacion_con_probabilidades/`.
+**Implementación:** `05-implementation/predictiva/P205_priorizacion_con_probabilidades/`.
 
 ### Preguntas analíticas actuales
 
@@ -50,11 +50,11 @@ P205 no entrena un clasificador: toma probabilidades ya generadas para juzgar ca
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Bandas y diagonal de calibración | S02 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `probability_band`, agregación y gráfico | Las bandas describen esta simulación y no prueban calibración en una población real. |
-| H02 — Consecuencias de umbrales | S02 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: barrido, conteos y `expected_cost`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv` | Los costos 10 y 1 son ilustrativos, no pérdidas estimadas ni preferencias institucionales. |
-| H03 — Límite entre predicción y política | S01, S03 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: declaración inicial y comentario de costos/política | No implementa autoridad humana, excepciones ni monitoreo posterior. |
-| H04 — Revisión por grupo | S01 | `implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `groupby("group_code")`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv` | `group_code` proviene de una simulación y no permite concluir equidad ni discriminación. |
-| H05 — Persistencia de argumentos | S03 | `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/calibration_summary.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv`; `implementation/predictiva/P205_priorizacion_con_probabilidades/tests/test_activity.py` | Las pruebas verifican archivos, no cálculos ni interpretación ética. |
+| H01 — Bandas y diagonal de calibración | S02 | `05-implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `probability_band`, agregación y gráfico | Las bandas describen esta simulación y no prueban calibración en una población real. |
+| H02 — Consecuencias de umbrales | S02 | `05-implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: barrido, conteos y `expected_cost`; `05-implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv` | Los costos 10 y 1 son ilustrativos, no pérdidas estimadas ni preferencias institucionales. |
+| H03 — Límite entre predicción y política | S01, S03 | `05-implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: declaración inicial y comentario de costos/política | No implementa autoridad humana, excepciones ni monitoreo posterior. |
+| H04 — Revisión por grupo | S01 | `05-implementation/predictiva/P205_priorizacion_con_probabilidades/professor/notebook.ipynb`: `groupby("group_code")`; `05-implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv` | `group_code` proviene de una simulación y no permite concluir equidad ni discriminación. |
+| H05 — Persistencia de argumentos | S03 | `05-implementation/predictiva/P205_priorizacion_con_probabilidades/submission/calibration_summary.csv`; `05-implementation/predictiva/P205_priorizacion_con_probabilidades/submission/threshold_tradeoff.csv`; `05-implementation/predictiva/P205_priorizacion_con_probabilidades/submission/group_review.csv`; `05-implementation/predictiva/P205_priorizacion_con_probabilidades/tests/test_activity.py` | Las pruebas verifican archivos, no cálculos ni interpretación ética. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -86,4 +86,4 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-P205 está mapeada a `predictiva.C01`, `predictiva.C04` y `predictiva.C05` en `implementation/predictiva/traceability.yaml`. El producto de Analytics es una revisión verificable de probabilidades antes de priorizar; clasificación, calibración y análisis de costos contribuyen a él. La actividad no produce una política prescriptiva suficiente por sí sola.
+P205 está mapeada a `predictiva.C01`, `predictiva.C04` y `predictiva.C05` en `05-implementation/predictiva/traceability.yaml`. El producto de Analytics es una revisión verificable de probabilidades antes de priorizar; clasificación, calibración y análisis de costos contribuyen a él. La actividad no produce una política prescriptiva suficiente por sí sola.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P453_data_masking/`.
+**Implementación:** `05-implementation/productos/P453_data_masking/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Complementa P427 (no exponer un secreto) y P452 (limitar quién consume) con la 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Dato personal en salida | S01, S02, S03 | `implementation/productos/P453_data_masking/data/customers.csv`; `implementation/productos/P453_data_masking/professor/main.py`: `create_masked_report`; `implementation/productos/P453_data_masking/submission/masked_report.json` | Riesgo de cliente sin definición. |
-| H02 — Regla verificada | S02, S04 | `implementation/productos/P453_data_masking/professor/main.py`: `mask_email`; `implementation/productos/P453_data_masking/professor/test_main.py` | No se prueban entradas irregulares. |
+| H01 — Dato personal en salida | S01, S02, S03 | `05-implementation/productos/P453_data_masking/data/customers.csv`; `05-implementation/productos/P453_data_masking/professor/main.py`: `create_masked_report`; `05-implementation/productos/P453_data_masking/submission/masked_report.json` | Riesgo de cliente sin definición. |
+| H02 — Regla verificada | S02, S04 | `05-implementation/productos/P453_data_masking/professor/main.py`: `mask_email`; `05-implementation/productos/P453_data_masking/professor/test_main.py` | No se prueban entradas irregulares. |
 
 ### Superficies de cambio para revisión posterior
 

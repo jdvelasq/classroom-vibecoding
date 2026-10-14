@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P317_flood_protection_investment/`.
+**Implementación:** `05-implementation/prescriptiva/P317_flood_protection_investment/`.
 
 ### Preguntas analíticas actuales
 
@@ -54,14 +54,14 @@ P317 repite la plantilla de P313–P316 (referencias, modelo en texto, solver, v
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Caso paramétrico | S01, S02 | `implementation/prescriptiva/P317_flood_protection_investment/data/protection_parameters.csv`; `implementation/prescriptiva/P317_flood_protection_investment/professor/notebook.ipynb`: celdas de carga, `assert` y funciones de riesgo | Sintético; procedencia sólo como «inspirado en» la lógica holandesa. |
-| H02 — Curva en U y malla | S03 | Notebook: `protection_grid`, gráfico de forma; `implementation/prescriptiva/P317_flood_protection_investment/submission/investment_comparison.csv` | La figura de forma no se persiste; sí el planeador. |
-| H03 — Referencias fijas | S03, S07 | `implementation/prescriptiva/P317_flood_protection_investment/submission/investment_comparison.csv` | Referencias ilustrativas, no estándares reales. |
+| H01 — Caso paramétrico | S01, S02 | `05-implementation/prescriptiva/P317_flood_protection_investment/data/protection_parameters.csv`; `05-implementation/prescriptiva/P317_flood_protection_investment/professor/notebook.ipynb`: celdas de carga, `assert` y funciones de riesgo | Sintético; procedencia sólo como «inspirado en» la lógica holandesa. |
+| H02 — Curva en U y malla | S03 | Notebook: `protection_grid`, gráfico de forma; `05-implementation/prescriptiva/P317_flood_protection_investment/submission/investment_comparison.csv` | La figura de forma no se persiste; sí el planeador. |
+| H03 — Referencias fijas | S03, S07 | `05-implementation/prescriptiva/P317_flood_protection_investment/submission/investment_comparison.csv` | Referencias ilustrativas, no estándares reales. |
 | H04 — Método por estructura | S04 | Notebook: celda «La variable de decision es continua…», bloque `MODEL`, `minimize_scalar` | No compara alternativas numéricas; una sola variable. |
 | H05 — Validación teórica | S04 | Notebook: `h_analytical`, `second_derivative_grid`, `marginal_loss_reduction`, celda de validación | La forma cerrada existe por la forma funcional elegida. |
-| H06 — Sensibilidad a `D` y `k` | S05 | Notebook: `solve_total_cost`, `d_sensitivity`, `k_sensitivity`; `implementation/prescriptiva/P317_flood_protection_investment/submission/risk_sensitivity.csv` | Sin variación de `p0`, `alpha` ni combinaciones. |
-| H07 — Regla presupuestal y escalamiento | S06, S07 | Notebook: `budget_limited_height`, `risk_cases`, `policy_rows`, `policy_contract`; `implementation/prescriptiva/P317_flood_protection_investment/submission/flood_protection_policy_actions.csv`; `implementation/prescriptiva/P317_flood_protection_investment/submission/flood_protection_policy_contract.json` | Casos de riesgo fijados en código; objetivo y óptimo coinciden, sin conflicto entre ambos. |
-| H08 — Persistencia | S07, S08 | Los seis artefactos de `submission/`; `implementation/prescriptiva/P317_flood_protection_investment/tests/test_activity.py` | La prueba acepta cualquier archivo; no exige política ni contrato. |
+| H06 — Sensibilidad a `D` y `k` | S05 | Notebook: `solve_total_cost`, `d_sensitivity`, `k_sensitivity`; `05-implementation/prescriptiva/P317_flood_protection_investment/submission/risk_sensitivity.csv` | Sin variación de `p0`, `alpha` ni combinaciones. |
+| H07 — Regla presupuestal y escalamiento | S06, S07 | Notebook: `budget_limited_height`, `risk_cases`, `policy_rows`, `policy_contract`; `05-implementation/prescriptiva/P317_flood_protection_investment/submission/flood_protection_policy_actions.csv`; `05-implementation/prescriptiva/P317_flood_protection_investment/submission/flood_protection_policy_contract.json` | Casos de riesgo fijados en código; objetivo y óptimo coinciden, sin conflicto entre ambos. |
+| H08 — Persistencia | S07, S08 | Los seis artefactos de `submission/`; `05-implementation/prescriptiva/P317_flood_protection_investment/tests/test_activity.py` | La prueba acepta cualquier archivo; no exige política ni contrato. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -90,4 +90,4 @@ P317 repite la plantilla de P313–P316 (referencias, modelo en texto, solver, v
 
 ## Trazabilidad y auditoría
 
-P317 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C02 y C04 se sostienen (regla computable por caso de riesgo; autoridad ordinaria y de escalamiento con tope presupuestal). C03 se apoya en referencias, validación analítica y sensibilidad determinista uno a uno, sin incertidumbre de parámetros. C05 se apoya en métricas y un gatillo cuantificado (desviación de costo > 10 %), sin línea base persistida en un plan de monitoreo. Frente a la arquitectura («regla de protección según riesgo y presupuesto») el producto existe, aunque los niveles de riesgo son valores fijados y no un insumo observado. El producto de Analytics es una regla anual de aprobación de inversión; la optimización no lineal la respalda y el notebook declara explícitamente que el planeador es evidencia y no política.
+P317 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C02 y C04 se sostienen (regla computable por caso de riesgo; autoridad ordinaria y de escalamiento con tope presupuestal). C03 se apoya en referencias, validación analítica y sensibilidad determinista uno a uno, sin incertidumbre de parámetros. C05 se apoya en métricas y un gatillo cuantificado (desviación de costo > 10 %), sin línea base persistida en un plan de monitoreo. Frente a la arquitectura («regla de protección según riesgo y presupuesto») el producto existe, aunque los niveles de riesgo son valores fijados y no un insumo observado. El producto de Analytics es una regla anual de aprobación de inversión; la optimización no lineal la respalda y el notebook declara explícitamente que el planeador es evidencia y no política.

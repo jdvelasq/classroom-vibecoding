@@ -52,7 +52,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P525_particionamiento_parquet/
+Actividad: 05-implementation/data/P525_particionamiento_parquet/
 
 0. Inspecciona primero professor/notebook.ipynb, notebooks/notebook.ipynb,
    data/cta_daily_station_totals.parquet, submission/ y tests/. Si la
@@ -169,7 +169,7 @@ Actividad: implementation/data/P525_particionamiento_parquet/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P525_particionamiento_parquet/
+Actividad: 05-implementation/data/P525_particionamiento_parquet/
 
 0. Inspecciona primero professor/notebook.ipynb, notebooks/notebook.ipynb,
    data/cta_daily_station_totals.parquet, submission/ y tests/. Si la

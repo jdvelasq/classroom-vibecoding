@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P415_github_actions/`.
+**Implementación:** `05-implementation/productos/P415_github_actions/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma pregunta y dato que P412–P414; nueva exigencia de evidencia (check remot
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Fusión condicionada | S02, S03 | `implementation/productos/P415_github_actions/data/repository_template/.github/workflows/quality.yml`; `implementation/productos/P415_github_actions/HOW_TO_RUN_ME.txt` | No hay evidencia persistida del resultado del check. |
-| H02 — Repositorio y prueba reutilizados | S01, S04 | `implementation/productos/P415_github_actions/HOW_TO_RUN_ME.txt` (paso 1); `implementation/productos/P415_github_actions/data/repository_template/tests/test_environment_report.py`; `implementation/productos/P415_github_actions/submission/git_log.txt` | La equivalencia con P412 se infiere de nombre y propósito; los tamaños difieren levemente. |
+| H01 — Fusión condicionada | S02, S03 | `05-implementation/productos/P415_github_actions/data/repository_template/.github/workflows/quality.yml`; `05-implementation/productos/P415_github_actions/HOW_TO_RUN_ME.txt` | No hay evidencia persistida del resultado del check. |
+| H02 — Repositorio y prueba reutilizados | S01, S04 | `05-implementation/productos/P415_github_actions/HOW_TO_RUN_ME.txt` (paso 1); `05-implementation/productos/P415_github_actions/data/repository_template/tests/test_environment_report.py`; `05-implementation/productos/P415_github_actions/submission/git_log.txt` | La equivalencia con P412 se infiere de nombre y propósito; los tamaños difieren levemente. |
 
 ### Superficies de cambio para revisión posterior
 

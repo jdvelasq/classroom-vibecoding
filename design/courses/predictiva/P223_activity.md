@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P222_selection_inputs_clasificacion/`.
+**Implementación:** `05-implementation/predictiva/P222_selection_inputs_clasificacion/`.
 
 ### Preguntas analíticas actuales
 
@@ -102,7 +102,7 @@ evidencia y no debe inferirse.
 | S02 | Selección, regularización y CV | Notebook; `estimator.pkl` | Transformación, selección y estimador deben conservarse unidos. |
 | S03 | Evaluación | Notebook | Sólo expone exactitud y exactitud balanceada. |
 | S04 | Artefacto y prueba | `submission/estimator.pkl`; `tests/test_activity.py` | La prueba no valida comportamiento ni selección. |
-| S05 | Trazabilidad | `implementation/predictiva/traceability.yaml` | No existe entrada P223. |
+| S05 | Trazabilidad | `05-implementation/predictiva/traceability.yaml` | No existe entrada P223. |
 
 ### Contrato de evidencia actual
 
@@ -126,6 +126,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P223 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P223 en `05-implementation/predictiva/traceability.yaml`.
 El producto es un clasificador educativo persistido; los métodos estadísticos y
 de ML contribuyen a ese producto sin autorizar un uso clínico.

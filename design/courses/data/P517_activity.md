@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P517_vermont_contratos/`.
+**Implementación:** `05-implementation/data/P517_vermont_contratos/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Mismo caso y datos que P516 con nueva exigencia de producto: de diagnosticar una
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Acción por alcance | S01, S02, S04 | `implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: `validate` y comentario de la celda 4; `implementation/data/P517_vermont_contratos/submission/contract_report.csv` (fila `statewide_total_present`) | La interpretación de `zipcode = 0` sólo se apoya en comentarios. |
-| H02 — Contrato mínimo | S02 | `implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: celda 3 (`REQUIRED`, `validate`) | No se verifican tipos de las columnas requeridas. |
-| H03 — Clasificación de cambios | S02, S04 | `implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: `validate`; `implementation/data/P517_vermont_contratos/submission/contract_report.csv` | Fila `optional_column` no visible en la evidencia inspeccionada. |
-| H04 — Lotes de prueba | S03, S04, S05 | `implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: celda 4 (`cases`); `implementation/data/P517_vermont_contratos/submission/contract_report.csv`; `implementation/data/P517_vermont_contratos/tests/test_activity.py` | Sólo la primera regla violada queda registrada por lote. |
+| H01 — Acción por alcance | S01, S02, S04 | `05-implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: `validate` y comentario de la celda 4; `05-implementation/data/P517_vermont_contratos/submission/contract_report.csv` (fila `statewide_total_present`) | La interpretación de `zipcode = 0` sólo se apoya en comentarios. |
+| H02 — Contrato mínimo | S02 | `05-implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: celda 3 (`REQUIRED`, `validate`) | No se verifican tipos de las columnas requeridas. |
+| H03 — Clasificación de cambios | S02, S04 | `05-implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: `validate`; `05-implementation/data/P517_vermont_contratos/submission/contract_report.csv` | Fila `optional_column` no visible en la evidencia inspeccionada. |
+| H04 — Lotes de prueba | S03, S04, S05 | `05-implementation/data/P517_vermont_contratos/professor/notebook.ipynb`: celda 4 (`cases`); `05-implementation/data/P517_vermont_contratos/submission/contract_report.csv`; `05-implementation/data/P517_vermont_contratos/tests/test_activity.py` | Sólo la primera regla violada queda registrada por lote. |
 
 ### Superficies de cambio para revisión posterior
 

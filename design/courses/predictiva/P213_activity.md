@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P212_tiempo_hasta_abandono/`.
+**Implementación:** `05-implementation/predictiva/P212_tiempo_hasta_abandono/`.
 
 ### Preguntas analíticas actuales
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P309_covid_hospital_capacity/`.
+**Implementación:** `05-implementation/prescriptiva/P309_covid_hospital_capacity/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,13 +52,13 @@ Nuevo método al servicio del mismo producto respecto de P307 (pedido por escena
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Demora | S01, S02 | `implementation/prescriptiva/P309_covid_hospital_capacity/data/hospital.csv`; `implementation/prescriptiva/P309_covid_hospital_capacity/professor/notebook.ipynb`: celdas reactiva y «Inicio día 4» | El faltante reactivo no se persiste en `submission/`. |
-| H02 — Trayectorias completas | S01, S02 | `implementation/prescriptiva/P309_covid_hospital_capacity/data/daily_demand.csv`; `implementation/prescriptiva/P309_covid_hospital_capacity/data/scenario_probabilities.csv`; notebook: `demand_long`, `daily` | Tres trayectorias no representan una distribución continua. |
-| H03 — Enumeración de planes | S02, S03 | `implementation/prescriptiva/P309_covid_hospital_capacity/submission/evaluated_plans.csv` | Mínimo único verificado en notebook; penalización 10 por cama-día es supuesto. |
-| H04 — Compromiso de fecha | S03 | `implementation/prescriptiva/P309_covid_hospital_capacity/submission/evaluated_plans.csv` | Sólo un bloque; resolución diaria. |
-| H05 — Riesgo residual | S03, S04 | `implementation/prescriptiva/P309_covid_hospital_capacity/submission/plan_scenario_results.csv`; `implementation/prescriptiva/P309_covid_hospital_capacity/submission/recommended_daily_plan.csv`; `hospital_capacity_planner.png` | El encabezado del digest no muestra la fila `B1_D05`/`high`; el notebook la verifica con `assert`. |
-| H06 — Gatillo de escalamiento | S04 | `implementation/prescriptiva/P309_covid_hospital_capacity/submission/capacity_policy.csv`; `implementation/prescriptiva/P309_covid_hospital_capacity/submission/policy_contract.json`; notebook: `variant_probabilities` | El paso contingente conserva `activation_day` 5 / `available_day` 9 aunque se activaría tras revisión diaria; la variante no se persiste. |
-| H07 — Política en código | S04, S05 | `implementation/prescriptiva/P309_covid_hospital_capacity/professor/main.py`; `implementation/prescriptiva/P309_covid_hospital_capacity/tests/test_activity.py` | El notebook importa `main` desde `../src`, donde sólo hay `.gitkeep`. |
+| H01 — Demora | S01, S02 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/data/hospital.csv`; `05-implementation/prescriptiva/P309_covid_hospital_capacity/professor/notebook.ipynb`: celdas reactiva y «Inicio día 4» | El faltante reactivo no se persiste en `submission/`. |
+| H02 — Trayectorias completas | S01, S02 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/data/daily_demand.csv`; `05-implementation/prescriptiva/P309_covid_hospital_capacity/data/scenario_probabilities.csv`; notebook: `demand_long`, `daily` | Tres trayectorias no representan una distribución continua. |
+| H03 — Enumeración de planes | S02, S03 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/evaluated_plans.csv` | Mínimo único verificado en notebook; penalización 10 por cama-día es supuesto. |
+| H04 — Compromiso de fecha | S03 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/evaluated_plans.csv` | Sólo un bloque; resolución diaria. |
+| H05 — Riesgo residual | S03, S04 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/plan_scenario_results.csv`; `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/recommended_daily_plan.csv`; `hospital_capacity_planner.png` | El encabezado del digest no muestra la fila `B1_D05`/`high`; el notebook la verifica con `assert`. |
+| H06 — Gatillo de escalamiento | S04 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/capacity_policy.csv`; `05-implementation/prescriptiva/P309_covid_hospital_capacity/submission/policy_contract.json`; notebook: `variant_probabilities` | El paso contingente conserva `activation_day` 5 / `available_day` 9 aunque se activaría tras revisión diaria; la variante no se persiste. |
+| H07 — Política en código | S04, S05 | `05-implementation/prescriptiva/P309_covid_hospital_capacity/professor/main.py`; `05-implementation/prescriptiva/P309_covid_hospital_capacity/tests/test_activity.py` | El notebook importa `main` desde `../src`, donde sólo hay `.gitkeep`. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -84,4 +84,4 @@ Nuevo método al servicio del mismo producto respecto de P307 (pedido por escena
 
 ## Trazabilidad y auditoría
 
-P309 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. La evidencia sostiene C02 (regla desde trayectorias), C03 (comparación de planes, riesgo residual, sensibilidad), C04 (comando de incidentes, autoridad clínica) y C05 en forma declarativa (monitoreo y gatillo de revisión, sin datos observados). Coincide con «regla de expansión y activación por demanda» de `activity-architecture.md`. El producto de Analytics es una política de capacidad con cadencia diaria, demora explícita y escalamiento gobernado; la evaluación por escenarios contribuye a ella. Límites: el gatillo 0.30 proviene de una sola variante, el paso contingente reutiliza fechas del plan base, y no se especifica cómo se obtiene la «probabilidad revisada».
+P309 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. La evidencia sostiene C02 (regla desde trayectorias), C03 (comparación de planes, riesgo residual, sensibilidad), C04 (comando de incidentes, autoridad clínica) y C05 en forma declarativa (monitoreo y gatillo de revisión, sin datos observados). Coincide con «regla de expansión y activación por demanda» de `activity-architecture.md`. El producto de Analytics es una política de capacidad con cadencia diaria, demora explícita y escalamiento gobernado; la evaluación por escenarios contribuye a ella. Límites: el gatillo 0.30 proviene de una sola variante, el paso contingente reutiliza fechas del plan base, y no se especifica cómo se obtiene la «probabilidad revisada».

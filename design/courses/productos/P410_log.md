@@ -3,7 +3,7 @@
 ## S02.P410.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `productos` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/productos/P410_github_remote/` (`HOW_TO_RUN_ME.txt`, `data/repository_template/product_card.md`, `data/github_remote_case.bundle` como binario, `submission/git_log.txt`, `tests/test_activity.py`); HOW_TO de P411 y P415 para dependencias.
+- **Rutas inspeccionadas:** `05-implementation/productos/P410_github_remote/` (`HOW_TO_RUN_ME.txt`, `data/repository_template/product_card.md`, `data/github_remote_case.bundle` como binario, `submission/git_log.txt`, `tests/test_activity.py`); HOW_TO de P411 y P415 para dependencias.
 - **Trazabilidad revisada:** P410 → `productos.C02`, `productos.C04`. C04 débil (sólo instrucción).
 - **Highlights:** añadidos H01 (remoto con seguimiento), H02 (credenciales fuera del repositorio), H03 (caso y datos: tarjeta completa con evidencia sólo local).
 - **Ambigüedades:** la evidencia no demuestra el push; el hash `60a3756` no coincide con el commit «chore: create product card» de la evidencia de P411 (`4d8becc`), aunque P411 declara continuar este repositorio; uso del `.bundle` no documentado.

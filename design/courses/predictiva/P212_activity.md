@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P211_pronostico_congestion_servicio/`.
+**Implementación:** `05-implementation/predictiva/P211_pronostico_congestion_servicio/`.
 
 ### Preguntas analíticas actuales
 

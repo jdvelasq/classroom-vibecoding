@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P422_model_monitoring/`.
+**Implementación:** `05-implementation/productos/P422_model_monitoring/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma pregunta general que P404 (¿las entradas nuevas se parecen a las conocida
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Señal por variable | S02, S04 | `implementation/productos/P422_model_monitoring/professor/main.py`: `compare_feature`; `implementation/productos/P422_model_monitoring/professor/test_main.py` | Las pruebas usan un `DataFrame` de juguete con la columna `quality`, que `main()` excluye. |
-| H02 — Desplazamiento concentrado | S01, S03 | `implementation/productos/P422_model_monitoring/data/reference.csv`; `implementation/productos/P422_model_monitoring/data/production.csv`; `implementation/productos/P422_model_monitoring/submission/monitoring_report.json` | No hay documentación de cómo se obtuvo `production.csv`. |
-| H03 — Etiqueta excluida | S02 | `implementation/productos/P422_model_monitoring/professor/main.py`: `main` | No se usa `quality` en ninguna parte. |
+| H01 — Señal por variable | S02, S04 | `05-implementation/productos/P422_model_monitoring/professor/main.py`: `compare_feature`; `05-implementation/productos/P422_model_monitoring/professor/test_main.py` | Las pruebas usan un `DataFrame` de juguete con la columna `quality`, que `main()` excluye. |
+| H02 — Desplazamiento concentrado | S01, S03 | `05-implementation/productos/P422_model_monitoring/data/reference.csv`; `05-implementation/productos/P422_model_monitoring/data/production.csv`; `05-implementation/productos/P422_model_monitoring/submission/monitoring_report.json` | No hay documentación de cómo se obtuvo `production.csv`. |
+| H03 — Etiqueta excluida | S02 | `05-implementation/productos/P422_model_monitoring/professor/main.py`: `main` | No se usa `quality` en ninguna parte. |
 
 ### Superficies de cambio para revisión posterior
 

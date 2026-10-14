@@ -71,7 +71,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P307_decision_informada_por_pronosticos/
+Actividad: 05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/
 
 0. Inspecciona primero data/ (forecast_scenarios.csv, order_options.csv,
    policy_contract.csv), professor/main.py (evaluate_order_options,

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P416_github_actions_nox/`.
+**Implementación:** `05-implementation/productos/P416_github_actions_nox/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Combina P414 (Nox local) y P415 (CI remota) sin nueva pregunta ni dato. Es una c
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Verificación única | S02, S03 | `implementation/productos/P416_github_actions_nox/data/repository_template/.github/workflows/tests.yml`; `implementation/productos/P416_github_actions_nox/data/repository_template/noxfile.py`; `implementation/productos/P416_github_actions_nox/HOW_TO_RUN_ME.txt` | No hay evidencia persistida de ejecución local ni remota. |
-| H02 — Retiro de verificación previa | S01, S04 | `implementation/productos/P416_github_actions_nox/HOW_TO_RUN_ME.txt` (paso 2); `implementation/productos/P416_github_actions_nox/submission/git_log.txt` | El log no muestra los archivos retirados. |
+| H01 — Verificación única | S02, S03 | `05-implementation/productos/P416_github_actions_nox/data/repository_template/.github/workflows/tests.yml`; `05-implementation/productos/P416_github_actions_nox/data/repository_template/noxfile.py`; `05-implementation/productos/P416_github_actions_nox/HOW_TO_RUN_ME.txt` | No hay evidencia persistida de ejecución local ni remota. |
+| H02 — Retiro de verificación previa | S01, S04 | `05-implementation/productos/P416_github_actions_nox/HOW_TO_RUN_ME.txt` (paso 2); `05-implementation/productos/P416_github_actions_nox/submission/git_log.txt` | El log no muestra los archivos retirados. |
 
 ### Superficies de cambio para revisión posterior
 

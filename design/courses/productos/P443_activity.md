@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P443_data_lineage/`.
+**Implementación:** `05-implementation/productos/P443_data_lineage/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma tabla curada que P412, P417, P428 y P432, con nueva exigencia de evidencia
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Cambio de grano | S01, S02, S03 | `implementation/productos/P443_data_lineage/data/raw_operations.csv`; `implementation/productos/P443_data_lineage/professor/main.py`: `build_factory_totals`; `implementation/productos/P443_data_lineage/submission/lineage.json` | Grano máquina sin fecha; no se sabe a qué día corresponde. |
-| H02 — Huella del insumo | S02, S03 | `implementation/productos/P443_data_lineage/professor/main.py`: `file_checksum`; `implementation/productos/P443_data_lineage/submission/lineage.json`; `implementation/productos/P431_data_versioning/submission/data_manifest.json` | Identifica el insumo, no la transformación. |
-| H03 — Lo que se prueba | S04 | `implementation/productos/P443_data_lineage/professor/test_main.py`; `implementation/productos/P443_data_lineage/tests/test_activity.py` | Linaje sin verificación de contenido. |
+| H01 — Cambio de grano | S01, S02, S03 | `05-implementation/productos/P443_data_lineage/data/raw_operations.csv`; `05-implementation/productos/P443_data_lineage/professor/main.py`: `build_factory_totals`; `05-implementation/productos/P443_data_lineage/submission/lineage.json` | Grano máquina sin fecha; no se sabe a qué día corresponde. |
+| H02 — Huella del insumo | S02, S03 | `05-implementation/productos/P443_data_lineage/professor/main.py`: `file_checksum`; `05-implementation/productos/P443_data_lineage/submission/lineage.json`; `05-implementation/productos/P431_data_versioning/submission/data_manifest.json` | Identifica el insumo, no la transformación. |
+| H03 — Lo que se prueba | S04 | `05-implementation/productos/P443_data_lineage/professor/test_main.py`; `05-implementation/productos/P443_data_lineage/tests/test_activity.py` | Linaje sin verificación de contenido. |
 
 ### Superficies de cambio para revisión posterior
 

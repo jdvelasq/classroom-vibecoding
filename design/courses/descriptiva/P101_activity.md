@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P101_manejo_editor/`.
+**Implementación:** `05-implementation/descriptiva/P101_manejo_editor/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,11 +47,11 @@ Misma pregunta operativa, mismos datos y mismo contrato que P100, con nueva impl
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Funciones con responsabilidad nombrada | S02, S05 | `implementation/descriptiva/P101_manejo_editor/professor/main.py`; `implementation/descriptiva/P101_manejo_editor/src/main.py` | Las pruebas no examinan la estructura del código. |
-| H02 — Motor genérico | S02 | `implementation/descriptiva/P101_manejo_editor/professor/main.py`: `hadoop(...)` | No se ejercita con otro problema. |
-| H03 — Precondición de salida | S02 | `implementation/descriptiva/P101_manejo_editor/professor/main.py`: `create_output_directory`, `delete_folder` | No hay prueba que provoque el error. |
-| H04 — Oráculo de regresión | S01, S04 | `implementation/descriptiva/P101_manejo_editor/data/`; `implementation/descriptiva/P101_manejo_editor/tests/test_activity.py` | Cinco conteos; no cubren toda la salida. |
-| H05 — Cierre del flujo de entrega | S03, S05 | `implementation/descriptiva/P101_manejo_editor/src/main.py`; `implementation/descriptiva/P101_manejo_editor/professor/main.py`: `copy_hdfs_output_to_submission`; `implementation/descriptiva/P101_manejo_editor/submission/` | `submission/` ya contiene `part-00000` y `_SUCCESS` versionados, por lo que la prueba podría pasar sin que el código del estudiante los regenere. |
+| H01 — Funciones con responsabilidad nombrada | S02, S05 | `05-implementation/descriptiva/P101_manejo_editor/professor/main.py`; `05-implementation/descriptiva/P101_manejo_editor/src/main.py` | Las pruebas no examinan la estructura del código. |
+| H02 — Motor genérico | S02 | `05-implementation/descriptiva/P101_manejo_editor/professor/main.py`: `hadoop(...)` | No se ejercita con otro problema. |
+| H03 — Precondición de salida | S02 | `05-implementation/descriptiva/P101_manejo_editor/professor/main.py`: `create_output_directory`, `delete_folder` | No hay prueba que provoque el error. |
+| H04 — Oráculo de regresión | S01, S04 | `05-implementation/descriptiva/P101_manejo_editor/data/`; `05-implementation/descriptiva/P101_manejo_editor/tests/test_activity.py` | Cinco conteos; no cubren toda la salida. |
+| H05 — Cierre del flujo de entrega | S03, S05 | `05-implementation/descriptiva/P101_manejo_editor/src/main.py`; `05-implementation/descriptiva/P101_manejo_editor/professor/main.py`: `copy_hdfs_output_to_submission`; `05-implementation/descriptiva/P101_manejo_editor/submission/` | `submission/` ya contiene `part-00000` y `_SUCCESS` versionados, por lo que la prueba podría pasar sin que el código del estudiante los regenere. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -77,4 +77,4 @@ Misma pregunta operativa, mismos datos y mismo contrato que P100, con nueva impl
 
 ## Trazabilidad y auditoría
 
-P101 está mapeada a `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. La evidencia observable es código legible y modular, que puede apoyar reproducibilidad, pero no documenta ni comunica un análisis para usuarios o decisores; el mapeo a C05 es indirecto. La actividad no responde la pregunta descriptiva del curso y su producto es una destreza de ingeniería de software aplicada al mismo conteo de P100. Puede caracterizarse como un ejercicio técnico habilitador; la auditoría de identidad queda no resuelta a nivel de actividad y la correspondencia entre nombre («manejo del editor») y contenido requiere aclaración.
+P101 está mapeada a `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. La evidencia observable es código legible y modular, que puede apoyar reproducibilidad, pero no documenta ni comunica un análisis para usuarios o decisores; el mapeo a C05 es indirecto. La actividad no responde la pregunta descriptiva del curso y su producto es una destreza de ingeniería de software aplicada al mismo conteo de P100. Puede caracterizarse como un ejercicio técnico habilitador; la auditoría de identidad queda no resuelta a nivel de actividad y la correspondencia entre nombre («manejo del editor») y contenido requiere aclaración.

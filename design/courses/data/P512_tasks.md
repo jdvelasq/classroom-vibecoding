@@ -76,7 +76,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P512_superstore_warehouse/
+Actividad: 05-implementation/data/P512_superstore_warehouse/
 
 0. Inspecciona primero professor/notebook.ipynb, data/*.csv,
    data/source_manifest.json, submission/superstore_mart.db y tests/. Si la
@@ -85,7 +85,7 @@ Actividad: implementation/data/P512_superstore_warehouse/
    Order ID y order_context_key, que order_lines.csv contiene
    order_context_key y que la unión many_to_one con orders de H01 existe.
    Inspecciona también, sólo para leer valores,
-   implementation/data/P500_superstore_metricas/submission/
+   05-implementation/data/P500_superstore_metricas/submission/
    monthly_sales_metrics.csv y anota month y order_count. Si P500 no expone
    order_count por mes, detente e informa.
 1. No cambies la pregunta, las tablas de data/, el manifiesto, dim_date,

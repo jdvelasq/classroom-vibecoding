@@ -3,7 +3,7 @@
 ## S02.P124.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P124_marketing_dashboard/` (`data/campaign_data.csv`, `professor/main.py`, `professor/app.py`, `src/main.py`, `submission/` con cinco archivos, `tests/`); P102, P120 y P121 como comparación; P154 sólo para descartar dependencia de artefacto.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P124_marketing_dashboard/` (`data/campaign_data.csv`, `professor/main.py`, `professor/app.py`, `src/main.py`, `submission/` con cinco archivos, `tests/`); P102, P120 y P121 como comparación; P154 sólo para descartar dependencia de artefacto.
 - **Trazabilidad revisada:** P124 → `descriptiva.C01`, `C02`, `C03`, `C05`; coherente, con C05 apoyada en la advertencia de datos no operativos.
 - **Highlights añadidos:** H01–H05 (grano diario, validación, razones por alcance, separación funciones/interfaz, persistencia verificada). Highlight obligatorio de caso y datos: H01.
 - **Cambios realizados:** creación de `P124_activity.md`; sin cambios en implementación ni propuestas.

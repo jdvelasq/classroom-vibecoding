@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P446_runbook/`.
+**Implementación:** `05-implementation/productos/P446_runbook/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Nueva aplicación de la alerta de frescura de P439 y P442: de detectar a respond
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Salvaguarda de publicación | S01, S02 | `implementation/productos/P446_runbook/RUNBOOK.md`; `implementation/productos/P446_runbook/data/incident.json`; `implementation/productos/P446_runbook/professor/main.py` | `incident.json` no se usa. |
-| H02 — Síntoma y rechazo | S03, S04 | `implementation/productos/P446_runbook/professor/main.py`: `get_runbook`; `implementation/productos/P446_runbook/professor/test_main.py`; `implementation/productos/P446_runbook/submission/freshness_alert_runbook.md` | La prueba de estudiante no verifica contenido. |
+| H01 — Salvaguarda de publicación | S01, S02 | `05-implementation/productos/P446_runbook/RUNBOOK.md`; `05-implementation/productos/P446_runbook/data/incident.json`; `05-implementation/productos/P446_runbook/professor/main.py` | `incident.json` no se usa. |
+| H02 — Síntoma y rechazo | S03, S04 | `05-implementation/productos/P446_runbook/professor/main.py`: `get_runbook`; `05-implementation/productos/P446_runbook/professor/test_main.py`; `05-implementation/productos/P446_runbook/submission/freshness_alert_runbook.md` | La prueba de estudiante no verifica contenido. |
 
 ### Superficies de cambio para revisión posterior
 

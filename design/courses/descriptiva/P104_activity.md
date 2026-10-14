@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P104_drivers_sqlite/`.
+**Implementación:** `05-implementation/descriptiva/P104_drivers_sqlite/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,10 +52,10 @@ Misma pregunta y mismos datos que P103, con nueva implementación en SQL; el pro
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — SQL contrastado con pandas | S02, S05 | `implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: consultas `GROUP BY`; `implementation/descriptiva/P104_drivers_sqlite/tests/test_activity.py`: `test_02` | Verifica totales, no medias ni rangos. |
-| H02 — Vistas con nombres normalizados | S01, S02, S03 | `implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `CREATE VIEW drivers`, `CREATE VIEW timesheet`; `implementation/descriptiva/P104_drivers_sqlite/submission/summary.csv` | La vista no minimiza campos sensibles. |
-| H03 — Función de ventana | S02 | `implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `OVER (PARTITION BY driver_id)`, CTE | Sin persistencia ni prueba. |
-| H04 — Vista de resumen reutilizable | S02, S03, S04 | `implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `driver_summary`, consulta top 10, `sqlite_master`; `implementation/descriptiva/P104_drivers_sqlite/submission/top10_drivers.png`; `implementation/descriptiva/P104_drivers_sqlite/temp/db.sqlite` | La prueba de la imagen sólo exige tamaño mínimo. |
+| H01 — SQL contrastado con pandas | S02, S05 | `05-implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: consultas `GROUP BY`; `05-implementation/descriptiva/P104_drivers_sqlite/tests/test_activity.py`: `test_02` | Verifica totales, no medias ni rangos. |
+| H02 — Vistas con nombres normalizados | S01, S02, S03 | `05-implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `CREATE VIEW drivers`, `CREATE VIEW timesheet`; `05-implementation/descriptiva/P104_drivers_sqlite/submission/summary.csv` | La vista no minimiza campos sensibles. |
+| H03 — Función de ventana | S02 | `05-implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `OVER (PARTITION BY driver_id)`, CTE | Sin persistencia ni prueba. |
+| H04 — Vista de resumen reutilizable | S02, S03, S04 | `05-implementation/descriptiva/P104_drivers_sqlite/professor/notebook.ipynb`: `driver_summary`, consulta top 10, `sqlite_master`; `05-implementation/descriptiva/P104_drivers_sqlite/submission/top10_drivers.png`; `05-implementation/descriptiva/P104_drivers_sqlite/temp/db.sqlite` | La prueba de la imagen sólo exige tamaño mínimo. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -82,4 +82,4 @@ Misma pregunta y mismos datos que P103, con nueva implementación en SQL; el pro
 
 ## Trazabilidad y auditoría
 
-P104 está mapeada a `descriptiva.C02` y `descriptiva.C03` en `implementation/descriptiva/traceability.yaml`; ambas tienen el mismo respaldo que en P103 (agregación y ranking visual). El producto descriptivo es idéntico al de P103; lo que cambia es la disciplina contribuyente (bases de datos). Aislada, la actividad se lee como práctica de SQL; dentro de la secuencia, su valor analítico es mostrar que el resultado no depende de la herramienta. Las mismas limitaciones de identidad de P103 (sin usuario, decisión ni interpretación) se mantienen.
+P104 está mapeada a `descriptiva.C02` y `descriptiva.C03` en `05-implementation/descriptiva/traceability.yaml`; ambas tienen el mismo respaldo que en P103 (agregación y ranking visual). El producto descriptivo es idéntico al de P103; lo que cambia es la disciplina contribuyente (bases de datos). Aislada, la actividad se lee como práctica de SQL; dentro de la secuencia, su valor analítico es mostrar que el resultado no depende de la herramienta. Las mismas limitaciones de identidad de P103 (sin usuario, decisión ni interpretación) se mantienen.

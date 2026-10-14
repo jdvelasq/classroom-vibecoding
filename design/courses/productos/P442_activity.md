@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P442_data_observability/`.
+**Implementación:** `05-implementation/productos/P442_data_observability/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma técnica (comparación con umbral) que P439 (frescura), P440 (conciliació
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Señal con umbral | S01, S02 | `implementation/productos/P442_data_observability/data/signals.json`; `implementation/productos/P442_data_observability/professor/main.py`: `build_observability_report` | No se sabe qué dataset ni qué capacidad se observa. |
-| H02 — Veredicto integrado | S02, S03 | `implementation/productos/P442_data_observability/professor/main.py`; `implementation/productos/P442_data_observability/submission/observability_report.json` | Un solo instante; sin acción asociada. |
-| H03 — Bordes en pruebas | S04 | `implementation/productos/P442_data_observability/professor/test_main.py`; `implementation/productos/P442_data_observability/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
+| H01 — Señal con umbral | S01, S02 | `05-implementation/productos/P442_data_observability/data/signals.json`; `05-implementation/productos/P442_data_observability/professor/main.py`: `build_observability_report` | No se sabe qué dataset ni qué capacidad se observa. |
+| H02 — Veredicto integrado | S02, S03 | `05-implementation/productos/P442_data_observability/professor/main.py`; `05-implementation/productos/P442_data_observability/submission/observability_report.json` | Un solo instante; sin acción asociada. |
+| H03 — Bordes en pruebas | S04 | `05-implementation/productos/P442_data_observability/professor/test_main.py`; `05-implementation/productos/P442_data_observability/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
 
 ### Superficies de cambio para revisión posterior
 

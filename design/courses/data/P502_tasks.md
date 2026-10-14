@@ -69,7 +69,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P502_superstore_linaje/
+Actividad: 05-implementation/data/P502_superstore_linaje/
 
 0. Inspecciona primero professor/main.py (build_data_catalog,
    build_column_catalog, build_lineage), data/superstore_orders.csv,

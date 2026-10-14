@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P409_branch_merge/`.
+**Implementación:** `05-implementation/productos/P409_branch_merge/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma tarjeta que P408 con nueva práctica (ramas). La continuidad del caso es p
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Rama y fusión | S02, S03, S04 | `implementation/productos/P409_branch_merge/HOW_TO_RUN_ME.txt`; `implementation/productos/P409_branch_merge/submission/git_log.txt` | El log no muestra el grafo ni el contenido. |
-| H02 — Consumidor | S01 | `implementation/productos/P409_branch_merge/data/repository_template/product_card.md`; `implementation/productos/P408_version_control/data/repository_template/product_card.md`; `implementation/productos/P410_github_remote/data/repository_template/product_card.md` | La inconsistencia puede ser deliberada; no está declarada. |
+| H01 — Rama y fusión | S02, S03, S04 | `05-implementation/productos/P409_branch_merge/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P409_branch_merge/submission/git_log.txt` | El log no muestra el grafo ni el contenido. |
+| H02 — Consumidor | S01 | `05-implementation/productos/P409_branch_merge/data/repository_template/product_card.md`; `05-implementation/productos/P408_version_control/data/repository_template/product_card.md`; `05-implementation/productos/P410_github_remote/data/repository_template/product_card.md` | La inconsistencia puede ser deliberada; no está declarada. |
 
 ### Superficies de cambio para revisión posterior
 

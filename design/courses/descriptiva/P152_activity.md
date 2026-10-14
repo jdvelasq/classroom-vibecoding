@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P152_ventas_olap/`.
+**Implementación:** `05-implementation/descriptiva/P152_ventas_olap/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,10 +49,10 @@ Mismo caso y mismo esquema que P151, con nuevo método al servicio de la descrip
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Jerarquías como rutas | S01, S02 | `implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: inspección de tablas y tres consultas; `implementation/descriptiva/P152_ventas_olap/professor/generate_data.py`: categorías y productos | Jerarquías mínimas (sin trimestre, sin subcategoría). |
-| H02 — *Roll-up* reconciliado | S02, S04 | `implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: `assert` de total; `implementation/descriptiva/P152_ventas_olap/submission/monthly_region_sales.csv`; `implementation/descriptiva/P152_ventas_olap/tests/test_activity.py`: `test_02` | La reconciliación prueba aditividad, no calidad de origen. |
-| H03 — Contraste de medidas en el *slice* | S02, S03 | `implementation/descriptiva/P152_ventas_olap/submission/north_category_sales.csv` | El notebook no interpreta la divergencia; Norte no está justificado. |
-| H04 — *Drill-down* encadenado | S02, S03, S04 | `implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: `leading_category` y `params`; `implementation/descriptiva/P152_ventas_olap/submission/north_product_drilldown.csv`; `implementation/descriptiva/P152_ventas_olap/tests/test_activity.py`: `test_04` | Descomposición aditiva; «explican» no implica causa. |
+| H01 — Jerarquías como rutas | S01, S02 | `05-implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: inspección de tablas y tres consultas; `05-implementation/descriptiva/P152_ventas_olap/professor/generate_data.py`: categorías y productos | Jerarquías mínimas (sin trimestre, sin subcategoría). |
+| H02 — *Roll-up* reconciliado | S02, S04 | `05-implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: `assert` de total; `05-implementation/descriptiva/P152_ventas_olap/submission/monthly_region_sales.csv`; `05-implementation/descriptiva/P152_ventas_olap/tests/test_activity.py`: `test_02` | La reconciliación prueba aditividad, no calidad de origen. |
+| H03 — Contraste de medidas en el *slice* | S02, S03 | `05-implementation/descriptiva/P152_ventas_olap/submission/north_category_sales.csv` | El notebook no interpreta la divergencia; Norte no está justificado. |
+| H04 — *Drill-down* encadenado | S02, S03, S04 | `05-implementation/descriptiva/P152_ventas_olap/professor/notebook.ipynb`: `leading_category` y `params`; `05-implementation/descriptiva/P152_ventas_olap/submission/north_product_drilldown.csv`; `05-implementation/descriptiva/P152_ventas_olap/tests/test_activity.py`: `test_04` | Descomposición aditiva; «explican» no implica causa. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -78,4 +78,4 @@ Mismo caso y mismo esquema que P151, con nuevo método al servicio de la descrip
 
 ## Trazabilidad y auditoría
 
-P152 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). Es la actividad del bloque más cercana a la pregunta descriptiva (qué, dónde, cuándo): tres preguntas encadenadas, serie temporal y descomposición. Faltan «para quién» y la lectura de evidencia; la navegación OLAP es BI al servicio de la descripción; lo que falta es la interpretación persistida de lo que muestran las respuestas.
+P152 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `05-implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). Es la actividad del bloque más cercana a la pregunta descriptiva (qué, dónde, cuándo): tres preguntas encadenadas, serie temporal y descomposición. Faltan «para quién» y la lectura de evidencia; la navegación OLAP es BI al servicio de la descripción; lo que falta es la interpretación persistida de lo que muestran las respuestas.

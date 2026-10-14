@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P435_schema_migration/`.
+**Implementación:** `05-implementation/productos/P435_schema_migration/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva transformación al servicio del mismo contrato conceptual de P434. P434 y 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Migración preservando el valor | S02, S04 | `implementation/productos/P435_schema_migration/professor/main.py`: `migrate_v1_to_v2`; `implementation/productos/P435_schema_migration/professor/test_main.py`; `implementation/productos/P435_schema_migration/submission/record_v2.json` | Un solo registro. |
-| H02 — Caso como límite | S01 | `implementation/productos/P435_schema_migration/data/record_v1.json` | Valor no calculado. |
+| H01 — Migración preservando el valor | S02, S04 | `05-implementation/productos/P435_schema_migration/professor/main.py`: `migrate_v1_to_v2`; `05-implementation/productos/P435_schema_migration/professor/test_main.py`; `05-implementation/productos/P435_schema_migration/submission/record_v2.json` | Un solo registro. |
+| H02 — Caso como límite | S01 | `05-implementation/productos/P435_schema_migration/data/record_v1.json` | Valor no calculado. |
 
 ### Superficies de cambio para revisión posterior
 

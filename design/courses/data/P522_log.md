@@ -3,7 +3,7 @@
 ## S02.P522.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P522_mapreduce_multiprocessing/` (`data/flights.csv.gz` sólo como binario, `professor/main.py`, `src/main.py`, `submission/origin_flights.csv`, `submission/benchmark.csv`, `tests/test_activity.py`); P519–P521 y P524 para contraste; `dig/case-selection.md` como contexto.
+- **Rutas inspeccionadas:** `05-implementation/data/P522_mapreduce_multiprocessing/` (`data/flights.csv.gz` sólo como binario, `professor/main.py`, `src/main.py`, `submission/origin_flights.csv`, `submission/benchmark.csv`, `tests/test_activity.py`); P519–P521 y P524 para contraste; `dig/case-selection.md` como contexto.
 - **Trazabilidad revisada:** P522 → `data.C02`, `data.C05`; C03 (filtro de cancelados) no mapeado; C05 tensionado.
 - **Highlights:** añadidos H01 (filtro de cancelados en el mapper; caso y datos), H02 (reducción en dos niveles), H03 (equivalencia secuencial–paralela), H04 (medición de aceleración).
 - **Ambigüedades:** sin pregunta analítica; procedencia y periodo de vuelos no documentados; `temp/` no aparece en la implementación y `TEMP_DIR / "input"` se crea con `mkdir()` sin `parents` (posible fallo de ejecución); benchmark de una corrida dependiente del equipo; sin notebook de profesor; P522 no figura en el diseño del bloque MapReduce de `case-selection.md`, que llega sólo a P521.
@@ -462,7 +462,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P522_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P522_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P522_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** no resuelta (computación paralela dentro de la frontera excluida) → no resuelta sólo por los límites conservados: sin pregunta ni uso analítico del conteo, y la herramienta y su rendimiento como producto (tensión con `data.C05`; medición de una corrida). Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

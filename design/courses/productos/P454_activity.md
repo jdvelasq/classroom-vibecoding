@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P454_data_catalog/`.
+**Implementación:** `05-implementation/productos/P454_data_catalog/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Integra por nombre elementos de P434, P447 y P452, sin consumirlos. No referenci
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Ficha del caso | S01, S03 | `implementation/productos/P454_data_catalog/data/catalog.json`; `implementation/productos/P454_data_catalog/submission/catalog_entry.json`; `implementation/productos/P434_contract_versioning/data/contract.json`; `implementation/productos/P452_access_control/data/access_policy.json`; `implementation/productos/P447_incident_response/professor/main.py` | Coincidencias de texto, no dependencias. |
-| H02 — Prueba de contenido | S02, S04 | `implementation/productos/P454_data_catalog/professor/main.py`: `load_catalog_entry`; `implementation/productos/P454_data_catalog/professor/test_main.py`; `implementation/productos/P454_data_catalog/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
+| H01 — Ficha del caso | S01, S03 | `05-implementation/productos/P454_data_catalog/data/catalog.json`; `05-implementation/productos/P454_data_catalog/submission/catalog_entry.json`; `05-implementation/productos/P434_contract_versioning/data/contract.json`; `05-implementation/productos/P452_access_control/data/access_policy.json`; `05-implementation/productos/P447_incident_response/professor/main.py` | Coincidencias de texto, no dependencias. |
+| H02 — Prueba de contenido | S02, S04 | `05-implementation/productos/P454_data_catalog/professor/main.py`: `load_catalog_entry`; `05-implementation/productos/P454_data_catalog/professor/test_main.py`; `05-implementation/productos/P454_data_catalog/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
 
 ### Superficies de cambio para revisión posterior
 

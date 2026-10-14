@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P221_selection_inputs_regresion/`.
+**Implementación:** `05-implementation/predictiva/P221_selection_inputs_regresion/`.
 
 ### Preguntas analíticas actuales
 
@@ -81,5 +81,5 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P222 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P222 en `05-implementation/predictiva/traceability.yaml`.
 Debe revisarse antes de aprobar la actividad.

@@ -68,7 +68,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P442_data_observability/
+Actividad: 05-implementation/productos/P442_data_observability/
 
 0. Inspecciona primero data/signals.json, professor/main.py,
    professor/test_main.py, src/main.py, submission/ y tests/. Si la

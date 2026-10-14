@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P451_user_feedback/`.
+**Implementación:** `05-implementation/productos/P451_user_feedback/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Mismo resultado de riesgo por fábrica que P430 y P450, con nuevo producto: valo
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Señal ligada a respuesta | S01, S02, S03 | `implementation/productos/P451_user_feedback/data/product_response.json`; `implementation/productos/P451_user_feedback/professor/main.py`: `capture_feedback`; `implementation/productos/P451_user_feedback/submission/feedback.json` | Valoración simulada. |
-| H02 — Señal negativa | S04 | `implementation/productos/P451_user_feedback/professor/test_main.py`; `implementation/productos/P451_user_feedback/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
+| H01 — Señal ligada a respuesta | S01, S02, S03 | `05-implementation/productos/P451_user_feedback/data/product_response.json`; `05-implementation/productos/P451_user_feedback/professor/main.py`: `capture_feedback`; `05-implementation/productos/P451_user_feedback/submission/feedback.json` | Valoración simulada. |
+| H02 — Señal negativa | S04 | `05-implementation/productos/P451_user_feedback/professor/test_main.py`; `05-implementation/productos/P451_user_feedback/tests/test_activity.py` | La prueba del estudiante no verifica contenido. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P525_particionamiento_parquet/`.
+**Implementación:** `05-implementation/data/P525_particionamiento_parquet/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo dato (serie diaria) y nueva exigencia sobre Parquet: de elegir formato (P5
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Partición temporal | S01, S02 | `implementation/data/P525_particionamiento_parquet/data/cta_daily_station_totals.parquet`; `implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: segunda celda | Columnas distintas de `date` no visibles. |
-| H02 — Diseño de directorios | S02 | `implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: tercera celda | Resultado en `temp/`, no persistido ni probado. |
-| H03 — Conservación y resumen | S02, S03 | `implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: `assert`; `implementation/data/P525_particionamiento_parquet/submission/lake_summary.csv` | Sin verificación de periodos consecutivos. |
+| H01 — Partición temporal | S01, S02 | `05-implementation/data/P525_particionamiento_parquet/data/cta_daily_station_totals.parquet`; `05-implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: segunda celda | Columnas distintas de `date` no visibles. |
+| H02 — Diseño de directorios | S02 | `05-implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: tercera celda | Resultado en `temp/`, no persistido ni probado. |
+| H03 — Conservación y resumen | S02, S03 | `05-implementation/data/P525_particionamiento_parquet/professor/notebook.ipynb`: `assert`; `05-implementation/data/P525_particionamiento_parquet/submission/lake_summary.csv` | Sin verificación de periodos consecutivos. |
 
 ### Superficies de cambio para revisión posterior
 

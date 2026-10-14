@@ -3,7 +3,7 @@
 ## S02.P453.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `productos` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/productos/P453_data_masking/` (`data/customers.csv`, `professor/main.py`, `professor/test_main.py`, `src/main.py`, `submission/masked_report.json`, `tests/test_activity.py`); contexto de P427, P452.
+- **Rutas inspeccionadas:** `05-implementation/productos/P453_data_masking/` (`data/customers.csv`, `professor/main.py`, `professor/test_main.py`, `src/main.py`, `submission/masked_report.json`, `tests/test_activity.py`); contexto de P427, P452.
 - **Trazabilidad revisada:** P453 → `productos.C04`, `productos.C05`.
 - **Highlights:** añadidos H01 (dato personal en salida, caso y datos), H02 (regla verificada).
 - **Ambigüedades:** cambio de entidad a clientes sin definición de `risk`; `customer_id` y dominio en claro; una sola fila procesada.

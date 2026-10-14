@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P421_model_registry/`.
+**Implementación:** `05-implementation/productos/P421_model_registry/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo producto (registro de etapas). No consume las corridas de P420, cuyo índi
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Promoción separada | S02, S03 | `implementation/productos/P421_model_registry/professor/main.py`: `promote_model`, `main`; `implementation/productos/P421_model_registry/submission/model_registry/production/registry.json` | No hay criterio de promoción. |
-| H02 — Identificador estable | S02, S04 | `implementation/productos/P421_model_registry/professor/main.py`: `find_candidate`; `implementation/productos/P421_model_registry/professor/test_main.py` | Las pruebas no cubren la etapa `archived`. |
-| H03 — Sin procedencia | S01 | `implementation/productos/P421_model_registry/CANDIDATES.json`; `implementation/productos/P421_model_registry/CANDIDATE_V1.pkl` | La igualdad de tamaño con otros pickles no prueba identidad. |
+| H01 — Promoción separada | S02, S03 | `05-implementation/productos/P421_model_registry/professor/main.py`: `promote_model`, `main`; `05-implementation/productos/P421_model_registry/submission/model_registry/production/registry.json` | No hay criterio de promoción. |
+| H02 — Identificador estable | S02, S04 | `05-implementation/productos/P421_model_registry/professor/main.py`: `find_candidate`; `05-implementation/productos/P421_model_registry/professor/test_main.py` | Las pruebas no cubren la etapa `archived`. |
+| H03 — Sin procedencia | S01 | `05-implementation/productos/P421_model_registry/CANDIDATES.json`; `05-implementation/productos/P421_model_registry/CANDIDATE_V1.pkl` | La igualdad de tamaño con otros pickles no prueba identidad. |
 
 ### Superficies de cambio para revisión posterior
 

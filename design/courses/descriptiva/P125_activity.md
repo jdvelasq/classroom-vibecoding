@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P125_salarios/`.
+**Implementación:** `05-implementation/descriptiva/P125_salarios/`.
 
 ### Preguntas analíticas actuales
 
@@ -55,13 +55,13 @@ P125 cambia el producto respecto de P120–P124: además de describir, compara f
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Población sintética | S01 | `implementation/descriptiva/P125_salarios/professor/generate_data.py`: `RANDOM_SEED`, `DEPARTMENT_ADJUSTMENTS`, `management_premium`; `implementation/descriptiva/P125_salarios/submission/analysis_conclusions.csv` | La coincidencia con el generador es observable por comparación, no declarada en el notebook. |
-| H02 — Pares comparables | S02 | `implementation/descriptiva/P125_salarios/professor/notebook.ipynb`: `banda_experiencia`, `peer_columns`, `brecha_vs_pares_pct` | No se reporta el tamaño de cada grupo de pares. |
+| H01 — Población sintética | S01 | `05-implementation/descriptiva/P125_salarios/professor/generate_data.py`: `RANDOM_SEED`, `DEPARTMENT_ADJUSTMENTS`, `management_premium`; `05-implementation/descriptiva/P125_salarios/submission/analysis_conclusions.csv` | La coincidencia con el generador es observable por comparación, no declarada en el notebook. |
+| H02 — Pares comparables | S02 | `05-implementation/descriptiva/P125_salarios/professor/notebook.ipynb`: `banda_experiencia`, `peer_columns`, `brecha_vs_pares_pct` | No se reporta el tamaño de cada grupo de pares. |
 | H03 — Estadísticos robustos | S02, S03 | notebook: `salary_distribution`, `px.box`; agregación `brecha_mediana_vs_pares_pct` | `salary_distribution` y la figura no se persisten. |
-| H04 — Señalamiento | S03 | notebook: `minimum_group_size = 30`, `areas_a_revisar`; `implementation/descriptiva/P125_salarios/submission/department_pay_gap.csv` | Criterios −5 % y 50 % sin justificación persistida. |
-| H05 — Decil superior | S03, S04 | notebook: `high_salary_threshold`, `career_path_summary`; `implementation/descriptiva/P125_salarios/submission/high_salary_by_career.csv` | `technical_high_salary` (dónde están los técnicos del decil) se calcula pero no se persiste. |
-| H06 — Límite causal | S04, S05 | `implementation/descriptiva/P125_salarios/submission/analysis_conclusions.csv`; `implementation/descriptiva/P125_salarios/tests/test_activity.py`: `test_06` | La prueba busca una expresión, no evalúa la calidad del argumento. |
-| H07 — Agregados y no divulgación | S04, S05 | notebook: celda de guardado «sin exponer información individual»; `implementation/descriptiva/P125_salarios/submission/compensation_recommendations.csv`; `test_04` | No hay evaluación formal de riesgo de reidentificación. |
+| H04 — Señalamiento | S03 | notebook: `minimum_group_size = 30`, `areas_a_revisar`; `05-implementation/descriptiva/P125_salarios/submission/department_pay_gap.csv` | Criterios −5 % y 50 % sin justificación persistida. |
+| H05 — Decil superior | S03, S04 | notebook: `high_salary_threshold`, `career_path_summary`; `05-implementation/descriptiva/P125_salarios/submission/high_salary_by_career.csv` | `technical_high_salary` (dónde están los técnicos del decil) se calcula pero no se persiste. |
+| H06 — Límite causal | S04, S05 | `05-implementation/descriptiva/P125_salarios/submission/analysis_conclusions.csv`; `05-implementation/descriptiva/P125_salarios/tests/test_activity.py`: `test_06` | La prueba busca una expresión, no evalúa la calidad del argumento. |
+| H07 — Agregados y no divulgación | S04, S05 | notebook: celda de guardado «sin exponer información individual»; `05-implementation/descriptiva/P125_salarios/submission/compensation_recommendations.csv`; `test_04` | No hay evaluación formal de riesgo de reidentificación. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -87,4 +87,4 @@ P125 cambia el producto respecto de P120–P124: además de describir, compara f
 
 ## Trazabilidad y auditoría
 
-P125 está mapeada a `descriptiva.C01`, `C02`, `C03`, `C04` y `C05` en `implementation/descriptiva/traceability.yaml`; la evidencia sostiene las cinco. C04 tiene aquí su única evidencia persistida y probada del rango P120–P125 (columna `límite` y `test_06`); C05 se apoya en productos sólo agregados y alternativas sin divulgación. El producto de Analytics es un diagnóstico de brechas internas con su frontera causal explícita; estadística descriptiva y pandas lo sirven. Tensiones a registrar: el notebook afirma que la brecha no prueba causa mientras el generador la produce por construcción, sin que el taller use ese contraste; y las alternativas de revisión rozan lo prescriptivo sin asumir sus exigencias.
+P125 está mapeada a `descriptiva.C01`, `C02`, `C03`, `C04` y `C05` en `05-implementation/descriptiva/traceability.yaml`; la evidencia sostiene las cinco. C04 tiene aquí su única evidencia persistida y probada del rango P120–P125 (columna `límite` y `test_06`); C05 se apoya en productos sólo agregados y alternativas sin divulgación. El producto de Analytics es un diagnóstico de brechas internas con su frontera causal explícita; estadística descriptiva y pandas lo sirven. Tensiones a registrar: el notebook afirma que la brecha no prueba causa mientras el generador la produce por construcción, sin que el taller use ese contraste; y las alternativas de revisión rozan lo prescriptivo sin asumir sus exigencias.

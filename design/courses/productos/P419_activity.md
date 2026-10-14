@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P419_random_seed/`.
+**Implementación:** `05-implementation/productos/P419_random_seed/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nuevo mecanismo sin relación con el indicador por fábrica salvo el vocabulario
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Semilla registrada | S02, S03, S04 | `implementation/productos/P419_random_seed/professor/main.py`: `select_sample`; `implementation/productos/P419_random_seed/submission/sample.json`; `implementation/productos/P419_random_seed/professor/test_main.py` | La prueba sólo compara dos llamadas con la misma semilla. |
-| H02 — Ausencia de caso | S01 | `implementation/productos/P419_random_seed/data/.gitkeep`; lista literal en `implementation/productos/P419_random_seed/professor/main.py` | No hay dato del cual inferir una particularidad. |
+| H01 — Semilla registrada | S02, S03, S04 | `05-implementation/productos/P419_random_seed/professor/main.py`: `select_sample`; `05-implementation/productos/P419_random_seed/submission/sample.json`; `05-implementation/productos/P419_random_seed/professor/test_main.py` | La prueba sólo compara dos llamadas con la misma semilla. |
+| H02 — Ausencia de caso | S01 | `05-implementation/productos/P419_random_seed/data/.gitkeep`; lista literal en `05-implementation/productos/P419_random_seed/professor/main.py` | No hay dato del cual inferir una particularidad. |
 
 ### Superficies de cambio para revisión posterior
 

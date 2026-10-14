@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/`.
+**Implementación:** `05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ La arquitectura ubica P321 como núcleo transversal de operación y monitoreo. E
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Recomendación frente a registro | S01, S02 | `implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/data/recommendation.csv`; `implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/professor/main.py`: `create_policy_register` | La mayor parte del registro es texto fijo en el código. |
-| H02 — Seguimiento con consecuencia | S02, S03 | `implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/submission/policy_register.csv` | No hay datos para evaluar el gatillo. |
-| H03 — Gobernanza verificada | S04 | `implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/tests/test_activity.py`: `test_02` | Verifica columnas, no valores. |
+| H01 — Recomendación frente a registro | S01, S02 | `05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/data/recommendation.csv`; `05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/professor/main.py`: `create_policy_register` | La mayor parte del registro es texto fijo en el código. |
+| H02 — Seguimiento con consecuencia | S02, S03 | `05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/submission/policy_register.csv` | No hay datos para evaluar el gatillo. |
+| H03 — Gobernanza verificada | S04 | `05-implementation/prescriptiva/P321_comunicacion_y_seguimiento_politicas/tests/test_activity.py`: `test_02` | Verifica columnas, no valores. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -73,4 +73,4 @@ La arquitectura ubica P321 como núcleo transversal de operación y monitoreo. E
 
 ## Trazabilidad y auditoría
 
-P321 está mapeada a `prescriptiva.C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C04 se sostiene en autoridad, modo de ejecución y salvaguarda declarados; C05 en indicador, meta, gatillo y acción de revisión, sin datos de seguimiento. Frente a la arquitectura («registro, indicadores y gatillos de revisión», núcleo transversal) el registro existe, pero no se conecta con una política producida en el curso ni se ejercita el monitoreo. El producto de Analytics es la documentación operativa de una política; no hay análisis que la sustente dentro del taller.
+P321 está mapeada a `prescriptiva.C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C04 se sostiene en autoridad, modo de ejecución y salvaguarda declarados; C05 en indicador, meta, gatillo y acción de revisión, sin datos de seguimiento. Frente a la arquitectura («registro, indicadores y gatillos de revisión», núcleo transversal) el registro existe, pero no se conecta con una política producida en el curso ni se ejercita el monitoreo. El producto de Analytics es la documentación operativa de una política; no hay análisis que la sustente dentro del taller.

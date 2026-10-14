@@ -64,7 +64,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P510_datacamp_valoraciones/
+Actividad: 05-implementation/data/P510_datacamp_valoraciones/
 
 0. Inspecciona primero professor/notebook.ipynb (celdas de carga, consulta y
    aserciones), data/datacamp_application.sql, submission/course_ratings.csv

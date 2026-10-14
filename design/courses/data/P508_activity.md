@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P508_scopus_sqlalchemy/`.
+**Implementación:** `05-implementation/data/P508_scopus_sqlalchemy/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma pregunta de concentración por fuente que P503/P505, con nuevo dato (perio
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Engine | S02 | `implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (celdas `create_engine`, `connect`, `dispose`) | Sólo SQLite. |
-| H02 — Parámetro de periodo (caso y datos) | S01, S02, S03 | `implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (consulta `recent_sources`); `implementation/data/P508_scopus_sqlalchemy/submission/recent_sources.csv`; contraste: `implementation/data/P505_scopus_sql_intermedio/submission/sources_by_documents.csv` | Contraste hecho en esta descripción, no en la actividad. |
-| H03 — Extracto verificado | S03 | `implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (celdas `to_sql` y reconsulta); `implementation/data/P508_scopus_sqlalchemy/submission/scopus_delivery.db` | Base binaria; contenido descrito desde el código. |
+| H01 — Engine | S02 | `05-implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (celdas `create_engine`, `connect`, `dispose`) | Sólo SQLite. |
+| H02 — Parámetro de periodo (caso y datos) | S01, S02, S03 | `05-implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (consulta `recent_sources`); `05-implementation/data/P508_scopus_sqlalchemy/submission/recent_sources.csv`; contraste: `05-implementation/data/P505_scopus_sql_intermedio/submission/sources_by_documents.csv` | Contraste hecho en esta descripción, no en la actividad. |
+| H03 — Extracto verificado | S03 | `05-implementation/data/P508_scopus_sqlalchemy/professor/notebook.ipynb` (celdas `to_sql` y reconsulta); `05-implementation/data/P508_scopus_sqlalchemy/submission/scopus_delivery.db` | Base binaria; contenido descrito desde el código. |
 
 ### Superficies de cambio para revisión posterior
 

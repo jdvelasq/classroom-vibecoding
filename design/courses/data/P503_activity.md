@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P503_scopus_relacional/`.
+**Implementación:** `05-implementation/data/P503_scopus_relacional/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,11 +52,11 @@ Nuevo caso, nuevo dato y nuevo método respecto a P500–P502: de un CSV plano d
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Procedencia de la consulta | S01 | `implementation/data/P503_scopus_relacional/data/search_string.txt`; `implementation/data/P503_scopus_relacional/professor/notebook.ipynb` (celda 1) | No hay manifiesto con fecha o licencia. |
-| H02 — Multivalor a muchos a muchos (caso y datos) | S01, S02 | `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas de `sources`, `document_authors`, `document_keywords` | El export es binario en el volcado; su estructura se infiere de las columnas usadas. |
-| H03 — Identidad y faltantes | S02 | `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: `fillna("Sin fuente identificada")`, `dropna(subset=["EID", "Title"])`, bucle de autores, `casefold` | No se cuantifican los registros afectados. |
-| H04 — Integridad referencial | S03 | `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas `CREATE TABLE` y carga; `implementation/data/P503_scopus_relacional/submission/scopus_proptech.db` | La base es binaria; se describe desde el DDL. |
-| H05 — Vistas como respuesta | S04, S05 | `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas `CREATE VIEW`; `implementation/data/P503_scopus_relacional/submission/documents_by_year.csv`, `authors_by_documents.csv`, `sources_by_documents.csv`, `questions.json` | Empates en el corte no examinados. |
+| H01 — Procedencia de la consulta | S01 | `05-implementation/data/P503_scopus_relacional/data/search_string.txt`; `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb` (celda 1) | No hay manifiesto con fecha o licencia. |
+| H02 — Multivalor a muchos a muchos (caso y datos) | S01, S02 | `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas de `sources`, `document_authors`, `document_keywords` | El export es binario en el volcado; su estructura se infiere de las columnas usadas. |
+| H03 — Identidad y faltantes | S02 | `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: `fillna("Sin fuente identificada")`, `dropna(subset=["EID", "Title"])`, bucle de autores, `casefold` | No se cuantifican los registros afectados. |
+| H04 — Integridad referencial | S03 | `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas `CREATE TABLE` y carga; `05-implementation/data/P503_scopus_relacional/submission/scopus_proptech.db` | La base es binaria; se describe desde el DDL. |
+| H05 — Vistas como respuesta | S04, S05 | `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb`: celdas `CREATE VIEW`; `05-implementation/data/P503_scopus_relacional/submission/documents_by_year.csv`, `authors_by_documents.csv`, `sources_by_documents.csv`, `questions.json` | Empates en el corte no examinados. |
 
 ### Superficies de cambio para revisión posterior
 

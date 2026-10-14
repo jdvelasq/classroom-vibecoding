@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P412_repro_environment/`.
+**Implementación:** `05-implementation/productos/P412_repro_environment/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,10 +46,10 @@ Misma pregunta y dato que P400 con nueva exigencia de evidencia (ambiente declar
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Ambiente | S02, S03 | `implementation/productos/P412_repro_environment/HOW_TO_RUN_ME.txt`; `implementation/productos/P412_repro_environment/requirements.txt` | Compatibilidad con el `requirements.txt` raíz no verificable aquí. |
-| H02 — Procedencia | S04, S05 | `implementation/productos/P412_repro_environment/professor/main.py`: `main`; `implementation/productos/P412_repro_environment/submission/environment_report.json` | Versiones del equipo que generó la evidencia. |
-| H03 — Regresión | S06 | `implementation/productos/P412_repro_environment/tests/test_environment_report.py`: `test_factory_totals` | Sobrescribe el reporte al ejecutarse. |
-| H04 — Indicador de referencia | S01, S04 | `implementation/productos/P412_repro_environment/data/daily_operations.csv`; `implementation/productos/P412_repro_environment/professor/main.py`: `summarize_by_factory` | Sin particularidad de datos. |
+| H01 — Ambiente | S02, S03 | `05-implementation/productos/P412_repro_environment/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P412_repro_environment/requirements.txt` | Compatibilidad con el `requirements.txt` raíz no verificable aquí. |
+| H02 — Procedencia | S04, S05 | `05-implementation/productos/P412_repro_environment/professor/main.py`: `main`; `05-implementation/productos/P412_repro_environment/submission/environment_report.json` | Versiones del equipo que generó la evidencia. |
+| H03 — Regresión | S06 | `05-implementation/productos/P412_repro_environment/tests/test_environment_report.py`: `test_factory_totals` | Sobrescribe el reporte al ejecutarse. |
+| H04 — Indicador de referencia | S01, S04 | `05-implementation/productos/P412_repro_environment/data/daily_operations.csv`; `05-implementation/productos/P412_repro_environment/professor/main.py`: `summarize_by_factory` | Sin particularidad de datos. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P417_pipeline_integration_test/`.
+**Implementación:** `05-implementation/productos/P417_pipeline_integration_test/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Misma pregunta y dato que P400 y P412–P414. Las pruebas `tests/test_report.py`
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Artefacto publicado | S02, S03 | `implementation/productos/P417_pipeline_integration_test/professor/main.py`: `run_pipeline`; `implementation/productos/P417_pipeline_integration_test/professor/test_main.py` | La prueba escribe en `submission/` real, no en un directorio temporal. |
-| H02 — Caso trivial | S01 | `implementation/productos/P417_pipeline_integration_test/data/daily_operations.csv`; `implementation/productos/P417_pipeline_integration_test/submission/factory_totals.json` | No hay componentes que integrar. |
+| H01 — Artefacto publicado | S02, S03 | `05-implementation/productos/P417_pipeline_integration_test/professor/main.py`: `run_pipeline`; `05-implementation/productos/P417_pipeline_integration_test/professor/test_main.py` | La prueba escribe en `submission/` real, no en un directorio temporal. |
+| H02 — Caso trivial | S01 | `05-implementation/productos/P417_pipeline_integration_test/data/daily_operations.csv`; `05-implementation/productos/P417_pipeline_integration_test/submission/factory_totals.json` | No hay componentes que integrar. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -66,7 +66,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P153_ventas_kpis/
+Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales_mart.db (tablas
    y columnas de fact_sales y dim_date), submission/ y tests/. Verifica que
@@ -189,7 +189,7 @@ Actividad: implementation/descriptiva/P153_ventas_kpis/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P153_ventas_kpis/
+Actividad: 05-implementation/descriptiva/P153_ventas_kpis/
 
 0. Inspecciona primero professor/notebook.ipynb (kpi_catalog), data/
    sales_mart.db, submission/kpi_catalog.csv y tests/. Si el catálogo ya

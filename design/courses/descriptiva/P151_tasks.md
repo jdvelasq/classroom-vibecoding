@@ -56,7 +56,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P151_ventas_mart/
+Actividad: 05-implementation/descriptiva/P151_ventas_mart/
 
 0. Inspecciona primero professor/notebook.ipynb, professor/generate_data.py,
    data/, submission/ y tests/. Si dim_date ya es un calendario continuo, o

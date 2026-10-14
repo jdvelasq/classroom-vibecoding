@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P315_wildfire_resource_positioning/`.
+**Implementación:** `05-implementation/prescriptiva/P315_wildfire_resource_positioning/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,11 +49,11 @@ Misma técnica con nuevo caso: comparte con P305 y P308 la plantilla heurística
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Objetivo de tiempo esperado | S01, S02 | `implementation/prescriptiva/P315_wildfire_resource_positioning/data/risk_zones.csv`; `implementation/prescriptiva/P315_wildfire_resource_positioning/data/candidate_bases.csv`; `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/zone_assignments.csv` | Geografía ficticia; velocidad constante. |
-| H02 — Heurísticas vs. óptimo | S03 | `implementation/prescriptiva/P315_wildfire_resource_positioning/professor/notebook.ipynb`: `risk_first_bases`, centralidad, `partner_comparison` | `strategy_comparison` no se persiste. |
-| H03 — Modelo de localización | S02 | notebook: bloque `MODEL`, PuLP/HiGHS, `assert` de coincidencia; `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/deployment_decisions.csv` | Óptimo único verificado en notebook. |
-| H04 — Conjuntos no anidados | S03 | `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/resource_sensitivity.csv` | Riesgo fijo en las tres corridas. |
-| H05 — Reasignación y monitoreo | S04, S05 | `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/reassignment_rules.csv`; `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/policy_monitoring.csv`; `implementation/prescriptiva/P315_wildfire_resource_positioning/submission/deployment_policy.json`; `implementation/prescriptiva/P315_wildfire_resource_positioning/tests/test_activity.py` | Ninguna reasignación se calcula ni se simula; umbrales 40/60 no derivados. |
+| H01 — Objetivo de tiempo esperado | S01, S02 | `05-implementation/prescriptiva/P315_wildfire_resource_positioning/data/risk_zones.csv`; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/data/candidate_bases.csv`; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/zone_assignments.csv` | Geografía ficticia; velocidad constante. |
+| H02 — Heurísticas vs. óptimo | S03 | `05-implementation/prescriptiva/P315_wildfire_resource_positioning/professor/notebook.ipynb`: `risk_first_bases`, centralidad, `partner_comparison` | `strategy_comparison` no se persiste. |
+| H03 — Modelo de localización | S02 | notebook: bloque `MODEL`, PuLP/HiGHS, `assert` de coincidencia; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/deployment_decisions.csv` | Óptimo único verificado en notebook. |
+| H04 — Conjuntos no anidados | S03 | `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/resource_sensitivity.csv` | Riesgo fijo en las tres corridas. |
+| H05 — Reasignación y monitoreo | S04, S05 | `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/reassignment_rules.csv`; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/policy_monitoring.csv`; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/submission/deployment_policy.json`; `05-implementation/prescriptiva/P315_wildfire_resource_positioning/tests/test_activity.py` | Ninguna reasignación se calcula ni se simula; umbrales 40/60 no derivados. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -79,4 +79,4 @@ Misma técnica con nuevo caso: comparte con P305 y P308 la plantilla heurística
 
 ## Trazabilidad y auditoría
 
-P315 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C02 (bases y asignación desde riesgo y geografía) y C04 (autoridad por etapa, salvaguarda de cobertura) se sostienen; C03 sólo por sensibilidad al número de bases, sin incertidumbre ni escenarios; C05 por monitoreo con umbrales sobre salidas del modelo. Coincide con «política de ubicación y reasignación de recursos». El producto de Analytics es una política de posicionamiento con reglas de reasignación gobernadas; la optimización contribuye. Límites: la reasignación se declara pero no se ejercita y el monitoreo no usa resultados observados.
+P315 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C02 (bases y asignación desde riesgo y geografía) y C04 (autoridad por etapa, salvaguarda de cobertura) se sostienen; C03 sólo por sensibilidad al número de bases, sin incertidumbre ni escenarios; C05 por monitoreo con umbrales sobre salidas del modelo. Coincide con «política de ubicación y reasignación de recursos». El producto de Analytics es una política de posicionamiento con reglas de reasignación gobernadas; la optimización contribuye. Límites: la reasignación se declara pero no se ejercita y el monitoreo no usa resultados observados.

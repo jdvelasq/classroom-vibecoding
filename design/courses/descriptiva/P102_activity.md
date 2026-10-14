@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P102_csv2json/`.
+**Implementación:** `05-implementation/descriptiva/P102_csv2json/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,10 +46,10 @@ Cambia de dato (texto libre → tabla de conductores) y de exigencia: por primer
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Validación de estructura | S02, S05 | `implementation/descriptiva/P102_csv2json/professor/main.py`: `read_csv_records`, `validate_required_columns` | No hay prueba con un CSV inválido. |
-| H02 — Minimización de campos sensibles | S01, S03, S05 | `implementation/descriptiva/P102_csv2json/data/drivers.csv`; `implementation/descriptiva/P102_csv2json/professor/main.py`: `SENSITIVE_COLUMNS`, `make_safe_records`; `implementation/descriptiva/P102_csv2json/tests/test_activity.py` | No demuestra anonimización; el nombre sigue siendo identificador directo. |
-| H03 — Tabla a registros JSON | S04 | `implementation/descriptiva/P102_csv2json/professor/main.py`: `write_json_records`; `implementation/descriptiva/P102_csv2json/submission/drivers.json` | Todos los valores quedan como texto. |
-| H04 — Composición en funciones | S02, S06 | `implementation/descriptiva/P102_csv2json/professor/main.py`: `convert_csv_to_json`, `main`; `implementation/descriptiva/P102_csv2json/src/main.py` | Las pruebas no examinan funciones individuales. |
+| H01 — Validación de estructura | S02, S05 | `05-implementation/descriptiva/P102_csv2json/professor/main.py`: `read_csv_records`, `validate_required_columns` | No hay prueba con un CSV inválido. |
+| H02 — Minimización de campos sensibles | S01, S03, S05 | `05-implementation/descriptiva/P102_csv2json/data/drivers.csv`; `05-implementation/descriptiva/P102_csv2json/professor/main.py`: `SENSITIVE_COLUMNS`, `make_safe_records`; `05-implementation/descriptiva/P102_csv2json/tests/test_activity.py` | No demuestra anonimización; el nombre sigue siendo identificador directo. |
+| H03 — Tabla a registros JSON | S04 | `05-implementation/descriptiva/P102_csv2json/professor/main.py`: `write_json_records`; `05-implementation/descriptiva/P102_csv2json/submission/drivers.json` | Todos los valores quedan como texto. |
+| H04 — Composición en funciones | S02, S06 | `05-implementation/descriptiva/P102_csv2json/professor/main.py`: `convert_csv_to_json`, `main`; `05-implementation/descriptiva/P102_csv2json/src/main.py` | Las pruebas no examinan funciones individuales. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -76,4 +76,4 @@ Cambia de dato (texto libre → tabla de conductores) y de exigencia: por primer
 
 ## Trazabilidad y auditoría
 
-P102 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. C05 tiene respaldo parcial: la minimización es una práctica de manejo responsable de datos, aunque no hay comunicación para usuarios. C02 tiene respaldo débil: la validación de encabezados es control de calidad estructural, no exploración de distribuciones ni de calidad de valores. El producto es una capacidad de datos al servicio de análisis posteriores; la actividad no responde la pregunta descriptiva del curso y su contenido dominante es de ingeniería de datos.
+P102 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. C05 tiene respaldo parcial: la minimización es una práctica de manejo responsable de datos, aunque no hay comunicación para usuarios. C02 tiene respaldo débil: la validación de encabezados es control de calidad estructural, no exploración de distribuciones ni de calidad de valores. El producto es una capacidad de datos al servicio de análisis posteriores; la actividad no responde la pregunta descriptiva del curso y su contenido dominante es de ingeniería de datos.

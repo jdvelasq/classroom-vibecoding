@@ -11,7 +11,7 @@
 ## S02.P508.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P508_scopus_sqlalchemy/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `implementation/data/P505_scopus_sql_intermedio/submission/sources_by_documents.csv` y con el manifiesto de P501.
+- **Rutas inspeccionadas:** `05-implementation/data/P508_scopus_sqlalchemy/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `05-implementation/data/P505_scopus_sql_intermedio/submission/sources_by_documents.csv` y con el manifiesto de P501.
 - **Trazabilidad revisada:** P508 → `data.C01`, `data.C02`, `data.C04`, `data.C05`; C01 y C04 débiles.
 - **Preservado:** pregunta, entregables CSV y base de entrega, transición de consulta a artefacto de consumo.
 - **Corregido:** la descripción previa dejaba sin confirmar el uso de SQLAlchemy; el notebook usa `create_engine`, `text()`, parámetros nombrados, conexiones con `with` y `dispose()`. Pruebas: sólo existencia.

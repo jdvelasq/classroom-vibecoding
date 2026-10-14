@@ -66,8 +66,8 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P441_data_quarantine/
-Insumo: implementation/productos/P402_data_testing_pytest_pandas/
+Actividad: 05-implementation/productos/P441_data_quarantine/
+Insumo: 05-implementation/productos/P402_data_testing_pytest_pandas/
         data/machine_throughput_export.csv y professor/ o main.py de P402
         (sólo lectura, para tomar las reglas del contrato)
 

@@ -64,7 +64,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P123_scopus/
+Actividad: 05-implementation/descriptiva/P123_scopus/
 
 0. Inspecciona primero data/ (scopus.csv.gz, search_string.txt),
    professor/main.py, professor/s01_*.py, professor/s02_*.py, submission/ y
@@ -168,7 +168,7 @@ Actividad: implementation/descriptiva/P123_scopus/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P123_scopus/
+Actividad: 05-implementation/descriptiva/P123_scopus/
 
 0. Inspecciona primero professor/main.py, professor/s14_*.py a
    professor/s20_*.py, submission/keywords_cooc_matrix.csv,

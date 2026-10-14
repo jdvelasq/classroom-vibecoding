@@ -100,7 +100,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P424_model_rollback/
+Actividad: 05-implementation/productos/P424_model_rollback/
 
 0. Inspecciona primero REGISTRY.json, MODEL_V1.pkl y MODEL_V2.pkl,
    professor/main.py (rollback), professor/test_main.py, src/main.py,
@@ -111,7 +111,7 @@ Actividad: implementation/productos/P424_model_rollback/
    artefactos iguales no demuestra nada); la alternativa de usar corridas de
    P420 requiere decisión del profesor.
 1. ALERTA: inspecciona, sólo para leer,
-   implementation/productos/P423_model_performance_monitoring/submission/
+   05-implementation/productos/P423_model_performance_monitoring/submission/
    performance_report.json. Determina el campo disparador según lo que
    exista: action == "revertir" (P423 T02), si no verdict == "incumple"
    (P423 T01), si no alert == true. Si el reporte no autoriza la reversión

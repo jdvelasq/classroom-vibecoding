@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P500_superstore_metricas/`.
+**Implementación:** `05-implementation/data/P500_superstore_metricas/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,10 +49,10 @@ Primera actividad `P5xx` del curso; no hay comparación previa dentro del curso.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Convención regional | S01, S02, S04 | `implementation/data/P500_superstore_metricas/professor/main.py`: `load_sales`, `build_contract`; `implementation/data/P500_superstore_metricas/submission/metric_contract.json`; contraste: `implementation/data/P501_superstore_serving/submission/sales_detail.csv`, `implementation/data/P513_superstore_batch/` (`utf-8-sig`) | El defecto de codificación se infiere del prefijo BOM y de la salida de P501; las métricas numéricas no se ven afectadas. |
-| H02 — Grano línea-de-orden | S01, S03, S05 | `implementation/data/P500_superstore_metricas/professor/main.py`: `build_monthly_metrics`, aserción `duplicated`; `implementation/data/P500_superstore_metricas/submission/metric_contract.json` (`grain`) | Unicidad de `Row ID` sólo afirmada. |
-| H03 — Métricas independientes de herramienta | S04 | `implementation/data/P500_superstore_metricas/submission/metric_contract.json` (`metrics`, `tool_boundary`) | La frontera es una declaración, no una segunda implementación. |
-| H04 — Compuerta de calidad | S03, S04 | `implementation/data/P500_superstore_metricas/professor/main.py`: `main` | Los 16 faltantes son texto fijo; no hay prueba que ejecute los controles. |
+| H01 — Convención regional | S01, S02, S04 | `05-implementation/data/P500_superstore_metricas/professor/main.py`: `load_sales`, `build_contract`; `05-implementation/data/P500_superstore_metricas/submission/metric_contract.json`; contraste: `05-implementation/data/P501_superstore_serving/submission/sales_detail.csv`, `05-implementation/data/P513_superstore_batch/` (`utf-8-sig`) | El defecto de codificación se infiere del prefijo BOM y de la salida de P501; las métricas numéricas no se ven afectadas. |
+| H02 — Grano línea-de-orden | S01, S03, S05 | `05-implementation/data/P500_superstore_metricas/professor/main.py`: `build_monthly_metrics`, aserción `duplicated`; `05-implementation/data/P500_superstore_metricas/submission/metric_contract.json` (`grain`) | Unicidad de `Row ID` sólo afirmada. |
+| H03 — Métricas independientes de herramienta | S04 | `05-implementation/data/P500_superstore_metricas/submission/metric_contract.json` (`metrics`, `tool_boundary`) | La frontera es una declaración, no una segunda implementación. |
+| H04 — Compuerta de calidad | S03, S04 | `05-implementation/data/P500_superstore_metricas/professor/main.py`: `main` | Los 16 faltantes son texto fijo; no hay prueba que ejecute los controles. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P438_backfill/`.
+**Implementación:** `05-implementation/productos/P438_backfill/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Secuencia temática P436 (incremental) → P437 (tardío) → P438 (rango de rep
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Rango inclusivo | S02, S04 | `implementation/productos/P438_backfill/professor/main.py`: `select_backfill`; `implementation/productos/P438_backfill/professor/test_main.py` | Sin reproceso efectivo. |
-| H02 — Alcance registrado | S01, S03 | `implementation/productos/P438_backfill/data/events.json`; `implementation/productos/P438_backfill/submission/backfill_selection.json` | Eventos sin contenido. |
+| H01 — Rango inclusivo | S02, S04 | `05-implementation/productos/P438_backfill/professor/main.py`: `select_backfill`; `05-implementation/productos/P438_backfill/professor/test_main.py` | Sin reproceso efectivo. |
+| H02 — Alcance registrado | S01, S03 | `05-implementation/productos/P438_backfill/data/events.json`; `05-implementation/productos/P438_backfill/submission/backfill_selection.json` | Eventos sin contenido. |
 
 ### Superficies de cambio para revisión posterior
 

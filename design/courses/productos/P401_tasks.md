@@ -62,7 +62,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P401_code_testing_pytest/
+Actividad: 05-implementation/productos/P401_code_testing_pytest/
 
 0. Inspecciona primero data/drivers.csv, data/timesheet.csv,
    professor/main.py, professor/test_main.py, src/main.py,

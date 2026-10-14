@@ -11,7 +11,7 @@
 ## S02.P507.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P507_scopus_sql_analitico/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); normalización de palabras clave en `implementation/data/P503_scopus_relacional/professor/notebook.ipynb`.
+- **Rutas inspeccionadas:** `05-implementation/data/P507_scopus_sql_analitico/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); normalización de palabras clave en `05-implementation/data/P503_scopus_relacional/professor/notebook.ipynb`.
 - **Trazabilidad revisada:** P507 → `data.C01`, `data.C02`, `data.C03`, `data.C05`; C03 sin evidencia.
 - **Preservado:** pregunta, entregable, combinación de condición temporal con conteo por año y palabra clave.
 - **Completado:** se confirmó la consulta pendiente (dos CTE y `ROW_NUMBER` particionado por año, top 10); pruebas sólo de existencia; notebook del estudiante sin celdas.

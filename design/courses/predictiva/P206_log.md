@@ -34,7 +34,7 @@
   `HistGradientBoostingRegressor` no expone `feature_importances_`. Se deja
   explícito en el notebook y en H04–H05 para no sugerir que el modelo con
   mejor MSE es también el que se interpreta.
-- **Implementación:** `implementation/predictiva/P206_arboles_y_ensambles/`
+- **Implementación:** `05-implementation/predictiva/P206_arboles_y_ensambles/`
   — notebook del profesor, `data/auto_mpg.csv` (copia propia, mismo origen
   que P200), `submission/` (`decision_tree.pkl`, `random_forest.pkl`,
   `gradient_boosting.pkl`, `model_comparison.csv`, `feature_importances.csv`,
@@ -42,7 +42,7 @@
   `tests/test_activity.py` (4 pruebas). Notebook y pruebas se ejecutaron sin
   errores.
 - **Trazabilidad:** se añadió la entrada `P206` (`predictiva.C01`–`C04`) en
-  `implementation/predictiva/traceability.yaml`, igual que P200 y P204.
+  `05-implementation/predictiva/traceability.yaml`, igual que P200 y P204.
 - **Auditoría de Analytics:** el producto es una comparación predictiva
   evaluada frente a P200, no un recorrido por algoritmos de ML; árboles,
   bagging y boosting sirven a esa comparación. Ningún resultado de

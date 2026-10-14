@@ -8,9 +8,9 @@
 ## S01.P203.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P203_clasificacion_basica_texto/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P203_clasificacion_basica_texto/`
   (notebook de profesor, métricas, modelo, vectorizador y pruebas) y P203 en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se aplicó el contrato actual de S01: se documentaron highlights
   para vectorizador ajustado en entrenamiento, clasificación textual multiclase,
   evaluación sensible a clases y revisión persistida por frase.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P106_limpieza_pandas/`.
+**Implementación:** `05-implementation/descriptiva/P106_limpieza_pandas/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,11 +49,11 @@ Nuevo dato (compras a proveedores) y nueva exigencia: reparar valores, no sólo 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Función por tipo de suciedad | S01, S02 | `implementation/descriptiva/P106_limpieza_pandas/data/ventas.csv`; `implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `main` y funciones `clean_*` | Sólo se observa la cabecera del archivo en el digest; la variedad completa de defectos se infiere de las reglas. |
-| H02 — Canonización con diagnóstico | S02, S03 | `implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: diccionarios `*_REPLACEMENTS`; `implementation/descriptiva/P106_limpieza_pandas/professor/diagnostics.py` | Diagnóstico manual del profesor; sin prueba. |
-| H03 — Fechas y desambiguación | S02, S05 | `implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `clean_purchase_date_format`, `yyyy_dd_mm_2_yyyy_mm_dd`; `implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | La prueba verifica patrón, no fecha válida ni orden día/mes. |
-| H04 — Unidades y escalas | S02, S04 | `implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `clean_weight`, `clean_discount`, `clean_amount`, `clean_unit_price`; `implementation/descriptiva/P106_limpieza_pandas/submission/ventas.csv` (p. ej., `50000 g` → `50.0`; `20%` → `0.2`) | Supuesto de kilogramos para pesos sin unidad. |
-| H05 — Invariantes de dominio | S05 | `implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | Aserciones parciales. |
+| H01 — Función por tipo de suciedad | S01, S02 | `05-implementation/descriptiva/P106_limpieza_pandas/data/ventas.csv`; `05-implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `main` y funciones `clean_*` | Sólo se observa la cabecera del archivo en el digest; la variedad completa de defectos se infiere de las reglas. |
+| H02 — Canonización con diagnóstico | S02, S03 | `05-implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: diccionarios `*_REPLACEMENTS`; `05-implementation/descriptiva/P106_limpieza_pandas/professor/diagnostics.py` | Diagnóstico manual del profesor; sin prueba. |
+| H03 — Fechas y desambiguación | S02, S05 | `05-implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `clean_purchase_date_format`, `yyyy_dd_mm_2_yyyy_mm_dd`; `05-implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | La prueba verifica patrón, no fecha válida ni orden día/mes. |
+| H04 — Unidades y escalas | S02, S04 | `05-implementation/descriptiva/P106_limpieza_pandas/professor/main.py`: `clean_weight`, `clean_discount`, `clean_amount`, `clean_unit_price`; `05-implementation/descriptiva/P106_limpieza_pandas/submission/ventas.csv` (p. ej., `50000 g` → `50.0`; `20%` → `0.2`) | Supuesto de kilogramos para pesos sin unidad. |
+| H05 — Invariantes de dominio | S05 | `05-implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | Aserciones parciales. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -80,4 +80,4 @@ Nuevo dato (compras a proveedores) y nueva exigencia: reparar valores, no sólo 
 
 ## Trazabilidad y auditoría
 
-P106 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. C02 tiene respaldo en la dimensión de calidad de datos (diagnóstico y corrección de variantes, formatos y unidades), aunque sin exploración posterior. C05 tiene respaldo débil: el código documenta las reglas en diccionarios explícitos, pero no hay comunicación ni registro de decisiones para usuarios. El producto es una capacidad de datos que habilita descripción; aislada, la actividad corresponde a preparación de datos (disciplina contribuyente) y no responde la pregunta descriptiva del curso.
+P106 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. C02 tiene respaldo en la dimensión de calidad de datos (diagnóstico y corrección de variantes, formatos y unidades), aunque sin exploración posterior. C05 tiene respaldo débil: el código documenta las reglas en diccionarios explícitos, pero no hay comunicación ni registro de decisiones para usuarios. El producto es una capacidad de datos que habilita descripción; aislada, la actividad corresponde a preparación de datos (disciplina contribuyente) y no responde la pregunta descriptiva del curso.

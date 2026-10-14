@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P514_superstore_etl/`.
+**Implementación:** `05-implementation/data/P514_superstore_etl/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma técnica de integración y mismos datos que P511, con nueva forma de organ
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Etapas ETL | S02, S03 | `implementation/data/P514_superstore_etl/professor/main.py`; `implementation/data/P514_superstore_etl/submission/superstore_enriched_sales.csv`; `implementation/data/P511_superstore_integracion/professor/notebook.ipynb` | Directorios de etapa en `temp/`, no entregados. |
-| H02 — Filas por etapa | S01, S03, S04 | `implementation/data/P514_superstore_etl/submission/pipeline_report.csv`; `implementation/data/P514_superstore_etl/data/source_manifest.json`; `implementation/data/P514_superstore_etl/professor/main.py` (`publish`) | La no comparabilidad de granos no está declarada en la actividad. |
+| H01 — Etapas ETL | S02, S03 | `05-implementation/data/P514_superstore_etl/professor/main.py`; `05-implementation/data/P514_superstore_etl/submission/superstore_enriched_sales.csv`; `05-implementation/data/P511_superstore_integracion/professor/notebook.ipynb` | Directorios de etapa en `temp/`, no entregados. |
+| H02 — Filas por etapa | S01, S03, S04 | `05-implementation/data/P514_superstore_etl/submission/pipeline_report.csv`; `05-implementation/data/P514_superstore_etl/data/source_manifest.json`; `05-implementation/data/P514_superstore_etl/professor/main.py` (`publish`) | La no comparabilidad de granos no está declarada en la actividad. |
 
 ### Superficies de cambio para revisión posterior
 

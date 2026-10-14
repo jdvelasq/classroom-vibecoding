@@ -62,7 +62,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P120_retail_sales/
+Actividad: 05-implementation/descriptiva/P120_retail_sales/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales.csv,
    submission/questions.json, submission/*.csv y tests/. Si la
@@ -161,7 +161,7 @@ Actividad: implementation/descriptiva/P120_retail_sales/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P120_retail_sales/
+Actividad: 05-implementation/descriptiva/P120_retail_sales/
 
 0. Inspecciona primero professor/notebook.ipynb, submission/questions.json,
    submission/*.csv y tests/. Si la implementación no coincide con
@@ -273,7 +273,7 @@ Actividad: implementation/descriptiva/P120_retail_sales/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P120_retail_sales/
+Actividad: 05-implementation/descriptiva/P120_retail_sales/
 
 0. Inspecciona primero professor/notebook.ipynb, data/sales.csv,
    submission/kpi_summary.csv, return_risk.csv, payment_summary.csv,

@@ -26,7 +26,7 @@ S03 responde, para un documento y un curso:
 > que el estudiante aprende en algún taller, sin regresión de lo que ya
 > funciona?
 
-S03 sólo **propone**. No modifica `implementation/`, `Pxxx_activity.md` ni
+S03 sólo **propone**. No modifica `05-implementation/`, `Pxxx_activity.md` ni
 `traceability.yaml`. Sus propuestas quedan pendientes de discusión y nada se
 ejecuta sin aprobación explícita. «Ninguna propuesta» es un resultado válido y
 frecuente.
@@ -44,7 +44,7 @@ Lee y cumple `AGENTS.md`. Lee sustantivamente:
 - `design/courses/<curso>/course_tasks.md` si existe; y
 - `design/courses/<curso>/course_log.md` sólo si existe, para contexto.
 
-No lees `implementation/`: S02 es la lectura auditable de la implementación.
+No lees `05-implementation/`: S02 es la lectura auditable de la implementación.
 Tampoco lees otros documentos de benchmarks, `benchmark_reviews/` históricos,
 `design/synthesis/` ni la web.
 
@@ -185,7 +185,7 @@ Estado actual, no historial. Se crea al primer cambio propuesto y queda vacío
 Prompt autocontenido para S04, ejecutable por cualquier herramienta. Indica
 las rutas a inspeccionar y modificar (tomadas de las `SNN`), los pasos, qué no
 debe tocarse, qué pruebas o artefactos añadir o actualizar y cómo comprobar
-el criterio de aceptación. Como S03 no lee `implementation/`, las
+el criterio de aceptación. Como S03 no lee `05-implementation/`, las
 instrucciones exigen que S04 inspeccione primero las rutas y se detenga si la
 implementación contradice la descripción.
 ````

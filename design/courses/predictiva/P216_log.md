@@ -30,7 +30,7 @@
   contrato de evidencia actual; se actualizó el límite de H03 (ya no
   declara ausencia de evaluación retenida) y «Producto terminal».
 - **Implementación:**
-  `implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
+  `05-implementation/predictiva/P215_filtrado_colaborativo/` — notebook del
   profesor (holdout, recálculo con entrenamiento, predicción generalizada
   por usuario, cobertura/MAE/RMSE, comentario con la lectura) y
   `submission/holdout_evaluation.csv`, y `tests/test_activity.py`
@@ -38,7 +38,7 @@
   cambio de esquema; notebook y pruebas se ejecutaron sin errores (el
   notebook tarda ~4 minutos por el bucle sobre los usuarios retenidos).
 - **Trazabilidad:** sigue sin existir entrada P216 en
-  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a
+  `05-implementation/predictiva/traceability.yaml`; esa brecha es anterior a
   T01 y queda fuera de su alcance (ya registrada en S02 como pendiente de
   revisión).
 - **`P215_tasks.md`:** eliminado tras incorporar su única propuesta (T01).

@@ -13,7 +13,7 @@ Es el tercer eslabón del puente entre lo que el egresado debe saber y lo
 que los cursos enseñan: los resultados de aprendizaje de
 `03-learning-outcomes/` dicen qué se demuestra al terminar el programa;
 este directorio dice en qué curso se introduce, se desarrolla y se domina
-cada uno. El syllabus de cada curso, en `05-syllabus/<carpeta>/`, deriva de
+cada uno. El syllabus de cada curso, en `05-implementation/<carpeta>/`, deriva de
 aquí sus contenidos y su evaluación.
 
 ## Fundamento normativo

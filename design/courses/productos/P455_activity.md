@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P455_data_retention/`.
+**Implementación:** `05-implementation/productos/P455_data_retention/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Misma familia de selección por fecha que P436 (marca de agua) y P438 (reproceso
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Corte reproducible | S01, S02, S03 | `implementation/productos/P455_data_retention/data/events.json`; `implementation/productos/P455_data_retention/professor/main.py`: `apply_retention_policy`; `implementation/productos/P455_data_retention/submission/retention_result.json` | Eventos sin significado declarado. |
-| H02 — Borde del corte | S04 | `implementation/productos/P455_data_retention/professor/test_main.py`; `implementation/productos/P455_data_retention/tests/test_activity.py` | Verifica la regla, no la persistencia. |
+| H01 — Corte reproducible | S01, S02, S03 | `05-implementation/productos/P455_data_retention/data/events.json`; `05-implementation/productos/P455_data_retention/professor/main.py`: `apply_retention_policy`; `05-implementation/productos/P455_data_retention/submission/retention_result.json` | Eventos sin significado declarado. |
+| H02 — Borde del corte | S04 | `05-implementation/productos/P455_data_retention/professor/test_main.py`; `05-implementation/productos/P455_data_retention/tests/test_activity.py` | Verifica la regla, no la persistencia. |
 
 ### Superficies de cambio para revisión posterior
 

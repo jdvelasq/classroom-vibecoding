@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P225_estructura_mercado/`.
+**Implementación:** `05-implementation/predictiva/P225_estructura_mercado/`.
 
 ### Preguntas analíticas actuales
 
@@ -119,7 +119,7 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe entrada P226 en `implementation/predictiva/traceability.yaml`. El
+No existe entrada P226 en `05-implementation/predictiva/traceability.yaml`. El
 producto es una explicación gráfica de estructura de mercado; estadística,
 clustering y visualización lo sirven, pero no lo convierten en predicción ni en
 asesoría financiera.

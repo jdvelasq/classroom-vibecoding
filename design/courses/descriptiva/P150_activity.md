@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P150_ventas_tabla/`.
+**Implementación:** `05-implementation/descriptiva/P150_ventas_tabla/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,10 +48,10 @@ Misma familia de pregunta que P120 (ventas por categoría y mes) con nueva exige
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Medida que exige integración | S01, S02 | `implementation/descriptiva/P150_ventas_tabla/data/order_lines.csv`; `implementation/descriptiva/P150_ventas_tabla/data/products.csv`; `implementation/descriptiva/P150_ventas_tabla/data/customers.csv`; `implementation/descriptiva/P150_ventas_tabla/professor/generate_data.py` | Fuentes sintéticas generadas; no representan un sistema operativo real. |
-| H02 — Grano protegido | S02, S05 | `implementation/descriptiva/P150_ventas_tabla/professor/notebook.ipynb`: celdas de carga, `merge` y `assert`; `implementation/descriptiva/P150_ventas_tabla/tests/test_activity.py`: `test_02` | Las fuentes son íntegras por construcción; no se ejercita un caso de clave faltante o duplicada. |
-| H03 — Descomposición del importe | S03, S05 | `implementation/descriptiva/P150_ventas_tabla/professor/notebook.ipynb`; `implementation/descriptiva/P150_ventas_tabla/tests/test_activity.py`: `test_03` | El descuento es un porcentaje sorteado; no admite análisis de política comercial. |
-| H04 — Tabla y respuesta persistidas | S04, S01 | `implementation/descriptiva/P150_ventas_tabla/submission/sales_analytics.csv`; `implementation/descriptiva/P150_ventas_tabla/submission/monthly_category_sales.csv`; `implementation/descriptiva/P150_ventas_tabla/submission/questions.json`; notebook: gráfico de líneas | No hay interpretación escrita; la variación mensual es artefacto del generador. |
+| H01 — Medida que exige integración | S01, S02 | `05-implementation/descriptiva/P150_ventas_tabla/data/order_lines.csv`; `05-implementation/descriptiva/P150_ventas_tabla/data/products.csv`; `05-implementation/descriptiva/P150_ventas_tabla/data/customers.csv`; `05-implementation/descriptiva/P150_ventas_tabla/professor/generate_data.py` | Fuentes sintéticas generadas; no representan un sistema operativo real. |
+| H02 — Grano protegido | S02, S05 | `05-implementation/descriptiva/P150_ventas_tabla/professor/notebook.ipynb`: celdas de carga, `merge` y `assert`; `05-implementation/descriptiva/P150_ventas_tabla/tests/test_activity.py`: `test_02` | Las fuentes son íntegras por construcción; no se ejercita un caso de clave faltante o duplicada. |
+| H03 — Descomposición del importe | S03, S05 | `05-implementation/descriptiva/P150_ventas_tabla/professor/notebook.ipynb`; `05-implementation/descriptiva/P150_ventas_tabla/tests/test_activity.py`: `test_03` | El descuento es un porcentaje sorteado; no admite análisis de política comercial. |
+| H04 — Tabla y respuesta persistidas | S04, S01 | `05-implementation/descriptiva/P150_ventas_tabla/submission/sales_analytics.csv`; `05-implementation/descriptiva/P150_ventas_tabla/submission/monthly_category_sales.csv`; `05-implementation/descriptiva/P150_ventas_tabla/submission/questions.json`; notebook: gráfico de líneas | No hay interpretación escrita; la variación mensual es artefacto del generador. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -78,4 +78,4 @@ Misma familia de pregunta que P120 (ventas por categoría y mes) con nueva exige
 
 ## Trazabilidad y auditoría
 
-P150 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml`; `audit-against-design.md` sólo le asigna C02, C03 y C05, discrepancia que no se resuelve aquí. C02 (calidad e integración antes de concluir) y C03 (serie visual) están evidenciadas; C01 se limita a una pregunta sin contexto de decisión; C05 se apoya en artefactos persistidos sin comunicación escrita. El producto es una tabla descriptiva integrada. La integración de fuentes abre la secuencia de *business intelligence* P150–P154; BI forma parte de la analítica descriptiva del curso (la frontera excluye la capacitación en una plataforma BI, no BI como tal). El límite observable no es la pertenencia a BI, sino que no hay usuario ni lectura persistida de la serie.
+P150 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `05-implementation/descriptiva/traceability.yaml`; `audit-against-design.md` sólo le asigna C02, C03 y C05, discrepancia que no se resuelve aquí. C02 (calidad e integración antes de concluir) y C03 (serie visual) están evidenciadas; C01 se limita a una pregunta sin contexto de decisión; C05 se apoya en artefactos persistidos sin comunicación escrita. El producto es una tabla descriptiva integrada. La integración de fuentes abre la secuencia de *business intelligence* P150–P154; BI forma parte de la analítica descriptiva del curso (la frontera excluye la capacitación en una plataforma BI, no BI como tal). El límite observable no es la pertenencia a BI, sino que no hay usuario ni lectura persistida de la serie.

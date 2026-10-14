@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/`.
+**Implementación:** `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ La arquitectura ubica P320 como salvaguarda transversal. La implementación no a
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Guarda de equidad | S01, S02 | `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/data/policy_impacts.csv`; `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/professor/main.py`: `audit_policy_equity`, `decide_policy_correction`; `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_correction_decisions.csv` | Umbral fijado en el código, no derivado. |
-| H02 — Beneficio y acceso | S02, S03 | `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/equity_audit.csv` | El beneficio total por política no se calcula ni se discute. |
-| H03 — Autoridad y escalamiento | S04 | `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_contract.json`; `implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_monitoring.csv` | La prueba sólo verifica presencia de archivos. |
+| H01 — Guarda de equidad | S01, S02 | `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/data/policy_impacts.csv`; `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/professor/main.py`: `audit_policy_equity`, `decide_policy_correction`; `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_correction_decisions.csv` | Umbral fijado en el código, no derivado. |
+| H02 — Beneficio y acceso | S02, S03 | `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/equity_audit.csv` | El beneficio total por política no se calcula ni se discute. |
+| H03 — Autoridad y escalamiento | S04 | `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_contract.json`; `05-implementation/prescriptiva/P320_equidad_y_responsabilidad_prescriptiva/submission/policy_monitoring.csv` | La prueba sólo verifica presencia de archivos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -74,4 +74,4 @@ La arquitectura ubica P320 como salvaguarda transversal. La implementación no a
 
 ## Trazabilidad y auditoría
 
-P320 está mapeada a `prescriptiva.C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C04 se sostiene en la autoridad de cumplimiento y el escalamiento; C05 en el monitoreo y los gatillos. Frente a la arquitectura («auditoría de equidad y corrección de política», núcleo transversal), la auditoría existe pero la corrección no, y no se aplica a ninguna política del curso. El producto de Analytics es una decisión gobernada sobre una política existente; el cálculo de brechas es evidencia. Límite de implementación: el notebook presencial no es ejecutable por la codificación de sus celdas.
+P320 está mapeada a `prescriptiva.C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C04 se sostiene en la autoridad de cumplimiento y el escalamiento; C05 en el monitoreo y los gatillos. Frente a la arquitectura («auditoría de equidad y corrección de política», núcleo transversal), la auditoría existe pero la corrección no, y no se aplica a ninguna política del curso. El producto de Analytics es una decisión gobernada sobre una política existente; el cálculo de brechas es evidencia. Límite de implementación: el notebook presencial no es ejecutable por la codificación de sus celdas.

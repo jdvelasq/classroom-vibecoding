@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P319_catalog_assortment/`.
+**Implementación:** `05-implementation/prescriptiva/P319_catalog_assortment/`.
 
 ### Preguntas analíticas actuales
 
@@ -52,12 +52,12 @@ P319 vuelve a la enumeración después del LP continuo de P316–P318, pero por 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Canibalización | S01, S02 | `implementation/prescriptiva/P319_catalog_assortment/data/products.csv`; `implementation/prescriptiva/P319_catalog_assortment/professor/notebook.ipynb`: `choice_probabilities`, `standalone`, celdas del surtido fuerte y débil | Cifras del notebook (afirmadas con `assert`), no persistidas. |
+| H01 — Canibalización | S01, S02 | `05-implementation/prescriptiva/P319_catalog_assortment/data/products.csv`; `05-implementation/prescriptiva/P319_catalog_assortment/professor/notebook.ipynb`: `choice_probabilities`, `standalone`, celdas del surtido fuerte y débil | Cifras del notebook (afirmadas con `assert`), no persistidas. |
 | H02 — Condición de incorporación | S02 | Notebook: celda de la condición `margin[k] > R(S)` | Ilustrada con un candidato. |
-| H03 — Enumeración por objetivo no aditivo | S03 | Notebook: celda que descarta el MILP aditivo, enumeración y unicidad; `implementation/prescriptiva/P319_catalog_assortment/submission/assortment_results.csv` | El CSV persistido proviene de `main.py` (tres columnas). |
-| H04 — Reglas ingenuas | S03, S05 | Notebook: `policy_comparison`; `implementation/prescriptiva/P319_catalog_assortment/submission/capacity_sensitivity.csv` | La tabla de comparación no se persiste. |
-| H05 — Capacidad no usada | S04, S05 | `implementation/prescriptiva/P319_catalog_assortment/submission/capacity_sensitivity.csv`; notebook: `best_assortment_for_v0` | Sensibilidad a `v0` sólo impresa. |
-| H06 — Política de surtido | S06, S07 | `implementation/prescriptiva/P319_catalog_assortment/professor/main.py`; `implementation/prescriptiva/P319_catalog_assortment/submission/policy_contract.json`; `implementation/prescriptiva/P319_catalog_assortment/submission/policy_monitoring.csv`; `implementation/prescriptiva/P319_catalog_assortment/submission/assortment_policy.csv` | El notebook no construye el contrato; la prueba sólo verifica presencia de archivos. |
+| H03 — Enumeración por objetivo no aditivo | S03 | Notebook: celda que descarta el MILP aditivo, enumeración y unicidad; `05-implementation/prescriptiva/P319_catalog_assortment/submission/assortment_results.csv` | El CSV persistido proviene de `main.py` (tres columnas). |
+| H04 — Reglas ingenuas | S03, S05 | Notebook: `policy_comparison`; `05-implementation/prescriptiva/P319_catalog_assortment/submission/capacity_sensitivity.csv` | La tabla de comparación no se persiste. |
+| H05 — Capacidad no usada | S04, S05 | `05-implementation/prescriptiva/P319_catalog_assortment/submission/capacity_sensitivity.csv`; notebook: `best_assortment_for_v0` | Sensibilidad a `v0` sólo impresa. |
+| H06 — Política de surtido | S06, S07 | `05-implementation/prescriptiva/P319_catalog_assortment/professor/main.py`; `05-implementation/prescriptiva/P319_catalog_assortment/submission/policy_contract.json`; `05-implementation/prescriptiva/P319_catalog_assortment/submission/policy_monitoring.csv`; `05-implementation/prescriptiva/P319_catalog_assortment/submission/assortment_policy.csv` | El notebook no construye el contrato; la prueba sólo verifica presencia de archivos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -85,4 +85,4 @@ P319 vuelve a la enumeración después del LP continuo de P316–P318, pero por 
 
 ## Trazabilidad y auditoría
 
-P319 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C02 se sostiene (regla de incorporación y surtido computable); C03 en la comparación con reglas ingenuas y la sensibilidad, con un modelo determinista; C04 en aprobación humana y escalamiento; C05 en monitoreo con líneas base y gatillos cuantificados. Frente a la arquitectura («regla de incorporación y retiro con capacidad») el producto existe. El producto de Analytics es una política de surtido gobernada; el modelo de elección y la enumeración son evidencia. Límite de implementación: el contrato vive en un script separado del notebook presencial, y la prueba no verifica su contenido.
+P319 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C02 se sostiene (regla de incorporación y surtido computable); C03 en la comparación con reglas ingenuas y la sensibilidad, con un modelo determinista; C04 en aprobación humana y escalamiento; C05 en monitoreo con líneas base y gatillos cuantificados. Frente a la arquitectura («regla de incorporación y retiro con capacidad») el producto existe. El producto de Analytics es una política de surtido gobernada; el modelo de elección y la enumeración son evidencia. Límite de implementación: el contrato vive en un script separado del notebook presencial, y la prueba no verifica su contenido.

@@ -3,7 +3,7 @@
 ## S02.P525.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P525_particionamiento_parquet/` (`data/cta_daily_station_totals.parquet` como binario, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/lake_summary.csv`, `tests/test_activity.py`); P513 y P524 para contraste.
+- **Rutas inspeccionadas:** `05-implementation/data/P525_particionamiento_parquet/` (`data/cta_daily_station_totals.parquet` como binario, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/lake_summary.csv`, `tests/test_activity.py`); P513 y P524 para contraste.
 - **Trazabilidad revisada:** P525 → `data.C02`, `data.C03`, `data.C05`; C03 débil.
 - **Highlights:** añadidos H01 (llave de partición temporal; caso y datos), H02 (diseño `clave=valor` reproducible), H03 (conservación de filas y resumen).
 - **Ambigüedades:** objetivo de recuperar periodos sin leer todo no ejercitado; conjunto particionado sólo en `temp/`; unidad de análisis, columnas y procedencia del dataset no documentadas; vocabulario `lake/curated` no explicado.
@@ -465,7 +465,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P525_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P525_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P525_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** moderado a alto, no resuelta → bajo a moderado; el particionamiento pertenece al curso y la finalidad simple (recuperar periodos) está declarada. Se conserva como límite de evidencia que esa recuperación no se ejercita y que el conjunto no se persiste. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

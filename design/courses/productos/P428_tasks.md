@@ -64,7 +64,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P428_schedule/
+Actividad: 05-implementation/productos/P428_schedule/
 
 0. Inspecciona primero professor/main.py, professor/test_main.py,
    HOW_TO_RUN_ME.txt, requirements.txt, data/daily_operations.csv,

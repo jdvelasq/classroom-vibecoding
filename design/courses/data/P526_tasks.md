@@ -71,7 +71,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P526_eventos/
+Actividad: 05-implementation/data/P526_eventos/
 
 0. Inspecciona primero data/events.csv.gz, professor/main.py, src/main.py,
    los tres CSV de submission/ y tests/test_activity.py. Si la

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P122_supply_chain/`.
+**Implementación:** `05-implementation/descriptiva/P122_supply_chain/`.
 
 ### Preguntas analíticas actuales
 
@@ -53,13 +53,13 @@ P122 repite la plantilla de P120/P121 (preguntas, KPI, serie mensual, resumen po
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Grano y calidad | S01 | `implementation/descriptiva/P122_supply_chain/professor/notebook.ipynb`: `shipments.loc[0]`, `quality_summary`, `assert ... is_unique` | La tabla de calidad cubre siete columnas seleccionadas. |
+| H01 — Grano y calidad | S01 | `05-implementation/descriptiva/P122_supply_chain/professor/notebook.ipynb`: `shipments.loc[0]`, `quality_summary`, `assert ... is_unique` | La tabla de calidad cubre siete columnas seleccionadas. |
 | H02 — KPI desde fechas | S02 | notebook: conversión de fechas, `DeliveryDaysVsSchedule`, `IsLate`, histograma | Las fechas de PO y PQ («Date Not Captured») no se usan. |
-| H03 — Proporción vs promedio | S02, S05 | `implementation/descriptiva/P122_supply_chain/submission/mode_summary.csv` | Contraste observable, no discutido en el notebook. |
-| H04 — Valor expuesto | S03 | notebook: `valor_enviado_tarde_usd`; `implementation/descriptiva/P122_supply_chain/submission/overall_kpis.csv`; `implementation/descriptiva/P122_supply_chain/submission/priority_countries.csv` | Valor de la línea, no pérdida por retraso. |
-| H05 — Cobertura de flete | S04 | notebook: `FreightCostUSD`, `HasNumericFreightCost`, `freight_quality`, `freight_by_mode`; `implementation/descriptiva/P122_supply_chain/submission/freight_by_mode.csv` | Los valores textuales del flete no se inspeccionan ni se clasifican en el notebook. |
-| H06 — Umbrales por nivel | S03 | notebook: `minimum_shipments = 50`, `query("envíos >= 20")`, `query("envíos >= 30")`; `implementation/descriptiva/P122_supply_chain/submission/monthly_summary.csv` | Umbrales sin justificación; el mes no tiene mínimo. |
-| H07 — Persistencia y pruebas | S05, S06 | `implementation/descriptiva/P122_supply_chain/tests/test_activity.py`: `test_01`–`test_05` | No verifican `questions.json`, `country_mode_summary.csv`, `priority_countries.csv` ni orden de prioridad. |
+| H03 — Proporción vs promedio | S02, S05 | `05-implementation/descriptiva/P122_supply_chain/submission/mode_summary.csv` | Contraste observable, no discutido en el notebook. |
+| H04 — Valor expuesto | S03 | notebook: `valor_enviado_tarde_usd`; `05-implementation/descriptiva/P122_supply_chain/submission/overall_kpis.csv`; `05-implementation/descriptiva/P122_supply_chain/submission/priority_countries.csv` | Valor de la línea, no pérdida por retraso. |
+| H05 — Cobertura de flete | S04 | notebook: `FreightCostUSD`, `HasNumericFreightCost`, `freight_quality`, `freight_by_mode`; `05-implementation/descriptiva/P122_supply_chain/submission/freight_by_mode.csv` | Los valores textuales del flete no se inspeccionan ni se clasifican en el notebook. |
+| H06 — Umbrales por nivel | S03 | notebook: `minimum_shipments = 50`, `query("envíos >= 20")`, `query("envíos >= 30")`; `05-implementation/descriptiva/P122_supply_chain/submission/monthly_summary.csv` | Umbrales sin justificación; el mes no tiene mínimo. |
+| H07 — Persistencia y pruebas | S05, S06 | `05-implementation/descriptiva/P122_supply_chain/tests/test_activity.py`: `test_01`–`test_05` | No verifican `questions.json`, `country_mode_summary.csv`, `priority_countries.csv` ni orden de prioridad. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -86,4 +86,4 @@ P122 repite la plantilla de P120/P121 (preguntas, KPI, serie mensual, resumen po
 
 ## Trazabilidad y auditoría
 
-P122 está mapeada a `descriptiva.C01`, `descriptiva.C02` y `descriptiva.C03` en `implementation/descriptiva/traceability.yaml`; la evidencia las sostiene, con C02 especialmente visible en la tabla de calidad y la cobertura de flete. La declaración de cobertura es una forma de comunicación de límites (cercana a C05), no mapeada. El notebook no explicita un límite causal pese a hablar de «reducir riesgo». El producto de Analytics es un diagnóstico de cumplimiento y valor expuesto; pandas y Plotly lo sirven. Responde qué, dónde y cuándo; usuario y decisión no evidenciados.
+P122 está mapeada a `descriptiva.C01`, `descriptiva.C02` y `descriptiva.C03` en `05-implementation/descriptiva/traceability.yaml`; la evidencia las sostiene, con C02 especialmente visible en la tabla de calidad y la cobertura de flete. La declaración de cobertura es una forma de comunicación de límites (cercana a C05), no mapeada. El notebook no explicita un límite causal pese a hablar de «reducir riesgo». El producto de Analytics es un diagnóstico de cumplimiento y valor expuesto; pandas y Plotly lo sirven. Responde qué, dónde y cuándo; usuario y decisión no evidenciados.

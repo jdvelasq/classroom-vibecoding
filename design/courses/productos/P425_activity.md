@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P425_api_contract/`.
+**Implementación:** `05-implementation/productos/P425_api_contract/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo producto (interfaz de consumo). Retoma el vocabulario del caso de fábrica
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Contrato con errores | S02, S04 | `implementation/productos/P425_api_contract/professor/main.py`: `validate_payload`, `score`; `implementation/productos/P425_api_contract/professor/test_main.py` | No se prueban rangos ni booleanos. |
-| H02 — Ejemplos ejecutados | S03 | `implementation/productos/P425_api_contract/professor/main.py`: `main`; `implementation/productos/P425_api_contract/submission/score_examples.json` | No demuestra que el servidor se haya ejecutado. |
-| H03 — Regla sin procedencia | S01, S02 | `implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | La unidad máquina-día se infiere del nombre del campo. |
+| H01 — Contrato con errores | S02, S04 | `05-implementation/productos/P425_api_contract/professor/main.py`: `validate_payload`, `score`; `05-implementation/productos/P425_api_contract/professor/test_main.py` | No se prueban rangos ni booleanos. |
+| H02 — Ejemplos ejecutados | S03 | `05-implementation/productos/P425_api_contract/professor/main.py`: `main`; `05-implementation/productos/P425_api_contract/submission/score_examples.json` | No demuestra que el servidor se haya ejecutado. |
+| H03 — Regla sin procedencia | S01, S02 | `05-implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | La unidad máquina-día se infiere del nombre del campo. |
 
 ### Superficies de cambio para revisión posterior
 

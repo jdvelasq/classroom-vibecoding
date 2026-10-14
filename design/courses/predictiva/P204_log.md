@@ -8,9 +8,9 @@
 ## S01.P204.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P204_clasificacion_basica_numerica/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P204_clasificacion_basica_numerica/`
   (notebook de profesor, modelos, métricas, comparación y pruebas) y P204 en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se añadieron highlights para el límite educativo, logística
   binaria, términos flexibles, tensión AUC–exactitud y persistencia de las dos
   especificaciones.
@@ -48,14 +48,14 @@
   no sostenida por el intervalo) y se añadió H06 (incertidumbre de la
   comparación), con su fila en el índice externo, en la evidencia de highlights,
   en S03 y en el contrato de evidencia actual.
-- **Implementación:** `implementation/predictiva/P204_clasificacion_basica_numerica/`
+- **Implementación:** `05-implementation/predictiva/P204_clasificacion_basica_numerica/`
   — notebook del profesor (bootstrap, gráfica de errorbar y comentario con la
   lectura), `submission/difference_bootstrap.csv` y `tests/test_activity.py`
   (`test_02`). H01–H05 y los cuatro artefactos previos se conservan sin cambio
   de esquema; notebook y pruebas se ejecutaron sin errores.
 - **Trazabilidad revisada:** `predictiva.C01`–`C04` siguen reflejando la
   evidencia de P204; H06 fortalece C04 (evaluación) sin requerir una capacidad
-  nueva. Sin cambios en `implementation/predictiva/traceability.yaml`.
+  nueva. Sin cambios en `05-implementation/predictiva/traceability.yaml`.
 - **`P204_tasks.md`:** eliminado tras incorporar su única propuesta (T01).
 
 ## S03.P204.01

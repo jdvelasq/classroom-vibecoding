@@ -8,9 +8,9 @@
 ## S01.P207.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P206_clustering_demanda/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P206_clustering_demanda/`
   (notebook de profesor, selección, perfiles, asignación y pruebas) y P207 en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se añadieron highlights para el caso de demanda horaria: separar
   forma y nivel, definir el día como perfil, elegir clusters con silueta,
   interpretar centroides sin causalidad y asignar un perfil persistido.

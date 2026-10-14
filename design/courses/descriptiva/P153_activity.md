@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P153_ventas_kpis/`.
+**Implementación:** `05-implementation/descriptiva/P153_ventas_kpis/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Nuevo producto sobre el mismo caso: P150–P152 producen respuestas; P153 produc
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — KPI como contrato | S02, S05 | `implementation/descriptiva/P153_ventas_kpis/professor/notebook.ipynb`: `kpi_catalog`; `implementation/descriptiva/P153_ventas_kpis/submission/kpi_catalog.csv`; `implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_01` | Propietario y período son declarados, no justificados por un usuario observable. |
-| H02 — Tasa ponderada | S01, S02 | `implementation/descriptiva/P153_ventas_kpis/submission/kpi_catalog.csv`: fila «Descuento promedio ponderado» | Definido pero no calculado ni contrastado con el promedio simple. |
-| H03 — Calidad como compuerta | S03, S05 | `implementation/descriptiva/P153_ventas_kpis/professor/notebook.ipynb`: `quality_checks`, `publication_decision`; `implementation/descriptiva/P153_ventas_kpis/submission/kpi_quality_report.csv`; `implementation/descriptiva/P153_ventas_kpis/submission/kpi_publication_decision.csv`; `implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_02`, `test_04` | No hay reglas sobre definición (p. ej., rango de `discount_pct`); datos íntegros por construcción. |
-| H04 — Linaje | S04, S05 | `implementation/descriptiva/P153_ventas_kpis/submission/metric_lineage.csv`; `implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_03` | La prueba sólo exige coincidencia de nombres, prefijo `fact_sales.` y longitud del texto. |
+| H01 — KPI como contrato | S02, S05 | `05-implementation/descriptiva/P153_ventas_kpis/professor/notebook.ipynb`: `kpi_catalog`; `05-implementation/descriptiva/P153_ventas_kpis/submission/kpi_catalog.csv`; `05-implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_01` | Propietario y período son declarados, no justificados por un usuario observable. |
+| H02 — Tasa ponderada | S01, S02 | `05-implementation/descriptiva/P153_ventas_kpis/submission/kpi_catalog.csv`: fila «Descuento promedio ponderado» | Definido pero no calculado ni contrastado con el promedio simple. |
+| H03 — Calidad como compuerta | S03, S05 | `05-implementation/descriptiva/P153_ventas_kpis/professor/notebook.ipynb`: `quality_checks`, `publication_decision`; `05-implementation/descriptiva/P153_ventas_kpis/submission/kpi_quality_report.csv`; `05-implementation/descriptiva/P153_ventas_kpis/submission/kpi_publication_decision.csv`; `05-implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_02`, `test_04` | No hay reglas sobre definición (p. ej., rango de `discount_pct`); datos íntegros por construcción. |
+| H04 — Linaje | S04, S05 | `05-implementation/descriptiva/P153_ventas_kpis/submission/metric_lineage.csv`; `05-implementation/descriptiva/P153_ventas_kpis/tests/test_activity.py`: `test_03` | La prueba sólo exige coincidencia de nombres, prefijo `fact_sales.` y longitud del texto. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -77,4 +77,4 @@ Nuevo producto sobre el mismo caso: P150–P152 producen respuestas; P153 produc
 
 ## Trazabilidad y auditoría
 
-P153 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C01 (métricas para un contexto de decisión) y C05 (documentación responsable) son las mejor evidenciadas; C02 sólo como calidad de datos; C03 es débil (gráfico de booleanos). El producto es gobierno de métricas (BI): sostiene descripciones confiables, aunque por sí solo no describe lo que ocurre en las ventas, y sus reglas no ejercitan la decisión de bloqueo.
+P153 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `05-implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C01 (métricas para un contexto de decisión) y C05 (documentación responsable) son las mejor evidenciadas; C02 sólo como calidad de datos; C03 es débil (gráfico de booleanos). El producto es gobierno de métricas (BI): sostiene descripciones confiables, aunque por sí solo no describe lo que ocurre en las ventas, y sus reglas no ejercitan la decisión de bloqueo.

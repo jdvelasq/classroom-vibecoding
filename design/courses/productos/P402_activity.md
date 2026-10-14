@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P402_data_testing_pytest_pandas/`.
+**Implementación:** `05-implementation/productos/P402_data_testing_pytest_pandas/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Nuevo método (contrato de datos) al servicio de un indicador de producción cer
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Contrato | S02 | `implementation/productos/P402_data_testing_pytest_pandas/professor/main.py`: `validate_data`, `EXPECTED_COLUMNS`, `BUSINESS_KEY` | Reglas fijas en el código. |
-| H02 — Llave y granularidad | S01, S02 | `implementation/productos/P402_data_testing_pytest_pandas/data/machine_throughput_export.csv`; `implementation/productos/P402_data_testing_pytest_pandas/data/invalid_duplicate_key.csv` y demás `invalid_*.csv` | Procedencia del extracto no documentada. |
-| H03 — Reporte | S03, S04 | `implementation/productos/P402_data_testing_pytest_pandas/submission/validation_report.json`; `implementation/productos/P402_data_testing_pytest_pandas/professor/notebook.ipynb` | El persistido no es el del notebook. |
-| H04 — Pruebas de aceptación y rechazo | S05 | `implementation/productos/P402_data_testing_pytest_pandas/professor/test_main.py`: `test_01`, `test_02` | Dos de seis reglas probadas. |
+| H01 — Contrato | S02 | `05-implementation/productos/P402_data_testing_pytest_pandas/professor/main.py`: `validate_data`, `EXPECTED_COLUMNS`, `BUSINESS_KEY` | Reglas fijas en el código. |
+| H02 — Llave y granularidad | S01, S02 | `05-implementation/productos/P402_data_testing_pytest_pandas/data/machine_throughput_export.csv`; `05-implementation/productos/P402_data_testing_pytest_pandas/data/invalid_duplicate_key.csv` y demás `invalid_*.csv` | Procedencia del extracto no documentada. |
+| H03 — Reporte | S03, S04 | `05-implementation/productos/P402_data_testing_pytest_pandas/submission/validation_report.json`; `05-implementation/productos/P402_data_testing_pytest_pandas/professor/notebook.ipynb` | El persistido no es el del notebook. |
+| H04 — Pruebas de aceptación y rechazo | S05 | `05-implementation/productos/P402_data_testing_pytest_pandas/professor/test_main.py`: `test_01`, `test_02` | Dos de seis reglas probadas. |
 
 ### Superficies de cambio para revisión posterior
 

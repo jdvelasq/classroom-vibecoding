@@ -61,7 +61,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P121_vuelos/
+Actividad: 05-implementation/descriptiva/P121_vuelos/
 
 0. Inspecciona primero professor/notebook.ipynb, data/
    (flights_by_carrier_day_hour.csv.gz, flights_by_carrier_month.csv.gz),

@@ -230,7 +230,7 @@ COURSE_ACTIVITIES = {
 }
 
 DISTRIBUTION_DIR = Path(__file__).resolve().parent.parent
-IMPLEMENTATION_DIR = DISTRIBUTION_DIR.parent / "implementation"
+IMPLEMENTATION_DIR = DISTRIBUTION_DIR.parent / "05-implementation"
 TEST_ISOLATION_FILE = DISTRIBUTION_DIR.parent / "conftest.py"
 EMPTY_DIRECTORIES = ("professor", "submission", "temp")
 LOCAL_DIRECTORY_NAMES = ("__pycache__", ".pytest_cache", ".ipynb_checkpoints")

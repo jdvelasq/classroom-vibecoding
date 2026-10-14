@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P223_lasso/`.
+**Implementación:** `05-implementation/predictiva/P223_lasso/`.
 
 ### Preguntas analíticas actuales
 
@@ -114,6 +114,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P224 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P224 en `05-implementation/predictiva/traceability.yaml`.
 El producto sigue siendo una predicción de MPG; Lasso es una contribución al
 modelo y no la lógica curricular autónoma.

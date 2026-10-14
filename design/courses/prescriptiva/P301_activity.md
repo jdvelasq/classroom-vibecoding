@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P301_air_france_447/`.
+**Implementación:** `05-implementation/prescriptiva/P301_air_france_447/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,12 +51,12 @@ Frente a P300 cambia la naturaleza de la decisión (excepcional y secuencial fre
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Frontera de decisión | S04, S06 | `implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: celda «Frontera curricular» y `decision_boundary`; `implementation/prescriptiva/P301_air_france_447/submission/decision_boundary.csv` | Autoridad y gatillo son texto; no se ejecuta un escalamiento. |
-| H02 — Cobertura vs éxito | S01, S02 | `implementation/prescriptiva/P301_air_france_447/data/search_cells.csv`; notebook: `success_probability`, `comparison1`; `implementation/prescriptiva/P301_air_france_447/submission/plan_comparison.csv` | Escenario sintético; no evalúa una búsqueda real. |
+| H01 — Frontera de decisión | S04, S06 | `05-implementation/prescriptiva/P301_air_france_447/professor/notebook.ipynb`: celda «Frontera curricular» y `decision_boundary`; `05-implementation/prescriptiva/P301_air_france_447/submission/decision_boundary.csv` | Autoridad y gatillo son texto; no se ejecuta un escalamiento. |
+| H02 — Cobertura vs éxito | S01, S02 | `05-implementation/prescriptiva/P301_air_france_447/data/search_cells.csv`; notebook: `success_probability`, `comparison1`; `05-implementation/prescriptiva/P301_air_france_447/submission/plan_comparison.csv` | Escenario sintético; no evalúa una búsqueda real. |
 | H03 — Actualización tras fracaso | S03 | notebook: `remaining_weight`, `updated_probability`, aserción `remaining_total == 1 − first_success` | Depende de detección constante y de un único resultado de ronda. |
 | H04 — Repetir vs reasignar | S03, S04 | notebook: `comparison2`, conjuntos «entran/salen/permanecen»; `plan_comparison.csv` | Éxitos condicionales a no haber encontrado; la ronda 2 no se ejecuta. |
 | H05 — Verificación interna | S05 | notebook: celda de aserciones previa a la exportación | Las aserciones fijan IDs esperados del caso; no generalizan. |
-| H06 — Persistencia del protocolo | S04, S05 | `implementation/prescriptiva/P301_air_france_447/submission/search_plan.csv`; `plan_comparison.csv`; `search_planning_map.png`; `implementation/prescriptiva/P301_air_france_447/tests/test_activity.py` | La prueba verifica nombres de archivos, no contenido. |
+| H06 — Persistencia del protocolo | S04, S05 | `05-implementation/prescriptiva/P301_air_france_447/submission/search_plan.csv`; `plan_comparison.csv`; `search_planning_map.png`; `05-implementation/prescriptiva/P301_air_france_447/tests/test_activity.py` | La prueba verifica nombres de archivos, no contenido. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -83,4 +83,4 @@ Frente a P300 cambia la naturaleza de la decisión (excepcional y secuencial fre
 
 ## Trazabilidad y auditoría
 
-P301 está mapeada sólo a `prescriptiva.C01` en `implementation/prescriptiva/traceability.yaml`; la evidencia lo sustenta como contraste: formula la decisión con cadencia, autoridad, salvaguarda y gatillo, y la declara no recurrente. También ejerce autoridad y escalamiento declarativos (afines a C04) sin mapearlos. Coincide con el rol previsto («distinguir un plan excepcional de una política recurrente»). El producto de Analytics es un protocolo de contingencia verificable; la teoría de búsqueda y la actualización bayesiana sirven a él. Por diseño no es una política recurrente: no hay monitoreo de resultados más allá del gatillo por ronda.
+P301 está mapeada sólo a `prescriptiva.C01` en `05-implementation/prescriptiva/traceability.yaml`; la evidencia lo sustenta como contraste: formula la decisión con cadencia, autoridad, salvaguarda y gatillo, y la declara no recurrente. También ejerce autoridad y escalamiento declarativos (afines a C04) sin mapearlos. Coincide con el rol previsto («distinguir un plan excepcional de una política recurrente»). El producto de Analytics es un protocolo de contingencia verificable; la teoría de búsqueda y la actualización bayesiana sirven a él. Por diseño no es una política recurrente: no hay monitoreo de resultados más allá del gatillo por ronda.

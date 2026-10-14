@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P510_datacamp_valoraciones/`.
+**Implementación:** `05-implementation/data/P510_datacamp_valoraciones/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo caso y nueva forma de llegada de los datos. Misma técnica SQL de agregaci
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Volcado adaptado a SQLite | S01, S02 | `implementation/data/P510_datacamp_valoraciones/data/datacamp_application.sql` (cabecera TablePlus); `implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: celda de carga y conteos | No se documenta el motor de origen ni se verifica que no haya otras incompatibilidades de dialecto. |
-| H02 — `LEFT JOIN` y cambio de grano | S03, S04 | `implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: consulta `query`; `implementation/data/P510_datacamp_valoraciones/submission/course_ratings.csv` | Las filas inspeccionadas no muestran si existen cursos con 0 calificaciones. |
-| H03 — Conciliación | S04, S05 | `implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: celda de `assert`; `implementation/data/P510_datacamp_valoraciones/tests/test_activity.py` | La prueba no repite la conciliación; sólo exige el archivo. |
+| H01 — Volcado adaptado a SQLite | S01, S02 | `05-implementation/data/P510_datacamp_valoraciones/data/datacamp_application.sql` (cabecera TablePlus); `05-implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: celda de carga y conteos | No se documenta el motor de origen ni se verifica que no haya otras incompatibilidades de dialecto. |
+| H02 — `LEFT JOIN` y cambio de grano | S03, S04 | `05-implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: consulta `query`; `05-implementation/data/P510_datacamp_valoraciones/submission/course_ratings.csv` | Las filas inspeccionadas no muestran si existen cursos con 0 calificaciones. |
+| H03 — Conciliación | S04, S05 | `05-implementation/data/P510_datacamp_valoraciones/professor/notebook.ipynb`: celda de `assert`; `05-implementation/data/P510_datacamp_valoraciones/tests/test_activity.py` | La prueba no repite la conciliación; sólo exige el archivo. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -107,7 +107,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P421_model_registry/
+Actividad: 05-implementation/productos/P421_model_registry/
 
 0. Inspecciona primero CANDIDATES.json, professor/main.py (find_candidate,
    promote_model, main), professor/test_main.py, src/main.py,
@@ -125,7 +125,7 @@ Actividad: implementation/productos/P421_model_registry/
    approved_by. En el borde, igualdad con el mínimo cumple, como en P423.
 2. CANDIDATOS:
    a. Opción A: copia desde
-      implementation/productos/P420_experiment_tracking/submission/experiments/
+      05-implementation/productos/P420_experiment_tracking/submission/experiments/
       las corridas indicadas por el profesor (al menos dos, de modelos
       distintos) a candidates/<run_id>/ con model.pkl, metrics.json y
       config.json, y escribe candidates/<run_id>/PROVENANCE.json con

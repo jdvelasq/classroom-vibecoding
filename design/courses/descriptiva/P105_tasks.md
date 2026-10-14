@@ -59,11 +59,11 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P105_drivers_chatgpt/
+Actividad: 05-implementation/descriptiva/P105_drivers_chatgpt/
 
 0. Inspecciona primero professor/notebook.ipynb, data/drivers.csv,
    data/timesheet.csv, submission/ y tests/test_activity.py, y como
-   referencia implementation/descriptiva/P103_drivers_pandas/ (notebook,
+   referencia 05-implementation/descriptiva/P103_drivers_pandas/ (notebook,
    submission/summary.csv y test_02), sin modificarla. Si la implementación
    no coincide con design/courses/descriptiva/P105_activity.md, detente e
    informa la discrepancia sin modificar nada.

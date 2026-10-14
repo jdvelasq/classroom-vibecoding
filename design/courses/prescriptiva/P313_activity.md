@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P313_delivery_fleet_capacity/`.
+**Implementación:** `05-implementation/prescriptiva/P313_delivery_fleet_capacity/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,12 +51,12 @@ Nuevo método al servicio del mismo producto: P309 decide capacidad con escenari
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Demanda y capacidad inciertas | S01, S02 | `implementation/prescriptiva/P313_delivery_fleet_capacity/data/simulation_parameters.csv`; `implementation/prescriptiva/P313_delivery_fleet_capacity/professor/notebook.ipynb`: celdas Gamma-Poisson, capacidad recortada, verificación muestral | Sin procedencia ni calibración; capacidad continua sin ruteo. |
+| H01 — Demanda y capacidad inciertas | S01, S02 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/data/simulation_parameters.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/professor/notebook.ipynb`: celdas Gamma-Poisson, capacidad recortada, verificación muestral | Sin procedencia ni calibración; capacidad continua sin ruteo. |
 | H02 — Futuros comunes | S02 | notebook: conjunto maestro, `cumulative_capacity`, `assert` de anidamiento | Sólo verificado en notebook. |
-| H03 — IC del objetivo | S02, S03 | `implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_evaluation.csv` | IC por flota, no simultáneos. |
+| H03 — IC del objetivo | S02, S03 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_evaluation.csv` | IC por flota, no simultáneos. |
 | H04 — Pareadas y convergencia | S03 | notebook: `paired_difference`, `convergence_table` | No persistidas en `submission/`. |
-| H05 — Referencias y sensibilidad | S03 | `implementation/prescriptiva/P313_delivery_fleet_capacity/submission/reference_policies.csv`; `implementation/prescriptiva/P313_delivery_fleet_capacity/submission/outsourcing_cost_sensitivity.csv` | Referencias calculadas sobre la misma muestra. |
-| H06 — Política validada | S04, S05 | `implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy.csv`; `implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy_validation.csv`; `delivery_fleet_capacity_planner.png` | El planeador se construye antes de la política y no la muestra; pronóstico = demanda + ruido. |
+| H05 — Referencias y sensibilidad | S03 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/reference_policies.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/outsourcing_cost_sensitivity.csv` | Referencias calculadas sobre la misma muestra. |
+| H06 — Política validada | S04, S05 | `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy.csv`; `05-implementation/prescriptiva/P313_delivery_fleet_capacity/submission/fleet_policy_validation.csv`; `delivery_fleet_capacity_planner.png` | El planeador se construye antes de la política y no la muestra; pronóstico = demanda + ruido. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -83,4 +83,4 @@ Nuevo método al servicio del mismo producto: P309 decide capacidad con escenari
 
 ## Trazabilidad y auditoría
 
-P313 está mapeada a `prescriptiva.C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C03 está fuertemente sostenida (simulación con incertidumbre de estimación, referencias, sensibilidad, validación de política); C04 por guarda de 10 vehículos y aprobación humana ≥ 185; C05 por un gatillo de monitoreo («tercerización mensual supera su línea base») sin línea base cuantificada. Coincide con «regla de flota y contingencia validada por simulación». El producto de Analytics es una política diaria de reserva con contingencia y escalamiento; la simulación es la evidencia. Límites: validación en muestra, umbrales sin derivación y pronóstico sintético dependiente de la demanda realizada.
+P313 está mapeada a `prescriptiva.C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C03 está fuertemente sostenida (simulación con incertidumbre de estimación, referencias, sensibilidad, validación de política); C04 por guarda de 10 vehículos y aprobación humana ≥ 185; C05 por un gatillo de monitoreo («tercerización mensual supera su línea base») sin línea base cuantificada. Coincide con «regla de flota y contingencia validada por simulación». El producto de Analytics es una política diaria de reserva con contingencia y escalamiento; la simulación es la evidencia. Límites: validación en muestra, umbrales sin derivación y pronóstico sintético dependiente de la demanda realizada.

@@ -8,7 +8,7 @@
 ## S02.P513.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P513_superstore_batch/` (`data/*.csv`, `data/source_manifest.json`, `professor/main.py`, `src/main.py`, `submission/ingestion_report.csv`, `tests/test_activity.py`); P500–P502 para relaciones; P518 y P524 para reaparición de Parquet.
+- **Rutas inspeccionadas:** `05-implementation/data/P513_superstore_batch/` (`data/*.csv`, `data/source_manifest.json`, `professor/main.py`, `src/main.py`, `submission/ingestion_report.csv`, `tests/test_activity.py`); P500–P502 para relaciones; P518 y P524 para reaparición de Parquet.
 - **Trazabilidad revisada:** P513 → `data.C02`–`data.C05`; sin C01, coherente con la ausencia de pregunta.
 - **Highlights:** añadidos H01 (lectura de lotes con BOM y formato declarado; caso y datos), H02 (descubrimiento por patrón y aterrizaje Parquet), H03 (reporte de ingestión por lote).
 - **Preservado:** ausencia de pregunta analítica, dos lotes trimestrales, Parquet en zona raw, reporte por lote y la escalación de identidad.
@@ -472,7 +472,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P513_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P513_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P513_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** no resuelta (por ingestión batch de ingeniería de datos sin producto) → no resuelta sólo por los límites que la aclaración conserva: ninguna finalidad analítica declarada (sin pregunta ni consumidor; sin C01) y defecto de tipos que impide afirmar datos confiables. La ingesta por lotes deja de ser el problema. Se conserva la escalación de S01. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

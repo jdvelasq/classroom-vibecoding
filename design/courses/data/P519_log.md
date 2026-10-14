@@ -3,7 +3,7 @@
 ## S02.P519.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P519_mapreduce_operators/` (`data/timesheet.csv`, `data/drivers.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/operator_walkthrough.csv`, `tests/test_activity.py`); `dig/case-selection.md` como contexto.
+- **Rutas inspeccionadas:** `05-implementation/data/P519_mapreduce_operators/` (`data/timesheet.csv`, `data/drivers.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/operator_walkthrough.csv`, `tests/test_activity.py`); `dig/case-selection.md` como contexto.
 - **Trazabilidad revisada:** P519 → `data.C02`, `data.C05`; sin vacíos.
 - **Highlights:** añadidos H01 (operador genérico vs. regla), H02 (extracto y llave compartida; caso y datos), H03 (unión por clave), H04 (operadores complementarios).
 - **Ambigüedades:** `drivers.csv` contiene `ssn` y `location` sin procedencia ni restricción documentadas; `flat_map_pairs` duplica `map_pairs`; `left_outer_join_by_key` no se usa; `union_pairs` con lista vacía y `/ 10` sin significado; `inner_join_by_key` asume clave derecha única.
@@ -464,7 +464,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P519_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P519_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P519_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** lección de modelo de cómputo justificada por P520–P521 → el procesamiento clave–valor introductorio pertenece al curso; se conserva como límite que no tiene producto propio y depende de P520–P521. La observación sobre `ssn` se mantiene. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

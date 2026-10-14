@@ -3,7 +3,7 @@
 ## S02.P518.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P518_github_api/` (`data/github_issues_page_1.json`, `professor/main.py`, `src/main.py`, `submission/api_ingestion_report.csv`, `submission/github_issues.parquet` sólo como binario, `tests/test_activity.py`); P513 para contraste del reporte de ingestión.
+- **Rutas inspeccionadas:** `05-implementation/data/P518_github_api/` (`data/github_issues_page_1.json`, `professor/main.py`, `src/main.py`, `submission/api_ingestion_report.csv`, `submission/github_issues.parquet` sólo como binario, `tests/test_activity.py`); P513 para contraste del reporte de ingestión.
 - **Trazabilidad revisada:** P518 → `data.C01`–`data.C05`; `data.C01` sin evidencia (no hay pregunta), a escalar.
 - **Highlights:** añadidos H01 (falla y reintento), H02 (proyección JSON y marca de pull requests; caso y datos), H03 (llave única y reporte). No inferible: proporción de pull requests y contenido del Parquet.
 - **Ambigüedades:** procedencia y fecha de captura del JSON sin documentar; `pages_requested` y `status` constantes; el reporte no se escribe en el camino de falla; no hay notebook de profesor; la prueba acepta cualquier archivo.
@@ -463,7 +463,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P518_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P518_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P518_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** no resuelta (entrenamiento en ingestión de APIs) → no resuelta sólo por el límite conservado: falta finalidad analítica (sin pregunta ni consumidor; vacío C01). La ingesta por APIs con reintentos deja de ser el problema. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

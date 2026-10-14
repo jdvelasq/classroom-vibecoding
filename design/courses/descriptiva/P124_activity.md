@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P124_marketing_dashboard/`.
+**Implementación:** `05-implementation/descriptiva/P124_marketing_dashboard/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,11 +51,11 @@ P124 reutiliza el contenido analítico de P120–P122 (KPI global, serie tempora
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Grano diario | S01 | `implementation/descriptiva/P124_marketing_dashboard/data/campaign_data.csv` (1.097 líneas con encabezado); `implementation/descriptiva/P124_marketing_dashboard/submission/daily_summary.csv` (1.097 líneas); `implementation/descriptiva/P124_marketing_dashboard/professor/app.py`: `st.caption` | Grano inferido por igualdad de conteos; el código no lo declara ni lo verifica. |
-| H02 — Validación | S02 | `implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `REQUIRED_COLUMNS`, `load_campaign_data` | Las pruebas no ejercitan la validación. |
-| H03 — Razones por alcance | S03 | `implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `safe_divide`, `calculate_kpis`, `summarize_by_source`; `implementation/descriptiva/P124_marketing_dashboard/submission/kpis.csv` | ROAS 2,734 y CPC 1,644 del período completo; no hay incertidumbre. |
-| H04 — Funciones e interfaz | S04 | `implementation/descriptiva/P124_marketing_dashboard/professor/app.py`; `implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `filter_campaign_data` | El comentario de `app.py` remite a `src/app.py`, que no existe; `src/main.py` sólo lanza `NotImplementedError`. |
-| H05 — Persistencia verificada | S05, S06 | `implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `export_dashboard_tables`; `implementation/descriptiva/P124_marketing_dashboard/tests/test_activity.py`: `test_01`–`test_05` | Las pruebas no cubren filtros, `safe_divide` ni contenido de `questions.json`. |
+| H01 — Grano diario | S01 | `05-implementation/descriptiva/P124_marketing_dashboard/data/campaign_data.csv` (1.097 líneas con encabezado); `05-implementation/descriptiva/P124_marketing_dashboard/submission/daily_summary.csv` (1.097 líneas); `05-implementation/descriptiva/P124_marketing_dashboard/professor/app.py`: `st.caption` | Grano inferido por igualdad de conteos; el código no lo declara ni lo verifica. |
+| H02 — Validación | S02 | `05-implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `REQUIRED_COLUMNS`, `load_campaign_data` | Las pruebas no ejercitan la validación. |
+| H03 — Razones por alcance | S03 | `05-implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `safe_divide`, `calculate_kpis`, `summarize_by_source`; `05-implementation/descriptiva/P124_marketing_dashboard/submission/kpis.csv` | ROAS 2,734 y CPC 1,644 del período completo; no hay incertidumbre. |
+| H04 — Funciones e interfaz | S04 | `05-implementation/descriptiva/P124_marketing_dashboard/professor/app.py`; `05-implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `filter_campaign_data` | El comentario de `app.py` remite a `src/app.py`, que no existe; `src/main.py` sólo lanza `NotImplementedError`. |
+| H05 — Persistencia verificada | S05, S06 | `05-implementation/descriptiva/P124_marketing_dashboard/professor/main.py`: `export_dashboard_tables`; `05-implementation/descriptiva/P124_marketing_dashboard/tests/test_activity.py`: `test_01`–`test_05` | Las pruebas no cubren filtros, `safe_divide` ni contenido de `questions.json`. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -82,4 +82,4 @@ P124 reutiliza el contenido analítico de P120–P122 (KPI global, serie tempora
 
 ## Trazabilidad y auditoría
 
-P124 está mapeada a `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. C01 y C03 se sostienen en preguntas, KPI y gráficos; C02 en validación y resúmenes; C05 en la advertencia de la interfaz sobre el carácter no operativo de los datos y en la separación entre tablero y evidencia persistida. El producto de Analytics es una vista descriptiva de desempeño; Streamlit y Plotly lo sirven. Riesgo de identidad: con poca profundidad diagnóstica y sin usuario o decisión evidenciados, el taller podría leerse como introducción a una herramienta de tableros; el recálculo de razones por alcance es el elemento que lo ancla al razonamiento analítico.
+P124 está mapeada a `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. C01 y C03 se sostienen en preguntas, KPI y gráficos; C02 en validación y resúmenes; C05 en la advertencia de la interfaz sobre el carácter no operativo de los datos y en la separación entre tablero y evidencia persistida. El producto de Analytics es una vista descriptiva de desempeño; Streamlit y Plotly lo sirven. Riesgo de identidad: con poca profundidad diagnóstica y sin usuario o decisión evidenciados, el taller podría leerse como introducción a una herramienta de tableros; el recálculo de razones por alcance es el elemento que lo ancla al razonamiento analítico.

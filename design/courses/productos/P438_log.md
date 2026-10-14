@@ -3,7 +3,7 @@
 ## S02.P438.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `productos` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/productos/P438_backfill/` (`data/events.json`, `professor/main.py`, `professor/test_main.py`, `src/main.py`, `submission/backfill_selection.json`, `tests/test_activity.py`); P430, P436 y P437 para relación.
+- **Rutas inspeccionadas:** `05-implementation/productos/P438_backfill/` (`data/events.json`, `professor/main.py`, `professor/test_main.py`, `src/main.py`, `submission/backfill_selection.json`, `tests/test_activity.py`); P430, P436 y P437 para relación.
 - **Trazabilidad revisada:** P438 → `productos.C02`, `productos.C05`.
 - **Highlights:** añadidos H01 (rango inclusivo), H02 (alcance registrado; caso como límite).
 - **Ambigüedades:** no hay reproceso efectivo; rango literal; sin conexión con P437 ni con la idempotencia de P430; sin `HOW_TO_RUN_ME.txt`.

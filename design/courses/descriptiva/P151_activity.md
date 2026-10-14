@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P151_ventas_mart/`.
+**Implementación:** `05-implementation/descriptiva/P151_ventas_mart/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Mismo caso y fuentes que P150 con nuevo método de representación: P150 desnorm
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Hecho y dimensiones | S01, S02 | `implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: celdas de hecho y dimensiones; `implementation/descriptiva/P151_ventas_mart/professor/generate_data.py`: fecha determinista por pedido | Dimensión de fecha limitada a días con ventas; no sirve para tasas por día calendario. |
-| H02 — Claves sin pérdida de hechos | S02, S04 | `implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: `merge` y `assert`; `implementation/descriptiva/P151_ventas_mart/tests/test_activity.py`: `test_03` | No se ejercita un caso de fecha o clave ausente. |
-| H03 — Mart persistido e íntegro | S03, S04 | `implementation/descriptiva/P151_ventas_mart/submission/sales_mart.db`; `implementation/descriptiva/P151_ventas_mart/tests/test_activity.py`: `test_01`, `test_02` | Un mart equivalente ya está en `data/sales_mart.db`, visible al estudiante. |
-| H04 — Consulta en estrella | S03 | `implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: consulta SQL y gráfico; `implementation/descriptiva/P151_ventas_mart/submission/region_category_sales.csv`; `implementation/descriptiva/P151_ventas_mart/submission/questions.json` | Los valores describen datos sintéticos; no hay lectura de diferencias. |
+| H01 — Hecho y dimensiones | S01, S02 | `05-implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: celdas de hecho y dimensiones; `05-implementation/descriptiva/P151_ventas_mart/professor/generate_data.py`: fecha determinista por pedido | Dimensión de fecha limitada a días con ventas; no sirve para tasas por día calendario. |
+| H02 — Claves sin pérdida de hechos | S02, S04 | `05-implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: `merge` y `assert`; `05-implementation/descriptiva/P151_ventas_mart/tests/test_activity.py`: `test_03` | No se ejercita un caso de fecha o clave ausente. |
+| H03 — Mart persistido e íntegro | S03, S04 | `05-implementation/descriptiva/P151_ventas_mart/submission/sales_mart.db`; `05-implementation/descriptiva/P151_ventas_mart/tests/test_activity.py`: `test_01`, `test_02` | Un mart equivalente ya está en `data/sales_mart.db`, visible al estudiante. |
+| H04 — Consulta en estrella | S03 | `05-implementation/descriptiva/P151_ventas_mart/professor/notebook.ipynb`: consulta SQL y gráfico; `05-implementation/descriptiva/P151_ventas_mart/submission/region_category_sales.csv`; `05-implementation/descriptiva/P151_ventas_mart/submission/questions.json` | Los valores describen datos sintéticos; no hay lectura de diferencias. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -76,4 +76,4 @@ Mismo caso y fuentes que P150 con nuevo método de representación: P150 desnorm
 
 ## Trazabilidad y auditoría
 
-P151 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C02 se evidencia en las verificaciones de integridad; C03 en un gráfico de barras; C01 y C05 sólo de forma mínima (una pregunta, artefactos sin lectura). El producto observable es un mart dimensional y una respuesta en ranking. El modelado dimensional es una práctica de BI y, como tal, parte de la analítica descriptiva del curso, no de la ingeniería de datos que excluye su frontera. El límite observable es que la respuesta no se interpreta (magnitud relativa, concentración) y que la construcción del mart ocupa casi todo el notebook.
+P151 está mapeada a `descriptiva.C01`, `C02`, `C03` y `C05` en `05-implementation/descriptiva/traceability.yaml` (`audit-against-design.md` omite C01). C02 se evidencia en las verificaciones de integridad; C03 en un gráfico de barras; C01 y C05 sólo de forma mínima (una pregunta, artefactos sin lectura). El producto observable es un mart dimensional y una respuesta en ranking. El modelado dimensional es una práctica de BI y, como tal, parte de la analítica descriptiva del curso, no de la ingeniería de datos que excluye su frontera. El límite observable es que la respuesta no se interpreta (magnitud relativa, concentración) y que la construcción del mart ocupa casi todo el notebook.

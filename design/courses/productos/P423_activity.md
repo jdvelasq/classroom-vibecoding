@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P423_model_performance_monitoring/`.
+**Implementación:** `05-implementation/productos/P423_model_performance_monitoring/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nuevo tipo de evidencia frente a P422 (desempeño en lugar de entradas). Frente 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Desempeño frente a entradas | S01, S02, S03 | `implementation/productos/P423_model_performance_monitoring/data/production_outcomes.csv`; `implementation/productos/P423_model_performance_monitoring/professor/main.py`: `evaluate_performance`; `implementation/productos/P423_model_performance_monitoring/submission/performance_report.json` | Exactitud 0.6 sobre cinco observaciones. |
-| H02 — Borde de la alerta | S02, S04 | `implementation/productos/P423_model_performance_monitoring/professor/test_main.py` | Las pruebas usan etiquetas 0/1, no `high`/`low`. |
+| H01 — Desempeño frente a entradas | S01, S02, S03 | `05-implementation/productos/P423_model_performance_monitoring/data/production_outcomes.csv`; `05-implementation/productos/P423_model_performance_monitoring/professor/main.py`: `evaluate_performance`; `05-implementation/productos/P423_model_performance_monitoring/submission/performance_report.json` | Exactitud 0.6 sobre cinco observaciones. |
+| H02 — Borde de la alerta | S02, S04 | `05-implementation/productos/P423_model_performance_monitoring/professor/test_main.py` | Las pruebas usan etiquetas 0/1, no `high`/`low`. |
 
 ### Superficies de cambio para revisión posterior
 

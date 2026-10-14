@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P526_eventos/`.
+**Implementación:** `05-implementation/data/P526_eventos/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,9 +44,9 @@ Nuevo caso y nueva particularidad (tiempo de evento) con una pregunta analítica
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Tiempo de evento vs. llegada | S01, S02, S04 | `implementation/data/P526_eventos/professor/main.py`: `mark_late_events`; `implementation/data/P526_eventos/submission/event_replay.csv` | Orden de origen supuesto. |
-| H02 — Desorden simulado | S02 | `implementation/data/P526_eventos/professor/main.py`: `replay_arrivals`; `implementation/data/P526_eventos/submission/event_summary.csv` | No describe una fuente real. |
-| H03 — Conversión por sesión | S03, S04 | `implementation/data/P526_eventos/professor/main.py`: `summarize_sessions`, `main`; `implementation/data/P526_eventos/submission/session_conversion.csv`; `implementation/data/P526_eventos/submission/event_summary.csv` | Sin inferencia poblacional. |
+| H01 — Tiempo de evento vs. llegada | S01, S02, S04 | `05-implementation/data/P526_eventos/professor/main.py`: `mark_late_events`; `05-implementation/data/P526_eventos/submission/event_replay.csv` | Orden de origen supuesto. |
+| H02 — Desorden simulado | S02 | `05-implementation/data/P526_eventos/professor/main.py`: `replay_arrivals`; `05-implementation/data/P526_eventos/submission/event_summary.csv` | No describe una fuente real. |
+| H03 — Conversión por sesión | S03, S04 | `05-implementation/data/P526_eventos/professor/main.py`: `summarize_sessions`, `main`; `05-implementation/data/P526_eventos/submission/session_conversion.csv`; `05-implementation/data/P526_eventos/submission/event_summary.csv` | Sin inferencia poblacional. |
 
 ### Superficies de cambio para revisión posterior
 

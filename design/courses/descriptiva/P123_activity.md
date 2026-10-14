@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P123_scopus/`.
+**Implementación:** `05-implementation/descriptiva/P123_scopus/`.
 
 ### Preguntas analíticas actuales
 
@@ -56,14 +56,14 @@ P123 no repite la plantilla tabular de P120–P122: introduce nueva representaci
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Consulta persistida | S01 | `implementation/descriptiva/P123_scopus/data/search_string.txt`; `implementation/descriptiva/P123_scopus/data/scopus.csv.gz` | No se documenta fecha, base de suscripción ni número de registros. |
-| H02 — Campos multivaluados | S02 | `implementation/descriptiva/P123_scopus/professor/s03_countries_create.py`; `implementation/descriptiva/P123_scopus/professor/s14_keywords_create.py`; `implementation/descriptiva/P123_scopus/professor/s05_countries_frequency_report.py` | El país se toma del último segmento de la afiliación sin verificación adicional. |
-| H03 — Normalización | S03 | `implementation/descriptiva/P123_scopus/professor/s04_countries_clean.py`; `implementation/descriptiva/P123_scopus/professor/s15_keywords_clean.py`; `implementation/descriptiva/P123_scopus/submission/keywords_clusters.txt` | Reemplazo por subcadena; un término que ya contenga la forma destino puede alterarse (por ejemplo, «NLP APPLICATIONS»). |
-| H04 — Co-ocurrencia | S04 | `implementation/descriptiva/P123_scopus/professor/s08_countries_cooc_matrix.py`; `implementation/descriptiva/P123_scopus/professor/s18_keywords_filter.py`; `implementation/descriptiva/P123_scopus/submission/country_cooc_matrix.csv`; `implementation/descriptiva/P123_scopus/submission/keywords_cooc_matrix.csv` | Umbral de 10 documentos sin justificación persistida. |
-| H05 — Comunidades y red | S04, S05 | `implementation/descriptiva/P123_scopus/professor/s10_countries_clusters.py`; `implementation/descriptiva/P123_scopus/professor/s11_countries_network.py`; `implementation/descriptiva/P123_scopus/submission/country_clusters.txt`; `implementation/descriptiva/P123_scopus/submission/keywords_clusters.txt` | El texto emergente de la red rotula como «Frequency» el tamaño escalado, no la frecuencia. |
-| H06 — Serie anual completa | S05 | `implementation/descriptiva/P123_scopus/professor/s02_make_documents_by_year_plot.py`; `implementation/descriptiva/P123_scopus/submission/documents_by_year.html` | No se segmentan períodos ni se marca el año en curso. |
-| H07 — Pipeline | S06 | `implementation/descriptiva/P123_scopus/professor/main.py`; módulos `s12`, `s13`, `s16`, `s17`, `s19`, `s20` que reutilizan funciones | `src/main.py` del estudiante sólo lanza `NotImplementedError`; no hay notebook guía. |
-| H08 — Pruebas | S07 | `implementation/descriptiva/P123_scopus/tests/test_activity.py`: `test_01`–`test_03` | No verifican países, normalización, matrices, comunidades ni contenido de preguntas. |
+| H01 — Consulta persistida | S01 | `05-implementation/descriptiva/P123_scopus/data/search_string.txt`; `05-implementation/descriptiva/P123_scopus/data/scopus.csv.gz` | No se documenta fecha, base de suscripción ni número de registros. |
+| H02 — Campos multivaluados | S02 | `05-implementation/descriptiva/P123_scopus/professor/s03_countries_create.py`; `05-implementation/descriptiva/P123_scopus/professor/s14_keywords_create.py`; `05-implementation/descriptiva/P123_scopus/professor/s05_countries_frequency_report.py` | El país se toma del último segmento de la afiliación sin verificación adicional. |
+| H03 — Normalización | S03 | `05-implementation/descriptiva/P123_scopus/professor/s04_countries_clean.py`; `05-implementation/descriptiva/P123_scopus/professor/s15_keywords_clean.py`; `05-implementation/descriptiva/P123_scopus/submission/keywords_clusters.txt` | Reemplazo por subcadena; un término que ya contenga la forma destino puede alterarse (por ejemplo, «NLP APPLICATIONS»). |
+| H04 — Co-ocurrencia | S04 | `05-implementation/descriptiva/P123_scopus/professor/s08_countries_cooc_matrix.py`; `05-implementation/descriptiva/P123_scopus/professor/s18_keywords_filter.py`; `05-implementation/descriptiva/P123_scopus/submission/country_cooc_matrix.csv`; `05-implementation/descriptiva/P123_scopus/submission/keywords_cooc_matrix.csv` | Umbral de 10 documentos sin justificación persistida. |
+| H05 — Comunidades y red | S04, S05 | `05-implementation/descriptiva/P123_scopus/professor/s10_countries_clusters.py`; `05-implementation/descriptiva/P123_scopus/professor/s11_countries_network.py`; `05-implementation/descriptiva/P123_scopus/submission/country_clusters.txt`; `05-implementation/descriptiva/P123_scopus/submission/keywords_clusters.txt` | El texto emergente de la red rotula como «Frequency» el tamaño escalado, no la frecuencia. |
+| H06 — Serie anual completa | S05 | `05-implementation/descriptiva/P123_scopus/professor/s02_make_documents_by_year_plot.py`; `05-implementation/descriptiva/P123_scopus/submission/documents_by_year.html` | No se segmentan períodos ni se marca el año en curso. |
+| H07 — Pipeline | S06 | `05-implementation/descriptiva/P123_scopus/professor/main.py`; módulos `s12`, `s13`, `s16`, `s17`, `s19`, `s20` que reutilizan funciones | `src/main.py` del estudiante sólo lanza `NotImplementedError`; no hay notebook guía. |
+| H08 — Pruebas | S07 | `05-implementation/descriptiva/P123_scopus/tests/test_activity.py`: `test_01`–`test_03` | No verifican países, normalización, matrices, comunidades ni contenido de preguntas. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -91,4 +91,4 @@ P123 no repite la plantilla tabular de P120–P122: introduce nueva representaci
 
 ## Trazabilidad y auditoría
 
-P123 está mapeada a `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. C01–C03 están sostenidas por preguntas, exploración multivaluada y visualizaciones; C05 se apoya en productos HTML persistentes y en la cadena de búsqueda, aunque la documentación de procedencia es incompleta. El producto de Analytics es una descripción del campo (quién, dónde, cuándo, sobre qué); bibliometría, redes y cartografía contribuyen a él. Riesgo de identidad: sin usuario ni decisión evidenciados y sin notebook que haga visibles las decisiones, el taller podría leerse como recetario de herramientas bibliométricas; la co-ocurrencia se presenta como estructura descriptiva, sin afirmaciones causales.
+P123 está mapeada a `descriptiva.C01`, `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. C01–C03 están sostenidas por preguntas, exploración multivaluada y visualizaciones; C05 se apoya en productos HTML persistentes y en la cadena de búsqueda, aunque la documentación de procedencia es incompleta. El producto de Analytics es una descripción del campo (quién, dónde, cuándo, sobre qué); bibliometría, redes y cartografía contribuyen a él. Riesgo de identidad: sin usuario ni decisión evidenciados y sin notebook que haga visibles las decisiones, el taller podría leerse como recetario de herramientas bibliométricas; la co-ocurrencia se presenta como estructura descriptiva, sin afirmaciones causales.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P512_superstore_warehouse/`.
+**Implementación:** `05-implementation/data/P512_superstore_warehouse/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Mismos datos y mismo grano que P511, con nuevo método de representación (dimen
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Dimensión de fecha | S01, S02 | `implementation/data/P512_superstore_warehouse/data/orders.csv`; `implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 3 | `date_key` depende del orden de aparición en `orders.csv`. |
-| H02 — Hecho a grano línea | S02, S03 | `implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 4 (`assert`); `implementation/data/P512_superstore_warehouse/submission/superstore_mart.db` | No se verifica integridad referencial dimensión–hecho. |
-| H03 — Mart y consulta | S03, S04 | `implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 4 (SQL); `implementation/data/P512_superstore_warehouse/submission/superstore_mart.db` | El resultado de la consulta no se entrega. |
+| H01 — Dimensión de fecha | S01, S02 | `05-implementation/data/P512_superstore_warehouse/data/orders.csv`; `05-implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 3 | `date_key` depende del orden de aparición en `orders.csv`. |
+| H02 — Hecho a grano línea | S02, S03 | `05-implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 4 (`assert`); `05-implementation/data/P512_superstore_warehouse/submission/superstore_mart.db` | No se verifica integridad referencial dimensión–hecho. |
+| H03 — Mart y consulta | S03, S04 | `05-implementation/data/P512_superstore_warehouse/professor/notebook.ipynb`: celda 4 (SQL); `05-implementation/data/P512_superstore_warehouse/submission/superstore_mart.db` | El resultado de la consulta no se entrega. |
 
 ### Superficies de cambio para revisión posterior
 

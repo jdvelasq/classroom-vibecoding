@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P437_late_arriving_data/`.
+**Implementación:** `05-implementation/productos/P437_late_arriving_data/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Caso complementario de P436: P436 procesa lo posterior a una marca; P437 decide 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Evento frente a procesamiento | S01, S02 | `implementation/productos/P437_late_arriving_data/data/arrival.json`; `implementation/productos/P437_late_arriving_data/professor/main.py`: `classify_arrival` | `arrival_date` no interviene. |
-| H02 — Acción operativa | S02, S03, S04 | `implementation/productos/P437_late_arriving_data/professor/test_main.py`; `implementation/productos/P437_late_arriving_data/submission/arrival_classification.json` | Un solo registro. |
+| H01 — Evento frente a procesamiento | S01, S02 | `05-implementation/productos/P437_late_arriving_data/data/arrival.json`; `05-implementation/productos/P437_late_arriving_data/professor/main.py`: `classify_arrival` | `arrival_date` no interviene. |
+| H02 — Acción operativa | S02, S03, S04 | `05-implementation/productos/P437_late_arriving_data/professor/test_main.py`; `05-implementation/productos/P437_late_arriving_data/submission/arrival_classification.json` | Un solo registro. |
 
 ### Superficies de cambio para revisión posterior
 

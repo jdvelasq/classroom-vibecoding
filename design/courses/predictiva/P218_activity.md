@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P217_deployment_web_app/`.
+**Implementación:** `05-implementation/predictiva/P217_deployment_web_app/`.
 
 ### Preguntas analíticas actuales
 
@@ -85,5 +85,5 @@ No hay mejoras aceptadas pendientes.
 ## Trazabilidad y auditoría
 
 Es un producto de datos: la predicción queda disponible a un usuario. No existe
-entrada P218 en `implementation/predictiva/traceability.yaml`; debe revisarse
+entrada P218 en `05-implementation/predictiva/traceability.yaml`; debe revisarse
 antes de aprobar la actividad.

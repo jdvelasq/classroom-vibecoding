@@ -8,7 +8,7 @@
 ## S02.P514.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P514_superstore_etl/` (`data/`, `professor/main.py`, `src/main.py`, `submission/`, `tests/test_activity.py`); P511 y P513 para relaciones; P515 para contraste.
+- **Rutas inspeccionadas:** `05-implementation/data/P514_superstore_etl/` (`data/`, `professor/main.py`, `src/main.py`, `submission/`, `tests/test_activity.py`); P511 y P513 para relaciones; P515 para contraste.
 - **Trazabilidad revisada:** P514 → `data.C01`–`data.C05`.
 - **Highlights:** añadidos H01 (integración organizada en `extract`/`transform`/`publish`), H02 (reporte de filas por etapa con granos distintos; caso y datos).
 - **Preservado:** pregunta, etapas raw/staging/curated, joins validados heredados, reporte de etapas y relación de extensión con P511.
@@ -471,7 +471,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P514_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P514_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P514_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** no resuelta (ejercicio de ETL sobre producto ya obtenido) → la organización ETL pertenece al curso y sirve a una pregunta persistida; la identidad deja de quedar no resuelta por ese motivo. Se conservan como límites la duplicación con P511 (respuesta más gruesa, sin evidencia analítica distinta), staging/curated idénticos y `SUCCESS` constante. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

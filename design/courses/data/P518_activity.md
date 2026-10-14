@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P518_github_api/`.
+**Implementación:** `05-implementation/data/P518_github_api/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo origen de datos (API JSON) con la misma forma de evidencia que P513 (repor
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Falla y recuperación | S02, S05 | `implementation/data/P518_github_api/professor/main.py`: `request_page`, bucle de `main`; `implementation/data/P518_github_api/submission/api_ingestion_report.csv` | Falla determinista; un reporte sólo se escribe en éxito. |
-| H02 — Proyección y unidad | S01, S03 | `implementation/data/P518_github_api/data/github_issues_page_1.json`; `implementation/data/P518_github_api/professor/main.py`: construcción de `frame` | Proporción de pull requests no visible; procedencia no documentada. |
-| H03 — Llave y reporte | S04, S05 | `implementation/data/P518_github_api/professor/main.py`: `assert frame.issue_id.is_unique`, escritura de `REPORT`; `implementation/data/P518_github_api/submission/github_issues.parquet` | No hay prueba que lea el reporte o el Parquet. |
+| H01 — Falla y recuperación | S02, S05 | `05-implementation/data/P518_github_api/professor/main.py`: `request_page`, bucle de `main`; `05-implementation/data/P518_github_api/submission/api_ingestion_report.csv` | Falla determinista; un reporte sólo se escribe en éxito. |
+| H02 — Proyección y unidad | S01, S03 | `05-implementation/data/P518_github_api/data/github_issues_page_1.json`; `05-implementation/data/P518_github_api/professor/main.py`: construcción de `frame` | Proporción de pull requests no visible; procedencia no documentada. |
+| H03 — Llave y reporte | S04, S05 | `05-implementation/data/P518_github_api/professor/main.py`: `assert frame.issue_id.is_unique`, escritura de `REPORT`; `05-implementation/data/P518_github_api/submission/github_issues.parquet` | No hay prueba que lea el reporte o el Parquet. |
 
 ### Superficies de cambio para revisión posterior
 

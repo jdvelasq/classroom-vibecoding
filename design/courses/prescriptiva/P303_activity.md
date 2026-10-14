@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P303_politicas_y_supervision_humana/`.
+**Implementación:** `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Nuevo mecanismo al servicio del mismo producto (política gobernada): P300 y P30
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Precedencia y autoridad | S02 | `implementation/prescriptiva/P303_politicas_y_supervision_humana/professor/main.py`: `apply_review_policy` | Umbrales fijos en código; no aparecen en el contrato. |
-| H02 — Puntaje vs acción | S01, S02, S03 | `implementation/prescriptiva/P303_politicas_y_supervision_humana/data/applications.csv`; `implementation/prescriptiva/P303_politicas_y_supervision_humana/submission/review_policy.csv` | Sólo A01–A04 son visibles completas en el volcado; no se puede confirmar que alguna solicitud reciba «recomendar_rechazo». |
+| H01 — Precedencia y autoridad | S02 | `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/professor/main.py`: `apply_review_policy` | Umbrales fijos en código; no aparecen en el contrato. |
+| H02 — Puntaje vs acción | S01, S02, S03 | `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/data/applications.csv`; `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/submission/review_policy.csv` | Sólo A01–A04 son visibles completas en el volcado; no se puede confirmar que alguna solicitud reciba «recomendar_rechazo». |
 | H03 — Registro versionado | S03 | `submission/review_policy.csv`: `policy_version`, `reason`, `human_authority` | No registra la decisión humana ni el resultado. |
-| H04 — Salvaguardas | S03, S04 | `professor/main.py`: `policy_contract`; `implementation/prescriptiva/P303_politicas_y_supervision_humana/submission/policy_contract.json`; `implementation/prescriptiva/P303_politicas_y_supervision_humana/tests/test_activity.py` | La prueba exige campos no vacíos, no su contenido. |
+| H04 — Salvaguardas | S03, S04 | `professor/main.py`: `policy_contract`; `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/submission/policy_contract.json`; `05-implementation/prescriptiva/P303_politicas_y_supervision_humana/tests/test_activity.py` | La prueba exige campos no vacíos, no su contenido. |
 
 ### Superficies de cambio para revisión posterior
 

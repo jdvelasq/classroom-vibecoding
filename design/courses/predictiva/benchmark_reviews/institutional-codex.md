@@ -84,5 +84,5 @@ automatización de decisiones.
   `mit-data-science-and-machine-learning.pdf` y
   `berkeley-data-c101-data-engineering.pdf`.
 - Pendientes: 23 PDFs del directorio, incluido el ejercicio piloto UNAL.
-- No se modificó ningún `Pxxx_activity.md`, `Pxxx_log.md`, `implementation/` ni
+- No se modificó ningún `Pxxx_activity.md`, `Pxxx_log.md`, `05-implementation/` ni
   `traceability.yaml`.

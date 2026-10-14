@@ -8,9 +8,9 @@
 ## S01.P202.02
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/predictiva/P202_tokenizacion/`
+- **Rutas inspeccionadas:** `05-implementation/predictiva/P202_tokenizacion/`
   (notebook de profesor, matriz, vocabulario, metadatos y pruebas) y P202 en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Decisión:** se aplicó el contrato actual de S01 y se añadieron highlights
   para calidad de abstracts, limpieza fundamentada en evidencia, tratamiento
   diferenciado de conectores y retórica, transformación léxica, vectorización y

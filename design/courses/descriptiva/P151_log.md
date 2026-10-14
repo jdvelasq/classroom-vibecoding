@@ -3,7 +3,7 @@
 ## S02.P151.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P151_ventas_mart/` (`data/`, `professor/generate_data.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/`, `tests/`); contexto de P104, P107, P109 y P150.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P151_ventas_mart/` (`data/`, `professor/generate_data.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/`, `tests/`); contexto de P104, P107, P109 y P150.
 - **Trazabilidad revisada:** P151 → `descriptiva.C01`, `C02`, `C03`, `C05`; `audit-against-design.md` omite C01.
 - **Highlights añadidos:** H01 (hecho y dimensiones desde grano línea, `dim_date` sin calendario completo; obligatorio de caso y datos), H02 (claves sin pérdida de hechos), H03 (mart persistido con integridad referencial), H04 (consulta en estrella).
 - **Ambigüedades:** `data/sales_mart.db`, accesible al estudiante, equivale al mart que la actividad pide construir; fórmula de `net_sales` algebraicamente distinta de P150; generador idéntico (mismo hash) en P150–P154; notebook de estudiante vacío; respuesta sin lectura.

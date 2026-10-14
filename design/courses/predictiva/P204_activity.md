@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P204_clasificacion_basica_numerica/`.
+**Implementación:** `05-implementation/predictiva/P204_clasificacion_basica_numerica/`.
 
 ### Preguntas analíticas actuales
 
@@ -90,12 +90,12 @@ una probabilidad, pero P204 todavía no fija umbral ni política.
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Límite educativo y clase positiva | S01 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: pregunta, `diagnosis == "M"` y notas de no diagnóstico | El límite pedagógico no sustituye validación clínica, consentimiento ni evaluación externa. |
-| H02 — Logística binaria base | S02 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: dos variables, visualización y `LogisticRegression` | Dos mediciones no representan todos los factores clínicos pertinentes. |
-| H03 — Especificación flexible | S02 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: `texture_mean_squared`, interacción y `flexible_estimator` | La forma funcional se prueba sólo en este conjunto. |
-| H04 — AUC frente a exactitud | S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/model_comparison.csv`; `metrics.json`; notebook de profesor | AUC y exactitud no evalúan calibración, utilidad clínica ni equidad. |
-| H05 — Persistencia de comparación | S02, S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/submission/`; `implementation/predictiva/P204_clasificacion_basica_numerica/tests/test_activity.py` | Las pruebas sólo verifican que existan los cuatro artefactos. |
-| H06 — Incertidumbre de la comparación | S03 | `implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: bootstrap pareado y gráfica de intervalos; `implementation/predictiva/P204_clasificacion_basica_numerica/submission/difference_bootstrap.csv` | El intervalo sólo refleja variación de la muestra de prueba; no evalúa variación de la partición ni del ajuste de los coeficientes. |
+| H01 — Límite educativo y clase positiva | S01 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: pregunta, `diagnosis == "M"` y notas de no diagnóstico | El límite pedagógico no sustituye validación clínica, consentimiento ni evaluación externa. |
+| H02 — Logística binaria base | S02 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: dos variables, visualización y `LogisticRegression` | Dos mediciones no representan todos los factores clínicos pertinentes. |
+| H03 — Especificación flexible | S02 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: `texture_mean_squared`, interacción y `flexible_estimator` | La forma funcional se prueba sólo en este conjunto. |
+| H04 — AUC frente a exactitud | S03 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/submission/model_comparison.csv`; `metrics.json`; notebook de profesor | AUC y exactitud no evalúan calibración, utilidad clínica ni equidad. |
+| H05 — Persistencia de comparación | S02, S03 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/submission/`; `05-implementation/predictiva/P204_clasificacion_basica_numerica/tests/test_activity.py` | Las pruebas sólo verifican que existan los cuatro artefactos. |
+| H06 — Incertidumbre de la comparación | S03 | `05-implementation/predictiva/P204_clasificacion_basica_numerica/professor/notebook.ipynb`: bootstrap pareado y gráfica de intervalos; `05-implementation/predictiva/P204_clasificacion_basica_numerica/submission/difference_bootstrap.csv` | El intervalo sólo refleja variación de la muestra de prueba; no evalúa variación de la partición ni del ajuste de los coeficientes. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -131,7 +131,7 @@ No hay mejoras aceptadas pendientes.
 ## Trazabilidad y auditoría
 
 P204 está mapeada a `predictiva.C01`–`C04` en
-`implementation/predictiva/traceability.yaml`. El producto de Analytics es una
+`05-implementation/predictiva/traceability.yaml`. El producto de Analytics es una
 estimación binaria evaluada y limitada pedagógicamente; estadística y ML
 contribuyen a ella sin transformar el taller en diagnóstico clínico o curso de
 ML.

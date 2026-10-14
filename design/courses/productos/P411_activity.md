@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P411_pull_request/`.
+**Implementación:** `05-implementation/productos/P411_pull_request/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Misma tarjeta con nueva práctica: integración por revisión en plataforma fren
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Pull request | S01 | `implementation/productos/P411_pull_request/HOW_TO_RUN_ME.txt` | Sin evidencia persistida de la revisión. |
-| H02 — Responsable | S01, S02 | `implementation/productos/P411_pull_request/HOW_TO_RUN_ME.txt` | La tarjeta resultante no está persistida. |
-| H03 — Evidencia divergente | S02, S03, S04 | `implementation/productos/P411_pull_request/submission/git_log.txt`; `implementation/productos/P410_github_remote/submission/git_log.txt`; `implementation/productos/P411_pull_request/data/pull_request_case.bundle` | Origen de la evidencia no documentado. |
+| H01 — Pull request | S01 | `05-implementation/productos/P411_pull_request/HOW_TO_RUN_ME.txt` | Sin evidencia persistida de la revisión. |
+| H02 — Responsable | S01, S02 | `05-implementation/productos/P411_pull_request/HOW_TO_RUN_ME.txt` | La tarjeta resultante no está persistida. |
+| H03 — Evidencia divergente | S02, S03, S04 | `05-implementation/productos/P411_pull_request/submission/git_log.txt`; `05-implementation/productos/P410_github_remote/submission/git_log.txt`; `05-implementation/productos/P411_pull_request/data/pull_request_case.bundle` | Origen de la evidencia no documentado. |
 
 ### Superficies de cambio para revisión posterior
 

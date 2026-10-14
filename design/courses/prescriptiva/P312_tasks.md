@@ -76,7 +76,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P312_sensibilidad_y_tradespace/
+Actividad: 05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/
 
 0. Inspecciona primero data/service_options.csv, professor/main.py
    (evaluate, evaluate_sensitivity, policy_record, CUSTOMER_VALUE,

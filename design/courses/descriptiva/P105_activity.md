@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P105_drivers_chatgpt/`.
+**Implementación:** `05-implementation/descriptiva/P105_drivers_chatgpt/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,9 +48,9 @@ Misma pregunta y mismos datos que P103 y P104, con un nuevo medio (asistente con
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — *Prompts* verificables | S02, S03 | `implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb`: celdas 2–10 | No hay salidas del asistente ni ejecución. |
-| H02 — Estructura del dataset en el *prompt* | S01, S02 | `implementation/descriptiva/P105_drivers_chatgpt/data/drivers.csv`; `implementation/descriptiva/P105_drivers_chatgpt/data/timesheet.csv`; `implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb` | La precisión del *prompt* no se contrasta con un resultado. |
-| H03 — Salvaguarda frente a datos inventados | S02, S04 | `implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb`: celda 1; `implementation/descriptiva/P105_drivers_chatgpt/tests/test_activity.py` | La prueba sólo exige una celda en el notebook. |
+| H01 — *Prompts* verificables | S02, S03 | `05-implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb`: celdas 2–10 | No hay salidas del asistente ni ejecución. |
+| H02 — Estructura del dataset en el *prompt* | S01, S02 | `05-implementation/descriptiva/P105_drivers_chatgpt/data/drivers.csv`; `05-implementation/descriptiva/P105_drivers_chatgpt/data/timesheet.csv`; `05-implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb` | La precisión del *prompt* no se contrasta con un resultado. |
+| H03 — Salvaguarda frente a datos inventados | S02, S04 | `05-implementation/descriptiva/P105_drivers_chatgpt/professor/notebook.ipynb`: celda 1; `05-implementation/descriptiva/P105_drivers_chatgpt/tests/test_activity.py` | La prueba sólo exige una celda en el notebook. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -76,4 +76,4 @@ Misma pregunta y mismos datos que P103 y P104, con un nuevo medio (asistente con
 
 ## Trazabilidad y auditoría
 
-P105 está mapeada a `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. Con la evidencia actual, ninguna de las tres queda sustentada por un artefacto: no hay exploración ejecutada (C02), no hay visualización persistida (C03) y la comunicación responsable (C05) se limita a la instrucción de no inventar datos. El mapeo excede la evidencia observable y requiere revisión. El producto es una especificación del análisis de P103, no una descripción; la actividad se centra en una herramienta contribuyente (IA generativa) y su conexión con el producto descriptivo depende de pasos de verificación que no están implementados.
+P105 está mapeada a `descriptiva.C02`, `descriptiva.C03` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. Con la evidencia actual, ninguna de las tres queda sustentada por un artefacto: no hay exploración ejecutada (C02), no hay visualización persistida (C03) y la comunicación responsable (C05) se limita a la instrucción de no inventar datos. El mapeo excede la evidencia observable y requiere revisión. El producto es una especificación del análisis de P103, no una descripción; la actividad se centra en una herramienta contribuyente (IA generativa) y su conexión con el producto descriptivo depende de pasos de verificación que no están implementados.

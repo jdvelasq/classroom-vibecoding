@@ -64,7 +64,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P443_data_lineage/
+Actividad: 05-implementation/productos/P443_data_lineage/
 
 0. Inspecciona primero data/raw_operations.csv, professor/main.py,
    professor/test_main.py, src/main.py, submission/ y tests/. Si la
@@ -74,7 +74,7 @@ Actividad: implementation/productos/P443_data_lineage/
    detente e informa sin modificar nada.
 1. No cambies data/raw_operations.csv, build_factory_totals ni
    factory_totals.csv. Comprueba que el SHA-256 del insumo sigue siendo el
-   de implementation/productos/P431_data_versioning/submission/
+   de 05-implementation/productos/P431_data_versioning/submission/
    data_manifest.json; si no, detente e informa.
 2. En professor/main.py añade una función transformation_fingerprint() que
    calcule SHA-256 del código fuente de build_factory_totals

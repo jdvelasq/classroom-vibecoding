@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P103_drivers_pandas/`.
+**Implementación:** `05-implementation/descriptiva/P103_drivers_pandas/`.
 
 ### Preguntas analíticas actuales
 
@@ -51,10 +51,10 @@ Primer taller de exploración tabular con pandas. Reutiliza `drivers.csv` de P10
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Granularidades y unión | S01, S02 | `implementation/descriptiva/P103_drivers_pandas/data/timesheet.csv`; `implementation/descriptiva/P103_drivers_pandas/data/drivers.csv`; `implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: celdas de media, `pop("week")`, suma y `pd.merge` | No se verifica que todos los conductores tengan el mismo número de semanas. |
-| H02 — Comparación con la media propia | S02 | `implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: `transform("mean")`, `timesheet_below` | Sin persistencia ni prueba. |
-| H03 — Resumen verificado | S03, S05 | `implementation/descriptiva/P103_drivers_pandas/submission/summary.csv` (p. ej., conductor 10: 3.232 horas, 147.150 millas); `implementation/descriptiva/P103_drivers_pandas/tests/test_activity.py`: `test_02` | Verifica la suma y la unión, no su interpretación. |
-| H04 — Ranking visual | S04, S05 | `implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: celda de gráfico; `implementation/descriptiva/P103_drivers_pandas/submission/top10_drivers.png` | La prueba no verifica contenido, orden ni rotulado. |
+| H01 — Granularidades y unión | S01, S02 | `05-implementation/descriptiva/P103_drivers_pandas/data/timesheet.csv`; `05-implementation/descriptiva/P103_drivers_pandas/data/drivers.csv`; `05-implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: celdas de media, `pop("week")`, suma y `pd.merge` | No se verifica que todos los conductores tengan el mismo número de semanas. |
+| H02 — Comparación con la media propia | S02 | `05-implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: `transform("mean")`, `timesheet_below` | Sin persistencia ni prueba. |
+| H03 — Resumen verificado | S03, S05 | `05-implementation/descriptiva/P103_drivers_pandas/submission/summary.csv` (p. ej., conductor 10: 3.232 horas, 147.150 millas); `05-implementation/descriptiva/P103_drivers_pandas/tests/test_activity.py`: `test_02` | Verifica la suma y la unión, no su interpretación. |
+| H04 — Ranking visual | S04, S05 | `05-implementation/descriptiva/P103_drivers_pandas/professor/notebook.ipynb`: celda de gráfico; `05-implementation/descriptiva/P103_drivers_pandas/submission/top10_drivers.png` | La prueba no verifica contenido, orden ni rotulado. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -81,4 +81,4 @@ Primer taller de exploración tabular con pandas. Reutiliza `drivers.csv` de P10
 
 ## Trazabilidad y auditoría
 
-P103 está mapeada a `descriptiva.C02` y `descriptiva.C03` en `implementation/descriptiva/traceability.yaml`; ambas tienen respaldo: agregación y comparación intra-grupo (C02) y un ranking visual persistido (C03). La exploración se limita a medias, sumas y extremos, sin distribución ni calidad de datos. Frente a la pregunta descriptiva, responde «qué» (volumen de horas y millas) y «para quién» en el sentido de la entidad (conductor), pero no para qué usuario o decisión. Es el primer taller con un producto descriptivo reconocible; pandas y matplotlib sirven a ese producto, aunque la ausencia de pregunta declarada y de interpretación lo acerca a un ejercicio de herramienta.
+P103 está mapeada a `descriptiva.C02` y `descriptiva.C03` en `05-implementation/descriptiva/traceability.yaml`; ambas tienen respaldo: agregación y comparación intra-grupo (C02) y un ranking visual persistido (C03). La exploración se limita a medias, sumas y extremos, sin distribución ni calidad de datos. Frente a la pregunta descriptiva, responde «qué» (volumen de horas y millas) y «para quién» en el sentido de la entidad (conductor), pero no para qué usuario o decisión. Es el primer taller con un producto descriptivo reconocible; pandas y matplotlib sirven a ese producto, aunque la ausencia de pregunta declarada y de interpretación lo acerca a un ejercicio de herramienta.

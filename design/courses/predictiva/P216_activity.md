@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P215_filtrado_colaborativo/`.
+**Implementación:** `05-implementation/predictiva/P215_filtrado_colaborativo/`.
 
 ### Preguntas analíticas actuales
 
@@ -94,6 +94,6 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P216 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P216 en `05-implementation/predictiva/traceability.yaml`.
 Debe revisarse antes de aprobar la actividad; este mapeo no crea ni infiere
 capacidades faltantes.

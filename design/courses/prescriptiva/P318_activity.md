@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P318_hydrothermal_planning/`.
+**Implementación:** `05-implementation/prescriptiva/P318_hydrothermal_planning/`.
 
 ### Preguntas analíticas actuales
 
@@ -54,13 +54,13 @@ P318 reutiliza la técnica de P316 (LP continuo, PuLP + HiGHS, validación sin e
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Reserva obligatoria | S01, S02 | `implementation/prescriptiva/P318_hydrothermal_planning/data/periods.csv`; `implementation/prescriptiva/P318_hydrothermal_planning/data/hydro.csv`; `implementation/prescriptiva/P318_hydrothermal_planning/data/thermal.csv`; `implementation/prescriptiva/P318_hydrothermal_planning/professor/notebook.ipynb`: `mandatory_hydro_mwh`, `required_storage_end_p3`, gráfico de doble eje | Períodos sin unidad temporal en los datos; el contrato los llama despacho diario. |
+| H01 — Reserva obligatoria | S01, S02 | `05-implementation/prescriptiva/P318_hydrothermal_planning/data/periods.csv`; `05-implementation/prescriptiva/P318_hydrothermal_planning/data/hydro.csv`; `05-implementation/prescriptiva/P318_hydrothermal_planning/data/thermal.csv`; `05-implementation/prescriptiva/P318_hydrothermal_planning/professor/notebook.ipynb`: `mandatory_hydro_mwh`, `required_storage_end_p3`, gráfico de doble eje | Períodos sin unidad temporal en los datos; el contrato los llama despacho diario. |
 | H02 — Regla miope infactible | S03 | Notebook: `naive_hydro_first`, celda de verificación final | Resultado no persistido. |
-| H03 — Regla factible con pisos | S03, S07 | Notebook: `end_of_period_floor`, `feasible_reserve_rule`; `implementation/prescriptiva/P318_hydrothermal_planning/submission/plan_comparison.csv` | Pisos derivados a mano para esta instancia. |
-| H04 — LP intertemporal | S04, S07 | Notebook: bloque `MODEL`, `pulp.LpProblem`, celda de validación por período; `implementation/prescriptiva/P318_hydrothermal_planning/submission/generation_schedule.csv`; `implementation/prescriptiva/P318_hydrothermal_planning/submission/reservoir_schedule.csv` | Posibles óptimos alternativos no discutidos; `-0.0` en liberaciones persistidas. |
+| H03 — Regla factible con pisos | S03, S07 | Notebook: `end_of_period_floor`, `feasible_reserve_rule`; `05-implementation/prescriptiva/P318_hydrothermal_planning/submission/plan_comparison.csv` | Pisos derivados a mano para esta instancia. |
+| H04 — LP intertemporal | S04, S07 | Notebook: bloque `MODEL`, `pulp.LpProblem`, celda de validación por período; `05-implementation/prescriptiva/P318_hydrothermal_planning/submission/generation_schedule.csv`; `05-implementation/prescriptiva/P318_hydrothermal_planning/submission/reservoir_schedule.csv` | Posibles óptimos alternativos no discutidos; `-0.0` en liberaciones persistidas. |
 | H05 — Valor del agua | S05 | Notebook: `model.constraints[...].pi`, `solve_hydrothermal`, `water_value_fd`, `implied_water_value` | No persistido en CSV/JSON. |
 | H06 — Sensibilidad del almacenamiento inicial | S05 | Notebook: `storage_sensitivity` y sus `assert` | No persistida; un único parámetro. |
-| H07 — Política de despacho | S06, S08 | `implementation/prescriptiva/P318_hydrothermal_planning/submission/hydrothermal_policy.json`; `implementation/prescriptiva/P318_hydrothermal_planning/tests/test_activity.py` | La prueba no exige `cadence` ni `response_need`; guardas no verificadas. |
+| H07 — Política de despacho | S06, S08 | `05-implementation/prescriptiva/P318_hydrothermal_planning/submission/hydrothermal_policy.json`; `05-implementation/prescriptiva/P318_hydrothermal_planning/tests/test_activity.py` | La prueba no exige `cadence` ni `response_need`; guardas no verificadas. |
 | H08 — Persistencia de cronogramas | S07 | Los cinco artefactos de `submission/` | La prueba sólo lee el contrato. |
 
 ### Superficies de cambio para revisión posterior
@@ -90,4 +90,4 @@ P318 reutiliza la técnica de P316 (LP continuo, PuLP + HiGHS, validación sin e
 
 ## Trazabilidad y auditoría
 
-P318 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C02 se sostiene (despacho computable con reserva); C03 se apoya en una línea base infactible, una regla factible, el óptimo y sensibilidad del almacenamiento inicial, sin incertidumbre de caudal ni demanda; C04 en autoridad rutinaria y de excepción; C05 en métricas y gatillos declarados sin umbrales ni línea base persistida. Frente a la arquitectura («política de generación bajo reservas y horizonte») el producto existe, aunque las guardas están escritas para esta instancia. El producto de Analytics es un despacho gobernado; el LP y sus duales aportan factibilidad y una señal económica, y el notebook declara que el cronograma sólo se vuelve política con autoridad, guardas y revisión.
+P318 está mapeada a `prescriptiva.C02`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C02 se sostiene (despacho computable con reserva); C03 se apoya en una línea base infactible, una regla factible, el óptimo y sensibilidad del almacenamiento inicial, sin incertidumbre de caudal ni demanda; C04 en autoridad rutinaria y de excepción; C05 en métricas y gatillos declarados sin umbrales ni línea base persistida. Frente a la arquitectura («política de generación bajo reservas y horizonte») el producto existe, aunque las guardas están escritas para esta instancia. El producto de Analytics es un despacho gobernado; el LP y sus duales aportan factibilidad y una señal económica, y el notebook declara que el cronograma sólo se vuelve política con autoridad, guardas y revisión.

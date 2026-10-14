@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P206_clustering_demanda/`.
+**Implementación:** `05-implementation/predictiva/P206_clustering_demanda/`.
 
 ### Preguntas analíticas actuales
 
@@ -55,11 +55,11 @@ P207 abre una rama no supervisada: P200–P205 usan una etiqueta o probabilidad;
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Normalización de forma diaria | S01 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: tabla ancha, `melt` y `data.div(data.max(axis=1), axis=0)` | Dividir por máximo descarta magnitud absoluta y puede amplificar días de demanda muy baja. |
-| H02 — Día como perfil horario | S01 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `data` con fechas como índice y horas como columnas, perfiles y centroides | No documenta procedencia externa ni significado operacional de cada hora. |
-| H03 — Selección por silueta | S02 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: bucle 2–5 y `silhouette_score`; `implementation/predictiva/P206_clustering_demanda/submission/cluster-selection.csv` | La silueta no garantiza utilidad operativa ni estabilidad en nuevos períodos. |
-| H04 — Interpretación por centroides y día | S03 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: centroides, `day_of_week` y conteos; `implementation/predictiva/P206_clustering_demanda/submission/demanda-comercial-dias.csv` | Asociación con día de semana no prueba causalidad ni permite pronóstico determinista. |
-| H05 — Perfil recibido persistido | S02, S03 | `implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `kmeans.predict`; `implementation/predictiva/P206_clustering_demanda/submission/perfil-recibido.csv`; `implementation/predictiva/P206_clustering_demanda/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no que el perfil sea reproducible al cambiar datos. |
+| H01 — Normalización de forma diaria | S01 | `05-implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: tabla ancha, `melt` y `data.div(data.max(axis=1), axis=0)` | Dividir por máximo descarta magnitud absoluta y puede amplificar días de demanda muy baja. |
+| H02 — Día como perfil horario | S01 | `05-implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `data` con fechas como índice y horas como columnas, perfiles y centroides | No documenta procedencia externa ni significado operacional de cada hora. |
+| H03 — Selección por silueta | S02 | `05-implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: bucle 2–5 y `silhouette_score`; `05-implementation/predictiva/P206_clustering_demanda/submission/cluster-selection.csv` | La silueta no garantiza utilidad operativa ni estabilidad en nuevos períodos. |
+| H04 — Interpretación por centroides y día | S03 | `05-implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: centroides, `day_of_week` y conteos; `05-implementation/predictiva/P206_clustering_demanda/submission/demanda-comercial-dias.csv` | Asociación con día de semana no prueba causalidad ni permite pronóstico determinista. |
+| H05 — Perfil recibido persistido | S02, S03 | `05-implementation/predictiva/P206_clustering_demanda/professor/notebook.ipynb`: `kmeans.predict`; `05-implementation/predictiva/P206_clustering_demanda/submission/perfil-recibido.csv`; `05-implementation/predictiva/P206_clustering_demanda/tests/test_activity.py` | Las pruebas verifican presencia de archivos, no que el perfil sea reproducible al cambiar datos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -89,4 +89,4 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-P207 está mapeada a `predictiva.C02` y `predictiva.C03` en `implementation/predictiva/traceability.yaml`. El producto de Analytics es una segmentación descriptiva de perfiles de demanda; normalización y clustering la sirven, sin convertirla en predicción, optimización de turnos o política de capacidad.
+P207 está mapeada a `predictiva.C02` y `predictiva.C03` en `05-implementation/predictiva/traceability.yaml`. El producto de Analytics es una segmentación descriptiva de perfiles de demanda; normalización y clustering la sirven, sin convertirla en predicción, optimización de turnos o política de capacidad.

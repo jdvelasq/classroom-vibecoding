@@ -3,7 +3,7 @@
 ## S02.P125.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P125_salarios/` (`data/salarios.csv`, `professor/generate_data.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con cinco archivos, `tests/`); P103/P104, P108/P109 y P120–P124 como comparación.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P125_salarios/` (`data/salarios.csv`, `professor/generate_data.py`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con cinco archivos, `tests/`); P103/P104, P108/P109 y P120–P124 como comparación.
 - **Trazabilidad revisada:** P125 → `descriptiva.C01`–`C05`; coherente. Es la única evidencia persistida y probada de C04 en P120–P125.
 - **Highlights añadidos:** H01–H07 (población sintética de mecanismo conocido, pares comparables, estadísticos robustos, señalamiento con doble criterio, decil superior, límite causal persistido, agregados sin divulgación). Highlight obligatorio de caso y datos: H01.
 - **Cambios realizados:** creación de `P125_activity.md`; sin cambios en implementación ni propuestas.

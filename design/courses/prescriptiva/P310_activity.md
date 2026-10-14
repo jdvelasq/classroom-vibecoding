@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P310_monte_carlo_para_politicas/`.
+**Implementación:** `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Nuevo método (simulación estocástica) al servicio del mismo tipo de producto 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Resumen de distribución | S02 | `implementation/prescriptiva/P310_monte_carlo_para_politicas/professor/main.py`: `simulate_project`, `summarize_risk`; `implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/project_risk_summary.csv`; notebook: histograma | No se reporta error de estimación ni convergencia. |
-| H02 — Guardas y escalamiento | S03 | `implementation/prescriptiva/P310_monte_carlo_para_politicas/professor/main.py`: `define_investment_policy`; `implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/investment_policy.csv` | Umbrales sin justificación en el taller. |
-| H03 — Simulación no decisiva | S01, S02, S04 | `implementation/prescriptiva/P310_monte_carlo_para_politicas/data/project_parameters.csv`; `implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/project_risk_summary.csv` | El notebook no compara con el cálculo determinista ni con parámetros alternativos. |
+| H01 — Resumen de distribución | S02 | `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/professor/main.py`: `simulate_project`, `summarize_risk`; `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/project_risk_summary.csv`; notebook: histograma | No se reporta error de estimación ni convergencia. |
+| H02 — Guardas y escalamiento | S03 | `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/professor/main.py`: `define_investment_policy`; `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/investment_policy.csv` | Umbrales sin justificación en el taller. |
+| H03 — Simulación no decisiva | S01, S02, S04 | `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/data/project_parameters.csv`; `05-implementation/prescriptiva/P310_monte_carlo_para_politicas/submission/project_risk_summary.csv` | El notebook no compara con el cálculo determinista ni con parámetros alternativos. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -74,4 +74,4 @@ Nuevo método (simulación estocástica) al servicio del mismo tipo de producto 
 
 ## Trazabilidad y auditoría
 
-P310 está mapeada a `prescriptiva.C01`, `C03`, `C04` y `C05` en `implementation/prescriptiva/traceability.yaml`. C01 y C04 se sostienen por el contrato con cadencia, autoridad y excepción; C03 por la simulación, aunque no se valida la política frente a líneas base ni se muestra sensibilidad; C05 sólo por un gatillo de revisión de ingresos realizados que no aplica a un proyecto no aprobado. El producto de Analytics es una regla de inversión con guardas de riesgo; Monte Carlo contribuye. La auditoría queda **no resuelta** en un punto: con los datos actuales el producto se reduce a «no aprobar porque la media es negativa», y la contribución de la incertidumbre a la acción no se evidencia.
+P310 está mapeada a `prescriptiva.C01`, `C03`, `C04` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C01 y C04 se sostienen por el contrato con cadencia, autoridad y excepción; C03 por la simulación, aunque no se valida la política frente a líneas base ni se muestra sensibilidad; C05 sólo por un gatillo de revisión de ingresos realizados que no aplica a un proyecto no aprobado. El producto de Analytics es una regla de inversión con guardas de riesgo; Monte Carlo contribuye. La auditoría queda **no resuelta** en un punto: con los datos actuales el producto se reduce a «no aprobar porque la media es negativa», y la contribución de la incertidumbre a la acción no se evidencia.

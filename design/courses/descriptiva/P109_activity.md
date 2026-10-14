@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P109_anonimizacion_sql/`.
+**Implementación:** `05-implementation/descriptiva/P109_anonimizacion_sql/`.
 
 ### Preguntas analíticas actuales
 
@@ -50,11 +50,11 @@ Misma pregunta, mismos datos y mismo contrato que P108 con nueva implementación
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Pregunta declarada | S02, S06 | `implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: primera celda y comentarios iniciales | No identifica destinatario ni uso. |
-| H02 — Reglas en una consulta SQL | S02, S04 | `implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `create_function("pseudonymize", ...)`, `CREATE TABLE anonymized_customers`; `implementation/descriptiva/P109_anonimizacion_sql/submission/anonymized.csv` | Clave en el código. |
-| H03 — Consulta de enlace | S03 | `implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `attack_candidates` | No se persiste; no se citan conteos. |
-| H04 — Orden de registros | S01, S04, S05 | `implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `reset_index(names="row_id")`, `ORDER BY row_id`; `implementation/descriptiva/P109_anonimizacion_sql/tests/test_activity.py`: `test_02` | La prueba no indica la razón del orden. |
-| H05 — Raíz portable | S06 | `implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `find_activity_root()` | Sólo en el notebook del profesor. |
+| H01 — Pregunta declarada | S02, S06 | `05-implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: primera celda y comentarios iniciales | No identifica destinatario ni uso. |
+| H02 — Reglas en una consulta SQL | S02, S04 | `05-implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `create_function("pseudonymize", ...)`, `CREATE TABLE anonymized_customers`; `05-implementation/descriptiva/P109_anonimizacion_sql/submission/anonymized.csv` | Clave en el código. |
+| H03 — Consulta de enlace | S03 | `05-implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `attack_candidates` | No se persiste; no se citan conteos. |
+| H04 — Orden de registros | S01, S04, S05 | `05-implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `reset_index(names="row_id")`, `ORDER BY row_id`; `05-implementation/descriptiva/P109_anonimizacion_sql/tests/test_activity.py`: `test_02` | La prueba no indica la razón del orden. |
+| H05 — Raíz portable | S06 | `05-implementation/descriptiva/P109_anonimizacion_sql/professor/notebook.ipynb`: `find_activity_root()` | Sólo en el notebook del profesor. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -81,4 +81,4 @@ Misma pregunta, mismos datos y mismo contrato que P108 con nueva implementación
 
 ## Trazabilidad y auditoría
 
-P109 está mapeada a `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`. El respaldo es el mismo que en P108 para la dimensión responsable (reglas explícitas y verificación de enlace), con menor evidencia de contraste riesgo-utilidad. La pregunta declarada acerca la actividad a un contexto de uso, pero no identifica usuario ni decisión. El producto es una capacidad de datos; aislada, la actividad es una práctica de privacidad con SQL, y su relación con la descripción posterior no queda evidenciada en el curso.
+P109 está mapeada a `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`. El respaldo es el mismo que en P108 para la dimensión responsable (reglas explícitas y verificación de enlace), con menor evidencia de contraste riesgo-utilidad. La pregunta declarada acerca la actividad a un contexto de uso, pero no identifica usuario ni decisión. El producto es una capacidad de datos; aislada, la actividad es una práctica de privacidad con SQL, y su relación con la descripción posterior no queda evidenciada en el curso.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P210_pronostico_adopcion_producto/`.
+**Implementación:** `05-implementation/predictiva/P210_pronostico_adopcion_producto/`.
 
 ### Preguntas analíticas actuales
 

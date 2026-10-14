@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P516_vermont_calidad/`.
+**Implementación:** `05-implementation/data/P516_vermont_calidad/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Nuevo caso y nueva exigencia de evidencia: la calidad deja de ser una aserción 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Granos mezclados | S01, S02, S03 | `implementation/data/P516_vermont_calidad/data/vermont.csv`; `implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celdas 2 y 3; `implementation/data/P516_vermont_calidad/submission/quality_report.csv` | Que `zipcode = 0` sea total estatal sólo lo afirma un comentario; no hay documentación de la fuente. |
-| H02 — Reglas como reporte | S02, S03, S04 | `implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celda 3; `implementation/data/P516_vermont_calidad/submission/quality_report.csv`; `implementation/data/P516_vermont_calidad/tests/test_activity.py` | Defecto en la asignación de estado. |
-| H03 — Clave compuesta | S02 | `implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celda 3 | No se muestra la agregación por código postal. |
+| H01 — Granos mezclados | S01, S02, S03 | `05-implementation/data/P516_vermont_calidad/data/vermont.csv`; `05-implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celdas 2 y 3; `05-implementation/data/P516_vermont_calidad/submission/quality_report.csv` | Que `zipcode = 0` sea total estatal sólo lo afirma un comentario; no hay documentación de la fuente. |
+| H02 — Reglas como reporte | S02, S03, S04 | `05-implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celda 3; `05-implementation/data/P516_vermont_calidad/submission/quality_report.csv`; `05-implementation/data/P516_vermont_calidad/tests/test_activity.py` | Defecto en la asignación de estado. |
+| H03 — Clave compuesta | S02 | `05-implementation/data/P516_vermont_calidad/professor/notebook.ipynb`: celda 3 | No se muestra la agregación por código postal. |
 
 ### Superficies de cambio para revisión posterior
 

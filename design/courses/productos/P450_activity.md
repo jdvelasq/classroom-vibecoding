@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P450_human_review/`.
+**Implementación:** `05-implementation/productos/P450_human_review/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Nuevo producto (autorización) sobre el mismo resultado de riesgo por fábrica q
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Recomendación accionable | S01 | `implementation/productos/P450_human_review/data/recommendation.json`; `implementation/productos/P430_idempotency/professor/main.py`; `implementation/productos/P425_api_contract/professor/main.py`: `classify_risk`; `implementation/productos/P432_duckdb_transformation/data/daily_operations.csv` | El origen del riesgo `high` no se evidencia. |
-| H02 — Autorización explícita | S02, S03, S04 | `implementation/productos/P450_human_review/professor/main.py`: `review_recommendation`; `implementation/productos/P450_human_review/professor/test_main.py`; `implementation/productos/P450_human_review/submission/review.json` | Decisión fija `approve` en `__main__`. |
+| H01 — Recomendación accionable | S01 | `05-implementation/productos/P450_human_review/data/recommendation.json`; `05-implementation/productos/P430_idempotency/professor/main.py`; `05-implementation/productos/P425_api_contract/professor/main.py`: `classify_risk`; `05-implementation/productos/P432_duckdb_transformation/data/daily_operations.csv` | El origen del riesgo `high` no se evidencia. |
+| H02 — Autorización explícita | S02, S03, S04 | `05-implementation/productos/P450_human_review/professor/main.py`: `review_recommendation`; `05-implementation/productos/P450_human_review/professor/test_main.py`; `05-implementation/productos/P450_human_review/submission/review.json` | Decisión fija `approve` en `__main__`. |
 
 ### Superficies de cambio para revisión posterior
 

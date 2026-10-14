@@ -68,7 +68,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P513_superstore_batch/
+Actividad: 05-implementation/data/P513_superstore_batch/
 
 0. Inspecciona primero professor/main.py, src/main.py,
    data/superstore_orders_2015_q*.csv, data/source_manifest.json,
@@ -199,12 +199,12 @@ Actividad: implementation/data/P513_superstore_batch/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P513_superstore_batch/
+Actividad: 05-implementation/data/P513_superstore_batch/
 
 0. Inspecciona primero professor/main.py, src/main.py,
    data/superstore_orders_2015_q*.csv, data/source_manifest.json,
    submission/ y tests/, y (sólo lectura)
-   implementation/data/P500_superstore_metricas/submission/questions.json
+   05-implementation/data/P500_superstore_metricas/submission/questions.json
    para tomar su estructura de claves. Si la implementación no coincide con
    design/courses/data/P513_activity.md, detente e informa sin modificar
    nada. Confirma que design/courses/data/P500_log.md contiene Nota.P500.02;

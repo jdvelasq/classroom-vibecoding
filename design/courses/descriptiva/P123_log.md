@@ -3,7 +3,7 @@
 ## S02.P123.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P123_scopus/` (`data/scopus.csv.gz`, `data/search_string.txt`, `professor/main.py` y `s01`–`s20`, `src/main.py`, `submission/` con dieciséis archivos, `tests/`); P100, P101 y P106 como antecedentes técnicos.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P123_scopus/` (`data/scopus.csv.gz`, `data/search_string.txt`, `professor/main.py` y `s01`–`s20`, `src/main.py`, `submission/` con dieciséis archivos, `tests/`); P100, P101 y P106 como antecedentes técnicos.
 - **Trazabilidad revisada:** P123 → `descriptiva.C01`, `C02`, `C03`, `C05`; coherente, con C05 apoyada en productos persistentes y procedencia parcial.
 - **Highlights añadidos:** H01–H08 (consulta persistida, campos multivaluados, normalización, co-ocurrencia, comunidades y red, serie anual completa, pipeline, pruebas). Highlight obligatorio de caso y datos: H02 (documento con listas «;»), con H04 declarando filas/columnas de la matriz.
 - **Cambios realizados:** creación de `P123_activity.md`; sin cambios en implementación ni propuestas.

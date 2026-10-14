@@ -12,7 +12,7 @@
 ## S02.P506.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P506_scopus_sql_avanzado/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv`.
+- **Rutas inspeccionadas:** `05-implementation/data/P506_scopus_sql_avanzado/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `05-implementation/data/P505_scopus_sql_intermedio/submission/authors_by_documents.csv`.
 - **Trazabilidad revisada:** P506 → `data.C01`, `data.C02`, `data.C03`, `data.C05`; C03 sin evidencia explícita.
 - **Preservado:** pregunta, entregable, condición temporal de continuidad y relación con P504–P505.
 - **Completado:** se extrajo la consulta (dos CTE, `COUNT(DISTINCT publication_year)`, umbral `>= 3`) pendiente en la pasada previa; pruebas sólo de existencia; notebook del estudiante sin celdas.

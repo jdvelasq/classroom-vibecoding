@@ -59,7 +59,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P303_politicas_y_supervision_humana/
+Actividad: 05-implementation/prescriptiva/P303_politicas_y_supervision_humana/
 
 0. Inspecciona primero data/applications.csv, professor/main.py
    (apply_review_policy, policy_contract), professor/notebook.ipynb,

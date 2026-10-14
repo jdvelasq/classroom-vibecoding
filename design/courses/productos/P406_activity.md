@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P406_config_cmd_line/`.
+**Implementación:** `05-implementation/productos/P406_config_cmd_line/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,9 +44,9 @@ Reutiliza la práctica de P403 (artefacto congelado, métricas) en un caso nuevo
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Parametrización | S02, S05 | `implementation/productos/P406_config_cmd_line/professor/main.py`: `parse_arguments`, `ALLOWED_DATASETS`; `implementation/productos/P406_config_cmd_line/HOW_TO_RUN_ME.txt` | El rechazo previo a la carga se infiere del orden en `main`. |
-| H02 — Texto con particiones | S01, S03 | `implementation/productos/P406_config_cmd_line/data/{train,test,prod}/sentences.csv.gz`; `implementation/productos/P406_config_cmd_line/ESTIMATOR.pkl`; `implementation/productos/P406_config_cmd_line/submission/metrics.json` | Archivos binarios en el digest. |
-| H03 — Métricas atribuidas | S03, S04 | `implementation/productos/P406_config_cmd_line/submission/metrics.json` | Sobrescritura en cada ejecución. |
+| H01 — Parametrización | S02, S05 | `05-implementation/productos/P406_config_cmd_line/professor/main.py`: `parse_arguments`, `ALLOWED_DATASETS`; `05-implementation/productos/P406_config_cmd_line/HOW_TO_RUN_ME.txt` | El rechazo previo a la carga se infiere del orden en `main`. |
+| H02 — Texto con particiones | S01, S03 | `05-implementation/productos/P406_config_cmd_line/data/{train,test,prod}/sentences.csv.gz`; `05-implementation/productos/P406_config_cmd_line/ESTIMATOR.pkl`; `05-implementation/productos/P406_config_cmd_line/submission/metrics.json` | Archivos binarios en el digest. |
+| H03 — Métricas atribuidas | S03, S04 | `05-implementation/productos/P406_config_cmd_line/submission/metrics.json` | Sobrescritura en cada ejecución. |
 
 ### Superficies de cambio para revisión posterior
 

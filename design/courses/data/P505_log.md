@@ -11,7 +11,7 @@
 ## S02.P505.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P505_scopus_sql_intermedio/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `implementation/data/P503_scopus_relacional/submission/authors_by_documents.csv` y `sources_by_documents.csv` y sus vistas.
+- **Rutas inspeccionadas:** `05-implementation/data/P505_scopus_sql_intermedio/` (`data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/` completo, `tests/test_activity.py`); contraste con `05-implementation/data/P503_scopus_relacional/submission/authors_by_documents.csv` y `sources_by_documents.csv` y sus vistas.
 - **Trazabilidad revisada:** P505 → `data.C01`, `data.C02`, `data.C05`; C01 débil.
 - **Preservado:** dos preguntas, entregables, reutilización de la base de P503.
 - **Corregido:** la descripción previa afirmaba que P505 «añade dos perspectivas de concentración»; ambas ya estaban persistidas en P503 con el mismo contenido visible y tamaño de archivo. Pruebas: sólo existencia.

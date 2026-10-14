@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P100_mapreduce_word_count/`.
+**Implementación:** `05-implementation/descriptiva/P100_mapreduce_word_count/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,11 +48,11 @@ Es la primera actividad de `descriptiva`; no hay actividades anteriores en el cu
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Etapas map/shuffle/reduce | S03 | `implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`: secciones *Mapper*, *Shuffle and sort*, *Reducer* | Simulación secuencial; no demuestra comportamiento distribuido. |
-| H02 — Unidad textual y normalización | S01, S02, S05 | `implementation/descriptiva/P100_mapreduce_word_count/professor/main.py` (mapper); `implementation/descriptiva/P100_mapreduce_word_count/data/file4.txt`; `implementation/descriptiva/P100_mapreduce_word_count/tests/test_activity.py` | El contenido de `submission/part-00000` no es visible en el digest; los conteos citados son los esperados por la prueba, no un resultado leído del artefacto. |
-| H03 — Volumen simulado | S01, S03 | `implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`: `n = 1000`, generación de copias, `time.time()` | El tiempo no se persiste; las copias no añaden variación. |
-| H04 — Convenciones de salida | S04 | `implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`; `implementation/descriptiva/P100_mapreduce_word_count/submission/part-00000`; `implementation/descriptiva/P100_mapreduce_word_count/submission/_SUCCESS` | No hay HDFS real. |
-| H05 — Conteos esperados | S05, S06 | `implementation/descriptiva/P100_mapreduce_word_count/tests/test_activity.py`; `implementation/descriptiva/P100_mapreduce_word_count/src/main.py` | Cinco palabras; no verifica el resto de la tabla ni su orden. |
+| H01 — Etapas map/shuffle/reduce | S03 | `05-implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`: secciones *Mapper*, *Shuffle and sort*, *Reducer* | Simulación secuencial; no demuestra comportamiento distribuido. |
+| H02 — Unidad textual y normalización | S01, S02, S05 | `05-implementation/descriptiva/P100_mapreduce_word_count/professor/main.py` (mapper); `05-implementation/descriptiva/P100_mapreduce_word_count/data/file4.txt`; `05-implementation/descriptiva/P100_mapreduce_word_count/tests/test_activity.py` | El contenido de `submission/part-00000` no es visible en el digest; los conteos citados son los esperados por la prueba, no un resultado leído del artefacto. |
+| H03 — Volumen simulado | S01, S03 | `05-implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`: `n = 1000`, generación de copias, `time.time()` | El tiempo no se persiste; las copias no añaden variación. |
+| H04 — Convenciones de salida | S04 | `05-implementation/descriptiva/P100_mapreduce_word_count/professor/main.py`; `05-implementation/descriptiva/P100_mapreduce_word_count/submission/part-00000`; `05-implementation/descriptiva/P100_mapreduce_word_count/submission/_SUCCESS` | No hay HDFS real. |
+| H05 — Conteos esperados | S05, S06 | `05-implementation/descriptiva/P100_mapreduce_word_count/tests/test_activity.py`; `05-implementation/descriptiva/P100_mapreduce_word_count/src/main.py` | Cinco palabras; no verifica el resto de la tabla ni su orden. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -79,4 +79,4 @@ Es la primera actividad de `descriptiva`; no hay actividades anteriores en el cu
 
 ## Trazabilidad y auditoría
 
-P100 está mapeada a `descriptiva.C02` en `implementation/descriptiva/traceability.yaml`. La evidencia sostiene un conteo de frecuencias sobre texto, pero no una exploración de distribuciones, atípicos o calidad «antes de concluir»: no hay conclusión ni inspección del resultado. El mapeo a C02 es, a lo sumo, habilitador. Ante la pregunta descriptiva (qué ocurre, para quién, dónde, cuándo, con qué evidencia), la actividad no responde ninguna dimensión salvo «qué palabras aparecen». El producto es una capacidad de datos al servicio de descripciones posteriores; aislada, la actividad puede caracterizarse como un ejercicio introductorio de ingeniería de datos (MapReduce). La auditoría de identidad queda no resuelta en el nivel de actividad.
+P100 está mapeada a `descriptiva.C02` en `05-implementation/descriptiva/traceability.yaml`. La evidencia sostiene un conteo de frecuencias sobre texto, pero no una exploración de distribuciones, atípicos o calidad «antes de concluir»: no hay conclusión ni inspección del resultado. El mapeo a C02 es, a lo sumo, habilitador. Ante la pregunta descriptiva (qué ocurre, para quién, dónde, cuándo, con qué evidencia), la actividad no responde ninguna dimensión salvo «qué palabras aparecen». El producto es una capacidad de datos al servicio de descripciones posteriores; aislada, la actividad puede caracterizarse como un ejercicio introductorio de ingeniería de datos (MapReduce). La auditoría de identidad queda no resuelta en el nivel de actividad.

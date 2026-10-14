@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P429_prefect/`.
+**Implementación:** `05-implementation/productos/P429_prefect/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Misma pregunta y dato que P428 y anteriores, con nuevo mecanismo de ejecución (
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Tareas con dependencia | S02 | `implementation/productos/P429_prefect/professor/main.py`: `operations_flow` | Grafo trivial. |
-| H02 — Reintento declarado | S02, S05 | `implementation/productos/P429_prefect/professor/main.py`: `load_operations`; `implementation/productos/P429_prefect/HOW_TO_RUN_ME.txt` | Ningún fallo provocado. |
-| H03 — Tarea probada aislada | S04 | `implementation/productos/P429_prefect/professor/test_main.py` | No prueba el flujo ni la carga. |
-| H04 — Caso como límite | S01, S03 | `implementation/productos/P429_prefect/data/daily_operations.csv`; `implementation/productos/P429_prefect/submission/prefect_report.json` | Ausencia de particularidad. |
+| H01 — Tareas con dependencia | S02 | `05-implementation/productos/P429_prefect/professor/main.py`: `operations_flow` | Grafo trivial. |
+| H02 — Reintento declarado | S02, S05 | `05-implementation/productos/P429_prefect/professor/main.py`: `load_operations`; `05-implementation/productos/P429_prefect/HOW_TO_RUN_ME.txt` | Ningún fallo provocado. |
+| H03 — Tarea probada aislada | S04 | `05-implementation/productos/P429_prefect/professor/test_main.py` | No prueba el flujo ni la carga. |
+| H04 — Caso como límite | S01, S03 | `05-implementation/productos/P429_prefect/data/daily_operations.csv`; `05-implementation/productos/P429_prefect/submission/prefect_report.json` | Ausencia de particularidad. |
 
 ### Superficies de cambio para revisión posterior
 

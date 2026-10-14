@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P414_nox/`.
+**Implementación:** `05-implementation/productos/P414_nox/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma pregunta y mismo dato que P400, P412 y P413, con nueva herramienta de ejec
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Sesión declarada | S02, S03 | `implementation/productos/P414_nox/noxfile.py`; `implementation/productos/P414_nox/HOW_TO_RUN_ME.txt`; `implementation/productos/P414_nox/requirements.txt` | No hay evidencia persistida de una ejecución de Nox (sin log en `submission/`). |
-| H02 — Resultado exacto como criterio | S01, S03 | `implementation/productos/P414_nox/data/daily_operations.csv`; `implementation/productos/P414_nox/professor/main.py`; `implementation/productos/P414_nox/tests/test_report.py`; `implementation/productos/P414_nox/submission/report.json` | El valor esperado está escrito en la prueba; no se deriva de un contrato del producto. |
+| H01 — Sesión declarada | S02, S03 | `05-implementation/productos/P414_nox/noxfile.py`; `05-implementation/productos/P414_nox/HOW_TO_RUN_ME.txt`; `05-implementation/productos/P414_nox/requirements.txt` | No hay evidencia persistida de una ejecución de Nox (sin log en `submission/`). |
+| H02 — Resultado exacto como criterio | S01, S03 | `05-implementation/productos/P414_nox/data/daily_operations.csv`; `05-implementation/productos/P414_nox/professor/main.py`; `05-implementation/productos/P414_nox/tests/test_report.py`; `05-implementation/productos/P414_nox/submission/report.json` | El valor esperado está escrito en la prueba; no se deriva de un contrato del producto. |
 
 ### Superficies de cambio para revisión posterior
 

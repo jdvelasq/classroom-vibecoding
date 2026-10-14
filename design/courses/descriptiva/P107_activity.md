@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/descriptiva/P107_limpieza_sql/`.
+**Implementación:** `05-implementation/descriptiva/P107_limpieza_sql/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,10 +49,10 @@ Misma pregunta, mismos datos y mismo contrato que P106 con nueva implementación
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Ingesta como texto | S01, S02 | `implementation/descriptiva/P107_limpieza_sql/data/ventas.csv`; `implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `read_csv(..., dtype=str, keep_default_na=False)`, funciones `normalize_*` | No hay prueba específica de faltantes. |
-| H02 — Limpieza declarada en SQL | S02, S03 | `implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `create_function`, `CREATE TABLE cleaned_sales AS SELECT`; `implementation/descriptiva/P107_limpieza_sql/temp/ventas.db` | Las reglas residen en Python. |
-| H03 — Canonización por clave en minúsculas | S02, S05 | `implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `SUPPLIER_NAMES`, `normalize_city`, `'COL' AS country`; `implementation/descriptiva/P107_limpieza_sql/tests/test_activity.py` | La prueba de país no puede fallar con esta implementación. |
-| H04 — Contrato compartido con P106 | S04, S05 | `implementation/descriptiva/P107_limpieza_sql/submission/ventas.csv`; `implementation/descriptiva/P107_limpieza_sql/tests/test_activity.py`; `implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | No se comparan valores entre P106 y P107. |
+| H01 — Ingesta como texto | S01, S02 | `05-implementation/descriptiva/P107_limpieza_sql/data/ventas.csv`; `05-implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `read_csv(..., dtype=str, keep_default_na=False)`, funciones `normalize_*` | No hay prueba específica de faltantes. |
+| H02 — Limpieza declarada en SQL | S02, S03 | `05-implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `create_function`, `CREATE TABLE cleaned_sales AS SELECT`; `05-implementation/descriptiva/P107_limpieza_sql/temp/ventas.db` | Las reglas residen en Python. |
+| H03 — Canonización por clave en minúsculas | S02, S05 | `05-implementation/descriptiva/P107_limpieza_sql/professor/main.py`: `SUPPLIER_NAMES`, `normalize_city`, `'COL' AS country`; `05-implementation/descriptiva/P107_limpieza_sql/tests/test_activity.py` | La prueba de país no puede fallar con esta implementación. |
+| H04 — Contrato compartido con P106 | S04, S05 | `05-implementation/descriptiva/P107_limpieza_sql/submission/ventas.csv`; `05-implementation/descriptiva/P107_limpieza_sql/tests/test_activity.py`; `05-implementation/descriptiva/P106_limpieza_pandas/tests/test_activity.py` | No se comparan valores entre P106 y P107. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -79,4 +79,4 @@ Misma pregunta, mismos datos y mismo contrato que P106 con nueva implementación
 
 ## Trazabilidad y auditoría
 
-P107 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `implementation/descriptiva/traceability.yaml`, con el mismo respaldo que P106: calidad de datos para C02 y respaldo débil para C05. El producto es idéntico al de P106 y la contribución distinguible es de bases de datos (UDF, separación crudo/limpio). La actividad no responde la pregunta descriptiva del curso; aislada, es preparación de datos con SQLite.
+P107 está mapeada a `descriptiva.C02` y `descriptiva.C05` en `05-implementation/descriptiva/traceability.yaml`, con el mismo respaldo que P106: calidad de datos para C02 y respaldo débil para C05. El producto es idéntico al de P106 y la contribución distinguible es de bases de datos (UDF, separación crudo/limpio). La actividad no responde la pregunta descriptiva del curso; aislada, es preparación de datos con SQLite.

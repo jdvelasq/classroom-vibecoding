@@ -76,7 +76,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P517_vermont_contratos/
+Actividad: 05-implementation/data/P517_vermont_contratos/
 
 0. Inspecciona primero professor/notebook.ipynb (REQUIRED, validate, cases),
    data/vermont.csv, submission/contract_report.csv y tests/test_activity.py.
@@ -178,7 +178,7 @@ Actividad: implementation/data/P517_vermont_contratos/
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/data/P517_vermont_contratos/
+Actividad: 05-implementation/data/P517_vermont_contratos/
 
 0. Inspecciona primero cómo está almacenado zipcode en data/vermont.csv
    (lee las primeras líneas como texto crudo, sin pandas: ¿los códigos

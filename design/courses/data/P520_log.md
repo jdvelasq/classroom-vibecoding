@@ -3,7 +3,7 @@
 ## S02.P520.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P520_mapreduce_basico/` (`data/timesheet.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/driver_metrics.csv`, `tests/test_activity.py`); P519 para operadores y datos; `dig/case-selection.md` como contexto.
+- **Rutas inspeccionadas:** `05-implementation/data/P520_mapreduce_basico/` (`data/timesheet.csv`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/driver_metrics.csv`, `tests/test_activity.py`); P519 para operadores y datos; `dig/case-selection.md` como contexto.
 - **Trazabilidad revisada:** P520 → `data.C01`, `data.C02`, `data.C05`; C01 parcial.
 - **Highlights:** añadidos H01 (SQL como especificación), H02 (valor compuesto con contador; caso y datos), H03 (aplicación completa y persistencia).
 - **Ambigüedades:** SQL no ejecutado y distinto de la salida (`mean_hours`); el SQL aparece después del mapper, a diferencia de «primero la pregunta y su SQL» de `case-selection.md`; `weeks` cuenta filas sin verificar unicidad conductor-semana; procedencia de datos no documentada.
@@ -463,7 +463,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P520_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P520_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** sólo «Trazabilidad y auditoría» de `P520_activity.md` reencuadrada según la aclaración («Disciplinas contribuyentes» ya era compatible); sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** bajo (porque todo es local) → bajo porque la pregunta es explícita; la ejecución local deja de ser la razón. Se conserva que la respuesta no se interpreta. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

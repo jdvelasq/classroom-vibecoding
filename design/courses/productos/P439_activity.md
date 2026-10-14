@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P439_data_freshness/`.
+**Implementación:** `05-implementation/productos/P439_data_freshness/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Misma técnica (umbral y alerta) de P422 y P423 con nueva exigencia: vigilar la 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Alerta de frescura | S02, S04 | `implementation/productos/P439_data_freshness/professor/main.py`: `assess_freshness`; `implementation/productos/P439_data_freshness/professor/test_main.py`; `implementation/productos/P439_data_freshness/submission/freshness_report.json` | Alerta sin efecto. |
-| H02 — Caso como límite | S01 | `implementation/productos/P439_data_freshness/data/source_status.json` | Fechas declaradas. |
+| H01 — Alerta de frescura | S02, S04 | `05-implementation/productos/P439_data_freshness/professor/main.py`: `assess_freshness`; `05-implementation/productos/P439_data_freshness/professor/test_main.py`; `05-implementation/productos/P439_data_freshness/submission/freshness_report.json` | Alerta sin efecto. |
+| H02 — Caso como límite | S01 | `05-implementation/productos/P439_data_freshness/data/source_status.json` | Fechas declaradas. |
 
 ### Superficies de cambio para revisión posterior
 

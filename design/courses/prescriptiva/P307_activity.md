@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P307_decision_informada_por_pronosticos/`.
+**Implementación:** `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,10 +46,10 @@ Misma técnica que P300/P302 (evaluar alternativas fijas, filtrar por restricci�
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Escenarios y gobierno como datos | S01 | `implementation/prescriptiva/P307_decision_informada_por_pronosticos/data/forecast_scenarios.csv`; `data/order_options.csv`; `data/policy_contract.csv` | Procedencia no documentada; escenarios dados. |
-| H02 — Valor y quiebre | S02 | `implementation/prescriptiva/P307_decision_informada_por_pronosticos/professor/main.py`: `evaluate_order_options`; `implementation/prescriptiva/P307_decision_informada_por_pronosticos/submission/order_evaluation.csv` | Quiebre como probabilidad de escenario, no demanda insatisfecha. |
-| H03 — Guardia antes de maximizar | S02, S03 | `professor/main.py`: `select_order_policy`; `implementation/prescriptiva/P307_decision_informada_por_pronosticos/submission/order_policy.csv` | La guardia coincide con el óptimo sin restricción. |
-| H04 — Política persistida | S03, S04 | `submission/order_policy.csv`; `implementation/prescriptiva/P307_decision_informada_por_pronosticos/tests/test_activity.py` | Verifica forma, no la cantidad elegida. |
+| H01 — Escenarios y gobierno como datos | S01 | `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/data/forecast_scenarios.csv`; `data/order_options.csv`; `data/policy_contract.csv` | Procedencia no documentada; escenarios dados. |
+| H02 — Valor y quiebre | S02 | `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/professor/main.py`: `evaluate_order_options`; `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/submission/order_evaluation.csv` | Quiebre como probabilidad de escenario, no demanda insatisfecha. |
+| H03 — Guardia antes de maximizar | S02, S03 | `professor/main.py`: `select_order_policy`; `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/submission/order_policy.csv` | La guardia coincide con el óptimo sin restricción. |
+| H04 — Política persistida | S03, S04 | `submission/order_policy.csv`; `05-implementation/prescriptiva/P307_decision_informada_por_pronosticos/tests/test_activity.py` | Verifica forma, no la cantidad elegida. |
 
 ### Superficies de cambio para revisión posterior
 

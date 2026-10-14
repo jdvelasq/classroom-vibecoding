@@ -9,9 +9,9 @@
 
 - **Fecha:** 2026-10-03; **curso / executor:** `predictiva` / `ChatGPT`; **estado:** incremental.
 - **Rutas inspeccionadas:**
-  `implementation/predictiva/P201_clasificacion_basica_imagenes/` (notebook de
+  `05-implementation/predictiva/P201_clasificacion_basica_imagenes/` (notebook de
   profesor, `submission/metrics.json`, estimador y pruebas) y P201 en
-  `implementation/predictiva/traceability.yaml`.
+  `05-implementation/predictiva/traceability.yaml`.
 - **Corrección:** se sustituyó la ruta errónea del mapa anterior por
   `P201_clasificacion_basica_imagenes`.
 - **Decisión:** se aplicó el contrato actual de S01 y se añadieron highlights

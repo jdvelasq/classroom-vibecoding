@@ -70,7 +70,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/prescriptiva/P306_credit_campaign_targeting/
+Actividad: 05-implementation/prescriptiva/P306_credit_campaign_targeting/
 
 0. Inspecciona primero data/campaign.csv, data/synthetic_truth.csv,
    professor/notebook.ipynb, submission/ y tests/. Si la implementación no

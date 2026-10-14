@@ -11,7 +11,7 @@
 ## S02.P510.02
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** incremental.
-- **Rutas inspeccionadas:** `implementation/data/P510_datacamp_valoraciones/` (`data/datacamp_application.sql`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/course_ratings.csv`, `tests/test_activity.py`); P503–P508 para relaciones.
+- **Rutas inspeccionadas:** `05-implementation/data/P510_datacamp_valoraciones/` (`data/datacamp_application.sql`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/course_ratings.csv`, `tests/test_activity.py`); P503–P508 para relaciones.
 - **Trazabilidad revisada:** P510 → `data.C01`–`data.C05`; C03 parcial y C04 débil.
 - **Highlights:** añadidos H01 (volcado SQL adaptado a SQLite; caso y datos), H02 (`LEFT JOIN` y cambio de grano), H03 (conciliación agregado–fuente). No existían IDs previos.
 - **Preservado:** pregunta, dos granos, `LEFT JOIN`, conciliación previa a persistir, ausencia de manifiesto y notebook de estudiante vacío.

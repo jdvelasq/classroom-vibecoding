@@ -41,7 +41,7 @@
   auditoría de identidad de la línea Predictiva, antes «sin resolver», queda
   resuelta.
 - **Implementación:**
-  `implementation/predictiva/P224_reduccion_dimensionalidad/` — notebook del
+  `05-implementation/predictiva/P224_reduccion_dimensionalidad/` — notebook del
   profesor (curvas de PCA y UMAP, gráfico comparativo, comentarios con la
   lectura) y `submission/pca_components_accuracy.csv/.png`,
   `umap_components_accuracy.csv`, `components_accuracy_comparison.png`, y
@@ -49,7 +49,7 @@
   originales se conservan sin cambio; notebook y pruebas se ejecutaron sin
   errores.
 - **Trazabilidad:** sigue sin existir entrada P225 en
-  `implementation/predictiva/traceability.yaml`; esa brecha es anterior a T01
+  `05-implementation/predictiva/traceability.yaml`; esa brecha es anterior a T01
   y queda fuera de su alcance (ya registrada en S01.P225.01 como pendiente de
   escalación). Resolver la identidad Predictiva no crea por sí sola esa
   entrada.

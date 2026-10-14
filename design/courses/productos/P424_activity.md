@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P424_model_rollback/`.
+**Implementación:** `05-implementation/productos/P424_model_rollback/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Complementa P421 (promover) con revertir, pero con un registro de esquema distin
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Reversión por copia | S02, S04 | `implementation/productos/P424_model_rollback/professor/main.py`: `rollback`; `implementation/productos/P424_model_rollback/professor/test_main.py` | La igualdad de bytes no distingue v1 de v2 si fueran idénticos. |
-| H02 — Registro de reversión | S02, S03, S04 | `implementation/productos/P424_model_rollback/submission/production/rollback_record.json`; `implementation/productos/P424_model_rollback/professor/test_main.py` | `REGISTRY.json` queda en `v2`. |
-| H03 — Versiones sin motivo | S01 | `implementation/productos/P424_model_rollback/REGISTRY.json`; `implementation/productos/P424_model_rollback/MODEL_V1.pkl`; `implementation/productos/P424_model_rollback/MODEL_V2.pkl` | El tamaño igual no prueba identidad. |
+| H01 — Reversión por copia | S02, S04 | `05-implementation/productos/P424_model_rollback/professor/main.py`: `rollback`; `05-implementation/productos/P424_model_rollback/professor/test_main.py` | La igualdad de bytes no distingue v1 de v2 si fueran idénticos. |
+| H02 — Registro de reversión | S02, S03, S04 | `05-implementation/productos/P424_model_rollback/submission/production/rollback_record.json`; `05-implementation/productos/P424_model_rollback/professor/test_main.py` | `REGISTRY.json` queda en `v2`. |
+| H03 — Versiones sin motivo | S01 | `05-implementation/productos/P424_model_rollback/REGISTRY.json`; `05-implementation/productos/P424_model_rollback/MODEL_V1.pkl`; `05-implementation/productos/P424_model_rollback/MODEL_V2.pkl` | El tamaño igual no prueba identidad. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P420_experiment_tracking/`.
+**Implementación:** `05-implementation/productos/P420_experiment_tracking/`.
 
 ### Preguntas analíticas actuales
 
@@ -48,10 +48,10 @@ Nuevo caso y nuevo producto (registro de corridas). Frente a P403 (prueba de un 
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Partición fija | S02, S05 | `implementation/productos/P420_experiment_tracking/professor/main.py`: `prepare_data`; `implementation/productos/P420_experiment_tracking/professor/test_main.py`: `test_02` | Verifica determinismo, no representatividad. |
-| H02 — Corrida recuperable | S03, S04 | `implementation/productos/P420_experiment_tracking/professor/main.py`: `save_run`; `implementation/productos/P420_experiment_tracking/submission/experiments/20260928T190053Z/`; `implementation/productos/P420_experiment_tracking/submission/experiments/20260928T190054Z/` | `config.json` no basta para reconstruir el modelo sin el código. |
-| H03 — Índice | S04, S06 | `implementation/productos/P420_experiment_tracking/submission/experiments/index.json`; `implementation/productos/P420_experiment_tracking/HOW_TO_RUN_ME.txt` | Exactitudes 0.5825 y 0.5075 de una partición. |
-| H04 — Objetivo ordinal | S01, S02 | `implementation/productos/P420_experiment_tracking/data/winequality-red.csv`; `implementation/productos/P420_experiment_tracking/professor/main.py`: `build_model` | La distribución de clases no se persiste ni se muestra. |
+| H01 — Partición fija | S02, S05 | `05-implementation/productos/P420_experiment_tracking/professor/main.py`: `prepare_data`; `05-implementation/productos/P420_experiment_tracking/professor/test_main.py`: `test_02` | Verifica determinismo, no representatividad. |
+| H02 — Corrida recuperable | S03, S04 | `05-implementation/productos/P420_experiment_tracking/professor/main.py`: `save_run`; `05-implementation/productos/P420_experiment_tracking/submission/experiments/20260928T190053Z/`; `05-implementation/productos/P420_experiment_tracking/submission/experiments/20260928T190054Z/` | `config.json` no basta para reconstruir el modelo sin el código. |
+| H03 — Índice | S04, S06 | `05-implementation/productos/P420_experiment_tracking/submission/experiments/index.json`; `05-implementation/productos/P420_experiment_tracking/HOW_TO_RUN_ME.txt` | Exactitudes 0.5825 y 0.5075 de una partición. |
+| H04 — Objetivo ordinal | S01, S02 | `05-implementation/productos/P420_experiment_tracking/data/winequality-red.csv`; `05-implementation/productos/P420_experiment_tracking/professor/main.py`: `build_model` | La distribución de clases no se persiste ni se muestra. |
 
 ### Superficies de cambio para revisión posterior
 

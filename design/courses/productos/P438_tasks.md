@@ -65,8 +65,8 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P438_backfill/
-Insumo: implementation/productos/P402_data_testing_pytest_pandas/
+Actividad: 05-implementation/productos/P438_backfill/
+Insumo: 05-implementation/productos/P402_data_testing_pytest_pandas/
         data/machine_throughput_export.csv (sólo lectura)
 
 0. Inspecciona primero data/events.json, professor/main.py,

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P407_config_file/`.
+**Implementación:** `05-implementation/productos/P407_config_file/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Misma pregunta, mismo dato y mismo producto que P406 con nueva implementación d
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Configuración por archivo | S01, S02 | `implementation/productos/P407_config_file/CONFIG.json`; `implementation/productos/P407_config_file/professor/main.py`: `load_dataset_name` | Rama de error no probada. |
-| H02 — Caso repetido | S03, S04 | `implementation/productos/P407_config_file/ESTIMATOR.pkl`; `implementation/productos/P407_config_file/data/*/sentences.csv.gz`; `implementation/productos/P407_config_file/submission/metrics.json` | Igualdad con P406 inferida por tamaños y contenido del reporte. |
+| H01 — Configuración por archivo | S01, S02 | `05-implementation/productos/P407_config_file/CONFIG.json`; `05-implementation/productos/P407_config_file/professor/main.py`: `load_dataset_name` | Rama de error no probada. |
+| H02 — Caso repetido | S03, S04 | `05-implementation/productos/P407_config_file/ESTIMATOR.pkl`; `05-implementation/productos/P407_config_file/data/*/sentences.csv.gz`; `05-implementation/productos/P407_config_file/submission/metrics.json` | Igualdad con P406 inferida por tamaños y contenido del reporte. |
 
 ### Superficies de cambio para revisión posterior
 

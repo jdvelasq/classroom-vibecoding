@@ -70,7 +70,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/productos/P450_human_review/
+Actividad: 05-implementation/productos/P450_human_review/
 
 0. Inspecciona primero data/recommendation.json, professor/main.py,
    professor/test_main.py, src/main.py, submission/ y tests/. Si la

@@ -3,7 +3,7 @@
 ## S02.P121.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `descriptiva` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/descriptiva/P121_vuelos/` (dos agregados `.csv.gz` en `data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con `questions.json` y seis CSV, `tests/`); P120 como comparación inmediata.
+- **Rutas inspeccionadas:** `05-implementation/descriptiva/P121_vuelos/` (dos agregados `.csv.gz` en `data/`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb` vacío, `submission/` con `questions.json` y seis CSV, `tests/`); P120 como comparación inmediata.
 - **Trazabilidad revisada:** P121 → `descriptiva.C01`, `C02`, `C03`; coherente con la evidencia.
 - **Highlights añadidos:** H01–H07 (agregados aditivos, conciliación, denominadores, matriz día × hora, segmentos con umbral, serie vs estacionalidad, persistencia verificada). Highlight obligatorio de caso y datos: H01, reforzado por H04 (orientación filas = día, columnas = hora).
 - **Cambios realizados:** creación de `P121_activity.md`; sin cambios en implementación ni propuestas.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P304_airline_revenue_management/`.
+**Implementación:** `05-implementation/prescriptiva/P304_airline_revenue_management/`.
 
 ### Preguntas analíticas actuales
 
@@ -54,12 +54,12 @@ Primera actividad del curso en que la acción depende del estado de un recurso q
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Capacidad perecedera secuencial | S01, S04 | `implementation/prescriptiva/P304_airline_revenue_management/data/flight.csv`, `data/early_requests.csv`, `data/high_fare_demand.csv`; notebook: celdas de supuestos y política ingenua; `implementation/prescriptiva/P304_airline_revenue_management/submission/scenario_results.csv` | Supuesto de orden estricto; sin procedencia. |
-| H02 — Valor marginal de capacidad | S02 | `implementation/prescriptiva/P304_airline_revenue_management/professor/notebook.ipynb`: `future_value`, `marginal_value`, `capacity_value`; `implementation/prescriptiva/P304_airline_revenue_management/submission/capacity_value.csv` | Depende de la distribución de tres escenarios. |
-| H03 — Regla por solicitud | S03 | notebook: bucle `recommended`, tabla `boundary`; `implementation/prescriptiva/P304_airline_revenue_management/submission/booking_decisions.csv` | Las filas R12/R13 no son visibles en la cabecera del volcado; se apoyan en aserciones. |
+| H01 — Capacidad perecedera secuencial | S01, S04 | `05-implementation/prescriptiva/P304_airline_revenue_management/data/flight.csv`, `data/early_requests.csv`, `data/high_fare_demand.csv`; notebook: celdas de supuestos y política ingenua; `05-implementation/prescriptiva/P304_airline_revenue_management/submission/scenario_results.csv` | Supuesto de orden estricto; sin procedencia. |
+| H02 — Valor marginal de capacidad | S02 | `05-implementation/prescriptiva/P304_airline_revenue_management/professor/notebook.ipynb`: `future_value`, `marginal_value`, `capacity_value`; `05-implementation/prescriptiva/P304_airline_revenue_management/submission/capacity_value.csv` | Depende de la distribución de tres escenarios. |
+| H03 — Regla por solicitud | S03 | notebook: bucle `recommended`, tabla `boundary`; `05-implementation/prescriptiva/P304_airline_revenue_management/submission/booking_decisions.csv` | Las filas R12/R13 no son visibles en la cabecera del volcado; se apoyan en aserciones. |
 | H04 — Consecuencias por escenario | S04 | notebook: `scenario_results`, `expected_metrics`; `submission/scenario_results.csv` | Comparación ex ante, no resultado observado. |
 | H05 — Sensibilidad y gatillo | S02, S05 | notebook: `variant_probabilities`, aserción `variant_protection == 12`; `submission/policy_contract.json`: `safeguards` | Exploratoria; no se exporta. |
-| H06 — Automatización acotada | S05 | `implementation/prescriptiva/P304_airline_revenue_management/submission/policy_contract.json` | No hay registro de excepciones ni de monitoreo ejecutado. |
+| H06 — Automatización acotada | S05 | `05-implementation/prescriptiva/P304_airline_revenue_management/submission/policy_contract.json` | No hay registro de excepciones ni de monitoreo ejecutado. |
 | H07 — Identidades de conservación | S06 | notebook: celda de aserciones final | Las pruebas no reproducen estas verificaciones. |
 
 ### Superficies de cambio para revisión posterior

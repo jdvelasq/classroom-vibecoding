@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P214_recomendacion_apriori/`.
+**Implementación:** `05-implementation/predictiva/P214_recomendacion_apriori/`.
 
 ### Preguntas analíticas actuales
 

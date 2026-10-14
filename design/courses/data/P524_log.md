@@ -3,7 +3,7 @@
 ## S02.P524.01
 
 - **Fecha:** 2026-10-04; **curso / executor:** `data` / `Claude`; **estado:** inicial.
-- **Rutas inspeccionadas:** `implementation/data/P524_seleccion_formato_datos/` (`data/flights.csv`, `data/flights.json`, `data/flights.csv.gz` y `data/flights.parquet` como binarios, `data/sales.*`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/format_comparison.csv`, `tests/test_activity.py`); P513, P518 y P522 para contraste.
+- **Rutas inspeccionadas:** `05-implementation/data/P524_seleccion_formato_datos/` (`data/flights.csv`, `data/flights.json`, `data/flights.csv.gz` y `data/flights.parquet` como binarios, `data/sales.*`, `professor/notebook.ipynb`, `notebooks/notebook.ipynb`, `submission/format_comparison.csv`, `tests/test_activity.py`); P513, P518 y P522 para contraste.
 - **Trazabilidad revisada:** P524 → `data.C02`–`data.C05`; C03 débil.
 - **Highlights:** añadidos H01 (mismas filas), H02 (costo de representación de un registro ancho con nulos; caso y datos), H03 (tabla de decisión).
 - **Ambigüedades:** propiedades booleanas constantes; comparación mezcla formato y compresión y omite el CSV comprimido de entrada; JSON fuera del `assert`; el notebook escribe sus salidas en `data/`; `sales.csv/json/parquet` sin uso y sin procedencia; procedencia de vuelos no documentada.
@@ -463,7 +463,7 @@
 
 - **Fecha:** 2026-10-05; **curso / executor:** `data` / `Claude`; **estado:** incremental (limitado a la auditoría de identidad de Analytics).
 - **Origen:** aclaración del profesor: «Este curso es "Fundamentos de data para analítica" y está a la mitad entre ingeniería de datos y analítica como tal; es optativo y no todos los estudiantes lo ven.» (`CLARIFICATION.md`, consecuencias 1–3).
-- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P524_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `implementation/`.
+- **Rutas inspeccionadas:** `CLARIFICATION.md`, `design/synthesis/s05-diseno-data.md`, `design/courses/data/P524_activity.md` y entradas S01/S02 previas de este log; no se reinspeccionó `05-implementation/`.
 - **Cambios realizados:** «Disciplinas contribuyentes» y «Trazabilidad y auditoría» de `P524_activity.md` reencuadradas según la aclaración; sin otros cambios de texto.
 - **Cambio en la auditoría de Analytics:** moderado → bajo. Los formatos pertenecen al curso y la elección se declara para lectura analítica; se conservan como límites la falta de pregunta y consumidor, propiedades no medidas (constantes) y la mezcla de formato y compresión. Hechos, duplicaciones, defectos y vacíos registrados antes siguen vigentes (consecuencia 2 de la aclaración).
 - **Ambigüedades:** `design/synthesis/s05-diseno-data.md` dice «No es … un curso de Data Engineering o Big Data» y excluye «operaciones distribuidas, pipelines productivos»; esa redacción choca con la aclaración. Se registra como ambigüedad para el profesor; S02 no modifica s05.

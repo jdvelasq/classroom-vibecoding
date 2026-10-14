@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P444_release_version/`.
+**Implementación:** `05-implementation/productos/P444_release_version/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva unidad de versionado (producto) frente a modelo (P421, P424), datos (P431)
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Capacidad nombrada | S01, S03 | `implementation/productos/P444_release_version/CHANGELOG.md`; `implementation/productos/P444_release_version/submission/release_manifest.json`; `implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | El vínculo con la regla de P425 es de nombre, no de artefacto. |
-| H02 — Fuente única de versión | S01, S02, S04 | `implementation/productos/P444_release_version/VERSION`; `implementation/productos/P444_release_version/professor/main.py`; `implementation/productos/P444_release_version/professor/test_main.py` | No se valida el formato ni el changelog. |
+| H01 — Capacidad nombrada | S01, S03 | `05-implementation/productos/P444_release_version/CHANGELOG.md`; `05-implementation/productos/P444_release_version/submission/release_manifest.json`; `05-implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | El vínculo con la regla de P425 es de nombre, no de artefacto. |
+| H02 — Fuente única de versión | S01, S02, S04 | `05-implementation/productos/P444_release_version/VERSION`; `05-implementation/productos/P444_release_version/professor/main.py`; `05-implementation/productos/P444_release_version/professor/test_main.py` | No se valida el formato ni el changelog. |
 
 ### Superficies de cambio para revisión posterior
 

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P441_data_quarantine/`.
+**Implementación:** `05-implementation/productos/P441_data_quarantine/`.
 
 ### Preguntas analíticas actuales
 
@@ -43,8 +43,8 @@ Nueva respuesta operativa a la validación de P402 (lote rechazado frente a regi
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Cuarentena con motivo | S02, S03, S04 | `implementation/productos/P441_data_quarantine/professor/main.py`: `quarantine_invalid_records`; `implementation/productos/P441_data_quarantine/professor/test_main.py`; `implementation/productos/P441_data_quarantine/submission/quarantine.json` | Sin flujo de corrección. |
-| H02 — Caso como límite | S01 | `implementation/productos/P441_data_quarantine/data/records.json` | Dos registros genéricos. |
+| H01 — Cuarentena con motivo | S02, S03, S04 | `05-implementation/productos/P441_data_quarantine/professor/main.py`: `quarantine_invalid_records`; `05-implementation/productos/P441_data_quarantine/professor/test_main.py`; `05-implementation/productos/P441_data_quarantine/submission/quarantine.json` | Sin flujo de corrección. |
+| H02 — Caso como límite | S01 | `05-implementation/productos/P441_data_quarantine/data/records.json` | Dos registros genéricos. |
 
 ### Superficies de cambio para revisión posterior
 

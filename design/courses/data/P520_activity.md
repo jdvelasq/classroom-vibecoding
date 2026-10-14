@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/data/P520_mapreduce_basico/`.
+**Implementación:** `05-implementation/data/P520_mapreduce_basico/`.
 
 ### Preguntas analíticas actuales
 
@@ -45,9 +45,9 @@ Mismos datos y operadores que P519 con nueva exigencia: pasar de cuatro registro
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — SQL como especificación | S02 | `implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: celda con la consulta comentada | Equivalencia no comprobada. |
-| H02 — Valor compuesto | S01, S02, S03 | `implementation/data/P520_mapreduce_basico/data/timesheet.csv`; `implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: `map_timesheet_record`, `summarize_driver_metrics`; `implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Duplicados conductor-semana no controlados. |
-| H03 — Aplicación completa | S02, S03 | `implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: primera y última celda; `implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Operadores copiados, no importados. |
+| H01 — SQL como especificación | S02 | `05-implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: celda con la consulta comentada | Equivalencia no comprobada. |
+| H02 — Valor compuesto | S01, S02, S03 | `05-implementation/data/P520_mapreduce_basico/data/timesheet.csv`; `05-implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: `map_timesheet_record`, `summarize_driver_metrics`; `05-implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Duplicados conductor-semana no controlados. |
+| H03 — Aplicación completa | S02, S03 | `05-implementation/data/P520_mapreduce_basico/professor/notebook.ipynb`: primera y última celda; `05-implementation/data/P520_mapreduce_basico/submission/driver_metrics.csv` | Operadores copiados, no importados. |
 
 ### Superficies de cambio para revisión posterior
 

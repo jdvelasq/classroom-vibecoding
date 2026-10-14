@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/`.
+**Implementación:** `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/`.
 
 ### Preguntas analíticas actuales
 
@@ -49,10 +49,10 @@ Misma técnica que P300 (evaluar alternativas fijas, filtrar factibles, maximiza
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Razón de descarte | S02, S03 | `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/professor/main.py`: `explain_selection`, `build_policy_contract`; `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/submission/policy_assessment.csv` | Todas las razones persistidas son de menor ganancia. |
-| H02 — Piso activo sin cambiar elección | S01, S02 | `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/data/policy_options.csv`; `submission/policy_assessment.csv` | Parámetros hipotéticos; no prueba un efecto educativo. |
-| H03 — Procedencia en el producto | S01, S03 | `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/data/source.json`; `submission/policy_contract.json`: `data_limitation` | Sólo se observaron seis de las ocho líneas de `source.json`. |
-| H04 — Contrato JSON | S03 | `professor/main.py`: `build_policy_contract`; `implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/submission/policy_contract.json` | Gatillo basado en asistencia, variable ausente del caso. |
+| H01 — Razón de descarte | S02, S03 | `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/professor/main.py`: `explain_selection`, `build_policy_contract`; `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/submission/policy_assessment.csv` | Todas las razones persistidas son de menor ganancia. |
+| H02 — Piso activo sin cambiar elección | S01, S02 | `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/data/policy_options.csv`; `submission/policy_assessment.csv` | Parámetros hipotéticos; no prueba un efecto educativo. |
+| H03 — Procedencia en el producto | S01, S03 | `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/data/source.json`; `submission/policy_contract.json`: `data_limitation` | Sólo se observaron seis de las ocho líneas de `source.json`. |
+| H04 — Contrato JSON | S03 | `professor/main.py`: `build_policy_contract`; `05-implementation/prescriptiva/P302_politica_desde_evidencia_y_restricciones/submission/policy_contract.json` | Gatillo basado en asistencia, variable ausente del caso. |
 | H05 — Excepción sin factibles | S02 | `professor/main.py`: `select_policy` | No ejercitada por los datos ni por las pruebas. |
 
 ### Superficies de cambio para revisión posterior

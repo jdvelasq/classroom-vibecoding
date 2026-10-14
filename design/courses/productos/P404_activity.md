@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P404_model_input_testing_pytest/`.
+**Implementación:** `05-implementation/productos/P404_model_input_testing_pytest/`.
 
 ### Preguntas analíticas actuales
 
@@ -47,10 +47,10 @@ Mismo artefacto que P403 con nueva exigencia: verificar insumos en lugar de dese
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Interfaz del artefacto | S01, S02 | `implementation/productos/P404_model_input_testing_pytest/professor/main.py`: `load_inputs`; `implementation/productos/P404_model_input_testing_pytest/ESTIMATOR.pkl` | El estimador no puntúa. |
-| H02 — Detector | S02, S04 | `implementation/productos/P404_model_input_testing_pytest/professor/main.py`: `assess_inputs`, `MAX_ANOMALY_RATE`; `implementation/productos/P404_model_input_testing_pytest/submission/input_distribution_report.json` | Tasa agregada, sin diagnóstico por variable. |
-| H03 — Desplazamiento sintético | S01, S03 | `implementation/productos/P404_model_input_testing_pytest/data/new_inputs.csv`; `implementation/productos/P404_model_input_testing_pytest/data/training_inputs.csv`; `implementation/productos/P404_model_input_testing_pytest/professor/notebook.ipynb` | Coincidencia con P403 observada en las primeras filas. |
-| H04 — Pruebas bidireccionales | S05 | `implementation/productos/P404_model_input_testing_pytest/professor/test_main.py`: `test_01`, `test_02` | Evaluación del estudiante sólo por existencia. |
+| H01 — Interfaz del artefacto | S01, S02 | `05-implementation/productos/P404_model_input_testing_pytest/professor/main.py`: `load_inputs`; `05-implementation/productos/P404_model_input_testing_pytest/ESTIMATOR.pkl` | El estimador no puntúa. |
+| H02 — Detector | S02, S04 | `05-implementation/productos/P404_model_input_testing_pytest/professor/main.py`: `assess_inputs`, `MAX_ANOMALY_RATE`; `05-implementation/productos/P404_model_input_testing_pytest/submission/input_distribution_report.json` | Tasa agregada, sin diagnóstico por variable. |
+| H03 — Desplazamiento sintético | S01, S03 | `05-implementation/productos/P404_model_input_testing_pytest/data/new_inputs.csv`; `05-implementation/productos/P404_model_input_testing_pytest/data/training_inputs.csv`; `05-implementation/productos/P404_model_input_testing_pytest/professor/notebook.ipynb` | Coincidencia con P403 observada en las primeras filas. |
+| H04 — Pruebas bidireccionales | S05 | `05-implementation/productos/P404_model_input_testing_pytest/professor/test_main.py`: `test_01`, `test_02` | Evaluación del estudiante sólo por existencia. |
 
 ### Superficies de cambio para revisión posterior
 

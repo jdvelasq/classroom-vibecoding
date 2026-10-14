@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/prescriptiva/P312_sensibilidad_y_tradespace/`.
+**Implementación:** `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/`.
 
 ### Preguntas analíticas actuales
 
@@ -46,9 +46,9 @@ Nuevo método (umbral de equilibrio) al servicio del mismo producto (regla con r
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Sensibilidad | S02 | `implementation/prescriptiva/P312_sensibilidad_y_tradespace/professor/main.py`: `evaluate_sensitivity`; `implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/sensitivity_review.csv`; `implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/tradespace.csv` | Grilla discreta; el punto exacto de cambio no se calcula en la tabla. |
-| H02 — Umbral en la regla | S03 | `implementation/prescriptiva/P312_sensibilidad_y_tradespace/professor/main.py`: `policy_record`; `implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/delivery_promise_policy.json` | La constante `REVIEW_RETENTION_GAIN` se define pero no se usa. |
-| H03 — Opción no seleccionada | S01, S03 | `implementation/prescriptiva/P312_sensibilidad_y_tradespace/data/service_options.csv`; `delivery_promise_policy.json` | Presupuesto igual al costo de P2: la restricción no discrimina. |
+| H01 — Sensibilidad | S02 | `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/professor/main.py`: `evaluate_sensitivity`; `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/sensitivity_review.csv`; `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/tradespace.csv` | Grilla discreta; el punto exacto de cambio no se calcula en la tabla. |
+| H02 — Umbral en la regla | S03 | `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/professor/main.py`: `policy_record`; `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/submission/delivery_promise_policy.json` | La constante `REVIEW_RETENTION_GAIN` se define pero no se usa. |
+| H03 — Opción no seleccionada | S01, S03 | `05-implementation/prescriptiva/P312_sensibilidad_y_tradespace/data/service_options.csv`; `delivery_promise_policy.json` | Presupuesto igual al costo de P2: la restricción no discrimina. |
 
 ### Superficies de cambio para revisión posterior
 
@@ -73,4 +73,4 @@ Nuevo método (umbral de equilibrio) al servicio del mismo producto (regla con r
 
 ## Trazabilidad y auditoría
 
-P312 está mapeada a `prescriptiva.C03` y `C05` en `implementation/prescriptiva/traceability.yaml`. C03 se sostiene por la sensibilidad y el umbral; C05 por gatillos de revisión, suspensión y recalibración. El contrato también declara autoridad rutinaria y de excepción (evidencia de `C04`, no mapeada). El producto de Analytics es una regla mensual de promesa de entrega con umbral de revisión; el análisis de equilibrio contribuye. Límites: un supuesto, sin incertidumbre cuantificada, y nombre «tradespace» sin múltiples criterios.
+P312 está mapeada a `prescriptiva.C03` y `C05` en `05-implementation/prescriptiva/traceability.yaml`. C03 se sostiene por la sensibilidad y el umbral; C05 por gatillos de revisión, suspensión y recalibración. El contrato también declara autoridad rutinaria y de excepción (evidencia de `C04`, no mapeada). El producto de Analytics es una regla mensual de promesa de entrega con umbral de revisión; el análisis de equilibrio contribuye. Límites: un supuesto, sin incertidumbre cuantificada, y nombre «tradespace» sin múltiples criterios.

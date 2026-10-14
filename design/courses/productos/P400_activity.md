@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P400_code_testing_unittest/`.
+**Implementación:** `05-implementation/productos/P400_code_testing_unittest/`.
 
 ### Preguntas analíticas actuales
 
@@ -44,9 +44,9 @@ Primera actividad P4xx (la trazabilidad incluye P001, fuera de este alcance). In
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Regla aislada | S02, S04 | `implementation/productos/P400_code_testing_unittest/professor/main.py`: `summarize_by_factory`, `load_operations`, `write_summary`, `main`; `implementation/productos/P400_code_testing_unittest/submission/factory_totals.csv` | El estudiante sólo recibe `src/main.py` con `NotImplementedError`. |
-| H02 — Prueba unitaria | S03, S05 | `implementation/productos/P400_code_testing_unittest/professor/test_main.py`: `test_01_sums_daily_units_for_each_factory` | La prueba no está en `tests/`; la evaluación sólo verifica existencia del CSV. |
-| H03 — Caso sin particularidad | S01 | `implementation/productos/P400_code_testing_unittest/data/daily_operations.csv` | Sin procedencia, fecha ni usuario declarados. |
+| H01 — Regla aislada | S02, S04 | `05-implementation/productos/P400_code_testing_unittest/professor/main.py`: `summarize_by_factory`, `load_operations`, `write_summary`, `main`; `05-implementation/productos/P400_code_testing_unittest/submission/factory_totals.csv` | El estudiante sólo recibe `src/main.py` con `NotImplementedError`. |
+| H02 — Prueba unitaria | S03, S05 | `05-implementation/productos/P400_code_testing_unittest/professor/test_main.py`: `test_01_sums_daily_units_for_each_factory` | La prueba no está en `tests/`; la evaluación sólo verifica existencia del CSV. |
+| H03 — Caso sin particularidad | S01 | `05-implementation/productos/P400_code_testing_unittest/data/daily_operations.csv` | Sin procedencia, fecha ni usuario declarados. |
 
 ### Superficies de cambio para revisión posterior
 

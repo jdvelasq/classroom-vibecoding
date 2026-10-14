@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/predictiva/P220_pipelines/`.
+**Implementación:** `05-implementation/predictiva/P220_pipelines/`.
 
 ### Preguntas analíticas actuales
 
@@ -84,5 +84,5 @@ No hay mejoras aceptadas pendientes.
 
 ## Trazabilidad y auditoría
 
-No existe una entrada P221 en `implementation/predictiva/traceability.yaml`.
+No existe una entrada P221 en `05-implementation/predictiva/traceability.yaml`.
 Debe revisarse antes de aprobar la actividad.

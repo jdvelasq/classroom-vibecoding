@@ -55,7 +55,7 @@
 ### Instrucciones de ejecución
 
 ```text
-Actividad: implementation/descriptiva/P108_anonimizacion_pandas/
+Actividad: 05-implementation/descriptiva/P108_anonimizacion_pandas/
 
 0. Inspecciona primero professor/notebook.ipynb, data/raw.csv,
    data/auxiliary.csv, submission/anonymized.csv y tests/test_activity.py.

@@ -2,7 +2,7 @@
 
 ## Actividad actual implementada
 
-**Implementación:** `implementation/productos/P448_backup_restore/`.
+**Implementación:** `05-implementation/productos/P448_backup_restore/`.
 
 ### Preguntas analíticas actuales
 
@@ -42,8 +42,8 @@ Extiende el registro de producción de P421 y P424 a su recuperación, sin consu
 
 | Highlight | Superficie(s) vinculada(s) | Rutas de respaldo | Límite de inferencia |
 | --- | --- | --- | --- |
-| H01 — Puntero de producción | S01 | `implementation/productos/P448_backup_restore/data/registry.json`; `implementation/productos/P424_model_rollback/REGISTRY.json`; `implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | No se evidencia modelo `factory-risk`. |
-| H02 — Restauración por bytes | S02, S03, S04 | `implementation/productos/P448_backup_restore/professor/main.py`: `backup_and_restore`; `implementation/productos/P448_backup_restore/professor/test_main.py`; `implementation/productos/P448_backup_restore/submission/registry.restored.json` | El original no se pierde antes de restaurar. |
+| H01 — Puntero de producción | S01 | `05-implementation/productos/P448_backup_restore/data/registry.json`; `05-implementation/productos/P424_model_rollback/REGISTRY.json`; `05-implementation/productos/P425_api_contract/professor/main.py`: `classify_risk` | No se evidencia modelo `factory-risk`. |
+| H02 — Restauración por bytes | S02, S03, S04 | `05-implementation/productos/P448_backup_restore/professor/main.py`: `backup_and_restore`; `05-implementation/productos/P448_backup_restore/professor/test_main.py`; `05-implementation/productos/P448_backup_restore/submission/registry.restored.json` | El original no se pierde antes de restaurar. |
 
 ### Superficies de cambio para revisión posterior
 
