@@ -53,7 +53,7 @@ Classroom y evidencia observada de aprendizaje.
 
 1. Diseñar los LABs como evidencia independiente de las cinco capacidades;
    `pytest` confirma participación y artefactos, no dominio analítico.
-2. Materializar `distribution/prescriptiva/`, excluyendo `professor/`, y
+2. Materializar `06-distribution/prescriptiva/`, excluyendo `professor/`, y
    verificar la copia que se entregue a estudiantes mediante el mecanismo de
    distribución que sustituya a GitHub Classroom.
 3. Auditar la experiencia de aula invertida y los resultados de cohortes antes

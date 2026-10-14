@@ -21,7 +21,7 @@ The task is parameterized by `<course-id>`. For `descriptiva`, use:
 - `implementation/common/P001_*` and
   `implementation/descriptiva/P100_*` through `P199_*` as the implementation
   inventory; and
-- the future course template under `distribution/descriptiva/`, if it exists.
+- the future course template under `06-distribution/descriptiva/`, if it exists.
 
 The public course site is the common flipped-classroom support layer. It may
 be cited as delivery evidence, but it is not copied into the student template
@@ -36,7 +36,7 @@ and it does not replace workshop evidence.
 3. Verify that the activity sequence preserves Analytics as the organizing
    identity; BI, databases, statistics, ML, and related disciplines must
    serve an Analytics decision or communication purpose.
-4. If `distribution/descriptiva/` exists, verify that it contains only
+4. If `06-distribution/descriptiva/` exists, verify that it contains only
    student-facing artifacts; excludes `professor/`; uses the root
    `requirements.txt`; preserves activity-local test discovery; and has a
    GitHub Actions grading workflow. If it does not yet exist, record this as

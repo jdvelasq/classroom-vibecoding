@@ -10,7 +10,7 @@
 La diferencia no obedece a una carencia de identidad, casos o profundidad
 analítica. Corresponde a dos componentes que todavía no están materializados
 ni auditables en este repositorio: los LABs de evaluación y la plantilla
-`distribution/descriptiva/` que GitHub Classroom replicará para estudiantes.
+`06-distribution/descriptiva/` que GitHub Classroom replicará para estudiantes.
 
 Esta es una calificación interna contra el corpus de referentes del proyecto;
 no es acreditación ni una atribución de nota por MIT, Berkeley, Stanford u
@@ -26,7 +26,7 @@ otra institución.
 | Práctica auténtica, casos integrados y portafolio | 15 | 14.0 | La secuencia contiene casos reales y productos persistentes, sin depender de un capstone. Resta verificar la presentación final del portafolio en los repositorios individuales. |
 | Trabajo responsable, reproducible y documentado | 10 | 8.0 | P001, P101, P107–P109 y las pruebas apoyan reproducibilidad, privacidad y productos verificables. Falta evidencia de criterios recurrentes para límites, integridad y comunicación responsable en la evaluación. |
 | Evidencia de evaluación y retroalimentación | 15 | 11.5 | `pytest` y los productos en `submission/` permiten evaluación técnica de P. Los LABs, que aportarán evaluación independiente y evidencia de aprendizaje, aún no pertenecen a esta implementación. |
-| Entrega escalable y flujo del estudiante | 5 | 3.0 | El sitio público sostiene el aula invertida y ya publica sesiones, DataCamp y evaluación. No existe todavía la plantilla `distribution/descriptiva/` para auditar su uso con GitHub Classroom. |
+| Entrega escalable y flujo del estudiante | 5 | 3.0 | El sitio público sostiene el aula invertida y ya publica sesiones, DataCamp y evaluación. No existe todavía la plantilla `06-distribution/descriptiva/` para auditar su uso con GitHub Classroom. |
 | Gobernanza, trazabilidad y mejora continua | 10 | 9.0 | `traceability.yaml` permite ir de cada P a C01–C05 y existe una auditoría contra diseño. Resta regenerar S05 con su tabla inversa completa y materializar la trazabilidad hasta distribución. |
 | **Total** | **100** | **88.0** | **8.8 / 10** |
 
@@ -47,7 +47,7 @@ de la secuencia.
 
 ## Condiciones concretas para 10 / 10
 
-1. Materializar y probar `distribution/descriptiva/` como plantilla de
+1. Materializar y probar `06-distribution/descriptiva/` como plantilla de
    GitHub Classroom: solo artefactos estudiantiles, sin `professor/`, con el
    `requirements.txt` raíz y Actions que descubran todos los P con independencia
    de su profundidad.

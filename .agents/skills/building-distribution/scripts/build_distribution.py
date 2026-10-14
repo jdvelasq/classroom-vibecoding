@@ -21,8 +21,8 @@ COURSE_ACTIVITIES = {
         "predictiva/P203_clasificacion_basica_texto",
         "predictiva/P204_clasificacion_basica_numerica",
         "predictiva/P205_priorizacion_con_probabilidades",
-        "predictiva/P206_clustering_demanda",
-        "predictiva/P207_clustering_mercadeo",
+        "predictiva/P207_clustering_demanda",
+        "predictiva/P208_clustering_mercadeo",
         "prescriptiva/P300_encuadre_analitico_de_decisiones",
         "prescriptiva/P301_air_france_447",
         "prescriptiva/P302_politica_desde_evidencia_y_restricciones",
@@ -117,26 +117,27 @@ COURSE_ACTIVITIES = {
         "predictiva/P203_clasificacion_basica_texto",
         "predictiva/P204_clasificacion_basica_numerica",
         "predictiva/P205_priorizacion_con_probabilidades",
-        "predictiva/P206_clustering_demanda",
-        "predictiva/P207_clustering_mercadeo",
-        "predictiva/P208_sir_basico",
-        "predictiva/P209_sir_adaptativo",
-        "predictiva/P210_pronostico_adopcion_producto",
-        "predictiva/P211_pronostico_congestion_servicio",
-        "predictiva/P212_tiempo_hasta_abandono",
-        "predictiva/P213_transicion_estados_cliente",
-        "predictiva/P214_recomendacion_apriori",
-        "predictiva/P215_filtrado_colaborativo",
-        "predictiva/P216_series_de_tiempo",
-        "predictiva/P217_deployment_web_app",
-        "predictiva/P218_deployment_api",
-        "predictiva/P219_hiperparametros",
-        "predictiva/P220_pipelines",
-        "predictiva/P221_selection_inputs_regresion",
-        "predictiva/P222_selection_inputs_clasificacion",
-        "predictiva/P223_lasso",
-        "predictiva/P224_reduccion_dimensionalidad",
-        "predictiva/P225_estructura_mercado",
+        "predictiva/P206_arboles_y_ensambles",
+        "predictiva/P207_clustering_demanda",
+        "predictiva/P208_clustering_mercadeo",
+        "predictiva/P209_sir_basico",
+        "predictiva/P210_sir_adaptativo",
+        "predictiva/P211_pronostico_adopcion_producto",
+        "predictiva/P212_pronostico_congestion_servicio",
+        "predictiva/P213_tiempo_hasta_abandono",
+        "predictiva/P214_transicion_estados_cliente",
+        "predictiva/P215_recomendacion_apriori",
+        "predictiva/P216_filtrado_colaborativo",
+        "predictiva/P217_series_de_tiempo",
+        "predictiva/P218_deployment_web_app",
+        "predictiva/P219_deployment_api",
+        "predictiva/P220_hiperparametros",
+        "predictiva/P221_pipelines",
+        "predictiva/P222_selection_inputs_regresion",
+        "predictiva/P223_selection_inputs_clasificacion",
+        "predictiva/P224_lasso",
+        "predictiva/P225_reduccion_dimensionalidad",
+        "predictiva/P226_estructura_mercado",
         "predictiva/L200_regresion_valor_de_reventa",
         "predictiva/L201_priorizacion_riesgo_credito",
         "predictiva/L202_sentimiento_amazon",
@@ -229,15 +230,18 @@ COURSE_ACTIVITIES = {
     ],
 }
 
-DISTRIBUTION_DIR = Path(__file__).resolve().parent.parent
-IMPLEMENTATION_DIR = DISTRIBUTION_DIR.parent / "05-implementation"
-TEST_ISOLATION_FILE = DISTRIBUTION_DIR.parent / "conftest.py"
+ROOT = Path(__file__).resolve().parents[4]
+DISTRIBUTION_DIR = ROOT / "06-distribution"
+IMPLEMENTATION_DIR = ROOT / "05-implementation"
+TEST_ISOLATION_FILE = ROOT / "conftest.py"
 EMPTY_DIRECTORIES = ("professor", "submission", "temp")
 LOCAL_DIRECTORY_NAMES = ("__pycache__", ".pytest_cache", ".ipynb_checkpoints")
 LOCAL_FILE_NAMES = (".DS_Store",)
 
 
 def prepare_course_directories():
+    DISTRIBUTION_DIR.mkdir(exist_ok=True)
+
     for course_id in COURSE_ACTIVITIES:
         course_dir = DISTRIBUTION_DIR / course_id
 

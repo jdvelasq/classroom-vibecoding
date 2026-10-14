@@ -5,7 +5,7 @@
 **Condicionalmente listo.** La implementación actual ofrece trazabilidad
 bidireccional suficiente entre los talleres presenciales y las cinco
 capacidades de `s05-diseno-descriptiva.md`. Aún no existe una plantilla
-materializada en `distribution/descriptiva/`; por ello no se ha verificado la
+materializada en `06-distribution/descriptiva/`; por ello no se ha verificado la
 fase de entrega por GitHub Classroom.
 
 Esta auditoría no equivale a una calificación internacional 10/10. Establece
@@ -22,7 +22,7 @@ se integren las demás evidencias del curso.
 | `implementation/descriptiva/P120_*`–`P125_*`, `P150_*`–`P154_*` | Talleres propios de Descriptiva. |
 | `AGENTS.md` | Identidad curricular y reglas técnicas de distribución. |
 
-No se encontró `distribution/descriptiva/` al ejecutar la auditoría.
+No se encontró `06-distribution/descriptiva/` al ejecutar la auditoría.
 
 ## Trazabilidad hacia adelante
 
@@ -83,8 +83,8 @@ autónomo.
 
 ### Distribución
 
-- `distribution/` solo contiene su estructura inicial y `tasks/`; falta
-  `distribution/descriptiva/` como repositorio plantilla materializado.
+- `06-distribution/` solo contiene su estructura inicial y `tasks/`; falta
+  `06-distribution/descriptiva/` como repositorio plantilla materializado.
 - Por tanto siguen sin verificar: exclusión de `professor/`, copia de los P
   seleccionados, `requirements.txt`, workflow de Actions y ejecución desde la
   profundidad real de la plantilla.
@@ -93,7 +93,7 @@ autónomo.
 
 1. Corregir los dos defectos formales de `s05-diseno-descriptiva.md` al
    regenerar S05, no manualmente.
-2. Materializar `distribution/descriptiva/` desde los P aprobados, sin
+2. Materializar `06-distribution/descriptiva/` desde los P aprobados, sin
    `professor/` y conservando las pruebas portables.
 3. Ejecutar nuevamente esta auditoría sobre la plantilla y una copia generada
    por GitHub Classroom.

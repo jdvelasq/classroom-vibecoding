@@ -161,7 +161,7 @@ normally verifying the expected persistent artifacts in `submission/` rather
 than reimplementing or exhaustively testing the student's solution.
 
 When a course is distributed, its `Pxxx_` directories are copied into a new
-repository under `distribution/`; their depth relative to that repository's
+repository under `06-distribution/`; their depth relative to that repository's
 root can change. Test discovery and execution must therefore be independent
 of the workshop's relative depth. `pytest` must never fail during test
 discovery because of the distribution layout.
